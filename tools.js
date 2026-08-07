@@ -817,7 +817,7 @@ function initMood() {
   el.innerHTML = `
     <div style="padding:12px 16px 0">
       <p style="font-size:13.5px;color:var(--ink);line-height:1.6;margin-bottom:4px">
-        This is a simplified version of the <strong>${t('tool.mood.edinburghPostnatalDepressionScale')}</strong>.
+        <strong>${t('tool.mood.edinburghPostnatalDepressionScale')}</strong> —
         Answer based on how you've felt <strong>${t('tool.mood.inThePast7Days')}</strong>.
       </p>
       <p style="font-size:12px;color:var(--ink-soft)">${t('tool.mood.yourAnswersAreSavedOnly')}</p>
@@ -839,6 +839,9 @@ function initMood() {
       <button class="big-action-btn btn-plum" onclick="submitEPDS()">${t('tool.mood.getMyScore')}</button>
     </div>
     <div id="epds-result"></div>
+    <div style="padding:4px 16px 0;font-size:11px;color:var(--ink-soft);line-height:1.5">
+      ${escHtml(epds.attribution || '')}
+    </div>
     ${epdsHistory.length ? `
     <div class="history-section-title">Past Check-Ins</div>
     <div class="history-list-card" style="margin:0 16px">

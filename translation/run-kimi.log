@@ -1,0 +1,19 @@
+→ translation/out/es.ui.1.json
+✓ es.ui.1.json  (2 warnings)
+    warn   faq.faqCommonMyths: HTML entities changed ["&amp;"] -> []
+    warn   myinfo.myCareTeamKeyDetails: HTML entities changed ["&amp;"] -> []
+→ translation/out/es.ui.2.json
+✓ es.ui.2.json  (3 warnings)
+    warn   tool.birthplan.pregnancyBirthGuideEvidenceBased: HTML entities changed ["&amp;","&amp;"] -> []
+    warn   tool.diaper.bothWetDirty: HTML entities changed ["&amp;"] -> []
+    warn   tool.weight.prePregnancyBmi: lost abbreviation "BMI"
+→ translation/out/es.ui.3.json
+✓ es.ui.3.json  (7 warnings)
+    warn   home.myInfoContacts: HTML entities changed ["&amp;"] -> []
+    warn   pregnancy.prenatalVisitsPregnancy: HTML entities changed ["&amp;"] -> []
+    warn   labor.laborDelivery: HTML entities changed ["&amp;"] -> []
+    warn   tools.trackersPlanners: HTML entities changed ["&amp;"] -> []
+    warn   tools.10MovesIn2Hours: HTML entities changed ["&amp;"] -> []
+    warn   tools.newbornPostpartum: HTML entities changed ["&amp;"] -> []
+    warn   tools.wetDirtyCountDailyTotals: HTML entities changed ["&amp;"] -> []
+→ translation/out/es.ui.4.json

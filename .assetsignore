@@ -21,6 +21,9 @@ CNAME
 # Nothing here belongs on the public site.
 translation
 
+# EPDS sourcing notes and structural verifier — tooling, not site content.
+i18n/epds
+
 # Intermediate key-extraction artifacts kept for regeneration, not for serving.
 i18n/_html_keys.json
 i18n/_tools_keys.json

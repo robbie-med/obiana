@@ -18,7 +18,8 @@ window.MYOB_LOCALES.en = {
       "concern": 10,
       "high": 13
     },
-    "source": "Cox JL, Holden JM, Sagovsky R. Detection of postnatal depression: development of the 10-item Edinburgh Postnatal Depression Scale. Br J Psychiatry. 1987;150:782-786.",
+    "attribution": "Cox JL, Holden JM, Sagovsky R. Detection of postnatal depression: development of the 10-item Edinburgh Postnatal Depression Scale. Br J Psychiatry 1987;150:782-786. Antenatal use: Murray D, Cox JL. J Reprod Infant Psychol 1990;8:99-107. © 1987 The Royal College of Psychiatrists. May be reproduced without permission provided the authors, title and source are quoted.",
+    "instructions": "Please select one option for each question that is the closest to how you have felt in the PAST SEVEN DAYS.",
     "questions": [
       {
         "text": "I have been able to laugh and see the funny side of things",
@@ -53,16 +54,16 @@ window.MYOB_LOCALES.en = {
       {
         "text": "I have blamed myself unnecessarily when things went wrong",
         "options": [
-          "No, never",
+          "Yes, most of the time",
+          "Yes, some of the time",
           "Not very often",
-          "Yes, sometimes",
-          "Yes, most of the time"
+          "No, never"
         ],
         "scores": [
-          0,
-          1,
+          3,
           2,
-          3
+          1,
+          0
         ]
       },
       {
@@ -83,91 +84,91 @@ window.MYOB_LOCALES.en = {
       {
         "text": "I have felt scared or panicky for no very good reason",
         "options": [
-          "No, not at all",
-          "No, not much",
+          "Yes, quite a lot",
           "Yes, sometimes",
-          "Yes, quite a lot"
+          "No, not much",
+          "No, not at all"
         ],
         "scores": [
-          0,
-          1,
+          3,
           2,
-          3
+          1,
+          0
         ]
       },
       {
         "text": "Things have been getting on top of me",
         "options": [
-          "No, I have been coping as well as ever",
-          "No, most of the time I have coped",
-          "Yes, sometimes I haven't been coping well",
-          "Yes, most of the time I haven't been able to cope"
+          "Yes, most of the time I haven’t been able to cope at all",
+          "Yes, sometimes I haven’t been coping as well as usual",
+          "No, most of the time I have coped quite well",
+          "No, I have been coping as well as ever"
         ],
         "scores": [
-          0,
-          1,
+          3,
           2,
-          3
+          1,
+          0
         ]
       },
       {
         "text": "I have been so unhappy that I have had difficulty sleeping",
         "options": [
-          "No, not at all",
-          "Not very often",
+          "Yes, most of the time",
           "Yes, sometimes",
-          "Yes, most of the time"
+          "Not very often",
+          "No, not at all"
         ],
         "scores": [
-          0,
-          1,
+          3,
           2,
-          3
+          1,
+          0
         ]
       },
       {
         "text": "I have felt sad or miserable",
         "options": [
-          "No, not at all",
-          "Not very often",
+          "Yes, most of the time",
           "Yes, quite often",
-          "Yes, most of the time"
+          "Not very often",
+          "No, not at all"
         ],
         "scores": [
-          0,
-          1,
+          3,
           2,
-          3
+          1,
+          0
         ]
       },
       {
         "text": "I have been so unhappy that I have been crying",
         "options": [
-          "No, never",
-          "Only occasionally",
+          "Yes, most of the time",
           "Yes, quite often",
-          "Yes, most of the time"
+          "Only occasionally",
+          "No, never"
         ],
         "scores": [
-          0,
-          1,
+          3,
           2,
-          3
+          1,
+          0
         ]
       },
       {
         "text": "The thought of harming myself has occurred to me",
         "options": [
-          "Never",
-          "Hardly ever",
+          "Yes, quite often",
           "Sometimes",
-          "Yes, quite often"
+          "Hardly ever",
+          "Never"
         ],
         "scores": [
-          0,
-          1,
+          3,
           2,
-          3
+          1,
+          0
         ]
       }
     ]
@@ -261,7 +262,8 @@ window.MYOB_LOCALES.en = {
         "inThePast7Days": "in the past 7 days",
         "yourAnswersAreSavedOnly": "Your answers are saved only on this phone.",
         "getMyScore": "Get My Score",
-        "scoreOutOf30Based": "Score out of 30 · Based on the Edinburgh Postnatal Depression Scale"
+        "scoreOutOf30Based": "Score out of 30 · A screening tool, not a diagnosis — always discuss the result with your care team",
+        "instructions": "Please select one option for each question that is the closest to how you have felt in the PAST SEVEN DAYS."
       },
       "birthplan": {
         "q": {
