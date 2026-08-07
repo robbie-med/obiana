@@ -1,0 +1,13 @@
+# Excluded from the Workers static-asset upload (.gitignore format).
+# Repo metadata and docs — not part of the served site.
+.git
+.gitignore
+.assetsignore
+.claude
+wrangler.jsonc
+node_modules
+.wrangler
+README.md
+TRANSLATING.md
+LICENSE
+CNAME

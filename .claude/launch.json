@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "myob",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "3107", "--bind", "127.0.0.1"],
+      "port": 3107
+    }
+  ]
+}

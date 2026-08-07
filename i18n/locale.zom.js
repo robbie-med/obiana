@@ -1,0 +1,27 @@
+// ═══════════════════════════════════════════════════════
+// LOCALE: zom
+// ═══════════════════════════════════════════════════════
+// STUB. Only the strings below are translated; every other key falls back to
+// English at runtime, so the app stays fully usable while translation is in
+// progress. Adding a key here overrides the English one — nothing else needed.
+//
+// reviewed:false drives the machine-translation notice in the UI.
+// No `epds` key => the Edinburgh scale is gated off for this language until
+// an OFFICIAL validated translation is added. Do not machine-translate it.
+
+window.MYOB_LOCALES = window.MYOB_LOCALES || {};
+
+window.MYOB_LOCALES.zom = {
+  "reviewed": false,
+  "translationStatus": "stub",
+  "ui": {
+    "app": {
+      "title": "Pregnancy & Birth Guide"
+    },
+    "lang": {
+      "unreviewedNotice": "This translation is not ready yet. The guide is shown in English. Please ask your care team if you need help reading it.",
+      "loadFailed": "Could not load",
+      "inProgress": "Translation in progress"
+    }
+  }
+};

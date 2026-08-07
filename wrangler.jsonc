@@ -1,0 +1,26 @@
+{
+  // Static-asset-only Worker: no `main`, no Worker script. Cloudflare serves
+  // the files in `directory` directly from the edge.
+  //
+  // Deployed via Workers Builds connected to the GitHub repo. The Worker name
+  // here MUST match the Worker name in the Cloudflare dashboard or the build
+  // fails.
+  "name": "obiana",
+  "compatibility_date": "2026-08-07",
+
+  "assets": {
+    // Repo root — this is a plain static site with no build step.
+    // See .assetsignore for what is excluded from upload.
+    "directory": "./",
+
+    // NOTE: deliberately NOT "single-page-application".
+    //
+    // The app has no client-side routes (navigation is in-page JS, the URL
+    // stays at "/"), so SPA handling would buy nothing — and it would actively
+    // hurt: it returns index.html with status 200 for ANY unmatched path,
+    // including a missing i18n/locale.<lang>.js. The service worker and the
+    // i18n loader both rely on a missing locale failing cleanly so they can
+    // fall back to English. Default handling gives a real 404.
+    "html_handling": "auto-trailing-slash"
+  }
+}

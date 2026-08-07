@@ -1,0 +1,187 @@
+{
+  "home": {
+    "myInfoContacts": "My Info &amp;<br>Contacts",
+    "saveYourCareTeamContacts": "Save Your Care Team Contacts",
+    "tapToCallOrText": "Tap to call or text directly from the app",
+    "callYourDoctorIf": "Call Your Doctor If…",
+    "duringPregnancy": "During Pregnancy",
+    "vaginalBleeding": "Vaginal bleeding",
+    "fluidGushingOrTrickling": "Fluid gushing or trickling",
+    "babyNotMovingNormally": "Baby not moving normally",
+    "severeHeadache": "Severe headache",
+    "visionChanges": "Vision changes",
+    "suddenSwellingOfFaceHands": "Sudden swelling of face/hands",
+    "fever1004F": "Fever &gt;100.4°F",
+    "contractionsBefore37Weeks": "Contractions before 37 weeks",
+    "afterDelivery": "After Delivery",
+    "soaking1PadHr2": "Soaking &gt;1 pad/hr × 2 hrs",
+    "woundOpensOrOozes": "Wound opens or oozes",
+    "legRednessSwelling": "Leg redness/swelling",
+    "chestPainOrTroubleBreathing": "Chest pain or trouble breathing",
+    "thoughtsOfSelfHarm": "Thoughts of self-harm"
+  },
+  "pregnancy": {
+    "section1": "Section 1",
+    "prenatalVisitsPregnancy": "Prenatal Visits<br>&amp; Pregnancy",
+    "aVisitByVisitGuide": "A visit-by-visit guide, cervical exams explained, exercise during pregnancy, and what to ask at each stage."
+  },
+  "labor": {
+    "section2": "Section 2",
+    "laborDelivery": "Labor &amp;<br>Delivery",
+    "signsOfLaborWhatHappens": "Signs of labor, what happens when you arrive, pain management options, C-section, and high-risk care."
+  },
+  "recovery": {
+    "section3": "Section 3",
+    "postpartumRecovery": "Postpartum<br>Recovery",
+    "physicalHealingMoodAndPpd": "Physical healing, mood and PPD, pelvic rest, returning to exercise, and when to go home."
+  },
+  "baby": {
+    "section4": "Section 4",
+    "yourNewborn": "Your<br>Newborn",
+    "breastfeedingFormulaCordCareSafe": "Breastfeeding, formula, cord care, safe sleep, normal newborn appearance, and follow-up appointments."
+  },
+  "faq": {
+    "section5": "Section 5",
+    "faqCommonMyths": "FAQ &amp;<br>Common Myths",
+    "evidenceBasedAnswersToThe": "Evidence-based answers to the most common questions — including things you've heard from family, friends, and the internet."
+  },
+  "myinfo": {
+    "myInformation": "My Information",
+    "myCareTeamKeyDetails": "My Care Team &amp;<br>Key Details",
+    "savedOnYourPhoneTap": "Saved on your phone · Tap to call or text",
+    "careTeamContacts": "Care Team Contacts",
+    "myPregnancyDetails": "My Pregnancy Details",
+    "questionsForMyDoctor": "Questions for My Doctor",
+    "saveMyInformation": "Save My Information",
+    "exportData": "Export Data"
+  },
+  "tools": {
+    "dailyTools": "Daily Tools",
+    "trackersPlanners": "Trackers &amp;<br>Planners",
+    "timeContractionsCountKicksLog": "Time contractions, count kicks, log feedings and diapers, track blood pressure, plan your birth, and more.",
+    "labor": "Labor",
+    "kickCounter": "Kick Counter",
+    "10MovesIn2Hours": "10 moves in 2 hours — log sessions &amp; history",
+    "contractionTimer": "Contraction Timer",
+    "tapStartStop51": "Tap start/stop · 5-1-1 alert · When to go in",
+    "newbornPostpartum": "Newborn &amp; Postpartum",
+    "feedingLog": "Feeding Log",
+    "breastOrBottle24Hr": "Breast or bottle · 24-hr count · Alerts if low",
+    "diaperLog": "Diaper Log",
+    "wetDirtyCountDailyTotals": "Wet &amp; dirty count · Daily totals for the doctor",
+    "jaundiceTracker": "Jaundice Tracker",
+    "dayByDayGuidanceFrom": "Day-by-day guidance from birth",
+    "moodCheckIn": "Mood Check-In",
+    "epdsScreenWeeklyTrackingFlags": "EPDS screen · Weekly tracking · Flags concerns",
+    "pregnancyMonitoring": "Pregnancy Monitoring",
+    "bloodPressure": "Blood Pressure",
+    "logReadingsFlags14090": "Log readings · Flags ≥ 140/90 automatically",
+    "weightTracker": "Weight Tracker",
+    "logByWeekIomGain": "Log by week · IOM gain guidelines for your BMI",
+    "planning": "Planning",
+    "birthPlanBuilder": "Birth Plan Builder",
+    "guidedChoicesShareableOnePage": "Guided choices · Shareable one-page summary",
+    "visitNotes": "Visit Notes",
+    "questionsBeforeNotesDuringEvery": "Questions before · Notes during every visit"
+  },
+  "toolkick": {
+    "kickCounter": "Kick Counter"
+  },
+  "toolcontractions": {
+    "contractionTimer": "Contraction Timer"
+  },
+  "toolfeeding": {
+    "feedingLog": "Feeding Log"
+  },
+  "tooldiapers": {
+    "diaperLog": "Diaper Log"
+  },
+  "tooljaundice": {
+    "jaundiceTracker": "Jaundice Tracker"
+  },
+  "toolbp": {
+    "bloodPressureLog": "Blood Pressure Log"
+  },
+  "toolweight": {
+    "weightTracker": "Weight Tracker"
+  },
+  "toolmood": {
+    "moodCheckIn": "Mood Check-In"
+  },
+  "toolbirthplan": {
+    "birthPlanBuilder": "Birth Plan Builder"
+  },
+  "toolappts": {
+    "visitNotes": "Visit Notes"
+  },
+  "app": {
+    "home": "Home",
+    "prenatal": "Prenatal",
+    "labor": "Labor",
+    "recovery": "Recovery",
+    "baby": "Baby",
+    "faq": "FAQ",
+    "tools": "Tools"
+  },
+  "modalFeed": {
+    "logAFeeding": "Log a Feeding",
+    "type": "Type",
+    "breast": "🤱 Breast",
+    "bottle": "🍼 Bottle",
+    "side": "Side",
+    "left": "Left",
+    "right": "Right",
+    "both": "Both",
+    "durationMinutes": "Duration (minutes)",
+    "amountOz": "Amount (oz)",
+    "saveFeed": "Save Feed"
+  },
+  "modalBp": {
+    "logBloodPressure": "Log Blood Pressure",
+    "systolicTop": "Systolic (top #)",
+    "diastolicBottom": "Diastolic (bottom #)",
+    "normalRange": "Normal range",
+    "below12080IsNormal": "Below 120/80 is normal. ≥ 140/90 during pregnancy needs same-day attention.",
+    "saveReading": "Save Reading"
+  },
+  "modalWeight": {
+    "logWeight": "Log Weight",
+    "weightLbs": "Weight (lbs)",
+    "weekOfPregnancy": "Week of pregnancy",
+    "save": "Save"
+  },
+  "modalAppt": {
+    "addVisit": "Add Visit",
+    "visitType": "Visit Type",
+    "date": "Date",
+    "questionsToAskBeforehand": "Questions to ask beforehand",
+    "notesFromVisit": "Notes from visit",
+    "saveVisit": "Save Visit"
+  },
+  "apptType": {
+    "selectType": "Select type…",
+    "obRoutine": "OB – Routine",
+    "obTriage": "OB – L&amp;D Triage / Unscheduled",
+    "mfmConsult": "MFM Consultation",
+    "mfmFollowup": "MFM Follow-up",
+    "endo": "Endocrinology",
+    "cardio": "Cardiology",
+    "nephro": "Nephrology",
+    "ultrasound": "Ultrasound",
+    "nst": "Non-Stress Test (NST)",
+    "lactation": "Lactation Consult",
+    "pp2wk": "Postpartum – 2 weeks",
+    "pp6wk": "Postpartum – 6 weeks",
+    "peds25d": "Pediatrician – 2–5 days",
+    "peds2wk": "Pediatrician – 2 weeks",
+    "peds2mo": "Pediatrician – 2 months",
+    "family": "Family Doctor",
+    "other": "Other"
+  },
+  "install": {
+    "addToPhone": "Add to Phone"
+  },
+  "common": {
+    "toolsBack": "Tools"
+  }
+}

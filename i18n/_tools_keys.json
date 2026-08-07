@@ -1,0 +1,85 @@
+{
+  "tool": {
+    "kick": {
+      "startSession": "Start Session",
+      "movementsThisSession": "movements this session",
+      "elapsed": "Elapsed:",
+      "20000Limit": "2:00:00 limit",
+      "lessThan10MovementsIn": "⚠ Less than 10 movements in 2 hours",
+      "thisMayNeedAttentionCall": "This may need attention — call your doctor.",
+      "10MovementsReached": "10 movements reached!",
+      "startAnotherSession": "Start Another Session",
+      "sessionHistory": "Session History"
+    },
+    "common": {
+      "recentContractions": "Recent Contractions",
+      "timeToGoToThe": "🚨 Time to go to the hospital",
+      "511PatternReached": "5-1-1 Pattern Reached"
+    },
+    "feed": {
+      "feedsInLast24Hrs": "Feeds in last 24 hrs",
+      "lastFeed": "Last feed",
+      "logAFeeding": "+ Log a Feeding",
+      "feedLog": "Feed Log",
+      "feedLogged": "Feed logged"
+    },
+    "diaper": {
+      "wetToday": "Wet Today",
+      "dirtyToday": "Dirty Today",
+      "bothWetDirty": "+ Both (wet &amp; dirty)",
+      "whatToExpectByAge": "What to expect by age",
+      "day1212": "Day 1–2: 1–2 wet diapers · Day 3–4: 3–4 wet · Day 5+: 6+ wet, 3–4 dirty per day. Fewer than 6 wet diapers after day 5 → call your doctor.",
+      "todaySLog": "Today's Log"
+    },
+    "jaundice": {
+      "babySBirthDate": "Baby's Birth Date",
+      "set": "Set",
+      "birthDateSaved": "Birth date saved"
+    },
+    "bp": {
+      "logBloodPressure": "+ Log Blood Pressure",
+      "whenToCallYourDoctor": "When to call your doctor",
+      "anyReading14090During": "Any reading ≥ 140/90 during pregnancy or postpartum. ≥ 160/110 is a medical emergency — call L&D or 911.",
+      "readings": "Readings",
+      "enterValidNumbersEG": "Enter valid numbers (e.g. 118 / 76)",
+      "highReadingContactYourDoctor": "High reading — contact your doctor"
+    },
+    "weight": {
+      "yourProfile": "Your Profile",
+      "prePregnancyWeightLbs": "Pre-pregnancy weight (lbs)",
+      "prePregnancyBmi": "Pre-pregnancy BMI",
+      "saveProfile": "Save Profile",
+      "logWeight": "+ Log Weight",
+      "weightLog": "Weight Log",
+      "profileSaved": "Profile saved",
+      "enterValidWeightAndPregnancy": "Enter valid weight and pregnancy week"
+    },
+    "mood": {
+      "edinburghPostnatalDepressionScale": "Edinburgh Postnatal Depression Scale",
+      "inThePast7Days": "in the past 7 days",
+      "yourAnswersAreSavedOnly": "Your answers are saved only on this phone.",
+      "getMyScore": "Get My Score",
+      "scoreOutOf30Based": "Score out of 30 · Based on the Edinburgh Postnatal Depression Scale"
+    },
+    "birthplan": {
+      "additionalNotesComments": "Additional notes / comments",
+      "copyToShare": "Copy to Share",
+      "printPdf": "Print / PDF",
+      "additionalNotes": "Additional notes:",
+      "myBirthPreferences": "My Birth Preferences",
+      "pregnancyBirthGuideEvidenceBased": "Pregnancy &amp; Birth Guide · Evidence-based · Private &amp; offline",
+      "anyOtherPreferencesConcernsOr": "Any other preferences, concerns, or information for your care team…",
+      "copiedToClipboard": "Copied to clipboard!",
+      "copyNotSupportedOnThis": "Copy not supported on this browser"
+    },
+    "appts": {
+      "addVisit": "+ Add Visit",
+      "questionsToAsk": "Questions to ask",
+      "noneAdded": "None added",
+      "notesFromVisit": "Notes from visit",
+      "edit": "Edit",
+      "delete": "Delete",
+      "visitDeleted": "Visit deleted"
+    }
+  }
+}
