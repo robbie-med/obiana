@@ -1,0 +1,32 @@
+{
+  "followup-appts": {
+    "title": "Citas de seguimiento para el bebé y para usted",
+    "sub": "El calendario y qué pasa en cada visita",
+    "body": "\n        <p class=\"lead navy\">Antes de salir del hospital, confirme que estas citas ya estén programadas. No se vaya sin ellas.</p>\n        <h4>Para el bebé (pediatra)</h4>\n        <table class=\"data-table\">\n          <tr><th class=\"navy\">Cuándo</th><th class=\"navy\">Propósito</th></tr>\n          <tr><td><strong>2–5 días de nacido</strong></td><td>Control de peso: es fundamental confirmar que está recuperando el peso de nacimiento. Evaluación de ictericia. Evaluación de la alimentación. Seguimiento de las pruebas de detección del recién nacido.</td></tr>\n          <tr><td><strong>2 semanas</strong></td><td>¿Ya recuperó el peso de nacimiento? Revisión del desarrollo y la alimentación. Revisión del muñón del cordón umbilical.</td></tr>\n          <tr><td><strong>2 meses</strong></td><td>Primeras vacunas, crecimiento y hitos del desarrollo</td></tr>\n          <tr><td><strong>4, 6, 9, 12 meses</strong></td><td>Crecimiento, desarrollo, vacunas (el calendario continúa durante la infancia)</td></tr>\n        </table>\n        <h4>Para usted (obstetra/partera)</h4>\n        <table class=\"data-table\">\n          <tr><th class=\"navy\">Cuándo</th><th class=\"navy\">Propósito</th></tr>\n          <tr><td><strong>1–3 días</strong> (cesárea o complicaciones)</td><td>Revisión de la herida, control de la presión arterial, dolor</td></tr>\n          <tr><td><strong>2 semanas</strong></td><td>Evaluación del estado de ánimo, presión arterial, herida/periné, apoyo con la lactancia</td></tr>\n          <tr><td><strong>6 semanas</strong></td><td>Examen físico completo, examen pélvico, conversación sobre anticoncepción, autorización para hacer ejercicio</td></tr>\n        </table>\n        <div class=\"callout navy\">\n          <div class=\"callout-title\">Preguntas que debe hacer antes de salir del hospital</div>\n          <p>¿A quién llamo si tengo una pregunta antes de mi primera cita? · ¿El bebé se está alimentando bien? ¿Cómo sabré si no? · ¿En qué momento debo llamar al pediatra? · ¿Hubo alguna prueba anormal que necesite seguimiento? · ¿Debo despertar al bebé para alimentarlo por la noche? · ¿Cuáles son mis instrucciones para el cuidado de la herida?</p>\n        </div>"
+  },
+  "faq-deli": {
+    "title": "¿Puedo comer embutidos y quesos blandos?",
+    "sub": "",
+    "body": "<p>El riesgo principal es la <em>Listeria</em>, una infección bacterial que es poco común, pero puede ser grave durante el embarazo (puede atravesar la placenta). La FDA recomienda evitar los quesos no pasteurizados y los embutidos, a menos que se calienten hasta que humeen (165°F). La mayoría de los quesos blandos pasteurizados (como el brie pasteurizado o el queso feta de paquete) son seguros. El riesgo general de comer embutidos de vez en cuando es muy bajo: esta recomendación es preventiva, no significa que un sándwich de pavo vaya a causarle una enfermedad. Si tiene dudas, caliéntelo.</p>"
+  },
+  "faq-coffee": {
+    "title": "¿Puedo tomar cafeína?",
+    "sub": "",
+    "body": "<p>Sí. ACOG recomienda limitar la cafeína a <strong>menos de 200 mg por día</strong> (aproximadamente una taza de café de goteo de 12 oz). A ese nivel, no se ha comprobado que haga daño al embarazo. El té, los refrescos y el chocolate también contienen cafeína: súmelos todos. Reducir el consumo es razonable; eliminarla por completo es una decisión personal, no una necesidad médica.</p>"
+  },
+  "faq-hair-dye": {
+    "title": "¿Puedo pintarme el cabello durante el embarazo?",
+    "sub": "",
+    "body": "<p>Sí. El tinte para el cabello se absorbe por el cuero cabelludo en cantidades muy pequeñas. Ningún estudio publicado ha demostrado daño al feto con las cantidades que se usan al pintarse el cabello en un salón o en casa. La mayoría de los médicos lo consideran seguro, sobre todo después del primer trimestre. Las mechas (con papel de aluminio) tienen aún menos contacto con el cuero cabelludo. Si le preocupa, espere hasta el segundo trimestre, cuando ya se completó el desarrollo de los órganos principales.</p>"
+  },
+  "faq-exercise-mc": {
+    "title": "¿El ejercicio causa aborto espontáneo?",
+    "sub": "",
+    "body": "<p>No. El ejercicio moderado no causa aborto espontáneo en embarazos saludables. Este es uno de los mitos más extendidos sobre el embarazo. Los abortos espontáneos tempranos casi siempre se deben a anomalías cromosómicas en el embrión, no al ejercicio, las relaciones sexuales, el estrés ni nada que haya hecho la madre. El ejercicio protege, no hace daño. Vea las pautas de ejercicio en la sección Prenatal.</p>"
+  },
+  "faq-sex-pregnancy": {
+    "title": "¿Es seguro tener relaciones sexuales durante el embarazo?",
+    "sub": "",
+    "body": "<p>Sí, en un embarazo normal sin complicaciones. Las relaciones sexuales no causan aborto espontáneo ni parto prematuro, y no dañan al bebé (que está protegido por el líquido amniótico). Su médico le recomendará reposo pélvico (sin relaciones sexuales) solo si tiene situaciones específicas: placenta previa, riesgo de parto prematuro, sangrado vaginal sin explicación, ciertos problemas del cuello uterino, o después de que se le haya roto la fuente. Si no está segura, pregunte en su próxima cita.</p>"
+  }
+}

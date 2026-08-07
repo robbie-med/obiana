@@ -1,0 +1,17 @@
+{
+  "faq-jaundice": {
+    "title": "Mi bebé se ve amarillo: ¿cuándo es grave?",
+    "sub": "",
+    "body": "<p>La ictericia del recién nacido (hiperbilirrubinemia) afecta a cerca del 60% de los bebés nacidos a término durante la primera semana. Se debe a la descomposición normal de los glóbulos rojos del feto: el hígado solo se está poniendo al día. La mayoría de los casos son leves y se resuelven sin tratamiento. Se vuelve preocupante cuando los niveles de bilirrubina son muy altos (con riesgo de daño cerebral en niveles extremos) o cuando el bebé está muy adormilado, no se alimenta, o la ictericia aparece en las primeras 24 horas. El hospital le revisará la bilirrubina antes del alta y en la visita con el pediatra entre los días 2–5. El tratamiento con fototerapia (lámparas de bilirrubina) es muy eficaz si se necesita.</p>"
+  },
+  "faq-newborn-procedures": {
+    "title": "¿Tienen que hacerse todos los procedimientos del recién nacido?",
+    "sub": "",
+    "body": "<p>Los procedimientos habituales del recién nacido incluyen: la <strong>inyección de vitamina K</strong> (previene un trastorno grave de sangrado —VKDB, enfermedad hemorrágica por deficiencia de vitamina K— que puede causar sangrado mortal en el cerebro), la <strong>pomada ocular de eritromicina</strong> (previene infecciones de los ojos, incluida la gonorrea), la <strong>primera dosis de la vacuna contra la hepatitis B</strong> y el <strong>análisis de sangre del tamizaje metabólico del recién nacido</strong> (punción en el talón para detectar unas 30 enfermedades, como PKU, hipotiroidismo y anemia de células falciformes). Todos se recomiendan porque los riesgos de las enfermedades que previenen superan con mucho los riesgos de los procedimientos. En la mayoría de los estados usted puede negarse legalmente, pero hable primero con honestidad sobre los riesgos con su médico.</p>"
+  },
+  "faq-first-bath": {
+    "title": "¿Cuándo necesita mi bebé el primer baño?",
+    "sub": "",
+    "body": "<p>La OMS y la AAP ahora recomiendan retrasar el primer baño al menos 24 horas después del nacimiento (lo ideal son 48 horas). La capa blanca que cubre al bebé (vérnix caseosa) tiene propiedades antimicrobianas y ayuda a humectar la piel. Retrasar el baño también ayuda a mantener la temperatura corporal, favorece la estabilidad del azúcar en la sangre y se asocia con un mejor inicio de la lactancia materna. Esperar es la mejor práctica actual, no solo una preferencia.</p>"
+  }
+}

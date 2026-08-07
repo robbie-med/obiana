@@ -21,8 +21,10 @@ CNAME
 # Nothing here belongs on the public site.
 translation
 
-# EPDS sourcing notes and structural verifier — tooling, not site content.
-i18n/epds
+# EPDS tooling — the epds.*.js modules ARE served; these are not.
+i18n/epds/SOURCES.md
+i18n/epds/verify.js
+i18n/epds/extract.js
 
 # Intermediate key-extraction artifacts kept for regeneration, not for serving.
 i18n/_html_keys.json

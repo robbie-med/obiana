@@ -775,10 +775,36 @@ function saveWeight() {
 //
 // To add a language: put the OFFICIAL published translation in that
 // locale file as epds.questions with validated: true. Do not translate it here.
-function getEPDS() {
-  const l = (window.MYOB_LOCALES[I18n.lang] || {}).epds;
-  return (l && l.validated && Array.isArray(l.questions) && l.questions.length === 10) ? l : null;
+// The EPDS language is chosen INDEPENDENTLY of the app UI language.
+// Many patients read a second language fluently — a Zomi speaker may read
+// Hakha Chin or Burmese — and an officially validated instrument in a language
+// the patient can read beats no instrument at all.
+const EPDS_CHOICE_KEY = 'myob.epdsLang';
+
+function epdsAvailable() {
+  return Object.keys(window.MYOB_EPDS || {}).filter(c => {
+    const e = window.MYOB_EPDS[c];
+    return e && e.validated && Array.isArray(e.questions) && e.questions.length === 10;
+  });
 }
+
+function getEPDS() {
+  const avail = epdsAvailable();
+  if (!avail.length) return null;
+  let chosen = null;
+  try { chosen = localStorage.getItem(EPDS_CHOICE_KEY); } catch (e) {}
+  if (chosen && avail.includes(chosen)) return window.MYOB_EPDS[chosen];
+  // Default to the app language when a validated form exists for it.
+  if (avail.includes(I18n.lang)) return window.MYOB_EPDS[I18n.lang];
+  return null;   // force an explicit choice rather than silently using English
+}
+
+function setEPDSLang(code) {
+  try { localStorage.setItem(EPDS_CHOICE_KEY, code); } catch (e) {}
+  epdsAnswers = {};
+  initMood();
+}
+
 
 let epdsAnswers = {};
 let epdsHistory = JSON.parse(localStorage.getItem('epds-history') || '[]');
@@ -792,23 +818,31 @@ function initMood() {
 
   const epds = getEPDS();
   if (!epds) {
-    // No validated instrument for this language. Refusing is the safe
-    // failure: a machine-translated depression screen still produces a
-    // number, and that number would look just as authoritative as a real one.
-    const langs = Object.keys(window.MYOB_LOCALES)
-      .filter(c => (window.MYOB_LOCALES[c].epds || {}).validated)
-      .map(c => I18n.LOCALES[c] ? I18n.LOCALES[c].native : c);
+    // No validated instrument selected for this language. Offer every form we
+    // DO have, labelled in its own language — rather than silently defaulting
+    // to English or scoring a machine translation.
+    const avail = epdsAvailable();
     el.innerHTML = `
-      <div style="padding:24px 20px">
+      <div style="padding:20px 16px">
         <div class="callout alert">
           <div class="callout-title">${escHtml(I18n.t('tool.mood.unavailableTitle'))}</div>
           <p>${escHtml(I18n.t('tool.mood.unavailableBody'))}</p>
         </div>
-        <p style="font-size:13px;color:var(--ink-soft);line-height:1.6;margin-top:12px">
-          ${escHtml(I18n.t('tool.mood.availableIn', { langs: langs.join(', ') }))}
+        <p style="font-size:13.5px;color:var(--ink);line-height:1.6;margin:14px 0 10px">
+          ${escHtml(I18n.t('tool.mood.chooseLanguage'))}
         </p>
-        <button class="big-action-btn btn-plum" style="margin-top:16px"
-          onclick="I18n.setLocale('en')">${escHtml(I18n.t('tool.mood.switchToEnglish'))}</button>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          ${avail.map(c => {
+            const e = window.MYOB_EPDS[c];
+            return `<button class="big-action-btn btn-plum" style="text-align:start"
+                      lang="${c}" onclick="setEPDSLang('${c}')">
+                      ${escHtml(e.native || e.name || c)}
+                    </button>`;
+          }).join('')}
+        </div>
+        <p style="font-size:12px;color:var(--ink-soft);line-height:1.5;margin-top:14px">
+          ${escHtml(I18n.t('tool.mood.validatedOnlyNote'))}
+        </p>
       </div>`;
     return;
   }
@@ -818,10 +852,17 @@ function initMood() {
     <div style="padding:12px 16px 0">
       <p style="font-size:13.5px;color:var(--ink);line-height:1.6;margin-bottom:4px">
         <strong>${t('tool.mood.edinburghPostnatalDepressionScale')}</strong> —
-        Answer based on how you've felt <strong>${t('tool.mood.inThePast7Days')}</strong>.
+        <span lang="${epds.language}">${escHtml(epds.instructions || '')}</span>
       </p>
       <p style="font-size:12px;color:var(--ink-soft)">${t('tool.mood.yourAnswersAreSavedOnly')}</p>
     </div>
+    ${epdsAvailable().length > 1 ? `
+    <div style="padding:0 16px 8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+      <span style="font-size:12px;color:var(--ink-soft)">${escHtml(I18n.t('tool.mood.instrumentLanguage'))}</span>
+      <strong style="font-size:13px" lang="${epds.language}">${escHtml(epds.native || epds.name)}</strong>
+      <button class="btn-sm" style="background:var(--plum-light);color:var(--plum);border:none"
+        onclick="setEPDSLang('')">${escHtml(I18n.t('tool.mood.change'))}</button>
+    </div>` : ''}
     <div id="epds-questions">
       ${EPDS_Q.map((q, qi) => `
         <div class="epds-question">

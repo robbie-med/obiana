@@ -27,6 +27,33 @@ Two separate risks:
    undetectable to anyone who does not read the language. **Whoever pastes a
    translation in must be able to read it.**
 
+## Current status
+
+| Language | Status |
+|---|---|
+| English | ✅ shipped — verbatim from the published form |
+| Spanish | ✅ shipped — MHCS, mechanically extracted, **checked item-by-item against English** (this was the pipeline's control) |
+| Chin (Hakha) | ✅ shipped — MHCS, mechanically extracted, order confirmed via the form's own yes/no particles |
+| Korean | ⏳ extracts 10/10 items but options wrap across lines; 2 items short |
+| Chinese (Simp.) | ⏳ same wrapping issue on 1 item |
+| Arabic | ⏳ text layer is wrapped in bidi control characters, so item numbers do not match; parser needs a bidi-aware pre-pass |
+| French | ❌ not on MHCS — try eCALD |
+| Russian | ❌ not on MHCS |
+| Burmese | ❌ **no downloadable validated form found anywhere.** Validation studies exist (Thai–Myanmar border 2017; Myanmar M-EPDS 2020, which reports a cutoff of 10/11, not 13) but the instrument text is not published for download |
+| Zomi (Tedim) | ❌ no validated version found |
+
+Re-run an extraction with:
+
+```bash
+node i18n/epds/extract.js <lang> path/to/Official.pdf
+node i18n/epds/verify.js
+```
+
+`extract.js` refuses to emit anything it cannot parse cleanly — including a
+guard that rejects ASCII margin furniture leaking into a non-Latin form, which
+is how `NOWRITING` first ended up as option 4 of a Korean item while every
+structural check still passed.
+
 ## Where the validated versions are published
 
 NSW Health Multicultural Health Communication Service publishes translations

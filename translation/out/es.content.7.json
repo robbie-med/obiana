@@ -1,0 +1,32 @@
+{
+  "faq-eat-in-labor": {
+    "title": "¿Puedo comer o beber durante el trabajo de parto?",
+    "sub": "",
+    "body": "<p>Para las mujeres de bajo riesgo en la fase inicial del trabajo de parto, la guía actual de ACOG permite comidas ligeras y líquidos claros. Una vez que tiene una epidural, está recibiendo Pitocin u oxitocina, o tiene mayor riesgo de necesitar anestesia general (posible cesárea), la mayoría de los hospitales solo permiten hielo picado o sorbos de agua, por el riesgo de aspiración si la anestesia general se hace necesaria. Pregunte por la política específica de su hospital. Para la persona que la acompaña: traiga bocadillos. El trabajo de parto puede ser un día muy largo.</p>"
+  },
+  "faq-vbac": {
+    "title": "Si tuve una cesárea antes, ¿siempre necesitaré otra?",
+    "sub": "",
+    "body": "<p>No necesariamente. El parto vaginal después de una cesárea (VBAC) es una opción segura y adecuada para muchas mujeres con una incisión uterina transversa baja previa. Las tasas de éxito van de 60 a 80%. Los factores que afectan si usted es candidata incluyen el motivo de la cesárea anterior, su embarazo actual, el tipo de incisión uterina y la capacidad de su hospital para manejar una emergencia. Mencione esto al principio de su atención prenatal si le interesa.</p>"
+  },
+  "faq-bf-bc": {
+    "title": "¿Puedo quedar embarazada mientras amamanto?",
+    "sub": "",
+    "body": "<p>Sí. Aunque la lactancia exclusiva suprime la ovulación hasta cierto punto, <strong>no es un anticonceptivo confiable</strong>. Usted puede ovular —y quedar embarazada— antes de que le regrese la menstruación. El \"método de la amenorrea por lactancia\" exige condiciones muy específicas (lactancia exclusiva cada 4 horas durante el día y cada 6 horas en la noche, sin suplementos y sin que haya regresado la menstruación) y solo es aproximadamente 98% eficaz bajo esas condiciones estrictas. Hable sobre métodos anticonceptivos antes de salir del hospital.</p>"
+  },
+  "faq-stress-milk": {
+    "title": "¿El estrés hace que la leche materna se seque?",
+    "sub": "",
+    "body": "<p>El estrés agudo puede interferir temporalmente con el reflejo de bajada de la leche (la salida de la leche), pero no afecta la producción de leche a largo plazo. La producción de leche depende de la demanda: cuanto más frecuente y eficazmente el bebé se alimente al pecho o usted use el extractor, más leche producirá su cuerpo. Estrategias que ayudan a la bajada de la leche: contacto piel con piel, calor, técnicas de relajación y mirar una foto de su bebé cuando use el extractor.</p>"
+  },
+  "faq-bonding": {
+    "title": "¿Debería sentir un vínculo instantáneo con mi bebé?",
+    "sub": "",
+    "body": "<p>No — crear un vínculo es un proceso, no un solo momento. Muchas madres sienten un amor profundo de inmediato al nacer; otras necesitan días, semanas o más tiempo para desarrollar ese sentimiento. Ambas experiencias son completamente normales. El agotamiento físico, los partos difíciles, los resultados inesperados y la depresión posparto (PPD) pueden afectar el vínculo temprano. Si se siente desconectada o sin emoción hacia su bebé por más de un par de semanas, dígaselo a su médico: puede ser una señal de depresión posparto, que tiene tratamiento.</p>"
+  },
+  "faq-ibuprofen-bf": {
+    "title": "¿Puedo tomar ibuprofeno mientras amamanto?",
+    "sub": "",
+    "body": "<p>Sí. El ibuprofeno es uno de los medicamentos de venta libre más seguros durante la lactancia: muy poco pasa a la leche materna. El acetaminofén (Tylenol) también es seguro. Estos son los analgésicos preferidos en el posparto y durante la lactancia. La aspirina en dosis altas no se recomienda (la aspirina recetada en dosis bajas es otra cuestión: hable con su médico). El naproxeno (Aleve) pasa más a la leche y en general no se prefiere. Confirme siempre con su equipo de atención médica según su situación específica.</p>"
+  }
+}

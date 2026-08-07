@@ -1,0 +1,32 @@
+{
+  "faq-vaccines": {
+    "title": "¿Son seguras las vacunas durante el embarazo?",
+    "sub": "",
+    "body": "<p>Sí, y algunas se recomiendan con fuerza. La <strong>Tdap</strong> (refuerzo contra la tos ferina, semanas 27–36) y la <strong>vacuna contra la gripe</strong> se recomiendan en cada embarazo. La <strong>vacuna contra el COVID-19</strong> también se recomienda. Estas vacunas le protegen de enfermedades graves y le pasan anticuerpos a su bebé a través de la placenta, protegiéndolo antes de que pueda ser vacunado. Las vacunas de virus vivos (MMR, varicela) no se aplican durante el embarazo. Pregunte a su médico cuáles le faltan.</p>"
+  },
+  "faq-eat-for-two": {
+    "title": "¿Necesito \"comer por dos\"?",
+    "sub": "",
+    "body": "<p>No — \"comer por dos\" es un mito. En el primer trimestre, las calorías extra que necesita son mínimas. Para el tercer trimestre, necesita aproximadamente 300 calorías extra al día (más o menos un vaso de leche y un plátano). La calidad de la alimentación importa mucho más que la cantidad. Concéntrese en las proteínas, el hierro, el folato, el calcio y los ácidos grasos omega-3. Su vitamina prenatal ayuda a cubrir lo que le falte, pero no debe reemplazar una dieta balanceada.</p>"
+  },
+  "faq-hot-tub": {
+    "title": "¿Puedo darme baños de tina o usar un jacuzzi?",
+    "sub": "",
+    "body": "<p>Los baños tibios están bien durante todo el embarazo. Los jacuzzis, saunas y baños de vapor que elevan la temperatura interna de su cuerpo por encima de 102°F (39°C) no se recomiendan, sobre todo en el primer trimestre, cuando la temperatura elevada se asocia con defectos del tubo neural. Si usa un jacuzzi, mantenga la temperatura agradable (no caliente), limite el tiempo a 10 minutos y evítelo en el primer trimestre. Un baño tibio con agua a la temperatura normal de casa (98–100°F) es seguro.</p>"
+  },
+  "faq-epidural-csec": {
+    "title": "¿La epidural aumenta el riesgo de cesárea?",
+    "sub": "",
+    "body": "<p>No. Esta es una de las preguntas más estudiadas en obstetricia. Varios ensayos controlados aleatorios grandes y metaanálisis confirman que las epidurales <strong>no</strong> aumentan la tasa de cesáreas. La epidural puede alargar un poco la etapa de pujos, pero esto se maneja con seguridad con paciencia y la guía de la enfermera. Puede pedir una epidural en cualquier momento del trabajo de parto activo: no existe un momento \"demasiado pronto\" ni \"demasiado tarde\".</p>"
+  },
+  "faq-routine-episiotomy": {
+    "title": "¿Necesito una episiotomía para evitar un desgarro?",
+    "sub": "",
+    "body": "<p>No. La episiotomía de rutina (un corte quirúrgico en la abertura de la vagina) ya no es recomendada por ACOG. La evidencia muestra de forma constante que <strong>los desgarros naturales generalmente sanan mejor</strong> y causan menos complicaciones (incluidos el dolor y los problemas del suelo pélvico a largo plazo) que las episiotomías de rutina. La mayoría de las mujeres que dan a luz por vía vaginal tienen algún grado de desgarro, pero muchos son leves (de primer grado). La episiotomía sigue siendo apropiada cuando hay una indicación específica, por ejemplo, cuando el bebé necesita nacer rápidamente por sufrimiento fetal.</p>"
+  },
+  "faq-water-breaking": {
+    "title": "Si se me rompe la fuente, ¿tengo que tener una cesárea?",
+    "sub": "",
+    "body": "<p>No. Si se le rompen las membranas (se le rompe la fuente) a término, la mayoría de las mujeres entran en trabajo de parto por sí solas en un plazo de 12 horas. Si el trabajo de parto no comienza, se ofrece una inducción para reducir el riesgo de infección: la guía indica completar el parto dentro de 18–24 horas. Si usted es GBS-positiva, se inician antibióticos de inmediato. Solo se necesita una cesárea si hay otras indicaciones; la ruptura de la fuente por sí sola no es una de ellas.</p>"
+  }
+}

@@ -19,17 +19,17 @@ const DIR = path.join(__dirname, '..');
 // The published EPDS reverses these items (first option scores 3).
 const OFFICIAL_REVERSED = [3, 5, 6, 7, 8, 9, 10];
 
-const files = fs.readdirSync(DIR).filter(f => /^locale\.[a-z]{2,3}\.js$/.test(f));
+const files = fs.readdirSync(__dirname).filter(f => /^epds\.[a-z]{2,3}\.js$/.test(f));
 let problems = 0, checked = 0, gated = [];
 
 for (const file of files) {
-  const lang = file.match(/^locale\.([a-z]{2,3})\.js$/)[1];
-  global.window = { MYOB_LOCALES: {} };
-  delete require.cache[require.resolve(path.join(DIR, file))];
-  try { require(path.join(DIR, file)); }
+  const lang = file.match(/^epds\.([a-z]{2,3})\.js$/)[1];
+  global.window = { MYOB_EPDS: {} };
+  delete require.cache[require.resolve(path.join(__dirname, file))];
+  try { require(path.join(__dirname, file)); }
   catch (e) { console.log(`✗ ${lang}: file failed to load — ${e.message}`); problems++; continue; }
 
-  const epds = (global.window.MYOB_LOCALES[lang] || {}).epds;
+  const epds = global.window.MYOB_EPDS[lang];
   if (!epds) { gated.push(lang); continue; }
   checked++;
 
@@ -77,10 +77,7 @@ for (const file of files) {
   else console.log(`✓ ${lang}: 10 items, 0..30, reverse-scored [${OFFICIAL_REVERSED.join(', ')}], attributed`);
 }
 
-if (gated.length) {
-  console.log(`\ngated (no epds block — Mood Check-In disabled, which is correct until an`);
-  console.log(`official validated translation is added): ${gated.join(', ')}`);
-}
+if (gated.length) console.log(`\nempty modules: ${gated.join(', ')}`);
 console.log(`\n${checked} EPDS block(s) checked, ${problems} with problems.`);
 if (checked && !problems) {
   console.log('Structure is sound. This does NOT verify translation accuracy —');
