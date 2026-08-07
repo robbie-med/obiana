@@ -1,13 +1,27 @@
 # Excluded from the Workers static-asset upload (.gitignore format).
-# Repo metadata and docs — not part of the served site.
+# NOTE: assets.directory is the repo root, so anything not listed here is
+# PUBLICLY SERVED. Add new non-site files to this list.
+
+# Repo metadata
 .git
 .gitignore
 .assetsignore
 .claude
-wrangler.jsonc
-node_modules
 .wrangler
+node_modules
+wrangler.jsonc
+
+# Docs — not part of the served site
 README.md
 TRANSLATING.md
 LICENSE
 CNAME
+
+# Translation tooling: prompts, source strings and model output.
+# Nothing here belongs on the public site.
+translation
+
+# Intermediate key-extraction artifacts kept for regeneration, not for serving.
+i18n/_html_keys.json
+i18n/_tools_keys.json
+i18n/_frag_keys.json
