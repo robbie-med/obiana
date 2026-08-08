@@ -109,7 +109,14 @@ window.MYOB_LOCALES.fr = {
         "getMyScore": "Obtenir mon score",
         "scoreOutOf30Based": "Score sur 30 · Basé sur l'Edinburgh Postnatal Depression Scale",
         "pastCheckIns": "Évaluations précédentes",
-        "selfHarmGuidance": "Vous avez indiqué avoir eu des pensées de vous faire du mal. Contactez votre médecin, appelez ou envoyez un message au 988 (ligne de prévention du suicide et de crise), ou rendez-vous aux urgences les plus proches."
+        "selfHarmGuidance": "Vous avez indiqué avoir eu des pensées de vous faire du mal. Contactez votre médecin, appelez ou envoyez un message au 988 (ligne de prévention du suicide et de crise), ou rendez-vous aux urgences les plus proches.",
+        "continueWeekly": "Continuez à faire le point chaque semaine. Si votre humeur change, cet outil vous aidera à le suivre.",
+        "talkToDoctor": "Parler à votre médecin — même d’un simple score de dépistage — est toujours une bonne démarche. La dépression du post-partum se soigne très bien.",
+        "instrumentLanguage": "Langue du questionnaire :",
+        "change": "Changer",
+        "scoreNote": "Score sur {max} · {instrument} · Outil de dépistage, pas un diagnostic — parlez toujours du résultat à votre équipe soignante",
+        "chooseLanguage": "Choisissez la langue dans laquelle vous souhaitez répondre :",
+        "validatedOnlyNote": "Seules les versions officiellement validées de ce questionnaire sont proposées. Une traduction automatique donnerait tout de même un score, mais ce score n’aurait aucune valeur."
       },
       "birthplan": {
         "q": {
@@ -221,7 +228,8 @@ window.MYOB_LOCALES.fr = {
         "pregnancyBirthGuideEvidenceBased": "Guide grossesse &amp; naissance · Basé sur les preuves · Privé &amp; hors ligne",
         "anyOtherPreferencesConcernsOr": "Autres préférences, inquiétudes ou informations pour votre équipe soignante…",
         "copiedToClipboard": "Copié dans le presse-papiers !",
-        "copyNotSupportedOnThis": "La copie n’est pas prise en charge par ce navigateur"
+        "copyNotSupportedOnThis": "La copie n’est pas prise en charge par ce navigateur",
+        "selectPreferences": "Sélectionnez vos préférences ci-dessous. Votre résumé apparaîtra en bas et vous pourrez le partager avec votre équipe soignante."
       },
       "kick": {
         "startSession": "Commencer la séance",
@@ -233,7 +241,13 @@ window.MYOB_LOCALES.fr = {
         "10MovementsReached": "10 mouvements atteints !",
         "startAnotherSession": "Commencer une autre séance",
         "sessionHistory": "Historique des séances",
-        "noSessions": "Aucune séance pour le moment"
+        "noSessions": "Aucune séance pour le moment",
+        "countMovements": "Comptez les mouvements du bébé pendant une séance active.",
+        "goal": "Objectif : 10 mouvements en 2 heures",
+        "tapForEach": "👶 Touchez à chaque mouvement",
+        "endEarly": "Terminer la séance plus tôt",
+        "pass": "Atteint",
+        "low": "Faible"
       },
       "common": {
         "recentContractions": "Contractions récentes",
@@ -248,7 +262,10 @@ window.MYOB_LOCALES.fr = {
         "feedLogged": "Tétée notée",
         "noFeeds": "Aucune tétée notée pour le moment.",
         "fewFeedsTitle": "⚠ Moins de 8 tétées aujourd’hui",
-        "fewFeedsBody": "Les nouveau-nés ont généralement besoin de 8 à 12 tétées par 24 heures. Si le bébé est difficile à réveiller ou ne prend pas de poids, appelez votre médecin."
+        "fewFeedsBody": "Les nouveau-nés ont généralement besoin de 8 à 12 tétées par 24 heures. Si le bébé est difficile à réveiller ou ne prend pas de poids, appelez votre médecin.",
+        "breast": "🤱 Sein",
+        "bottle": "🍼 Biberon",
+        "minutes": "{n} min"
       },
       "diaper": {
         "wetToday": "Mouillées aujourd’hui",
@@ -265,7 +282,20 @@ window.MYOB_LOCALES.fr = {
         "birthDateSaved": "Date de naissance enregistrée",
         "dayOfLife": "Jour de vie",
         "resolvesByNow": "La plupart des ictères sont résolus à ce stade",
-        "callImmediatelyIf": "Appelez immédiatement votre médecin si"
+        "callImmediatelyIf": "Appelez immédiatement votre médecin si",
+        "setBirthDateHint": "Indiquez ci-dessus la date de naissance du bébé pour voir les conseils jour par jour.",
+        "day1": "Premier jour : la bilirubine est contrôlée avant la sortie de la maternité. Le bébé est surveillé par l’équipe soignante.",
+        "day2": "Les taux de bilirubine augmentent. Contrôles à l’hôpital avant la sortie. Surveillez le jaunissement de la peau et du blanc des yeux.",
+        "day3": "L’ictère atteint son maximum vers le 3e–5e jour chez la plupart des bébés. La couleur jaune peut être plus visible. Des tétées fréquentes (8 à 12 par jour) aident le corps à éliminer la bilirubine.",
+        "day4": "Période de pic de l’ictère. Assurez-vous que le bébé tète bien et mouille ses couches. La visite chez le pédiatre est souvent prévue à ce moment-là.",
+        "day5": "Visite chez le pédiatre : contrôle du poids et taux de bilirubine. Les taux devraient commencer à se stabiliser. Si le bébé est somnolent et ne tète pas, appelez votre médecin.",
+        "day6": "Chez les bébés nés à terme, les taux devraient commencer à baisser. Continuez les tétées fréquentes. Si la peau est très jaune ou si le bébé ne se réveille pas pour téter, appelez votre médecin.",
+        "day7": "Chez la plupart des bébés nés à terme, l’ictère s’améliore déjà. Surveillez si le jaunissement s’étend aux jambes et aux pieds, signe de taux plus élevés.",
+        "day10": "Chez la plupart des bébés nés à terme, l’ictère est presque résolu. S’il persiste ou s’aggrave, votre médecin voudra contrôler la bilirubine.",
+        "day14": "Visite des 2 semaines. Chez les bébés nés à terme, l’ictère devrait avoir disparu. Un ictère qui dure au-delà de 2 semaines peut nécessiter un bilan — parlez-en à votre médecin.",
+        "day21": "Un ictère qui dure plus de 3 semaines est considéré comme prolongé et doit être évalué. Les bébés allaités peuvent garder un ictère léger plus longtemps, mais il doit quand même être contrôlé.",
+        "dayWatch": "Jour {day} — À surveiller",
+        "redFlags": "Le bébé ne se réveille pas pour téter · Peau très jaune s’étendant aux jambes · Dos cambré ou cri aigu · Selles blanches ou grises · Urines très foncées"
       },
       "bp": {
         "logBloodPressure": "+ Noter la tension",
@@ -275,7 +305,14 @@ window.MYOB_LOCALES.fr = {
         "enterValidNumbersEG": "Entrez des chiffres valides (ex. 118 / 76)",
         "highReadingContactYourDoctor": "Mesure élevée — contactez votre médecin",
         "noReadings": "Aucune mesure notée pour le moment.",
-        "highOnRecord": "⚠ Tension élevée enregistrée"
+        "highOnRecord": "⚠ Tension élevée enregistrée",
+        "cat": {
+          "severe": "Très élevée",
+          "high": "Élevée",
+          "elevated": "Limite haute",
+          "normal": "Normale"
+        },
+        "recentSummary": "Votre dernière mesure ({reading}) se situe dans la plage {cat}. Contactez votre médecin aujourd’hui."
       },
       "weight": {
         "yourProfile": "Votre profil",
@@ -290,7 +327,14 @@ window.MYOB_LOCALES.fr = {
         "recommendedGain": "Prise de poids totale recommandée :",
         "forFullPregnancy": "pour toute la grossesse.",
         "setYourProfile": "Configurez votre profil",
-        "setProfileHint": "Saisissez votre IMC (BMI) avant la grossesse pour voir les recommandations de prise de poids de l’IOM adaptées à votre cas."
+        "setProfileHint": "Saisissez votre IMC (BMI) avant la grossesse pour voir les recommandations de prise de poids de l’IOM adaptées à votre cas.",
+        "bmi": {
+          "under": "Insuffisance pondérale",
+          "normal": "Poids normal",
+          "over": "Surpoids",
+          "obese": "Obésité"
+        },
+        "iomFor": "Recommandation IOM pour vous ({range})"
       },
       "appts": {
         "addVisit": "+ Ajouter une visite",
@@ -300,10 +344,34 @@ window.MYOB_LOCALES.fr = {
         "edit": "Modifier",
         "delete": "Supprimer",
         "visitDeleted": "Visite supprimée",
-        "noVisits": "Aucune visite enregistrée pour le moment. Ajoutez-en une ci-dessus pour suivre vos questions et vos notes."
+        "noVisits": "Aucune visite enregistrée pour le moment. Ajoutez-en une ci-dessus pour suivre vos questions et vos notes.",
+        "deleteConfirm": "Supprimer cette visite ?"
       },
       "cx": {
-        "noContractions": "Aucune contraction enregistrée pour le moment.<br>Touchez « Début d'une contraction » quand une contraction commence."
+        "noContractions": "Aucune contraction enregistrée pour le moment.<br>Touchez « Début d'une contraction » quand une contraction commence.",
+        "noContraction": "Aucune contraction en cours",
+        "inProgress": "Contraction en cours…",
+        "startBtn": "Début de la contraction",
+        "endBtn": "Fin de la contraction",
+        "clearAll": "Tout effacer",
+        "clearConfirm": "Effacer tous les enregistrements de contractions ?",
+        "duration": "{d} de durée",
+        "interval": "toutes les {t}"
+      },
+      "i18n": {
+        "intro": "Comparez chaque phrase de cette application avec l’original en anglais. Si quelque chose sonne faux, proposez une meilleure version. Vos suggestions restent sur ce téléphone jusqu’à ce que vous les exportiez.",
+        "searchPlaceholder": "Rechercher des phrases…",
+        "needsWork": "À revoir",
+        "all": "Toutes",
+        "suggested": "Proposées",
+        "suggestPlaceholder": "Proposez une meilleure formulation…",
+        "nothingToShow": "Rien à afficher avec ces filtres.",
+        "showingFirst": "Affichage des {n} premières sur {total}. Utilisez la recherche pour affiner.",
+        "export": "Exporter mes suggestions",
+        "clear": "Effacer",
+        "clearConfirm": "Supprimer toutes vos suggestions pour cette langue ?",
+        "nothingToExport": "Aucune suggestion à exporter pour l’instant",
+        "exported": "{n} suggestions exportées"
       }
     },
     "theme": {
@@ -400,7 +468,9 @@ window.MYOB_LOCALES.fr = {
       "birthPlanBuilder": "Plan de naissance",
       "guidedChoicesShareableOnePage": "Choix guidés · Résumé d'une page à partager",
       "visitNotes": "Notes de visite",
-      "questionsBeforeNotesDuringEvery": "Questions avant · Notes à chaque visite"
+      "questionsBeforeNotesDuringEvery": "Questions avant · Notes à chaque visite",
+      "translationHelper": "Assistant de traduction",
+      "reviewSuggestWording": "Relire les textes · Proposer une meilleure traduction"
     },
     "toolkick": {
       "kickCounter": "Compteur de coups"
@@ -499,6 +569,9 @@ window.MYOB_LOCALES.fr = {
       "recovery": "Récupération<br>post-partum",
       "baby": "Votre<br>nouveau-né",
       "toolsTrackers": "Outils et<br>suivis"
+    },
+    "tooli18n": {
+      "translationHelper": "Assistant de traduction"
     }
   },
   "content": {

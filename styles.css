@@ -268,14 +268,6 @@ body {
 .section-hero.navy-hero { background: linear-gradient(135deg, #1a2548 0%, var(--navy) 100%); }
 .section-hero.plum-hero { background: linear-gradient(135deg, #3a1a48 0%, var(--plum) 100%); }
 
-.hero-label {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.6);
-  margin-bottom: 6px;
-}
 
 .hero-title {
   font-family: var(--font-serif);
@@ -495,14 +487,6 @@ body {
   background: rgba(255,255,255,0.05);
 }
 
-.home-hero-label {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.55);
-  margin-bottom: 8px;
-}
 
 .home-hero-title {
   font-family: var(--font-serif);
@@ -1670,3 +1654,25 @@ body.dark .score-result-card { background: #1a1a1a; }
 }
 .lang-chip.current .lang-chip-name { color: var(--teal); font-weight: 700; }
 .lang-chip.failed .lang-chip-name { color: var(--rose); }
+
+/* ═══════════════════════════════════════════════════════
+   MACHINE-TRANSLATION NOTICE
+   ═══════════════════════════════════════════════════════
+   This shipped with no styling at all, so the text ran edge to edge under the
+   header and clipped. It sits between the header and the content, full width. */
+#translation-notice {
+  padding: 9px 16px;
+  background: var(--gold-light);
+  border-bottom: 1px solid rgba(184,124,40,0.25);
+  color: #6b4a12;
+  font-size: 11.5px;
+  line-height: 1.45;
+  text-align: start;
+}
+#translation-notice[hidden] { display: none; }
+
+@media (prefers-color-scheme: dark) {
+  #translation-notice { background: #3a2e12; color: #e8d5a8; border-bottom-color: rgba(232,213,168,0.2); }
+}
+:root[data-theme="dark"] #translation-notice { background: #3a2e12; color: #e8d5a8; border-bottom-color: rgba(232,213,168,0.2); }
+:root[data-theme="light"] #translation-notice { background: var(--gold-light); color: #6b4a12; }

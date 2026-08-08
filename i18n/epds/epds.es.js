@@ -108,9 +108,9 @@ window.MYOB_EPDS.es = {
       "text": "Las cosas me han agobiado:",
       "options": [
         "Sí, la mayoría de las veces no he sido capaz de afrontarlas",
-        "Sí, a veces no he sido capaz de afrontarlas tan bien como",
-        "siempre",
-        "No, la mayoría de las veces las he afrontado bastante bien"
+        "Sí, a veces no he sido capaz de afrontarlas tan bien como siempre",
+        "No, la mayoría de las veces las he afrontado bastante bien",
+        "No, he afrontado las cosas tan bien como siempre"
       ],
       "scores": [
         3,
@@ -120,12 +120,12 @@ window.MYOB_EPDS.es = {
       ]
     },
     {
-      "text": "Me he sentido tan infeliz que he tenido dificultades para dormir: EDINBURGH DEPRESSION SCALE (POSTNATAL)",
+      "text": "Me he sentido tan infeliz que he tenido dificultades para dormir:",
       "options": [
         "Sí, la mayor parte del tiempo",
         "Sí, a veces",
-        "THE EDINBURGH POSTNATAL DEPRESSION SCALE",
-        "No, no muy a menudo"
+        "No, no muy a menudo",
+        "No, en ningún momento"
       ],
       "scores": [
         3,

@@ -108,7 +108,14 @@ window.MYOB_LOCALES.es = {
         "getMyScore": "Ver Mi Puntuación",
         "scoreOutOf30Based": "Puntuación sobre 30 · Basada en la Escala de Depresión Posnatal de Edimburgo",
         "pastCheckIns": "Evaluaciones anteriores",
-        "selfHarmGuidance": "Ha indicado que ha tenido pensamientos de hacerse daño. Comuníquese con su médico, llame o envíe un mensaje al 988 (Línea de Prevención del Suicidio y Crisis), o acuda a la sala de emergencias más cercana."
+        "selfHarmGuidance": "Ha indicado que ha tenido pensamientos de hacerse daño. Comuníquese con su médico, llame o envíe un mensaje al 988 (Línea de Prevención del Suicidio y Crisis), o acuda a la sala de emergencias más cercana.",
+        "continueWeekly": "Siga evaluándose cada semana. Si su estado de ánimo cambia, esta herramienta le ayudará a seguirlo.",
+        "talkToDoctor": "Hablar con su médico — incluso sobre una puntuación de detección — siempre es un buen paso. La depresión posparto tiene muy buen tratamiento.",
+        "instrumentLanguage": "Idioma del cuestionario:",
+        "change": "Cambiar",
+        "scoreNote": "Puntuación sobre {max} · {instrument} · Es una herramienta de detección, no un diagnóstico: comente siempre el resultado con su equipo médico",
+        "chooseLanguage": "Elija el idioma en el que desea responder:",
+        "validatedOnlyNote": "Solo se ofrecen versiones oficialmente validadas de este cuestionario. Una traducción automática igualmente daría una puntuación, pero esa puntuación no tendría valor."
       },
       "birthplan": {
         "q": {
@@ -220,7 +227,8 @@ window.MYOB_LOCALES.es = {
         "pregnancyBirthGuideEvidenceBased": "Guía de embarazo y parto · Basada en evidencia · Privada y sin conexión",
         "anyOtherPreferencesConcernsOr": "¿Otras preferencias, inquietudes o información para su equipo de atención?…",
         "copiedToClipboard": "¡Copiado al portapapeles!",
-        "copyNotSupportedOnThis": "Este navegador no permite copiar"
+        "copyNotSupportedOnThis": "Este navegador no permite copiar",
+        "selectPreferences": "Seleccione sus preferencias abajo. Su resumen aparecerá al final y podrá compartirlo con su equipo médico."
       },
       "kick": {
         "startSession": "Iniciar sesión",
@@ -232,7 +240,13 @@ window.MYOB_LOCALES.es = {
         "10MovementsReached": "¡10 movimientos alcanzados!",
         "startAnotherSession": "Iniciar otra sesión",
         "sessionHistory": "Historial de sesiones",
-        "noSessions": "Aún no hay sesiones"
+        "noSessions": "Aún no hay sesiones",
+        "countMovements": "Cuente los movimientos fetales durante una sesión activa.",
+        "goal": "Meta: 10 movimientos en 2 horas",
+        "tapForEach": "👶 Toque en cada movimiento",
+        "endEarly": "Terminar la sesión antes",
+        "pass": "Cumplido",
+        "low": "Bajo"
       },
       "common": {
         "recentContractions": "Contracciones recientes",
@@ -247,7 +261,10 @@ window.MYOB_LOCALES.es = {
         "feedLogged": "Toma registrada",
         "noFeeds": "Aún no hay tomas registradas.",
         "fewFeedsTitle": "⚠ Menos de 8 tomas hoy",
-        "fewFeedsBody": "Los recién nacidos suelen necesitar de 8 a 12 tomas cada 24 horas. Si le cuesta despertar al bebé o no está subiendo de peso, llame a su médico."
+        "fewFeedsBody": "Los recién nacidos suelen necesitar de 8 a 12 tomas cada 24 horas. Si le cuesta despertar al bebé o no está subiendo de peso, llame a su médico.",
+        "breast": "🤱 Pecho",
+        "bottle": "🍼 Biberón",
+        "minutes": "{n} min"
       },
       "diaper": {
         "wetToday": "Mojados hoy",
@@ -264,7 +281,20 @@ window.MYOB_LOCALES.es = {
         "birthDateSaved": "Fecha de nacimiento guardada",
         "dayOfLife": "Día de vida",
         "resolvesByNow": "La mayoría de las ictericias ya se ha resuelto",
-        "callImmediatelyIf": "Llame a su médico de inmediato si"
+        "callImmediatelyIf": "Llame a su médico de inmediato si",
+        "setBirthDateHint": "Indique arriba la fecha de nacimiento del bebé para ver la guía día a día.",
+        "day1": "Primer día: se controla la bilirrubina antes del alta hospitalaria. El personal de enfermería vigila al bebé.",
+        "day2": "Los niveles de bilirrubina van subiendo. El hospital hace controles antes del alta. Vigile el color amarillo en la piel y en el blanco de los ojos.",
+        "day3": "La ictericia alcanza su punto máximo entre los días 3 y 5 en la mayoría de los bebés. El color amarillo puede notarse más. Alimentarlo con frecuencia (8–12 veces al día) ayuda al cuerpo a eliminar la bilirrubina.",
+        "day4": "Periodo de máxima ictericia. Asegúrese de que el bebé se alimenta bien y moja pañales. La visita al pediatra suele programarse por estas fechas.",
+        "day5": "Visita al pediatra: control de peso y nivel de bilirrubina. Los niveles deberían empezar a estabilizarse. Si el bebé está somnoliento y no come, llame a su médico.",
+        "day6": "En los bebés a término los niveles deberían empezar a bajar. Siga alimentándolo con frecuencia. Si la piel está muy amarilla o el bebé no se despierta para comer, llame a su médico.",
+        "day7": "En la mayoría de los bebés a término la ictericia ya está mejorando. Vigile si el color amarillo se extiende a las piernas y los pies, lo que indica niveles más altos.",
+        "day10": "En la mayoría de los bebés a término la ictericia casi ha desaparecido. Si persiste o empeora, su médico querrá comprobar el nivel de bilirrubina.",
+        "day14": "Visita de las 2 semanas. En los bebés a término la ictericia debería haberse resuelto. Una ictericia que dura más de 2 semanas puede necesitar más estudios; coménteselo a su médico.",
+        "day21": "Una ictericia que dura más de 3 semanas se considera prolongada y debe evaluarse. Los bebés amamantados pueden tener una ictericia leve durante más tiempo, pero aun así hay que revisarla.",
+        "dayWatch": "Día {day} — Qué vigilar",
+        "redFlags": "El bebé no se despierta para comer · Piel muy amarilla que se extiende a las piernas · Arquea la espalda o llanto agudo · Heces blancas o grises · Orina muy oscura"
       },
       "bp": {
         "logBloodPressure": "+ Registrar presión arterial",
@@ -274,7 +304,14 @@ window.MYOB_LOCALES.es = {
         "enterValidNumbersEG": "Ingrese números válidos (p. ej. 118 / 76)",
         "highReadingContactYourDoctor": "Lectura alta: contacte a su médico",
         "noReadings": "Aún no hay lecturas registradas.",
-        "highOnRecord": "⚠ Lectura alta registrada"
+        "highOnRecord": "⚠ Lectura alta registrada",
+        "cat": {
+          "severe": "Muy alta",
+          "high": "Alta",
+          "elevated": "Elevada",
+          "normal": "Normal"
+        },
+        "recentSummary": "Su lectura más reciente ({reading}) está en el rango {cat}. Comuníquese hoy con su médico."
       },
       "weight": {
         "yourProfile": "Su perfil",
@@ -289,7 +326,14 @@ window.MYOB_LOCALES.es = {
         "recommendedGain": "Aumento total recomendado:",
         "forFullPregnancy": "durante todo el embarazo.",
         "setYourProfile": "Configure su perfil",
-        "setProfileHint": "Introduzca su IMC (BMI) antes del embarazo para ver las pautas de aumento del IOM personalizadas."
+        "setProfileHint": "Introduzca su IMC (BMI) antes del embarazo para ver las pautas de aumento del IOM personalizadas.",
+        "bmi": {
+          "under": "Bajo peso",
+          "normal": "Peso normal",
+          "over": "Sobrepeso",
+          "obese": "Obesidad"
+        },
+        "iomFor": "Pauta del IOM para usted ({range})"
       },
       "appts": {
         "addVisit": "+ Agregar cita",
@@ -299,10 +343,34 @@ window.MYOB_LOCALES.es = {
         "edit": "Editar",
         "delete": "Eliminar",
         "visitDeleted": "Cita eliminada",
-        "noVisits": "Aún no hay visitas registradas. Añada una arriba para llevar el control de preguntas y notas."
+        "noVisits": "Aún no hay visitas registradas. Añada una arriba para llevar el control de preguntas y notas.",
+        "deleteConfirm": "¿Eliminar esta visita?"
       },
       "cx": {
-        "noContractions": "Aún no hay contracciones registradas.<br>Toque \"Comienza una contracción\" cuando empiece una."
+        "noContractions": "Aún no hay contracciones registradas.<br>Toque \"Comienza una contracción\" cuando empiece una.",
+        "noContraction": "Ninguna contracción en curso",
+        "inProgress": "Contracción en curso…",
+        "startBtn": "Comienza la contracción",
+        "endBtn": "Termina la contracción",
+        "clearAll": "Borrar todo",
+        "clearConfirm": "¿Borrar todos los registros de contracciones?",
+        "duration": "{d} de duración",
+        "interval": "cada {t}"
+      },
+      "i18n": {
+        "intro": "Compare cada frase de esta aplicación con el original en inglés. Si algo no suena bien, escriba una versión mejor. Sus sugerencias se quedan en este teléfono hasta que las exporte.",
+        "searchPlaceholder": "Buscar frases…",
+        "needsWork": "Por revisar",
+        "all": "Todas",
+        "suggested": "Sugeridas",
+        "suggestPlaceholder": "Sugiera una redacción mejor…",
+        "nothingToShow": "No hay nada que mostrar con estos filtros.",
+        "showingFirst": "Mostrando las primeras {n} de {total}. Use la búsqueda para acotar.",
+        "export": "Exportar mis sugerencias",
+        "clear": "Borrar",
+        "clearConfirm": "¿Eliminar todas sus sugerencias para este idioma?",
+        "nothingToExport": "Aún no hay sugerencias para exportar",
+        "exported": "{n} sugerencias exportadas"
       }
     },
     "theme": {
@@ -399,7 +467,9 @@ window.MYOB_LOCALES.es = {
       "birthPlanBuilder": "Plan de Parto",
       "guidedChoicesShareableOnePage": "Opciones guiadas · Resumen de una página para compartir",
       "visitNotes": "Notas de la Cita",
-      "questionsBeforeNotesDuringEvery": "Preguntas antes · Notas durante cada cita"
+      "questionsBeforeNotesDuringEvery": "Preguntas antes · Notas durante cada cita",
+      "translationHelper": "Asistente de traducción",
+      "reviewSuggestWording": "Revisar textos · Sugerir una traducción mejor"
     },
     "toolkick": {
       "kickCounter": "Contador de Pataditas"
@@ -498,6 +568,9 @@ window.MYOB_LOCALES.es = {
       "recovery": "Recuperación<br>Posparto",
       "baby": "Su Recién<br>Nacido",
       "toolsTrackers": "Herramientas y<br>Registros"
+    },
+    "tooli18n": {
+      "translationHelper": "Asistente de traducción"
     }
   },
   "content": {

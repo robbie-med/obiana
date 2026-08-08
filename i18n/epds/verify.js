@@ -60,6 +60,14 @@ for (const file of files) {
       }
       if (Array.isArray(item.options) && new Set(item.options.map(String)).size !== item.options.length)
         errs.push(`item ${n}: duplicate option text`);
+      // Page furniture that leaked out of the PDF margins. Counting options
+      // passed happily while Spanish item 7 offered "THE EDINBURGH POSTNATAL
+      // DEPRESSION SCALE" as a selectable answer.
+      const FURNITURE = /\b(EDINBURGH|POSTNATAL\s+DEPRESSION|DEPRESSION\s+SCALE|SMR\d|NOWRITING|BINDING\s*MARGIN|COMPLETE\s+ALL\s+DETAILS|Total\s+Score|Page\s+\d+\s+of)\b/i;
+      if (FURNITURE.test(item.text)) errs.push(`item ${n}: page furniture in the stem — "${item.text.slice(0, 60)}"`);
+      (item.options || []).forEach((o, oi) => {
+        if (FURNITURE.test(o)) errs.push(`item ${n} option ${oi + 1}: page furniture as an ANSWER — "${String(o).slice(0, 50)}"`);
+      });
     });
 
     // The PHQ-9 has NO reverse-scored items; the EPDS alternation does not

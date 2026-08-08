@@ -107,7 +107,14 @@ window.MYOB_LOCALES.zh = {
         "getMyScore": "查看我的得分",
         "scoreOutOf30Based": "满分 30 分 · 依据爱丁堡产后抑郁量表",
         "pastCheckIns": "过往记录",
-        "selfHarmGuidance": "你表示曾有过伤害自己的想法。请联系你的医生，拨打或发短信至 988（自杀与危机生命线），或前往最近的急诊室。"
+        "selfHarmGuidance": "你表示曾有过伤害自己的想法。请联系你的医生，拨打或发短信至 988（自杀与危机生命线），或前往最近的急诊室。",
+        "continueWeekly": "请继续每周自评。如果情绪有变化，这个工具可以帮你追踪。",
+        "talkToDoctor": "和医生谈一谈——哪怕只是关于一个筛查分数——始终是好的一步。产后抑郁是很可以治疗的。",
+        "instrumentLanguage": "问卷语言：",
+        "change": "更改",
+        "scoreNote": "满分 {max} 分 · {instrument} · 这是筛查工具而非诊断——请务必与你的医疗团队讨论结果",
+        "chooseLanguage": "请选择你想用来作答的语言：",
+        "validatedOnlyNote": "只提供经过官方验证的问卷版本。机器翻译同样会算出分数，但那个分数没有意义。"
       },
       "birthplan": {
         "q": {
@@ -219,7 +226,8 @@ window.MYOB_LOCALES.zh = {
         "pregnancyBirthGuideEvidenceBased": "怀孕与分娩指南 · 循证内容 · 私密且可离线使用",
         "anyOtherPreferencesConcernsOr": "其他想让医疗团队知道的意愿、顾虑或信息……",
         "copiedToClipboard": "已复制到剪贴板！",
-        "copyNotSupportedOnThis": "此浏览器不支持复制"
+        "copyNotSupportedOnThis": "此浏览器不支持复制",
+        "selectPreferences": "在下方选择你的意愿。摘要会显示在底部，可以分享给你的医疗团队。"
       },
       "kick": {
         "startSession": "开始记录",
@@ -231,7 +239,13 @@ window.MYOB_LOCALES.zh = {
         "10MovementsReached": "已达到 10 次胎动！",
         "startAnotherSession": "再记录一次",
         "sessionHistory": "记录历史",
-        "noSessions": "还没有记录"
+        "noSessions": "还没有记录",
+        "countMovements": "在一次记录中数一数胎动。",
+        "goal": "目标：2 小时内 10 次胎动",
+        "tapForEach": "👶 每次胎动点一下",
+        "endEarly": "提前结束本次记录",
+        "pass": "达标",
+        "low": "偏少"
       },
       "common": {
         "recentContractions": "最近的宫缩",
@@ -246,7 +260,10 @@ window.MYOB_LOCALES.zh = {
         "feedLogged": "喂养已记录",
         "noFeeds": "还没有喂养记录。",
         "fewFeedsTitle": "⚠ 今天喂养不足 8 次",
-        "fewFeedsBody": "新生儿通常每 24 小时需要喂养 8–12 次。如果宝宝很难叫醒或体重没有增长，请联系你的医生。"
+        "fewFeedsBody": "新生儿通常每 24 小时需要喂养 8–12 次。如果宝宝很难叫醒或体重没有增长，请联系你的医生。",
+        "breast": "🤱 母乳",
+        "bottle": "🍼 奶瓶",
+        "minutes": "{n} 分钟"
       },
       "diaper": {
         "wetToday": "今天尿湿",
@@ -263,7 +280,20 @@ window.MYOB_LOCALES.zh = {
         "birthDateSaved": "出生日期已保存",
         "dayOfLife": "出生天数",
         "resolvesByNow": "多数黄疸在此时已消退",
-        "callImmediatelyIf": "出现以下情况请立即联系医生"
+        "callImmediatelyIf": "出现以下情况请立即联系医生",
+        "setBirthDateHint": "在上方填写宝宝的出生日期，即可查看逐日指导。",
+        "day1": "第 1 天——出院前会检查胆红素。护理人员会观察宝宝。",
+        "day2": "胆红素水平正在上升。出院前医院会做检查。注意观察皮肤和眼白是否发黄。",
+        "day3": "多数宝宝的黄疸在第 3–5 天达到高峰。黄色可能更明显。频繁哺乳（每天 8–12 次）有助于身体排出胆红素。",
+        "day4": "黄疸高峰期。确保宝宝吃得好、尿布有尿。儿科随访通常安排在这几天。",
+        "day5": "儿科就诊：称体重并测胆红素。水平应开始趋于平稳。如果宝宝嗜睡、不肯吃奶，请联系医生。",
+        "day6": "足月宝宝的胆红素应开始下降。继续频繁哺乳。如果皮肤明显发黄，或宝宝叫不醒吃奶，请联系医生。",
+        "day7": "多数足月宝宝的黄疸此时正在好转。注意黄色是否扩散到腿部和脚部，这提示水平偏高。",
+        "day10": "多数足月宝宝的黄疸已基本消退。如果持续或加重，医生会想复查胆红素。",
+        "day14": "2 周随访。足月宝宝的黄疸应已消退。超过 2 周仍未消退可能需要进一步检查——请告诉医生。",
+        "day21": "黄疸持续超过 3 周属于迁延性黄疸，应当评估。母乳喂养的宝宝轻度黄疸可能持续更久，但仍需检查。",
+        "dayWatch": "第 {day} 天——需要留意",
+        "redFlags": "宝宝叫不醒吃奶 · 明显发黄并扩散到腿部 · 身体后弓或哭声尖锐 · 大便呈白色或灰色 · 尿色很深"
       },
       "bp": {
         "logBloodPressure": "+ 记录血压",
@@ -273,7 +303,14 @@ window.MYOB_LOCALES.zh = {
         "enterValidNumbersEG": "请输入有效数字（例如 118 / 76）",
         "highReadingContactYourDoctor": "血压偏高——请联系你的医生",
         "noReadings": "还没有血压记录。",
-        "highOnRecord": "⚠ 记录到偏高读数"
+        "highOnRecord": "⚠ 记录到偏高读数",
+        "cat": {
+          "severe": "重度偏高",
+          "high": "偏高",
+          "elevated": "临界偏高",
+          "normal": "正常"
+        },
+        "recentSummary": "你最近一次读数（{reading}）处于「{cat}」范围。请今天联系你的医生。"
       },
       "weight": {
         "yourProfile": "你的基本信息",
@@ -288,7 +325,14 @@ window.MYOB_LOCALES.zh = {
         "recommendedGain": "建议总增重：",
         "forFullPregnancy": "为整个孕期的建议值。",
         "setYourProfile": "设置你的基本信息",
-        "setProfileHint": "输入孕前 BMI，即可查看为你定制的 IOM 增重建议。"
+        "setProfileHint": "输入孕前 BMI，即可查看为你定制的 IOM 增重建议。",
+        "bmi": {
+          "under": "体重偏低",
+          "normal": "体重正常",
+          "over": "超重",
+          "obese": "肥胖"
+        },
+        "iomFor": "适合你的 IOM 建议（{range}）"
       },
       "appts": {
         "addVisit": "+ 添加就诊",
@@ -298,10 +342,34 @@ window.MYOB_LOCALES.zh = {
         "edit": "编辑",
         "delete": "删除",
         "visitDeleted": "就诊记录已删除",
-        "noVisits": "还没有就诊记录。在上方添加一条，用来记录问题和笔记。"
+        "noVisits": "还没有就诊记录。在上方添加一条，用来记录问题和笔记。",
+        "deleteConfirm": "要删除这条就诊记录吗？"
       },
       "cx": {
-        "noContractions": "还没有宫缩记录。<br>宫缩开始时点击「宫缩开始」。"
+        "noContractions": "还没有宫缩记录。<br>宫缩开始时点击「宫缩开始」。",
+        "noContraction": "当前没有宫缩",
+        "inProgress": "宫缩进行中…",
+        "startBtn": "宫缩开始",
+        "endBtn": "宫缩结束",
+        "clearAll": "全部清除",
+        "clearConfirm": "要清除所有宫缩记录吗？",
+        "duration": "持续 {d}",
+        "interval": "间隔 {t}"
+      },
+      "i18n": {
+        "intro": "把应用里的每一句话和英文原文对照一下。如果读起来不对，就写下更好的说法。你的建议只保存在这部手机上，直到你导出为止。",
+        "searchPlaceholder": "搜索词句…",
+        "needsWork": "待完善",
+        "all": "全部",
+        "suggested": "已建议",
+        "suggestPlaceholder": "提出更好的说法…",
+        "nothingToShow": "当前筛选条件下没有内容。",
+        "showingFirst": "显示 {total} 条中的前 {n} 条。可用搜索缩小范围。",
+        "export": "导出我的建议",
+        "clear": "清除",
+        "clearConfirm": "要删除该语言的所有建议吗？",
+        "nothingToExport": "还没有可导出的建议",
+        "exported": "已导出 {n} 条建议"
       }
     },
     "theme": {
@@ -398,7 +466,9 @@ window.MYOB_LOCALES.zh = {
       "birthPlanBuilder": "分娩计划工具",
       "guidedChoicesShareableOnePage": "引导式选择 · 可分享的一页摘要",
       "visitNotes": "就诊笔记",
-      "questionsBeforeNotesDuringEvery": "就诊前的问题 · 每次就诊的记录"
+      "questionsBeforeNotesDuringEvery": "就诊前的问题 · 每次就诊的记录",
+      "translationHelper": "翻译助手",
+      "reviewSuggestWording": "检查用词 · 提出更好的翻译"
     },
     "toolkick": {
       "kickCounter": "胎动计数器"
@@ -497,6 +567,9 @@ window.MYOB_LOCALES.zh = {
       "recovery": "产后<br>恢复",
       "baby": "你的<br>新生儿",
       "toolsTrackers": "工具<br>与记录"
+    },
+    "tooli18n": {
+      "translationHelper": "翻译助手"
     }
   }
 };

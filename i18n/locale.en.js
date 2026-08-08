@@ -101,14 +101,15 @@ window.MYOB_LOCALES.en = {
         "inThePast7Days": "in the past 7 days",
         "yourAnswersAreSavedOnly": "Your answers are saved only on this phone.",
         "getMyScore": "Get My Score",
-        "instructions": "Please select one option for each question that is the closest to how you have felt in the PAST SEVEN DAYS.",
         "chooseLanguage": "Choose the language you would like to answer in:",
         "validatedOnlyNote": "Only officially validated versions of this questionnaire are offered. A machine translation would still produce a score, but that score would not be meaningful.",
         "instrumentLanguage": "Questionnaire language:",
         "change": "Change",
         "scoreNote": "Score out of {max} · {instrument} · A screening tool, not a diagnosis — always discuss the result with your care team",
         "pastCheckIns": "Past Check-Ins",
-        "selfHarmGuidance": "You answered that thoughts of self-harm have occurred to you. Please reach out to your doctor, call or text 988 (Suicide & Crisis Lifeline), or go to the nearest emergency room."
+        "selfHarmGuidance": "You answered that thoughts of self-harm have occurred to you. Please reach out to your doctor, call or text 988 (Suicide & Crisis Lifeline), or go to the nearest emergency room.",
+        "continueWeekly": "Continue checking in weekly. If your mood changes, this tool will help you track it.",
+        "talkToDoctor": "Talking to your doctor — even about a screening score — is always a good step. PPD is very treatable."
       },
       "birthplan": {
         "q": {
@@ -220,7 +221,8 @@ window.MYOB_LOCALES.en = {
         "pregnancyBirthGuideEvidenceBased": "Pregnancy &amp; Birth Guide · Evidence-based · Private &amp; offline",
         "anyOtherPreferencesConcernsOr": "Any other preferences, concerns, or information for your care team…",
         "copiedToClipboard": "Copied to clipboard!",
-        "copyNotSupportedOnThis": "Copy not supported on this browser"
+        "copyNotSupportedOnThis": "Copy not supported on this browser",
+        "selectPreferences": "Select your preferences below. Your summary will appear at the bottom — you can share it with your care team."
       },
       "kick": {
         "startSession": "Start Session",
@@ -232,7 +234,13 @@ window.MYOB_LOCALES.en = {
         "10MovementsReached": "10 movements reached!",
         "startAnotherSession": "Start Another Session",
         "sessionHistory": "Session History",
-        "noSessions": "No sessions yet"
+        "noSessions": "No sessions yet",
+        "countMovements": "Count fetal movements during an active session.",
+        "goal": "Goal: 10 movements within 2 hours",
+        "tapForEach": "👶 Tap for Each Movement",
+        "endEarly": "End Session Early",
+        "pass": "Pass",
+        "low": "Low"
       },
       "common": {
         "recentContractions": "Recent Contractions",
@@ -247,7 +255,10 @@ window.MYOB_LOCALES.en = {
         "feedLogged": "Feed logged",
         "noFeeds": "No feeds logged yet.",
         "fewFeedsTitle": "⚠ Fewer than 8 feeds today",
-        "fewFeedsBody": "Newborns typically need 8–12 feedings per 24 hours. If baby is difficult to wake or not gaining weight, call your doctor."
+        "fewFeedsBody": "Newborns typically need 8–12 feedings per 24 hours. If baby is difficult to wake or not gaining weight, call your doctor.",
+        "breast": "🤱 Breast",
+        "bottle": "🍼 Bottle",
+        "minutes": "{n} min"
       },
       "diaper": {
         "wetToday": "Wet Today",
@@ -264,7 +275,20 @@ window.MYOB_LOCALES.en = {
         "birthDateSaved": "Birth date saved",
         "dayOfLife": "Day of Life",
         "resolvesByNow": "Most jaundice resolves by now",
-        "callImmediatelyIf": "Call your doctor immediately if"
+        "callImmediatelyIf": "Call your doctor immediately if",
+        "setBirthDateHint": "Set baby's birth date above to see day-by-day guidance.",
+        "day1": "First day — bilirubin is being checked before hospital discharge. Baby is monitored by the nursing staff.",
+        "day2": "Bilirubin levels are rising. Hospital checks before discharge. Watch for yellowing of skin and whites of eyes.",
+        "day3": "Jaundice peaks around days 3–5 in most babies. Yellow color may be more visible. Feeding frequently (8–12 times/day) helps the body clear bilirubin.",
+        "day4": "Peak jaundice period. Make sure baby is feeding well and having wet diapers. Pediatrician visit may be scheduled around now.",
+        "day5": "Pediatrician visit: weight check + bilirubin level. Levels should start to level off. If baby is sleepy and not feeding, call your doctor.",
+        "day6": "Levels should start declining in full-term babies. Continue feeding frequently. If skin is deeply yellow or baby won't wake to feed — call your doctor.",
+        "day7": "Most term babies' jaundice is improving by now. Watch for yellowing spreading to legs and feet, which signals higher levels.",
+        "day10": "In most term babies, jaundice is nearly resolved. If it's persisting or worsening, your doctor will want to check a bilirubin level.",
+        "day14": "2-week visit. Jaundice should be resolved in term babies. Persistent jaundice beyond 2 weeks may need further evaluation — tell your doctor.",
+        "day21": "Jaundice lasting beyond 3 weeks is considered prolonged and should be evaluated. Breastfed babies can have mild jaundice longer, but it still needs to be checked.",
+        "dayWatch": "Day {day} — What to watch for",
+        "redFlags": "Baby won't wake to feed · Deeply yellow skin spreading to legs · Arching back or high-pitched cry · White or grey stools · Very dark urine"
       },
       "bp": {
         "logBloodPressure": "+ Log Blood Pressure",
@@ -274,7 +298,14 @@ window.MYOB_LOCALES.en = {
         "enterValidNumbersEG": "Enter valid numbers (e.g. 118 / 76)",
         "highReadingContactYourDoctor": "High reading — contact your doctor",
         "noReadings": "No readings logged yet.",
-        "highOnRecord": "⚠ High reading on record"
+        "highOnRecord": "⚠ High reading on record",
+        "cat": {
+          "severe": "Severely High",
+          "high": "High",
+          "elevated": "Elevated",
+          "normal": "Normal"
+        },
+        "recentSummary": "Your most recent reading ({reading}) is in the {cat} range. Contact your doctor today."
       },
       "weight": {
         "yourProfile": "Your Profile",
@@ -289,7 +320,14 @@ window.MYOB_LOCALES.en = {
         "recommendedGain": "Recommended total gain:",
         "forFullPregnancy": "for the full pregnancy.",
         "setYourProfile": "Set your profile",
-        "setProfileHint": "Enter your pre-pregnancy BMI to see personalized IOM gain guidelines."
+        "setProfileHint": "Enter your pre-pregnancy BMI to see personalized IOM gain guidelines.",
+        "bmi": {
+          "under": "Underweight",
+          "normal": "Normal weight",
+          "over": "Overweight",
+          "obese": "Obese"
+        },
+        "iomFor": "IOM guideline for you ({range})"
       },
       "appts": {
         "addVisit": "+ Add Visit",
@@ -299,10 +337,34 @@ window.MYOB_LOCALES.en = {
         "edit": "Edit",
         "delete": "Delete",
         "visitDeleted": "Visit deleted",
-        "noVisits": "No visits logged yet. Add one above to track questions and notes."
+        "noVisits": "No visits logged yet. Add one above to track questions and notes.",
+        "deleteConfirm": "Delete this visit?"
       },
       "cx": {
-        "noContractions": "No contractions recorded yet.<br>Tap \"Contraction Starting\" when one begins."
+        "noContractions": "No contractions recorded yet.<br>Tap \"Contraction Starting\" when one begins.",
+        "noContraction": "No contraction in progress",
+        "inProgress": "Contraction in progress…",
+        "startBtn": "Contraction Starting",
+        "endBtn": "Contraction Ending",
+        "clearAll": "Clear all",
+        "clearConfirm": "Clear all contraction records?",
+        "duration": "{d} long",
+        "interval": "every {t}"
+      },
+      "i18n": {
+        "intro": "Compare every phrase in this app against the English original. If something reads wrong, type a better version. Your suggestions stay on this phone until you export them.",
+        "searchPlaceholder": "Search phrases…",
+        "needsWork": "Needs work",
+        "all": "All",
+        "suggested": "Suggested",
+        "suggestPlaceholder": "Suggest a better wording…",
+        "nothingToShow": "Nothing to show with these filters.",
+        "showingFirst": "Showing the first {n} of {total}. Use search to narrow it down.",
+        "export": "Export my suggestions",
+        "clear": "Clear",
+        "clearConfirm": "Delete all your suggestions for this language?",
+        "nothingToExport": "No suggestions to export yet",
+        "exported": "Exported {n} suggestions"
       }
     },
     "theme": {
@@ -399,7 +461,9 @@ window.MYOB_LOCALES.en = {
       "birthPlanBuilder": "Birth Plan Builder",
       "guidedChoicesShareableOnePage": "Guided choices · Shareable one-page summary",
       "visitNotes": "Visit Notes",
-      "questionsBeforeNotesDuringEvery": "Questions before · Notes during every visit"
+      "questionsBeforeNotesDuringEvery": "Questions before · Notes during every visit",
+      "translationHelper": "Translation Helper",
+      "reviewSuggestWording": "Review wording · Suggest a better translation"
     },
     "toolkick": {
       "kickCounter": "Kick Counter"
@@ -498,6 +562,9 @@ window.MYOB_LOCALES.en = {
       "recovery": "Postpartum<br>Recovery",
       "baby": "Your<br>Newborn",
       "toolsTrackers": "Tools &amp;<br>Trackers"
+    },
+    "tooli18n": {
+      "translationHelper": "Translation Helper"
     }
   },
   "content": {

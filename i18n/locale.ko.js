@@ -107,7 +107,14 @@ window.MYOB_LOCALES.ko = {
         "getMyScore": "내 점수 확인",
         "scoreOutOf30Based": "총점 30점 만점 · 에딘버러 산후 우울 척도 기반",
         "pastCheckIns": "이전 검사 기록",
-        "selfHarmGuidance": "스스로를 해치고 싶은 생각이 들었다고 답하셨습니다. 담당 의료진에게 연락하시거나 988(자살 예방 및 위기 상담 전화)로 전화 또는 문자하시거나, 가까운 응급실을 방문하세요."
+        "selfHarmGuidance": "스스로를 해치고 싶은 생각이 들었다고 답하셨습니다. 담당 의료진에게 연락하시거나 988(자살 예방 및 위기 상담 전화)로 전화 또는 문자하시거나, 가까운 응급실을 방문하세요.",
+        "continueWeekly": "매주 계속 확인해 보세요. 기분이 달라지면 이 도구로 추적할 수 있습니다.",
+        "talkToDoctor": "선별 점수에 대해서라도 의료진과 이야기하는 것은 언제나 좋은 일입니다. 산후우울증은 치료가 잘 됩니다.",
+        "instrumentLanguage": "설문지 언어:",
+        "change": "변경",
+        "scoreNote": "{max}점 만점 · {instrument} · 진단이 아니라 선별 도구입니다 — 결과는 반드시 의료진과 상의하세요",
+        "chooseLanguage": "답변하실 언어를 선택하세요:",
+        "validatedOnlyNote": "공식적으로 검증된 판만 제공합니다. 기계 번역도 점수는 나오지만 그 점수는 의미가 없습니다."
       },
       "birthplan": {
         "q": {
@@ -219,7 +226,8 @@ window.MYOB_LOCALES.ko = {
         "pregnancyBirthGuideEvidenceBased": "임신 &amp; 출산 가이드 · 근거 기반 · 비공개 &amp; 오프라인",
         "anyOtherPreferencesConcernsOr": "의료진에게 전달할 다른 희망사항, 걱정, 정보가 있으면 적어 주세요…",
         "copiedToClipboard": "클립보드에 복사했어요!",
-        "copyNotSupportedOnThis": "이 브라우저에서는 복사를 지원하지 않아요"
+        "copyNotSupportedOnThis": "이 브라우저에서는 복사를 지원하지 않아요",
+        "selectPreferences": "아래에서 원하는 항목을 선택하세요. 요약이 아래에 표시되며 의료진과 공유할 수 있습니다."
       },
       "kick": {
         "startSession": "세션 시작",
@@ -231,7 +239,13 @@ window.MYOB_LOCALES.ko = {
         "10MovementsReached": "10회 움직임 도달!",
         "startAnotherSession": "새 세션 시작",
         "sessionHistory": "세션 기록",
-        "noSessions": "아직 세션이 없어요"
+        "noSessions": "아직 세션이 없어요",
+        "countMovements": "활동 중인 세션 동안 태동을 세어 보세요.",
+        "goal": "목표: 2시간 안에 10회 태동",
+        "tapForEach": "👶 태동마다 누르세요",
+        "endEarly": "세션 일찍 끝내기",
+        "pass": "달성",
+        "low": "부족"
       },
       "common": {
         "recentContractions": "최근 진통",
@@ -246,7 +260,10 @@ window.MYOB_LOCALES.ko = {
         "feedLogged": "수유를 기록했어요",
         "noFeeds": "아직 기록된 수유가 없어요.",
         "fewFeedsTitle": "⚠ 오늘 수유 횟수가 8회 미만입니다",
-        "fewFeedsBody": "신생아는 보통 24시간에 8~12회 수유가 필요합니다. 아기를 깨우기 어렵거나 체중이 늘지 않는다면 담당 의료진에게 연락하세요."
+        "fewFeedsBody": "신생아는 보통 24시간에 8~12회 수유가 필요합니다. 아기를 깨우기 어렵거나 체중이 늘지 않는다면 담당 의료진에게 연락하세요.",
+        "breast": "🤱 모유",
+        "bottle": "🍼 젖병",
+        "minutes": "{n}분"
       },
       "diaper": {
         "wetToday": "오늘 소변 기저귀",
@@ -263,7 +280,20 @@ window.MYOB_LOCALES.ko = {
         "birthDateSaved": "생년월일을 저장했어요",
         "dayOfLife": "생후 일수",
         "resolvesByNow": "대부분의 황달은 이 시기에 좋아집니다",
-        "callImmediatelyIf": "다음의 경우 즉시 의료진에게 연락하세요"
+        "callImmediatelyIf": "다음의 경우 즉시 의료진에게 연락하세요",
+        "setBirthDateHint": "위에 아기의 생년월일을 입력하면 날짜별 안내를 볼 수 있습니다.",
+        "day1": "첫째 날 — 퇴원 전에 빌리루빈 수치를 확인합니다. 간호진이 아기를 관찰합니다.",
+        "day2": "빌리루빈 수치가 올라가는 시기입니다. 퇴원 전 병원에서 확인합니다. 피부와 눈 흰자위가 노래지는지 살펴보세요.",
+        "day3": "대부분의 아기에서 황달은 생후 3~5일경 가장 심해집니다. 노란색이 더 뚜렷해질 수 있습니다. 자주 수유하면(하루 8~12회) 빌리루빈 배출에 도움이 됩니다.",
+        "day4": "황달이 가장 심한 시기입니다. 아기가 잘 먹고 소변 기저귀가 충분한지 확인하세요. 이 무렵 소아과 진료가 예약되어 있을 수 있습니다.",
+        "day5": "소아과 진료: 체중 확인과 빌리루빈 수치 검사. 수치가 안정되기 시작해야 합니다. 아기가 처지고 잘 먹지 않으면 의료진에게 연락하세요.",
+        "day6": "만삭아에서는 수치가 떨어지기 시작해야 합니다. 계속 자주 수유하세요. 피부가 진하게 노랗거나 아기가 먹으려고 깨지 않으면 의료진에게 연락하세요.",
+        "day7": "대부분의 만삭아는 이 시기에 황달이 좋아지고 있습니다. 노란색이 다리와 발까지 퍼지는지 살펴보세요. 수치가 높다는 신호입니다.",
+        "day10": "대부분의 만삭아에서 황달은 거의 사라집니다. 계속되거나 심해지면 의료진이 빌리루빈 수치를 확인하려 할 것입니다.",
+        "day14": "2주 진료. 만삭아에서는 황달이 사라져 있어야 합니다. 2주가 지나도 황달이 남아 있으면 추가 검사가 필요할 수 있으니 의료진에게 알리세요.",
+        "day21": "3주를 넘겨 지속되는 황달은 지연 황달로 보고 평가가 필요합니다. 모유 수유아는 가벼운 황달이 더 오래갈 수 있지만 그래도 확인해야 합니다.",
+        "dayWatch": "{day}일째 — 살펴볼 점",
+        "redFlags": "아기가 먹으려고 깨지 않음 · 진한 노란색이 다리까지 번짐 · 등을 뒤로 젖히거나 높은 톤으로 욺 · 흰색 또는 회색 변 · 매우 진한 소변"
       },
       "bp": {
         "logBloodPressure": "+ 혈압 기록하기",
@@ -273,7 +303,14 @@ window.MYOB_LOCALES.ko = {
         "enterValidNumbersEG": "올바른 숫자를 입력하세요 (예: 118 / 76)",
         "highReadingContactYourDoctor": "혈압이 높아요 — 의사에게 연락하세요",
         "noReadings": "아직 기록된 측정값이 없어요.",
-        "highOnRecord": "⚠ 높은 혈압이 기록되었습니다"
+        "highOnRecord": "⚠ 높은 혈압이 기록되었습니다",
+        "cat": {
+          "severe": "매우 높음",
+          "high": "높음",
+          "elevated": "약간 높음",
+          "normal": "정상"
+        },
+        "recentSummary": "가장 최근 측정값({reading})은 {cat} 범위입니다. 오늘 중으로 의료진에게 연락하세요."
       },
       "weight": {
         "yourProfile": "내 프로필",
@@ -288,7 +325,14 @@ window.MYOB_LOCALES.ko = {
         "recommendedGain": "권장 총 체중 증가:",
         "forFullPregnancy": "임신 기간 전체 기준입니다.",
         "setYourProfile": "프로필을 설정하세요",
-        "setProfileHint": "임신 전 BMI를 입력하면 맞춤 IOM 체중 증가 지침을 볼 수 있습니다."
+        "setProfileHint": "임신 전 BMI를 입력하면 맞춤 IOM 체중 증가 지침을 볼 수 있습니다.",
+        "bmi": {
+          "under": "저체중",
+          "normal": "정상 체중",
+          "over": "과체중",
+          "obese": "비만"
+        },
+        "iomFor": "회원님을 위한 IOM 지침 ({range})"
       },
       "appts": {
         "addVisit": "+ 진료 추가",
@@ -298,10 +342,34 @@ window.MYOB_LOCALES.ko = {
         "edit": "수정",
         "delete": "삭제",
         "visitDeleted": "진료 기록이 삭제되었습니다",
-        "noVisits": "아직 기록된 진료가 없습니다. 위에서 추가해 질문과 메모를 관리하세요."
+        "noVisits": "아직 기록된 진료가 없습니다. 위에서 추가해 질문과 메모를 관리하세요.",
+        "deleteConfirm": "이 진료 기록을 삭제할까요?"
       },
       "cx": {
-        "noContractions": "아직 기록된 진통이 없습니다.<br>진통이 시작되면 \"진통 시작\"을 눌러 주세요."
+        "noContractions": "아직 기록된 진통이 없습니다.<br>진통이 시작되면 \"진통 시작\"을 눌러 주세요.",
+        "noContraction": "진행 중인 진통 없음",
+        "inProgress": "진통 진행 중…",
+        "startBtn": "진통 시작",
+        "endBtn": "진통 종료",
+        "clearAll": "모두 지우기",
+        "clearConfirm": "모든 진통 기록을 지울까요?",
+        "duration": "{d} 지속",
+        "interval": "{t} 간격"
+      },
+      "i18n": {
+        "intro": "이 앱의 모든 문구를 영어 원문과 비교해 보세요. 어색한 부분이 있으면 더 나은 표현을 입력하세요. 제안은 내보내기 전까지 이 휴대폰에만 저장됩니다.",
+        "searchPlaceholder": "문구 검색…",
+        "needsWork": "확인 필요",
+        "all": "전체",
+        "suggested": "제안함",
+        "suggestPlaceholder": "더 나은 표현을 제안해 주세요…",
+        "nothingToShow": "이 조건에 해당하는 항목이 없습니다.",
+        "showingFirst": "{total}개 중 처음 {n}개를 표시합니다. 검색으로 범위를 좁혀 보세요.",
+        "export": "내 제안 내보내기",
+        "clear": "지우기",
+        "clearConfirm": "이 언어의 제안을 모두 삭제할까요?",
+        "nothingToExport": "아직 내보낼 제안이 없습니다",
+        "exported": "제안 {n}개를 내보냈습니다"
       }
     },
     "theme": {
@@ -398,7 +466,9 @@ window.MYOB_LOCALES.ko = {
       "birthPlanBuilder": "출산 계획 만들기",
       "guidedChoicesShareableOnePage": "차근차근 선택하기 · 한 장짜리 요약 공유 가능",
       "visitNotes": "진료 메모",
-      "questionsBeforeNotesDuringEvery": "진료 전 질문 · 매 진료마다 메모"
+      "questionsBeforeNotesDuringEvery": "진료 전 질문 · 매 진료마다 메모",
+      "translationHelper": "번역 도우미",
+      "reviewSuggestWording": "문구 검토 · 더 나은 번역 제안"
     },
     "toolkick": {
       "kickCounter": "태동 카운터"
@@ -497,6 +567,9 @@ window.MYOB_LOCALES.ko = {
       "recovery": "산후<br>회복",
       "baby": "우리<br>신생아",
       "toolsTrackers": "도구 및<br>기록"
+    },
+    "tooli18n": {
+      "translationHelper": "번역 도우미"
     }
   },
   "content": {

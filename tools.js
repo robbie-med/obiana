@@ -41,12 +41,8 @@ function initKick() {
   el.innerHTML = `
     <div id="kick-idle-view">
       <div style="padding:32px 20px 24px;text-align:center">
-        <div style="font-size:15px;color:var(--ink-soft);line-height:1.6;margin-bottom:6px">
-          Count fetal movements during an active session.
-        </div>
-        <div style="font-size:14px;font-weight:700;color:var(--teal);margin-bottom:28px">
-          Goal: 10 movements within 2 hours
-        </div>
+        <div style="font-size:15px;color:var(--ink-soft);line-height:1.6;margin-bottom:6px">${t('tool.kick.countMovements')}</div>
+        <div style="font-size:14px;font-weight:700;color:var(--teal);margin-bottom:28px">${t('tool.kick.goal')}</div>
         <button class="big-action-btn btn-teal" onclick="startKickSession()">${t('tool.kick.startSession')}</button>
       </div>
     </div>
@@ -58,15 +54,11 @@ function initKick() {
         <div style="font-size:12px;color:var(--ink-soft);margin-top:2px">${t('tool.kick.20000Limit')}</div>
       </div>
       <div style="padding:0 16px 12px">
-        <button class="big-action-btn btn-teal" onclick="recordKick()" style="font-size:20px;padding:22px">
-          👶 Tap for Each Movement
-        </button>
+        <button class="big-action-btn btn-teal" onclick="recordKick()" style="font-size:20px;padding:22px">${t('tool.kick.tapForEach')}</button>
       </div>
       <div class="btn-row" style="margin-bottom:8px">
         <button class="btn-sm" onclick="endKickSession(false)"
-          style="flex:1;background:white;color:var(--rose);border:1.5px solid var(--rose)">
-          End Session Early
-        </button>
+          style="flex:1;background:white;color:var(--rose);border:1.5px solid var(--rose)">${t('tool.kick.endEarly')}</button>
       </div>
       <div id="kick-limit-alert" style="display:none;margin:8px 16px" class="callout alert">
         <div class="callout-title">${t('tool.kick.lessThan10MovementsIn')}</div>
@@ -172,7 +164,7 @@ function renderKickHistory() {
     <div class="kick-history-row">
       <span class="khr-date">${fmtDate(r.ts)}</span>
       <span class="khr-count">${r.count} / 10 &nbsp;<span style="font-size:12px;color:var(--ink-soft)">${fmtTime(r.duration)}</span></span>
-      <span class="khr-badge ${r.success ? 'khr-pass' : 'khr-fail'}">${r.success ? 'Pass' : r.count >= 10 ? 'Pass' : 'Low'}</span>
+      <span class="khr-badge ${r.success ? 'khr-pass' : 'khr-fail'}">${r.success || r.count >= 10 ? t('tool.kick.pass') : t('tool.kick.low')}</span>
     </div>`).join('');
 }
 
@@ -191,17 +183,11 @@ function initContractions() {
   if (!el) return;
   el.innerHTML = `
     <div style="padding:20px 16px 12px;text-align:center">
-      <div id="cx-status-label" style="font-size:15px;font-weight:600;color:var(--ink-soft);margin-bottom:10px">
-        No contraction in progress
-      </div>
+      <div id="cx-status-label" style="font-size:15px;font-weight:600;color:var(--ink-soft);margin-bottom:10px">${t('tool.cx.noContraction')}</div>
       <div id="cx-live-timer" class="contraction-live-time" style="display:none;color:var(--gold);margin-bottom:14px">0:00</div>
-      <button id="cx-btn" class="big-action-btn btn-gold" onclick="toggleContraction()" style="margin-bottom:10px">
-        Contraction Starting
-      </button>
+      <button id="cx-btn" class="big-action-btn btn-gold" onclick="toggleContraction()" style="margin-bottom:10px">${t('tool.cx.startBtn')}</button>
       <div style="margin-top:6px">
-        <button onclick="clearContractions()" style="font-size:12px;color:var(--ink-soft);background:none;border:none;cursor:pointer;text-decoration:underline">
-          Clear all
-        </button>
+        <button onclick="clearContractions()" style="font-size:12px;color:var(--ink-soft);background:none;border:none;cursor:pointer;text-decoration:underline">${t('tool.cx.clearAll')}</button>
       </div>
     </div>
     <div id="cx-511-alert" style="display:none;margin:0 16px 12px"></div>
@@ -211,7 +197,7 @@ function initContractions() {
   renderContractionList();
   if (cxActive) {
     cxTimer = setInterval(updateCxTimer, 500);
-    document.getElementById('cx-status-label').textContent = 'Contraction in progress…';
+    document.getElementById('cx-status-label').textContent = I18n.t('tool.cx.inProgress');
     document.getElementById('cx-btn').textContent = 'Contraction Ending';
     document.getElementById('cx-btn').className = 'big-action-btn btn-rose';
     document.getElementById('cx-live-timer').style.display = '';
@@ -223,9 +209,9 @@ function toggleContraction() {
     cxStart = Date.now();
     cxActive = true;
     cxTimer = setInterval(updateCxTimer, 500);
-    document.getElementById('cx-status-label').textContent = 'Contraction in progress…';
+    document.getElementById('cx-status-label').textContent = I18n.t('tool.cx.inProgress');
     const btn = document.getElementById('cx-btn');
-    btn.textContent = 'Contraction Ending';
+    btn.textContent = I18n.t('tool.cx.endBtn');
     btn.className = 'big-action-btn btn-rose';
     document.getElementById('cx-live-timer').style.display = '';
   } else {
@@ -242,9 +228,9 @@ function toggleContraction() {
     cxActive = false;
     cxStart = null;
 
-    document.getElementById('cx-status-label').textContent = 'No contraction in progress';
+    document.getElementById('cx-status-label').textContent = I18n.t('tool.cx.noContraction');
     const btn = document.getElementById('cx-btn');
-    btn.textContent = 'Contraction Starting';
+    btn.textContent = I18n.t('tool.cx.startBtn');
     btn.className = 'big-action-btn btn-gold';
     const lt = document.getElementById('cx-live-timer');
     if (lt) { lt.style.display = 'none'; lt.textContent = '0:00'; }
@@ -268,10 +254,10 @@ function renderContractionList() {
   }
   el.innerHTML = cxList.slice(0, 20).map((c, i) => {
     const dur = fmtTime(c.duration);
-    const intv = c.interval != null ? `every ${fmtTime(c.interval)}` : '—';
+    const intv = c.interval != null ? I18n.t('tool.cx.interval', { t: fmtTime(c.interval) }) : '—';
     return `<div class="cx-row">
       <span class="cx-num">${i + 1}</span>
-      <span class="cx-dur">${dur} long</span>
+      <span class="cx-dur">${I18n.t('tool.cx.duration', { d: dur })}</span>
       <span class="cx-interval">${intv}</span>
     </div>`;
   }).join('');
@@ -316,7 +302,7 @@ function check511() {
 }
 
 function clearContractions() {
-  if (!confirm('Clear all contraction records?')) return;
+  if (!confirm(I18n.t('tool.cx.clearConfirm'))) return;
   cxList = [];
   localStorage.removeItem('contractions');
   renderContractionList();
@@ -371,11 +357,11 @@ function renderFeedList() {
   if (!feedLog.length) { el.innerHTML = `<p class="history-empty">${t('tool.feed.noFeeds')}</p>`; return; }
   el.innerHTML = feedLog.slice(0, 30).map((f, i) => {
     let detail = '';
-    if (f.type === 'breast') detail = `${f.side || ''} · ${f.duration || '?'} min`;
+    if (f.type === 'breast') detail = `${f.side || ''} · ${I18n.t('tool.feed.minutes', { n: f.duration || '?' })}`;
     else detail = `Bottle · ${f.oz || '?'} oz`;
     return `<div class="feed-row">
       <span class="feed-time">${fmtTimeOfDay(f.ts)}<br><span style="font-size:10px">${fmtDate(f.ts)}</span></span>
-      <span class="feed-detail">${f.type === 'breast' ? '🤱 Breast' : '🍼 Bottle'}</span>
+      <span class="feed-detail">${f.type === 'breast' ? t('tool.feed.breast') : t('tool.feed.bottle')}</span>
       <span class="feed-note">${detail}</span>
       <button onclick="deleteFeed(${i})" style="background:none;border:none;color:var(--ink-soft);font-size:16px;cursor:pointer;padding:4px;-webkit-tap-highlight-color:transparent">×</button>
     </div>`;
@@ -502,18 +488,11 @@ function deleteDiaper(idx) {
 // ═══════════════════════════════════════════════════════
 TOOL_INITS['tool-jaundice'] = initJaundice;
 
-const JAUNDICE_GUIDANCE = [
-  { day: 1, text: 'First day — bilirubin is being checked before hospital discharge. Baby is monitored by the nursing staff.' },
-  { day: 2, text: 'Bilirubin levels are rising. Hospital checks before discharge. Watch for yellowing of skin and whites of eyes.' },
-  { day: 3, text: 'Jaundice peaks around days 3–5 in most babies. Yellow color may be more visible. Feeding frequently (8–12 times/day) helps the body clear bilirubin.' },
-  { day: 4, text: 'Peak jaundice period. Make sure baby is feeding well and having wet diapers. Pediatrician visit may be scheduled around now.' },
-  { day: 5, text: 'Pediatrician visit: weight check + bilirubin level. Levels should start to level off. If baby is sleepy and not feeding, call your doctor.' },
-  { day: 6, text: 'Levels should start declining in full-term babies. Continue feeding frequently. If skin is deeply yellow or baby won\'t wake to feed — call your doctor.' },
-  { day: 7, text: 'Most term babies\' jaundice is improving by now. Watch for yellowing spreading to legs and feet, which signals higher levels.' },
-  { day: 10, text: 'In most term babies, jaundice is nearly resolved. If it\'s persisting or worsening, your doctor will want to check a bilirubin level.' },
-  { day: 14, text: '2-week visit. Jaundice should be resolved in term babies. Persistent jaundice beyond 2 weeks may need further evaluation — tell your doctor.' },
-  { day: 21, text: 'Jaundice lasting beyond 3 weeks is considered prolonged and should be evaluated. Breastfed babies can have mild jaundice longer, but it still needs to be checked.' },
-];
+// Day thresholds are structure; the guidance prose lives in i18n.
+const JAUNDICE_GUIDANCE = [1, 2, 3, 4, 5, 6, 7, 10, 14, 21].map(day => ({
+  day, get text() { return I18n.t('tool.jaundice.day' + day); }
+}));
+
 
 function getJaundiceDay() {
   const bd = localStorage.getItem('jaundice-birth-date');
@@ -551,16 +530,14 @@ function initJaundice() {
       ${day > 21 ? `<div style="font-size:13px;color:var(--ink-soft);margin-top:4px">${t('tool.jaundice.resolvesByNow')}</div>` : ''}
     </div>
     <div class="callout gold" style="margin:0 16px 8px">
-      <div class="callout-title">Day ${day} — What to watch for</div>
+      <div class="callout-title">${t('tool.jaundice.dayWatch', { day })}</div>
       <p>${getJaundiceGuidance(day)}</p>
     </div>
     <div class="callout alert" style="margin:0 16px 8px">
       <div class="callout-title">${t('tool.jaundice.callImmediatelyIf')}</div>
-      <p>Baby won't wake to feed · Deeply yellow skin spreading to legs · Arching back or high-pitched cry · White or grey stools · Very dark urine</p>
+      <p>${t('tool.jaundice.redFlags')}</p>
     </div>` : `
-    <div style="padding:24px 20px;text-align:center;color:var(--ink-soft)">
-      Set baby's birth date above to see day-by-day guidance.
-    </div>`}
+    <div style="padding:24px 20px;text-align:center;color:var(--ink-soft)">${t('tool.jaundice.setBirthDateHint')}</div>`}
     <div style="height:16px"></div>`;
 }
 
@@ -580,10 +557,10 @@ let bpLog = JSON.parse(localStorage.getItem('bp-log') || '[]');
 TOOL_INITS['tool-bp'] = initBP;
 
 function getBPCategory(s, d) {
-  if (s >= 160 || d >= 110) return { label: 'Severely High', color: '#c44', urgent: true };
-  if (s >= 140 || d >= 90)  return { label: 'High', color: '#e65100', urgent: true };
-  if (s >= 130 || d >= 80)  return { label: 'Elevated', color: '#f59e0b', urgent: false };
-  return { label: 'Normal', color: '#2e7d32', urgent: false };
+  if (s >= 160 || d >= 110) return { label: I18n.t('tool.bp.cat.severe'),   color: '#c44',     urgent: true };
+  if (s >= 140 || d >= 90)  return { label: I18n.t('tool.bp.cat.high'),     color: '#e65100',  urgent: true };
+  if (s >= 130 || d >= 80)  return { label: I18n.t('tool.bp.cat.elevated'), color: '#f59e0b',  urgent: false };
+  return { label: I18n.t('tool.bp.cat.normal'), color: '#2e7d32', urgent: false };
 }
 
 function initBP() {
@@ -596,7 +573,7 @@ function initBP() {
   el.innerHTML = `
     ${last && lastCat.urgent ? `<div class="callout alert" style="margin:12px 16px 0">
       <div class="callout-title">${t('tool.bp.highOnRecord')}</div>
-      <p>Your most recent reading (${last.s}/${last.d}) is in the ${lastCat.label} range. Contact your doctor today.</p>
+      <p>${t('tool.bp.recentSummary', { reading: last.s + '/' + last.d, cat: lastCat.label })}</p>
     </div>` : ''}
     <div style="padding:${last && lastCat.urgent ? '8px' : '12px'} 16px 12px">
       <button class="big-action-btn btn-teal" onclick="openModal('bp')">${t('tool.bp.logBloodPressure')}</button>
@@ -661,10 +638,10 @@ TOOL_INITS['tool-weight'] = initWeight;
 
 function getGainRange(bmi) {
   if (!bmi) return null;
-  if (bmi < 18.5) return { min: 28, max: 40, label: 'Underweight (BMI < 18.5)' };
-  if (bmi < 25)   return { min: 25, max: 35, label: 'Normal weight (BMI 18.5–24.9)' };
-  if (bmi < 30)   return { min: 15, max: 25, label: 'Overweight (BMI 25–29.9)' };
-  return { min: 11, max: 20, label: 'Obese (BMI ≥ 30)' };
+  if (bmi < 18.5) return { min: 28, max: 40, label: I18n.t('tool.weight.bmi.under')  + ' (BMI < 18.5)' };
+  if (bmi < 25)   return { min: 25, max: 35, label: I18n.t('tool.weight.bmi.normal') + ' (BMI 18.5–24.9)' };
+  if (bmi < 30)   return { min: 15, max: 25, label: I18n.t('tool.weight.bmi.over')   + ' (BMI 25–29.9)' };
+  return { min: 11, max: 20, label: I18n.t('tool.weight.bmi.obese') + ' (BMI ≥ 30)' };
 }
 
 function initWeight() {
@@ -691,7 +668,7 @@ function initWeight() {
       <button class="btn-sm btn-teal" onclick="saveWeightProfile()" style="width:100%">${t('tool.weight.saveProfile')}</button>
     </div>
     ${range ? `<div class="callout" style="margin:8px 16px">
-      <div class="callout-title">IOM guideline for you (${range.label})</div>
+      <div class="callout-title">${t('tool.weight.iomFor', { range: range.label })}</div>
       <p>${t('tool.weight.recommendedGain')} <strong>${range.min}–${range.max} lbs</strong> ${t('tool.weight.forFullPregnancy')}
       ${totalGain !== null ? ` You have gained <strong>${totalGain > 0 ? '+' : ''}${totalGain} lbs</strong> so far.` : ''}</p>
     </div>` : `<div class="callout" style="margin:8px 16px"><div class="callout-title">${t('tool.weight.setYourProfile')}</div><p>${t('tool.weight.setProfileHint')}</p></div>`}
@@ -946,11 +923,7 @@ function submitEPDS() {
         <div class="score-label" style="color:${interp.color}">${interp.label}</div>
         <div class="score-note">${escHtml(I18n.t('tool.mood.scoreNote', {
           max: epds.maxScore || 30, instrument: epds.instrument || 'EPDS' }))}</div>
-        ${score >= 10 ? `<div style="margin-top:10px;font-size:13px;font-weight:600;color:${interp.color}">
-          Talking to your doctor — even about a screening score — is always a good step. PPD is very treatable.
-        </div>` : `<div style="margin-top:10px;font-size:13px;color:var(--ink-soft)">
-          Continue checking in weekly. If your mood changes, this tool will help you track it.
-        </div>`}
+        ${score >= 10 ? `<div style="margin-top:10px;font-size:13px;font-weight:600;color:${interp.color}">${t('tool.mood.talkToDoctor')}</div>` : `<div style="margin-top:10px;font-size:13px;color:var(--ink-soft)">${t('tool.mood.continueWeekly')}</div>`}
         ${q10score > 0 ? `<div class="callout alert" style="margin-top:12px;text-align:left">
           <div class="callout-title">Important</div>
           <p>${escHtml(I18n.t('tool.mood.selfHarmGuidance'))}</p>
@@ -1025,9 +998,7 @@ function initBirthPlan() {
   if (!el) return;
   el.innerHTML = `
     <div style="padding:12px 16px 4px">
-      <p style="font-size:13.5px;color:var(--ink);line-height:1.6">
-        Select your preferences below. Your summary will appear at the bottom — you can share it with your care team.
-      </p>
+      <p style="font-size:13.5px;color:var(--ink);line-height:1.6">${t('tool.birthplan.selectPreferences')}</p>
     </div>
     <div id="bpb-questions">
       ${BIRTH_PLAN_QUESTIONS.map(q => `
@@ -1087,7 +1058,7 @@ function renderBirthPlanSummary() {
   const savedNotes = localStorage.getItem('birth-plan-notes') || '';
   return `
     <div class="birth-plan-output">
-      <div class="bpo-header">📋 My Birth Preferences (${answered.length}/${BIRTH_PLAN_QUESTIONS.length})</div>
+      <div class="bpo-header">📋 ${t('tool.birthplan.myBirthPreferences')} (${answered.length}/${BIRTH_PLAN_QUESTIONS.length})</div>
       ${rows}
       <div style="padding:12px 16px 4px;font-size:13px;font-weight:600;color:var(--ink-soft)">${t('tool.birthplan.additionalNotesComments')}</div>
       <div style="padding:0 16px 12px">
@@ -1303,7 +1274,7 @@ function saveAppt() {
 }
 
 function deleteAppt(id) {
-  if (!confirm('Delete this visit?')) return;
+  if (!confirm(I18n.t('tool.appts.deleteConfirm'))) return;
   appointments = appointments.filter(a => a.id !== id);
   localStorage.setItem('appt-notes', JSON.stringify(appointments));
   initAppts();

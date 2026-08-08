@@ -43,6 +43,10 @@ const INLINE_NOISE = [
   /Sagovsky.*$/gi, /Psychiatry,?\s*150.*$/gi, /\b78[0-9]-?7?8?6?\b/g,
   /THE\s+EDINBURGH[^.]*/gi, /EDINBURGH\s+(POSTNATAL|DEPRESSION)[^.]*/gi,
   /\bNOWRITING\b|\bNO\s*WRITING\b|\bBINDING\b/gi,
+  // Rotated margin text lands as isolated ALL-CAPS tokens inside an item stem
+  // — "…tiang in ka EDINBURGH um tawn:". Case-sensitive on purpose: the real
+  // item text never shouts these words, so only the furniture matches.
+  /\b(EDINBURGH|POSTNATAL|DEPRESSION|SCALE|WRITING|BINDING|MARGIN|LOCATION|ADDRESS|FACILITY)\b/g,
 ];
 const scrub = s => INLINE_NOISE.reduce((a, re) => a.replace(re, '   '), s);
 

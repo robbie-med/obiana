@@ -52,9 +52,9 @@ window.MYOB_EPDS.cnh = {
     {
       "text": "Thil hna hi hmailei nuamnak beisei in ka cuanh:",
       "options": [
-        "Ka si tawn ning khan si ko",
+        "Ka si tawn ning khan si ko as per",
         "Ka si tawn mi nak in a tlawm deuh",
-        "",
+        "Ka si tawn mi nak in tlawm tuk lehpek",
         "Si nem mam lo"
       ],
       "scores": [
@@ -69,7 +69,7 @@ window.MYOB_EPDS.cnh = {
       "options": [
         "Asi, caan tam deuh ah",
         "Asi achel can ah",
-        "",
+        "Asi tawn lemloh",
         "Aih, asi bel loh"
       ],
       "scores": [
@@ -98,7 +98,7 @@ window.MYOB_EPDS.cnh = {
       "text": "Sullanei lo in ttih le thla-phang in ka um tawn:",
       "options": [
         "Asi, a tam ngai tawn",
-        "",
+        "Asi, acaan can ah",
         "Aih, tamtuk lem loh",
         "Aih, asibal lo"
       ],
@@ -125,11 +125,11 @@ window.MYOB_EPDS.cnh = {
       ]
     },
     {
-      "text": "Lung retheituk ruangah, I hngilhkhawhlo tiang in ka EDINBURGH um tawn:",
+      "text": "Lung retheituk ruangah, I hngilhkhawhlo tiang in ka um tawn:",
       "options": [
         "Asi, caan tam deuh cu",
         "Asi, a chel caan ah",
-        "",
+        "Atu le tu asilo",
         "Aih, asi bal lo"
       ],
       "scores": [
@@ -144,7 +144,7 @@ window.MYOB_EPDS.cnh = {
       "options": [
         "si, caan tam deuh cu",
         "Asi, atu le tu",
-        "",
+        "Atu le tu asilo",
         "Aih, asi bal lo"
       ],
       "scores": [
@@ -173,7 +173,7 @@ window.MYOB_EPDS.cnh = {
       "text": "Keimah le keimah tuahhmawh duhnak lungthin a rak chuak:",
       "options": [
         "Asi, atu le tu si pah ko",
-        "",
+        "Achel caan ah",
         "Asi bal theng lo",
         "Aih, asi bal lo"
       ],
