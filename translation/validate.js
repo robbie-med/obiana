@@ -19,12 +19,29 @@ const content = JSON.parse(fs.readFileSync(path.join(T, 'source/content.en.json'
 
 const PLURAL_CATS = ['zero', 'one', 'two', 'few', 'many', 'other'];
 
+// Scripts that must NOT appear in a given language's output. A model (or a
+// human working across several languages in one sitting) will occasionally
+// drop a word of the wrong language into a string; it reads as fluent to
+// anyone who does not know both scripts, so check mechanically.
+const FOREIGN_SCRIPT = {
+  ru:  { re: /[\u4E00-\u9FFF\uAC00-\uD7AF\u0600-\u06FF]/, label: 'CJK/Hangul/Arabic' },
+  zh:  { re: /[\u0400-\u04FF\uAC00-\uD7AF\u0600-\u06FF]/, label: 'Cyrillic/Hangul/Arabic' },
+  ko:  { re: /[\u0400-\u04FF\u0600-\u06FF]/,                label: 'Cyrillic/Arabic' },
+  ar:  { re: /[\u0400-\u04FF\u4E00-\u9FFF\uAC00-\uD7AF]/, label: 'Cyrillic/CJK/Hangul' },
+  es:  { re: /[\u0400-\u04FF\u4E00-\u9FFF\uAC00-\uD7AF\u0600-\u06FF]/, label: 'non-Latin' },
+  fr:  { re: /[\u0400-\u04FF\u4E00-\u9FFF\uAC00-\uD7AF\u0600-\u06FF]/, label: 'non-Latin' },
+  zom: { re: /[\u0400-\u04FF\u4E00-\u9FFF\uAC00-\uD7AF\u0600-\u06FF]/, label: 'non-Latin' },
+};
+
 const placeholders = s => (String(s).match(/\{(\w+)\}/g) || []).sort();
 const tags = s => (String(s).match(/<\/?[a-zA-Z][^>]*>/g) || [])
   .map(t => t.replace(/\s+/g, ' ').toLowerCase()).sort();
 const entities = s => (String(s).match(/&[a-zA-Z]+;|&#\d+;/g) || []).sort();
 
-function compareString(key, en, tr, errs, warns) {
+function compareString(key, en, tr, errs, warns, lang) {
+  const foreign = lang && FOREIGN_SCRIPT[lang];
+  if (foreign && typeof tr === 'string' && foreign.re.test(tr))
+    errs.push(`${key}: ${foreign.label} characters leaked into ${lang} ("${String(tr).slice(0, 40)}")`);
   if (typeof tr !== 'string') { errs.push(`${key}: expected string, got ${typeof tr}`); return; }
   if (!tr.trim() && String(en).trim()) { errs.push(`${key}: empty translation`); return; }
 
@@ -59,7 +76,7 @@ function validateFile(file) {
   const base = path.basename(file);
   const m = base.match(/^([a-z]{2,3})\.(ui|content)\.(\d+)\.json$/);
   if (!m) return { file: base, errs: [`unrecognised filename`], warns: [] };
-  const [, , kind] = m;
+  const [, lang, kind] = m;
 
   let data;
   try { data = JSON.parse(fs.readFileSync(file, 'utf8')); }
@@ -89,7 +106,7 @@ function validateFile(file) {
       for (const f of ['title', 'sub', 'body']) {
         if (!(f in tr)) { errs.push(`${k}.${f}: missing`); continue; }
         if (f === 'sub' && !String(en.sub).trim()) continue;   // legitimately empty
-        compareString(`${k}.${f}`, en[f], tr[f], errs, warns);
+        compareString(`${k}.${f}`, en[f], tr[f], errs, warns, lang);
       }
     } else if (en && typeof en === 'object') {
       // plural form: categories may legitimately differ from English
@@ -99,9 +116,9 @@ function validateFile(file) {
       if (cats.some(c => !PLURAL_CATS.includes(c)))
         errs.push(`${k}: invalid plural category (${cats.join(',')})`);
       if (!cats.includes('other')) errs.push(`${k}: missing required "other" form`);
-      for (const c of cats) compareString(`${k}.${c}`, en.other || en.one, tr[c], errs, warns);
+      for (const c of cats) compareString(`${k}.${c}`, en.other || en.one, tr[c], errs, warns, lang);
     } else {
-      compareString(k, en, tr, errs, warns);
+      compareString(k, en, tr, errs, warns, lang);
     }
   }
   return { file: base, errs, warns };
