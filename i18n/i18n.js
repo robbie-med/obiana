@@ -41,7 +41,7 @@ const I18n = (() => {
 
   // Bumped alongside sw.js CACHE_NAME so an updated locale file is actually
   // re-fetched instead of served from the browser's heuristic cache.
-  const ASSET_VERSION = '22';
+  const ASSET_VERSION = '23';
 
   const FALLBACK = 'en';
   const STORAGE_KEY = 'myob.lang';

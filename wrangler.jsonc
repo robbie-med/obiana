@@ -33,17 +33,19 @@
     // Assets normally win over the Worker. The API has no matching file, but
     // being explicit keeps it true even if a path ever collides.
     "run_worker_first": ["/api/*"]
-  },
+  }
 
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "obiana-suggestions",
-      // Filled in by: npx wrangler d1 create obiana-suggestions
-      "database_id": "REPLACE_WITH_DATABASE_ID"
-    }
-  ]
-
+  // ─── Enabling translation suggestions ───────────────────
+  // The /api/suggest endpoint needs a D1 binding. It is intentionally NOT
+  // declared here: an unresolved database_id fails the Workers Build, which
+  // would block deploying the entire site for a feature that is not set up.
+  // The Worker reports "not configured" until this block is added back:
+  //
+  //   "d1_databases": [
+  //     { "binding": "DB", "database_name": "obiana-suggestions",
+  //       "database_id": "<id printed by: wrangler d1 create obiana-suggestions>" }
+  //   ]
+  //
   // Secrets, set with `wrangler secret put` (never committed):
   //   HASH_SALT  — salt for the rate-limiting IP hash
   //   NTFY_URL   — optional; a full ntfy topic URL to ping on each submission

@@ -66,6 +66,11 @@ async function validKeys(env, origin) {
 async function handleSuggest(request, env, ctx) {
   if (request.method !== 'POST') return json({ error: 'method_not_allowed' }, 405);
 
+  // D1 is bound only once the operator has created the database. Until then
+  // say so plainly — the client falls back to local save + Export, and the
+  // rest of the site is unaffected.
+  if (!env.DB) return json({ error: 'not_configured' }, 503);
+
   const len = Number(request.headers.get('content-length') || 0);
   if (len > MAX_BODY) return json({ error: 'too_large' }, 413);
 
@@ -127,7 +132,9 @@ export default {
       catch (e) { return json({ error: 'server_error' }, 500); }
     }
 
-    if (url.pathname === '/api/health') return json({ ok: true });
+    if (url.pathname === '/api/health') {
+      return json({ ok: true, suggestions: env.DB ? 'enabled' : 'not_configured' });
+    }
 
     // Not an API path: fall through to static assets.
     return env.ASSETS.fetch(request);
