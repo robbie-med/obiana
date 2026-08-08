@@ -30,7 +30,7 @@ window.MYOB_LOCALES.fr = {
       "badgeFaq": "FAQ",
       "section5": "Section 5",
       "faqCommonMyths": "FAQ &amp;<br>Mythes courants",
-      "evidenceBasedAnswersToThe": "Des réponses fondées sur des données probantes aux questions les plus courantes — y compris celles que vous avez entendues de votre famille, de vos amis et sur internet."
+      "evidenceBasedAnswersToThe": "Des réponses fondées sur les preuves aux questions les plus fréquentes, y compris ce que vous avez entendu de la famille, des amis et sur internet."
     },
     "search": {
       "noResultsTitle": "Aucun résultat trouvé",
@@ -712,12 +712,12 @@ window.MYOB_LOCALES.fr = {
     "faq-deli": {
       "title": "Puis-je manger de la charcuterie et du fromage à pâte molle ?",
       "sub": "",
-      "body": "<p>Le principal risque est la <em>Listeria</em>, une infection bactérienne rare mais qui peut être grave pendant la grossesse (elle peut traverser le placenta). La FDA (agence américaine des aliments et médicaments) conseille d'éviter les fromages non pasteurisés et la charcuterie, sauf si elle est chauffée jusqu'à être fumante (165°F). La plupart des fromages à pâte molle pasteurisés (comme le brie pasteurisé, la feta en emballage) sont sûrs. Le risque global lié à une consommation occasionnelle de charcuterie est très faible — ces conseils sont une précaution, et non une garantie qu'un sandwich à la dinde rendra malade. En cas de doute, faites chauffer.</p>"
+      "body": "<p>Le principal risque est la <em>Listeria</em>, une infection bactérienne rare mais qui peut être grave pendant la grossesse (elle peut traverser le placenta). La FDA (agence américaine des aliments et médicaments) conseille d'éviter les fromages non pasteurisés et la charcuterie, sauf si elle est chauffée jusqu'à être fumante (165°F). La plupart des fromages à pâte molle pasteurisés (comme le brie pasteurisé, la feta en emballage) sont sûrs. Le risque global lié à une consommation occasionnelle de charcuterie est très faible. Ces conseils sont une précaution, et non une garantie qu'un sandwich à la dinde rendra malade. En cas de doute, faites chauffer.</p>"
     },
     "faq-coffee": {
       "title": "Puis-je consommer de la caféine ?",
       "sub": "",
-      "body": "<p>Oui. L'ACOG (collège américain des obstétriciens) recommande de limiter la caféine à <strong>moins de 200 mg par jour</strong> (environ une tasse de café filtre de 12 oz). À ce niveau, aucun effet nocif sur la grossesse n'est établi. Le thé, les sodas et le chocolat contiennent aussi de la caféine — comptez-les tous ensemble. Réduire votre consommation est raisonnable ; l'arrêter complètement est un choix personnel, pas une nécessité médicale.</p>"
+      "body": "<p>Oui. L'ACOG (collège américain des obstétriciens) recommande de limiter la caféine à <strong>moins de 200 mg par jour</strong> (environ une tasse de café filtre de 12 oz). À ce niveau, aucun effet nocif sur la grossesse n'est établi. Le thé, les sodas et le chocolat contiennent aussi de la caféine. Comptez-les tous ensemble. Réduire votre consommation est raisonnable ; l'arrêter complètement est un choix personnel, pas une nécessité médicale.</p>"
     },
     "faq-hair-dye": {
       "title": "Puis-je me teindre les cheveux pendant la grossesse ?",
@@ -727,7 +727,7 @@ window.MYOB_LOCALES.fr = {
     "faq-exercise-mc": {
       "title": "L'exercice physique provoque-t-il une fausse couche ?",
       "sub": "",
-      "body": "<p>Non. L'exercice modéré ne provoque pas de fausse couche dans les grossesses en bonne santé. C'est l'un des mythes les plus répandus sur la grossesse. Les fausses couches précoces sont presque toujours causées par des anomalies chromosomiques de l'embryon — pas par l'exercice, les rapports sexuels, le stress ou quoi que ce soit que la mère aurait fait. L'exercice est protecteur, pas dangereux. Consultez les recommandations sur l'exercice dans la section Prénatal.</p>"
+      "body": "<p>Non. L'exercice modéré ne provoque pas de fausse couche dans les grossesses en bonne santé. C'est l'un des mythes les plus répandus sur la grossesse. Les fausses couches précoces sont presque toujours causées par des anomalies chromosomiques de l'embryon, pas par l'exercice, les rapports sexuels, le stress ou quoi que ce soit que la mère aurait fait. L'exercice est protecteur, pas dangereux. Consultez les recommandations sur l'exercice dans la section Prénatal.</p>"
     },
     "faq-sex-pregnancy": {
       "title": "Les rapports sexuels sont-ils sûrs pendant la grossesse ?",
@@ -737,32 +737,32 @@ window.MYOB_LOCALES.fr = {
     "faq-vaccines": {
       "title": "Les vaccins sont-ils sûrs pendant la grossesse ?",
       "sub": "",
-      "body": "<p>Oui, et certains sont fortement recommandés. Le <strong>Tdap</strong> (rappel contre la coqueluche, entre 27 et 36 semaines) et le <strong>vaccin contre la grippe</strong> sont recommandés à chaque grossesse. Le <strong>vaccin contre la COVID-19</strong> est également recommandé. Ces vaccins vous protègent contre des maladies graves et transmettent des anticorps à votre bébé par le placenta, ce qui le protège avant qu'il puisse être vacciné. Les vaccins à virus vivant (ROR, varicelle) ne sont pas administrés pendant la grossesse. Demandez à votre médecin ceux qu'il vous reste à recevoir.</p>"
+      "body": "<p>Certains oui, d’autres non. Parlez-en à votre médecin.</p>"
     },
     "faq-eat-for-two": {
       "title": "Dois-je « manger pour deux » ?",
       "sub": "",
-      "body": "<p>Non — « manger pour deux » est un mythe. Au premier trimestre, les besoins en calories supplémentaires sont minimes. Au troisième trimestre, vous avez besoin d'environ 300 calories de plus par jour (à peu près un verre de lait et une banane). La qualité de votre alimentation compte bien plus que la quantité. Privilégiez les protéines, le fer, les folates, le calcium et les acides gras oméga-3. Votre vitamine prénatale aide à combler les manques, mais elle ne doit pas remplacer une alimentation équilibrée.</p>"
+      "body": "<p>Non. « manger pour deux » est un mythe. Au premier trimestre, les besoins en calories supplémentaires sont minimes. Au troisième trimestre, vous avez besoin d'environ 300 calories de plus par jour (à peu près un verre de lait et une banane). La qualité de votre alimentation compte bien plus que la quantité. Privilégiez les protéines, le fer, les folates, le calcium et les acides gras oméga-3. Votre vitamine prénatale aide à combler les manques, mais elle ne doit pas remplacer une alimentation équilibrée.</p>"
     },
     "faq-hot-tub": {
       "title": "Puis-je prendre des bains ou utiliser un jacuzzi ?",
       "sub": "",
-      "body": "<p>Les bains chauds sont sans danger pendant toute la grossesse. Les jacuzzis, saunas et hammams qui font monter votre température corporelle au-dessus de 102°F (39°C) ne sont pas recommandés — surtout au premier trimestre, car une température élevée est associée à des malformations du tube neural. Si vous utilisez un jacuzzi, gardez une température agréable (pas brûlante), limitez-vous à 10 minutes et évitez-le au premier trimestre. Un bain chaud à la température habituelle de l'eau du robinet (98–100°F) est sans danger.</p>"
+      "body": "<p>Les bains chauds sont sans danger pendant toute la grossesse. Les jacuzzis, saunas et hammams qui font monter votre température corporelle au-dessus de 102°F (39°C) ne sont pas recommandés, surtout au premier trimestre, car une température élevée est associée à des malformations du tube neural. Si vous utilisez un jacuzzi, gardez une température agréable (pas brûlante), limitez-vous à 10 minutes et évitez-le au premier trimestre. Un bain chaud à la température habituelle de l'eau du robinet (98–100°F) est sans danger.</p>"
     },
     "faq-epidural-csec": {
       "title": "La péridurale augmente-t-elle le risque de césarienne ?",
       "sub": "",
-      "body": "<p>Non. C'est l'une des questions les plus étudiées en obstétrique. De nombreux grands essais contrôlés randomisés et méta-analyses confirment que la péridurale n'augmente <strong>pas</strong> le taux de césariennes. Elle peut allonger légèrement la phase de poussée, mais cela se gère en toute sécurité avec de la patience et l'aide du personnel infirmier. Vous pouvez demander une péridurale à tout moment du travail actif — il n'y a pas de seuil « trop tôt » ni « trop tard ».</p>"
+      "body": "<p>Non. C'est l'une des questions les plus étudiées en obstétrique. De nombreux grands essais contrôlés randomisés et méta-analyses confirment que la péridurale n'augmente <strong>pas</strong> le taux de césariennes. Elle peut allonger légèrement la phase de poussée, mais cela se gère en toute sécurité avec de la patience et l'aide du personnel infirmier. Vous pouvez demander une péridurale à tout moment du travail actif. Il n'y a pas de seuil « trop tôt » ni « trop tard ».</p>"
     },
     "faq-routine-episiotomy": {
       "title": "Ai-je besoin d'une épisiotomie pour éviter une déchirure ?",
       "sub": "",
-      "body": "<p>Non. L'épisiotomie systématique (une incision chirurgicale à l'ouverture du vagin) n'est plus recommandée par l'ACOG. Les études montrent clairement que <strong>les déchirures naturelles guérissent généralement mieux</strong> et provoquent moins de complications (y compris des douleurs et des problèmes à long terme du plancher pelvien) que les épisiotomies systématiques. La plupart des femmes qui accouchent par voie vaginale ont une déchirure plus ou moins importante, mais beaucoup sont mineures (premier degré). L'épisiotomie reste appropriée lorsqu'il existe une indication précise — par exemple quand le bébé doit naître rapidement en raison d'une souffrance fœtale.</p>"
+      "body": "<p>Non. L'épisiotomie systématique (une incision chirurgicale à l'ouverture du vagin) n'est plus recommandée par l'ACOG. Les études montrent clairement que <strong>les déchirures naturelles guérissent généralement mieux</strong> et provoquent moins de complications (y compris des douleurs et des problèmes à long terme du plancher pelvien) que les épisiotomies systématiques. La plupart des femmes qui accouchent par voie vaginale ont une déchirure plus ou moins importante, mais beaucoup sont mineures (premier degré). L'épisiotomie reste appropriée lorsqu'il existe une indication précise. Par exemple quand le bébé doit naître rapidement en raison d'une souffrance fœtale.</p>"
     },
     "faq-water-breaking": {
       "title": "Si je perds les eaux, devrai-je avoir une césarienne ?",
       "sub": "",
-      "body": "<p>Non. Si vos membranes se rompent (perte des eaux) à terme, la plupart des femmes entrent en travail d'elles-mêmes dans les 12 heures. Si le travail ne commence pas, un déclenchement est proposé pour réduire le risque d'infection — la recommandation est de terminer l'accouchement dans les 18 à 24 heures. Si vous êtes positive au GBS (streptocoque du groupe B), des antibiotiques sont commencés immédiatement. Une césarienne n'est nécessaire que s'il existe d'autres indications — la perte des eaux à elle seule n'en est pas une.</p>"
+      "body": "<p>Non. Si vos membranes se rompent (perte des eaux) à terme, la plupart des femmes entrent en travail d'elles-mêmes dans les 12 heures. Si le travail ne commence pas, un déclenchement est proposé pour réduire le risque d'infection. La recommandation est de terminer l'accouchement dans les 18 à 24 heures. Si vous êtes positive au GBS (streptocoque du groupe B), des antibiotiques sont commencés immédiatement. Une césarienne n'est nécessaire que s'il existe d'autres indications. La perte des eaux à elle seule n'en est pas une.</p>"
     },
     "faq-eat-in-labor": {
       "title": "Puis-je manger ou boire pendant le travail ?",
@@ -777,7 +777,7 @@ window.MYOB_LOCALES.fr = {
     "faq-bf-bc": {
       "title": "Puis-je tomber enceinte pendant l'allaitement ?",
       "sub": "",
-      "body": "<p>Oui. Bien que l'allaitement exclusif supprime l'ovulation dans une certaine mesure, ce n'est <strong>pas une méthode contraceptive fiable</strong>. Vous pouvez ovuler — et tomber enceinte — avant le retour de vos règles. La « méthode de l'aménorrhée lactationnelle » exige des conditions très précises (allaitement exclusif toutes les 4 heures le jour / toutes les 6 heures la nuit, aucune supplémentation, aucun retour de couches) et n'est efficace qu'à environ 98 % dans ces conditions strictes. Parlez de contraception avant de quitter l'hôpital.</p>"
+      "body": "<p>Oui. Bien que l'allaitement exclusif supprime l'ovulation dans une certaine mesure, ce n'est <strong>pas une méthode contraceptive fiable</strong>. Vous pouvez ovuler, et tomber enceinte, avant le retour de vos règles. La « méthode de l'aménorrhée lactationnelle » exige des conditions très précises (allaitement exclusif toutes les 4 heures le jour / toutes les 6 heures la nuit, aucune supplémentation, aucun retour de couches) et n'est efficace qu'à environ 98 % dans ces conditions strictes. Parlez de contraception avant de quitter l'hôpital.</p>"
     },
     "faq-stress-milk": {
       "title": "Le stress peut-il tarir le lait maternel ?",
@@ -787,22 +787,22 @@ window.MYOB_LOCALES.fr = {
     "faq-bonding": {
       "title": "Devrais-je ressentir un lien instantané avec mon bébé ?",
       "sub": "",
-      "body": "<p>Non — le lien d'attachement est un processus, pas un moment unique. Beaucoup de mères ressentent un amour profond dès la naissance ; d'autres ont besoin de jours, de semaines, voire de plus longtemps pour développer ce sentiment. Les deux sont tout à fait normaux. L'épuisement physique, un accouchement difficile, des résultats inattendus et la dépression post-partum (DPP) peuvent tous affecter le lien précoce. Si vous vous sentez détachée ou insensible envers votre bébé pendant plus de quelques semaines, parlez-en à votre médecin — cela peut être un signe de dépression post-partum, qui se soigne.</p>"
+      "body": "<p>Non. Le lien d'attachement est un processus, pas un moment unique. Beaucoup de mères ressentent un amour profond dès la naissance ; d'autres ont besoin de jours, de semaines, voire de plus longtemps pour développer ce sentiment. Les deux sont tout à fait normaux. L'épuisement physique, un accouchement difficile, des résultats inattendus et la dépression post-partum (DPP) peuvent tous affecter le lien précoce. Si vous vous sentez détachée ou insensible envers votre bébé pendant plus de quelques semaines, parlez-en à votre médecin. Cela peut être un signe de dépression post-partum, qui se soigne.</p>"
     },
     "faq-ibuprofen-bf": {
       "title": "Puis-je prendre de l'ibuprofène pendant l'allaitement ?",
       "sub": "",
-      "body": "<p>Oui. L'ibuprofène est l'un des médicaments en vente libre les plus sûrs pendant l'allaitement — très peu passe dans le lait maternel. L'acétaminophène (Tylenol) est également sûr. Ce sont les antidouleurs de choix après l'accouchement et pendant l'allaitement. L'aspirine à forte dose n'est pas recommandée (l'aspirine à faible dose prescrite est une autre question — discutez-en avec votre médecin). Le naproxène (Aleve) passe davantage dans le lait et n'est généralement pas préféré. Confirmez toujours avec votre équipe soignante pour votre situation particulière.</p>"
+      "body": "<p>Oui. L'ibuprofène est l'un des médicaments en vente libre les plus sûrs pendant l'allaitement. Très peu passe dans le lait maternel. L'acétaminophène (Tylenol) est également sûr. Ce sont les antidouleurs de choix après l'accouchement et pendant l'allaitement. L'aspirine à forte dose n'est pas recommandée (l'aspirine à faible dose prescrite est une autre question. Discutez-en avec votre médecin). Le naproxène (Aleve) passe davantage dans le lait et n'est généralement pas préféré. Confirmez toujours avec votre équipe soignante pour votre situation particulière.</p>"
     },
     "faq-jaundice": {
-      "title": "Mon bébé a la peau jaune — quand faut-il s'inquiéter ?",
+      "title": "Mon bébé a la peau jaune. Quand faut-il s'inquiéter ?",
       "sub": "",
-      "body": "<p>La jaunisse du nouveau-né (hyperbilirubinémie) touche environ 60 % des bébés nés à terme pendant la première semaine. Elle est due à la destruction normale des globules rouges du fœtus — le foie a juste besoin de temps pour s'adapter. La plupart des cas sont légers et disparaissent sans traitement. Cela devient préoccupant quand le taux de bilirubine est très élevé (risque de lésions cérébrales à des niveaux extrêmes), ou quand le bébé est très endormi, ne tète pas, ou quand la jaunisse apparaît dans les premières 24 heures. Votre hôpital vérifiera la bilirubine avant la sortie et lors de la visite chez le pédiatre entre le jour 2 et le jour 5. Si besoin, le traitement par photothérapie (lampes de bilirubine) est très efficace.</p>"
+      "body": "<p>La jaunisse du nouveau-né (hyperbilirubinémie) touche environ 60 % des bébés nés à terme pendant la première semaine. Elle est due à la destruction normale des globules rouges du fœtus. Le foie a juste besoin de temps pour s'adapter. La plupart des cas sont légers et disparaissent sans traitement. Cela devient préoccupant quand le taux de bilirubine est très élevé (risque de lésions cérébrales à des niveaux extrêmes), ou quand le bébé est très endormi, ne tète pas, ou quand la jaunisse apparaît dans les premières 24 heures. Votre hôpital vérifiera la bilirubine avant la sortie et lors de la visite chez le pédiatre entre le jour 2 et le jour 5. Si besoin, le traitement par photothérapie (lampes de bilirubine) est très efficace.</p>"
     },
     "faq-newborn-procedures": {
       "title": "Tous les soins du nouveau-né sont-ils obligatoires ?",
       "sub": "",
-      "body": "<p>Les soins habituels du nouveau-né comprennent : <strong>l'injection de vitamine K</strong> (elle prévient un grave trouble de la coagulation — la VKDB — qui peut provoquer une hémorragie cérébrale mortelle), <strong>la pommade oculaire à l'érythromycine</strong> (elle prévient les infections des yeux, y compris la gonorrhée), <strong>la première dose du vaccin contre l'hépatite B</strong>, et <strong>le prélèvement sanguin de dépistage métabolique du nouveau-né</strong> (une piqûre au talon pour dépister environ 30 maladies, dont la phénylcétonurie, l'hypothyroïdie et la drépanocytose). Tous ces soins sont recommandés car les risques des maladies évitées dépassent de loin les risques des soins eux-mêmes. Dans la plupart des États, vous pouvez légalement les refuser, mais parlez d'abord honnêtement des risques avec votre médecin.</p>"
+      "body": "<p>Les soins habituels du nouveau-né comprennent : <strong>l'injection de vitamine K</strong> (elle prévient un grave trouble de la coagulation, la VKDB, qui peut provoquer une hémorragie cérébrale mortelle), <strong>la pommade oculaire à l'érythromycine</strong> (elle prévient les infections des yeux, y compris la gonorrhée), <strong>la première dose du vaccin contre l'hépatite B</strong>, et <strong>le prélèvement sanguin de dépistage métabolique du nouveau-né</strong> (une piqûre au talon pour dépister environ 30 maladies, dont la phénylcétonurie, l'hypothyroïdie et la drépanocytose). Tous ces soins sont recommandés car les risques des maladies évitées dépassent de loin les risques des soins eux-mêmes. Dans la plupart des États, vous pouvez légalement les refuser, mais parlez d'abord honnêtement des risques avec votre médecin.</p>"
     },
     "faq-first-bath": {
       "title": "Quand mon bébé a-t-il besoin de son premier bain ?",

@@ -30,7 +30,7 @@ window.MYOB_LOCALES.es = {
       "badgeFaq": "Pregunta",
       "section5": "Sección 5",
       "faqCommonMyths": "Preguntas Frecuentes y<br>Mitos Comunes",
-      "evidenceBasedAnswersToThe": "Respuestas basadas en evidencia a las preguntas más comunes — incluyendo cosas que ha escuchado de familiares, amigos e internet."
+      "evidenceBasedAnswersToThe": "Respuestas basadas en la evidencia a las preguntas más frecuentes, incluidas las cosas que ha oído de familiares, amistades y en internet."
     },
     "search": {
       "noResultsTitle": "No se encontraron resultados",
@@ -736,12 +736,12 @@ window.MYOB_LOCALES.es = {
     "faq-vaccines": {
       "title": "¿Son seguras las vacunas durante el embarazo?",
       "sub": "",
-      "body": "<p>Sí, y algunas se recomiendan con fuerza. La <strong>Tdap</strong> (refuerzo contra la tos ferina, semanas 27–36) y la <strong>vacuna contra la gripe</strong> se recomiendan en cada embarazo. La <strong>vacuna contra el COVID-19</strong> también se recomienda. Estas vacunas le protegen de enfermedades graves y le pasan anticuerpos a su bebé a través de la placenta, protegiéndolo antes de que pueda ser vacunado. Las vacunas de virus vivos (MMR, varicela) no se aplican durante el embarazo. Pregunte a su médico cuáles le faltan.</p>"
+      "body": "<p>Algunas sí, otras no. Consulte con su médico.</p>"
     },
     "faq-eat-for-two": {
       "title": "¿Necesito \"comer por dos\"?",
       "sub": "",
-      "body": "<p>No — \"comer por dos\" es un mito. En el primer trimestre, las calorías extra que necesita son mínimas. Para el tercer trimestre, necesita aproximadamente 300 calorías extra al día (más o menos un vaso de leche y un plátano). La calidad de la alimentación importa mucho más que la cantidad. Concéntrese en las proteínas, el hierro, el folato, el calcio y los ácidos grasos omega-3. Su vitamina prenatal ayuda a cubrir lo que le falte, pero no debe reemplazar una dieta balanceada.</p>"
+      "body": "<p>No. \"comer por dos\" es un mito. En el primer trimestre, las calorías extra que necesita son mínimas. Para el tercer trimestre, necesita aproximadamente 300 calorías extra al día (más o menos un vaso de leche y un plátano). La calidad de la alimentación importa mucho más que la cantidad. Concéntrese en las proteínas, el hierro, el folato, el calcio y los ácidos grasos omega-3. Su vitamina prenatal ayuda a cubrir lo que le falte, pero no debe reemplazar una dieta balanceada.</p>"
     },
     "faq-hot-tub": {
       "title": "¿Puedo darme baños de tina o usar un jacuzzi?",
@@ -776,7 +776,7 @@ window.MYOB_LOCALES.es = {
     "faq-bf-bc": {
       "title": "¿Puedo quedar embarazada mientras amamanto?",
       "sub": "",
-      "body": "<p>Sí. Aunque la lactancia exclusiva suprime la ovulación hasta cierto punto, <strong>no es un anticonceptivo confiable</strong>. Usted puede ovular —y quedar embarazada— antes de que le regrese la menstruación. El \"método de la amenorrea por lactancia\" exige condiciones muy específicas (lactancia exclusiva cada 4 horas durante el día y cada 6 horas en la noche, sin suplementos y sin que haya regresado la menstruación) y solo es aproximadamente 98% eficaz bajo esas condiciones estrictas. Hable sobre métodos anticonceptivos antes de salir del hospital.</p>"
+      "body": "<p>Sí. Aunque la lactancia exclusiva suprime la ovulación hasta cierto punto, <strong>no es un anticonceptivo confiable</strong>. Usted puede ovular, y quedar embarazada, antes de que le regrese la menstruación. El \"método de la amenorrea por lactancia\" exige condiciones muy específicas (lactancia exclusiva cada 4 horas durante el día y cada 6 horas en la noche, sin suplementos y sin que haya regresado la menstruación) y solo es aproximadamente 98% eficaz bajo esas condiciones estrictas. Hable sobre métodos anticonceptivos antes de salir del hospital.</p>"
     },
     "faq-stress-milk": {
       "title": "¿El estrés hace que la leche materna se seque?",
@@ -786,7 +786,7 @@ window.MYOB_LOCALES.es = {
     "faq-bonding": {
       "title": "¿Debería sentir un vínculo instantáneo con mi bebé?",
       "sub": "",
-      "body": "<p>No — crear un vínculo es un proceso, no un solo momento. Muchas madres sienten un amor profundo de inmediato al nacer; otras necesitan días, semanas o más tiempo para desarrollar ese sentimiento. Ambas experiencias son completamente normales. El agotamiento físico, los partos difíciles, los resultados inesperados y la depresión posparto (PPD) pueden afectar el vínculo temprano. Si se siente desconectada o sin emoción hacia su bebé por más de un par de semanas, dígaselo a su médico: puede ser una señal de depresión posparto, que tiene tratamiento.</p>"
+      "body": "<p>No. Crear un vínculo es un proceso, no un solo momento. Muchas madres sienten un amor profundo de inmediato al nacer; otras necesitan días, semanas o más tiempo para desarrollar ese sentimiento. Ambas experiencias son completamente normales. El agotamiento físico, los partos difíciles, los resultados inesperados y la depresión posparto (PPD) pueden afectar el vínculo temprano. Si se siente desconectada o sin emoción hacia su bebé por más de un par de semanas, dígaselo a su médico: puede ser una señal de depresión posparto, que tiene tratamiento.</p>"
     },
     "faq-ibuprofen-bf": {
       "title": "¿Puedo tomar ibuprofeno mientras amamanto?",
@@ -801,7 +801,7 @@ window.MYOB_LOCALES.es = {
     "faq-newborn-procedures": {
       "title": "¿Tienen que hacerse todos los procedimientos del recién nacido?",
       "sub": "",
-      "body": "<p>Los procedimientos habituales del recién nacido incluyen: la <strong>inyección de vitamina K</strong> (previene un trastorno grave de sangrado —VKDB, enfermedad hemorrágica por deficiencia de vitamina K— que puede causar sangrado mortal en el cerebro), la <strong>pomada ocular de eritromicina</strong> (previene infecciones de los ojos, incluida la gonorrea), la <strong>primera dosis de la vacuna contra la hepatitis B</strong> y el <strong>análisis de sangre del tamizaje metabólico del recién nacido</strong> (punción en el talón para detectar unas 30 enfermedades, como PKU, hipotiroidismo y anemia de células falciformes). Todos se recomiendan porque los riesgos de las enfermedades que previenen superan con mucho los riesgos de los procedimientos. En la mayoría de los estados usted puede negarse legalmente, pero hable primero con honestidad sobre los riesgos con su médico.</p>"
+      "body": "<p>Los procedimientos habituales del recién nacido incluyen: la <strong>inyección de vitamina K</strong> (previene un trastorno grave de sangrado, VKDB, enfermedad hemorrágica por deficiencia de vitamina K, que puede causar sangrado mortal en el cerebro), la <strong>pomada ocular de eritromicina</strong> (previene infecciones de los ojos, incluida la gonorrea), la <strong>primera dosis de la vacuna contra la hepatitis B</strong> y el <strong>análisis de sangre del tamizaje metabólico del recién nacido</strong> (punción en el talón para detectar unas 30 enfermedades, como PKU, hipotiroidismo y anemia de células falciformes). Todos se recomiendan porque los riesgos de las enfermedades que previenen superan con mucho los riesgos de los procedimientos. En la mayoría de los estados usted puede negarse legalmente, pero hable primero con honestidad sobre los riesgos con su médico.</p>"
     },
     "faq-first-bath": {
       "title": "¿Cuándo necesita mi bebé el primer baño?",

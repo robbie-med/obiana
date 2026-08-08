@@ -25,7 +25,7 @@ window.MYOB_LOCALES.en = {
       "badgeFaq": "FAQ",
       "section5": "Section 5",
       "faqCommonMyths": "FAQ &amp;<br>Common Myths",
-      "evidenceBasedAnswersToThe": "Evidence-based answers to the most common questions — including things you've heard from family, friends, and the internet."
+      "evidenceBasedAnswersToThe": "Evidence-based answers to the most common questions, including things you have heard from family, friends, and the internet."
     },
     "search": {
       "noResultsTitle": "No results found",
@@ -705,12 +705,12 @@ window.MYOB_LOCALES.en = {
     "faq-deli": {
       "title": "Can I eat deli meat and soft cheese?",
       "sub": "",
-      "body": "<p>The main risk is <em>Listeria</em>, a bacterial infection that's rare but can be serious in pregnancy (can cross the placenta). The FDA advises avoiding unpasteurized cheese and deli meats unless heated to steaming (165°F). Most pasteurized soft cheeses (like pasteurized brie, feta from a package) are safe. The overall risk from occasional deli meat is very low — this guidance is precautionary, not a guarantee of illness from a turkey sandwich. When in doubt, heat it.</p>"
+      "body": "<p>The main risk is <em>Listeria</em>, a bacterial infection that's rare but can be serious in pregnancy (can cross the placenta). The FDA advises avoiding unpasteurized cheese and deli meats unless heated to steaming (165°F). Most pasteurized soft cheeses (like pasteurized brie, feta from a package) are safe. The overall risk from occasional deli meat is very low. This guidance is precautionary, not a guarantee of illness from a turkey sandwich. When in doubt, heat it.</p>"
     },
     "faq-coffee": {
       "title": "Can I have any caffeine?",
       "sub": "",
-      "body": "<p>Yes. ACOG recommends limiting caffeine to <strong>less than 200 mg per day</strong> (approximately one 12-oz cup of drip coffee). At that level, evidence of harm to the pregnancy is not established. Tea, soda, and chocolate also contain caffeine — count them all together. Cutting back is reasonable; cutting it out entirely is a personal choice, not medically required.</p>"
+      "body": "<p>Yes. ACOG recommends limiting caffeine to <strong>less than 200 mg per day</strong> (approximately one 12-oz cup of drip coffee). At that level, evidence of harm to the pregnancy is not established. Tea, soda, and chocolate also contain caffeine. Count them all together. Cutting back is reasonable; cutting it out entirely is a personal choice, not medically required.</p>"
     },
     "faq-hair-dye": {
       "title": "Can I dye my hair while pregnant?",
@@ -720,7 +720,7 @@ window.MYOB_LOCALES.en = {
     "faq-exercise-mc": {
       "title": "Does exercise cause miscarriage?",
       "sub": "",
-      "body": "<p>No. Moderate exercise does not cause miscarriage in healthy pregnancies. This is one of the most pervasive myths in pregnancy. Early miscarriages are almost always caused by chromosomal abnormalities in the embryo — not by exercise, sex, stress, or anything the mother did. Exercise is protective, not harmful. See the exercise guidelines in the Prenatal section.</p>"
+      "body": "<p>No. Moderate exercise does not cause miscarriage in healthy pregnancies. This is one of the most pervasive myths in pregnancy. Early miscarriages are almost always caused by chromosomal abnormalities in the embryo, not by exercise, sex, stress, or anything the mother did. Exercise is protective, not harmful. See the exercise guidelines in the Prenatal section.</p>"
     },
     "faq-sex-pregnancy": {
       "title": "Is it safe to have sex during pregnancy?",
@@ -730,32 +730,32 @@ window.MYOB_LOCALES.en = {
     "faq-vaccines": {
       "title": "Are vaccines safe during pregnancy?",
       "sub": "",
-      "body": "<p>Yes, and some are strongly recommended. <strong>Tdap</strong> (whooping cough booster, 27–36 weeks) and the <strong>flu vaccine</strong> are recommended at every pregnancy. The <strong>COVID-19 vaccine</strong> is also recommended. These protect you from serious illness and transfer antibodies to your baby through the placenta, protecting them before they can be vaccinated. Live-virus vaccines (MMR, chickenpox) are not given during pregnancy. Ask your doctor which you still need.</p>"
+      "body": "<p>Some are, some aren’t. Talk to your doctor.</p>"
     },
     "faq-eat-for-two": {
       "title": "Do I need to \"eat for two\"?",
       "sub": "",
-      "body": "<p>No — \"eating for two\" is a myth. In the first trimester, extra calorie needs are minimal. By the third trimester, you need roughly 300 extra calories per day (about a glass of milk and a banana). Quality of nutrition matters far more than quantity. Focus on protein, iron, folate, calcium, and omega-3 fatty acids. Your prenatal vitamin helps fill gaps but shouldn't replace a balanced diet.</p>"
+      "body": "<p>No. \"eating for two\" is a myth. In the first trimester, extra calorie needs are minimal. By the third trimester, you need roughly 300 extra calories per day (about a glass of milk and a banana). Quality of nutrition matters far more than quantity. Focus on protein, iron, folate, calcium, and omega-3 fatty acids. Your prenatal vitamin helps fill gaps but shouldn't replace a balanced diet.</p>"
     },
     "faq-hot-tub": {
       "title": "Can I take baths or use a hot tub?",
       "sub": "",
-      "body": "<p>Warm baths are fine throughout pregnancy. Hot tubs, saunas, and steam rooms that raise your core body temperature above 102°F (39°C) are not recommended — especially in the first trimester, when elevated temperature is associated with neural tube defects. If you do use a hot tub, keep the temperature comfortable (not hot), limit time to 10 minutes, and avoid it in the first trimester. A warm bath at typical household water temperature (98–100°F) is safe.</p>"
+      "body": "<p>Warm baths are fine throughout pregnancy. Hot tubs, saunas, and steam rooms that raise your core body temperature above 102°F (39°C) are not recommended, especially in the first trimester, when elevated temperature is associated with neural tube defects. If you do use a hot tub, keep the temperature comfortable (not hot), limit time to 10 minutes, and avoid it in the first trimester. A warm bath at typical household water temperature (98–100°F) is safe.</p>"
     },
     "faq-epidural-csec": {
       "title": "Does an epidural increase C-section risk?",
       "sub": "",
-      "body": "<p>No. This is one of the most studied questions in obstetrics. Multiple large randomized controlled trials and meta-analyses confirm that epidurals do <strong>not</strong> increase C-section rates. Epidurals may slightly lengthen the pushing stage, but this is managed safely with patience and nurse guidance. You can request an epidural at any point in active labor — there is no \"too early\" or \"too late\" threshold.</p>"
+      "body": "<p>No. This is one of the most studied questions in obstetrics. Multiple large randomized controlled trials and meta-analyses confirm that epidurals do <strong>not</strong> increase C-section rates. Epidurals may slightly lengthen the pushing stage, but this is managed safely with patience and nurse guidance. You can request an epidural at any point in active labor. There is no \"too early\" or \"too late\" threshold.</p>"
     },
     "faq-routine-episiotomy": {
       "title": "Do I need an episiotomy to avoid tearing?",
       "sub": "",
-      "body": "<p>No. Routine episiotomy (a surgical cut at the vaginal opening) is no longer recommended by ACOG. Evidence consistently shows that <strong>natural tears generally heal better</strong> and cause fewer complications (including pain and long-term pelvic floor issues) than routine episiotomies. Most women who deliver vaginally have some degree of tearing, but many are minor (first-degree). Episiotomy is still appropriate when there is a specific indication — such as when baby needs to be delivered quickly for fetal distress.</p>"
+      "body": "<p>No. Routine episiotomy (a surgical cut at the vaginal opening) is no longer recommended by ACOG. Evidence consistently shows that <strong>natural tears generally heal better</strong> and cause fewer complications (including pain and long-term pelvic floor issues) than routine episiotomies. Most women who deliver vaginally have some degree of tearing, but many are minor (first-degree). Episiotomy is still appropriate when there is a specific indication, such as when baby needs to be delivered quickly for fetal distress.</p>"
     },
     "faq-water-breaking": {
       "title": "If my water breaks, do I have to have a C-section?",
       "sub": "",
-      "body": "<p>No. If your membranes rupture (water breaks) at term, most women go into labor on their own within 12 hours. If labor doesn't start, induction is offered to reduce infection risk — the guideline is to complete delivery within 18–24 hours. If you are GBS-positive, antibiotics are started immediately. A C-section is only needed if there are other indications — water breaking alone is not one of them.</p>"
+      "body": "<p>No. If your membranes rupture (water breaks) at term, most women go into labor on their own within 12 hours. If labor doesn't start, induction is offered to reduce infection risk. The guideline is to complete delivery within 18–24 hours. If you are GBS-positive, antibiotics are started immediately. A C-section is only needed if there are other indications. Water breaking alone is not one of them.</p>"
     },
     "faq-eat-in-labor": {
       "title": "Can I eat or drink during labor?",
@@ -770,32 +770,32 @@ window.MYOB_LOCALES.en = {
     "faq-bf-bc": {
       "title": "Can I get pregnant while breastfeeding?",
       "sub": "",
-      "body": "<p>Yes. While exclusive breastfeeding suppresses ovulation to some degree, it is <strong>not reliable contraception</strong>. You can ovulate — and get pregnant — before your period returns. The \"lactational amenorrhea method\" requires very specific conditions (exclusive breastfeeding every 4 hours daytime / 6 hours nighttime, no supplementation, no period returned) and is only about 98% effective under those strict conditions. Discuss birth control before you leave the hospital.</p>"
+      "body": "<p>Yes. While exclusive breastfeeding suppresses ovulation to some degree, it is <strong>not reliable contraception</strong>. You can ovulate, and get pregnant, before your period returns. The \"lactational amenorrhea method\" requires very specific conditions (exclusive breastfeeding every 4 hours daytime / 6 hours nighttime, no supplementation, no period returned) and is only about 98% effective under those strict conditions. Discuss birth control before you leave the hospital.</p>"
     },
     "faq-stress-milk": {
       "title": "Does stress dry up breast milk?",
       "sub": "",
-      "body": "<p>Acute stress can temporarily interfere with the letdown reflex (the release of milk), but it does not affect milk production long-term. Milk supply is driven by demand — the more frequently and effectively your baby nurses or you pump, the more milk your body produces. Strategies that help letdown: skin-to-skin contact, warmth, relaxation techniques, and looking at a photo of your baby when pumping.</p>"
+      "body": "<p>Acute stress can temporarily interfere with the letdown reflex (the release of milk), but it does not affect milk production long-term. Milk supply is driven by demand. The more frequently and effectively your baby nurses or you pump, the more milk your body produces. Strategies that help letdown: skin-to-skin contact, warmth, relaxation techniques, and looking at a photo of your baby when pumping.</p>"
     },
     "faq-bonding": {
       "title": "Should I feel instantly bonded with my baby?",
       "sub": "",
-      "body": "<p>No — bonding is a process, not a single moment. Many mothers feel deep love immediately at birth; others need days, weeks, or longer to develop that feeling. Both are completely normal. Physical exhaustion, difficult deliveries, unexpected outcomes, and PPD can all affect early bonding. If you feel disconnected or numb toward your baby for more than a couple of weeks, mention it to your doctor — it can be a sign of postpartum depression, which is treatable.</p>"
+      "body": "<p>No. Bonding is a process, not a single moment. Many mothers feel deep love immediately at birth; others need days, weeks, or longer to develop that feeling. Both are completely normal. Physical exhaustion, difficult deliveries, unexpected outcomes, and PPD can all affect early bonding. If you feel disconnected or numb toward your baby for more than a couple of weeks, mention it to your doctor. It can be a sign of postpartum depression, which is treatable.</p>"
     },
     "faq-ibuprofen-bf": {
       "title": "Can I take ibuprofen while breastfeeding?",
       "sub": "",
-      "body": "<p>Yes. Ibuprofen is one of the safest OTC medications while breastfeeding — very little transfers to breast milk. Acetaminophen (Tylenol) is also safe. These are the preferred pain medications postpartum and during breastfeeding. High-dose aspirin is not recommended (low-dose prescribed aspirin is a different matter — discuss with your doctor). Naproxen (Aleve) has more milk transfer and is generally not preferred. Always confirm with your care team for your specific situation.</p>"
+      "body": "<p>Yes. Ibuprofen is one of the safest OTC medications while breastfeeding. Very little transfers to breast milk. Acetaminophen (Tylenol) is also safe. These are the preferred pain medications postpartum and during breastfeeding. High-dose aspirin is not recommended (low-dose prescribed aspirin is a different matter. Discuss with your doctor). Naproxen (Aleve) has more milk transfer and is generally not preferred. Always confirm with your care team for your specific situation.</p>"
     },
     "faq-jaundice": {
-      "title": "My baby looks yellow — when is it serious?",
+      "title": "My baby looks yellow. When is it serious?",
       "sub": "",
-      "body": "<p>Newborn jaundice (hyperbilirubinemia) affects about 60% of term babies in the first week. It's caused by normal breakdown of fetal red blood cells — the liver is just catching up. Most cases are mild and resolve without treatment. It becomes a concern when bilirubin levels are very high (risk of brain damage at extreme levels) or when baby is very sleepy, not feeding, or the jaundice appears in the first 24 hours. Your hospital will check bilirubin before discharge and at the 2–5 day pediatrician visit. Treatment with phototherapy (bili lights) is very effective if needed.</p>"
+      "body": "<p>Newborn jaundice (hyperbilirubinemia) affects about 60% of term babies in the first week. It's caused by normal breakdown of fetal red blood cells. The liver is just catching up. Most cases are mild and resolve without treatment. It becomes a concern when bilirubin levels are very high (risk of brain damage at extreme levels) or when baby is very sleepy, not feeding, or the jaundice appears in the first 24 hours. Your hospital will check bilirubin before discharge and at the 2–5 day pediatrician visit. Treatment with phototherapy (bili lights) is very effective if needed.</p>"
     },
     "faq-newborn-procedures": {
       "title": "Do all newborn procedures have to happen?",
       "sub": "",
-      "body": "<p>Standard newborn procedures include: <strong>Vitamin K injection</strong> (prevents serious bleeding disorder — VKDB — that can cause fatal brain bleeding), <strong>erythromycin eye ointment</strong> (prevents eye infections including gonorrhea), <strong>Hepatitis B vaccine first dose</strong>, and the <strong>newborn metabolic screening blood draw</strong> (heel stick for ~30 conditions including PKU, hypothyroidism, sickle cell). All are recommended because the risks of the conditions prevented far outweigh the risks of the procedures. You may legally decline them in most states, but discuss the risks honestly with your doctor first.</p>"
+      "body": "<p>Standard newborn procedures include: <strong>Vitamin K injection</strong> (prevents serious bleeding disorder, VKDB, that can cause fatal brain bleeding), <strong>erythromycin eye ointment</strong> (prevents eye infections including gonorrhea), <strong>Hepatitis B vaccine first dose</strong>, and the <strong>newborn metabolic screening blood draw</strong> (heel stick for ~30 conditions including PKU, hypothyroidism, sickle cell). All are recommended because the risks of the conditions prevented far outweigh the risks of the procedures. You may legally decline them in most states, but discuss the risks honestly with your doctor first.</p>"
     },
     "faq-first-bath": {
       "title": "When does my baby need the first bath?",

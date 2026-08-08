@@ -30,7 +30,7 @@ window.MYOB_LOCALES.zh = {
       "badgeFaq": "问答",
       "section5": "第 5 部分",
       "faqCommonMyths": "常见问题<br>与误区",
-      "evidenceBasedAnswersToThe": "针对最常见问题的循证解答——包括你从家人、朋友和网上听来的说法。"
+      "evidenceBasedAnswersToThe": "针对最常见问题的循证解答，也包括你从家人、朋友和网上听来的说法。"
     },
     "search": {
       "noResultsTitle": "没有找到结果",
