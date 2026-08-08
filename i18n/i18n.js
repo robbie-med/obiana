@@ -18,7 +18,7 @@ const I18n = (() => {
   // `zom` (Zomi / Tedim Chin) has no ISO 639-1 two-letter code and no CLDR
   // data, so Intl falls back to defaults for it — see intlTag() and tp().
   const LOCALES = {
-    en:  { name: 'English',  native: 'English',  dir: 'ltr', prompt: 'Tap your language', flag: 'us' },
+    en:  { name: 'English',  native: 'English',  dir: 'ltr', prompt: 'Tap your language', flag: 'gb' },
     es:  { name: 'Spanish',  native: 'Español',  dir: 'ltr', prompt: 'Toca tu idioma', flag: 'es' },
     fr:  { name: 'French',   native: 'Français', dir: 'ltr', prompt: 'Choisissez votre langue', flag: 'fr' },
     ko:  { name: 'Korean',   native: '한국어',    dir: 'ltr', prompt: '언어를 선택하세요', flag: 'kr' },
@@ -65,7 +65,7 @@ const I18n = (() => {
 
   // Bumped alongside sw.js CACHE_NAME so an updated locale file is actually
   // re-fetched instead of served from the browser's heuristic cache.
-  const ASSET_VERSION = '29';
+  const ASSET_VERSION = '30';
 
   const FALLBACK = 'en';
   const STORAGE_KEY = 'myob.lang';
