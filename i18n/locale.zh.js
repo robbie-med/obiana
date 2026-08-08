@@ -105,7 +105,9 @@ window.MYOB_LOCALES.zh = {
         "inThePast7Days": "过去 7 天内",
         "yourAnswersAreSavedOnly": "你的答案只保存在这部手机上。",
         "getMyScore": "查看我的得分",
-        "scoreOutOf30Based": "满分 30 分 · 依据爱丁堡产后抑郁量表"
+        "scoreOutOf30Based": "满分 30 分 · 依据爱丁堡产后抑郁量表",
+        "pastCheckIns": "过往记录",
+        "selfHarmGuidance": "你表示曾有过伤害自己的想法。请联系你的医生，拨打或发短信至 988（自杀与危机生命线），或前往最近的急诊室。"
       },
       "birthplan": {
         "q": {
@@ -242,7 +244,9 @@ window.MYOB_LOCALES.zh = {
         "logAFeeding": "+ 记录一次喂养",
         "feedLog": "喂养记录",
         "feedLogged": "喂养已记录",
-        "noFeeds": "还没有喂养记录。"
+        "noFeeds": "还没有喂养记录。",
+        "fewFeedsTitle": "⚠ 今天喂养不足 8 次",
+        "fewFeedsBody": "新生儿通常每 24 小时需要喂养 8–12 次。如果宝宝很难叫醒或体重没有增长，请联系你的医生。"
       },
       "diaper": {
         "wetToday": "今天尿湿",
@@ -256,7 +260,10 @@ window.MYOB_LOCALES.zh = {
       "jaundice": {
         "babySBirthDate": "宝宝的出生日期",
         "set": "保存",
-        "birthDateSaved": "出生日期已保存"
+        "birthDateSaved": "出生日期已保存",
+        "dayOfLife": "出生天数",
+        "resolvesByNow": "多数黄疸在此时已消退",
+        "callImmediatelyIf": "出现以下情况请立即联系医生"
       },
       "bp": {
         "logBloodPressure": "+ 记录血压",
@@ -265,7 +272,8 @@ window.MYOB_LOCALES.zh = {
         "readings": "血压读数",
         "enterValidNumbersEG": "请输入有效数字（例如 118 / 76）",
         "highReadingContactYourDoctor": "血压偏高——请联系你的医生",
-        "noReadings": "还没有血压记录。"
+        "noReadings": "还没有血压记录。",
+        "highOnRecord": "⚠ 记录到偏高读数"
       },
       "weight": {
         "yourProfile": "你的基本信息",
@@ -276,7 +284,11 @@ window.MYOB_LOCALES.zh = {
         "weightLog": "体重记录",
         "profileSaved": "信息已保存",
         "enterValidWeightAndPregnancy": "请输入有效的体重和孕周",
-        "noWeights": "还没有体重记录。"
+        "noWeights": "还没有体重记录。",
+        "recommendedGain": "建议总增重：",
+        "forFullPregnancy": "为整个孕期的建议值。",
+        "setYourProfile": "设置你的基本信息",
+        "setProfileHint": "输入孕前 BMI，即可查看为你定制的 IOM 增重建议。"
       },
       "appts": {
         "addVisit": "+ 添加就诊",
@@ -285,7 +297,8 @@ window.MYOB_LOCALES.zh = {
         "notesFromVisit": "就诊记录",
         "edit": "编辑",
         "delete": "删除",
-        "visitDeleted": "就诊记录已删除"
+        "visitDeleted": "就诊记录已删除",
+        "noVisits": "还没有就诊记录。在上方添加一条，用来记录问题和笔记。"
       },
       "cx": {
         "noContractions": "还没有宫缩记录。<br>宫缩开始时点击「宫缩开始」。"
@@ -302,8 +315,8 @@ window.MYOB_LOCALES.zh = {
       "inProgress": "翻译进行中"
     },
     "app": {
-      "title": "怀孕与分娩指南",
-      "tagline": "循证内容 · 可离线使用",
+      "title": "怀孕手册",
+      "tagline": "",
       "description": "循证的怀孕、分娩、生产与产后指南。可离线使用。",
       "home": "首页",
       "prenatal": "产前",
@@ -335,9 +348,8 @@ window.MYOB_LOCALES.zh = {
       "legRednessSwelling": "腿部发红或肿胀",
       "chestPainOrTroubleBreathing": "胸痛或呼吸困难",
       "thoughtsOfSelfHarm": "有伤害自己的念头",
-      "heroLabel": "你的完整指南",
       "heroTitle": "了解会发生<br>什么。问出好<br>问题。",
-      "heroDesc": "从第一次产检到分娩和恢复——全都在这里。"
+      "heroDesc": "从第一次产检到分娩和恢复，Obiana 把所有内容都放在一处。"
     },
     "pregnancy": {
       "section1": "第 1 部分",

@@ -1,5 +1,5 @@
 // Bump on every content or code change, including any locale file.
-const CACHE_NAME = 'birth-guide-v10-i18n';
+const CACHE_NAME = 'birth-guide-v14-i18n';
 
 // English is precached unconditionally: it is the fallback layer, so the app
 // cannot render without it. Other locales are cached on first use (see fetch
@@ -8,19 +8,19 @@ const ASSETS = [
   './',
   './index.html',
   './manifest.json',
-  './styles.css?v=10',
-  './content.js?v=10',
-  './tools.js?v=10',
-  './i18n/i18n.js?v=10',
-  './i18n/locale.en.js?v=10',
-  './i18n/epds/epds.en.js?v=10',
-  './i18n/epds/epds.es.js?v=10',
-  './i18n/epds/epds.cnh.js?v=10',
-  './i18n/epds/epds.ko.js?v=10',
-  './i18n/epds/epds.zh.js?v=10',
-  './i18n/epds/epds.ar.js?v=10',
-  './i18n/epds/phq9.fr.js?v=10',
-  './i18n/epds/phq9.ru.js?v=10',
+  './styles.css?v=14',
+  './content.js?v=14',
+  './tools.js?v=14',
+  './i18n/i18n.js?v=14',
+  './i18n/locale.en.js?v=14',
+  './i18n/epds/epds.en.js?v=14',
+  './i18n/epds/epds.es.js?v=14',
+  './i18n/epds/epds.cnh.js?v=14',
+  './i18n/epds/epds.ko.js?v=14',
+  './i18n/epds/epds.zh.js?v=14',
+  './i18n/epds/epds.ar.js?v=14',
+  './i18n/epds/phq9.fr.js?v=14',
+  './i18n/epds/phq9.ru.js?v=14',
 ];
 
 // Locales fetched on demand and kept once seen, so a language the user has

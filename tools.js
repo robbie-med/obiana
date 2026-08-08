@@ -353,8 +353,8 @@ function initFeeding() {
       </div>
     </div>
     ${flagLow ? `<div class="callout alert" style="margin:0 16px 8px">
-      <div class="callout-title">⚠ Fewer than 8 feeds today</div>
-      <p>Newborns typically need 8–12 feedings per 24 hours. If baby is difficult to wake or not gaining weight, call your doctor.</p>
+      <div class="callout-title">${t('tool.feed.fewFeedsTitle')}</div>
+      <p>${t('tool.feed.fewFeedsBody')}</p>
     </div>` : ''}
     <div style="padding:0 16px 12px">
       <button class="big-action-btn btn-teal" onclick="openModal('feed')">${t('tool.feed.logAFeeding')}</button>
@@ -546,16 +546,16 @@ function initJaundice() {
     </div>
     ${day !== null ? `
     <div style="text-align:center;padding:20px 20px 8px">
-      <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--ink-soft);margin-bottom:4px">Day of Life</div>
+      <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--ink-soft);margin-bottom:4px">${t('tool.jaundice.dayOfLife')}</div>
       <div class="jaundice-day-num">${day}</div>
-      ${day > 21 ? '<div style="font-size:13px;color:var(--ink-soft);margin-top:4px">Most jaundice resolves by now</div>' : ''}
+      ${day > 21 ? `<div style="font-size:13px;color:var(--ink-soft);margin-top:4px">${t('tool.jaundice.resolvesByNow')}</div>` : ''}
     </div>
     <div class="callout gold" style="margin:0 16px 8px">
       <div class="callout-title">Day ${day} — What to watch for</div>
       <p>${getJaundiceGuidance(day)}</p>
     </div>
     <div class="callout alert" style="margin:0 16px 8px">
-      <div class="callout-title">Call your doctor immediately if</div>
+      <div class="callout-title">${t('tool.jaundice.callImmediatelyIf')}</div>
       <p>Baby won't wake to feed · Deeply yellow skin spreading to legs · Arching back or high-pitched cry · White or grey stools · Very dark urine</p>
     </div>` : `
     <div style="padding:24px 20px;text-align:center;color:var(--ink-soft)">
@@ -595,7 +595,7 @@ function initBP() {
 
   el.innerHTML = `
     ${last && lastCat.urgent ? `<div class="callout alert" style="margin:12px 16px 0">
-      <div class="callout-title">⚠ High reading on record</div>
+      <div class="callout-title">${t('tool.bp.highOnRecord')}</div>
       <p>Your most recent reading (${last.s}/${last.d}) is in the ${lastCat.label} range. Contact your doctor today.</p>
     </div>` : ''}
     <div style="padding:${last && lastCat.urgent ? '8px' : '12px'} 16px 12px">
@@ -692,9 +692,9 @@ function initWeight() {
     </div>
     ${range ? `<div class="callout" style="margin:8px 16px">
       <div class="callout-title">IOM guideline for you (${range.label})</div>
-      <p>Recommended total gain: <strong>${range.min}–${range.max} lbs</strong> for the full pregnancy.
+      <p>${t('tool.weight.recommendedGain')} <strong>${range.min}–${range.max} lbs</strong> ${t('tool.weight.forFullPregnancy')}
       ${totalGain !== null ? ` You have gained <strong>${totalGain > 0 ? '+' : ''}${totalGain} lbs</strong> so far.` : ''}</p>
-    </div>` : `<div class="callout" style="margin:8px 16px"><div class="callout-title">Set your profile</div><p>Enter your pre-pregnancy BMI to see personalized IOM gain guidelines.</p></div>`}
+    </div>` : `<div class="callout" style="margin:8px 16px"><div class="callout-title">${t('tool.weight.setYourProfile')}</div><p>${t('tool.weight.setProfileHint')}</p></div>`}
     <div style="padding:0 16px 12px">
       <button class="big-action-btn btn-teal" onclick="openModal('weight')">${t('tool.weight.logWeight')}</button>
     </div>
@@ -885,7 +885,7 @@ function initMood() {
       ${escHtml(epds.attribution || '')}
     </div>
     ${epdsHistory.length ? `
-    <div class="history-section-title">Past Check-Ins</div>
+    <div class="history-section-title">${t('tool.mood.pastCheckIns')}</div>
     <div class="history-list-card" style="margin:0 16px">
       ${epdsHistory.slice(0, 8).map(h => {
         const interp = getEPDSInterpretation(h.score);
@@ -953,7 +953,7 @@ function submitEPDS() {
         </div>`}
         ${q10score > 0 ? `<div class="callout alert" style="margin-top:12px;text-align:left">
           <div class="callout-title">Important</div>
-          <p>You answered that thoughts of self-harm have occurred to you. Please reach out to your doctor, call 988 (Suicide &amp; Crisis Lifeline), or go to the nearest emergency room.</p>
+          <p>${escHtml(I18n.t('tool.mood.selfHarmGuidance'))}</p>
         </div>` : ''}
       </div>`;
     result.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -1227,7 +1227,7 @@ function renderApptsList() {
   const el = document.getElementById('appts-list');
   if (!el) return;
   if (!appointments.length) {
-    el.innerHTML = '<p style="text-align:center;color:var(--ink-soft);font-size:13px;padding:20px 16px">No visits logged yet.<br>Add one above to track questions and notes.</p>';
+    el.innerHTML = `<p style="text-align:center;color:var(--ink-soft);font-size:13px;padding:20px 16px">${t('tool.appts.noVisits')}</p>`;
     return;
   }
   const sorted = [...appointments].sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));

@@ -107,7 +107,9 @@ window.MYOB_LOCALES.fr = {
         "inThePast7Days": "au cours des 7 derniers jours",
         "yourAnswersAreSavedOnly": "Vos réponses sont enregistrées uniquement sur ce téléphone.",
         "getMyScore": "Obtenir mon score",
-        "scoreOutOf30Based": "Score sur 30 · Basé sur l'Edinburgh Postnatal Depression Scale"
+        "scoreOutOf30Based": "Score sur 30 · Basé sur l'Edinburgh Postnatal Depression Scale",
+        "pastCheckIns": "Évaluations précédentes",
+        "selfHarmGuidance": "Vous avez indiqué avoir eu des pensées de vous faire du mal. Contactez votre médecin, appelez ou envoyez un message au 988 (ligne de prévention du suicide et de crise), ou rendez-vous aux urgences les plus proches."
       },
       "birthplan": {
         "q": {
@@ -244,7 +246,9 @@ window.MYOB_LOCALES.fr = {
         "logAFeeding": "+ Noter une tétée",
         "feedLog": "Journal des tétées",
         "feedLogged": "Tétée notée",
-        "noFeeds": "Aucune tétée notée pour le moment."
+        "noFeeds": "Aucune tétée notée pour le moment.",
+        "fewFeedsTitle": "⚠ Moins de 8 tétées aujourd’hui",
+        "fewFeedsBody": "Les nouveau-nés ont généralement besoin de 8 à 12 tétées par 24 heures. Si le bébé est difficile à réveiller ou ne prend pas de poids, appelez votre médecin."
       },
       "diaper": {
         "wetToday": "Mouillées aujourd’hui",
@@ -258,7 +262,10 @@ window.MYOB_LOCALES.fr = {
       "jaundice": {
         "babySBirthDate": "Date de naissance du bébé",
         "set": "Enregistrer",
-        "birthDateSaved": "Date de naissance enregistrée"
+        "birthDateSaved": "Date de naissance enregistrée",
+        "dayOfLife": "Jour de vie",
+        "resolvesByNow": "La plupart des ictères sont résolus à ce stade",
+        "callImmediatelyIf": "Appelez immédiatement votre médecin si"
       },
       "bp": {
         "logBloodPressure": "+ Noter la tension",
@@ -267,7 +274,8 @@ window.MYOB_LOCALES.fr = {
         "readings": "Mesures",
         "enterValidNumbersEG": "Entrez des chiffres valides (ex. 118 / 76)",
         "highReadingContactYourDoctor": "Mesure élevée — contactez votre médecin",
-        "noReadings": "Aucune mesure notée pour le moment."
+        "noReadings": "Aucune mesure notée pour le moment.",
+        "highOnRecord": "⚠ Tension élevée enregistrée"
       },
       "weight": {
         "yourProfile": "Votre profil",
@@ -278,7 +286,11 @@ window.MYOB_LOCALES.fr = {
         "weightLog": "Journal de poids",
         "profileSaved": "Profil enregistré",
         "enterValidWeightAndPregnancy": "Entrez un poids et une semaine de grossesse valides",
-        "noWeights": "Aucun poids enregistré pour le moment."
+        "noWeights": "Aucun poids enregistré pour le moment.",
+        "recommendedGain": "Prise de poids totale recommandée :",
+        "forFullPregnancy": "pour toute la grossesse.",
+        "setYourProfile": "Configurez votre profil",
+        "setProfileHint": "Saisissez votre IMC (BMI) avant la grossesse pour voir les recommandations de prise de poids de l’IOM adaptées à votre cas."
       },
       "appts": {
         "addVisit": "+ Ajouter une visite",
@@ -287,7 +299,8 @@ window.MYOB_LOCALES.fr = {
         "notesFromVisit": "Notes de la visite",
         "edit": "Modifier",
         "delete": "Supprimer",
-        "visitDeleted": "Visite supprimée"
+        "visitDeleted": "Visite supprimée",
+        "noVisits": "Aucune visite enregistrée pour le moment. Ajoutez-en une ci-dessus pour suivre vos questions et vos notes."
       },
       "cx": {
         "noContractions": "Aucune contraction enregistrée pour le moment.<br>Touchez « Début d'une contraction » quand une contraction commence."
@@ -304,8 +317,8 @@ window.MYOB_LOCALES.fr = {
       "inProgress": "Traduction en cours"
     },
     "app": {
-      "title": "Guide de grossesse et d'accouchement",
-      "tagline": "Fondé sur des preuves · Fonctionne hors ligne",
+      "title": "Manuel de Grossesse",
+      "tagline": "",
       "description": "Guide de grossesse, de travail, d'accouchement et de post-partum fondé sur des preuves. Fonctionne hors ligne.",
       "home": "Accueil",
       "prenatal": "Prénatal",
@@ -337,9 +350,8 @@ window.MYOB_LOCALES.fr = {
       "legRednessSwelling": "Rougeur/gonflement d'une jambe",
       "chestPainOrTroubleBreathing": "Douleur à la poitrine ou difficulté à respirer",
       "thoughtsOfSelfHarm": "Pensées de vous faire du mal",
-      "heroLabel": "Votre guide complet",
       "heroTitle": "Sachez à quoi<br>vous attendre. Posez les<br>bonnes questions.",
-      "heroDesc": "De votre première visite prénatale jusqu'à l'accouchement et la récupération — tout est au même endroit."
+      "heroDesc": "De votre première consultation prénatale jusqu’à l’accouchement et la récupération, Obiana réunit tout au même endroit."
     },
     "pregnancy": {
       "section1": "Section 1",

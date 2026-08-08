@@ -18,16 +18,22 @@ const I18n = (() => {
   // `zom` (Zomi / Tedim Chin) has no ISO 639-1 two-letter code and no CLDR
   // data, so Intl falls back to defaults for it — see intlTag() and tp().
   const LOCALES = {
-    en:  { name: 'English',  native: 'English',  dir: 'ltr', prompt: 'Tap your language' },
-    es:  { name: 'Spanish',  native: 'Español',  dir: 'ltr', prompt: 'Toca tu idioma' },
-    fr:  { name: 'French',   native: 'Français', dir: 'ltr', prompt: 'Choisissez votre langue' },
-    ko:  { name: 'Korean',   native: '한국어',    dir: 'ltr', prompt: '언어를 선택하세요' },
-    ar:  { name: 'Arabic',   native: 'العربية',  dir: 'rtl', prompt: 'اختر لغتك' },
-    ru:  { name: 'Russian',  native: 'Русский',  dir: 'ltr', prompt: 'Выберите язык' },
-    zh:  { name: 'Chinese',  native: '中文',      dir: 'ltr', prompt: '选择您的语言' },
+    en:  { name: 'English',  native: 'English',  dir: 'ltr', prompt: 'Tap your language', flag: '🇺🇸' },
+    es:  { name: 'Spanish',  native: 'Español',  dir: 'ltr', prompt: 'Toca tu idioma', flag: '🇪🇸' },
+    fr:  { name: 'French',   native: 'Français', dir: 'ltr', prompt: 'Choisissez votre langue', flag: '🇫🇷' },
+    ko:  { name: 'Korean',   native: '한국어',    dir: 'ltr', prompt: '언어를 선택하세요', flag: '🇰🇷' },
+    ar:  { name: 'Arabic',   native: 'العربية',  dir: 'rtl', prompt: 'اختر لغتك', flag: 'ع' },
+    ru:  { name: 'Russian',  native: 'Русский',  dir: 'ltr', prompt: 'Выберите язык', flag: '🇷🇺' },
+    zh:  { name: 'Chinese',  native: '中文',      dir: 'ltr', prompt: '选择您的语言', flag: '🇨🇳' },
     // NOTE: the Zomi prompt needs confirmation by a native speaker.
-    zom: { name: 'Zomi',     native: 'Zomi',     dir: 'ltr', prompt: 'Na kam teel in' },
+    zom: { name: 'Zomi',     native: 'Zomi',     dir: 'ltr', prompt: 'Na kam teel in', flag: 'Zo' },
   };
+
+  // `flag` is the chip shown in the language picker. Country flags are used
+  // only where they are the conventional emblem for that language. Arabic and
+  // Zomi use a script glyph instead: Arabic speakers here are as likely to be
+  // Iraqi or Syrian as Saudi, and representing Chin/Zomi refugees with the
+  // flag of the country they fled would be wrong.
 
   // Locales with no CLDR entry: hand Intl a fallback so date/number
   // formatting degrades to English conventions instead of throwing.
@@ -35,7 +41,7 @@ const I18n = (() => {
 
   // Bumped alongside sw.js CACHE_NAME so an updated locale file is actually
   // re-fetched instead of served from the browser's heuristic cache.
-  const ASSET_VERSION = '10';
+  const ASSET_VERSION = '14';
 
   const FALLBACK = 'en';
   const STORAGE_KEY = 'myob.lang';

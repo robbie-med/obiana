@@ -106,7 +106,9 @@ window.MYOB_LOCALES.en = {
         "validatedOnlyNote": "Only officially validated versions of this questionnaire are offered. A machine translation would still produce a score, but that score would not be meaningful.",
         "instrumentLanguage": "Questionnaire language:",
         "change": "Change",
-        "scoreNote": "Score out of {max} · {instrument} · A screening tool, not a diagnosis — always discuss the result with your care team"
+        "scoreNote": "Score out of {max} · {instrument} · A screening tool, not a diagnosis — always discuss the result with your care team",
+        "pastCheckIns": "Past Check-Ins",
+        "selfHarmGuidance": "You answered that thoughts of self-harm have occurred to you. Please reach out to your doctor, call or text 988 (Suicide & Crisis Lifeline), or go to the nearest emergency room."
       },
       "birthplan": {
         "q": {
@@ -243,7 +245,9 @@ window.MYOB_LOCALES.en = {
         "logAFeeding": "+ Log a Feeding",
         "feedLog": "Feed Log",
         "feedLogged": "Feed logged",
-        "noFeeds": "No feeds logged yet."
+        "noFeeds": "No feeds logged yet.",
+        "fewFeedsTitle": "⚠ Fewer than 8 feeds today",
+        "fewFeedsBody": "Newborns typically need 8–12 feedings per 24 hours. If baby is difficult to wake or not gaining weight, call your doctor."
       },
       "diaper": {
         "wetToday": "Wet Today",
@@ -257,7 +261,10 @@ window.MYOB_LOCALES.en = {
       "jaundice": {
         "babySBirthDate": "Baby's Birth Date",
         "set": "Set",
-        "birthDateSaved": "Birth date saved"
+        "birthDateSaved": "Birth date saved",
+        "dayOfLife": "Day of Life",
+        "resolvesByNow": "Most jaundice resolves by now",
+        "callImmediatelyIf": "Call your doctor immediately if"
       },
       "bp": {
         "logBloodPressure": "+ Log Blood Pressure",
@@ -266,7 +273,8 @@ window.MYOB_LOCALES.en = {
         "readings": "Readings",
         "enterValidNumbersEG": "Enter valid numbers (e.g. 118 / 76)",
         "highReadingContactYourDoctor": "High reading — contact your doctor",
-        "noReadings": "No readings logged yet."
+        "noReadings": "No readings logged yet.",
+        "highOnRecord": "⚠ High reading on record"
       },
       "weight": {
         "yourProfile": "Your Profile",
@@ -277,7 +285,11 @@ window.MYOB_LOCALES.en = {
         "weightLog": "Weight Log",
         "profileSaved": "Profile saved",
         "enterValidWeightAndPregnancy": "Enter valid weight and pregnancy week",
-        "noWeights": "No weights logged yet."
+        "noWeights": "No weights logged yet.",
+        "recommendedGain": "Recommended total gain:",
+        "forFullPregnancy": "for the full pregnancy.",
+        "setYourProfile": "Set your profile",
+        "setProfileHint": "Enter your pre-pregnancy BMI to see personalized IOM gain guidelines."
       },
       "appts": {
         "addVisit": "+ Add Visit",
@@ -286,7 +298,8 @@ window.MYOB_LOCALES.en = {
         "notesFromVisit": "Notes from visit",
         "edit": "Edit",
         "delete": "Delete",
-        "visitDeleted": "Visit deleted"
+        "visitDeleted": "Visit deleted",
+        "noVisits": "No visits logged yet. Add one above to track questions and notes."
       },
       "cx": {
         "noContractions": "No contractions recorded yet.<br>Tap \"Contraction Starting\" when one begins."
@@ -303,8 +316,8 @@ window.MYOB_LOCALES.en = {
       "inProgress": "Translation in progress"
     },
     "app": {
-      "title": "Pregnancy & Birth Guide",
-      "tagline": "Evidence-based · Works offline",
+      "title": "Pregnancy Handbook",
+      "tagline": "",
       "description": "Evidence-based pregnancy, labor, delivery & postpartum guide. Works offline.",
       "home": "Home",
       "prenatal": "Prenatal",
@@ -336,9 +349,8 @@ window.MYOB_LOCALES.en = {
       "legRednessSwelling": "Leg redness/swelling",
       "chestPainOrTroubleBreathing": "Chest pain or trouble breathing",
       "thoughtsOfSelfHarm": "Thoughts of self-harm",
-      "heroLabel": "Your Complete Guide",
       "heroTitle": "Know what to<br>expect. Ask great<br>questions.",
-      "heroDesc": "From your first prenatal visit through delivery and recovery — everything in one place."
+      "heroDesc": "From your first prenatal visit through delivery and recovery, Obiana keeps everything in one place."
     },
     "pregnancy": {
       "section1": "Section 1",

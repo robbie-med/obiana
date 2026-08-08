@@ -106,7 +106,9 @@ window.MYOB_LOCALES.es = {
         "inThePast7Days": "en los últimos 7 días",
         "yourAnswersAreSavedOnly": "Sus respuestas se guardan solo en este teléfono.",
         "getMyScore": "Ver Mi Puntuación",
-        "scoreOutOf30Based": "Puntuación sobre 30 · Basada en la Escala de Depresión Posnatal de Edimburgo"
+        "scoreOutOf30Based": "Puntuación sobre 30 · Basada en la Escala de Depresión Posnatal de Edimburgo",
+        "pastCheckIns": "Evaluaciones anteriores",
+        "selfHarmGuidance": "Ha indicado que ha tenido pensamientos de hacerse daño. Comuníquese con su médico, llame o envíe un mensaje al 988 (Línea de Prevención del Suicidio y Crisis), o acuda a la sala de emergencias más cercana."
       },
       "birthplan": {
         "q": {
@@ -243,7 +245,9 @@ window.MYOB_LOCALES.es = {
         "logAFeeding": "+ Registrar una toma",
         "feedLog": "Registro de tomas",
         "feedLogged": "Toma registrada",
-        "noFeeds": "Aún no hay tomas registradas."
+        "noFeeds": "Aún no hay tomas registradas.",
+        "fewFeedsTitle": "⚠ Menos de 8 tomas hoy",
+        "fewFeedsBody": "Los recién nacidos suelen necesitar de 8 a 12 tomas cada 24 horas. Si le cuesta despertar al bebé o no está subiendo de peso, llame a su médico."
       },
       "diaper": {
         "wetToday": "Mojados hoy",
@@ -257,7 +261,10 @@ window.MYOB_LOCALES.es = {
       "jaundice": {
         "babySBirthDate": "Fecha de nacimiento del bebé",
         "set": "Guardar",
-        "birthDateSaved": "Fecha de nacimiento guardada"
+        "birthDateSaved": "Fecha de nacimiento guardada",
+        "dayOfLife": "Día de vida",
+        "resolvesByNow": "La mayoría de las ictericias ya se ha resuelto",
+        "callImmediatelyIf": "Llame a su médico de inmediato si"
       },
       "bp": {
         "logBloodPressure": "+ Registrar presión arterial",
@@ -266,7 +273,8 @@ window.MYOB_LOCALES.es = {
         "readings": "Lecturas",
         "enterValidNumbersEG": "Ingrese números válidos (p. ej. 118 / 76)",
         "highReadingContactYourDoctor": "Lectura alta: contacte a su médico",
-        "noReadings": "Aún no hay lecturas registradas."
+        "noReadings": "Aún no hay lecturas registradas.",
+        "highOnRecord": "⚠ Lectura alta registrada"
       },
       "weight": {
         "yourProfile": "Su perfil",
@@ -277,7 +285,11 @@ window.MYOB_LOCALES.es = {
         "weightLog": "Registro de peso",
         "profileSaved": "Perfil guardado",
         "enterValidWeightAndPregnancy": "Ingrese un peso y una semana de embarazo válidos",
-        "noWeights": "Aún no se han registrado pesos."
+        "noWeights": "Aún no se han registrado pesos.",
+        "recommendedGain": "Aumento total recomendado:",
+        "forFullPregnancy": "durante todo el embarazo.",
+        "setYourProfile": "Configure su perfil",
+        "setProfileHint": "Introduzca su IMC (BMI) antes del embarazo para ver las pautas de aumento del IOM personalizadas."
       },
       "appts": {
         "addVisit": "+ Agregar cita",
@@ -286,7 +298,8 @@ window.MYOB_LOCALES.es = {
         "notesFromVisit": "Notas de la cita",
         "edit": "Editar",
         "delete": "Eliminar",
-        "visitDeleted": "Cita eliminada"
+        "visitDeleted": "Cita eliminada",
+        "noVisits": "Aún no hay visitas registradas. Añada una arriba para llevar el control de preguntas y notas."
       },
       "cx": {
         "noContractions": "Aún no hay contracciones registradas.<br>Toque \"Comienza una contracción\" cuando empiece una."
@@ -303,8 +316,8 @@ window.MYOB_LOCALES.es = {
       "inProgress": "Traducción en curso"
     },
     "app": {
-      "title": "Guía de embarazo y parto",
-      "tagline": "Basada en evidencia · Funciona sin conexión",
+      "title": "Manual del Embarazo",
+      "tagline": "",
       "description": "Guía de embarazo, trabajo de parto, parto y posparto basada en evidencia. Funciona sin conexión.",
       "home": "Inicio",
       "prenatal": "Prenatal",
@@ -336,9 +349,8 @@ window.MYOB_LOCALES.es = {
       "legRednessSwelling": "Enrojecimiento o hinchazón de una pierna",
       "chestPainOrTroubleBreathing": "Dolor en el pecho o dificultad para respirar",
       "thoughtsOfSelfHarm": "Pensamientos de hacerse daño",
-      "heroLabel": "Su guía completa",
       "heroTitle": "Sepa qué<br>esperar. Haga buenas<br>preguntas.",
-      "heroDesc": "Desde su primera cita prenatal hasta el parto y la recuperación: todo en un solo lugar."
+      "heroDesc": "Desde su primera visita prenatal hasta el parto y la recuperación, Obiana lo mantiene todo en un solo lugar."
     },
     "pregnancy": {
       "section1": "Sección 1",

@@ -105,7 +105,9 @@ window.MYOB_LOCALES.ko = {
         "inThePast7Days": "지난 7일 동안",
         "yourAnswersAreSavedOnly": "답변은 이 휴대폰에만 저장됩니다.",
         "getMyScore": "내 점수 확인",
-        "scoreOutOf30Based": "총점 30점 만점 · 에딘버러 산후 우울 척도 기반"
+        "scoreOutOf30Based": "총점 30점 만점 · 에딘버러 산후 우울 척도 기반",
+        "pastCheckIns": "이전 검사 기록",
+        "selfHarmGuidance": "스스로를 해치고 싶은 생각이 들었다고 답하셨습니다. 담당 의료진에게 연락하시거나 988(자살 예방 및 위기 상담 전화)로 전화 또는 문자하시거나, 가까운 응급실을 방문하세요."
       },
       "birthplan": {
         "q": {
@@ -242,7 +244,9 @@ window.MYOB_LOCALES.ko = {
         "logAFeeding": "+ 수유 기록하기",
         "feedLog": "수유 기록",
         "feedLogged": "수유를 기록했어요",
-        "noFeeds": "아직 기록된 수유가 없어요."
+        "noFeeds": "아직 기록된 수유가 없어요.",
+        "fewFeedsTitle": "⚠ 오늘 수유 횟수가 8회 미만입니다",
+        "fewFeedsBody": "신생아는 보통 24시간에 8~12회 수유가 필요합니다. 아기를 깨우기 어렵거나 체중이 늘지 않는다면 담당 의료진에게 연락하세요."
       },
       "diaper": {
         "wetToday": "오늘 소변 기저귀",
@@ -256,7 +260,10 @@ window.MYOB_LOCALES.ko = {
       "jaundice": {
         "babySBirthDate": "아기 생년월일",
         "set": "설정",
-        "birthDateSaved": "생년월일을 저장했어요"
+        "birthDateSaved": "생년월일을 저장했어요",
+        "dayOfLife": "생후 일수",
+        "resolvesByNow": "대부분의 황달은 이 시기에 좋아집니다",
+        "callImmediatelyIf": "다음의 경우 즉시 의료진에게 연락하세요"
       },
       "bp": {
         "logBloodPressure": "+ 혈압 기록하기",
@@ -265,7 +272,8 @@ window.MYOB_LOCALES.ko = {
         "readings": "측정 기록",
         "enterValidNumbersEG": "올바른 숫자를 입력하세요 (예: 118 / 76)",
         "highReadingContactYourDoctor": "혈압이 높아요 — 의사에게 연락하세요",
-        "noReadings": "아직 기록된 측정값이 없어요."
+        "noReadings": "아직 기록된 측정값이 없어요.",
+        "highOnRecord": "⚠ 높은 혈압이 기록되었습니다"
       },
       "weight": {
         "yourProfile": "내 프로필",
@@ -276,7 +284,11 @@ window.MYOB_LOCALES.ko = {
         "weightLog": "체중 기록",
         "profileSaved": "프로필이 저장되었습니다",
         "enterValidWeightAndPregnancy": "올바른 체중과 임신 주수를 입력해 주세요",
-        "noWeights": "아직 기록된 체중이 없습니다."
+        "noWeights": "아직 기록된 체중이 없습니다.",
+        "recommendedGain": "권장 총 체중 증가:",
+        "forFullPregnancy": "임신 기간 전체 기준입니다.",
+        "setYourProfile": "프로필을 설정하세요",
+        "setProfileHint": "임신 전 BMI를 입력하면 맞춤 IOM 체중 증가 지침을 볼 수 있습니다."
       },
       "appts": {
         "addVisit": "+ 진료 추가",
@@ -285,7 +297,8 @@ window.MYOB_LOCALES.ko = {
         "notesFromVisit": "진료 메모",
         "edit": "수정",
         "delete": "삭제",
-        "visitDeleted": "진료 기록이 삭제되었습니다"
+        "visitDeleted": "진료 기록이 삭제되었습니다",
+        "noVisits": "아직 기록된 진료가 없습니다. 위에서 추가해 질문과 메모를 관리하세요."
       },
       "cx": {
         "noContractions": "아직 기록된 진통이 없습니다.<br>진통이 시작되면 \"진통 시작\"을 눌러 주세요."
@@ -302,8 +315,8 @@ window.MYOB_LOCALES.ko = {
       "inProgress": "번역 진행 중"
     },
     "app": {
-      "title": "임신과 출산 가이드",
-      "tagline": "근거 기반 · 오프라인 사용 가능",
+      "title": "임신 핸드북",
+      "tagline": "",
       "description": "근거 기반의 임신, 진통, 분만 및 산후 안내서. 오프라인에서도 사용할 수 있습니다.",
       "home": "홈",
       "prenatal": "임신 중",
@@ -335,9 +348,8 @@ window.MYOB_LOCALES.ko = {
       "legRednessSwelling": "다리의 발적/부종",
       "chestPainOrTroubleBreathing": "가슴 통증 또는 호흡 곤란",
       "thoughtsOfSelfHarm": "자해 충동",
-      "heroLabel": "완전한 가이드",
       "heroTitle": "미리 알고,<br>좋은 질문을<br>하세요.",
-      "heroDesc": "첫 산전 진료부터 분만과 회복까지 — 모든 것이 한곳에 있습니다."
+      "heroDesc": "첫 산전 진료부터 분만과 회복까지, Obiana가 모든 것을 한곳에 모아 드립니다."
     },
     "pregnancy": {
       "section1": "1부",

@@ -110,7 +110,9 @@ window.MYOB_LOCALES.ar = {
         "inThePast7Days": "في الأيام السبعة الماضية",
         "yourAnswersAreSavedOnly": "إجاباتك محفوظة على هذا الهاتف فقط.",
         "getMyScore": "احصلي على نتيجتي",
-        "scoreOutOf30Based": "النتيجة من 30 · مبني على مقياس إدنبرة لاكتئاب ما بعد الولادة"
+        "scoreOutOf30Based": "النتيجة من 30 · مبني على مقياس إدنبرة لاكتئاب ما بعد الولادة",
+        "pastCheckIns": "التقييمات السابقة",
+        "selfHarmGuidance": "لقد أجبتِ بأن أفكار إيذاء النفس قد راودتك. يرجى التواصل مع طبيبك، أو الاتصال أو إرسال رسالة إلى 988 (خط الأزمات والوقاية من الانتحار)، أو التوجه إلى أقرب قسم طوارئ."
       },
       "birthplan": {
         "q": {
@@ -247,7 +249,9 @@ window.MYOB_LOCALES.ar = {
         "logAFeeding": "+ تسجيل رضعة",
         "feedLog": "سجل الرضاعة",
         "feedLogged": "تم تسجيل الرضعة",
-        "noFeeds": "لم تُسجَّل أي رضعات بعد."
+        "noFeeds": "لم تُسجَّل أي رضعات بعد.",
+        "fewFeedsTitle": "⚠ أقل من 8 رضعات اليوم",
+        "fewFeedsBody": "يحتاج المواليد عادةً إلى 8–12 رضعة كل 24 ساعة. إذا كان من الصعب إيقاظ الطفل أو لم يكن وزنه يزداد، اتصلي بطبيبك."
       },
       "diaper": {
         "wetToday": "مبلّلة اليوم",
@@ -261,7 +265,10 @@ window.MYOB_LOCALES.ar = {
       "jaundice": {
         "babySBirthDate": "تاريخ ميلاد الطفل",
         "set": "حفظ",
-        "birthDateSaved": "تم حفظ تاريخ الميلاد"
+        "birthDateSaved": "تم حفظ تاريخ الميلاد",
+        "dayOfLife": "يوم من العمر",
+        "resolvesByNow": "معظم حالات اليرقان تزول عند هذه المرحلة",
+        "callImmediatelyIf": "اتصلي بطبيبك فوراً إذا"
       },
       "bp": {
         "logBloodPressure": "+ تسجيل ضغط الدم",
@@ -270,7 +277,8 @@ window.MYOB_LOCALES.ar = {
         "readings": "القراءات",
         "enterValidNumbersEG": "أدخلي أرقاماً صحيحة (مثلاً 118 / 76)",
         "highReadingContactYourDoctor": "قراءة مرتفعة — تواصلي مع طبيبك",
-        "noReadings": "لم تُسجَّل أي قراءات بعد."
+        "noReadings": "لم تُسجَّل أي قراءات بعد.",
+        "highOnRecord": "⚠ قراءة مرتفعة مسجّلة"
       },
       "weight": {
         "yourProfile": "ملفك الشخصي",
@@ -281,7 +289,11 @@ window.MYOB_LOCALES.ar = {
         "weightLog": "سجل الوزن",
         "profileSaved": "تم حفظ الملف",
         "enterValidWeightAndPregnancy": "أدخلي وزناً وأسبوع حمل صحيحين",
-        "noWeights": "لم يُسجَّل أي وزن بعد."
+        "noWeights": "لم يُسجَّل أي وزن بعد.",
+        "recommendedGain": "الزيادة الإجمالية الموصى بها:",
+        "forFullPregnancy": "خلال فترة الحمل كاملة.",
+        "setYourProfile": "أعدّي ملفك الشخصي",
+        "setProfileHint": "أدخلي مؤشر كتلة الجسم (BMI) قبل الحمل لعرض إرشادات IOM لزيادة الوزن الخاصة بك."
       },
       "appts": {
         "addVisit": "+ إضافة زيارة",
@@ -290,7 +302,8 @@ window.MYOB_LOCALES.ar = {
         "notesFromVisit": "ملاحظات من الزيارة",
         "edit": "تعديل",
         "delete": "حذف",
-        "visitDeleted": "تم حذف الزيارة"
+        "visitDeleted": "تم حذف الزيارة",
+        "noVisits": "لا توجد زيارات مسجّلة بعد. أضيفي واحدة أعلاه لتتبّع أسئلتك وملاحظاتك."
       },
       "cx": {
         "noContractions": "لم تُسجَّل أي انقباضات بعد.<br>اضغطي «بدء الانقباضة» عند بدء انقباضة."
@@ -307,8 +320,8 @@ window.MYOB_LOCALES.ar = {
       "inProgress": "الترجمة قيد التنفيذ"
     },
     "app": {
-      "title": "دليل الحمل والولادة",
-      "tagline": "قائم على الأدلة · يعمل دون اتصال",
+      "title": "دليل الحمل",
+      "tagline": "",
       "description": "دليل قائم على الأدلة للحمل والمخاض والولادة وما بعد الولادة. يعمل دون اتصال.",
       "home": "الرئيسية",
       "prenatal": "قبل الولادة",
@@ -340,9 +353,8 @@ window.MYOB_LOCALES.ar = {
       "legRednessSwelling": "احمرار أو تورم في الساق",
       "chestPainOrTroubleBreathing": "ألم في الصدر أو صعوبة في التنفس",
       "thoughtsOfSelfHarm": "أفكار بإيذاء النفس",
-      "heroLabel": "دليلك الكامل",
       "heroTitle": "اعرفي ما الذي<br>ينتظرك. واسألي<br>الأسئلة الصحيحة.",
-      "heroDesc": "من أول زيارة قبل الولادة وحتى الولادة والتعافي — كل شيء في مكان واحد."
+      "heroDesc": "من أول زيارة قبل الولادة وحتى الولادة والتعافي، يجمع Obiana كل شيء في مكان واحد."
     },
     "pregnancy": {
       "section1": "القسم 1",

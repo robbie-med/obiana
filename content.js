@@ -450,28 +450,7 @@ function navigate(section) {
     TOOL_INITS[section]();
   }
 
-  // Update header sub
-  const subtitles = {
-    home: 'Evidence-based · Works offline',
-    pregnancy: 'Prenatal Visits & Pregnancy',
-    labor: 'Labor & Delivery',
-    recovery: 'Postpartum Recovery',
-    baby: 'Your Newborn',
-    faq: 'FAQ & Myths',
-    myinfo: 'My Care Team & Contacts',
-    tools: 'Daily Tools & Trackers',
-    'tool-kick': 'Kick Counter',
-    'tool-contractions': 'Contraction Timer',
-    'tool-feeding': 'Feeding Log',
-    'tool-diapers': 'Diaper Log',
-    'tool-jaundice': 'Jaundice Tracker',
-    'tool-bp': 'Blood Pressure Log',
-    'tool-weight': 'Weight Tracker',
-    'tool-mood': 'Mood Check-In',
-    'tool-birthplan': 'Birth Plan Builder',
-    'tool-appts': 'Visit Notes',
-  };
-  document.getElementById('header-sub').textContent = subtitles[section] || '';
+
 
   // Scroll content to top
   document.getElementById('content').scrollTop = 0;
@@ -850,21 +829,66 @@ function hideLanguagePicker() {
 // LANGUAGE SWITCHER
 // ═══════════════════════════════════════════════════════
 function renderLangSwitcher() {
-  const sel = document.getElementById('lang-select');
-  if (!sel) return;
-  sel.innerHTML = Object.keys(I18n.LOCALES).map(code => {
-    const meta = I18n.LOCALES[code];
-    return `<option value="${code}"${code === I18n.lang ? ' selected' : ''}>${escHtml(meta.native)}</option>`;
+  const btn = document.getElementById('lang-btn');
+  const pop = document.getElementById('lang-pop');
+  const grid = document.getElementById('lang-pop-grid');
+  if (!btn || !pop || !grid) return;
+
+  grid.innerHTML = Object.keys(I18n.LOCALES).map(code => {
+    const m = I18n.LOCALES[code];
+    const isFlag = /\p{Regional_Indicator}/u.test(m.flag || '');
+    return `<button type="button" class="lang-chip${code === I18n.lang ? ' current' : ''}"
+              data-lang="${code}" lang="${code}" dir="${m.dir}"
+              aria-label="${escHtml(m.name)}"${code === I18n.lang ? ' aria-current="true"' : ''}>
+              <span class="lang-chip-flag${isFlag ? '' : ' glyph'}" aria-hidden="true">${escHtml(m.flag || code)}</span>
+              <span class="lang-chip-name">${escHtml(m.native)}</span>
+            </button>`;
   }).join('');
-  if (sel.dataset.bound === '1') { updateTranslationNotice(); return; }
-  sel.dataset.bound = '1';
-  sel.addEventListener('change', async () => {
-    const ok = await I18n.setLocale(sel.value);
-    if (!ok) { sel.value = I18n.lang; return; }
-    renderLangSwitcher();
-    updateTranslationNotice();
+
+  grid.querySelectorAll('.lang-chip').forEach(chip => {
+    chip.addEventListener('click', async () => {
+      const ok = await I18n.setLocale(chip.dataset.lang);
+      if (!ok) { chip.classList.add('failed'); return; }
+      closeLangPop();
+      renderLangSwitcher();
+    });
   });
+
+  if (btn.dataset.bound !== '1') {
+    btn.dataset.bound = '1';
+    btn.addEventListener('click', e => { e.stopPropagation(); togglePop(); });
+    // Dismiss on outside tap or Escape, like any other popover.
+    document.addEventListener('click', e => {
+      if (!pop.hidden && !pop.contains(e.target) && e.target !== btn) closeLangPop();
+    });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLangPop(); });
+  }
   updateTranslationNotice();
+}
+
+function togglePop() {
+  const pop = document.getElementById('lang-pop');
+  if (!pop) return;
+  if (pop.hidden) openLangPop(); else closeLangPop();
+}
+
+function openLangPop() {
+  const pop = document.getElementById('lang-pop');
+  const btn = document.getElementById('lang-btn');
+  if (!pop) return;
+  pop.hidden = false;
+  requestAnimationFrame(() => pop.classList.add('open'));
+  if (btn) btn.setAttribute('aria-expanded', 'true');
+  pop.querySelector('.lang-chip')?.focus();
+}
+
+function closeLangPop() {
+  const pop = document.getElementById('lang-pop');
+  const btn = document.getElementById('lang-btn');
+  if (!pop || pop.hidden) return;
+  pop.classList.remove('open');
+  if (btn) btn.setAttribute('aria-expanded', 'false');
+  setTimeout(() => { pop.hidden = true; }, 160);
 }
 
 // Non-English content is LLM-drafted pending clinician review. Patients are
@@ -912,10 +936,8 @@ function applyLocaleToApp() {
   // Driven by the locale change itself, not by the switcher widget — the
   // locale can also change via ?lang=, saved preference, or a direct call.
   updateTranslationNotice();
-  // Keep the switcher in sync without rebuilding it (which would stack up a
-  // duplicate change listener on every switch).
-  const sel = document.getElementById('lang-select');
-  if (sel && sel.value !== I18n.lang) sel.value = I18n.lang;
+  // Refresh the picker so the current-language chip moves with the locale.
+  renderLangSwitcher();
   if (searchInput && searchInput.value.trim()) doSearch();
 }
 

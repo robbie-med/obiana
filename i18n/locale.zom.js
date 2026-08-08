@@ -16,12 +16,16 @@ window.MYOB_LOCALES.zom = {
   "translationStatus": "stub",
   "ui": {
     "app": {
-      "title": "Pregnancy & Birth Guide"
+      "title": "Pregnancy Handbook",
+      "tagline": ""
     },
     "lang": {
       "unreviewedNotice": "This translation is not ready yet. The guide is shown in English. Please ask your care team if you need help reading it.",
       "loadFailed": "Could not load",
       "inProgress": "Translation in progress"
+    },
+    "home": {
+      "heroDesc": "From your first prenatal visit through delivery and recovery, Obiana keeps everything in one place."
     }
   }
 };
