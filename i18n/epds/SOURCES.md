@@ -29,30 +29,55 @@ Two separate risks:
 
 ## Current status
 
-| Language | Status |
+Eight validated screeners ship. All were extracted mechanically from official
+PDF text layers — never retyped, OCR-scanned or translated — and every one was
+read back against the published English form item by item.
+
+| Language | Instrument | Source |
+|---|---|---|
+| English | EPDS | Published form (Cox/Holden/Sagovsky 1987) |
+| Spanish | EPDS | NSW MHCS |
+| Korean | EPDS | NSW MHCS |
+| Chinese (Simplified) | EPDS | NSW MHCS |
+| Arabic | EPDS | NSW MHCS |
+| Chin (Hakha) | EPDS | NSW MHCS |
+| **French** | **PHQ-9** | phqscreeners.com |
+| **Russian** | **PHQ-9** | phqscreeners.com |
+
+French and Russian have no freely downloadable validated EPDS, so they use the
+**PHQ-9** instead: a validated depression screen that is public domain ("no
+permission is required to reproduce, translate, display or distribute"). It is
+not perinatal-specific, but a validated general screen the patient can read
+beats no screen at all. It differs structurally — 9 items, a shared four-point
+column scale, no reverse scoring, 0–27, self-harm item 9, cutoffs 10/15 — and
+the app is data-driven on all of those.
+
+### Still open
+
+| | |
 |---|---|
-| English | ✅ shipped — verbatim from the published form |
-| Spanish | ✅ shipped — MHCS, mechanically extracted, **checked item-by-item against English** (this was the pipeline's control) |
-| Chin (Hakha) | ✅ shipped — MHCS, mechanically extracted, order confirmed via the form's own yes/no particles |
-| Korean | ⏳ extracts 10/10 items but options wrap across lines; 2 items short |
-| Chinese (Simp.) | ⏳ same wrapping issue on 1 item |
-| Arabic | ⏳ text layer is wrapped in bidi control characters, so item numbers do not match; parser needs a bidi-aware pre-pass |
-| French | ❌ not on MHCS — try eCALD |
-| Russian | ❌ not on MHCS |
-| Burmese | ❌ **no downloadable validated form found anywhere.** Validation studies exist (Thai–Myanmar border 2017; Myanmar M-EPDS 2020, which reports a cutoff of 10/11, not 13) but the instrument text is not published for download |
-| Zomi (Tedim) | ❌ no validated version found |
+| Zomi (Tedim) | No validated version of either instrument found. Gated. |
+| Burmese | No downloadable validated form. Validation studies exist (Thai–Myanmar border 2017; Myanmar M-EPDS 2020, cutoff **10/11 not 13**) but the instrument text is not published. |
 
-Re-run an extraction with:
+Note **Chin (Hakha) is NOT Zomi (Tedim Chin)** — different Chin languages. It
+is offered because many Zomi speakers read a second language, not as a
+substitute.
 
-```bash
-node i18n/epds/extract.js <lang> path/to/Official.pdf
-node i18n/epds/verify.js
-```
+## Extraction quirks that had to be solved
 
-`extract.js` refuses to emit anything it cannot parse cleanly — including a
-guard that rejects ASCII margin furniture leaking into a non-Latin form, which
-is how `NOWRITING` first ended up as option 4 of a Korean item while every
-structural check still passed.
+Each of these silently produced wrong data before it was fixed:
+
+- **Checkbox on its own line.** Korean and Chinese print `□` alone with the
+  option text on a following line, so one option per item was orphaned.
+  `extract.js` tracks pending checkboxes.
+- **Margin furniture as an answer.** Korean shipped `NOWRITING` as option 4 and
+  Chinese `- NO-`, while every structural check passed. An ASCII-only run on a
+  non-Latin form is now rejected outright.
+- **RTL numbering.** Arabic prints `stem .6`, not `6. stem`, and the number sits
+  at the *right* edge of its column — so the column split has to fall just past
+  the *lower* cluster or every stem lands in the wrong column.
+- **Arabic presentation forms.** The text layer emits U+FExx glyphs wrapped in
+  bidi control characters; both are normalised (NFKC) before parsing.
 
 ## Where the validated versions are published
 

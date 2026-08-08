@@ -1,0 +1,32 @@
+{
+  "followup-appts": {
+    "title": "Rendez-vous de suivi pour bébé et vous",
+    "sub": "Le calendrier et ce qui se passe à chaque visite",
+    "body": "\n        <p class=\"lead navy\">Avant de quitter l'hôpital, vérifiez que ces rendez-vous sont bien prévus. Ne partez pas sans eux.</p>\n        <h4>Pour bébé (pédiatre)</h4>\n        <table class=\"data-table\">\n          <tr><th class=\"navy\">Quand</th><th class=\"navy\">Objectif</th></tr>\n          <tr><td><strong>2–5 jours</strong></td><td>Contrôle du poids — essentiel pour vérifier que bébé reprend son poids de naissance. Évaluation de la jaunisse. Évaluation de l'alimentation. Suivi du dépistage néonatal.</td></tr>\n          <tr><td><strong>2 semaines</strong></td><td>Retour au poids de naissance ? Contrôle du développement et de l'alimentation. Contrôle du moignon du cordon.</td></tr>\n          <tr><td><strong>2 mois</strong></td><td>Premiers vaccins, étapes de croissance et de développement</td></tr>\n          <tr><td><strong>4, 6, 9, 12 mois</strong></td><td>Croissance, développement, vaccins (le calendrier se poursuit pendant l'enfance)</td></tr>\n        </table>\n        <h4>Pour vous (obstétricien/sage-femme)</h4>\n        <table class=\"data-table\">\n          <tr><th class=\"navy\">Quand</th><th class=\"navy\">Objectif</th></tr>\n          <tr><td><strong>1–3 jours</strong> (césarienne ou complications)</td><td>Contrôle de la plaie, gestion de la tension artérielle, douleur</td></tr>\n          <tr><td><strong>2 semaines</strong></td><td>Dépistage de l'humeur, tension artérielle, plaie/périnée, soutien à l'allaitement</td></tr>\n          <tr><td><strong>6 semaines</strong></td><td>Examen physique complet, examen pelvien, discussion sur la contraception, autorisation de reprendre le sport</td></tr>\n        </table>\n        <div class=\"callout navy\">\n          <div class=\"callout-title\">Questions à poser avant de quitter l'hôpital</div>\n          <p>Qui dois-je appeler si j'ai une question avant mon premier rendez-vous ? · Bébé se nourrit-il bien — comment saurai-je si ce n'est pas le cas ? · À partir de quand dois-je appeler le pédiatre ? · Y a-t-il eu des examens anormaux qui nécessitent un suivi ? · Dois-je réveiller bébé pour le nourrir la nuit ? · Quelles sont mes consignes pour le soin de ma plaie ?</p>\n        </div>"
+  },
+  "faq-deli": {
+    "title": "Puis-je manger de la charcuterie et du fromage à pâte molle ?",
+    "sub": "",
+    "body": "<p>Le principal risque est la <em>Listeria</em>, une infection bactérienne rare mais qui peut être grave pendant la grossesse (elle peut traverser le placenta). La FDA (agence américaine des aliments et médicaments) conseille d'éviter les fromages non pasteurisés et la charcuterie, sauf si elle est chauffée jusqu'à être fumante (165°F). La plupart des fromages à pâte molle pasteurisés (comme le brie pasteurisé, la feta en emballage) sont sûrs. Le risque global lié à une consommation occasionnelle de charcuterie est très faible — ces conseils sont une précaution, et non une garantie qu'un sandwich à la dinde rendra malade. En cas de doute, faites chauffer.</p>"
+  },
+  "faq-coffee": {
+    "title": "Puis-je consommer de la caféine ?",
+    "sub": "",
+    "body": "<p>Oui. L'ACOG (collège américain des obstétriciens) recommande de limiter la caféine à <strong>moins de 200 mg par jour</strong> (environ une tasse de café filtre de 12 oz). À ce niveau, aucun effet nocif sur la grossesse n'est établi. Le thé, les sodas et le chocolat contiennent aussi de la caféine — comptez-les tous ensemble. Réduire votre consommation est raisonnable ; l'arrêter complètement est un choix personnel, pas une nécessité médicale.</p>"
+  },
+  "faq-hair-dye": {
+    "title": "Puis-je me teindre les cheveux pendant la grossesse ?",
+    "sub": "",
+    "body": "<p>Oui. La teinture capillaire est absorbée par le cuir chevelu en très petites quantités. Aucune étude publiée n'a montré de danger pour le fœtus aux quantités utilisées lors d'une coloration normale en salon ou à la maison. La plupart des médecins la considèrent sûre, surtout après le premier trimestre. Les mèches (au papier d'aluminium) ont encore moins de contact avec le cuir chevelu. Si vous êtes inquiète, attendez le deuxième trimestre, quand le développement des principaux organes est terminé.</p>"
+  },
+  "faq-exercise-mc": {
+    "title": "L'exercice physique provoque-t-il une fausse couche ?",
+    "sub": "",
+    "body": "<p>Non. L'exercice modéré ne provoque pas de fausse couche dans les grossesses en bonne santé. C'est l'un des mythes les plus répandus sur la grossesse. Les fausses couches précoces sont presque toujours causées par des anomalies chromosomiques de l'embryon — pas par l'exercice, les rapports sexuels, le stress ou quoi que ce soit que la mère aurait fait. L'exercice est protecteur, pas dangereux. Consultez les recommandations sur l'exercice dans la section Prénatal.</p>"
+  },
+  "faq-sex-pregnancy": {
+    "title": "Les rapports sexuels sont-ils sûrs pendant la grossesse ?",
+    "sub": "",
+    "body": "<p>Oui, dans une grossesse normale sans complications. Les rapports sexuels ne provoquent ni fausse couche, ni accouchement prématuré, et ne font pas de mal au bébé (qui est protégé par le liquide amniotique). Votre médecin ne vous recommandera un repos pelvien (pas de rapports) que dans des situations précises : placenta prævia, risque d'accouchement prématuré, saignements vaginaux inexpliqués, certaines affections du col de l'utérus, ou après la rupture de la poche des eaux. Si vous n'êtes pas sûre, demandez lors de votre prochaine visite.</p>"
+  }
+}

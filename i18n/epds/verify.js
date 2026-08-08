@@ -19,11 +19,11 @@ const DIR = path.join(__dirname, '..');
 // The published EPDS reverses these items (first option scores 3).
 const OFFICIAL_REVERSED = [3, 5, 6, 7, 8, 9, 10];
 
-const files = fs.readdirSync(__dirname).filter(f => /^epds\.[a-z]{2,3}\.js$/.test(f));
+const files = fs.readdirSync(__dirname).filter(f => /^(epds|phq9)\.[a-z]{2,3}\.js$/.test(f));
 let problems = 0, checked = 0, gated = [];
 
 for (const file of files) {
-  const lang = file.match(/^epds\.([a-z]{2,3})\.js$/)[1];
+  const lang = file.match(/^(?:epds|phq9)\.([a-z]{2,3})\.js$/)[1];
   global.window = { MYOB_EPDS: {} };
   delete require.cache[require.resolve(path.join(__dirname, file))];
   try { require(path.join(__dirname, file)); }
@@ -39,9 +39,13 @@ for (const file of files) {
   if (!epds.cutoffs || typeof epds.cutoffs.concern !== 'number' || typeof epds.cutoffs.high !== 'number')
     errs.push('cutoffs must be { concern: <n>, high: <n> } from THAT language\'s validation study');
 
+  const isPHQ = epds.instrument === 'PHQ-9';
+  const wantItems = isPHQ ? 9 : 10;
+  const wantMax = isPHQ ? 27 : 30;
+
   const q = epds.questions;
-  if (!Array.isArray(q) || q.length !== 10) {
-    errs.push(`expected 10 items, got ${Array.isArray(q) ? q.length : typeof q}`);
+  if (!Array.isArray(q) || q.length !== wantItems) {
+    errs.push(`expected ${wantItems} items, got ${Array.isArray(q) ? q.length : typeof q}`);
   } else {
     const reversed = [];
     q.forEach((item, i) => {
@@ -58,7 +62,10 @@ for (const file of files) {
         errs.push(`item ${n}: duplicate option text`);
     });
 
-    if (reversed.join() !== OFFICIAL_REVERSED.join()) {
+    // The PHQ-9 has NO reverse-scored items; the EPDS alternation does not
+    // apply to it and demanding it would be wrong.
+    const wantReversed = isPHQ ? [] : OFFICIAL_REVERSED;
+    if (reversed.join() !== wantReversed.join()) {
       errs.push(
         `option ORDER does not match the published form.\n` +
         `        reverse-scored here : [${reversed.join(', ') || 'none'}]\n` +
@@ -70,11 +77,11 @@ for (const file of files) {
     // Range sanity
     const min = q.reduce((a, x) => a + Math.min(...(x.scores || [0])), 0);
     const max = q.reduce((a, x) => a + Math.max(...(x.scores || [0])), 0);
-    if (min !== 0 || max !== 30) errs.push(`score range must be 0..30, got ${min}..${max}`);
+    if (min !== 0 || max !== wantMax) errs.push(`score range must be 0..${wantMax}, got ${min}..${max}`);
   }
 
   if (errs.length) { problems++; console.log(`✗ ${lang}`); errs.forEach(e => console.log(`    ${e}`)); }
-  else console.log(`✓ ${lang}: 10 items, 0..30, reverse-scored [${OFFICIAL_REVERSED.join(', ')}], attributed`);
+  else console.log(`✓ ${lang.padEnd(4)} ${(epds.instrument || 'EPDS').padEnd(6)} ${wantItems} items, 0..${wantMax}, reverse-scored [${(isPHQ ? [] : OFFICIAL_REVERSED).join(', ') || 'none'}], attributed`);
 }
 
 if (gated.length) console.log(`\nempty modules: ${gated.join(', ')}`);

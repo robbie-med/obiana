@@ -25,6 +25,7 @@ translation
 i18n/epds/SOURCES.md
 i18n/epds/verify.js
 i18n/epds/extract.js
+i18n/epds/extract-phq9.js
 
 # Intermediate key-extraction artifacts kept for regeneration, not for serving.
 i18n/_html_keys.json

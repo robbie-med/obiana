@@ -1,0 +1,32 @@
+{
+  "faq-vaccines": {
+    "title": "Les vaccins sont-ils sûrs pendant la grossesse ?",
+    "sub": "",
+    "body": "<p>Oui, et certains sont fortement recommandés. Le <strong>Tdap</strong> (rappel contre la coqueluche, entre 27 et 36 semaines) et le <strong>vaccin contre la grippe</strong> sont recommandés à chaque grossesse. Le <strong>vaccin contre la COVID-19</strong> est également recommandé. Ces vaccins vous protègent contre des maladies graves et transmettent des anticorps à votre bébé par le placenta, ce qui le protège avant qu'il puisse être vacciné. Les vaccins à virus vivant (ROR, varicelle) ne sont pas administrés pendant la grossesse. Demandez à votre médecin ceux qu'il vous reste à recevoir.</p>"
+  },
+  "faq-eat-for-two": {
+    "title": "Dois-je « manger pour deux » ?",
+    "sub": "",
+    "body": "<p>Non — « manger pour deux » est un mythe. Au premier trimestre, les besoins en calories supplémentaires sont minimes. Au troisième trimestre, vous avez besoin d'environ 300 calories de plus par jour (à peu près un verre de lait et une banane). La qualité de votre alimentation compte bien plus que la quantité. Privilégiez les protéines, le fer, les folates, le calcium et les acides gras oméga-3. Votre vitamine prénatale aide à combler les manques, mais elle ne doit pas remplacer une alimentation équilibrée.</p>"
+  },
+  "faq-hot-tub": {
+    "title": "Puis-je prendre des bains ou utiliser un jacuzzi ?",
+    "sub": "",
+    "body": "<p>Les bains chauds sont sans danger pendant toute la grossesse. Les jacuzzis, saunas et hammams qui font monter votre température corporelle au-dessus de 102°F (39°C) ne sont pas recommandés — surtout au premier trimestre, car une température élevée est associée à des malformations du tube neural. Si vous utilisez un jacuzzi, gardez une température agréable (pas brûlante), limitez-vous à 10 minutes et évitez-le au premier trimestre. Un bain chaud à la température habituelle de l'eau du robinet (98–100°F) est sans danger.</p>"
+  },
+  "faq-epidural-csec": {
+    "title": "La péridurale augmente-t-elle le risque de césarienne ?",
+    "sub": "",
+    "body": "<p>Non. C'est l'une des questions les plus étudiées en obstétrique. De nombreux grands essais contrôlés randomisés et méta-analyses confirment que la péridurale n'augmente <strong>pas</strong> le taux de césariennes. Elle peut allonger légèrement la phase de poussée, mais cela se gère en toute sécurité avec de la patience et l'aide du personnel infirmier. Vous pouvez demander une péridurale à tout moment du travail actif — il n'y a pas de seuil « trop tôt » ni « trop tard ».</p>"
+  },
+  "faq-routine-episiotomy": {
+    "title": "Ai-je besoin d'une épisiotomie pour éviter une déchirure ?",
+    "sub": "",
+    "body": "<p>Non. L'épisiotomie systématique (une incision chirurgicale à l'ouverture du vagin) n'est plus recommandée par l'ACOG. Les études montrent clairement que <strong>les déchirures naturelles guérissent généralement mieux</strong> et provoquent moins de complications (y compris des douleurs et des problèmes à long terme du plancher pelvien) que les épisiotomies systématiques. La plupart des femmes qui accouchent par voie vaginale ont une déchirure plus ou moins importante, mais beaucoup sont mineures (premier degré). L'épisiotomie reste appropriée lorsqu'il existe une indication précise — par exemple quand le bébé doit naître rapidement en raison d'une souffrance fœtale.</p>"
+  },
+  "faq-water-breaking": {
+    "title": "Si je perds les eaux, devrai-je avoir une césarienne ?",
+    "sub": "",
+    "body": "<p>Non. Si vos membranes se rompent (perte des eaux) à terme, la plupart des femmes entrent en travail d'elles-mêmes dans les 12 heures. Si le travail ne commence pas, un déclenchement est proposé pour réduire le risque d'infection — la recommandation est de terminer l'accouchement dans les 18 à 24 heures. Si vous êtes positive au GBS (streptocoque du groupe B), des antibiotiques sont commencés immédiatement. Une césarienne n'est nécessaire que s'il existe d'autres indications — la perte des eaux à elle seule n'en est pas une.</p>"
+  }
+}

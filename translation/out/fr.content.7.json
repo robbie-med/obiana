@@ -1,0 +1,32 @@
+{
+  "faq-eat-in-labor": {
+    "title": "Puis-je manger ou boire pendant le travail ?",
+    "sub": "",
+    "body": "<p>Pour les femmes à faible risque en début de travail, les recommandations actuelles de l'ACOG autorisent une alimentation légère et des liquides clairs. Une fois que vous avez une péridurale, que vous recevez de la Pitocine ou que vous présentez un risque plus élevé de nécessiter une anesthésie générale (césarienne possible), la plupart des hôpitaux limitent aux glaçons ou à quelques gorgées d'eau, en raison du risque d'inhalation si une anesthésie générale devenait nécessaire. Renseignez-vous sur la politique spécifique de votre hôpital. Pour votre accompagnant : apportez des collations. Le travail peut durer une longue journée.</p>"
+  },
+  "faq-vbac": {
+    "title": "Si j'ai déjà eu une césarienne, en aurai-je toujours une autre ?",
+    "sub": "",
+    "body": "<p>Pas forcément. L'accouchement par voie basse après césarienne (VBAC) est une option sûre et appropriée pour de nombreuses femmes ayant une seule cicatrice utérine transversale basse antérieure. Les taux de réussite varient de 60 à 80 %. Les facteurs qui influencent l'éligibilité comprennent la raison de la césarienne précédente, votre grossesse actuelle, le type de cicatrice utérine et la capacité de votre hôpital à gérer une urgence. Abordez ce sujet tôt dans le suivi prénatal si cela vous intéresse.</p>"
+  },
+  "faq-bf-bc": {
+    "title": "Puis-je tomber enceinte pendant l'allaitement ?",
+    "sub": "",
+    "body": "<p>Oui. Bien que l'allaitement exclusif supprime l'ovulation dans une certaine mesure, ce n'est <strong>pas une méthode contraceptive fiable</strong>. Vous pouvez ovuler — et tomber enceinte — avant le retour de vos règles. La « méthode de l'aménorrhée lactationnelle » exige des conditions très précises (allaitement exclusif toutes les 4 heures le jour / toutes les 6 heures la nuit, aucune supplémentation, aucun retour de couches) et n'est efficace qu'à environ 98 % dans ces conditions strictes. Parlez de contraception avant de quitter l'hôpital.</p>"
+  },
+  "faq-stress-milk": {
+    "title": "Le stress peut-il tarir le lait maternel ?",
+    "sub": "",
+    "body": "<p>Le stress aigu peut temporairement perturber le réflexe d'éjection (la libération du lait), mais il n'affecte pas la production de lait à long terme. La production de lait dépend de la demande : plus votre bébé tète fréquemment et efficacement, ou plus vous tirez votre lait souvent, plus votre corps produit de lait. Des stratégies qui aident l'éjection : le contact peau à peau, la chaleur, les techniques de relaxation et regarder une photo de votre bébé lorsque vous tirez votre lait.</p>"
+  },
+  "faq-bonding": {
+    "title": "Devrais-je ressentir un lien instantané avec mon bébé ?",
+    "sub": "",
+    "body": "<p>Non — le lien d'attachement est un processus, pas un moment unique. Beaucoup de mères ressentent un amour profond dès la naissance ; d'autres ont besoin de jours, de semaines, voire de plus longtemps pour développer ce sentiment. Les deux sont tout à fait normaux. L'épuisement physique, un accouchement difficile, des résultats inattendus et la dépression post-partum (DPP) peuvent tous affecter le lien précoce. Si vous vous sentez détachée ou insensible envers votre bébé pendant plus de quelques semaines, parlez-en à votre médecin — cela peut être un signe de dépression post-partum, qui se soigne.</p>"
+  },
+  "faq-ibuprofen-bf": {
+    "title": "Puis-je prendre de l'ibuprofène pendant l'allaitement ?",
+    "sub": "",
+    "body": "<p>Oui. L'ibuprofène est l'un des médicaments en vente libre les plus sûrs pendant l'allaitement — très peu passe dans le lait maternel. L'acétaminophène (Tylenol) est également sûr. Ce sont les antidouleurs de choix après l'accouchement et pendant l'allaitement. L'aspirine à forte dose n'est pas recommandée (l'aspirine à faible dose prescrite est une autre question — discutez-en avec votre médecin). Le naproxène (Aleve) passe davantage dans le lait et n'est généralement pas préféré. Confirmez toujours avec votre équipe soignante pour votre situation particulière.</p>"
+  }
+}

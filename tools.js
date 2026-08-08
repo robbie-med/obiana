@@ -784,7 +784,8 @@ const EPDS_CHOICE_KEY = 'myob.epdsLang';
 function epdsAvailable() {
   return Object.keys(window.MYOB_EPDS || {}).filter(c => {
     const e = window.MYOB_EPDS[c];
-    return e && e.validated && Array.isArray(e.questions) && e.questions.length === 10;
+    const n = (e && e.instrument === 'PHQ-9') ? 9 : 10;
+    return e && e.validated && Array.isArray(e.questions) && e.questions.length === n;
   });
 }
 
@@ -933,7 +934,9 @@ function submitEPDS() {
   localStorage.setItem('epds-history', JSON.stringify(epdsHistory));
 
   const interp = getEPDSInterpretation(score);
-  const q10score = epds.questions[9].scores[epdsAnswers[9]];
+  // EPDS item 10 / PHQ-9 item 9 — the self-harm item.
+  const shIdx = typeof epds.selfHarmIndex === 'number' ? epds.selfHarmIndex : 9;
+  const q10score = epds.questions[shIdx].scores[epdsAnswers[shIdx]];
 
   const result = document.getElementById('epds-result');
   if (result) {
@@ -941,7 +944,8 @@ function submitEPDS() {
       <div class="score-result-card" style="background:${interp.bg};border-left:4px solid ${interp.color}">
         <div class="score-num" style="color:${interp.color}">${score}</div>
         <div class="score-label" style="color:${interp.color}">${interp.label}</div>
-        <div class="score-note">${t('tool.mood.scoreOutOf30Based')}</div>
+        <div class="score-note">${escHtml(I18n.t('tool.mood.scoreNote', {
+          max: epds.maxScore || 30, instrument: epds.instrument || 'EPDS' }))}</div>
         ${score >= 10 ? `<div style="margin-top:10px;font-size:13px;font-weight:600;color:${interp.color}">
           Talking to your doctor — even about a screening score — is always a good step. PPD is very treatable.
         </div>` : `<div style="margin-top:10px;font-size:13px;color:var(--ink-soft)">

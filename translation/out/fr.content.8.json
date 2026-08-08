@@ -1,0 +1,17 @@
+{
+  "faq-jaundice": {
+    "title": "Mon bébé a la peau jaune — quand faut-il s'inquiéter ?",
+    "sub": "",
+    "body": "<p>La jaunisse du nouveau-né (hyperbilirubinémie) touche environ 60 % des bébés nés à terme pendant la première semaine. Elle est due à la destruction normale des globules rouges du fœtus — le foie a juste besoin de temps pour s'adapter. La plupart des cas sont légers et disparaissent sans traitement. Cela devient préoccupant quand le taux de bilirubine est très élevé (risque de lésions cérébrales à des niveaux extrêmes), ou quand le bébé est très endormi, ne tète pas, ou quand la jaunisse apparaît dans les premières 24 heures. Votre hôpital vérifiera la bilirubine avant la sortie et lors de la visite chez le pédiatre entre le jour 2 et le jour 5. Si besoin, le traitement par photothérapie (lampes de bilirubine) est très efficace.</p>"
+  },
+  "faq-newborn-procedures": {
+    "title": "Tous les soins du nouveau-né sont-ils obligatoires ?",
+    "sub": "",
+    "body": "<p>Les soins habituels du nouveau-né comprennent : <strong>l'injection de vitamine K</strong> (elle prévient un grave trouble de la coagulation — la VKDB — qui peut provoquer une hémorragie cérébrale mortelle), <strong>la pommade oculaire à l'érythromycine</strong> (elle prévient les infections des yeux, y compris la gonorrhée), <strong>la première dose du vaccin contre l'hépatite B</strong>, et <strong>le prélèvement sanguin de dépistage métabolique du nouveau-né</strong> (une piqûre au talon pour dépister environ 30 maladies, dont la phénylcétonurie, l'hypothyroïdie et la drépanocytose). Tous ces soins sont recommandés car les risques des maladies évitées dépassent de loin les risques des soins eux-mêmes. Dans la plupart des États, vous pouvez légalement les refuser, mais parlez d'abord honnêtement des risques avec votre médecin.</p>"
+  },
+  "faq-first-bath": {
+    "title": "Quand mon bébé a-t-il besoin de son premier bain ?",
+    "sub": "",
+    "body": "<p>L'OMS et l'AAP recommandent désormais d'attendre au moins 24 heures après la naissance avant le premier bain (idéalement 48 heures). L'enduit blanc sur la peau (le vernix caseosa) a des propriétés antimicrobiennes et aide à hydrater la peau. Reporter le bain aide aussi à garder une bonne température corporelle, à stabiliser la glycémie, et est associé à un meilleur démarrage de l'allaitement. Attendre est la meilleure pratique actuelle, pas seulement une préférence.</p>"
+  }
+}

@@ -101,12 +101,12 @@ window.MYOB_LOCALES.en = {
         "inThePast7Days": "in the past 7 days",
         "yourAnswersAreSavedOnly": "Your answers are saved only on this phone.",
         "getMyScore": "Get My Score",
-        "scoreOutOf30Based": "Score out of 30 · A screening tool, not a diagnosis — always discuss the result with your care team",
         "instructions": "Please select one option for each question that is the closest to how you have felt in the PAST SEVEN DAYS.",
         "chooseLanguage": "Choose the language you would like to answer in:",
         "validatedOnlyNote": "Only officially validated versions of this questionnaire are offered. A machine translation would still produce a score, but that score would not be meaningful.",
         "instrumentLanguage": "Questionnaire language:",
-        "change": "Change"
+        "change": "Change",
+        "scoreNote": "Score out of {max} · {instrument} · A screening tool, not a diagnosis — always discuss the result with your care team"
       },
       "birthplan": {
         "q": {
