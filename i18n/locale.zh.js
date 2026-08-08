@@ -88,7 +88,7 @@ window.MYOB_LOCALES.zh = {
       "contactsSaved": "联系人已保存到你的手机",
       "appInstalled": "应用已安装！随时可从主屏幕打开",
       "dataExported": "数据已导出！",
-      "appUpdated": "应用已更新——请重新加载以获取最新版本"
+      "appUpdated": "应用已更新，请重新加载以获取最新版本"
     },
     "tool": {
       "mood": {
@@ -109,10 +109,10 @@ window.MYOB_LOCALES.zh = {
         "pastCheckIns": "过往记录",
         "selfHarmGuidance": "你表示曾有过伤害自己的想法。请联系你的医生，拨打或发短信至 988（自杀与危机生命线），或前往最近的急诊室。",
         "continueWeekly": "请继续每周自评。如果情绪有变化，这个工具可以帮你追踪。",
-        "talkToDoctor": "和医生谈一谈——哪怕只是关于一个筛查分数——始终是好的一步。产后抑郁是很可以治疗的。",
+        "talkToDoctor": "和医生谈一谈，哪怕只是关于一个筛查分数，始终是好的一步。产后抑郁是很可以治疗的。",
         "instrumentLanguage": "问卷语言：",
         "change": "更改",
-        "scoreNote": "满分 {max} 分 · {instrument} · 这是筛查工具而非诊断——请务必与你的医疗团队讨论结果",
+        "scoreNote": "满分 {max} 分 · {instrument} · 这是筛查工具而非诊断，请务必与你的医疗团队讨论结果",
         "chooseLanguage": "请选择你想用来作答的语言：",
         "validatedOnlyNote": "只提供经过官方验证的问卷版本。机器翻译同样会算出分数，但那个分数没有意义。"
       },
@@ -121,7 +121,7 @@ window.MYOB_LOCALES.zh = {
           "epidural": {
             "label": "镇痛方式偏好",
             "opt": {
-              "epidural": "要——硬膜外镇痛",
+              "epidural": "要，硬膜外镇痛",
               "none": "不用药物",
               "open": "先不决定，视情况而定",
               "iv": "只用静脉注射药物"
@@ -146,7 +146,7 @@ window.MYOB_LOCALES.zh = {
           "skin-to-skin": {
             "label": "出生后立即肌肤接触",
             "opt": {
-              "top": "要——这是我最看重的",
+              "top": "要，这是我最看重的",
               "ifposs": "如果可以的话，要",
               "nopref": "没有特别偏好"
             }
@@ -235,7 +235,7 @@ window.MYOB_LOCALES.zh = {
         "elapsed": "已用时：",
         "20000Limit": "上限 2:00:00",
         "lessThan10MovementsIn": "⚠ 2 小时内胎动不足 10 次",
-        "thisMayNeedAttentionCall": "这可能需要注意——请联系你的医生。",
+        "thisMayNeedAttentionCall": "这可能需要注意，请联系你的医生。",
         "10MovementsReached": "已达到 10 次胎动！",
         "startAnotherSession": "再记录一次",
         "sessionHistory": "记录历史",
@@ -282,7 +282,7 @@ window.MYOB_LOCALES.zh = {
         "resolvesByNow": "多数黄疸在此时已消退",
         "callImmediatelyIf": "出现以下情况请立即联系医生",
         "setBirthDateHint": "在上方填写宝宝的出生日期，即可查看逐日指导。",
-        "day1": "第 1 天——出院前会检查胆红素。护理人员会观察宝宝。",
+        "day1": "第 1 天，出院前会检查胆红素。护理人员会观察宝宝。",
         "day2": "胆红素水平正在上升。出院前医院会做检查。注意观察皮肤和眼白是否发黄。",
         "day3": "多数宝宝的黄疸在第 3–5 天达到高峰。黄色可能更明显。频繁哺乳（每天 8–12 次）有助于身体排出胆红素。",
         "day4": "黄疸高峰期。确保宝宝吃得好、尿布有尿。儿科随访通常安排在这几天。",
@@ -290,18 +290,18 @@ window.MYOB_LOCALES.zh = {
         "day6": "足月宝宝的胆红素应开始下降。继续频繁哺乳。如果皮肤明显发黄，或宝宝叫不醒吃奶，请联系医生。",
         "day7": "多数足月宝宝的黄疸此时正在好转。注意黄色是否扩散到腿部和脚部，这提示水平偏高。",
         "day10": "多数足月宝宝的黄疸已基本消退。如果持续或加重，医生会想复查胆红素。",
-        "day14": "2 周随访。足月宝宝的黄疸应已消退。超过 2 周仍未消退可能需要进一步检查——请告诉医生。",
+        "day14": "2 周随访。足月宝宝的黄疸应已消退。超过 2 周仍未消退可能需要进一步检查，请告诉医生。",
         "day21": "黄疸持续超过 3 周属于迁延性黄疸，应当评估。母乳喂养的宝宝轻度黄疸可能持续更久，但仍需检查。",
-        "dayWatch": "第 {day} 天——需要留意",
+        "dayWatch": "第 {day} 天，需要留意",
         "redFlags": "宝宝叫不醒吃奶 · 明显发黄并扩散到腿部 · 身体后弓或哭声尖锐 · 大便呈白色或灰色 · 尿色很深"
       },
       "bp": {
         "logBloodPressure": "+ 记录血压",
         "whenToCallYourDoctor": "什么时候要联系医生",
-        "anyReading14090During": "怀孕期间或产后任何一次 ≥ 140/90 的读数。≥ 160/110 属于急症——请拨打产房（L&D）电话或 911。",
+        "anyReading14090During": "怀孕期间或产后任何一次 ≥ 140/90 的读数。≥ 160/110 属于急症，请拨打产房（L&D）电话或 911。",
         "readings": "血压读数",
         "enterValidNumbersEG": "请输入有效数字（例如 118 / 76）",
-        "highReadingContactYourDoctor": "血压偏高——请联系你的医生",
+        "highReadingContactYourDoctor": "血压偏高，请联系你的医生",
         "noReadings": "还没有血压记录。",
         "highOnRecord": "⚠ 记录到偏高读数",
         "cat": {
@@ -310,7 +310,8 @@ window.MYOB_LOCALES.zh = {
           "elevated": "临界偏高",
           "normal": "正常"
         },
-        "recentSummary": "你最近一次读数（{reading}）处于「{cat}」范围。请今天联系你的医生。"
+        "recentSummary": "你最近一次读数（{reading}）处于「{cat}」范围。请今天联系你的医生。",
+        "savedReading": "已保存 {reading} · {cat}"
       },
       "weight": {
         "yourProfile": "你的基本信息",
@@ -354,7 +355,10 @@ window.MYOB_LOCALES.zh = {
         "clearAll": "全部清除",
         "clearConfirm": "要清除所有宫缩记录吗？",
         "duration": "持续 {d}",
-        "interval": "间隔 {t}"
+        "interval": "间隔 {t}",
+        "alertGo": "宫缩间隔约 {mins} 分钟，每次约 {secs} 秒。请立即致电产房。",
+        "alert511": "间隔约 {mins} 分钟，每次约 {secs} 秒。如果这是第一胎，请前往医院。破水或不确定时请致电。",
+        "alertProgress": "最近一小时：间隔约 {mins} 分钟 · 每次约 {secs} 秒 · 共 {n} 次宫缩。尚未达到 5-1-1 规律。"
       },
       "i18n": {
         "intro": "把应用里的每一句话和英文原文对照一下。如果读起来不对，就写下更好的说法。你的建议只保存在这部手机上，直到你导出为止。",
@@ -372,12 +376,12 @@ window.MYOB_LOCALES.zh = {
         "exported": "已导出 {n} 条建议",
         "submit": "提交",
         "sending": "发送中…",
-        "sent": "已发送——谢谢",
+        "sent": "已发送，谢谢",
         "sentShort": "已发送 ✓",
         "typeFirst": "请先写下建议",
-        "sendFailed": "发送失败——已保存在本机，请用导出",
+        "sendFailed": "发送失败，已保存在本机，请用导出",
         "rateLimited": "提交次数过多，请稍后再试",
-        "offlineSaved": "离线——已保存在本机，请用导出",
+        "offlineSaved": "离线，已保存在本机，请用导出",
         "privacy": "只会发送该词句和你的建议。你的记录数据永远不会离开这部手机。"
       },
       "improve": {
@@ -421,7 +425,7 @@ window.MYOB_LOCALES.zh = {
       "baby": "宝宝",
       "faq": "问答",
       "tools": "工具",
-      "offlineBanner": "⚠ 你已离线——所有内容仍可查看",
+      "offlineBanner": "⚠ 你已离线，所有内容仍可查看",
       "searchPlaceholder": "搜索全部主题…"
     },
     "home": {
@@ -473,7 +477,7 @@ window.MYOB_LOCALES.zh = {
       "timeContractionsCountKicksLog": "计时宫缩、数胎动、记录喂养和尿布、监测血压、规划分娩，以及更多功能。",
       "labor": "分娩",
       "kickCounter": "胎动计数器",
-      "10MovesIn2Hours": "2 小时内 10 次胎动——记录与历史",
+      "10MovesIn2Hours": "2 小时内 10 次胎动，记录与历史",
       "contractionTimer": "宫缩计时器",
       "tapStartStop51": "点击开始/停止 · 5-1-1 提醒 · 何时去医院",
       "newbornPostpartum": "新生儿与产后",

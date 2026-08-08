@@ -254,7 +254,7 @@ function renderContractionList() {
   }
   el.innerHTML = cxList.slice(0, 20).map((c, i) => {
     const dur = fmtTime(c.duration);
-    const intv = c.interval != null ? I18n.t('tool.cx.interval', { t: fmtTime(c.interval) }) : '—';
+    const intv = c.interval != null ? I18n.t('tool.cx.interval', { t: fmtTime(c.interval) }) : '–';
     return `<div class="cx-row">
       <span class="cx-num">${i + 1}</span>
       <span class="cx-dur">${I18n.t('tool.cx.duration', { d: dur })}</span>
@@ -287,16 +287,16 @@ function check511() {
     alertEl.style.background = '#ffebee';
     alertEl.style.borderColor = '#c44';
     alertEl.innerHTML = `<div style="font-size:15px;font-weight:700;color:#c44;margin-bottom:4px">${t('tool.common.timeToGoToThe')}</div>
-      <div style="font-size:13px;color:var(--ink)">Contractions ~${minsApart} min apart, lasting ~${secsLong}s — call L&D now.</div>`;
+      <div style="font-size:13px;color:var(--ink)">${t('tool.cx.alertGo', { mins: minsApart, secs: secsLong })}</div>`;
   } else if (meets511) {
     alertEl.className = 'alert-511';
     alertEl.style.background = '#fff8e1';
     alertEl.style.borderColor = 'var(--gold)';
     alertEl.innerHTML = `<div style="font-size:15px;font-weight:700;color:var(--gold);margin-bottom:4px">${t('tool.common.511PatternReached')}</div>
-      <div style="font-size:13px;color:var(--ink)">~${minsApart} min apart, ~${secsLong}s long. If this is your first baby, head to the hospital. Call if water breaks or you're in doubt.</div>`;
+      <div style="font-size:13px;color:var(--ink)">${t('tool.cx.alert511', { mins: minsApart, secs: secsLong })}</div>`;
   } else {
     alertEl.innerHTML = `<div style="font-size:13px;color:var(--ink-soft);padding:10px 14px;background:var(--teal-faint);border-radius:var(--radius-sm)">
-      Last hour: ~${minsApart} min apart · ~${secsLong}s long · ${recent.length} contractions. 5-1-1 pattern not yet reached.
+      ${t('tool.cx.alertProgress', { mins: minsApart, secs: secsLong, n: recent.length })}
     </div>`;
   }
 }
@@ -334,7 +334,7 @@ function initFeeding() {
         <div class="stat-label">${t('tool.feed.feedsInLast24Hrs')}</div>
       </div>
       <div class="stat-box">
-        <div class="stat-number" style="color:var(--teal)">${feedLog.length ? fmtTimeOfDay(feedLog[0].ts) : '—'}</div>
+        <div class="stat-number" style="color:var(--teal)">${feedLog.length ? fmtTimeOfDay(feedLog[0].ts) : '–'}</div>
         <div class="stat-label">${t('tool.feed.lastFeed')}</div>
       </div>
     </div>
@@ -624,7 +624,7 @@ function saveBP() {
   closeModal('bp');
   initBP();
   const cat = getBPCategory(s, d);
-  showToast(`${s}/${d} saved — ${cat.label}`);
+  showToast(I18n.t('tool.bp.savedReading', { reading: `${s}/${d}`, cat: cat.label }));
   if (cat.urgent) setTimeout(() => showToast(t('tool.bp.highReadingContactYourDoctor'), 4000), 400);
 }
 
@@ -829,7 +829,7 @@ function initMood() {
   el.innerHTML = `
     <div style="padding:12px 16px 0">
       <p style="font-size:13.5px;color:var(--ink);line-height:1.6;margin-bottom:4px">
-        <strong>${t('tool.mood.edinburghPostnatalDepressionScale')}</strong> —
+        <strong>${t('tool.mood.edinburghPostnatalDepressionScale')}</strong>:
         <span lang="${epds.language}">${escHtml(epds.instructions || '')}</span>
       </p>
       <p style="font-size:12px;color:var(--ink-soft)">${t('tool.mood.yourAnswersAreSavedOnly')}</p>
@@ -1204,8 +1204,8 @@ function renderApptsList() {
   const sorted = [...appointments].sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
   el.innerHTML = sorted.map((appt, i) => {
     const d = appt.date ? new Date(appt.date + 'T12:00:00') : null;
-    const month = d ? d.toLocaleDateString(I18n.lang === 'ar' ? 'ar-u-nu-latn' : I18n.lang, { month: 'short' }) : '—';
-    const day = d ? d.getDate() : '—';
+    const month = d ? d.toLocaleDateString(I18n.lang === 'ar' ? 'ar-u-nu-latn' : I18n.lang, { month: 'short' }) : '–';
+    const day = d ? d.getDate() : '–';
     const preview = appt.questions ? appt.questions.slice(0, 60) + (appt.questions.length > 60 ? '…' : '') : 'No questions added';
     return `
       <div class="appt-card" id="appt-card-${appt.id}" onclick="toggleApptCard('appt-card-${appt.id}')">

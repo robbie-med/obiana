@@ -115,7 +115,7 @@ function initI18nTool() {
           <div style="font-size:13.5px;color:var(--ink);margin:4px 0 6px" dir="ltr" lang="en">${escHtml(r.source)}</div>
           <div style="font-size:13px;margin-bottom:6px;color:${r.state === 'translated' ? 'var(--teal)' : 'var(--rose)'}"
                lang="${lang}" dir="${I18n.LOCALES[lang].dir}">
-            ${r.current ? escHtml(r.current) : '—'}
+            ${r.current ? escHtml(r.current) : '–'}
             <span style="font-size:10px;color:var(--ink-soft)"> ${r.state === 'missing' ? '✗' : r.state === 'same' ? '≡' : '✓'}</span>
           </div>
           <textarea class="tool-textarea" data-key="${escHtml(r.key)}" rows="2"
