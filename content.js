@@ -411,7 +411,7 @@ let currentSection = 'home';
 
 const TOOL_PAGES = ['tools','tool-kick','tool-contractions','tool-feeding',
   'tool-diapers','tool-jaundice','tool-bp','tool-weight',
-  'tool-mood','tool-birthplan','tool-appts', 'tool-i18n'];
+  'tool-mood','tool-birthplan','tool-appts', 'tool-i18n', 'tool-improve'];
 
 // Map tool sub-pages to their init functions (populated by tools.js)
 const TOOL_INITS = {};
@@ -777,6 +777,7 @@ function maybeShowLanguagePicker() {
     const m = I18n.LOCALES[code];
     return `<button type="button" class="lang-picker-btn" data-lang="${code}"
               lang="${code}" dir="${m.dir}" aria-label="${escHtml(m.name)}">
+              <span class="lang-picker-flag" aria-hidden="true"><img src="./flags/${escHtml(m.flag)}.svg" alt="" loading="lazy"></span>
               <span class="lang-picker-native">${escHtml(m.native)}</span>
               <span class="lang-picker-prompt">${escHtml(m.prompt)}</span>
             </button>`;
@@ -864,11 +865,10 @@ function renderLangSwitcher() {
 
   grid.innerHTML = Object.keys(I18n.LOCALES).map(code => {
     const m = I18n.LOCALES[code];
-    const isFlag = /\p{Regional_Indicator}/u.test(m.flag || '');
     return `<button type="button" class="lang-chip${code === I18n.lang ? ' current' : ''}"
               data-lang="${code}" lang="${code}" dir="${m.dir}"
               aria-label="${escHtml(m.name)}"${code === I18n.lang ? ' aria-current="true"' : ''}>
-              <span class="lang-chip-flag${isFlag ? '' : ' glyph'}" aria-hidden="true">${escHtml(m.flag || code)}</span>
+              <span class="lang-chip-flag" aria-hidden="true"><img src="./flags/${escHtml(m.flag)}.svg" alt="" loading="lazy"></span>
               <span class="lang-chip-name">${escHtml(m.native)}</span>
             </button>`;
   }).join('');

@@ -1,5 +1,5 @@
 // Bump on every content or code change, including any locale file.
-const CACHE_NAME = 'birth-guide-v28-i18n';
+const CACHE_NAME = 'birth-guide-v29-i18n';
 
 // English is precached unconditionally: it is the fallback layer, so the app
 // cannot render without it. Other locales are cached on first use (see fetch
@@ -8,20 +8,37 @@ const ASSETS = [
   './',
   './index.html',
   './manifest.json',
-  './styles.css?v=28',
-  './content.js?v=28',
-  './tools.js?v=28',
-  './i18n/translate-tool.js?v=28',
-  './i18n/i18n.js?v=28',
-  './i18n/locale.en.js?v=28',
-  './i18n/epds/epds.en.js?v=28',
-  './i18n/epds/epds.es.js?v=28',
-  './i18n/epds/epds.cnh.js?v=28',
-  './i18n/epds/epds.ko.js?v=28',
-  './i18n/epds/epds.zh.js?v=28',
-  './i18n/epds/epds.ar.js?v=28',
-  './i18n/epds/phq9.fr.js?v=28',
-  './i18n/epds/phq9.ru.js?v=28',
+  './styles.css?v=29',
+  './content.js?v=29',
+  './tools.js?v=29',
+  './i18n/translate-tool.js?v=29',
+  './i18n/improve-tool.js?v=29',
+  './i18n/i18n.js?v=29',
+  './i18n/locale.en.js?v=29',
+  './flags/af.svg?v=29',
+  './flags/br.svg?v=29',
+  './flags/cn.svg?v=29',
+  './flags/de.svg?v=29',
+  './flags/es.svg?v=29',
+  './flags/fr.svg?v=29',
+  './flags/jp.svg?v=29',
+  './flags/kr.svg?v=29',
+  './flags/mm.svg?v=29',
+  './flags/ph.svg?v=29',
+  './flags/pl.svg?v=29',
+  './flags/ru.svg?v=29',
+  './flags/sa.svg?v=29',
+  './flags/th.svg?v=29',
+  './flags/us.svg?v=29',
+  './flags/vn.svg?v=29',
+  './i18n/epds/epds.en.js?v=29',
+  './i18n/epds/epds.es.js?v=29',
+  './i18n/epds/epds.cnh.js?v=29',
+  './i18n/epds/epds.ko.js?v=29',
+  './i18n/epds/epds.zh.js?v=29',
+  './i18n/epds/epds.ar.js?v=29',
+  './i18n/epds/phq9.fr.js?v=29',
+  './i18n/epds/phq9.ru.js?v=29',
 ];
 
 // Locales fetched on demand and kept once seen, so a language the user has

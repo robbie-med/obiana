@@ -21,6 +21,9 @@
 //   app's promise that health data never leaves the device still holds.
 
 const MAX_SUGGESTION = 2000;
+const MAX_MESSAGE = 4000;
+const FEEDBACK_KINDS = ['culture', 'question', 'unclear'];
+const FEEDBACK_HOURLY = 20;
 const MAX_NOTE = 500;
 const MAX_BODY = 8 * 1024;
 const HOURLY_LIMIT = 60;          // per IP, generous for a genuine reviewer
@@ -125,12 +128,64 @@ async function handleSuggest(request, env, ctx) {
   return json({ ok: true });
 }
 
+// Reader contributions: cultural practice, a question, or a passage that did
+// not read clearly. Deliberately not a support queue — this is how the guide
+// gets better, and the UI says so.
+async function handleFeedback(request, env, ctx) {
+  if (request.method !== 'POST') return json({ error: 'method_not_allowed' }, 405);
+  if (!env.DB) return json({ error: 'not_configured' }, 503);
+
+  const len = Number(request.headers.get('content-length') || 0);
+  if (len > MAX_BODY) return json({ error: 'too_large' }, 413);
+
+  let body;
+  try { body = await request.json(); } catch (e) { return json({ error: 'bad_json' }, 400); }
+
+  const lang = String(body.lang || '');
+  const kind = String(body.kind || '');
+  const topic = String(body.topic || '').slice(0, 120);
+  const message = String(body.message || '').trim();
+
+  if (!LOCALES.includes(lang) && lang !== 'en') return json({ error: 'bad_lang' }, 400);
+  if (!FEEDBACK_KINDS.includes(kind)) return json({ error: 'bad_kind' }, 400);
+  if (!message) return json({ error: 'empty_message' }, 400);
+  if (message.length > MAX_MESSAGE) return json({ error: 'message_too_long' }, 400);
+
+  const ipHash = await hash(request.headers.get('cf-connecting-ip') || '', env.HASH_SALT);
+  const recent = await env.DB.prepare(
+    `SELECT COUNT(*) AS n FROM feedback
+      WHERE ip_hash = ?1 AND created_at > datetime('now', '-1 hour')`
+  ).bind(ipHash).first();
+  if (recent && recent.n >= FEEDBACK_HOURLY) return json({ error: 'rate_limited' }, 429);
+
+  await env.DB.prepare(
+    `INSERT INTO feedback (lang, kind, topic, message, ip_hash, country)
+     VALUES (?1, ?2, ?3, ?4, ?5, ?6)`
+  ).bind(lang, kind, topic, message, ipHash,
+         request.headers.get('cf-ipcountry') || '').run();
+
+  if (env.NTFY_URL) {
+    ctx.waitUntil(fetch(env.NTFY_URL, {
+      method: 'POST',
+      headers: { Title: `Obiana: ${kind} (${lang})`, Tags: 'speech_balloon' },
+      body: `${topic ? topic + '\n\n' : ''}${message.slice(0, 600)}`,
+    }).catch(() => {}));
+  }
+
+  return json({ ok: true });
+}
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
     if (url.pathname === '/api/suggest') {
       try { return await handleSuggest(request, env, ctx); }
+      catch (e) { return json({ error: 'server_error' }, 500); }
+    }
+
+    if (url.pathname === '/api/feedback') {
+      try { return await handleFeedback(request, env, ctx); }
       catch (e) { return json({ error: 'server_error' }, 500); }
     }
 

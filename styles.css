@@ -754,7 +754,7 @@ body {
   outline: none;
   transition: border-color .2s;
 }
-.contact-input:focus { border-color: var(--teal); background: white; }
+.contact-input:focus { border-color: var(--teal); background: var(--white); }
 .contact-input::placeholder { color: var(--ink-soft); opacity: 0.6; }
 
 .action-btn {
@@ -1018,7 +1018,7 @@ strong { font-weight: 600; }
   outline: none;
   transition: border-color .2s;
 }
-.tool-input:focus { border-color: var(--teal); background: white; }
+.tool-input:focus { border-color: var(--teal); background: var(--white); }
 .tool-textarea {
   width: 100%;
   border: 1.5px solid var(--rule);
@@ -1034,7 +1034,7 @@ strong { font-weight: 600; }
   line-height: 1.5;
   min-height: 80px;
 }
-.tool-textarea:focus { border-color: var(--teal); background: white; }
+.tool-textarea:focus { border-color: var(--teal); background: var(--white); }
 .tool-select {
   width: 100%;
   padding: 10px 12px;
@@ -1051,7 +1051,7 @@ strong { font-weight: 600; }
   background-position: right 10px center;
   padding-inline-end: 36px;
 }
-.tool-select:focus { border-color: var(--teal); background-color: white; }
+.tool-select:focus { border-color: var(--teal); background-color: var(--white); }
 .form-field { padding: 0 16px 12px; }
 .form-label {
   display: block;
@@ -1612,30 +1612,25 @@ body.dark .score-result-card { background: #1a1a1a; }
 .lang-chip:hover, .lang-chip:focus-visible { background: var(--teal-faint); outline: none; }
 
 .lang-chip-flag {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   width: 38px;
   height: 38px;
   border-radius: 50%;
   overflow: hidden;
-  /* Emoji flags are wider than they are tall; scaling up and clipping to the
-     circle avoids the letterboxed look of an unscaled flag in a round frame. */
-  font-size: 30px;
-  line-height: 1;
   background: var(--bg);
   border: 1.5px solid var(--rule);
   transition: border-color .15s, transform .12s;
+  flex: 0 0 auto;
+}
+/* 4:3 source cropped to a circle, so no letterboxing inside the round frame. */
+.lang-chip-flag img,
+.lang-picker-flag img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .lang-chip:active .lang-chip-flag { transform: scale(0.94); }
-
-/* Arabic and Zomi use a script glyph rather than a country flag. */
-.lang-chip-flag.glyph {
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--teal);
-  background: var(--teal-light);
-}
 
 .lang-chip.current .lang-chip-flag {
   border-color: var(--teal);
@@ -1646,7 +1641,10 @@ body.dark .score-result-card { background: #1a1a1a; }
   font-size: 10px;
   font-weight: 600;
   color: var(--ink-mid);
-  line-height: 1.15;
+  /* 1.15 clipped the tops of Hangul and Thai; those scripts sit taller in the
+     em box than Latin does. */
+  line-height: 1.45;
+  padding-top: 1px;
   text-align: center;
   max-width: 100%;
   overflow: hidden;
@@ -1675,11 +1673,11 @@ body.dark .score-result-card { background: #1a1a1a; }
 }
 #translation-notice[hidden] { display: none; }
 
-@media (prefers-color-scheme: dark) {
-  #translation-notice { background: #3a2e12; color: #e8d5a8; border-bottom-color: rgba(232,213,168,0.2); }
+body.dark #translation-notice {
+  background: #221800;
+  color: #e8d5a8;
+  border-bottom-color: rgba(232,213,168,0.22);
 }
-:root[data-theme="dark"] #translation-notice { background: #3a2e12; color: #e8d5a8; border-bottom-color: rgba(232,213,168,0.2); }
-:root[data-theme="light"] #translation-notice { background: var(--gold-light); color: #6b4a12; }
 
 /* ═══════════════════════════════════════════════════════
    US CARE NOTICE — shown once after the language is chosen
@@ -1698,7 +1696,15 @@ body.dark .score-result-card { background: #1a1a1a; }
 #us-notice[hidden] { display: none; }
 
 .us-notice-sheet { width: 100%; max-width: 460px; text-align: center; }
-.us-notice-flag { font-size: 46px; line-height: 1; margin-bottom: 12px; }
+.us-notice-flag {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(255,255,255,0.4);
+}
+.us-notice-flag img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .us-notice-title {
   color: #fff;
   font-family: var(--font-serif);
@@ -1728,3 +1734,15 @@ body.dark .score-result-card { background: #1a1a1a; }
   transition: transform .1s, opacity .15s;
 }
 .us-notice-btn:active { transform: scale(0.985); opacity: .9; }
+
+/* Flag on the first-run picker tiles */
+.lang-picker-flag {
+  display: block;
+  width: 34px;
+  height: 34px;
+  margin: 0 auto 6px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1.5px solid rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.1);
+}

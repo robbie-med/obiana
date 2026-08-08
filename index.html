@@ -10,7 +10,7 @@
 <meta name="description" content="Evidence-based pregnancy, labor, delivery & postpartum guide. Works offline.">
 <title>Pregnancy Handbook</title>
 <link rel="manifest" href="./manifest.json">
-<link rel="stylesheet" href="./styles.css?v=28">
+<link rel="stylesheet" href="./styles.css?v=29">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
@@ -75,7 +75,7 @@
      as general medical advice. -->
 <div id="us-notice" role="dialog" aria-modal="true" aria-labelledby="us-notice-title" hidden>
   <div class="us-notice-sheet">
-    <div class="us-notice-flag" aria-hidden="true">🇺🇸</div>
+    <div class="us-notice-flag" aria-hidden="true"><img src="./flags/us.svg" alt=""></div>
     <div class="us-notice-title" id="us-notice-title" data-i18n="usNotice.title">Care in the United States</div>
     <div class="us-notice-body" data-i18n="usNotice.body">This guide describes prenatal care as it is provided in the United States, and is written for mothers receiving their care here. Prenatal care differs a great deal between countries. Visit schedules, tests and recommendations elsewhere may not match what you read here. If you are receiving care in another country, follow the guidance of your own care team.</div>
     <button class="us-notice-btn" id="us-notice-ok" data-i18n="usNotice.continue">I understand</button>
@@ -356,6 +356,13 @@
         <div class="tool-card-name" data-i18n="tools.translationHelper">Translation Helper</div>
         <div class="tool-card-desc" data-i18n="tools.reviewSuggestWording">Review wording · Suggest a better translation</div>
       </button>
+      <button class="tool-card-btn" onclick="navigate('tool-improve')">
+        <div class="tool-card-icon" style="background:var(--gold-light)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </div>
+        <div class="tool-card-name" data-i18n="tools.improveGuide">Help Improve This Guide</div>
+        <div class="tool-card-desc" data-i18n="tools.shareCustomAsk">Share how it is done in your culture · Ask about anything unclear</div>
+      </button>
     </div>
     <div style="height:16px"></div>
   </div>
@@ -491,6 +498,18 @@
       <span class="tool-back-title" data-i18n="tooli18n.translationHelper">Translation Helper</span>
     </div>
     <div id="i18n-content"></div>
+  </div>
+
+  <!-- ══════════ TOOL: HELP IMPROVE THIS GUIDE ══════════ -->
+  <div id="page-tool-improve" class="page">
+    <div class="tool-back-bar">
+      <button class="tool-back-btn" onclick="navigate('tools')">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        <span data-i18n="common.toolsBack">Tools</span>
+      </button>
+      <span class="tool-back-title" data-i18n="toolimprove.improveGuide">Help Improve This Guide</span>
+    </div>
+    <div id="improve-content"></div>
   </div>
 
 </div><!-- END CONTENT -->
@@ -666,17 +685,18 @@
 
 </div><!-- end #app -->
 
-<script src="./i18n/i18n.js?v=28"></script>
-<script src="./i18n/epds/epds.en.js?v=28"></script>
-<script src="./i18n/epds/epds.es.js?v=28"></script>
-<script src="./i18n/epds/epds.cnh.js?v=28"></script>
-<script src="./i18n/epds/epds.ko.js?v=28"></script>
-<script src="./i18n/epds/epds.zh.js?v=28"></script>
-<script src="./i18n/epds/epds.ar.js?v=28"></script>
-<script src="./i18n/epds/phq9.fr.js?v=28"></script>
-<script src="./i18n/epds/phq9.ru.js?v=28"></script>
-<script src="./content.js?v=28"></script>
-<script src="./tools.js?v=28"></script>
-<script src="./i18n/translate-tool.js?v=28"></script>
+<script src="./i18n/i18n.js?v=29"></script>
+<script src="./i18n/epds/epds.en.js?v=29"></script>
+<script src="./i18n/epds/epds.es.js?v=29"></script>
+<script src="./i18n/epds/epds.cnh.js?v=29"></script>
+<script src="./i18n/epds/epds.ko.js?v=29"></script>
+<script src="./i18n/epds/epds.zh.js?v=29"></script>
+<script src="./i18n/epds/epds.ar.js?v=29"></script>
+<script src="./i18n/epds/phq9.fr.js?v=29"></script>
+<script src="./i18n/epds/phq9.ru.js?v=29"></script>
+<script src="./content.js?v=29"></script>
+<script src="./tools.js?v=29"></script>
+<script src="./i18n/translate-tool.js?v=29"></script>
+<script src="./i18n/improve-tool.js?v=29"></script>
 </body>
 </html>

@@ -379,6 +379,25 @@ window.MYOB_LOCALES.zh = {
         "rateLimited": "提交次数过多，请稍后再试",
         "offlineSaved": "离线——已保存在本机，请用导出",
         "privacy": "只会发送该词句和你的建议。你的记录数据永远不会离开这部手机。"
+      },
+      "improve": {
+        "intro": "这本指南是人写的，读者告诉我们缺了什么，它才会变得更好。说说在你们的文化里这件事是怎么做的，问一个我们没有写到的话题，或者指出任何读起来不清楚的地方。",
+        "notDoctor": "这些内容会交给编写这本指南的人。这不是联系你自己医生的渠道，这里也不会有人回复。",
+        "whatKind": "你想分享什么？",
+        "kindCulture": "在我们的文化里做法不一样",
+        "kindQuestion": "这本指南没有回答的问题",
+        "kindUnclear": "这里有些地方让我困惑",
+        "topicLabel": "是关于哪一部分？（可不填）",
+        "topicPlaceholder": "例如：安全睡眠、GBS、第一次洗澡",
+        "messageLabel": "告诉我们",
+        "messagePlaceholder": "写多写少都可以……",
+        "send": "发送",
+        "sending": "发送中…",
+        "thanks": "谢谢你。这有助于让指南更好。",
+        "writeFirst": "请先写点内容",
+        "failed": "发送失败。你写的内容已保存在本机。",
+        "rateLimited": "发送太频繁，请稍后再试",
+        "offline": "当前离线。你写的内容已保存在本机。"
       }
     },
     "theme": {
@@ -477,7 +496,9 @@ window.MYOB_LOCALES.zh = {
       "visitNotes": "就诊笔记",
       "questionsBeforeNotesDuringEvery": "就诊前的问题 · 每次就诊的记录",
       "translationHelper": "翻译助手",
-      "reviewSuggestWording": "检查用词 · 提出更好的翻译"
+      "reviewSuggestWording": "检查用词 · 提出更好的翻译",
+      "improveGuide": "帮助改进这本指南",
+      "shareCustomAsk": "说说你们的文化怎么做 · 问任何不清楚的地方"
     },
     "toolkick": {
       "kickCounter": "胎动计数器"
@@ -584,6 +605,9 @@ window.MYOB_LOCALES.zh = {
       "title": "在美国接受的照护",
       "body": "本指南描述的是美国提供的产前照护，写给在美国接受照护的准妈妈。各国的产前照护差异很大。其他国家的产检安排、检查项目和建议，可能与这里写的不同。如果你在其他国家接受照护，请遵循你自己医疗团队的指导。",
       "continue": "我明白了"
+    },
+    "toolimprove": {
+      "improveGuide": "帮助改进这本指南"
     }
   }
 };

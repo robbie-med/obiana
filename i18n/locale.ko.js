@@ -379,6 +379,25 @@ window.MYOB_LOCALES.ko = {
         "rateLimited": "너무 많이 보냈습니다. 나중에 다시 시도하세요",
         "offlineSaved": "오프라인 — 여기에 저장됨, 내보내기를 사용하세요",
         "privacy": "문구와 제안만 전송됩니다. 기록된 건강 정보는 이 휴대폰을 떠나지 않습니다."
+      },
+      "improve": {
+        "intro": "이 안내서는 사람이 씁니다. 읽는 분들이 빠진 내용을 알려주실 때 더 좋아집니다. 우리 문화에서는 어떻게 하는지 들려주시거나, 다루지 않은 주제를 물어보시거나, 이해하기 어려웠던 부분을 알려주세요.",
+        "notDoctor": "이 내용은 안내서를 만드는 사람들에게 전달됩니다. 담당 의료진에게 연락하는 방법이 아니며, 여기서 답장을 드리지는 않습니다.",
+        "whatKind": "어떤 이야기를 들려주시겠어요?",
+        "kindCulture": "우리 문화에서는 다르게 합니다",
+        "kindQuestion": "이 안내서에 없는 질문이 있습니다",
+        "kindUnclear": "이해하기 어려운 부분이 있었습니다",
+        "topicLabel": "어느 부분에 대한 내용인가요? (선택)",
+        "topicPlaceholder": "예: 안전한 수면, GBS, 첫 목욕",
+        "messageLabel": "들려주세요",
+        "messagePlaceholder": "길게 쓰셔도 짧게 쓰셔도 좋습니다…",
+        "send": "보내기",
+        "sending": "보내는 중…",
+        "thanks": "감사합니다. 안내서를 더 좋게 만드는 데 도움이 됩니다.",
+        "writeFirst": "먼저 내용을 입력해 주세요",
+        "failed": "보내지 못했습니다. 입력하신 내용은 여기에 저장되었습니다.",
+        "rateLimited": "메시지를 너무 많이 보내셨습니다. 나중에 다시 시도해 주세요",
+        "offline": "오프라인입니다. 입력하신 내용은 여기에 저장되었습니다."
       }
     },
     "theme": {
@@ -477,7 +496,9 @@ window.MYOB_LOCALES.ko = {
       "visitNotes": "진료 메모",
       "questionsBeforeNotesDuringEvery": "진료 전 질문 · 매 진료마다 메모",
       "translationHelper": "번역 도우미",
-      "reviewSuggestWording": "문구 검토 · 더 나은 번역 제안"
+      "reviewSuggestWording": "문구 검토 · 더 나은 번역 제안",
+      "improveGuide": "이 안내서 개선에 도움 주기",
+      "shareCustomAsk": "우리 문화에서는 어떻게 하는지 알려주기 · 궁금한 점 묻기"
     },
     "toolkick": {
       "kickCounter": "태동 카운터"
@@ -584,6 +605,9 @@ window.MYOB_LOCALES.ko = {
       "title": "미국에서의 진료 안내",
       "body": "이 안내서는 미국에서 제공되는 산전 관리를 설명하며, 미국에서 진료를 받는 산모를 위해 작성되었습니다. 산전 관리는 나라마다 크게 다릅니다. 다른 나라의 진료 일정, 검사, 권고 사항은 여기에 적힌 내용과 다를 수 있습니다. 다른 나라에서 진료를 받고 계신다면 담당 의료진의 안내를 따르세요.",
       "continue": "이해했습니다"
+    },
+    "toolimprove": {
+      "improveGuide": "이 안내서 개선에 도움 주기"
     }
   },
   "content": {

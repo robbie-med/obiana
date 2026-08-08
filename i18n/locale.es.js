@@ -380,6 +380,25 @@ window.MYOB_LOCALES.es = {
         "rateLimited": "Demasiados envíos, inténtelo más tarde",
         "offlineSaved": "Sin conexión — guardado aquí, use Exportar",
         "privacy": "Solo se envían la frase y su sugerencia. Nada de sus registros sale nunca de este teléfono."
+      },
+      "improve": {
+        "intro": "Esta guía la escriben personas y mejora cuando quienes la leen nos dicen qué falta. Cuéntenos cómo se hace algo en su cultura, pregunte por un tema que no cubrimos o señale cualquier cosa que no se entienda bien.",
+        "notDoctor": "Esto llega a las personas que escriben esta guía. No es una vía para comunicarse con su médico y nadie responde aquí.",
+        "whatKind": "¿Qué le gustaría compartir?",
+        "kindCulture": "En mi cultura se hace de otra manera",
+        "kindQuestion": "Una pregunta que esta guía no responde",
+        "kindUnclear": "Algo aquí me resultó confuso",
+        "topicLabel": "¿Sobre qué parte es? (opcional)",
+        "topicPlaceholder": "p. ej. Sueño seguro, GBS, primer baño",
+        "messageLabel": "Cuéntenos",
+        "messagePlaceholder": "Escriba todo lo que quiera, sea mucho o poco…",
+        "send": "Enviar",
+        "sending": "Enviando…",
+        "thanks": "Gracias. Esto ayuda a mejorar la guía.",
+        "writeFirst": "Escriba algo primero",
+        "failed": "No se pudo enviar. Su texto está guardado aquí.",
+        "rateLimited": "Demasiados mensajes, inténtelo más tarde",
+        "offline": "Sin conexión. Su texto está guardado aquí."
       }
     },
     "theme": {
@@ -478,7 +497,9 @@ window.MYOB_LOCALES.es = {
       "visitNotes": "Notas de la Cita",
       "questionsBeforeNotesDuringEvery": "Preguntas antes · Notas durante cada cita",
       "translationHelper": "Asistente de traducción",
-      "reviewSuggestWording": "Revisar textos · Sugerir una traducción mejor"
+      "reviewSuggestWording": "Revisar textos · Sugerir una traducción mejor",
+      "improveGuide": "Ayude a mejorar esta guía",
+      "shareCustomAsk": "Cuéntenos cómo se hace en su cultura · Pregunte lo que no esté claro"
     },
     "toolkick": {
       "kickCounter": "Contador de Pataditas"
@@ -585,6 +606,9 @@ window.MYOB_LOCALES.es = {
       "title": "Atención en los Estados Unidos",
       "body": "Esta guía describe la atención prenatal tal como se ofrece en los Estados Unidos y está dirigida a madres que reciben su atención aquí. La atención prenatal varía mucho de un país a otro. El calendario de visitas, las pruebas y las recomendaciones en otros lugares pueden no coincidir con lo que lee aquí. Si recibe atención en otro país, siga las indicaciones de su propio equipo médico.",
       "continue": "Entiendo"
+    },
+    "toolimprove": {
+      "improveGuide": "Ayude a mejorar esta guía"
     }
   },
   "content": {

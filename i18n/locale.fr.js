@@ -381,6 +381,25 @@ window.MYOB_LOCALES.fr = {
         "rateLimited": "Trop d’envois, réessayez plus tard",
         "offlineSaved": "Hors ligne — enregistré ici, utilisez Exporter",
         "privacy": "Seuls la phrase et votre suggestion sont envoyés. Rien de vos suivis ne quitte ce téléphone."
+      },
+      "improve": {
+        "intro": "Ce guide est écrit par des personnes, et il s’améliore quand ses lectrices nous disent ce qui manque. Racontez-nous comment les choses se font dans votre culture, posez une question sur un sujet non traité, ou signalez ce qui n’était pas clair.",
+        "notDoctor": "Ce message arrive aux personnes qui rédigent ce guide. Ce n’est pas un moyen de joindre votre médecin et personne ne répond ici.",
+        "whatKind": "Que souhaitez-vous partager ?",
+        "kindCulture": "Dans ma culture, on fait autrement",
+        "kindQuestion": "Une question à laquelle ce guide ne répond pas",
+        "kindUnclear": "Quelque chose ici m’a semblé confus",
+        "topicLabel": "De quelle partie s’agit-il ? (facultatif)",
+        "topicPlaceholder": "ex. Sommeil sécuritaire, SGB, premier bain",
+        "messageLabel": "Dites-nous",
+        "messagePlaceholder": "Écrivez autant ou aussi peu que vous le souhaitez…",
+        "send": "Envoyer",
+        "sending": "Envoi…",
+        "thanks": "Merci. Cela aide à améliorer le guide.",
+        "writeFirst": "Merci d’écrire quelque chose d’abord",
+        "failed": "Envoi impossible. Votre texte est enregistré ici.",
+        "rateLimited": "Trop de messages, réessayez plus tard",
+        "offline": "Hors ligne. Votre texte est enregistré ici."
       }
     },
     "theme": {
@@ -479,7 +498,9 @@ window.MYOB_LOCALES.fr = {
       "visitNotes": "Notes de visite",
       "questionsBeforeNotesDuringEvery": "Questions avant · Notes à chaque visite",
       "translationHelper": "Assistant de traduction",
-      "reviewSuggestWording": "Relire les textes · Proposer une meilleure traduction"
+      "reviewSuggestWording": "Relire les textes · Proposer une meilleure traduction",
+      "improveGuide": "Aidez à améliorer ce guide",
+      "shareCustomAsk": "Dites-nous comment cela se fait dans votre culture · Posez vos questions"
     },
     "toolkick": {
       "kickCounter": "Compteur de coups"
@@ -586,6 +607,9 @@ window.MYOB_LOCALES.fr = {
       "title": "Soins aux États-Unis",
       "body": "Ce guide décrit le suivi prénatal tel qu’il est assuré aux États-Unis et s’adresse aux mères suivies ici. Le suivi prénatal varie beaucoup d’un pays à l’autre. Le calendrier des consultations, les examens et les recommandations ailleurs peuvent ne pas correspondre à ce que vous lisez ici. Si vous êtes suivie dans un autre pays, suivez les consignes de votre propre équipe soignante.",
       "continue": "Je comprends"
+    },
+    "toolimprove": {
+      "improveGuide": "Aidez à améliorer ce guide"
     }
   },
   "content": {

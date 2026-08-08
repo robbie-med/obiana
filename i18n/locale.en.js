@@ -374,6 +374,25 @@ window.MYOB_LOCALES.en = {
         "rateLimited": "Too many submissions, try again later",
         "offlineSaved": "Offline — saved here, use Export",
         "privacy": "Only the phrase and your suggestion are sent. Nothing from your trackers ever leaves this phone."
+      },
+      "improve": {
+        "intro": "This guide is written by people, and it gets better when readers tell us what is missing. Share how something is done in your culture, ask about a topic we do not cover, or point out anything that did not read clearly.",
+        "notDoctor": "This goes to the people who write this guide. It is not a way to reach your own doctor, and nobody replies here.",
+        "whatKind": "What would you like to share?",
+        "kindCulture": "In my culture we do it differently",
+        "kindQuestion": "A question this guide does not answer",
+        "kindUnclear": "Something here was confusing",
+        "topicLabel": "What part is it about? (optional)",
+        "topicPlaceholder": "e.g. Safe sleep, GBS, first bath",
+        "messageLabel": "Tell us",
+        "messagePlaceholder": "Write as much or as little as you like…",
+        "send": "Send",
+        "sending": "Sending…",
+        "thanks": "Thank you. This helps make the guide better.",
+        "writeFirst": "Please write something first",
+        "failed": "Could not send. Your text is saved here.",
+        "rateLimited": "Too many messages, please try again later",
+        "offline": "Offline. Your text is saved here."
       }
     },
     "theme": {
@@ -472,7 +491,9 @@ window.MYOB_LOCALES.en = {
       "visitNotes": "Visit Notes",
       "questionsBeforeNotesDuringEvery": "Questions before · Notes during every visit",
       "translationHelper": "Translation Helper",
-      "reviewSuggestWording": "Review wording · Suggest a better translation"
+      "reviewSuggestWording": "Review wording · Suggest a better translation",
+      "improveGuide": "Help Improve This Guide",
+      "shareCustomAsk": "Share how it is done in your culture · Ask about anything unclear"
     },
     "toolkick": {
       "kickCounter": "Kick Counter"
@@ -579,6 +600,9 @@ window.MYOB_LOCALES.en = {
       "title": "Care in the United States",
       "body": "This guide describes prenatal care as it is provided in the United States, and is written for mothers receiving their care here. Prenatal care differs a great deal between countries. Visit schedules, tests and recommendations elsewhere may not match what you read here. If you are receiving care in another country, follow the guidance of your own care team.",
       "continue": "I understand"
+    },
+    "toolimprove": {
+      "improveGuide": "Help Improve This Guide"
     }
   },
   "content": {
