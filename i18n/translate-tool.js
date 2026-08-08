@@ -86,6 +86,9 @@ function initI18nTool() {
       <p style="font-size:13.5px;color:var(--ink);line-height:1.6;margin-bottom:10px">
         ${escHtml(I18n.t('tool.i18n.intro'))}
       </p>
+      <p style="font-size:11.5px;color:var(--ink-soft);line-height:1.5;margin-bottom:10px">
+        ${escHtml(I18n.t('tool.i18n.privacy'))}
+      </p>
       <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:10px">
         <select class="tool-select" id="i18n-lang" style="flex:0 1 auto;min-width:130px">${langOptions}</select>
         <span style="font-size:12px;color:var(--ink-soft)">
@@ -119,6 +122,13 @@ function initI18nTool() {
             lang="${lang}" dir="${I18n.LOCALES[lang].dir}"
             placeholder="${escHtml(I18n.t('tool.i18n.suggestPlaceholder'))}"
             style="width:100%;box-sizing:border-box">${escHtml(r.suggestion)}</textarea>
+          <div style="display:flex;align-items:center;gap:8px;margin-top:6px">
+            <button class="btn-sm btn-teal" data-submit="${escHtml(r.key)}" style="flex:0 0 auto">
+              ${escHtml(I18n.t('tool.i18n.submit'))}
+            </button>
+            <span class="i18n-submit-status" data-status="${escHtml(r.key)}"
+                  style="font-size:11px;color:var(--ink-soft)"></span>
+          </div>
         </div>`).join('')}
       ${shown.length > 300 ? `<p class="history-empty">${escHtml(I18n.t('tool.i18n.showingFirst', { n: 300, total: shown.length }))}</p>` : ''}
     </div>
@@ -141,6 +151,10 @@ function initI18nTool() {
       if (v) all[lang][ta.dataset.key] = v; else delete all[lang][ta.dataset.key];
       saveSuggestions(all);
     });
+  });
+
+  el.querySelectorAll('button[data-submit]').forEach(btn => {
+    btn.addEventListener('click', () => submitI18nSuggestion(btn.dataset.submit, lang, btn));
   });
 
   const sel = document.getElementById('i18n-lang');
@@ -191,4 +205,44 @@ function exportI18nSuggestions() {
   document.body.removeChild(a);
   setTimeout(() => URL.revokeObjectURL(url), 1000);
   showToast(I18n.t('tool.i18n.exported', { n }));
+}
+
+
+// ─── Submit a single suggestion ─────────────────────────
+// Only ever sends the translation key, the English source, what is currently
+// shipped and the proposed wording. Nothing from any tracker leaves the device.
+async function submitI18nSuggestion(key, lang, btn) {
+  const el = document.getElementById('i18n-content');
+  const ta = el?.querySelector(`textarea[data-key="${CSS.escape(key)}"]`);
+  const status = el?.querySelector(`[data-status="${CSS.escape(key)}"]`);
+  const setStatus = (msg, bad) => { if (status) { status.textContent = msg; status.style.color = bad ? 'var(--rose)' : 'var(--teal)'; } };
+
+  const suggestion = (ta?.value || '').trim();
+  if (!suggestion) { setStatus(I18n.t('tool.i18n.typeFirst'), true); return; }
+
+  const row = i18nRows().rows.find(r => r.key === key) || {};
+  btn.disabled = true;
+  setStatus(I18n.t('tool.i18n.sending'));
+
+  try {
+    const res = await fetch('/api/suggest', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ lang, key, suggestion, source: row.source || '', current: row.current || '' }),
+    });
+    if (res.ok) {
+      setStatus(I18n.t('tool.i18n.sent'));
+      btn.textContent = I18n.t('tool.i18n.sentShort');
+      return;                       // leave it disabled: it is in
+    }
+    const err = await res.json().catch(() => ({}));
+    setStatus(err.error === 'rate_limited'
+      ? I18n.t('tool.i18n.rateLimited')
+      : I18n.t('tool.i18n.sendFailed'), true);
+  } catch (e) {
+    // Offline, or the API is not deployed. The suggestion is still saved
+    // locally and can go out via Export, so this is never a dead end.
+    setStatus(I18n.t('tool.i18n.offlineSaved'), true);
+  }
+  btn.disabled = false;
 }

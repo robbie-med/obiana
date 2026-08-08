@@ -364,7 +364,16 @@ window.MYOB_LOCALES.en = {
         "clear": "Clear",
         "clearConfirm": "Delete all your suggestions for this language?",
         "nothingToExport": "No suggestions to export yet",
-        "exported": "Exported {n} suggestions"
+        "exported": "Exported {n} suggestions",
+        "submit": "Submit",
+        "sending": "Sending…",
+        "sent": "Sent — thank you",
+        "sentShort": "Sent ✓",
+        "typeFirst": "Type a suggestion first",
+        "sendFailed": "Could not send — it is saved here, use Export",
+        "rateLimited": "Too many submissions, try again later",
+        "offlineSaved": "Offline — saved here, use Export",
+        "privacy": "Only the phrase and your suggestion are sent. Nothing from your trackers ever leaves this phone."
       }
     },
     "theme": {

@@ -8,6 +8,10 @@
   "name": "obiana",
   "compatibility_date": "2026-08-07",
 
+  // Only /api/* reaches this script; everything else is served straight from
+  // static assets without invoking a Worker at all.
+  "main": "./worker/index.js",
+
   "assets": {
     // Repo root — this is a plain static site with no build step.
     // See .assetsignore for what is excluded from upload.
@@ -21,6 +25,26 @@
     // including a missing i18n/locale.<lang>.js. The service worker and the
     // i18n loader both rely on a missing locale failing cleanly so they can
     // fall back to English. Default handling gives a real 404.
-    "html_handling": "auto-trailing-slash"
-  }
+    "html_handling": "auto-trailing-slash",
+
+    // Lets the Worker serve assets itself for non-API paths.
+    "binding": "ASSETS",
+
+    // Assets normally win over the Worker. The API has no matching file, but
+    // being explicit keeps it true even if a path ever collides.
+    "run_worker_first": ["/api/*"]
+  },
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "obiana-suggestions",
+      // Filled in by: npx wrangler d1 create obiana-suggestions
+      "database_id": "REPLACE_WITH_DATABASE_ID"
+    }
+  ]
+
+  // Secrets, set with `wrangler secret put` (never committed):
+  //   HASH_SALT  — salt for the rate-limiting IP hash
+  //   NTFY_URL   — optional; a full ntfy topic URL to ping on each submission
 }

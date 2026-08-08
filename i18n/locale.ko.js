@@ -369,7 +369,16 @@ window.MYOB_LOCALES.ko = {
         "clear": "지우기",
         "clearConfirm": "이 언어의 제안을 모두 삭제할까요?",
         "nothingToExport": "아직 내보낼 제안이 없습니다",
-        "exported": "제안 {n}개를 내보냈습니다"
+        "exported": "제안 {n}개를 내보냈습니다",
+        "submit": "보내기",
+        "sending": "보내는 중…",
+        "sent": "전송됨 — 감사합니다",
+        "sentShort": "전송됨 ✓",
+        "typeFirst": "먼저 제안을 입력하세요",
+        "sendFailed": "보내지 못했습니다 — 여기에 저장되었으니 내보내기를 사용하세요",
+        "rateLimited": "너무 많이 보냈습니다. 나중에 다시 시도하세요",
+        "offlineSaved": "오프라인 — 여기에 저장됨, 내보내기를 사용하세요",
+        "privacy": "문구와 제안만 전송됩니다. 기록된 건강 정보는 이 휴대폰을 떠나지 않습니다."
       }
     },
     "theme": {

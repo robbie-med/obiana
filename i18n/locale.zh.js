@@ -369,7 +369,16 @@ window.MYOB_LOCALES.zh = {
         "clear": "清除",
         "clearConfirm": "要删除该语言的所有建议吗？",
         "nothingToExport": "还没有可导出的建议",
-        "exported": "已导出 {n} 条建议"
+        "exported": "已导出 {n} 条建议",
+        "submit": "提交",
+        "sending": "发送中…",
+        "sent": "已发送——谢谢",
+        "sentShort": "已发送 ✓",
+        "typeFirst": "请先写下建议",
+        "sendFailed": "发送失败——已保存在本机，请用导出",
+        "rateLimited": "提交次数过多，请稍后再试",
+        "offlineSaved": "离线——已保存在本机，请用导出",
+        "privacy": "只会发送该词句和你的建议。你的记录数据永远不会离开这部手机。"
       }
     },
     "theme": {

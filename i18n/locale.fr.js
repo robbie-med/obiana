@@ -371,7 +371,16 @@ window.MYOB_LOCALES.fr = {
         "clear": "Effacer",
         "clearConfirm": "Supprimer toutes vos suggestions pour cette langue ?",
         "nothingToExport": "Aucune suggestion à exporter pour l’instant",
-        "exported": "{n} suggestions exportées"
+        "exported": "{n} suggestions exportées",
+        "submit": "Envoyer",
+        "sending": "Envoi…",
+        "sent": "Envoyé — merci",
+        "sentShort": "Envoyé ✓",
+        "typeFirst": "Proposez d’abord une formulation",
+        "sendFailed": "Envoi impossible — enregistré ici, utilisez Exporter",
+        "rateLimited": "Trop d’envois, réessayez plus tard",
+        "offlineSaved": "Hors ligne — enregistré ici, utilisez Exporter",
+        "privacy": "Seuls la phrase et votre suggestion sont envoyés. Rien de vos suivis ne quitte ce téléphone."
       }
     },
     "theme": {

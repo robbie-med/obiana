@@ -370,7 +370,16 @@ window.MYOB_LOCALES.es = {
         "clear": "Borrar",
         "clearConfirm": "¿Eliminar todas sus sugerencias para este idioma?",
         "nothingToExport": "Aún no hay sugerencias para exportar",
-        "exported": "{n} sugerencias exportadas"
+        "exported": "{n} sugerencias exportadas",
+        "submit": "Enviar",
+        "sending": "Enviando…",
+        "sent": "Enviado — gracias",
+        "sentShort": "Enviado ✓",
+        "typeFirst": "Escriba primero una sugerencia",
+        "sendFailed": "No se pudo enviar — se guardó aquí, use Exportar",
+        "rateLimited": "Demasiados envíos, inténtelo más tarde",
+        "offlineSaved": "Sin conexión — guardado aquí, use Exportar",
+        "privacy": "Solo se envían la frase y su sugerencia. Nada de sus registros sale nunca de este teléfono."
       }
     },
     "theme": {

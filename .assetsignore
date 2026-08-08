@@ -31,3 +31,6 @@ i18n/epds/extract-phq9.js
 i18n/_html_keys.json
 i18n/_tools_keys.json
 i18n/_frag_keys.json
+
+# Worker source — not a static asset
+worker
