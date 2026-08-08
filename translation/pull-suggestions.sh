@@ -11,6 +11,16 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
+# Wrangler 4 needs Node >= 22. The system node on this host is 18, so prefer a
+# newer one if it is installed rather than failing with a confusing error.
+if ! node -e 'process.exit(process.versions.node.split(".")[0] >= 22 ? 0 : 1)' 2>/dev/null; then
+  for candidate in "$HOME"/.nvm/versions/node/v2[2-9]*/bin "$HOME"/.local/share/pi-node/node-v2[2-9]*/bin; do
+    [ -x "$candidate/node" ] && export PATH="$candidate:$PATH" && break
+  done
+fi
+node -e 'process.exit(process.versions.node.split(".")[0] >= 22 ? 0 : 1)' || {
+  echo "wrangler needs Node >= 22 (found $(node -v)). Install or nvm use a newer Node."; exit 1; }
+
 DB=obiana-suggestions
 LANG_FILTER="${1:-}"
 MERGE="${2:-}"
