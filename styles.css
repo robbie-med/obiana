@@ -1680,3 +1680,51 @@ body.dark .score-result-card { background: #1a1a1a; }
 }
 :root[data-theme="dark"] #translation-notice { background: #3a2e12; color: #e8d5a8; border-bottom-color: rgba(232,213,168,0.2); }
 :root[data-theme="light"] #translation-notice { background: var(--gold-light); color: #6b4a12; }
+
+/* ═══════════════════════════════════════════════════════
+   US CARE NOTICE — shown once after the language is chosen
+   ═══════════════════════════════════════════════════════ */
+#us-notice {
+  position: fixed;
+  inset: 0;
+  z-index: 2900;                 /* under the language picker, above the app */
+  background: var(--teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 20px;
+  overflow-y: auto;
+}
+#us-notice[hidden] { display: none; }
+
+.us-notice-sheet { width: 100%; max-width: 460px; text-align: center; }
+.us-notice-flag { font-size: 46px; line-height: 1; margin-bottom: 12px; }
+.us-notice-title {
+  color: #fff;
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.us-notice-body {
+  color: rgba(255,255,255,0.88);
+  font-size: 14.5px;
+  line-height: 1.65;
+  margin-bottom: 24px;
+  text-align: start;
+}
+.us-notice-btn {
+  width: 100%;
+  padding: 15px 18px;
+  background: #fff;
+  color: var(--teal);
+  border: none;
+  border-radius: 14px;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform .1s, opacity .15s;
+}
+.us-notice-btn:active { transform: scale(0.985); opacity: .9; }

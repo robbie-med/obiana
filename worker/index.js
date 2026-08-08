@@ -25,7 +25,9 @@ const MAX_NOTE = 500;
 const MAX_BODY = 8 * 1024;
 const HOURLY_LIMIT = 60;          // per IP, generous for a genuine reviewer
 
-const LOCALES = ['es', 'fr', 'ko', 'ar', 'ru', 'zh', 'zom'];
+// Must match LOCALES in i18n/i18n.js (minus 'en', which needs no suggestions).
+const LOCALES = ['es', 'fr', 'ko', 'ar', 'ru', 'zh', 'zom',
+                 'ja', 'tl', 'pt-BR', 'ps', 'prs', 'vi', 'th', 'de', 'pl'];
 
 const json = (obj, status = 200) => new Response(JSON.stringify(obj), {
   status,

@@ -144,7 +144,7 @@ class Handler(BaseHTTPRequestHandler):
 
         if u.path == "/api/suggestions":
             lang = (parse_qs(u.query).get("lang") or ["es"])[0]
-            if not re.fullmatch(r"[a-z]{2,3}", lang):
+            if not re.fullmatch(r"[a-z]{2,3}(?:-[A-Za-z]{2,4})?", lang):
                 return self._send(400, {"error": "bad lang"})
             try:
                 rows = d1("SELECT id, lang, key, source, current, suggestion, note, "

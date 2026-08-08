@@ -795,6 +795,7 @@ function maybeShowLanguagePicker() {
       }
       hideLanguagePicker();
       renderLangSwitcher();
+      maybeShowUsNotice();
     });
   });
 
@@ -823,6 +824,33 @@ function hideLanguagePicker() {
   if (picker) picker.hidden = true;
   document.body.style.overflow = '';
   if (_langHeadingTimer) { clearInterval(_langHeadingTimer); _langHeadingTimer = null; }
+}
+
+// ═══════════════════════════════════════════════════════
+// US CARE NOTICE
+// ═══════════════════════════════════════════════════════
+// The whole guide describes US prenatal care. That has to be stated before
+// anyone reads it as general advice, and it has to be in the language they
+// just picked — which is why it comes after the picker, not before it.
+const US_NOTICE_KEY = 'myob.usNoticeSeen';
+
+function maybeShowUsNotice() {
+  try { if (localStorage.getItem(US_NOTICE_KEY)) return; } catch (e) { /* private mode */ }
+  const el = document.getElementById('us-notice');
+  if (!el) return;
+  I18n.applyStatic(el);            // render it in the language just chosen
+  el.hidden = false;
+  document.body.style.overflow = 'hidden';
+  const ok = document.getElementById('us-notice-ok');
+  if (ok && ok.dataset.bound !== '1') {
+    ok.dataset.bound = '1';
+    ok.addEventListener('click', () => {
+      try { localStorage.setItem(US_NOTICE_KEY, '1'); } catch (e) {}
+      el.hidden = true;
+      document.body.style.overflow = '';
+    });
+  }
+  if (ok) ok.focus();
 }
 
 // ═══════════════════════════════════════════════════════
@@ -957,4 +985,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   initDarkMode();
   renderLangSwitcher();
   maybeShowLanguagePicker();
+  // Only reaches this if the picker did not open, i.e. a language was already
+  // chosen. Someone mid-way through should still see the notice once.
+  if (I18n.hasExplicitChoice()) maybeShowUsNotice();
 });

@@ -26,6 +26,11 @@ window.MYOB_LOCALES.zom = {
     },
     "home": {
       "heroDesc": "From your first prenatal visit through delivery and recovery, Obiana keeps everything in one place."
+    },
+    "usNotice": {
+      "title": "Care in the United States",
+      "body": "This guide describes prenatal care as it is provided in the United States, and is written for mothers receiving their care here. Prenatal care differs a great deal between countries. Visit schedules, tests and recommendations elsewhere may not match what you read here. If you are receiving care in another country, follow the guidance of your own care team.",
+      "continue": "I understand"
     }
   }
 };

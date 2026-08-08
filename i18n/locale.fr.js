@@ -581,6 +581,11 @@ window.MYOB_LOCALES.fr = {
     },
     "tooli18n": {
       "translationHelper": "Assistant de traduction"
+    },
+    "usNotice": {
+      "title": "Soins aux États-Unis",
+      "body": "Ce guide décrit le suivi prénatal tel qu’il est assuré aux États-Unis et s’adresse aux mères suivies ici. Le suivi prénatal varie beaucoup d’un pays à l’autre. Le calendrier des consultations, les examens et les recommandations ailleurs peuvent ne pas correspondre à ce que vous lisez ici. Si vous êtes suivie dans un autre pays, suivez les consignes de votre propre équipe soignante.",
+      "continue": "Je comprends"
     }
   },
   "content": {

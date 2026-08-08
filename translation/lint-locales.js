@@ -27,8 +27,8 @@ const FOREIGN = {
 const EXEMPT = /^(lang|app)\.|native|LOCALES/;
 
 let problems = 0;
-for (const file of fs.readdirSync(DIR).filter(f => /^locale\.[a-z]{2,3}\.js$/.test(f))) {
-  const lang = file.match(/^locale\.([a-z]{2,3})\.js$/)[1];
+for (const file of fs.readdirSync(DIR).filter(f => /^locale\.[a-z]{2,3}(?:-[A-Za-z]{2,4})?\.js$/.test(f))) {
+  const lang = file.match(/^locale\.([a-z]{2,3}(?:-[A-Za-z]{2,4})?)\.js$/)[1];
   const rule = FOREIGN[lang];
   if (!rule) continue;
   global.window = { MYOB_LOCALES: {} };

@@ -1,5 +1,5 @@
 // Bump on every content or code change, including any locale file.
-const CACHE_NAME = 'birth-guide-v26-i18n';
+const CACHE_NAME = 'birth-guide-v28-i18n';
 
 // English is precached unconditionally: it is the fallback layer, so the app
 // cannot render without it. Other locales are cached on first use (see fetch
@@ -8,25 +8,26 @@ const ASSETS = [
   './',
   './index.html',
   './manifest.json',
-  './styles.css?v=26',
-  './content.js?v=26',
-  './tools.js?v=26',
-  './i18n/translate-tool.js?v=26',
-  './i18n/i18n.js?v=26',
-  './i18n/locale.en.js?v=26',
-  './i18n/epds/epds.en.js?v=26',
-  './i18n/epds/epds.es.js?v=26',
-  './i18n/epds/epds.cnh.js?v=26',
-  './i18n/epds/epds.ko.js?v=26',
-  './i18n/epds/epds.zh.js?v=26',
-  './i18n/epds/epds.ar.js?v=26',
-  './i18n/epds/phq9.fr.js?v=26',
-  './i18n/epds/phq9.ru.js?v=26',
+  './styles.css?v=28',
+  './content.js?v=28',
+  './tools.js?v=28',
+  './i18n/translate-tool.js?v=28',
+  './i18n/i18n.js?v=28',
+  './i18n/locale.en.js?v=28',
+  './i18n/epds/epds.en.js?v=28',
+  './i18n/epds/epds.es.js?v=28',
+  './i18n/epds/epds.cnh.js?v=28',
+  './i18n/epds/epds.ko.js?v=28',
+  './i18n/epds/epds.zh.js?v=28',
+  './i18n/epds/epds.ar.js?v=28',
+  './i18n/epds/phq9.fr.js?v=28',
+  './i18n/epds/phq9.ru.js?v=28',
 ];
 
 // Locales fetched on demand and kept once seen, so a language the user has
 // actually opened stays available offline.
-const LOCALE_RE = /\/i18n\/locale\.[a-z]{2,3}\.js$/;   // zom has no 2-letter code
+// zom has no 2-letter code; pt-BR carries a region subtag.
+const LOCALE_RE = /\/i18n\/locale\.[a-z]{2,3}(?:-[A-Za-z]{2,4})?\.js$/;
 
 self.addEventListener('install', e => {
   e.waitUntil(

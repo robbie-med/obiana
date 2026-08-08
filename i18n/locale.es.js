@@ -580,6 +580,11 @@ window.MYOB_LOCALES.es = {
     },
     "tooli18n": {
       "translationHelper": "Asistente de traducción"
+    },
+    "usNotice": {
+      "title": "Atención en los Estados Unidos",
+      "body": "Esta guía describe la atención prenatal tal como se ofrece en los Estados Unidos y está dirigida a madres que reciben su atención aquí. La atención prenatal varía mucho de un país a otro. El calendario de visitas, las pruebas y las recomendaciones en otros lugares pueden no coincidir con lo que lee aquí. Si recibe atención en otro país, siga las indicaciones de su propio equipo médico.",
+      "continue": "Entiendo"
     }
   },
   "content": {

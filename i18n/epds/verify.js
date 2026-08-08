@@ -19,11 +19,11 @@ const DIR = path.join(__dirname, '..');
 // The published EPDS reverses these items (first option scores 3).
 const OFFICIAL_REVERSED = [3, 5, 6, 7, 8, 9, 10];
 
-const files = fs.readdirSync(__dirname).filter(f => /^(epds|phq9)\.[a-z]{2,3}\.js$/.test(f));
+const files = fs.readdirSync(__dirname).filter(f => /^(epds|phq9)\.[a-z]{2,3}(?:-[A-Za-z]{2,4})?\.js$/.test(f));
 let problems = 0, checked = 0, gated = [];
 
 for (const file of files) {
-  const lang = file.match(/^(?:epds|phq9)\.([a-z]{2,3})\.js$/)[1];
+  const lang = file.match(/^(?:epds|phq9)\.([a-z]{2,3}(?:-[A-Za-z]{2,4})?)\.js$/)[1];
   global.window = { MYOB_EPDS: {} };
   delete require.cache[require.resolve(path.join(__dirname, file))];
   try { require(path.join(__dirname, file)); }

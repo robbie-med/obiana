@@ -27,6 +27,23 @@ const I18n = (() => {
     zh:  { name: 'Chinese',  native: '中文',      dir: 'ltr', prompt: '选择您的语言', flag: '🇨🇳' },
     // NOTE: the Zomi prompt needs confirmation by a native speaker.
     zom: { name: 'Zomi',     native: 'Zomi',     dir: 'ltr', prompt: 'Na kam teel in', flag: 'Zo' },
+
+    ja:  { name: 'Japanese', native: '日本語',    dir: 'ltr', prompt: '言語を選んでください', flag: '🇯🇵' },
+    tl:  { name: 'Tagalog',  native: 'Tagalog',  dir: 'ltr', prompt: 'Piliin ang iyong wika', flag: '🇵🇭' },
+    // Region subtag is deliberate: pt-BR and pt-PT diverge in vocabulary, and
+    // Intl gives Brazilian date and number conventions for free.
+    'pt-BR': { name: 'Portuguese (Brazil)', native: 'Português (Brasil)', dir: 'ltr',
+               prompt: 'Escolha seu idioma', flag: '🇧🇷' },
+    // Pashto and Dari use a script glyph rather than the Afghan flag, for the
+    // same reason Zomi does not carry Myanmar's: many speakers here are
+    // refugees from the state that flag represents.
+    ps:  { name: 'Pashto',   native: 'پښتو',     dir: 'rtl', prompt: 'خپله ژبه وټاکئ', flag: 'پ' },
+    prs: { name: 'Dari',     native: 'دری',      dir: 'rtl', prompt: 'زبان خود را انتخاب کنید', flag: 'د' },
+
+    vi:  { name: 'Vietnamese', native: 'Tiếng Việt', dir: 'ltr', prompt: 'Chọn ngôn ngữ của bạn', flag: '🇻🇳' },
+    th:  { name: 'Thai',     native: 'ไทย',       dir: 'ltr', prompt: 'เลือกภาษาของคุณ', flag: '🇹🇭' },
+    de:  { name: 'German',   native: 'Deutsch',  dir: 'ltr', prompt: 'Wählen Sie Ihre Sprache', flag: '🇩🇪' },
+    pl:  { name: 'Polish',   native: 'Polski',   dir: 'ltr', prompt: 'Wybierz swój język', flag: '🇵🇱' },
   };
 
   // `flag` is the chip shown in the language picker. Country flags are used
@@ -37,11 +54,17 @@ const I18n = (() => {
 
   // Locales with no CLDR entry: hand Intl a fallback so date/number
   // formatting degrades to English conventions instead of throwing.
-  const INTL_FALLBACK = { zom: 'en' };
+  const INTL_FALLBACK = {
+    zom: 'en',
+    // Dari borrows Persian formatting, which defaults to the Jalali calendar
+    // and Persian digits. Force Gregorian and Latin numerals so dates and
+    // clinical numbers match the chart and the appointment card.
+    prs: 'fa-u-nu-latn-ca-gregory',
+  };
 
   // Bumped alongside sw.js CACHE_NAME so an updated locale file is actually
   // re-fetched instead of served from the browser's heuristic cache.
-  const ASSET_VERSION = '26';
+  const ASSET_VERSION = '28';
 
   const FALLBACK = 'en';
   const STORAGE_KEY = 'myob.lang';
@@ -61,6 +84,9 @@ const I18n = (() => {
     if (qs && LOCALES[qs]) return qs;
 
     for (const tag of (navigator.languages || [navigator.language || ''])) {
+      // Try the full tag first so pt-BR wins over a generic pt, then the base.
+      const exact = Object.keys(LOCALES).find(c => c.toLowerCase() === String(tag).toLowerCase());
+      if (exact) return exact;
       const base = String(tag).toLowerCase().split('-')[0];
       if (LOCALES[base]) return base;
     }
@@ -236,18 +262,39 @@ const I18n = (() => {
   // Korean/Japanese/Chinese do not delimit words with spaces, so a
   // whitespace split yields one giant token and substring search degrades.
   // For CJK we also emit character bigrams as fallback tokens.
-  // Hangul syllables + conjoining/compatibility Jamo, kana, and Han.
-  const CJK = /[ᄀ-ᇿ぀-ヿ㄰-㆏㐀-䶿一-鿿가-힯]/;
+  // Scripts that do not delimit words with spaces: Hangul (+ Jamo), kana, Han,
+  // and Thai. A whitespace split yields one unusable token for all of them.
+  const CJK = /[ᄀ-ᇿ぀-ヿ㄰-㆏㐀-䶿一-鿿가-힯ก-๛]/;
 
   function tokenize(q) {
     const n = normalize(q).trim();
     if (!n) return [];
     const bySpace = n.split(/\s+/).filter(Boolean);
     if (!CJK.test(n)) return bySpace;
+
+    // Intl.Segmenter knows real word boundaries for Thai, Japanese and Chinese.
+    // Prefer it: naive bigrams split Thai combining marks off their base
+    // consonant, producing tokens like "ั้" that can never match anything.
+    try {
+      const seg = new Intl.Segmenter(intlTag(), { granularity: 'word' });
+      const words = [...seg.segment(n)]
+        .filter(s => s.isWordLike)
+        .map(s => s.segment.trim())
+        .filter(Boolean);
+      if (words.length) return words;
+    } catch (e) { /* no Segmenter: fall through */ }
+
+    // Fallback: grapheme-safe bigrams, so a mark stays with its base character.
     const out = [];
     bySpace.forEach(tok => {
-      if (!CJK.test(tok) || tok.length <= 2) { out.push(tok); return; }
-      for (let i = 0; i < tok.length - 1; i++) out.push(tok.slice(i, i + 2));
+      if (!CJK.test(tok)) { out.push(tok); return; }
+      let chars;
+      try {
+        chars = [...new Intl.Segmenter(intlTag(), { granularity: 'grapheme' }).segment(tok)]
+          .map(s => s.segment);
+      } catch (e) { chars = [...tok]; }
+      if (chars.length <= 2) { out.push(tok); return; }
+      for (let i = 0; i < chars.length - 1; i++) out.push(chars[i] + chars[i + 1]);
     });
     return out.length ? out : bySpace;
   }

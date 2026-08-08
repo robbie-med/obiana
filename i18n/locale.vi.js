@@ -1,0 +1,42 @@
+// ═══════════════════════════════════════════════════════
+// LOCALE: vi
+// ═══════════════════════════════════════════════════════
+// STUB. Every key not listed falls back to English at runtime.
+// No `epds` key => the mood screen stays gated until an OFFICIAL validated
+// instrument is added for this language. Never machine-translate it.
+
+window.MYOB_LOCALES = window.MYOB_LOCALES || {};
+
+window.MYOB_LOCALES["vi"] = {
+  "reviewed": false,
+  "translationStatus": "stub",
+  "ui": {
+    "app": {
+      "title": "Sổ tay Thai kỳ"
+    },
+    "lang": {
+      "unreviewedNotice": "Bản dịch này do máy tạo ra và chưa được nhân viên y tế kiểm tra. Với các quyết định y tế, vui lòng xác nhận với nhóm chăm sóc của bạn hoặc chuyển sang tiếng Anh.",
+      "loadFailed": "Không tải được",
+      "inProgress": "Đang dịch"
+    }
+  }
+};
+window.MYOB_LOCALES.vi = {
+  "reviewed": false,
+  "translationStatus": "stub",
+  "ui": {
+    "app": {
+      "title": "Sổ tay Thai kỳ"
+    },
+    "lang": {
+      "unreviewedNotice": "Bản dịch này do máy tạo ra và chưa được nhân viên y tế kiểm tra. Với các quyết định y tế, vui lòng xác nhận với nhóm chăm sóc của bạn hoặc chuyển sang tiếng Anh.",
+      "loadFailed": "Không tải được",
+      "inProgress": "Đang dịch"
+    },
+    "usNotice": {
+      "title": "Chăm sóc tại Hoa Kỳ",
+      "body": "Cẩm nang này mô tả việc chăm sóc trước sinh như được cung cấp tại Hoa Kỳ và được viết cho các bà mẹ đang được chăm sóc tại đây. Chăm sóc trước sinh khác nhau rất nhiều giữa các quốc gia. Lịch khám, các xét nghiệm và khuyến nghị ở nơi khác có thể không giống những gì bạn đọc ở đây. Nếu bạn đang được chăm sóc ở quốc gia khác, hãy làm theo hướng dẫn của nhóm chăm sóc của bạn.",
+      "continue": "Tôi đã hiểu"
+    }
+  }
+};
