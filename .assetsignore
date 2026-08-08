@@ -34,3 +34,6 @@ i18n/_frag_keys.json
 
 # Worker source — not a static asset
 worker
+
+# Local review UI — never part of the public site
+review

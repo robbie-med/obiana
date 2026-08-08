@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Obiana — Translation Review</title>
+<style>
+  :root {
+    --teal:#1d4e4e; --teal-mid:#2a7070; --teal-faint:#f0f8f8; --teal-light:#e6f2f2;
+    --ink:#1a2424; --ink-mid:#3d4e4e; --ink-soft:#6b7c7c;
+    --rule:#dce8e8; --bg:#f7fafa; --white:#fff;
+    --gold:#b87c28; --gold-light:#fdf5e6; --rose:#b85c55; --rose-light:#fdf1f0;
+    --green:#2e7d32;
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--bg); color:var(--ink); }
+  header { position:sticky; top:0; z-index:10; background:var(--teal); color:#fff; padding:14px 20px;
+           display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+           box-shadow:0 2px 10px rgba(29,78,78,.18); }
+  header h1 { font-size:16px; font-weight:700; letter-spacing:.2px; }
+  header select { padding:6px 10px; border-radius:8px; border:1px solid rgba(255,255,255,.35);
+                  background:rgba(255,255,255,.15); color:#fff; font-size:14px; font-weight:600; }
+  header select option { color:#1a2424; background:#fff; }
+  #status { margin-left:auto; font-size:12.5px; opacity:.85; }
+  main { max-width:920px; margin:0 auto; padding:20px 16px 60px; }
+
+  .filters { display:flex; gap:8px; margin-bottom:16px; flex-wrap:wrap; align-items:center; }
+  .filters button { padding:6px 12px; border-radius:999px; border:1.5px solid var(--rule);
+                    background:var(--white); color:var(--ink-mid); font-size:13px; font-weight:600; cursor:pointer; }
+  .filters button.on { background:var(--teal); border-color:var(--teal); color:#fff; }
+  .filters input { flex:1; min-width:180px; padding:7px 12px; border:1.5px solid var(--rule);
+                   border-radius:8px; font-size:14px; }
+
+  .entry { background:var(--white); border:1px solid var(--rule); border-radius:12px;
+           padding:14px 16px; margin-bottom:14px; box-shadow:0 1px 3px rgba(29,78,78,.06); }
+  .key { font:11.5px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace; color:var(--ink-soft); word-break:break-all; }
+  .en   { font-size:15px; margin:6px 0 2px; }
+  .live { font-size:14px; color:var(--teal); }
+  .live .tag, .en .tag { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.7px;
+                         color:var(--ink-soft); margin-right:6px; }
+  .missing { color:var(--rose); font-style:italic; }
+
+  .subs { margin-top:12px; border-top:1px dashed var(--rule); padding-top:10px;
+          display:flex; flex-direction:column; gap:8px; }
+  .sub { border:1.5px solid var(--rule); border-radius:10px; padding:10px 12px; cursor:pointer;
+         transition:border-color .15s, background .15s, transform .08s; background:var(--bg); }
+  .sub:hover { border-color:var(--teal-mid); background:var(--teal-faint); }
+  .sub:active { transform:scale(.995); }
+  .sub .text { font-size:14.5px; }
+  .sub .meta { font-size:11.5px; color:var(--ink-soft); margin-top:5px; display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+  .sub .hint { margin-left:auto; font-size:11.5px; font-weight:700; color:var(--teal); opacity:0; transition:opacity .15s; }
+  .sub:hover .hint { opacity:1; }
+  .sub.accepted   { border-color:var(--green); background:#eefaef; cursor:default; }
+  .sub.rejected   { opacity:.5; cursor:default; }
+  .sub.superseded { opacity:.5; cursor:default; }
+  .sub.accepted .hint, .sub.rejected .hint, .sub.superseded .hint { display:none; }
+
+  .badge { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.6px;
+           padding:2px 7px; border-radius:999px; }
+  .b-new { background:var(--gold-light); color:var(--gold); }
+  .b-accepted { background:#e8f5e9; color:var(--green); }
+  .b-rejected, .b-superseded { background:var(--rose-light); color:var(--rose); }
+
+  .reject { margin-left:6px; border:none; background:none; color:var(--rose);
+            font-size:11.5px; font-weight:600; cursor:pointer; text-decoration:underline; }
+  .empty { text-align:center; color:var(--ink-soft); padding:50px 20px; }
+  .err { background:var(--rose-light); border:1px solid var(--rose); color:#7a3a36;
+         padding:12px 14px; border-radius:10px; margin-bottom:16px; font-size:13.5px; }
+  .err code { font-family:ui-monospace,monospace; font-size:12px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Obiana · Translation Review</h1>
+  <select id="lang"></select>
+  <span id="status"></span>
+</header>
+
+<main>
+  <div id="error" class="err" hidden></div>
+  <div class="filters">
+    <button data-filter="pending" class="on">Pending</button>
+    <button data-filter="all">All</button>
+    <input id="search" type="search" placeholder="Filter by key or text…">
+  </div>
+  <div id="list"></div>
+</main>
+
+<script>
+const $ = s => document.querySelector(s);
+let STATE = { lang: 'es', groups: [], filter: 'pending', query: '' };
+
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c =>
+  ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
+
+function showError(msg) {
+  const el = $('#error');
+  if (!msg) { el.hidden = true; return; }
+  el.hidden = false;
+  el.innerHTML = `<strong>Could not reach Cloudflare D1.</strong><br>
+    <code>${esc(msg).slice(0, 400)}</code><br><br>
+    If this says the database is not found, check <code>wrangler.jsonc</code>.
+    If it mentions login, run <code>npx wrangler login</code>.`;
+}
+
+async function loadLanguages() {
+  const res = await fetch('/api/languages');
+  const data = await res.json();
+  if (data.error) { showError(data.error); return; }
+  const sel = $('#lang');
+  const langs = data.languages || [];
+  const all = ['es','fr','ko','ar','ru','zh','zom'];
+  const counts = Object.fromEntries(langs.map(l => [l.lang, l]));
+  sel.innerHTML = all.map(code => {
+    const c = counts[code];
+    const label = c ? `${code} — ${c.pending || 0} pending / ${c.n} total` : `${code} — none yet`;
+    return `<option value="${code}">${label}</option>`;
+  }).join('');
+  sel.value = STATE.lang;
+}
+
+async function load() {
+  $('#status').textContent = 'loading…';
+  showError(null);
+  try {
+    const res = await fetch('/api/suggestions?lang=' + encodeURIComponent(STATE.lang));
+    const data = await res.json();
+    if (data.error) { showError(data.error); STATE.groups = []; }
+    else STATE.groups = data.groups || [];
+  } catch (e) {
+    showError(e.message);
+    STATE.groups = [];
+  }
+  render();
+}
+
+function render() {
+  const q = STATE.query.toLowerCase();
+  let groups = STATE.groups;
+
+  if (STATE.filter === 'pending')
+    groups = groups.filter(g => g.submissions.some(s => s.status === 'new'));
+  if (q)
+    groups = groups.filter(g => g.key.toLowerCase().includes(q)
+      || String(g.english).toLowerCase().includes(q)
+      || g.submissions.some(s => String(s.suggestion).toLowerCase().includes(q)));
+
+  const total = STATE.groups.reduce((n, g) => n + g.submissions.length, 0);
+  const pending = STATE.groups.reduce((n, g) => n + g.submissions.filter(s => s.status === 'new').length, 0);
+  $('#status').textContent = `${pending} pending · ${total} total`;
+
+  if (!groups.length) {
+    $('#list').innerHTML = `<p class="empty">${STATE.groups.length
+      ? 'Nothing matches this filter.'
+      : 'No suggestions submitted for this language yet.'}</p>`;
+    return;
+  }
+
+  $('#list').innerHTML = groups.map(g => `
+    <div class="entry">
+      <div class="key">${esc(g.key)}</div>
+      <div class="en"><span class="tag">English</span>${esc(g.english)}</div>
+      <div class="live"><span class="tag">Live now</span>${
+        g.shipped ? esc(g.shipped) : '<span class="missing">not translated</span>'}</div>
+      <div class="subs">
+        ${g.submissions.map(s => `
+          <div class="sub ${s.status === 'new' ? '' : esc(s.status)}"
+               ${s.status === 'new' ? `data-merge="${s.id}"` : ''}
+               data-key="${esc(g.key)}">
+            <div class="text">${esc(s.suggestion)}</div>
+            <div class="meta">
+              <span class="badge b-${esc(s.status)}">${esc(s.status)}</span>
+              <span>${esc((s.created_at || '').slice(0, 16))}</span>
+              ${s.country ? `<span>${esc(s.country)}</span>` : ''}
+              ${s.note ? `<span>“${esc(s.note)}”</span>` : ''}
+              ${s.status === 'new' ? `<button class="reject" data-reject="${s.id}">reject</button>` : ''}
+              <span class="hint">click to merge →</span>
+            </div>
+          </div>`).join('')}
+      </div>
+    </div>`).join('');
+
+  // Click a submission to merge it straight into i18n/locale.<lang>.js
+  document.querySelectorAll('[data-merge]').forEach(el => {
+    el.addEventListener('click', async ev => {
+      if (ev.target.closest('[data-reject]')) return;
+      const id = el.dataset.merge;
+      const key = el.dataset.key;
+      const text = el.querySelector('.text').textContent;
+      if (!confirm(`Merge into ${STATE.lang}?\n\n${key}\n\n${text}`)) return;
+      el.style.opacity = .5;
+      const res = await fetch('/api/accept', {
+        method: 'POST', headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ id, lang: STATE.lang, key, suggestion: text }),
+      });
+      const out = await res.json();
+      if (out.ok) { await load(); }
+      else { el.style.opacity = 1; alert('Merge failed: ' + (out.error || 'unknown')); }
+    });
+  });
+
+  document.querySelectorAll('[data-reject]').forEach(el => {
+    el.addEventListener('click', async ev => {
+      ev.stopPropagation();
+      await fetch('/api/reject', {
+        method: 'POST', headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ id: el.dataset.reject }),
+      });
+      load();
+    });
+  });
+}
+
+$('#lang').addEventListener('change', e => { STATE.lang = e.target.value; load(); });
+document.querySelectorAll('.filters button').forEach(b =>
+  b.addEventListener('click', () => {
+    document.querySelectorAll('.filters button').forEach(x => x.classList.remove('on'));
+    b.classList.add('on');
+    STATE.filter = b.dataset.filter;
+    render();
+  }));
+let t;
+$('#search').addEventListener('input', e => {
+  clearTimeout(t);
+  t = setTimeout(() => { STATE.query = e.target.value; render(); }, 200);
+});
+
+loadLanguages().then(load);
+</script>
+</body>
+</html>
