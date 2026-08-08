@@ -500,7 +500,8 @@ window.MYOB_LOCALES.fr = {
       "translationHelper": "Assistant de traduction",
       "reviewSuggestWording": "Relire les textes · Proposer une meilleure traduction",
       "improveGuide": "Aidez à améliorer ce guide",
-      "shareCustomAsk": "Dites-nous comment cela se fait dans votre culture · Posez vos questions"
+      "shareCustomAsk": "Dites-nous comment cela se fait dans votre culture · Posez vos questions",
+      "helpUsImprove": "Aidez-nous à améliorer"
     },
     "toolkick": {
       "kickCounter": "Compteur de coups"
@@ -605,7 +606,7 @@ window.MYOB_LOCALES.fr = {
     },
     "usNotice": {
       "title": "Soins aux États-Unis",
-      "body": "Ce guide décrit le suivi prénatal tel qu’il est assuré aux États-Unis et s’adresse aux mères suivies ici. Le suivi prénatal varie beaucoup d’un pays à l’autre. Le calendrier des consultations, les examens et les recommandations ailleurs peuvent ne pas correspondre à ce que vous lisez ici. Si vous êtes suivie dans un autre pays, suivez les consignes de votre propre équipe soignante.",
+      "body": "Ce guide décrit le suivi prénatal tel qu’il est assuré aux États-Unis et s’adresse aux mères suivies ici. Le suivi prénatal varie beaucoup d’un pays à l’autre. Le calendrier des consultations, les examens et les recommandations ailleurs peuvent ne pas correspondre à ce que vous lisez ici. Si vous êtes suivie dans un autre pays, cette application n’est probablement pas faite pour vous.",
       "continue": "Je comprends"
     },
     "toolimprove": {

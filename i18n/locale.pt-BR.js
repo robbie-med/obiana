@@ -24,8 +24,11 @@ window.MYOB_LOCALES["pt-BR"] = {
     },
     "usNotice": {
       "title": "Atendimento nos Estados Unidos",
-      "body": "Este guia descreve o pré-natal como ele é feito nos Estados Unidos e foi escrito para mães que fazem o acompanhamento aqui. O pré-natal varia muito de país para país. O calendário de consultas, os exames e as recomendações em outros lugares podem não corresponder ao que você lê aqui. Se você faz o acompanhamento em outro país, siga as orientações da sua própria equipe de saúde.",
+      "body": "Este guia descreve o pré-natal como ele é feito nos Estados Unidos e foi escrito para mães que fazem o acompanhamento aqui. O pré-natal varia muito de país para país. O calendário de consultas, os exames e as recomendações em outros lugares podem não corresponder ao que você lê aqui. Se você faz o acompanhamento em outro país, provavelmente este aplicativo não é para você.",
       "continue": "Entendi"
+    },
+    "tools": {
+      "helpUsImprove": "Ajude a melhorar"
     }
   }
 };

@@ -38,8 +38,11 @@ window.MYOB_LOCALES.tl = {
     },
     "usNotice": {
       "title": "Pangangalaga sa Estados Unidos",
-      "body": "Inilalarawan ng gabay na ito ang prenatal care na ibinibigay sa Estados Unidos, at isinulat para sa mga inang nagpapaalaga rito. Malaki ang pagkakaiba ng prenatal care sa bawat bansa. Ang iskedyul ng pagpapatingin, mga pagsusuri at rekomendasyon sa ibang lugar ay maaaring hindi tumugma sa nababasa ninyo rito. Kung nagpapaalaga kayo sa ibang bansa, sundin ang payo ng inyong sariling care team.",
+      "body": "Inilalarawan ng gabay na ito ang prenatal care na ibinibigay sa Estados Unidos, at isinulat para sa mga inang nagpapaalaga rito. Malaki ang pagkakaiba ng prenatal care sa bawat bansa. Ang iskedyul ng pagpapatingin, mga pagsusuri at rekomendasyon sa ibang lugar ay maaaring hindi tumugma sa nababasa ninyo rito. Kung nagpapaalaga kayo sa ibang bansa, malamang na hindi para sa inyo ang app na ito.",
       "continue": "Naiintindihan ko"
+    },
+    "tools": {
+      "helpUsImprove": "Tulungan Kaming Bumuti"
     }
   }
 };

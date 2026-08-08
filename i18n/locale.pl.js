@@ -35,8 +35,11 @@ window.MYOB_LOCALES.pl = {
     },
     "usNotice": {
       "title": "Opieka w Stanach Zjednoczonych",
-      "body": "Ten poradnik opisuje opiekę przedporodową w takiej formie, w jakiej jest prowadzona w Stanach Zjednoczonych, i jest przeznaczony dla mam objętych opieką tutaj. Opieka przedporodowa bardzo się różni w poszczególnych krajach. Harmonogram wizyt, badania i zalecenia gdzie indziej mogą nie odpowiadać temu, co tu przeczytasz. Jeśli jesteś pod opieką w innym kraju, stosuj się do zaleceń swojego zespołu medycznego.",
+      "body": "Ten poradnik opisuje opiekę przedporodową w takiej formie, w jakiej jest prowadzona w Stanach Zjednoczonych, i jest przeznaczony dla mam objętych opieką tutaj. Opieka przedporodowa bardzo się różni w poszczególnych krajach. Harmonogram wizyt, badania i zalecenia gdzie indziej mogą nie odpowiadać temu, co tu przeczytasz. Jeśli jesteś pod opieką w innym kraju, ta aplikacja prawdopodobnie nie jest dla Ciebie.",
       "continue": "Rozumiem"
+    },
+    "tools": {
+      "helpUsImprove": "Pomóż nam ulepszyć"
     }
   }
 };

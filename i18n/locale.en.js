@@ -493,7 +493,8 @@ window.MYOB_LOCALES.en = {
       "translationHelper": "Translation Helper",
       "reviewSuggestWording": "Review wording · Suggest a better translation",
       "improveGuide": "Help Improve This Guide",
-      "shareCustomAsk": "Share how it is done in your culture · Ask about anything unclear"
+      "shareCustomAsk": "Share how it is done in your culture · Ask about anything unclear",
+      "helpUsImprove": "Help Us Improve"
     },
     "toolkick": {
       "kickCounter": "Kick Counter"
@@ -598,7 +599,7 @@ window.MYOB_LOCALES.en = {
     },
     "usNotice": {
       "title": "Care in the United States",
-      "body": "This guide describes prenatal care as it is provided in the United States, and is written for mothers receiving their care here. Prenatal care differs a great deal between countries. Visit schedules, tests and recommendations elsewhere may not match what you read here. If you are receiving care in another country, follow the guidance of your own care team.",
+      "body": "This guide describes prenatal care as it is provided in the United States, and is written for mothers receiving their care here. Prenatal care differs a great deal between countries. Visit schedules, tests and recommendations elsewhere may not match what you read here. If you are receiving care in another country, this app probably isn’t for you.",
       "continue": "I understand"
     },
     "toolimprove": {

@@ -20,7 +20,7 @@
 
   // Legitimately identical across locales: brand, clinical abbreviations that
   // patients must be able to repeat to a US care team, units, bare numbers.
-  const ALLOWED = /^[\s\d\W]*$|^(Obiana|GBS|NIPT|ACOG|AAP|WHO|FDA|VBAC|Tdap|RhoGAM|BMI|NST|IOM|MFM|Rh|EPDS|PHQ-9|L&D|988|911|lbs?|oz|cm|mg|kg|CBC|HIV|STI|Pap|CVS|OB|PPD|SVE|MRN|PDF|IV|OR|English|Español|Français|Zomi|Laiholh|한국어|中文|Русский|العربية|Braxton Hicks|Listeria|Mastitis|Effacement|Engorgement|Prenatal|FAQ|Type|Date|Apgar|RhoGAM|Doppler|FAQ\s*&)$/i;
+  const ALLOWED = /^[\s\d\W]*$|^(Obiana|GBS|NIPT|ACOG|AAP|WHO|FDA|VBAC|Tdap|RhoGAM|BMI|NST|IOM|MFM|Rh|EPDS|PHQ-9|L&D|988|911|lbs?|oz|cm|mg|kg|CBC|HIV|STI|Pap|CVS|OB|PPD|SVE|MRN|PDF|IV|OR|Braxton Hicks|Listeria|Mastitis|Effacement|Engorgement|Prenatal|FAQ|Type|Date|Apgar|RhoGAM|Doppler|FAQ\s*&)$/i;
 
   function seed() {
     const S = (k, v) => localStorage.setItem(k, JSON.stringify(v));
@@ -105,6 +105,12 @@
     await I18n.setLocale(restore);
     navigate('home');
 
+    // A language's own name is identical in every locale by definition, so it
+    // must never count as untranslated. Derived from the registry rather than
+    // listed by hand — a hardcoded list silently rots each time a language is
+    // added, which is exactly how Tagalog, Deutsch and Polski showed up here.
+    const NATIVE = new Set(Object.values(I18n.LOCALES).flatMap(m => [m.native, m.name, m.prompt]));
+
     const found = new Map();
     for (const [k, v] of a) {
       // The validated EPDS/PHQ-9 text is not UI copy — it stays in the language
@@ -113,8 +119,10 @@
       // The Translation Helper renders raw key names and the English source
       // side by side — that is its whole job, not an untranslated string.
       if (k.startsWith('tool-i18n')) continue;
+      // The Help Improve draft is whatever the tester typed, not app copy.
+      if (k.startsWith('tool-improve') && /^__/.test(v)) continue;
       if (b.get(k) !== v) continue;
-      if (ALLOWED.test(v) || !/[A-Za-z]{3}/.test(v)) continue;
+      if (ALLOWED.test(v) || NATIVE.has(v) || !/[A-Za-z]{3}/.test(v)) continue;
       if (/^[\d\s:.\/+×–—-]+$/.test(v)) continue;
       if (!found.has(v)) found.set(v, k.split('#')[0]);
     }

@@ -35,8 +35,11 @@ window.MYOB_LOCALES.vi = {
     },
     "usNotice": {
       "title": "Chăm sóc tại Hoa Kỳ",
-      "body": "Cẩm nang này mô tả việc chăm sóc trước sinh như được cung cấp tại Hoa Kỳ và được viết cho các bà mẹ đang được chăm sóc tại đây. Chăm sóc trước sinh khác nhau rất nhiều giữa các quốc gia. Lịch khám, các xét nghiệm và khuyến nghị ở nơi khác có thể không giống những gì bạn đọc ở đây. Nếu bạn đang được chăm sóc ở quốc gia khác, hãy làm theo hướng dẫn của nhóm chăm sóc của bạn.",
+      "body": "Cẩm nang này mô tả việc chăm sóc trước sinh như được cung cấp tại Hoa Kỳ và được viết cho các bà mẹ đang được chăm sóc tại đây. Chăm sóc trước sinh khác nhau rất nhiều giữa các quốc gia. Lịch khám, các xét nghiệm và khuyến nghị ở nơi khác có thể không giống những gì bạn đọc ở đây. Nếu bạn đang được chăm sóc ở quốc gia khác, ứng dụng này có lẽ không dành cho bạn.",
       "continue": "Tôi đã hiểu"
+    },
+    "tools": {
+      "helpUsImprove": "Giúp chúng tôi cải thiện"
     }
   }
 };

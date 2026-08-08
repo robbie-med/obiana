@@ -35,8 +35,11 @@ window.MYOB_LOCALES.de = {
     },
     "usNotice": {
       "title": "Betreuung in den USA",
-      "body": "Dieser Leitfaden beschreibt die Schwangerschaftsvorsorge, wie sie in den USA angeboten wird, und richtet sich an Mütter, die hier betreut werden. Die Schwangerschaftsvorsorge unterscheidet sich stark von Land zu Land. Termine, Untersuchungen und Empfehlungen andernorts stimmen möglicherweise nicht mit dem überein, was Sie hier lesen. Wenn Sie in einem anderen Land betreut werden, folgen Sie den Hinweisen Ihres eigenen Behandlungsteams.",
+      "body": "Dieser Leitfaden beschreibt die Schwangerschaftsvorsorge, wie sie in den USA angeboten wird, und richtet sich an Mütter, die hier betreut werden. Die Schwangerschaftsvorsorge unterscheidet sich stark von Land zu Land. Termine, Untersuchungen und Empfehlungen andernorts stimmen möglicherweise nicht mit dem überein, was Sie hier lesen. Wenn Sie in einem anderen Land betreut werden, ist diese App wahrscheinlich nicht das Richtige für Sie.",
       "continue": "Ich habe verstanden"
+    },
+    "tools": {
+      "helpUsImprove": "Helfen Sie uns, besser zu werden"
     }
   }
 };

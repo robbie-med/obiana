@@ -498,7 +498,8 @@ window.MYOB_LOCALES.zh = {
       "translationHelper": "翻译助手",
       "reviewSuggestWording": "检查用词 · 提出更好的翻译",
       "improveGuide": "帮助改进这本指南",
-      "shareCustomAsk": "说说你们的文化怎么做 · 问任何不清楚的地方"
+      "shareCustomAsk": "说说你们的文化怎么做 · 问任何不清楚的地方",
+      "helpUsImprove": "帮助我们改进"
     },
     "toolkick": {
       "kickCounter": "胎动计数器"
@@ -603,7 +604,7 @@ window.MYOB_LOCALES.zh = {
     },
     "usNotice": {
       "title": "在美国接受的照护",
-      "body": "本指南描述的是美国提供的产前照护，写给在美国接受照护的准妈妈。各国的产前照护差异很大。其他国家的产检安排、检查项目和建议，可能与这里写的不同。如果你在其他国家接受照护，请遵循你自己医疗团队的指导。",
+      "body": "本指南描述的是美国提供的产前照护，写给在美国接受照护的准妈妈。各国的产前照护差异很大。其他国家的产检安排、检查项目和建议，可能与这里写的不同。如果你在其他国家接受照护，这个应用可能并不适合你。",
       "continue": "我明白了"
     },
     "toolimprove": {

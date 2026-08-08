@@ -499,7 +499,8 @@ window.MYOB_LOCALES.es = {
       "translationHelper": "Asistente de traducción",
       "reviewSuggestWording": "Revisar textos · Sugerir una traducción mejor",
       "improveGuide": "Ayude a mejorar esta guía",
-      "shareCustomAsk": "Cuéntenos cómo se hace en su cultura · Pregunte lo que no esté claro"
+      "shareCustomAsk": "Cuéntenos cómo se hace en su cultura · Pregunte lo que no esté claro",
+      "helpUsImprove": "Ayúdenos a mejorar"
     },
     "toolkick": {
       "kickCounter": "Contador de Pataditas"
@@ -604,7 +605,7 @@ window.MYOB_LOCALES.es = {
     },
     "usNotice": {
       "title": "Atención en los Estados Unidos",
-      "body": "Esta guía describe la atención prenatal tal como se ofrece en los Estados Unidos y está dirigida a madres que reciben su atención aquí. La atención prenatal varía mucho de un país a otro. El calendario de visitas, las pruebas y las recomendaciones en otros lugares pueden no coincidir con lo que lee aquí. Si recibe atención en otro país, siga las indicaciones de su propio equipo médico.",
+      "body": "Esta guía describe la atención prenatal tal como se ofrece en los Estados Unidos y está dirigida a madres que reciben su atención aquí. La atención prenatal varía mucho de un país a otro. El calendario de visitas, las pruebas y las recomendaciones en otros lugares pueden no coincidir con lo que lee aquí. Si recibe atención en otro país, es probable que esta aplicación no sea para usted.",
       "continue": "Entiendo"
     },
     "toolimprove": {
