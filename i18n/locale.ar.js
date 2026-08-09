@@ -619,6 +619,10 @@ window.MYOB_LOCALES.ar = {
     },
     "toolimprove": {
       "improveGuide": "ساعدينا في تحسين هذا الدليل"
+    },
+    "about": {
+      "openSource": "برنامج حر ومفتوح المصدر. انسخيه، وأبقيه حراً.",
+      "viewSource": "عرض الشيفرة المصدرية (AGPL-3.0)"
     }
   }
 };

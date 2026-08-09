@@ -614,6 +614,10 @@ window.MYOB_LOCALES.ko = {
     },
     "toolimprove": {
       "improveGuide": "이 안내서 개선에 도움 주기"
+    },
+    "about": {
+      "openSource": "자유 오픈소스입니다. 포크하셔도 되지만 자유롭게 유지해 주세요.",
+      "viewSource": "소스 코드 보기 (AGPL-3.0)"
     }
   },
   "content": {

@@ -1,7 +1,7 @@
 {
-  "name": "Pregnancy & Birth Guide",
-  "short_name": "Birth Guide",
-  "description": "Evidence-based pregnancy, labor, delivery & postpartum guide. Works offline.",
+  "name": "Obiana: Pregnancy Handbook",
+  "short_name": "Obiana",
+  "description": "Evidence-based pregnancy, birth and newborn guide in 17 languages. Free, open source, and works offline.",
   "start_url": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
@@ -15,6 +15,10 @@
       "purpose": "any maskable"
     }
   ],
-  "categories": ["health", "medical", "education"],
+  "categories": [
+    "health",
+    "medical",
+    "education"
+  ],
   "lang": "en-US"
 }

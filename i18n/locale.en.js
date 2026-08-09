@@ -609,6 +609,10 @@ window.MYOB_LOCALES.en = {
     },
     "toolimprove": {
       "improveGuide": "Help Improve This Guide"
+    },
+    "about": {
+      "openSource": "Free and open source. Fork it, keep it free.",
+      "viewSource": "View source (AGPL-3.0)"
     }
   },
   "content": {

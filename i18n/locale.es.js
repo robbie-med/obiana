@@ -615,6 +615,10 @@ window.MYOB_LOCALES.es = {
     },
     "toolimprove": {
       "improveGuide": "Ayude a mejorar esta guía"
+    },
+    "about": {
+      "openSource": "Libre y de código abierto. Haga un fork, manténgalo libre.",
+      "viewSource": "Ver el código (AGPL-3.0)"
     }
   },
   "content": {

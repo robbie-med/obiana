@@ -1753,3 +1753,20 @@ body.dark #translation-notice {
   background: rgba(255,255,255,0.1);
 }
 
+
+/* Source link on the Tools page. AGPL section 13 requires a hosted copy to
+   offer its source to users, so this is an obligation, not a footer nicety. */
+.source-note {
+  padding: 18px 16px 4px;
+  text-align: center;
+  font-size: 11.5px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+.source-note a {
+  display: block;
+  margin-top: 3px;
+  color: var(--teal);
+  font-weight: 600;
+  text-decoration: underline;
+}

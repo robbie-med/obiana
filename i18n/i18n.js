@@ -13,10 +13,15 @@ window.MYOB_LOCALES = window.MYOB_LOCALES || {};
 const I18n = (() => {
 
   // ─── Supported locales ──────────────────────────────────
-  // `medical` = has clinician-reviewed content. When false the app shows a
-  // translation-quality notice. See EPDS gating in tools.js.
-  // `zom` (Zomi / Tedim Chin) has no ISO 639-1 two-letter code and no CLDR
-  // data, so Intl falls back to defaults for it — see intlTag() and tp().
+  // `flag` is an ISO country code resolving to flags/<code>.svg. Bundled SVGs
+  // rather than emoji: emoji flags render completely differently per platform
+  // and are missing entirely on some Android builds.
+  //
+  // Whether a locale is clinician-reviewed lives on the locale file itself
+  // (`reviewed`), which drives the machine-translation notice.
+  //
+  // zom (Zomi / Tedim Chin) has no ISO 639-1 code and no CLDR data, so Intl
+  // gets a fallback tag. See INTL_FALLBACK.
   const LOCALES = {
     en:  { name: 'English',  native: 'English',  dir: 'ltr', prompt: 'Tap your language', flag: 'gb' },
     es:  { name: 'Spanish',  native: 'Español',  dir: 'ltr', prompt: 'Toca tu idioma', flag: 'es' },
@@ -34,9 +39,7 @@ const I18n = (() => {
     // Intl gives Brazilian date and number conventions for free.
     'pt-BR': { name: 'Portuguese (Brazil)', native: 'Português (Brasil)', dir: 'ltr',
                prompt: 'Escolha seu idioma', flag: 'br' },
-    // Pashto and Dari use a script glyph rather than the Afghan flag, for the
-    // same reason Zomi does not carry Myanmar's: many speakers here are
-    // refugees from the state that flag represents.
+    // Pashto and Dari share Afghanistan; both are Afghan languages.
     ps:  { name: 'Pashto',   native: 'پښتو',     dir: 'rtl', prompt: 'خپله ژبه وټاکئ', flag: 'af' },
     prs: { name: 'Dari',     native: 'دری',      dir: 'rtl', prompt: 'زبان خود را انتخاب کنید', flag: 'af' },
 
@@ -46,12 +49,11 @@ const I18n = (() => {
     pl:  { name: 'Polish',   native: 'Polski',   dir: 'ltr', prompt: 'Wybierz swój język', flag: 'pl' },
   };
 
-  // `flag` is an ISO country code resolving to flags/<code>.svg. Bundled SVGs,
-  // not emoji: emoji flags render completely differently per platform and are
-  // absent altogether on some Android builds.
-  //
-  // Pashto and Dari share Afghanistan. Zomi uses Myanmar at the clinician's
-  // direction. Arabic uses Saudi Arabia as the conventional language emblem.
+  // Flag choices are editorial, not political: English takes the Union Jack
+  // because it marks a language, Zomi takes Myanmar at the clinician's
+  // direction, Arabic takes Saudi Arabia as the conventional emblem. The US
+  // flag on the care notice is separate and refers to the health system.
+  // See NOTICE.md.
 
   // Locales with no CLDR entry: hand Intl a fallback so date/number
   // formatting degrades to English conventions instead of throwing.
@@ -65,7 +67,7 @@ const I18n = (() => {
 
   // Bumped alongside sw.js CACHE_NAME so an updated locale file is actually
   // re-fetched instead of served from the browser's heuristic cache.
-  const ASSET_VERSION = '41';
+  const ASSET_VERSION = '42';
 
   const FALLBACK = 'en';
   const STORAGE_KEY = 'myob.lang';

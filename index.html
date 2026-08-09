@@ -6,11 +6,11 @@
 <meta name="theme-color" content="#1d4e4e">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Birth Guide">
-<meta name="description" content="Evidence-based pregnancy, labor, delivery & postpartum guide. Works offline.">
+<meta name="apple-mobile-web-app-title" content="Obiana">
+<meta name="description" content="Evidence-based pregnancy, birth and newborn guide in 17 languages. Free, open source, and works offline.">
 <title>Pregnancy Handbook</title>
 <link rel="manifest" href="./manifest.json">
-<link rel="stylesheet" href="./styles.css?v=41">
+<link rel="stylesheet" href="./styles.css?v=42">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
 <div id="app">
 
 <!-- Offline banner -->
-<div id="offline-banner" data-i18n="app.offlineBanner">⚠ You're offline — all content still available</div>
+<div id="offline-banner" data-i18n="app.offlineBanner">⚠ You're offline. All content still available</div>
 
 <!-- Header -->
 <div id="header">
@@ -228,7 +228,7 @@
   <div id="page-faq" class="page">
     <div class="section-hero plum-hero">
       <div class="hero-title" data-i18n="faq.faqCommonMyths" data-i18n-html>FAQ &amp;<br>Common Myths</div>
-      <div class="hero-desc" data-i18n="faq.evidenceBasedAnswersToThe">Evidence-based answers to the most common questions — including things you've heard from family, friends, and the internet.</div>
+      <div class="hero-desc" data-i18n="faq.evidenceBasedAnswersToThe">Evidence-based answers to the most common questions, including things you've heard from family, friends, and the internet.</div>
     </div>
     <div class="cards" id="cards-faq"></div>
   </div>
@@ -272,7 +272,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
         </div>
         <div class="tool-card-name" data-i18n="tools.kickCounter">Kick Counter</div>
-        <div class="tool-card-desc" data-i18n="tools.10MovesIn2Hours" data-i18n-html>10 moves in 2 hours — log sessions &amp; history</div>
+        <div class="tool-card-desc" data-i18n="tools.10MovesIn2Hours" data-i18n-html>10 moves in 2 hours · log sessions &amp; history</div>
       </button>
       <button class="tool-card-btn" onclick="navigate('tool-contractions')">
         <div class="tool-card-icon" style="background:var(--gold-light)">
@@ -367,6 +367,14 @@
         <div class="tool-card-name" data-i18n="tools.improveGuide">Help Improve This Guide</div>
         <div class="tool-card-desc" data-i18n="tools.shareCustomAsk">Share how it is done in your culture · Ask about anything unclear</div>
       </button>
+    </div>
+
+    <!-- AGPL section 13: a hosted copy has to offer its source to the people
+         using it, so this link is a licence obligation, not decoration. -->
+    <div class="source-note">
+      <span data-i18n="about.openSource">Free and open source. Fork it, keep it free.</span>
+      <a href="https://github.com/robbie-med/obiana" target="_blank" rel="noopener"
+         data-i18n="about.viewSource">View source (AGPL-3.0)</a>
     </div>
     <div style="height:16px"></div>
   </div>
@@ -689,18 +697,18 @@
 
 </div><!-- end #app -->
 
-<script src="./i18n/i18n.js?v=41"></script>
-<script src="./i18n/epds/epds.en.js?v=41"></script>
-<script src="./i18n/epds/epds.es.js?v=41"></script>
-<script src="./i18n/epds/epds.cnh.js?v=41"></script>
-<script src="./i18n/epds/epds.ko.js?v=41"></script>
-<script src="./i18n/epds/epds.zh.js?v=41"></script>
-<script src="./i18n/epds/epds.ar.js?v=41"></script>
-<script src="./i18n/epds/phq9.fr.js?v=41"></script>
-<script src="./i18n/epds/phq9.ru.js?v=41"></script>
-<script src="./content.js?v=41"></script>
-<script src="./tools.js?v=41"></script>
-<script src="./i18n/translate-tool.js?v=41"></script>
-<script src="./i18n/improve-tool.js?v=41"></script>
+<script src="./i18n/i18n.js?v=42"></script>
+<script src="./i18n/epds/epds.en.js?v=42"></script>
+<script src="./i18n/epds/epds.es.js?v=42"></script>
+<script src="./i18n/epds/epds.cnh.js?v=42"></script>
+<script src="./i18n/epds/epds.ko.js?v=42"></script>
+<script src="./i18n/epds/epds.zh.js?v=42"></script>
+<script src="./i18n/epds/epds.ar.js?v=42"></script>
+<script src="./i18n/epds/phq9.fr.js?v=42"></script>
+<script src="./i18n/epds/phq9.ru.js?v=42"></script>
+<script src="./content.js?v=42"></script>
+<script src="./tools.js?v=42"></script>
+<script src="./i18n/translate-tool.js?v=42"></script>
+<script src="./i18n/improve-tool.js?v=42"></script>
 </body>
 </html>

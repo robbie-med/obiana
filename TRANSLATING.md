@@ -1,111 +1,148 @@
-# Translating myOB
+# Translating Obiana
 
-The app ships English as the **fallback layer**. Every other locale overrides
-only the keys it has translated; anything missing renders in English rather
-than blank. That means a locale file can be filled in gradually and shipped at
-any stage of completeness.
+Three ways in, depending on how much you want to take on.
 
-## Adding or completing a language
+Everything falls back to English per key, so a partly translated language is
+always usable. There is no point at which a language is "too incomplete to
+ship".
 
-1. Open `i18n/locale.<code>.js` (stubs already exist for es, fr, ko, ar, ru, zh, zom).
-2. Add keys mirroring the structure of `i18n/locale.en.js`:
-   - `ui.*`   — interface strings (315 of them)
-   - `content.*` — the 45 guide cards, keyed by card id, each `{ title, sub, body }`
-     where `body` is an HTML fragment
-3. Set `reviewed: true` **only** once a clinician has checked the medical content.
-   While it is `false`, the app shows a machine-translation notice to the patient.
-4. Bump `CACHE_NAME` in `sw.js` and the `?v=` values in `index.html` +
-   `ASSET_VERSION` in `i18n/i18n.js`, or returning users keep the cached copy.
+---
 
-To register a brand-new language, add an entry to `LOCALES` in `i18n/i18n.js`
-(`name`, `native`, `dir`, `prompt`) — `prompt` is the "Tap your language" text
-shown on the first-run picker, in that language.
+## 1. From inside the app (no setup)
 
-## The EPDS is different — do not translate it
+**Tools > Help Us Improve > Translation Helper.**
 
-`i18n/locale.en.js` contains an `epds` block: the Edinburgh Postnatal
-Depression Scale. It is a **validated clinical instrument**. Its ≥10 / ≥13
-cutoffs are only meaningful for the exact wording of an officially validated
-translation, and those exist per language with their own published
-psychometrics (sometimes different cutoffs).
+Pick your language and every phrase appears against its English source, marked
+`✓` translated, `≡` identical to English, or `✗` missing. Type a better version
+and press **Submit**. Filter to "Needs work" to see only what is unfinished.
 
-A machine translation of the EPDS still produces a score, and that score looks
-exactly as authoritative as a real one. So:
+Works on a phone. Nothing to install, no account, no repo.
 
-- A locale with **no** `epds` key has the Mood Check-In tool automatically
-  disabled, showing the patient a notice and an offer to switch to English.
-- To enable it, paste the **official published translation** for that language
-  into the locale file as `epds.questions`, set `epds.validated: true`, and set
-  `epds.cutoffs` to that version's published thresholds.
-- Never generate this text with an LLM.
+If you would rather not submit directly, **Export my suggestions** downloads a
+JSON file in exactly the shape the merge pipeline takes.
 
-## Things that are stored, not displayed
+## 2. Cultural context and questions
 
-Three sets of user data are stored as stable **ids**, with labels resolved at
-render time. Do not change the ids when translating — they are what is written
-to the patient's device:
+**Tools > Help Us Improve > Help Improve This Guide.**
 
-- Birth plan answers — `BIRTH_PLAN_QUESTIONS` in `tools.js`, labels under `ui.tool.birthplan.q.*`
-- Appointment types — `APPT_TYPE_KEY` in `tools.js`, labels under `ui.apptType.*`
-- Content cards — ids in `CONTENT_STRUCTURE` in `content.js`
+Not a translation channel. This is for:
 
-Migrations (`migrateBirthPlan`, `migrateAppointments`) convert data saved by
-the pre-i18n version, which stored English labels directly. Leave them in place.
+- *"In my culture we do it differently"*
+- a question the guide never answers
+- a passage that read badly even though the words were right
 
-## Content is US care model
+That last one matters. A translation can be technically correct and still land
+wrong, and this is where you say so.
 
-The guidance is ACOG/AAP/FDA-based and assumes US prenatal care: visit cadence,
-°F, lb, "call 911", US insurance framing. Translating the words does not
-localise the care model. For a patient receiving care in the US this is
-correct; for a reader abroad it is not.
+## 3. Bulk translation (repo access)
 
-## Receiving suggestions from contributors
-
-The Translation Helper (last tool in Tools) has a **Submit** button on every
-card. Submissions go to Cloudflare D1, and this PC pulls them down.
-
-**Why D1 and not a push straight to the PC:** a direct push is lost whenever
-this machine is asleep, and the contributor is told "sent" either way. D1 holds
-it until you pull. The optional ntfy ping is a *notification*, never the
-transport — if it fails, the suggestion is already stored.
-
-If the API is unreachable, or the contributor is offline, the card says so and
-the suggestion stays on their device for **Export** — so it is never a dead end.
-
-### One-time setup
+For taking a language from stub to complete.
 
 ```bash
-npm install -D wrangler@latest
-
-npx wrangler d1 create obiana-suggestions
-# paste the printed database_id into wrangler.jsonc
-
-npx wrangler d1 execute obiana-suggestions --remote --file worker/schema.sql
-
-npx wrangler secret put HASH_SALT     # any long random string
-npx wrangler secret put NTFY_URL      # optional: your ntfy topic URL
+node translation/prepare.js      # regenerate prompts (only after editing English)
+bash translation/run-kimi.sh es  # one language, or omit for all
+node translation/merge.js        # merge validated output into i18n/locale.*.js
 ```
 
-`HASH_SALT` salts the IP hash used for rate limiting. Raw IPs are never stored.
+Resumable: a batch that already exists and validates is skipped, so an
+interrupted run picks up where it stopped.
 
-### Pulling them down
+`merge.js` refuses to merge a language with any failing batch. A half-merged
+locale is harder to reason about than an untranslated one.
+
+### The validator is the point
+
+An LLM will hand back fluent text that has quietly broken something invisible.
+These are **errors** and block merging:
+
+| Error | Why it matters |
+|---|---|
+| missing or unexpected keys | a missing key silently falls back to English |
+| placeholders changed | `{count}` becoming `{cuenta}` prints the literal `{cuenta}` to a patient |
+| HTML tags changed | a dropped `</li>` breaks the card layout |
+| empty translation | blank UI |
+| invalid plural category | `tp()` falls through to the wrong form |
+| foreign script leaked | a stray CJK character inside a Russian sentence, which reads as fluent to anyone who does not know both scripts |
+
+That last check exists because it caught exactly that, twice, in work done by
+hand. `node translation/lint-locales.js` runs it against the shipped locale
+files, which the batch validator never sees.
+
+**Warnings** do not block, but read them: they are usually a lost unit (`°F`,
+`mg`, `cm`) or a dropped clinical abbreviation (`GBS`, `Tdap`, `ACOG`), and a
+patient needs those to ask her care team about it.
+
+### Checking your own work
 
 ```bash
-bash translation/pull-suggestions.sh              # everything new
-bash translation/pull-suggestions.sh es           # one language
-bash translation/pull-suggestions.sh es --merge   # also write translation/out/
+node translation/validate.js                          # everything
+node translation/validate.js translation/out/ko.ui.1.json
+node translation/lint-locales.js
 ```
 
-Nothing is applied automatically — these come from the public, so you read them
-before anything reaches a patient.
+There is also a runtime audit that renders the app in two languages and diffs
+the actual DOM. Static scans over source kept missing whole classes of string,
+including text nodes split across lines and anything set via `.textContent`.
+Paste `translation/audit.js` into the browser console and call
+`myobI18nAudit('ko')`.
 
-### What crosses the boundary
+---
 
-Only the translation key, the English source, the currently shipped wording and
-the proposed wording. **No tracker data ever leaves the device** — the app's
-core privacy promise is unchanged, and the tool says so on screen in every
-language.
+## Adding a language
 
-The endpoint is public, so it is treated as hostile: keys are validated against
-the shipped English catalog (read through the ASSETS binding, so there is no
-second list to drift), lengths are capped, and there is a per-IP hourly limit.
+1. Add an entry to `LOCALES` in `i18n/i18n.js`:
+
+```js
+sw: { name: 'Swahili', native: 'Kiswahili', dir: 'ltr',
+      prompt: 'Chagua lugha yako', flag: 'tz' },
+```
+
+2. Drop the matching flag SVG into `flags/`.
+3. Create `i18n/locale.sw.js` as a stub, copying any existing stub.
+4. Add the file and flag to `ASSETS` in `sw.js`, and add the code to `LOCALES`
+   in `worker/index.js` so submissions are accepted for it.
+
+The picker, first-run screen and Translation Helper all read `LOCALES` at
+runtime. Nothing else to register.
+
+Notes:
+
+- Region subtags work (`pt-BR`). Detection tries the full tag before the base.
+- A script with no spaces between words (Thai, Japanese, Chinese) is segmented
+  via `Intl.Segmenter`. Add the script's range to `CJK` in `i18n/i18n.js`.
+- RTL needs only `dir: 'rtl'`. The layout uses logical properties throughout.
+- Check date and number formatting. Dari inherits Persian defaults and needed
+  `fa-u-nu-latn-ca-gregory` to stop rendering Jalali dates with Persian digits
+  on a US appointment card.
+
+---
+
+## House style
+
+- **No em dashes.** Anywhere. Use a comma or a full stop.
+- Write to the patient, not about her. Around a 6th-grade reading level.
+- Use the polite form where the language has one (*usted*, *vous*, *Вы*).
+- Keep clinical abbreviations she will hear out loud: GBS, NIPT, Tdap, ACOG.
+  Gloss them on first use if your language needs it.
+- **Do not convert units.** `°F`, `lb`, `oz` stay. She reads them off US
+  equipment and hears them from her care team.
+- **Do not localise the medicine.** Translate the words. Visit schedules,
+  screening offers and "call 911" describe the US system on purpose.
+- Nav labels are chips. Keep them short or they clamp to two lines.
+
+## The screening instruments are off limits
+
+The EPDS and PHQ-9 are **not** in the translation pipeline and must never be
+added to it. Their scores mean something only for wording that has been
+formally validated. A machine translation still produces a number, and that
+number looks exactly as trustworthy as a real one.
+
+If you know of an officially validated translation for a language we do not
+cover, that is a genuinely valuable thing to report. See
+[i18n/epds/SOURCES.md](i18n/epds/SOURCES.md).
+
+## Reviewing what comes in
+
+Maintainers: `review/start.sh`, or the desktop shortcut. Pick a language, see
+every suggestion grouped under its key alongside the English and what is
+currently live, and click one to merge it straight into the locale file.

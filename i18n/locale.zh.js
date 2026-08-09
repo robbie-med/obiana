@@ -614,6 +614,10 @@ window.MYOB_LOCALES.zh = {
     },
     "toolimprove": {
       "improveGuide": "帮助改进这本指南"
+    },
+    "about": {
+      "openSource": "自由开源软件。欢迎分支，但请保持自由开源。",
+      "viewSource": "查看源代码（AGPL-3.0）"
     }
   }
 };

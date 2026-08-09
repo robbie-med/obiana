@@ -14,7 +14,9 @@ wrangler.jsonc
 # Docs — not part of the served site
 README.md
 TRANSLATING.md
+NOTICE.md
 LICENSE
+LICENSE-CONTENT
 CNAME
 
 # Translation tooling: prompts, source strings and model output.

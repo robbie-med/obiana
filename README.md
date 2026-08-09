@@ -1,81 +1,142 @@
-# Pregnancy & Birth Guide — PWA
+# Obiana: Pregnancy Handbook
 
-An evidence-based, fully offline-capable Progressive Web App for pregnant patients. Covers prenatal visits, labor & delivery, postpartum recovery, newborn care, FAQ, and 10 interactive clinical tools — all stored privately on the patient's device.
+An evidence-based, offline-capable pregnancy and newborn guide for patients,
+in 17 languages. No ads, no tracking, no accounts. Everything a patient enters
+stays on her own phone.
 
-## Features
+**Live: [obiana.app](https://obiana.app)**
 
-- **Works 100% offline** — service worker caches everything after first load
-- **Installable** — iOS and Android home screen
-- **10 interactive tools** — kick counter, contraction timer, feeding log, diaper log, jaundice tracker, blood pressure log, weight tracker, mood check-in (EPDS), birth plan builder, visit notes
-- **Dark mode** — respects system preference, user-toggleable
-- **Full-text search** across all content
-- **Data export** — download all your data as a JSON file
-- **Print-ready birth plan** — clean layout for printing or saving as PDF
-- **Tap-to-call / tap-to-text** saved care team contacts
-- **No ads, no tracking, no data collection** — everything stays on the device
-- **Multilingual** — English, Spanish, French, Korean, Arabic (RTL), Russian, Chinese, Zomi.
-  First-run picker prompts in every language; English is the fallback for any
-  untranslated string. See `TRANSLATING.md`.
+> This guide describes prenatal care **as delivered in the United States**. The
+> app says so on first run, in the language the reader picked. Care differs a
+> great deal between countries.
 
-## File Structure
+## What it does
 
-```
-index.html      HTML shell — all pages and modals, no inline JS or CSS
-styles.css      All styles, including tool UI and dark mode
-content.js      Card structure, navigation, search, My Info, PWA logic
-tools.js        All 10 interactive tools
-i18n/i18n.js    i18n runtime (locale detect/load, t(), search folding, formatting)
-i18n/locale.*.js  One file per language; en is the fallback layer
-sw.js           Service worker (offline caching, cache-first strategy)
-manifest.json   PWA metadata (name, icons, theme color)
-README.md       This file
-```
+- **Guide**: prenatal visits, labour and delivery, postpartum recovery,
+  newborn care, and an FAQ that takes on the myths patients actually arrive with
+- **12 tools**: kick counter, contraction timer with 5-1-1 detection, feeding
+  and diaper logs, jaundice tracker, blood pressure log, weight tracker, mood
+  screening, birth plan builder, visit notes, plus two for contributors
+- **Works offline**: a service worker precaches everything, including all 17
+  locales and the flag artwork
+- **Installable** on iOS and Android home screens
+- **Search** that folds diacritics and segments Thai, Japanese, Chinese and
+  Korean properly, so `cesarea` finds `cesárea` and `제왕절개` finds its card
 
-To update content, edit `i18n/locale.en.js` (the `content` object, keyed by card
-id) — and mirror the change into the other locale files. Card icons/colors live
-in `CONTENT_STRUCTURE` in `content.js`.
-After any change, bump the cache version in `sw.js` (`CACHE_NAME = 'birth-guide-v3'` etc.) so users get the update.
+## Languages
 
-## Deploy to GitHub Pages
-
-1. Push all files to a GitHub repository
-2. Go to **Settings → Pages**
-3. Source: **Deploy from a branch**, branch `main`, folder `/ (root)`
-4. Save — live in ~2 minutes at `https://YOUR-USERNAME.github.io/YOUR-REPO/`
-
-## iOS Install (share with patients)
-
-1. Open the link in **Safari**
-2. Tap the Share button → **Add to Home Screen**
-3. Tap **Add**
-
-## Android Install
-
-1. Open in **Chrome**
-2. Tap ⋮ → **Add to Home Screen** or **Install App**
-
-## Interactive Tools
-
-| Tool | Purpose |
+| Status | Languages |
 |---|---|
-| Kick Counter | Sessions, 10-in-2-hour goal, history |
-| Contraction Timer | 5-1-1 detection, "time to go in" alert |
-| Feeding Log | Breast/bottle, 24-hr count, flags <8/day |
-| Diaper Log | Wet and dirty counts by day |
-| Jaundice Tracker | Birth-date-based day-by-day guidance |
-| Blood Pressure Log | Flags ≥140/90, color-coded history |
-| Weight Tracker | IOM guidelines by pre-pregnancy BMI |
-| Mood Check-In | Edinburgh Postnatal Depression Scale (EPDS) |
-| Birth Plan Builder | Guided choices, multi-select, notes, copy/print |
-| Visit Notes | Pre-visit questions and post-visit notes |
+| Interface + full guide content | English, Spanish, French, Korean |
+| Interface only, content falls back to English | Arabic, Russian, Chinese |
+| Stub, everything falls back to English | Japanese, Tagalog, Portuguese (Brazil), Pashto, Dari, Vietnamese, Thai, German, Polish, Zomi |
 
-## Evidence Base
+Fallback is per key, so a partly translated language is always usable rather
+than half-broken. Every non-English locale shows the reader a
+machine-translation notice until a clinician has reviewed it.
 
-- ACOG clinical guidance (prenatal care, labor, postpartum)
-- AAP safe sleep and newborn care guidelines
-- WHO recommendations (delayed cord clamping, first bath timing)
-- Published evidence on epidurals, VBAC, and labor induction
+Arabic, Pashto and Dari render right-to-left throughout.
 
----
+See [TRANSLATING.md](TRANSLATING.md) to help.
 
-*This app provides general health education and is not a substitute for individualized medical advice.*
+## Mood screening is gated on purpose
+
+The mood tool uses the **EPDS** where an officially validated translation
+exists, and the **PHQ-9** for French and Russian, which have none freely
+available. A language with neither does not get a machine-translated
+questionnaire; it gets a picker offering the validated instruments that do
+exist, in whichever language the reader can manage.
+
+The instrument language is chosen **independently of the interface language**,
+because plenty of patients read a second language fluently.
+
+`node i18n/epds/verify.js` checks every instrument: item count, that scores are
+a permutation of 0-3, the total range, and that the reverse-scored items match
+the published form. It cannot check that a translation is faithful. Only a
+speaker of the language can.
+
+Details and sources: [i18n/epds/SOURCES.md](i18n/epds/SOURCES.md).
+
+## Layout
+
+```
+index.html            shell: every page and modal, no inline JS or CSS
+styles.css            all styles, including dark mode, RTL and print
+content.js            card structure, nav, search, My Info, PWA, language picker
+tools.js              the interactive tools
+sw.js                 service worker, cache-first
+manifest.json         PWA metadata
+flags/                bundled SVG flags (see NOTICE.md)
+i18n/
+  i18n.js             locale loading, t(), formatting, search folding
+  locale.<lang>.js    one file per language: ui strings + guide content
+  translate-tool.js   in-app Translation Helper
+  improve-tool.js     in-app "Help Improve This Guide"
+  epds/               validated screening instruments + their verifier
+translation/          batch translation pipeline, validators, runtime audit
+worker/               Cloudflare Worker: /api/suggest, /api/feedback
+review/               local desktop app for reviewing what readers send in
+```
+
+Plain static files. No build step, no framework, no bundler.
+
+## Running it
+
+```bash
+python3 -m http.server 3107 --bind 127.0.0.1
+```
+
+After changing anything, bump the version in three places or returning users
+keep the old copy: `CACHE_NAME` in `sw.js`, the `?v=` query strings in
+`index.html`, and `ASSET_VERSION` in `i18n/i18n.js`.
+
+## Deployment
+
+Cloudflare Workers static assets, deployed from `main` by Workers Builds.
+`wrangler.jsonc` serves the repo root; `.assetsignore` keeps tooling and docs
+out of the upload.
+
+`not_found_handling` is deliberately left at the default rather than
+`single-page-application`: the app has no client-side routes, and SPA handling
+would return `index.html` with status 200 for a missing locale file, defeating
+the fallback that both the service worker and the i18n loader rely on.
+
+## Checks
+
+```bash
+node translation/lint-locales.js   # foreign-script leakage in locale files
+node i18n/epds/verify.js           # screening instrument structure
+node translation/validate.js       # translation batches
+```
+
+Plus a runtime audit that renders the app in two languages and diffs the DOM,
+which catches untranslated strings no source scan can see. Paste
+`translation/audit.js` into the console and call `myobI18nAudit('ko')`.
+
+## Contributing
+
+Both contribution paths are in the app itself, under **Tools > Help Us Improve**:
+
+- **Translation Helper**: every phrase against its English source, with a
+  submit button per phrase
+- **Help Improve This Guide**: tell us how something is done in your culture,
+  ask about a topic that is missing, or flag a passage that read badly
+
+Submissions go to a Cloudflare D1 database. Nothing is applied automatically.
+
+## Licence
+
+Copyleft, deliberately. Fork it, rebrand it, add your own content, deploy it.
+If you do, it has to stay free and open, and link back here.
+
+- **Code**: [AGPL-3.0](LICENSE). Hosting a modified version counts as
+  distributing it, so a hosted fork must publish its source too.
+- **Guide content and translations**: [CC BY-SA 4.0](LICENSE-CONTENT).
+- **Bundled third-party material** keeps its own terms and is not relicensed
+  by either: see [NOTICE.md](NOTICE.md).
+
+## Disclaimer
+
+Health education, not medical advice, and not a substitute for care from a
+qualified clinician. Non-English content is machine-translated pending
+clinician review, and the app tells readers so.
