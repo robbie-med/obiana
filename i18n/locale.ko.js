@@ -121,7 +121,7 @@ window.MYOB_LOCALES.ko = {
           "epidural": {
             "label": "통증 완화 방법 선호도",
             "opt": {
-              "epidural": "예. 무통주사(경막외 마취)",
+              "epidural": "예, 무통주사(경막외 마취)",
               "none": "약물 사용 안 함",
               "open": "모든 선택지를 열어 둠",
               "iv": "정맥(IV) 약물만"
@@ -146,7 +146,7 @@ window.MYOB_LOCALES.ko = {
           "skin-to-skin": {
             "label": "출산 직후 피부 맞대기",
             "opt": {
-              "top": "예. 최우선",
+              "top": "예, 최우선",
               "ifposs": "가능하다면 예",
               "nopref": "상관없음"
             }
@@ -227,7 +227,8 @@ window.MYOB_LOCALES.ko = {
         "anyOtherPreferencesConcernsOr": "의료진에게 전달할 다른 희망사항, 걱정, 정보가 있으면 적어 주세요…",
         "copiedToClipboard": "클립보드에 복사했어요!",
         "copyNotSupportedOnThis": "이 브라우저에서는 복사를 지원하지 않아요",
-        "selectPreferences": "아래에서 원하는 항목을 선택하세요. 요약이 아래에 표시되며 의료진과 공유할 수 있습니다."
+        "selectPreferences": "아래에서 원하는 항목을 선택하세요. 요약이 아래에 표시되며 의료진과 공유할 수 있습니다.",
+        "generatedOn": "{date} 생성"
       },
       "kick": {
         "startSession": "세션 시작",
@@ -834,7 +835,7 @@ window.MYOB_LOCALES.ko = {
     "faq-newborn-procedures": {
       "title": "신생아 처치를 모두 꼭 받아야 하나요?",
       "sub": "",
-      "body": "<p>일반적인 신생아 처치에는 다음이 포함됩니다: <strong>비타민 K 주사</strong>(치명적인 뇌출혈을 일으킬 수 있는 심각한 출혈 질환인 VKDB를 예방), <strong>에리스로마이신 안연고</strong>(임질을 포함한 눈 감염을 예방), <strong>B형 간염 백신 1차 접종</strong>, 그리고 <strong>신생아 대사 선별 채혈</strong>(발뒤꿈치 채혈로 PKU, 갑상선기능저하증, 겸상적혈구병 등 약 30가지 질환 검사). 모두 권장되는 이유는 조기에 개입하지 않을 때의 위험이 처치 자체의 위험보다 크기 때문입니다. 대부분의 주에서 법적으로 거부하실 수 있습니다. 먼저 담당 의료진과 위험에 대해 상의하시기를 권합니다.</p>"
+      "body": "<p>일반적인 신생아 처치에는 다음이 포함됩니다: <strong>비타민 K 주사</strong>(치명적인 뇌출혈 위험을 낮춤), <strong>에리스로마이신 안연고</strong>(임질을 포함한 눈 감염을 줄임), <strong>B형 간염 백신 1차 접종</strong>, 그리고 <strong>신생아 대사 선별 채혈</strong>(발뒤꿈치 채혈로 PKU, 갑상선기능저하증, 겸상적혈구병 등 약 30가지 질환 검사). 모두 권장되는 이유는 조기에 개입하지 않을 때의 위험이 처치 자체의 위험보다 크기 때문입니다. 대부분의 주에서 법적으로 거부하실 수 있습니다. 먼저 담당 의료진과 위험에 대해 상의하시기를 권합니다.</p>"
     },
     "faq-first-bath": {
       "title": "아기의 첫 목욕은 언제 시켜야 하나요?",

@@ -1424,6 +1424,12 @@ body.dark .score-result-card { background: #1a1a1a; }
   #print-view .pv-meta { font-size: 12px; color: #666; margin-bottom: 20px; }
   #print-view .pv-row { display: flex; border-bottom: 1px solid #ddd; padding: 8px 0; }
   #print-view .pv-q { flex: 0 0 45%; font-weight: 600; font-size: 13px; }
+  /* English repeated under each line: the care team reading this works in
+     English, while the mother's own language stays the primary read. */
+  #print-view .pv-row.pv-en { border-bottom: none; padding: 0 0 8px; font-size: 11.5px; color: #555; font-style: italic; }
+  #print-view .pv-row.pv-en .pv-q { font-weight: 500; font-size: 11.5px; }
+  #print-view .pv-row.pv-en .pv-a { font-size: 11.5px; }
+  #print-view .pv-h1-en { font-weight: 400; opacity: 0.72; }
   #print-view .pv-a { flex: 1; font-size: 13px; }
   #print-view .pv-notes { margin-top: 20px; font-size: 13px; white-space: pre-wrap; border-top: 2px solid #111; padding-top: 12px; }
   #print-view .pv-footer { margin-top: 20px; font-size: 11px; color: #999; }
@@ -1746,3 +1752,4 @@ body.dark #translation-notice {
   border: 1.5px solid rgba(255,255,255,0.35);
   background: rgba(255,255,255,0.1);
 }
+

@@ -985,9 +985,20 @@ function migrateBirthPlan(saved) {
   return out;
 }
 
-// Label lookups — the only place birth-plan display text is produced.
+// Label lookups: the only place birth-plan display text is produced.
 function bpQuestionLabel(key) { return I18n.t('tool.birthplan.q.' + key + '.label'); }
 function bpOptionLabel(key, optId) { return I18n.t('tool.birthplan.q.' + key + '.opt.' + optId); }
+
+// The printed plan is read by an English-speaking care team, so it always
+// carries English alongside the mother's language. Resolved straight from the
+// English catalog rather than by switching locale, so nothing on screen moves.
+function bpEn(path) {
+  const en = (window.MYOB_LOCALES.en || {}).ui;
+  return path.split('.').reduce((o, k) => (o == null ? undefined : o[k]), en) || '';
+}
+function bpQuestionLabelEn(key) { return bpEn('tool.birthplan.q.' + key + '.label'); }
+function bpOptionLabelEn(key, optId) { return bpEn('tool.birthplan.q.' + key + '.opt.' + optId); }
+function bpIsEnglish() { return I18n.lang === 'en'; }
 
 let birthPlanAnswers = migrateBirthPlan(JSON.parse(localStorage.getItem('birth-plan') || '{}'));
 
@@ -1076,12 +1087,20 @@ function renderBirthPlanSummary() {
 }
 
 function copyBirthPlan() {
-  const lines = ['MY BIRTH PREFERENCES\n'];
+  const bilingual = !bpIsEnglish();
+  const lines = [bilingual
+    ? `${I18n.t('tool.birthplan.myBirthPreferences')} / ${bpEn('tool.birthplan.myBirthPreferences')}\n`
+    : 'MY BIRTH PREFERENCES\n'];
   BIRTH_PLAN_QUESTIONS.forEach(q => {
     const v = birthPlanAnswers[q.key];
     if (v && (!Array.isArray(v) || v.length)) {
-      const disp = (Array.isArray(v) ? v : [v]).map(id => bpOptionLabel(q.key, id)).join(', ');
+      const ids = Array.isArray(v) ? v : [v];
+      const disp = ids.map(id => bpOptionLabel(q.key, id)).join(', ');
       lines.push(`• ${bpQuestionLabel(q.key)}: ${disp}`);
+      if (bilingual) {
+        const dispEn = ids.map(id => bpOptionLabelEn(q.key, id)).join(', ');
+        lines.push(`  (EN) ${bpQuestionLabelEn(q.key)}: ${dispEn}`);
+      }
     }
   });
   const notes = (document.getElementById('bp-notes') || {}).value
@@ -1103,10 +1122,15 @@ function printBirthPlan() {
     const v = birthPlanAnswers[q.key];
     return v && (!Array.isArray(v) || v.length);
   });
+  const bilingual = !bpIsEnglish();
   const rows = answered.map(q => {
     const v = birthPlanAnswers[q.key];
-    const display = (Array.isArray(v) ? v : [v]).map(id => bpOptionLabel(q.key, id)).join(', ');
-    return `<div class="pv-row"><span class="pv-q">${bpQuestionLabel(q.key)}</span><span class="pv-a">${display}</span></div>`;
+    const ids = Array.isArray(v) ? v : [v];
+    const display = ids.map(id => bpOptionLabel(q.key, id)).join(', ');
+    const en = bilingual
+      ? `<div class="pv-row pv-en" lang="en" dir="ltr"><span class="pv-q">${escHtml(bpQuestionLabelEn(q.key))}</span><span class="pv-a">${escHtml(ids.map(id => bpOptionLabelEn(q.key, id)).join(', '))}</span></div>`
+      : '';
+    return `<div class="pv-row"><span class="pv-q">${escHtml(bpQuestionLabel(q.key))}</span><span class="pv-a">${escHtml(display)}</span></div>${en}`;
   }).join('');
   const notes = (document.getElementById('bp-notes') || {}).value
     || localStorage.getItem('birth-plan-notes') || '';
@@ -1114,7 +1138,8 @@ function printBirthPlan() {
     ? `<div class="pv-notes"><strong>${t('tool.birthplan.additionalNotes')}</strong><br>${notes.trim().replace(/\n/g, '<br>')}</div>`
     : '';
   pv.innerHTML = `
-    <h1>${t('tool.birthplan.myBirthPreferences')}</h1>
+    <h1>${escHtml(t('tool.birthplan.myBirthPreferences'))}${
+      bilingual ? `<span class="pv-h1-en"> / ${escHtml(bpEn('tool.birthplan.myBirthPreferences'))}</span>` : ''}</h1>
     <div class="pv-meta">${I18n.t('tool.birthplan.generatedOn', { date: I18n.fmt.dateLong(Date.now()) })}</div>
     ${rows}
     ${notesHtml}

@@ -122,7 +122,7 @@ window.MYOB_LOCALES.es = {
           "epidural": {
             "label": "Preferencia de alivio del dolor",
             "opt": {
-              "epidural": "Sí. Epidural",
+              "epidural": "Sí, epidural",
               "none": "Sin medicamentos",
               "open": "Mantener opciones abiertas",
               "iv": "Solo medicamentos por vía intravenosa"
@@ -147,7 +147,7 @@ window.MYOB_LOCALES.es = {
           "skin-to-skin": {
             "label": "Contacto piel con piel inmediato después del nacimiento",
             "opt": {
-              "top": "Sí. Prioridad máxima",
+              "top": "Sí, prioridad máxima",
               "ifposs": "Sí, si es posible",
               "nopref": "Sin preferencia"
             }
@@ -228,7 +228,8 @@ window.MYOB_LOCALES.es = {
         "anyOtherPreferencesConcernsOr": "¿Otras preferencias, inquietudes o información para su equipo de atención?…",
         "copiedToClipboard": "¡Copiado al portapapeles!",
         "copyNotSupportedOnThis": "Este navegador no permite copiar",
-        "selectPreferences": "Seleccione sus preferencias abajo. Su resumen aparecerá al final y podrá compartirlo con su equipo médico."
+        "selectPreferences": "Seleccione sus preferencias abajo. Su resumen aparecerá al final y podrá compartirlo con su equipo médico.",
+        "generatedOn": "Generado el {date}"
       },
       "kick": {
         "startSession": "Iniciar sesión",
@@ -835,7 +836,7 @@ window.MYOB_LOCALES.es = {
     "faq-newborn-procedures": {
       "title": "¿Tienen que hacerse todos los procedimientos del recién nacido?",
       "sub": "",
-      "body": "<p>Los procedimientos habituales del recién nacido incluyen: <strong>inyección de vitamina K</strong> (previene un trastorno hemorrágico grave, la EHVK, que puede causar un sangrado cerebral mortal), <strong>pomada oftálmica de eritromicina</strong> (previene infecciones oculares, incluida la gonorrea), <strong>primera dosis de la vacuna contra la hepatitis B</strong> y la <strong>extracción de sangre para el cribado metabólico neonatal</strong> (punción del talón para unas 30 enfermedades, entre ellas la fenilcetonuria, el hipotiroidismo y la anemia falciforme). Todos se recomiendan porque el riesgo de no intervenir a tiempo supera los riesgos de los procedimientos. En la mayoría de los estados puede rechazarlos legalmente. Le recomendamos que hable antes de los riesgos con su médico.</p>"
+      "body": "<p>Los procedimientos habituales del recién nacido incluyen: <strong>inyección de vitamina K</strong> (reduce el riesgo de sangrado cerebral mortal), <strong>pomada oftálmica de eritromicina</strong> (reduce las infecciones oculares, incluida la gonorrea), <strong>primera dosis de la vacuna contra la hepatitis B</strong> y la <strong>extracción de sangre para el cribado metabólico neonatal</strong> (punción del talón para unas 30 enfermedades, entre ellas la fenilcetonuria, el hipotiroidismo y la anemia falciforme). Todos se recomiendan porque el riesgo de no intervenir a tiempo supera los riesgos de los procedimientos. En la mayoría de los estados puede rechazarlos legalmente. Le recomendamos que hable antes de los riesgos con su médico.</p>"
     },
     "faq-first-bath": {
       "title": "¿Cuándo necesita mi bebé el primer baño?",

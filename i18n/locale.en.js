@@ -116,7 +116,7 @@ window.MYOB_LOCALES.en = {
           "epidural": {
             "label": "Pain relief preference",
             "opt": {
-              "epidural": "Yes. Epidural",
+              "epidural": "Yes, epidural",
               "none": "No medication",
               "open": "Keep options open",
               "iv": "IV medication only"
@@ -141,7 +141,7 @@ window.MYOB_LOCALES.en = {
           "skin-to-skin": {
             "label": "Immediate skin-to-skin after birth",
             "opt": {
-              "top": "Yes. Top priority",
+              "top": "Yes, top priority",
               "ifposs": "Yes if possible",
               "nopref": "No preference"
             }
@@ -222,7 +222,8 @@ window.MYOB_LOCALES.en = {
         "anyOtherPreferencesConcernsOr": "Any other preferences, concerns, or information for your care team…",
         "copiedToClipboard": "Copied to clipboard!",
         "copyNotSupportedOnThis": "Copy not supported on this browser",
-        "selectPreferences": "Select your preferences below. Your summary will appear at the bottom. You can share it with your care team."
+        "selectPreferences": "Select your preferences below. Your summary will appear at the bottom. You can share it with your care team.",
+        "generatedOn": "Generated {date}"
       },
       "kick": {
         "startSession": "Start Session",
@@ -829,7 +830,7 @@ window.MYOB_LOCALES.en = {
     "faq-newborn-procedures": {
       "title": "Do all newborn procedures have to happen?",
       "sub": "",
-      "body": "<p>Standard newborn procedures include: <strong>Vitamin K injection</strong> (prevents serious bleeding disorder, VKDB, that can cause fatal brain bleeding), <strong>erythromycin eye ointment</strong> (prevents eye infections including gonorrhea), <strong>Hepatitis B vaccine first dose</strong>, and the <strong>newborn metabolic screening blood draw</strong> (heel stick for ~30 conditions including PKU, hypothyroidism, sickle cell). All are recommended because the risk of not intervening early outweighs the risks of the procedures. You may legally decline them in most states. We recommend you discuss the risks with your doctor first.</p>"
+      "body": "<p>Standard newborn procedures include: <strong>Vitamin K injection</strong> (decreases the risk of fatal brain bleeding), <strong>erythromycin eye ointment</strong> (reduces eye infections including gonorrhea), <strong>Hepatitis B vaccine first dose</strong>, and the <strong>newborn metabolic screening blood draw</strong> (heel stick for ~30 conditions including PKU, hypothyroidism, sickle cell). All are recommended because the risk of not intervening early outweighs the risks of the procedures. You may legally decline them in most states. We recommend you discuss the risks with your doctor first.</p>"
     },
     "faq-first-bath": {
       "title": "When does my baby need the first bath?",

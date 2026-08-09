@@ -123,7 +123,7 @@ window.MYOB_LOCALES.fr = {
           "epidural": {
             "label": "Préférence pour le soulagement de la douleur",
             "opt": {
-              "epidural": "Oui. Péridurale",
+              "epidural": "Oui, péridurale",
               "none": "Aucun médicament",
               "open": "Garder les options ouvertes",
               "iv": "Médicaments par IV seulement"
@@ -148,7 +148,7 @@ window.MYOB_LOCALES.fr = {
           "skin-to-skin": {
             "label": "Peau à peau immédiat après la naissance",
             "opt": {
-              "top": "Oui. Priorité absolue",
+              "top": "Oui, priorité absolue",
               "ifposs": "Oui si possible",
               "nopref": "Pas de préférence"
             }
@@ -229,7 +229,8 @@ window.MYOB_LOCALES.fr = {
         "anyOtherPreferencesConcernsOr": "Autres préférences, inquiétudes ou informations pour votre équipe soignante…",
         "copiedToClipboard": "Copié dans le presse-papiers !",
         "copyNotSupportedOnThis": "La copie n’est pas prise en charge par ce navigateur",
-        "selectPreferences": "Sélectionnez vos préférences ci-dessous. Votre résumé apparaîtra en bas et vous pourrez le partager avec votre équipe soignante."
+        "selectPreferences": "Sélectionnez vos préférences ci-dessous. Votre résumé apparaîtra en bas et vous pourrez le partager avec votre équipe soignante.",
+        "generatedOn": "Généré le {date}"
       },
       "kick": {
         "startSession": "Commencer la séance",
@@ -836,7 +837,7 @@ window.MYOB_LOCALES.fr = {
     "faq-newborn-procedures": {
       "title": "Tous les soins du nouveau-né sont-ils obligatoires ?",
       "sub": "",
-      "body": "<p>Les soins standards du nouveau-né comprennent : <strong>l’injection de vitamine K</strong> (prévient un trouble hémorragique grave, la MHNN, qui peut provoquer une hémorragie cérébrale mortelle), <strong>la pommade ophtalmique à l’érythromycine</strong> (prévient les infections oculaires, dont la gonorrhée), <strong>la première dose du vaccin contre l’hépatite B</strong> et <strong>la prise de sang du dépistage néonatal</strong> (piqûre au talon pour une trentaine de maladies, dont la phénylcétonurie, l’hypothyroïdie et la drépanocytose). Tous sont recommandés car le risque de ne pas intervenir tôt dépasse les risques des actes eux-mêmes. Vous pouvez légalement les refuser dans la plupart des États. Nous vous conseillons d’en discuter les risques avec votre médecin au préalable.</p>"
+      "body": "<p>Les soins standards du nouveau-né comprennent : <strong>l’injection de vitamine K</strong> (réduit le risque d’hémorragie cérébrale mortelle), <strong>la pommade ophtalmique à l’érythromycine</strong> (réduit les infections oculaires, dont la gonorrhée), <strong>la première dose du vaccin contre l’hépatite B</strong> et <strong>la prise de sang du dépistage néonatal</strong> (piqûre au talon pour une trentaine de maladies, dont la phénylcétonurie, l’hypothyroïdie et la drépanocytose). Tous sont recommandés car le risque de ne pas intervenir tôt dépasse les risques des actes eux-mêmes. Vous pouvez légalement les refuser dans la plupart des États. Nous vous conseillons d’en discuter les risques avec votre médecin au préalable.</p>"
     },
     "faq-first-bath": {
       "title": "Quand mon bébé a-t-il besoin de son premier bain ?",

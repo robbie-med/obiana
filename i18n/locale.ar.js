@@ -126,7 +126,7 @@ window.MYOB_LOCALES.ar = {
           "epidural": {
             "label": "تفضيل تسكين الألم",
             "opt": {
-              "epidural": "نعم. إيبيدورال",
+              "epidural": "نعم، إيبيدورال",
               "none": "بدون دواء",
               "open": "إبقاء الخيارات مفتوحة",
               "iv": "دواء وريدي فقط"
@@ -151,7 +151,7 @@ window.MYOB_LOCALES.ar = {
           "skin-to-skin": {
             "label": "ملامسة الجلد للجلد فور الولادة",
             "opt": {
-              "top": "نعم. أولوية قصوى",
+              "top": "نعم، أولوية قصوى",
               "ifposs": "نعم إن أمكن",
               "nopref": "لا أفضيلة"
             }
@@ -232,7 +232,8 @@ window.MYOB_LOCALES.ar = {
         "anyOtherPreferencesConcernsOr": "أي تفضيلات أو مخاوف أو معلومات أخرى للفريق الطبي…",
         "copiedToClipboard": "تم النسخ إلى الحافظة!",
         "copyNotSupportedOnThis": "النسخ غير مدعوم في هذا المتصفح",
-        "selectPreferences": "اختاري تفضيلاتك أدناه. سيظهر الملخص في الأسفل ويمكنك مشاركته مع فريق الرعاية."
+        "selectPreferences": "اختاري تفضيلاتك أدناه. سيظهر الملخص في الأسفل ويمكنك مشاركته مع فريق الرعاية.",
+        "generatedOn": "أُنشئ في {date}"
       },
       "kick": {
         "startSession": "بدء الجلسة",

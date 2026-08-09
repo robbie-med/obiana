@@ -227,7 +227,8 @@ window.MYOB_LOCALES.zh = {
         "anyOtherPreferencesConcernsOr": "其他想让医疗团队知道的意愿、顾虑或信息……",
         "copiedToClipboard": "已复制到剪贴板！",
         "copyNotSupportedOnThis": "此浏览器不支持复制",
-        "selectPreferences": "在下方选择你的意愿。摘要会显示在底部，可以分享给你的医疗团队。"
+        "selectPreferences": "在下方选择你的意愿。摘要会显示在底部，可以分享给你的医疗团队。",
+        "generatedOn": "生成于 {date}"
       },
       "kick": {
         "startSession": "开始记录",
