@@ -112,6 +112,22 @@ body {
 #install-btn:active { background: rgba(255,255,255,0.28); }
 #install-btn.visible { display: flex; }
 
+/* On a phone the header holds three controls plus the title, so the install
+   button drops its label and becomes a circle like the other two. The label
+   stays in the DOM for screen readers. */
+@media (max-width: 480px) {
+  #install-btn.visible {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    gap: 0;
+    border-radius: 50%;
+    justify-content: center;
+    flex: 0 0 auto;
+  }
+  #install-btn span { display: none; }
+}
+
 /* Search bar */
 #search-bar {
   /* No vertical padding here. The icon and clear button are absolutely
