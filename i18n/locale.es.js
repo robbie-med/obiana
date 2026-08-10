@@ -435,7 +435,65 @@ window.MYOB_LOCALES.es = {
           "dizzy": "Se marea o se siente desfallecer al ponerse de pie",
           "racingHeart": "Le late el corazón muy deprisa"
         },
-        "callTodayBody": "Los vómitos intensos del embarazo tienen nombre, hiperémesis gravídica, y tienen tratamiento. El verdadero peligro es la deshidratación, no las náuseas en sí. No espere a que pase."
+        "callTodayBody": "Los vómitos intensos del embarazo tienen nombre, hiperémesis gravídica, y tienen tratamiento. El verdadero peligro es la deshidratación, no las náuseas en sí. No espere a que pase.",
+        "strat": {
+          "empty": {
+            "name": "Que su estómago no se vacíe",
+            "how": "Coma algo pequeño antes de tener hambre, y deje galletas junto a la cama para antes de incorporarse."
+          },
+          "bland": {
+            "name": "Comida suave, seca y fría",
+            "how": "La comida fría huele menos. Tostada seca, galletas saladas, arroz blanco, fruta fría."
+          },
+          "fluids": {
+            "name": "Beba a sorbos entre comidas",
+            "how": "Beber mientras come la llena antes. Vaya tomando pequeños sorbos durante el día."
+          },
+          "triggers": {
+            "name": "Identifique lo que se lo provoca",
+            "how": "Los olores suelen ser los culpables. Cocina, café, perfume. Si puede, que cocine otra persona."
+          },
+          "b6": {
+            "name": "Vitamina B6",
+            "how": "Suele ser lo primero que se sugiere. Pregunte a su médico por la dosis antes de empezar."
+          },
+          "ginger": {
+            "name": "Jengibre",
+            "how": "En infusión, cápsulas o caramelos. La evidencia es modesta, pero a algunas mujeres les ayuda mucho."
+          },
+          "acupressure": {
+            "name": "Presión en la muñeca",
+            "how": "Presionar el punto P6, o una pulsera. Vea las instrucciones más abajo."
+          },
+          "vitamin": {
+            "name": "Cambie cuándo toma la vitamina prenatal",
+            "how": "El hierro suele ser el culpable. Tómela por la noche o con comida. Pregunte por una opción con poco hierro."
+          },
+          "rest": {
+            "name": "Descanse y levántese despacio",
+            "how": "El cansancio empeora las náuseas. Siéntese un momento en el borde de la cama antes de ponerse de pie."
+          },
+          "doxylamine": {
+            "name": "Opciones con receta",
+            "how": "La B6 con doxilamina está bien estudiada en el embarazo. Pregunte a su médico si es el momento."
+          }
+        },
+        "thingsToTry": "Cosas que puede probar",
+        "tryNext": "Aún sin probar: {thing}",
+        "triedAll": "Ha marcado todo como probado. Si nada le ayuda, merece una llamada.",
+        "stratNote": "Toque lo que ya haya probado para llevar la cuenta. Consulte a su médico antes de empezar un suplemento o un medicamento.",
+        "howIsItNow": "¿Cómo están las náuseas ahora mismo?",
+        "level1": "Ninguna",
+        "level2": "Leves",
+        "level3": "Fuertes",
+        "level4": "Muy fuertes",
+        "didYouTry": "¿Probó algo? (opcional)",
+        "logged": "Registrado",
+        "whatHelpsYou": "Lo que parece ayudarle",
+        "avgAfter": "media {avg} · {n} veces",
+        "lowerIsBetter": "Cuanto más bajo, mejor. Es solo su propio registro, no una prueba médica.",
+        "recent": "Registros recientes",
+        "noEntries": "Aún no hay registros. Anote cómo se siente varias veces y aquí verá qué le ayuda."
       }
     },
     "theme": {

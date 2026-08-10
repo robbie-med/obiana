@@ -200,6 +200,149 @@ function renderRedFlags() {
     </div>`;
 }
 
+
+// ─── Strategies ─────────────────────────────────────────
+// Ordered roughly by evidence and by what ACOG suggests trying first. Ids are
+// stable and stored; labels come from the catalog, so a saved log entry still
+// reads correctly after switching language.
+const NAUSEA_STRATEGIES = [
+  'empty',      // avoid an empty stomach
+  'bland',      // dry, bland, cold foods
+  'fluids',     // sip fluids between meals rather than with them
+  'triggers',   // avoid personal smell and food triggers
+  'b6',         // vitamin B6
+  'ginger',     // ginger
+  'acupressure',// P6 wristband or pressure
+  'vitamin',    // move the prenatal vitamin, or switch it
+  'rest',       // rest, get up slowly
+  'doxylamine', // B6 plus doxylamine, discuss with clinician
+];
+
+const NAUSEA_TRIED_KEY = 'nausea-tried';
+let nauseaTried = [];
+try { nauseaTried = JSON.parse(localStorage.getItem(NAUSEA_TRIED_KEY) || '[]'); } catch (e) {}
+
+function toggleTried(id) {
+  const i = nauseaTried.indexOf(id);
+  if (i >= 0) nauseaTried.splice(i, 1); else nauseaTried.push(id);
+  try { localStorage.setItem(NAUSEA_TRIED_KEY, JSON.stringify(nauseaTried)); } catch (e) {}
+  initNausea();
+}
+
+function renderStrategies() {
+  const untried = NAUSEA_STRATEGIES.filter(id => !nauseaTried.includes(id));
+  const next = untried[0];
+
+  return `
+    <div style="padding:6px 16px 0">
+      <div class="form-label" style="padding:0 0 6px">${escHtml(I18n.t('tool.nausea.thingsToTry'))}</div>
+      ${next ? `<p style="font-size:12.5px;color:var(--ink-soft);line-height:1.5;margin-bottom:10px">
+        ${escHtml(I18n.t('tool.nausea.tryNext', { thing: I18n.t('tool.nausea.strat.' + next + '.name') }))}
+      </p>` : `<p style="font-size:12.5px;color:var(--ink-soft);margin-bottom:10px">
+        ${escHtml(I18n.t('tool.nausea.triedAll'))}</p>`}
+      <div style="display:flex;flex-direction:column;gap:8px">
+        ${NAUSEA_STRATEGIES.map(id => {
+          const on = nauseaTried.includes(id);
+          return `<button type="button" class="nausea-strat${on ? ' tried' : ''}" data-strat="${id}"
+                    aria-pressed="${on}">
+                    <span class="nausea-strat-check" aria-hidden="true">${on ? '✓' : ''}</span>
+                    <span>
+                      <span class="nausea-strat-name">${escHtml(I18n.t('tool.nausea.strat.' + id + '.name'))}</span>
+                      <span class="nausea-strat-how">${escHtml(I18n.t('tool.nausea.strat.' + id + '.how'))}</span>
+                    </span>
+                  </button>`;
+        }).join('')}
+      </div>
+      <p style="font-size:11.5px;color:var(--ink-soft);line-height:1.5;margin-top:10px">
+        ${escHtml(I18n.t('tool.nausea.stratNote'))}
+      </p>
+    </div>`;
+}
+
+// ─── Symptom and intervention log ───────────────────────
+// The point is not a chart. It is answering "does this actually help ME",
+// which averages across women cannot answer.
+function saveNauseaLog() {
+  nauseaLog = nauseaLog.slice(0, 200);
+  try { localStorage.setItem(NAUSEA_LOG_KEY, JSON.stringify(nauseaLog)); } catch (e) {}
+}
+
+function addNauseaEntry(level, strat) {
+  nauseaLog.unshift({ ts: Date.now(), level, strat: strat || null });
+  saveNauseaLog();
+  initNausea();
+  showToast(I18n.t('tool.nausea.logged'));
+}
+
+function deleteNauseaEntry(ts) {
+  nauseaLog = nauseaLog.filter(e => e.ts !== ts);
+  saveNauseaLog();
+  initNausea();
+}
+
+// Average nausea level after each strategy, worst first. Needs at least two
+// entries before it says anything: one data point is not a finding.
+function strategyEffect() {
+  const by = {};
+  nauseaLog.forEach(e => {
+    if (!e.strat) return;
+    (by[e.strat] ||= []).push(e.level);
+  });
+  return Object.entries(by)
+    .filter(([, v]) => v.length >= 2)
+    .map(([id, v]) => ({ id, n: v.length, avg: v.reduce((a, b) => a + b, 0) / v.length }))
+    .sort((a, b) => a.avg - b.avg);
+}
+
+function renderNauseaLog() {
+  const LEVELS = [1, 2, 3, 4];
+  const effect = strategyEffect();
+
+  return `
+    <div style="padding:14px 16px 0">
+      <div class="form-label" style="padding:0 0 6px">${escHtml(I18n.t('tool.nausea.howIsItNow'))}</div>
+      <div class="btn-row" style="margin-bottom:8px">
+        ${LEVELS.map(n => `<button class="btn-sm nausea-level" data-level="${n}" style="flex:1">
+            ${escHtml(I18n.t('tool.nausea.level' + n))}</button>`).join('')}
+      </div>
+      <select class="tool-select" id="nausea-log-strat" style="width:100%">
+        <option value="">${escHtml(I18n.t('tool.nausea.didYouTry'))}</option>
+        ${NAUSEA_STRATEGIES.map(id =>
+          `<option value="${id}">${escHtml(I18n.t('tool.nausea.strat.' + id + '.name'))}</option>`).join('')}
+      </select>
+
+      ${effect.length ? `
+        <div class="callout" style="margin:14px 0 0;text-align:start">
+          <div class="callout-title">${escHtml(I18n.t('tool.nausea.whatHelpsYou'))}</div>
+          ${effect.map(e => `<div style="display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:3px 0">
+              <span>${escHtml(I18n.t('tool.nausea.strat.' + e.id + '.name'))}</span>
+              <span style="color:var(--ink-soft);white-space:nowrap">
+                ${escHtml(I18n.t('tool.nausea.avgAfter', { avg: e.avg.toFixed(1), n: e.n }))}
+              </span>
+            </div>`).join('')}
+          <p style="margin-top:6px">${escHtml(I18n.t('tool.nausea.lowerIsBetter'))}</p>
+        </div>` : ''}
+
+      ${nauseaLog.length ? `
+        <div class="history-section-title" style="margin-top:14px">${escHtml(I18n.t('tool.nausea.recent'))}</div>
+        ${nauseaLog.slice(0, 10).map(e => `
+          <div class="history-row">
+            <div>
+              <div style="font-weight:600;font-size:13px">${escHtml(I18n.t('tool.nausea.level' + e.level))}</div>
+              <div style="font-size:11.5px;color:var(--ink-soft)">
+                ${escHtml(I18n.fmt.dateTime(e.ts))}${e.strat
+                  ? ' · ' + escHtml(I18n.t('tool.nausea.strat.' + e.strat + '.name')) : ''}
+              </div>
+            </div>
+            <button class="btn-sm" data-del="${e.ts}"
+              style="background:none;border:none;color:var(--rose);font-size:11.5px;text-decoration:underline">
+              ${escHtml(I18n.t('tool.appts.delete'))}
+            </button>
+          </div>`).join('')}` : `
+        <p class="history-empty" style="margin-top:12px">${escHtml(I18n.t('tool.nausea.noEntries'))}</p>`}
+    </div>`;
+}
+
 function renderSnackClock() {
   const snacks = snacksForToday();
   const nowHour = new Date().getHours();
@@ -262,7 +405,20 @@ function initNausea() {
     </div>
     ${renderTimeline()}
     ${renderSnackClock()}
-    ${renderRedFlags()}`;
+    ${renderRedFlags()}
+    ${renderStrategies()}
+    ${renderNauseaLog()}
+    <div style="height:20px"></div>`;
+
+  el.querySelectorAll('[data-strat]').forEach(b =>
+    b.addEventListener('click', () => toggleTried(b.dataset.strat)));
+
+  el.querySelectorAll('.nausea-level').forEach(b =>
+    b.addEventListener('click', () => addNauseaEntry(
+      +b.dataset.level, document.getElementById('nausea-log-strat').value)));
+
+  el.querySelectorAll('[data-del]').forEach(b =>
+    b.addEventListener('click', () => deleteNauseaEntry(+b.dataset.del)));
 
   const setBtn = document.getElementById('nausea-week-set');
   if (setBtn) setBtn.addEventListener('click', () =>

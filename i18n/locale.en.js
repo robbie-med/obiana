@@ -429,7 +429,65 @@ window.MYOB_LOCALES.en = {
           "dizzy": "You feel dizzy or faint when you stand up",
           "racingHeart": "Your heart is racing"
         },
-        "callTodayBody": "Severe pregnancy sickness has a name, hyperemesis gravidarum, and it is treatable. The real danger is dehydration, not the nausea itself. Do not wait it out."
+        "callTodayBody": "Severe pregnancy sickness has a name, hyperemesis gravidarum, and it is treatable. The real danger is dehydration, not the nausea itself. Do not wait it out.",
+        "strat": {
+          "empty": {
+            "name": "Never let your stomach get empty",
+            "how": "Eat something small before you get hungry, and keep crackers by the bed for before you sit up."
+          },
+          "bland": {
+            "name": "Bland, dry, cold food",
+            "how": "Cold food smells less. Dry toast, crackers, plain rice, cold fruit."
+          },
+          "fluids": {
+            "name": "Sip fluids between meals",
+            "how": "Drinking with food fills you up faster. Sip small amounts all day instead."
+          },
+          "triggers": {
+            "name": "Learn your triggers",
+            "how": "Smells are the usual culprit. Cooking, coffee, perfume. Let someone else cook if you can."
+          },
+          "b6": {
+            "name": "Vitamin B6",
+            "how": "Commonly suggested first. Ask your doctor about the dose before starting."
+          },
+          "ginger": {
+            "name": "Ginger",
+            "how": "Tea, capsules, or chews. Modest evidence, and it helps some women a lot."
+          },
+          "acupressure": {
+            "name": "Wrist pressure",
+            "how": "Pressing the P6 point, or a wristband. See the instructions below."
+          },
+          "vitamin": {
+            "name": "Move your prenatal vitamin",
+            "how": "Iron is a common culprit. Take it at night, or with food. Ask about a low-iron option."
+          },
+          "rest": {
+            "name": "Rest, and get up slowly",
+            "how": "Tiredness makes nausea worse. Sit on the edge of the bed a moment before standing."
+          },
+          "doxylamine": {
+            "name": "Prescription options",
+            "how": "B6 with doxylamine is well studied in pregnancy. Ask your doctor if it is time."
+          }
+        },
+        "thingsToTry": "Things to try",
+        "tryNext": "Not tried yet: {thing}",
+        "triedAll": "You have marked everything as tried. If nothing is helping, that is worth a call.",
+        "stratNote": "Tap anything you have tried to keep track. Ask your doctor before starting a supplement or medicine.",
+        "howIsItNow": "How is the nausea right now?",
+        "level1": "None",
+        "level2": "Mild",
+        "level3": "Bad",
+        "level4": "Severe",
+        "didYouTry": "Did you try something? (optional)",
+        "logged": "Logged",
+        "whatHelpsYou": "What seems to help you",
+        "avgAfter": "avg {avg} · {n} times",
+        "lowerIsBetter": "Lower is better. This is only your own record, not medical proof.",
+        "recent": "Recent entries",
+        "noEntries": "No entries yet. Log how you feel a few times and this will show what helps you."
       }
     },
     "theme": {

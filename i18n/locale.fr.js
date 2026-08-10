@@ -436,7 +436,65 @@ window.MYOB_LOCALES.fr = {
           "dizzy": "Vous avez des vertiges ou vous vous sentez défaillir en vous levant",
           "racingHeart": "Votre cœur bat très vite"
         },
-        "callTodayBody": "Les vomissements sévères de la grossesse ont un nom, l’hyperémèse gravidique, et cela se traite. Le vrai danger est la déshydratation, pas la nausée elle-même. N’attendez pas que cela passe."
+        "callTodayBody": "Les vomissements sévères de la grossesse ont un nom, l’hyperémèse gravidique, et cela se traite. Le vrai danger est la déshydratation, pas la nausée elle-même. N’attendez pas que cela passe.",
+        "strat": {
+          "empty": {
+            "name": "Ne restez jamais l’estomac vide",
+            "how": "Mangez un peu avant d’avoir faim, et gardez des biscuits près du lit pour avant de vous lever."
+          },
+          "bland": {
+            "name": "Aliments fades, secs et froids",
+            "how": "Les aliments froids sentent moins. Pain grillé sec, biscuits salés, riz nature, fruits froids."
+          },
+          "fluids": {
+            "name": "Buvez par petites gorgées entre les repas",
+            "how": "Boire en mangeant remplit plus vite. Buvez plutôt un peu tout au long de la journée."
+          },
+          "triggers": {
+            "name": "Repérez vos déclencheurs",
+            "how": "Les odeurs sont souvent en cause. Cuisine, café, parfum. Faites cuisiner quelqu’un d’autre si possible."
+          },
+          "b6": {
+            "name": "Vitamine B6",
+            "how": "Souvent proposée en premier. Demandez la dose à votre médecin avant de commencer."
+          },
+          "ginger": {
+            "name": "Gingembre",
+            "how": "En tisane, en gélules ou à croquer. Les preuves sont modestes, mais cela aide beaucoup certaines femmes."
+          },
+          "acupressure": {
+            "name": "Pression sur le poignet",
+            "how": "Presser le point P6, ou porter un bracelet. Voir les instructions plus bas."
+          },
+          "vitamin": {
+            "name": "Changez le moment de la vitamine prénatale",
+            "how": "Le fer est souvent en cause. Prenez-la le soir, ou avec un repas. Demandez une option pauvre en fer."
+          },
+          "rest": {
+            "name": "Reposez-vous et levez-vous doucement",
+            "how": "La fatigue aggrave les nausées. Asseyez-vous un instant au bord du lit avant de vous lever."
+          },
+          "doxylamine": {
+            "name": "Options sur ordonnance",
+            "how": "La B6 avec doxylamine est bien étudiée pendant la grossesse. Demandez à votre médecin si le moment est venu."
+          }
+        },
+        "thingsToTry": "Choses à essayer",
+        "tryNext": "Pas encore essayé : {thing}",
+        "triedAll": "Vous avez tout marqué comme essayé. Si rien ne soulage, cela mérite un appel.",
+        "stratNote": "Touchez ce que vous avez déjà essayé pour le suivre. Demandez à votre médecin avant de commencer un complément ou un médicament.",
+        "howIsItNow": "Comment sont les nausées en ce moment ?",
+        "level1": "Aucune",
+        "level2": "Légères",
+        "level3": "Fortes",
+        "level4": "Très fortes",
+        "didYouTry": "Avez-vous essayé quelque chose ? (facultatif)",
+        "logged": "Enregistré",
+        "whatHelpsYou": "Ce qui semble vous aider",
+        "avgAfter": "moyenne {avg} · {n} fois",
+        "lowerIsBetter": "Plus c’est bas, mieux c’est. C’est votre propre relevé, pas une preuve médicale.",
+        "recent": "Entrées récentes",
+        "noEntries": "Aucune entrée pour le moment. Notez comment vous vous sentez plusieurs fois et vous verrez ce qui vous aide."
       }
     },
     "theme": {
