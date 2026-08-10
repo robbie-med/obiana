@@ -494,7 +494,17 @@ window.MYOB_LOCALES.fr = {
         "avgAfter": "moyenne {avg} · {n} fois",
         "lowerIsBetter": "Plus c’est bas, mieux c’est. C’est votre propre relevé, pas une preuve médicale.",
         "recent": "Entrées récentes",
-        "noEntries": "Aucune entrée pour le moment. Notez comment vous vous sentez plusieurs fois et vous verrez ce qui vous aide."
+        "noEntries": "Aucune entrée pour le moment. Notez comment vous vous sentez plusieurs fois et vous verrez ce qui vous aide.",
+        "acuTitle": "Pression au poignet (le point P6)",
+        "acuIntro": "Les preuves sont partagées, mais cela ne coûte rien, n’a pas d’effets secondaires et soulage certaines femmes. Cela vaut dix minutes d’essai.",
+        "acuBands": "Les bracelets élastiques munis d’un bouton en plastique, vendus contre le mal des transports, appuient sur ce même point. Portez-en un à chaque poignet.",
+        "acu": {
+          "find": "Tournez une main paume vers le haut, doigts détendus.",
+          "measure": "Posez trois doigts de l’autre main en travers du poignet, le doigt le plus proche de la main reposant sur le pli où la main rejoint le bras.",
+          "feel": "Le point se trouve juste après le troisième doigt, au milieu du poignet. En palpant, vous sentirez deux cordons fermes qui descendent le long du bras. Le point est entre les deux.",
+          "press": "Appuyez fermement avec le pouce, assez pour le sentir mais sans douleur. Petits cercles ou pression continue, pendant deux à trois minutes.",
+          "both": "Faites de même sur l’autre poignet. Recommencez chaque fois que la nausée monte."
+        }
       }
     },
     "theme": {
@@ -943,6 +953,11 @@ window.MYOB_LOCALES.fr = {
       "title": "Quand mon bébé a-t-il besoin de son premier bain ?",
       "sub": "",
       "body": "<p>L'OMS et l'AAP recommandent désormais d'attendre au moins 24 heures après la naissance avant le premier bain (idéalement 48 heures). L'enduit blanc sur la peau (le vernix caseosa) a des propriétés antimicrobiennes et aide à hydrater la peau. Reporter le bain aide aussi à garder une bonne température corporelle, à stabiliser la glycémie, et est associé à un meilleur démarrage de l'allaitement. Attendre est la meilleure pratique actuelle, pas seulement une préférence.</p>"
+    },
+    "prenatal-vitamins": {
+      "title": "Vitamines prénatales",
+      "sub": "Ce qui compte vraiment, et que faire si elles vous rendent malade",
+      "body": "<p class=\"lead\">Les vitamines prénatales valent la peine, mais la raison pour laquelle on y tient tant est plus précise que la plupart des patientes ne l’imaginent, et elles sont une cause fréquente de nausées.</p><h4>Ce qui compte vraiment</h4><ul><li><strong>L’acide folique</strong> est celui dont les preuves sont les plus solides. Prendre 400 à 800 mcg par jour avant la conception et en début de grossesse réduit nettement les anomalies du tube neural. Cette protection joue dès les premières semaines, souvent avant que la grossesse soit confirmée.</li><li><strong>Le fer</strong> accompagne la forte augmentation de votre volume sanguin et aide à prévenir l’anémie.</li><li><strong>L’iode, la vitamine D, le calcium et le DHA</strong> sont souvent inclus et raisonnables, même si les preuves sont plus faibles que pour l’acide folique.</li></ul><div class=\"callout gold\"><div class=\"callout-title\">Si la vitamine vous donne la nausée</div><p>Le fer est généralement en cause. Essayez de la prendre le soir, ou avec un repas plutôt qu’à jeun. Demandez à votre médecin une formule moins riche en fer, ou de prendre l’acide folique seul le temps que les nausées se calment. Une vitamine que vous arrivez à prendre vaut mieux qu’une meilleure que vous ne gardez pas.</p></div><h4>Gommes, comprimés à croquer et prix</h4><p>Les gommes prénatales se tolèrent mieux mais ne contiennent presque jamais de fer, que vous devrez alors prendre à part. Les vitamines de marque distributeur répondent aux mêmes normes que les plus chères. Inutile de payer davantage.</p><p>Si le prix est un obstacle, dites-le. L’acide folique seul est peu coûteux, et les cliniques peuvent souvent aider.</p><h4>Ce qu’il ne faut pas prendre</h4><p>Évitez les suppléments de vitamine A à forte dose, qui peuvent nuire au bébé. Ne doublez pas la dose de prénatale pour obtenir plus d’un composant. Si vous prenez d’autres compléments ou des produits à base de plantes, apportez les boîtes à votre prochaine visite.</p>"
     }
   }
 };

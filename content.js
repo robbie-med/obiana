@@ -14,6 +14,11 @@ const CONTENT_STRUCTURE = {
       "color": ""
     },
     {
+      "id": "prenatal-vitamins",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--teal)\" stroke-width=\"2\"><path d=\"M10.5 20.5a6 6 0 01-8.49-8.49l9.5-9.5a6 6 0 018.49 8.49z\"/><path d=\"M6.5 6.5l11 11\"/></svg>",
+      "color": ""
+    },
+    {
       "id": "second-trimester",
       "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--teal)\" stroke-width=\"2\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"18\" rx=\"2\"/><line x1=\"16\" y1=\"2\" x2=\"16\" y2=\"6\"/><line x1=\"8\" y1=\"2\" x2=\"8\" y2=\"6\"/><line x1=\"3\" y1=\"10\" x2=\"21\" y2=\"10\"/></svg>",
       "color": ""

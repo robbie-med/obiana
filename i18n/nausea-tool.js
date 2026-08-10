@@ -343,6 +343,28 @@ function renderNauseaLog() {
     </div>`;
 }
 
+
+// ─── Acupressure ────────────────────────────────────────
+// Text only, deliberately. A diagram with baked-in labels cannot be
+// translated, and a described location the reader finds on her own arm is more
+// reliable than a picture she has to map onto herself anyway.
+function renderAcupressure() {
+  const steps = ['find', 'measure', 'feel', 'press', 'both'];
+  return `
+    <div style="padding:14px 16px 0">
+      <div class="form-label" style="padding:0 0 6px">${escHtml(I18n.t('tool.nausea.acuTitle'))}</div>
+      <p style="font-size:12.5px;color:var(--ink-soft);line-height:1.55;margin-bottom:10px">
+        ${escHtml(I18n.t('tool.nausea.acuIntro'))}
+      </p>
+      <ol style="margin:0;padding-inline-start:20px;font-size:13.5px;line-height:1.7;color:var(--ink)">
+        ${steps.map(k => `<li style="margin-bottom:6px">${escHtml(I18n.t('tool.nausea.acu.' + k))}</li>`).join('')}
+      </ol>
+      <p style="font-size:12.5px;color:var(--ink-soft);line-height:1.55;margin-top:10px">
+        ${escHtml(I18n.t('tool.nausea.acuBands'))}
+      </p>
+    </div>`;
+}
+
 function renderSnackClock() {
   const snacks = snacksForToday();
   const nowHour = new Date().getHours();
@@ -408,6 +430,7 @@ function initNausea() {
     ${renderRedFlags()}
     ${renderStrategies()}
     ${renderNauseaLog()}
+    ${renderAcupressure()}
     <div style="height:20px"></div>`;
 
   el.querySelectorAll('[data-strat]').forEach(b =>

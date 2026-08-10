@@ -493,7 +493,17 @@ window.MYOB_LOCALES.es = {
         "avgAfter": "media {avg} · {n} veces",
         "lowerIsBetter": "Cuanto más bajo, mejor. Es solo su propio registro, no una prueba médica.",
         "recent": "Registros recientes",
-        "noEntries": "Aún no hay registros. Anote cómo se siente varias veces y aquí verá qué le ayuda."
+        "noEntries": "Aún no hay registros. Anote cómo se siente varias veces y aquí verá qué le ayuda.",
+        "acuTitle": "Presión en la muñeca (el punto P6)",
+        "acuIntro": "La evidencia es dispar, pero no cuesta nada, no tiene efectos secundarios y a algunas mujeres les ayuda. Merece diez minutos comprobarlo.",
+        "acuBands": "Las pulseras elásticas con un botón de plástico, que se venden para el mareo en los viajes, presionan ese mismo punto. Póngase una en cada muñeca.",
+        "acu": {
+          "find": "Ponga una mano con la palma hacia arriba y los dedos relajados.",
+          "measure": "Apoye tres dedos de la otra mano cruzados sobre la muñeca, de modo que el dedo más cercano a la mano quede sobre el pliegue donde la mano se une al brazo.",
+          "feel": "El punto está justo después del tercer dedo, en el centro de la muñeca. Al palpar notará dos cordones firmes que recorren el brazo. El punto está entre ellos.",
+          "press": "Presione con firmeza con el pulgar, lo bastante para notarlo pero sin que duela. Haga círculos pequeños o mantenga la presión, de dos a tres minutos.",
+          "both": "Haga lo mismo en la otra muñeca. Repita siempre que aumenten las náuseas."
+        }
       }
     },
     "theme": {
@@ -942,6 +952,11 @@ window.MYOB_LOCALES.es = {
       "title": "¿Cuándo necesita mi bebé el primer baño?",
       "sub": "",
       "body": "<p>La OMS y la AAP ahora recomiendan retrasar el primer baño al menos 24 horas después del nacimiento (lo ideal son 48 horas). La capa blanca que cubre al bebé (vérnix caseosa) tiene propiedades antimicrobianas y ayuda a humectar la piel. Retrasar el baño también ayuda a mantener la temperatura corporal, favorece la estabilidad del azúcar en la sangre y se asocia con un mejor inicio de la lactancia materna. Esperar es la mejor práctica actual, no solo una preferencia.</p>"
+    },
+    "prenatal-vitamins": {
+      "title": "Vitaminas prenatales",
+      "sub": "Qué parte importa y qué hacer si le sientan mal",
+      "body": "<p class=\"lead\">Vale la pena tomar las vitaminas prenatales, pero el motivo por el que se insiste tanto en ellas es más concreto de lo que la mayoría imagina, y son una causa frecuente de náuseas.</p><h4>Lo que de verdad importa</h4><ul><li><strong>El ácido fólico</strong> es el que tiene la evidencia más sólida. Tomar de 400 a 800 mcg al día antes de la concepción y durante el embarazo temprano reduce mucho los defectos del tubo neural. Esa protección ocurre en las primeras semanas, a menudo antes de confirmar el embarazo.</li><li><strong>El hierro</strong> acompaña el gran aumento del volumen de sangre y ayuda a prevenir la anemia.</li><li><strong>El yodo, la vitamina D, el calcio y el DHA</strong> suelen incluirse y son razonables, aunque la evidencia de cada uno es más débil que la del ácido fólico.</li></ul><div class=\"callout gold\"><div class=\"callout-title\">Si la vitamina le da náuseas</div><p>El hierro suele ser el culpable. Pruebe a tomarla por la noche, o con comida en lugar de en ayunas. Pregunte a su médico por una fórmula con menos hierro, o por tomar solo ácido fólico hasta que las náuseas se calmen. Una vitamina que sí puede tomar es mejor que otra mejor que no le sienta.</p></div><h4>Gomitas, masticables y precio</h4><p>Las gomitas prenatales se toleran mejor, pero casi nunca llevan hierro, así que puede necesitarlo aparte. Las vitaminas de marca blanca cumplen las mismas normas que las caras. No hace falta pagar más.</p><p>Si el precio es un obstáculo, dígalo. El ácido fólico solo es barato, y las clínicas suelen poder ayudar.</p><h4>Lo que no debe tomar</h4><p>Evite los suplementos de vitamina A en dosis altas, que pueden dañar al bebé en desarrollo. No tome doble dosis de la prenatal para obtener más de algo. Si toma otros suplementos o productos de herbolario, lleve los envases a su próxima visita.</p>"
     }
   }
 };

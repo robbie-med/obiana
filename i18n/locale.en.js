@@ -487,7 +487,17 @@ window.MYOB_LOCALES.en = {
         "avgAfter": "avg {avg} · {n} times",
         "lowerIsBetter": "Lower is better. This is only your own record, not medical proof.",
         "recent": "Recent entries",
-        "noEntries": "No entries yet. Log how you feel a few times and this will show what helps you."
+        "noEntries": "No entries yet. Log how you feel a few times and this will show what helps you.",
+        "acuTitle": "Wrist pressure (the P6 point)",
+        "acuIntro": "Evidence is mixed, but it costs nothing, has no side effects, and helps some women. Worth ten minutes to find out.",
+        "acuBands": "Elastic wristbands with a plastic stud, sold for travel sickness, press the same point. Wear one on each wrist.",
+        "acu": {
+          "find": "Turn one hand palm up, fingers relaxed.",
+          "measure": "Lay three fingers of your other hand across the wrist, with the finger nearest your hand sitting on the crease where your hand meets your arm.",
+          "feel": "The point is just past your third finger, in the middle of the wrist. Press around and you should feel two firm cords running down the arm. The point sits between them.",
+          "press": "Press firmly with your thumb, hard enough to feel it but not to hurt. Small circles or steady pressure, for two to three minutes.",
+          "both": "Do the same on the other wrist. Repeat whenever the nausea rises."
+        }
       }
     },
     "theme": {
@@ -936,6 +946,11 @@ window.MYOB_LOCALES.en = {
       "title": "When does my baby need the first bath?",
       "sub": "",
       "body": "<p>WHO and AAP now recommend delaying the first bath for at least 24 hours after birth (ideally 48 hours). The white coating (vernix caseosa) has antimicrobial properties and helps moisturize skin. Delaying the bath also helps maintain body temperature, supports blood sugar stability, and is associated with improved breastfeeding initiation. Waiting is the current best practice, not just preference.</p>"
+    },
+    "prenatal-vitamins": {
+      "title": "Prenatal Vitamins",
+      "sub": "Which part matters, and what to do if they make you sick",
+      "body": "<p class=\"lead\">Prenatal vitamins are worth taking, but the reason people insist on them is narrower than most patients realise, and they are a common cause of nausea.</p><h4>What actually matters</h4><ul><li><strong>Folic acid</strong> is the one with the strongest evidence. Taking 400 to 800 mcg daily before conception and through early pregnancy substantially reduces neural tube defects. That protection happens in the first weeks, often before a pregnancy is confirmed.</li><li><strong>Iron</strong> supports the large increase in your blood volume and helps prevent anaemia.</li><li><strong>Iodine, vitamin D, calcium and DHA</strong> are commonly included and reasonable, though the evidence for each is weaker than for folic acid.</li></ul><div class=\"callout gold\"><div class=\"callout-title\">If the vitamin makes you nauseated</div><p>Iron is usually the culprit. Try taking it at night, or with food rather than on an empty stomach. Ask your doctor about a lower-iron formulation, or about taking folic acid on its own until the nausea settles. A vitamin you actually take beats a better one you cannot keep down.</p></div><h4>Gummies, chewables and cost</h4><p>Gummy prenatals are easier to tolerate but usually contain no iron, so you may need iron separately. Store-brand vitamins are held to the same standards as expensive ones. There is no need to pay more.</p><p>If cost is a barrier, say so. Folic acid on its own is inexpensive, and clinics can often help.</p><h4>What not to take</h4><p>Avoid vitamin A supplements in high doses, which can harm a developing baby. Do not double up on a prenatal to get more of something. If you take other supplements or herbal products, bring the actual bottles to your next visit.</p>"
     }
   }
 };
