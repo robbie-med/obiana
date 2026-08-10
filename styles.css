@@ -1786,3 +1786,9 @@ body.dark #translation-notice {
   font-weight: 600;
   text-decoration: underline;
 }
+
+/* Nausea tool: 24-hour snack clock. Computed geometry, not artwork. */
+.snack-clock { width: 100%; max-width: 260px; height: auto; }
+.snack-wedge { cursor: pointer; transition: opacity .12s; outline: none; }
+.snack-wedge:hover { opacity: 0.75 !important; }
+.snack-wedge:focus-visible { stroke: var(--ink); stroke-width: 1.2; }

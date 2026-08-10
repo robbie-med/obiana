@@ -398,6 +398,16 @@ window.MYOB_LOCALES.en = {
         "failed": "Could not send. Your text is saved here.",
         "rateLimited": "Too many messages, please try again later",
         "offline": "Offline. Your text is saved here."
+      },
+      "nausea": {
+        "intro": "Nausea is usually worse on an empty stomach, so small amounts often beat big meals. Tap each hour you ate or drank something. The point is not how much, it is how long the gaps are.",
+        "clockLabel": "24-hour snack clock",
+        "snacksToday": "today",
+        "tapHour": "Tap an hour to mark that you ate",
+        "hourLabel": "Hour {hour}",
+        "longestGap": "Longest gap without eating",
+        "gapOk": "{hours} hours. Try to keep gaps under about 3 hours while you are awake.",
+        "gapLong": "{hours} hours. Long gaps make nausea worse. Try something small, even a few bites."
       }
     },
     "theme": {
@@ -499,7 +509,10 @@ window.MYOB_LOCALES.en = {
       "reviewSuggestWording": "Review wording · Suggest a better translation",
       "improveGuide": "Help Improve This Guide",
       "shareCustomAsk": "Share how it is done in your culture · Ask about anything unclear",
-      "helpUsImprove": "Help Us Improve"
+      "helpUsImprove": "Help Us Improve",
+      "nauseaHelper": "Nausea & Eating",
+      "nauseaHelperDesc": "Snack rhythm · What to try · Track what helps",
+      "feelingWell": "Feeling Well"
     },
     "toolkick": {
       "kickCounter": "Kick Counter"
@@ -613,6 +626,9 @@ window.MYOB_LOCALES.en = {
     "about": {
       "openSource": "Free and open source. Fork it, keep it free.",
       "viewSource": "View source (AGPL-3.0)"
+    },
+    "toolnausea": {
+      "nauseaEating": "Nausea & Eating"
     }
   },
   "content": {

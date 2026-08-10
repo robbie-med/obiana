@@ -403,6 +403,16 @@ window.MYOB_LOCALES.zh = {
         "failed": "发送失败。你写的内容已保存在本机。",
         "rateLimited": "发送太频繁，请稍后再试",
         "offline": "当前离线。你写的内容已保存在本机。"
+      },
+      "nausea": {
+        "intro": "空腹时孕吐通常更明显，所以少量多次比大餐更管用。点一下你吃过或喝过东西的时段。重点不是吃多少，而是两次之间隔了多久。",
+        "clockLabel": "24 小时进食表",
+        "snacksToday": "今天",
+        "tapHour": "点击某个时段表示你吃过东西",
+        "hourLabel": "{hour} 点",
+        "longestGap": "最长的空腹时间",
+        "gapOk": "{hours} 小时。醒着的时候尽量不要超过约 3 小时。",
+        "gapLong": "{hours} 小时。空腹太久会加重孕吐。吃一点点也好，哪怕只有几口。"
       }
     },
     "theme": {
@@ -504,7 +514,10 @@ window.MYOB_LOCALES.zh = {
       "reviewSuggestWording": "检查用词 · 提出更好的翻译",
       "improveGuide": "帮助改进这本指南",
       "shareCustomAsk": "说说你们的文化怎么做 · 问任何不清楚的地方",
-      "helpUsImprove": "帮助我们改进"
+      "helpUsImprove": "帮助我们改进",
+      "nauseaHelper": "孕吐与进食",
+      "nauseaHelperDesc": "进食节奏 · 可以试试 · 记录什么有效",
+      "feelingWell": "照顾自己"
     },
     "toolkick": {
       "kickCounter": "胎动计数器"
@@ -618,6 +631,9 @@ window.MYOB_LOCALES.zh = {
     "about": {
       "openSource": "自由开源软件。欢迎分支，但请保持自由开源。",
       "viewSource": "查看源代码（AGPL-3.0）"
+    },
+    "toolnausea": {
+      "nauseaEating": "孕吐与进食"
     }
   }
 };

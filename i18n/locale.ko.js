@@ -403,6 +403,16 @@ window.MYOB_LOCALES.ko = {
         "failed": "보내지 못했습니다. 입력하신 내용은 여기에 저장되었습니다.",
         "rateLimited": "메시지를 너무 많이 보내셨습니다. 나중에 다시 시도해 주세요",
         "offline": "오프라인입니다. 입력하신 내용은 여기에 저장되었습니다."
+      },
+      "nausea": {
+        "intro": "메스꺼움은 보통 공복일 때 심해집니다. 그래서 많이 한 번보다 조금씩 자주가 낫습니다. 무언가 먹거나 마신 시간을 눌러 표시하세요. 중요한 것은 양이 아니라 사이가 얼마나 벌어지는가입니다.",
+        "clockLabel": "24시간 간식 시계",
+        "snacksToday": "오늘",
+        "tapHour": "먹은 시간을 눌러 표시하세요",
+        "hourLabel": "{hour}시",
+        "longestGap": "가장 길게 안 먹은 시간",
+        "gapOk": "{hours}시간입니다. 깨어 있는 동안에는 3시간 이내로 유지해 보세요.",
+        "gapLong": "{hours}시간입니다. 오래 비우면 메스꺼움이 심해집니다. 몇 입이라도 조금 드셔 보세요."
       }
     },
     "theme": {
@@ -504,7 +514,10 @@ window.MYOB_LOCALES.ko = {
       "reviewSuggestWording": "문구 검토 · 더 나은 번역 제안",
       "improveGuide": "이 안내서 개선에 도움 주기",
       "shareCustomAsk": "우리 문화에서는 어떻게 하는지 알려주기 · 궁금한 점 묻기",
-      "helpUsImprove": "개선에 도움 주기"
+      "helpUsImprove": "개선에 도움 주기",
+      "nauseaHelper": "메스꺼움과 식사",
+      "nauseaHelperDesc": "간식 리듬 · 시도해 볼 것 · 도움이 된 것 기록",
+      "feelingWell": "컨디션 관리"
     },
     "toolkick": {
       "kickCounter": "태동 카운터"
@@ -618,6 +631,9 @@ window.MYOB_LOCALES.ko = {
     "about": {
       "openSource": "자유 오픈소스입니다. 포크하셔도 되지만 자유롭게 유지해 주세요.",
       "viewSource": "소스 코드 보기 (AGPL-3.0)"
+    },
+    "toolnausea": {
+      "nauseaEating": "메스꺼움과 식사"
     }
   },
   "content": {

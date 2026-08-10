@@ -405,6 +405,16 @@ window.MYOB_LOCALES.fr = {
         "failed": "Envoi impossible. Votre texte est enregistré ici.",
         "rateLimited": "Trop de messages, réessayez plus tard",
         "offline": "Hors ligne. Votre texte est enregistré ici."
+      },
+      "nausea": {
+        "intro": "Les nausées sont souvent pires à jeun, donc de petites quantités valent mieux que de gros repas. Touchez chaque heure où vous avez mangé ou bu quelque chose. Ce qui compte n’est pas la quantité, mais la durée des intervalles.",
+        "clockLabel": "Horloge de 24 heures",
+        "snacksToday": "aujourd’hui",
+        "tapHour": "Touchez une heure pour indiquer que vous avez mangé",
+        "hourLabel": "Heure {hour}",
+        "longestGap": "Plus long intervalle sans manger",
+        "gapOk": "{hours} heures. Essayez de rester sous environ 3 heures pendant la journée.",
+        "gapLong": "{hours} heures. Les longs intervalles aggravent les nausées. Essayez quelque chose de petit, même quelques bouchées."
       }
     },
     "theme": {
@@ -506,7 +516,10 @@ window.MYOB_LOCALES.fr = {
       "reviewSuggestWording": "Relire les textes · Proposer une meilleure traduction",
       "improveGuide": "Aidez à améliorer ce guide",
       "shareCustomAsk": "Dites-nous comment cela se fait dans votre culture · Posez vos questions",
-      "helpUsImprove": "Aidez-nous à améliorer"
+      "helpUsImprove": "Aidez-nous à améliorer",
+      "nauseaHelper": "Nausées et alimentation",
+      "nauseaHelperDesc": "Rythme des collations · Quoi essayer · Notez ce qui aide",
+      "feelingWell": "Se sentir bien"
     },
     "toolkick": {
       "kickCounter": "Compteur de coups"
@@ -620,6 +633,9 @@ window.MYOB_LOCALES.fr = {
     "about": {
       "openSource": "Libre et open source. Forkez-le, gardez-le libre.",
       "viewSource": "Voir le code source (AGPL-3.0)"
+    },
+    "toolnausea": {
+      "nauseaEating": "Nausées et alimentation"
     }
   },
   "content": {

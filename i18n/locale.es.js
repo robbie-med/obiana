@@ -404,6 +404,16 @@ window.MYOB_LOCALES.es = {
         "failed": "No se pudo enviar. Su texto está guardado aquí.",
         "rateLimited": "Demasiados mensajes, inténtelo más tarde",
         "offline": "Sin conexión. Su texto está guardado aquí."
+      },
+      "nausea": {
+        "intro": "Las náuseas suelen empeorar con el estómago vacío, así que comer poco y a menudo funciona mejor que las comidas grandes. Toque cada hora en la que comió o bebió algo. Lo importante no es cuánto, sino cuánto tiempo pasa entre una vez y otra.",
+        "clockLabel": "Reloj de 24 horas",
+        "snacksToday": "hoy",
+        "tapHour": "Toque una hora para marcar que comió",
+        "hourLabel": "Hora {hour}",
+        "longestGap": "Intervalo más largo sin comer",
+        "gapOk": "{hours} horas. Intente que no pasen más de unas 3 horas mientras esté despierta.",
+        "gapLong": "{hours} horas. Los intervalos largos empeoran las náuseas. Pruebe algo pequeño, aunque sean unos bocados."
       }
     },
     "theme": {
@@ -505,7 +515,10 @@ window.MYOB_LOCALES.es = {
       "reviewSuggestWording": "Revisar textos · Sugerir una traducción mejor",
       "improveGuide": "Ayude a mejorar esta guía",
       "shareCustomAsk": "Cuéntenos cómo se hace en su cultura · Pregunte lo que no esté claro",
-      "helpUsImprove": "Ayúdenos a mejorar"
+      "helpUsImprove": "Ayúdenos a mejorar",
+      "nauseaHelper": "Náuseas y alimentación",
+      "nauseaHelperDesc": "Ritmo de comidas · Qué probar · Registre qué le ayuda",
+      "feelingWell": "Sentirse bien"
     },
     "toolkick": {
       "kickCounter": "Contador de Pataditas"
@@ -619,6 +632,9 @@ window.MYOB_LOCALES.es = {
     "about": {
       "openSource": "Libre y de código abierto. Haga un fork, manténgalo libre.",
       "viewSource": "Ver el código (AGPL-3.0)"
+    },
+    "toolnausea": {
+      "nauseaEating": "Náuseas y alimentación"
     }
   },
   "content": {
