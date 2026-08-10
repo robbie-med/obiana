@@ -414,7 +414,29 @@ window.MYOB_LOCALES.fr = {
         "hourLabel": "Heure {hour}",
         "longestGap": "Plus long intervalle sans manger",
         "gapOk": "{hours} heures. Essayez de rester sous environ 3 heures pendant la journée.",
-        "gapLong": "{hours} heures. Les longs intervalles aggravent les nausées. Essayez quelque chose de petit, même quelques bouchées."
+        "gapLong": "{hours} heures. Les longs intervalles aggravent les nausées. Essayez quelque chose de petit, même quelques bouchées.",
+        "whenAreYou": "Où en êtes-vous ?",
+        "weekPrompt": "Indiquez la semaine de grossesse où vous en êtes, pour voir où vous vous situez.",
+        "weekPlaceholder": "ex. 9",
+        "weekShort": "Semaine {n}",
+        "timelineLabel": "Évolution des nausées, vous êtes à la semaine {week}",
+        "youAreWeek": "Vous êtes à la semaine {week}.",
+        "changeWeek": "Changer la semaine",
+        "phaseEarly": "Les nausées commencent souvent vers la semaine 6. Si elles n’ont pas commencé, elles ne viendront peut-être pas.",
+        "phasePeak": "C’est généralement la période la plus difficile. Elles culminent vers les semaines 9 à 10, puis s’atténuent.",
+        "phaseEasing": "Chez la plupart des femmes, cela s’améliore à partir d’ici. Environ 6 femmes sur 10 en sont sorties à la semaine 14.",
+        "phaseMost": "Environ 9 femmes sur 10 ont passé le pire à la semaine 22. Si ce n’est pas votre cas, parlez-en à votre médecin.",
+        "phaseLate": "Des nausées aussi tardives sont moins fréquentes. Il vaut mieux en parler à votre médecin, qui pourra chercher d’autres causes.",
+        "callTodayTitle": "Appelez votre médecin aujourd’hui si",
+        "flag": {
+          "noFluids": "Vous ne gardez aucun liquide pendant toute une journée",
+          "vomitingOften": "Vous vomissez plusieurs fois par jour, tous les jours",
+          "weightLoss": "Vous perdez du poids au lieu d’en prendre",
+          "darkUrine": "Vos urines sont foncées, ou vous n’avez pas uriné depuis 8 heures",
+          "dizzy": "Vous avez des vertiges ou vous vous sentez défaillir en vous levant",
+          "racingHeart": "Votre cœur bat très vite"
+        },
+        "callTodayBody": "Les vomissements sévères de la grossesse ont un nom, l’hyperémèse gravidique, et cela se traite. Le vrai danger est la déshydratation, pas la nausée elle-même. N’attendez pas que cela passe."
       }
     },
     "theme": {

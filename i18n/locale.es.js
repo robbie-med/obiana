@@ -413,7 +413,29 @@ window.MYOB_LOCALES.es = {
         "hourLabel": "Hora {hour}",
         "longestGap": "Intervalo más largo sin comer",
         "gapOk": "{hours} horas. Intente que no pasen más de unas 3 horas mientras esté despierta.",
-        "gapLong": "{hours} horas. Los intervalos largos empeoran las náuseas. Pruebe algo pequeño, aunque sean unos bocados."
+        "gapLong": "{hours} horas. Los intervalos largos empeoran las náuseas. Pruebe algo pequeño, aunque sean unos bocados.",
+        "whenAreYou": "¿De cuánto tiempo está?",
+        "weekPrompt": "Indique en qué semana de embarazo está, para poder mostrarle en qué punto se encuentra.",
+        "weekPlaceholder": "p. ej. 9",
+        "weekShort": "Semana {n}",
+        "timelineLabel": "Evolución de las náuseas, está en la semana {week}",
+        "youAreWeek": "Está en la semana {week}.",
+        "changeWeek": "Cambiar la semana",
+        "phaseEarly": "Las náuseas suelen empezar hacia la semana 6. Si aún no han aparecido, puede que no aparezcan.",
+        "phasePeak": "Suele ser la etapa más dura. Alcanzan su punto máximo hacia las semanas 9 y 10 y después mejoran.",
+        "phaseEasing": "En la mayoría de las mujeres empiezan a mejorar a partir de aquí. Unas 6 de cada 10 ya las han dejado atrás en la semana 14.",
+        "phaseMost": "Alrededor de 9 de cada 10 mujeres han superado lo peor en la semana 22. Si a usted no le mejoran, dígaselo a su médico.",
+        "phaseLate": "Tener náuseas tan tarde es menos frecuente. Conviene comentarlo con su médico, que puede buscar otras causas.",
+        "callTodayTitle": "Llame hoy a su médico si",
+        "flag": {
+          "noFluids": "No consigue retener ningún líquido en todo un día",
+          "vomitingOften": "Vomita varias veces al día, todos los días",
+          "weightLoss": "Está perdiendo peso en lugar de ganarlo",
+          "darkUrine": "Su orina es oscura, o no ha orinado en 8 horas",
+          "dizzy": "Se marea o se siente desfallecer al ponerse de pie",
+          "racingHeart": "Le late el corazón muy deprisa"
+        },
+        "callTodayBody": "Los vómitos intensos del embarazo tienen nombre, hiperémesis gravídica, y tienen tratamiento. El verdadero peligro es la deshidratación, no las náuseas en sí. No espere a que pase."
       }
     },
     "theme": {

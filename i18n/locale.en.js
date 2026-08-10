@@ -407,7 +407,29 @@ window.MYOB_LOCALES.en = {
         "hourLabel": "Hour {hour}",
         "longestGap": "Longest gap without eating",
         "gapOk": "{hours} hours. Try to keep gaps under about 3 hours while you are awake.",
-        "gapLong": "{hours} hours. Long gaps make nausea worse. Try something small, even a few bites."
+        "gapLong": "{hours} hours. Long gaps make nausea worse. Try something small, even a few bites.",
+        "whenAreYou": "How far along are you?",
+        "weekPrompt": "Enter the week of pregnancy you are in, so this can show you where you are.",
+        "weekPlaceholder": "e.g. 9",
+        "weekShort": "Week {n}",
+        "timelineLabel": "Nausea timeline, you are at week {week}",
+        "youAreWeek": "You are at week {week}.",
+        "changeWeek": "Change week",
+        "phaseEarly": "Nausea often begins around week 6. If it has not started, it may not start at all.",
+        "phasePeak": "This is usually the hardest stretch. It tends to peak around weeks 9 to 10 and then ease.",
+        "phaseEasing": "For most women it starts easing from here. About 6 in 10 are past it by week 14.",
+        "phaseMost": "About 9 in 10 women are past the worst by week 22. If yours is not easing, tell your doctor.",
+        "phaseLate": "Nausea this late is less common. It is worth telling your doctor, who can look for other causes.",
+        "callTodayTitle": "Call your doctor today if",
+        "flag": {
+          "noFluids": "You cannot keep any fluids down for a whole day",
+          "vomitingOften": "You are vomiting several times a day, every day",
+          "weightLoss": "You are losing weight instead of gaining",
+          "darkUrine": "Your urine is dark, or you have not passed any for 8 hours",
+          "dizzy": "You feel dizzy or faint when you stand up",
+          "racingHeart": "Your heart is racing"
+        },
+        "callTodayBody": "Severe pregnancy sickness has a name, hyperemesis gravidarum, and it is treatable. The real danger is dehydration, not the nausea itself. Do not wait it out."
       }
     },
     "theme": {

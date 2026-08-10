@@ -412,7 +412,29 @@ window.MYOB_LOCALES.zh = {
         "hourLabel": "{hour} 点",
         "longestGap": "最长的空腹时间",
         "gapOk": "{hours} 小时。醒着的时候尽量不要超过约 3 小时。",
-        "gapLong": "{hours} 小时。空腹太久会加重孕吐。吃一点点也好，哪怕只有几口。"
+        "gapLong": "{hours} 小时。空腹太久会加重孕吐。吃一点点也好，哪怕只有几口。",
+        "whenAreYou": "你现在几周了？",
+        "weekPrompt": "输入你目前的孕周，就能看到自己处在哪个阶段。",
+        "weekPlaceholder": "例如 9",
+        "weekShort": "第 {n} 周",
+        "timelineLabel": "孕吐进程，你现在是第 {week} 周",
+        "youAreWeek": "你现在是第 {week} 周。",
+        "changeWeek": "修改孕周",
+        "phaseEarly": "孕吐通常在第 6 周左右开始。如果还没有出现，也可能不会出现。",
+        "phasePeak": "这通常是最难熬的阶段。多在第 9 到 10 周达到高峰，之后逐渐减轻。",
+        "phaseEasing": "多数人从这里开始好转。大约每 10 人中有 6 人在第 14 周前已经过去了。",
+        "phaseMost": "大约每 10 人中有 9 人在第 22 周前度过了最难的时候。如果你没有好转，请告诉医生。",
+        "phaseLate": "这么晚还有孕吐并不常见。值得告诉医生，医生可以排查其他原因。",
+        "callTodayTitle": "出现以下情况请今天就联系医生",
+        "flag": {
+          "noFluids": "一整天连水都喝不进、留不住",
+          "vomitingOften": "每天呕吐好几次，天天如此",
+          "weightLoss": "体重不增反降",
+          "darkUrine": "尿色很深，或者 8 小时没有小便",
+          "dizzy": "站起来时头晕或快要昏倒",
+          "racingHeart": "心跳很快"
+        },
+        "callTodayBody": "严重的孕期呕吐有个名字，叫妊娠剧吐，是可以治疗的。真正危险的是脱水，而不是恶心本身。不要硬撑。"
       }
     },
     "theme": {

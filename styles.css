@@ -1792,3 +1792,35 @@ body.dark #translation-notice {
 .snack-wedge { cursor: pointer; transition: opacity .12s; outline: none; }
 .snack-wedge:hover { opacity: 0.75 !important; }
 .snack-wedge:focus-visible { stroke: var(--ink); stroke-width: 1.2; }
+
+/* Nausea timeline: where she is on the typical arc of the symptom. */
+.nausea-track {
+  position: relative;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--rule);
+  overflow: visible;
+}
+.nausea-track-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(to right, var(--rose), var(--gold), var(--teal));
+}
+.nausea-track-dot {
+  position: absolute;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 3px solid var(--teal);
+  transform: translate(-50%, -50%);
+}
+[dir="rtl"] .nausea-track-dot { transform: translate(50%, -50%); }
+.nausea-track-marks {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--ink-soft);
+  margin-top: 6px;
+}

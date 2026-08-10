@@ -83,6 +83,123 @@ function longestGap(snacks, nowHour) {
   return worst;
 }
 
+
+// ─── Gestational week ───────────────────────────────────
+// Needed for the reassurance timeline. Tried in order of reliability: the
+// weight tracker stores a real integer, the My Info due date is free text in
+// 17 languages and only sometimes parses, and failing both she is asked.
+const NAUSEA_WEEK_KEY = 'nausea-week';
+
+function currentWeek() {
+  try {
+    const own = localStorage.getItem(NAUSEA_WEEK_KEY);
+    if (own) return { week: +own, source: 'asked' };
+  } catch (e) {}
+
+  try {
+    const wl = JSON.parse(localStorage.getItem('weight-log') || '[]');
+    if (wl.length) {
+      const latest = wl.slice().sort((a, b) => b.ts - a.ts)[0];
+      if (latest && latest.week > 0) {
+        // Advance it by however long ago that entry was.
+        const weeksSince = Math.floor((Date.now() - latest.ts) / 6048e5);
+        const w = latest.week + weeksSince;
+        if (w >= 1 && w <= 45) return { week: w, source: 'weight' };
+      }
+    }
+  } catch (e) {}
+
+  try {
+    const info = JSON.parse(localStorage.getItem('birth-guide-info') || '{}');
+    const t = Date.parse(info.edd || '');
+    if (!isNaN(t)) {
+      const w = 40 - Math.round((t - Date.now()) / 6048e5);
+      if (w >= 1 && w <= 45) return { week: w, source: 'edd' };
+    }
+  } catch (e) {}
+
+  return { week: null, source: null };
+}
+
+function setNauseaWeek(v) {
+  const w = parseInt(v, 10);
+  if (!(w >= 1 && w <= 45)) return;
+  try { localStorage.setItem(NAUSEA_WEEK_KEY, String(w)); } catch (e) {}
+  initNausea();
+}
+
+// ─── Reassurance timeline ───────────────────────────────
+// Nausea typically starts around week 6, peaks around 9 to 10, and has
+// resolved for roughly 60% by week 12 and 90% by week 22. Showing her own
+// position on that arc is the reassurance; a bare statistic is not.
+const NAUSEA_START = 4, NAUSEA_END = 22;
+
+function renderTimeline() {
+  const { week, source } = currentWeek();
+
+  if (!week) {
+    return `
+      <div class="callout" style="margin:12px 16px">
+        <div class="callout-title">${escHtml(I18n.t('tool.nausea.whenAreYou'))}</div>
+        <p style="margin-bottom:8px">${escHtml(I18n.t('tool.nausea.weekPrompt'))}</p>
+        <div style="display:flex;gap:8px;align-items:center">
+          <input class="tool-input" id="nausea-week" type="number" min="1" max="45"
+                 inputmode="numeric" style="flex:1"
+                 placeholder="${escHtml(I18n.t('tool.nausea.weekPlaceholder'))}">
+          <button class="btn-sm btn-teal" id="nausea-week-set">${escHtml(I18n.t('tool.jaundice.set'))}</button>
+        </div>
+      </div>`;
+  }
+
+  const pct = Math.max(0, Math.min(100,
+    ((week - NAUSEA_START) / (NAUSEA_END - NAUSEA_START)) * 100));
+
+  let msgKey;
+  if (week < 6) msgKey = 'phaseEarly';
+  else if (week <= 10) msgKey = 'phasePeak';
+  else if (week <= 14) msgKey = 'phaseEasing';
+  else if (week <= 22) msgKey = 'phaseMost';
+  else msgKey = 'phaseLate';
+
+  return `
+    <div style="padding:14px 16px 4px">
+      <div class="nausea-track" role="img"
+           aria-label="${escHtml(I18n.t('tool.nausea.timelineLabel', { week }))}">
+        <div class="nausea-track-fill" style="width:${pct}%"></div>
+        <div class="nausea-track-dot" style="inset-inline-start:${pct}%"></div>
+      </div>
+      <div class="nausea-track-marks">
+        <span>${escHtml(I18n.t('tool.nausea.weekShort', { n: 6 }))}</span>
+        <span>${escHtml(I18n.t('tool.nausea.weekShort', { n: 12 }))}</span>
+        <span>${escHtml(I18n.t('tool.nausea.weekShort', { n: 22 }))}</span>
+      </div>
+      <p style="font-size:14px;color:var(--ink);line-height:1.6;margin-top:12px">
+        <strong>${escHtml(I18n.t('tool.nausea.youAreWeek', { week }))}</strong>
+        ${escHtml(I18n.t('tool.nausea.' + msgKey))}
+      </p>
+      <button class="btn-sm" id="nausea-week-edit"
+        style="background:none;border:none;color:var(--teal);padding:2px 0;font-size:12px;text-decoration:underline">
+        ${escHtml(I18n.t('tool.nausea.changeWeek'))}
+      </button>
+    </div>`;
+}
+
+// ─── Red flags ──────────────────────────────────────────
+// Hyperemesis gravidarum. Placed high rather than buried at the bottom: the
+// danger is dehydration, it is treatable, and the whole point is that she
+// recognises it early.
+function renderRedFlags() {
+  const items = ['noFluids', 'vomitingOften', 'weightLoss', 'darkUrine', 'dizzy', 'racingHeart'];
+  return `
+    <div class="callout alert" style="margin:14px 16px;text-align:start">
+      <div class="callout-title">${escHtml(I18n.t('tool.nausea.callTodayTitle'))}</div>
+      <ul style="margin:6px 0 8px;padding-inline-start:18px">
+        ${items.map(k => `<li>${escHtml(I18n.t('tool.nausea.flag.' + k))}</li>`).join('')}
+      </ul>
+      <p>${escHtml(I18n.t('tool.nausea.callTodayBody'))}</p>
+    </div>`;
+}
+
 function renderSnackClock() {
   const snacks = snacksForToday();
   const nowHour = new Date().getHours();
@@ -143,7 +260,18 @@ function initNausea() {
         ${escHtml(I18n.t('tool.nausea.intro'))}
       </p>
     </div>
-    ${renderSnackClock()}`;
+    ${renderTimeline()}
+    ${renderSnackClock()}
+    ${renderRedFlags()}`;
+
+  const setBtn = document.getElementById('nausea-week-set');
+  if (setBtn) setBtn.addEventListener('click', () =>
+    setNauseaWeek(document.getElementById('nausea-week').value));
+  const editBtn = document.getElementById('nausea-week-edit');
+  if (editBtn) editBtn.addEventListener('click', () => {
+    try { localStorage.removeItem(NAUSEA_WEEK_KEY); } catch (e) {}
+    initNausea();
+  });
 
   el.querySelectorAll('.snack-wedge').forEach(w => {
     const h = +w.dataset.hour;
