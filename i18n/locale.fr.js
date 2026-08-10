@@ -455,8 +455,8 @@ window.MYOB_LOCALES.fr = {
             "how": "Les odeurs sont souvent en cause. Cuisine, café, parfum. Faites cuisiner quelqu’un d’autre si possible."
           },
           "b6": {
-            "name": "Vitamine B6",
-            "how": "Souvent proposée en premier. Demandez la dose à votre médecin avant de commencer."
+            "name": "Vitamine B6 (pyridoxine)",
+            "how": "10 à 25 mg, trois ou quatre fois par jour. Pas plus de 200 mg par 24 heures. Vendue sans ordonnance."
           },
           "ginger": {
             "name": "Gingembre",
@@ -475,8 +475,8 @@ window.MYOB_LOCALES.fr = {
             "how": "La fatigue aggrave les nausées. Asseyez-vous un instant au bord du lit avant de vous lever."
           },
           "doxylamine": {
-            "name": "Options sur ordonnance",
-            "how": "La B6 avec doxylamine est bien étudiée pendant la grossesse. Demandez à votre médecin si le moment est venu."
+            "name": "Doxylamine, ajoutée à la B6",
+            "how": "12,5 mg au coucher, soit un demi-comprimé de 25 mg d’Unisom SleepTab. Achetez des SleepTabs, pas des SleepGels : les SleepGels contiennent un autre médicament. Sans ordonnance."
           }
         },
         "thingsToTry": "Choses à essayer",

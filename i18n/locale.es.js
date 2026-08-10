@@ -454,8 +454,8 @@ window.MYOB_LOCALES.es = {
             "how": "Los olores suelen ser los culpables. Cocina, café, perfume. Si puede, que cocine otra persona."
           },
           "b6": {
-            "name": "Vitamina B6",
-            "how": "Suele ser lo primero que se sugiere. Pregunte a su médico por la dosis antes de empezar."
+            "name": "Vitamina B6 (piridoxina)",
+            "how": "De 10 a 25 mg, tres o cuatro veces al día. No más de 200 mg en 24 horas. Se vende sin receta."
           },
           "ginger": {
             "name": "Jengibre",
@@ -474,8 +474,8 @@ window.MYOB_LOCALES.es = {
             "how": "El cansancio empeora las náuseas. Siéntese un momento en el borde de la cama antes de ponerse de pie."
           },
           "doxylamine": {
-            "name": "Opciones con receta",
-            "how": "La B6 con doxilamina está bien estudiada en el embarazo. Pregunte a su médico si es el momento."
+            "name": "Doxilamina, junto con la B6",
+            "how": "12,5 mg al acostarse, es decir media pastilla de 25 mg de Unisom SleepTab. Compre SleepTabs, no SleepGels: los SleepGels llevan otro medicamento. No hace falta receta."
           }
         },
         "thingsToTry": "Cosas que puede probar",

@@ -448,8 +448,8 @@ window.MYOB_LOCALES.en = {
             "how": "Smells are the usual culprit. Cooking, coffee, perfume. Let someone else cook if you can."
           },
           "b6": {
-            "name": "Vitamin B6",
-            "how": "Commonly suggested first. Ask your doctor about the dose before starting."
+            "name": "Vitamin B6 (pyridoxine)",
+            "how": "10 to 25 mg, three or four times a day. No more than 200 mg in 24 hours. Sold over the counter."
           },
           "ginger": {
             "name": "Ginger",
@@ -468,8 +468,8 @@ window.MYOB_LOCALES.en = {
             "how": "Tiredness makes nausea worse. Sit on the edge of the bed a moment before standing."
           },
           "doxylamine": {
-            "name": "Prescription options",
-            "how": "B6 with doxylamine is well studied in pregnancy. Ask your doctor if it is time."
+            "name": "Doxylamine, added to B6",
+            "how": "12.5 mg at bedtime, which is half a 25 mg Unisom SleepTab. Buy SleepTabs, not SleepGels: SleepGels are a different drug. No prescription needed."
           }
         },
         "thingsToTry": "Things to try",
