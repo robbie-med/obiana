@@ -20,7 +20,9 @@
 //   the English source and a proposed wording — nothing from any tracker. The
 //   app's promise that health data never leaves the device still holds.
 
-const MAX_SUGGESTION = 2000;
+// Guide card bodies run to ~2400 characters in English and translations are
+// often longer, so a 2000 cap silently truncated the longest cards.
+const MAX_SUGGESTION = 8000;
 const MAX_MESSAGE = 4000;
 const FEEDBACK_KINDS = ['culture', 'question', 'unclear'];
 const FEEDBACK_HOURLY = 20;
@@ -58,12 +60,16 @@ async function validKeys(env, origin) {
   try { obj = JSON.parse(src.slice(start, src.lastIndexOf('}') + 1)); }
   catch (e) { return null; }
   const keys = new Set();
-  (function walk(o, pre) {
+  const walk = (o, pre) => {
     for (const [k, v] of Object.entries(o || {})) {
       const key = pre ? `${pre}.${k}` : k;
       if (v && typeof v === 'object') walk(v, key); else keys.add(key);
     }
-  })(obj.ui, '');
+  };
+  // UI strings keep their bare dot-path. Guide cards are namespaced under
+  // "content." so the two can never collide; ui has no top-level "content".
+  walk(obj.ui, '');
+  walk(obj.content, 'content');
   KEY_CACHE = keys;
   return keys;
 }

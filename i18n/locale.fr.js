@@ -385,7 +385,8 @@ window.MYOB_LOCALES.fr = {
         "sendFailed": "Envoi impossible. Enregistré ici, utilisez Exporter",
         "rateLimited": "Trop d’envois, réessayez plus tard",
         "offlineSaved": "Hors ligne. Enregistré ici, utilisez Exporter",
-        "privacy": "Seuls la phrase et votre suggestion sont envoyés. Rien de vos suivis ne quitte ce téléphone."
+        "privacy": "Seuls la phrase et votre suggestion sont envoyés. Rien de vos suivis ne quitte ce téléphone.",
+        "loading": "Chargement…"
       },
       "improve": {
         "intro": "Ce guide est écrit par des personnes, et il s’améliore quand ses lectrices nous disent ce qui manque. Racontez-nous comment les choses se font dans votre culture, posez une question sur un sujet non traité, ou signalez ce qui n’était pas clair.",

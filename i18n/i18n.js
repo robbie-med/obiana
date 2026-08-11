@@ -67,7 +67,7 @@ const I18n = (() => {
 
   // Bumped alongside sw.js CACHE_NAME so an updated locale file is actually
   // re-fetched instead of served from the browser's heuristic cache.
-  const ASSET_VERSION = '52';
+  const ASSET_VERSION = '54';
 
   const FALLBACK = 'en';
   const STORAGE_KEY = 'myob.lang';
@@ -349,7 +349,7 @@ const I18n = (() => {
     get isRTL() { return this.dir === 'rtl'; },
     get meta() { return LOCALES[lang] || LOCALES[FALLBACK]; },
     LOCALES, FALLBACK,
-    boot, setLocale, onChange, hasExplicitChoice,
+    boot, setLocale, onChange, hasExplicitChoice, ensureLoaded,
     t, tp, data, applyStatic,
     fmt, normalize, tokenize, foldMap,
   };

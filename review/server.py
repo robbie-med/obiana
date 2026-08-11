@@ -92,6 +92,8 @@ def load_locale(lang):
             else:
                 flat[key] = v
     walk(obj.get("ui", {}))
+    # Guide cards are namespaced so they cannot collide with a ui path.
+    walk(obj.get("content", {}), "content")
     return flat
 
 
@@ -103,8 +105,13 @@ def write_locale_key(lang, key, value):
     i = src.find(marker)
     head, body = src[:i], src[src.find("{", i): src.rfind("}") + 1]
     obj = json.loads(body)
-    node = obj.setdefault("ui", {})
     parts = key.split(".")
+    # "content.<card>.<field>" writes into the card set, everything else into ui.
+    if parts[0] == "content":
+        node = obj.setdefault("content", {})
+        parts = parts[1:]
+    else:
+        node = obj.setdefault("ui", {})
     for p in parts[:-1]:
         node = node.setdefault(p, {})
     node[parts[-1]] = value

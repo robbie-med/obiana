@@ -21,7 +21,12 @@ function saveSuggestions(s) {
   try { localStorage.setItem(I18N_SUGGEST_KEY, JSON.stringify(s)); } catch (e) {}
 }
 
-// Flatten a locale's ui object to dot-notation, matching translation/source.
+// Flatten a locale to dot-notation. UI strings keep their bare path; guide
+// cards are namespaced under "content." so the two cannot collide.
+//
+// The guide cards are the bulk of the app, roughly 6,900 words against about
+// 500 short UI strings, and they were missing here entirely. A contributor
+// could fix a button label but not a single word of the actual guide.
 function flattenUi(obj, pre, out) {
   out = out || {};
   for (const [k, v] of Object.entries(obj || {})) {
@@ -42,10 +47,21 @@ let _i18nTargetLang = null;
 
 TOOL_INITS['tool-i18n'] = initI18nTool;
 
+function flattenLocale(L) {
+  const out = flattenUi((L || {}).ui);
+  const content = (L || {}).content || {};
+  for (const [id, card] of Object.entries(content)) {
+    for (const f of ['title', 'sub', 'body']) {
+      if (typeof card[f] === 'string' && card[f] !== '') out[`content.${id}.${f}`] = card[f];
+    }
+  }
+  return out;
+}
+
 function i18nRows() {
   const lang = _i18nTargetLang || (I18n.lang === 'en' ? 'es' : I18n.lang);
-  const en = flattenUi((window.MYOB_LOCALES.en || {}).ui);
-  const tgt = flattenUi((window.MYOB_LOCALES[lang] || {}).ui);
+  const en = flattenLocale(window.MYOB_LOCALES.en);
+  const tgt = flattenLocale(window.MYOB_LOCALES[lang]);
   const sug = loadSuggestions()[lang] || {};
   const rows = [];
   for (const [key, source] of Object.entries(en)) {
@@ -63,6 +79,16 @@ function i18nRows() {
 function initI18nTool() {
   const el = document.getElementById('i18n-content');
   if (!el) return;
+
+  const want = _i18nTargetLang || (I18n.lang === 'en' ? 'es' : I18n.lang);
+  if (!window.MYOB_LOCALES[want]) {
+    // Fetch it, then re-enter. Showing "everything missing" while it loads
+    // would be wrong, so say so instead.
+    el.innerHTML = `<p class="history-empty">${escHtml(I18n.t('tool.i18n.loading'))}</p>`;
+    I18n.ensureLoaded(want).then(() => initI18nTool());
+    return;
+  }
+
   const { lang, rows } = i18nRows();
 
   const counts = { missing: 0, same: 0, translated: 0 };
@@ -112,13 +138,15 @@ function initI18nTool() {
         : shown.slice(0, 300).map(r => `
         <div class="card" style="margin-bottom:8px;padding:10px 12px">
           <div style="font-size:10px;color:var(--ink-soft);font-family:monospace;word-break:break-all">${escHtml(r.key)}</div>
-          <div style="font-size:13.5px;color:var(--ink);margin:4px 0 6px" dir="ltr" lang="en">${escHtml(r.source)}</div>
+          <div style="font-size:13.5px;color:var(--ink);margin:4px 0 6px;max-height:${
+            r.key.endsWith('.body') ? '11em' : 'none'};overflow:auto" dir="ltr" lang="en">${escHtml(r.source)}</div>
           <div style="font-size:13px;margin-bottom:6px;color:${r.state === 'translated' ? 'var(--teal)' : 'var(--rose)'}"
                lang="${lang}" dir="${I18n.LOCALES[lang].dir}">
             ${r.current ? escHtml(r.current) : '–'}
             <span style="font-size:10px;color:var(--ink-soft)"> ${r.state === 'missing' ? '✗' : r.state === 'same' ? '≡' : '✓'}</span>
           </div>
-          <textarea class="tool-textarea" data-key="${escHtml(r.key)}" rows="2"
+          <textarea class="tool-textarea" data-key="${escHtml(r.key)}"
+            rows="${r.key.endsWith('.body') ? 8 : 2}"
             lang="${lang}" dir="${I18n.LOCALES[lang].dir}"
             placeholder="${escHtml(I18n.t('tool.i18n.suggestPlaceholder'))}"
             style="width:100%;box-sizing:border-box">${escHtml(r.suggestion)}</textarea>
@@ -158,7 +186,13 @@ function initI18nTool() {
   });
 
   const sel = document.getElementById('i18n-lang');
-  if (sel) sel.addEventListener('change', () => { _i18nTargetLang = sel.value; initI18nTool(); });
+  if (sel) sel.addEventListener('change', async () => {
+    _i18nTargetLang = sel.value;
+    // Without this every string in an unloaded language reads as missing, so
+    // a contributor picking Spanish would be told nothing was translated.
+    await I18n.ensureLoaded(_i18nTargetLang);
+    initI18nTool();
+  });
 
   const search = document.getElementById('i18n-search');
   if (search) {
