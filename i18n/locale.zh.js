@@ -384,7 +384,10 @@ window.MYOB_LOCALES.zh = {
         "rateLimited": "提交次数过多，请稍后再试",
         "offlineSaved": "离线，已保存在本机，请用导出",
         "privacy": "只会发送该词句和你的建议。你的记录数据永远不会离开这部手机。",
-        "loading": "加载中…"
+        "loading": "加载中…",
+        "showMarkup": "显示 HTML",
+        "notTranslated": "尚未翻译",
+        "keepTags": "只翻译文字。所有标签请原样保留。"
       },
       "improve": {
         "intro": "这本指南是人写的，读者告诉我们缺了什么，它才会变得更好。说说在你们的文化里这件事是怎么做的，问一个我们没有写到的话题，或者指出任何读起来不清楚的地方。",

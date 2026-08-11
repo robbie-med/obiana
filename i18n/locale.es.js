@@ -385,7 +385,10 @@ window.MYOB_LOCALES.es = {
         "rateLimited": "Demasiados envíos, inténtelo más tarde",
         "offlineSaved": "Sin conexión. Guardado aquí, use Exportar",
         "privacy": "Solo se envían la frase y su sugerencia. Nada de sus registros sale nunca de este teléfono.",
-        "loading": "Cargando…"
+        "loading": "Cargando…",
+        "showMarkup": "Mostrar el HTML",
+        "notTranslated": "Aún sin traducir",
+        "keepTags": "Traduzca solo las palabras. Deje todas las etiquetas exactamente como están."
       },
       "improve": {
         "intro": "Esta guía la escriben personas y mejora cuando quienes la leen nos dicen qué falta. Cuéntenos cómo se hace algo en su cultura, pregunte por un tema que no cubrimos o señale cualquier cosa que no se entienda bien.",
@@ -740,232 +743,848 @@ window.MYOB_LOCALES.es = {
     "first-trimester": {
       "title": "Visitas del primer trimestre (semanas 4–14)",
       "sub": "Qué esperar en sus primeras citas",
-      "body": "\n        <p class=\"lead\">Su primera visita prenatal suele ser alrededor de las 8–10 semanas y es una de las más largas; traiga sus preguntas y a su pareja, si tiene una.</p>\n        <h4>Primera visita (8–10 semanas)</h4>\n        <ul>\n          <li>Historia clínica completa, examen físico, examen pélvico, citología vaginal (si le toca)</li>\n          <li>Análisis de sangre: tipo de sangre y factor Rh, hemograma completo (CBC), inmunidad a la rubéola, VIH, hepatitis B, pruebas de infecciones de transmisión sexual</li>\n          <li>Análisis de orina para detectar infección, proteínas y glucosa</li>\n          <li>Presión arterial inicial, peso y confirmación de la fecha probable de parto por ultrasonido</li>\n        </ul>\n        <div class=\"callout gold\">\n          <div class=\"callout-title\">Pregunte en esta visita</div>\n          <p>¿Qué medicamentos y suplementos son seguros? ¿Seguridad con los alimentos y los viajes? ¿Límites para el ejercicio? ¿Cuáles son mis factores de riesgo específicos?</p>\n        </div>\n        <h4>Pruebas de detección genética (10–13 semanas): usted decide</h4>\n        <ul>\n          <li><strong>NIPT (ADN libre de células)</strong>: análisis de sangre que detecta condiciones cromosómicas, como el síndrome de Down, la trisomía 18 y la trisomía 13. Es muy preciso, pero sigue siendo una prueba de detección (no de diagnóstico).</li>\n          <li><strong>Ultrasonido de translucencia nucal</strong>: mide el líquido en la parte posterior del cuello del bebé; a menudo se combina con el NIPT</li>\n          <li>Si el resultado no es normal, se le ofrecen pruebas de diagnóstico (CVS o amniocentesis)</li>\n        </ul>\n        <p>Estas pruebas son <em>opcionales</em>. Piense qué haría con los resultados; su médico puede ayudarle a decidir si estas pruebas son adecuadas para usted.</p>\n        <div class=\"callout\">\n          <div class=\"callout-title\">En cada visita</div>\n          <p>Se revisan la presión arterial, el peso y la orina. Los latidos del corazón del bebé se escuchan con el Doppler a las 10–12 semanas. Mencione siempre síntomas nuevos, sangrado o dolor.</p>\n        </div>"
+      "t": [
+        "Su primera visita prenatal suele ser alrededor de las 8–10 semanas y es una de las más largas; traiga sus preguntas y a su pareja, si tiene una.",
+        "Primera visita (8–10 semanas)",
+        "Historia clínica completa, examen físico, examen pélvico, citología vaginal (si le toca)",
+        "Análisis de sangre: tipo de sangre y factor Rh, hemograma completo (CBC), inmunidad a la rubéola, VIH, hepatitis B, pruebas de infecciones de transmisión sexual",
+        "Análisis de orina para detectar infección, proteínas y glucosa",
+        "Presión arterial inicial, peso y confirmación de la fecha probable de parto por ultrasonido",
+        "Pregunte en esta visita",
+        "¿Qué medicamentos y suplementos son seguros? ¿Seguridad con los alimentos y los viajes? ¿Límites para el ejercicio? ¿Cuáles son mis factores de riesgo específicos?",
+        "Pruebas de detección genética (10–13 semanas): usted decide",
+        "NIPT (ADN libre de células)",
+        ": análisis de sangre que detecta condiciones cromosómicas, como el síndrome de Down, la trisomía 18 y la trisomía 13. Es muy preciso, pero sigue siendo una prueba de detección (no de diagnóstico).",
+        "Ultrasonido de translucencia nucal",
+        ": mide el líquido en la parte posterior del cuello del bebé; a menudo se combina con el NIPT",
+        "Si el resultado no es normal, se le ofrecen pruebas de diagnóstico (CVS o amniocentesis)",
+        "Estas pruebas son",
+        "opcionales",
+        ". Piense qué haría con los resultados; su médico puede ayudarle a decidir si estas pruebas son adecuadas para usted.",
+        "En cada visita",
+        "Se revisan la presión arterial, el peso y la orina. Los latidos del corazón del bebé se escuchan con el Doppler a las 10–12 semanas. Mencione siempre síntomas nuevos, sangrado o dolor."
+      ]
     },
     "second-trimester": {
       "title": "Visitas del segundo trimestre (semanas 15–27)",
       "sub": "Ultrasonido anatómico, prueba de glucosa y más",
-      "body": "\n        <p class=\"lead\">Las visitas son cada 4 semanas. El ultrasonido anatómico de las 18–20 semanas es un gran hito: la mirada más detallada a su bebé antes del nacimiento.</p>\n        <h4>Ultrasonido anatómico (18–20 semanas)</h4>\n        <ul>\n          <li>Exploración detallada del cerebro, el corazón, la columna, los riñones, las extremidades y la cara del bebé</li>\n          <li>Revisa la ubicación de la placenta; es importante si está baja (posible placenta previa)</li>\n          <li>Mide la longitud del cuello uterino; un cuello corto aumenta el riesgo de parto prematuro</li>\n          <li>Calcula el nivel de líquido amniótico</li>\n          <li>Es cuando muchas familias se enteran del sexo del bebé, si quieren saberlo</li>\n        </ul>\n        <div class=\"callout gold\">\n          <div class=\"callout-title\">Pregunte en esta visita</div>\n          <p>¿Dónde está mi placenta? ¿Cuál es la longitud de mi cuello uterino? ¿El crecimiento del bebé va bien? ¿Hay algún hallazgo que necesite seguimiento?</p>\n        </div>\n        <h4>Prueba cuádruple / AFP opcional (15–20 semanas)</h4>\n        <p>Análisis de sangre que detecta defectos del tubo neural y problemas cromosómicos. Si ya se hizo el NIPT, pregunte a su médico si necesita esta prueba.</p>\n        <h4>Prueba de tolerancia a la glucosa (24–28 semanas)</h4>\n        <ul>\n          <li>Detecta la diabetes gestacional: usted bebe una bebida azucarada y le sacan sangre 1 hora después</li>\n          <li>Si el resultado sale elevado (no es \"reprobar\"; es solo una prueba de detección), se hace una prueba de diagnóstico más larga, de 3 horas</li>\n          <li>La diabetes gestacional se puede controlar: dieta, ejercicio y a veces medicamentos</li>\n        </ul>\n        <div class=\"callout\">\n          <div class=\"callout-title\">Empiece a pensar en</div>\n          <p>Clases de preparación al parto, preferencias para el parto, planes de lactancia, elección del pediatra, planificación de la licencia y artículos para el bebé.</p>\n        </div>"
+      "t": [
+        "Las visitas son cada 4 semanas. El ultrasonido anatómico de las 18–20 semanas es un gran hito: la mirada más detallada a su bebé antes del nacimiento.",
+        "Ultrasonido anatómico (18–20 semanas)",
+        "Exploración detallada del cerebro, el corazón, la columna, los riñones, las extremidades y la cara del bebé",
+        "Revisa la ubicación de la placenta; es importante si está baja (posible placenta previa)",
+        "Mide la longitud del cuello uterino; un cuello corto aumenta el riesgo de parto prematuro",
+        "Calcula el nivel de líquido amniótico",
+        "Es cuando muchas familias se enteran del sexo del bebé, si quieren saberlo",
+        "Pregunte en esta visita",
+        "¿Dónde está mi placenta? ¿Cuál es la longitud de mi cuello uterino? ¿El crecimiento del bebé va bien? ¿Hay algún hallazgo que necesite seguimiento?",
+        "Prueba cuádruple / AFP opcional (15–20 semanas)",
+        "Análisis de sangre que detecta defectos del tubo neural y problemas cromosómicos. Si ya se hizo el NIPT, pregunte a su médico si necesita esta prueba.",
+        "Prueba de tolerancia a la glucosa (24–28 semanas)",
+        "Detecta la diabetes gestacional: usted bebe una bebida azucarada y le sacan sangre 1 hora después",
+        "Si el resultado sale elevado (no es \"reprobar\"; es solo una prueba de detección), se hace una prueba de diagnóstico más larga, de 3 horas",
+        "La diabetes gestacional se puede controlar: dieta, ejercicio y a veces medicamentos",
+        "Empiece a pensar en",
+        "Clases de preparación al parto, preferencias para el parto, planes de lactancia, elección del pediatra, planificación de la licencia y artículos para el bebé."
+      ]
     },
     "third-trimester": {
       "title": "Visitas del tercer trimestre (semanas 28–40+)",
       "sub": "Visitas semanales, hisopado de GBS y revisiones del cuello uterino",
-      "body": "\n        <p class=\"lead\">Las visitas pasan a ser cada 2 semanas después de la semana 28, y luego semanales después de la 36. La meta está a la vista.</p>\n        <h4>Semana 28: factor Rh y Tdap</h4>\n        <ul>\n          <li><strong>Inyección de RhoGAM</strong> si usted es Rh negativa: evita que su sistema inmunitario ataque a un futuro bebé Rh positivo</li>\n          <li><strong>Vacuna Tdap</strong> (refuerzo contra la tos ferina): muy recomendada entre las semanas 27 y 36. Los anticuerpos pasan al bebé a través de la placenta y protegen al recién nacido antes de que pueda ser vacunado</li>\n        </ul>\n        <h4>Semanas 35–37: hisopado de estreptococo del grupo B (GBS)</h4>\n        <p>Es un hisopado sencillo de la vagina y el recto. Alrededor del 25% de las mujeres portan el GBS de forma normal; no es una infección de transmisión sexual y no le hace daño a usted. Si sale positivo, recibirá antibióticos por vía intravenosa durante el trabajo de parto para proteger al bebé de una infección durante el nacimiento.</p>\n        <h4>Semanas 36–40: revisiones del cuello uterino y posición del bebé</h4>\n        <ul>\n          <li>Su médico puede ofrecerle revisar su cuello uterino: cuánto está dilatado y borrado (adelgazado)</li>\n          <li>Se confirma la posición del bebé (lo ideal es cabeza abajo)</li>\n          <li>Hable sobre los planes de inducción: ACOG recomienda el parto antes de la semana 42; muchos médicos ofrecen una inducción electiva a las 39 semanas</li>\n        </ul>\n        <div class=\"callout\">\n          <div class=\"callout-title\">Pregunte a partir de la semana 36</div>\n          <p>¿Cuándo recomendaría inducir el parto? ¿Cuál es el plan si paso de mi fecha probable de parto? ¿Cuándo debo ir al hospital?</p>\n        </div>"
+      "t": [
+        "Las visitas pasan a ser cada 2 semanas después de la semana 28, y luego semanales después de la 36. La meta está a la vista.",
+        "Semana 28: factor Rh y Tdap",
+        "Inyección de RhoGAM",
+        "si usted es Rh negativa: evita que su sistema inmunitario ataque a un futuro bebé Rh positivo",
+        "Vacuna Tdap",
+        "(refuerzo contra la tos ferina): muy recomendada entre las semanas 27 y 36. Los anticuerpos pasan al bebé a través de la placenta y protegen al recién nacido antes de que pueda ser vacunado",
+        "Semanas 35–37: hisopado de estreptococo del grupo B (GBS)",
+        "Es un hisopado sencillo de la vagina y el recto. Alrededor del 25% de las mujeres portan el GBS de forma normal; no es una infección de transmisión sexual y no le hace daño a usted. Si sale positivo, recibirá antibióticos por vía intravenosa durante el trabajo de parto para proteger al bebé de una infección durante el nacimiento.",
+        "Semanas 36–40: revisiones del cuello uterino y posición del bebé",
+        "Su médico puede ofrecerle revisar su cuello uterino: cuánto está dilatado y borrado (adelgazado)",
+        "Se confirma la posición del bebé (lo ideal es cabeza abajo)",
+        "Hable sobre los planes de inducción: ACOG recomienda el parto antes de la semana 42; muchos médicos ofrecen una inducción electiva a las 39 semanas",
+        "Pregunte a partir de la semana 36",
+        "¿Cuándo recomendaría inducir el parto? ¿Cuál es el plan si paso de mi fecha probable de parto? ¿Cuándo debo ir al hospital?"
+      ]
     },
     "sve": {
       "title": "Exámenes cervicales (SVE) explicados",
       "sub": "Dilatación, borramiento y estación",
-      "body": "\n        <p class=\"lead\">SVE significa examen vaginal estéril (Sterile Vaginal Exam). Es la forma en que su médico revisa si su cuello uterino se está preparando para el trabajo de parto o está avanzando en él.</p>\n        <p>Su médico usa dos dedos con guantes para palpar el cuello uterino y evaluar tres cosas:</p>\n        <table class=\"data-table\">\n          <tr><th>Qué se revisa</th><th>Qué significa</th></tr>\n          <tr><td><strong>Dilatación</strong><br>0–10 cm</td><td>Qué tan abierto está el cuello uterino. 10 cm = completamente abierto, listo para pujar.</td></tr>\n          <tr><td><strong>Borramiento</strong><br>0–100%</td><td>Qué tan adelgazado está el cuello uterino. 100% = completamente adelgazado.</td></tr>\n          <tr><td><strong>Estación</strong><br>-5 a +5</td><td>Qué tanto ha bajado la cabeza del bebé. 0 = a la altura de las espinas isquiáticas (punto medio). +3 a +5 = casi fuera.</td></tr>\n        </table>\n        <div class=\"callout\">\n          <div class=\"callout-title\">La puntuación de Bishop</div>\n          <p>Los proveedores a veces usan una puntuación combinada (puntuación de Bishop) que incluye la dilatación, el borramiento, la estación, la consistencia y la posición del cuello uterino para predecir qué tan listo está para el trabajo de parto. Una puntuación ≥ 8 sugiere un cuello uterino favorable y una inducción exitosa.</p>\n        </div>\n        <p>Los SVE al final del embarazo son opcionales: la dilatación cervical a las 36–38 semanas no predice exactamente cuándo empezará el trabajo de parto. Durante el trabajo de parto activo, los SVE cada 2–4 horas siguen su progreso hacia los 10 cm.</p>"
+      "t": [
+        "SVE significa examen vaginal estéril (Sterile Vaginal Exam). Es la forma en que su médico revisa si su cuello uterino se está preparando para el trabajo de parto o está avanzando en él.",
+        "Su médico usa dos dedos con guantes para palpar el cuello uterino y evaluar tres cosas:",
+        "Qué se revisa",
+        "Qué significa",
+        "Dilatación",
+        "0–10 cm",
+        "Qué tan abierto está el cuello uterino. 10 cm = completamente abierto, listo para pujar.",
+        "Borramiento",
+        "0–100%",
+        "Qué tan adelgazado está el cuello uterino. 100% = completamente adelgazado.",
+        "Estación",
+        "-5 a +5",
+        "Qué tanto ha bajado la cabeza del bebé. 0 = a la altura de las espinas isquiáticas (punto medio). +3 a +5 = casi fuera.",
+        "La puntuación de Bishop",
+        "Los proveedores a veces usan una puntuación combinada (puntuación de Bishop) que incluye la dilatación, el borramiento, la estación, la consistencia y la posición del cuello uterino para predecir qué tan listo está para el trabajo de parto. Una puntuación ≥ 8 sugiere un cuello uterino favorable y una inducción exitosa.",
+        "Los SVE al final del embarazo son opcionales: la dilatación cervical a las 36–38 semanas no predice exactamente cuándo empezará el trabajo de parto. Durante el trabajo de parto activo, los SVE cada 2–4 horas siguen su progreso hacia los 10 cm."
+      ]
     },
     "exercise-pregnancy": {
       "title": "Ejercicio durante el embarazo",
       "sub": "Beneficios, actividades seguras y qué evitar",
-      "body": "\n        <p class=\"lead\">El ejercicio moderado y regular es seguro y beneficioso para la mayoría de las embarazadas. ACOG recomienda 150 minutos de actividad moderada por semana.</p>\n        <h4>Beneficios</h4>\n        <ul>\n          <li>Reduce el dolor de espalda, la hinchazón, el estreñimiento y la fatiga</li>\n          <li>Disminuye el riesgo de diabetes gestacional, preeclampsia y aumento excesivo de peso</li>\n          <li>Mejora el sueño, el estado de ánimo y los niveles de energía</li>\n          <li>A menudo lleva a un trabajo de parto más corto y una recuperación más rápida</li>\n          <li>Los bebés de madres activas suelen tener patrones de frecuencia cardíaca más saludables</li>\n        </ul>\n        <h4>Buenas opciones en cualquier etapa</h4>\n        <ul>\n          <li><strong>Caminar</strong>: lo más fácil, seguro y accesible para cualquier nivel de condición física</li>\n          <li><strong>Natación y aeróbic acuático</strong>: excelente en el tercer trimestre; quita peso de las articulaciones</li>\n          <li><strong>Yoga prenatal o Pilates</strong>: fortalece el abdomen y el suelo pélvico, y reduce el dolor de espalda</li>\n          <li><strong>Bicicleta fija</strong>: bajo riesgo de caídas, buen ejercicio cardiovascular</li>\n          <li><strong>Entrenamiento de fuerza modificado</strong>: pesas ligeras a moderadas; evite contener la respiración (maniobra de Valsalva)</li>\n          <li><strong>Ejercicios de Kegel</strong>: contraiga y relaje el suelo pélvico, 3 series de 10 al día, todos los días</li>\n        </ul>\n        <h4>Qué evitar después del primer trimestre</h4>\n        <ul>\n          <li>Ejercicios acostada boca arriba (comprimen la vena cava)</li>\n          <li>Deportes de contacto o actividades con riesgo de caídas o choques</li>\n          <li>Buceo (riesgo de descompresión para el bebé)</li>\n          <li>Yoga en calor o hacer ejercicio con calor extremo</li>\n          <li>Actividades a gran altitud si no está aclimatada</li>\n        </ul>\n        <div class=\"callout\">\n          <div class=\"callout-title\">La prueba de hablar</div>\n          <p>Debe poder mantener una conversación mientras hace ejercicio. ¿Está demasiado agitada para hablar? Baje el ritmo. Es una forma sencilla de mantener la intensidad dentro de un rango seguro.</p>\n        </div>\n        <div class=\"callout alert\">\n          <div class=\"callout-title\">Deténgase y llame a su proveedor si tiene</div>\n          <p>Sangrado vaginal, mareos, dolor en el pecho, falta de aire intensa, contracciones, pérdida de líquido, menos movimiento del bebé, o dolor e hinchazón en la pantorrilla.</p>\n        </div>"
+      "t": [
+        "El ejercicio moderado y regular es seguro y beneficioso para la mayoría de las embarazadas. ACOG recomienda 150 minutos de actividad moderada por semana.",
+        "Beneficios",
+        "Reduce el dolor de espalda, la hinchazón, el estreñimiento y la fatiga",
+        "Disminuye el riesgo de diabetes gestacional, preeclampsia y aumento excesivo de peso",
+        "Mejora el sueño, el estado de ánimo y los niveles de energía",
+        "A menudo lleva a un trabajo de parto más corto y una recuperación más rápida",
+        "Los bebés de madres activas suelen tener patrones de frecuencia cardíaca más saludables",
+        "Buenas opciones en cualquier etapa",
+        "Caminar",
+        ": lo más fácil, seguro y accesible para cualquier nivel de condición física",
+        "Natación y aeróbic acuático",
+        ": excelente en el tercer trimestre; quita peso de las articulaciones",
+        "Yoga prenatal o Pilates",
+        ": fortalece el abdomen y el suelo pélvico, y reduce el dolor de espalda",
+        "Bicicleta fija",
+        ": bajo riesgo de caídas, buen ejercicio cardiovascular",
+        "Entrenamiento de fuerza modificado",
+        ": pesas ligeras a moderadas; evite contener la respiración (maniobra de Valsalva)",
+        "Ejercicios de Kegel",
+        ": contraiga y relaje el suelo pélvico, 3 series de 10 al día, todos los días",
+        "Qué evitar después del primer trimestre",
+        "Ejercicios acostada boca arriba (comprimen la vena cava)",
+        "Deportes de contacto o actividades con riesgo de caídas o choques",
+        "Buceo (riesgo de descompresión para el bebé)",
+        "Yoga en calor o hacer ejercicio con calor extremo",
+        "Actividades a gran altitud si no está aclimatada",
+        "La prueba de hablar",
+        "Debe poder mantener una conversación mientras hace ejercicio. ¿Está demasiado agitada para hablar? Baje el ritmo. Es una forma sencilla de mantener la intensidad dentro de un rango seguro.",
+        "Deténgase y llame a su proveedor si tiene",
+        "Sangrado vaginal, mareos, dolor en el pecho, falta de aire intensa, contracciones, pérdida de líquido, menos movimiento del bebé, o dolor e hinchazón en la pantorrilla."
+      ]
     },
     "signs-of-labor": {
       "title": "Señales de trabajo de parto: cuándo ir al hospital",
       "sub": "Trabajo de parto verdadero vs. Braxton Hicks, y la regla 5-1-1",
-      "body": "\n        <p class=\"lead gold\">Saber distinguir el trabajo de parto verdadero del falso evita muchos viajes innecesarios. Así puede notar la diferencia.</p>\n        <table class=\"data-table\">\n          <tr><th>Trabajo de parto verdadero</th><th>Braxton Hicks</th></tr>\n          <tr><td>Las contracciones se hacen más largas, más fuertes y más seguidas</td><td>Irregulares, no se intensifican con el tiempo</td></tr>\n          <tr><td>No paran con el descanso ni con la actividad</td><td>A menudo paran al cambiar de posición o al hidratarse</td></tr>\n          <tr><td>El dolor suele empezar en la espalda y avanzar hacia el frente</td><td>Se suele sentir solo en el frente</td></tr>\n          <tr><td>El cuello uterino está cambiando</td><td>El cuello uterino no cambia</td></tr>\n        </table>\n        <div class=\"callout gold\">\n          <div class=\"callout-title\">La regla 5-1-1 (primer bebé)</div>\n          <p>Vaya al hospital cuando las contracciones estén a <strong>5 minutos de distancia, duren 1 minuto y lleven al menos 1 hora así</strong>. Si es su segundo bebé o más, vaya antes: llame cuando estén a 6–8 minutos, porque el trabajo de parto avanza más rápido.</p>\n        </div>\n        <div class=\"callout alert\">\n          <div class=\"callout-title\">Vaya de inmediato si ocurre algo de esto</div>\n          <p><strong>Ruptura de la fuente</strong> (chorro o goteo constante) · Sangrado rojo brillante (más que un manchado) · El bebé dejó de moverse · Dolor abdominal intenso y constante · Señales de preeclampsia: dolor de cabeza intenso que no se alivia con Tylenol, cambios en la visión, hinchazón repentina e intensa</p>\n        </div>\n        <h4>Trabajo de parto temprano en casa</h4>\n        <p>Si las contracciones son leves e irregulares, el trabajo de parto temprano es más cómodo en casa. Pruebe: una ducha tibia, caminar, descansar, mantenerse hidratada y comer algo ligero mientras aún puede.</p>"
+      "t": [
+        "Saber distinguir el trabajo de parto verdadero del falso evita muchos viajes innecesarios. Así puede notar la diferencia.",
+        "Trabajo de parto verdadero",
+        "Braxton Hicks",
+        "Las contracciones se hacen más largas, más fuertes y más seguidas",
+        "Irregulares, no se intensifican con el tiempo",
+        "No paran con el descanso ni con la actividad",
+        "A menudo paran al cambiar de posición o al hidratarse",
+        "El dolor suele empezar en la espalda y avanzar hacia el frente",
+        "Se suele sentir solo en el frente",
+        "El cuello uterino está cambiando",
+        "El cuello uterino no cambia",
+        "La regla 5-1-1 (primer bebé)",
+        "Vaya al hospital cuando las contracciones estén a",
+        "5 minutos de distancia, duren 1 minuto y lleven al menos 1 hora así",
+        ". Si es su segundo bebé o más, vaya antes: llame cuando estén a 6–8 minutos, porque el trabajo de parto avanza más rápido.",
+        "Vaya de inmediato si ocurre algo de esto",
+        "Ruptura de la fuente",
+        "(chorro o goteo constante) · Sangrado rojo brillante (más que un manchado) · El bebé dejó de moverse · Dolor abdominal intenso y constante · Señales de preeclampsia: dolor de cabeza intenso que no se alivia con Tylenol, cambios en la visión, hinchazón repentina e intensa",
+        "Trabajo de parto temprano en casa",
+        "Si las contracciones son leves e irregulares, el trabajo de parto temprano es más cómodo en casa. Pruebe: una ducha tibia, caminar, descansar, mantenerse hidratada y comer algo ligero mientras aún puede."
+      ]
     },
     "what-happens-on-arrival": {
       "title": "Qué pasa cuando llega a L&D",
       "sub": "Triage, admisión y cómo acomodarse",
-      "body": "\n        <p class=\"lead gold\">La evaluarán en triage antes de admitirla en una sala de parto. Este proceso asegura que usted y su bebé estén estables y que usted realmente esté en trabajo de parto activo.</p>\n        <h4>Paso 1: Evaluación en triage</h4>\n        <ul>\n          <li>Examen vaginal para revisar la dilatación y el borramiento del cuello uterino</li>\n          <li>Se coloca un monitor fetal externo: dos correas alrededor de su abdomen, una que registra las contracciones y otra que registra la frecuencia cardíaca del bebé</li>\n          <li>Se revisan la presión arterial, la temperatura, el pulso y la saturación de oxígeno</li>\n          <li>Se coloca una vía intravenosa (un catéter pequeño en el brazo, un procedimiento estándar)</li>\n          <li>Muestra de orina</li>\n          <li>Se confirma su estado de GBS (estreptococo del grupo B) según sus registros prenatales</li>\n        </ul>\n        <h4>Paso 2: La admiten o le piden esperar</h4>\n        <p>Si su cuello uterino está dilatado menos de 4–6 cm (según el hospital y las circunstancias), es posible que la manden a casa o le pidan caminar durante 1–2 horas para volver a revisarla. Esto no es un rechazo: el trabajo de parto temprano es realmente más seguro y más cómodo en casa. No se desanime.</p>\n        <h4>Paso 3: Sala de parto</h4>\n        <p>Una vez admitida, permanecerá en su habitación durante todo el proceso. Su enfermera es su guía principal y la revisará con regularidad. Este es el momento de hablar sobre sus preferencias para el parto y las opciones para el manejo del dolor.</p>\n        <div class=\"callout gold\">\n          <div class=\"callout-title\">Traiga esto al hospital</div>\n          <p>Identificación y tarjeta del seguro médico · Este folleto con sus contactos · Cargador del teléfono · Ropa cómoda para el parto y la recuperación · Ropa del bebé para ir a casa y asiento para el auto · Artículos de higiene personal · Refrigerios para la persona que la acompaña</p>\n        </div>"
+      "t": [
+        "La evaluarán en triage antes de admitirla en una sala de parto. Este proceso asegura que usted y su bebé estén estables y que usted realmente esté en trabajo de parto activo.",
+        "Paso 1: Evaluación en triage",
+        "Examen vaginal para revisar la dilatación y el borramiento del cuello uterino",
+        "Se coloca un monitor fetal externo: dos correas alrededor de su abdomen, una que registra las contracciones y otra que registra la frecuencia cardíaca del bebé",
+        "Se revisan la presión arterial, la temperatura, el pulso y la saturación de oxígeno",
+        "Se coloca una vía intravenosa (un catéter pequeño en el brazo, un procedimiento estándar)",
+        "Muestra de orina",
+        "Se confirma su estado de GBS (estreptococo del grupo B) según sus registros prenatales",
+        "Paso 2: La admiten o le piden esperar",
+        "Si su cuello uterino está dilatado menos de 4–6 cm (según el hospital y las circunstancias), es posible que la manden a casa o le pidan caminar durante 1–2 horas para volver a revisarla. Esto no es un rechazo: el trabajo de parto temprano es realmente más seguro y más cómodo en casa. No se desanime.",
+        "Paso 3: Sala de parto",
+        "Una vez admitida, permanecerá en su habitación durante todo el proceso. Su enfermera es su guía principal y la revisará con regularidad. Este es el momento de hablar sobre sus preferencias para el parto y las opciones para el manejo del dolor.",
+        "Traiga esto al hospital",
+        "Identificación y tarjeta del seguro médico · Este folleto con sus contactos · Cargador del teléfono · Ropa cómoda para el parto y la recuperación · Ropa del bebé para ir a casa y asiento para el auto · Artículos de higiene personal · Refrigerios para la persona que la acompaña"
+      ]
     },
     "stages-of-labor": {
       "title": "Las etapas del trabajo de parto",
       "sub": "Qué hace su cuerpo y cuánto tiempo toma",
-      "body": "\n        <table class=\"data-table\">\n          <tr><th class=\"gold\">Etapa</th><th class=\"gold\">Qué está pasando</th><th class=\"gold\">Duración típica</th></tr>\n          <tr><td><strong>Etapa 1 Temprana</strong><br>0–6 cm</td><td>El cuello uterino se dilata; comienzan las contracciones, que pueden sentirse como cólicos menstruales fuertes o dolor de espalda</td><td>Horas o muchas horas; muy variable</td></tr>\n          <tr><td><strong>Etapa 1 Activa</strong><br>6–10 cm</td><td>Las contracciones se intensifican: cada 3–5 minutos y duran 45–60 segundos. Es cuando la mayoría de las mujeres usa algún método para el dolor</td><td>1–8 horas con el primer bebé; más rápido con los siguientes</td></tr>\n          <tr><td><strong>Etapa 1 Transición</strong><br>8–10 cm</td><td>La más intensa: contracciones cada 2–3 minutos. Es corta, pero la más difícil. El bebé desciende</td><td>15–60 minutos</td></tr>\n          <tr><td><strong>Etapa 2 Pujo</strong><br>10 cm</td><td>Dilatación completa: es hora de pujar. Fuerte necesidad de empujar. La cabeza del bebé corona</td><td>20 minutos–3 horas (primer bebé)</td></tr>\n          <tr><td><strong>Etapa 3 Placenta</strong></td><td>La placenta sale después del bebé. Es posible que le den Pitocin (oxitocina) para ayudar a que el útero se contraiga</td><td>5–30 minutos</td></tr>\n        </table>\n        <div class=\"callout gold\">\n          <div class=\"callout-title\">Inducción del parto</div>\n          <p>Si su cuello uterino necesita ayuda, su médico puede usar medicamentos (misoprostol, oxitocina/Pitocin) o un catéter de balón para madurar y abrir el cuello. La inducción puede tomar 12–24+ horas, sobre todo con el primer bebé y un cuello uterino no favorable. Planifique que tomará tiempo.</p>\n        </div>\n        <h4>Monitoreo fetal</h4>\n        <p>La mayoría de los hospitales usan monitoreo fetal electrónico continuo durante el trabajo de parto activo. Esto registra los patrones de la frecuencia cardíaca del bebé en relación con las contracciones y ayuda al equipo a detectar temprano cualquier señal de sufrimiento fetal. Si quiere caminar o usar una tina, pregunte si hay monitores inalámbricos (de telemetría) disponibles.</p>"
+      "t": [
+        "Etapa",
+        "Qué está pasando",
+        "Duración típica",
+        "Etapa 1 Temprana",
+        "0–6 cm",
+        "El cuello uterino se dilata; comienzan las contracciones, que pueden sentirse como cólicos menstruales fuertes o dolor de espalda",
+        "Horas o muchas horas; muy variable",
+        "Etapa 1 Activa",
+        "6–10 cm",
+        "Las contracciones se intensifican: cada 3–5 minutos y duran 45–60 segundos. Es cuando la mayoría de las mujeres usa algún método para el dolor",
+        "1–8 horas con el primer bebé; más rápido con los siguientes",
+        "Etapa 1 Transición",
+        "8–10 cm",
+        "La más intensa: contracciones cada 2–3 minutos. Es corta, pero la más difícil. El bebé desciende",
+        "15–60 minutos",
+        "Etapa 2 Pujo",
+        "10 cm",
+        "Dilatación completa: es hora de pujar. Fuerte necesidad de empujar. La cabeza del bebé corona",
+        "20 minutos–3 horas (primer bebé)",
+        "Etapa 3 Placenta",
+        "La placenta sale después del bebé. Es posible que le den Pitocin (oxitocina) para ayudar a que el útero se contraiga",
+        "5–30 minutos",
+        "Inducción del parto",
+        "Si su cuello uterino necesita ayuda, su médico puede usar medicamentos (misoprostol, oxitocina/Pitocin) o un catéter de balón para madurar y abrir el cuello. La inducción puede tomar 12–24+ horas, sobre todo con el primer bebé y un cuello uterino no favorable. Planifique que tomará tiempo.",
+        "Monitoreo fetal",
+        "La mayoría de los hospitales usan monitoreo fetal electrónico continuo durante el trabajo de parto activo. Esto registra los patrones de la frecuencia cardíaca del bebé en relación con las contracciones y ayuda al equipo a detectar temprano cualquier señal de sufrimiento fetal. Si quiere caminar o usar una tina, pregunte si hay monitores inalámbricos (de telemetría) disponibles."
+      ]
     },
     "pain-management": {
       "title": "Manejo del dolor: todas sus opciones",
       "sub": "Desde técnicas sin medicamentos hasta la epidural",
-      "body": "\n        <p class=\"lead gold\">No hay una única forma correcta de manejar el dolor del parto. Su meta es un bebé sano y una experiencia de parto con la que se sienta bien, no un método en particular.</p>\n        <h4>Opciones sin medicamentos</h4>\n        <ul>\n          <li><strong>Hidroterapia</strong>: estar en la ducha o en una tina reduce mucho el dolor para muchas mujeres. Es una de las estrategias sin medicamentos más efectivas</li>\n          <li><strong>Movimiento y posiciones</strong>: caminar, mecerse, ponerse en cuatro puntos, la pelota de parto y acostarse de lado cambian cómo se sienten las contracciones</li>\n          <li><strong>Técnicas de respiración</strong>: la respiración lenta y con ritmo es una de las herramientas más efectivas que existen. Las clases de preparación al parto la enseñan bien</li>\n          <li><strong>Contrapresión</strong>: presión firme sobre el sacro (parte baja de la espalda) durante las contracciones reduce mucho el dolor del parto de espaldas</li>\n          <li><strong>Unidad TENS</strong>: pequeños pulsos eléctricos en la parte baja de la espalda que interrumpen las señales de dolor; es más útil en el trabajo de parto temprano</li>\n          <li><strong>Calor y frío</strong>: una compresa caliente en la parte baja de la espalda, frío en la frente</li>\n        </ul>\n        <h4>Óxido nitroso (gas de la risa)</h4>\n        <p>Se inhala por una mascarilla que <em>usted</em> sostiene y controla durante las contracciones. Calma el dolor sin bloquearlo por completo. Su efecto desaparece en 5 minutos. Puede causar mareo o náuseas en algunas mujeres. Está disponible en muchos hospitales de EE. UU.: pregunte si lo ofrecen en el suyo.</p>\n        <h4>Medicamentos opioides IV / IM</h4>\n        <p>Medicamentos como el fentanilo o la morfina, administrados por vía intravenosa, calman el dolor pero no lo eliminan. Pueden causar somnolencia, náuseas y picazón. Llegan al bebé en cantidades pequeñas: el momento importa (se evitan cerca del parto para que el bebé esté alerta al nacer).</p>\n        <div class=\"callout gold\">\n          <div class=\"callout-title\">Puede cambiar de opinión</div>\n          <p>Decidir empezar sin medicamentos y pedir una epidural después es completamente normal y válido. Igualmente, planear una epidural y luego tener un parto tan rápido que no dé tiempo de ponerla también es común. Manténgase flexible.</p>\n        </div>"
+      "t": [
+        "No hay una única forma correcta de manejar el dolor del parto. Su meta es un bebé sano y una experiencia de parto con la que se sienta bien, no un método en particular.",
+        "Opciones sin medicamentos",
+        "Hidroterapia",
+        ": estar en la ducha o en una tina reduce mucho el dolor para muchas mujeres. Es una de las estrategias sin medicamentos más efectivas",
+        "Movimiento y posiciones",
+        ": caminar, mecerse, ponerse en cuatro puntos, la pelota de parto y acostarse de lado cambian cómo se sienten las contracciones",
+        "Técnicas de respiración",
+        ": la respiración lenta y con ritmo es una de las herramientas más efectivas que existen. Las clases de preparación al parto la enseñan bien",
+        "Contrapresión",
+        ": presión firme sobre el sacro (parte baja de la espalda) durante las contracciones reduce mucho el dolor del parto de espaldas",
+        "Unidad TENS",
+        ": pequeños pulsos eléctricos en la parte baja de la espalda que interrumpen las señales de dolor; es más útil en el trabajo de parto temprano",
+        "Calor y frío",
+        ": una compresa caliente en la parte baja de la espalda, frío en la frente",
+        "Óxido nitroso (gas de la risa)",
+        "Se inhala por una mascarilla que",
+        "usted",
+        "sostiene y controla durante las contracciones. Calma el dolor sin bloquearlo por completo. Su efecto desaparece en 5 minutos. Puede causar mareo o náuseas en algunas mujeres. Está disponible en muchos hospitales de EE. UU.: pregunte si lo ofrecen en el suyo.",
+        "Medicamentos opioides IV / IM",
+        "Medicamentos como el fentanilo o la morfina, administrados por vía intravenosa, calman el dolor pero no lo eliminan. Pueden causar somnolencia, náuseas y picazón. Llegan al bebé en cantidades pequeñas: el momento importa (se evitan cerca del parto para que el bebé esté alerta al nacer).",
+        "Puede cambiar de opinión",
+        "Decidir empezar sin medicamentos y pedir una epidural después es completamente normal y válido. Igualmente, planear una epidural y luego tener un parto tan rápido que no dé tiempo de ponerla también es común. Manténgase flexible."
+      ]
     },
     "epidural": {
       "title": "La epidural: lo que debe saber",
       "sub": "Cómo funciona, riesgos y hechos frente a mitos",
-      "body": "\n        <p class=\"lead gold\">La epidural es la forma más efectiva de aliviar el dolor del parto. Cerca del 75% de las mujeres que dan a luz en hospitales de EE. UU. la usan.</p>\n        <h4>Cómo funciona</h4>\n        <p>Un anestesiólogo coloca un catéter pequeño y flexible (un tubo delgado) en el espacio epidural de la parte baja de su espalda, no dentro de la médula espinal. El anestésico local y/o el medicamento opioide fluyen por el catéter y adormecen los nervios que llevan las señales de dolor desde el útero. Usted permanece completamente despierta y, por lo general, aún puede sentir presión y mover las piernas.</p>\n        <h4>Qué esperar</h4>\n        <ul>\n          <li>La colocación toma 10–15 minutos; tendrá que quedarse muy quieta durante las contracciones</li>\n          <li>El efecto completo llega en 15–20 minutos</li>\n          <li>Requiere monitoreo fetal continuo y una vía intravenosa</li>\n          <li>Se revisa la presión arterial con frecuencia: una bajada breve es común y se maneja muy bien con líquidos intravenosos o medicamentos</li>\n          <li>Es posible que sienta menos ganas de pujar: las enfermeras la guiarán durante los pujos</li>\n          <li>Por lo general se coloca una sonda urinaria una vez que está adormecida</li>\n        </ul>\n        <h4>Riesgos reales (poco comunes)</h4>\n        <ul>\n          <li><strong>Dolor de cabeza espinal</strong> (~1%): causado por una pequeña punción de la dura. Se puede tratar con un \"parche de sangre\"</li>\n          <li><strong>Presión arterial baja temporal</strong>: muy común y muy manejable</li>\n          <li><strong>Alivio incompleto</strong>: a veces requiere reposicionar el catéter o una nueva colocación</li>\n          <li><strong>Picazón</strong>: por el componente opioide, generalmente leve</li>\n          <li><strong>Fiebre</strong>: la fiebre asociada a la epidural es real, pero suele ser benigna y se maneja</li>\n        </ul>\n        <div class=\"callout\">\n          <div class=\"callout-title\">Dato clave: el mito de la cesárea</div>\n          <p>Las epidurales <strong>no</strong> aumentan las tasas de cesárea. Este es uno de los mitos más comunes y mejor estudiados en obstetricia. Varios ensayos grandes y aleatorizados lo confirman. Puede pedir una epidural en cualquier momento del trabajo de parto activo.</p>\n        </div>"
+      "t": [
+        "La epidural es la forma más efectiva de aliviar el dolor del parto. Cerca del 75% de las mujeres que dan a luz en hospitales de EE. UU. la usan.",
+        "Cómo funciona",
+        "Un anestesiólogo coloca un catéter pequeño y flexible (un tubo delgado) en el espacio epidural de la parte baja de su espalda, no dentro de la médula espinal. El anestésico local y/o el medicamento opioide fluyen por el catéter y adormecen los nervios que llevan las señales de dolor desde el útero. Usted permanece completamente despierta y, por lo general, aún puede sentir presión y mover las piernas.",
+        "Qué esperar",
+        "La colocación toma 10–15 minutos; tendrá que quedarse muy quieta durante las contracciones",
+        "El efecto completo llega en 15–20 minutos",
+        "Requiere monitoreo fetal continuo y una vía intravenosa",
+        "Se revisa la presión arterial con frecuencia: una bajada breve es común y se maneja muy bien con líquidos intravenosos o medicamentos",
+        "Es posible que sienta menos ganas de pujar: las enfermeras la guiarán durante los pujos",
+        "Por lo general se coloca una sonda urinaria una vez que está adormecida",
+        "Riesgos reales (poco comunes)",
+        "Dolor de cabeza espinal",
+        "(~1%): causado por una pequeña punción de la dura. Se puede tratar con un \"parche de sangre\"",
+        "Presión arterial baja temporal",
+        ": muy común y muy manejable",
+        "Alivio incompleto",
+        ": a veces requiere reposicionar el catéter o una nueva colocación",
+        "Picazón",
+        ": por el componente opioide, generalmente leve",
+        "Fiebre",
+        ": la fiebre asociada a la epidural es real, pero suele ser benigna y se maneja",
+        "Dato clave: el mito de la cesárea",
+        "Las epidurales",
+        "no",
+        "aumentan las tasas de cesárea. Este es uno de los mitos más comunes y mejor estudiados en obstetricia. Varios ensayos grandes y aleatorizados lo confirman. Puede pedir una epidural en cualquier momento del trabajo de parto activo."
+      ]
     },
     "csection": {
       "title": "Cesárea: por qué ocurre y qué esperar",
       "sub": "Planeada vs. no planeada, el procedimiento y la recuperación",
-      "body": "\n        <p class=\"lead gold\">Una cesárea es un parto quirúrgico a través de incisiones en el abdomen y el útero. Cerca del 30% de los nacimientos en EE. UU. son por cesárea.</p>\n        <h4>Razones planeadas (programadas)</h4>\n        <ul>\n          <li>Placenta previa: la placenta cubre la abertura del cuello uterino</li>\n          <li>Bebé en posición de nalgas (con los pies abajo) o transversal (de lado) que no se ha volteado</li>\n          <li>Incisión uterina clásica (vertical) previa</li>\n          <li>Gemelos o más bebés en ciertas posiciones</li>\n          <li>Ciertas condiciones de la madre (enfermedad cardíaca grave, brote activo de herpes genital)</li>\n        </ul>\n        <h4>Razones no planeadas durante el parto</h4>\n        <ul>\n          <li>Frecuencia cardíaca fetal no tranquilizadora (el bebé muestra señales de sufrimiento)</li>\n          <li>Detención del trabajo de parto: no hay progreso a pesar de contracciones y tiempo adecuados</li>\n          <li>Desprendimiento prematuro de placenta: la placenta se separa antes de tiempo</li>\n          <li>Prolapso del cordón umbilical: el cordón sale por el cuello uterino antes que el bebé</li>\n        </ul>\n        <h4>En el quirófano</h4>\n        <ul>\n          <li>Anestesia espinal o epidural: usted está despierta y adormecida del pecho hacia abajo</li>\n          <li>Un biombo bloquea la vista del campo quirúrgico; puede pedir que lo bajen en el momento del nacimiento</li>\n          <li>Su persona de apoyo generalmente puede estar con usted</li>\n          <li>Sentirá presión y tirones, no dolor</li>\n          <li>A menudo el bebé se coloca sobre su pecho de inmediato, incluso en el quirófano (\"cesárea amable\")</li>\n          <li>Tiempo total: unos 45–60 minutos; el nacimiento en sí toma 5–10 minutos</li>\n        </ul>\n        <h4>Recuperación después de una cesárea</h4>\n        <ul>\n          <li>Estancia en el hospital: 2–4 días (frente a 1–2 días después de un parto vaginal)</li>\n          <li>El dolor se maneja con ibuprofeno + acetaminofén en horarios fijos, con o sin opioides a corto plazo</li>\n          <li>Se empieza a caminar el mismo día: es fundamental para prevenir coágulos de sangre</li>\n          <li>No levante nada más pesado que su bebé durante 4–6 semanas</li>\n          <li>La incisión es una cicatriz horizontal \"a la altura del bikini\", cerrada con grapas o suturas absorbibles</li>\n        </ul>\n        <div class=\"callout alert\">\n          <div class=\"callout-title\">Llame después del alta de la cesárea si</div>\n          <p>La incisión se abre, presenta enrojecimiento que se extiende o tiene secreción inusual · Fiebre &gt;100.4°F · Dolor que empeora en lugar de mejorar · Empapa una toalla sanitaria en 1 hora</p>\n        </div>\n        <div class=\"callout gold\">\n          <div class=\"callout-title\">VBAC: parto vaginal después de una cesárea</div>\n          <p>Si tuvo una cesárea previa con incisión transversal baja, un VBAC (parto vaginal después de cesárea) puede ser una opción en este embarazo. Las tasas de éxito son del 60–80%. Hable de esto temprano durante su atención prenatal.</p>\n        </div>"
+      "t": [
+        "Una cesárea es un parto quirúrgico a través de incisiones en el abdomen y el útero. Cerca del 30% de los nacimientos en EE. UU. son por cesárea.",
+        "Razones planeadas (programadas)",
+        "Placenta previa: la placenta cubre la abertura del cuello uterino",
+        "Bebé en posición de nalgas (con los pies abajo) o transversal (de lado) que no se ha volteado",
+        "Incisión uterina clásica (vertical) previa",
+        "Gemelos o más bebés en ciertas posiciones",
+        "Ciertas condiciones de la madre (enfermedad cardíaca grave, brote activo de herpes genital)",
+        "Razones no planeadas durante el parto",
+        "Frecuencia cardíaca fetal no tranquilizadora (el bebé muestra señales de sufrimiento)",
+        "Detención del trabajo de parto: no hay progreso a pesar de contracciones y tiempo adecuados",
+        "Desprendimiento prematuro de placenta: la placenta se separa antes de tiempo",
+        "Prolapso del cordón umbilical: el cordón sale por el cuello uterino antes que el bebé",
+        "En el quirófano",
+        "Anestesia espinal o epidural: usted está despierta y adormecida del pecho hacia abajo",
+        "Un biombo bloquea la vista del campo quirúrgico; puede pedir que lo bajen en el momento del nacimiento",
+        "Su persona de apoyo generalmente puede estar con usted",
+        "Sentirá presión y tirones, no dolor",
+        "A menudo el bebé se coloca sobre su pecho de inmediato, incluso en el quirófano (\"cesárea amable\")",
+        "Tiempo total: unos 45–60 minutos; el nacimiento en sí toma 5–10 minutos",
+        "Recuperación después de una cesárea",
+        "Estancia en el hospital: 2–4 días (frente a 1–2 días después de un parto vaginal)",
+        "El dolor se maneja con ibuprofeno + acetaminofén en horarios fijos, con o sin opioides a corto plazo",
+        "Se empieza a caminar el mismo día: es fundamental para prevenir coágulos de sangre",
+        "No levante nada más pesado que su bebé durante 4–6 semanas",
+        "La incisión es una cicatriz horizontal \"a la altura del bikini\", cerrada con grapas o suturas absorbibles",
+        "Llame después del alta de la cesárea si",
+        "La incisión se abre, presenta enrojecimiento que se extiende o tiene secreción inusual · Fiebre &gt;100.4°F · Dolor que empeora en lugar de mejorar · Empapa una toalla sanitaria en 1 hora",
+        "VBAC: parto vaginal después de una cesárea",
+        "Si tuvo una cesárea previa con incisión transversal baja, un VBAC (parto vaginal después de cesárea) puede ser una opción en este embarazo. Las tasas de éxito son del 60–80%. Hable de esto temprano durante su atención prenatal."
+      ]
     },
     "mfm": {
       "title": "Embarazo de alto riesgo y referencia a MFM",
       "sub": "Qué es MFM y por qué podrían referirla",
-      "body": "\n        <p class=\"lead gold\">MFM significa Medicina Materno-Fetal: un obstetra subespecialista que se enfoca en embarazos de alto riesgo. Una referencia es una señal de que está recibiendo supervisión de expertos, no un motivo de pánico.</p>\n        <h4>Razones comunes para una referencia a MFM</h4>\n        <ul>\n          <li>Preeclampsia o presión arterial alta crónica</li>\n          <li>Diabetes pregestacional (tipo 1 o 2) o diabetes gestacional que requiere insulina</li>\n          <li>Gemelos, trillizos o más bebés</li>\n          <li>Antecedente de parto prematuro (antes de las 37 semanas)</li>\n          <li>Cuello uterino corto detectado en el ultrasonido (insuficiencia cervical)</li>\n          <li>Restricción del crecimiento fetal o anomalía estructural en el ultrasonido anatómico</li>\n          <li>Enfermedades autoinmunes: lupus, síndrome antifosfolípido</li>\n          <li>Enfermedad renal crónica, enfermedad cardíaca, trastornos de la coagulación</li>\n          <li>Resultados anormales de tamizaje genético que requieren seguimiento</li>\n          <li>Edad materna avanzada (&gt;35) con complicaciones</li>\n        </ul>\n        <h4>Qué hace realmente el MFM</h4>\n        <ul>\n          <li>Realiza ultrasonidos especializados: estudio detallado de la anatomía fetal, ecocardiograma fetal, ultrasonidos de crecimiento en serie</li>\n          <li>Asesora sobre medicamentos, el momento del parto y la vía de parto</li>\n          <li>Puede comanejar su atención junto con su obstetra o partera, o hacerse cargo de la atención primaria en casos complejos</li>\n          <li>La mayoría de las pacientes siguen dando a luz con su proveedor original</li>\n        </ul>\n        <div class=\"callout\">\n          <div class=\"callout-title\">Pregunte a su MFM</div>\n          <p>¿Cuál es la preocupación específica? ¿Cómo se va a monitorear? ¿Cambia cómo o cuándo daré a luz? ¿Necesitaré visitas o ultrasonidos más frecuentes?</p>\n        </div>"
+      "t": [
+        "MFM significa Medicina Materno-Fetal: un obstetra subespecialista que se enfoca en embarazos de alto riesgo. Una referencia es una señal de que está recibiendo supervisión de expertos, no un motivo de pánico.",
+        "Razones comunes para una referencia a MFM",
+        "Preeclampsia o presión arterial alta crónica",
+        "Diabetes pregestacional (tipo 1 o 2) o diabetes gestacional que requiere insulina",
+        "Gemelos, trillizos o más bebés",
+        "Antecedente de parto prematuro (antes de las 37 semanas)",
+        "Cuello uterino corto detectado en el ultrasonido (insuficiencia cervical)",
+        "Restricción del crecimiento fetal o anomalía estructural en el ultrasonido anatómico",
+        "Enfermedades autoinmunes: lupus, síndrome antifosfolípido",
+        "Enfermedad renal crónica, enfermedad cardíaca, trastornos de la coagulación",
+        "Resultados anormales de tamizaje genético que requieren seguimiento",
+        "Edad materna avanzada (&gt;35) con complicaciones",
+        "Qué hace realmente el MFM",
+        "Realiza ultrasonidos especializados: estudio detallado de la anatomía fetal, ecocardiograma fetal, ultrasonidos de crecimiento en serie",
+        "Asesora sobre medicamentos, el momento del parto y la vía de parto",
+        "Puede comanejar su atención junto con su obstetra o partera, o hacerse cargo de la atención primaria en casos complejos",
+        "La mayoría de las pacientes siguen dando a luz con su proveedor original",
+        "Pregunte a su MFM",
+        "¿Cuál es la preocupación específica? ¿Cómo se va a monitorear? ¿Cambia cómo o cuándo daré a luz? ¿Necesitaré visitas o ultrasonidos más frecuentes?"
+      ]
     },
     "immediate-postpartum": {
       "title": "Las primeras horas después del parto",
       "sub": "La \"cuarta etapa\". Qué se está monitoreando",
-      "body": "<p class=\"lead rose\">Las primeras dos horas después del nacimiento, llamadas la \"cuarta etapa del parto\", son el momento más importante para el monitoreo. Su enfermera la revisará con frecuencia.</p>\n <h4>Qué se está monitoreando</h4>\n <ul>\n <li><strong>Su útero</strong>. Las enfermeras verifican que esté firme y bien contraído para prevenir una hemorragia. Le presionarán el abdomen periódicamente.</li>\n <li><strong>El sangrado (loquios)</strong>. Se registra la cantidad y el color</li>\n <li><strong>La presión arterial y la frecuencia cardíaca</strong></li>\n <li><strong>Su periné o su incisión</strong></li>\n <li><strong>El nivel de dolor</strong>, no espere a que el dolor sea intenso; pida medicamento de manera anticipada</li>\n </ul>\n <h4>Contacto piel con piel</h4>\n <p>Colocar al bebé sobre su pecho desnudo inmediatamente después del nacimiento, incluso después de una cesárea, regula la temperatura, el azúcar en la sangre y la respiración del bebé, estabiliza su frecuencia cardíaca y promueve fuertemente el vínculo afectivo y el inicio de la lactancia. Pida que esto suceda, a menos que haya una razón médica específica que lo impida.</p>\n <div class=\"callout rose\">\n <div class=\"callout-title\">Pinzamiento tardío del cordón</div>\n <p>Esperar de 30 a 60 segundos (o más) antes de pinzar y cortar el cordón umbilical transfiere al bebé entre 80 y 100 mL adicionales de sangre rica en hierro. Esta es ahora la práctica habitual en la mayoría de los hospitales de EE. UU. Puede confirmar con anticipación que está previsto.</p>\n </div>\n <h4>Su primera comida</h4>\n <p>Después de un parto vaginal, por lo general puede comer poco después del parto. Después de una cesárea, primero líquidos claros y luego comida normal según la tolere. Por lo general dentro de unas pocas horas.</p>"
+      "t": [
+        "Las primeras dos horas después del nacimiento, llamadas la \"cuarta etapa del parto\", son el momento más importante para el monitoreo. Su enfermera la revisará con frecuencia.",
+        "Qué se está monitoreando",
+        "Su útero",
+        ". Las enfermeras verifican que esté firme y bien contraído para prevenir una hemorragia. Le presionarán el abdomen periódicamente.",
+        "El sangrado (loquios)",
+        ". Se registra la cantidad y el color",
+        "La presión arterial y la frecuencia cardíaca",
+        "Su periné o su incisión",
+        "El nivel de dolor",
+        ", no espere a que el dolor sea intenso; pida medicamento de manera anticipada",
+        "Contacto piel con piel",
+        "Colocar al bebé sobre su pecho desnudo inmediatamente después del nacimiento, incluso después de una cesárea, regula la temperatura, el azúcar en la sangre y la respiración del bebé, estabiliza su frecuencia cardíaca y promueve fuertemente el vínculo afectivo y el inicio de la lactancia. Pida que esto suceda, a menos que haya una razón médica específica que lo impida.",
+        "Pinzamiento tardío del cordón",
+        "Esperar de 30 a 60 segundos (o más) antes de pinzar y cortar el cordón umbilical transfiere al bebé entre 80 y 100 mL adicionales de sangre rica en hierro. Esta es ahora la práctica habitual en la mayoría de los hospitales de EE. UU. Puede confirmar con anticipación que está previsto.",
+        "Su primera comida",
+        "Después de un parto vaginal, por lo general puede comer poco después del parto. Después de una cesárea, primero líquidos claros y luego comida normal según la tolere. Por lo general dentro de unas pocas horas."
+      ]
     },
     "physical-recovery": {
       "title": "Recuperación física: qué esperar",
       "sub": "Loquios, cuidado del periné y manejo del dolor",
-      "body": "<h4>Sangrado posparto (loquios)</h4>\n <p>Los loquios son el flujo normal que ocurre cuando el revestimiento del útero se desprende y el sitio donde estaba la placenta sana. Cambia con el tiempo:</p>\n <table class=\"data-table\">\n <tr><th class=\"rose\">Días</th><th class=\"rose\">Apariencia</th><th class=\"rose\">¿Es normal?</th></tr>\n <tr><td>1–4</td><td>Rojo brillante, como una menstruación abundante</td><td>✓ Sí</td></tr>\n <tr><td>5–10</td><td>Rosado a marrón, flujo más ligero</td><td>✓ Sí</td></tr>\n <tr><td>10–28+</td><td>Amarillo-blancuzco, escaso</td><td>✓ Sí</td></tr>\n </table>\n <div class=\"callout alert\">\n <div class=\"callout-title\">Llame a su proveedor si</div>\n <p>Empapa más de 1 toalla por hora durante 2 horas seguidas · Expulsa coágulos del tamaño de una pelota de golf · El sangrado rojo brillante regresa después de haber disminuido · El flujo tiene mal olor</p>\n </div>\n <h4>Cuidado del periné (después de un parto vaginal)</h4>\n <ul>\n <li>Use la botella de irrigación (peri-bottle) con agua tibia después de cada visita al baño. De adelante hacia atrás</li>\n <li>Bolsas de hielo durante las primeras 24 horas; luego cambie a baños de asiento tibios (10–15 min, 2–3 veces al día)</li>\n <li>Las toallitas de hamamelis (por ejemplo, Tucks) alivian la hinchazón y las hemorroides</li>\n <li><strong>Ablandador de heces (docusato/Colace)</strong>. Comience de inmediato; el estreñimiento con puntos en el periné es muy incómodo y hacer fuerza puede romper los puntos</li>\n </ul>\n <h4>Manejo del dolor</h4>\n <p>Alternar ibuprofeno (600 mg cada 6 horas) y acetaminofén (650 mg cada 6 horas) en un horario fijo funciona mucho mejor que esperar a que el dolor aumente. Pídale a su enfermera un horario por escrito el día 1 y sígalo.</p>"
+      "t": [
+        "Sangrado posparto (loquios)",
+        "Los loquios son el flujo normal que ocurre cuando el revestimiento del útero se desprende y el sitio donde estaba la placenta sana. Cambia con el tiempo:",
+        "Días",
+        "Apariencia",
+        "¿Es normal?",
+        "1–4",
+        "Rojo brillante, como una menstruación abundante",
+        "✓ Sí",
+        "5–10",
+        "Rosado a marrón, flujo más ligero",
+        "✓ Sí",
+        "10–28+",
+        "Amarillo-blancuzco, escaso",
+        "✓ Sí",
+        "Llame a su proveedor si",
+        "Empapa más de 1 toalla por hora durante 2 horas seguidas · Expulsa coágulos del tamaño de una pelota de golf · El sangrado rojo brillante regresa después de haber disminuido · El flujo tiene mal olor",
+        "Cuidado del periné (después de un parto vaginal)",
+        "Use la botella de irrigación (peri-bottle) con agua tibia después de cada visita al baño. De adelante hacia atrás",
+        "Bolsas de hielo durante las primeras 24 horas; luego cambie a baños de asiento tibios (10–15 min, 2–3 veces al día)",
+        "Las toallitas de hamamelis (por ejemplo, Tucks) alivian la hinchazón y las hemorroides",
+        "Ablandador de heces (docusato/Colace)",
+        ". Comience de inmediato; el estreñimiento con puntos en el periné es muy incómodo y hacer fuerza puede romper los puntos",
+        "Manejo del dolor",
+        "Alternar ibuprofeno (600 mg cada 6 horas) y acetaminofén (650 mg cada 6 horas) en un horario fijo funciona mucho mejor que esperar a que el dolor aumente. Pídale a su enfermera un horario por escrito el día 1 y sígalo."
+      ]
     },
     "mood-ppd": {
       "title": "Recuperación del estado de ánimo y las emociones",
       "sub": "La tristeza posparto, la depresión posparto y cuándo pedir ayuda",
-      "body": "<p class=\"lead rose\">Los grandes cambios hormonales después del parto afectan mucho el estado de ánimo. Los cambios emocionales son de esperar, pero algunos síntomas necesitan atención.</p>\n <h4>Tristeza posparto (\"baby blues\"). Normal, hasta el 80% de las madres</h4>\n <p>Ganas de llorar, cambios de humor, ansiedad e irritabilidad en la primera semana después del nacimiento, causados por una caída brusca del estrógeno y la progesterona. La tristeza posparto suele desaparecer por sí sola en 2 semanas.</p>\n <h4>Depresión posparto (PPD). 1 de cada 8 madres</h4>\n <p>La PPD es una condición médica: un trastorno del estado de ánimo que se puede tratar, no un defecto de carácter ni una señal de que es mala madre.</p>\n <div class=\"callout rose\">\n <div class=\"callout-title\">Síntomas de la PPD</div>\n <p>Tristeza o sensación de vacío que no desaparece · Dificultad para crear un vínculo con su bebé · Sentir que es una mala madre o que su bebé estaría mejor sin usted · Ansiedad intensa o ataques de pánico · No poder dormir ni siquiera cuando el bebé duerme · Pérdida de interés en las cosas que antes disfrutaba · Pensamientos de hacerse daño a sí misma o al bebé</p>\n </div>\n <p>Si estos síntomas duran más de 2 semanas o son intensos en cualquier momento, dígaselo a su equipo de atención. La PPD se trata eficazmente con terapia, grupos de apoyo o medicamentos (muchos de los cuales son seguros durante la lactancia). <strong>No espere hasta su visita de las 6 semanas para mencionarlo.</strong></p>\n <div class=\"callout alert\">\n <div class=\"callout-title\">Psicosis posparto. Poco común, pero es una emergencia médica</div>\n <p>Alucinaciones, delirios, confusión extrema o agitación en los días después del parto. Llame al 911 o vaya a la sala de emergencias de inmediato. Es poco común (1–2 de cada 1,000), pero requiere tratamiento urgente.</p>\n </div>\n <h4>Ansiedad posparto</h4>\n <p>Se habla menos de ella, pero es muy común. Preocupación excesiva e invasiva por la seguridad del bebé, dificultad para dormir aun estando agotada, necesidad constante de revisar al bebé, síntomas físicos como el corazón acelerado. También es muy tratable. Coméntele a su médico.</p>"
+      "t": [
+        "Los grandes cambios hormonales después del parto afectan mucho el estado de ánimo. Los cambios emocionales son de esperar, pero algunos síntomas necesitan atención.",
+        "Tristeza posparto (\"baby blues\"). Normal, hasta el 80% de las madres",
+        "Ganas de llorar, cambios de humor, ansiedad e irritabilidad en la primera semana después del nacimiento, causados por una caída brusca del estrógeno y la progesterona. La tristeza posparto suele desaparecer por sí sola en 2 semanas.",
+        "Depresión posparto (PPD). 1 de cada 8 madres",
+        "La PPD es una condición médica: un trastorno del estado de ánimo que se puede tratar, no un defecto de carácter ni una señal de que es mala madre.",
+        "Síntomas de la PPD",
+        "Tristeza o sensación de vacío que no desaparece · Dificultad para crear un vínculo con su bebé · Sentir que es una mala madre o que su bebé estaría mejor sin usted · Ansiedad intensa o ataques de pánico · No poder dormir ni siquiera cuando el bebé duerme · Pérdida de interés en las cosas que antes disfrutaba · Pensamientos de hacerse daño a sí misma o al bebé",
+        "Si estos síntomas duran más de 2 semanas o son intensos en cualquier momento, dígaselo a su equipo de atención. La PPD se trata eficazmente con terapia, grupos de apoyo o medicamentos (muchos de los cuales son seguros durante la lactancia).",
+        "No espere hasta su visita de las 6 semanas para mencionarlo.",
+        "Psicosis posparto. Poco común, pero es una emergencia médica",
+        "Alucinaciones, delirios, confusión extrema o agitación en los días después del parto. Llame al 911 o vaya a la sala de emergencias de inmediato. Es poco común (1–2 de cada 1,000), pero requiere tratamiento urgente.",
+        "Ansiedad posparto",
+        "Se habla menos de ella, pero es muy común. Preocupación excesiva e invasiva por la seguridad del bebé, dificultad para dormir aun estando agotada, necesidad constante de revisar al bebé, síntomas físicos como el corazón acelerado. También es muy tratable. Coméntele a su médico."
+      ]
     },
     "pelvic-rest": {
       "title": "Reposo pélvico y reanudación de las relaciones sexuales",
       "sub": "Por qué existe la recomendación de las 6 semanas",
-      "body": "<p class=\"lead rose\">ACOG recomienda esperar al menos 6 semanas después del parto antes de tener relaciones sexuales vaginales. Aquí le explicamos por qué existe esta recomendación.</p>\n <h4>¿Por qué 6 semanas?</h4>\n <ul>\n <li>El útero necesita de 4 a 6 semanas para contraerse por completo y para que el sitio donde estaba adherida la placenta sane del todo</li>\n <li>Cualquier desgarro, laceración o punto de episiotomía necesita tiempo para sanar</li>\n <li>Las incisiones de la cesárea, tanto la cicatriz externa como la incisión interna del útero, necesitan al menos 6 semanas</li>\n <li>El cuello del útero, que se dilató hasta 10 cm, se cierra gradualmente durante varias semanas; durante este tiempo ofrece un camino directo para que una infección llegue al útero</li>\n </ul>\n <h4>Qué significa \"reposo pélvico\"</h4>\n <p>Nada dentro de la vagina: ni relaciones sexuales, ni tampones, ni copas menstruales, ni duchas vaginales. Use solo toallas para los loquios durante el período de curación.</p>\n <div class=\"callout rose\">\n <div class=\"callout-title\">Cuando esté lista para reanudar</div>\n <p><strong>La sequedad es muy común</strong>, especialmente si está amamantando, ya que la lactancia mantiene el estrógeno bajo. Use un lubricante a base de agua. Tómese su tiempo; un poco de molestia inicial es normal. El dolor persistente no lo es. Dígaselo a su médico. <strong>Use anticonceptivos</strong>. Puede quedar embarazada antes de que le regrese la menstruación. Hable de las opciones en su visita de las 6 semanas.</p>\n </div>\n <div class=\"callout gold\">\n <div class=\"callout-title\">Anticoncepción después del parto</div>\n <p>Puede ovular y quedar embarazada desde las 3 semanas posparto, incluso mientras amamanta y antes de que le regrese la menstruación. Si no quiere quedar embarazada de inmediato, hable sobre anticoncepción antes de salir del hospital o, a más tardar, en su visita de las 2 semanas.</p>\n </div>"
+      "t": [
+        "ACOG recomienda esperar al menos 6 semanas después del parto antes de tener relaciones sexuales vaginales. Aquí le explicamos por qué existe esta recomendación.",
+        "¿Por qué 6 semanas?",
+        "El útero necesita de 4 a 6 semanas para contraerse por completo y para que el sitio donde estaba adherida la placenta sane del todo",
+        "Cualquier desgarro, laceración o punto de episiotomía necesita tiempo para sanar",
+        "Las incisiones de la cesárea, tanto la cicatriz externa como la incisión interna del útero, necesitan al menos 6 semanas",
+        "El cuello del útero, que se dilató hasta 10 cm, se cierra gradualmente durante varias semanas; durante este tiempo ofrece un camino directo para que una infección llegue al útero",
+        "Qué significa \"reposo pélvico\"",
+        "Nada dentro de la vagina: ni relaciones sexuales, ni tampones, ni copas menstruales, ni duchas vaginales. Use solo toallas para los loquios durante el período de curación.",
+        "Cuando esté lista para reanudar",
+        "La sequedad es muy común",
+        ", especialmente si está amamantando, ya que la lactancia mantiene el estrógeno bajo. Use un lubricante a base de agua. Tómese su tiempo; un poco de molestia inicial es normal. El dolor persistente no lo es. Dígaselo a su médico.",
+        "Use anticonceptivos",
+        ". Puede quedar embarazada antes de que le regrese la menstruación. Hable de las opciones en su visita de las 6 semanas.",
+        "Anticoncepción después del parto",
+        "Puede ovular y quedar embarazada desde las 3 semanas posparto, incluso mientras amamanta y antes de que le regrese la menstruación. Si no quiere quedar embarazada de inmediato, hable sobre anticoncepción antes de salir del hospital o, a más tardar, en su visita de las 2 semanas."
+      ]
     },
     "postpartum-exercise": {
       "title": "Volver a hacer ejercicio después del parto",
       "sub": "Qué es seguro y cuándo, y la fisioterapia del suelo pélvico",
-      "body": "<p class=\"lead rose\">Volver a estar activa después del parto mejora el estado de ánimo, la energía y la recuperación física, pero el momento importa.</p>\n <h4>Comience de inmediato (días 1–2)</h4>\n <ul>\n <li><strong>Ejercicios de Kegel</strong>. Comience dentro de las 24–48 horas si se siente cómoda. Aceleran la curación, reducen el riesgo de escapes de orina y reconstruyen el tono del suelo pélvico. 3 series de 10 contracciones (de 5–10 segundos cada una), varias veces al día.</li>\n <li><strong>Caminatas suaves</strong>. Se recomiendan caminatas cortas desde el día 1–2. Aumente a medida que se sienta lista.</li>\n <li><strong>Respiración abdominal profunda</strong>. Inhale para expandir el abdomen y exhale lentamente. Ayuda a reconectar con los músculos profundos del abdomen.</li>\n </ul>\n <h4>Semanas 2–6</h4>\n <ul>\n <li>Aumente gradualmente la duración y el ritmo de las caminatas</li>\n <li>Los estiramientos suaves y el trabajo de movilidad están bien</li>\n <li>Evite: abdominales, planchas, levantar pesas, actividades de alto impacto y cualquier cosa que aumente la presión hacia abajo sobre el suelo pélvico</li>\n <li>Escuche a su cuerpo. Más dolor, sangrado o presión pélvica significa que debe ir más despacio</li>\n </ul>\n <h4>Después de la autorización de las 6 semanas</h4>\n <p>Puede volver gradualmente a las actividades de ejercicio que hacía antes del embarazo. Comience al 50% de la intensidad y aumente lentamente durante varias semanas. Correr, el HIIT y el levantamiento de pesas pueden reanudarse, pero comience con suavidad.</p>\n <div class=\"callout rose\">\n <div class=\"callout-title\">Diástasis de los rectos abdominales</div>\n <p>Es una separación de los dos lados del recto abdominal (los músculos del \"six-pack\") que es muy común después del embarazo. Los abdominales tradicionales pueden empeorarla. Un fisioterapeuta del suelo pélvico puede evaluarla y darle ejercicios seguros y eficaces. Pídale a su médico una referencia.</p>\n </div>\n <div class=\"callout\">\n <div class=\"callout-title\">Fisioterapia del suelo pélvico</div>\n <p>Un recurso poco usado pero muy eficaz después del parto. Trata los escapes de orina, el prolapso de los órganos pélvicos, el dolor durante las relaciones sexuales, la diástasis de los rectos y la debilidad general del suelo pélvico. Pida una referencia en su visita de las 6 semanas. La mayoría de los seguros la cubre.</p>\n </div>"
+      "t": [
+        "Volver a estar activa después del parto mejora el estado de ánimo, la energía y la recuperación física, pero el momento importa.",
+        "Comience de inmediato (días 1–2)",
+        "Ejercicios de Kegel",
+        ". Comience dentro de las 24–48 horas si se siente cómoda. Aceleran la curación, reducen el riesgo de escapes de orina y reconstruyen el tono del suelo pélvico. 3 series de 10 contracciones (de 5–10 segundos cada una), varias veces al día.",
+        "Caminatas suaves",
+        ". Se recomiendan caminatas cortas desde el día 1–2. Aumente a medida que se sienta lista.",
+        "Respiración abdominal profunda",
+        ". Inhale para expandir el abdomen y exhale lentamente. Ayuda a reconectar con los músculos profundos del abdomen.",
+        "Semanas 2–6",
+        "Aumente gradualmente la duración y el ritmo de las caminatas",
+        "Los estiramientos suaves y el trabajo de movilidad están bien",
+        "Evite: abdominales, planchas, levantar pesas, actividades de alto impacto y cualquier cosa que aumente la presión hacia abajo sobre el suelo pélvico",
+        "Escuche a su cuerpo. Más dolor, sangrado o presión pélvica significa que debe ir más despacio",
+        "Después de la autorización de las 6 semanas",
+        "Puede volver gradualmente a las actividades de ejercicio que hacía antes del embarazo. Comience al 50% de la intensidad y aumente lentamente durante varias semanas. Correr, el HIIT y el levantamiento de pesas pueden reanudarse, pero comience con suavidad.",
+        "Diástasis de los rectos abdominales",
+        "Es una separación de los dos lados del recto abdominal (los músculos del \"six-pack\") que es muy común después del embarazo. Los abdominales tradicionales pueden empeorarla. Un fisioterapeuta del suelo pélvico puede evaluarla y darle ejercicios seguros y eficaces. Pídale a su médico una referencia.",
+        "Fisioterapia del suelo pélvico",
+        "Un recurso poco usado pero muy eficaz después del parto. Trata los escapes de orina, el prolapso de los órganos pélvicos, el dolor durante las relaciones sexuales, la diástasis de los rectos y la debilidad general del suelo pélvico. Pida una referencia en su visita de las 6 semanas. La mayoría de los seguros la cubre."
+      ]
     },
     "postpartum-danger": {
       "title": "Señales de alerta posparto y seguimiento",
       "sub": "Cuándo llamar y su calendario de citas",
-      "body": "\n        <div class=\"callout alert\">\n          <div class=\"callout-title\">Vaya a la sala de emergencias o llame al 911 si tiene</div>\n          <p>Dolor en el pecho o dificultad para respirar · Convulsiones · Dolor de cabeza repentino e intenso, distinto a cualquier otro · Síntomas de derrame cerebral (cara caída, debilidad en un brazo, dificultad para hablar) · Pensamientos de hacerse daño a sí misma o a su bebé</p>\n        </div>\n        <div class=\"callout rose\">\n          <div class=\"callout-title\">Llame a su obstetra / partera si tiene</div>\n          <p>Fiebre &gt;100.4°F · Empapa más de 1 toalla por hora durante 2 horas · Dolor de cabeza intenso que no se alivia con ibuprofeno/Tylenol · Cambios en la visión · Enrojecimiento, hinchazón o calor en una pierna (DVT, coágulo en una vena profunda) · Herida que se abre, enrojecimiento que se extiende o pus · Dificultad para orinar · Signos de PPD o ansiedad</p>\n        </div>\n        <h4>Su calendario de visitas posparto</h4>\n        <table class=\"data-table\">\n          <tr><th class=\"rose\">Cuándo</th><th class=\"rose\">Propósito</th></tr>\n          <tr><td><strong>1–3 días</strong><br>(cesárea o complicaciones)</td><td>Revisión de la herida, presión arterial, manejo del dolor</td></tr>\n          <tr><td><strong>2 semanas</strong><br>(ahora recomendado por ACOG)</td><td>Evaluación del estado de ánimo (Escala de Edimburgo), presión arterial, revisión de la incisión o el periné, apoyo con la lactancia</td></tr>\n          <tr><td><strong>6 semanas</strong></td><td>Examen físico completo, examen pélvico, anticoncepción, autorización para el sexo y el ejercicio, revisión de la tiroides si está indicada</td></tr>\n        </table>\n        <div class=\"callout\">\n          <div class=\"callout-title\">Preguntas para hacer en su visita de las 6 semanas</div>\n          <p>Anticoncepción · Referencia para fisioterapia del suelo pélvico · Regreso al ejercicio completo · Evaluación de diástasis de los rectos · Inquietudes sobre el sexo y la sequedad · Evaluación del estado de ánimo y la PPD · Curación de la incisión o el periné · Cualquier otra pregunta que haya acumulado</p>\n        </div>"
+      "t": [
+        "Vaya a la sala de emergencias o llame al 911 si tiene",
+        "Dolor en el pecho o dificultad para respirar · Convulsiones · Dolor de cabeza repentino e intenso, distinto a cualquier otro · Síntomas de derrame cerebral (cara caída, debilidad en un brazo, dificultad para hablar) · Pensamientos de hacerse daño a sí misma o a su bebé",
+        "Llame a su obstetra / partera si tiene",
+        "Fiebre &gt;100.4°F · Empapa más de 1 toalla por hora durante 2 horas · Dolor de cabeza intenso que no se alivia con ibuprofeno/Tylenol · Cambios en la visión · Enrojecimiento, hinchazón o calor en una pierna (DVT, coágulo en una vena profunda) · Herida que se abre, enrojecimiento que se extiende o pus · Dificultad para orinar · Signos de PPD o ansiedad",
+        "Su calendario de visitas posparto",
+        "Cuándo",
+        "Propósito",
+        "1–3 días",
+        "(cesárea o complicaciones)",
+        "Revisión de la herida, presión arterial, manejo del dolor",
+        "2 semanas",
+        "(ahora recomendado por ACOG)",
+        "Evaluación del estado de ánimo (Escala de Edimburgo), presión arterial, revisión de la incisión o el periné, apoyo con la lactancia",
+        "6 semanas",
+        "Examen físico completo, examen pélvico, anticoncepción, autorización para el sexo y el ejercicio, revisión de la tiroides si está indicada",
+        "Preguntas para hacer en su visita de las 6 semanas",
+        "Anticoncepción · Referencia para fisioterapia del suelo pélvico · Regreso al ejercicio completo · Evaluación de diástasis de los rectos · Inquietudes sobre el sexo y la sequedad · Evaluación del estado de ánimo y la PPD · Curación de la incisión o el periné · Cualquier otra pregunta que haya acumulado"
+      ]
     },
     "breastfeeding": {
       "title": "Lactancia materna: cómo empezar",
       "sub": "El agarre, el calostro y cómo saber que está funcionando",
-      "body": "\n        <p class=\"lead navy\">La lactancia materna es natural, pero requiere práctica. La mayoría de los problemas se pueden resolver con buen apoyo. <strong>Pida una consulta con una especialista en lactancia antes de salir del hospital: es uno de los recursos más valiosos a su alcance.</strong></p>\n        <h4>Primeros 1–3 días: el calostro</h4>\n        <p>Su primera \"leche\" es el calostro: espeso, de color amarillo dorado y producido en pequeñas cantidades (cucharaditas, no onzas). Esto es exactamente lo correcto. El calostro está lleno de anticuerpos, factores inmunitarios y todo lo que un recién nacido necesita. La leche madura baja alrededor de los días 2–5 (a menudo un poco más tarde después de una cesárea).</p>\n        <h4>El agarre: lo más importante</h4>\n        <ul>\n          <li>La boca del bebé debe cubrir la mayor parte de la areola, no solo el pezón</li>\n          <li>Ambos labios deben estar hacia afuera (no doblados hacia adentro)</li>\n          <li>Debe escuchar sonidos de deglución, un suave \"kuh\", no chasquidos</li>\n          <li>La nariz y el mentón del bebé deben tocar el pecho</li>\n          <li>Un buen agarre no debe doler después de los primeros 20–30 segundos. Si le duele todo el tiempo, rompa la succión con un dedo limpio e inténtelo de nuevo.</li>\n        </ul>\n        <h4>Con qué frecuencia alimentar</h4>\n        <p>De 8 a 12 veces en 24 horas durante las primeras semanas. Alimente a demanda: fíjese en las señales de hambre (búsqueda del pecho, manos a la boca, movimientos de succión, inquietud) en lugar de mirar el reloj. Los recién nacidos necesitan comer con esa frecuencia; no es una señal de que usted no tenga suficiente leche.</p>\n        <div class=\"callout navy\">\n          <div class=\"callout-title\">Cómo saber si el bebé está recibiendo suficiente</div>\n          <p><strong>Pañales:</strong> Para el día 4–5, espere al menos 6 pañales mojados y 3–4 deposiciones amarillas con grumos al día. <strong>Peso:</strong> El peso al nacer debe recuperarse entre los 10 y 14 días. Después del día 5, espere un aumento de ½–1 oz por día. <strong>El bebé:</strong> Satisfecho después de comer, alerta cuando está despierto.</p>\n        </div>"
+      "t": [
+        "La lactancia materna es natural, pero requiere práctica. La mayoría de los problemas se pueden resolver con buen apoyo.",
+        "Pida una consulta con una especialista en lactancia antes de salir del hospital: es uno de los recursos más valiosos a su alcance.",
+        "Primeros 1–3 días: el calostro",
+        "Su primera \"leche\" es el calostro: espeso, de color amarillo dorado y producido en pequeñas cantidades (cucharaditas, no onzas). Esto es exactamente lo correcto. El calostro está lleno de anticuerpos, factores inmunitarios y todo lo que un recién nacido necesita. La leche madura baja alrededor de los días 2–5 (a menudo un poco más tarde después de una cesárea).",
+        "El agarre: lo más importante",
+        "La boca del bebé debe cubrir la mayor parte de la areola, no solo el pezón",
+        "Ambos labios deben estar hacia afuera (no doblados hacia adentro)",
+        "Debe escuchar sonidos de deglución, un suave \"kuh\", no chasquidos",
+        "La nariz y el mentón del bebé deben tocar el pecho",
+        "Un buen agarre no debe doler después de los primeros 20–30 segundos. Si le duele todo el tiempo, rompa la succión con un dedo limpio e inténtelo de nuevo.",
+        "Con qué frecuencia alimentar",
+        "De 8 a 12 veces en 24 horas durante las primeras semanas. Alimente a demanda: fíjese en las señales de hambre (búsqueda del pecho, manos a la boca, movimientos de succión, inquietud) en lugar de mirar el reloj. Los recién nacidos necesitan comer con esa frecuencia; no es una señal de que usted no tenga suficiente leche.",
+        "Cómo saber si el bebé está recibiendo suficiente",
+        "Pañales:",
+        "Para el día 4–5, espere al menos 6 pañales mojados y 3–4 deposiciones amarillas con grumos al día.",
+        "Peso:",
+        "El peso al nacer debe recuperarse entre los 10 y 14 días. Después del día 5, espere un aumento de ½–1 oz por día.",
+        "El bebé:",
+        "Satisfecho después de comer, alerta cuando está despierto."
+      ]
     },
     "bf-challenges": {
       "title": "Dificultades de la lactancia y soluciones",
       "sub": "Pezones doloridos, congestión, dudas sobre la producción, mastitis",
-      "body": "\n        <table class=\"data-table\">\n          <tr><th class=\"navy\">Problema</th><th class=\"navy\">Qué hacer</th></tr>\n          <tr><td><strong>Pezones doloridos</strong></td><td>Revise primero el agarre: es la causa número 1. Aplique leche materna extraída o lanolina después de las tomas. Deje secar al aire. Suele mejorar después del día 5, cuando baja la leche y mejora el agarre.</td></tr>\n          <tr><td><strong>Congestión mamaria</strong></td><td>Amamante o extráigase leche con frecuencia (cada 2–3 horas). Compresa tibia antes de alimentar para ayudar a la bajada. Compresa fría después de alimentar para reducir la hinchazón. Puede causar fiebre baja: si es &gt;100.4°F, llame a su médico.</td></tr>\n          <tr><td><strong>Preocupación por poca leche</strong></td><td>Alimente con más frecuencia: la producción sigue a la demanda. Asegure un buen agarre. Extráigase leche después de las tomas para estimular más producción. Consulte a una especialista en lactancia. La mayoría de las veces que se percibe poca leche, en realidad la producción es suficiente.</td></tr>\n          <tr><td><strong>Conducto obstruido</strong></td><td>Bulto firme y sensible en el pecho. Masajee hacia el pezón durante las tomas. Compresa tibia antes de amamantar. Vacíe ese pecho con frecuencia. Suele resolverse en 1–2 días.</td></tr>\n          <tr><td><strong>Mastitis</strong></td><td>Síntomas parecidos a la gripe (fiebre, dolores corporales, fatiga) más una zona roja y dolorosa del pecho. Siga amamantando: dejar de hacerlo lo empeora. Generalmente requiere antibióticos: llame a su médico.</td></tr>\n          <tr><td><strong>Candidiasis del pezón</strong></td><td>Dolor agudo y ardiente durante y después de las tomas. Pezones rosados y brillantes. Tanto usted como el bebé necesitan tratamiento antimicótico al mismo tiempo. Llame a su médico y al pediatra del bebé.</td></tr>\n        </table>\n        <div class=\"callout navy\">\n          <div class=\"callout-title\">Extracción de leche</div>\n          <p>Los sacaleches eléctricos dobles están cubiertos por la mayoría de los seguros médicos de EE. UU. bajo la ACA (Ley de Cuidado de Salud Asequible). La extracción mantiene la producción cuando el bebé no puede mamar, permite que otras personas alimenten al bebé y ayuda a crear una reserva en el congelador. La leche puede refrigerarse por 4 días o congelarse de 6 a 12 meses.</p>\n        </div>\n        <div class=\"callout\">\n          <div class=\"callout-title\">Está bien complementar o alimentar con fórmula</div>\n          <p>Si la lactancia no funciona a pesar del apoyo, complementar con fórmula no es un fracaso: es alimentar a su bebé. Lo más importante es un bebé alimentado y saludable. Muchas familias combinan con éxito la leche materna y la fórmula.</p>\n        </div>"
+      "t": [
+        "Problema",
+        "Qué hacer",
+        "Pezones doloridos",
+        "Revise primero el agarre: es la causa número 1. Aplique leche materna extraída o lanolina después de las tomas. Deje secar al aire. Suele mejorar después del día 5, cuando baja la leche y mejora el agarre.",
+        "Congestión mamaria",
+        "Amamante o extráigase leche con frecuencia (cada 2–3 horas). Compresa tibia antes de alimentar para ayudar a la bajada. Compresa fría después de alimentar para reducir la hinchazón. Puede causar fiebre baja: si es &gt;100.4°F, llame a su médico.",
+        "Preocupación por poca leche",
+        "Alimente con más frecuencia: la producción sigue a la demanda. Asegure un buen agarre. Extráigase leche después de las tomas para estimular más producción. Consulte a una especialista en lactancia. La mayoría de las veces que se percibe poca leche, en realidad la producción es suficiente.",
+        "Conducto obstruido",
+        "Bulto firme y sensible en el pecho. Masajee hacia el pezón durante las tomas. Compresa tibia antes de amamantar. Vacíe ese pecho con frecuencia. Suele resolverse en 1–2 días.",
+        "Mastitis",
+        "Síntomas parecidos a la gripe (fiebre, dolores corporales, fatiga) más una zona roja y dolorosa del pecho. Siga amamantando: dejar de hacerlo lo empeora. Generalmente requiere antibióticos: llame a su médico.",
+        "Candidiasis del pezón",
+        "Dolor agudo y ardiente durante y después de las tomas. Pezones rosados y brillantes. Tanto usted como el bebé necesitan tratamiento antimicótico al mismo tiempo. Llame a su médico y al pediatra del bebé.",
+        "Extracción de leche",
+        "Los sacaleches eléctricos dobles están cubiertos por la mayoría de los seguros médicos de EE. UU. bajo la ACA (Ley de Cuidado de Salud Asequible). La extracción mantiene la producción cuando el bebé no puede mamar, permite que otras personas alimenten al bebé y ayuda a crear una reserva en el congelador. La leche puede refrigerarse por 4 días o congelarse de 6 a 12 meses.",
+        "Está bien complementar o alimentar con fórmula",
+        "Si la lactancia no funciona a pesar del apoyo, complementar con fórmula no es un fracaso: es alimentar a su bebé. Lo más importante es un bebé alimentado y saludable. Muchas familias combinan con éxito la leche materna y la fórmula."
+      ]
     },
     "formula": {
       "title": "Alimentación con fórmula",
       "sub": "Cómo elegir, preparar y guardar la fórmula de forma segura",
-      "body": "\n        <p class=\"lead navy\">La fórmula es una fuente de nutrición segura y completa para su bebé. El mejor método de alimentación es el que mantiene a su bebé nutrido y a su familia bien.</p>\n        <h4>Cómo elegir una fórmula</h4>\n        <ul>\n          <li>La fórmula estándar a base de leche de vaca, fortificada con hierro, es adecuada para la mayoría de los bebés sanos nacidos a término</li>\n          <li>La fórmula de soja es adecuada por ciertas razones dietéticas o religiosas</li>\n          <li>Las fórmulas hipoalergénicas (hidrolizadas) son para bebés con alergia confirmada a la proteína de la leche: no cambie sin hablar con su pediatra</li>\n          <li>No cambie de marca de fórmula con frecuencia esperando resolver la irritabilidad normal: la mayoría de los cambios no ayudan</li>\n        </ul>\n        <h4>Cómo preparar la fórmula</h4>\n        <ul>\n          <li>Siga las instrucciones del envase exactamente: la proporción de polvo y agua está cuidadosamente diseñada</li>\n          <li>Use agua que cumpla con las normas de agua potable segura. Para bebés menores de 2 meses o inmunodeprimidos, hierva el agua del grifo y déjela enfriar</li>\n          <li>Para calentar: coloque el biberón en un recipiente con agua tibia. <strong>Nunca use el microondas</strong>: calienta de forma desigual y puede quemar la boca del bebé</li>\n        </ul>\n        <h4>Cuánto y con qué frecuencia</h4>\n        <ul>\n          <li>Recién nacido (0–1 mes): 1–2 oz cada 2–3 horas (8–12 tomas al día)</li>\n          <li>2 meses: 3–4 oz cada 3–4 horas</li>\n          <li>4 meses: 4–6 oz cada 4 horas</li>\n          <li>Alimente a demanda: estas son guías, no reglas</li>\n        </ul>\n        <table class=\"data-table\">\n          <tr><th class=\"navy\">Almacenamiento</th><th class=\"navy\">Duración</th></tr>\n          <tr><td>Biberón empezado (ya usado)</td><td>Úselo dentro de 1 hora o deséchelo</td></tr>\n          <tr><td>Preparada pero sin empezar (refrigerador)</td><td>Hasta 24 horas</td></tr>\n          <tr><td>Polvo sin mezclar (sellado, temperatura ambiente)</td><td>Siga la fecha de vencimiento del envase</td></tr>\n        </table>\n        <div class=\"callout alert\">\n          <div class=\"callout-title\">Nunca</div>\n          <p>Dé leche de vaca regular antes de los 12 meses · Agregue cereal al biberón · Diluya la fórmula para que rinda más · Prepare la fórmula más concentrada de lo indicado · Use fórmula vencida</p>\n        </div>"
+      "t": [
+        "La fórmula es una fuente de nutrición segura y completa para su bebé. El mejor método de alimentación es el que mantiene a su bebé nutrido y a su familia bien.",
+        "Cómo elegir una fórmula",
+        "La fórmula estándar a base de leche de vaca, fortificada con hierro, es adecuada para la mayoría de los bebés sanos nacidos a término",
+        "La fórmula de soja es adecuada por ciertas razones dietéticas o religiosas",
+        "Las fórmulas hipoalergénicas (hidrolizadas) son para bebés con alergia confirmada a la proteína de la leche: no cambie sin hablar con su pediatra",
+        "No cambie de marca de fórmula con frecuencia esperando resolver la irritabilidad normal: la mayoría de los cambios no ayudan",
+        "Cómo preparar la fórmula",
+        "Siga las instrucciones del envase exactamente: la proporción de polvo y agua está cuidadosamente diseñada",
+        "Use agua que cumpla con las normas de agua potable segura. Para bebés menores de 2 meses o inmunodeprimidos, hierva el agua del grifo y déjela enfriar",
+        "Para calentar: coloque el biberón en un recipiente con agua tibia.",
+        "Nunca use el microondas",
+        ": calienta de forma desigual y puede quemar la boca del bebé",
+        "Cuánto y con qué frecuencia",
+        "Recién nacido (0–1 mes): 1–2 oz cada 2–3 horas (8–12 tomas al día)",
+        "2 meses: 3–4 oz cada 3–4 horas",
+        "4 meses: 4–6 oz cada 4 horas",
+        "Alimente a demanda: estas son guías, no reglas",
+        "Almacenamiento",
+        "Duración",
+        "Biberón empezado (ya usado)",
+        "Úselo dentro de 1 hora o deséchelo",
+        "Preparada pero sin empezar (refrigerador)",
+        "Hasta 24 horas",
+        "Polvo sin mezclar (sellado, temperatura ambiente)",
+        "Siga la fecha de vencimiento del envase",
+        "Nunca",
+        "Dé leche de vaca regular antes de los 12 meses · Agregue cereal al biberón · Diluya la fórmula para que rinda más · Prepare la fórmula más concentrada de lo indicado · Use fórmula vencida"
+      ]
     },
     "cord-care": {
       "title": "Cuidado del cordón umbilical",
       "sub": "Cómo mantenerlo limpio y seco, y cuándo preocuparse",
-      "body": "\n        <p class=\"lead navy\">El muñón del cordón umbilical se seca y se cae por sí solo en 1–3 semanas. Su tarea principal es mantenerlo limpio y seco.</p>\n        <h4>Apariencia normal con el paso del tiempo</h4>\n        <ul>\n          <li>Al nacer: amarillo verdoso, blando y gomoso</li>\n          <li>Días 1–5: comienza a secarse y se vuelve marrón</li>\n          <li>Días 5–14: se va arrugando y ennegreciendo</li>\n          <li>Se cae de forma natural: no lo jale, aunque parezca que apenas está adherido</li>\n        </ul>\n        <h4>Cómo cuidarlo</h4>\n        <ul>\n          <li><strong>Manténgalo seco:</strong> Solo baños con esponja hasta que se caiga el muñón; no lo sumerja en agua</li>\n          <li><strong>Doble el pañal hacia abajo</strong> para dejar el muñón expuesto al aire y evitar el contacto con la orina</li>\n          <li><strong>Ropa holgada y fresca</strong>: evite mamelucos o ropa que roce el cordón</li>\n          <li><strong>No se necesitan toallitas con alcohol</strong>: los estudios muestran que el cuidado limpio y seco sana igual de bien o más rápido. Su hospital puede tener un protocolo específico; siga sus indicaciones.</li>\n        </ul>\n        <h4>Hallazgos normales</h4>\n        <ul>\n          <li>Una pequeña cantidad de sangre seca en la base al desprenderse: normal</li>\n          <li>Ligera humedad o secreción mínima y transparente en la base: generalmente normal</li>\n          <li>Un olor leve mientras se seca: generalmente normal</li>\n        </ul>\n        <div class=\"callout alert\">\n          <div class=\"callout-title\">Llame al pediatra si hay</div>\n          <p><strong>Enrojecimiento que se extiende por la piel alrededor</strong>: esto es onfalitis (una infección de la piel) y necesita tratamiento pronto · Olor fuerte o desagradable · Pus amarillo o verde · Sangrado que no se detiene con presión suave · Muñón aún adherido a las 5–6 semanas sin explicación</p>\n        </div>"
+      "t": [
+        "El muñón del cordón umbilical se seca y se cae por sí solo en 1–3 semanas. Su tarea principal es mantenerlo limpio y seco.",
+        "Apariencia normal con el paso del tiempo",
+        "Al nacer: amarillo verdoso, blando y gomoso",
+        "Días 1–5: comienza a secarse y se vuelve marrón",
+        "Días 5–14: se va arrugando y ennegreciendo",
+        "Se cae de forma natural: no lo jale, aunque parezca que apenas está adherido",
+        "Cómo cuidarlo",
+        "Manténgalo seco:",
+        "Solo baños con esponja hasta que se caiga el muñón; no lo sumerja en agua",
+        "Doble el pañal hacia abajo",
+        "para dejar el muñón expuesto al aire y evitar el contacto con la orina",
+        "Ropa holgada y fresca",
+        ": evite mamelucos o ropa que roce el cordón",
+        "No se necesitan toallitas con alcohol",
+        ": los estudios muestran que el cuidado limpio y seco sana igual de bien o más rápido. Su hospital puede tener un protocolo específico; siga sus indicaciones.",
+        "Hallazgos normales",
+        "Una pequeña cantidad de sangre seca en la base al desprenderse: normal",
+        "Ligera humedad o secreción mínima y transparente en la base: generalmente normal",
+        "Un olor leve mientras se seca: generalmente normal",
+        "Llame al pediatra si hay",
+        "Enrojecimiento que se extiende por la piel alrededor",
+        ": esto es onfalitis (una infección de la piel) y necesita tratamiento pronto · Olor fuerte o desagradable · Pus amarillo o verde · Sangrado que no se detiene con presión suave · Muñón aún adherido a las 5–6 semanas sin explicación"
+      ]
     },
     "normal-newborn": {
       "title": "Apariencia y comportamiento normales del recién nacido",
       "sub": "Lo que parece alarmante pero es totalmente normal",
-      "body": "\n        <p class=\"lead navy\">Muchos rasgos normales del recién nacido parecen alarmantes para los padres primerizos. Esto es lo que puede esperar.</p>\n        <table class=\"data-table\">\n          <tr><th class=\"navy\">Lo que usted ve</th><th class=\"navy\">¿Es normal?</th></tr>\n          <tr><td>Cabeza alargada o moldeada</td><td>✓ Sí: se resuelve en días</td></tr>\n          <tr><td>Molleras (fontanelas) que laten</td><td>✓ Sí: normal</td></tr>\n          <tr><td>Capa blanca como queso (vérnix)</td><td>✓ Sí: es protectora, déjela absorber</td></tr>\n          <tr><td>Vello fino en hombros y espalda (lanugo)</td><td>✓ Sí: se cae en semanas</td></tr>\n          <tr><td>Piel u ojos amarillos (ictericia)</td><td>Común: requiere vigilancia</td></tr>\n          <tr><td>Pechos hinchados (niñas o niños)</td><td>✓ Sí: hormonas maternas</td></tr>\n          <tr><td>Labios genitales o escroto hinchados</td><td>✓ Sí: hormonas maternas</td></tr>\n          <tr><td>Niñas: flujo vaginal con sangre o mucosidad</td><td>✓ Sí: retiro de hormonas</td></tr>\n          <tr><td>Ojos bizcos de vez en cuando</td><td>✓ Sí: normal hasta ~4 meses</td></tr>\n          <tr><td>Piel que se pela (días 1–3)</td><td>✓ Sí: sobre todo en bebés postérmino</td></tr>\n          <tr><td>Estornudos frecuentes</td><td>✓ Sí: no es un resfriado</td></tr>\n          <tr><td>Hipo constante</td><td>✓ Sí: muy normal</td></tr>\n          <tr><td>Erupción como granitos (eritema tóxico)</td><td>✓ Sí: inofensiva, desaparece en días</td></tr>\n          <tr><td>Primera deposición oscura (meconio)</td><td>✓ Sí: debe salir dentro de las 24–48 horas</td></tr>\n        </table>\n        <div class=\"callout alert\">\n          <div class=\"callout-title\">Llame al pediatra de inmediato por</div>\n          <p>Fiebre ≥ 100.4°F rectal (grave en recién nacidos: siempre tome la temperatura rectal) · Que rechace la comida · Amarillamiento extremo · Quejidos con cada respiración · Labios azules o piel muy pálida · Llanto inconsolable · Menos de 6 pañales mojados al día después del día 5 · Cuello rígido</p>\n        </div>"
+      "t": [
+        "Muchos rasgos normales del recién nacido parecen alarmantes para los padres primerizos. Esto es lo que puede esperar.",
+        "Lo que usted ve",
+        "¿Es normal?",
+        "Cabeza alargada o moldeada",
+        "✓ Sí: se resuelve en días",
+        "Molleras (fontanelas) que laten",
+        "✓ Sí: normal",
+        "Capa blanca como queso (vérnix)",
+        "✓ Sí: es protectora, déjela absorber",
+        "Vello fino en hombros y espalda (lanugo)",
+        "✓ Sí: se cae en semanas",
+        "Piel u ojos amarillos (ictericia)",
+        "Común: requiere vigilancia",
+        "Pechos hinchados (niñas o niños)",
+        "✓ Sí: hormonas maternas",
+        "Labios genitales o escroto hinchados",
+        "✓ Sí: hormonas maternas",
+        "Niñas: flujo vaginal con sangre o mucosidad",
+        "✓ Sí: retiro de hormonas",
+        "Ojos bizcos de vez en cuando",
+        "✓ Sí: normal hasta ~4 meses",
+        "Piel que se pela (días 1–3)",
+        "✓ Sí: sobre todo en bebés postérmino",
+        "Estornudos frecuentes",
+        "✓ Sí: no es un resfriado",
+        "Hipo constante",
+        "✓ Sí: muy normal",
+        "Erupción como granitos (eritema tóxico)",
+        "✓ Sí: inofensiva, desaparece en días",
+        "Primera deposición oscura (meconio)",
+        "✓ Sí: debe salir dentro de las 24–48 horas",
+        "Llame al pediatra de inmediato por",
+        "Fiebre ≥ 100.4°F rectal (grave en recién nacidos: siempre tome la temperatura rectal) · Que rechace la comida · Amarillamiento extremo · Quejidos con cada respiración · Labios azules o piel muy pálida · Llanto inconsolable · Menos de 6 pañales mojados al día después del día 5 · Cuello rígido"
+      ]
     },
     "safe-sleep": {
       "title": "Sueño seguro para el bebé",
       "sub": "El ABC para prevenir el SIDS (síndrome de muerte súbita infantil)",
-      "body": "<p class=\"lead navy\">Las prácticas de sueño seguro previenen el SIDS (síndrome de muerte súbita del lactante) y las muertes infantiles relacionadas con el sueño, que causan unas 3,500 muertes de bebés al año en EE. UU. Estas pautas salvan vidas.</p>\n <div class=\"callout navy\">\n <div class=\"callout-title\">El ABC del sueño seguro</div>\n <p><strong>A. Alone (Solo):</strong> El bebé duerme solo, no con adultos, hermanos ni mascotas<br><strong>B. Back (Boca arriba):</strong> Coloque siempre al bebé boca arriba para dormir: en cada sueño, con cada cuidador<br><strong>C. Crib (Cuna):</strong> Sobre una superficie firme y plana para dormir, solo con una sábana ajustable</p>\n </div>\n <h4>El entorno de sueño seguro</h4>\n <ul>\n <li>Colchón firme y plano en una cuna, moisés o corral que cumpla con las normas de seguridad actuales de la CPSC</li>\n <li><strong>Nada más</strong> en la zona de dormir: sin almohadas, mantas, protectores de cuna, posicionadores, peluches ni cuñas</li>\n <li><strong>Compartir la habitación</strong> (el bebé en el mismo cuarto, pero no en la misma cama) durante al menos los primeros 6 meses reduce el riesgo de SIDS hasta en un 50%: se recomienda encarecidamente</li>\n <li>Mantenga la zona de dormir libre de humo: la exposición al humo de tabaco aumenta significativamente el riesgo</li>\n <li><strong>El chupón a la hora de dormir</strong> reduce el riesgo de SIDS: ofrézcalo después de que la lactancia esté establecida (~3–4 semanas)</li>\n <li>Mantenga al bebé cómodamente fresco: el sobrecalentamiento es un factor de riesgo</li>\n </ul>\n <div class=\"callout gold\">\n <div class=\"callout-title\">Tiempo boca abajo (solo despierto y supervisado)</div>\n <p>El tiempo boca abajo, mientras el bebé está despierto y vigilado, es esencial para el desarrollo del cuello y los hombros y para prevenir zonas planas en la cabeza. Empiece con 2–3 minutos varias veces al día desde el nacimiento. Aumente hasta 30 minutos en total por día a los 3 meses.</p>\n </div>\n <p>Nunca deje a un bebé dormido por períodos prolongados en un columpio, asiento de auto (fuera del auto), silla mecedora o dormilón inclinado: estos no son entornos de sueño seguros.</p>"
+      "t": [
+        "Las prácticas de sueño seguro previenen el SIDS (síndrome de muerte súbita del lactante) y las muertes infantiles relacionadas con el sueño, que causan unas 3,500 muertes de bebés al año en EE. UU. Estas pautas salvan vidas.",
+        "El ABC del sueño seguro",
+        "A. Alone (Solo):",
+        "El bebé duerme solo, no con adultos, hermanos ni mascotas",
+        "B. Back (Boca arriba):",
+        "Coloque siempre al bebé boca arriba para dormir: en cada sueño, con cada cuidador",
+        "C. Crib (Cuna):",
+        "Sobre una superficie firme y plana para dormir, solo con una sábana ajustable",
+        "El entorno de sueño seguro",
+        "Colchón firme y plano en una cuna, moisés o corral que cumpla con las normas de seguridad actuales de la CPSC",
+        "Nada más",
+        "en la zona de dormir: sin almohadas, mantas, protectores de cuna, posicionadores, peluches ni cuñas",
+        "Compartir la habitación",
+        "(el bebé en el mismo cuarto, pero no en la misma cama) durante al menos los primeros 6 meses reduce el riesgo de SIDS hasta en un 50%: se recomienda encarecidamente",
+        "Mantenga la zona de dormir libre de humo: la exposición al humo de tabaco aumenta significativamente el riesgo",
+        "El chupón a la hora de dormir",
+        "reduce el riesgo de SIDS: ofrézcalo después de que la lactancia esté establecida (~3–4 semanas)",
+        "Mantenga al bebé cómodamente fresco: el sobrecalentamiento es un factor de riesgo",
+        "Tiempo boca abajo (solo despierto y supervisado)",
+        "El tiempo boca abajo, mientras el bebé está despierto y vigilado, es esencial para el desarrollo del cuello y los hombros y para prevenir zonas planas en la cabeza. Empiece con 2–3 minutos varias veces al día desde el nacimiento. Aumente hasta 30 minutos en total por día a los 3 meses.",
+        "Nunca deje a un bebé dormido por períodos prolongados en un columpio, asiento de auto (fuera del auto), silla mecedora o dormilón inclinado: estos no son entornos de sueño seguros."
+      ]
     },
     "followup-appts": {
       "title": "Citas de seguimiento para el bebé y para usted",
       "sub": "El calendario y qué pasa en cada visita",
-      "body": "\n        <p class=\"lead navy\">Antes de salir del hospital, confirme que estas citas ya estén programadas. No se vaya sin ellas.</p>\n        <h4>Para el bebé (pediatra)</h4>\n        <table class=\"data-table\">\n          <tr><th class=\"navy\">Cuándo</th><th class=\"navy\">Propósito</th></tr>\n          <tr><td><strong>2–5 días de nacido</strong></td><td>Control de peso: es fundamental confirmar que está recuperando el peso de nacimiento. Evaluación de ictericia. Evaluación de la alimentación. Seguimiento de las pruebas de detección del recién nacido.</td></tr>\n          <tr><td><strong>2 semanas</strong></td><td>¿Ya recuperó el peso de nacimiento? Revisión del desarrollo y la alimentación. Revisión del muñón del cordón umbilical.</td></tr>\n          <tr><td><strong>2 meses</strong></td><td>Primeras vacunas, crecimiento y hitos del desarrollo</td></tr>\n          <tr><td><strong>4, 6, 9, 12 meses</strong></td><td>Crecimiento, desarrollo, vacunas (el calendario continúa durante la infancia)</td></tr>\n        </table>\n        <h4>Para usted (obstetra/partera)</h4>\n        <table class=\"data-table\">\n          <tr><th class=\"navy\">Cuándo</th><th class=\"navy\">Propósito</th></tr>\n          <tr><td><strong>1–3 días</strong> (cesárea o complicaciones)</td><td>Revisión de la herida, control de la presión arterial, dolor</td></tr>\n          <tr><td><strong>2 semanas</strong></td><td>Evaluación del estado de ánimo, presión arterial, herida/periné, apoyo con la lactancia</td></tr>\n          <tr><td><strong>6 semanas</strong></td><td>Examen físico completo, examen pélvico, conversación sobre anticoncepción, autorización para hacer ejercicio</td></tr>\n        </table>\n        <div class=\"callout navy\">\n          <div class=\"callout-title\">Preguntas que debe hacer antes de salir del hospital</div>\n          <p>¿A quién llamo si tengo una pregunta antes de mi primera cita? · ¿El bebé se está alimentando bien? ¿Cómo sabré si no? · ¿En qué momento debo llamar al pediatra? · ¿Hubo alguna prueba anormal que necesite seguimiento? · ¿Debo despertar al bebé para alimentarlo por la noche? · ¿Cuáles son mis instrucciones para el cuidado de la herida?</p>\n        </div>"
+      "t": [
+        "Antes de salir del hospital, confirme que estas citas ya estén programadas. No se vaya sin ellas.",
+        "Para el bebé (pediatra)",
+        "Cuándo",
+        "Propósito",
+        "2–5 días de nacido",
+        "Control de peso: es fundamental confirmar que está recuperando el peso de nacimiento. Evaluación de ictericia. Evaluación de la alimentación. Seguimiento de las pruebas de detección del recién nacido.",
+        "2 semanas",
+        "¿Ya recuperó el peso de nacimiento? Revisión del desarrollo y la alimentación. Revisión del muñón del cordón umbilical.",
+        "2 meses",
+        "Primeras vacunas, crecimiento y hitos del desarrollo",
+        "4, 6, 9, 12 meses",
+        "Crecimiento, desarrollo, vacunas (el calendario continúa durante la infancia)",
+        "Para usted (obstetra/partera)",
+        "Cuándo",
+        "Propósito",
+        "1–3 días",
+        "(cesárea o complicaciones)",
+        "Revisión de la herida, control de la presión arterial, dolor",
+        "2 semanas",
+        "Evaluación del estado de ánimo, presión arterial, herida/periné, apoyo con la lactancia",
+        "6 semanas",
+        "Examen físico completo, examen pélvico, conversación sobre anticoncepción, autorización para hacer ejercicio",
+        "Preguntas que debe hacer antes de salir del hospital",
+        "¿A quién llamo si tengo una pregunta antes de mi primera cita? · ¿El bebé se está alimentando bien? ¿Cómo sabré si no? · ¿En qué momento debo llamar al pediatra? · ¿Hubo alguna prueba anormal que necesite seguimiento? · ¿Debo despertar al bebé para alimentarlo por la noche? · ¿Cuáles son mis instrucciones para el cuidado de la herida?"
+      ]
     },
     "faq-deli": {
       "title": "¿Puedo comer embutidos y quesos blandos?",
       "sub": "",
-      "body": "<p>El riesgo principal es la <em>Listeria</em>, una infección bacterial que es poco común, pero puede ser grave durante el embarazo (puede atravesar la placenta). La FDA recomienda evitar los quesos no pasteurizados y los embutidos, a menos que se calienten hasta que humeen (165°F). La mayoría de los quesos blandos pasteurizados (como el brie pasteurizado o el queso feta de paquete) son seguros. El riesgo general de comer embutidos de vez en cuando es muy bajo: esta recomendación es preventiva, no significa que un sándwich de pavo vaya a causarle una enfermedad. Si tiene dudas, caliéntelo.</p>"
+      "t": [
+        "El riesgo principal es la",
+        "Listeria",
+        ", una infección bacterial que es poco común, pero puede ser grave durante el embarazo (puede atravesar la placenta). La FDA recomienda evitar los quesos no pasteurizados y los embutidos, a menos que se calienten hasta que humeen (165°F). La mayoría de los quesos blandos pasteurizados (como el brie pasteurizado o el queso feta de paquete) son seguros. El riesgo general de comer embutidos de vez en cuando es muy bajo: esta recomendación es preventiva, no significa que un sándwich de pavo vaya a causarle una enfermedad. Si tiene dudas, caliéntelo."
+      ]
     },
     "faq-coffee": {
       "title": "¿Puedo tomar cafeína?",
       "sub": "",
-      "body": "<p>Sí. ACOG recomienda limitar la cafeína a <strong>menos de 200 mg por día</strong> (aproximadamente una taza de café de goteo de 12 oz). A ese nivel, no se ha comprobado que haga daño al embarazo. El té, los refrescos y el chocolate también contienen cafeína: súmelos todos. Reducir el consumo es razonable; eliminarla por completo es una decisión personal, no una necesidad médica.</p>"
+      "t": [
+        "Sí. ACOG recomienda limitar la cafeína a",
+        "menos de 200 mg por día",
+        "(aproximadamente una taza de café de goteo de 12 oz). A ese nivel, no se ha comprobado que haga daño al embarazo. El té, los refrescos y el chocolate también contienen cafeína: súmelos todos. Reducir el consumo es razonable; eliminarla por completo es una decisión personal, no una necesidad médica."
+      ]
     },
     "faq-hair-dye": {
       "title": "¿Puedo pintarme el cabello durante el embarazo?",
       "sub": "",
-      "body": "<p>Sí. El tinte para el cabello se absorbe por el cuero cabelludo en cantidades muy pequeñas. Ningún estudio publicado ha demostrado daño al feto con las cantidades que se usan al pintarse el cabello en un salón o en casa. La mayoría de los médicos lo consideran seguro, sobre todo después del primer trimestre. Las mechas (con papel de aluminio) tienen aún menos contacto con el cuero cabelludo. Si le preocupa, espere hasta el segundo trimestre, cuando ya se completó el desarrollo de los órganos principales.</p>"
+      "t": [
+        "Sí. El tinte para el cabello se absorbe por el cuero cabelludo en cantidades muy pequeñas. Ningún estudio publicado ha demostrado daño al feto con las cantidades que se usan al pintarse el cabello en un salón o en casa. La mayoría de los médicos lo consideran seguro, sobre todo después del primer trimestre. Las mechas (con papel de aluminio) tienen aún menos contacto con el cuero cabelludo. Si le preocupa, espere hasta el segundo trimestre, cuando ya se completó el desarrollo de los órganos principales."
+      ]
     },
     "faq-exercise-mc": {
       "title": "¿El ejercicio causa aborto espontáneo?",
       "sub": "",
-      "body": "<p>No. El ejercicio moderado no causa aborto espontáneo en embarazos saludables. Este es uno de los mitos más extendidos sobre el embarazo. Los abortos espontáneos tempranos casi siempre se deben a anomalías cromosómicas en el embrión, no al ejercicio, las relaciones sexuales, el estrés ni nada que haya hecho la madre. El ejercicio protege, no hace daño. Vea las pautas de ejercicio en la sección Prenatal.</p>"
+      "t": [
+        "No. El ejercicio moderado no causa aborto espontáneo en embarazos saludables. Este es uno de los mitos más extendidos sobre el embarazo. Los abortos espontáneos tempranos casi siempre se deben a anomalías cromosómicas en el embrión, no al ejercicio, las relaciones sexuales, el estrés ni nada que haya hecho la madre. El ejercicio protege, no hace daño. Vea las pautas de ejercicio en la sección Prenatal."
+      ]
     },
     "faq-sex-pregnancy": {
       "title": "¿Es seguro tener relaciones sexuales durante el embarazo?",
       "sub": "",
-      "body": "<p>Sí, en un embarazo normal sin complicaciones. Las relaciones sexuales no causan aborto espontáneo ni parto prematuro, y no dañan al bebé (que está protegido por el líquido amniótico). Su médico le recomendará reposo pélvico (sin relaciones sexuales) solo si tiene situaciones específicas: placenta previa, riesgo de parto prematuro, sangrado vaginal sin explicación, ciertos problemas del cuello uterino, o después de que se le haya roto la fuente. Si no está segura, pregunte en su próxima cita.</p>"
+      "t": [
+        "Sí, en un embarazo normal sin complicaciones. Las relaciones sexuales no causan aborto espontáneo ni parto prematuro, y no dañan al bebé (que está protegido por el líquido amniótico). Su médico le recomendará reposo pélvico (sin relaciones sexuales) solo si tiene situaciones específicas: placenta previa, riesgo de parto prematuro, sangrado vaginal sin explicación, ciertos problemas del cuello uterino, o después de que se le haya roto la fuente. Si no está segura, pregunte en su próxima cita."
+      ]
     },
     "faq-vaccines": {
       "title": "¿Son seguras las vacunas durante el embarazo?",
       "sub": "",
-      "body": "<p>Algunas sí, otras no. Consulte con su médico.</p>"
+      "t": [
+        "Algunas sí, otras no. Consulte con su médico."
+      ]
     },
     "faq-eat-for-two": {
       "title": "¿Necesito \"comer por dos\"?",
       "sub": "",
-      "body": "<p>No. \"comer por dos\" es un mito. En el primer trimestre, las calorías extra que necesita son mínimas. Para el tercer trimestre, necesita aproximadamente 300 calorías extra al día (más o menos un vaso de leche y un plátano). La calidad de la alimentación importa mucho más que la cantidad. Concéntrese en las proteínas, el hierro, el folato, el calcio y los ácidos grasos omega-3. Su vitamina prenatal ayuda a cubrir lo que le falte, pero no debe reemplazar una dieta balanceada.</p>"
+      "t": [
+        "No. \"comer por dos\" es un mito. En el primer trimestre, las calorías extra que necesita son mínimas. Para el tercer trimestre, necesita aproximadamente 300 calorías extra al día (más o menos un vaso de leche y un plátano). La calidad de la alimentación importa mucho más que la cantidad. Concéntrese en las proteínas, el hierro, el folato, el calcio y los ácidos grasos omega-3. Su vitamina prenatal ayuda a cubrir lo que le falte, pero no debe reemplazar una dieta balanceada."
+      ]
     },
     "faq-hot-tub": {
       "title": "¿Puedo darme baños de tina o usar un jacuzzi?",
       "sub": "",
-      "body": "<p>Los baños tibios están bien durante todo el embarazo. Los jacuzzis, saunas y baños de vapor que elevan la temperatura interna de su cuerpo por encima de 102°F (39°C) no se recomiendan, sobre todo en el primer trimestre, cuando la temperatura elevada se asocia con defectos del tubo neural. Si usa un jacuzzi, mantenga la temperatura agradable (no caliente), limite el tiempo a 10 minutos y evítelo en el primer trimestre. Un baño tibio con agua a la temperatura normal de casa (98–100°F) es seguro.</p>"
+      "t": [
+        "Los baños tibios están bien durante todo el embarazo. Los jacuzzis, saunas y baños de vapor que elevan la temperatura interna de su cuerpo por encima de 102°F (39°C) no se recomiendan, sobre todo en el primer trimestre, cuando la temperatura elevada se asocia con defectos del tubo neural. Si usa un jacuzzi, mantenga la temperatura agradable (no caliente), limite el tiempo a 10 minutos y evítelo en el primer trimestre. Un baño tibio con agua a la temperatura normal de casa (98–100°F) es seguro."
+      ]
     },
     "faq-epidural-csec": {
       "title": "¿La epidural aumenta el riesgo de cesárea?",
       "sub": "",
-      "body": "<p>No. Esta es una de las preguntas más estudiadas en obstetricia. Varios ensayos controlados aleatorios grandes y metaanálisis confirman que las epidurales <strong>no</strong> aumentan la tasa de cesáreas. La epidural puede alargar un poco la etapa de pujos, pero esto se maneja con seguridad con paciencia y la guía de la enfermera. Puede pedir una epidural en cualquier momento del trabajo de parto activo: no existe un momento \"demasiado pronto\" ni \"demasiado tarde\".</p>"
+      "t": [
+        "No. Esta es una de las preguntas más estudiadas en obstetricia. Varios ensayos controlados aleatorios grandes y metaanálisis confirman que las epidurales",
+        "no",
+        "aumentan la tasa de cesáreas. La epidural puede alargar un poco la etapa de pujos, pero esto se maneja con seguridad con paciencia y la guía de la enfermera. Puede pedir una epidural en cualquier momento del trabajo de parto activo: no existe un momento \"demasiado pronto\" ni \"demasiado tarde\"."
+      ]
     },
     "faq-routine-episiotomy": {
       "title": "¿Necesito una episiotomía para evitar un desgarro?",
       "sub": "",
-      "body": "<p>No. La episiotomía de rutina (un corte quirúrgico en la abertura de la vagina) ya no es recomendada por ACOG. La evidencia muestra de forma constante que <strong>los desgarros naturales generalmente sanan mejor</strong> y causan menos complicaciones (incluidos el dolor y los problemas del suelo pélvico a largo plazo) que las episiotomías de rutina. La mayoría de las mujeres que dan a luz por vía vaginal tienen algún grado de desgarro, pero muchos son leves (de primer grado). La episiotomía sigue siendo apropiada cuando hay una indicación específica, por ejemplo, cuando el bebé necesita nacer rápidamente por sufrimiento fetal.</p>"
+      "t": [
+        "No. La episiotomía de rutina (un corte quirúrgico en la abertura de la vagina) ya no es recomendada por ACOG. La evidencia muestra de forma constante que",
+        "los desgarros naturales generalmente sanan mejor",
+        "y causan menos complicaciones (incluidos el dolor y los problemas del suelo pélvico a largo plazo) que las episiotomías de rutina. La mayoría de las mujeres que dan a luz por vía vaginal tienen algún grado de desgarro, pero muchos son leves (de primer grado). La episiotomía sigue siendo apropiada cuando hay una indicación específica, por ejemplo, cuando el bebé necesita nacer rápidamente por sufrimiento fetal."
+      ]
     },
     "faq-water-breaking": {
       "title": "Si se me rompe la fuente, ¿tengo que tener una cesárea?",
       "sub": "",
-      "body": "<p>No. Si se le rompen las membranas (se le rompe la fuente) a término, la mayoría de las mujeres entran en trabajo de parto por sí solas en un plazo de 12 horas. Si el trabajo de parto no comienza, se ofrece una inducción para reducir el riesgo de infección: la guía indica completar el parto dentro de 18–24 horas. Si usted es GBS-positiva, se inician antibióticos de inmediato. Solo se necesita una cesárea si hay otras indicaciones; la ruptura de la fuente por sí sola no es una de ellas.</p>"
+      "t": [
+        "No. Si se le rompen las membranas (se le rompe la fuente) a término, la mayoría de las mujeres entran en trabajo de parto por sí solas en un plazo de 12 horas. Si el trabajo de parto no comienza, se ofrece una inducción para reducir el riesgo de infección: la guía indica completar el parto dentro de 18–24 horas. Si usted es GBS-positiva, se inician antibióticos de inmediato. Solo se necesita una cesárea si hay otras indicaciones; la ruptura de la fuente por sí sola no es una de ellas."
+      ]
     },
     "faq-eat-in-labor": {
       "title": "¿Puedo comer o beber durante el trabajo de parto?",
       "sub": "",
-      "body": "<p>Para las mujeres de bajo riesgo en la fase inicial del trabajo de parto, la guía actual de ACOG permite comidas ligeras y líquidos claros. Una vez que tiene una epidural, está recibiendo Pitocin u oxitocina, o tiene mayor riesgo de necesitar anestesia general (posible cesárea), la mayoría de los hospitales solo permiten hielo picado o sorbos de agua, por el riesgo de aspiración si la anestesia general se hace necesaria. Pregunte por la política específica de su hospital. Para la persona que la acompaña: traiga bocadillos. El trabajo de parto puede ser un día muy largo.</p>"
+      "t": [
+        "Para las mujeres de bajo riesgo en la fase inicial del trabajo de parto, la guía actual de ACOG permite comidas ligeras y líquidos claros. Una vez que tiene una epidural, está recibiendo Pitocin u oxitocina, o tiene mayor riesgo de necesitar anestesia general (posible cesárea), la mayoría de los hospitales solo permiten hielo picado o sorbos de agua, por el riesgo de aspiración si la anestesia general se hace necesaria. Pregunte por la política específica de su hospital. Para la persona que la acompaña: traiga bocadillos. El trabajo de parto puede ser un día muy largo."
+      ]
     },
     "faq-vbac": {
       "title": "Si tuve una cesárea antes, ¿siempre necesitaré otra?",
       "sub": "",
-      "body": "<p>No necesariamente. El parto vaginal después de una cesárea (VBAC) es una opción segura y adecuada para muchas mujeres con una incisión uterina transversa baja previa. Las tasas de éxito van de 60 a 80%. Los factores que afectan si usted es candidata incluyen el motivo de la cesárea anterior, su embarazo actual, el tipo de incisión uterina y la capacidad de su hospital para manejar una emergencia. Mencione esto al principio de su atención prenatal si le interesa.</p>"
+      "t": [
+        "No necesariamente. El parto vaginal después de una cesárea (VBAC) es una opción segura y adecuada para muchas mujeres con una incisión uterina transversa baja previa. Las tasas de éxito van de 60 a 80%. Los factores que afectan si usted es candidata incluyen el motivo de la cesárea anterior, su embarazo actual, el tipo de incisión uterina y la capacidad de su hospital para manejar una emergencia. Mencione esto al principio de su atención prenatal si le interesa."
+      ]
     },
     "faq-bf-bc": {
       "title": "¿Puedo quedar embarazada mientras amamanto?",
       "sub": "",
-      "body": "<p>Sí. Aunque la lactancia exclusiva suprime la ovulación hasta cierto punto, <strong>no es un anticonceptivo confiable</strong>. Usted puede ovular, y quedar embarazada, antes de que le regrese la menstruación. El \"método de la amenorrea por lactancia\" exige condiciones muy específicas (lactancia exclusiva cada 4 horas durante el día y cada 6 horas en la noche, sin suplementos y sin que haya regresado la menstruación) y solo es aproximadamente 98% eficaz bajo esas condiciones estrictas. Hable sobre métodos anticonceptivos antes de salir del hospital.</p>"
+      "t": [
+        "Sí. Aunque la lactancia exclusiva suprime la ovulación hasta cierto punto,",
+        "no es un anticonceptivo confiable",
+        ". Usted puede ovular, y quedar embarazada, antes de que le regrese la menstruación. El \"método de la amenorrea por lactancia\" exige condiciones muy específicas (lactancia exclusiva cada 4 horas durante el día y cada 6 horas en la noche, sin suplementos y sin que haya regresado la menstruación) y solo es aproximadamente 98% eficaz bajo esas condiciones estrictas. Hable sobre métodos anticonceptivos antes de salir del hospital."
+      ]
     },
     "faq-stress-milk": {
       "title": "¿El estrés hace que la leche materna se seque?",
       "sub": "",
-      "body": "<p>El estrés agudo puede interferir temporalmente con el reflejo de bajada de la leche (la salida de la leche), pero no afecta la producción de leche a largo plazo. La producción de leche depende de la demanda: cuanto más frecuente y eficazmente el bebé se alimente al pecho o usted use el extractor, más leche producirá su cuerpo. Estrategias que ayudan a la bajada de la leche: contacto piel con piel, calor, técnicas de relajación y mirar una foto de su bebé cuando use el extractor.</p>"
+      "t": [
+        "El estrés agudo puede interferir temporalmente con el reflejo de bajada de la leche (la salida de la leche), pero no afecta la producción de leche a largo plazo. La producción de leche depende de la demanda: cuanto más frecuente y eficazmente el bebé se alimente al pecho o usted use el extractor, más leche producirá su cuerpo. Estrategias que ayudan a la bajada de la leche: contacto piel con piel, calor, técnicas de relajación y mirar una foto de su bebé cuando use el extractor."
+      ]
     },
     "faq-bonding": {
       "title": "¿Debería sentir un vínculo instantáneo con mi bebé?",
       "sub": "",
-      "body": "<p>No. Crear un vínculo es un proceso, no un solo momento. Muchas madres sienten un amor profundo de inmediato al nacer; otras necesitan días, semanas o más tiempo para desarrollar ese sentimiento. Ambas experiencias son completamente normales. El agotamiento físico, los partos difíciles, los resultados inesperados y la depresión posparto (PPD) pueden afectar el vínculo temprano. Si se siente desconectada o sin emoción hacia su bebé por más de un par de semanas, dígaselo a su médico: puede ser una señal de depresión posparto, que tiene tratamiento.</p>"
+      "t": [
+        "No. Crear un vínculo es un proceso, no un solo momento. Muchas madres sienten un amor profundo de inmediato al nacer; otras necesitan días, semanas o más tiempo para desarrollar ese sentimiento. Ambas experiencias son completamente normales. El agotamiento físico, los partos difíciles, los resultados inesperados y la depresión posparto (PPD) pueden afectar el vínculo temprano. Si se siente desconectada o sin emoción hacia su bebé por más de un par de semanas, dígaselo a su médico: puede ser una señal de depresión posparto, que tiene tratamiento."
+      ]
     },
     "faq-ibuprofen-bf": {
       "title": "¿Puedo tomar ibuprofeno mientras amamanto?",
       "sub": "",
-      "body": "<p>Sí. El ibuprofeno es uno de los medicamentos de venta libre más seguros durante la lactancia: muy poco pasa a la leche materna. El acetaminofén (Tylenol) también es seguro. Estos son los analgésicos preferidos en el posparto y durante la lactancia. La aspirina en dosis altas no se recomienda (la aspirina recetada en dosis bajas es otra cuestión: hable con su médico). El naproxeno (Aleve) pasa más a la leche y en general no se prefiere. Confirme siempre con su equipo de atención médica según su situación específica.</p>"
+      "t": [
+        "Sí. El ibuprofeno es uno de los medicamentos de venta libre más seguros durante la lactancia: muy poco pasa a la leche materna. El acetaminofén (Tylenol) también es seguro. Estos son los analgésicos preferidos en el posparto y durante la lactancia. La aspirina en dosis altas no se recomienda (la aspirina recetada en dosis bajas es otra cuestión: hable con su médico). El naproxeno (Aleve) pasa más a la leche y en general no se prefiere. Confirme siempre con su equipo de atención médica según su situación específica."
+      ]
     },
     "faq-jaundice": {
       "title": "Mi bebé se ve amarillo: ¿cuándo es grave?",
       "sub": "",
-      "body": "<p>La ictericia del recién nacido (hiperbilirrubinemia) afecta a cerca del 60% de los bebés nacidos a término durante la primera semana. Se debe a la descomposición normal de los glóbulos rojos del feto: el hígado solo se está poniendo al día. La mayoría de los casos son leves y se resuelven sin tratamiento. Se vuelve preocupante cuando los niveles de bilirrubina son muy altos (con riesgo de daño cerebral en niveles extremos) o cuando el bebé está muy adormilado, no se alimenta, o la ictericia aparece en las primeras 24 horas. El hospital le revisará la bilirrubina antes del alta y en la visita con el pediatra entre los días 2–5. El tratamiento con fototerapia (lámparas de bilirrubina) es muy eficaz si se necesita.</p>"
+      "t": [
+        "La ictericia del recién nacido (hiperbilirrubinemia) afecta a cerca del 60% de los bebés nacidos a término durante la primera semana. Se debe a la descomposición normal de los glóbulos rojos del feto: el hígado solo se está poniendo al día. La mayoría de los casos son leves y se resuelven sin tratamiento. Se vuelve preocupante cuando los niveles de bilirrubina son muy altos (con riesgo de daño cerebral en niveles extremos) o cuando el bebé está muy adormilado, no se alimenta, o la ictericia aparece en las primeras 24 horas. El hospital le revisará la bilirrubina antes del alta y en la visita con el pediatra entre los días 2–5. El tratamiento con fototerapia (lámparas de bilirrubina) es muy eficaz si se necesita."
+      ]
     },
     "faq-newborn-procedures": {
       "title": "¿Tienen que hacerse todos los procedimientos del recién nacido?",
       "sub": "",
-      "body": "<p>Los procedimientos habituales del recién nacido incluyen: <strong>inyección de vitamina K</strong> (reduce el riesgo de sangrado cerebral mortal), <strong>pomada oftálmica de eritromicina</strong> (reduce las infecciones oculares, incluida la gonorrea), <strong>primera dosis de la vacuna contra la hepatitis B</strong> y la <strong>extracción de sangre para el cribado metabólico neonatal</strong> (punción del talón para unas 30 enfermedades, entre ellas la fenilcetonuria, el hipotiroidismo y la anemia falciforme). Todos se recomiendan porque el riesgo de no intervenir a tiempo supera los riesgos de los procedimientos. En la mayoría de los estados puede rechazarlos legalmente. Le recomendamos que hable antes de los riesgos con su médico.</p>"
+      "t": [
+        "Los procedimientos habituales del recién nacido incluyen:",
+        "inyección de vitamina K",
+        "(reduce el riesgo de sangrado cerebral mortal),",
+        "pomada oftálmica de eritromicina",
+        "(reduce las infecciones oculares, incluida la gonorrea),",
+        "primera dosis de la vacuna contra la hepatitis B",
+        " y la",
+        "extracción de sangre para el cribado metabólico neonatal",
+        "(punción del talón para unas 30 enfermedades, entre ellas la fenilcetonuria, el hipotiroidismo y la anemia falciforme). Todos se recomiendan porque el riesgo de no intervenir a tiempo supera los riesgos de los procedimientos. En la mayoría de los estados puede rechazarlos legalmente. Le recomendamos que hable antes de los riesgos con su médico."
+      ]
     },
     "faq-first-bath": {
       "title": "¿Cuándo necesita mi bebé el primer baño?",
       "sub": "",
-      "body": "<p>La OMS y la AAP ahora recomiendan retrasar el primer baño al menos 24 horas después del nacimiento (lo ideal son 48 horas). La capa blanca que cubre al bebé (vérnix caseosa) tiene propiedades antimicrobianas y ayuda a humectar la piel. Retrasar el baño también ayuda a mantener la temperatura corporal, favorece la estabilidad del azúcar en la sangre y se asocia con un mejor inicio de la lactancia materna. Esperar es la mejor práctica actual, no solo una preferencia.</p>"
+      "t": [
+        "La OMS y la AAP ahora recomiendan retrasar el primer baño al menos 24 horas después del nacimiento (lo ideal son 48 horas). La capa blanca que cubre al bebé (vérnix caseosa) tiene propiedades antimicrobianas y ayuda a humectar la piel. Retrasar el baño también ayuda a mantener la temperatura corporal, favorece la estabilidad del azúcar en la sangre y se asocia con un mejor inicio de la lactancia materna. Esperar es la mejor práctica actual, no solo una preferencia."
+      ]
     },
     "prenatal-vitamins": {
       "title": "Vitaminas prenatales",
       "sub": "Qué parte importa y qué hacer si le sientan mal",
-      "body": "<ul><li><strong>Ácido fólico.</strong> Debe tomar ácido fólico si existe la posibilidad de que esté embarazada o de que pueda quedarse embarazada. Tomar de 400 a 800 mcg al día antes de la concepción y durante el embarazo temprano reduce mucho los defectos del tubo neural. Esa protección ocurre en las primeras semanas, a menudo antes de confirmar el embarazo.</li><li><strong>El hierro</strong> acompaña el gran aumento del volumen de sangre y ayuda a prevenir la anemia.</li><li><strong>El yodo, la vitamina D, el calcio y el DHA</strong> suelen incluirse y son razonables.</li></ul><div class=\"callout gold\"><div class=\"callout-title\">Si la vitamina le da náuseas</div><p>El hierro suele ser el culpable. Pruebe a tomarla por la noche, o con comida en lugar de en ayunas. Pregunte a su médico por una fórmula con menos hierro, o por tomar solo ácido fólico hasta que las náuseas se calmen. Una vitamina que sí puede tomar es mejor que otra mejor que no le sienta.</p></div><h4>Gomitas, masticables y precio</h4><p>Las gomitas prenatales se toleran mejor, pero casi nunca llevan hierro, así que puede necesitarlo aparte. Las vitaminas de marca blanca cumplen las mismas normas que las caras. No hace falta pagar más.</p><p>Si el precio es un obstáculo, dígalo. El ácido fólico solo es barato, y las clínicas suelen poder ayudar.</p><h4>Lo que no debe tomar</h4><p>Evite los suplementos de vitamina A en dosis altas, que pueden dañar al bebé en desarrollo. No tome doble dosis de la prenatal para obtener más de algo. Si toma otros suplementos o productos de herbolario, lleve los envases a su próxima visita.</p>"
+      "t": [
+        "Ácido fólico.",
+        "Debe tomar ácido fólico si existe la posibilidad de que esté embarazada o de que pueda quedarse embarazada. Tomar de 400 a 800 mcg al día antes de la concepción y durante el embarazo temprano reduce mucho los defectos del tubo neural. Esa protección ocurre en las primeras semanas, a menudo antes de confirmar el embarazo.",
+        "El hierro",
+        "acompaña el gran aumento del volumen de sangre y ayuda a prevenir la anemia.",
+        "El yodo, la vitamina D, el calcio y el DHA",
+        "suelen incluirse y son razonables.",
+        "Si la vitamina le da náuseas",
+        "El hierro suele ser el culpable. Pruebe a tomarla por la noche, o con comida en lugar de en ayunas. Pregunte a su médico por una fórmula con menos hierro, o por tomar solo ácido fólico hasta que las náuseas se calmen. Una vitamina que sí puede tomar es mejor que otra mejor que no le sienta.",
+        "Gomitas, masticables y precio",
+        "Las gomitas prenatales se toleran mejor, pero casi nunca llevan hierro, así que puede necesitarlo aparte. Las vitaminas de marca blanca cumplen las mismas normas que las caras. No hace falta pagar más.",
+        "Si el precio es un obstáculo, dígalo. El ácido fólico solo es barato, y las clínicas suelen poder ayudar.",
+        "Lo que no debe tomar",
+        "Evite los suplementos de vitamina A en dosis altas, que pueden dañar al bebé en desarrollo. No tome doble dosis de la prenatal para obtener más de algo. Si toma otros suplementos o productos de herbolario, lleve los envases a su próxima visita."
+      ]
     }
   }
 };

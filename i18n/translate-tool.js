@@ -51,9 +51,11 @@ function flattenLocale(L) {
   const out = flattenUi((L || {}).ui);
   const content = (L || {}).content || {};
   for (const [id, card] of Object.entries(content)) {
-    for (const f of ['title', 'sub', 'body']) {
+    for (const f of ['title', 'sub']) {
       if (typeof card[f] === 'string' && card[f] !== '') out[`content.${id}.${f}`] = card[f];
     }
+    // One key per sentence. Bodies are no longer editable as HTML at all.
+    (card.t || []).forEach((run, i) => { out[`content.${id}.t.${i}`] = run; });
   }
   return out;
 }
@@ -77,6 +79,7 @@ function i18nRows() {
 }
 
 function initI18nTool() {
+  const en = flattenLocale(window.MYOB_LOCALES.en);
   const el = document.getElementById('i18n-content');
   if (!el) return;
 
@@ -135,29 +138,43 @@ function initI18nTool() {
     <div style="padding:0 16px">
       ${shown.length === 0
         ? `<p class="history-empty">${escHtml(I18n.t('tool.i18n.nothingToShow'))}</p>`
-        : shown.slice(0, 300).map(r => `
-        <div class="card" style="margin-bottom:8px;padding:10px 12px">
-          <div style="font-size:10px;color:var(--ink-soft);font-family:monospace;word-break:break-all">${escHtml(r.key)}</div>
-          <div style="font-size:13.5px;color:var(--ink);margin:4px 0 6px;max-height:${
-            r.key.endsWith('.body') ? '11em' : 'none'};overflow:auto" dir="ltr" lang="en">${escHtml(r.source)}</div>
-          <div style="font-size:13px;margin-bottom:6px;color:${r.state === 'translated' ? 'var(--teal)' : 'var(--rose)'}"
-               lang="${lang}" dir="${I18n.LOCALES[lang].dir}">
-            ${r.current ? escHtml(r.current) : '–'}
-            <span style="font-size:10px;color:var(--ink-soft)"> ${r.state === 'missing' ? '✗' : r.state === 'same' ? '≡' : '✓'}</span>
+        : shown.slice(0, 300).map(r => {
+        const isBody = false;   // bodies are per-sentence keys now
+        // A card body is an HTML fragment. Showing raw markup as the thing to
+        // read is unusable, so the English is RENDERED for reading and the
+        // markup is offered separately, collapsed. The textarea is seeded with
+        // the English source for bodies so the tags are translated in place
+        // rather than reconstructed from memory.
+        const seed = r.suggestion || (isBody && !r.current ? r.source : r.suggestion);
+        return `
+        <div class="card i18n-row">
+          <div class="i18n-key">${escHtml(r.key)}</div>
+          ${isBody
+            ? `<div class="i18n-en-rendered" dir="ltr" lang="en">${r.source}</div>
+               <details class="i18n-src">
+                 <summary>${escHtml(I18n.t('tool.i18n.showMarkup'))}</summary>
+                 <pre dir="ltr">${escHtml(r.source)}</pre>
+               </details>`
+            : `<div class="i18n-en" dir="ltr" lang="en">${escHtml(r.source)}</div>`}
+          <div class="i18n-cur ${r.state}" lang="${lang}" dir="${I18n.LOCALES[lang].dir}">
+            ${r.current
+              ? (isBody ? escHtml(r.current.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()) : escHtml(r.current))
+              : `<em>${escHtml(I18n.t('tool.i18n.notTranslated'))}</em>`}
           </div>
+          ${isBody ? `<p class="i18n-hint">${escHtml(I18n.t('tool.i18n.keepTags'))}</p>` : ''}
           <textarea class="tool-textarea" data-key="${escHtml(r.key)}"
-            rows="${r.key.endsWith('.body') ? 8 : 2}"
+            data-seeded="${isBody && !r.suggestion && !r.current ? '1' : '0'}"
+            rows="${isBody ? 10 : 2}"
             lang="${lang}" dir="${I18n.LOCALES[lang].dir}"
             placeholder="${escHtml(I18n.t('tool.i18n.suggestPlaceholder'))}"
-            style="width:100%;box-sizing:border-box">${escHtml(r.suggestion)}</textarea>
-          <div style="display:flex;align-items:center;gap:8px;margin-top:6px">
-            <button class="btn-sm btn-teal" data-submit="${escHtml(r.key)}" style="flex:0 0 auto">
+            >${escHtml(seed || '')}</textarea>
+          <div class="i18n-actions">
+            <button class="btn-sm btn-teal" data-submit="${escHtml(r.key)}">
               ${escHtml(I18n.t('tool.i18n.submit'))}
             </button>
-            <span class="i18n-submit-status" data-status="${escHtml(r.key)}"
-                  style="font-size:11px;color:var(--ink-soft)"></span>
+            <span class="i18n-submit-status" data-status="${escHtml(r.key)}"></span>
           </div>
-        </div>`).join('')}
+        </div>`; }).join('')}
       ${shown.length > 300 ? `<p class="history-empty">${escHtml(I18n.t('tool.i18n.showingFirst', { n: 300, total: shown.length }))}</p>` : ''}
     </div>
 
@@ -176,7 +193,11 @@ function initI18nTool() {
       const all = loadSuggestions();
       all[lang] = all[lang] || {};
       const v = ta.value.trim();
-      if (v) all[lang][ta.dataset.key] = v; else delete all[lang][ta.dataset.key];
+      // Seeded bodies start out holding the English; unchanged is not a
+      // suggestion, or every card would look edited the moment it is shown.
+      const untouched = ta.dataset.seeded === '1' && v === String(en[ta.dataset.key] || '').trim();
+      if (v && !untouched) all[lang][ta.dataset.key] = v;
+      else delete all[lang][ta.dataset.key];
       saveSuggestions(all);
     });
   });

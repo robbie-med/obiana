@@ -230,6 +230,25 @@ const CONTENT_STRUCTURE = {
 };
 
 // Merge structure + active-locale prose. Falls back to English per card.
+// Rebuild a card body from the shared HTML template and the active locale's
+// per-sentence runs. Each {{n}} falls back to English on its own, so a card
+// translated halfway reads fully rather than showing gaps.
+function cardBody(id) {
+  const active = (window.MYOB_LOCALES[I18n.lang] || {}).content || {};
+  const base = (window.MYOB_LOCALES[I18n.FALLBACK] || {}).content || {};
+  const card = active[id] || {};
+
+  const tpl = (window.MYOB_BODY_TPL || {})[id];
+  if (!tpl) return "";
+
+  const mine = card.t || [];
+  const fallback = (base[id] || {}).t || [];
+  return tpl.replace(/\{\{(\d+)\}\}/g, (m, i) => {
+    const v = mine[+i];
+    return (v === undefined || v === "") ? (fallback[+i] ?? "") : v;
+  });
+}
+
 function getCards(section) {
   const list = CONTENT_STRUCTURE[section] || [];
   return list.map(item => {
@@ -237,7 +256,7 @@ function getCards(section) {
     return Object.assign({}, item, {
       title: s.title || item.id,
       sub: s.sub || "",
-      body: s.body || "",
+      body: cardBody(item.id),
     });
   });
 }

@@ -85,9 +85,10 @@ def load_locale(lang):
     flat = {}
 
     def walk(o, pre=""):
-        for k, v in (o or {}).items():
-            key = f"{pre}.{k}" if pre else k
-            if isinstance(v, dict):
+        items = enumerate(o) if isinstance(o, list) else (o or {}).items()
+        for k, v in items:
+            key = f"{pre}.{k}" if pre else str(k)
+            if isinstance(v, (dict, list)):
                 walk(v, key)
             else:
                 flat[key] = v
@@ -113,8 +114,15 @@ def write_locale_key(lang, key, value):
     else:
         node = obj.setdefault("ui", {})
     for p in parts[:-1]:
-        node = node.setdefault(p, {})
-    node[parts[-1]] = value
+        if isinstance(node, list):
+            node = node[int(p)]
+        else:
+            node = node.setdefault(p, {})
+    # A sentence slot lives in a list, so the last step may be an index.
+    if isinstance(node, list):
+        node[int(parts[-1])] = value
+    else:
+        node[parts[-1]] = value
     open(path, "w", encoding="utf-8").write(
         head + marker + " " + json.dumps(obj, ensure_ascii=False, indent=2) + ";\n")
 

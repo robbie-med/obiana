@@ -1858,3 +1858,65 @@ body.dark #translation-notice {
 
 /* The rate-your-nausea card sits high; it is the most repeated action. */
 .nausea-quick { margin: 12px 16px 0; padding: 12px 14px; }
+
+/* ═══════════════════════════════════════════════════════
+   TRANSLATION HELPER ROWS
+   ═══════════════════════════════════════════════════════
+   A guide card is an HTML fragment. Showing raw markup as the thing to read
+   made the tool unusable, so the English is rendered and the markup is
+   available separately. */
+.i18n-row { margin-bottom: 10px; padding: 11px 13px; }
+.i18n-key {
+  font: 10px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: var(--ink-soft);
+  word-break: break-all;
+  margin-bottom: 5px;
+}
+.i18n-en { font-size: 13.5px; color: var(--ink); margin-bottom: 6px; }
+
+/* Rendered English source. Constrained so a long card cannot push the
+   translation box off screen. */
+.i18n-en-rendered {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--ink);
+  max-height: 15em;
+  overflow-y: auto;
+  padding: 8px 10px;
+  background: var(--bg);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--rule);
+}
+.i18n-en-rendered p,
+.i18n-en-rendered ul,
+.i18n-en-rendered h4 { margin: 0 0 6px; }
+.i18n-en-rendered h4 { font-size: 13px; }
+.i18n-en-rendered ul { padding-inline-start: 18px; }
+.i18n-en-rendered li { margin-bottom: 3px; }
+.i18n-en-rendered .callout { padding: 6px 8px; margin: 6px 0; font-size: 12.5px; }
+.i18n-en-rendered table { width: 100%; font-size: 12px; }
+
+.i18n-src { margin-top: 6px; font-size: 11.5px; }
+.i18n-src summary { color: var(--teal); cursor: pointer; font-weight: 600; }
+.i18n-src pre {
+  margin-top: 6px;
+  padding: 8px;
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-sm);
+  font: 11px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-height: 14em;
+  overflow-y: auto;
+  color: var(--ink-mid);
+}
+
+.i18n-cur { font-size: 13px; margin: 8px 0 6px; color: var(--teal); overflow-wrap: anywhere; }
+.i18n-cur.missing, .i18n-cur.same { color: var(--rose); }
+.i18n-cur em { color: var(--ink-soft); font-size: 12.5px; }
+
+.i18n-hint { font-size: 11.5px; color: var(--ink-soft); line-height: 1.45; margin-bottom: 5px; }
+.i18n-row textarea { width: 100%; box-sizing: border-box; }
+.i18n-actions { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
+.i18n-actions .i18n-submit-status { font-size: 11px; color: var(--ink-soft); }
