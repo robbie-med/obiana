@@ -1494,10 +1494,14 @@ body.dark .score-result-card { background: #1a1a1a; }
   z-index: 3000;
   background: var(--teal, #1d4e4e);
   display: flex;
-  align-items: center;
+  /* NOT align-items:center. With 17 languages the sheet is taller than a
+     phone, and centring an overflowing flex child pushes its top past the
+     scroll origin, so the heading and first languages become unreachable. */
+  align-items: flex-start;
   justify-content: center;
   padding: 24px 16px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 #lang-picker[hidden] { display: none; }
 
@@ -1505,6 +1509,8 @@ body.dark .score-result-card { background: #1a1a1a; }
   width: 100%;
   max-width: 460px;
   text-align: center;
+  /* Centres vertically when it fits, scrolls from the top when it does not. */
+  margin-block: auto;
 }
 
 .lang-picker-globe { font-size: 44px; line-height: 1; margin-bottom: 10px; }
@@ -1705,14 +1711,15 @@ body.dark #translation-notice {
   z-index: 2900;                 /* under the language picker, above the app */
   background: var(--teal);
   display: flex;
-  align-items: center;
+  align-items: flex-start;       /* see the note on #lang-picker */
   justify-content: center;
   padding: 28px 20px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 #us-notice[hidden] { display: none; }
 
-.us-notice-sheet { width: 100%; max-width: 460px; text-align: center; }
+.us-notice-sheet { width: 100%; max-width: 460px; text-align: center; margin-block: auto; }
 .us-notice-flag {
   width: 56px;
   height: 56px;
