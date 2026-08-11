@@ -502,7 +502,10 @@ window.MYOB_LOCALES.ko = {
           "feel": "지점은 세 번째 손가락 바로 너머, 손목 한가운데입니다. 눌러 보면 팔을 따라 내려가는 단단한 힘줄 두 가닥이 만져집니다. 그 사이가 지점입니다.",
           "press": "엄지로 단단히 누릅니다. 느껴질 정도로 누르되 아플 정도는 아닙니다. 작게 원을 그리거나 계속 눌러 2~3분간 유지합니다.",
           "both": "반대쪽 손목도 똑같이 합니다. 메스꺼움이 올라올 때마다 반복하세요."
-        }
+        },
+        "logIntro": "메스꺼움이 달라질 때마다 기록해 보세요. 몇 번 쌓이면 시도하신 것 중 무엇이 실제로 도움이 되었는지 보여 드립니다.",
+        "openLog": "지금 상태 기록하기",
+        "openHelp": "메스꺼움에 시도해 볼 것"
       }
     },
     "theme": {
@@ -606,8 +609,10 @@ window.MYOB_LOCALES.ko = {
       "shareCustomAsk": "우리 문화에서는 어떻게 하는지 알려주기 · 궁금한 점 묻기",
       "helpUsImprove": "개선에 도움 주기",
       "nauseaHelper": "메스꺼움과 식사",
-      "nauseaHelperDesc": "간식 리듬 · 시도해 볼 것 · 도움이 된 것 기록",
-      "feelingWell": "컨디션 관리"
+      "nauseaHelperDesc": "간식 리듬 · 시도해 볼 것 · 손목 지압",
+      "feelingWell": "컨디션 관리",
+      "nauseaLog": "메스꺼움 기록",
+      "nauseaLogDesc": "정도 기록 · 시도한 것 기록 · 도움 된 것 확인"
     },
     "toolkick": {
       "kickCounter": "태동 카운터"
@@ -724,6 +729,9 @@ window.MYOB_LOCALES.ko = {
     },
     "toolnausea": {
       "nauseaEating": "메스꺼움과 식사"
+    },
+    "toolnausealog": {
+      "nauseaLog": "메스꺼움 기록"
     }
   },
   "content": {

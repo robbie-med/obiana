@@ -416,7 +416,7 @@ let currentSection = 'home';
 
 const TOOL_PAGES = ['tools','tool-kick','tool-contractions','tool-feeding',
   'tool-diapers','tool-jaundice','tool-bp','tool-weight',
-  'tool-mood','tool-birthplan','tool-appts', 'tool-i18n', 'tool-improve', 'tool-nausea'];
+  'tool-mood','tool-birthplan','tool-appts', 'tool-i18n', 'tool-improve', 'tool-nausea', 'tool-nausealog'];
 
 // Map tool sub-pages to their init functions (populated by tools.js)
 const TOOL_INITS = {};

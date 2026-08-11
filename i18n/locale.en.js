@@ -497,7 +497,10 @@ window.MYOB_LOCALES.en = {
           "feel": "The point is just past your third finger, in the middle of the wrist. Press around and you should feel two firm cords running down the arm. The point sits between them.",
           "press": "Press firmly with your thumb, hard enough to feel it but not to hurt. Small circles or steady pressure, for two to three minutes.",
           "both": "Do the same on the other wrist. Repeat whenever the nausea rises."
-        }
+        },
+        "logIntro": "Rate the nausea whenever it changes. After a few entries this will show which of the things you tried actually helped you.",
+        "openLog": "Log how you feel now",
+        "openHelp": "Things to try for nausea"
       }
     },
     "theme": {
@@ -601,8 +604,10 @@ window.MYOB_LOCALES.en = {
       "shareCustomAsk": "Share how it is done in your culture · Ask about anything unclear",
       "helpUsImprove": "Help Us Improve",
       "nauseaHelper": "Nausea & Eating",
-      "nauseaHelperDesc": "Snack rhythm · What to try · Track what helps",
-      "feelingWell": "Feeling Well"
+      "nauseaHelperDesc": "Snack rhythm · What to try · Acupressure",
+      "feelingWell": "Feeling Well",
+      "nauseaLog": "Nausea Log",
+      "nauseaLogDesc": "Rate it · Record what you tried · See what helps you"
     },
     "toolkick": {
       "kickCounter": "Kick Counter"
@@ -719,6 +724,9 @@ window.MYOB_LOCALES.en = {
     },
     "toolnausea": {
       "nauseaEating": "Nausea & Eating"
+    },
+    "toolnausealog": {
+      "nauseaLog": "Nausea Log"
     }
   },
   "content": {

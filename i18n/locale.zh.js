@@ -502,7 +502,10 @@ window.MYOB_LOCALES.zh = {
           "feel": "穴位就在第三根手指的稍上方，位于手腕正中。按一按，会摸到两条沿手臂延伸的硬筋，穴位就在这两条筋之间。",
           "press": "用拇指用力按压，力度到能明显感觉到但不疼。可以画小圈或持续按压，做两到三分钟。",
           "both": "另一只手腕同样做一次。恶心加重时随时重复。"
-        }
+        },
+        "logIntro": "孕吐有变化时就记一次。记几次之后，这里会显示你试过的方法里哪一个真的对你有用。",
+        "openLog": "记录现在的感觉",
+        "openHelp": "孕吐可以试试这些"
       }
     },
     "theme": {
@@ -606,8 +609,10 @@ window.MYOB_LOCALES.zh = {
       "shareCustomAsk": "说说你们的文化怎么做 · 问任何不清楚的地方",
       "helpUsImprove": "帮助我们改进",
       "nauseaHelper": "孕吐与进食",
-      "nauseaHelperDesc": "进食节奏 · 可以试试 · 记录什么有效",
-      "feelingWell": "照顾自己"
+      "nauseaHelperDesc": "进食节奏 · 可以试试 · 手腕按压",
+      "feelingWell": "照顾自己",
+      "nauseaLog": "孕吐记录",
+      "nauseaLogDesc": "打分 · 记下试过什么 · 看看什么有效"
     },
     "toolkick": {
       "kickCounter": "胎动计数器"
@@ -724,6 +729,9 @@ window.MYOB_LOCALES.zh = {
     },
     "toolnausea": {
       "nauseaEating": "孕吐与进食"
+    },
+    "toolnausealog": {
+      "nauseaLog": "孕吐记录"
     }
   }
 };

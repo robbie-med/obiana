@@ -504,7 +504,10 @@ window.MYOB_LOCALES.fr = {
           "feel": "Le point se trouve juste après le troisième doigt, au milieu du poignet. En palpant, vous sentirez deux cordons fermes qui descendent le long du bras. Le point est entre les deux.",
           "press": "Appuyez fermement avec le pouce, assez pour le sentir mais sans douleur. Petits cercles ou pression continue, pendant deux à trois minutes.",
           "both": "Faites de même sur l’autre poignet. Recommencez chaque fois que la nausée monte."
-        }
+        },
+        "logIntro": "Notez les nausées chaque fois qu’elles changent. Après quelques entrées, vous verrez ce qui vous a réellement aidée parmi ce que vous avez essayé.",
+        "openLog": "Noter comment vous vous sentez",
+        "openHelp": "Choses à essayer"
       }
     },
     "theme": {
@@ -608,8 +611,10 @@ window.MYOB_LOCALES.fr = {
       "shareCustomAsk": "Dites-nous comment cela se fait dans votre culture · Posez vos questions",
       "helpUsImprove": "Aidez-nous à améliorer",
       "nauseaHelper": "Nausées et alimentation",
-      "nauseaHelperDesc": "Rythme des collations · Quoi essayer · Notez ce qui aide",
-      "feelingWell": "Se sentir bien"
+      "nauseaHelperDesc": "Rythme des collations · Quoi essayer · Acupression",
+      "feelingWell": "Se sentir bien",
+      "nauseaLog": "Journal des nausées",
+      "nauseaLogDesc": "Notez-les · Indiquez ce que vous avez essayé · Voyez ce qui aide"
     },
     "toolkick": {
       "kickCounter": "Compteur de coups"
@@ -726,6 +731,9 @@ window.MYOB_LOCALES.fr = {
     },
     "toolnausea": {
       "nauseaEating": "Nausées et alimentation"
+    },
+    "toolnausealog": {
+      "nauseaLog": "Journal des nausées"
     }
   },
   "content": {

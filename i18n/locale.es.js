@@ -503,7 +503,10 @@ window.MYOB_LOCALES.es = {
           "feel": "El punto está justo después del tercer dedo, en el centro de la muñeca. Al palpar notará dos cordones firmes que recorren el brazo. El punto está entre ellos.",
           "press": "Presione con firmeza con el pulgar, lo bastante para notarlo pero sin que duela. Haga círculos pequeños o mantenga la presión, de dos a tres minutos.",
           "both": "Haga lo mismo en la otra muñeca. Repita siempre que aumenten las náuseas."
-        }
+        },
+        "logIntro": "Puntúe las náuseas cada vez que cambien. Tras unas cuantas anotaciones verá cuál de las cosas que probó le ayudó de verdad.",
+        "openLog": "Anotar cómo se siente ahora",
+        "openHelp": "Cosas que puede probar"
       }
     },
     "theme": {
@@ -607,8 +610,10 @@ window.MYOB_LOCALES.es = {
       "shareCustomAsk": "Cuéntenos cómo se hace en su cultura · Pregunte lo que no esté claro",
       "helpUsImprove": "Ayúdenos a mejorar",
       "nauseaHelper": "Náuseas y alimentación",
-      "nauseaHelperDesc": "Ritmo de comidas · Qué probar · Registre qué le ayuda",
-      "feelingWell": "Sentirse bien"
+      "nauseaHelperDesc": "Ritmo de comidas · Qué probar · Acupresión",
+      "feelingWell": "Sentirse bien",
+      "nauseaLog": "Registro de náuseas",
+      "nauseaLogDesc": "Puntúelas · Anote qué probó · Vea qué le ayuda"
     },
     "toolkick": {
       "kickCounter": "Contador de Pataditas"
@@ -725,6 +730,9 @@ window.MYOB_LOCALES.es = {
     },
     "toolnausea": {
       "nauseaEating": "Náuseas y alimentación"
+    },
+    "toolnausealog": {
+      "nauseaLog": "Registro de náuseas"
     }
   },
   "content": {

@@ -18,6 +18,7 @@ try { nauseaSnacks = JSON.parse(localStorage.getItem(NAUSEA_SNACK_KEY) || '{}');
 try { nauseaLog = JSON.parse(localStorage.getItem(NAUSEA_LOG_KEY) || '[]'); } catch (e) {}
 
 TOOL_INITS['tool-nausea'] = initNausea;
+TOOL_INITS['tool-nausealog'] = initNauseaLog;
 
 // Local calendar day, not UTC: a snack at 11pm belongs to today.
 function nauseaToday() {
@@ -270,14 +271,14 @@ function saveNauseaLog() {
 function addNauseaEntry(level, strat) {
   nauseaLog.unshift({ ts: Date.now(), level, strat: strat || null });
   saveNauseaLog();
-  initNausea();
+  initNauseaLog();
   showToast(I18n.t('tool.nausea.logged'));
 }
 
 function deleteNauseaEntry(ts) {
   nauseaLog = nauseaLog.filter(e => e.ts !== ts);
   saveNauseaLog();
-  initNausea();
+  initNauseaLog();
 }
 
 // Average nausea level after each strategy, worst first. Needs at least two
@@ -435,23 +436,21 @@ function initNausea() {
       </p>
     </div>
     ${renderTimeline()}
-    ${renderQuickLog()}
     ${renderSnackClock()}
     ${renderRedFlags()}
     ${renderStrategies()}
-    ${renderLogHistory()}
     ${renderAcupressure()}
+    <div style="padding:16px">
+      <button class="big-action-btn btn-plum" onclick="navigate('tool-nausealog')">
+        ${escHtml(I18n.t('tool.nausea.openLog'))}
+      </button>
+    </div>
     <div style="height:20px"></div>`;
 
   el.querySelectorAll('[data-strat]').forEach(b =>
     b.addEventListener('click', () => toggleTried(b.dataset.strat)));
 
-  el.querySelectorAll('.nausea-level').forEach(b =>
-    b.addEventListener('click', () => addNauseaEntry(
-      +b.dataset.level, document.getElementById('nausea-log-strat').value)));
 
-  el.querySelectorAll('[data-del]').forEach(b =>
-    b.addEventListener('click', () => deleteNauseaEntry(+b.dataset.del)));
 
   const setBtn = document.getElementById('nausea-week-set');
   if (setBtn) setBtn.addEventListener('click', () =>
@@ -469,4 +468,39 @@ function initNausea() {
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleSnackHour(h); }
     });
   });
+}
+
+
+// ═══════════════════════════════════════════════════════
+// NAUSEA LOG
+// ═══════════════════════════════════════════════════════
+// Separate tool. Rating the nausea is something she does repeatedly through
+// the day; the education tool is something she reads once. Sharing a page made
+// the quick action expensive to reach.
+function initNauseaLog() {
+  const el = document.getElementById('nausealog-content');
+  if (!el) return;
+
+  el.innerHTML = `
+    <div style="padding:12px 16px 0">
+      <p style="font-size:13px;color:var(--ink-soft);line-height:1.55">
+        ${escHtml(I18n.t('tool.nausea.logIntro'))}
+      </p>
+    </div>
+    ${renderQuickLog()}
+    ${renderLogHistory()}
+    <div style="padding:16px">
+      <button class="big-action-btn" style="background:var(--white);color:var(--teal);border:1.5px solid var(--rule)"
+        onclick="navigate('tool-nausea')">
+        ${escHtml(I18n.t('tool.nausea.openHelp'))}
+      </button>
+    </div>
+    <div style="height:20px"></div>`;
+
+  el.querySelectorAll('.nausea-level').forEach(b =>
+    b.addEventListener('click', () => addNauseaEntry(
+      +b.dataset.level, document.getElementById('nausea-log-strat').value)));
+
+  el.querySelectorAll('[data-del]').forEach(b =>
+    b.addEventListener('click', () => deleteNauseaEntry(+b.dataset.del)));
 }
