@@ -474,7 +474,7 @@ window.MYOB_LOCALES.zh = {
           },
           "doxylamine": {
             "name": "多西拉敏，与 B6 一起用",
-            "how": "睡前 12.5 毫克，也就是半片 25 毫克的 Unisom SleepTab。要买 SleepTabs，不要买 SleepGels，后者是另一种药。不需要处方。"
+            "how": "睡前 12.5 毫克，也就是半片 25 毫克的 Unisom SleepTab。如果不够，医生可能会加上早晨和下午各一次。24 小时内不超过 50 毫克。要买 SleepTabs，不要买 SleepGels，后者是另一种药。不需要处方。"
           }
         },
         "thingsToTry": "可以试试",

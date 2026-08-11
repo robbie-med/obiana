@@ -294,13 +294,14 @@ function strategyEffect() {
     .sort((a, b) => a.avg - b.avg);
 }
 
-function renderNauseaLog() {
+function renderQuickLog() {
+  // Kept near the top on purpose. Rating the nausea is the thing she does
+  // most often, and burying it under the strategy list meant scrolling the
+  // whole page every time.
   const LEVELS = [1, 2, 3, 4];
-  const effect = strategyEffect();
-
   return `
-    <div style="padding:14px 16px 0">
-      <div class="form-label" style="padding:0 0 6px">${escHtml(I18n.t('tool.nausea.howIsItNow'))}</div>
+    <div class="card nausea-quick">
+      <div class="form-label" style="padding:0 0 8px">${escHtml(I18n.t('tool.nausea.howIsItNow'))}</div>
       <div class="btn-row" style="margin-bottom:8px">
         ${LEVELS.map(n => `<button class="btn-sm nausea-level" data-level="${n}" style="flex:1">
             ${escHtml(I18n.t('tool.nausea.level' + n))}</button>`).join('')}
@@ -310,9 +311,18 @@ function renderNauseaLog() {
         ${NAUSEA_STRATEGIES.map(id =>
           `<option value="${id}">${escHtml(I18n.t('tool.nausea.strat.' + id + '.name'))}</option>`).join('')}
       </select>
+    </div>`;
+}
 
+function renderLogHistory() {
+  const effect = strategyEffect();
+  if (!effect.length && !nauseaLog.length) {
+    return `<p class="history-empty" style="margin:14px 16px">${escHtml(I18n.t('tool.nausea.noEntries'))}</p>`;
+  }
+  return `
+    <div style="padding:14px 16px 0">
       ${effect.length ? `
-        <div class="callout" style="margin:14px 0 0;text-align:start">
+        <div class="callout" style="margin:0;text-align:start">
           <div class="callout-title">${escHtml(I18n.t('tool.nausea.whatHelpsYou'))}</div>
           ${effect.map(e => `<div style="display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:3px 0">
               <span>${escHtml(I18n.t('tool.nausea.strat.' + e.id + '.name'))}</span>
@@ -324,7 +334,7 @@ function renderNauseaLog() {
         </div>` : ''}
 
       ${nauseaLog.length ? `
-        <div class="history-section-title" style="margin-top:14px">${escHtml(I18n.t('tool.nausea.recent'))}</div>
+        <div class="history-section-title" style="margin-top:${effect.length ? 14 : 0}px">${escHtml(I18n.t('tool.nausea.recent'))}</div>
         ${nauseaLog.slice(0, 10).map(e => `
           <div class="history-row">
             <div>
@@ -338,8 +348,7 @@ function renderNauseaLog() {
               style="background:none;border:none;color:var(--rose);font-size:11.5px;text-decoration:underline">
               ${escHtml(I18n.t('tool.appts.delete'))}
             </button>
-          </div>`).join('')}` : `
-        <p class="history-empty" style="margin-top:12px">${escHtml(I18n.t('tool.nausea.noEntries'))}</p>`}
+          </div>`).join('')}` : ''}
     </div>`;
 }
 
@@ -426,10 +435,11 @@ function initNausea() {
       </p>
     </div>
     ${renderTimeline()}
+    ${renderQuickLog()}
     ${renderSnackClock()}
     ${renderRedFlags()}
     ${renderStrategies()}
-    ${renderNauseaLog()}
+    ${renderLogHistory()}
     ${renderAcupressure()}
     <div style="height:20px"></div>`;
 
