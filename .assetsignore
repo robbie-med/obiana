@@ -14,6 +14,7 @@ wrangler.jsonc
 # Docs — not part of the served site
 README.md
 TRANSLATING.md
+ROADMAP.md
 NOTICE.md
 LICENSE
 LICENSE-CONTENT
