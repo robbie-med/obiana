@@ -391,7 +391,7 @@ function renderSection(section) {
       card.innerHTML = `
         <div class="faq-header acc-header" onclick="toggleCard(this)">
           ${badge}
-          <span class="faq-q">${item.title}</span>
+          <span class="faq-q">${escHtml(item.title)}</span>
           <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
         </div>
         <div class="acc-body">${item.body}</div>`;
@@ -400,8 +400,8 @@ function renderSection(section) {
         <div class="acc-header" onclick="toggleCard(this)">
           <div class="acc-icon-wrap ${item.color || ''}">${item.icon}</div>
           <div class="acc-titles">
-            <div class="acc-title">${item.title}</div>
-            ${item.sub ? `<div class="acc-sub">${item.sub}</div>` : ''}
+            <div class="acc-title">${escHtml(item.title)}</div>
+            ${item.sub ? `<div class="acc-sub">${escHtml(item.sub)}</div>` : ''}
           </div>
           <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
         </div>

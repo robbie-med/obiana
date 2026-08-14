@@ -1,8 +1,15 @@
 # Roadmap
 
 Findings from three full-app audits (2026-08-12): i18n, guide content, and UI/UX &
-accessibility. Nothing here is applied yet — check items off as they land.
-Line references are as of commit `4bef874`; expect drift.
+accessibility. Check items off as they land.
+Line references are as of commit `4bef874`; expect drift, especially in
+section 1 where most items have now been applied.
+
+**Status (2026-08-14):** section 1 bugs are done except the 9-locale
+translation of the nausea/translate/improve tool strings. Sections 2 and 3
+are untouched. Two extra defects found while fixing section 1 and repaired:
+all 8 stub locales registered themselves twice (dead first block), and card
+titles/subtitles went into innerHTML unescaped alongside the listed sites.
 
 - [1. i18n](#1-i18n)
 - [2. Content overhaul](#2-content-overhaul)
@@ -14,38 +21,38 @@ Line references are as of commit `4bef874`; expect drift.
 
 ### Bugs (user-visible)
 
-- [ ] Add missing keys `tool.appts.untitledVisit` and `tool.appts.editVisit` to
+- [x] Add missing keys `tool.appts.untitledVisit` and `tool.appts.editVisit` to
       `locale.en.js` — users currently see the raw key strings (`tools.js:1203,1273`)
-- [ ] Add `data-i18n-html` to the `apptType.obTriage` option (`index.html:700`) —
+- [x] Add `data-i18n-html` to the `apptType.obTriage` option (`index.html:700`) —
       renders literal "L&amp;D"
-- [ ] Key the hardcoded English in `tools.js`: `Reached in …` (139),
+- [x] Key the hardcoded English in `tools.js`: `Reached in …` (139),
       `Contraction Ending` (201), raw `left/right/both` side ids (360),
       `Bottle · oz` (361), diaper toasts (458), `Wet/Dirty/Wet + Dirty` labels
       (468), `You have gained … lbs so far.` (673), `Wk` / `lbs` units
       (703–705), weight toast (734), **`Important` on the self-harm alert**
       (928), `Additional notes:` (1108), `Generated with Pregnancy & Birth
       Guide` (1109), `No questions added` (1234), `Visit updated/added` (1297)
-- [ ] `content.js:656,660` — use existing key `myinfo.saveMyInformation`;
+- [x] `content.js:656,660` — use existing key `myinfo.saveMyInformation`;
       button currently reverts to English after save
-- [ ] Mood tool: show the actual instrument name (PHQ-9 for fr/ru) in the
+- [x] Mood tool: show the actual instrument name (PHQ-9 for fr/ru) in the
       header, not always "Edinburgh Postnatal Depression Scale"
       (`tools.js:832`); use per-instrument `cutoffs` instead of hardcoded
       `score >= 10` (`tools.js:926`)
-- [ ] `tools.js:1232` — use `I18n.fmt`/`intlTag()` instead of hand-built locale
+- [x] `tools.js:1232` — use `I18n.fmt`/`intlTag()` instead of hand-built locale
       tag (Dari currently gets Jalali calendar + Persian digits)
-- [ ] EPDS question/options need `lang`/`dir` attributes (`tools.js:848,852`) —
+- [x] EPDS question/options need `lang`/`dir` attributes (`tools.js:848,852`) —
       Arabic questionnaire under an LTR UI renders without `dir="rtl"`
 - [ ] Translate `tool.nausea`, `tool.i18n`, `tool.improve` into the 9 locales
       that lack them: de, ja, pl, prs, ps, th, tl, vi, zom (nausea tool is
       end-user-facing; currently falls back to English wholesale)
-- [ ] Localize `<meta name="description">` — `ui.app.description` exists but is
+- [x] Localize `<meta name="description">` — `ui.app.description` exists but is
       never applied (`index.html:10`)
 
 ### Minor
 
-- [ ] i18n the hardcoded placeholders: `index.html:249,724,728`,
+- [x] i18n the hardcoded placeholders: `index.html:249,724,728`,
       `index.html:629–681`, `tools.js:661,665`
-- [ ] Route numbers through `I18n.fmt.num`: `nausea-tool.js:331,399`,
+- [x] Route numbers through `I18n.fmt.num`: `nausea-tool.js:331,399`,
       `improve-tool.js:81,128`, `translate-tool.js:124`, `content.js:523`
 - [ ] Use `tp()` for min/contraction counts so ru/ar/pl can inflect
       (`tools.js:290,296,299,360`)
@@ -56,19 +63,21 @@ Line references are as of commit `4bef874`; expect drift.
 
 ### Hygiene
 
-- [ ] Delete orphan key `tool.mood.scoreOutOf30Based` from es/fr/ko/ar/ru/zh
-- [ ] Delete dead en keys: `tool.mood.availableIn`, `tool.mood.switchToEnglish`,
-      `tool.mood.inThePast7Days`, `tool.i18n.showMarkup`, `tool.i18n.keepTags`
+- [x] Delete orphan key `tool.mood.scoreOutOf30Based` from es/fr/ko/ar/ru/zh
+- [ ] Delete dead en keys: ~~`tool.mood.availableIn`~~, ~~`tool.mood.switchToEnglish`~~,
+      ~~`tool.mood.inThePast7Days`~~ (done), `tool.i18n.showMarkup`,
+      `tool.i18n.keepTags` (still referenced by the dead `isBody` branch —
+      remove together with it)
 - [ ] Refresh stale manifests: `_html_keys.json` (2 entries),
       `_tools_keys.json` (4 entries)
 - [ ] zom locale ui block is English text — translate or leave intentionally
 - [ ] EPDS instrument `cnh` never auto-matches the `zom` UI locale — map or
       document
-- [ ] Favicon precache entries carry `?v=59` but the page requests them
+- [x] Favicon precache entries carry `?v=59` but the page requests them
       unprefixed — dead precache entries (`sw.js:11–13`)
 - [ ] Branding drift `obiana` vs `myob` (`index.html:392`,
       `translate-tool.js:257`)
-- [ ] Unescaped user input into innerHTML: `tools.js:1080,1138,1244,1250,1252`;
+- [x] Unescaped user input into innerHTML: `tools.js:1080,1138,1244,1250,1252`;
       `content.js:389–404` (stored-XSS surface found during audit)
 
 ---
