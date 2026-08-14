@@ -41,7 +41,7 @@ function boldSlot(key, slot, value) {
 // 1. KICK COUNTER
 // ═══════════════════════════════════════════════════════
 let kickSession = { active: false, startTime: null, count: 0, _timer: null };
-let kickHistory = JSON.parse(localStorage.getItem('kick-history') || '[]');
+let kickHistory = safeLoad('kick-history', []);
 
 TOOL_INITS['tool-kick'] = initKick;
 
@@ -160,7 +160,7 @@ function resetKick() {
 function saveKickRecord(success, duration) {
   kickHistory.unshift({ ts: kickSession.startTime || Date.now(), count: kickSession.count, duration, success });
   if (kickHistory.length > 40) kickHistory = kickHistory.slice(0, 40);
-  localStorage.setItem('kick-history', JSON.stringify(kickHistory));
+  safeSave('kick-history', kickHistory);
 }
 
 function renderKickHistory() {
@@ -184,7 +184,7 @@ function renderKickHistory() {
 let cxActive = false;
 let cxStart = null;
 let cxTimer = null;
-let cxList = JSON.parse(localStorage.getItem('contractions') || '[]');
+let cxList = safeLoad('contractions', []);
 
 TOOL_INITS['tool-contractions'] = initContractions;
 
@@ -234,7 +234,7 @@ function toggleContraction() {
     }
     cxList.unshift({ startTime: cxStart, duration, interval });
     if (cxList.length > 60) cxList = cxList.slice(0, 60);
-    localStorage.setItem('contractions', JSON.stringify(cxList));
+    safeSave('contractions', cxList);
     cxActive = false;
     cxStart = null;
 
@@ -314,7 +314,7 @@ function check511() {
 function clearContractions() {
   if (!confirm(I18n.t('tool.cx.clearConfirm'))) return;
   cxList = [];
-  localStorage.removeItem('contractions');
+  safeRemove('contractions');
   renderContractionList();
   const a = document.getElementById('cx-511-alert');
   if (a) a.style.display = 'none';
@@ -323,7 +323,7 @@ function clearContractions() {
 // ═══════════════════════════════════════════════════════
 // 3. FEEDING LOG
 // ═══════════════════════════════════════════════════════
-let feedLog = JSON.parse(localStorage.getItem('feed-log') || '[]');
+let feedLog = safeLoad('feed-log', []);
 let _feedType = 'breast';
 let _feedSide = 'left';
 
@@ -353,7 +353,7 @@ function initFeeding() {
       <p>${t('tool.feed.fewFeedsBody')}</p>
     </div>` : ''}
     <div style="padding:0 16px 12px">
-      <button class="big-action-btn btn-teal" onclick="openModal('feed')">${t('tool.feed.logAFeeding')}</button>
+      <button class="big-action-btn btn-teal" onclick="openFeedModal()">${t('tool.feed.logAFeeding')}</button>
     </div>
     <div class="history-section-title">${t('tool.feed.feedLog')}</div>
     <div class="history-list-card" id="feed-list"></div>
@@ -380,8 +380,23 @@ function renderFeedList() {
 
 function deleteFeed(idx) {
   feedLog.splice(idx, 1);
-  localStorage.setItem('feed-log', JSON.stringify(feedLog));
+  safeSave('feed-log', feedLog);
   initFeeding();
+}
+
+// The modal markup is static and never re-rendered, so whatever was picked
+// last time is still selected when it reopens. That is not a data bug, the
+// variables and the pills agree, but it silently reuses the last choice and
+// looks identical to a deliberate default. Reset on open, the way
+// openApptModal already does.
+function openFeedModal() {
+  setFeedType('breast');
+  setFeedSide('left');
+  const d = document.getElementById('feed-duration');
+  const o = document.getElementById('feed-oz');
+  if (d) d.value = '';
+  if (o) o.value = '';
+  openModal('feed');
 }
 
 function setFeedType(type) {
@@ -410,7 +425,7 @@ function saveFeed() {
   }
   feedLog.unshift(entry);
   if (feedLog.length > 200) feedLog = feedLog.slice(0, 200);
-  localStorage.setItem('feed-log', JSON.stringify(feedLog));
+  safeSave('feed-log', feedLog);
   closeModal('feed');
   document.getElementById('feed-duration').value = '';
   document.getElementById('feed-oz').value = '';
@@ -421,7 +436,7 @@ function saveFeed() {
 // ═══════════════════════════════════════════════════════
 // 4. DIAPER COUNTER
 // ═══════════════════════════════════════════════════════
-let diaperLog = JSON.parse(localStorage.getItem('diaper-log') || '[]');
+let diaperLog = safeLoad('diaper-log', []);
 
 TOOL_INITS['tool-diapers'] = initDiapers;
 
@@ -463,7 +478,7 @@ function initDiapers() {
 function addDiaper(type) {
   diaperLog.unshift({ ts: Date.now(), type });
   if (diaperLog.length > 300) diaperLog = diaperLog.slice(0, 300);
-  localStorage.setItem('diaper-log', JSON.stringify(diaperLog));
+  safeSave('diaper-log', diaperLog);
   initDiapers();
   showToast(t(type === 'wet' ? 'tool.diaper.loggedWet' : type === 'dirty' ? 'tool.diaper.loggedDirty' : 'tool.diaper.loggedGeneric'));
 }
@@ -489,7 +504,7 @@ function deleteDiaper(idx) {
   const todayStart = new Date(); todayStart.setHours(0,0,0,0);
   const todayIdx = diaperLog.findIndex((d, i) => d.ts >= todayStart.getTime());
   diaperLog.splice(todayIdx >= 0 ? todayIdx + idx : idx, 1);
-  localStorage.setItem('diaper-log', JSON.stringify(diaperLog));
+  safeSave('diaper-log', diaperLog);
   initDiapers();
 }
 
@@ -505,7 +520,7 @@ const JAUNDICE_GUIDANCE = [1, 2, 3, 4, 5, 6, 7, 10, 14, 21].map(day => ({
 
 
 function getJaundiceDay() {
-  const bd = localStorage.getItem('jaundice-birth-date');
+  const bd = safeGet('jaundice-birth-date', null);
   if (!bd) return null;
   const diff = Date.now() - new Date(bd).getTime();
   return Math.floor(diff / 86400000) + 1;
@@ -523,7 +538,7 @@ function initJaundice() {
   const el = document.getElementById('jaundice-content');
   if (!el) return;
   const day = getJaundiceDay();
-  const birthDate = localStorage.getItem('jaundice-birth-date') || '';
+  const birthDate = safeGet('jaundice-birth-date', null) || '';
 
   el.innerHTML = `
     <div class="weight-profile-card" style="margin:12px 16px">
@@ -554,7 +569,7 @@ function initJaundice() {
 function setJaundiceBirthDate() {
   const val = document.getElementById('jaundice-birth-input').value;
   if (!val) return;
-  localStorage.setItem('jaundice-birth-date', val);
+  safeSet('jaundice-birth-date', val);
   initJaundice();
   showToast(t('tool.jaundice.birthDateSaved'));
 }
@@ -562,7 +577,7 @@ function setJaundiceBirthDate() {
 // ═══════════════════════════════════════════════════════
 // 6. BLOOD PRESSURE LOG
 // ═══════════════════════════════════════════════════════
-let bpLog = JSON.parse(localStorage.getItem('bp-log') || '[]');
+let bpLog = safeLoad('bp-log', []);
 
 TOOL_INITS['tool-bp'] = initBP;
 
@@ -615,7 +630,7 @@ function renderBPList() {
 
 function deleteBP(idx) {
   bpLog.splice(idx, 1);
-  localStorage.setItem('bp-log', JSON.stringify(bpLog));
+  safeSave('bp-log', bpLog);
   initBP();
 }
 
@@ -628,7 +643,7 @@ function saveBP() {
   }
   bpLog.unshift({ ts: Date.now(), s, d });
   if (bpLog.length > 100) bpLog = bpLog.slice(0, 100);
-  localStorage.setItem('bp-log', JSON.stringify(bpLog));
+  safeSave('bp-log', bpLog);
   document.getElementById('bp-systolic').value = '';
   document.getElementById('bp-diastolic').value = '';
   closeModal('bp');
@@ -641,8 +656,8 @@ function saveBP() {
 // ═══════════════════════════════════════════════════════
 // 7. WEIGHT TRACKER
 // ═══════════════════════════════════════════════════════
-let weightLog = JSON.parse(localStorage.getItem('weight-log') || '[]');
-let weightProfile = JSON.parse(localStorage.getItem('weight-profile') || '{}');
+let weightLog = safeLoad('weight-log', []);
+let weightProfile = safeLoad('weight-profile', {});
 
 TOOL_INITS['tool-weight'] = initWeight;
 
@@ -696,7 +711,7 @@ function saveWeightProfile() {
   const bmi = parseFloat(document.getElementById('wp-bmi').value);
   if (base) weightProfile.baseWeight = base;
   if (bmi) weightProfile.bmi = bmi;
-  localStorage.setItem('weight-profile', JSON.stringify(weightProfile));
+  safeSave('weight-profile', weightProfile);
   initWeight();
   showToast(t('tool.weight.profileSaved'));
 }
@@ -723,7 +738,7 @@ function deleteWeight(idx) {
   const entry = sorted[idx];
   const realIdx = weightLog.findIndex(w => w.ts === entry.ts);
   if (realIdx >= 0) weightLog.splice(realIdx, 1);
-  localStorage.setItem('weight-log', JSON.stringify(weightLog));
+  safeSave('weight-log', weightLog);
   initWeight();
 }
 
@@ -736,7 +751,7 @@ function saveWeight() {
   }
   weightLog.push({ ts: Date.now(), lbs, week });
   if (weightLog.length > 100) weightLog = weightLog.slice(0, 100);
-  localStorage.setItem('weight-log', JSON.stringify(weightLog));
+  safeSave('weight-log', weightLog);
   document.getElementById('weight-lbs').value = '';
   document.getElementById('weight-week').value = '';
   closeModal('weight');
@@ -779,8 +794,7 @@ function epdsAvailable() {
 function getEPDS() {
   const avail = epdsAvailable();
   if (!avail.length) return null;
-  let chosen = null;
-  try { chosen = localStorage.getItem(EPDS_CHOICE_KEY); } catch (e) {}
+  const chosen = safeGet(EPDS_CHOICE_KEY, null);
   if (chosen && avail.includes(chosen)) return window.MYOB_EPDS[chosen];
   // Default to the app language when a validated form exists for it.
   if (avail.includes(I18n.lang)) return window.MYOB_EPDS[I18n.lang];
@@ -788,14 +802,14 @@ function getEPDS() {
 }
 
 function setEPDSLang(code) {
-  try { localStorage.setItem(EPDS_CHOICE_KEY, code); } catch (e) {}
+  safeSet(EPDS_CHOICE_KEY, code);
   epdsAnswers = {};
   initMood();
 }
 
 
 let epdsAnswers = {};
-let epdsHistory = JSON.parse(localStorage.getItem('epds-history') || '[]');
+let epdsHistory = safeLoad('epds-history', []);
 
 TOOL_INITS['tool-mood'] = initMood;
 
@@ -918,7 +932,7 @@ function submitEPDS() {
 
   epdsHistory.unshift({ ts: Date.now(), score });
   if (epdsHistory.length > 20) epdsHistory = epdsHistory.slice(0, 20);
-  localStorage.setItem('epds-history', JSON.stringify(epdsHistory));
+  safeSave('epds-history', epdsHistory);
 
   const interp = getEPDSInterpretation(score);
   // EPDS item 10 / PHQ-9 item 9 — the self-harm item.
@@ -982,7 +996,7 @@ const BIRTH_PLAN_LEGACY = {
 // Maps pre-i18n English answers back to option ids, so existing users do not
 // lose a birth plan they already built. Run once, then the flag is set.
 function migrateBirthPlan(saved) {
-  if (localStorage.getItem('birth-plan-v2') === '1') return saved;
+  if (safeGet('birth-plan-v2', null) === '1') return saved;
   const out = {};
   Object.keys(saved || {}).forEach(key => {
     const map = BIRTH_PLAN_LEGACY[key] || {};
@@ -990,8 +1004,8 @@ function migrateBirthPlan(saved) {
     const v = saved[key];
     out[key] = Array.isArray(v) ? v.map(conv) : conv(v);
   });
-  localStorage.setItem('birth-plan', JSON.stringify(out));
-  localStorage.setItem('birth-plan-v2', '1');
+  safeSave('birth-plan', out);
+  safeSet('birth-plan-v2', '1');
   return out;
 }
 
@@ -1010,7 +1024,7 @@ function bpQuestionLabelEn(key) { return bpEn('tool.birthplan.q.' + key + '.labe
 function bpOptionLabelEn(key, optId) { return bpEn('tool.birthplan.q.' + key + '.opt.' + optId); }
 function bpIsEnglish() { return I18n.lang === 'en'; }
 
-let birthPlanAnswers = migrateBirthPlan(JSON.parse(localStorage.getItem('birth-plan') || '{}'));
+let birthPlanAnswers = migrateBirthPlan(safeLoad('birth-plan', {}));
 
 TOOL_INITS['tool-birthplan'] = initBirthPlan;
 
@@ -1056,7 +1070,7 @@ function setBPBAnswer(key, value, btn, multi) {
     btn.closest('.bpb-question').querySelectorAll('.bpb-pill').forEach(p => p.classList.remove('selected'));
     btn.classList.add('selected');
   }
-  localStorage.setItem('birth-plan', JSON.stringify(birthPlanAnswers));
+  safeSave('birth-plan', birthPlanAnswers);
   const wrap = document.getElementById('bpb-summary-wrap');
   if (wrap) wrap.innerHTML = renderBirthPlanSummary();
 }
@@ -1076,7 +1090,7 @@ function renderBirthPlanSummary() {
       <span class="bpo-a">${display}</span>
     </div>`;
   }).join('');
-  const savedNotes = localStorage.getItem('birth-plan-notes') || '';
+  const savedNotes = safeGet('birth-plan-notes', null) || '';
   return `
     <div class="birth-plan-output">
       <div class="bpo-header">📋 ${t('tool.birthplan.myBirthPreferences')} (${answered.length}/${BIRTH_PLAN_QUESTIONS.length})</div>
@@ -1085,7 +1099,7 @@ function renderBirthPlanSummary() {
       <div style="padding:0 16px 12px">
         <textarea class="bp-notes-area" id="bp-notes"
           placeholder="${t('tool.birthplan.anyOtherPreferencesConcernsOr')}"
-          oninput="localStorage.setItem('birth-plan-notes', this.value)"
+          oninput="safeSet('birth-plan-notes', this.value)"
           style="width:100%;min-height:80px;border:1.5px solid var(--rule);border-radius:var(--radius-sm);padding:10px 12px;font-family:var(--font-sans);font-size:14px;color:var(--ink);background:var(--bg);outline:none;resize:vertical;transition:border-color .2s;line-height:1.5;box-sizing:border-box"
         >${escHtml(savedNotes)}</textarea>
       </div>
@@ -1114,7 +1128,7 @@ function copyBirthPlan() {
     }
   });
   const notes = (document.getElementById('bp-notes') || {}).value
-    || localStorage.getItem('birth-plan-notes') || '';
+    || safeGet('birth-plan-notes', null) || '';
   if (notes.trim()) lines.push('\n' + t('tool.birthplan.additionalNotes') + '\n' + notes.trim());
   lines.push('\n' + t('tool.birthplan.generatedWith'));
   const text = lines.join('\n');
@@ -1143,7 +1157,7 @@ function printBirthPlan() {
     return `<div class="pv-row"><span class="pv-q">${escHtml(bpQuestionLabel(q.key))}</span><span class="pv-a">${escHtml(display)}</span></div>${en}`;
   }).join('');
   const notes = (document.getElementById('bp-notes') || {}).value
-    || localStorage.getItem('birth-plan-notes') || '';
+    || safeGet('birth-plan-notes', null) || '';
   const notesHtml = notes.trim()
     ? `<div class="pv-notes"><strong>${t('tool.birthplan.additionalNotes')}</strong><br>${escHtml(notes.trim()).replace(/\n/g, '<br>')}</div>`
     : '';
@@ -1160,7 +1174,7 @@ function printBirthPlan() {
 // ═══════════════════════════════════════════════════════
 // 10. VISIT NOTES (APPOINTMENT NOTES)
 // ═══════════════════════════════════════════════════════
-let appointments = migrateAppointments(JSON.parse(localStorage.getItem('appt-notes') || '[]'));
+let appointments = migrateAppointments(safeLoad('appt-notes', []));
 let _editApptId = null;
 
 // Appointment types are stored as stable IDS. Before i18n the <option>
@@ -1196,15 +1210,15 @@ const APPT_TYPE_LEGACY = {
 
 // Convert visits saved before i18n. Runs once, then the flag short-circuits.
 function migrateAppointments(list) {
-  if (localStorage.getItem('appt-notes-v2') === '1') return list;
+  if (safeGet('appt-notes-v2', null) === '1') return list;
   const out = (list || []).map(a => {
     const t = a && a.type;
     return Object.assign({}, a, {
       type: Object.prototype.hasOwnProperty.call(APPT_TYPE_LEGACY, t) ? APPT_TYPE_LEGACY[t] : t
     });
   });
-  localStorage.setItem('appt-notes', JSON.stringify(out));
-  localStorage.setItem('appt-notes-v2', '1');
+  safeSave('appt-notes', out);
+  safeSet('appt-notes-v2', '1');
   return out;
 }
 
@@ -1301,7 +1315,7 @@ function saveAppt() {
     appointments.unshift({ id: String(Date.now()), type, date, questions, notes });
   }
   if (appointments.length > 100) appointments = appointments.slice(0, 100);
-  localStorage.setItem('appt-notes', JSON.stringify(appointments));
+  safeSave('appt-notes', appointments);
   closeModal('appt');
   initAppts();
   showToast(t(_editApptId ? 'tool.appts.visitUpdated' : 'tool.appts.visitAdded'));
@@ -1311,7 +1325,7 @@ function saveAppt() {
 function deleteAppt(id) {
   if (!confirm(I18n.t('tool.appts.deleteConfirm'))) return;
   appointments = appointments.filter(a => a.id !== id);
-  localStorage.setItem('appt-notes', JSON.stringify(appointments));
+  safeSave('appt-notes', appointments);
   initAppts();
   showToast(t('tool.appts.visitDeleted'));
 }

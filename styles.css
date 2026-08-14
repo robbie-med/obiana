@@ -887,7 +887,12 @@ body {
   opacity: 0;
   transition: opacity .2s, transform .2s;
   pointer-events: none;
-  white-space: nowrap;
+  /* Not nowrap. A fixed, centre-translated box with no max-width grows to the
+     full single-line width and bleeds off BOTH edges; German and Russian
+     toasts are routinely long enough to do it. */
+  max-width: min(90vw, 360px);
+  text-align: center;
+  line-height: 1.4;
   z-index: 9999;
 }
 #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }

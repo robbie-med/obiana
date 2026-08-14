@@ -157,19 +157,20 @@ above. No pharma-promotional content was found.
 
 ### Broken / functional
 
-- [ ] **Birth-plan printing outputs a blank page** — `#print-view` is inside
+- [x] **Birth-plan printing outputs a blank page** — `#print-view` is inside
       `#app`, which print CSS hides (`index.html:736`, `styles.css:1425`).
       Move `#print-view` to a direct child of `<body>`
-- [ ] **Feed modal logs the wrong type** — module `_feedType/_feedSide`
+- [x] ~~**Feed modal logs the wrong type**~~ (audit wrong: no desync exists;
+      fixed the real issue, which was sticky state on reopen) — module `_feedType/_feedSide`
       persist while the modal reopens showing Breast/Left (`tools.js:317–318`,
       `index.html:614,622`). Re-sync pills or reset state on open
-- [ ] **Guard all localStorage reads/writes** — one corrupt key blanks every
+- [x] **Guard all localStorage reads/writes** — one corrupt key blanks every
       tool (`tools.js:34,177,316,414,555,634,788,1003,1153`,
       `content.js:569`); unguarded writes toast success for unsaved data in
       private mode. Generalize the nausea tool's `safeLoad` pattern
-- [ ] Toast `white-space:nowrap` overflows with long translations
+- [x] Toast `white-space:nowrap` overflows with long translations
       (`styles.css:889`) → max-width + wrapping
-- [ ] Export omits nausea data, `myob.epdsLang`, v2 flags; no import path
+- [x] Export omits nausea data, `myob.epdsLang`, v2 flags; no import path
       (`content.js:741–757`)
 
 ### Accessibility — semantics

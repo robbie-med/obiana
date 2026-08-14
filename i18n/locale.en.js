@@ -80,13 +80,18 @@ window.MYOB_LOCALES.en = {
       "saveMyInformation": "Save My Information",
       "exportData": "Export Data",
       "saved": "✓ Saved!",
-      "notesPlaceholder": "Write questions here as you think of them…"
+      "notesPlaceholder": "Write questions here as you think of them…",
+      "importData": "Import Data",
+      "importConfirm": "Restore {n} saved items from this file? Anything currently in the app with the same name will be replaced."
     },
     "toast": {
       "contactsSaved": "Contacts saved to your phone",
       "appInstalled": "App installed! Open from your home screen anytime",
       "dataExported": "Data exported!",
-      "appUpdated": "App updated. Reload for latest version"
+      "appUpdated": "App updated. Reload for latest version",
+      "importDone": "Data restored",
+      "importFailed": "That file could not be read",
+      "importNothing": "No app data found in that file"
     },
     "tool": {
       "mood": {
@@ -1651,33 +1656,33 @@ window.MYOB_LOCALES.en = {
       "title": "Preeclampsia: What to Watch For",
       "sub": "Signs, risk, and the aspirin question",
       "t": [
-        "Preeclampsia is a blood pressure condition of pregnancy that can develop quickly, usually after 20 weeks and sometimes in the weeks after delivery. It is one of the few things where recognising it early genuinely changes how it ends.",
+        "A blood pressure condition that can come on fast, usually after 20 weeks and sometimes in the week or two after delivery. Catching it early genuinely changes how it ends.",
         "What it is",
-        "High blood pressure together with signs that other organs are being affected, most often the kidneys, the liver or the clotting system. It also reduces blood flow through the placenta, which is why it affects the baby's growth. The only definitive treatment is delivery, which is why that conversation can move faster than you expect.",
+        "High blood pressure plus signs that other organs are being affected, most often the kidneys or liver. It also reduces blood flow through the placenta, which is why it affects the baby's growth. Delivery is the only cure, so that conversation can move faster than you expect.",
         "Call the same day if you have",
-        "A headache that will not shift, or does not respond to acetaminophen · Vision changes: spots, flashing, blurring or greying out · Pain under the ribs on the right, or high in the stomach · Sudden swelling of the face or hands, or a jump in weight over a day or two · Shortness of breath · Nausea and vomiting that starts fresh in the second half of pregnancy",
-        "Do not wait to see whether these settle overnight. A blood pressure reading and a urine sample answer the question in minutes, and that is a reasonable thing to ask for.",
-        "Who is at higher risk",
-        "Preeclampsia in a previous pregnancy · Chronic high blood pressure, kidney disease, lupus or antiphospholipid syndrome · Type 1 or type 2 diabetes · Twins or more · A first pregnancy, or a first pregnancy with a new partner · BMI over 30 · Age 35 or over · A mother or sister who had it · Black women are affected more often and more severely, which reflects documented differences in care and circumstance rather than biology, and is a reason to expect closer attention rather than less.",
+        "A headache that will not shift · Vision changes: spots, flashing, blurring · Pain under the ribs on the right, or high in the stomach · Sudden swelling of the face or hands · Shortness of breath",
+        "A blood pressure reading and a urine sample answer it in minutes. Do not wait overnight to see whether it settles.",
+        "Higher risk if you have",
+        "Preeclampsia before · Chronic high blood pressure, kidney disease or lupus · Diabetes · Twins or more · A first pregnancy · BMI over 30 · Age 35 or over · A mother or sister who had it. Black women are affected more often and more severely, which reflects differences in care rather than biology.",
         "Low-dose aspirin",
-        "If you have one strong risk factor, or two or more moderate ones, current guidance is 81 mg of aspirin daily, started between 12 and 16 weeks and continued until delivery. It lowers the chance of preeclampsia meaningfully, it costs very little, and it is well studied in pregnancy. Plenty of women who qualify are never offered it, so if you recognise yourself in the list above, it is entirely reasonable to raise it yourself.",
+        "With one strong risk factor, or two moderate ones, 81 mg daily from 12 to 16 weeks until delivery lowers the risk meaningfully. Plenty of women who qualify are never offered it, so it is worth asking.",
         "It can also start after the birth",
-        "Preeclampsia sometimes appears for the first time after delivery, most often in the first week. The warning signs are the same ones listed above. If they turn up once you are home, that is an emergency department visit, not something to save for the postpartum appointment."
+        "Usually in the first week, with the same warning signs. If they turn up once you are home, that is an emergency department visit rather than something to save for the postpartum appointment."
       ]
     },
     "antenatal-mental-health": {
       "title": "Mental Health During Pregnancy",
       "sub": "Anxiety, depression, and the medication question",
       "t": [
-        "Depression and anxiety are roughly as common during pregnancy as after it, but they get far less attention. Many women assume that feeling awful while pregnant means they are doing it wrong, or that they have no right to feel that way. Neither is true.",
-        "Worth mentioning to someone",
-        "Low mood most of the day, most days · Losing interest in things you normally enjoy · Anxiety that will not switch off, or intrusive frightening thoughts · Not sleeping even when you have the chance · Feeling detached from the pregnancy, or nothing at all about it · Any thought of harming yourself",
-        "That last one needs saying out loud today",
-        "Tell your team, or call or text 988 in the US. Thoughts like these are more common than anyone admits, they respond to treatment, and they are not a verdict on the kind of mother you will be.",
+        "Depression and anxiety are about as common during pregnancy as after it, and get far less attention. Feeling awful while pregnant does not mean you are doing it wrong.",
+        "Worth telling someone",
+        "Low mood most days · Losing interest in things you normally enjoy · Anxiety that will not switch off, or intrusive frightening thoughts · Not sleeping even when you have the chance · Feeling detached from the pregnancy · Any thought of harming yourself",
+        "That last one needs saying today",
+        "Tell your team, or call or text 988 in the US. It is more common than anyone admits, it responds to treatment, and it says nothing about the mother you will be.",
         "The medication question",
-        "This is the one most people are afraid to ask. Untreated depression is not the neutral option it looks like: it is associated with preterm birth, lower birthweight, and a considerably higher chance of postpartum depression. Several SSRIs have a large body of pregnancy safety data behind them and are prescribed routinely. If you were already on something and stopped the day you saw the positive test, say so, because stopping abruptly is one of the commonest routes into a relapse. This is a decision to work out with your team, not alone at two in the morning with a search engine.",
-        "What else actually helps",
-        "Talking therapy works, either instead of medication or alongside it, and is worth asking for early because waiting lists are real. Sleep, daylight, movement and not being isolated all matter more than they sound like they should. So does telling one person what is really going on."
+        "Untreated depression is not the safe middle option: it is linked with preterm birth, lower birthweight, and a much higher chance of postpartum depression. Several SSRIs have substantial pregnancy safety data and are prescribed routinely. If you stopped something the day you saw the positive test, say so, because that is a common route into a relapse.",
+        "What else helps",
+        "Talking therapy works, alone or alongside medication, and is worth asking for early because waiting lists are real. Sleep, daylight, movement and not being isolated all matter more than they sound like they should."
       ]
     },
     "common-discomforts": {

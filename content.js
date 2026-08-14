@@ -274,6 +274,54 @@ const CONTENT_STRUCTURE = {
   ]
 };
 
+// ─── Storage ────────────────────────────────────────────
+// Every read and write goes through these. Two failures they exist for:
+//
+// Private mode and blocked third-party storage make localStorage itself throw
+// on access, not just return null. And a single corrupt value used to abort
+// tools.js at parse time, because ten of its trackers parse their history at
+// module scope: one bad kick-history entry meant openModal and closeModal were
+// never defined, so all twelve tools and all four modals died together.
+//
+// safeSave returns a boolean because callers were toasting "saved" for data
+// that had not been written.
+function safeLoad(key, fallback) {
+  try {
+    const raw = localStorage.getItem(key);
+    if (raw === null) return fallback;
+    const v = JSON.parse(raw);
+    if (v === null || v === undefined) return fallback;
+    // A value that parses but has the wrong shape is just as fatal: an object
+    // where an array is expected gives undefined .length and breaks on render.
+    if (Array.isArray(fallback) !== Array.isArray(v)) return fallback;
+    if (typeof fallback === 'object' && typeof v !== 'object') return fallback;
+    return v;
+  } catch (e) {
+    return fallback;
+  }
+}
+
+function safeSave(key, value) {
+  try { localStorage.setItem(key, JSON.stringify(value)); return true; }
+  catch (e) { return false; }
+}
+
+// Raw string variants, for the handful of keys that are not JSON.
+function safeGet(key, fallback) {
+  try { const v = localStorage.getItem(key); return v === null ? fallback : v; }
+  catch (e) { return fallback; }
+}
+
+function safeSet(key, value) {
+  try { localStorage.setItem(key, value); return true; }
+  catch (e) { return false; }
+}
+
+function safeRemove(key) {
+  try { localStorage.removeItem(key); return true; }
+  catch (e) { return false; }
+}
+
 // ─── Source fingerprints ────────────────────────────────
 // Mirror of srcHashOf() in translation/hash.js, which carries the full
 // rationale. It is duplicated rather than imported because locale files and
@@ -703,7 +751,7 @@ function clearSearch() {
 // MY INFO — RENDER FORM
 // ═══════════════════════════════════════════════════════
 function renderMyInfo() {
-  const saved = JSON.parse(localStorage.getItem('birth-guide-info') || '{}');
+  const saved = safeLoad('birth-guide-info', {});
 
   // Contacts
   const cForm = document.getElementById('contacts-form');
@@ -787,7 +835,7 @@ function saveInfo() {
   });
   data['notes'] = document.getElementById('notes-field').value;
 
-  localStorage.setItem('birth-guide-info', JSON.stringify(data));
+  safeSave('birth-guide-info', data);
 
   const btn = document.getElementById('save-btn');
   btn.textContent = I18n.t('myinfo.saved');
@@ -836,18 +884,24 @@ window.addEventListener('offline', updateOnlineStatus);
 // ═══════════════════════════════════════════════════════
 // TOAST
 // ═══════════════════════════════════════════════════════
+// The timer handle is kept because two toasts can overlap: a second message
+// fired while the first is still up used to inherit the first one's timer,
+// which then hid the second message early.
+let _toastTimer = null;
 function showToast(msg, duration = 2500) {
   const t = document.getElementById('toast');
+  if (!t) return;
   t.textContent = msg;
   t.classList.add('show');
-  setTimeout(() => t.classList.remove('show'), duration);
+  clearTimeout(_toastTimer);
+  _toastTimer = setTimeout(() => t.classList.remove('show'), duration);
 }
 
 // ═══════════════════════════════════════════════════════
 // DARK MODE
 // ═══════════════════════════════════════════════════════
 function initDarkMode() {
-  const saved = localStorage.getItem('dark-mode');
+  const saved = safeGet('dark-mode', null);
   if (saved === '1' || (saved === null && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     document.body.classList.add('dark');
   }
@@ -856,7 +910,7 @@ function initDarkMode() {
 
 function toggleDarkMode() {
   const isDark = document.body.classList.toggle('dark');
-  localStorage.setItem('dark-mode', isDark ? '1' : '0');
+  safeSet('dark-mode', isDark ? '1' : '0');
   updateThemeIcon();
 }
 
@@ -874,17 +928,29 @@ function updateThemeIcon() {
 // ═══════════════════════════════════════════════════════
 // DATA EXPORT
 // ═══════════════════════════════════════════════════════
+// Everything a user would be upset to lose. The two -v2 flags are included
+// deliberately: they record that birth-plan and appt-notes have already been
+// migrated to id-keyed form, and importing the migrated payload without them
+// would run the migration a second time over already-migrated data.
+//
+// Device preferences (myob.lang, dark-mode) are here too, so a restore on a
+// new phone lands in the right language rather than guessing again.
+const EXPORT_KEYS = [
+  'birth-guide-info', 'kick-history', 'contractions', 'feed-log',
+  'diaper-log', 'jaundice-birth-date', 'bp-log', 'weight-log',
+  'weight-profile', 'epds-history', 'birth-plan', 'birth-plan-notes', 'appt-notes',
+  'nausea-log', 'nausea-snacks', 'nausea-week', 'nausea-tried',
+  'myob.epdsLang', 'birth-plan-v2', 'appt-notes-v2',
+  'myob.lang', 'dark-mode', 'myob.usNoticeSeen',
+];
+
 function exportData() {
-  const keys = [
-    'birth-guide-info', 'kick-history', 'contractions', 'feed-log',
-    'diaper-log', 'jaundice-birth-date', 'bp-log', 'weight-log',
-    'weight-profile', 'epds-history', 'birth-plan', 'birth-plan-notes', 'appt-notes',
-  ];
+  const keys = EXPORT_KEYS;
   const data = {};
   keys.forEach(k => {
-    const v = localStorage.getItem(k);
+    const v = safeGet(k, null);
     if (v !== null) {
-      try { data[k] = JSON.parse(v); } catch { data[k] = v; }
+      try { data[k] = JSON.parse(v); } catch (e) { data[k] = v; }
     }
   });
   const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
@@ -895,6 +961,45 @@ function exportData() {
   a.click();
   URL.revokeObjectURL(url);
   showToast(I18n.t('toast.dataExported'));
+}
+
+// There was no way back in: data could leave the app but never return, so a
+// new phone meant retyping everything.
+function importData(file) {
+  const reader = new FileReader();
+  reader.onerror = () => showToast(I18n.t('toast.importFailed'));
+  reader.onload = () => {
+    let data;
+    try { data = JSON.parse(reader.result); }
+    catch (e) { showToast(I18n.t('toast.importFailed')); return; }
+    if (!data || typeof data !== 'object' || Array.isArray(data)) {
+      showToast(I18n.t('toast.importFailed')); return;
+    }
+    // Only known keys. An arbitrary file must not be able to write whatever it
+    // likes into this origin's storage.
+    const found = EXPORT_KEYS.filter(k => k in data);
+    if (!found.length) { showToast(I18n.t('toast.importNothing')); return; }
+    if (!confirm(I18n.t('myinfo.importConfirm', { n: I18n.fmt.num(found.length) }))) return;
+
+    let written = 0;
+    found.forEach(k => {
+      const v = data[k];
+      const ok = typeof v === 'string' ? safeSet(k, v) : safeSave(k, v);
+      if (ok) written++;
+    });
+    if (!written) { showToast(I18n.t('toast.importFailed')); return; }
+    // Reload rather than patch: ten trackers read their history into module
+    // scope at parse time, so their in-memory copies are now wrong.
+    showToast(I18n.t('toast.importDone'));
+    setTimeout(() => location.reload(), 900);
+  };
+  reader.readAsText(file);
+}
+
+function handleImportFile(input) {
+  const file = input.files && input.files[0];
+  input.value = '';                 // so the same file can be picked twice
+  if (file) importData(file);
 }
 
 // ═══════════════════════════════════════════════════════
@@ -997,7 +1102,7 @@ function hideLanguagePicker() {
 const US_NOTICE_KEY = 'myob.usNoticeSeen';
 
 function maybeShowUsNotice() {
-  try { if (localStorage.getItem(US_NOTICE_KEY)) return; } catch (e) { /* private mode */ }
+  if (safeGet(US_NOTICE_KEY, null)) return;
   const el = document.getElementById('us-notice');
   if (!el) return;
   I18n.applyStatic(el);            // render it in the language just chosen
@@ -1007,7 +1112,7 @@ function maybeShowUsNotice() {
   if (ok && ok.dataset.bound !== '1') {
     ok.dataset.bound = '1';
     ok.addEventListener('click', () => {
-      try { localStorage.setItem(US_NOTICE_KEY, '1'); } catch (e) {}
+      safeSet(US_NOTICE_KEY, '1');
       el.hidden = true;
       document.body.style.overflow = '';
     });
