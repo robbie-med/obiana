@@ -225,7 +225,7 @@ above. No pharma-promotional content was found.
       inline for network ops)
 - [ ] Replace the 7 ad-hoc `.big-action-btn` wrapper paddings and invented
       inline ghost/danger/link buttons with shared classes
-- [ ] Delete dead code: `isBody=false` branch + ~30 lines dead CSS
+- [x] Delete dead code: `isBody=false` branch + ~30 lines dead CSS
       (`translate-tool.js:142–167`, `styles.css:1881–1921`); dead classes
       `history-row`, `nausea-level`, `bp-notes-area` (unstyled production
       textarea); duplicated `.choice-pill` border; 12 duplicate title key
@@ -233,7 +233,7 @@ above. No pharma-promotional content was found.
 - [x] Add semantic status tokens (`--danger/--success/--info` + light/dark
       variants); ~30 ad hoc hex values bypass tokens; tokenize the z-index
       ladder
-- [ ] Kick counter: mis-tap undo or debounce; `addDiaper` double-tap guard
+- [x] Kick counter: mis-tap undo or debounce; `addDiaper` double-tap guard
 - [ ] Small stuff: toast timer race; per-tool history date formats; sticky
       chrome stack on small phones; Mood tool category (antenatal use)
 

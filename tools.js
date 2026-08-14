@@ -157,8 +157,15 @@ function startKickSession() {
   showKickActiveView();
 }
 
+let _lastKickTap = 0;
 function recordKick() {
   if (!kickSession.active) return;
+  // Real fetal movements do not arrive 300ms apart; a pair that close is a
+  // bouncing tap, and over-counting ends the session early at a number the
+  // mother did not actually feel.
+  const now = Date.now();
+  if (now - _lastKickTap < 300) return;
+  _lastKickTap = now;
   kickSession.count++;
   updateKickDisplay();
   if (kickSession.count >= 10) {
@@ -536,8 +543,12 @@ function initDiapers() {
   renderDiaperList();
 }
 
+let _lastDiaperTap = 0;
 function addDiaper(type) {
-  diaperLog.unshift({ ts: Date.now(), type });
+  const now = Date.now();
+  if (now - _lastDiaperTap < 400) return;    // double-tap guard
+  _lastDiaperTap = now;
+  diaperLog.unshift({ ts: now, type });
   if (diaperLog.length > 300) diaperLog = diaperLog.slice(0, 300);
   safeSave('diaper-log', diaperLog);
   initDiapers();
