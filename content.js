@@ -229,6 +229,71 @@ const CONTENT_STRUCTURE = {
   ]
 };
 
+// ─── Source fingerprints ────────────────────────────────
+// Mirror of srcHashOf() in translation/hash.js, which carries the full
+// rationale. It is duplicated rather than imported because locale files and
+// this file are plain <script> tags with no module loader; translation/
+// lint-locales.js re-runs the shared test vectors through both copies so they
+// cannot drift apart unnoticed.
+function srcHashOf(s) {
+  const bytes = new TextEncoder().encode(String(s).normalize('NFC'));
+  let h1 = 0x811c9dc5, h2 = 0x01000193;
+  for (let i = 0; i < bytes.length; i++) {
+    h1 = Math.imul(h1 ^ bytes[i], 0x01000193) >>> 0;
+    h2 = Math.imul(h2 ^ bytes[i], 0x85ebca6b) >>> 0;
+  }
+  return h1.toString(16).padStart(8, '0') + h2.toString(16).padStart(8, '0');
+}
+
+// English is the fallback layer: loaded once per session and never mutated,
+// so these caches never need invalidating.
+let _enHashes = null;
+function enHashes() {
+  if (_enHashes) return _enHashes;
+  const map = Object.create(null);
+  const content = (window.MYOB_LOCALES[I18n.FALLBACK] || {}).content || {};
+  for (const [id, card] of Object.entries(content)) {
+    for (const f of ['title', 'sub']) {
+      if (typeof card[f] === 'string' && card[f] !== '') map['content.' + id + '.' + f] = srcHashOf(card[f]);
+    }
+    (card.t || []).forEach((run, i) => { map['content.' + id + '.t.' + i] = srcHashOf(run); });
+  }
+  return (_enHashes = map);
+}
+
+// Keys whose translation was made from English that has since changed.
+const _staleCache = new Map();
+function staleSet(lang) {
+  if (_staleCache.has(lang)) return _staleCache.get(lang);
+  const set = new Set();
+  const stamped = (window.MYOB_LOCALES[lang] || {}).srcHash;
+  // A locale carrying NO map at all predates this mechanism, or is an old file
+  // still sitting in the service worker cache. Trust it: treating a missing map
+  // as "everything is stale" would flip a whole language back to English on any
+  // cache skew, which is far worse than the problem being solved. A map that is
+  // present but missing one entry is different, and does count as stale: that
+  // key was written without recording what it was translated from.
+  if (stamped && lang !== I18n.FALLBACK) {
+    const now = enHashes();
+    for (const key of Object.keys(now)) {
+      if (stamped[key] !== now[key]) set.add(key);
+    }
+  }
+  _staleCache.set(lang, set);
+  return set;
+}
+
+// English standing in for a translation. lang and dir are not decoration:
+// without lang a screen reader voices English with the target language's
+// phonology, and without dir an English sentence inside an Arabic paragraph
+// mirrors its own punctuation. [dir] carries unicode-bidi: isolate in the UA
+// stylesheet, which is exactly the containment wanted.
+function enRun(s) {
+  if (s === undefined || s === "") return "";
+  return I18n.lang === I18n.FALLBACK ? s
+    : '<span class="src-en" lang="en" dir="ltr">' + s + '</span>';
+}
+
 // Merge structure + active-locale prose. Falls back to English per card.
 // Rebuild a card body from the shared HTML template and the active locale's
 // per-sentence runs. Each {{n}} falls back to English on its own, so a card
@@ -243,19 +308,46 @@ function cardBody(id) {
 
   const mine = card.t || [];
   const fallback = (base[id] || {}).t || [];
+  const stale = staleSet(I18n.lang);
   return tpl.replace(/\{\{(\d+)\}\}/g, (m, i) => {
-    const v = mine[+i];
-    return (v === undefined || v === "") ? (fallback[+i] ?? "") : v;
+    const n = +i;
+    const v = mine[n];
+    if (v === undefined || v === "") return enRun(fallback[n]);
+    // Translated, but from an English sentence that has since been rewritten.
+    // A clinical correction lands in English first; rendering the old
+    // translation would hand this patient guidance the English no longer
+    // gives. English is the reviewed layer, so English is what she gets until
+    // someone retranslates.
+    if (stale.has('content.' + id + '.t.' + n)) return enRun(fallback[n]);
+    return v;
   });
+}
+
+// Per FIELD, not per card. I18n.data() resolves the whole card object, so a
+// card that exists in the target locale could never borrow English for a field
+// it was missing: an untranslated sub rendered empty rather than falling back.
+function cardField(id, field) {
+  const lang = I18n.lang;
+  const mine = ((window.MYOB_LOCALES[lang] || {}).content || {})[id] || {};
+  const base = ((window.MYOB_LOCALES[I18n.FALLBACK] || {}).content || {})[id] || {};
+  const v = mine[field];
+  if (typeof v === 'string' && v !== '' && !staleSet(lang).has('content.' + id + '.' + field)) {
+    return { text: v, en: false };
+  }
+  const fallback = typeof base[field] === 'string' ? base[field] : '';
+  return { text: fallback, en: lang !== I18n.FALLBACK && fallback !== '' };
 }
 
 function getCards(section) {
   const list = CONTENT_STRUCTURE[section] || [];
   return list.map(item => {
-    const s = I18n.data("content." + item.id) || {};
+    const title = cardField(item.id, 'title');
+    const sub = cardField(item.id, 'sub');
     return Object.assign({}, item, {
-      title: s.title || item.id,
-      sub: s.sub || "",
+      title: title.text || item.id,
+      titleEn: title.en,
+      sub: sub.text,
+      subEn: sub.en,
       body: cardBody(item.id),
     });
   });
@@ -391,7 +483,7 @@ function renderSection(section) {
       card.innerHTML = `
         <div class="faq-header acc-header" onclick="toggleCard(this)">
           ${badge}
-          <span class="faq-q">${escHtml(item.title)}</span>
+          <span class="faq-q"${item.titleEn ? ' lang="en" dir="ltr"' : ''}>${escHtml(item.title)}</span>
           <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
         </div>
         <div class="acc-body">${item.body}</div>`;
@@ -400,8 +492,8 @@ function renderSection(section) {
         <div class="acc-header" onclick="toggleCard(this)">
           <div class="acc-icon-wrap ${item.color || ''}">${item.icon}</div>
           <div class="acc-titles">
-            <div class="acc-title">${escHtml(item.title)}</div>
-            ${item.sub ? `<div class="acc-sub">${escHtml(item.sub)}</div>` : ''}
+            <div class="acc-title"${item.titleEn ? ' lang="en" dir="ltr"' : ''}>${escHtml(item.title)}</div>
+            ${item.sub ? `<div class="acc-sub"${item.subEn ? ' lang="en" dir="ltr"' : ''}>${escHtml(item.sub)}</div>` : ''}
           </div>
           <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
         </div>
@@ -950,8 +1042,17 @@ function updateTranslationNotice() {
   const el = document.getElementById('translation-notice');
   if (!el) return;
   const reviewed = (MYOB_LOCALES[I18n.lang] || {}).reviewed === true;
-  el.hidden = reviewed;
-  if (!reviewed) el.textContent = I18n.t('lang.unreviewedNotice');
+  const lines = [];
+  if (!reviewed) lines.push(I18n.t('lang.unreviewedNotice'));
+  // Say why English is showing through mid-page. Unexplained English inside a
+  // translated card reads as a bug; named as "the English was updated and this
+  // passage has not caught up", it reads as the safety behaviour it is.
+  // Count-free on purpose: a patient cannot act on "three passages", and
+  // several languages have no plural distinction, so a count forced the plural
+  // wording onto every one of them.
+  if (staleSet(I18n.lang).size) lines.push(I18n.t('lang.staleNotice'));
+  el.hidden = !lines.length;
+  el.textContent = lines.join(' ');
 }
 
 // Re-render every locale-dependent surface. Called on language switch.

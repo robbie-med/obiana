@@ -383,9 +383,7 @@ window.MYOB_LOCALES.fr = {
         "offlineSaved": "Hors ligne. Enregistré ici, utilisez Exporter",
         "privacy": "Seuls la phrase et votre suggestion sont envoyés. Rien de vos suivis ne quitte ce téléphone.",
         "loading": "Chargement…",
-        "showMarkup": "Afficher le HTML",
-        "notTranslated": "Pas encore traduit",
-        "keepTags": "Traduisez seulement les mots. Laissez toutes les balises exactement telles quelles."
+        "notTranslated": "Pas encore traduit"
       },
       "improve": {
         "intro": "Ce guide est écrit par des personnes, et il s’améliore quand ses lectrices nous disent ce qui manque. Racontez-nous comment les choses se font dans votre culture, posez une question sur un sujet non traité, ou signalez ce qui n’était pas clair.",

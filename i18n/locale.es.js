@@ -382,9 +382,7 @@ window.MYOB_LOCALES.es = {
         "offlineSaved": "Sin conexión. Guardado aquí, use Exportar",
         "privacy": "Solo se envían la frase y su sugerencia. Nada de sus registros sale nunca de este teléfono.",
         "loading": "Cargando…",
-        "showMarkup": "Mostrar el HTML",
-        "notTranslated": "Aún sin traducir",
-        "keepTags": "Traduzca solo las palabras. Deje todas las etiquetas exactamente como están."
+        "notTranslated": "Aún sin traducir"
       },
       "improve": {
         "intro": "Esta guía la escriben personas y mejora cuando quienes la leen nos dicen qué falta. Cuéntenos cómo se hace algo en su cultura, pregunte por un tema que no cubrimos o señale cualquier cosa que no se entienda bien.",

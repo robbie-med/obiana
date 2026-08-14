@@ -16,6 +16,7 @@ production database, so it must never be reachable from the LAN.
 import json
 import os
 import re
+import unicodedata
 import shutil
 import subprocess
 import sys
@@ -27,6 +28,55 @@ PORT = 3905                       # claimed in /home/user/Projects/PORTS.md
 HOST = "127.0.0.1"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB = "obiana-suggestions"
+
+
+def src_hash(s):
+    """Mirror of srcHashOf() in translation/hash.js and content.js.
+
+    Two-lane FNV-1a over NFC-normalised UTF-8 bytes. UTF-8 is what makes this
+    agree with the JavaScript byte for byte; NFC stops a decomposed accent from
+    marking a sentence stale for nothing. See translation/hash.js for why the
+    fingerprints exist at all.
+    """
+    b = unicodedata.normalize("NFC", str(s)).encode("utf-8")
+    h1, h2 = 0x811C9DC5, 0x01000193
+    for c in b:
+        h1 = ((h1 ^ c) * 0x01000193) & 0xFFFFFFFF
+        h2 = ((h2 ^ c) * 0x85EBCA6B) & 0xFFFFFFFF
+    return f"{h1:08x}{h2:08x}"
+
+
+# Refuse to start rather than silently mis-stamp a locale. If this drifts from
+# the JS, accepted suggestions get fingerprints the app will never match, and
+# every one of them reads as permanently stale.
+_HASH_VECTORS = [
+    ("", "811c9dc501000193"),
+    ("a", "e40c292cefafc426"),
+    ("Call your doctor.", "5a16f09f008281e1"),
+    ("\uc57d\uc744 \ub4dc\uc138\uc694", "956d9382b1cdd1cc"),
+    ("\u0627\u062a\u0635\u0644\u064a \u0628\u0637\u0628\u064a\u0628\u0643", "5d77eeebe9f7d6dd"),
+    ("About 1 in 3", "494265998e0538d7"),
+    ("r\u00e9sum\u00e9, caf\u00e9", "d831207604bb4514"),
+    ("\U0001f476\U0001f3fd emoji", "8b4976d03bb3fbe6"),
+    ("caf\u00e9", "a82b5049454630df"),
+    ("cafe\u0301", "a82b5049454630df"),
+    ("\uac00", "cdd08b156e569acb"),
+    ("\u1100\u1161", "cdd08b156e569acb"),
+]
+for _in, _want in _HASH_VECTORS:
+    if src_hash(_in) != _want:
+        sys.exit(f"src_hash mismatch for {_in!r}: got {src_hash(_in)}, want {_want}\n"
+                 "This must agree with translation/hash.js. Refusing to start.")
+
+
+def locale_marker(src, lang):
+    """Locate the assignment. pt-BR needs bracket notation: a hyphen is not a
+    valid identifier, so window.MYOB_LOCALES.pt-BR is a syntax error."""
+    for cand in (f"window.MYOB_LOCALES.{lang} =", f'window.MYOB_LOCALES["{lang}"] ='):
+        i = src.find(cand)
+        if i >= 0:
+            return i, cand
+    raise ValueError(f"no locale assignment found for {lang}")
 
 
 def node_env():
@@ -73,9 +123,9 @@ def load_locale(lang):
     if not os.path.exists(path):
         return {}
     src = open(path, encoding="utf-8").read()
-    marker = f"window.MYOB_LOCALES.{lang} ="
-    i = src.find(marker)
-    if i == -1:
+    try:
+        i, _ = locale_marker(src, lang)
+    except ValueError:
         return {}
     body = src[src.find("{", i): src.rfind("}") + 1]
     try:
@@ -98,12 +148,18 @@ def load_locale(lang):
     return flat
 
 
-def write_locale_key(lang, key, value):
-    """Apply an accepted suggestion straight into the locale file."""
+def write_locale_key(lang, key, value, source=None):
+    """Apply an accepted suggestion straight into the locale file.
+
+    `source` is the English the contributor actually had in front of them. It
+    matters: a suggestion can sit in the database for weeks while English moves
+    underneath it. Stamping today's English would certify a translation of a
+    sentence that no longer exists, so we stamp what they saw, and the key
+    stays flagged stale and comes back round for retranslation.
+    """
     path = os.path.join(ROOT, "i18n", f"locale.{lang}.js")
     src = open(path, encoding="utf-8").read()
-    marker = f"window.MYOB_LOCALES.{lang} ="
-    i = src.find(marker)
+    i, marker = locale_marker(src, lang)
     head, body = src[:i], src[src.find("{", i): src.rfind("}") + 1]
     obj = json.loads(body)
     parts = key.split(".")
@@ -123,6 +179,16 @@ def write_locale_key(lang, key, value):
         node[int(parts[-1])] = value
     else:
         node[parts[-1]] = value
+
+    # Record which English this was translated from. Without it the accepted
+    # string is indistinguishable from one written against today's English,
+    # and the next correction to this sentence would be invisible here.
+    if key.startswith("content."):
+        english = load_locale("en").get(key)
+        basis = source if isinstance(source, str) and source else english
+        if isinstance(basis, str):
+            obj.setdefault("srcHash", {})[key] = src_hash(basis)
+
     open(path, "w", encoding="utf-8").write(
         head + marker + " " + json.dumps(obj, ensure_ascii=False, indent=2) + ";\n")
 
@@ -201,7 +267,11 @@ class Handler(BaseHTTPRequestHandler):
             if not all([sid, lang, key]) or not isinstance(text, str):
                 return self._send(400, {"error": "missing fields"})
             try:
-                write_locale_key(lang, key, text)
+                # From the row, not the request: a page left open for a week
+                # would post whatever English it loaded back then.
+                rows = d1(f"SELECT source FROM suggestions WHERE id={int(sid)}")
+                source = (rows[0].get("source") if rows else None)
+                write_locale_key(lang, key, text, source)
                 d1(f"UPDATE suggestions SET status='accepted' WHERE id={int(sid)}")
                 # Other pending suggestions for the same key are now moot.
                 d1("UPDATE suggestions SET status='superseded' "

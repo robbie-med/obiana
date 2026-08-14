@@ -45,7 +45,7 @@ function srcHashOf(s) {
 
 // Deliberately spans the cases where the two implementations could drift:
 // empty input, plain ASCII, Hangul, Arabic (RTL), Latin-1 supplement plus a
-// punctuation dash, an astral-plane emoji with a skin-tone modifier (two
+// punctuation, an astral-plane emoji with a skin-tone modifier (two
 // surrogate pairs in JS, two scalars in Python), and both normalisation forms.
 const SRC_HASH_VECTORS = [
   ['', '811c9dc501000193'],
@@ -54,7 +54,7 @@ const SRC_HASH_VECTORS = [
   ['약을 드세요', '956d9382b1cdd1cc'],
   ['اتصلي بطبيبك', '5d77eeebe9f7d6dd'],
   ['About 1 in 3', '494265998e0538d7'],
-  ['résumé — café', '7cfec620133bf2fe'],
+  ['résumé, café', 'd831207604bb4514'],
   ['👶🏽 emoji', '8b4976d03bb3fbe6'],
   // NFC equivalence: composed and decomposed must agree.
   ['café', 'a82b5049454630df'],

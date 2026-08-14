@@ -401,9 +401,9 @@ window.MYOB_LOCALES.en = {
         "offlineSaved": "Offline. Saved here, use Export",
         "privacy": "Only the phrase and your suggestion are sent. Nothing from your trackers ever leaves this phone.",
         "loading": "Loading…",
-        "showMarkup": "Show the HTML",
         "notTranslated": "Not translated yet",
-        "keepTags": "Translate the words only. Leave every tag exactly as it is."
+        "stale": "Out of date",
+        "staleBanner": "The English changed after this was translated. Please update it."
       },
       "improve": {
         "intro": "This guide is written by people, and it gets better when readers tell us what is missing. Share how something is done in your culture, ask about a topic we do not cover, or point out anything that did not read clearly.",
@@ -536,7 +536,8 @@ window.MYOB_LOCALES.en = {
       "change": "Change language",
       "unreviewedNotice": "This translation is machine-generated and has not yet been reviewed by a clinician. For medical decisions, please confirm with your care team or switch to English.",
       "loadFailed": "Could not load",
-      "inProgress": "Translation in progress"
+      "inProgress": "Translation in progress",
+      "staleNotice": "Some passages below are shown in English because the English guidance was updated and those translations have not caught up yet."
     },
     "app": {
       "title": "Pregnancy Handbook",

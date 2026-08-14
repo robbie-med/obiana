@@ -69,8 +69,13 @@ function i18nRows() {
   for (const [key, source] of Object.entries(en)) {
     if (typeof source === 'object') continue;          // plural forms: skip
     const current = tgt[key];
+    // A translation made from English that has since been rewritten is not
+    // "translated" in any useful sense: it is the one state a contributor most
+    // needs to see, and classifying it as translated hid it behind the default
+    // filter. Content keys only; a stale button label is not a safety issue.
     const state = current === undefined ? 'missing'
                 : String(current) === String(source) ? 'same'
+                : (typeof staleSet === 'function' && staleSet(lang).has(key)) ? 'stale'
                 : 'translated';
     rows.push({ key, source: String(source), current: current === undefined ? '' : String(current),
                 state, suggestion: sug[key] || '' });
@@ -94,13 +99,14 @@ function initI18nTool() {
 
   const { lang, rows } = i18nRows();
 
-  const counts = { missing: 0, same: 0, translated: 0 };
+  const counts = { missing: 0, same: 0, translated: 0, stale: 0 };
   rows.forEach(r => counts[r.state]++);
   const sugCount = rows.filter(r => r.suggestion).length;
 
   const q = _i18nQuery.toLowerCase();
   const shown = rows.filter(r => {
     if (_i18nFilter === 'untranslated' && r.state === 'translated') return false;
+    if (_i18nFilter === 'stale' && r.state !== 'stale') return false;
     if (_i18nFilter === 'suggested' && !r.suggestion) return false;
     if (!q) return true;
     return r.key.toLowerCase().includes(q) || r.source.toLowerCase().includes(q)
@@ -121,14 +127,14 @@ function initI18nTool() {
       <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:10px">
         <select class="tool-select" id="i18n-lang" style="flex:0 1 auto;min-width:130px">${langOptions}</select>
         <span style="font-size:12px;color:var(--ink-soft)">
-          ${I18n.fmt.num(counts.translated)} ✓ · ${I18n.fmt.num(counts.same)} ≡ · ${I18n.fmt.num(counts.missing)} ✗${sugCount ? ` · ${I18n.fmt.num(sugCount)} ✎` : ''}
+          ${I18n.fmt.num(counts.translated)} ✓${counts.stale ? ` · ${I18n.fmt.num(counts.stale)} ⟳` : ''} · ${I18n.fmt.num(counts.same)} ≡ · ${I18n.fmt.num(counts.missing)} ✗${sugCount ? ` · ${I18n.fmt.num(sugCount)} ✎` : ''}
         </span>
       </div>
       <input class="tool-input" id="i18n-search" type="search"
              placeholder="${escHtml(I18n.t('tool.i18n.searchPlaceholder'))}"
              value="${escHtml(_i18nQuery)}" style="width:100%;margin-bottom:8px">
       <div class="btn-row" style="margin-bottom:4px">
-        ${[['untranslated','needsWork'],['all','all'],['suggested','suggested']].map(([f,k]) =>
+        ${[['untranslated','needsWork'],['stale','stale'],['all','all'],['suggested','suggested']].map(([f,k]) =>
           `<button class="btn-sm ${_i18nFilter === f ? 'btn-teal' : ''}" onclick="setI18nFilter('${f}')"
              style="flex:1${_i18nFilter === f ? '' : ';background:var(--white);color:var(--ink-mid);border:1.5px solid var(--rule)'}">
              ${escHtml(I18n.t('tool.i18n.' + k))}</button>`).join('')}
@@ -139,32 +145,23 @@ function initI18nTool() {
       ${shown.length === 0
         ? `<p class="history-empty">${escHtml(I18n.t('tool.i18n.nothingToShow'))}</p>`
         : shown.slice(0, 300).map(r => {
-        const isBody = false;   // bodies are per-sentence keys now
-        // A card body is an HTML fragment. Showing raw markup as the thing to
-        // read is unusable, so the English is RENDERED for reading and the
-        // markup is offered separately, collapsed. The textarea is seeded with
-        // the English source for bodies so the tags are translated in place
-        // rather than reconstructed from memory.
-        const seed = r.suggestion || (isBody && !r.current ? r.source : r.suggestion);
+        // Seed with the EXISTING translation on a stale row: the contributor is
+        // correcting a sentence, not writing one from nothing.
+        const seed = r.suggestion || (r.state === 'stale' ? r.current : '');
         return `
         <div class="card i18n-row">
           <div class="i18n-key">${escHtml(r.key)}</div>
-          ${isBody
-            ? `<div class="i18n-en-rendered" dir="ltr" lang="en">${r.source}</div>
-               <details class="i18n-src">
-                 <summary>${escHtml(I18n.t('tool.i18n.showMarkup'))}</summary>
-                 <pre dir="ltr">${escHtml(r.source)}</pre>
-               </details>`
-            : `<div class="i18n-en" dir="ltr" lang="en">${escHtml(r.source)}</div>`}
+          ${r.state === 'stale'
+            ? `<p class="i18n-stale-banner">⟳ ${escHtml(I18n.t('tool.i18n.staleBanner'))}</p>` : ''}
+          <div class="i18n-en" dir="ltr" lang="en">${escHtml(r.source)}</div>
           <div class="i18n-cur ${r.state}" lang="${lang}" dir="${I18n.LOCALES[lang].dir}">
             ${r.current
-              ? (isBody ? escHtml(r.current.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()) : escHtml(r.current))
+              ? escHtml(r.current)
               : `<em>${escHtml(I18n.t('tool.i18n.notTranslated'))}</em>`}
           </div>
-          ${isBody ? `<p class="i18n-hint">${escHtml(I18n.t('tool.i18n.keepTags'))}</p>` : ''}
           <textarea class="tool-textarea" data-key="${escHtml(r.key)}"
-            data-seeded="${isBody && !r.suggestion && !r.current ? '1' : '0'}"
-            rows="${isBody ? 10 : 2}"
+            data-seeded="0"
+            rows="2"
             lang="${lang}" dir="${I18n.LOCALES[lang].dir}"
             placeholder="${escHtml(I18n.t('tool.i18n.suggestPlaceholder'))}"
             >${escHtml(seed || '')}</textarea>

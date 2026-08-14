@@ -10,6 +10,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { flattenContent } = require('./hash.js');
 const { execFileSync } = require('child_process');
 
 const T = __dirname;
@@ -58,12 +59,20 @@ for (const [lang, groups] of Object.entries(byLang)) {
   const localeFile = path.join(ROOT, `i18n/locale.${lang}.js`);
 
   // Preserve any hand-written epds block: it is an officially validated
-  // instrument and never comes from this pipeline.
-  let existingEpds = null;
+  // instrument and never comes from this pipeline. Same for the srcHash map
+  // and any existing content: this file rewrites the locale wholesale, so
+  // anything not carried across here is destroyed.
+  let existingEpds = null, existingHashes = null, existingContent = null;
   if (fs.existsSync(localeFile)) {
     global.window = { MYOB_LOCALES: {} };
     delete require.cache[require.resolve(localeFile)];
-    try { require(localeFile); existingEpds = (global.window.MYOB_LOCALES[lang] || {}).epds || null; } catch (e) {}
+    try {
+      require(localeFile);
+      const prev = global.window.MYOB_LOCALES[lang] || {};
+      existingEpds = prev.epds || null;
+      existingHashes = prev.srcHash || null;
+      existingContent = prev.content || null;
+    } catch (e) {}
   }
 
   const obj = {
@@ -73,8 +82,30 @@ for (const [lang, groups] of Object.entries(byLang)) {
     translationStatus: 'machine',
     ui: nest(uiFlat),
   };
+  // Running with only ui batches present must not silently drop the guide.
   if (Object.keys(content).length) obj.content = content;
+  else if (existingContent) obj.content = existingContent;
   if (existingEpds) obj.epds = existingEpds;
+
+  // Fingerprint whatever this run actually translated, using the English
+  // SNAPSHOT the prompts were generated from, not live English. If English
+  // moved between prepare and merge, hashing live English here would certify
+  // a translation of the older text as current, which is exactly the silent
+  // divergence the map exists to catch. Keys this run did not touch keep the
+  // fingerprint they already had.
+  const hashes = Object.assign({}, existingHashes || {});
+  if (Object.keys(content).length) {
+    const snapPath = path.join(__dirname, 'source/srcHash.en.json');
+    if (!fs.existsSync(snapPath)) {
+      console.error('missing translation/source/srcHash.en.json — run: node translation/snapshot.js');
+      process.exit(1);
+    }
+    const snap = JSON.parse(fs.readFileSync(snapPath, 'utf8'));
+    for (const key of Object.keys(flattenContent(obj))) {
+      if (snap[key]) hashes[key] = snap[key];
+    }
+  }
+  if (Object.keys(hashes).length) obj.srcHash = hashes;
 
   fs.writeFileSync(localeFile,
 `// ═══════════════════════════════════════════════════════
