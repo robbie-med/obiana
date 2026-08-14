@@ -102,12 +102,23 @@ function validateFile(file) {
     const en = source[k], tr = data[k];
 
     if (kind === 'content') {
-      if (!tr || typeof tr !== 'object') { errs.push(`${k}: expected {title,sub,body}`); continue; }
-      for (const f of ['title', 'sub', 'body']) {
+      if (!tr || typeof tr !== 'object') { errs.push(`${k}: expected {title,sub,t}`); continue; }
+      for (const f of ['title', 'sub']) {
         if (!(f in tr)) { errs.push(`${k}.${f}: missing`); continue; }
         if (f === 'sub' && !String(en.sub).trim()) continue;   // legitimately empty
         compareString(`${k}.${f}`, en[f], tr[f], errs, warns, lang);
       }
+      // Element count is a hard structural contract, not a style preference:
+      // body-templates.js has one fixed {{n}} slot per element, so a short
+      // array silently blanks those slots and a long one strands the extras
+      // where nothing can render them.
+      if (!Array.isArray(tr.t)) { errs.push(`${k}.t: expected an array of ${(en.t || []).length} sentences`); continue; }
+      if (tr.t.length !== (en.t || []).length) {
+        errs.push(`${k}.t: ${tr.t.length} elements, English has ${(en.t || []).length}. ` +
+                  `The model merged or split sentences; this batch cannot be merged.`);
+        continue;
+      }
+      (en.t || []).forEach((src, i) => compareString(`${k}.t.${i}`, src, tr.t[i], errs, warns, lang));
     } else if (en && typeof en === 'object') {
       // plural form: categories may legitimately differ from English
       if (!tr || typeof tr !== 'object') { errs.push(`${k}: expected plural object`); continue; }

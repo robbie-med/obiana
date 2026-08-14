@@ -1,8 +1,0 @@
-{
-  "tool.kick.noSessions": "No sessions yet",
-  "tool.feed.noFeeds": "No feeds logged yet.",
-  "tool.diaper.noDiapers": "No diapers logged today.",
-  "tool.bp.noReadings": "No readings logged yet.",
-  "tool.weight.noWeights": "No weights logged yet.",
-  "tool.cx.noContractions": "No contractions recorded yet.<br>Tap \"Contraction Starting\" when one begins."
-}

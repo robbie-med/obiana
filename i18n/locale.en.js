@@ -239,7 +239,10 @@ window.MYOB_LOCALES.en = {
       },
       "kick": {
         "startSession": "Start Session",
-        "movementsThisSession": "movements this session",
+        "movementsThisSession": {
+          "one": "movement this session",
+          "other": "movements this session"
+        },
         "elapsed": "Elapsed:",
         "20000Limit": "2:00:00 limit",
         "lessThan10MovementsIn": "⚠ Less than 10 movements in 2 hours",
@@ -272,7 +275,10 @@ window.MYOB_LOCALES.en = {
         "fewFeedsBody": "Newborns typically need 8–12 feedings per 24 hours. If baby is difficult to wake or not gaining weight, call your doctor.",
         "breast": "🤱 Breast",
         "bottle": "🍼 Bottle",
-        "minutes": "{n} min",
+        "minutes": {
+          "one": "{count} min",
+          "other": "{count} min"
+        },
         "bottleOz": "Bottle · {oz} oz"
       },
       "diaper": {

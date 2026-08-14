@@ -109,7 +109,7 @@ function initKick() {
     <div id="kick-active-view" style="display:none">
       <div class="kick-display">
         <div class="kick-count teal" id="kick-count-num">0</div>
-        <div style="font-size:14px;color:var(--ink-soft);margin-top:4px">${t('tool.kick.movementsThisSession')}</div>
+        <div id="kick-count-label" style="font-size:14px;color:var(--ink-soft);margin-top:4px">${escHtml(I18n.tp('tool.kick.movementsThisSession', kickSession.count || 0))}</div>
         <div style="margin-top:14px;font-size:13px;color:var(--ink-soft)">${t('tool.kick.elapsed')} <span id="kick-elapsed" style="font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums">0:00</span></div>
         <div style="font-size:12px;color:var(--ink-soft);margin-top:2px">${t('tool.kick.20000Limit')}</div>
       </div>
@@ -170,7 +170,11 @@ function updateKickDisplay() {
   if (!kickSession.active) return;
   const el = document.getElementById('kick-count-num');
   const elEl = document.getElementById('kick-elapsed');
-  if (el) el.textContent = kickSession.count;
+  if (el) el.textContent = I18n.fmt.num(kickSession.count);
+  // Russian, Arabic and Polish inflect the noun by count, so the label has to
+  // move with the number rather than being written once.
+  const lbl = document.getElementById('kick-count-label');
+  if (lbl) lbl.textContent = I18n.tp('tool.kick.movementsThisSession', kickSession.count);
   if (elEl) elEl.textContent = fmtTime(Date.now() - kickSession.startTime);
   // 2 hour limit
   const elapsed = Date.now() - kickSession.startTime;
@@ -417,7 +421,7 @@ function renderFeedList() {
   if (!feedLog.length) { el.innerHTML = `<p class="history-empty">${t('tool.feed.noFeeds')}</p>`; return; }
   el.innerHTML = feedLog.slice(0, 30).map((f, i) => {
     let detail = '';
-    if (f.type === 'breast') detail = `${f.side ? t('modalFeed.' + f.side) : ''} · ${I18n.t('tool.feed.minutes', { n: f.duration || '?' })}`;
+    if (f.type === 'breast') detail = `${f.side ? t('modalFeed.' + f.side) : ''} · ${(f.duration ? I18n.tp('tool.feed.minutes', f.duration) : '?')}`;
     else detail = I18n.t('tool.feed.bottleOz', { oz: f.oz == null ? '?' : I18n.fmt.num(f.oz) });
     return `<div class="feed-row">
       <span class="feed-time">${fmtTimeOfDay(f.ts)}<br><span style="font-size:10px">${fmtDate(f.ts)}</span></span>
@@ -553,7 +557,7 @@ function renderDiaperList() {
       <span>${icons[d.type]}</span>
       <span style="flex:1;font-weight:600">${labels[d.type]}</span>
       <span style="color:var(--ink-soft)">${fmtTimeOfDay(d.ts)}</span>
-      <button onclick="deleteDiaper(${i})" style="background:none;border:none;color:var(--ink-soft);font-size:16px;cursor:pointer;margin-left:6px;padding:2px 4px">×</button>
+      <button onclick="deleteDiaper(${i})" style="background:none;border:none;color:var(--ink-soft);font-size:16px;cursor:pointer;margin-inline-start:6px;padding:2px 4px">×</button>
     </div>`).join('');
 }
 
@@ -857,6 +861,14 @@ function saveWeight() {
 // the patient can read beats no instrument at all.
 const EPDS_CHOICE_KEY = 'myob.epdsLang';
 
+// A Zomi speaker has no validated Zomi instrument, and there may never be one.
+// Many are multilingual, and Hakha Chin and Burmese are the languages they are
+// most likely to also read, which is why those forms are bundled. This orders
+// the choice list to put those first rather than auto-selecting one: presenting
+// a validated instrument in a language the patient may not read, without
+// asking, is not a safe default for a screening tool.
+const EPDS_SUGGESTED = { zom: ['cnh', 'my'] };
+
 function epdsAvailable() {
   return Object.keys(window.MYOB_EPDS || {}).filter(c => {
     const e = window.MYOB_EPDS[c];
@@ -897,7 +909,12 @@ function initMood() {
     // No validated instrument selected for this language. Offer every form we
     // DO have, labelled in its own language — rather than silently defaulting
     // to English or scoring a machine translation.
-    const avail = epdsAvailable();
+    // Suggested forms first for locales with no instrument of their own.
+    const suggested = EPDS_SUGGESTED[I18n.lang] || [];
+    const avail = epdsAvailable().slice().sort((a, b) => {
+      const ia = suggested.indexOf(a), ib = suggested.indexOf(b);
+      return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+    });
     el.innerHTML = `
       <div style="padding:20px 16px">
         <div class="callout alert" role="alert">
@@ -971,7 +988,7 @@ function initMood() {
         return `<div style="display:flex;align-items:center;padding:10px 16px;border-bottom:1px solid var(--rule)">
           <span style="flex:1;font-size:13px;color:var(--ink-soft)">${fmtDate(h.ts)}</span>
           <span style="font-size:18px;font-weight:700;color:${interp.color}">${h.score}</span>
-          <span style="font-size:11px;font-weight:600;margin-left:8px;color:${interp.color}">${interp.label}</span>
+          <span style="font-size:11px;font-weight:600;margin-inline-start:8px;color:${interp.color}">${interp.label}</span>
         </div>`;
       }).join('')}
     </div>` : ''}
@@ -1020,7 +1037,7 @@ function submitEPDS() {
   const result = document.getElementById('epds-result');
   if (result) {
     result.innerHTML = `
-      <div class="score-result-card" style="background:${interp.bg};border-left:4px solid ${interp.color}">
+      <div class="score-result-card" style="background:${interp.bg};border-inline-start:4px solid ${interp.color}">
         <div class="score-num" style="color:${interp.color}">${score}</div>
         <div class="score-label" style="color:${interp.color}">${interp.label}</div>
         <div class="score-note">${escHtml(I18n.t('tool.mood.scoreNote', {

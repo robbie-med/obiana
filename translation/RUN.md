@@ -6,12 +6,29 @@ can be merged.
 ```bash
 cd /home/user/Projects/myob
 
+node translation/snapshot.js     # 0. refresh the English input from locale.en.js
 node translation/prepare.js      # 1. regenerate prompts (only after editing English)
 bash translation/run-kimi.sh     # 2. run kimi over every batch  ← the long one
 node translation/merge.js        # 3. merge validated output into i18n/locale.*.js
 ```
 
 ## What each step does
+
+**0. `snapshot.js`** regenerates `translation/source/*.en.json` from
+`i18n/locale.en.js`. Run it first, every time, and commit the result.
+
+These files used to be maintained by hand, and they drifted: they sat at 45
+cards shaped `{title, sub, body}` while the app had moved to 55 cards shaped
+`{title, sub, t: [...]}`. Merging from that snapshot would have written
+body-shaped cards over Spanish, French and Korean, and since `cardBody()` reads
+`card.t`, every sentence would have silently fallen back to English. Three
+finished translations, gone, with no error. Generating the snapshot removes the
+possibility.
+
+It also writes `srcHash.en.json`, the fingerprint of the English each batch was
+built from. `merge.js` stamps translations against that snapshot rather than
+against whatever English is on disk at merge time, so a change to English
+between prepare and merge shows up as stale instead of being certified current.
 
 **1. `prepare.js`** reads `translation/source/*.en.json` and writes 84 prompt
 files — 7 languages × (4 UI batches + 8 content batches). Each prompt is

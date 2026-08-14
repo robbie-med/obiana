@@ -142,7 +142,7 @@ ${outRel}
     const inputObj = Object.fromEntries(entries);
     const outRel = `translation/out/${code}.content.${i + 1}.json`;
     const file = path.join(T, `prompts/${code}.content.${i + 1}.md`);
-    const words = entries.map(([, v]) => v.body.replace(/<[^>]+>/g, ' ')).join(' ').split(/\s+/).filter(Boolean).length;
+    const words = entries.map(([, v]) => (v.t || []).join(' ')).join(' ').split(/\s+/).filter(Boolean).length;
     fs.writeFileSync(file, `${rules(code, meta)}
 ## This batch
 
@@ -150,10 +150,19 @@ ${entries.length} guide cards (~${words} words). Each card is an object:
 
 - "title" — the card heading, short
 - "sub"   — a one-line subtitle (may be an empty string; if empty, leave it empty)
-- "body"  — an HTML fragment, the main content. This is the important one.
+- "t"     — an ARRAY of plain-text sentences and fragments. This is the main
+            content, and it carries no HTML at all.
 
-Translate all three fields of every card. Preserve every HTML tag and class
-attribute in "body" exactly.
+Translate all three fields of every card.
+
+CRITICAL, for "t": return an array with EXACTLY the same number of elements,
+in EXACTLY the same order. Never merge two elements into one, never split one
+element into two, and never drop an element even if it looks redundant on its
+own. Each element fills a fixed slot in a shared layout; a short array silently
+leaves those slots blank in the app. If an element is a single word or a table
+heading, translate it as a single word or heading and keep it in place. Some
+elements are sentence fragments that continue the previous one; translate them
+as fragments.
 
 Input (${entries.length} cards):
 
@@ -161,8 +170,8 @@ Input (${entries.length} cards):
 ${JSON.stringify(inputObj, null, 2)}
 \`\`\`
 
-Write the translated JSON object — same ${entries.length} card ids, each with
-title/sub/body — to:
+Write the translated JSON object, same ${entries.length} card ids, each with
+title/sub/t, and each "t" array the same length as the one you were given, to:
 ${outRel}
 `);
     runLines.push(`run "${code}" "${outRel}" "translation/prompts/${code}.content.${i + 1}.md"`);

@@ -54,9 +54,9 @@ titles/subtitles went into innerHTML unescaped alongside the listed sites.
       `index.html:629–681`, `tools.js:661,665`
 - [x] Route numbers through `I18n.fmt.num`: `nausea-tool.js:331,399`,
       `improve-tool.js:81,128`, `translate-tool.js:124`, `content.js:523`
-- [ ] Use `tp()` for min/contraction counts so ru/ar/pl can inflect
+- [x] Use `tp()` for min/contraction counts so ru/ar/pl can inflect
       (`tools.js:290,296,299,360`)
-- [ ] RTL-physical CSS in JS: `text-align:left` on the self-harm callout
+- [x] RTL-physical CSS in JS: `text-align:left` on the self-harm callout
       (`tools.js:927`), `border-left`/`margin-left` (921, 474, 872)
 - [ ] BMI range suffixes / `lbs` units assemblable per locale
       (`tools.js:641–644,672`)
@@ -68,15 +68,15 @@ titles/subtitles went into innerHTML unescaped alongside the listed sites.
       ~~`tool.mood.inThePast7Days`~~ (done), `tool.i18n.showMarkup`,
       `tool.i18n.keepTags` (still referenced by the dead `isBody` branch —
       remove together with it)
-- [ ] Refresh stale manifests: `_html_keys.json` (2 entries),
-      `_tools_keys.json` (4 entries)
+- [x] ~~Refresh stale manifests~~ deleted instead: nothing read them, they were
+      one-off extraction artifacts guaranteed to drift
 - [ ] zom locale ui block is English text — translate or leave intentionally
-- [ ] EPDS instrument `cnh` never auto-matches the `zom` UI locale — map or
+- [x] EPDS instrument `cnh` never auto-matches the `zom` UI locale — map or
       document
 - [x] Favicon precache entries carry `?v=59` but the page requests them
       unprefixed — dead precache entries (`sw.js:11–13`)
-- [ ] Branding drift `obiana` vs `myob` (`index.html:392`,
-      `translate-tool.js:257`)
+- [x] Branding drift: user-visible links already say obiana. The `myob.`
+      localStorage prefix stays, since renaming it orphans saved user data
 - [x] Unescaped user input into innerHTML: `tools.js:1080,1138,1244,1250,1252`;
       `content.js:389–404` (stored-XSS surface found during audit)
 
