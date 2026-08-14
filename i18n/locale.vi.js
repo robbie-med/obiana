@@ -7,20 +7,6 @@
 
 window.MYOB_LOCALES = window.MYOB_LOCALES || {};
 
-window.MYOB_LOCALES["vi"] = {
-  "reviewed": false,
-  "translationStatus": "stub",
-  "ui": {
-    "app": {
-      "title": "Sổ tay Thai kỳ"
-    },
-    "lang": {
-      "unreviewedNotice": "Bản dịch này do máy tạo ra và chưa được nhân viên y tế kiểm tra. Với các quyết định y tế, vui lòng xác nhận với nhóm chăm sóc của bạn hoặc chuyển sang tiếng Anh.",
-      "loadFailed": "Không tải được",
-      "inProgress": "Đang dịch"
-    }
-  }
-};
 window.MYOB_LOCALES.vi = {
   "reviewed": false,
   "translationStatus": "stub",

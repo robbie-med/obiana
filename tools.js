@@ -27,6 +27,16 @@ function fmtTimeOfDay(ts) { return I18n.fmt.time(ts); }
 function fmtDate(ts)      { return I18n.fmt.date(ts); }
 function fmtDateTime(ts)  { return I18n.fmt.dateTime(ts); }
 
+// Emphasise one interpolated value inside a translated sentence. The slot is
+// filled with a sentinel, the whole sentence is escaped, and only then does the
+// markup go in, so a translator can move the value anywhere in the sentence and
+// can never inject HTML.
+function boldSlot(key, slot, value) {
+  const SENTINEL = '\u0001';
+  return escHtml(I18n.t(key, { [slot]: SENTINEL }))
+    .replace(SENTINEL, '<strong>' + escHtml(value) + '</strong>');
+}
+
 // ═══════════════════════════════════════════════════════
 // 1. KICK COUNTER
 // ═══════════════════════════════════════════════════════
@@ -136,7 +146,7 @@ function endKickSession(success) {
     document.getElementById('kick-active-view').style.display = 'none';
     document.getElementById('kick-success-view').style.display = '';
     const el = document.getElementById('kick-success-time');
-    if (el) el.textContent = `Reached in ${fmtTime(duration)}`;
+    if (el) el.textContent = I18n.t('tool.cx.reachedIn', { time: fmtTime(duration) });
   } else {
     showKickIdleView();
   }
@@ -198,7 +208,7 @@ function initContractions() {
   if (cxActive) {
     cxTimer = setInterval(updateCxTimer, 500);
     document.getElementById('cx-status-label').textContent = I18n.t('tool.cx.inProgress');
-    document.getElementById('cx-btn').textContent = 'Contraction Ending';
+    document.getElementById('cx-btn').textContent = t('tool.cx.contractionEnding');
     document.getElementById('cx-btn').className = 'big-action-btn btn-rose';
     document.getElementById('cx-live-timer').style.display = '';
   }
@@ -357,8 +367,8 @@ function renderFeedList() {
   if (!feedLog.length) { el.innerHTML = `<p class="history-empty">${t('tool.feed.noFeeds')}</p>`; return; }
   el.innerHTML = feedLog.slice(0, 30).map((f, i) => {
     let detail = '';
-    if (f.type === 'breast') detail = `${f.side || ''} · ${I18n.t('tool.feed.minutes', { n: f.duration || '?' })}`;
-    else detail = `Bottle · ${f.oz || '?'} oz`;
+    if (f.type === 'breast') detail = `${f.side ? t('modalFeed.' + f.side) : ''} · ${I18n.t('tool.feed.minutes', { n: f.duration || '?' })}`;
+    else detail = I18n.t('tool.feed.bottleOz', { oz: f.oz == null ? '?' : I18n.fmt.num(f.oz) });
     return `<div class="feed-row">
       <span class="feed-time">${fmtTimeOfDay(f.ts)}<br><span style="font-size:10px">${fmtDate(f.ts)}</span></span>
       <span class="feed-detail">${f.type === 'breast' ? t('tool.feed.breast') : t('tool.feed.bottle')}</span>
@@ -455,7 +465,7 @@ function addDiaper(type) {
   if (diaperLog.length > 300) diaperLog = diaperLog.slice(0, 300);
   localStorage.setItem('diaper-log', JSON.stringify(diaperLog));
   initDiapers();
-  showToast(type === 'wet' ? 'Wet diaper logged' : type === 'dirty' ? 'Dirty diaper logged' : 'Diaper logged');
+  showToast(t(type === 'wet' ? 'tool.diaper.loggedWet' : type === 'dirty' ? 'tool.diaper.loggedDirty' : 'tool.diaper.loggedGeneric'));
 }
 
 function renderDiaperList() {
@@ -465,7 +475,7 @@ function renderDiaperList() {
   const todayEntries = diaperLog.filter(d => d.ts >= todayStart.getTime());
   if (!todayEntries.length) { el.innerHTML = `<p class="history-empty">${t('tool.diaper.noDiapers')}</p>`; return; }
   const icons = { wet: '💧', dirty: '💩', both: '💧💩' };
-  const labels = { wet: 'Wet', dirty: 'Dirty', both: 'Wet + Dirty' };
+  const labels = { wet: t('tool.diaper.wet'), dirty: t('tool.diaper.dirty'), both: t('tool.diaper.both') };
   el.innerHTML = todayEntries.map((d, i) => `
     <div class="diaper-log-row">
       <span>${icons[d.type]}</span>
@@ -658,11 +668,11 @@ function initWeight() {
       <div style="display:flex;gap:10px;margin-bottom:10px">
         <div style="flex:1">
           <label class="form-label">${t('tool.weight.prePregnancyWeightLbs')}</label>
-          <input type="number" class="tool-input" id="wp-base" placeholder="e.g. 140" value="${weightProfile.baseWeight || ''}" min="80" max="400">
+          <input type="number" class="tool-input" id="wp-base" placeholder="${escHtml(I18n.t('common.eg', { n: I18n.fmt.num(140) }))}" value="${weightProfile.baseWeight || ''}" min="80" max="400">
         </div>
         <div style="flex:1">
           <label class="form-label">${t('tool.weight.prePregnancyBmi')}</label>
-          <input type="number" class="tool-input" id="wp-bmi" placeholder="e.g. 22.5" value="${weightProfile.bmi || ''}" min="15" max="60" step="0.1">
+          <input type="number" class="tool-input" id="wp-bmi" placeholder="${escHtml(I18n.t('common.eg', { n: I18n.fmt.num(22.5) }))}" value="${weightProfile.bmi || ''}" min="15" max="60" step="0.1">
         </div>
       </div>
       <button class="btn-sm btn-teal" onclick="saveWeightProfile()" style="width:100%">${t('tool.weight.saveProfile')}</button>
@@ -670,7 +680,7 @@ function initWeight() {
     ${range ? `<div class="callout" style="margin:8px 16px">
       <div class="callout-title">${t('tool.weight.iomFor', { range: range.label })}</div>
       <p>${t('tool.weight.recommendedGain')} <strong>${range.min}–${range.max} lbs</strong> ${t('tool.weight.forFullPregnancy')}
-      ${totalGain !== null ? ` You have gained <strong>${totalGain > 0 ? '+' : ''}${totalGain} lbs</strong> so far.` : ''}</p>
+      ${totalGain !== null ? ' ' + boldSlot('tool.weight.gainedSoFar', 'amount', (totalGain > 0 ? '+' : '') + I18n.fmt.num(totalGain)) : ''}</p>
     </div>` : `<div class="callout" style="margin:8px 16px"><div class="callout-title">${t('tool.weight.setYourProfile')}</div><p>${t('tool.weight.setProfileHint')}</p></div>`}
     <div style="padding:0 16px 12px">
       <button class="big-action-btn btn-teal" onclick="openModal('weight')">${t('tool.weight.logWeight')}</button>
@@ -700,9 +710,9 @@ function renderWeightList() {
   el.innerHTML = sorted.slice(0, 20).map((w, i) => {
     const gain = base ? (w.lbs - base).toFixed(1) : null;
     return `<div class="weight-row">
-      <span class="weight-wk">Wk ${w.week}</span>
-      <span class="weight-val">${w.lbs} lbs</span>
-      <span class="weight-gain">${gain !== null ? (gain > 0 ? '+' : '') + gain + ' lbs total' : fmtDate(w.ts)}</span>
+      <span class="weight-wk">${escHtml(I18n.t('tool.weight.wk', { n: I18n.fmt.num(w.week) }))}</span>
+      <span class="weight-val">${escHtml(I18n.t('tool.weight.lbsValue', { n: I18n.fmt.num(w.lbs) }))}</span>
+      <span class="weight-gain">${gain !== null ? escHtml(I18n.t('tool.weight.lbsTotal', { n: (gain > 0 ? '+' : '') + I18n.fmt.num(gain) })) : fmtDate(w.ts)}</span>
       <button onclick="deleteWeight(${i})" style="background:none;border:none;color:var(--ink-soft);font-size:16px;cursor:pointer;padding:4px">×</button>
     </div>`;
   }).join('');
@@ -731,7 +741,7 @@ function saveWeight() {
   document.getElementById('weight-week').value = '';
   closeModal('weight');
   initWeight();
-  showToast(`${lbs} lbs at week ${week} saved`);
+  showToast(I18n.t('tool.weight.savedToast', { lbs: I18n.fmt.num(lbs), week: I18n.fmt.num(week) }));
 }
 
 // ═══════════════════════════════════════════════════════
@@ -829,7 +839,7 @@ function initMood() {
   el.innerHTML = `
     <div style="padding:12px 16px 0">
       <p style="font-size:13.5px;color:var(--ink);line-height:1.6;margin-bottom:4px">
-        <strong>${t('tool.mood.edinburghPostnatalDepressionScale')}</strong>:
+        <strong>${epds.instrument === 'PHQ-9' ? t('tool.mood.phq9Title') : t('tool.mood.edinburghPostnatalDepressionScale')}</strong>:
         <span lang="${epds.language}">${escHtml(epds.instructions || '')}</span>
       </p>
       <p style="font-size:12px;color:var(--ink-soft)">${t('tool.mood.yourAnswersAreSavedOnly')}</p>
@@ -845,11 +855,11 @@ function initMood() {
       ${EPDS_Q.map((q, qi) => `
         <div class="epds-question">
           <div class="epds-q-num">${I18n.t('tool.mood.qCounter', { n: qi + 1, total: EPDS_Q.length })}</div>
-          <div class="epds-q-text">${q.text}</div>
+          <div class="epds-q-text" lang="${epds.language}" dir="auto">${escHtml(q.text)}</div>
           <div class="epds-options">
             ${q.options.map((opt, oi) => `
               <div class="epds-option" id="epds-${qi}-${oi}" onclick="setEPDS(${qi}, ${oi})">
-                <span class="epds-option-text">${opt}</span>
+                <span class="epds-option-text" lang="${epds.language}" dir="auto">${escHtml(opt)}</span>
               </div>`).join('')}
           </div>
         </div>`).join('')}
@@ -923,9 +933,9 @@ function submitEPDS() {
         <div class="score-label" style="color:${interp.color}">${interp.label}</div>
         <div class="score-note">${escHtml(I18n.t('tool.mood.scoreNote', {
           max: epds.maxScore || 30, instrument: epds.instrument || 'EPDS' }))}</div>
-        ${score >= 10 ? `<div style="margin-top:10px;font-size:13px;font-weight:600;color:${interp.color}">${t('tool.mood.talkToDoctor')}</div>` : `<div style="margin-top:10px;font-size:13px;color:var(--ink-soft)">${t('tool.mood.continueWeekly')}</div>`}
+        ${score >= ((epds.cutoffs || {}).concern || 10) ? `<div style="margin-top:10px;font-size:13px;font-weight:600;color:${interp.color}">${t('tool.mood.talkToDoctor')}</div>` : `<div style="margin-top:10px;font-size:13px;color:var(--ink-soft)">${t('tool.mood.continueWeekly')}</div>`}
         ${q10score > 0 ? `<div class="callout alert" style="margin-top:12px;text-align:left">
-          <div class="callout-title">Important</div>
+          <div class="callout-title">${t('tool.mood.important')}</div>
           <p>${escHtml(I18n.t('tool.mood.selfHarmGuidance'))}</p>
         </div>` : ''}
       </div>`;
@@ -1077,7 +1087,7 @@ function renderBirthPlanSummary() {
           placeholder="${t('tool.birthplan.anyOtherPreferencesConcernsOr')}"
           oninput="localStorage.setItem('birth-plan-notes', this.value)"
           style="width:100%;min-height:80px;border:1.5px solid var(--rule);border-radius:var(--radius-sm);padding:10px 12px;font-family:var(--font-sans);font-size:14px;color:var(--ink);background:var(--bg);outline:none;resize:vertical;transition:border-color .2s;line-height:1.5;box-sizing:border-box"
-        >${savedNotes}</textarea>
+        >${escHtml(savedNotes)}</textarea>
       </div>
       <div style="padding:0 16px 16px;display:flex;gap:10px;flex-wrap:wrap">
         <button class="big-action-btn btn-teal" onclick="copyBirthPlan()" style="flex:1">${t('tool.birthplan.copyToShare')}</button>
@@ -1105,8 +1115,8 @@ function copyBirthPlan() {
   });
   const notes = (document.getElementById('bp-notes') || {}).value
     || localStorage.getItem('birth-plan-notes') || '';
-  if (notes.trim()) lines.push('\nAdditional notes:\n' + notes.trim());
-  lines.push('\nGenerated with Pregnancy & Birth Guide');
+  if (notes.trim()) lines.push('\n' + t('tool.birthplan.additionalNotes') + '\n' + notes.trim());
+  lines.push('\n' + t('tool.birthplan.generatedWith'));
   const text = lines.join('\n');
   if (navigator.clipboard) {
     navigator.clipboard.writeText(text).then(() => showToast(t('tool.birthplan.copiedToClipboard')));
@@ -1135,7 +1145,7 @@ function printBirthPlan() {
   const notes = (document.getElementById('bp-notes') || {}).value
     || localStorage.getItem('birth-plan-notes') || '';
   const notesHtml = notes.trim()
-    ? `<div class="pv-notes"><strong>${t('tool.birthplan.additionalNotes')}</strong><br>${notes.trim().replace(/\n/g, '<br>')}</div>`
+    ? `<div class="pv-notes"><strong>${t('tool.birthplan.additionalNotes')}</strong><br>${escHtml(notes.trim()).replace(/\n/g, '<br>')}</div>`
     : '';
   pv.innerHTML = `
     <h1>${escHtml(t('tool.birthplan.myBirthPreferences'))}${
@@ -1229,9 +1239,9 @@ function renderApptsList() {
   const sorted = [...appointments].sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
   el.innerHTML = sorted.map((appt, i) => {
     const d = appt.date ? new Date(appt.date + 'T12:00:00') : null;
-    const month = d ? d.toLocaleDateString(I18n.lang === 'ar' ? 'ar-u-nu-latn' : I18n.lang, { month: 'short' }) : '–';
-    const day = d ? d.getDate() : '–';
-    const preview = appt.questions ? appt.questions.slice(0, 60) + (appt.questions.length > 60 ? '…' : '') : 'No questions added';
+    const month = d ? I18n.fmt.date(d, { month: 'short' }) : '–';
+    const day = d ? I18n.fmt.num(d.getDate()) : '–';
+    const preview = appt.questions ? appt.questions.slice(0, 60) + (appt.questions.length > 60 ? '…' : '') : t('tool.appts.noQuestionsAdded');
     return `
       <div class="appt-card" id="appt-card-${appt.id}" onclick="toggleApptCard('appt-card-${appt.id}')">
         <div class="appt-card-header">
@@ -1241,15 +1251,15 @@ function renderApptsList() {
           </div>
           <div class="appt-info">
             <div class="appt-type-label">${escHtml(apptTypeLabel(appt.type))}</div>
-            <div class="appt-preview">${preview}</div>
+            <div class="appt-preview">${escHtml(preview)}</div>
           </div>
           <svg class="appt-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
         </div>
         <div class="appt-body">
           <div class="appt-sub-label">${t('tool.appts.questionsToAsk')}</div>
-          <div style="font-size:13.5px;color:var(--ink);white-space:pre-wrap;line-height:1.6">${appt.questions || ('<span style="color:var(--ink-soft)">' + t('tool.appts.noneAdded') + '</span>')}</div>
+          <div style="font-size:13.5px;color:var(--ink);white-space:pre-wrap;line-height:1.6">${appt.questions ? escHtml(appt.questions) : ('<span style="color:var(--ink-soft)">' + escHtml(t('tool.appts.noneAdded')) + '</span>')}</div>
           <div class="appt-sub-label" style="margin-top:14px">${t('tool.appts.notesFromVisit')}</div>
-          <div style="font-size:13.5px;color:var(--ink);white-space:pre-wrap;line-height:1.6">${appt.notes || ('<span style="color:var(--ink-soft)">' + t('tool.appts.noneAdded') + '</span>')}</div>
+          <div style="font-size:13.5px;color:var(--ink);white-space:pre-wrap;line-height:1.6">${appt.notes ? escHtml(appt.notes) : ('<span style="color:var(--ink-soft)">' + escHtml(t('tool.appts.noneAdded')) + '</span>')}</div>
           <div class="btn-row" style="margin-top:14px;padding:0">
             <button class="btn-sm" onclick="event.stopPropagation();openApptModal('${appt.id}')"
               style="background:var(--teal-faint);color:var(--teal)">${t('tool.appts.edit')}</button>
@@ -1294,7 +1304,7 @@ function saveAppt() {
   localStorage.setItem('appt-notes', JSON.stringify(appointments));
   closeModal('appt');
   initAppts();
-  showToast(_editApptId ? 'Visit updated' : 'Visit added');
+  showToast(t(_editApptId ? 'tool.appts.visitUpdated' : 'tool.appts.visitAdded'));
   _editApptId = null;
 }
 

@@ -10,20 +10,6 @@
 
 window.MYOB_LOCALES = window.MYOB_LOCALES || {};
 
-window.MYOB_LOCALES["ps"] = {
-  "reviewed": false,
-  "translationStatus": "stub",
-  "ui": {
-    "app": {
-      "title": "د امیندوارۍ لارښود"
-    },
-    "lang": {
-      "unreviewedNotice": "دا ژباړه ماشیني ده او تر اوسه یې کوم روغتیایي مسلکي کس نه ده کتلې. د طبي پریکړو لپاره، مهرباني وکړئ له خپلې پاملرنې ډلې سره یې تایید کړئ یا انګلیسي ته یې بدل کړئ.",
-      "loadFailed": "نه شو پورته کولی",
-      "inProgress": "ژباړه روانه ده"
-    }
-  }
-};
 window.MYOB_LOCALES.ps = {
   "reviewed": false,
   "translationStatus": "stub",

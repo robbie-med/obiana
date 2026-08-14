@@ -7,20 +7,6 @@
 
 window.MYOB_LOCALES = window.MYOB_LOCALES || {};
 
-window.MYOB_LOCALES["th"] = {
-  "reviewed": false,
-  "translationStatus": "stub",
-  "ui": {
-    "app": {
-      "title": "คู่มือการตั้งครรภ์"
-    },
-    "lang": {
-      "unreviewedNotice": "คำแปลนี้สร้างโดยเครื่องและยังไม่ได้รับการตรวจสอบจากบุคลากรทางการแพทย์ สำหรับการตัดสินใจทางการแพทย์ โปรดยืนยันกับทีมผู้ดูแลของคุณหรือเปลี่ยนเป็นภาษาอังกฤษ",
-      "loadFailed": "โหลดไม่สำเร็จ",
-      "inProgress": "กำลังแปล"
-    }
-  }
-};
 window.MYOB_LOCALES.th = {
   "reviewed": false,
   "translationStatus": "stub",

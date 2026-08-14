@@ -10,20 +10,6 @@
 
 window.MYOB_LOCALES = window.MYOB_LOCALES || {};
 
-window.MYOB_LOCALES["ja"] = {
-  "reviewed": false,
-  "translationStatus": "stub",
-  "ui": {
-    "app": {
-      "title": "妊娠ハンドブック"
-    },
-    "lang": {
-      "unreviewedNotice": "この翻訳は機械翻訳であり、まだ医療者の確認を受けていません。医療上の判断については、担当の医療チームに確認するか、英語に切り替えてください。",
-      "loadFailed": "読み込めませんでした",
-      "inProgress": "翻訳作業中"
-    }
-  }
-};
 window.MYOB_LOCALES.ja = {
   "reviewed": false,
   "translationStatus": "stub",

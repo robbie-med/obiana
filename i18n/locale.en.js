@@ -78,7 +78,9 @@ window.MYOB_LOCALES.en = {
       "myPregnancyDetails": "My Pregnancy Details",
       "questionsForMyDoctor": "Questions for My Doctor",
       "saveMyInformation": "Save My Information",
-      "exportData": "Export Data"
+      "exportData": "Export Data",
+      "saved": "✓ Saved!",
+      "notesPlaceholder": "Write questions here as you think of them…"
     },
     "toast": {
       "contactsSaved": "Contacts saved to your phone",
@@ -90,15 +92,12 @@ window.MYOB_LOCALES.en = {
       "mood": {
         "unavailableTitle": "Mood check-in not available in this language",
         "unavailableBody": "This questionnaire is a validated screening tool. Its scoring is only meaningful in a language it has been officially validated in.",
-        "availableIn": "Currently available in: {langs}. Please ask your care team about a validated version in your language.",
-        "switchToEnglish": "Switch to English",
         "qCounter": "Question {n} of {total}",
         "answerAll": "Please answer all {total} questions",
         "interpLow": "Low concern",
         "interpConcern": "Worth discussing with your doctor",
         "interpHigh": "Please contact your doctor",
         "edinburghPostnatalDepressionScale": "Edinburgh Postnatal Depression Scale",
-        "inThePast7Days": "in the past 7 days",
         "yourAnswersAreSavedOnly": "Your answers are saved only on this phone.",
         "getMyScore": "Get My Score",
         "chooseLanguage": "Choose the language you would like to answer in:",
@@ -109,7 +108,9 @@ window.MYOB_LOCALES.en = {
         "pastCheckIns": "Past Check-Ins",
         "selfHarmGuidance": "You answered that thoughts of self-harm have occurred to you. Please reach out to your doctor, call or text 988 (Suicide & Crisis Lifeline), or go to the nearest emergency room.",
         "continueWeekly": "Continue checking in weekly. If your mood changes, this tool will help you track it.",
-        "talkToDoctor": "Talking to your doctor, even about a screening score, is always a good step. PPD is very treatable."
+        "talkToDoctor": "Talking to your doctor, even about a screening score, is always a good step. PPD is very treatable.",
+        "important": "Important",
+        "phq9Title": "Patient Health Questionnaire (PHQ-9)"
       },
       "birthplan": {
         "q": {
@@ -223,7 +224,8 @@ window.MYOB_LOCALES.en = {
         "copiedToClipboard": "Copied to clipboard!",
         "copyNotSupportedOnThis": "Copy not supported on this browser",
         "selectPreferences": "Select your preferences below. Your summary will appear at the bottom. You can share it with your care team.",
-        "generatedOn": "Generated {date}"
+        "generatedOn": "Generated {date}",
+        "generatedWith": "Generated with Obiana Pregnancy Handbook"
       },
       "kick": {
         "startSession": "Start Session",
@@ -259,7 +261,8 @@ window.MYOB_LOCALES.en = {
         "fewFeedsBody": "Newborns typically need 8–12 feedings per 24 hours. If baby is difficult to wake or not gaining weight, call your doctor.",
         "breast": "🤱 Breast",
         "bottle": "🍼 Bottle",
-        "minutes": "{n} min"
+        "minutes": "{n} min",
+        "bottleOz": "Bottle · {oz} oz"
       },
       "diaper": {
         "wetToday": "Wet Today",
@@ -268,7 +271,13 @@ window.MYOB_LOCALES.en = {
         "whatToExpectByAge": "What to expect by age",
         "day1212": "Day 1–2: 1–2 wet diapers · Day 3–4: 3–4 wet · Day 5+: 6+ wet, 3–4 dirty per day. Fewer than 6 wet diapers after day 5 → call your doctor.",
         "todaySLog": "Today's Log",
-        "noDiapers": "No diapers logged today."
+        "noDiapers": "No diapers logged today.",
+        "loggedWet": "Wet diaper logged",
+        "loggedDirty": "Dirty diaper logged",
+        "loggedGeneric": "Diaper logged",
+        "wet": "Wet",
+        "dirty": "Dirty",
+        "both": "Wet + Dirty"
       },
       "jaundice": {
         "babySBirthDate": "Baby's Birth Date",
@@ -329,7 +338,12 @@ window.MYOB_LOCALES.en = {
           "over": "Overweight",
           "obese": "Obese"
         },
-        "iomFor": "IOM guideline for you ({range})"
+        "iomFor": "IOM guideline for you ({range})",
+        "gainedSoFar": "You have gained {amount} lbs so far.",
+        "wk": "Wk {n}",
+        "lbsValue": "{n} lbs",
+        "lbsTotal": "{n} lbs total",
+        "savedToast": "{lbs} lbs at week {week} saved"
       },
       "appts": {
         "addVisit": "+ Add Visit",
@@ -340,7 +354,12 @@ window.MYOB_LOCALES.en = {
         "delete": "Delete",
         "visitDeleted": "Visit deleted",
         "noVisits": "No visits logged yet. Add one above to track questions and notes.",
-        "deleteConfirm": "Delete this visit?"
+        "deleteConfirm": "Delete this visit?",
+        "untitledVisit": "Untitled visit",
+        "editVisit": "Edit Visit",
+        "noQuestionsAdded": "No questions added",
+        "visitUpdated": "Visit updated",
+        "visitAdded": "Visit added"
       },
       "cx": {
         "noContractions": "No contractions recorded yet.<br>Tap \"Contraction Starting\" when one begins.",
@@ -354,7 +373,9 @@ window.MYOB_LOCALES.en = {
         "interval": "every {t}",
         "alertGo": "Contractions about {mins} min apart, lasting about {secs}s. Call L&D now.",
         "alert511": "About {mins} min apart, about {secs}s long. If this is your first baby, head to the hospital. Call if your water breaks or you are in doubt.",
-        "alertProgress": "Last hour: about {mins} min apart · about {secs}s long · {n} contractions. 5-1-1 pattern not yet reached."
+        "alertProgress": "Last hour: about {mins} min apart · about {secs}s long · {n} contractions. 5-1-1 pattern not yet reached.",
+        "reachedIn": "Reached in {time}",
+        "contractionEnding": "Contraction Ending"
       },
       "i18n": {
         "intro": "Compare every phrase in this app against the English original. If something reads wrong, type a better version. Your suggestions stay on this phone until you export them.",
@@ -520,7 +541,7 @@ window.MYOB_LOCALES.en = {
     "app": {
       "title": "Pregnancy Handbook",
       "tagline": "",
-      "description": "Evidence-based pregnancy, labor, delivery & postpartum guide. Works offline.",
+      "description": "Evidence-based pregnancy, birth and newborn guide in 17 languages. Free, open source, and works offline.",
       "home": "Home",
       "prenatal": "Prenatal",
       "labor": "Labor",
@@ -676,7 +697,9 @@ window.MYOB_LOCALES.en = {
       "date": "Date",
       "questionsToAskBeforehand": "Questions to ask beforehand",
       "notesFromVisit": "Notes from visit",
-      "saveVisit": "Save Visit"
+      "saveVisit": "Save Visit",
+      "questionsPlaceholder": "What do I want to ask at this visit?",
+      "notesPlaceholder": "What did we discuss? Any follow-up needed?"
     },
     "apptType": {
       "selectType": "Select type…",
@@ -702,7 +725,8 @@ window.MYOB_LOCALES.en = {
       "addToPhone": "Add to Phone"
     },
     "common": {
-      "toolsBack": "Tools"
+      "toolsBack": "Tools",
+      "eg": "e.g. {n}"
     },
     "nav": {
       "prenatal": "Prenatal<br>Visits",

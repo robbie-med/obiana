@@ -328,7 +328,7 @@ function renderLogHistory() {
           ${effect.map(e => `<div style="display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:3px 0">
               <span>${escHtml(I18n.t('tool.nausea.strat.' + e.id + '.name'))}</span>
               <span style="color:var(--ink-soft);white-space:nowrap">
-                ${escHtml(I18n.t('tool.nausea.avgAfter', { avg: e.avg.toFixed(1), n: e.n }))}
+                ${escHtml(I18n.t('tool.nausea.avgAfter', { avg: I18n.fmt.num(e.avg, { minimumFractionDigits: 1, maximumFractionDigits: 1 }), n: I18n.fmt.num(e.n) }))}
               </span>
             </div>`).join('')}
           <p style="margin-top:6px">${escHtml(I18n.t('tool.nausea.lowerIsBetter'))}</p>
@@ -396,7 +396,7 @@ function renderSnackClock() {
     const x = (50 + 22 * Math.cos(a)).toFixed(1);
     const y = (50 + 22 * Math.sin(a)).toFixed(1);
     return `<text x="${x}" y="${y}" text-anchor="middle" dominant-baseline="central"
-              font-size="6" fill="var(--ink-soft)">${h}</text>`;
+              font-size="6" fill="var(--ink-soft)">${I18n.fmt.num(h)}</text>`;
   }).join('');
 
   const gap = longestGap(snacks, nowHour);

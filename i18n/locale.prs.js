@@ -10,20 +10,6 @@
 
 window.MYOB_LOCALES = window.MYOB_LOCALES || {};
 
-window.MYOB_LOCALES["prs"] = {
-  "reviewed": false,
-  "translationStatus": "stub",
-  "ui": {
-    "app": {
-      "title": "راهنمای بارداری"
-    },
-    "lang": {
-      "unreviewedNotice": "این ترجمه ماشینی است و هنوز توسط یک متخصص صحی بررسی نشده است. برای تصمیم‌های طبی، لطفاً با تیم مراقبت خود تأیید کنید یا به انگلیسی تغییر دهید.",
-      "loadFailed": "بارگذاری نشد",
-      "inProgress": "ترجمه در جریان است"
-    }
-  }
-};
 window.MYOB_LOCALES.prs = {
   "reviewed": false,
   "translationStatus": "stub",

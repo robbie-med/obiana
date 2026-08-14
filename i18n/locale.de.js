@@ -7,20 +7,6 @@
 
 window.MYOB_LOCALES = window.MYOB_LOCALES || {};
 
-window.MYOB_LOCALES["de"] = {
-  "reviewed": false,
-  "translationStatus": "stub",
-  "ui": {
-    "app": {
-      "title": "Schwangerschafts-Handbuch"
-    },
-    "lang": {
-      "unreviewedNotice": "Diese Übersetzung wurde maschinell erstellt und noch nicht von medizinischem Fachpersonal geprüft. Bestätigen Sie medizinische Entscheidungen bitte mit Ihrem Behandlungsteam oder wechseln Sie zu Englisch.",
-      "loadFailed": "Konnte nicht geladen werden",
-      "inProgress": "Übersetzung läuft"
-    }
-  }
-};
 window.MYOB_LOCALES.de = {
   "reviewed": false,
   "translationStatus": "stub",

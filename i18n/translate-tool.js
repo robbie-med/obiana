@@ -121,7 +121,7 @@ function initI18nTool() {
       <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:10px">
         <select class="tool-select" id="i18n-lang" style="flex:0 1 auto;min-width:130px">${langOptions}</select>
         <span style="font-size:12px;color:var(--ink-soft)">
-          ${counts.translated} ✓ · ${counts.same} ≡ · ${counts.missing} ✗${sugCount ? ` · ${sugCount} ✎` : ''}
+          ${I18n.fmt.num(counts.translated)} ✓ · ${I18n.fmt.num(counts.same)} ≡ · ${I18n.fmt.num(counts.missing)} ✗${sugCount ? ` · ${I18n.fmt.num(sugCount)} ✎` : ''}
         </span>
       </div>
       <input class="tool-input" id="i18n-search" type="search"

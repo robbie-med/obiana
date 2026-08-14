@@ -67,7 +67,7 @@ const I18n = (() => {
 
   // Bumped alongside sw.js CACHE_NAME so an updated locale file is actually
   // re-fetched instead of served from the browser's heuristic cache.
-  const ASSET_VERSION = '59';
+  const ASSET_VERSION = '60';
 
   const FALLBACK = 'en';
   const STORAGE_KEY = 'myob.lang';
@@ -196,6 +196,13 @@ const I18n = (() => {
       else el.textContent = val;
     });
 
+    // "e.g. 15" hints: the number is the example value, the "e.g." is language.
+    // data-i18n-eg="15" keeps the two apart without a key per input.
+    scope.querySelectorAll('[data-i18n-eg]').forEach(el => {
+      const n = el.getAttribute('data-i18n-eg');
+      el.setAttribute('placeholder', t('common.eg', { n: fmt.num(Number(n)) }));
+    });
+
     Object.keys(ATTR_MAP).forEach(dataAttr => {
       scope.querySelectorAll('[' + dataAttr + ']').forEach(el => {
         el.setAttribute(ATTR_MAP[dataAttr], t(el.getAttribute(dataAttr)));
@@ -216,7 +223,9 @@ const I18n = (() => {
 
   const fmt = {
     time(ts)  { return new Date(ts).toLocaleTimeString(intlTag(), { hour: 'numeric', minute: '2-digit' }); },
-    date(ts)  { return new Date(ts).toLocaleDateString(intlTag(), { month: 'short', day: 'numeric' }); },
+    // opts overrides the default day-and-month shape, so callers that want just
+    // a month go through intlTag() too and inherit the INTL_FALLBACK table.
+    date(ts, opts) { return new Date(ts).toLocaleDateString(intlTag(), opts || { month: 'short', day: 'numeric' }); },
     dateLong(ts) { return new Date(ts).toLocaleDateString(intlTag(), { year: 'numeric', month: 'long', day: 'numeric' }); },
     dateTime(ts) { return fmt.date(ts) + ' ' + fmt.time(ts); },
     num(n, opts) { return new Intl.NumberFormat(intlTag(), opts).format(n); },

@@ -653,11 +653,11 @@ function saveInfo() {
   localStorage.setItem('birth-guide-info', JSON.stringify(data));
 
   const btn = document.getElementById('save-btn');
-  btn.textContent = '✓ Saved!';
+  btn.textContent = I18n.t('myinfo.saved');
   btn.classList.add('saved');
   showToast(I18n.t('toast.contactsSaved'));
   setTimeout(() => {
-    btn.textContent = 'Save My Information';
+    btn.textContent = I18n.t('myinfo.saveMyInformation');
     btn.classList.remove('saved');
   }, 2500);
 }

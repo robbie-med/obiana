@@ -7,20 +7,6 @@
 
 window.MYOB_LOCALES = window.MYOB_LOCALES || {};
 
-window.MYOB_LOCALES["pl"] = {
-  "reviewed": false,
-  "translationStatus": "stub",
-  "ui": {
-    "app": {
-      "title": "Poradnik ciążowy"
-    },
-    "lang": {
-      "unreviewedNotice": "To tłumaczenie zostało wygenerowane maszynowo i nie zostało jeszcze sprawdzone przez personel medyczny. W sprawach medycznych potwierdź informacje ze swoim zespołem opieki lub przełącz na angielski.",
-      "loadFailed": "Nie udało się wczytać",
-      "inProgress": "Tłumaczenie w toku"
-    }
-  }
-};
 window.MYOB_LOCALES.pl = {
   "reviewed": false,
   "translationStatus": "stub",

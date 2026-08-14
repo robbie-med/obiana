@@ -21,6 +21,10 @@ function improveDraft() {
   catch (e) { return {}; }
 }
 
+// Shared by the live counter and the post-submit reset, which live in
+// different functions.
+const fmtCount = n => I18n.fmt.num(n) + ' / ' + I18n.fmt.num(4000);
+
 function initImprove() {
   const el = document.getElementById('improve-content');
   if (!el) return;
@@ -78,7 +82,7 @@ function initImprove() {
 
   const msg = document.getElementById('improve-message');
   const count = document.getElementById('improve-count');
-  const updateCount = () => { count.textContent = `${msg.value.length} / 4000`; };
+  const updateCount = () => { count.textContent = fmtCount(msg.value.length); };
   updateCount();
   msg.addEventListener('input', updateCount);
   [msg, document.getElementById('improve-topic')].forEach(f =>
@@ -125,7 +129,7 @@ async function sendImprove() {
     if (res.ok) {
       try { localStorage.removeItem(IMPROVE_DRAFT_KEY); } catch (e) {}
       msg.value = ''; topic.value = '';
-      document.getElementById('improve-count').textContent = '0 / 4000';
+      document.getElementById('improve-count').textContent = fmtCount(0);
       setStatus(I18n.t('tool.improve.thanks'));
       btn.disabled = false;
       return;

@@ -10,20 +10,6 @@
 
 window.MYOB_LOCALES = window.MYOB_LOCALES || {};
 
-window.MYOB_LOCALES["tl"] = {
-  "reviewed": false,
-  "translationStatus": "stub",
-  "ui": {
-    "app": {
-      "title": "Handbook sa Pagbubuntis"
-    },
-    "lang": {
-      "unreviewedNotice": "Ang pagsasaling ito ay gawa ng makina at hindi pa nasusuri ng isang clinician. Para sa mga desisyong medikal, kumpirmahin sa inyong care team o lumipat sa Ingles.",
-      "loadFailed": "Hindi ma-load",
-      "inProgress": "Isinasalin pa"
-    }
-  }
-};
 window.MYOB_LOCALES.tl = {
   "reviewed": false,
   "translationStatus": "stub",
