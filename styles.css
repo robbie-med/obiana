@@ -313,6 +313,8 @@ body {
 .card:active { box-shadow: var(--card-shadow-hover); }
 
 /* Accordion card */
+.acc-heading { margin: 0; font: inherit; }
+
 .acc-header {
   display: flex;
   align-items: center;
@@ -322,7 +324,18 @@ body {
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
   user-select: none;
+  /* It is a <button> now. Reset what the UA stylesheet imposes so it looks
+     exactly as it did as a div, and keep text start-aligned for RTL. */
+  width: 100%;
+  background: none;
+  border: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  text-align: start;
 }
+.acc-icon-wrap { flex: 0 0 auto; }
+.acc-titles, .acc-title, .acc-sub { display: block; }
 
 .acc-icon-wrap {
   width: 38px;
@@ -399,7 +412,7 @@ body {
 .acc-body .lead.navy { color: var(--navy); }
 .acc-body .lead.plum { color: var(--plum); }
 
-.acc-body h4 {
+.acc-body h3 {
   font-family: var(--font-sans);
   font-size: 12px;
   font-weight: 700;
@@ -1910,3 +1923,124 @@ body.dark .i18n-stale-banner { color: #e8d5a8; background: #221800; border-color
 .i18n-row textarea { width: 100%; box-sizing: border-box; }
 .i18n-actions { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
 .i18n-actions .i18n-submit-status { font-size: 11px; color: var(--ink-soft); }
+
+/* ═══════════════════════════════════════════════════════
+   ACCESSIBILITY
+   ═══════════════════════════════════════════════════════ */
+
+/* Off screen until focused, then visible. Lets a keyboard user jump the
+   header and search field rather than tabbing them on every page. */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 10000;
+  background: var(--teal);
+  color: var(--white);
+  padding: 10px 16px;
+  border-radius: 0 0 var(--radius-sm) 0;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.skip-link:focus { left: 0; }
+
+/* Every modal now has a real dismiss control. Scrim tap was the only way out,
+   which is unreachable from a keyboard and discards typed data silently. */
+.modal-close {
+  position: absolute;
+  inset-inline-end: 8px;
+  inset-block-start: 8px;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: none;
+  color: var(--ink-soft);
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-close:hover { color: var(--ink); }
+.modal-sheet { position: relative; }
+
+/* One focus style for the whole app. There was none, and every form control
+   replaced its outline with a border colour change that is 1.6:1 in dark
+   mode, so keyboard focus was effectively invisible. */
+:focus-visible {
+  outline: 3px solid var(--teal-mid);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+body.dark :focus-visible { outline-color: #7fd4d4; }
+
+/* Touch targets. These were 20 to 34px; 44 is the accepted floor. */
+#lang-btn, #theme-btn, #search-clear, #install-btn {
+  min-width: 44px;
+  min-height: 44px;
+}
+.choice-pill, .bpb-pill { min-height: 44px; }
+.history-list-card button, .weight-row button, .feed-row button,
+.diaper-log-row button, .bp-row button { min-width: 44px; min-height: 44px; }
+
+/* Honour a reduced-motion preference. There are 32 transitions plus smooth
+   scrolling, and none of it was conditional. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  html { scroll-behavior: auto; }
+}
+
+/* EPDS options are real radios in a fieldset now. The visual is unchanged:
+   the input is hidden from sight but stays focusable and operable, so arrow
+   keys move within a question and the answer is announced. */
+.epds-question { border: 0; margin: 0; padding: 0 16px 4px; }
+.epds-legend { padding: 0; margin-bottom: 8px; display: block; width: 100%; }
+.epds-radio {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  pointer-events: none;
+}
+.epds-option { cursor: pointer; }
+.epds-option:has(.epds-radio:focus-visible) {
+  outline: 3px solid var(--teal-mid);
+  outline-offset: 2px;
+}
+body.dark .epds-option:has(.epds-radio:focus-visible) { outline-color: #7fd4d4; }
+
+/* Search results and the care-team strip are <button> now; undo the UA
+   stylesheet so they look exactly as they did as divs. */
+.search-result-item, .info-strip {
+  width: 100%;
+  background: none;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+/* The visit-note header is a <button> now, so only it toggles the card. The
+   edit and delete buttons inside the body are no longer nested inside a
+   clickable ancestor and do not need stopPropagation. */
+.appt-card-header {
+  width: 100%;
+  background: none;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+.appt-date-badge, .appt-info, .adb-month, .adb-day,
+.appt-type-label, .appt-preview { display: block; }

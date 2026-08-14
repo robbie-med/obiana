@@ -33,7 +33,9 @@ window.MYOB_LOCALES.en = {
       "resultCount": {
         "one": "{count} result for “{q}”",
         "other": "{count} results for “{q}”"
-      }
+      },
+      "label": "Search all topics",
+      "clear": "Clear search"
     },
     "myinfo": {
       "namePlaceholder": "Name",
@@ -82,7 +84,10 @@ window.MYOB_LOCALES.en = {
       "saved": "✓ Saved!",
       "notesPlaceholder": "Write questions here as you think of them…",
       "importData": "Import Data",
-      "importConfirm": "Restore {n} saved items from this file? Anything currently in the app with the same name will be replaced."
+      "importConfirm": "Restore {n} saved items from this file? Anything currently in the app with the same name will be replaced.",
+      "notesLabel": "Questions for your next visit",
+      "callContact": "Call {name}",
+      "textContact": "Text {name}"
     },
     "toast": {
       "contactsSaved": "Contacts saved to your phone",
@@ -732,7 +737,9 @@ window.MYOB_LOCALES.en = {
     },
     "common": {
       "toolsBack": "Tools",
-      "eg": "e.g. {n}"
+      "eg": "e.g. {n}",
+      "close": "Close",
+      "skipToContent": "Skip to content"
     },
     "nav": {
       "prenatal": "Prenatal<br>Visits",

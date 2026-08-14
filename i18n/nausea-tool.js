@@ -42,10 +42,23 @@ function toggleSnackHour(h) {
   const day = nauseaToday();
   const list = Array.isArray(nauseaSnacks[day]) ? nauseaSnacks[day] : [];
   const i = list.indexOf(h);
+  const nowOn = i < 0;
   if (i >= 0) list.splice(i, 1); else list.push(h);
   nauseaSnacks[day] = list;
   saveSnacks();
-  initNausea();
+
+  // Update this wedge in place rather than re-rendering the tool. A full
+  // innerHTML rewrite destroyed focus on every tap, so a keyboard user was
+  // thrown back to the top of the page after each hour they logged.
+  const wedge = document.querySelector(`.snack-wedge[data-hour="${h}"]`);
+  if (wedge) {
+    const nowHour = new Date().getHours();
+    wedge.setAttribute('aria-pressed', String(nowOn));
+    wedge.setAttribute('fill', nowOn ? 'var(--teal)' : (h > nowHour ? 'var(--rule)' : 'var(--rose-light)'));
+    wedge.setAttribute('opacity', (h > nowHour && !nowOn) ? '0.45' : '1');
+  }
+  // The summary text below the dial still has to be recomputed.
+  refreshSnackSummary();
 }
 
 // ─── The clock ──────────────────────────────────────────
@@ -387,6 +400,7 @@ function renderSnackClock() {
     const op = future && !has ? 0.45 : 1;
     return `<path d="${hourWedgePath(h, 46, 30)}" fill="${fill}" opacity="${op}"
               class="snack-wedge" data-hour="${h}" role="button" tabindex="0"
+              aria-pressed="${has}"
               aria-label="${escHtml(I18n.t('tool.nausea.hourLabel', { hour: h }))}"></path>`;
   }).join('');
 
@@ -408,21 +422,39 @@ function renderSnackClock() {
            aria-label="${escHtml(I18n.t('tool.nausea.clockLabel'))}">
         ${wedges}
         ${ticks}
-        <text x="50" y="47" text-anchor="middle" font-size="13" font-weight="700"
-              fill="var(--ink)">${snacks.length}</text>
+        <text x="50" y="47" id="snack-count" text-anchor="middle" font-size="13" font-weight="700"
+              fill="var(--ink)">${I18n.fmt.num(snacks.length)}</text>
         <text x="50" y="57" text-anchor="middle" font-size="5.5"
               fill="var(--ink-soft)">${escHtml(I18n.t('tool.nausea.snacksToday'))}</text>
       </svg>
       <p style="font-size:12.5px;color:var(--ink-soft);margin-top:2px">
         ${escHtml(I18n.t('tool.nausea.tapHour'))}
       </p>
-      <div class="callout ${gapWarn ? 'gold' : ''}" style="margin:12px 0 4px;text-align:start">
+      <div id="snack-gap" class="callout ${gapWarn ? 'gold' : ''}" style="margin:12px 0 4px;text-align:start">
         <div class="callout-title">${escHtml(I18n.t('tool.nausea.longestGap'))}</div>
         <p>${escHtml(gapWarn
               ? I18n.t('tool.nausea.gapLong', { hours: gap.hours })
               : I18n.t('tool.nausea.gapOk', { hours: gap.hours }))}</p>
       </div>
     </div>`;
+}
+
+// Recompute only what a toggled hour affects: the count in the middle of the
+// dial and the longest-gap callout. Rebuilding the whole tool would take focus
+// with it.
+function refreshSnackSummary() {
+  const snacks = (nauseaSnacks[nauseaToday()] || []).slice().sort((a, b) => a - b);
+  const countEl = document.getElementById('snack-count');
+  if (countEl) countEl.textContent = I18n.fmt.num(snacks.length);
+
+  const gapEl = document.getElementById('snack-gap');
+  if (!gapEl) return;
+  const gap = longestGap(snacks, new Date().getHours());
+  const warn = gap.hours >= 4;
+  gapEl.classList.toggle('gold', warn);
+  const p = gapEl.querySelector('p');
+  if (p) p.textContent = warn ? I18n.t('tool.nausea.gapLong', { hours: gap.hours })
+                              : I18n.t('tool.nausea.gapOk', { hours: gap.hours });
 }
 
 function initNausea() {

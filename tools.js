@@ -3,13 +3,63 @@
 // ═══════════════════════════════════════════════════════
 
 // ─── Shared modal helpers ───────────────────────────────
-function openModal(id) {
-  document.getElementById('modal-' + id).classList.add('visible');
-  document.body.style.overflow = 'hidden';
+// These four sheets had no dialog semantics at all: no role, no labelling, no
+// focus handling, no Escape, and nothing stopping Tab walking straight out of
+// the sheet and into the page behind it. The language picker has the right
+// markup but no trap or restore, so this is written here and used by both.
+
+let _modalReturnFocus = null;
+let _modalOpenId = null;
+
+const FOCUSABLE = 'a[href], button:not([disabled]), input:not([disabled]), ' +
+                  'select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+
+function focusablesIn(el) {
+  return [...el.querySelectorAll(FOCUSABLE)].filter(n => n.offsetParent !== null || n === document.activeElement);
 }
+
+// Tab and Shift+Tab wrap inside the sheet; Escape closes it.
+function _modalKeydown(e) {
+  if (!_modalOpenId) return;
+  const sheet = document.getElementById('modal-' + _modalOpenId);
+  if (!sheet) return;
+  if (e.key === 'Escape') { e.preventDefault(); closeModal(_modalOpenId); return; }
+  if (e.key !== 'Tab') return;
+  const items = focusablesIn(sheet);
+  if (!items.length) return;
+  const first = items[0], last = items[items.length - 1];
+  if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+  else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+}
+document.addEventListener('keydown', _modalKeydown);
+
+function openModal(id) {
+  const el = document.getElementById('modal-' + id);
+  if (!el) return;
+  // Remember where focus came from so closing can put it back, rather than
+  // dropping the user at the top of the document.
+  _modalReturnFocus = document.activeElement;
+  _modalOpenId = id;
+  el.classList.add('visible');
+  document.body.style.overflow = 'hidden';
+  // Hide the rest of the page from assistive technology while the sheet owns
+  // the screen. inert would be better but is not universally supported.
+  const app = document.getElementById('app');
+  if (app) app.setAttribute('aria-hidden', 'true');
+  const items = focusablesIn(el);
+  if (items.length) items[0].focus();
+}
+
 function closeModal(id) {
-  document.getElementById('modal-' + id).classList.remove('visible');
+  const el = document.getElementById('modal-' + id);
+  if (!el) return;
+  el.classList.remove('visible');
   document.body.style.overflow = '';
+  const app = document.getElementById('app');
+  if (app) app.removeAttribute('aria-hidden');
+  if (_modalOpenId === id) _modalOpenId = null;
+  if (_modalReturnFocus && document.contains(_modalReturnFocus)) _modalReturnFocus.focus();
+  _modalReturnFocus = null;
 }
 
 function fmtTime(ms) {
@@ -70,7 +120,7 @@ function initKick() {
         <button class="btn-sm" onclick="endKickSession(false)"
           style="flex:1;background:white;color:var(--rose);border:1.5px solid var(--rose)">${t('tool.kick.endEarly')}</button>
       </div>
-      <div id="kick-limit-alert" style="display:none;margin:8px 16px" class="callout alert">
+      <div id="kick-limit-alert" role="alert" style="display:none;margin:8px 16px" class="callout alert">
         <div class="callout-title">${t('tool.kick.lessThan10MovementsIn')}</div>
         <p>${t('tool.kick.thisMayNeedAttentionCall')}</p>
       </div>
@@ -348,7 +398,7 @@ function initFeeding() {
         <div class="stat-label">${t('tool.feed.lastFeed')}</div>
       </div>
     </div>
-    ${flagLow ? `<div class="callout alert" style="margin:0 16px 8px">
+    ${flagLow ? `<div class="callout alert" role="alert" style="margin:0 16px 8px">
       <div class="callout-title">${t('tool.feed.fewFeedsTitle')}</div>
       <p>${t('tool.feed.fewFeedsBody')}</p>
     </div>` : ''}
@@ -401,8 +451,10 @@ function openFeedModal() {
 
 function setFeedType(type) {
   _feedType = type;
-  document.getElementById('feed-type-breast').classList.toggle('selected', type === 'breast');
-  document.getElementById('feed-type-bottle').classList.toggle('selected', type === 'bottle');
+  ['breast', 'bottle'].forEach(k => {
+    const el = document.getElementById('feed-type-' + k);
+    if (el) { el.classList.toggle('selected', type === k); el.setAttribute('aria-pressed', String(type === k)); }
+  });
   document.getElementById('feed-breast-fields').style.display = type === 'breast' ? '' : 'none';
   document.getElementById('feed-bottle-fields').style.display = type === 'bottle' ? '' : 'none';
 }
@@ -411,7 +463,7 @@ function setFeedSide(side) {
   _feedSide = side;
   ['left','right','both'].forEach(s => {
     const el = document.getElementById('feed-side-' + s);
-    if (el) el.classList.toggle('selected', s === side);
+    if (el) { el.classList.toggle('selected', s === side); el.setAttribute('aria-pressed', String(s === side)); }
   });
 }
 
@@ -558,7 +610,7 @@ function initJaundice() {
       <div class="callout-title">${t('tool.jaundice.dayWatch', { day })}</div>
       <p>${getJaundiceGuidance(day)}</p>
     </div>
-    <div class="callout alert" style="margin:0 16px 8px">
+    <div class="callout alert" role="alert" style="margin:0 16px 8px">
       <div class="callout-title">${t('tool.jaundice.callImmediatelyIf')}</div>
       <p>${t('tool.jaundice.redFlags')}</p>
     </div>` : `
@@ -596,7 +648,7 @@ function initBP() {
   const lastCat = last ? getBPCategory(last.s, last.d) : null;
 
   el.innerHTML = `
-    ${last && lastCat.urgent ? `<div class="callout alert" style="margin:12px 16px 0">
+    ${last && lastCat.urgent ? `<div class="callout alert" role="alert" style="margin:12px 16px 0">
       <div class="callout-title">${t('tool.bp.highOnRecord')}</div>
       <p>${t('tool.bp.recentSummary', { reading: last.s + '/' + last.d, cat: lastCat.label })}</p>
     </div>` : ''}
@@ -826,7 +878,7 @@ function initMood() {
     const avail = epdsAvailable();
     el.innerHTML = `
       <div style="padding:20px 16px">
-        <div class="callout alert">
+        <div class="callout alert" role="alert">
           <div class="callout-title">${escHtml(I18n.t('tool.mood.unavailableTitle'))}</div>
           <p>${escHtml(I18n.t('tool.mood.unavailableBody'))}</p>
         </div>
@@ -867,21 +919,25 @@ function initMood() {
     </div>` : ''}
     <div id="epds-questions">
       ${EPDS_Q.map((q, qi) => `
-        <div class="epds-question">
-          <div class="epds-q-num">${I18n.t('tool.mood.qCounter', { n: qi + 1, total: EPDS_Q.length })}</div>
-          <div class="epds-q-text" lang="${epds.language}" dir="auto">${escHtml(q.text)}</div>
+        <fieldset class="epds-question">
+          <legend class="epds-legend">
+            <span class="epds-q-num">${I18n.t('tool.mood.qCounter', { n: qi + 1, total: EPDS_Q.length })}</span>
+            <span class="epds-q-text" lang="${epds.language}" dir="auto">${escHtml(q.text)}</span>
+          </legend>
           <div class="epds-options">
             ${q.options.map((opt, oi) => `
-              <div class="epds-option" id="epds-${qi}-${oi}" onclick="setEPDS(${qi}, ${oi})">
+              <label class="epds-option" id="epds-${qi}-${oi}">
+                <input type="radio" name="epds-q${qi}" value="${oi}"
+                       onchange="setEPDS(${qi}, ${oi})" class="epds-radio">
                 <span class="epds-option-text" lang="${epds.language}" dir="auto">${escHtml(opt)}</span>
-              </div>`).join('')}
+              </label>`).join('')}
           </div>
-        </div>`).join('')}
+        </fieldset>`).join('')}
     </div>
     <div style="padding:12px 16px 16px">
       <button class="big-action-btn btn-plum" onclick="submitEPDS()">${t('tool.mood.getMyScore')}</button>
     </div>
-    <div id="epds-result"></div>
+    <div id="epds-result" role="status" aria-live="polite"></div>
     <div style="padding:4px 16px 0;font-size:11px;color:var(--ink-soft);line-height:1.5">
       ${escHtml(epds.attribution || '')}
     </div>
@@ -948,7 +1004,7 @@ function submitEPDS() {
         <div class="score-note">${escHtml(I18n.t('tool.mood.scoreNote', {
           max: epds.maxScore || 30, instrument: epds.instrument || 'EPDS' }))}</div>
         ${score >= ((epds.cutoffs || {}).concern || 10) ? `<div style="margin-top:10px;font-size:13px;font-weight:600;color:${interp.color}">${t('tool.mood.talkToDoctor')}</div>` : `<div style="margin-top:10px;font-size:13px;color:var(--ink-soft)">${t('tool.mood.continueWeekly')}</div>`}
-        ${q10score > 0 ? `<div class="callout alert" style="margin-top:12px;text-align:left">
+        ${q10score > 0 ? `<div class="callout alert" role="alert" style="margin-top:12px;text-align:start">
           <div class="callout-title">${t('tool.mood.important')}</div>
           <p>${escHtml(I18n.t('tool.mood.selfHarmGuidance'))}</p>
         </div>` : ''}
@@ -1257,27 +1313,28 @@ function renderApptsList() {
     const day = d ? I18n.fmt.num(d.getDate()) : '–';
     const preview = appt.questions ? appt.questions.slice(0, 60) + (appt.questions.length > 60 ? '…' : '') : t('tool.appts.noQuestionsAdded');
     return `
-      <div class="appt-card" id="appt-card-${appt.id}" onclick="toggleApptCard('appt-card-${appt.id}')">
-        <div class="appt-card-header">
-          <div class="appt-date-badge">
-            <div class="adb-month">${month}</div>
-            <div class="adb-day">${day}</div>
-          </div>
-          <div class="appt-info">
-            <div class="appt-type-label">${escHtml(apptTypeLabel(appt.type))}</div>
-            <div class="appt-preview">${escHtml(preview)}</div>
-          </div>
-          <svg class="appt-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="appt-body">
+      <div class="appt-card" id="appt-card-${appt.id}">
+        <button type="button" class="appt-card-header" aria-expanded="false"
+                aria-controls="appt-body-${appt.id}" onclick="toggleApptCard('appt-card-${appt.id}', this)">
+          <span class="appt-date-badge">
+            <span class="adb-month">${month}</span>
+            <span class="adb-day">${day}</span>
+          </span>
+          <span class="appt-info">
+            <span class="appt-type-label">${escHtml(apptTypeLabel(appt.type))}</span>
+            <span class="appt-preview">${escHtml(preview)}</span>
+          </span>
+          <svg class="appt-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="appt-body" id="appt-body-${appt.id}">
           <div class="appt-sub-label">${t('tool.appts.questionsToAsk')}</div>
           <div style="font-size:13.5px;color:var(--ink);white-space:pre-wrap;line-height:1.6">${appt.questions ? escHtml(appt.questions) : ('<span style="color:var(--ink-soft)">' + escHtml(t('tool.appts.noneAdded')) + '</span>')}</div>
           <div class="appt-sub-label" style="margin-top:14px">${t('tool.appts.notesFromVisit')}</div>
           <div style="font-size:13.5px;color:var(--ink);white-space:pre-wrap;line-height:1.6">${appt.notes ? escHtml(appt.notes) : ('<span style="color:var(--ink-soft)">' + escHtml(t('tool.appts.noneAdded')) + '</span>')}</div>
           <div class="btn-row" style="margin-top:14px;padding:0">
-            <button class="btn-sm" onclick="event.stopPropagation();openApptModal('${appt.id}')"
+            <button class="btn-sm" onclick="openApptModal('${appt.id}')"
               style="background:var(--teal-faint);color:var(--teal)">${t('tool.appts.edit')}</button>
-            <button class="btn-sm" onclick="event.stopPropagation();deleteAppt('${appt.id}')"
+            <button class="btn-sm" onclick="deleteAppt('${appt.id}')"
               style="background:#fff3f3;color:#c44">${t('tool.appts.delete')}</button>
           </div>
         </div>
@@ -1285,15 +1342,17 @@ function renderApptsList() {
   }).join('');
 }
 
-function toggleApptCard(cardId) {
+function toggleApptCard(cardId, header) {
   const card = document.getElementById(cardId);
-  if (card) card.classList.toggle('open');
+  if (!card) return;
+  card.classList.toggle('open');
+  if (header) header.setAttribute('aria-expanded', card.classList.contains('open') ? 'true' : 'false');
 }
 
 function openApptModal(id) {
   _editApptId = id;
   const appt = id ? appointments.find(a => a.id === id) : null;
-  document.getElementById('appt-modal-title').textContent =
+  document.getElementById('modal-appt-title').textContent =
     I18n.t(id ? 'tool.appts.editVisit' : 'tool.appts.addVisit');
   document.getElementById('appt-type').value = appt ? appt.type : '';
   document.getElementById('appt-date').value = appt ? (appt.date || '') : new Date().toISOString().split('T')[0];

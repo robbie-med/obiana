@@ -13,19 +13,20 @@
 <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="./apple-touch-icon.png">
 <link rel="manifest" href="./manifest.json">
-<link rel="stylesheet" href="./styles.css?v=63">
+<link rel="stylesheet" href="./styles.css?v=65">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div id="app">
+<a href="#app" class="skip-link" data-i18n="common.skipToContent">Skip to content</a>
+<main id="app">
 
 <!-- Offline banner -->
 <div id="offline-banner" data-i18n="app.offlineBanner">⚠ You're offline. All content still available</div>
 
 <!-- Header -->
-<div id="header">
+<header id="header">
   <div class="header-inner">
     <div class="header-titles">
       <div class="header-title" data-i18n="app.title">Pregnancy Handbook</div>
@@ -47,9 +48,9 @@
   <div id="search-bar">
     <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
     <input id="search-input" type="search" placeholder="Search all topics…" data-i18n-placeholder="app.searchPlaceholder" autocomplete="off" autocorrect="off" spellcheck="false">
-    <button id="search-clear" onclick="clearSearch()">✕</button>
+    <button id="search-clear" onclick="clearSearch()" data-i18n-aria-label="search.clear">✕</button>
   </div>
-</div>
+</header>
 
 <!-- Language popover, opened from the globe in the header -->
 <div id="lang-pop" role="dialog" aria-modal="false" aria-labelledby="lang-pop-heading" hidden>
@@ -85,7 +86,7 @@
 
 <!-- Search results -->
 <div id="search-results-page">
-  <div class="search-results-header" id="search-results-header"></div>
+  <div class="search-results-header" id="search-results-header" role="status" aria-live="polite"></div>
   <div id="search-results-list"></div>
 </div>
 
@@ -95,7 +96,7 @@
   <!-- ══════════ HOME ══════════ -->
   <div id="page-home" class="page active">
     <div class="home-hero">
-      <div class="home-hero-title" data-i18n="home.heroTitle" data-i18n-html>Know what to<br>expect. Ask great<br>questions.</div>
+      <h1 class="home-hero-title" data-i18n="home.heroTitle" data-i18n-html>Know what to<br>expect. Ask great<br>questions.</h1>
       <div class="home-hero-desc" data-i18n="home.heroDesc">From your first prenatal visit through delivery and recovery, Obiana keeps everything in one place.</div>
     </div>
 
@@ -138,14 +139,14 @@
       </button>
     </div>
 
-    <div class="info-strip" onclick="navigate('myinfo')">
+    <button type="button" class="info-strip" onclick="navigate('myinfo')">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
       <div class="info-strip-text">
         <div class="info-strip-title" data-i18n="home.saveYourCareTeamContacts">Save Your Care Team Contacts</div>
         <div class="info-strip-sub" data-i18n="home.tapToCallOrText">Tap to call or text directly from the app</div>
       </div>
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
-    </div>
+    </button>
 
     <div class="qref-card">
       <div class="qref-header">
@@ -189,7 +190,7 @@
   <!-- ══════════ PREGNANCY ══════════ -->
   <div id="page-pregnancy" class="page">
     <div class="section-hero">
-      <div class="hero-title" data-i18n="pregnancy.prenatalVisitsPregnancy" data-i18n-html>Prenatal Visits<br>&amp; Pregnancy</div>
+      <h1 class="hero-title" data-i18n="pregnancy.prenatalVisitsPregnancy" data-i18n-html>Prenatal Visits<br>&amp; Pregnancy</h1>
       <div class="hero-desc" data-i18n="pregnancy.aVisitByVisitGuide">A visit-by-visit guide, cervical exams explained, exercise during pregnancy, and what to ask at each stage.</div>
     </div>
     <div class="cards" id="cards-pregnancy"></div>
@@ -198,7 +199,7 @@
   <!-- ══════════ LABOR ══════════ -->
   <div id="page-labor" class="page">
     <div class="section-hero gold-hero">
-      <div class="hero-title" data-i18n="labor.laborDelivery" data-i18n-html>Labor &amp;<br>Delivery</div>
+      <h1 class="hero-title" data-i18n="labor.laborDelivery" data-i18n-html>Labor &amp;<br>Delivery</h1>
       <div class="hero-desc" data-i18n="labor.signsOfLaborWhatHappens">Signs of labor, what happens when you arrive, pain management options, C-section, and high-risk care.</div>
     </div>
     <div class="cards" id="cards-labor"></div>
@@ -207,7 +208,7 @@
   <!-- ══════════ RECOVERY ══════════ -->
   <div id="page-recovery" class="page">
     <div class="section-hero rose-hero">
-      <div class="hero-title" data-i18n="recovery.postpartumRecovery" data-i18n-html>Postpartum<br>Recovery</div>
+      <h1 class="hero-title" data-i18n="recovery.postpartumRecovery" data-i18n-html>Postpartum<br>Recovery</h1>
       <div class="hero-desc" data-i18n="recovery.physicalHealingMoodAndPpd">Physical healing, mood and PPD, pelvic rest, returning to exercise, and when to go home.</div>
     </div>
     <div class="cards" id="cards-recovery"></div>
@@ -216,7 +217,7 @@
   <!-- ══════════ BABY ══════════ -->
   <div id="page-baby" class="page">
     <div class="section-hero navy-hero">
-      <div class="hero-title" data-i18n="baby.yourNewborn" data-i18n-html>Your<br>Newborn</div>
+      <h1 class="hero-title" data-i18n="baby.yourNewborn" data-i18n-html>Your<br>Newborn</h1>
       <div class="hero-desc" data-i18n="baby.breastfeedingFormulaCordCareSafe">Breastfeeding, formula, cord care, safe sleep, normal newborn appearance, and follow-up appointments.</div>
     </div>
     <div class="cards" id="cards-baby"></div>
@@ -225,7 +226,7 @@
   <!-- ══════════ FAQ ══════════ -->
   <div id="page-faq" class="page">
     <div class="section-hero plum-hero">
-      <div class="hero-title" data-i18n="faq.faqCommonMyths" data-i18n-html>FAQ &amp;<br>Common Myths</div>
+      <h1 class="hero-title" data-i18n="faq.faqCommonMyths" data-i18n-html>FAQ &amp;<br>Common Myths</h1>
       <div class="hero-desc" data-i18n="faq.evidenceBasedAnswersToThe">Evidence-based answers to the most common questions, including things you've heard from family, friends, and the internet.</div>
     </div>
     <div class="cards" id="cards-faq"></div>
@@ -234,19 +235,19 @@
   <!-- ══════════ MY INFO ══════════ -->
   <div id="page-myinfo" class="page">
     <div class="myinfo-hero">
-      <div class="myinfo-hero-title" data-i18n="myinfo.myCareTeamKeyDetails" data-i18n-html>My Care Team &amp;<br>Key Details</div>
+      <h1 class="myinfo-hero-title" data-i18n="myinfo.myCareTeamKeyDetails" data-i18n-html>My Care Team &amp;<br>Key Details</h1>
       <div class="myinfo-hero-sub" data-i18n="myinfo.savedOnYourPhoneTap">Saved on your phone · Tap to call or text</div>
     </div>
     <div class="form-section mt16" id="contacts-form">
-      <div class="form-section-title" data-i18n="myinfo.careTeamContacts">Care Team Contacts</div>
+      <h2 class="form-section-title" data-i18n="myinfo.careTeamContacts">Care Team Contacts</h2>
     </div>
     <div class="form-section mt16" id="details-form">
       <div class="form-section-title navy" data-i18n="myinfo.myPregnancyDetails">My Pregnancy Details</div>
     </div>
     <div class="form-section mt16">
-      <div class="form-section-title" data-i18n="myinfo.questionsForMyDoctor">Questions for My Doctor</div>
+      <h2 class="form-section-title" data-i18n="myinfo.questionsForMyDoctor">Questions for My Doctor</h2>
       <div style="padding:12px 16px">
-        <textarea id="notes-field" rows="5" data-i18n-placeholder="myinfo.notesPlaceholder" placeholder="Write questions here as you think of them…" style="width:100%;border:1.5px solid var(--rule);border-radius:var(--radius-sm);padding:10px 12px;font-family:var(--font-sans);font-size:14px;color:var(--ink);background:var(--bg);outline:none;resize:vertical;transition:border-color .2s;line-height:1.5"></textarea>
+        <textarea id="notes-field" data-i18n-aria-label="myinfo.notesLabel" rows="5" data-i18n-placeholder="myinfo.notesPlaceholder" placeholder="Write questions here as you think of them…" style="width:100%;border:1.5px solid var(--rule);border-radius:var(--radius-sm);padding:10px 12px;font-family:var(--font-sans);font-size:14px;color:var(--ink);background:var(--bg);outline:none;resize:vertical;transition:border-color .2s;line-height:1.5"></textarea>
       </div>
     </div>
     <div class="myinfo-save-bar">
@@ -261,7 +262,7 @@
   <!-- ══════════ TOOLS OVERVIEW ══════════ -->
   <div id="page-tools" class="page">
     <div class="section-hero plum-hero">
-      <div class="hero-title" data-i18n="tools.trackersPlanners" data-i18n-html>Trackers &amp;<br>Planners</div>
+      <h1 class="hero-title" data-i18n="tools.trackersPlanners" data-i18n-html>Trackers &amp;<br>Planners</h1>
       <div class="hero-desc" data-i18n="tools.timeContractionsCountKicksLog">Time contractions, count kicks, log feedings and diapers, track blood pressure, plan your birth, and more.</div>
     </div>
 
@@ -570,60 +571,61 @@
 
 <!-- Bottom Nav -->
 <nav id="nav">
-  <button class="nav-btn active" id="navbtn-home" onclick="navigate('home')">
+  <button class="nav-btn active" id="navbtn-home" aria-current="false" onclick="navigate('home')">
     <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
     <span class="nav-label" data-i18n="app.home">Home</span>
   </button>
-  <button class="nav-btn" id="navbtn-pregnancy" onclick="navigate('pregnancy')">
+  <button class="nav-btn" id="navbtn-pregnancy" aria-current="false" onclick="navigate('pregnancy')">
     <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
     <span class="nav-label" data-i18n="app.prenatal">Prenatal</span>
   </button>
-  <button class="nav-btn" id="navbtn-labor" onclick="navigate('labor')">
+  <button class="nav-btn" id="navbtn-labor" aria-current="false" onclick="navigate('labor')">
     <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
     <span class="nav-label" data-i18n="app.labor">Labor</span>
   </button>
-  <button class="nav-btn" id="navbtn-recovery" onclick="navigate('recovery')">
+  <button class="nav-btn" id="navbtn-recovery" aria-current="false" onclick="navigate('recovery')">
     <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
     <span class="nav-label" data-i18n="app.recovery">Recovery</span>
   </button>
-  <button class="nav-btn" id="navbtn-baby" onclick="navigate('baby')">
+  <button class="nav-btn" id="navbtn-baby" aria-current="false" onclick="navigate('baby')">
     <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0112 0v2"/></svg>
     <span class="nav-label" data-i18n="app.baby">Baby</span>
   </button>
-  <button class="nav-btn" id="navbtn-faq" onclick="navigate('faq')">
+  <button class="nav-btn" id="navbtn-faq" aria-current="false" onclick="navigate('faq')">
     <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.2 9.3a2.9 2.9 0 015.6 1c0 1.9-2.8 2.6-2.8 4.2"/><circle cx="12" cy="17.6" r="1.05" fill="currentColor" stroke="none"/></svg>
     <span class="nav-label" data-i18n="app.faq">FAQ</span>
   </button>
-  <button class="nav-btn" id="navbtn-tools" onclick="navigate('tools')">
+  <button class="nav-btn" id="navbtn-tools" aria-current="false" onclick="navigate('tools')">
     <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 9l3 3 5-5"/></svg>
     <span class="nav-label" data-i18n="app.tools">Tools</span>
   </button>
 </nav>
 
 <!-- Toast -->
-<div id="toast"></div>
+<div id="toast" role="status" aria-live="polite"></div>
 
 <!-- ══════════ MODALS ══════════ -->
 
 <!-- Log a Feeding -->
-<div id="modal-feed" class="modal-overlay" onclick="if(event.target===this)closeModal('feed')">
+<div id="modal-feed" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-feed-title" onclick="if(event.target===this)closeModal('feed')">
   <div class="modal-sheet">
     <div class="modal-handle"></div>
-    <div class="modal-title" data-i18n="modalFeed.logAFeeding">Log a Feeding</div>
+    <button type="button" class="modal-close" onclick="closeModal('feed')" data-i18n-aria-label="common.close">&#215;</button>
+    <div class="modal-title" id="modal-feed-title" data-i18n="modalFeed.logAFeeding">Log a Feeding</div>
     <div class="form-field">
-      <label class="form-label" data-i18n="modalFeed.type">Type</label>
-      <div class="pill-row">
-        <button class="choice-pill selected" id="feed-type-breast" onclick="setFeedType('breast')" data-i18n="modalFeed.breast">🤱 Breast</button>
-        <button class="choice-pill" id="feed-type-bottle" onclick="setFeedType('bottle')" data-i18n="modalFeed.bottle">🍼 Bottle</button>
+      <label class="form-label" id="pillgroup-22298-label" for="feed-duration" data-i18n="modalFeed.type">Type</label>
+      <div class="pill-row" role="group" aria-labelledby="pillgroup-22298-label">
+        <button class="choice-pill selected" id="feed-type-breast" onclick="setFeedType('breast')" data-i18n="modalFeed.breast" aria-pressed="true">🤱 Breast</button>
+        <button class="choice-pill" id="feed-type-bottle" onclick="setFeedType('bottle')" data-i18n="modalFeed.bottle" aria-pressed="false">🍼 Bottle</button>
       </div>
     </div>
     <div id="feed-breast-fields">
       <div class="form-field">
-        <label class="form-label" data-i18n="modalFeed.side">Side</label>
-        <div class="pill-row">
-          <button class="choice-pill selected" id="feed-side-left" onclick="setFeedSide('left')" data-i18n="modalFeed.left">Left</button>
-          <button class="choice-pill" id="feed-side-right" onclick="setFeedSide('right')" data-i18n="modalFeed.right">Right</button>
-          <button class="choice-pill" id="feed-side-both" onclick="setFeedSide('both')" data-i18n="modalFeed.both">Both</button>
+        <label class="form-label" id="pillgroup-76759-label" data-i18n="modalFeed.side">Side</label>
+        <div class="pill-row" role="group" aria-labelledby="pillgroup-76759-label">
+          <button class="choice-pill selected" id="feed-side-left" onclick="setFeedSide('left')" data-i18n="modalFeed.left" aria-pressed="true">Left</button>
+          <button class="choice-pill" id="feed-side-right" onclick="setFeedSide('right')" data-i18n="modalFeed.right" aria-pressed="false">Right</button>
+          <button class="choice-pill" id="feed-side-both" onclick="setFeedSide('both')" data-i18n="modalFeed.both" aria-pressed="false">Both</button>
         </div>
       </div>
       <div class="form-field">
@@ -633,7 +635,7 @@
     </div>
     <div id="feed-bottle-fields" style="display:none">
       <div class="form-field">
-        <label class="form-label" data-i18n="modalFeed.amountOz">Amount (oz)</label>
+        <label class="form-label" for="feed-oz" data-i18n="modalFeed.amountOz">Amount (oz)</label>
         <input type="number" class="tool-input" id="feed-oz" data-i18n-eg="2.5" placeholder="e.g. 2.5" min="0.5" max="8" step="0.5" inputmode="decimal">
       </div>
     </div>
@@ -644,17 +646,18 @@
 </div>
 
 <!-- Log Blood Pressure -->
-<div id="modal-bp" class="modal-overlay" onclick="if(event.target===this)closeModal('bp')">
+<div id="modal-bp" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-bp-title" onclick="if(event.target===this)closeModal('bp')">
   <div class="modal-sheet">
     <div class="modal-handle"></div>
-    <div class="modal-title" data-i18n="modalBp.logBloodPressure">Log Blood Pressure</div>
+    <button type="button" class="modal-close" onclick="closeModal('bp')" data-i18n-aria-label="common.close">&#215;</button>
+    <div class="modal-title" id="modal-bp-title" data-i18n="modalBp.logBloodPressure">Log Blood Pressure</div>
     <div class="inline-fields">
       <div>
-        <label class="form-label" data-i18n="modalBp.systolicTop">Systolic (top #)</label>
+        <label class="form-label" for="bp-systolic" data-i18n="modalBp.systolicTop">Systolic (top #)</label>
         <input type="number" class="tool-input" id="bp-systolic" data-i18n-eg="118" placeholder="e.g. 118" min="70" max="220" inputmode="numeric">
       </div>
       <div>
-        <label class="form-label" data-i18n="modalBp.diastolicBottom">Diastolic (bottom #)</label>
+        <label class="form-label" for="bp-diastolic" data-i18n="modalBp.diastolicBottom">Diastolic (bottom #)</label>
         <input type="number" class="tool-input" id="bp-diastolic" data-i18n-eg="76" placeholder="e.g. 76" min="40" max="130" inputmode="numeric">
       </div>
     </div>
@@ -669,17 +672,18 @@
 </div>
 
 <!-- Log Weight -->
-<div id="modal-weight" class="modal-overlay" onclick="if(event.target===this)closeModal('weight')">
+<div id="modal-weight" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-weight-title" onclick="if(event.target===this)closeModal('weight')">
   <div class="modal-sheet">
     <div class="modal-handle"></div>
-    <div class="modal-title" data-i18n="modalWeight.logWeight">Log Weight</div>
+    <button type="button" class="modal-close" onclick="closeModal('weight')" data-i18n-aria-label="common.close">&#215;</button>
+    <div class="modal-title" id="modal-weight-title" data-i18n="modalWeight.logWeight">Log Weight</div>
     <div class="inline-fields">
       <div>
-        <label class="form-label" data-i18n="modalWeight.weightLbs">Weight (lbs)</label>
+        <label class="form-label" for="weight-lbs" data-i18n="modalWeight.weightLbs">Weight (lbs)</label>
         <input type="number" class="tool-input" id="weight-lbs" data-i18n-eg="152" placeholder="e.g. 152" min="80" max="400" inputmode="decimal">
       </div>
       <div>
-        <label class="form-label" data-i18n="modalWeight.weekOfPregnancy">Week of pregnancy</label>
+        <label class="form-label" for="weight-week" data-i18n="modalWeight.weekOfPregnancy">Week of pregnancy</label>
         <input type="number" class="tool-input" id="weight-week" data-i18n-eg="28" placeholder="e.g. 28" min="4" max="44" inputmode="numeric">
       </div>
     </div>
@@ -690,12 +694,13 @@
 </div>
 
 <!-- Add / Edit Visit -->
-<div id="modal-appt" class="modal-overlay" onclick="if(event.target===this)closeModal('appt')">
+<div id="modal-appt" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-appt-title" onclick="if(event.target===this)closeModal('appt')">
   <div class="modal-sheet">
     <div class="modal-handle"></div>
-    <div class="modal-title" id="appt-modal-title" data-i18n="modalAppt.addVisit">Add Visit</div>
+    <button type="button" class="modal-close" onclick="closeModal('appt')" data-i18n-aria-label="common.close">&#215;</button>
+    <div class="modal-title" id="modal-appt-title" data-i18n="modalAppt.addVisit">Add Visit</div>
     <div class="form-field">
-      <label class="form-label" data-i18n="modalAppt.visitType">Visit Type</label>
+      <label class="form-label" for="appt-type" data-i18n="modalAppt.visitType">Visit Type</label>
       <select class="tool-select" id="appt-type">
         <option value="" data-i18n="apptType.selectType">Select type…</option>
         <option value="ob-routine" data-i18n="apptType.obRoutine">OB – Routine</option>
@@ -718,15 +723,15 @@
       </select>
     </div>
     <div class="form-field">
-      <label class="form-label" data-i18n="modalAppt.date">Date</label>
+      <label class="form-label" for="appt-date" data-i18n="modalAppt.date">Date</label>
       <input type="date" class="tool-input" id="appt-date">
     </div>
     <div class="form-field">
-      <label class="form-label" data-i18n="modalAppt.questionsToAskBeforehand">Questions to ask beforehand</label>
+      <label class="form-label" for="appt-questions" data-i18n="modalAppt.questionsToAskBeforehand">Questions to ask beforehand</label>
       <textarea class="tool-textarea" id="appt-questions" data-i18n-placeholder="modalAppt.questionsPlaceholder" placeholder="What do I want to ask at this visit?"></textarea>
     </div>
     <div class="form-field">
-      <label class="form-label" data-i18n="modalAppt.notesFromVisit">Notes from visit</label>
+      <label class="form-label" for="appt-notes-field" data-i18n="modalAppt.notesFromVisit">Notes from visit</label>
       <textarea class="tool-textarea" id="appt-notes-field" data-i18n-placeholder="modalAppt.notesPlaceholder" placeholder="What did we discuss? Any follow-up needed?"></textarea>
     </div>
     <div class="form-field">
@@ -735,27 +740,27 @@
   </div>
 </div>
 
-</div><!-- end #app -->
+</main><!-- end #app -->
 
 <!-- Outside #app deliberately. @media print hides #app, and display:block on a
      descendant of a display:none ancestor cannot bring it back: the whole
      subtree is gone from the box tree, so printing produced a blank page. -->
 <div id="print-view"></div>
 
-<script src="./i18n/i18n.js?v=63"></script>
-<script src="./i18n/body-templates.js?v=63"></script>
-<script src="./i18n/epds/epds.en.js?v=63"></script>
-<script src="./i18n/epds/epds.es.js?v=63"></script>
-<script src="./i18n/epds/epds.cnh.js?v=63"></script>
-<script src="./i18n/epds/epds.ko.js?v=63"></script>
-<script src="./i18n/epds/epds.zh.js?v=63"></script>
-<script src="./i18n/epds/epds.ar.js?v=63"></script>
-<script src="./i18n/epds/phq9.fr.js?v=63"></script>
-<script src="./i18n/epds/phq9.ru.js?v=63"></script>
-<script src="./content.js?v=63"></script>
-<script src="./tools.js?v=63"></script>
-<script src="./i18n/translate-tool.js?v=63"></script>
-<script src="./i18n/improve-tool.js?v=63"></script>
-<script src="./i18n/nausea-tool.js?v=63"></script>
+<script src="./i18n/i18n.js?v=65"></script>
+<script src="./i18n/body-templates.js?v=65"></script>
+<script src="./i18n/epds/epds.en.js?v=65"></script>
+<script src="./i18n/epds/epds.es.js?v=65"></script>
+<script src="./i18n/epds/epds.cnh.js?v=65"></script>
+<script src="./i18n/epds/epds.ko.js?v=65"></script>
+<script src="./i18n/epds/epds.zh.js?v=65"></script>
+<script src="./i18n/epds/epds.ar.js?v=65"></script>
+<script src="./i18n/epds/phq9.fr.js?v=65"></script>
+<script src="./i18n/epds/phq9.ru.js?v=65"></script>
+<script src="./content.js?v=65"></script>
+<script src="./tools.js?v=65"></script>
+<script src="./i18n/translate-tool.js?v=65"></script>
+<script src="./i18n/improve-tool.js?v=65"></script>
+<script src="./i18n/nausea-tool.js?v=65"></script>
 </body>
 </html>

@@ -574,23 +574,29 @@ function renderSection(section) {
         ? `<span class="faq-badge badge-myth">${I18n.t('faq.badgeMyth')}</span>`
         : `<span class="faq-badge badge-faq">${I18n.t('faq.badgeFaq')}</span>`;
       card.innerHTML = `
-        <div class="faq-header acc-header" onclick="toggleCard(this)">
-          ${badge}
-          <span class="faq-q"${item.titleEn ? ' lang="en" dir="ltr"' : ''}>${escHtml(item.title)}</span>
-          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="acc-body">${item.body}</div>`;
+        <h2 class="acc-heading">
+          <button type="button" class="faq-header acc-header" aria-expanded="false"
+                  aria-controls="body-${item.id}" onclick="toggleCard(this)">
+            ${badge}
+            <span class="faq-q"${item.titleEn ? ' lang="en" dir="ltr"' : ''}>${escHtml(item.title)}</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+        </h2>
+        <div class="acc-body" id="body-${item.id}">${item.body}</div>`;
     } else {
       card.innerHTML = `
-        <div class="acc-header" onclick="toggleCard(this)">
-          <div class="acc-icon-wrap ${item.color || ''}">${item.icon}</div>
-          <div class="acc-titles">
-            <div class="acc-title"${item.titleEn ? ' lang="en" dir="ltr"' : ''}>${escHtml(item.title)}</div>
-            ${item.sub ? `<div class="acc-sub"${item.subEn ? ' lang="en" dir="ltr"' : ''}>${escHtml(item.sub)}</div>` : ''}
-          </div>
-          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="acc-body">${item.body}</div>`;
+        <h2 class="acc-heading">
+          <button type="button" class="acc-header" aria-expanded="false"
+                  aria-controls="body-${item.id}" onclick="toggleCard(this)">
+            <span class="acc-icon-wrap ${item.color || ''}" aria-hidden="true">${item.icon}</span>
+            <span class="acc-titles">
+              <span class="acc-title"${item.titleEn ? ' lang="en" dir="ltr"' : ''}>${escHtml(item.title)}</span>
+              ${item.sub ? `<span class="acc-sub"${item.subEn ? ' lang="en" dir="ltr"' : ''}>${escHtml(item.sub)}</span>` : ''}
+            </span>
+            <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+        </h2>
+        <div class="acc-body" id="body-${item.id}">${item.body}</div>`;
     }
 
     container.appendChild(card);
@@ -601,6 +607,7 @@ function renderSection(section) {
 function toggleCard(header) {
   const card = header.closest('.card');
   card.classList.toggle('open');
+  header.setAttribute('aria-expanded', card.classList.contains('open') ? 'true' : 'false');
   if (card.classList.contains('open')) {
     // Smooth scroll into view with small delay
     setTimeout(() => {
@@ -633,7 +640,10 @@ function navigate(section) {
 
   // Hide all pages
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => {
+    b.classList.remove('active');
+    b.setAttribute('aria-current', 'false');
+  });
 
   // Show target
   const page = document.getElementById('page-' + section);
@@ -645,7 +655,7 @@ function navigate(section) {
   // Active nav button: tool sub-pages highlight the 'tools' button
   const navSection = TOOL_PAGES.includes(section) ? 'tools' : section;
   const btn = document.getElementById('navbtn-' + navSection);
-  if (btn) btn.classList.add('active');
+  if (btn) { btn.classList.add('active'); btn.setAttribute('aria-current', 'page'); }
 
   currentSection = section;
 
@@ -717,7 +727,8 @@ function doSearch() {
 
   searchResultsList.innerHTML = '';
   results.forEach(item => {
-    const div = document.createElement('div');
+    const div = document.createElement('button');
+    div.type = 'button';
     div.className = 'search-result-item';
     div.innerHTML = `
       <div class="sri-section ${SECTION_COLORS[item.section]}">${escHtml(sectionLabel(item.section))}</div>
@@ -768,11 +779,11 @@ function renderMyInfo() {
         ${c.hasName ? `<input class="contact-input" id="ci_${c.id}_name" type="text" placeholder="${escHtml(I18n.t('myinfo.namePlaceholder'))}" value="${escHtml(nameVal)}">` : ''}
         <div class="contact-field-wrap">
           <input class="contact-input" id="ci_${c.id}_phone" type="tel" placeholder="${escHtml(I18n.t('myinfo.phonePlaceholder'))}" value="${escHtml(phoneVal)}" inputmode="tel">
-          <button class="action-btn call-btn" onclick="callContact('${c.id}')" title="${escHtml(I18n.t('myinfo.call'))}" ${!phoneVal ? 'disabled' : ''}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <button class="action-btn call-btn" onclick="callContact('${c.id}')" title="${escHtml(I18n.t('myinfo.call'))}" aria-label="${escHtml(I18n.t('myinfo.callContact', { name: I18n.t('myinfo.contact.' + c.id) }))}" ${!phoneVal ? 'disabled' : ''}>
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
           </button>
-          <button class="action-btn text-btn" onclick="textContact('${c.id}')" title="${escHtml(I18n.t('myinfo.text'))}" ${!phoneVal ? 'disabled' : ''}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          <button class="action-btn text-btn" onclick="textContact('${c.id}')" title="${escHtml(I18n.t('myinfo.text'))}" aria-label="${escHtml(I18n.t('myinfo.textContact', { name: I18n.t('myinfo.contact.' + c.id) }))}" ${!phoneVal ? 'disabled' : ''}>
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
           </button>
         </div>
       </div>`;

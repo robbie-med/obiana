@@ -175,26 +175,26 @@ above. No pharma-promotional content was found.
 
 ### Accessibility — semantics
 
-- [ ] Add heading structure: page/hero titles are divs, card bodies jump to
+- [x] Add heading structure: page/hero titles are divs, card bodies jump to
       `<h4>` — h1 per page, card title h2, body h3
-- [ ] Modals: add `role="dialog"`/`aria-modal`/`aria-labelledby`, focus move +
+- [x] Modals: add `role="dialog"`/`aria-modal`/`aria-labelledby`, focus move +
       trap + ESC + restore, inert background (`tools.js:6–13`,
       `index.html:607–728`). lang-pop/us-notice already show the pattern
-- [ ] Add a visible Cancel/✕ to every modal — scrim-tap currently discards
+- [x] Add a visible Cancel/✕ to every modal — scrim-tap currently discards
       entered data silently
-- [ ] Associate every label (`for`/`id`) across all 4 modals + weight profile +
+- [x] Associate every label (`for`/`id`) across all 4 modals + weight profile +
       My Info; `aria-label` on `#search-input`; real label for `#notes-field`
-- [ ] Replace clickable divs with buttons: accordions
+- [x] Replace clickable divs with buttons: accordions
       (`content.js:392,400` + `aria-expanded`), search results (535–553),
       visit-note card header only (`tools.js:1236` — nested interactives are
       invalid), **EPDS options as real radios/fieldset** (`tools.js:851`),
       `.info-strip` (`index.html:141`)
-- [ ] Live regions: `role="status"` on `#toast`; `role="alert"` on the 5-1-1
+- [x] Live regions: `role="status"` on `#toast`; `role="alert"` on the 5-1-1
       alert, BP-urgent, feed-low, kick warning, EPDS result
-- [ ] Landmarks `<header>`/`<main>` + skip link; `aria-current` on bottom nav;
+- [x] Landmarks `<header>`/`<main>` + skip link; `aria-current` on bottom nav;
       `aria-pressed` on pill groups; accessible names + 44px on delete "×"
       buttons; `aria-hidden` on decorative SVGs
-- [ ] Snack clock: `aria-pressed` + state in label; stop re-rendering
+- [x] Snack clock: `aria-pressed` + state in label; stop re-rendering
       `innerHTML` on toggle (destroys focus) — update wedges in place
       (`nausea-tool.js:48,386–390`)
 
@@ -210,10 +210,10 @@ above. No pharma-promotional content was found.
       `.bp-pill` white-on-orange ≈2:1; offline banner 3.79:1; `.badge-myth`
       2.81:1 dark
 - [ ] Add `color-scheme` so native date/select/scrollbars follow dark mode
-- [ ] Global `:focus-visible` style; restore outlines on inputs (currently
+- [x] Global `:focus-visible` style; restore outlines on inputs (currently
       `outline:none` + invisible-in-dark border swap)
-- [ ] Honor `prefers-reduced-motion`; switch px→rem and unpin `font-size:16px`
-- [ ] Touch targets ≥44px: `#lang-btn` 32px, `#theme-btn` 34px, `#install-btn`
+- [x] Honor `prefers-reduced-motion`; switch px→rem and unpin `font-size:16px`
+- [x] Touch targets ≥44px: `#lang-btn` 32px, `#theme-btn` 34px, `#install-btn`
       32px, `#search-clear` 20px (+ aria-label), choice pills ~31px
 
 ### Consistency / cobbled-together
