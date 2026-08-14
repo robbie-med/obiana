@@ -110,13 +110,16 @@ function cmdVerify() {
       if (!/^[0-9a-f]{16}$/.test(String(h))) problems.push(`${lang}: malformed hash at ${k}: ${h}`);
       if (!(k in en)) problems.push(`${lang}: orphan stamp ${k} (no such English key)`);
     }
-    // The invariant body-templates.js depends on and nothing else checks: a
-    // short t array silently blanks slots rather than erroring.
+    // A locale with FEWER runs than English is simply behind: cardBody() falls
+    // back per slot, so those sentences render in English and `report` counts
+    // them as untranslated. More runs than English is a real defect, because
+    // the extra ones address slots the shared template no longer has and can
+    // never render.
     for (const [id, card] of Object.entries(obj.content || {})) {
-      const wantLen = ((enContent[id] || {}).t || []).length;
+      if (!enContent[id]) { problems.push(`${lang}: card "${id}" does not exist in English`); continue; }
+      const wantLen = (enContent[id].t || []).length;
       const gotLen = (card.t || []).length;
-      if (!enContent[id]) problems.push(`${lang}: card "${id}" does not exist in English`);
-      else if (gotLen !== wantLen) problems.push(`${lang}: card "${id}" has ${gotLen} runs, English has ${wantLen}`);
+      if (gotLen > wantLen) problems.push(`${lang}: card "${id}" has ${gotLen} runs, English only has ${wantLen}`);
     }
   }
 

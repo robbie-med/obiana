@@ -84,56 +84,63 @@ titles/subtitles went into innerHTML unescaped alongside the listed sites.
 
 ## 2. Content overhaul
 
-Rewrites below are proposals; anything accepted invalidates the es/fr/ko/ar/ru/zh
-translation of that passage (falls back to English until retranslated).
+Rewrites below are proposals; anything accepted invalidates the es/fr/ko
+translation of that passage.
+
+**Correction:** the parenthetical here used to claim such a passage "falls back
+to English until retranslated". It did not. `cardBody()` fell back only on an
+undefined or empty run, so a stale translation kept rendering and a correction
+would have landed in English alone. That is now true rather than assumed: see
+the srcHash mechanism in translation/hash.js.
 
 ### Over-stated / one-sided (rewrites ready)
 
-- [ ] **Continuous fetal monitoring** (`stages-of-labor`, `locale.en.js:937–938`)
+- [x] **Continuous fetal monitoring** (`stages-of-labor`, `locale.en.js:937–938`)
       — add that intermittent monitoring has equally good outcomes for low-risk
       labor with fewer interventions (Cochrane), as an option to ask about
-- [ ] **6-week pelvic rest** (`pelvic-rest`, 1135) — drop the false ACOG
+- [x] **6-week pelvic rest** (`pelvic-rest`, 1135) — drop the false ACOG
       attribution; frame as convention: bleeding stopped, healing, feels ready
-- [ ] **Kick counting** (`tool.kick.goal`, 240) — add caveat that formal
+- [x] **Kick counting** (`tool.kick.goal`, 240) — add caveat that formal
       counting isn't proven to reduce stillbirth (AFFIRM); the point is knowing
       baby's normal pattern
-- [ ] **Epidural tradeoffs** (`epidural` 994–997, `faq-epidural-csec`
+- [x] **Epidural tradeoffs** (`epidural` 994–997, `faq-epidural-csec`
       1470–1472) — add longer pushing stage + higher vacuum/forceps rate;
       remove "no too early or too late" (fast labor can leave no time)
-- [ ] **Weak exercise claim** (`exercise-pregnancy`, 837) — delete "babies of
+- [x] **Weak exercise claim** (`exercise-pregnancy`, 837) — delete "babies of
       active mothers have healthier heart rate patterns"; soften 836 to
       "associated in some studies with"
-- [ ] **Docusate oversold** (`physical-recovery`, 1106–1107) — evidence is
+- [x] **Docusate oversold** (`physical-recovery`, 1106–1107) — evidence is
       weak; remove "straining risks tearing stitches"
-- [ ] **Water-breaking deadline** (`faq-water-breaking`, 1488) — replace
+- [x] **Water-breaking deadline** (`faq-water-breaking`, 1488) — replace
       "complete delivery within 18–24 hours" with infection-risk-rises framing
-- [ ] **Newborn procedures blanket justification** (`faq-newborn-procedures`,
+- [x] **Newborn procedures blanket justification** (`faq-newborn-procedures`,
       1554) — differentiate: strong evidence for vitamin K + heel stick; eye
       ointment weaker (state mandates, dropped elsewhere); hep B birth dose
       matters most when maternal status positive/unknown
-- [ ] **Routine IV** (`what-happens-on-arrival`, 898) — note saline lock /
+- [x] **Routine IV** (`what-happens-on-arrival`, 898) — note saline lock /
       declining is an option for low-risk patients
-- [ ] "About 30% of U.S. births are by C-section" → "About 1 in 3" (1004)
+- [x] "About 30% of U.S. births are by C-section" → "About 1 in 3" (1004)
 
 ### Gaps (new content to write)
 
-- [ ] **`faq-vaccines` is a stub** (1445–1451) — write the real answer: Tdap +
+- [x] **`faq-vaccines` is a stub** (1445–1451) — write the real answer: Tdap +
       flu recommended with strong safety records; COVID/RSV offered, ask about
       timing; live vaccines (MMR, varicella) wait until after delivery
-- [ ] Alcohol / tobacco / cannabis in pregnancy — biggest topic omission
-- [ ] Miscarriage / early pregnancy loss card
-- [ ] Fish & mercury guidance
-- [ ] Preeclampsia explainer card (signs are scattered; mention low-dose
+- [x] Alcohol / tobacco / cannabis in pregnancy — biggest topic omission
+- [ ] Miscarriage / early pregnancy loss card (deferred: needs its own
+      decision on tone and placement)
+- [x] Fish & mercury guidance
+- [x] Preeclampsia explainer card (signs are scattered; mention low-dose
       aspirin prophylaxis for high-risk)
-- [ ] Mental health during pregnancy (antenatal anxiety/depression, SSRI
+- [x] Mental health during pregnancy (antenatal anxiety/depression, SSRI
       safety)
-- [ ] Smaller: circumcision decision, vitamin D drops for breastfed infants,
+- [x] Smaller: circumcision decision, vitamin D drops for breastfed infants,
       common discomforts (heartburn, round ligament pain, hemorrhoids,
       insomnia), dental care, car-seat use
 
 ### Verboseness / duplication
 
-- [ ] Postpartum visit schedule + 6-week questions are duplicated in
+- [x] Postpartum visit schedule + 6-week questions are duplicated in
       `postpartum-danger` (1185–1198) and `followup-appts` (1392–1403) — keep
       the table in `followup-appts`, pointer from `postpartum-danger`
 

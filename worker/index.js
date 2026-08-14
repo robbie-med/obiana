@@ -49,16 +49,23 @@ async function hash(value, salt) {
 // Valid keys come from the English locale that is actually deployed, read via
 // the ASSETS binding. Keeps this from becoming a free key/value store while
 // never needing a copy of the key list.
+// Cached per isolate, but not forever: a deploy that adds guide cards adds new
+// content.<id>.t.<n> keys, and a warm isolate holding the pre-deploy set would
+// reject every suggestion against them as unknown_key for an unpredictable
+// stretch. Five minutes bounds that without re-reading the file per request.
 let KEY_CACHE = null;
+let KEY_CACHE_AT = 0;
+const KEY_CACHE_TTL = 5 * 60 * 1000;
 async function validKeys(env, origin) {
-  if (KEY_CACHE) return KEY_CACHE;
+  if (KEY_CACHE && (Date.now() - KEY_CACHE_AT) < KEY_CACHE_TTL) return KEY_CACHE;
   const res = await env.ASSETS.fetch(new URL('/i18n/locale.en.js', origin));
-  if (!res.ok) return null;
+  // Serve the stale set rather than rejecting everything if the fetch fails.
+  if (!res.ok) return KEY_CACHE;
   const src = await res.text();
   const start = src.indexOf('{', src.indexOf('window.MYOB_LOCALES.en'));
   let obj;
   try { obj = JSON.parse(src.slice(start, src.lastIndexOf('}') + 1)); }
-  catch (e) { return null; }
+  catch (e) { return KEY_CACHE; }
   const keys = new Set();
   const walk = (o, pre) => {
     for (const [k, v] of Object.entries(o || {})) {
@@ -71,6 +78,7 @@ async function validKeys(env, origin) {
   walk(obj.ui, '');
   walk(obj.content, 'content');
   KEY_CACHE = keys;
+  KEY_CACHE_AT = Date.now();
   return keys;
 }
 

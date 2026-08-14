@@ -37,6 +37,36 @@ const CONTENT_STRUCTURE = {
       "id": "exercise-pregnancy",
       "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--teal)\" stroke-width=\"2\"><path d=\"M13 2L3 14h9l-1 8 10-12h-9l1-8z\"/></svg>",
       "color": ""
+    },
+    {
+      "id": "alcohol",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--teal)\" stroke-width=\"2\"><path d=\"M8 22h8\"/><path d=\"M12 15v7\"/><path d=\"M5 2h14l-2 9a5 5 0 01-10 0z\"/></svg>",
+      "color": ""
+    },
+    {
+      "id": "tobacco-cannabis",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--teal)\" stroke-width=\"2\"><path d=\"M18 12H2v4h16\"/><path d=\"M22 12v4\"/><path d=\"M18 8c0-2-1-3-3-3\"/><line x1=\"2\" y1=\"2\" x2=\"22\" y2=\"22\"/></svg>",
+      "color": ""
+    },
+    {
+      "id": "fish-mercury",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--teal)\" stroke-width=\"2\"><path d=\"M6.5 12c.94-3.46 4.94-6 8.5-6 3.56 0 6.06 2.54 7 6-.94 3.47-3.44 6-7 6s-7.56-2.53-8.5-6z\"/><path d=\"M18 12v.5\"/><path d=\"M2 12s2-4 4.5 0S2 12 2 12z\"/></svg>",
+      "color": ""
+    },
+    {
+      "id": "preeclampsia",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--teal)\" stroke-width=\"2\"><path d=\"M22 12h-4l-3 9L9 3l-3 9H2\"/></svg>",
+      "color": ""
+    },
+    {
+      "id": "antenatal-mental-health",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--teal)\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M8 14s1.5 2 4 2 4-2 4-2\"/><line x1=\"9\" y1=\"9\" x2=\"9.01\" y2=\"9\" stroke-linecap=\"round\"/><line x1=\"15\" y1=\"9\" x2=\"15.01\" y2=\"9\" stroke-linecap=\"round\"/></svg>",
+      "color": ""
+    },
+    {
+      "id": "common-discomforts",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--teal)\" stroke-width=\"2\"><path d=\"M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z\"/></svg>",
+      "color": ""
     }
   ],
   "labor": [
@@ -132,6 +162,21 @@ const CONTENT_STRUCTURE = {
     {
       "id": "normal-newborn",
       "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--navy)\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M8 14s1.5 2 4 2 4-2 4-2\"/><line x1=\"9\" y1=\"9\" x2=\"9.01\" y2=\"9\"/><line x1=\"15\" y1=\"9\" x2=\"15.01\" y2=\"9\"/></svg>",
+      "color": "navy"
+    },
+    {
+      "id": "circumcision",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--navy)\" stroke-width=\"2\"><path d=\"M9 12l2 2 4-4\"/><circle cx=\"12\" cy=\"12\" r=\"10\"/></svg>",
+      "color": "navy"
+    },
+    {
+      "id": "vitamin-d-drops",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--navy)\" stroke-width=\"2\"><path d=\"M12 2.69l5.66 5.66a8 8 0 11-11.31 0z\"/></svg>",
+      "color": "navy"
+    },
+    {
+      "id": "car-seat",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--navy)\" stroke-width=\"2\"><path d=\"M5 17h14M5 17a2 2 0 01-2-2V9a2 2 0 012-2h9l5 5v3a2 2 0 01-2 2\"/><circle cx=\"8\" cy=\"17\" r=\"2\"/><circle cx=\"16\" cy=\"17\" r=\"2\"/></svg>",
       "color": "navy"
     },
     {

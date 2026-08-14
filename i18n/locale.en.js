@@ -238,7 +238,7 @@ window.MYOB_LOCALES.en = {
         "startAnotherSession": "Start Another Session",
         "sessionHistory": "Session History",
         "noSessions": "No sessions yet",
-        "countMovements": "Count fetal movements during an active session.",
+        "countMovements": "Count fetal movements during an active session. What matters most is learning your own baby's usual pattern and telling your team when it changes. Formal counting on its own has not been shown to reduce stillbirth, so treat this as a way to learn that pattern rather than a test to pass. A drop in movement is worth a call whatever this counter says.",
         "goal": "Goal: 10 movements within 2 hours",
         "tapForEach": "👶 Tap for Each Movement",
         "endEarly": "End Session Early",
@@ -858,8 +858,8 @@ window.MYOB_LOCALES.en = {
         "Reduces back pain, swelling, constipation, and fatigue",
         "Lowers risk of gestational diabetes, preeclampsia, and excessive weight gain",
         "Improves sleep, mood, and energy levels",
-        "Often leads to shorter labor and faster recovery",
-        "Babies of active mothers often have healthier heart rate patterns",
+        "Associated in some studies with shorter labor and easier recovery",
+        "Builds the stamina that labor and carrying a newborn both ask for",
         "Good Choices at Any Stage",
         "Walking",
         ". Easiest, safest, and accessible at any fitness level",
@@ -920,7 +920,7 @@ window.MYOB_LOCALES.en = {
         "SVE to check cervical dilation and effacement",
         "External fetal monitor applied. Two straps around your belly, one tracking contractions and one tracking baby's heart rate",
         "Blood pressure, temperature, pulse, oxygen saturation checked",
-        "IV access placed (a small catheter in your arm, standard procedure)",
+        "IV access placed, a small catheter in your arm. If you are low risk, you can ask for a saline lock, which keeps the access without fluids running, or ask whether it is needed at all",
         "Urine sample",
         "GBS status confirmed from your prenatal records",
         "Step 2: Admitted or Asked to Wait",
@@ -960,7 +960,7 @@ window.MYOB_LOCALES.en = {
         "Induction of Labor",
         "If your cervix needs help, your doctor may use medications (misoprostol, oxytocin/Pitocin) or a balloon catheter to ripen and open the cervix. Induction can take 12–24+ hours, especially with a first baby and an unfavorable cervix. Plan for it to take time.",
         "Fetal Monitoring",
-        "Most hospitals use continuous electronic fetal monitoring during active labor. This tracks baby's heart rate patterns relative to contractions, helping the team identify any signs of distress early. If you want to walk or use a tub, ask about wireless (telemetry) monitors if available."
+        "Most hospitals use continuous electronic fetal monitoring during active labor, which tracks baby's heart rate against your contractions. For a low-risk labor, intermittent listening, where a nurse checks the heartbeat at set intervals, gives the same outcomes for the baby with fewer cesareans and fewer vacuum or forceps deliveries. Continuous monitoring makes more sense if you have an epidural, are being induced, or have a condition that needs closer watching. It is fair to ask which applies to you. If you want to walk or use a tub, ask whether wireless (telemetry) monitors are available."
       ]
     },
     "pain-management": {
@@ -1019,14 +1019,14 @@ window.MYOB_LOCALES.en = {
         "Key Fact. The C-Section Myth",
         "Epidurals do",
         "not",
-        "increase C-section rates. This is one of the most common and well-studied myths in obstetrics. Multiple large randomized trials confirm this. You can request an epidural at any point in active labor."
+        "increase C-section rates. This is one of the most studied questions in obstetrics and the large randomized trials agree. There are real tradeoffs worth knowing: the pushing stage tends to run longer, and a vacuum or forceps delivery is somewhat more likely. You can ask for an epidural at any point in active labor. The practical limit is not a rule about how many centimeters you are, but how fast your labor is moving, since a very quick labor may not leave time to place one."
       ]
     },
     "csection": {
       "title": "C-Section: Why It Happens & What to Expect",
       "sub": "Planned vs. unplanned, the procedure, recovery",
       "t": [
-        "A cesarean section is a surgical delivery through incisions in the abdomen and uterus. About 30% of U.S. births are by C-section.",
+        "A cesarean section is a surgical delivery through incisions in the abdomen and uterus. About 1 in 3 U.S. births are by C-section.",
         "Planned (Scheduled) Reasons",
         "Placenta previa. Placenta covers the cervical opening",
         "Baby in breech (feet-down) or transverse (sideways) position that hasn't turned",
@@ -1128,8 +1128,8 @@ window.MYOB_LOCALES.en = {
         "Use peri-bottle with warm water after every bathroom visit. Front to back",
         "Ice packs for the first 24 hours, then switch to warm sitz baths (10–15 min, 2–3x/day)",
         "Witch hazel pads (e.g., Tucks) soothe swelling and hemorrhoids",
-        "Stool softener (docusate/colace)",
-        ". Start immediately; constipation with perineal stitches is very uncomfortable and straining risks tearing stitches",
+        "Constipation",
+        ". Very common in the first weeks, and genuinely uncomfortable with perineal stitches. Water, fiber and moving around help most. Docusate (Colace) is handed out in nearly every hospital, though trials show it works little better than a placebo, so if it does nothing for you, ask about an osmotic laxative such as polyethylene glycol (Miralax) instead.",
         "Pain Management",
         "Alternating ibuprofen (600 mg every 6 hours) and acetaminophen (650 mg every 6 hours) on a scheduled basis works much better than waiting for pain to spike. Ask your nurse for a written schedule on Day 1 and stick to it."
       ]
@@ -1157,8 +1157,8 @@ window.MYOB_LOCALES.en = {
       "title": "Pelvic Rest & Resuming Sex",
       "sub": "Why the 6-week recommendation exists",
       "t": [
-        "ACOG recommends waiting at least 6 weeks after delivery before having vaginal intercourse. Here's why this guidance exists.",
-        "Why 6 Weeks?",
+        "Six weeks is the number most people are given, and it lines up with the postpartum visit, but it is a convention rather than a fixed rule. What actually matters is that the bleeding has stopped, any tear or incision has healed, and you feel ready. For some women that comes sooner, for many it comes later. Here is what is healing underneath.",
+        "Where the Six Weeks Comes From",
         "The uterus needs 4–6 weeks to fully contract and for the placental attachment site to heal completely",
         "Any vaginal tears, lacerations, or episiotomy stitches need time to heal",
         "C-section incisions, both the external scar and the uterine incision inside, need at least 6 weeks",
@@ -1207,19 +1207,7 @@ window.MYOB_LOCALES.en = {
         "Chest pain or difficulty breathing · Seizure · Sudden severe headache unlike any before · Stroke symptoms (face drooping, arm weakness, slurred speech) · Thoughts of harming yourself or your baby",
         "Call Your OB / Midwife For",
         "Fever &gt;100.4°F · Soaking more than 1 pad per hour for 2 hours · Severe headache not relieved by ibuprofen/Tylenol · Vision changes · Leg redness, swelling, or warmth (DVT) · Wound opening, redness spreading, or pus · Difficulty urinating · Signs of PPD or anxiety",
-        "Your Postpartum Visit Schedule",
-        "When",
-        "Purpose",
-        "1–3 days",
-        "(C-section or complications)",
-        "Wound check, blood pressure, pain management",
-        "2 weeks",
-        "(now recommended by ACOG)",
-        "Mood screening (Edinburgh Scale), BP, incision/perineum check, breastfeeding support",
-        "6 weeks",
-        "Full physical, pelvic exam, contraception, clearance for sex and exercise, thyroid check if indicated",
-        "Questions to Ask at Your 6-Week Visit",
-        "Contraception · Pelvic floor PT referral · Return to full exercise · Diastasis recti screening · Sex concerns and dryness · Mood and PPD screening · Incision or perineal healing · Any other accumulated questions"
+        "Your postpartum visit schedule, and the questions worth taking to the six-week visit, are in the Follow-Up Appointments card under Baby, alongside the pediatric schedule so you can see both together."
       ]
     },
     "breastfeeding": {
@@ -1471,7 +1459,14 @@ window.MYOB_LOCALES.en = {
       "title": "Are vaccines safe during pregnancy?",
       "sub": "",
       "t": [
-        "Some are, some aren’t. Talk to your doctor."
+        "Two are recommended in every pregnancy and both have long safety records behind them: the Tdap booster and the flu shot. A third group, the live vaccines, waits until after you deliver.",
+        "Tdap, for whooping cough",
+        "Given between 27 and 36 weeks, in every pregnancy, even if you had it in the last one. The main point is not to protect you. Your body makes antibodies and passes them across the placenta, so the baby is born already carrying protection against whooping cough. That matters because whooping cough is most dangerous in the first months of life, before a baby is old enough to be vaccinated. It is worth asking that anyone who will be holding the baby regularly is up to date too.",
+        "Flu shot",
+        "Recommended in any trimester during flu season. Pregnancy changes how your lungs and immune system work, which makes flu considerably more likely to put you in hospital. The antibodies cross to the baby as well and cover the first few months. The injected vaccine is the one used in pregnancy: the nasal spray is a live vaccine and is not.",
+        "The ones that wait until after delivery",
+        "Live vaccines, meaning MMR (measles, mumps and rubella) and varicella (chickenpox), are not given during pregnancy. If your early bloodwork shows you are not immune to rubella or chickenpox, the usual plan is to vaccinate before you leave the hospital, which also protects a future pregnancy. Both are safe while breastfeeding.",
+        "If you are behind on something else, or you are travelling, or there is an outbreak where you live, bring it to a prenatal visit. Being pregnant does not put every vaccine out of reach, and the answer depends on the specific vaccine and your situation."
       ]
     },
     "faq-eat-for-two": {
@@ -1494,7 +1489,7 @@ window.MYOB_LOCALES.en = {
       "t": [
         "No. This is one of the most studied questions in obstetrics. Multiple large randomized controlled trials and meta-analyses confirm that epidurals do",
         "not",
-        "increase C-section rates. Epidurals may slightly lengthen the pushing stage, but this is managed safely with patience and nurse guidance. You can request an epidural at any point in active labor. There is no \"too early\" or \"too late\" threshold."
+        "increase C-section rates. Epidurals do lengthen the pushing stage somewhat, and make a vacuum or forceps delivery more likely, which is worth weighing alongside the pain relief. You can ask for one at any point in active labor. The practical limit is not a threshold in centimeters but how fast labor is moving, since a very quick labor may not leave time."
       ]
     },
     "faq-routine-episiotomy": {
@@ -1510,7 +1505,7 @@ window.MYOB_LOCALES.en = {
       "title": "If my water breaks, do I have to have a C-section?",
       "sub": "",
       "t": [
-        "No. If your membranes rupture (water breaks) at term, most women go into labor on their own within 12 hours. If labor doesn't start, induction is offered to reduce infection risk. The guideline is to complete delivery within 18–24 hours. If you are GBS-positive, antibiotics are started immediately. A C-section is only needed if there are other indications. Water breaking alone is not one of them."
+        "No. If your water breaks at term, most women go into labor on their own within about a day. If labor does not start, induction is usually offered, because the chance of infection climbs the longer the membranes are open. That is a rising risk to weigh together, not a deadline you have missed. If you are GBS-positive, antibiotics are started straight away. A C-section is only needed if there is a separate reason for one, and water breaking by itself is not one."
       ]
     },
     "faq-eat-in-labor": {
@@ -1576,7 +1571,7 @@ window.MYOB_LOCALES.en = {
         "Hepatitis B vaccine first dose",
         ", and the",
         "newborn metabolic screening blood draw",
-        "(heel stick for ~30 conditions including PKU, hypothyroidism, sickle cell). All are recommended because the risk of not intervening early outweighs the risks of the procedures. You may legally decline them in most states. We recommend you discuss the risks with your doctor first."
+        "(heel stick for about 30 conditions including PKU, hypothyroidism and sickle cell). The evidence behind these is not all the same strength, and it is reasonable to ask about them separately. Vitamin K and the heel stick have the clearest case: vitamin K prevents a rare but catastrophic bleed, and the heel stick finds conditions that can only be treated if they are caught in the first days. The hepatitis B dose matters most when your own hepatitis B status is positive or unknown. Eye ointment rests on weaker evidence, and several countries have stopped giving it routinely, though many US states require it by law. You may legally decline in most states. Ask your team which of these applies to your situation."
       ]
     },
     "faq-first-bath": {
@@ -1603,6 +1598,148 @@ window.MYOB_LOCALES.en = {
         "If cost is a barrier, say so. Folic acid on its own is inexpensive, and clinics can often help.",
         "What not to take",
         "Avoid vitamin A supplements in high doses, which can harm a developing baby. Do not double up on a prenatal to get more of something. If you take other supplements or herbal products, bring the actual bottles to your next visit."
+      ]
+    },
+    "alcohol": {
+      "title": "Alcohol in Pregnancy",
+      "sub": "What is known, and what is not",
+      "t": [
+        "No amount of alcohol has been shown to be safe in pregnancy, and no study has shown that a single drink causes harm. Both of those statements are true, and the honest position sits between them.",
+        "What is established",
+        "Regular and heavy drinking clearly harms a developing baby. Fetal alcohol spectrum disorders are real, permanent and entirely preventable. The risk climbs with the amount, and binge drinking matters particularly, because a large quantity arriving at once is harder on the baby than the same amount spread out.",
+        "What is not established",
+        "Studies have not been able to show harm from an occasional single drink. They have also not been able to rule it out, and they never will, because nobody can run the trial that would settle it. That gap is why the official advice is to avoid alcohol completely: it is the only recommendation guaranteed to be safe. It is not the same as evidence that one glass of wine did damage.",
+        "If you drank before you knew",
+        "This is extremely common and it is not a reason to panic. Most people drink at some point before a positive test. Tell your team, without shrinking the number, so they know what to keep an eye on. What helps now is stopping, not accounting for what already happened.",
+        "If stopping is hard, say so",
+        "If you drink every day, do not stop abruptly on your own. Alcohol withdrawal can be genuinely dangerous in a way the drinking is not, and it needs medical supervision. This is a treatable medical problem. Telling your team is what gets you help."
+      ]
+    },
+    "tobacco-cannabis": {
+      "title": "Smoking, Vaping and Cannabis",
+      "sub": "The clearest advice in this guide",
+      "t": [
+        "This is one of the few places in this guide where the answer is not a balance of tradeoffs. Stopping helps, at any point in the pregnancy, and the earlier the better.",
+        "Tobacco and vaping",
+        "Smoking narrows the blood supply feeding the placenta. That shows up as smaller babies, more preterm births, placental problems, stillbirth, and sudden infant death after birth. Vaping is not a safe substitute: nicotine itself constricts blood vessels, and the rest of what is in the vapour is poorly studied in pregnancy. Quitting helps at any stage, and quitting before the third trimester recovers much of the difference in birthweight.",
+        "Cannabis",
+        "In any form, smoked, vaped or eaten, and whether or not it is legal where you live. THC crosses the placenta and reaches the baby. It is linked with lower birthweight and with differences in attention and learning that appear later in childhood. It is also widely suggested online as a remedy for morning sickness. It is not the right tool for that, and this guide has a section full of things that are.",
+        "Second-hand smoke, and why it lasts",
+        "A baby growing up around smoke has more asthma, more chest infections and more ear infections. Smoking outside helps but does not solve it, because smoke settles into clothes, hair, furniture and car seats, and a baby held against that is still breathing it in. Ask anyone who smokes to change or wash before holding the baby, and keep the house and the car smoke-free. This is worth being direct about with the people around you: it is not only about you stopping.",
+        "Getting help is the point, not the confession",
+        "Quitting is a medical issue with real help behind it, including counselling and, for tobacco, options that are safer in pregnancy than continuing to smoke. Raise it at a prenatal visit. Nobody is going to lecture you, and a truthful answer gets you better care than a polite one."
+      ]
+    },
+    "fish-mercury": {
+      "title": "Fish, Mercury and What to Eat",
+      "sub": "Which fish help, which to skip",
+      "t": [
+        "Fish is one of the better things you can eat while pregnant. The advice to watch out for mercury has been widely heard as advice to avoid fish altogether, and that leaves many women eating none, which is the worse outcome of the two.",
+        "Why it is worth eating",
+        "Oily fish are the main food source of DHA, an omega-3 fat the baby uses to build brain and eyes. Two to three servings a week, roughly 8 to 12 ounces in total, is the usual recommendation.",
+        "Good choices, low in mercury",
+        "Salmon, sardines, anchovies, herring, trout, tilapia, cod, catfish, pollock, canned light tuna, shrimp, crab, scallops and cooked oysters.",
+        "Limit to about one serving a week",
+        "Albacore or white tuna, halibut, grouper, Chilean sea bass and bluefish.",
+        "Avoid",
+        "Shark, swordfish, king mackerel, tilefish, marlin, orange roughy and bigeye tuna. These are large, long-lived predators, and mercury concentrates as it moves up the chain.",
+        "Two things people miss",
+        "Cook fish through. Raw fish, including the sushi made from it, carries a listeria risk rather than a mercury one, and refrigerated smoked fish has the same issue unless it is cooked into a dish. Separately, if you fish locally or someone brings you a catch, check your state's advisory for those particular waters. Local contamination varies and the national lists do not cover it."
+      ]
+    },
+    "preeclampsia": {
+      "title": "Preeclampsia: What to Watch For",
+      "sub": "Signs, risk, and the aspirin question",
+      "t": [
+        "Preeclampsia is a blood pressure condition of pregnancy that can develop quickly, usually after 20 weeks and sometimes in the weeks after delivery. It is one of the few things where recognising it early genuinely changes how it ends.",
+        "What it is",
+        "High blood pressure together with signs that other organs are being affected, most often the kidneys, the liver or the clotting system. It also reduces blood flow through the placenta, which is why it affects the baby's growth. The only definitive treatment is delivery, which is why that conversation can move faster than you expect.",
+        "Call the same day if you have",
+        "A headache that will not shift, or does not respond to acetaminophen · Vision changes: spots, flashing, blurring or greying out · Pain under the ribs on the right, or high in the stomach · Sudden swelling of the face or hands, or a jump in weight over a day or two · Shortness of breath · Nausea and vomiting that starts fresh in the second half of pregnancy",
+        "Do not wait to see whether these settle overnight. A blood pressure reading and a urine sample answer the question in minutes, and that is a reasonable thing to ask for.",
+        "Who is at higher risk",
+        "Preeclampsia in a previous pregnancy · Chronic high blood pressure, kidney disease, lupus or antiphospholipid syndrome · Type 1 or type 2 diabetes · Twins or more · A first pregnancy, or a first pregnancy with a new partner · BMI over 30 · Age 35 or over · A mother or sister who had it · Black women are affected more often and more severely, which reflects documented differences in care and circumstance rather than biology, and is a reason to expect closer attention rather than less.",
+        "Low-dose aspirin",
+        "If you have one strong risk factor, or two or more moderate ones, current guidance is 81 mg of aspirin daily, started between 12 and 16 weeks and continued until delivery. It lowers the chance of preeclampsia meaningfully, it costs very little, and it is well studied in pregnancy. Plenty of women who qualify are never offered it, so if you recognise yourself in the list above, it is entirely reasonable to raise it yourself.",
+        "It can also start after the birth",
+        "Preeclampsia sometimes appears for the first time after delivery, most often in the first week. The warning signs are the same ones listed above. If they turn up once you are home, that is an emergency department visit, not something to save for the postpartum appointment."
+      ]
+    },
+    "antenatal-mental-health": {
+      "title": "Mental Health During Pregnancy",
+      "sub": "Anxiety, depression, and the medication question",
+      "t": [
+        "Depression and anxiety are roughly as common during pregnancy as after it, but they get far less attention. Many women assume that feeling awful while pregnant means they are doing it wrong, or that they have no right to feel that way. Neither is true.",
+        "Worth mentioning to someone",
+        "Low mood most of the day, most days · Losing interest in things you normally enjoy · Anxiety that will not switch off, or intrusive frightening thoughts · Not sleeping even when you have the chance · Feeling detached from the pregnancy, or nothing at all about it · Any thought of harming yourself",
+        "That last one needs saying out loud today",
+        "Tell your team, or call or text 988 in the US. Thoughts like these are more common than anyone admits, they respond to treatment, and they are not a verdict on the kind of mother you will be.",
+        "The medication question",
+        "This is the one most people are afraid to ask. Untreated depression is not the neutral option it looks like: it is associated with preterm birth, lower birthweight, and a considerably higher chance of postpartum depression. Several SSRIs have a large body of pregnancy safety data behind them and are prescribed routinely. If you were already on something and stopped the day you saw the positive test, say so, because stopping abruptly is one of the commonest routes into a relapse. This is a decision to work out with your team, not alone at two in the morning with a search engine.",
+        "What else actually helps",
+        "Talking therapy works, either instead of medication or alongside it, and is worth asking for early because waiting lists are real. Sleep, daylight, movement and not being isolated all matter more than they sound like they should. So does telling one person what is really going on."
+      ]
+    },
+    "common-discomforts": {
+      "title": "Common Discomforts",
+      "sub": "Heartburn, aches, hemorrhoids, sleep",
+      "t": [
+        "None of these are dangerous. All of them are miserable, and most of them have something that genuinely helps, which is worth knowing before you decide to just put up with it.",
+        "Heartburn",
+        "Very common, and worst late on when there is simply no room left. Smaller meals, nothing within three hours of lying down, and raising the head of the bed rather than stacking pillows, which mostly bends you in the middle. Calcium carbonate antacids such as Tums are safe and count towards your calcium. If that is not enough, ask: famotidine and the proton pump inhibitors are both used in pregnancy, and enduring it is not the only option.",
+        "Round ligament pain",
+        "A sharp catch low on one side when you stand up, roll over or cough, usually in the second trimester. The ligaments holding the uterus are stretching. Move into position more slowly, bend towards the pain when you cough, and try warmth. It is sharp but brief. Pain that stays, or arrives with bleeding, fever or regular tightening, is a different thing and needs a call.",
+        "Hemorrhoids and constipation",
+        "These two travel together. Water, fiber and moving around are the first line. Witch hazel pads and a sitz bath help the symptoms. Do not sit and strain on the toilet, and a footstool that raises your knees changes the angle and makes a real difference. Most improve after delivery.",
+        "Back and pelvic pain",
+        "Your centre of gravity has moved forward and the ligaments have softened. A maternity support belt helps some people a great deal. So does not standing propped on one hip, a pillow between the knees at night, and flat shoes. Physical therapy exists for this and is badly underused: ask for a referral rather than assuming it is just part of the deal.",
+        "Sleep",
+        "Side sleeping is advised in the second half, and the left side gets mentioned most, but either side is fine. What matters is not spending long stretches flat on your back. If you wake up on your back, nothing has gone wrong, just turn over. A pillow wedged behind you stops you rolling back. Night-time leg cramps respond to stretching the calf and to staying hydrated.",
+        "Swelling",
+        "Puffy feet and ankles by the end of the day are expected. Put them up, avoid standing still for long stretches, and compression stockings help more than they look like they would. Sudden swelling of the face or hands, or swelling in one calf that is painful or warm, is not in this category and needs a call the same day."
+      ]
+    },
+    "circumcision": {
+      "title": "Circumcision: Making the Decision",
+      "sub": "What the evidence does and does not say",
+      "t": [
+        "This is a decision, not a medical instruction. Major medical bodies have read the same evidence and reached different conclusions, which tells you how close the balance is.",
+        "What the evidence shows",
+        "The medical benefits are real but small: fewer urinary tract infections in the first year, a lower rate of some sexually transmitted infections in adulthood, and less penile cancer, which is rare either way. Complications occur in roughly 1 in 500, usually bleeding or infection, and are more common when it is done later in life rather than in the newborn period.",
+        "Why the guidance differs",
+        "The American Academy of Pediatrics concluded the benefits outweigh the risks, but not by enough to recommend it for every boy. Several European bodies looked at the same studies and concluded the benefits do not justify a routine procedure. In practice this is a family decision, often shaped by religion, culture, and what the father looks like. Those are legitimate reasons and you do not need to dress them up as medical ones.",
+        "If you decide to do it",
+        "Ask specifically about pain control, because effective options exist and are not used everywhere: a local anaesthetic block rather than sugar water alone. It is simpler and heals faster in the first days than later on. Check what your insurance covers, since some plans treat it as elective.",
+        "If you decide not to",
+        "No special care is needed, and this is where most confusion happens. Do not retract the foreskin. It is normally attached in infancy and separates on its own over several years, and forcing it causes the scarring it is meant to prevent. Wipe the outside like any other skin."
+      ]
+    },
+    "vitamin-d-drops": {
+      "title": "Vitamin D for Breastfed Babies",
+      "sub": "Why drops are recommended",
+      "t": [
+        "Breast milk is low in vitamin D in almost everyone. This is not a sign that anything is wrong with your milk or your diet. It is a known gap with a simple fix.",
+        "What is recommended",
+        "400 IU of vitamin D daily, starting in the first few days, for any baby who is breastfed or having mostly breast milk. It carries on until the baby is taking about a litre a day of formula or, later, fortified milk, because those are already supplemented.",
+        "A formula-fed baby taking a full quantity does not need extra. Combination feeding usually still does, since it depends how much formula is actually going in.",
+        "Why it matters",
+        "Vitamin D is what allows the body to absorb calcium and build bone. Real deficiency causes rickets, which is uncommon but has not gone away, and is more likely in babies with darker skin, at northern latitudes, and over the winter.",
+        "Practical points",
+        "Concentrated drops give the whole dose in a single drop, so read the label rather than assuming: products differ, and more is not better. Put it on the nipple just before a feed, or on a clean finger the baby is already sucking. Taking a high dose yourself to get vitamin D into the milk is an alternative some clinicians use, but it is a conversation to have rather than something to start on your own."
+      ]
+    },
+    "car-seat": {
+      "title": "Car Seat Basics",
+      "sub": "The short version",
+      "t": [
+        "You will not be discharged without one, so it is worth doing properly in advance rather than in a hospital car park at two in the morning.",
+        "Rear-facing, in the back seat, for as long as the seat allows, which is usually well past the first birthday and often past the second. Never in front of an active airbag.",
+        "Harness straps come from at or below the shoulders when rear-facing, tight enough that you cannot pinch a fold of webbing at the collarbone. The chest clip sits level with the armpits, not on the belly.",
+        "Nothing bulky underneath. A winter coat compresses in a crash and leaves the harness loose. Dress the baby thinly, buckle up, then put the coat or a blanket over the top.",
+        "No aftermarket inserts, padding or strap covers that did not come with the seat, because they were not crash tested with it.",
+        "Check the expiry date stamped on the shell, and do not use a seat that has been in a crash or whose history you do not know.",
+        "Get the fit checked",
+        "A large share of seats are installed wrong, and it is not obvious from looking. Most fire departments and many hospitals will check it for free. Do it a few weeks before the due date, not after."
       ]
     }
   }
