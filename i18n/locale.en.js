@@ -1666,7 +1666,7 @@ window.MYOB_LOCALES.en = {
       "title": "Common Discomforts",
       "sub": "Heartburn, aches, hemorrhoids, sleep",
       "t": [
-        "None of these are dangerous. All of them are miserable, and most of them have something that genuinely helps, which is worth knowing before you decide to just put up with it.",
+        "None of these are dangerous. All of them are miserable.",
         "Heartburn",
         "Very common, and worst late on when there is simply no room left. Smaller meals, nothing within three hours of lying down, and raising the head of the bed rather than stacking pillows, which mostly bends you in the middle. Calcium carbonate antacids such as Tums are safe and count towards your calcium. If that is not enough, ask: famotidine and the proton pump inhibitors are both used in pregnancy, and enduring it is not the only option.",
         "Round ligament pain",
