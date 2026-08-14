@@ -614,35 +614,8 @@ window.MYOB_LOCALES.fr = {
       "nauseaLog": "Journal des nausées",
       "nauseaLogDesc": "Notez-les · Indiquez ce que vous avez essayé · Voyez ce qui aide"
     },
-    "toolkick": {
-      "kickCounter": "Compteur de coups"
-    },
-    "toolcontractions": {
-      "contractionTimer": "Minuteur de contractions"
-    },
-    "toolfeeding": {
-      "feedingLog": "Journal des tétées"
-    },
-    "tooldiapers": {
-      "diaperLog": "Journal des couches"
-    },
-    "tooljaundice": {
-      "jaundiceTracker": "Suivi de la jaunisse"
-    },
     "toolbp": {
       "bloodPressureLog": "Journal de tension"
-    },
-    "toolweight": {
-      "weightTracker": "Suivi du poids"
-    },
-    "toolmood": {
-      "moodCheckIn": "Suivi de l'humeur"
-    },
-    "toolbirthplan": {
-      "birthPlanBuilder": "Plan de naissance"
-    },
-    "toolappts": {
-      "visitNotes": "Notes de visite"
     },
     "modalFeed": {
       "logAFeeding": "Ajouter une tétée",
@@ -712,26 +685,14 @@ window.MYOB_LOCALES.fr = {
       "baby": "Votre<br>nouveau-né",
       "toolsTrackers": "Outils et<br>suivis"
     },
-    "tooli18n": {
-      "translationHelper": "Assistant de traduction"
-    },
     "usNotice": {
       "title": "Soins aux États-Unis",
       "body": "Ce guide décrit le suivi prénatal tel qu’il est assuré aux États-Unis et s’adresse aux mères suivies ici. Le suivi prénatal varie beaucoup d’un pays à l’autre. Le calendrier des consultations, les examens et les recommandations ailleurs peuvent ne pas correspondre à ce que vous lisez ici. Si vous êtes suivie dans un autre pays, cette application n’est probablement pas faite pour vous.",
       "continue": "Je comprends"
     },
-    "toolimprove": {
-      "improveGuide": "Aidez à améliorer ce guide"
-    },
     "about": {
       "openSource": "Libre et open source. Forkez-le, gardez-le libre.",
       "viewSource": "Voir le code source (AGPL-3.0)"
-    },
-    "toolnausea": {
-      "nauseaEating": "Nausées et alimentation"
-    },
-    "toolnausealog": {
-      "nauseaLog": "Journal des nausées"
     }
   },
   "content": {

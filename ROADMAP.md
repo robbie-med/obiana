@@ -200,16 +200,16 @@ above. No pharma-promotional content was found.
 
 ### Dark mode & contrast
 
-- [ ] Re-map accent hues under `body.dark` — `--teal` text on dark card is
+- [x] Re-map accent hues under `body.dark` — `--teal` text on dark card is
       1.64:1 (styles.css:1397+); hits active nav, selected pills, form titles,
       links
-- [ ] Move JS-inline colors to classes: diaper buttons (`tools.js:429–436`),
+- [x] Move JS-inline colors to classes: diaper buttons (`tools.js:429–436`),
       EPDS score card (892–894, 921), 5-1-1 alert (287–294); delete the dead
       `body.dark .score-result-card` rule (`styles.css:1419`)
-- [ ] Fix contrast: `--ink-soft` 4.38:1 → darken; `--gold` text 3.53:1;
-      `.bp-pill` white-on-orange ≈2:1; offline banner 3.79:1; `.badge-myth`
-      2.81:1 dark
-- [ ] Add `color-scheme` so native date/select/scrollbars follow dark mode
+- [x] Fix contrast: `--ink-soft` 4.38:1 → darken; `--gold` text 3.53:1;
+      `.bp-pill` white-on-orange ≈2:1; offline banner 3.79:1; ~~`.badge-myth` 2.81:1 dark~~ (audit wrong: it sets its own
+      background and measures 4.63:1, which passes)
+- [x] Add `color-scheme` so native date/select/scrollbars follow dark mode
 - [x] Global `:focus-visible` style; restore outlines on inputs (currently
       `outline:none` + invisible-in-dark border swap)
 - [x] Honor `prefers-reduced-motion`; switch px→rem and unpin `font-size:16px`
@@ -218,7 +218,7 @@ above. No pharma-promotional content was found.
 
 ### Consistency / cobbled-together
 
-- [ ] One destructive-action policy: confirm() vs silent delete is currently
+- [x] One destructive-action policy: confirm() vs silent delete is currently
       random (cx clear/appt delete/i18n clear vs feed/diaper/weight/nausea
       rows); three delete affordances; no undo anywhere
 - [ ] One save-feedback pattern (toast for log events, silent for toggles,
@@ -230,7 +230,7 @@ above. No pharma-promotional content was found.
       `history-row`, `nausea-level`, `bp-notes-area` (unstyled production
       textarea); duplicated `.choice-pill` border; 12 duplicate title key
       pairs (`tools.*` vs `tool*.*`)
-- [ ] Add semantic status tokens (`--danger/--success/--info` + light/dark
+- [x] Add semantic status tokens (`--danger/--success/--info` + light/dark
       variants); ~30 ad hoc hex values bypass tokens; tokenize the z-index
       ladder
 - [ ] Kick counter: mis-tap undo or debounce; `addDiaper` double-tap guard

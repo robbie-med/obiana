@@ -127,7 +127,7 @@ function initKick() {
     </div>
     <div id="kick-success-view" style="display:none;padding:24px 20px;text-align:center">
       <div style="font-size:48px;margin-bottom:8px">✅</div>
-      <div style="font-size:18px;font-weight:700;color:#2e7d32;margin-bottom:4px">${t('tool.kick.10MovementsReached')}</div>
+      <div style="font-size:18px;font-weight:700;color:var(--success-ink);margin-bottom:4px">${t('tool.kick.10MovementsReached')}</div>
       <div id="kick-success-time" style="font-size:13px;color:var(--ink-soft);margin-bottom:20px"></div>
       <button class="big-action-btn btn-teal" onclick="resetKick()">${t('tool.kick.startAnotherSession')}</button>
     </div>
@@ -344,13 +344,13 @@ function check511() {
   alertEl.style.display = '';
   if (goNow) {
     alertEl.className = 'alert-511';
-    alertEl.style.background = '#ffebee';
-    alertEl.style.borderColor = '#c44';
-    alertEl.innerHTML = `<div style="font-size:15px;font-weight:700;color:#c44;margin-bottom:4px">${t('tool.common.timeToGoToThe')}</div>
+    alertEl.style.background = 'var(--danger-bg)';
+    alertEl.style.borderColor = 'var(--danger)';
+    alertEl.innerHTML = `<div style="font-size:15px;font-weight:700;color:var(--danger-ink);margin-bottom:4px">${t('tool.common.timeToGoToThe')}</div>
       <div style="font-size:13px;color:var(--ink)">${t('tool.cx.alertGo', { mins: minsApart, secs: secsLong })}</div>`;
   } else if (meets511) {
     alertEl.className = 'alert-511';
-    alertEl.style.background = '#fff8e1';
+    alertEl.style.background = 'var(--caution-bg)';
     alertEl.style.borderColor = 'var(--gold)';
     alertEl.innerHTML = `<div style="font-size:15px;font-weight:700;color:var(--gold);margin-bottom:4px">${t('tool.common.511PatternReached')}</div>
       <div style="font-size:13px;color:var(--ink)">${t('tool.cx.alert511', { mins: minsApart, secs: secsLong })}</div>`;
@@ -390,7 +390,7 @@ function initFeeding() {
   el.innerHTML = `
     <div class="stat-row">
       <div class="stat-box">
-        <div class="stat-number" style="color:${flagLow ? '#c44' : 'var(--teal)'}">${count24}</div>
+        <div class="stat-number" style="color:${flagLow ? 'var(--danger-ink)' : 'var(--teal)'}">${count24}</div>
         <div class="stat-label">${t('tool.feed.feedsInLast24Hrs')}</div>
       </div>
       <div class="stat-box">
@@ -429,9 +429,14 @@ function renderFeedList() {
 }
 
 function deleteFeed(idx) {
-  feedLog.splice(idx, 1);
+  const [gone] = feedLog.splice(idx, 1);
   safeSave('feed-log', feedLog);
   initFeeding();
+  deleteWithUndo(I18n.t('tool.common.entryDeleted'), () => {
+    feedLog.splice(idx, 0, gone);
+    safeSave('feed-log', feedLog);
+    initFeeding();
+  });
 }
 
 // The modal markup is static and never re-rendered, so whatever was picked
@@ -503,14 +508,14 @@ function initDiapers() {
 
   el.innerHTML = `
     <div class="diaper-btns">
-      <button class="diaper-big-btn" onclick="addDiaper('wet')" style="background:#e3f2fd;color:#1565c0">
+      <button class="diaper-big-btn" onclick="addDiaper('wet')" style="background:var(--info-bg);color:var(--info)">
         <span style="font-size:32px">💧</span>
-        <span class="dbb-count" id="wet-count" style="color:#1565c0">${wetToday}</span>
+        <span class="dbb-count" id="wet-count" style="color:var(--info)">${wetToday}</span>
         <span style="font-size:13px;font-weight:700">${t('tool.diaper.wetToday')}</span>
       </button>
-      <button class="diaper-big-btn" onclick="addDiaper('dirty')" style="background:#fff8e1;color:#f57f17">
+      <button class="diaper-big-btn" onclick="addDiaper('dirty')" style="background:var(--caution-bg);color:var(--caution)">
         <span style="font-size:32px">💩</span>
-        <span class="dbb-count" id="dirty-count" style="color:#f57f17">${dirtyToday}</span>
+        <span class="dbb-count" id="dirty-count" style="color:var(--caution)">${dirtyToday}</span>
         <span style="font-size:13px;font-weight:700">${t('tool.diaper.dirtyToday')}</span>
       </button>
     </div>
@@ -555,9 +560,15 @@ function renderDiaperList() {
 function deleteDiaper(idx) {
   const todayStart = new Date(); todayStart.setHours(0,0,0,0);
   const todayIdx = diaperLog.findIndex((d, i) => d.ts >= todayStart.getTime());
-  diaperLog.splice(todayIdx >= 0 ? todayIdx + idx : idx, 1);
+  const at = todayIdx >= 0 ? todayIdx + idx : idx;
+  const [gone] = diaperLog.splice(at, 1);
   safeSave('diaper-log', diaperLog);
   initDiapers();
+  deleteWithUndo(I18n.t('tool.common.entryDeleted'), () => {
+    diaperLog.splice(at, 0, gone);
+    safeSave('diaper-log', diaperLog);
+    initDiapers();
+  });
 }
 
 // ═══════════════════════════════════════════════════════
@@ -634,10 +645,10 @@ let bpLog = safeLoad('bp-log', []);
 TOOL_INITS['tool-bp'] = initBP;
 
 function getBPCategory(s, d) {
-  if (s >= 160 || d >= 110) return { label: I18n.t('tool.bp.cat.severe'),   color: '#c44',     urgent: true };
-  if (s >= 140 || d >= 90)  return { label: I18n.t('tool.bp.cat.high'),     color: '#e65100',  urgent: true };
-  if (s >= 130 || d >= 80)  return { label: I18n.t('tool.bp.cat.elevated'), color: '#f59e0b',  urgent: false };
-  return { label: I18n.t('tool.bp.cat.normal'), color: '#2e7d32', urgent: false };
+  if (s >= 160 || d >= 110) return { label: I18n.t('tool.bp.cat.severe'),   color: 'var(--danger)',  urgent: true };
+  if (s >= 140 || d >= 90)  return { label: I18n.t('tool.bp.cat.high'),     color: 'var(--warning)', urgent: true };
+  if (s >= 130 || d >= 80)  return { label: I18n.t('tool.bp.cat.elevated'), color: 'var(--caution)', urgent: false };
+  return { label: I18n.t('tool.bp.cat.normal'), color: 'var(--success)', urgent: false };
 }
 
 function initBP() {
@@ -673,7 +684,7 @@ function renderBPList() {
     const cat = getBPCategory(r.s, r.d);
     return `<div class="bp-row">
       <span class="bp-reading">${r.s}/${r.d}</span>
-      <span class="bp-pill" style="background:${cat.color}">${cat.label}</span>
+      <span class="bp-pill${cat.color === 'var(--caution)' ? ' caution' : ''}" style="background:${cat.color}">${cat.label}</span>
       <span class="bp-time">${fmtDateTime(r.ts)}</span>
       <button onclick="deleteBP(${i})" style="background:none;border:none;color:var(--ink-soft);font-size:16px;cursor:pointer;padding:4px">×</button>
     </div>`;
@@ -681,9 +692,14 @@ function renderBPList() {
 }
 
 function deleteBP(idx) {
-  bpLog.splice(idx, 1);
+  const [gone] = bpLog.splice(idx, 1);
   safeSave('bp-log', bpLog);
   initBP();
+  deleteWithUndo(I18n.t('tool.common.entryDeleted'), () => {
+    bpLog.splice(idx, 0, gone);
+    safeSave('bp-log', bpLog);
+    initBP();
+  });
 }
 
 function saveBP() {
@@ -789,9 +805,15 @@ function deleteWeight(idx) {
   const sorted = [...weightLog].sort((a, b) => b.week - a.week || b.ts - a.ts);
   const entry = sorted[idx];
   const realIdx = weightLog.findIndex(w => w.ts === entry.ts);
-  if (realIdx >= 0) weightLog.splice(realIdx, 1);
+  if (realIdx < 0) return;
+  const [gone] = weightLog.splice(realIdx, 1);
   safeSave('weight-log', weightLog);
   initWeight();
+  deleteWithUndo(I18n.t('tool.common.entryDeleted'), () => {
+    weightLog.splice(realIdx, 0, gone);
+    safeSave('weight-log', weightLog);
+    initWeight();
+  });
 }
 
 function saveWeight() {
@@ -969,9 +991,9 @@ function getEPDSInterpretation(score) {
   // Thresholds are a property of the validated translation, not of the app:
   // published cutoffs differ between language versions.
   const cut = (getEPDS() || {}).cutoffs || { concern: 10, high: 13 };
-  if (score >= cut.high)    return { label: I18n.t('tool.mood.interpHigh'),    color: '#c44',     bg: '#ffebee' };
-  if (score >= cut.concern) return { label: I18n.t('tool.mood.interpConcern'), color: '#e65100',  bg: '#fff3e0' };
-  return { label: I18n.t('tool.mood.interpLow'), color: '#2e7d32', bg: '#e8f5e9' };
+  if (score >= cut.high)    return { label: I18n.t('tool.mood.interpHigh'),    color: 'var(--danger-ink)',  bg: 'var(--danger-bg)' };
+  if (score >= cut.concern) return { label: I18n.t('tool.mood.interpConcern'), color: 'var(--warning-ink)', bg: 'var(--warning-bg)' };
+  return { label: I18n.t('tool.mood.interpLow'), color: 'var(--success-ink)', bg: 'var(--success-bg)' };
 }
 
 function submitEPDS() {
@@ -1335,7 +1357,7 @@ function renderApptsList() {
             <button class="btn-sm" onclick="openApptModal('${appt.id}')"
               style="background:var(--teal-faint);color:var(--teal)">${t('tool.appts.edit')}</button>
             <button class="btn-sm" onclick="deleteAppt('${appt.id}')"
-              style="background:#fff3f3;color:#c44">${t('tool.appts.delete')}</button>
+              style="background:var(--danger-bg);color:var(--danger-ink)">${t('tool.appts.delete')}</button>
           </div>
         </div>
       </div>`;
@@ -1382,11 +1404,16 @@ function saveAppt() {
 }
 
 function deleteAppt(id) {
-  if (!confirm(I18n.t('tool.appts.deleteConfirm'))) return;
-  appointments = appointments.filter(a => a.id !== id);
+  const at = appointments.findIndex(a => a.id === id);
+  if (at < 0) return;
+  const [gone] = appointments.splice(at, 1);
   safeSave('appt-notes', appointments);
   initAppts();
-  showToast(t('tool.appts.visitDeleted'));
+  deleteWithUndo(t('tool.appts.visitDeleted'), () => {
+    appointments.splice(at, 0, gone);
+    safeSave('appt-notes', appointments);
+    initAppts();
+  });
 }
 
 // ═══════════════════════════════════════════════════════

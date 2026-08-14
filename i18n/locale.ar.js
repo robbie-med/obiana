@@ -617,35 +617,8 @@ window.MYOB_LOCALES.ar = {
       "nauseaLog": "سجل الغثيان",
       "nauseaLogDesc": "قيّمي شدته · سجّلي ما جربتِه · اعرفي ما يساعدك"
     },
-    "toolkick": {
-      "kickCounter": "عدّاد الركلات"
-    },
-    "toolcontractions": {
-      "contractionTimer": "مؤقّت الانقباضات"
-    },
-    "toolfeeding": {
-      "feedingLog": "سجل الرضاعة"
-    },
-    "tooldiapers": {
-      "diaperLog": "سجل الحفاضات"
-    },
-    "tooljaundice": {
-      "jaundiceTracker": "متتبّع اليرقان"
-    },
     "toolbp": {
       "bloodPressureLog": "سجل ضغط الدم"
-    },
-    "toolweight": {
-      "weightTracker": "متتبّع الوزن"
-    },
-    "toolmood": {
-      "moodCheckIn": "تقييم المزاج"
-    },
-    "toolbirthplan": {
-      "birthPlanBuilder": "منشئ خطة الولادة"
-    },
-    "toolappts": {
-      "visitNotes": "ملاحظات الزيارات"
     },
     "modalFeed": {
       "logAFeeding": "تسجيل رضعة",
@@ -715,26 +688,14 @@ window.MYOB_LOCALES.ar = {
       "baby": "مولودك<br>الجديد",
       "toolsTrackers": "الأدوات<br>والمتتبّعات"
     },
-    "tooli18n": {
-      "translationHelper": "مساعد الترجمة"
-    },
     "usNotice": {
       "title": "الرعاية في الولايات المتحدة",
       "body": "يصف هذا الدليل رعاية ما قبل الولادة كما تُقدَّم في الولايات المتحدة، وهو موجَّه للأمهات اللواتي يتلقّين رعايتهن هنا. تختلف رعاية ما قبل الولادة كثيراً بين البلدان. قد لا تتطابق مواعيد الزيارات والفحوصات والتوصيات في أماكن أخرى مع ما تقرئينه هنا. إذا كنتِ تتلقّين الرعاية في بلد آخر، فالأرجح أن هذا التطبيق ليس مناسباً لك.",
       "continue": "فهمت"
     },
-    "toolimprove": {
-      "improveGuide": "ساعدينا في تحسين هذا الدليل"
-    },
     "about": {
       "openSource": "برنامج حر ومفتوح المصدر. انسخيه، وأبقيه حراً.",
       "viewSource": "عرض الشيفرة المصدرية (AGPL-3.0)"
-    },
-    "toolnausea": {
-      "nauseaEating": "الغثيان والأكل"
-    },
-    "toolnausealog": {
-      "nauseaLog": "سجل الغثيان"
     }
   }
 };

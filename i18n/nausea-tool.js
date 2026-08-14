@@ -289,9 +289,16 @@ function addNauseaEntry(level, strat) {
 }
 
 function deleteNauseaEntry(ts) {
-  nauseaLog = nauseaLog.filter(e => e.ts !== ts);
+  const at = nauseaLog.findIndex(e => e.ts === ts);
+  if (at < 0) return;
+  const [gone] = nauseaLog.splice(at, 1);
   saveNauseaLog();
   initNauseaLog();
+  deleteWithUndo(I18n.t('tool.common.entryDeleted'), () => {
+    nauseaLog.splice(at, 0, gone);
+    saveNauseaLog();
+    initNauseaLog();
+  });
 }
 
 // Average nausea level after each strategy, worst first. Needs at least two

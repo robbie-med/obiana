@@ -615,35 +615,8 @@ window.MYOB_LOCALES.ru = {
       "nauseaLog": "Дневник тошноты",
       "nauseaLogDesc": "Оцените · Запишите, что пробовали · Узнайте, что помогает"
     },
-    "toolkick": {
-      "kickCounter": "Счётчик шевелений"
-    },
-    "toolcontractions": {
-      "contractionTimer": "Таймер схваток"
-    },
-    "toolfeeding": {
-      "feedingLog": "Журнал кормлений"
-    },
-    "tooldiapers": {
-      "diaperLog": "Журнал подгузников"
-    },
-    "tooljaundice": {
-      "jaundiceTracker": "Трекер желтухи"
-    },
     "toolbp": {
       "bloodPressureLog": "Журнал давления"
-    },
-    "toolweight": {
-      "weightTracker": "Трекер веса"
-    },
-    "toolmood": {
-      "moodCheckIn": "Оценка настроения"
-    },
-    "toolbirthplan": {
-      "birthPlanBuilder": "Конструктор плана родов"
-    },
-    "toolappts": {
-      "visitNotes": "Заметки о визитах"
     },
     "modalFeed": {
       "logAFeeding": "Записать кормление",
@@ -713,26 +686,14 @@ window.MYOB_LOCALES.ru = {
       "baby": "Ваш<br>новорождённый",
       "toolsTrackers": "Инструменты<br>и трекеры"
     },
-    "tooli18n": {
-      "translationHelper": "Помощник перевода"
-    },
     "usNotice": {
       "title": "Медицинская помощь в США",
       "body": "Это руководство описывает дородовое наблюдение так, как оно организовано в США, и написано для женщин, наблюдающихся здесь. Дородовое наблюдение сильно различается в разных странах. График визитов, анализы и рекомендации в другом месте могут не совпадать с тем, что вы читаете здесь. Если вы наблюдаетесь в другой стране, это приложение, скорее всего, вам не подходит.",
       "continue": "Понятно"
     },
-    "toolimprove": {
-      "improveGuide": "Помогите улучшить это руководство"
-    },
     "about": {
       "openSource": "Свободное ПО с открытым исходным кодом. Форкайте, но оставьте свободным.",
       "viewSource": "Посмотреть исходный код (AGPL-3.0)"
-    },
-    "toolnausea": {
-      "nauseaEating": "Тошнота и еда"
-    },
-    "toolnausealog": {
-      "nauseaLog": "Дневник тошноты"
     }
   }
 };

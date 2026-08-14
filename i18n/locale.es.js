@@ -613,35 +613,8 @@ window.MYOB_LOCALES.es = {
       "nauseaLog": "Registro de náuseas",
       "nauseaLogDesc": "Puntúelas · Anote qué probó · Vea qué le ayuda"
     },
-    "toolkick": {
-      "kickCounter": "Contador de Pataditas"
-    },
-    "toolcontractions": {
-      "contractionTimer": "Cronómetro de Contracciones"
-    },
-    "toolfeeding": {
-      "feedingLog": "Registro de Alimentación"
-    },
-    "tooldiapers": {
-      "diaperLog": "Registro de Pañales"
-    },
-    "tooljaundice": {
-      "jaundiceTracker": "Control de Ictericia"
-    },
     "toolbp": {
       "bloodPressureLog": "Registro de Presión Arterial"
-    },
-    "toolweight": {
-      "weightTracker": "Control de Peso"
-    },
-    "toolmood": {
-      "moodCheckIn": "Chequeo del Ánimo"
-    },
-    "toolbirthplan": {
-      "birthPlanBuilder": "Plan de Parto"
-    },
-    "toolappts": {
-      "visitNotes": "Notas de la Cita"
     },
     "modalFeed": {
       "logAFeeding": "Registrar una Alimentación",
@@ -711,26 +684,14 @@ window.MYOB_LOCALES.es = {
       "baby": "Su Recién<br>Nacido",
       "toolsTrackers": "Herramientas y<br>Registros"
     },
-    "tooli18n": {
-      "translationHelper": "Asistente de traducción"
-    },
     "usNotice": {
       "title": "Atención en los Estados Unidos",
       "body": "Esta guía describe la atención prenatal tal como se ofrece en los Estados Unidos y está dirigida a madres que reciben su atención aquí. La atención prenatal varía mucho de un país a otro. El calendario de visitas, las pruebas y las recomendaciones en otros lugares pueden no coincidir con lo que lee aquí. Si recibe atención en otro país, es probable que esta aplicación no sea para usted.",
       "continue": "Entiendo"
     },
-    "toolimprove": {
-      "improveGuide": "Ayude a mejorar esta guía"
-    },
     "about": {
       "openSource": "Libre y de código abierto. Haga un fork, manténgalo libre.",
       "viewSource": "Ver el código (AGPL-3.0)"
-    },
-    "toolnausea": {
-      "nauseaEating": "Náuseas y alimentación"
-    },
-    "toolnausealog": {
-      "nauseaLog": "Registro de náuseas"
     }
   },
   "content": {

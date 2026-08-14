@@ -258,7 +258,8 @@ window.MYOB_LOCALES.en = {
       "common": {
         "recentContractions": "Recent Contractions",
         "timeToGoToThe": "🚨 Time to go to the hospital",
-        "511PatternReached": "5-1-1 Pattern Reached"
+        "511PatternReached": "5-1-1 Pattern Reached",
+        "entryDeleted": "Entry deleted"
       },
       "feed": {
         "feedsInLast24Hrs": "Feeds in last 24 hrs",
@@ -364,7 +365,6 @@ window.MYOB_LOCALES.en = {
         "delete": "Delete",
         "visitDeleted": "Visit deleted",
         "noVisits": "No visits logged yet. Add one above to track questions and notes.",
-        "deleteConfirm": "Delete this visit?",
         "untitledVisit": "Untitled visit",
         "editVisit": "Edit Visit",
         "noQuestionsAdded": "No questions added",
@@ -645,35 +645,8 @@ window.MYOB_LOCALES.en = {
       "nauseaLog": "Nausea Log",
       "nauseaLogDesc": "Rate it · Record what you tried · See what helps you"
     },
-    "toolkick": {
-      "kickCounter": "Kick Counter"
-    },
-    "toolcontractions": {
-      "contractionTimer": "Contraction Timer"
-    },
-    "toolfeeding": {
-      "feedingLog": "Feeding Log"
-    },
-    "tooldiapers": {
-      "diaperLog": "Diaper Log"
-    },
-    "tooljaundice": {
-      "jaundiceTracker": "Jaundice Tracker"
-    },
     "toolbp": {
       "bloodPressureLog": "Blood Pressure Log"
-    },
-    "toolweight": {
-      "weightTracker": "Weight Tracker"
-    },
-    "toolmood": {
-      "moodCheckIn": "Mood Check-In"
-    },
-    "toolbirthplan": {
-      "birthPlanBuilder": "Birth Plan Builder"
-    },
-    "toolappts": {
-      "visitNotes": "Visit Notes"
     },
     "modalFeed": {
       "logAFeeding": "Log a Feeding",
@@ -739,7 +712,8 @@ window.MYOB_LOCALES.en = {
       "toolsBack": "Tools",
       "eg": "e.g. {n}",
       "close": "Close",
-      "skipToContent": "Skip to content"
+      "skipToContent": "Skip to content",
+      "undo": "Undo"
     },
     "nav": {
       "prenatal": "Prenatal<br>Visits",
@@ -748,26 +722,14 @@ window.MYOB_LOCALES.en = {
       "baby": "Your<br>Newborn",
       "toolsTrackers": "Tools &amp;<br>Trackers"
     },
-    "tooli18n": {
-      "translationHelper": "Translation Helper"
-    },
     "usNotice": {
       "title": "Care in the United States",
       "body": "This guide describes prenatal care as it is provided in the United States, and is written for mothers receiving their care here. Prenatal care differs a great deal between countries. Visit schedules, tests and recommendations elsewhere may not match what you read here. If you are receiving care in another country, this app probably isn’t for you.",
       "continue": "I understand"
     },
-    "toolimprove": {
-      "improveGuide": "Help Improve This Guide"
-    },
     "about": {
       "openSource": "Free and open source. Fork it, keep it free.",
       "viewSource": "View source (AGPL-3.0)"
-    },
-    "toolnausea": {
-      "nauseaEating": "Nausea & Eating"
-    },
-    "toolnausealog": {
-      "nauseaLog": "Nausea Log"
     }
   },
   "content": {

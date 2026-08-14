@@ -612,35 +612,8 @@ window.MYOB_LOCALES.zh = {
       "nauseaLog": "孕吐记录",
       "nauseaLogDesc": "打分 · 记下试过什么 · 看看什么有效"
     },
-    "toolkick": {
-      "kickCounter": "胎动计数器"
-    },
-    "toolcontractions": {
-      "contractionTimer": "宫缩计时器"
-    },
-    "toolfeeding": {
-      "feedingLog": "喂养记录"
-    },
-    "tooldiapers": {
-      "diaperLog": "尿布记录"
-    },
-    "tooljaundice": {
-      "jaundiceTracker": "黄疸追踪"
-    },
     "toolbp": {
       "bloodPressureLog": "血压记录"
-    },
-    "toolweight": {
-      "weightTracker": "体重追踪"
-    },
-    "toolmood": {
-      "moodCheckIn": "情绪自评"
-    },
-    "toolbirthplan": {
-      "birthPlanBuilder": "分娩计划工具"
-    },
-    "toolappts": {
-      "visitNotes": "就诊笔记"
     },
     "modalFeed": {
       "logAFeeding": "记录一次喂养",
@@ -710,26 +683,14 @@ window.MYOB_LOCALES.zh = {
       "baby": "你的<br>新生儿",
       "toolsTrackers": "工具<br>与记录"
     },
-    "tooli18n": {
-      "translationHelper": "翻译助手"
-    },
     "usNotice": {
       "title": "在美国接受的照护",
       "body": "本指南描述的是美国提供的产前照护，写给在美国接受照护的准妈妈。各国的产前照护差异很大。其他国家的产检安排、检查项目和建议，可能与这里写的不同。如果你在其他国家接受照护，这个应用可能并不适合你。",
       "continue": "我明白了"
     },
-    "toolimprove": {
-      "improveGuide": "帮助改进这本指南"
-    },
     "about": {
       "openSource": "自由开源软件。欢迎分支，但请保持自由开源。",
       "viewSource": "查看源代码（AGPL-3.0）"
-    },
-    "toolnausea": {
-      "nauseaEating": "孕吐与进食"
-    },
-    "toolnausealog": {
-      "nauseaLog": "孕吐记录"
     }
   }
 };

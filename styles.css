@@ -1,13 +1,14 @@
 /* ─── RESET & ROOT ─── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
+  color-scheme: light dark;
   --teal:       #1d4e4e;
   --teal-mid:   #2a7070;
   --teal-light: #e6f2f2;
   --teal-faint: #f0f8f8;
-  --rose:       #b85c55;
+  --rose:       #b25952;
   --rose-light: #fdf1f0;
-  --gold:       #b87c28;
+  --gold:       #9b6921;
   --gold-light: #fdf5e6;
   --navy:       #2a3d6e;
   --navy-light: #eef1f9;
@@ -15,7 +16,34 @@
   --plum-light: #f4eef9;
   --ink:        #1a2424;
   --ink-mid:    #3d4e4e;
-  --ink-soft:   #6b7c7c;
+  --ink-soft:   #657575;
+
+  /* One ladder, so the stacking order is a decision rather than eight
+     unrelated magic numbers. */
+  --z-sticky:  100;
+  --z-header:  200;
+  --z-overlay: 500;
+  --z-popover: 600;
+  --z-sheet:   2900;
+  --z-modal:   3000;
+  --z-toast:   9999;
+
+  /* Status colours. Named rather than repeated as literals, and remapped for
+     dark below, because these were the values JS wrote straight into style
+     attributes where no stylesheet could reach them. */
+  --danger:      #ca4343;
+  --danger-bg:   #ffebee;
+  --danger-ink:  #8a1c1c;
+  --warning:     #ca4700;
+  --warning-bg:  #fff3e0;
+  --warning-ink: #8a3200;
+  --caution:     #9c6406;
+  --caution-bg:  #fff8e1;
+  --success:     #2e7d32;
+  --success-bg:  #e8f5e9;
+  --success-ink: #1b5e20;
+  --info:        #1565c0;
+  --info-bg:     #e3f2fd;
   --rule:       #dce8e8;
   --bg:         #f7fafa;
   --white:      #ffffff;
@@ -51,7 +79,7 @@ body {
 #header {
   position: sticky;
   top: 0;
-  z-index: 200;
+  z-index: var(--z-header);
   background: var(--teal);
   /* Bottom 12px moved here from #search-bar so the search icon centres. */
   padding: env(safe-area-inset-top, 0px) 0 12px;
@@ -198,7 +226,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 200;
+  z-index: var(--z-header);
   background: var(--white);
   border-top: 1px solid var(--rule);
   display: flex;
@@ -876,7 +904,7 @@ body {
 /* ─── OFFLINE BANNER ─── */
 #offline-banner {
   display: none;
-  background: #e65100;
+  background: #cf4900;
   color: white;
   text-align: center;
   padding: 6px 16px;
@@ -906,7 +934,7 @@ body {
   max-width: min(90vw, 360px);
   text-align: center;
   line-height: 1.4;
-  z-index: 9999;
+  z-index: var(--z-toast);
 }
 #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
@@ -932,7 +960,7 @@ strong { font-weight: 600; }
   border-bottom: 1px solid var(--rule);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: var(--z-sticky);
 }
 .tool-back-btn {
   display: flex;
@@ -1213,7 +1241,10 @@ strong { font-weight: 600; }
 }
 .bp-row:last-child { border-bottom: none; }
 .bp-reading { font-size: 19px; font-weight: 700; flex: 1; }
-.bp-pill { font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 10px; color: white; }
+.bp-pill { font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 10px; color: var(--white); }
+/* Amber is light enough that white text on it is 2.15:1. Dark text on the
+   same amber is 7.4:1, and keeps the colour doing its signalling job. */
+.bp-pill.caution { color: #1a2424; }
 .bp-time { font-size: 11px; color: var(--ink-soft); }
 /* Weight tracker */
 .weight-row {
@@ -1337,7 +1368,7 @@ strong { font-weight: 600; }
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.45);
-  z-index: 500;
+  z-index: var(--z-overlay);
   align-items: flex-end;
 }
 .modal-overlay.visible { display: flex; }
@@ -1378,8 +1409,7 @@ strong { font-weight: 600; }
   cursor: pointer;
   transition: all .15s;
   -webkit-tap-highlight-color: transparent;
-  background: white;
-  border: 1.5px solid var(--rule);
+  background: var(--white);
 }
 .choice-pill.selected { border-color: var(--teal); color: var(--teal); background: var(--teal-faint); }
 .score-result-card {
@@ -1412,7 +1442,13 @@ strong { font-weight: 600; }
 #export-btn:active { background: var(--teal-light); }
 
 /* ─── DARK MODE ─── */
-body.dark { --bg: #111c1c; --white: #192828; --ink: #ddeaea; --ink-mid: #a8c0c0; --ink-soft: #6a8888; --rule: #253535; --teal-light: #182e2e; --teal-faint: #121f1f; --rose-light: #261616; --gold-light: #221800; --navy-light: #111c30; --plum-light: #1c1028; --card-shadow: 0 1px 4px rgba(0,0,0,.5), 0 4px 14px rgba(0,0,0,.4); }
+body.dark { --danger: #f08a8a; --danger-bg: #2a1414; --danger-ink: #f5b5b5;
+  --warning: #f0954a; --warning-bg: #2a1a0c; --warning-ink: #f5c99a;
+  --caution: #d6a13c; --caution-bg: #251c08;
+  --success: #6fc275; --success-bg: #14240f; --success-ink: #a6dcaa;
+  --info: #6fa8e8; --info-bg: #101c2c;
+  --teal: #369b9b; --teal-mid: #379b9b; --rose: #c67670; --gold: #c07f25; --navy: #748ccd; --plum: #b078c9;
+  --bg: #111c1c; --white: #192828; --ink: #ddeaea; --ink-mid: #a8c0c0; --ink-soft: #769292; --rule: #253535; --teal-light: #182e2e; --teal-faint: #121f1f; --rose-light: #261616; --gold-light: #221800; --navy-light: #111c30; --plum-light: #1c1028; --card-shadow: 0 1px 4px rgba(0,0,0,.5), 0 4px 14px rgba(0,0,0,.4); }
 body.dark .callout { background: #1a2b2b !important; border-color: #2a4040 !important; }
 body.dark .callout.alert, body.dark .callout.rose { background: #280e0e !important; border-color: #4a1818 !important; }
 body.dark .callout.gold { background: #221800 !important; border-color: #3a2800 !important; }
@@ -1434,7 +1470,6 @@ body.dark .birth-plan-output { background: var(--white); }
 body.dark .myinfo-save-bar { background: var(--white); border-top: 1px solid var(--rule); }
 body.dark #export-btn { background: var(--teal-faint); border-color: var(--teal); color: var(--teal); }
 body.dark .bp-notes-area { background: var(--white); border-color: var(--rule); color: var(--ink); }
-body.dark .score-result-card { background: #1a1a1a; }
 
 /* ─── PRINT VIEW ─── */
 #print-view { display: none; }
@@ -1509,7 +1544,7 @@ body.dark .score-result-card { background: #1a1a1a; }
 #lang-picker {
   position: fixed;
   inset: 0;
-  z-index: 3000;
+  z-index: var(--z-modal);
   background: var(--teal, #1d4e4e);
   display: flex;
   /* NOT align-items:center. With 17 languages the sheet is taller than a
@@ -1606,7 +1641,7 @@ body.dark .score-result-card { background: #1a1a1a; }
   position: fixed;
   top: calc(env(safe-area-inset-top, 0px) + 52px);
   inset-inline-end: 12px;
-  z-index: 600;
+  z-index: var(--z-popover);
   width: min(280px, calc(100vw - 24px));
   padding: 12px;
   background: var(--white);
@@ -1733,7 +1768,7 @@ body.dark #translation-notice {
 #us-notice {
   position: fixed;
   inset: 0;
-  z-index: 2900;                 /* under the language picker, above the app */
+  z-index: var(--z-sheet);                 /* under the language picker, above the app */
   background: var(--teal);
   display: flex;
   align-items: flex-start;       /* see the note on #lang-picker */
@@ -1934,7 +1969,7 @@ body.dark .i18n-stale-banner { color: #e8d5a8; background: #221800; border-color
   position: absolute;
   left: -9999px;
   top: 0;
-  z-index: 10000;
+  z-index: calc(var(--z-toast) + 1);   /* above everything, including the toast */
   background: var(--teal);
   color: var(--white);
   padding: 10px 16px;
@@ -2044,3 +2079,18 @@ body.dark .epds-option:has(.epds-radio:focus-visible) { outline-color: #7fd4d4; 
 }
 .appt-date-badge, .appt-info, .adb-month, .adb-day,
 .appt-type-label, .appt-preview { display: block; }
+
+/* The toast hosts an Undo button while a delete is reversible, so it has to
+   accept pointer events for those few seconds (set inline by deleteWithUndo)
+   while staying inert the rest of the time. */
+.toast-undo {
+  background: none;
+  border: 0;
+  color: #7fd4d4;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 2px 4px;
+  min-height: 32px;
+}

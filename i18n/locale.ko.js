@@ -612,35 +612,8 @@ window.MYOB_LOCALES.ko = {
       "nauseaLog": "메스꺼움 기록",
       "nauseaLogDesc": "정도 기록 · 시도한 것 기록 · 도움 된 것 확인"
     },
-    "toolkick": {
-      "kickCounter": "태동 카운터"
-    },
-    "toolcontractions": {
-      "contractionTimer": "진통 타이머"
-    },
-    "toolfeeding": {
-      "feedingLog": "수유 기록"
-    },
-    "tooldiapers": {
-      "diaperLog": "기저귀 기록"
-    },
-    "tooljaundice": {
-      "jaundiceTracker": "황달 체크"
-    },
     "toolbp": {
       "bloodPressureLog": "혈압 기록"
-    },
-    "toolweight": {
-      "weightTracker": "체중 기록"
-    },
-    "toolmood": {
-      "moodCheckIn": "기분 체크인"
-    },
-    "toolbirthplan": {
-      "birthPlanBuilder": "출산 계획 만들기"
-    },
-    "toolappts": {
-      "visitNotes": "진료 메모"
     },
     "modalFeed": {
       "logAFeeding": "수유 기록하기",
@@ -710,26 +683,14 @@ window.MYOB_LOCALES.ko = {
       "baby": "우리<br>신생아",
       "toolsTrackers": "도구 및<br>기록"
     },
-    "tooli18n": {
-      "translationHelper": "번역 도우미"
-    },
     "usNotice": {
       "title": "미국에서의 진료 안내",
       "body": "이 안내서는 미국에서 제공되는 산전 관리를 설명하며, 미국에서 진료를 받는 산모를 위해 작성되었습니다. 산전 관리는 나라마다 크게 다릅니다. 다른 나라의 진료 일정, 검사, 권고 사항은 여기에 적힌 내용과 다를 수 있습니다. 다른 나라에서 진료를 받고 계신다면 이 앱은 아마 맞지 않을 것입니다.",
       "continue": "이해했습니다"
     },
-    "toolimprove": {
-      "improveGuide": "이 안내서 개선에 도움 주기"
-    },
     "about": {
       "openSource": "자유 오픈소스입니다. 포크하셔도 되지만 자유롭게 유지해 주세요.",
       "viewSource": "소스 코드 보기 (AGPL-3.0)"
-    },
-    "toolnausea": {
-      "nauseaEating": "메스꺼움과 식사"
-    },
-    "toolnausealog": {
-      "nauseaLog": "메스꺼움 기록"
     }
   },
   "content": {
