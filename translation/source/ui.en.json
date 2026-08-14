@@ -145,7 +145,10 @@
   "tool.birthplan.generatedOn": "Generated {date}",
   "tool.birthplan.generatedWith": "Generated with Obiana Pregnancy Handbook",
   "tool.kick.startSession": "Start Session",
-  "tool.kick.movementsThisSession": "movements this session",
+  "tool.kick.movementsThisSession": {
+    "one": "movement this session",
+    "other": "movements this session"
+  },
   "tool.kick.elapsed": "Elapsed:",
   "tool.kick.20000Limit": "2:00:00 limit",
   "tool.kick.lessThan10MovementsIn": "⚠ Less than 10 movements in 2 hours",
@@ -174,7 +177,10 @@
   "tool.feed.fewFeedsBody": "Newborns typically need 8–12 feedings per 24 hours. If baby is difficult to wake or not gaining weight, call your doctor.",
   "tool.feed.breast": "🤱 Breast",
   "tool.feed.bottle": "🍼 Bottle",
-  "tool.feed.minutes": "{n} min",
+  "tool.feed.minutes": {
+    "one": "{count} min",
+    "other": "{count} min"
+  },
   "tool.feed.bottleOz": "Bottle · {oz} oz",
   "tool.diaper.wetToday": "Wet Today",
   "tool.diaper.dirtyToday": "Dirty Today",

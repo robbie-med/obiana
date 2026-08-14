@@ -841,54 +841,56 @@
     ]
   },
   "alcohol": {
-    "title": "Alcohol in Pregnancy",
+    "title": "Alcohol",
     "sub": "What is known, and what is not",
     "t": [
-      "No amount of alcohol has been shown to be safe in pregnancy, and no study has shown that a single drink causes harm. Both of those statements are true, and the honest position sits between them.",
-      "What is established",
-      "Regular and heavy drinking clearly harms a developing baby. Fetal alcohol spectrum disorders are real, permanent and entirely preventable. The risk climbs with the amount, and binge drinking matters particularly, because a large quantity arriving at once is harder on the baby than the same amount spread out.",
-      "What is not established",
-      "Studies have not been able to show harm from an occasional single drink. They have also not been able to rule it out, and they never will, because nobody can run the trial that would settle it. That gap is why the official advice is to avoid alcohol completely: it is the only recommendation guaranteed to be safe. It is not the same as evidence that one glass of wine did damage.",
+      "No amount of alcohol has been shown to be safe in pregnancy, and no study has shown that a single drink causes harm. Both are true.",
+      "What is known",
+      "Regular and heavy drinking harms a developing baby. Fetal alcohol spectrum disorders are permanent and entirely preventable. Binge drinking matters most: a large amount arriving at once is harder on the baby than the same amount spread out.",
+      "What is not known",
+      "Nobody can run the trial that would settle whether an occasional single drink does damage, so the advice is to avoid alcohol completely. That is the only recommendation guaranteed to be safe. It is not evidence that one glass of wine caused harm.",
       "If you drank before you knew",
-      "This is extremely common and it is not a reason to panic. Most people drink at some point before a positive test. Tell your team, without shrinking the number, so they know what to keep an eye on. What helps now is stopping, not accounting for what already happened.",
-      "If stopping is hard, say so",
-      "If you drink every day, do not stop abruptly on your own. Alcohol withdrawal can be genuinely dangerous in a way the drinking is not, and it needs medical supervision. This is a treatable medical problem. Telling your team is what gets you help."
+      "Very common, and not a reason to panic. Tell your team the real amount so they know what to watch for.",
+      "If stopping is hard",
+      "If you drink every day, do not stop abruptly on your own. Alcohol withdrawal can be dangerous in a way the drinking is not, and needs medical supervision. Tell your team."
     ]
   },
   "tobacco-cannabis": {
     "title": "Smoking, Vaping and Cannabis",
-    "sub": "The clearest advice in this guide",
+    "sub": "Stopping helps at any point",
     "t": [
-      "This is one of the few places in this guide where the answer is not a balance of tradeoffs. Stopping helps, at any point in the pregnancy, and the earlier the better.",
+      "Stopping helps at any point in the pregnancy, and the earlier the better.",
       "Tobacco and vaping",
-      "Smoking narrows the blood supply feeding the placenta. That shows up as smaller babies, more preterm births, placental problems, stillbirth, and sudden infant death after birth. Vaping is not a safe substitute: nicotine itself constricts blood vessels, and the rest of what is in the vapour is poorly studied in pregnancy. Quitting helps at any stage, and quitting before the third trimester recovers much of the difference in birthweight.",
+      "Smoking narrows the blood supply to the placenta, which means smaller babies, more preterm births, placental problems, stillbirth, and sudden infant death after birth. Vaping is not a safe substitute: nicotine itself constricts blood vessels. Quitting before the third trimester recovers much of the birthweight difference.",
       "Cannabis",
-      "In any form, smoked, vaped or eaten, and whether or not it is legal where you live. THC crosses the placenta and reaches the baby. It is linked with lower birthweight and with differences in attention and learning that appear later in childhood. It is also widely suggested online as a remedy for morning sickness. It is not the right tool for that, and this guide has a section full of things that are.",
-      "Second-hand smoke, and why it lasts",
-      "A baby growing up around smoke has more asthma, more chest infections and more ear infections. Smoking outside helps but does not solve it, because smoke settles into clothes, hair, furniture and car seats, and a baby held against that is still breathing it in. Ask anyone who smokes to change or wash before holding the baby, and keep the house and the car smoke-free. This is worth being direct about with the people around you: it is not only about you stopping.",
-      "Getting help is the point, not the confession",
-      "Quitting is a medical issue with real help behind it, including counselling and, for tobacco, options that are safer in pregnancy than continuing to smoke. Raise it at a prenatal visit. Nobody is going to lecture you, and a truthful answer gets you better care than a polite one."
+      "Any form, smoked, vaped or eaten, legal or not. THC crosses the placenta. It is linked with lower birthweight and with attention and learning differences later in childhood. It is often suggested online for morning sickness; this guide has a whole section of things that work better.",
+      "Second-hand smoke",
+      "A baby around smoke has more asthma, more chest infections and more ear infections. Smoking outside is not enough on its own, because smoke settles into clothes, hair, furniture and car seats. Ask anyone who smokes to change or wash before holding the baby, and keep the house and car smoke-free.",
+      "Getting help",
+      "There is real help for quitting, including counselling and, for tobacco, options safer in pregnancy than continuing to smoke. Ask at a prenatal visit."
     ]
   },
   "fish-mercury": {
-    "title": "Fish, Mercury and What to Eat",
-    "sub": "Which fish help, which to skip",
+    "title": "Fish",
+    "sub": "What to eat, what to limit, what to skip",
     "t": [
-      "Fish is one of the better things you can eat while pregnant. The advice to watch out for mercury has been widely heard as advice to avoid fish altogether, and that leaves many women eating none, which is the worse outcome of the two.",
-      "Why it is worth eating",
-      "Oily fish are the main food source of DHA, an omega-3 fat the baby uses to build brain and eyes. Two to three servings a week, roughly 8 to 12 ounces in total, is the usual recommendation.",
-      "Good choices, low in mercury",
-      "Salmon, sardines, anchovies, herring, trout, tilapia, cod, catfish, pollock, canned light tuna, shrimp, crab, scallops and cooked oysters.",
-      "Limit to about one serving a week",
-      "Albacore or white tuna, halibut, grouper, Chilean sea bass and bluefish.",
-      "Avoid",
-      "Shark, swordfish, king mackerel, tilefish, marlin, orange roughy and bigeye tuna. These are large, long-lived predators, and mercury concentrates as it moves up the chain.",
-      "Two things people miss",
-      "Cook fish through. Raw fish, including the sushi made from it, carries a listeria risk rather than a mercury one, and refrigerated smoked fish has the same issue unless it is cooked into a dish. Separately, if you fish locally or someone brings you a catch, check your state's advisory for those particular waters. Local contamination varies and the national lists do not cover it."
+      "Fish is one of the better things you can eat while pregnant. You do need to watch out for mercury.",
+      "How much",
+      "Two to three servings a week, about 8 to 12 ounces total. Oily fish are the main food source of DHA, which the baby uses to build brain and eyes.",
+      "Eat freely, low in mercury",
+      "Salmon, sardines, anchovies, herring, trout, tilapia, cod, catfish, pollock, canned light tuna, shrimp, crab, scallops, cooked oysters.",
+      "Once a week at most",
+      "Albacore or white tuna, halibut, grouper, Chilean sea bass, bluefish.",
+      "Do not eat",
+      "Shark, swordfish, king mackerel, tilefish, marlin, orange roughy, bigeye tuna. These are large, long-lived predators and carry the most mercury.",
+      "Cooking",
+      "Cook to 145°F, until the flesh is opaque and flakes apart. Raw fish is generally a bad idea in pregnancy, and so is smoked fish from the refrigerated case unless you cook it into a dish. The risk there is listeria, not mercury.",
+      "Fish you catch yourself",
+      "Check your state advisory for those waters. The national lists do not cover local contamination."
     ]
   },
   "preeclampsia": {
-    "title": "Preeclampsia: What to Watch For",
+    "title": "Preeclampsia",
     "sub": "Signs, risk, and the aspirin question",
     "t": [
       "A blood pressure condition that can come on fast, usually after 20 weeks and sometimes in the week or two after delivery. Catching it early genuinely changes how it ends.",
@@ -940,18 +942,18 @@
     ]
   },
   "circumcision": {
-    "title": "Circumcision: Making the Decision",
+    "title": "Circumcision",
     "sub": "What the evidence does and does not say",
     "t": [
-      "This is a decision, not a medical instruction. Major medical bodies have read the same evidence and reached different conclusions, which tells you how close the balance is.",
+      "A decision, not a medical instruction. Major medical bodies have read the same evidence and reached different conclusions.",
       "What the evidence shows",
-      "The medical benefits are real but small: fewer urinary tract infections in the first year, a lower rate of some sexually transmitted infections in adulthood, and less penile cancer, which is rare either way. Complications occur in roughly 1 in 500, usually bleeding or infection, and are more common when it is done later in life rather than in the newborn period.",
-      "Why the guidance differs",
-      "The American Academy of Pediatrics concluded the benefits outweigh the risks, but not by enough to recommend it for every boy. Several European bodies looked at the same studies and concluded the benefits do not justify a routine procedure. In practice this is a family decision, often shaped by religion, culture, and what the father looks like. Those are legitimate reasons and you do not need to dress them up as medical ones.",
+      "The benefits are real but small: fewer urinary tract infections in the first year, a lower rate of some sexually transmitted infections in adulthood, and less penile cancer, which is rare either way. Complications occur in about 1 in 500, usually bleeding or infection, and are more common when it is done later than in the newborn period.",
+      "Why guidance differs",
+      "The American Academy of Pediatrics concluded the benefits outweigh the risks but not enough to recommend it for every boy. Several European bodies read the same studies and concluded otherwise. In practice this is a family decision, often shaped by religion, culture, and what the father looks like. Those are legitimate reasons.",
       "If you decide to do it",
-      "Ask specifically about pain control, because effective options exist and are not used everywhere: a local anaesthetic block rather than sugar water alone. It is simpler and heals faster in the first days than later on. Check what your insurance covers, since some plans treat it as elective.",
+      "Ask about pain control specifically: a local anaesthetic block, not sugar water alone. Effective options exist and are not used everywhere. Check what your insurance covers.",
       "If you decide not to",
-      "No special care is needed, and this is where most confusion happens. Do not retract the foreskin. It is normally attached in infancy and separates on its own over several years, and forcing it causes the scarring it is meant to prevent. Wipe the outside like any other skin."
+      "Do not retract the foreskin. It is normally attached in infancy and separates on its own over several years; forcing it causes the scarring it is meant to prevent. Wipe the outside like any other skin."
     ]
   },
   "vitamin-d-drops": {
@@ -969,7 +971,7 @@
     ]
   },
   "car-seat": {
-    "title": "Car Seat Basics",
+    "title": "Car Seats",
     "sub": "The short version",
     "t": [
       "You will not be discharged without one, so it is worth doing properly in advance rather than in a hospital car park at two in the morning.",
