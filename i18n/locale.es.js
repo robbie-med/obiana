@@ -29,8 +29,7 @@ window.MYOB_LOCALES.es = {
       "badgeMyth": "Mito",
       "badgeFaq": "Pregunta",
       "section5": "Sección 5",
-      "faqCommonMyths": "Preguntas Frecuentes y<br>Mitos Comunes",
-      "evidenceBasedAnswersToThe": "Respuestas basadas en la evidencia a las preguntas más frecuentes, incluidas las cosas que ha oído de familiares, amistades y en internet."
+      "faqCommonMyths": "Preguntas Frecuentes y<br>Mitos Comunes"
     },
     "search": {
       "noResultsTitle": "No se encontraron resultados",
@@ -556,28 +555,23 @@ window.MYOB_LOCALES.es = {
     },
     "pregnancy": {
       "section1": "Sección 1",
-      "prenatalVisitsPregnancy": "Citas prenatales<br>y el embarazo",
-      "aVisitByVisitGuide": "Una guía cita por cita, explicación de los exámenes cervicales, ejercicio durante el embarazo y qué preguntar en cada etapa."
+      "prenatalVisitsPregnancy": "Citas prenatales<br>y el embarazo"
     },
     "labor": {
       "section2": "Sección 2",
-      "laborDelivery": "Trabajo de parto<br>y parto",
-      "signsOfLaborWhatHappens": "Señales de trabajo de parto, qué pasa al llegar, opciones para el dolor, cesárea y atención de alto riesgo."
+      "laborDelivery": "Trabajo de parto<br>y parto"
     },
     "recovery": {
       "section3": "Sección 3",
-      "postpartumRecovery": "Recuperación<br>posparto",
-      "physicalHealingMoodAndPpd": "Sanación física, ánimo y depresión posparto (PPD), reposo pélvico, regreso al ejercicio y cuándo irse a casa."
+      "postpartumRecovery": "Recuperación<br>posparto"
     },
     "baby": {
       "section4": "Sección 4",
-      "yourNewborn": "Su recién<br>nacido",
-      "breastfeedingFormulaCordCareSafe": "Lactancia, fórmula, cuidado del cordón, sueño seguro, aspecto normal del recién nacido y citas de seguimiento."
+      "yourNewborn": "Su recién<br>nacido"
     },
     "tools": {
       "dailyTools": "Herramientas diarias",
       "trackersPlanners": "Seguimientos y<br>planificadores",
-      "timeContractionsCountKicksLog": "Cronometre contracciones, cuente patadas, registre tomas y pañales, controle su presión arterial, planifique su parto y más.",
       "labor": "Trabajo de parto",
       "kickCounter": "Contador de patadas",
       "10MovesIn2Hours": "10 movimientos en 2 horas. Registre sesiones e historial",

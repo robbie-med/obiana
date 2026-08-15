@@ -24,8 +24,7 @@ window.MYOB_LOCALES.en = {
       "badgeMyth": "Myth",
       "badgeFaq": "FAQ",
       "section5": "Section 5",
-      "faqCommonMyths": "FAQ &amp;<br>Common Myths",
-      "evidenceBasedAnswersToThe": "Evidence-based answers to the most common questions, including things you have heard from family, friends, and the internet."
+      "faqCommonMyths": "FAQ &amp;<br>Common Myths"
     },
     "search": {
       "noResultsTitle": "No results found",
@@ -594,28 +593,23 @@ window.MYOB_LOCALES.en = {
     },
     "pregnancy": {
       "section1": "Section 1",
-      "prenatalVisitsPregnancy": "Prenatal Visits<br>&amp; Pregnancy",
-      "aVisitByVisitGuide": "A visit-by-visit guide, cervical exams explained, exercise during pregnancy, and what to ask at each stage."
+      "prenatalVisitsPregnancy": "Prenatal Visits<br>&amp; Pregnancy"
     },
     "labor": {
       "section2": "Section 2",
-      "laborDelivery": "Labor &amp;<br>Delivery",
-      "signsOfLaborWhatHappens": "Signs of labor, what happens when you arrive, pain management options, C-section, and high-risk care."
+      "laborDelivery": "Labor &amp;<br>Delivery"
     },
     "recovery": {
       "section3": "Section 3",
-      "postpartumRecovery": "Postpartum<br>Recovery",
-      "physicalHealingMoodAndPpd": "Physical healing, mood and PPD, pelvic rest, returning to exercise, and when to go home."
+      "postpartumRecovery": "Postpartum<br>Recovery"
     },
     "baby": {
       "section4": "Section 4",
-      "yourNewborn": "Your<br>Newborn",
-      "breastfeedingFormulaCordCareSafe": "Breastfeeding, formula, cord care, safe sleep, normal newborn appearance, and follow-up appointments."
+      "yourNewborn": "Your<br>Newborn"
     },
     "tools": {
       "dailyTools": "Daily Tools",
       "trackersPlanners": "Trackers &amp;<br>Planners",
-      "timeContractionsCountKicksLog": "Time contractions, count kicks, log feedings and diapers, track blood pressure, plan your birth, and more.",
       "labor": "Labor",
       "kickCounter": "Kick Counter",
       "10MovesIn2Hours": "10 moves in 2 hours. Log sessions &amp; history",

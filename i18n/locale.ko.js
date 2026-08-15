@@ -29,8 +29,7 @@ window.MYOB_LOCALES.ko = {
       "badgeMyth": "속설",
       "badgeFaq": "자주 묻는 질문",
       "section5": "제5부",
-      "faqCommonMyths": "자주 묻는 질문 &amp;<br>흔한 속설",
-      "evidenceBasedAnswersToThe": "가장 흔한 질문에 대한 근거 기반 답변입니다. 가족, 친구, 인터넷에서 들으신 이야기도 함께 다룹니다."
+      "faqCommonMyths": "자주 묻는 질문 &amp;<br>흔한 속설"
     },
     "search": {
       "noResultsTitle": "검색 결과가 없습니다",
@@ -555,28 +554,23 @@ window.MYOB_LOCALES.ko = {
     },
     "pregnancy": {
       "section1": "1부",
-      "prenatalVisitsPregnancy": "산전 진료와<br>임신",
-      "aVisitByVisitGuide": "진료별 안내, 자궁경부 검사 설명, 임신 중 운동, 각 단계에서 물어볼 내용."
+      "prenatalVisitsPregnancy": "산전 진료와<br>임신"
     },
     "labor": {
       "section2": "2부",
-      "laborDelivery": "진통과<br>분만",
-      "signsOfLaborWhatHappens": "진통의 신호, 병원 도착 후 절차, 통증 관리 방법, 제왕절개, 고위험 관리."
+      "laborDelivery": "진통과<br>분만"
     },
     "recovery": {
       "section3": "3부",
-      "postpartumRecovery": "산후<br>회복",
-      "physicalHealingMoodAndPpd": "신체 회복, 기분 변화와 산후 우울증(PPD), 성관계 제한, 운동 재개, 퇴원 시기."
+      "postpartumRecovery": "산후<br>회복"
     },
     "baby": {
       "section4": "4부",
-      "yourNewborn": "우리<br>신생아",
-      "breastfeedingFormulaCordCareSafe": "모유 수유, 분유, 제대 관리, 안전한 수면, 정상적인 신생아의 모습, 추적 진료."
+      "yourNewborn": "우리<br>신생아"
     },
     "tools": {
       "dailyTools": "일상 도구",
       "trackersPlanners": "기록과<br>계획",
-      "timeContractionsCountKicksLog": "진통 시간 재기, 태동 세기, 수유와 기저귀 기록, 혈압 추적, 출산 계획 등.",
       "labor": "진통",
       "kickCounter": "태동 세기",
       "10MovesIn2Hours": "2시간에 10회 움직임. 기록과 이력",

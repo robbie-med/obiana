@@ -321,12 +321,6 @@ body {
   margin-bottom: 8px;
 }
 
-.hero-desc {
-  font-size: 13px;
-  color: rgba(255,255,255,0.8);
-  line-height: 1.55;
-}
-
 /* Card list */
 .cards { padding: 16px 16px 0; display: flex; flex-direction: column; gap: 10px; }
 
@@ -2053,16 +2047,25 @@ body.dark :focus-visible { outline-color: #7fd4d4; }
 }
 body.dark .epds-option:has(.epds-radio:focus-visible) { outline-color: #7fd4d4; }
 
-/* Search results and the care-team strip are <button> now; undo the UA
-   stylesheet so they look exactly as they did as divs. */
+/* Search results and the care-team strip are <button> now, so the UA
+   stylesheet has to be undone. Only what a button imposes: NOT background,
+   and NOT width, because .info-strip carries its own teal fill and sizes
+   itself from its margins. Blanket-resetting those made the strip a
+   white-on-white ghost that read as a gap in the page. */
 .search-result-item, .info-strip {
-  width: 100%;
-  background: none;
   border: 0;
   font: inherit;
-  color: inherit;
   text-align: start;
   cursor: pointer;
+}
+/* A <button> sizes to its content where the <div> filled its parent, so the
+   strip came out a third of the width of the cards around it. The 32px is the
+   16px inline margin on each side, above: the two have to move together. */
+.info-strip { width: calc(100% - 32px); box-sizing: border-box; }
+.search-result-item {
+  width: 100%;
+  background: none;
+  color: inherit;
 }
 
 /* The visit-note header is a <button> now, so only it toggles the card. The

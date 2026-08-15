@@ -29,8 +29,7 @@ window.MYOB_LOCALES.zh = {
       "badgeMyth": "误区",
       "badgeFaq": "问答",
       "section5": "第 5 部分",
-      "faqCommonMyths": "常见问题<br>与误区",
-      "evidenceBasedAnswersToThe": "针对最常见问题的循证解答，也包括你从家人、朋友和网上听来的说法。"
+      "faqCommonMyths": "常见问题<br>与误区"
     },
     "search": {
       "noResultsTitle": "没有找到结果",
@@ -555,28 +554,23 @@ window.MYOB_LOCALES.zh = {
     },
     "pregnancy": {
       "section1": "第 1 部分",
-      "prenatalVisitsPregnancy": "产前检查<br>与怀孕",
-      "aVisitByVisitGuide": "逐次产检指南、宫颈检查说明、孕期运动，以及每个阶段该问些什么。"
+      "prenatalVisitsPregnancy": "产前检查<br>与怀孕"
     },
     "labor": {
       "section2": "第 2 部分",
-      "laborDelivery": "分娩<br>与生产",
-      "signsOfLaborWhatHappens": "临产征兆、到院后会发生什么、镇痛选择、剖腹产，以及高危妊娠的照护。"
+      "laborDelivery": "分娩<br>与生产"
     },
     "recovery": {
       "section3": "第 3 部分",
-      "postpartumRecovery": "产后<br>恢复",
-      "physicalHealingMoodAndPpd": "身体恢复、情绪与产后抑郁、盆腔休息、恢复运动，以及什么时候可以回家。"
+      "postpartumRecovery": "产后<br>恢复"
     },
     "baby": {
       "section4": "第 4 部分",
-      "yourNewborn": "你的<br>新生儿",
-      "breastfeedingFormulaCordCareSafe": "母乳喂养、配方奶、脐带护理、安全睡眠、新生儿的正常外观，以及后续复诊。"
+      "yourNewborn": "你的<br>新生儿"
     },
     "tools": {
       "dailyTools": "日常工具",
       "trackersPlanners": "记录<br>与计划工具",
-      "timeContractionsCountKicksLog": "计时宫缩、数胎动、记录喂养和尿布、监测血压、规划分娩，以及更多功能。",
       "labor": "分娩",
       "kickCounter": "胎动计数器",
       "10MovesIn2Hours": "2 小时内 10 次胎动，记录与历史",

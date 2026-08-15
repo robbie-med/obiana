@@ -29,8 +29,7 @@ window.MYOB_LOCALES.fr = {
       "badgeMyth": "Mythe",
       "badgeFaq": "FAQ",
       "section5": "Section 5",
-      "faqCommonMyths": "FAQ &amp;<br>Mythes courants",
-      "evidenceBasedAnswersToThe": "Des réponses fondées sur les preuves aux questions les plus fréquentes, y compris ce que vous avez entendu de la famille, des amis et sur internet."
+      "faqCommonMyths": "FAQ &amp;<br>Mythes courants"
     },
     "search": {
       "noResultsTitle": "Aucun résultat trouvé",
@@ -557,28 +556,23 @@ window.MYOB_LOCALES.fr = {
     },
     "pregnancy": {
       "section1": "Section 1",
-      "prenatalVisitsPregnancy": "Visites prénatales<br>&amp; grossesse",
-      "aVisitByVisitGuide": "Un guide visite par visite, les examens du col expliqués, l'exercice pendant la grossesse, et quoi demander à chaque étape."
+      "prenatalVisitsPregnancy": "Visites prénatales<br>&amp; grossesse"
     },
     "labor": {
       "section2": "Section 2",
-      "laborDelivery": "Travail &amp;<br>accouchement",
-      "signsOfLaborWhatHappens": "Signes du travail, ce qui se passe à votre arrivée, options de gestion de la douleur, césarienne et soins à haut risque."
+      "laborDelivery": "Travail &amp;<br>accouchement"
     },
     "recovery": {
       "section3": "Section 3",
-      "postpartumRecovery": "Récupération<br>post-partum",
-      "physicalHealingMoodAndPpd": "Guérison physique, humeur et dépression post-partum, repos pelvien, reprise du sport et retour à la maison."
+      "postpartumRecovery": "Récupération<br>post-partum"
     },
     "baby": {
       "section4": "Section 4",
-      "yourNewborn": "Votre<br>nouveau-né",
-      "breastfeedingFormulaCordCareSafe": "Allaitement, lait infantile, soin du cordon, sommeil sécurisé, aspect normal du nouveau-né et rendez-vous de suivi."
+      "yourNewborn": "Votre<br>nouveau-né"
     },
     "tools": {
       "dailyTools": "Outils du quotidien",
       "trackersPlanners": "Suivis &amp;<br>planificateurs",
-      "timeContractionsCountKicksLog": "Chronométrez les contractions, comptez les coups, notez les tétées et les couches, suivez la tension, planifiez votre accouchement, et plus.",
       "labor": "Travail",
       "kickCounter": "Compteur de coups",
       "10MovesIn2Hours": "10 mouvements en 2 heures. Sessions et historique",

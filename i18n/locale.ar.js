@@ -29,8 +29,7 @@ window.MYOB_LOCALES.ar = {
       "badgeMyth": "خرافة",
       "badgeFaq": "سؤال شائع",
       "section5": "القسم 5",
-      "faqCommonMyths": "أسئلة شائعة &amp;<br>خرافات شائعة",
-      "evidenceBasedAnswersToThe": "إجابات قائمة على الأدلة عن أكثر الأسئلة شيوعاً، بما في ذلك ما سمعتِه من الأهل والأصدقاء ومن الإنترنت."
+      "faqCommonMyths": "أسئلة شائعة &amp;<br>خرافات شائعة"
     },
     "search": {
       "noResultsTitle": "لم يتم العثور على نتائج",
@@ -560,28 +559,23 @@ window.MYOB_LOCALES.ar = {
     },
     "pregnancy": {
       "section1": "القسم 1",
-      "prenatalVisitsPregnancy": "زيارات ما قبل الولادة<br>والحمل",
-      "aVisitByVisitGuide": "دليل زيارة بزيارة، وشرح فحوصات عنق الرحم، والرياضة أثناء الحمل، وما الذي تسألين عنه في كل مرحلة."
+      "prenatalVisitsPregnancy": "زيارات ما قبل الولادة<br>والحمل"
     },
     "labor": {
       "section2": "القسم 2",
-      "laborDelivery": "المخاض<br>والولادة",
-      "signsOfLaborWhatHappens": "علامات المخاض، وما يحدث عند وصولك، وخيارات تسكين الألم، والولادة القيصرية، ورعاية الحمل عالي الخطورة."
+      "laborDelivery": "المخاض<br>والولادة"
     },
     "recovery": {
       "section3": "القسم 3",
-      "postpartumRecovery": "التعافي<br>بعد الولادة",
-      "physicalHealingMoodAndPpd": "الشفاء الجسدي، والحالة المزاجية واكتئاب ما بعد الولادة، والراحة الحوضية، والعودة إلى الرياضة، ومتى تعودين إلى المنزل."
+      "postpartumRecovery": "التعافي<br>بعد الولادة"
     },
     "baby": {
       "section4": "القسم 4",
-      "yourNewborn": "مولودك<br>الجديد",
-      "breastfeedingFormulaCordCareSafe": "الرضاعة الطبيعية، والحليب الصناعي، والعناية بالحبل السري، والنوم الآمن، وشكل المولود الطبيعي، ومواعيد المتابعة."
+      "yourNewborn": "مولودك<br>الجديد"
     },
     "tools": {
       "dailyTools": "أدوات يومية",
       "trackersPlanners": "أدوات التتبّع<br>والتخطيط",
-      "timeContractionsCountKicksLog": "قياس زمن الانقباضات، وعدّ الركلات، وتسجيل الرضاعة والحفاضات، ومتابعة ضغط الدم، والتخطيط لولادتك، والمزيد.",
       "labor": "المخاض",
       "kickCounter": "عدّاد الركلات",
       "10MovesIn2Hours": "10 حركات خلال ساعتين. تسجيل الجلسات والسجل",
