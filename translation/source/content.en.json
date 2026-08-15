@@ -896,30 +896,30 @@
       "A blood pressure condition that can come on fast, usually after 20 weeks and sometimes in the week or two after delivery. Catching it early genuinely changes how it ends.",
       "What it is",
       "High blood pressure plus signs that other organs are being affected, most often the kidneys or liver. It also reduces blood flow through the placenta, which is why it affects the baby's growth. Delivery is the only cure, so that conversation can move faster than you expect.",
-      "Call the same day if you have",
-      "A headache that will not shift · Vision changes: spots, flashing, blurring · Pain under the ribs on the right, or high in the stomach · Sudden swelling of the face or hands · Shortness of breath",
-      "A blood pressure reading and a urine sample answer it in minutes. Do not wait overnight to see whether it settles.",
+      "Call your doctor today if you have",
+      "A headache that will not go away · Vision changes: dark spots, flashing · Pain under the ribs on the right, or high in the stomach · Sudden swelling of the face or hands · Shortness of breath",
+      "or any other sign your doctor told you to look out for.",
       "Higher risk if you have",
-      "Preeclampsia before · Chronic high blood pressure, kidney disease or lupus · Diabetes · Twins or more · A first pregnancy · BMI over 30 · Age 35 or over · A mother or sister who had it. Black women are affected more often and more severely, which reflects differences in care rather than biology.",
+      "Preeclampsia before · Chronic high blood pressure, kidney disease or lupus · Diabetes · Twins or more · A first pregnancy · BMI over 30 · Age 35 or over · A mother or sister who had it.",
       "Low-dose aspirin",
-      "With one strong risk factor, or two moderate ones, 81 mg daily from 12 to 16 weeks until delivery lowers the risk meaningfully. Plenty of women who qualify are never offered it. Ask.",
+      "With one strong risk factor, or two moderate ones, 81 mg daily from 12 to 16 weeks until delivery lowers the risk of developing this and needing an early delivery.",
       "It can also start after the birth",
-      "Usually in the first week, with the same warning signs. If they turn up once you are home, that is an emergency department visit rather than something to save for the postpartum appointment."
+      "Usually in the first week, with the same warning signs. If they turn up once you are home, call your doctor or go to the emergency room. Don't save it for the postpartum appointment."
     ]
   },
   "antenatal-mental-health": {
     "title": "Mental Health During Pregnancy",
-    "sub": "Anxiety, depression, and the medication question",
+    "sub": "Anxiety, depression, and medications",
     "t": [
-      "Depression and anxiety are about as common during pregnancy as after it, and get far less attention.",
+      "Depression and anxiety are about as common during pregnancy as after it.",
       "Worth telling someone",
       "Low mood most days · Losing interest in things you normally enjoy · Anxiety that will not switch off, or intrusive frightening thoughts · Not sleeping even when you have the chance · Feeling detached from the pregnancy · Any thought of harming yourself",
-      "That last one needs saying today",
-      "Tell your team, or call or text 988 in the US. It responds to treatment.",
-      "The medication question",
-      "Untreated depression is not the safe middle option: it is linked with preterm birth, lower birthweight, and a much higher chance of postpartum depression. Several SSRIs have substantial pregnancy safety data and are prescribed routinely. If you stopped something the day you saw the positive test, say so, because that is a common route into a relapse.",
+      "If you are feeling like harming yourself or others",
+      "Tell your team, or call or text 988.",
+      "Medicines",
+      "Untreated and uncontrolled depression is not a safe option: it is linked with preterm birth, lower birthweight, and a much higher chance of postpartum depression. Many women have sucessful pregnancies without needing medication. Several SSRIs have decent pregnancy safety data and are prescribed routinely. If you stopped something the day you saw the positive test, tell your doctor so you can discuss your options.",
       "What else helps",
-      "Talking therapy works, alone or alongside medication, and is worth asking for early because waiting lists are real. Sleep, daylight, movement and not being isolated all help."
+      "Talking therapy works, alone or alongside medication, and is worth asking for early because waiting lists are long. Be sure to talk to your doctor about and engage in the non-chemical aspects of depression and anxiety: good sleep, sunshine, exercise, community, therapy, prayer, etc. Morning sickness is an especially difficult time."
     ]
   },
   "common-discomforts": {
@@ -928,17 +928,17 @@
     "t": [
       "None of these are dangerous. All of them are miserable.",
       "Heartburn",
-      "Very common, and worst late on when there is simply no room left. Smaller meals, nothing within three hours of lying down, and raising the head of the bed rather than stacking pillows, which mostly bends you in the middle. Calcium carbonate antacids such as Tums are safe and count towards your calcium. If that is not enough, ask: famotidine and the proton pump inhibitors are both used in pregnancy, and enduring it is not the only option.",
+      "Very common, and worst late on when there is simply no room left. Smaller meals, nothing within three hours of lying down, and raising the head of the bed rather than stacking pillows, which mostly bends you in the middle. Calcium carbonate antacids such as Tums are safe and count towards your calcium. If that is not enough, ask your doctor: famotidine and the proton pump inhibitors are both used in pregnancy.",
       "Round ligament pain",
-      "A sharp catch low on one side when you stand up, roll over or cough, usually in the second trimester. The ligaments holding the uterus are stretching. Move into position more slowly, bend towards the pain when you cough, and try warmth. It is sharp but brief. Pain that stays, or arrives with bleeding, fever or regular tightening, is a different thing and needs a call.",
+      "A sharp catch low on one side when you stand up, roll over or cough, usually in the second trimester. The ligaments holding the uterus are stretching. Move into position more slowly, bend towards the pain when you cough, and try warmth. It is sharp but brief. Pain that stays, or arrives with bleeding, fever or regular tightening, is something to call your doctor about (or go the the emergency department if you are bleeding).",
       "Hemorrhoids and constipation",
-      "These two travel together. Water, fiber and moving around are the first line. Witch hazel pads and a sitz bath help the symptoms. Do not sit and strain on the toilet, and a footstool that raises your knees changes the angle and makes a real difference. Most improve after delivery.",
+      "These two travel together. Water, fiber and moving around are the first line. Witch hazel pads and a sitz bath help the symptoms. Do not sit and strain on the toilet. A footstool that raises your knees changes the angle and makes a real difference. Most improve after delivery.",
       "Back and pelvic pain",
-      "Your centre of gravity has moved forward and the ligaments have softened. A maternity support belt helps some people a great deal. So does not standing propped on one hip, a pillow between the knees at night, and flat shoes. Physical therapy exists for this and is badly underused: ask for a referral rather than assuming it is just part of the deal.",
+      "Your centre of gravity has moved forward and the ligaments have softened. A maternity support belt helps some people a great deal. So does not standing propped on one hip, a pillow between the knees at night, and flat shoes. Physical therapy exists for this but you will probably need to ask for a referral.",
       "Sleep",
-      "Side sleeping is advised in the second half, and the left side gets mentioned most, but either side is fine. What matters is not spending long stretches flat on your back. If you wake up on your back, just turn over. A pillow wedged behind you stops you rolling back. Night-time leg cramps respond to stretching the calf and to staying hydrated.",
+      "Side sleeping is advised in the second half, and the left side gets mentioned most, but either side is fine. What matters is not spending long stretches flat on your back. If you wake up on your back, just turn over. A pillow wedged behind you stops you rolling back. Night-time leg cramps respond to stretching the calf and to staying hydrated, and magnesium supplementation if you need it.",
       "Swelling",
-      "Puffy feet and ankles by the end of the day are expected. Put them up, avoid standing still for long stretches, and compression stockings help more than they look like they would. Sudden swelling of the face or hands, or swelling in one calf that is painful or warm, is not in this category and needs a call the same day."
+      "Puffy feet and ankles by the end of the day are expected. Put your legs up, avoid standing still for long stretches, and use compression stockings. Compression stockings come in different strengths or pressures, start low. Sudden swelling of the face or hands, or swelling in one calf that is painful or warm are reasons to call your doctor."
     ]
   },
   "circumcision": {
