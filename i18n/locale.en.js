@@ -1396,7 +1396,7 @@ window.MYOB_LOCALES.en = {
       "t": [
         "The main risk is",
         "Listeria",
-        ", a bacterial infection that's rare but can be serious in pregnancy (can cross the placenta). The FDA advises avoiding unpasteurized cheese and deli meats unless heated to steaming (165°F). Most pasteurized soft cheeses (like pasteurized brie, feta from a package) are safe. The overall risk from occasional deli meat is very low. This guidance is precautionary, not a guarantee of illness from a turkey sandwich. When in doubt, heat it."
+        ", a bacterial infection that's rare but can be serious in pregnancy (can cross the placenta). The FDA advises avoiding unpasteurized cheese and deli meats unless heated to steaming (165°F). Most pasteurized soft cheeses (like pasteurized brie, feta from a package) are safe. The overall risk from occasional deli meat is very low. When in doubt, heat it."
       ]
     },
     "faq-coffee": {
@@ -1412,14 +1412,14 @@ window.MYOB_LOCALES.en = {
       "title": "Can I dye my hair while pregnant?",
       "sub": "",
       "t": [
-        "Yes. Hair dye is absorbed through the scalp in very small amounts. No published studies have shown harm to the fetus at the amounts involved in normal salon or home hair coloring. Most doctors consider it safe, especially after the first trimester. Highlights (foil) have even less scalp contact. If you're concerned, wait until the second trimester when major organ development is complete."
+        "Yes, but think about why you are doing it. Hair dye is absorbed through the scalp in very small amounts. No published studies have shown harm to the fetus at the amounts involved in normal salon or home hair coloring. Highlights (foil) have even less scalp contact. If you're concerned, wait until the second trimester when major organ development is complete, or just don't do it."
       ]
     },
     "faq-exercise-mc": {
       "title": "Does exercise cause miscarriage?",
       "sub": "",
       "t": [
-        "No. Moderate exercise does not cause miscarriage in healthy pregnancies. This is one of the most pervasive myths in pregnancy. Early miscarriages are almost always caused by chromosomal abnormalities in the embryo, not by exercise, sex, stress, or anything the mother did. Exercise is protective, not harmful. See the exercise guidelines in the Prenatal section."
+        "No. Moderate exercise does not cause miscarriage in healthy pregnancies. A certain amount of exercise is protective, not harmful. See the exercise guidelines in the Prenatal section. If your doctor told you not to exercise, ask why, and follow that guidance."
       ]
     },
     "faq-sex-pregnancy": {
@@ -1433,14 +1433,14 @@ window.MYOB_LOCALES.en = {
       "title": "Are vaccines safe during pregnancy?",
       "sub": "",
       "t": [
-        "Two are recommended in every pregnancy and both have long safety records behind them: the Tdap booster and the flu shot. A third group, the live vaccines, waits until after you deliver.",
+        "Two are recommended in every pregnancy and seem to be safe: the Tdap booster and the flu shot. The live vaccines must wait until after you deliver.",
         "Tdap, for whooping cough",
         "Given between 27 and 36 weeks, in every pregnancy, even if you had it in the last one. The main point is not to protect you. Your body makes antibodies and passes them across the placenta, so the baby is born already carrying protection against whooping cough. That matters because whooping cough is most dangerous in the first months of life, before a baby is old enough to be vaccinated. Anyone who will be holding the baby regularly should be up to date too.",
         "Flu shot",
-        "Recommended in any trimester during flu season. Pregnancy changes how your lungs and immune system work, which makes flu considerably more likely to put you in hospital. The antibodies cross to the baby as well and cover the first few months. The injected vaccine is the one used in pregnancy: the nasal spray is a live vaccine and is not.",
+        "Recommended in any trimester during flu season. Pregnancy changes how your lungs and immune system work, which makes flu considerably more likely to put you in hospital. The antibodies cross to the baby as well and cover the first few months. The injected vaccine is the one used in pregnancy: the nasal spray is a live vaccine.",
         "The ones that wait until after delivery",
         "Live vaccines, meaning MMR (measles, mumps and rubella) and varicella (chickenpox), are not given during pregnancy. If your early bloodwork shows you are not immune to rubella or chickenpox, the usual plan is to vaccinate before you leave the hospital, which also protects a future pregnancy. Both are safe while breastfeeding.",
-        "If you are behind on something else, or you are travelling, or there is an outbreak where you live, bring it to a prenatal visit. Being pregnant does not put every vaccine out of reach, and the answer depends on the specific vaccine and your situation."
+        "If you are behind on something else, or you are travelling, or there is an outbreak where you live, tell your doctor."
       ]
     },
     "faq-eat-for-two": {
@@ -1509,7 +1509,7 @@ window.MYOB_LOCALES.en = {
       "title": "Does stress dry up breast milk?",
       "sub": "",
       "t": [
-        "Acute stress can temporarily interfere with the letdown reflex (the release of milk), but it does not affect milk production long-term. Milk supply is driven by demand. The more frequently and effectively your baby nurses or you pump, the more milk your body produces. Strategies that help letdown: skin-to-skin contact, warmth, relaxation techniques, and looking at a photo of your baby when pumping."
+        "Acute stress can temporarily interfere with the letdown reflex (the release of milk). But once stressful event will not cause milk to dry up. Milk supply is driven by demand. The more frequently and effectively your baby nurses or you pump, the more milk your body produces. If your stress or chaos around you prevents baby from feeding well, this could decrease demand and decrease the amount of milk you produce. Strategies that help letdown: skin-to-skin contact, warmth, relaxation techniques, and looking at a photo of your baby when pumping. Talk to your doctor about non-chemical ways of reducing stress."
       ]
     },
     "faq-bonding": {
