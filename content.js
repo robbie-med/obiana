@@ -141,12 +141,12 @@ const CONTENT_STRUCTURE = {
   "baby": [
     {
       "id": "breastfeeding",
-      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--navy)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M8 6h8v-2a1 1 0 0 0 -1 -1h-6a1 1 0 0 0 -1 1v2\" /> <path d=\"M16 6l1.094 1.759a6 6 0 0 1 .906 3.17v8.071a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-8.071a6 6 0 0 1 .906 -3.17l1.094 -1.759\" /> <path d=\"M10 16a2 2 0 1 0 4 0a2 2 0 1 0 -4 0\" /> <path d=\"M10 10h4\" /></svg>",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--navy)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" /> <path d=\"M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0\" /></svg>",
       "color": "navy"
     },
     {
       "id": "bf-challenges",
-      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--navy)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M10 6h6v-2a1 1 0 0 0 -1 -1h-6a1 1 0 0 0 -1 1\" /> <path d=\"M16 6l1.094 1.759a6 6 0 0 1 .906 3.17v3.071m0 4v1a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-8.071a6 6 0 0 1 .906 -3.17l.327 -.525\" /> <path d=\"M10 16a2 2 0 1 0 4 0a2 2 0 1 0 -4 0\" /> <path d=\"M3 3l18 18\" /></svg>",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--navy)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" /> <path d=\"M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0\" /><path d=\"M3 3l18 18\" /></svg>",
       "color": "navy"
     },
     {

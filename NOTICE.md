@@ -33,6 +33,11 @@ because the app has to work offline and from `file://`, and a strict CSP blocks
 any external request. Only the ~35 icons actually used are present; the rest of
 the set is not bundled.
 
+One icon is derived rather than taken as-is: the breastfeeding-challenges card
+uses Tabler's `circle-dot` with the set's own strike-through stroke
+(`M3 3l18 18`) added, which is how Tabler builds its own `-off` variants. It
+remains MIT.
+
 ## Edinburgh Postnatal Depression Scale (EPDS)
 
 > Cox JL, Holden JM, Sagovsky R. Detection of postnatal depression: development
