@@ -904,7 +904,7 @@ window.MYOB_LOCALES.en = {
         "Urine sample",
         "GBS status confirmed from your prenatal records",
         "Step 2: Admitted or Asked to Wait",
-        "If your cervix is less than 4–6 cm (depending on the hospital and circumstances), you may be sent home or asked to walk around for 1–2 hours for a recheck. This is not a rejection. Early labor is genuinely safer and more comfortable at home. Don't be discouraged.",
+        "If your cervix is less than 4–6 cm (depending on the hospital and circumstances), you may be sent home or asked to walk around for 1–2 hours for a recheck. Early labor is safer and more comfortable at home.",
         "Step 3: Labor Room",
         "Once admitted, you're in your room for the duration. Your nurse is your primary guide and will be checking on you regularly. This is the time to discuss your birth preferences and pain management options.",
         "Bring This to the Hospital",
@@ -940,7 +940,7 @@ window.MYOB_LOCALES.en = {
         "Induction of Labor",
         "If your cervix needs help, your doctor may use medications (misoprostol, oxytocin/Pitocin) or a balloon catheter to ripen and open the cervix. Induction can take 12–24+ hours, especially with a first baby and an unfavorable cervix. Plan for it to take time.",
         "Fetal Monitoring",
-        "Most hospitals use continuous electronic fetal monitoring during active labor, which tracks baby's heart rate against your contractions. For a low-risk labor, intermittent listening, where a nurse checks the heartbeat at set intervals, gives the same outcomes for the baby with fewer cesareans and fewer vacuum or forceps deliveries. Continuous monitoring makes more sense if you have an epidural, are being induced, or have a condition that needs closer watching. It is fair to ask which applies to you. If you want to walk or use a tub, ask whether wireless (telemetry) monitors are available."
+        "Most hospitals use continuous electronic fetal monitoring during active labor, which tracks baby’s heart rate against your contractions. For a low-risk labor, intermittent listening, where a nurse checks the heartbeat at set intervals, gives the same outcomes for the baby with fewer cesareans and fewer vacuum or forceps deliveries. Continuous monitoring makes more sense if you have an epidural, are being induced, or have a condition that needs closer watching. If you want to walk or use a tub, ask whether wireless (telemetry) monitors are available."
       ]
     },
     "pain-management": {
@@ -999,7 +999,7 @@ window.MYOB_LOCALES.en = {
         "Key Fact. The C-Section Myth",
         "Epidurals do",
         "not",
-        "increase C-section rates. This is one of the most studied questions in obstetrics and the large randomized trials agree. There are real tradeoffs worth knowing: the pushing stage tends to run longer, and a vacuum or forceps delivery is somewhat more likely. You can ask for an epidural at any point in active labor. The practical limit is not a rule about how many centimeters you are, but how fast your labor is moving, since a very quick labor may not leave time to place one."
+        "increase C-section rates. This is one of the most studied questions in obstetrics and the large randomized trials agree. There are real tradeoffs: the pushing stage tends to run longer, and a vacuum or forceps delivery is somewhat more likely. You can ask for an epidural at any point in active labor. The practical limit is not a rule about how many centimeters you are, but how fast your labor is moving, since a very quick labor may not leave time to place one."
       ]
     },
     "csection": {
@@ -1441,7 +1441,7 @@ window.MYOB_LOCALES.en = {
       "t": [
         "Two are recommended in every pregnancy and both have long safety records behind them: the Tdap booster and the flu shot. A third group, the live vaccines, waits until after you deliver.",
         "Tdap, for whooping cough",
-        "Given between 27 and 36 weeks, in every pregnancy, even if you had it in the last one. The main point is not to protect you. Your body makes antibodies and passes them across the placenta, so the baby is born already carrying protection against whooping cough. That matters because whooping cough is most dangerous in the first months of life, before a baby is old enough to be vaccinated. It is worth asking that anyone who will be holding the baby regularly is up to date too.",
+        "Given between 27 and 36 weeks, in every pregnancy, even if you had it in the last one. The main point is not to protect you. Your body makes antibodies and passes them across the placenta, so the baby is born already carrying protection against whooping cough. That matters because whooping cough is most dangerous in the first months of life, before a baby is old enough to be vaccinated. Anyone who will be holding the baby regularly should be up to date too.",
         "Flu shot",
         "Recommended in any trimester during flu season. Pregnancy changes how your lungs and immune system work, which makes flu considerably more likely to put you in hospital. The antibodies cross to the baby as well and cover the first few months. The injected vaccine is the one used in pregnancy: the nasal spray is a live vaccine and is not.",
         "The ones that wait until after delivery",
@@ -1590,7 +1590,7 @@ window.MYOB_LOCALES.en = {
         "What is not known",
         "Nobody can run the trial that would settle whether an occasional single drink does damage, so the advice is to avoid alcohol completely. That is the only recommendation guaranteed to be safe. It is not evidence that one glass of wine caused harm.",
         "If you drank before you knew",
-        "Very common, and not a reason to panic. Tell your team the real amount so they know what to watch for.",
+        "Very common. Tell your team the real amount so they know what to watch for.",
         "If stopping is hard",
         "If you drink every day, do not stop abruptly on your own. Alcohol withdrawal can be dangerous in a way the drinking is not, and needs medical supervision. Tell your team."
       ]
@@ -1642,7 +1642,7 @@ window.MYOB_LOCALES.en = {
         "Higher risk if you have",
         "Preeclampsia before · Chronic high blood pressure, kidney disease or lupus · Diabetes · Twins or more · A first pregnancy · BMI over 30 · Age 35 or over · A mother or sister who had it. Black women are affected more often and more severely, which reflects differences in care rather than biology.",
         "Low-dose aspirin",
-        "With one strong risk factor, or two moderate ones, 81 mg daily from 12 to 16 weeks until delivery lowers the risk meaningfully. Plenty of women who qualify are never offered it, so it is worth asking.",
+        "With one strong risk factor, or two moderate ones, 81 mg daily from 12 to 16 weeks until delivery lowers the risk meaningfully. Plenty of women who qualify are never offered it. Ask.",
         "It can also start after the birth",
         "Usually in the first week, with the same warning signs. If they turn up once you are home, that is an emergency department visit rather than something to save for the postpartum appointment."
       ]
@@ -1651,15 +1651,15 @@ window.MYOB_LOCALES.en = {
       "title": "Mental Health During Pregnancy",
       "sub": "Anxiety, depression, and the medication question",
       "t": [
-        "Depression and anxiety are about as common during pregnancy as after it, and get far less attention. Feeling awful while pregnant does not mean you are doing it wrong.",
+        "Depression and anxiety are about as common during pregnancy as after it, and get far less attention.",
         "Worth telling someone",
         "Low mood most days · Losing interest in things you normally enjoy · Anxiety that will not switch off, or intrusive frightening thoughts · Not sleeping even when you have the chance · Feeling detached from the pregnancy · Any thought of harming yourself",
         "That last one needs saying today",
-        "Tell your team, or call or text 988 in the US. It is more common than anyone admits, it responds to treatment, and it says nothing about the mother you will be.",
+        "Tell your team, or call or text 988 in the US. It responds to treatment.",
         "The medication question",
         "Untreated depression is not the safe middle option: it is linked with preterm birth, lower birthweight, and a much higher chance of postpartum depression. Several SSRIs have substantial pregnancy safety data and are prescribed routinely. If you stopped something the day you saw the positive test, say so, because that is a common route into a relapse.",
         "What else helps",
-        "Talking therapy works, alone or alongside medication, and is worth asking for early because waiting lists are real. Sleep, daylight, movement and not being isolated all matter more than they sound like they should."
+        "Talking therapy works, alone or alongside medication, and is worth asking for early because waiting lists are real. Sleep, daylight, movement and not being isolated all help."
       ]
     },
     "common-discomforts": {
@@ -1676,7 +1676,7 @@ window.MYOB_LOCALES.en = {
         "Back and pelvic pain",
         "Your centre of gravity has moved forward and the ligaments have softened. A maternity support belt helps some people a great deal. So does not standing propped on one hip, a pillow between the knees at night, and flat shoes. Physical therapy exists for this and is badly underused: ask for a referral rather than assuming it is just part of the deal.",
         "Sleep",
-        "Side sleeping is advised in the second half, and the left side gets mentioned most, but either side is fine. What matters is not spending long stretches flat on your back. If you wake up on your back, nothing has gone wrong, just turn over. A pillow wedged behind you stops you rolling back. Night-time leg cramps respond to stretching the calf and to staying hydrated.",
+        "Side sleeping is advised in the second half, and the left side gets mentioned most, but either side is fine. What matters is not spending long stretches flat on your back. If you wake up on your back, just turn over. A pillow wedged behind you stops you rolling back. Night-time leg cramps respond to stretching the calf and to staying hydrated.",
         "Swelling",
         "Puffy feet and ankles by the end of the day are expected. Put them up, avoid standing still for long stretches, and compression stockings help more than they look like they would. Sudden swelling of the face or hands, or swelling in one calf that is painful or warm, is not in this category and needs a call the same day."
       ]
@@ -1689,7 +1689,7 @@ window.MYOB_LOCALES.en = {
         "What the evidence shows",
         "The benefits are real but small: fewer urinary tract infections in the first year, a lower rate of some sexually transmitted infections in adulthood, and less penile cancer, which is rare either way. Complications occur in about 1 in 500, usually bleeding or infection, and are more common when it is done later than in the newborn period.",
         "Why guidance differs",
-        "The American Academy of Pediatrics concluded the benefits outweigh the risks but not enough to recommend it for every boy. Several European bodies read the same studies and concluded otherwise. In practice this is a family decision, often shaped by religion, culture, and what the father looks like. Those are legitimate reasons.",
+        "The American Academy of Pediatrics concluded the benefits outweigh the risks but not enough to recommend it for every boy. Several European bodies read the same studies and concluded otherwise. In practice this is a family decision, often shaped by religion, culture, and what the father looks like.",
         "If you decide to do it",
         "Ask about pain control specifically: a local anaesthetic block, not sugar water alone. Effective options exist and are not used everywhere. Check what your insurance covers.",
         "If you decide not to",
@@ -1700,7 +1700,7 @@ window.MYOB_LOCALES.en = {
       "title": "Vitamin D for Breastfed Babies",
       "sub": "Why drops are recommended",
       "t": [
-        "Breast milk is low in vitamin D in almost everyone. This is not a sign that anything is wrong with your milk or your diet. It is a known gap with a simple fix.",
+        "Breast milk is low in vitamin D in almost everyone. It is a known gap with a simple fix.",
         "What is recommended",
         "400 IU of vitamin D daily, starting in the first few days, for any baby who is breastfed or having mostly breast milk. It carries on until the baby is taking about a litre a day of formula or, later, fortified milk, because those are already supplemented.",
         "A formula-fed baby taking a full quantity does not need extra. Combination feeding usually still does, since it depends how much formula is actually going in.",
@@ -1714,7 +1714,7 @@ window.MYOB_LOCALES.en = {
       "title": "Car Seats",
       "sub": "The short version",
       "t": [
-        "You will not be discharged without one, so it is worth doing properly in advance rather than in a hospital car park at two in the morning.",
+        "You will not be discharged without one.",
         "Rear-facing, in the back seat, for as long as the seat allows, which is usually well past the first birthday and often past the second. Never in front of an active airbag.",
         "Harness straps come from at or below the shoulders when rear-facing, tight enough that you cannot pinch a fold of webbing at the collarbone. The chest clip sits level with the armpits, not on the belly.",
         "Nothing bulky underneath. A winter coat compresses in a crash and leaves the harness loose. Dress the baby thinly, buckle up, then put the coat or a blanket over the top.",
