@@ -18,6 +18,29 @@
   --ink-mid:    #3d4e4e;
   --ink-soft:   #657575;
 
+  /* A toast floats over the page, so it takes the inverse of the surface
+     rather than following --ink, which flips with the theme. */
+  --toast-bg:     #1a2424;
+  --toast-ink:    #ffffff;
+  --toast-action: #7fd4d4;
+
+  /* Teal as CHROME, not as ink. The header and the first-run notice are large
+     structural surfaces that carry light text, so they stay dark in both
+     themes; --teal itself is lightened for dark mode so it can be read AS
+     text, which makes it far too bright for a whole header bar. */
+  --teal-surface: #1d4e4e;
+  --teal-mid-surface: #2a7070;
+  --rose-surface: #b25952;
+  --gold-surface: #9b6921;
+  --navy-surface: #2a3d6e;
+  --plum-surface: #5e3073;
+
+  /* The text that goes ON a solid accent fill. It is not the same decision as
+     the accent itself: the accents were lightened so they are readable AS text
+     on a dark surface, which makes them too light to carry white text as a
+     button fill. Light theme keeps white; dark theme takes ink. */
+  --on-accent:    #ffffff;
+
   /* One ladder, so the stacking order is a decision rather than eight
      unrelated magic numbers. */
   --z-sticky:  100;
@@ -80,7 +103,7 @@ body {
   position: sticky;
   top: 0;
   z-index: var(--z-header);
-  background: var(--teal);
+  background: var(--teal-surface);
   /* Bottom 12px moved here from #search-bar so the search icon centres. */
   padding: env(safe-area-inset-top, 0px) 0 12px;
 }
@@ -289,7 +312,7 @@ body {
 
 /* ─── CARDS & SECTIONS ─── */
 .section-hero {
-  background: linear-gradient(135deg, var(--teal) 0%, var(--teal-mid) 100%);
+  background: linear-gradient(135deg, var(--teal-surface) 0%, var(--teal-mid-surface) 100%);
   padding: 28px 20px 24px;
   position: relative;
   overflow: hidden;
@@ -306,10 +329,10 @@ body {
   background: rgba(255,255,255,0.06);
 }
 
-.section-hero.rose-hero { background: linear-gradient(135deg, #7a3a36 0%, var(--rose) 100%); }
-.section-hero.gold-hero { background: linear-gradient(135deg, #7a5010 0%, var(--gold) 100%); }
-.section-hero.navy-hero { background: linear-gradient(135deg, #1a2548 0%, var(--navy) 100%); }
-.section-hero.plum-hero { background: linear-gradient(135deg, #3a1a48 0%, var(--plum) 100%); }
+.section-hero.rose-hero { background: linear-gradient(135deg, #7a3a36 0%, var(--rose-surface) 100%); }
+.section-hero.gold-hero { background: linear-gradient(135deg, #7a5010 0%, var(--gold-surface) 100%); }
+.section-hero.navy-hero { background: linear-gradient(135deg, #1a2548 0%, var(--navy-surface) 100%); }
+.section-hero.plum-hero { background: linear-gradient(135deg, #3a1a48 0%, var(--plum-surface) 100%); }
 
 
 .hero-title {
@@ -500,7 +523,7 @@ body {
 }
 .data-table th {
   background: var(--teal);
-  color: white;
+  color: var(--on-accent);
   padding: 7px 10px;
   font-weight: 600;
   font-size: 12px;
@@ -520,7 +543,7 @@ body {
 
 /* ─── HOME PAGE ─── */
 .home-hero {
-  background: linear-gradient(160deg, var(--teal) 0%, #1a6060 60%, #2a7d5a 100%);
+  background: linear-gradient(160deg, var(--teal-surface) 0%, #1a6060 60%, #2a7d5a 100%);
   padding: 32px 20px 28px;
   position: relative;
   overflow: hidden;
@@ -613,8 +636,8 @@ body {
 }
 
 .info-strip-text { flex: 1; }
-.info-strip-title { font-size: 14px; font-weight: 700; color: white; }
-.info-strip-sub { font-size: 12px; color: rgba(255,255,255,0.7); margin-top: 1px; }
+.info-strip-title { font-size: 14px; font-weight: 700; color: var(--on-accent); }
+.info-strip-sub { font-size: 12px; color: var(--on-accent); opacity: .78; margin-top: 1px; }
 
 /* Quick-ref card */
 .qref-card {
@@ -732,7 +755,7 @@ body {
 
 /* ─── MY INFO PAGE ─── */
 .myinfo-hero {
-  background: linear-gradient(135deg, #1a2548 0%, var(--navy) 100%);
+  background: linear-gradient(135deg, #1a2548 0%, var(--navy-surface) 100%);
   padding: 24px 20px 20px;
 }
 
@@ -836,7 +859,7 @@ body {
   flex: 1;
   padding: 14px;
   background: var(--teal);
-  color: white;
+  color: var(--on-accent);
   border: none;
   border-radius: var(--radius);
   font-family: var(--font-sans);
@@ -913,8 +936,8 @@ body {
   bottom: calc(var(--nav-h) + var(--safe-bottom) + 16px);
   left: 50%;
   transform: translateX(-50%) translateY(20px);
-  background: var(--ink);
-  color: white;
+  background: var(--toast-bg);
+  color: var(--toast-ink);
   padding: 10px 20px;
   border-radius: 22px;
   font-size: 13.5px;
@@ -1037,11 +1060,11 @@ strong { font-weight: 600; }
   line-height: 1.2;
 }
 .big-action-btn:active { transform: scale(0.97); opacity: .9; }
-.btn-teal { background: var(--teal); color: white; }
-.btn-rose { background: var(--rose); color: white; }
-.btn-gold { background: var(--gold); color: white; }
-.btn-navy { background: var(--navy); color: white; }
-.btn-plum { background: var(--plum); color: white; }
+.btn-teal { background: var(--teal); color: var(--on-accent); }
+.btn-rose { background: var(--rose); color: var(--on-accent); }
+.btn-gold { background: var(--gold); color: var(--on-accent); }
+.btn-navy { background: var(--navy); color: var(--on-accent); }
+.btn-plum { background: var(--plum); color: var(--on-accent); }
 .btn-green { background: #2e7d32; color: white; }
 .btn-red { background: #c44; color: white; }
 .btn-sm {
@@ -1297,7 +1320,7 @@ strong { font-weight: 600; }
 .bpo-header {
   background: var(--teal);
   padding: 14px 16px;
-  color: white;
+  color: var(--on-accent);
   font-size: 14px;
   font-weight: 700;
 }
@@ -1436,7 +1459,8 @@ strong { font-weight: 600; }
 #export-btn:active { background: var(--teal-light); }
 
 /* ─── DARK MODE ─── */
-body.dark { --danger: #f08a8a; --danger-bg: #2a1414; --danger-ink: #f5b5b5;
+body.dark { --toast-bg: #e6f0f0; --toast-ink: #10201f; --toast-action: #0d5f5f; --on-accent: #0d1a1a;
+  --danger: #f08a8a; --danger-bg: #2a1414; --danger-ink: #f5b5b5;
   --warning: #f0954a; --warning-bg: #2a1a0c; --warning-ink: #f5c99a;
   --caution: #d6a13c; --caution-bg: #251c08;
   --success: #6fc275; --success-bg: #14240f; --success-ink: #a6dcaa;
@@ -1763,7 +1787,7 @@ body.dark #translation-notice {
   position: fixed;
   inset: 0;
   z-index: var(--z-sheet);                 /* under the language picker, above the app */
-  background: var(--teal);
+  background: var(--teal-surface);
   display: flex;
   align-items: flex-start;       /* see the note on #lang-picker */
   justify-content: center;
@@ -1965,7 +1989,7 @@ body.dark .i18n-stale-banner { color: #e8d5a8; background: #221800; border-color
   top: 0;
   z-index: calc(var(--z-toast) + 1);   /* above everything, including the toast */
   background: var(--teal);
-  color: var(--white);
+  color: var(--on-accent);
   padding: 10px 16px;
   border-radius: 0 0 var(--radius-sm) 0;
   font-size: 14px;
@@ -2089,7 +2113,7 @@ body.dark .epds-option:has(.epds-radio:focus-visible) { outline-color: #7fd4d4; 
 .toast-undo {
   background: none;
   border: 0;
-  color: #7fd4d4;
+  color: var(--toast-action);
   font: inherit;
   font-weight: 700;
   text-decoration: underline;
