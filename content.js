@@ -161,7 +161,7 @@ const CONTENT_STRUCTURE = {
     },
     {
       "id": "normal-newborn",
-      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--navy)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0\" /> <path d=\"M16 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0\" /> <path d=\"M2 5h2.5l1.632 4.897a6 6 0 0 0 5.693 4.103h2.675a5.5 5.5 0 0 0 0 -11h-.5v6\" /> <path d=\"M6 9h14\" /> <path d=\"M9 17l1 -3\" /> <path d=\"M16 14l1 3\" /></svg>",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--navy)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0\" /> <path d=\"M9 10l.01 0\" /> <path d=\"M15 10l.01 0\" /> <path d=\"M9.5 15a3.5 3.5 0 0 0 5 0\" /> <path d=\"M12 3a2 2 0 0 0 0 4\" /></svg>",
       "color": "navy"
     },
     {
