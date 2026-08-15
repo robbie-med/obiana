@@ -12,7 +12,7 @@ window.MYOB_LOCALES.pl = {
   "translationStatus": "stub",
   "ui": {
     "app": {
-      "title": "Poradnik ciążowy"
+      "title": "Obiana Poradnik ciążowy"
     },
     "lang": {
       "unreviewedNotice": "To tłumaczenie zostało wygenerowane maszynowo i nie zostało jeszcze sprawdzone przez personel medyczny. W sprawach medycznych potwierdź informacje ze swoim zespołem opieki lub przełącz na angielski.",
@@ -26,6 +26,10 @@ window.MYOB_LOCALES.pl = {
     },
     "tools": {
       "helpUsImprove": "Pomóż nam ulepszyć"
+    },
+    "home": {
+      "heroTitle": "Wiedz, czego się<br>spodziewać. Zadawaj<br>dobre pytania.",
+      "heroDesc": "Od pierwszej wizyty prenatalnej po poród i powrót do zdrowia Obiana ma wszystko w jednym miejscu."
     }
   }
 };

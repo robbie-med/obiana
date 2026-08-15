@@ -15,7 +15,7 @@ window.MYOB_LOCALES["pt-BR"] = {
   "translationStatus": "stub",
   "ui": {
     "app": {
-      "title": "Manual da Gravidez"
+      "title": "Obiana Manual da Gravidez"
     },
     "lang": {
       "unreviewedNotice": "Esta tradução foi gerada automaticamente e ainda não foi revisada por um profissional de saúde. Para decisões médicas, confirme com sua equipe de saúde ou mude para o inglês.",
@@ -29,6 +29,10 @@ window.MYOB_LOCALES["pt-BR"] = {
     },
     "tools": {
       "helpUsImprove": "Ajude a melhorar"
+    },
+    "home": {
+      "heroTitle": "Saiba o que<br>esperar. Faça boas<br>perguntas.",
+      "heroDesc": "Da primeira consulta pré-natal ao parto e à recuperação, o Obiana reúne tudo em um só lugar."
     }
   }
 };

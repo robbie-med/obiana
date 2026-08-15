@@ -519,7 +519,7 @@ window.MYOB_LOCALES.fr = {
       "inProgress": "Traduction en cours"
     },
     "app": {
-      "title": "Manuel de Grossesse",
+      "title": "Obiana Manuel de Grossesse",
       "tagline": "",
       "description": "Guide de grossesse, de travail, d'accouchement et de post-partum fondé sur des preuves. Fonctionne hors ligne.",
       "home": "Accueil",

@@ -517,7 +517,7 @@ window.MYOB_LOCALES.zh = {
       "inProgress": "翻译进行中"
     },
     "app": {
-      "title": "怀孕手册",
+      "title": "Obiana 怀孕手册",
       "tagline": "",
       "description": "循证的怀孕、分娩、生产与产后指南。可离线使用。",
       "home": "首页",

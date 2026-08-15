@@ -518,7 +518,7 @@ window.MYOB_LOCALES.es = {
       "inProgress": "Traducción en curso"
     },
     "app": {
-      "title": "Manual del Embarazo",
+      "title": "Obiana Manual del Embarazo",
       "tagline": "",
       "description": "Guía de embarazo, trabajo de parto, parto y posparto basada en evidencia. Funciona sin conexión.",
       "home": "Inicio",

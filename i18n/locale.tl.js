@@ -15,7 +15,7 @@ window.MYOB_LOCALES.tl = {
   "translationStatus": "stub",
   "ui": {
     "app": {
-      "title": "Handbook sa Pagbubuntis"
+      "title": "Obiana Handbook sa Pagbubuntis"
     },
     "lang": {
       "unreviewedNotice": "Ang pagsasaling ito ay gawa ng makina at hindi pa nasusuri ng isang clinician. Para sa mga desisyong medikal, kumpirmahin sa inyong care team o lumipat sa Ingles.",
@@ -29,6 +29,10 @@ window.MYOB_LOCALES.tl = {
     },
     "tools": {
       "helpUsImprove": "Tulungan Kaming Bumuti"
+    },
+    "home": {
+      "heroTitle": "Alamin ang<br>aasahan. Magtanong<br>nang mahusay.",
+      "heroDesc": "Mula sa iyong unang prenatal na pagpapatingin hanggang sa panganganak at paggaling, pinagsasama ng Obiana ang lahat sa isang lugar."
     }
   }
 };

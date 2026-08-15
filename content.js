@@ -402,9 +402,15 @@ function cardBody(id) {
   const mine = card.t || [];
   const fallback = (base[id] || {}).t || [];
   const stale = staleSet(I18n.lang);
+  // The local English editor sets this to wrap each filled slot in a element
+  // carrying its key, so a sentence on screen can be traced back to exactly
+  // one entry in the locale file. Unset in production, where the branch costs
+  // one property lookup per slot and nothing else.
+  const wrap = window.MYOB_EDIT_WRAP;
   return tpl.replace(/\{\{(\d+)\}\}/g, (m, i) => {
     const n = +i;
     const v = mine[n];
+    if (wrap) return wrap('content.' + id + '.t.' + n, v === undefined ? '' : v);
     if (v === undefined || v === "") return enRun(fallback[n]);
     // Translated, but from an English sentence that has since been rewritten.
     // A clinical correction lands in English first; rendering the old

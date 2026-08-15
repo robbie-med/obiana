@@ -556,7 +556,7 @@ window.MYOB_LOCALES.en = {
       "staleNotice": "Some passages below are shown in English because the English guidance was updated and those translations have not caught up yet."
     },
     "app": {
-      "title": "Pregnancy Handbook",
+      "title": "Obiana Pregnancy Handbook",
       "tagline": "",
       "description": "Evidence-based pregnancy, birth and newborn guide in 17 languages. Free, open source, and works offline.",
       "home": "Home",

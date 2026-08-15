@@ -517,7 +517,7 @@ window.MYOB_LOCALES.ko = {
       "inProgress": "번역 진행 중"
     },
     "app": {
-      "title": "임신 핸드북",
+      "title": "Obiana 임신 핸드북",
       "tagline": "",
       "description": "근거 기반의 임신, 진통, 분만 및 산후 안내서. 오프라인에서도 사용할 수 있습니다.",
       "home": "홈",

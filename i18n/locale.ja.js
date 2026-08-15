@@ -15,7 +15,7 @@ window.MYOB_LOCALES.ja = {
   "translationStatus": "stub",
   "ui": {
     "app": {
-      "title": "妊娠ハンドブック"
+      "title": "Obiana 妊娠ハンドブック"
     },
     "lang": {
       "unreviewedNotice": "この翻訳は機械翻訳であり、まだ医療者の確認を受けていません。医療上の判断については、担当の医療チームに確認するか、英語に切り替えてください。",
@@ -29,6 +29,10 @@ window.MYOB_LOCALES.ja = {
     },
     "tools": {
       "helpUsImprove": "改善にご協力ください"
+    },
+    "home": {
+      "heroTitle": "これから何が<br>起きるかを知り、<br>良い質問を。",
+      "heroDesc": "初回の妊婦健診から出産、産後の回復まで、Obianaがすべてを一つにまとめます。"
     }
   }
 };

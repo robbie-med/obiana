@@ -16,7 +16,7 @@ window.MYOB_LOCALES.zom = {
   "translationStatus": "stub",
   "ui": {
     "app": {
-      "title": "Pregnancy Handbook",
+      "title": "Obiana Pregnancy Handbook",
       "tagline": ""
     },
     "lang": {

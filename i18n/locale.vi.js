@@ -12,7 +12,7 @@ window.MYOB_LOCALES.vi = {
   "translationStatus": "stub",
   "ui": {
     "app": {
-      "title": "Sổ tay Thai kỳ"
+      "title": "Obiana Sổ tay Thai kỳ"
     },
     "lang": {
       "unreviewedNotice": "Bản dịch này do máy tạo ra và chưa được nhân viên y tế kiểm tra. Với các quyết định y tế, vui lòng xác nhận với nhóm chăm sóc của bạn hoặc chuyển sang tiếng Anh.",
@@ -26,6 +26,10 @@ window.MYOB_LOCALES.vi = {
     },
     "tools": {
       "helpUsImprove": "Giúp chúng tôi cải thiện"
+    },
+    "home": {
+      "heroTitle": "Biết điều gì<br>sắp đến. Hỏi những<br>câu hỏi hay.",
+      "heroDesc": "Từ lần khám thai đầu tiên đến khi sinh và hồi phục, Obiana giữ mọi thứ ở một nơi."
     }
   }
 };

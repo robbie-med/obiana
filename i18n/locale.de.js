@@ -12,7 +12,7 @@ window.MYOB_LOCALES.de = {
   "translationStatus": "stub",
   "ui": {
     "app": {
-      "title": "Schwangerschafts-Handbuch"
+      "title": "Obiana Schwangerschafts-Handbuch"
     },
     "lang": {
       "unreviewedNotice": "Diese Übersetzung wurde maschinell erstellt und noch nicht von medizinischem Fachpersonal geprüft. Bestätigen Sie medizinische Entscheidungen bitte mit Ihrem Behandlungsteam oder wechseln Sie zu Englisch.",
@@ -26,6 +26,10 @@ window.MYOB_LOCALES.de = {
     },
     "tools": {
       "helpUsImprove": "Helfen Sie uns, besser zu werden"
+    },
+    "home": {
+      "heroTitle": "Wissen, was Sie<br>erwartet. Die richtigen<br>Fragen stellen.",
+      "heroDesc": "Vom ersten Vorsorgetermin bis zur Geburt und Erholung: Obiana hat alles an einem Ort."
     }
   }
 };

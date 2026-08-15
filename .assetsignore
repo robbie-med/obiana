@@ -30,13 +30,12 @@ i18n/epds/verify.js
 i18n/epds/extract.js
 i18n/epds/extract-phq9.js
 
-# Intermediate key-extraction artifacts kept for regeneration, not for serving.
-i18n/_html_keys.json
-i18n/_tools_keys.json
-i18n/_frag_keys.json
-
 # Worker source — not a static asset
 worker
 
 # Local review UI — never part of the public site
 review
+
+# Local English editor — writes to the repo and pushes to GitHub. Serving it
+# publicly would put an edit surface on the live site.
+editor
