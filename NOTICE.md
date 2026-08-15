@@ -22,6 +22,17 @@ any country:
 The US flag on the care notice is separate: it refers to the healthcare system
 the guide describes, not to a language.
 
+## Card icons, inlined in `content.js`
+
+From [Tabler Icons](https://github.com/tabler/tabler-icons) (outline set),
+MIT licensed, Copyright (c) 2020-2026 Pawel Kuna. Retain the MIT notice if you
+redistribute them.
+
+They are inlined as SVG paths rather than loaded as a font or a sprite sheet,
+because the app has to work offline and from `file://`, and a strict CSP blocks
+any external request. Only the ~35 icons actually used are present; the rest of
+the set is not bundled.
+
 ## Edinburgh Postnatal Depression Scale (EPDS)
 
 > Cox JL, Holden JM, Sagovsky R. Detection of postnatal depression: development

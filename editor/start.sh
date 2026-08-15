@@ -32,4 +32,15 @@ if [ "$branch" != "obiana-main" ]; then
   exit 1
 fi
 
+# Double-clicking the desktop shortcut should land you on the page, not on a
+# terminal waiting for you to copy a URL. Opens once the port answers.
+( for _ in $(seq 1 40); do
+    if (exec 3<>/dev/tcp/127.0.0.1/3906) 2>/dev/null; then
+      exec 3<&- 3>&-
+      command -v xdg-open >/dev/null && xdg-open "http://127.0.0.1:3906" >/dev/null 2>&1
+      break
+    fi
+    sleep 0.25
+  done ) &
+
 exec python3 editor/server.py
