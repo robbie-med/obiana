@@ -8,9 +8,12 @@
 // So every non-English locale records, per key, a fingerprint of the English
 // it was translated from. English itself records nothing and is hashed at
 // runtime, which means the English side of the comparison can never be stale.
-// Forget to run a tool and the app over-reports staleness (English shows
-// through, which is safe) rather than under-reporting it (a stale translation
-// keeps rendering, which is what we are fixing).
+//
+// What this drives is the CONTRIBUTOR view, and nothing else. A reader keeps
+// seeing the translation she has: an English rewording is usually a tweak, the
+// fingerprint cannot tell a typo fix from a clinical correction, and replacing
+// a paragraph of someone's own language on that basis is the worse trade. The
+// Translation Helper marks those keys "Needs updating" so a person decides.
 //
 // This file is the JS source of truth. Two mirrors exist and MUST agree:
 //   - content.js       srcHashOf()   the render path cannot require() this

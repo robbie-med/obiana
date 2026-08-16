@@ -355,6 +355,11 @@ function enHashes() {
 }
 
 // Keys whose translation was made from English that has since changed.
+//
+// Read by the Translation Helper only. It deliberately has no effect on what a
+// patient sees: a sentence that is translated stays translated, even if the
+// English has since been reworded. Losing a whole paragraph of someone's own
+// language over an English typo fix is not a trade worth making.
 const _staleCache = new Map();
 function staleSet(lang) {
   if (_staleCache.has(lang)) return _staleCache.get(lang);
@@ -401,7 +406,6 @@ function cardBody(id) {
 
   const mine = card.t || [];
   const fallback = (base[id] || {}).t || [];
-  const stale = staleSet(I18n.lang);
   // The local English editor sets this to wrap each filled slot in a element
   // carrying its key, so a sentence on screen can be traced back to exactly
   // one entry in the locale file. Unset in production, where the branch costs
@@ -411,13 +415,13 @@ function cardBody(id) {
     const n = +i;
     const v = mine[n];
     if (wrap) return wrap('content.' + id + '.t.' + n, v === undefined ? '' : v);
+    // Only a MISSING translation falls back. A translation that has fallen
+    // behind the English still reads correctly in the reader's own language,
+    // and swapping it for an English sentence mid-paragraph is a worse
+    // outcome than slightly dated wording. The fingerprints still record that
+    // it needs updating; that shows up in the Translation Helper, which is
+    // where a contributor can act on it. See staleSet().
     if (v === undefined || v === "") return enRun(fallback[n]);
-    // Translated, but from an English sentence that has since been rewritten.
-    // A clinical correction lands in English first; rendering the old
-    // translation would hand this patient guidance the English no longer
-    // gives. English is the reviewed layer, so English is what she gets until
-    // someone retranslates.
-    if (stale.has('content.' + id + '.t.' + n)) return enRun(fallback[n]);
     return v;
   });
 }
@@ -430,9 +434,8 @@ function cardField(id, field) {
   const mine = ((window.MYOB_LOCALES[lang] || {}).content || {})[id] || {};
   const base = ((window.MYOB_LOCALES[I18n.FALLBACK] || {}).content || {})[id] || {};
   const v = mine[field];
-  if (typeof v === 'string' && v !== '' && !staleSet(lang).has('content.' + id + '.' + field)) {
-    return { text: v, en: false };
-  }
+  // Same rule as the body: present beats up to date.
+  if (typeof v === 'string' && v !== '') return { text: v, en: false };
   const fallback = typeof base[field] === 'string' ? base[field] : '';
   return { text: fallback, en: lang !== I18n.FALLBACK && fallback !== '' };
 }
@@ -1301,10 +1304,6 @@ function updateTranslationNotice() {
   // Say why English is showing through mid-page. Unexplained English inside a
   // translated card reads as a bug; named as "the English was updated and this
   // passage has not caught up", it reads as the safety behaviour it is.
-  // Count-free on purpose: a patient cannot act on "three passages", and
-  // several languages have no plural distinction, so a count forced the plural
-  // wording onto every one of them.
-  if (staleSet(I18n.lang).size) lines.push(I18n.t('lang.staleNotice'));
   el.hidden = !lines.length;
   el.textContent = lines.join(' ');
 }
