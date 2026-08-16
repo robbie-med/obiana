@@ -33,6 +33,21 @@ window.MYOB_LOCALES.tl = {
     "home": {
       "heroTitle": "Alamin ang<br>aasahan. Magtanong<br>nang mahusay.",
       "heroDesc": "Mula sa iyong unang prenatal na pagpapatingin hanggang sa panganganak at paggaling, pinagsasama ng Obiana ang lahat sa isang lugar."
+    },
+    "disclaimer": {
+      "title": "Bago magsimula",
+      "education": "Ipinapaliwanag ng Obiana ang karaniwang nangyayari. Hindi ito payong medikal. Hindi ka nito kilala at hindi nito alam ang iyong pagbubuntis. Alam ito ng iyong doktor o komadrona.",
+      "tools": "Ang mga tracker ay nag-iimbak lamang ng iyong itinatala. Wala itong sinusukat o dinidiyagnos. Kapag sinabi nitong tumawag, ibig sabihin ay magtanong.",
+      "emergency": "Huwag gamitin ang app na ito sa emergency. Tumawag sa 911 o sa labor and delivery.",
+      "sources": "Kapag may binibigay na numero ang gabay na ito, sinasabi rin kung kanino ito galing. Kadalasan ay ACOG o AAP. Sinusunod din ito ng iyong care team.",
+      "continue": "Naiintindihan ko",
+      "toolsNote": "Iniimbak ng mga tool na ito ang iyong itinatala. Hindi ito nagdidiyagnos."
+    },
+    "about": {
+      "whatThisIs": "Ano ang Obiana",
+      "privacyHeading": "Ang iyong impormasyon",
+      "privacyOnDevice": "Ang iyong itinatala ay nananatili sa teleponong ito. Walang account, walang sign-in, walang ipinapadala. Mawawala ito kapag binura mo ang data ng browser, kaya gamitin ang Export para magkaroon ng kopya.",
+      "privacySubmit": "Dalawang button lang ang nagpapadala: ang translation helper at ang Help Improve This Guide. Ipinapadala nila ang iyong mensahe, ang iyong bansa, at isang naka-scramble na anyo ng iyong network address para maiwasan ang spam. Hindi ang pangalan mo. Wala sa iyong mga tala."
     }
   }
 };

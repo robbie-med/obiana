@@ -172,6 +172,18 @@ undone, and the app now has an in-page editor that makes content edits easy.
 
 ### Phase F — Translation
 
+**Done, except Zomi.** Sixteen of seventeen languages carry the disclaimer and
+privacy text. Zomi has none, and I could not write it: a Tedim phrasebook gives
+about ten words, and no professionally translated Zomi health corpus was
+reachable. A Bible corpus exists, but it supplies liturgical register and no
+word for app, account, network address, screening or diagnose, and reading a
+corpus does not make one able to compose grammatical Tedim. Broken safety text
+is worse than English here, because it reads as authoritative to someone who
+cannot check it. `translation/ZOMI-NEEDED.md` holds the fourteen strings ready
+for a speaker.
+
+The original plan text follows.
+
 New disclaimer strings are English-only at first. The fingerprint mechanism will
 show reviewed English in the other 16 languages, which is the safe behaviour,
 but a **disclaimer nobody can read is close to no disclaimer** for the audience

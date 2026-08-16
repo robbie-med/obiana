@@ -2154,3 +2154,17 @@ body.dark .epds-option:has(.epds-radio:focus-visible) { outline-color: #7fd4d4; 
   line-height: 1.5;
   color: var(--ink-soft);
 }
+
+/* Machine-translation line inside the first-run gate. */
+.notice-mt {
+  margin-top: 10px;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--gold-light);
+  border: 1px solid rgba(184,124,40,0.3);
+  color: #6b4a12;
+  font-size: 12px;
+  line-height: 1.45;
+}
+.notice-mt[hidden] { display: none; }
+body.dark .notice-mt { background: #221800; color: #e8d5a8; border-color: rgba(184,124,40,0.4); }

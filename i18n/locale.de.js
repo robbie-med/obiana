@@ -30,6 +30,21 @@ window.MYOB_LOCALES.de = {
     "home": {
       "heroTitle": "Wissen, was Sie<br>erwartet. Die richtigen<br>Fragen stellen.",
       "heroDesc": "Vom ersten Vorsorgetermin bis zur Geburt und Erholung: Obiana hat alles an einem Ort."
+    },
+    "disclaimer": {
+      "title": "Bevor Sie beginnen",
+      "education": "Obiana erklärt, was normalerweise passiert. Es ist keine medizinische Beratung. Die App kennt Sie und Ihre Schwangerschaft nicht. Ihre Ärztin oder Hebamme schon.",
+      "tools": "Die Tracker speichern nur, was Sie selbst eingeben. Sie messen nichts und stellen keine Diagnose. Wenn einer sagt, Sie sollen anrufen, heißt das nachfragen.",
+      "emergency": "Nutzen Sie diese App nicht im Notfall. Rufen Sie 911 oder den Kreißsaal an.",
+      "sources": "Wenn diese Anleitung eine Zahl nennt, nennt sie auch die Quelle. Meist ACOG oder AAP. Ihr Behandlungsteam richtet sich ebenfalls danach.",
+      "continue": "Ich habe verstanden",
+      "toolsNote": "Diese Tools speichern, was Sie eingeben. Sie stellen keine Diagnose."
+    },
+    "about": {
+      "whatThisIs": "Was Obiana ist",
+      "privacyHeading": "Ihre Daten",
+      "privacyOnDevice": "Was Sie eingeben, bleibt auf diesem Telefon. Kein Konto, keine Anmeldung, nichts wird gesendet. Beim Löschen der Browserdaten geht es verloren, nutzen Sie also Export für eine Kopie.",
+      "privacySubmit": "Nur zwei Schaltflächen senden etwas: die Übersetzungshilfe und Diese Anleitung verbessern. Sie senden Ihre Nachricht, Ihr Land und eine verschlüsselte Form Ihrer Netzwerkadresse gegen Spam. Nicht Ihren Namen. Nichts aus Ihren Aufzeichnungen."
     }
   }
 };
