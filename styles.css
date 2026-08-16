@@ -2121,3 +2121,36 @@ body.dark .epds-option:has(.epds-radio:focus-visible) { outline-color: #7fd4d4; 
   padding: 2px 4px;
   min-height: 32px;
 }
+
+/* First-run gate panels, the About disclaimer, and the one-line note above the
+   tool grid. Deliberately plain: this is the text a reader should be able to
+   skim in a few seconds. */
+.notice-panel[hidden] { display: none; }
+.us-notice-body p { margin: 0 0 10px; }
+.us-notice-body p:last-child { margin-bottom: 0; }
+.notice-emphasis { font-weight: 700; }
+
+.about-block { margin: 16px 16px 0; }
+.about-heading {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--ink-mid);
+  margin: 14px 0 6px;
+}
+.about-block p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--ink-mid);
+  margin: 0 0 8px;
+}
+.about-emphasis { font-weight: 700; color: var(--ink); }
+
+.tools-note {
+  margin: 0 16px 4px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
