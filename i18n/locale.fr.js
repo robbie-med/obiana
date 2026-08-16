@@ -686,7 +686,20 @@ window.MYOB_LOCALES.fr = {
     },
     "about": {
       "openSource": "Libre et open source. Forkez-le, gardez-le libre.",
-      "viewSource": "Voir le code source (AGPL-3.0)"
+      "viewSource": "Voir le code source (AGPL-3.0)",
+      "whatThisIs": "Ce qu'est Obiana",
+      "privacyHeading": "Vos informations",
+      "privacyOnDevice": "Ce que vous saisissez reste sur ce téléphone. Pas de compte, pas de connexion, rien n'est envoyé. Effacer les données du navigateur les supprime, utilisez Exporter pour en garder une copie.",
+      "privacySubmit": "Deux boutons envoient quelque chose : l'aide à la traduction et Aidez à améliorer ce guide. Ils envoient votre message, votre pays et une forme brouillée de votre adresse réseau, pour limiter le spam. Pas votre nom. Rien de vos suivis."
+    },
+    "disclaimer": {
+      "title": "Avant de commencer",
+      "education": "Obiana explique ce qui se passe en général. Ce n'est pas un avis médical. L'application ne vous connaît pas, ni votre grossesse. Votre médecin ou sage-femme, oui.",
+      "tools": "Les outils ne gardent que ce que vous saisissez. Ils ne mesurent ni ne diagnostiquent rien. Quand l'un dit d'appeler, cela veut dire demander.",
+      "emergency": "N'utilisez pas cette application en cas d'urgence. Appelez le 911 ou le service des naissances.",
+      "sources": "Quand ce guide donne un chiffre, il dit qui le dit. Le plus souvent l'ACOG ou l'AAP. Votre équipe médicale les suit aussi.",
+      "continue": "Je comprends",
+      "toolsNote": "Ces outils gardent ce que vous saisissez. Ils ne posent pas de diagnostic."
     }
   },
   "content": {

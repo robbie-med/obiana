@@ -84,6 +84,11 @@
         <p data-i18n="disclaimer.education">Obiana explains what usually happens. It is not medical advice. It does not know you or your pregnancy. Your doctor or midwife does.</p>
         <p data-i18n="disclaimer.tools">The trackers only hold what you type in. They do not measure or diagnose anything. When one says to call someone, it means ask.</p>
         <p class="notice-emphasis" data-i18n="disclaimer.emergency">Do not use this app in an emergency. Call 911 or your labor and delivery line.</p>
+        <!-- Shown only for locales that have not been read by a clinician. The
+             gate covers the whole overlay, so the banner in the header is not
+             visible here, and a disclaimer read as authoritative when it was
+             machine-translated is the wrong impression to leave. -->
+        <p class="notice-mt" id="notice-mt" hidden></p>
       </div>
       <button class="us-notice-btn" id="notice-next" data-i18n="disclaimer.continue">I understand</button>
     </div>

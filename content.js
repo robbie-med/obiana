@@ -1188,6 +1188,17 @@ function maybeShowUsNotice() {
   if (!p1 || !p2 || !next || !ok) return;
 
   I18n.applyStatic(el);            // render it in the language just chosen
+
+  // Say so if this language has not been reviewed. The header banner is behind
+  // the overlay at this point, so without this the disclaimer reads as though
+  // a clinician had checked its wording in this language.
+  const mt = document.getElementById('notice-mt');
+  if (mt) {
+    const reviewed = (MYOB_LOCALES[I18n.lang] || {}).reviewed === true;
+    mt.hidden = reviewed;
+    if (!reviewed) mt.textContent = I18n.t('lang.unreviewedNotice');
+  }
+
   p1.hidden = false;
   p2.hidden = true;
   el.hidden = false;

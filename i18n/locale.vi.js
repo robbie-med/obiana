@@ -30,6 +30,21 @@ window.MYOB_LOCALES.vi = {
     "home": {
       "heroTitle": "Biết điều gì<br>sắp đến. Hỏi những<br>câu hỏi hay.",
       "heroDesc": "Từ lần khám thai đầu tiên đến khi sinh và hồi phục, Obiana giữ mọi thứ ở một nơi."
+    },
+    "disclaimer": {
+      "title": "Trước khi bắt đầu",
+      "education": "Obiana giải thích những gì thường xảy ra. Đây không phải lời khuyên y tế. Ứng dụng không biết bạn hay thai kỳ của bạn. Bác sĩ hoặc nữ hộ sinh của bạn thì biết.",
+      "tools": "Các công cụ theo dõi chỉ lưu những gì bạn nhập vào. Chúng không đo và không chẩn đoán điều gì. Khi công cụ nhắc gọi cho ai đó, nghĩa là hãy hỏi.",
+      "emergency": "Đừng dùng ứng dụng này khi khẩn cấp. Hãy gọi 911 hoặc khoa sinh.",
+      "sources": "Khi hướng dẫn này đưa ra một con số, nó nói rõ nguồn. Thường là ACOG hoặc AAP. Nhóm chăm sóc của bạn cũng theo các nguồn đó.",
+      "continue": "Tôi đã hiểu",
+      "toolsNote": "Các công cụ này lưu những gì bạn nhập. Chúng không chẩn đoán."
+    },
+    "about": {
+      "whatThisIs": "Obiana là gì",
+      "privacyHeading": "Thông tin của bạn",
+      "privacyOnDevice": "Những gì bạn nhập chỉ ở lại trên điện thoại này. Không tài khoản, không đăng nhập, không gửi đi đâu. Xóa dữ liệu trình duyệt sẽ mất, nên hãy dùng Xuất để giữ một bản sao.",
+      "privacySubmit": "Chỉ hai nút gửi đi thứ gì đó: trợ lý dịch thuật và Giúp cải thiện hướng dẫn này. Chúng gửi tin nhắn của bạn, quốc gia, và một dạng đã xáo trộn của địa chỉ mạng để chặn spam. Không gửi tên bạn. Không gửi gì từ các bản ghi của bạn."
     }
   }
 };

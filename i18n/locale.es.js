@@ -685,7 +685,20 @@ window.MYOB_LOCALES.es = {
     },
     "about": {
       "openSource": "Libre y de código abierto. Haga un fork, manténgalo libre.",
-      "viewSource": "Ver el código (AGPL-3.0)"
+      "viewSource": "Ver el código (AGPL-3.0)",
+      "whatThisIs": "Qué es Obiana",
+      "privacyHeading": "Su información",
+      "privacyOnDevice": "Lo que usted escribe se queda en este teléfono. Sin cuenta, sin registro, no se envía nada. Si borra los datos del navegador se pierde, así que use Exportar para guardar una copia.",
+      "privacySubmit": "Dos botones envían algo: el ayudante de traducción y Ayude a mejorar esta guía. Envían su mensaje, su país y una forma cifrada de su dirección de red para evitar spam. No su nombre. Nada de sus registros."
+    },
+    "disclaimer": {
+      "title": "Antes de empezar",
+      "education": "Obiana explica lo que suele pasar. No es consejo médico. No la conoce a usted ni su embarazo. Su médico o partera sí.",
+      "tools": "Las herramientas solo guardan lo que usted escribe. No miden ni diagnostican nada. Cuando una dice que llame a alguien, significa preguntar.",
+      "emergency": "No use esta aplicación en una emergencia. Llame al 911 o a la línea de partos de su hospital.",
+      "sources": "Cuando esta guía da un número, dice quién lo dice. Casi siempre ACOG o la AAP. Su equipo médico también los sigue.",
+      "continue": "Entiendo",
+      "toolsNote": "Estas herramientas guardan lo que usted escribe. No diagnostican."
     }
   },
   "content": {
