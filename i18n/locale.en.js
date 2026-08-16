@@ -417,8 +417,8 @@ window.MYOB_LOCALES.en = {
         "privacy": "Only the phrase and your suggestion are sent. Nothing from your trackers ever leaves this phone.",
         "loading": "Loading…",
         "notTranslated": "Not translated yet",
-        "stale": "Out of date",
-        "staleBanner": "The English changed after this was translated. Please update it."
+        "stale": "Needs updating",
+        "staleBanner": "The English was reworded after this was translated. The translation below is still shown to readers; update it when you can."
       },
       "improve": {
         "intro": "This guide is written by people, and it gets better when readers tell us what is missing. Share how something is done in your culture, ask about a topic we do not cover, or point out anything that did not read clearly.",
@@ -551,8 +551,7 @@ window.MYOB_LOCALES.en = {
       "change": "Change language",
       "unreviewedNotice": "This translation is machine-generated and has not yet been reviewed by a clinician. For medical decisions, please confirm with your care team or switch to English.",
       "loadFailed": "Could not load",
-      "inProgress": "Translation in progress",
-      "staleNotice": "Some passages below are shown in English because the English guidance was updated and those translations have not caught up yet."
+      "inProgress": "Translation in progress"
     },
     "app": {
       "title": "Obiana Pregnancy Handbook",
