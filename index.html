@@ -72,12 +72,29 @@
 <!-- Shown once, straight after the language is chosen. The guide describes US
      prenatal care specifically, and that has to be said before anyone reads it
      as general medical advice. -->
+<!-- First-run gate. Two panels: what this app is, then who it is written for.
+     Acceptance is stored with a version, so a material change to either panel
+     is shown again rather than silently assumed. -->
 <div id="us-notice" role="dialog" aria-modal="true" aria-labelledby="us-notice-title" hidden>
   <div class="us-notice-sheet">
-    <div class="us-notice-flag" aria-hidden="true"><img src="./flags/us.svg" alt=""></div>
-    <div class="us-notice-title" id="us-notice-title" data-i18n="usNotice.title">Care in the United States</div>
-    <div class="us-notice-body" data-i18n="usNotice.body">This guide describes prenatal care as it is provided in the United States, and is written for mothers receiving their care here. Prenatal care differs a great deal between countries. Visit schedules, tests and recommendations elsewhere may not match what you read here. If you are receiving care in another country, this app probably isn’t for you.</div>
-    <button class="us-notice-btn" id="us-notice-ok" data-i18n="usNotice.continue">I understand</button>
+
+    <div class="notice-panel" id="notice-panel-1">
+      <div class="us-notice-title" id="us-notice-title" data-i18n="disclaimer.title">Before you start</div>
+      <div class="us-notice-body">
+        <p data-i18n="disclaimer.education">Obiana explains what usually happens. It is not medical advice. It does not know you or your pregnancy. Your doctor or midwife does.</p>
+        <p data-i18n="disclaimer.tools">The trackers only hold what you type in. They do not measure or diagnose anything. When one says to call someone, it means ask.</p>
+        <p class="notice-emphasis" data-i18n="disclaimer.emergency">Do not use this app in an emergency. Call 911 or your labor and delivery line.</p>
+      </div>
+      <button class="us-notice-btn" id="notice-next" data-i18n="disclaimer.continue">I understand</button>
+    </div>
+
+    <div class="notice-panel" id="notice-panel-2" hidden>
+      <div class="us-notice-flag" aria-hidden="true"><img src="./flags/us.svg" alt=""></div>
+      <div class="us-notice-title" data-i18n="usNotice.title">Care in the United States</div>
+      <div class="us-notice-body" data-i18n="usNotice.body">This guide describes prenatal care as it is provided in the United States, and is written for mothers receiving their care here. Prenatal care differs a great deal between countries. Visit schedules, tests and recommendations elsewhere may not match what you read here. If you are receiving care in another country, this app probably isn’t for you.</div>
+      <button class="us-notice-btn" id="us-notice-ok" data-i18n="usNotice.continue">I understand</button>
+    </div>
+
   </div>
 </div>
 
@@ -260,6 +277,8 @@
       <h1 class="hero-title" data-i18n="tools.trackersPlanners" data-i18n-html>Trackers &amp;<br>Planners</h1>
     </div>
 
+    <p class="tools-note" data-i18n="disclaimer.toolsNote">These tools hold what you type in. They do not diagnose.</p>
+
     <div class="tool-section-label" data-i18n="tools.feelingWell">Feeling Well</div>
     <div class="tool-grid">
       <button class="tool-card-btn" onclick="navigate('tool-nausea')">
@@ -380,6 +399,21 @@
         <div class="tool-card-name" data-i18n="tools.improveGuide">Help Improve This Guide</div>
         <div class="tool-card-desc" data-i18n="tools.shareCustomAsk">Share how it is done in your culture · Ask about anything unclear</div>
       </button>
+    </div>
+
+    <!-- The same disclaimer as the first-run gate, reachable at any time
+         rather than only once, plus the privacy statement. Both are short
+         because the honest version of each is short. -->
+    <div class="about-block">
+      <h2 class="about-heading" data-i18n="about.whatThisIs">What Obiana is</h2>
+      <p data-i18n="disclaimer.education">Obiana explains what usually happens. It is not medical advice. It does not know you or your pregnancy. Your doctor or midwife does.</p>
+      <p data-i18n="disclaimer.tools">The trackers only hold what you type in. They do not measure or diagnose anything. When one says to call someone, it means ask.</p>
+      <p class="about-emphasis" data-i18n="disclaimer.emergency">Do not use this app in an emergency. Call 911 or your labor and delivery line.</p>
+      <p data-i18n="disclaimer.sources">When this guide gives a number, it says who says so. Usually ACOG or the AAP. Your care team follows them too.</p>
+
+      <h2 class="about-heading" data-i18n="about.privacyHeading">Your information</h2>
+      <p data-i18n="about.privacyOnDevice">What you type stays on this phone. No account, no sign-in, nothing sent. Clearing your browser data erases it, so use Export to keep a copy.</p>
+      <p data-i18n="about.privacySubmit">Two buttons send something: the translation helper and Help Improve This Guide. They send your message, your country, and a scrambled form of your network address to stop spam. Not your name. Nothing from your trackers.</p>
     </div>
 
     <!-- AGPL section 13: a hosted copy has to offer its source to the people

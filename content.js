@@ -1162,24 +1162,55 @@ function hideLanguagePicker() {
 // anyone reads it as general advice, and it has to be in the language they
 // just picked — which is why it comes after the picker, not before it.
 const US_NOTICE_KEY = 'myob.usNoticeSeen';
+const NOTICE_ACCEPTED_KEY = 'myob.noticeAccepted';
+
+// Bump when either panel's meaning changes, so the gate is shown again rather
+// than relying on an acceptance the user gave to different words. A wording
+// tidy-up does not warrant it; a change to what the app claims about itself
+// does.
+const NOTICE_VERSION = '1';
 
 function maybeShowUsNotice() {
-  if (safeGet(US_NOTICE_KEY, null)) return;
+  // The old boolean flag counts as acceptance of version 1, so existing users
+  // are not re-gated for a notice they have already agreed to the substance of.
+  if (safeGet(NOTICE_ACCEPTED_KEY, null) === NOTICE_VERSION) return;
+  if (safeGet(US_NOTICE_KEY, null) && safeGet(NOTICE_ACCEPTED_KEY, null) === null) {
+    safeSet(NOTICE_ACCEPTED_KEY, NOTICE_VERSION);
+    return;
+  }
+
   const el = document.getElementById('us-notice');
   if (!el) return;
+  const p1 = document.getElementById('notice-panel-1');
+  const p2 = document.getElementById('notice-panel-2');
+  const next = document.getElementById('notice-next');
+  const ok = document.getElementById('us-notice-ok');
+  if (!p1 || !p2 || !next || !ok) return;
+
   I18n.applyStatic(el);            // render it in the language just chosen
+  p1.hidden = false;
+  p2.hidden = true;
   el.hidden = false;
   document.body.style.overflow = 'hidden';
-  const ok = document.getElementById('us-notice-ok');
-  if (ok && ok.dataset.bound !== '1') {
+
+  if (next.dataset.bound !== '1') {
+    next.dataset.bound = '1';
+    next.addEventListener('click', () => {
+      p1.hidden = true;
+      p2.hidden = false;
+      ok.focus();
+    });
+  }
+  if (ok.dataset.bound !== '1') {
     ok.dataset.bound = '1';
     ok.addEventListener('click', () => {
-      safeSet(US_NOTICE_KEY, '1');
+      safeSet(NOTICE_ACCEPTED_KEY, NOTICE_VERSION);
+      safeSet(US_NOTICE_KEY, '1');       // kept so an older build still sees it
       el.hidden = true;
       document.body.style.overflow = '';
     });
   }
-  if (ok) ok.focus();
+  next.focus();
 }
 
 // ═══════════════════════════════════════════════════════

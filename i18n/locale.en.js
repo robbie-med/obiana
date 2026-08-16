@@ -113,7 +113,7 @@ window.MYOB_LOCALES.en = {
         "validatedOnlyNote": "Only officially validated versions of this questionnaire are offered. A machine translation would still produce a score, but that score would not be meaningful.",
         "instrumentLanguage": "Questionnaire language:",
         "change": "Change",
-        "scoreNote": "Score out of {max} · {instrument} · A screening tool, not a diagnosis. Always discuss the result with your care team",
+        "scoreNote": "Score out of {max} on the {instrument}, using the published cutoffs for that questionnaire. It is a screening tool, not a diagnosis. Go through the result with your care team.",
         "pastCheckIns": "Past Check-Ins",
         "selfHarmGuidance": "You answered that thoughts of self-harm have occurred to you. Please reach out to your doctor, call or text 988 (Suicide & Crisis Lifeline), or go to the nearest emergency room.",
         "continueWeekly": "Continue checking in weekly. If your mood changes, this tool will help you track it.",
@@ -301,8 +301,8 @@ window.MYOB_LOCALES.en = {
         "birthDateSaved": "Birth date saved",
         "dayOfLife": "Day of Life",
         "resolvesByNow": "Most jaundice resolves by now",
-        "callImmediatelyIf": "Call your doctor immediately if",
-        "setBirthDateHint": "Set baby's birth date above to see day-by-day guidance.",
+        "callImmediatelyIf": "Call your doctor right away if",
+        "setBirthDateHint": "Set baby birth date above to see day-by-day guidance, following AAP newborn jaundice guidance.",
         "day1": "First day. Bilirubin is being checked before hospital discharge. Baby is monitored by the nursing staff.",
         "day2": "Bilirubin levels are rising. Hospital checks before discharge. Watch for yellowing of skin and whites of eyes.",
         "day3": "Jaundice peaks around days 3–5 in most babies. Yellow color may be more visible. Feeding frequently (8–12 times/day) helps the body clear bilirubin.",
@@ -319,7 +319,7 @@ window.MYOB_LOCALES.en = {
       "bp": {
         "logBloodPressure": "+ Log Blood Pressure",
         "whenToCallYourDoctor": "When to call your doctor",
-        "anyReading14090During": "Any reading ≥ 140/90 during pregnancy or postpartum. ≥ 160/110 is a medical emergency. Call L&D or 911.",
+        "anyReading14090During": "ACOG counts any reading of 140/90 or higher in pregnancy or after birth as high. 160/110 or higher needs a call to L&D or 911 now. Home cuffs can read high, so one high reading means call and recheck, not panic.",
         "readings": "Readings",
         "enterValidNumbersEG": "Enter valid numbers (e.g. 118 / 76)",
         "highReadingContactYourDoctor": "High reading. Contact your doctor",
@@ -354,7 +354,7 @@ window.MYOB_LOCALES.en = {
           "over": "Overweight",
           "obese": "Obese"
         },
-        "iomFor": "IOM guideline for you ({range})",
+        "iomFor": "IOM/NASEM guideline for you ({range})",
         "gainedSoFar": "You have gained {amount} lbs so far.",
         "wk": "Wk {n}",
         "lbsValue": "{n} lbs",
@@ -387,7 +387,7 @@ window.MYOB_LOCALES.en = {
         "duration": "{d} long",
         "interval": "every {t}",
         "alertGo": "Contractions about {mins} min apart, lasting about {secs}s. Call L&D now.",
-        "alert511": "About {mins} min apart, about {secs}s long. If this is your first baby, head to the hospital. Call if your water breaks or you are in doubt.",
+        "alert511": "About {mins} min apart, about {secs}s long. That is the 5-1-1 pattern most US hospitals use. With a first baby this usually means go in. This timer does not know your pregnancy. Call L&D if you are unsure, if your water breaks, or if you were told to come sooner.",
         "alertProgress": "Last hour: about {mins} min apart · about {secs}s long · {n} contractions. 5-1-1 pattern not yet reached.",
         "reachedIn": "Reached in {time}",
         "contractionEnding": "Contraction Ending"
@@ -729,7 +729,20 @@ window.MYOB_LOCALES.en = {
     },
     "about": {
       "openSource": "Free and open source. Fork it, keep it free.",
-      "viewSource": "View source (AGPL-3.0)"
+      "viewSource": "View source (AGPL-3.0)",
+      "whatThisIs": "What Obiana is",
+      "privacyHeading": "Your information",
+      "privacyOnDevice": "What you type stays on this phone. No account, no sign-in, nothing sent. Clearing your browser data erases it, so use Export to keep a copy.",
+      "privacySubmit": "Two buttons send something: the translation helper and Help Improve This Guide. They send your message, your country, and a scrambled form of your network address to stop spam. Not your name. Nothing from your trackers."
+    },
+    "disclaimer": {
+      "title": "Before you start",
+      "education": "Obiana explains what usually happens. It is not medical advice. It does not know you or your pregnancy. Your doctor or midwife does.",
+      "tools": "The trackers only hold what you type in. They do not measure or diagnose anything. When one says to call someone, it means ask.",
+      "emergency": "Do not use this app in an emergency. Call 911 or your labor and delivery line.",
+      "sources": "When this guide gives a number, it says who says so. Usually ACOG or the AAP. Your care team follows them too.",
+      "continue": "I understand",
+      "toolsNote": "These tools hold what you type in. They do not diagnose."
     }
   },
   "content": {
@@ -1636,7 +1649,7 @@ window.MYOB_LOCALES.en = {
         "Higher risk if you have",
         "Preeclampsia before · Chronic high blood pressure, kidney disease or lupus · Diabetes · Twins or more · A first pregnancy · BMI over 30 · Age 35 or over · A mother or sister who had it.",
         "Low-dose aspirin",
-        "With one strong risk factor, or two moderate ones, 81 mg daily from 12 to 16 weeks until delivery lowers the risk of developing this and needing an early delivery.",
+        "ACOG recommends low-dose aspirin, 81 mg a day, for women at higher risk. It is usually started between 12 and 16 weeks and taken until delivery, and it lowers the chance of preeclampsia. Many women who qualify are never offered it. Ask your doctor whether it applies to you.",
         "It can also start after the birth",
         "Usually in the first week, with the same warning signs. If they turn up once you are home, call your doctor or go to the emergency room. Don't save it for the postpartum appointment."
       ]
