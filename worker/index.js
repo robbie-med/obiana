@@ -8,8 +8,8 @@
 //
 // * Suggestions are written to D1, not pushed at a home machine. A direct push
 //   loses the submission whenever that machine is asleep, and a contributor
-//   gets no way to know. D1 holds it until the PC pulls. The ntfy ping is a
-//   notification, never the transport.
+//   gets no way to know. D1 holds it until the PC pulls. The Telegram post is
+//   a notification, never the transport.
 //
 // * The endpoint is public, so it is treated as hostile input: keys are
 //   validated against the SHIPPED English catalog (read through the ASSETS
@@ -28,7 +28,7 @@ const FEEDBACK_KINDS = ['culture', 'question', 'unclear'];
 const FEEDBACK_HOURLY = 20;
 const MAX_NOTE = 500;
 const MAX_BODY = 8 * 1024;
-const HOURLY_LIMIT = 60;          // per IP, generous for a genuine reviewer
+const HOURLY_LIMIT = 360;         // per IP; a reviewer working a language hit 59 in an hour at 60
 
 // Must match LOCALES in i18n/i18n.js (minus 'en', which needs no suggestions).
 const LOCALES = ['es', 'fr', 'ko', 'ar', 'ru', 'zh', 'zom',
@@ -38,6 +38,25 @@ const json = (obj, status = 200) => new Response(JSON.stringify(obj), {
   status,
   headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' },
 });
+
+// Fire-and-forget post to the private "Obiana submissions" Telegram channel
+// (set up by review/telegram_setup.py). The submission is already safe in D1
+// by the time this runs, so a failure here must never affect the response.
+// Plain text, no parse_mode: contributor text would need escaping otherwise.
+function notify(env, ctx, text) {
+  if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return;
+  ctx.waitUntil(
+    fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/sendMessage`, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({
+        chat_id: env.TELEGRAM_CHAT_ID,
+        text: text.slice(0, 4000),
+        disable_web_page_preview: true,
+      }),
+    }).catch(() => {})
+  );
+}
 
 // Hashed, never stored raw: enough to rate-limit, not enough to identify.
 async function hash(value, salt) {
@@ -127,17 +146,7 @@ async function handleSuggest(request, env, ctx) {
   ).bind(lang, key, source, current, suggestion, note, ipHash,
          request.headers.get('cf-ipcountry') || '').run();
 
-  // Fire-and-forget notification. If it fails the suggestion is already safe
-  // in D1, so it must never affect the response.
-  if (env.NTFY_URL) {
-    ctx.waitUntil(
-      fetch(env.NTFY_URL, {
-        method: 'POST',
-        headers: { Title: `Obiana: ${lang} suggestion`, Tags: 'globe_with_meridians' },
-        body: `${key}\n\nEN: ${source.slice(0, 200)}\nNEW: ${suggestion.slice(0, 400)}`,
-      }).catch(() => {})
-    );
-  }
+  notify(env, ctx, `🌐 ${lang} suggestion\n${key}\n\nEN: ${source.slice(0, 300)}\nNOW: ${current.slice(0, 300) || '(missing)'}\nNEW: ${suggestion.slice(0, 1500)}`);
 
   return json({ ok: true });
 }
@@ -178,13 +187,7 @@ async function handleFeedback(request, env, ctx) {
   ).bind(lang, kind, topic, message, ipHash,
          request.headers.get('cf-ipcountry') || '').run();
 
-  if (env.NTFY_URL) {
-    ctx.waitUntil(fetch(env.NTFY_URL, {
-      method: 'POST',
-      headers: { Title: `Obiana: ${kind} (${lang})`, Tags: 'speech_balloon' },
-      body: `${topic ? topic + '\n\n' : ''}${message.slice(0, 600)}`,
-    }).catch(() => {}));
-  }
+  notify(env, ctx, `💬 ${kind} (${lang})\n${topic ? topic + '\n' : ''}\n${message.slice(0, 3000)}`);
 
   return json({ ok: true });
 }

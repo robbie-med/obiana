@@ -53,5 +53,7 @@
   //
   // Secrets, set with `wrangler secret put` (never committed):
   //   HASH_SALT  — salt for the rate-limiting IP hash
-  //   NTFY_URL   — optional; a full ntfy topic URL to ping on each submission
+  //   TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID — optional; post each submission
+  //                to the private "Obiana submissions" channel. Both are set
+  //                by `python3 review/telegram_setup.py setup`.
 }
