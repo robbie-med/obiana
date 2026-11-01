@@ -58,7 +58,7 @@ that has been formally validated. A machine translation still produces a score,
 and that score looks exactly as authoritative as a real one. Option *order*
 also carries meaning: the published form alternates direction by item, and
 normalising it lets a respondent straight-line one column for a false zero.
-`i18n/epds/verify.js` enforces both. See `i18n/epds/SOURCES.md`.
+`scripts/epds/verify.js` enforces both. See `scripts/epds/SOURCES.md`.
 
 ## Patient Health Questionnaire (PHQ-9)
 

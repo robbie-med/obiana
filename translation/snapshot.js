@@ -29,7 +29,7 @@ const { srcHashOf, flattenContent, readLocale } = require('./hash.js');
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(__dirname, 'source');
 
-const en = readLocale(fs, path.join(ROOT, 'i18n/locale.en.js'), 'en').obj;
+const en = readLocale(fs, path.join(ROOT, 'public/i18n/locale.en.js'), 'en').obj;
 
 // ─── ui ─────────────────────────────────────────────────
 // Flat dot-keyed, matching what translate-tool.js and the worker derive. A

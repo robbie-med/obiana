@@ -23,7 +23,7 @@ const path = require('path');
 const { srcHashOf, flattenContent, readLocale, writeLocale } = require('./hash.js');
 
 const ROOT = path.join(__dirname, '..');
-const I18N = path.join(ROOT, 'i18n');
+const I18N = path.join(ROOT, 'public', 'i18n');
 const FALLBACK = 'en';
 
 function locales() {

@@ -36,6 +36,8 @@ from urllib.parse import urlparse, unquote
 PORT = 3906                      # claimed in /home/user/Projects/PORTS.md
 HOST = "127.0.0.1"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# The deployed site. Only this folder is uploaded to Cloudflare.
+WEB = os.path.join(ROOT, "public")
 REMOTE = "obiana"                # never origin: see the note in start.sh
 BRANCH = "obiana-main"
 
@@ -43,13 +45,13 @@ BRANCH = "obiana-main"
 # structure, templates), what snapshot.js regenerates, and what bump_version()
 # touches. Nothing outside this list is ever staged.
 PUBLISH_PATHS = [
-    "i18n/locale.en.js",
-    "i18n/body-templates.js",
-    "content.js",
+    "public/i18n/locale.en.js",
+    "public/i18n/body-templates.js",
+    "public/content.js",
     "translation/source",
-    "i18n/i18n.js",
-    "sw.js",
-    "index.html",
+    "public/i18n/i18n.js",
+    "public/sw.js",
+    "public/index.html",
 ]
 
 MIME = {
@@ -63,7 +65,7 @@ MIME = {
 # ─── locale file access ─────────────────────────────────
 # Same slicing rule the worker, the review app and the node tooling all use.
 def locale_path(lang="en"):
-    return os.path.join(ROOT, "i18n", f"locale.{lang}.js")
+    return os.path.join(WEB, "i18n", f"locale.{lang}.js")
 
 
 def read_locale(lang="en"):
@@ -138,7 +140,7 @@ CALLOUT_TINT = {"pregnancy": "", "labor": "", "recovery": "rose", "baby": "navy"
 
 
 def _json_block(rel, marker):
-    path = os.path.join(ROOT, rel)
+    path = os.path.join(WEB, rel)
     src = io.open(path, encoding="utf-8").read()
     a = src.index(marker) + len(marker)
     b = src.index("\n};", a) + 2 if rel == "content.js" else src.rindex("}") + 1
@@ -256,7 +258,7 @@ class Handler(BaseHTTPRequestHandler):
                 templates = read_templates()[4]
             except Exception as e:
                 return self._send(500, {"error": str(e)})
-            mp = os.path.join(ROOT, "CONTENT_MAP.md")
+            mp = os.path.join(ROOT, "docs", "CONTENT_MAP.md")
             cmap = io.open(mp, encoding="utf-8").read() if os.path.isfile(mp) else ""
             return self._send(200, {"structure": structure, "templates": templates, "map": cmap})
 
@@ -272,8 +274,8 @@ class Handler(BaseHTTPRequestHandler):
 
         # Everything else: the real site, off disk.
         rel = path.lstrip("/") or "index.html"
-        full = os.path.normpath(os.path.join(ROOT, rel))
-        if not full.startswith(ROOT) or not os.path.isfile(full):
+        full = os.path.normpath(os.path.join(WEB, rel))
+        if not full.startswith(WEB + os.sep) or not os.path.isfile(full):
             return self._raw(404, "not found", "text/plain")
         ext = os.path.splitext(full)[1]
         if ext == ".html":
@@ -423,23 +425,11 @@ class Handler(BaseHTTPRequestHandler):
 
 
 def bump_version():
-    """ASSET_VERSION, CACHE_NAME and every ?v= move together or not at all."""
-    ip = os.path.join(ROOT, "i18n/i18n.js")
-    src = io.open(ip, encoding="utf-8").read()
-    m = re.search(r"const ASSET_VERSION = '(\d+)';", src)
-    if not m:
-        raise RuntimeError("ASSET_VERSION not found")
-    old, new = int(m.group(1)), int(m.group(1)) + 1
-    io.open(ip, "w", encoding="utf-8").write(
-        src.replace(f"const ASSET_VERSION = '{old}';", f"const ASSET_VERSION = '{new}';", 1))
-    for rel in ("sw.js", "index.html"):
-        p = os.path.join(ROOT, rel)
-        s = io.open(p, encoding="utf-8").read()
-        s = s.replace(f"?v={old}", f"?v={new}")
-        s = s.replace(f"birth-guide-v{old}-i18n", f"birth-guide-v{new}-i18n")
-        io.open(p, "w", encoding="utf-8").write(s)
-    return new
-
+    """ASSET_VERSION, CACHE_NAME and every ?v= move together: scripts/bump.js."""
+    rc, out = node("scripts/bump.js")
+    if rc != 0:
+        raise RuntimeError(f"version bump failed: {out}")
+    return int(out.strip().split()[-1])
 
 if __name__ == "__main__":
     if not os.path.isdir(os.path.join(ROOT, ".git")):

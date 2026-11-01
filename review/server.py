@@ -119,7 +119,7 @@ def d1(sql):
 
 def load_locale(lang):
     """Parse i18n/locale.<lang>.js into a flat dot-notation dict."""
-    path = os.path.join(ROOT, "i18n", f"locale.{lang}.js")
+    path = os.path.join(ROOT, "public", "i18n", f"locale.{lang}.js")
     if not os.path.exists(path):
         return {}
     src = open(path, encoding="utf-8").read()
@@ -157,7 +157,7 @@ def write_locale_key(lang, key, value, source=None):
     sentence that no longer exists, so we stamp what they saw, and the key
     stays flagged stale and comes back round for retranslation.
     """
-    path = os.path.join(ROOT, "i18n", f"locale.{lang}.js")
+    path = os.path.join(ROOT, "public", "i18n", f"locale.{lang}.js")
     src = open(path, encoding="utf-8").read()
     i, marker = locale_marker(src, lang)
     head, body = src[:i], src[src.find("{", i): src.rfind("}") + 1]

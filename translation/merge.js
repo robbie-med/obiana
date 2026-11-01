@@ -56,7 +56,7 @@ for (const [lang, groups] of Object.entries(byLang)) {
   groups.ui.forEach(f => Object.assign(uiFlat, JSON.parse(fs.readFileSync(path.join(OUT, f), 'utf8'))));
   groups.content.forEach(f => Object.assign(content, JSON.parse(fs.readFileSync(path.join(OUT, f), 'utf8'))));
 
-  const localeFile = path.join(ROOT, `i18n/locale.${lang}.js`);
+  const localeFile = path.join(ROOT, `public/i18n/locale.${lang}.js`);
 
   // Preserve any hand-written epds block: it is an officially validated
   // instrument and never comes from this pipeline. Same for the srcHash map
@@ -128,8 +128,8 @@ window.MYOB_LOCALES.${lang} = ${JSON.stringify(obj, null, 2)};
 `);
 
   const uiCount = Object.keys(uiFlat).length;
-  console.log(`✓ ${lang}: ${uiCount} ui strings, ${Object.keys(content).length} cards -> i18n/locale.${lang}.js`);
+  console.log(`✓ ${lang}: ${uiCount} ui strings, ${Object.keys(content).length} cards -> public/i18n/locale.${lang}.js`);
 }
 
 console.log('\nAfter merging, bump the cache version so users get the update:');
-console.log('  sw.js CACHE_NAME, index.html ?v=, i18n/i18n.js ASSET_VERSION');
+console.log('  node scripts/bump.js (sw.js CACHE_NAME, index.html ?v=, i18n.js ASSET_VERSION)');

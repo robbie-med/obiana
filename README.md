@@ -37,7 +37,7 @@ machine-translation notice until a clinician has reviewed it.
 
 Arabic, Pashto and Dari render right-to-left throughout.
 
-See [TRANSLATING.md](TRANSLATING.md) to help.
+See [docs/TRANSLATING.md](docs/TRANSLATING.md) to help.
 
 ## Mood screening is gated on purpose
 
@@ -50,32 +50,39 @@ exist, in whichever language the reader can manage.
 The instrument language is chosen **independently of the interface language**,
 because plenty of patients read a second language fluently.
 
-`node i18n/epds/verify.js` checks every instrument: item count, that scores are
+`node scripts/epds/verify.js` checks every instrument: item count, that scores are
 a permutation of 0-3, the total range, and that the reverse-scored items match
 the published form. It cannot check that a translation is faithful. Only a
 speaker of the language can.
 
-Details and sources: [i18n/epds/SOURCES.md](i18n/epds/SOURCES.md).
+Details and sources: [scripts/epds/SOURCES.md](scripts/epds/SOURCES.md).
 
 ## Layout
 
 ```
-index.html            shell: every page and modal, no inline JS or CSS
-styles.css            all styles, including dark mode, RTL and print
-content.js            card structure, nav, search, My Info, PWA, language picker
-tools.js              the interactive tools
-sw.js                 service worker, cache-first
-manifest.json         PWA metadata
-flags/                bundled SVG flags (see NOTICE.md)
-i18n/
-  i18n.js             locale loading, t(), formatting, search folding
-  locale.<lang>.js    one file per language: ui strings + guide content
-  translate-tool.js   in-app Translation Helper
-  improve-tool.js     in-app "Help Improve This Guide"
-  epds/               validated screening instruments + their verifier
-translation/          batch translation pipeline, validators, runtime audit
+public/               THE SITE. Only this folder is deployed; nothing else is served.
+  index.html          shell: every page and modal
+  styles.css          all styles, including dark mode, RTL and print
+  content.js          card structure, nav, search, My Info, PWA, language picker
+  tools.js            the interactive tools
+  sw.js               service worker, cache-first
+  manifest.json       PWA metadata
+  flags/              bundled SVG flags (see NOTICE.md)
+  i18n/
+    i18n.js           locale loading, t(), formatting, search folding
+    body-templates.js the HTML skeleton of every card, shared by all languages
+    locale.<lang>.js  one file per language: ui strings + guide content
+    translate-tool.js in-app Translation Helper
+    improve-tool.js   in-app "Help Improve This Guide"
+    nausea-tool.js    nausea helper and log
+    epds/             validated screening instruments
 worker/               Cloudflare Worker: /api/suggest, /api/feedback
-review/               local desktop app for reviewing what readers send in
+scripts/              check.js (preflight), bump.js (cache version), epds/ (instrument tooling)
+translation/          batch translation pipeline, validators, runtime audit
+editor/               local English editor (127.0.0.1:3906)
+review/               local app for reviewing what readers send in (127.0.0.1:3905)
+docs/                 CONTENT_MAP (where every topic lives), TRANSLATING, ROADMAP
+                      docs/private/ is gitignored
 ```
 
 Plain static files. No build step, no framework, no bundler.
@@ -83,18 +90,18 @@ Plain static files. No build step, no framework, no bundler.
 ## Running it
 
 ```bash
-python3 -m http.server 3107 --bind 127.0.0.1
+python3 -m http.server 3107 --bind 127.0.0.1 --directory public
 ```
 
-After changing anything, bump the version in three places or returning users
-keep the old copy: `CACHE_NAME` in `sw.js`, the `?v=` query strings in
-`index.html`, and `ASSET_VERSION` in `i18n/i18n.js`.
+After changing anything under `public/`, run `node scripts/bump.js` or
+returning users keep the old copy. It moves `CACHE_NAME` in `sw.js`, the `?v=`
+query strings in `index.html` and `ASSET_VERSION` in `i18n/i18n.js` together.
 
 ## Deployment
 
 Cloudflare Workers static assets, deployed from `main` by Workers Builds.
-`wrangler.jsonc` serves the repo root; `.assetsignore` keeps tooling and docs
-out of the upload.
+`wrangler.jsonc` uploads `public/` and nothing else, so docs, tooling and private
+notes elsewhere in the repo can never be served.
 
 `not_found_handling` is deliberately left at the default rather than
 `single-page-application`: the app has no client-side routes, and SPA handling
@@ -104,8 +111,12 @@ the fallback that both the service worker and the i18n loader rely on.
 ## Checks
 
 ```bash
+node scripts/check.js              # everything below, plus a render of every card,
+                                   # ui string and tool in every locale
+node scripts/check.js --baseline   # save that render; then after a refactor:
+node scripts/check.js --compare    # must print "identical" if nothing should change
 node translation/lint-locales.js   # foreign-script leakage in locale files
-node i18n/epds/verify.js           # screening instrument structure
+node scripts/epds/verify.js        # screening instrument structure
 node translation/validate.js       # translation batches
 ```
 

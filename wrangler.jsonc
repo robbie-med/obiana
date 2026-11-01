@@ -1,6 +1,6 @@
 {
-  // Static-asset-only Worker: no `main`, no Worker script. Cloudflare serves
-  // the files in `directory` directly from the edge.
+  // Static assets served straight from the edge, plus a small Worker
+  // (worker/index.js) that only handles /api/*.
   //
   // Deployed via Workers Builds connected to the GitHub repo. The Worker name
   // here MUST match the Worker name in the Cloudflare dashboard or the build
@@ -13,9 +13,11 @@
   "main": "./worker/index.js",
 
   "assets": {
-    // Repo root — this is a plain static site with no build step.
-    // See .assetsignore for what is excluded from upload.
-    "directory": "./",
+    // ONLY public/ is uploaded. Everything else in the repo (docs, tooling,
+    // the editor, private notes) is never served, whatever its name, so a new
+    // file at the repo root cannot leak by accident. There is no build step:
+    // public/ is the site exactly as written.
+    "directory": "./public",
 
     // NOTE: deliberately NOT "single-page-application".
     //

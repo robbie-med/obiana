@@ -9,7 +9,7 @@ bash editor/start.sh
 
 It serves the real app off disk with an edit layer on top. Click any sentence,
 card title or subtitle; change it; **Save to file** writes it into
-`i18n/locale.en.js`. **Publish** commits and pushes.
+`public/i18n/locale.en.js`. **Publish** commits and pushes.
 
 ## Content tree
 
@@ -28,7 +28,7 @@ the Tools, Home and app text.
   cards render differently, so neither can move into the other's section.
 - **Suggested order** loads a proposed arrangement into the tree without
   saving it.
-- **Notes beside each card** come from `CONTENT_MAP.md`: the topics the card
+- **Notes beside each card** come from `docs/CONTENT_MAP.md`: the topics the card
   is home to, the ones it mentions, and any clash, repeat or gap. The page only
   reads that file; edit it by hand to change the notes. The dots in the tree
   mark cards with an open problem.
@@ -80,8 +80,8 @@ until the translation catches up.
 - **Pushes to `obiana`, never `origin`.** The two remotes hold unrelated
   histories; obiana is the one behind obiana.app. `start.sh` refuses to run on
   any branch other than `obiana-main`.
-- **Excluded from the public site** via `.assetsignore`. Everything not listed
-  there is served publicly, so an edit surface would otherwise go live.
+- **Never on the public site.** Only `public/` is deployed (`wrangler.jsonc`),
+  and the editor lives outside it.
 - The service worker is disabled in transit, for the editor only. Left running,
   it would serve its own cached `content.js` and locale file, so an edit would
   save to disk and then not appear.

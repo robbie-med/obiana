@@ -9,13 +9,13 @@ cd /home/user/Projects/myob
 node translation/snapshot.js     # 0. refresh the English input from locale.en.js
 node translation/prepare.js      # 1. regenerate prompts (only after editing English)
 bash translation/run-kimi.sh     # 2. run kimi over every batch  ← the long one
-node translation/merge.js        # 3. merge validated output into i18n/locale.*.js
+node translation/merge.js        # 3. merge validated output into public/i18n/locale.*.js
 ```
 
 ## What each step does
 
 **0. `snapshot.js`** regenerates `translation/source/*.en.json` from
-`i18n/locale.en.js`. Run it first, every time, and commit the result.
+`public/i18n/locale.en.js`. Run it first, every time, and commit the result.
 
 These files used to be maintained by hand, and they drifted: they sat at 45
 cards shaped `{title, sub, body}` while the app had moved to 55 cards shaped
@@ -50,7 +50,7 @@ Run it per-language if you want to see results sooner:
 bash translation/run-kimi.sh es      # ~12 batches
 ```
 
-**3. `merge.js`** writes `i18n/locale.<lang>.js`. It **refuses to merge a
+**3. `merge.js`** writes `public/i18n/locale.<lang>.js`. It **refuses to merge a
 language with any failing batch** — a half-merged locale is harder to reason
 about than an untranslated one, and the English fallback means an untranslated
 locale is already fully usable.
@@ -89,7 +89,7 @@ cutoffs only hold for the exact wording of an officially validated translation.
 A machine-translated version still produces a score, and that score looks
 exactly as authoritative as a real one. Locales without an `epds` block have
 the Mood Check-In disabled automatically; `merge.js` preserves any `epds` block
-you add by hand. See `TRANSLATING.md`.
+you add by hand. See `docs/TRANSLATING.md`.
 
 **`reviewed: true`.** `merge.js` always writes `reviewed: false`, which is what
 shows the patient a machine-translation notice. Flip it by hand, per language,

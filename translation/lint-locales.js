@@ -10,7 +10,8 @@
 
 const fs = require('fs');
 const path = require('path');
-const DIR = path.join(__dirname, '..', 'i18n');
+const ROOT = path.join(__dirname, '..');
+const DIR = path.join(ROOT, 'public', 'i18n');
 
 const FOREIGN = {
   ru:  { re: /[一-鿿가-힯؀-ۿ]/, label: 'CJK/Hangul/Arabic' },
@@ -91,7 +92,7 @@ if (canonBad.length) {
 }
 
 // Extract and run content.js's copy without executing the whole file.
-const contentSrc = fs.readFileSync(path.join(DIR, '..', 'content.js'), 'utf8');
+const contentSrc = fs.readFileSync(path.join(ROOT, 'public', 'content.js'), 'utf8');
 const m = contentSrc.match(/function srcHashOf\(s\) \{[\s\S]*?\n\}/);
 if (!m) {
   hashProblems++;
@@ -108,7 +109,7 @@ if (!m) {
 
 // review/server.py refuses to start on a mismatch, so just confirm the
 // vectors it asserts are the same ones.
-const pySrc = fs.readFileSync(path.join(DIR, '..', 'review', 'server.py'), 'utf8');
+const pySrc = fs.readFileSync(path.join(ROOT, 'review', 'server.py'), 'utf8');
 for (const [input, want] of SRC_HASH_VECTORS) {
   if (input === '' || input.length > 20) continue;      // long/empty are awkward to grep
   if (!pySrc.includes(want)) {

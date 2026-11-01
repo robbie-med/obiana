@@ -26,7 +26,7 @@ const { spawnSync } = require('child_process');
 const ROOT = path.join(__dirname, '..');
 // Paths are listed once here so the planned move into public/ is a one-line change.
 const P = {
-  web: ROOT,
+  web: path.join(ROOT, 'public'),
   translation: path.join(ROOT, 'translation'),
 };
 const SNAP = path.join(__dirname, '.snapshots');
