@@ -59,7 +59,7 @@ function exportData() {
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'birth-guide-' + isoDate(Date.now()) + '.json';
+  a.download = 'obiana-' + isoDate(Date.now()) + '.json';
   a.click();
   URL.revokeObjectURL(url);
   showToast(I18n.t('toast.dataExported'));
