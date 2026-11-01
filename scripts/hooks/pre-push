@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+# ═══════════════════════════════════════════════════════
+# PRE-PUSH: the only way out to the live site
+# ═══════════════════════════════════════════════════════
+# Install once per clone:   git config core.hooksPath scripts/hooks
+#
+# - Never to myOB (origin). It is the old repo with an unrelated history.
+# - To obiana: only obiana-main → main, no deletes, no force, and only after
+#   scripts/preflight.sh passes in a clean worktree of exactly the commit being
+#   pushed, so uncommitted edits can't make a broken commit look fine.
+# - Other remotes (the umbrel mirror) pass through untouched.
+
+set -uo pipefail
+remote="$1"; url="$2"
+ZERO=0000000000000000000000000000000000000000
+
+case "$url" in
+  *robbie-med/myOB*|*robbie-med/myob*)
+    echo "pre-push: refusing to push to myOB ($remote). Push only: git push obiana obiana-main:main"
+    exit 1 ;;
+  *robbie-med/obiana*) ;;
+  *) exit 0 ;;
+esac
+
+# Hooks inherit git's environment; the worktree must use its own index.
+unset GIT_DIR GIT_WORK_TREE GIT_INDEX_FILE
+
+status=0
+while read -r lref lsha rref rsha; do
+  [ -z "${lref:-}" ] && continue
+  if [ "$lsha" = "$ZERO" ]; then
+    echo "pre-push: refusing to delete $rref on obiana"; status=1; continue
+  fi
+  if [ "$lref" != "refs/heads/obiana-main" ] || [ "$rref" != "refs/heads/main" ]; then
+    echo "pre-push: refusing $lref → $rref. Push only: git push obiana obiana-main:main"; status=1; continue
+  fi
+  base=""
+  if [ "$rsha" != "$ZERO" ]; then
+    if ! git cat-file -e "$rsha^{commit}" 2>/dev/null; then
+      echo "pre-push: obiana/main is at ${rsha:0:7}, which this clone doesn't have. git fetch obiana, then rebase or merge"
+      status=1; continue
+    fi
+    if ! git merge-base --is-ancestor "$rsha" "$lsha"; then
+      echo "pre-push: refusing a non-fast-forward (force) push onto obiana/main"; status=1; continue
+    fi
+    base="$rsha"
+  fi
+
+  wt=$(mktemp -d "${TMPDIR:-/tmp}/obiana-prepush.XXXXXX")
+  git worktree add -q --detach "$wt" "$lsha" || { echo "pre-push: could not check out ${lsha:0:7}"; status=1; rm -rf "$wt"; continue; }
+  ( cd "$wt" && bash scripts/preflight.sh $base )
+  rc=$?
+  git worktree remove --force "$wt" >/dev/null 2>&1 || rm -rf "$wt"
+  git worktree prune
+  if [ $rc -ne 0 ]; then echo "pre-push: preflight failed on ${lsha:0:7}, nothing pushed"; status=1; fi
+done
+
+exit $status
