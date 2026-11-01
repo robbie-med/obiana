@@ -13,10 +13,11 @@
 <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="./apple-touch-icon.png">
 <link rel="manifest" href="./manifest.json">
-<link rel="stylesheet" href="./styles.css?v=93">
-<link rel="stylesheet" href="./fonts/fonts.css?v=93">
+<link rel="stylesheet" href="./styles.css?v=94">
+<link rel="stylesheet" href="./fonts/fonts.css?v=94">
 </head>
 <body>
+<script src="./app/core/theme.js?v=94"></script>
 <a href="#app" class="skip-link" data-i18n="common.skipToContent">Skip to content</a>
 <main id="app">
 
@@ -433,7 +434,7 @@
   <!-- ══════════ TOOL: NAUSEA & EATING ══════════ -->
   <div id="page-tool-nausea" class="page">
     <div class="tool-back-bar">
-      <button class="tool-back-btn" onclick="navigate('tools')">
+      <button class="tool-back-btn" onclick="goBackTo('tools')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
         <span data-i18n="common.toolsBack">Tools</span>
       </button>
@@ -445,7 +446,7 @@
   <!-- ══════════ TOOL: NAUSEA LOG ══════════ -->
   <div id="page-tool-nausealog" class="page">
     <div class="tool-back-bar">
-      <button class="tool-back-btn" onclick="navigate('tools')">
+      <button class="tool-back-btn" onclick="goBackTo('tools')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
         <span data-i18n="common.toolsBack">Tools</span>
       </button>
@@ -457,7 +458,7 @@
   <!-- ══════════ TOOL: KICK COUNTER ══════════ -->
   <div id="page-tool-kick" class="page">
     <div class="tool-back-bar">
-      <button class="tool-back-btn" onclick="navigate('tools')">
+      <button class="tool-back-btn" onclick="goBackTo('tools')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
         <span data-i18n="common.toolsBack">Tools</span>
       </button>
@@ -469,7 +470,7 @@
   <!-- ══════════ TOOL: CONTRACTION TIMER ══════════ -->
   <div id="page-tool-contractions" class="page">
     <div class="tool-back-bar">
-      <button class="tool-back-btn" onclick="navigate('tools')">
+      <button class="tool-back-btn" onclick="goBackTo('tools')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
         <span data-i18n="common.toolsBack">Tools</span>
       </button>
@@ -481,7 +482,7 @@
   <!-- ══════════ TOOL: FEEDING LOG ══════════ -->
   <div id="page-tool-feeding" class="page">
     <div class="tool-back-bar">
-      <button class="tool-back-btn" onclick="navigate('tools')">
+      <button class="tool-back-btn" onclick="goBackTo('tools')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
         <span data-i18n="common.toolsBack">Tools</span>
       </button>
@@ -493,7 +494,7 @@
   <!-- ══════════ TOOL: DIAPER LOG ══════════ -->
   <div id="page-tool-diapers" class="page">
     <div class="tool-back-bar">
-      <button class="tool-back-btn" onclick="navigate('tools')">
+      <button class="tool-back-btn" onclick="goBackTo('tools')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
         <span data-i18n="common.toolsBack">Tools</span>
       </button>
@@ -505,7 +506,7 @@
   <!-- ══════════ TOOL: JAUNDICE TRACKER ══════════ -->
   <div id="page-tool-jaundice" class="page">
     <div class="tool-back-bar">
-      <button class="tool-back-btn" onclick="navigate('tools')">
+      <button class="tool-back-btn" onclick="goBackTo('tools')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
         <span data-i18n="common.toolsBack">Tools</span>
       </button>
@@ -517,7 +518,7 @@
   <!-- ══════════ TOOL: BLOOD PRESSURE ══════════ -->
   <div id="page-tool-bp" class="page">
     <div class="tool-back-bar">
-      <button class="tool-back-btn" onclick="navigate('tools')">
+      <button class="tool-back-btn" onclick="goBackTo('tools')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
         <span data-i18n="common.toolsBack">Tools</span>
       </button>
@@ -529,7 +530,7 @@
   <!-- ══════════ TOOL: WEIGHT TRACKER ══════════ -->
   <div id="page-tool-weight" class="page">
     <div class="tool-back-bar">
-      <button class="tool-back-btn" onclick="navigate('tools')">
+      <button class="tool-back-btn" onclick="goBackTo('tools')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
         <span data-i18n="common.toolsBack">Tools</span>
       </button>
@@ -541,7 +542,7 @@
   <!-- ══════════ TOOL: MOOD CHECK-IN ══════════ -->
   <div id="page-tool-mood" class="page">
     <div class="tool-back-bar">
-      <button class="tool-back-btn" onclick="navigate('tools')">
+      <button class="tool-back-btn" onclick="goBackTo('tools')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
         <span data-i18n="common.toolsBack">Tools</span>
       </button>
@@ -553,7 +554,7 @@
   <!-- ══════════ TOOL: BIRTH PLAN ══════════ -->
   <div id="page-tool-birthplan" class="page">
     <div class="tool-back-bar">
-      <button class="tool-back-btn" onclick="navigate('tools')">
+      <button class="tool-back-btn" onclick="goBackTo('tools')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
         <span data-i18n="common.toolsBack">Tools</span>
       </button>
@@ -565,7 +566,7 @@
   <!-- ══════════ TOOL: VISIT NOTES ══════════ -->
   <div id="page-tool-appts" class="page">
     <div class="tool-back-bar">
-      <button class="tool-back-btn" onclick="navigate('tools')">
+      <button class="tool-back-btn" onclick="goBackTo('tools')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
         <span data-i18n="common.toolsBack">Tools</span>
       </button>
@@ -577,7 +578,7 @@
   <!-- ══════════ TOOL: TRANSLATION HELPER ══════════ -->
   <div id="page-tool-i18n" class="page">
     <div class="tool-back-bar">
-      <button class="tool-back-btn" onclick="navigate('tools')">
+      <button class="tool-back-btn" onclick="goBackTo('tools')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
         <span data-i18n="common.toolsBack">Tools</span>
       </button>
@@ -589,7 +590,7 @@
   <!-- ══════════ TOOL: HELP IMPROVE THIS GUIDE ══════════ -->
   <div id="page-tool-improve" class="page">
     <div class="tool-back-bar">
-      <button class="tool-back-btn" onclick="navigate('tools')">
+      <button class="tool-back-btn" onclick="goBackTo('tools')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
         <span data-i18n="common.toolsBack">Tools</span>
       </button>
@@ -778,43 +779,44 @@
      subtree is gone from the box tree, so printing produced a blank page. -->
 <div id="print-view"></div>
 
-<script src="./i18n/i18n.js?v=93"></script>
-<script src="./i18n/body-templates.js?v=93"></script>
-<script src="./i18n/epds/epds.en.js?v=93"></script>
-<script src="./i18n/epds/epds.es.js?v=93"></script>
-<script src="./i18n/epds/epds.cnh.js?v=93"></script>
-<script src="./i18n/epds/epds.ko.js?v=93"></script>
-<script src="./i18n/epds/epds.zh.js?v=93"></script>
-<script src="./i18n/epds/epds.ar.js?v=93"></script>
-<script src="./i18n/epds/phq9.fr.js?v=93"></script>
-<script src="./i18n/epds/phq9.ru.js?v=93"></script>
+<script src="./i18n/i18n.js?v=94"></script>
+<script src="./i18n/body-templates.js?v=94"></script>
+<script src="./i18n/epds/epds.en.js?v=94"></script>
+<script src="./i18n/epds/epds.es.js?v=94"></script>
+<script src="./i18n/epds/epds.cnh.js?v=94"></script>
+<script src="./i18n/epds/epds.ko.js?v=94"></script>
+<script src="./i18n/epds/epds.zh.js?v=94"></script>
+<script src="./i18n/epds/epds.ar.js?v=94"></script>
+<script src="./i18n/epds/phq9.fr.js?v=94"></script>
+<script src="./i18n/epds/phq9.ru.js?v=94"></script>
 <!-- App: classic scripts sharing one global scope, in dependency order.
      Guide and app shell first, then the tools, then the contributor tools. -->
-<script src="./app/guide/structure.js?v=93"></script>
-<script src="./app/core/storage.js?v=93"></script>
-<script src="./app/guide/cards.js?v=93"></script>
-<script src="./app/myinfo.js?v=93"></script>
-<script src="./app/guide/search.js?v=93"></script>
-<script src="./app/core/nav.js?v=93"></script>
-<script src="./app/core/pwa.js?v=93"></script>
-<script src="./app/core/ui.js?v=93"></script>
-<script src="./app/settings.js?v=93"></script>
-<script src="./app/first-run.js?v=93"></script>
-<script src="./app/language.js?v=93"></script>
-<script src="./app/boot.js?v=93"></script>
-<script src="./app/tools/shared.js?v=93"></script>
-<script src="./app/tools/kick.js?v=93"></script>
-<script src="./app/tools/contractions.js?v=93"></script>
-<script src="./app/tools/feeding.js?v=93"></script>
-<script src="./app/tools/diapers.js?v=93"></script>
-<script src="./app/tools/jaundice.js?v=93"></script>
-<script src="./app/tools/bp.js?v=93"></script>
-<script src="./app/tools/weight.js?v=93"></script>
-<script src="./app/tools/mood.js?v=93"></script>
-<script src="./app/tools/birthplan.js?v=93"></script>
-<script src="./app/tools/appts.js?v=93"></script>
-<script src="./app/contribute/translate.js?v=93"></script>
-<script src="./app/contribute/improve.js?v=93"></script>
-<script src="./app/tools/nausea.js?v=93"></script>
+<script src="./app/guide/structure.js?v=94"></script>
+<script src="./app/core/storage.js?v=94"></script>
+<script src="./app/guide/cards.js?v=94"></script>
+<script src="./app/myinfo.js?v=94"></script>
+<script src="./app/guide/search.js?v=94"></script>
+<script src="./app/core/nav.js?v=94"></script>
+<script src="./app/core/router.js?v=94"></script>
+<script src="./app/core/pwa.js?v=94"></script>
+<script src="./app/core/ui.js?v=94"></script>
+<script src="./app/settings.js?v=94"></script>
+<script src="./app/first-run.js?v=94"></script>
+<script src="./app/language.js?v=94"></script>
+<script src="./app/boot.js?v=94"></script>
+<script src="./app/tools/shared.js?v=94"></script>
+<script src="./app/tools/kick.js?v=94"></script>
+<script src="./app/tools/contractions.js?v=94"></script>
+<script src="./app/tools/feeding.js?v=94"></script>
+<script src="./app/tools/diapers.js?v=94"></script>
+<script src="./app/tools/jaundice.js?v=94"></script>
+<script src="./app/tools/bp.js?v=94"></script>
+<script src="./app/tools/weight.js?v=94"></script>
+<script src="./app/tools/mood.js?v=94"></script>
+<script src="./app/tools/birthplan.js?v=94"></script>
+<script src="./app/tools/appts.js?v=94"></script>
+<script src="./app/contribute/translate.js?v=94"></script>
+<script src="./app/contribute/improve.js?v=94"></script>
+<script src="./app/tools/nausea.js?v=94"></script>
 </body>
 </html>

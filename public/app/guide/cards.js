@@ -184,6 +184,7 @@ function toggleCard(header) {
   const card = header.closest('.card');
   card.classList.toggle('open');
   header.setAttribute('aria-expanded', card.classList.contains('open') ? 'true' : 'false');
+  replaceCardRoute(currentSection, card.classList.contains('open') ? card.id.replace(/^card-/, '') : null);
   if (card.classList.contains('open')) {
     // Smooth scroll into view with small delay
     setTimeout(() => {

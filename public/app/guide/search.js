@@ -121,7 +121,7 @@ function doSearch() {
 
   // Show search results, hide normal pages
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-current', 'false'); });
   searchResultsPage.classList.add('active');
 
   searchResultsHeader.textContent = results.length
@@ -146,15 +146,7 @@ function doSearch() {
       <div class="sri-snippet">${buildSnippet(item, terms)}</div>`;
     div.addEventListener('click', () => {
       clearSearch();
-      navigate(item.section);
-      renderSection(item.section);
-      setTimeout(() => {
-        const card = document.getElementById('card-' + item.id);
-        if (card) {
-          card.classList.add('open');
-          card.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }, 100);
+      navigate(item.section, { card: item.id });
     });
     searchResultsList.appendChild(div);
   });
@@ -165,5 +157,5 @@ function clearSearch() {
   searchClear.classList.remove('visible');
   searchResultsPage.classList.remove('active');
   document.getElementById('page-' + currentSection)?.classList.add('active');
-  document.getElementById('navbtn-' + currentSection)?.classList.add('active');
+  highlightNav(currentSection);
 }
