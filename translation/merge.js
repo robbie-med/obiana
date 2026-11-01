@@ -11,6 +11,7 @@
 const fs = require('fs');
 const path = require('path');
 const { flattenContent } = require('./hash.js');
+const { parseBatch, localeRef } = require('./batch.js');
 const { execFileSync } = require('child_process');
 
 const T = __dirname;
@@ -23,9 +24,9 @@ if (!files.length) { console.log('translation/out/ is empty — run run-kimi.sh 
 
 const byLang = {};
 for (const f of files) {
-  const m = f.match(/^([a-z]{2,3})\.(ui|content)\.(\d+)\.json$/);
-  if (!m) continue;
-  const [, lang, kind] = m;
+  const b = parseBatch(f);
+  if (!b) { if (!f.startsWith('_')) console.log(`  ignored ${f}: not <locale>.ui|content.<n>.json for a locale in worker/index.js LOCALES`); continue; }
+  const { lang, kind } = b;
   if (want.length && !want.includes(lang)) continue;
   (byLang[lang] ||= { ui: [], content: [] })[kind].push(f);
 }
@@ -124,7 +125,7 @@ for (const [lang, groups] of Object.entries(byLang)) {
 
 window.MYOB_LOCALES = window.MYOB_LOCALES || {};
 
-window.MYOB_LOCALES.${lang} = ${JSON.stringify(obj, null, 2)};
+${localeRef(lang)} = ${JSON.stringify(obj, null, 2)};
 `);
 
   const uiCount = Object.keys(uiFlat).length;

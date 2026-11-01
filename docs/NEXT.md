@@ -14,7 +14,7 @@ Ticks are the status: tick an item in the commit that ships it. New findings go 
 - [x] `scripts/preflight.sh`: the gate before every push.
 - [x] `scripts/hooks/pre-push` runs preflight on exactly what is pushed, and only lets `obiana-main` → `obiana/main` through.
 - [ ] Key-list re-translate mode: `bash translation/run-kimi.sh --keys <file> [lang…]`, then `node translation/merge.js --keys <tag>`.
-- [ ] `translation/merge.js` pt-BR fix (the §2 item).
+- [x] `translation/merge.js` pt-BR fix (the §2 item).
 
 ## 1. Content fixes (your decisions)
 - [ ] **Family doctor everywhere a provider is named.** About 21 places in `public/i18n/locale.en.js`:
@@ -40,7 +40,7 @@ Ticks are the status: tick an item in the commit that ships it. New findings go 
 - [ ] UTC date off-by-one (`public/app/tools/jaundice.js` `max=`, `public/app/tools/appts.js` default date, `settings.js` export filename): use `isoDate(Date.now())`, never `toISOString()`.
 - [ ] **Export misses keys** (`public/app/settings.js` `EXPORT_KEYS`): add `obiana.dates` and `myob.noticeAccepted`. Import reads the same list.
 - [ ] Name exports `obiana-<date>.json` (local date).
-- [ ] `translation/merge.js` skips `pt-BR` batches without a word (its filename regex is `[a-z]{2,3}`). Accept every code in the worker's `LOCALES`.
+- [x] `translation/merge.js` skips `pt-BR` batches without a word (its filename regex is `[a-z]{2,3}`). Accept every code in the worker's `LOCALES`.
 - [ ] Delete the old root `CNAME`. It isn't deployed (only `public/` is), so this is cleanup only. Fix the stale "prod on GitHub Pages myob.robbiemed.org" note in the myob row of `PORTS.md`.
 
 ## 3. Translate page (`#/translate`, linked from Me, shareable)

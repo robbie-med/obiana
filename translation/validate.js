@@ -12,6 +12,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { parseBatch } = require('./batch.js');
 
 const T = __dirname;
 const ui = JSON.parse(fs.readFileSync(path.join(T, 'source/ui.en.json'), 'utf8'));
@@ -74,9 +75,9 @@ function compareString(key, en, tr, errs, warns, lang) {
 
 function validateFile(file) {
   const base = path.basename(file);
-  const m = base.match(/^([a-z]{2,3})\.(ui|content)\.(\d+)\.json$/);
-  if (!m) return { file: base, errs: [`unrecognised filename`], warns: [] };
-  const [, lang, kind] = m;
+  const b = parseBatch(base);
+  if (!b) return { file: base, errs: [`unrecognised filename (want <locale>.ui|content.<n>.json, locale from worker LOCALES)`], warns: [] };
+  const { lang, kind } = b;
 
   let data;
   try { data = JSON.parse(fs.readFileSync(file, 'utf8')); }
@@ -88,7 +89,7 @@ function validateFile(file) {
   // Which source keys did this batch cover? Derived from the prompt's slice,
   // recomputed here so the check does not trust the model's key list.
   const SIZE = kind === 'ui' ? 80 : 6;
-  const idx = parseInt(m[3], 10) - 1;
+  const idx = b.n - 1;
   const expected = Object.keys(source).slice(idx * SIZE, (idx + 1) * SIZE);
   const got = Object.keys(data);
 
