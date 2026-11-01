@@ -379,7 +379,12 @@ window.MYOB_LOCALES.es = {
         "savedOffline": "Guardado. Se enviará cuando tenga conexión.",
         "queued": "{n} por enviar. Se envían cuando tenga conexión.",
         "allDone": "Esas son todas las frases por ahora. Gracias.",
-        "showSkipped": "Volver a las {n} que omitió"
+        "showSkipped": "Volver a las {n} que omitió",
+        "tapToggle": "Toque una frase para sugerir una mejor redacción",
+        "tapBar": "Toque cualquier frase subrayada para sugerir una mejor redacción.",
+        "tapOff": "Desactivar",
+        "sheetTitle": "Sugerir una mejor redacción",
+        "cancel": "Cancelar"
       },
       "improve": {
         "intro": "Esta guía la escriben personas y mejora cuando quienes la leen nos dicen qué falta. Cuéntenos cómo se hace algo en su cultura, pregunte por un tema que no cubrimos o señale cualquier cosa que no se entienda bien.",

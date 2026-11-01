@@ -22,6 +22,10 @@
                   background:rgba(255,255,255,.15); color:#fff; font-size:14px; font-weight:600; }
   header select option { color:#1a2424; background:#fff; }
   #status { margin-left:auto; font-size:12.5px; opacity:.85; }
+  .confirms { display:flex; gap:8px; align-items:center; margin:6px 0; font-size:12.5px; }
+  .b-draft { background:#fdf5e6; color:#6b4a12; }
+  .b-confirm { background:#e6f2f2; color:#1d4e4e; }
+  .accept-confirm { font-size:12px; padding:3px 9px; cursor:pointer; }
   main { max-width:920px; margin:0 auto; padding:20px 16px 60px; }
 
   .filters { display:flex; gap:8px; margin-bottom:16px; flex-wrap:wrap; align-items:center; }
@@ -110,12 +114,13 @@ async function loadLanguages() {
   if (data.error) { showError(data.error); return; }
   const sel = $('#lang');
   const langs = data.languages || [];
-  const all = ['es','fr','ko','ar','ru','zh','zom'];
-  const counts = Object.fromEntries(langs.map(l => [l.lang, l]));
-  sel.innerHTML = all.map(code => {
-    const c = counts[code];
-    const label = c ? `${code} — ${c.pending || 0} pending / ${c.n} total` : `${code} — none yet`;
-    return `<option value="${code}">${label}</option>`;
+  STATE.progress = Object.fromEntries(langs.map(l => [l.lang, l]));
+  // Progress per language: translated / all sentences, confirmed by a
+  // translator ("Looks right") as it ships now, suggestions still open.
+  sel.innerHTML = langs.map(c => {
+    const pct = c.total ? Math.round(100 * c.translated / c.total) : 0;
+    const label = `${c.lang} — ${pct}% translated (${c.translated}/${c.total}) · ${c.confirmed} confirmed · ${c.pending} pending`;
+    return `<option value="${esc(c.lang)}">${esc(label)}</option>`;
   }).join('');
   sel.value = STATE.lang;
 }
@@ -139,8 +144,8 @@ function render() {
   const q = STATE.query.toLowerCase();
   let groups = STATE.groups;
 
-  if (STATE.filter === 'pending')
-    groups = groups.filter(g => g.submissions.some(s => s.status === 'new'));
+  const waiting = g => g.submissions.some(s => s.status === 'new') || g.confirmationsPending > 0;
+  if (STATE.filter === 'pending') groups = groups.filter(waiting);
   if (q)
     groups = groups.filter(g => g.key.toLowerCase().includes(q)
       || String(g.english).toLowerCase().includes(q)
@@ -148,7 +153,8 @@ function render() {
 
   const total = STATE.groups.reduce((n, g) => n + g.submissions.length, 0);
   const pending = STATE.groups.reduce((n, g) => n + g.submissions.filter(s => s.status === 'new').length, 0);
-  $('#status').textContent = `${pending} pending · ${total} total`;
+  const confirmed = STATE.groups.filter(g => g.confirmations > 0).length;
+  $('#status').textContent = `${pending} pending · ${total} total · ${confirmed} sentences confirmed`;
 
   if (!groups.length) {
     $('#list').innerHTML = `<p class="empty">${STATE.groups.length
@@ -163,6 +169,12 @@ function render() {
       <div class="en"><span class="tag">English</span>${esc(g.english)}</div>
       <div class="live"><span class="tag">Live now</span>${
         g.shipped ? esc(g.shipped) : '<span class="missing">not translated</span>'}</div>
+      ${g.draft || g.confirmations ? `<div class="confirms">
+        ${g.draft ? '<span class="badge b-draft">machine draft</span>' : ''}
+        ${g.confirmations ? `<span class="badge b-confirm">✓ ${g.confirmations} “looks right”</span>` : ''}
+        ${g.confirmationsPending ? `<button class="accept-confirm" data-confirm="${esc(g.key)}">${
+          g.draft ? 'mark reviewed' : 'close confirmations'}</button>` : ''}
+      </div>` : ''}
       <div class="subs">
         ${g.submissions.map(s => `
           <div class="sub ${s.status === 'new' ? '' : esc(s.status)}"
@@ -197,6 +209,20 @@ function render() {
       const out = await res.json();
       if (out.ok) { await load(); }
       else { el.style.opacity = 1; alert('Merge failed: ' + (out.error || 'unknown')); }
+    });
+  });
+
+  // Agree with the translators: keep the live wording, drop the draft mark.
+  document.querySelectorAll('[data-confirm]').forEach(el => {
+    el.addEventListener('click', async () => {
+      el.disabled = true;
+      const res = await fetch('/api/accept-confirm', {
+        method: 'POST', headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ lang: STATE.lang, key: el.dataset.confirm }),
+      });
+      const out = await res.json();
+      if (out.ok) { await loadLanguages(); await load(); }
+      else { el.disabled = false; alert('Failed: ' + (out.error || 'unknown')); }
     });
   });
 

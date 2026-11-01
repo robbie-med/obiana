@@ -1,0 +1,6 @@
+# Session E (NEXT.md §3): tap a sentence to suggest
+ui.tool.i18n.tapToggle
+ui.tool.i18n.tapBar
+ui.tool.i18n.tapOff
+ui.tool.i18n.sheetTitle
+ui.tool.i18n.cancel

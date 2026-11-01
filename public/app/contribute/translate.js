@@ -384,3 +384,150 @@ function trRender(el) {
   });
   trShowQueued();
 }
+
+// ═══════════════════════════════════════════════════════
+// TAP A SENTENCE TO SUGGEST (Me toggle)
+// ═══════════════════════════════════════════════════════
+// While on, tapping a guide sentence, or a line of text that is not itself a
+// button or link, opens a small sheet: the English, the wording shown now, and
+// Send. It goes through the same queue as the Translate page. Guide sentences
+// are marked as they render (cardBody's MYOB_EDIT_WRAP slot wrapper, which
+// already knows each slot's key); static text carries its key in data-i18n.
+// Only for a translated language: English is the source, not a translation.
+const TR_TAP_KEY = 'myob.suggestTap';
+
+function trWrap(key, raw, shown) {
+  return `<span class="sg-slot" data-sg-key="${key}">${shown}</span>`;
+}
+
+function trTapOn() {
+  try { return localStorage.getItem(TR_TAP_KEY) === '1' && I18n.lang !== I18n.FALLBACK; }
+  catch (e) { return false; }
+}
+
+function trApplyTap() {
+  const on = trTapOn();
+  const row = document.getElementById('me-suggest-row');
+  if (row) row.hidden = I18n.lang === I18n.FALLBACK;
+  const box = document.getElementById('me-suggest-toggle');
+  if (box) box.checked = on;
+  // The local English editor owns the wrapper when it is loaded; leave it be.
+  const ours = !window.MYOB_EDIT_WRAP || window.MYOB_EDIT_WRAP === trWrap;
+  const was = document.body.classList.contains('suggest-mode');
+  document.body.classList.toggle('suggest-mode', on);
+  if (ours) window.MYOB_EDIT_WRAP = on ? trWrap : undefined;
+  trTapBar(on);
+  if (ours && was !== on) {
+    // Rebuild the guide so its sentences gain or lose their markers.
+    document.querySelectorAll('[id^="cards-"]').forEach(c => { delete c.dataset.rendered; c.innerHTML = ''; });
+    Object.keys(CONTENT_STRUCTURE).forEach(sec => {
+      if (document.getElementById('page-' + sec)?.classList.contains('active')) renderSection(sec);
+    });
+  }
+}
+
+function trSetTap(on) {
+  try { localStorage.setItem(TR_TAP_KEY, on ? '1' : '0'); } catch (e) {}
+  trApplyTap();
+}
+
+function trTapBar(on) {
+  let bar = document.getElementById('suggest-bar');
+  if (!on) { if (bar) bar.hidden = true; return; }
+  if (!bar) {
+    bar = document.createElement('div');
+    bar.id = 'suggest-bar';
+    bar.setAttribute('role', 'status');
+    // In the page's own column, above the content, so it covers nothing.
+    const content = document.getElementById('content');
+    content ? content.parentNode.insertBefore(bar, content) : document.body.appendChild(bar);
+  }
+  bar.innerHTML = `<span>${escHtml(t('tool.i18n.tapBar'))}</span>
+    <button type="button" id="suggest-bar-off">${escHtml(t('tool.i18n.tapOff'))}</button>`;
+  bar.hidden = false;
+  document.getElementById('suggest-bar-off').onclick = () => trSetTap(false);
+}
+
+document.addEventListener('change', e => {
+  if (e.target && e.target.id === 'me-suggest-toggle') trSetTap(e.target.checked);
+});
+
+// Capture phase, so a sentence inside an open card is not also a card toggle.
+document.addEventListener('click', e => {
+  if (!document.body.classList.contains('suggest-mode') || !e.target.closest) return;
+  const tgt = e.target;
+  if (tgt.closest('#suggest-sheet, #suggest-bar, #page-translate, #page-myinfo')) return;
+  let key = (tgt.closest('[data-sg-key]') || {}).dataset?.sgKey;
+  if (!key) {
+    const el = tgt.closest('[data-i18n]');
+    if (el && !el.closest('a, button, input, select, textarea, label, summary')) key = el.dataset.i18n;
+  }
+  if (!key) return;
+  const en = flattenLocale(window.MYOB_LOCALES.en)[key];
+  if (typeof en !== 'string' || en === '') return;
+  e.preventDefault();
+  e.stopPropagation();
+  trOpenSheet(key, tgt);
+}, true);
+
+function trOpenSheet(key, from) {
+  const lang = I18n.lang, meta = I18n.LOCALES[lang];
+  const source = flattenLocale(window.MYOB_LOCALES.en)[key];
+  const curRaw = flattenLocale(window.MYOB_LOCALES[lang])[key];
+  const cur = typeof curRaw === 'string' ? curRaw : '';
+  const html = trIsHtml(source);
+  const editable = trToEdit(cur, html);
+  const tokens = [...new Set(trTokens(source))];
+
+  let sheet = document.getElementById('suggest-sheet');
+  if (!sheet) { sheet = document.createElement('div'); sheet.id = 'suggest-sheet'; document.body.appendChild(sheet); }
+  sheet.setAttribute('role', 'dialog');
+  sheet.setAttribute('aria-modal', 'true');
+  sheet.setAttribute('aria-labelledby', 'sg-title');
+  sheet.innerHTML = `<div class="sg-inner">
+      <h2 id="sg-title" class="sg-title">${escHtml(t('tool.i18n.sheetTitle'))}</h2>
+      <div class="tr-label">English</div>
+      <div class="tr-en" lang="en" dir="ltr">${source}</div>
+      <label class="tr-label" for="sg-text" lang="${lang}" dir="${meta.dir}">${escHtml(meta.native)}</label>
+      <textarea id="sg-text" class="tool-textarea tr-text" rows="4" lang="${lang}" dir="${meta.dir}">${escHtml(editable)}</textarea>
+      ${tokens.length ? `<p class="tr-keep">${escHtml(t('tool.i18n.keepTokens'))}
+        ${tokens.map(x => `<button type="button" class="tr-token" data-token="${escHtml(x)}" dir="ltr">${escHtml(x)}</button>`).join(' ')}</p>` : ''}
+      <p class="tr-error" id="sg-error" role="alert" hidden></p>
+      <div class="tr-actions">
+        <button type="button" class="btn-sm btn-teal" id="sg-send">${escHtml(t('tool.i18n.send'))}</button>
+        <button type="button" class="btn-sm tr-skip" id="sg-cancel">${escHtml(t('tool.i18n.cancel'))}</button>
+      </div>
+    </div>`;
+  sheet.hidden = false;
+
+  const ta = document.getElementById('sg-text');
+  const send = document.getElementById('sg-send');
+  const err = document.getElementById('sg-error');
+  const close = () => { sheet.hidden = true; document.removeEventListener('keydown', onKey, true); if (from && from.focus) from.focus(); };
+  const onKey = ev => { if (ev.key === 'Escape') { ev.preventDefault(); close(); } };
+  document.addEventListener('keydown', onKey, true);
+  const sync = () => { send.disabled = !ta.value.trim() || ta.value.trim() === editable.trim(); err.hidden = true; };
+  ta.addEventListener('input', sync); sync();
+  sheet.onclick = ev => { if (ev.target === sheet) close(); };
+  sheet.querySelectorAll('[data-token]').forEach(b => b.addEventListener('click', () => {
+    const s = ta.selectionStart ?? ta.value.length, e = ta.selectionEnd ?? s;
+    ta.value = ta.value.slice(0, s) + b.dataset.token + ta.value.slice(e);
+    ta.focus(); sync();
+  }));
+  document.getElementById('sg-cancel').onclick = close;
+  send.onclick = () => {
+    const suggestion = trFromEdit(ta.value, html);
+    const { missing, extra } = trMissingTokens(source, suggestion);
+    if (missing.length || extra.length) {
+      err.textContent = t(missing.length ? 'tool.i18n.tokensMissing' : 'tool.i18n.tokensExtra',
+        { tokens: (missing.length ? missing : extra).join(' ') });
+      err.hidden = false;
+      return;
+    }
+    trEnqueue({ lang, key, kind: 'suggest', suggestion, source, current: cur });
+    trMark(lang, { key, source, cur }, 'sent');
+    close();
+    showToast(t(navigator.onLine ? 'tool.i18n.sent' : 'tool.i18n.savedOffline'));
+  };
+  ta.focus();
+}

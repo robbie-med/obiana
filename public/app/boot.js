@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // English and then visibly swaps.
   await I18n.boot();
   I18n.onChange(applyLocaleToApp);
+  I18n.onChange(trApplyTap);          // after the rebuild: tap-to-suggest follows the language
 
   document.title = I18n.t('app.title');
   buildSearchIndex();
@@ -19,5 +20,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (I18n.hasExplicitChoice()) maybeShowUsNotice();
   seedDatesFromMyInfo();
   renderToday();
+  trApplyTap();
   routeOnLoad();
 });

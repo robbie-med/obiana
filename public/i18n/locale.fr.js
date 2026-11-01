@@ -380,7 +380,12 @@ window.MYOB_LOCALES.fr = {
         "savedOffline": "Enregistré. Ce sera envoyé quand vous serez en ligne.",
         "queued": "{n} en attente d'envoi. Ils partent quand vous êtes en ligne.",
         "allDone": "C'est toutes les phrases pour le moment. Merci.",
-        "showSkipped": "Revenir aux {n} que vous avez passées"
+        "showSkipped": "Revenir aux {n} que vous avez passées",
+        "tapToggle": "Touchez une phrase pour proposer une meilleure formulation",
+        "tapBar": "Touchez une phrase soulignée pour proposer une meilleure formulation.",
+        "tapOff": "Désactiver",
+        "sheetTitle": "Proposer une meilleure formulation",
+        "cancel": "Annuler"
       },
       "improve": {
         "intro": "Ce guide est écrit par des personnes, et il s’améliore quand ses lectrices nous disent ce qui manque. Racontez-nous comment les choses se font dans votre culture, posez une question sur un sujet non traité, ou signalez ce qui n’était pas clair.",

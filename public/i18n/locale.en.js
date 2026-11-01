@@ -415,7 +415,12 @@ window.MYOB_LOCALES.en = {
         "allDone": "That's every sentence for now. Thank you.",
         "showSkipped": "Go back to the {n} you skipped",
         "privacy": "Only the phrase and your suggestion are sent. Nothing from your trackers ever leaves this phone.",
-        "loading": "Loading…"
+        "loading": "Loading…",
+        "tapToggle": "Tap a sentence to suggest better wording",
+        "tapBar": "Tap any underlined sentence to suggest better wording.",
+        "tapOff": "Turn off",
+        "sheetTitle": "Suggest better wording",
+        "cancel": "Cancel"
       },
       "improve": {
         "intro": "This guide is written by people, and it gets better when readers tell us what is missing. Share how something is done in your culture, ask about a topic we do not cover, or point out anything that did not read clearly.",

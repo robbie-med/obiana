@@ -378,7 +378,12 @@ window.MYOB_LOCALES.zh = {
         "savedOffline": "已保存。联网后会发送。",
         "queued": "{n} 条等待发送。联网后会发送。",
         "allDone": "目前就是全部句子了。谢谢您。",
-        "showSkipped": "回到跳过的 {n} 条"
+        "showSkipped": "回到跳过的 {n} 条",
+        "tapToggle": "点一句话，建议更好的说法",
+        "tapBar": "点任何带下划线的句子，建议更好的说法。",
+        "tapOff": "关闭",
+        "sheetTitle": "建议更好的说法",
+        "cancel": "取消"
       },
       "improve": {
         "intro": "这本指南是人写的，读者告诉我们缺了什么，它才会变得更好。说说在你们的文化里这件事是怎么做的，问一个我们没有写到的话题，或者指出任何读起来不清楚的地方。",

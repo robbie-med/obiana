@@ -94,15 +94,17 @@ function cardBody(id) {
 
   const mine = card.t || [];
   const fallback = (base[id] || {}).t || [];
-  // The local English editor sets this to wrap each filled slot in a element
-  // carrying its key, so a sentence on screen can be traced back to exactly
-  // one entry in the locale file. Unset in production, where the branch costs
-  // one property lookup per slot and nothing else.
+  // Set by the local English editor, and by "tap a sentence to suggest" (Me,
+  // contribute/translate.js): wraps each slot in an element carrying its key,
+  // so a sentence on screen traces back to exactly one entry in the locale
+  // file. The third argument is what the slot would show unwrapped. Unset
+  // otherwise, where the branch costs one property lookup per slot.
   const wrap = window.MYOB_EDIT_WRAP;
   return tpl.replace(/\{\{(\d+)\}\}/g, (m, i) => {
     const n = +i;
     const v = mine[n];
-    if (wrap) return wrap('content.' + id + '.t.' + n, v === undefined ? '' : v);
+    if (wrap) return wrap('content.' + id + '.t.' + n, v === undefined ? '' : v,
+      (v === undefined || v === '') ? enRun(fallback[n]) : v);
     // Only a MISSING translation falls back. A translation that has fallen
     // behind the English still reads correctly in the reader's own language,
     // and swapping it for an English sentence mid-paragraph is a worse

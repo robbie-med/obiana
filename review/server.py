@@ -28,6 +28,9 @@ PORT = 3905                       # claimed in /home/user/Projects/PORTS.md
 HOST = "127.0.0.1"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB = "obiana-suggestions"
+# Must match LOCALES in worker/index.js.
+LOCALES = ["es", "fr", "ko", "ar", "ru", "zh", "zom",
+           "ja", "tl", "pt-BR", "ps", "prs", "vi", "th", "de", "pl"]
 
 
 def src_hash(s):
@@ -105,9 +108,14 @@ def node_env():
 
 
 def d1(sql):
-    """Run a query against the remote D1 database and return rows."""
+    """Run a query against the remote D1 database and return rows.
+
+    OBIANA_D1_LOCAL=<dir> runs against a local copy instead (wrangler
+    --local --persist-to <dir>), for testing without touching production."""
+    local = os.environ.get("OBIANA_D1_LOCAL")
+    where = ["--local", "--persist-to", local] if local else ["--remote"]
     proc = subprocess.run(
-        ["npx", "wrangler", "d1", "execute", DB, "--remote", "--json", "--command", sql],
+        ["npx", "wrangler", "d1", "execute", DB, *where, "--json", "--command", sql],
         cwd=ROOT, capture_output=True, text=True, env=node_env(), timeout=90)
     out = proc.stdout.strip()
     start = out.find("[")
@@ -148,6 +156,45 @@ def load_locale(lang):
     return flat
 
 
+def clear_unreviewed(lang, key):
+    """Mark a machine draft as reviewed without changing its wording: what a
+    translator's "Looks right" means once a reviewer agrees."""
+    path = os.path.join(ROOT, "public", "i18n", f"locale.{lang}.js")
+    src = open(path, encoding="utf-8").read()
+    i, marker = locale_marker(src, lang)
+    head, body = src[:i], src[src.find("{", i): src.rfind("}") + 1]
+    obj = json.loads(body)
+    drafts = obj.get("unreviewed")
+    if not isinstance(drafts, dict) or key not in drafts:
+        return False
+    del drafts[key]
+    if not drafts:
+        del obj["unreviewed"]
+    open(path, "w", encoding="utf-8").write(
+        head + marker + " " + json.dumps(obj, ensure_ascii=False, indent=2) + ";\n")
+    return True
+
+
+def load_unreviewed(lang):
+    path = os.path.join(ROOT, "public", "i18n", f"locale.{lang}.js")
+    if not os.path.exists(path):
+        return {}
+    src = open(path, encoding="utf-8").read()
+    try:
+        i, _ = locale_marker(src, lang)
+        obj = json.loads(src[src.find("{", i): src.rfind("}") + 1])
+    except Exception:
+        return {}
+    drafts = obj.get("unreviewed")
+    return drafts if isinstance(drafts, dict) else {}
+
+
+def sentence_count():
+    """Every English string a translator can work on (same set as the app's
+    Translate page: ui strings and card fields, blank slots excluded)."""
+    return sum(1 for v in load_locale("en").values() if isinstance(v, str) and v != "")
+
+
 def write_locale_key(lang, key, value, source=None):
     """Apply an accepted suggestion straight into the locale file.
 
@@ -183,6 +230,12 @@ def write_locale_key(lang, key, value, source=None):
     # Record which English this was translated from. Without it the accepted
     # string is indistinguishable from one written against today's English,
     # and the next correction to this sentence would be invisible here.
+    # A reviewed wording is no longer a machine draft (NEXT.md §4).
+    if isinstance(obj.get("unreviewed"), dict) and key in obj["unreviewed"]:
+        del obj["unreviewed"][key]
+        if not obj["unreviewed"]:
+            del obj["unreviewed"]
+
     if key.startswith("content."):
         english = load_locale("en").get(key)
         basis = source if isinstance(source, str) and source else english
@@ -215,13 +268,31 @@ class Handler(BaseHTTPRequestHandler):
             return self._send(200, page, "text/html; charset=utf-8")
 
         if u.path == "/api/languages":
+            # Progress per language: translated sentences against English,
+            # how many of those a translator has confirmed as they ship now,
+            # and suggestions still waiting for a decision.
             try:
-                rows = d1("SELECT lang, COUNT(*) AS n, "
-                          "SUM(CASE WHEN status='new' THEN 1 ELSE 0 END) AS pending "
-                          "FROM suggestions GROUP BY lang ORDER BY lang")
-                return self._send(200, {"languages": rows})
+                rows = d1("SELECT lang, "
+                          "SUM(CASE WHEN kind='suggest' THEN 1 ELSE 0 END) AS n, "
+                          "SUM(CASE WHEN kind='suggest' AND status='new' THEN 1 ELSE 0 END) AS pending "
+                          "FROM suggestions GROUP BY lang")
+                confirms = d1("SELECT DISTINCT lang, key, current FROM suggestions WHERE kind='confirm'")
             except Exception as e:
                 return self._send(500, {"error": str(e)})
+            by = {r["lang"]: r for r in rows}
+            total = sentence_count()
+            english = load_locale("en")
+            out = []
+            for lang in LOCALES:
+                shipped = load_locale(lang)
+                translated = sum(1 for k, v in english.items()
+                                 if isinstance(v, str) and v and isinstance(shipped.get(k), str) and shipped[k])
+                confirmed = len({c["key"] for c in confirms
+                                 if c["lang"] == lang and c["current"] == shipped.get(c["key"])})
+                r = by.get(lang, {})
+                out.append({"lang": lang, "n": r.get("n") or 0, "pending": r.get("pending") or 0,
+                            "translated": translated, "confirmed": confirmed, "total": total})
+            return self._send(200, {"languages": out})
 
         if u.path == "/api/suggestions":
             lang = (parse_qs(u.query).get("lang") or ["es"])[0]
@@ -229,26 +300,42 @@ class Handler(BaseHTTPRequestHandler):
                 return self._send(400, {"error": "bad lang"})
             try:
                 rows = d1("SELECT id, lang, key, source, current, suggestion, note, "
-                          "country, status, created_at FROM suggestions "
+                          "country, status, created_at, kind FROM suggestions "
                           f"WHERE lang = '{lang}' ORDER BY key, created_at DESC")
             except Exception as e:
                 return self._send(500, {"error": str(e)})
 
             shipped = load_locale(lang)
             english = load_locale("en")
+            drafts = load_unreviewed(lang)
             # Group every submission under its key, so one entry shows them all.
+            # "Looks right" rows are not suggestions: they are counted, and
+            # only while what they confirmed is still what ships.
             groups = {}
             for r in rows:
                 g = groups.setdefault(r["key"], {
                     "key": r["key"],
                     "english": english.get(r["key"], r.get("source") or ""),
                     "shipped": shipped.get(r["key"], ""),
+                    "draft": r["key"] in drafts,
                     "submissions": [],
+                    "confirmations": 0,
+                    "confirmationsPending": 0,
                 })
-                g["submissions"].append(r)
-            ordered = sorted(groups.values(),
-                             key=lambda g: (not any(s["status"] == "new" for s in g["submissions"]),
-                                            g["key"]))
+                if r.get("kind") == "confirm":
+                    if r.get("current") == g["shipped"]:
+                        g["confirmations"] += 1
+                        if r["status"] == "new":
+                            g["confirmationsPending"] += 1
+                else:
+                    g["submissions"].append(r)
+            # Waiting for a decision first: a pending suggestion, or a
+            # confirmed machine draft that can be marked reviewed.
+            def waiting(g):
+                return any(s["status"] == "new" for s in g["submissions"]) or \
+                    (g["draft"] and g["confirmations"] > 0)
+            ordered = sorted((g for g in groups.values() if g["submissions"] or g["confirmations"]),
+                             key=lambda g: (not waiting(g), -g["confirmations"], g["key"]))
             return self._send(200, {"lang": lang, "groups": ordered})
 
         return self._send(404, {"error": "not found"})
@@ -266,6 +353,8 @@ class Handler(BaseHTTPRequestHandler):
             text = body.get("suggestion", "")
             if not all([sid, lang, key]) or not isinstance(text, str):
                 return self._send(400, {"error": "missing fields"})
+            if lang not in LOCALES or not re.fullmatch(r"[\w.-]+", key):
+                return self._send(400, {"error": "bad lang or key"})
             try:
                 # From the row, not the request: a page left open for a week
                 # would post whatever English it loaded back then.
@@ -275,8 +364,22 @@ class Handler(BaseHTTPRequestHandler):
                 d1(f"UPDATE suggestions SET status='accepted' WHERE id={int(sid)}")
                 # Other pending suggestions for the same key are now moot.
                 d1("UPDATE suggestions SET status='superseded' "
-                   f"WHERE key='{key}' AND lang='{lang}' AND status='new' AND id<>{int(sid)}")
+                   f"WHERE key='{key}' AND lang='{lang}' AND status='new' AND kind='suggest' AND id<>{int(sid)}")
                 return self._send(200, {"ok": True, "applied": True})
+            except Exception as e:
+                return self._send(500, {"error": str(e)})
+
+        if u.path == "/api/accept-confirm":
+            # A reviewer agrees with translators' "Looks right": the shipped
+            # wording stays, the machine-draft mark goes, the rows are closed.
+            lang, key = body.get("lang"), body.get("key")
+            if lang not in LOCALES or not isinstance(key, str) or not re.fullmatch(r"[\w.-]+", key):
+                return self._send(400, {"error": "bad lang or key"})
+            try:
+                cleared = clear_unreviewed(lang, key)
+                d1("UPDATE suggestions SET status='accepted' "
+                   f"WHERE kind='confirm' AND lang='{lang}' AND key='{key}' AND status='new'")
+                return self._send(200, {"ok": True, "cleared": cleared})
             except Exception as e:
                 return self._send(500, {"error": str(e)})
 

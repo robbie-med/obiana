@@ -59,13 +59,13 @@ Don't build a second tool beside it.
   - Sections: When to call and its warning lists first, then tabs and Today, Visits, the cards in guide order, the rest.
 - [x] `{placeholders}` locked (including the unit tokens in 5); no keys, no code, no files.
 - [x] Sends automatically when online; queued in localStorage and retried when offline; no Export (remove the Helper's JSON export).
-- [ ] Also: tap any sentence in the app to suggest a better wording (Me toggle). Build it on the existing `MYOB_EDIT_WRAP` slot wrapper, which already knows each slot's key. `contribute/improve.js` stays for culture/question/unclear notes.
+- [x] Also: tap any sentence in the app to suggest a better wording (Me toggle). Build it on the existing `MYOB_EDIT_WRAP` slot wrapper, which already knows each slot's key. `contribute/improve.js` stays for culture/question/unclear notes.
 - [x] Same `/api/suggest` endpoint. Worker:
   - "Looks right" = a confirmation (`kind` column in D1);
   - confirmation counts are a signal for the review app, never an automatic merge (the endpoint is open, at 360/hr per IP);
   - Telegram: no message per sentence. An hourly Cron Trigger posts one digest when there's something new ("es: 23 sentences, 4 confirmations"). The worker keeps no session state.
-- [ ] Review app: confirmations counted per sentence; progress per language.
-- **Session D, 2026-11-01:** the page is `public/app/contribute/translate.js` (`#/translate`, `#/translate/<lang>` to share; the old `#/tool-i18n` lands there). Me and the Tools card link to it. The worker stores `kind` (`suggest`/`confirm`) and posts one hourly digest; the D1 column comes from `worker/migrations-0002-kind.sql`. Left for session E: tap any sentence, and the review app.
+- [x] Review app: confirmations counted per sentence; progress per language.
+- **Session D, 2026-11-01:** the page is `public/app/contribute/translate.js` (`#/translate`, `#/translate/<lang>` to share; the old `#/tool-i18n` lands there). Me and the Tools card link to it. The worker stores `kind` (`suggest`/`confirm`) and posts one hourly digest; the D1 column comes from `worker/migrations-0002-kind.sql`. Session E (same day): Me has a "Tap a sentence to suggest better wording" switch (translated languages only). It marks guide sentences through `MYOB_EDIT_WRAP` (which now also gets the rendered text) and static text through `data-i18n`, and sends through the same queue. The review app counts "Looks right" per sentence, shows progress per language, and "mark reviewed" clears a machine draft's `unreviewed` mark. `OBIANA_D1_LOCAL=<dir>` points the review app at a local D1 for testing.
 
 ## 4. Draft translations
 - [ ] Machine-draft through the existing `translation/` pipeline, in this order:
@@ -150,3 +150,5 @@ Don't build a second tool beside it.
 - Drafts typed into the old Translation Helper stay in `myob.i18nSuggestions` on that phone. They were never sent, and the new page doesn't send them (they were never confirmed for sending).
 - The nine stub locales show the Tools card name "Help translate" in English; only their privacy line was re-translated.
 - `validate.js` warns `"mg" count 0 -> 1` on Tagalog text: it reads the plural marker "mga" as the unit mg.
+- Tap-to-suggest covers guide sentences and static text that isn't a button or link. Card titles (they're the accordion buttons), nav and tool labels, and text tools build in JS (e.g. When to call's lists, Visits) can't be tapped; they're all on the Translate page.
+- The review app counts 1,388 English strings for Spanish, the Translate page 1,373: the review app counts each plural form, the page skips plurals.
