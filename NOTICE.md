@@ -80,3 +80,13 @@ Not redistributed in this repository.
 Guide content is drawn from ACOG, AAP, WHO and FDA guidance, and describes care
 as delivered in the United States. Individual claims are attributed in the text
 where it matters. This is health education, not medical advice.
+
+## Fonts: Lora and DM Sans, self-hosted in `public/fonts/`
+
+- **Lora**, Copyright 2011 The Lora Project Authors.
+- **DM Sans**, Copyright 2014 The DM Sans Project Authors.
+
+Both are licensed under the SIL Open Font License 1.1. The full licence texts
+ship beside the fonts (`public/fonts/OFL-Lora.txt`, `public/fonts/OFL-DMSans.txt`).
+They are served from this site rather than Google Fonts so that no reader's IP
+address is sent to a third party.
