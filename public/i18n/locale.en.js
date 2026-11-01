@@ -987,7 +987,7 @@ window.MYOB_LOCALES.en = {
         "High altitude activities if not acclimatized",
         "The Talk Test",
         "You should be able to carry on a conversation while exercising. Too winded to talk? Slow down. This is a simple proxy for keeping intensity in the safe range.",
-        "Stop &amp; Call Your Provider If",
+        "Stop &amp; Call Your Family Doctor, OB or Midwife If",
         "Vaginal bleeding, dizziness, chest pain, severe shortness of breath, contractions, fluid leaking, decreased fetal movement, or calf pain and swelling."
       ]
     },
@@ -1228,7 +1228,7 @@ window.MYOB_LOCALES.en = {
         "10–28+",
         "Yellow-white, scant",
         "✓ Yes",
-        "Call Your Provider If",
+        "Call Your Family Doctor, OB or Midwife If",
         "Soaking through 1 pad in an hour · Passing golf ball-sized clots · Bright red bleeding returns after it has lightened · Foul-smelling discharge",
         "Perineal Care (After Vaginal Birth)",
         "Use peri-bottle with warm water after every bathroom visit. Front to back",
