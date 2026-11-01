@@ -58,7 +58,7 @@ function exportData() {
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'birth-guide-' + new Date().toISOString().split('T')[0] + '.json';
+  a.download = 'birth-guide-' + isoDate(Date.now()) + '.json';
   a.click();
   URL.revokeObjectURL(url);
   showToast(I18n.t('toast.dataExported'));

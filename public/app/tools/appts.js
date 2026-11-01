@@ -126,7 +126,7 @@ function openApptModal(id) {
   document.getElementById('modal-appt-title').textContent =
     I18n.t(id ? 'tool.appts.editVisit' : 'tool.appts.addVisit');
   document.getElementById('appt-type').value = appt ? appt.type : '';
-  document.getElementById('appt-date').value = appt ? (appt.date || '') : new Date().toISOString().split('T')[0];
+  document.getElementById('appt-date').value = appt ? (appt.date || '') : isoDate(Date.now());
   document.getElementById('appt-questions').value = appt ? (appt.questions || '') : '';
   document.getElementById('appt-notes-field').value = appt ? (appt.notes || '') : '';
   openModal('appt');

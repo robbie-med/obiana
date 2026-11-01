@@ -34,7 +34,7 @@ function initJaundice() {
     <div class="weight-profile-card" style="margin:12px 16px">
       <div class="wpc-title">${t('tool.jaundice.babySBirthDate')}</div>
       <div style="display:flex;gap:10px;align-items:center">
-        <input type="date" class="tool-input" id="jaundice-birth-input" value="${birthDate}" max="${new Date().toISOString().split('T')[0]}" style="flex:1">
+        <input type="date" class="tool-input" id="jaundice-birth-input" value="${birthDate}" max="${isoDate(Date.now())}" style="flex:1">
         <button class="btn-sm btn-teal" onclick="setJaundiceBirthDate()">${t('tool.jaundice.set')}</button>
       </div>
     </div>

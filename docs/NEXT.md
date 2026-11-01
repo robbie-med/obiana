@@ -37,7 +37,7 @@ Ticks are the status: tick an item in the commit that ships it. New findings go 
 - [x] **ISO due dates seed one day early in the US.** `seedDatesFromMyInfo` (`public/app/core/dates.js`) and `public/app/tools/nausea.js` use `Date.parse()`, which reads `2027-03-04` as UTC midnight, so Chicago stores `2027-03-03` and her week count is off.
   - Parse with `parseIsoDate()`, never `Date.parse()`.
   - Seed from My Info only when the text is unambiguous: ISO `YYYY-MM-DD`, or a written month name. A plain `03/04/2027` doesn't seed.
-- [ ] UTC date off-by-one (`public/app/tools/jaundice.js` `max=`, `public/app/tools/appts.js` default date, `settings.js` export filename): use `isoDate(Date.now())`, never `toISOString()`.
+- [x] UTC date off-by-one (`public/app/tools/jaundice.js` `max=`, `public/app/tools/appts.js` default date, `settings.js` export filename): use `isoDate(Date.now())`, never `toISOString()`.
 - [ ] **Export misses keys** (`public/app/settings.js` `EXPORT_KEYS`): add `obiana.dates` and `myob.noticeAccepted`. Import reads the same list.
 - [ ] Name exports `obiana-<date>.json` (local date).
 - [x] `translation/merge.js` skips `pt-BR` batches without a word (its filename regex is `[a-z]{2,3}`). Accept every code in the worker's `LOCALES`.
