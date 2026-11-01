@@ -12,7 +12,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { parseBatch } = require('./batch.js');
+const { parseBatch, expectPath } = require('./batch.js');
 
 const T = __dirname;
 const ui = JSON.parse(fs.readFileSync(path.join(T, 'source/ui.en.json'), 'utf8'));
@@ -73,15 +73,51 @@ function compareString(key, en, tr, errs, warns, lang) {
     warns.push(`${key}: identical to English (${String(en).slice(0, 40)}…)`);
 }
 
+// plural form: categories may legitimately differ from English
+function comparePlural(k, en, tr, errs, warns, lang) {
+  if (!tr || typeof tr !== 'object') { errs.push(`${k}: expected plural object`); return; }
+  const cats = Object.keys(tr);
+  if (!cats.length) errs.push(`${k}: no plural categories`);
+  if (cats.some(c => !PLURAL_CATS.includes(c)))
+    errs.push(`${k}: invalid plural category (${cats.join(',')})`);
+  if (!cats.includes('other')) errs.push(`${k}: missing required "other" form`);
+  for (const c of cats) compareString(`${k}.${c}`, en.other || en.one, tr[c], errs, warns, lang);
+}
+
+// Key-list batch: the expected keys and their English were fixed when the
+// prompt was written, so they are checked against that, not against a
+// snapshot that may have moved since.
+function validateKeys(base, b, data) {
+  const man = expectPath(b.lang, b.tag);
+  if (!fs.existsSync(man))
+    return { file: base, errs: [`no ${path.relative(path.join(T, '..'), man)}: re-run run-kimi.sh --keys`], warns: [] };
+  const source = JSON.parse(fs.readFileSync(man, 'utf8')).keys;
+  const errs = [], warns = [];
+  const expected = Object.keys(source), got = Object.keys(data);
+  const missing = expected.filter(k => !got.includes(k));
+  const extra = got.filter(k => !expected.includes(k));
+  if (missing.length) errs.push(`missing ${missing.length} key(s): ${missing.slice(0, 5).join(', ')}${missing.length > 5 ? '…' : ''}`);
+  if (extra.length) errs.push(`unexpected ${extra.length} key(s): ${extra.slice(0, 5).join(', ')}${extra.length > 5 ? '…' : ''}`);
+  for (const k of expected) {
+    if (!(k in data)) continue;
+    const en = source[k], tr = data[k];
+    if (en && typeof en === 'object') comparePlural(k, en, tr, errs, warns, b.lang);
+    else compareString(k, en, tr, errs, warns, b.lang);
+  }
+  return { file: base, errs, warns };
+}
+
 function validateFile(file) {
   const base = path.basename(file);
   const b = parseBatch(base);
-  if (!b) return { file: base, errs: [`unrecognised filename (want <locale>.ui|content.<n>.json, locale from worker LOCALES)`], warns: [] };
+  if (!b) return { file: base, errs: [`unrecognised filename (want <locale>.ui|content.<n>.json or <locale>.keys.<tag>.json, locale from worker LOCALES)`], warns: [] };
   const { lang, kind } = b;
 
   let data;
   try { data = JSON.parse(fs.readFileSync(file, 'utf8')); }
   catch (e) { return { file: base, errs: [`not valid JSON: ${e.message}`], warns: [] }; }
+
+  if (kind === 'keys') return validateKeys(base, b, data);
 
   const errs = [], warns = [];
   const source = kind === 'ui' ? ui : content;
@@ -121,14 +157,7 @@ function validateFile(file) {
       }
       (en.t || []).forEach((src, i) => compareString(`${k}.t.${i}`, src, tr.t[i], errs, warns, lang));
     } else if (en && typeof en === 'object') {
-      // plural form: categories may legitimately differ from English
-      if (!tr || typeof tr !== 'object') { errs.push(`${k}: expected plural object`); continue; }
-      const cats = Object.keys(tr);
-      if (!cats.length) errs.push(`${k}: no plural categories`);
-      if (cats.some(c => !PLURAL_CATS.includes(c)))
-        errs.push(`${k}: invalid plural category (${cats.join(',')})`);
-      if (!cats.includes('other')) errs.push(`${k}: missing required "other" form`);
-      for (const c of cats) compareString(`${k}.${c}`, en.other || en.one, tr[c], errs, warns, lang);
+      comparePlural(k, en, tr, errs, warns, lang);
     } else {
       compareString(k, en, tr, errs, warns, lang);
     }

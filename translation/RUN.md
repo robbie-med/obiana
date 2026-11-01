@@ -59,6 +59,41 @@ After merging, bump the cache version in three places or returning users keep
 the old copy: `CACHE_NAME` in `sw.js`, the `?v=` values in `index.html`, and
 `ASSET_VERSION` in `i18n/i18n.js`.
 
+## Re-translating named keys only
+
+After an English correction, re-translate just the keys that changed instead
+of whole batches. List them in a file, one per line (`#` starts a comment); the
+file's name becomes the batch tag:
+
+```
+# translation/keys/s1.txt
+ui.today.callLd
+content.postpartum-danger.t.3
+content.mood-ppd.title
+```
+
+```bash
+bash translation/run-kimi.sh --keys translation/keys/s1.txt        # every locale that has them
+bash translation/run-kimi.sh --keys translation/keys/s1.txt es ar  # only these
+node translation/merge.js --keys s1
+```
+
+- Without a language list, each locale gets only the keys it already has a
+  translation of, so a corrected sentence is replaced wherever the old wording
+  is still shown, and nothing new is drafted.
+- With a language list, every named ui key is drafted for those locales, even
+  where it is missing. Content sentences still need the card to exist there.
+- It refreshes `translation/source/` first (commit that with the English change),
+  writes `translation/prompts/<lang>.keys.<tag>.md` plus `.expect.json` (the
+  keys, their English and fingerprints at that moment), and runs and validates
+  each locale. Re-running skips locales whose prompt is unchanged and whose
+  output validates.
+- `merge.js --keys` patches only those keys into the locale file. Everything
+  else stays as it is: other keys, the `epds` block, `reviewed`, the header.
+  Content sentences are stamped with the fingerprint from `.expect.json`, so no
+  separate `stamp.js stamp` is needed for them. ui strings carry no fingerprint.
+- Keys starting `epds` are refused.
+
 ## Checking the output yourself
 
 ```bash

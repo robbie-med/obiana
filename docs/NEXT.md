@@ -13,7 +13,7 @@ Ticks are the status: tick an item in the commit that ships it. New findings go 
 - [x] Checkboxes in this file.
 - [x] `scripts/preflight.sh`: the gate before every push.
 - [x] `scripts/hooks/pre-push` runs preflight on exactly what is pushed, and only lets `obiana-main` → `obiana/main` through.
-- [ ] Key-list re-translate mode: `bash translation/run-kimi.sh --keys <file> [lang…]`, then `node translation/merge.js --keys <tag>`.
+- [x] Key-list re-translate mode: `bash translation/run-kimi.sh --keys <file> [lang…]`, then `node translation/merge.js --keys <tag>`.
 - [x] `translation/merge.js` pt-BR fix (the §2 item).
 
 ## 1. Content fixes (your decisions)

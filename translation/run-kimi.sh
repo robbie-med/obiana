@@ -2,6 +2,7 @@
 # Runs every translation batch through kimi, then validates each output.
 # Usage:  bash translation/run-kimi.sh            # all languages
 #         bash translation/run-kimi.sh es fr      # only these
+#         bash translation/run-kimi.sh --keys <file> [lang ...]   # named keys only
 #
 # Safe to re-run: batches whose output already exists AND validates are skipped,
 # so an interrupted run resumes instead of redoing finished work.
@@ -30,6 +31,30 @@ run() {
     FAIL=$((FAIL+1))
   fi
 }
+
+# Key-list mode: re-translate only the keys named in <file>, one per line, e.g.
+# ui.today.callLd or content.postpartum-danger.t.3 ("#" starts a comment). The
+# file's name is the batch tag.
+#   bash translation/run-kimi.sh --keys translation/keys/s1.txt        every locale that has them
+#   bash translation/run-kimi.sh --keys translation/keys/s1.txt es ar  these, drafting missing ui keys too
+# then: node translation/merge.js --keys s1
+if [ "${1:-}" = "--keys" ]; then
+  KEYFILE="${2:?usage: run-kimi.sh --keys <file> [lang ...]}"; shift 2
+  WANT=""
+  node translation/snapshot.js >/dev/null || exit 1
+  echo "translation/source/ refreshed from locale.en.js (commit it with the English change)"
+  node translation/prepare.js --keys "$KEYFILE" "$@" || exit 1
+  TAG=$(basename "$KEYFILE"); TAG="${TAG%.*}"
+  for prompt in translation/prompts/*.keys."$TAG".md; do
+    [ -e "$prompt" ] || continue
+    lang=$(basename "$prompt"); lang="${lang%%.keys.*}"
+    run "$lang" "translation/out/$lang.keys.$TAG.json" "$prompt"
+  done
+  echo
+  echo "passed: $PASS   failed: $FAIL   skipped: $SKIP"
+  if [ "$FAIL" -eq 0 ]; then echo "Next: node translation/merge.js --keys $TAG"; exit 0; fi
+  echo "Re-run the same command to retry only the failed locales."; exit 1
+fi
 
 run "es" "translation/out/es.ui.1.json" "translation/prompts/es.ui.1.md"
 run "es" "translation/out/es.ui.2.json" "translation/prompts/es.ui.2.md"

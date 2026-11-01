@@ -3,6 +3,7 @@
 //
 //   node translation/merge.js           # every language with valid output
 //   node translation/merge.js es fr
+//   node translation/merge.js --keys <tag> [lang ...]   # key-list batches only
 //
 // Refuses to merge a language with any failing batch — a half-merged locale is
 // harder to reason about than an untranslated one, and the English fallback
@@ -10,8 +11,8 @@
 
 const fs = require('fs');
 const path = require('path');
-const { flattenContent } = require('./hash.js');
-const { parseBatch, localeRef } = require('./batch.js');
+const { flattenContent, readLocale, writeLocale } = require('./hash.js');
+const { parseBatch, localeRef, expectPath, setSlot } = require('./batch.js');
 const { execFileSync } = require('child_process');
 
 const T = __dirname;
@@ -19,14 +20,57 @@ const ROOT = path.join(T, '..');
 const OUT = path.join(T, 'out');
 
 const want = process.argv.slice(2);
+if (want[0] === '--keys') { mergeKeys(want.slice(1)); process.exit(0); }
+
+// ─── Key-list batches ───────────────────────────────────
+// Patched into the locale in place: every key the batch does not name, the
+// epds block, reviewed/translationStatus and the file header stay exactly as
+// they are. Content sentences are stamped with the fingerprint of the English
+// the prompt was written from (kept in the .expect.json), so if English moved
+// again since, stamp.js report shows them stale rather than certifying them.
+function mergeKeys([tag, ...langs]) {
+  if (!tag) { console.error('usage: node translation/merge.js --keys <tag> [lang ...]'); process.exit(2); }
+  const batches = (fs.existsSync(OUT) ? fs.readdirSync(OUT) : [])
+    .map(f => ({ f, b: parseBatch(f) }))
+    .filter(({ b }) => b && b.kind === 'keys' && b.tag === tag && (!langs.length || langs.includes(b.lang)));
+  if (!batches.length) { console.log(`no translation/out/*.keys.${tag}.json to merge`); return; }
+
+  for (const { f, b: { lang } } of batches) {
+    const file = path.join(OUT, f);
+    try {
+      execFileSync('node', [path.join(T, 'validate.js'), file], { stdio: 'pipe' });
+    } catch (e) {
+      console.log(`✗ ${lang}: skipped, fails validation. Run: node translation/validate.js translation/out/${f}`);
+      continue;
+    }
+    const man = JSON.parse(fs.readFileSync(expectPath(lang, tag), 'utf8'));
+    const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+    const localeFile = path.join(ROOT, `public/i18n/locale.${lang}.js`);
+    const parsed = readLocale(fs, localeFile, lang);
+    try {
+      for (const [k, v] of Object.entries(data)) setSlot(parsed.obj, k, v);
+    } catch (e) {
+      console.log(`✗ ${lang}: skipped, nothing written. ${e.message}`);
+      continue;
+    }
+    const stamps = Object.keys(man.srcHash || {}).length;
+    if (stamps) parsed.obj.srcHash = Object.assign(parsed.obj.srcHash || {}, man.srcHash);
+    writeLocale(fs, localeFile, parsed);
+    const nUi = Object.keys(data).filter(k => k.startsWith('ui.')).length;
+    console.log(`✓ ${lang}: ${nUi} ui, ${Object.keys(data).length - nUi} content (${stamps} stamped) -> public/i18n/locale.${lang}.js`);
+  }
+  console.log('\nThen: node scripts/check.js --compare, and node scripts/bump.js before pushing.');
+}
+
 const files = fs.existsSync(OUT) ? fs.readdirSync(OUT).filter(f => f.endsWith('.json')) : [];
 if (!files.length) { console.log('translation/out/ is empty — run run-kimi.sh first'); process.exit(0); }
 
 const byLang = {};
 for (const f of files) {
   const b = parseBatch(f);
-  if (!b) { if (!f.startsWith('_')) console.log(`  ignored ${f}: not <locale>.ui|content.<n>.json for a locale in worker/index.js LOCALES`); continue; }
+  if (!b) { if (!f.startsWith('_')) console.log(`  ignored ${f}: not <locale>.ui|content.<n>.json or <locale>.keys.<tag>.json for a locale in worker/index.js LOCALES`); continue; }
   const { lang, kind } = b;
+  if (kind === 'keys') continue;   // merge.js --keys <tag>
   if (want.length && !want.includes(lang)) continue;
   (byLang[lang] ||= { ui: [], content: [] })[kind].push(f);
 }

@@ -7,6 +7,10 @@
 //   node translation/prepare.js
 //   bash translation/run-kimi.sh          # all languages
 //   bash translation/run-kimi.sh es fr    # just these
+//
+// Key-list mode re-translates named keys only (after an English correction):
+//   node translation/prepare.js --keys <keyfile> [lang ...]
+// run-kimi.sh --keys calls this for you; see translation/RUN.md.
 
 const fs = require('fs');
 const path = require('path');
@@ -23,6 +27,20 @@ const LANGS = {
   zh:  { name: 'Chinese (Simplified)', native: '中文' },
   zom: { name: 'Zomi (Tedim Chin)',    native: 'Zomi' },
 };
+
+// Key-list mode can target any locale the worker accepts, not only the seven
+// the full pipeline drafts.
+const NAMES = Object.assign({
+  ja: { name: 'Japanese', native: '日本語' },
+  tl: { name: 'Tagalog', native: 'Tagalog' },
+  'pt-BR': { name: 'Portuguese (Brazil)', native: 'Português (Brasil)' },
+  ps: { name: 'Pashto', native: 'پښتو' },
+  prs: { name: 'Dari', native: 'دری' },
+  vi: { name: 'Vietnamese', native: 'Tiếng Việt' },
+  th: { name: 'Thai', native: 'ไทย' },
+  de: { name: 'German', native: 'Deutsch' },
+  pl: { name: 'Polish', native: 'Polski' },
+}, LANGS);
 
 // Batch sizes chosen so each prompt stays well inside a single model context
 // and one bad batch is cheap to redo.
@@ -107,6 +125,102 @@ each. Keep the {count} placeholder in every form.
 `;
 }
 
+if (process.argv[2] === '--keys') { prepareKeys(process.argv.slice(3)); process.exit(0); }
+
+// ─── Key-list mode ──────────────────────────────────────
+// One prompt per locale, holding only the named keys that locale has.
+//   default            each locale that already has a translation of the key:
+//                      a corrected English sentence is re-translated wherever
+//                      the old wording is still being shown
+//   explicit [lang …]  every named key that has a place in that locale, so a
+//                      missing ui string can be drafted too; content sentences
+//                      still need the card to exist there
+function prepareKeys(argv) {
+  const { readLocale, srcHashOf } = require('./hash.js');
+  const { workerLocales, expectPath, englishOf, slotOf } = require('./batch.js');
+  const die = msg => { console.error(msg); process.exit(1); };
+
+  const [file, ...langArgs] = argv;
+  if (!file || !fs.existsSync(file)) die('usage: node translation/prepare.js --keys <keyfile> [lang ...]');
+  const tag = path.basename(file).replace(/\.[^.]*$/, '');
+  if (!/^[\w-]+$/.test(tag)) die(`key file name must be letters, digits, - or _ (it becomes the batch tag): ${tag}`);
+
+  const keys = [...new Set(fs.readFileSync(file, 'utf8').split('\n')
+    .map(l => l.replace(/#.*/, '').trim()).filter(Boolean))];
+  if (!keys.length) die(`${file}: no keys`);
+  const english = {}, bad = [];
+  for (const k of keys) {
+    const en = englishOf(k, ui, content);
+    if (en === undefined) bad.push(k); else english[k] = en;
+  }
+  if (bad.length) die(`not a translatable English key in translation/source/ ` +
+    `(typo, blanked sentence, EPDS, or run node translation/snapshot.js first):\n  ${bad.join('\n  ')}`);
+
+  const all = workerLocales().filter(l => fs.existsSync(path.join(ROOT, `public/i18n/locale.${l}.js`)));
+  const unknown = langArgs.filter(l => !all.includes(l));
+  if (unknown.length) die(`no such locale (worker LOCALES with a public/i18n file): ${unknown.join(', ')}`);
+  const langs = langArgs.length ? langArgs : all;
+
+  // Clear this tag's earlier prompts, remembering them: an output whose prompt
+  // is unchanged is still good (run-kimi skips it), anything else is redone.
+  const PROMPTS = path.join(T, 'prompts'), OUTDIR = path.join(T, 'out');
+  fs.mkdirSync(PROMPTS, { recursive: true });
+  const before = {};
+  for (const f of fs.readdirSync(PROMPTS)) {
+    const m = new RegExp(`^(.+)\\.keys\\.${tag}\\.md$`).exec(f);
+    if (!m) continue;
+    before[m[1]] = fs.readFileSync(path.join(PROMPTS, f), 'utf8');
+    fs.unlinkSync(path.join(PROMPTS, f));
+    fs.rmSync(expectPath(m[1], tag), { force: true });
+  }
+
+  const made = [];
+  for (const lang of langs) {
+    const meta = NAMES[lang];
+    if (!meta) die(`no language name for ${lang} in prepare.js NAMES`);
+    const obj = readLocale(fs, path.join(ROOT, `public/i18n/locale.${lang}.js`), lang).obj;
+    const mine = keys.filter(k => { const s = slotOf(obj, k); return langArgs.length ? s.slot : s.text !== undefined; });
+    const outRel = `translation/out/${lang}.keys.${tag}.json`;
+    if (!mine.length) { fs.rmSync(path.join(ROOT, outRel), { force: true }); continue; }
+
+    const input = Object.fromEntries(mine.map(k => [k, english[k]]));
+    const srcHash = Object.fromEntries(mine.filter(k => k.startsWith('content.')).map(k => [k, srcHashOf(english[k])]));
+    const prompt = `${rules(lang, meta)}
+## This batch
+
+${mine.length} strings the English has just been corrected in. Translate the
+English as it stands now, from scratch. The keys say where each one lives:
+
+- "ui.…"                short interface text: buttons, labels, headings, short
+                        lines on a phone screen. Keep them SHORT. Some contain
+                        HTML like <br> or <strong>; keep it.
+- "content.<card>.title" / ".sub"   a guide card's heading and subtitle
+- "content.<card>.t.<n>"            one sentence or fragment from a guide card,
+                        plain text, no HTML. Translate it as exactly one
+                        sentence or fragment; never merge it with another.
+
+Input (${mine.length} keys):
+
+\`\`\`json
+${JSON.stringify(input, null, 2)}
+\`\`\`
+
+Write the translated JSON object, the same ${mine.length} keys, to:
+${outRel}
+`;
+    fs.writeFileSync(path.join(PROMPTS, `${lang}.keys.${tag}.md`), prompt);
+    fs.writeFileSync(expectPath(lang, tag), JSON.stringify({ tag, lang, keys: input, srcHash }, null, 2) + '\n');
+    if (before[lang] !== prompt) fs.rmSync(path.join(ROOT, outRel), { force: true });
+    made.push(`${lang}:${mine.length}`);
+  }
+  // Locales dropped from this tag lose their stale output too.
+  for (const f of fs.existsSync(OUTDIR) ? fs.readdirSync(OUTDIR) : []) {
+    const m = new RegExp(`^(.+)\\.keys\\.${tag}\\.json$`).exec(f);
+    if (m && !fs.existsSync(expectPath(m[1], tag))) fs.unlinkSync(path.join(OUTDIR, f));
+  }
+  console.log(`keys "${tag}": ${keys.length} key(s); prompts for ${made.length ? made.join(' ') : 'no locale'}`);
+}
+
 const runLines = [];
 let promptCount = 0;
 
@@ -184,6 +298,7 @@ fs.writeFileSync(path.join(T, 'run-kimi.sh'), `#!/usr/bin/env bash
 # Runs every translation batch through kimi, then validates each output.
 # Usage:  bash translation/run-kimi.sh            # all languages
 #         bash translation/run-kimi.sh es fr      # only these
+#         bash translation/run-kimi.sh --keys <file> [lang ...]   # named keys only
 #
 # Safe to re-run: batches whose output already exists AND validates are skipped,
 # so an interrupted run resumes instead of redoing finished work.
@@ -212,6 +327,30 @@ run() {
     FAIL=$((FAIL+1))
   fi
 }
+
+# Key-list mode: re-translate only the keys named in <file>, one per line, e.g.
+# ui.today.callLd or content.postpartum-danger.t.3 ("#" starts a comment). The
+# file's name is the batch tag.
+#   bash translation/run-kimi.sh --keys translation/keys/s1.txt        every locale that has them
+#   bash translation/run-kimi.sh --keys translation/keys/s1.txt es ar  these, drafting missing ui keys too
+# then: node translation/merge.js --keys s1
+if [ "\${1:-}" = "--keys" ]; then
+  KEYFILE="\${2:?usage: run-kimi.sh --keys <file> [lang ...]}"; shift 2
+  WANT=""
+  node translation/snapshot.js >/dev/null || exit 1
+  echo "translation/source/ refreshed from locale.en.js (commit it with the English change)"
+  node translation/prepare.js --keys "$KEYFILE" "$@" || exit 1
+  TAG=$(basename "$KEYFILE"); TAG="\${TAG%.*}"
+  for prompt in translation/prompts/*.keys."$TAG".md; do
+    [ -e "$prompt" ] || continue
+    lang=$(basename "$prompt"); lang="\${lang%%.keys.*}"
+    run "$lang" "translation/out/$lang.keys.$TAG.json" "$prompt"
+  done
+  echo
+  echo "passed: $PASS   failed: $FAIL   skipped: $SKIP"
+  if [ "$FAIL" -eq 0 ]; then echo "Next: node translation/merge.js --keys $TAG"; exit 0; fi
+  echo "Re-run the same command to retry only the failed locales."; exit 1
+fi
 
 ${runLines.join('\n')}
 
