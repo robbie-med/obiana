@@ -267,6 +267,171 @@ window.MYOB_LOCALES.vi = {
         "Gọi bác sĩ của em bé ngay khi có",
         "Sốt ≥ 100.4°F đo ở hậu môn (nghiêm trọng ở trẻ sơ sinh. Luôn đo nhiệt độ hậu môn) · Bỏ bú · Vàng da nặng · Rên khi thở · Da rất nhợt nhạt · Khóc không dỗ được · Ít hơn 6 tã ướt mỗi ngày sau ngày thứ 5 · Cứng cổ. Môi hoặc mặt tím tái hoặc xám: gọi 911."
       ]
+    },
+    "faq-deli": {
+      "title": "Tôi có được ăn thịt nguội và phô mai mềm không?",
+      "sub": "",
+      "t": [
+        "Nguy cơ chính là",
+        "Listeria",
+        ", một bệnh nhiễm khuẩn hiếm gặp nhưng có thể nặng khi mang thai (có thể đi qua nhau thai). FDA khuyên tránh phô mai chưa tiệt trùng và thịt nguội, trừ khi được hâm nóng đến bốc hơi (165°F). Phần lớn phô mai mềm đã tiệt trùng (như brie tiệt trùng, feta đóng gói) đều an toàn. Ngoại lệ là queso fresco, queso blanco, panela và các loại phô mai tươi tương tự: ngay cả loại đã tiệt trùng cũng từng gây bùng phát listeria, nên chỉ ăn khi đã nấu đến bốc hơi. Nguy cơ chung từ việc thỉnh thoảng ăn thịt nguội là rất thấp. Khi không chắc, hãy hâm nóng."
+      ]
+    },
+    "faq-coffee": {
+      "title": "Tôi có được uống chút cà phê nào không?",
+      "sub": "",
+      "t": [
+        "Có. ACOG khuyên giới hạn caffeine ở mức",
+        "dưới 200 mg mỗi ngày",
+        "(khoảng một cốc 12-oz cà phê pha phin/máy). Ở mức này, chưa có bằng chứng gây hại cho thai kỳ. Trà, nước ngọt có ga và sô-cô-la cũng có caffeine. Hãy tính tất cả cùng nhau. Giảm bớt là hợp lý; bỏ hẳn là lựa chọn cá nhân, không phải bắt buộc về y khoa."
+      ]
+    },
+    "faq-hair-dye": {
+      "title": "Tôi có được nhuộm tóc khi mang thai không?",
+      "sub": "",
+      "t": [
+        "Có, nhưng hãy nghĩ xem vì sao bạn muốn nhuộm. Thuốc nhuộm được da đầu hấp thụ với lượng rất nhỏ. Chưa có nghiên cứu nào được công bố cho thấy gây hại cho thai nhi ở lượng dùng khi nhuộm bình thường ở tiệm hay ở nhà. Nhuộm highlight (dùng giấy bạc) còn ít chạm vào da đầu hơn. Nếu bạn lo, hãy đợi đến tam cá nguyệt thứ hai, khi các cơ quan chính đã hình thành xong, hoặc đơn giản là đừng nhuộm."
+      ]
+    },
+    "faq-exercise-mc": {
+      "title": "Tập thể dục có gây sẩy thai không?",
+      "sub": "",
+      "t": [
+        "Không. Tập vừa phải không gây sẩy thai ở thai kỳ khỏe mạnh. Một mức vận động nhất định còn có tác dụng bảo vệ, không gây hại. Xem hướng dẫn tập luyện trong phần Trước sinh. Nếu bác sĩ dặn bạn không tập, hãy hỏi lý do và làm theo lời dặn đó."
+      ]
+    },
+    "faq-sex-pregnancy": {
+      "title": "Quan hệ tình dục khi mang thai có an toàn không?",
+      "sub": "",
+      "t": [
+        "Có, trong thai kỳ bình thường không có biến chứng. Quan hệ không gây sẩy thai, sinh non hay hại em bé (em bé được nước ối che chở). Bác sĩ chỉ khuyên kiêng quan hệ khi có tình huống cụ thể: nhau tiền đạo, nguy cơ sinh non, chảy máu âm đạo không rõ lý do, một số vấn đề ở cổ tử cung, hoặc sau khi đã vỡ ối. Nếu không chắc, hãy hỏi ở lần khám tới."
+      ]
+    },
+    "faq-vaccines": {
+      "title": "Tiêm vắc-xin khi mang thai có an toàn không?",
+      "sub": "",
+      "t": [
+        "Có hai loại được khuyên tiêm trong mọi thai kỳ và có vẻ an toàn: mũi nhắc Tdap và vắc-xin cúm. Các vắc-xin sống phải đợi đến sau khi sinh.",
+        "Tdap, phòng ho gà",
+        "Tiêm trong khoảng tuần 27 đến 36, ở mọi thai kỳ, kể cả khi bạn đã tiêm ở lần mang thai trước. Mục đích chính không phải để bảo vệ bạn. Cơ thể bạn tạo kháng thể và truyền qua nhau thai, nên em bé chào đời đã có sẵn sự bảo vệ chống ho gà. Điều này quan trọng vì ho gà nguy hiểm nhất trong những tháng đầu đời, trước khi em bé đủ tuổi để tiêm. Bất kỳ ai thường xuyên bế em bé cũng nên tiêm đầy đủ.",
+        "Vắc-xin cúm",
+        "Được khuyên tiêm ở bất kỳ tam cá nguyệt nào trong mùa cúm. Mang thai làm thay đổi cách phổi và hệ miễn dịch hoạt động, khiến cúm dễ làm bạn phải nhập viện hơn nhiều. Kháng thể cũng truyền sang em bé và bảo vệ trong vài tháng đầu. Khi mang thai, dùng loại tiêm: loại xịt mũi là vắc-xin sống.",
+        "Những loại đợi đến sau khi sinh",
+        "Vắc-xin sống, tức là MMR (sởi, quai bị và rubella) và thủy đậu, không tiêm khi mang thai. Nếu xét nghiệm máu đầu thai kỳ cho thấy bạn chưa có miễn dịch với rubella hoặc thủy đậu, thường sẽ tiêm trước khi bạn xuất viện, điều này cũng bảo vệ lần mang thai sau. Cả hai đều an toàn khi cho con bú.",
+        "Nếu bạn còn thiếu mũi tiêm nào khác, sắp đi du lịch, hoặc nơi bạn sống đang có dịch, hãy báo bác sĩ."
+      ]
+    },
+    "faq-eat-for-two": {
+      "title": "Tôi có cần \"ăn cho hai người\" không?",
+      "sub": "",
+      "t": [
+        "Không. \"Ăn cho hai người\" là một quan niệm sai. Trong tam cá nguyệt thứ nhất, bạn không cần thêm calo. Tam cá nguyệt thứ hai cần thêm khoảng 340 mỗi ngày; thứ ba khoảng 450. Đó là một hai bữa phụ, không phải thêm một đĩa cơm. Chất lượng dinh dưỡng quan trọng hơn nhiều so với số lượng. Hãy chú ý đạm, sắt, folate, canxi và axit béo omega-3. Vitamin trước sinh giúp bù chỗ thiếu nhưng không thay được một chế độ ăn cân bằng."
+      ]
+    },
+    "faq-hot-tub": {
+      "title": "Tôi có được tắm bồn hay ngâm bồn nước nóng không?",
+      "sub": "",
+      "t": [
+        "Tắm nước ấm thì ổn trong suốt thai kỳ. Bồn nước nóng, phòng xông hơi khô và xông hơi ướt làm thân nhiệt lên trên 102°F (39°C) thì không nên, nhất là trong tam cá nguyệt thứ nhất, khi thân nhiệt cao có liên quan đến dị tật ống thần kinh. Nếu dùng bồn nước nóng, giữ nhiệt độ dễ chịu (không nóng), tối đa 10 phút, và tránh trong tam cá nguyệt thứ nhất. Tắm nước ấm ở nhiệt độ bình thường trong nhà (98–100°F) là an toàn."
+      ]
+    },
+    "faq-epidural-csec": {
+      "title": "Gây tê ngoài màng cứng có làm tăng nguy cơ mổ lấy thai không?",
+      "sub": "",
+      "t": [
+        "Không. Đây là một trong những câu hỏi được nghiên cứu nhiều nhất trong sản khoa. Nhiều thử nghiệm ngẫu nhiên có đối chứng lớn và phân tích gộp xác nhận rằng gây tê ngoài màng cứng",
+        "không",
+        "làm tăng tỷ lệ mổ lấy thai. Gây tê làm giai đoạn rặn kéo dài hơn một chút và làm sinh có giác hút hoặc kẹp forceps dễ xảy ra hơn, điều này đáng cân nhắc cùng với việc giảm đau. Bạn có thể xin gây tê vào bất kỳ lúc nào khi chuyển dạ tích cực. Giới hạn thực tế không phải là một số cm, mà là chuyển dạ đang tiến nhanh đến đâu, vì chuyển dạ rất nhanh có thể không kịp."
+      ]
+    },
+    "faq-routine-episiotomy": {
+      "title": "Tôi có cần cắt tầng sinh môn để khỏi bị rách không?",
+      "sub": "",
+      "t": [
+        "Không. ACOG không còn khuyên cắt tầng sinh môn thường quy (một vết cắt phẫu thuật ở cửa âm đạo). Bằng chứng luôn cho thấy",
+        "vết rách tự nhiên thường lành tốt hơn",
+        "và ít biến chứng hơn (kể cả đau và các vấn đề sàn chậu lâu dài) so với cắt tầng sinh môn thường quy. Phần lớn phụ nữ sinh thường có rách ở một mức nào đó, nhưng nhiều trường hợp chỉ nhẹ (độ một). Cắt tầng sinh môn vẫn phù hợp khi có lý do cụ thể, như khi em bé cần ra nhanh vì suy thai."
+      ]
+    },
+    "faq-water-breaking": {
+      "title": "Nếu vỡ ối, tôi có phải mổ lấy thai không?",
+      "sub": "",
+      "t": [
+        "Không. Nếu vỡ ối khi đủ tháng, phần lớn phụ nữ tự chuyển dạ trong khoảng một ngày. Nếu không chuyển dạ, thường sẽ đề nghị khởi phát chuyển dạ, vì nguy cơ nhiễm trùng tăng dần khi ối vỡ càng lâu. Đó là nguy cơ tăng dần để cùng cân nhắc, không phải hạn chót bạn đã lỡ. Nếu bạn dương tính GBS, sẽ bắt đầu kháng sinh ngay. Chỉ cần mổ lấy thai khi có một lý do khác, còn vỡ ối đơn thuần không phải là lý do."
+      ]
+    },
+    "faq-eat-in-labor": {
+      "title": "Tôi có được ăn uống trong khi chuyển dạ không?",
+      "sub": "",
+      "t": [
+        "Với phụ nữ nguy cơ thấp ở giai đoạn đầu chuyển dạ, hướng dẫn hiện nay của ACOG cho phép ăn nhẹ và uống nước trong. Khi đã gây tê ngoài màng cứng, đang truyền Pitocin, hoặc có nguy cơ cao cần gây mê toàn thân (có thể mổ lấy thai), đa số bệnh viện chỉ cho ngậm đá viên hoặc nhấp ngụm nước, vì nguy cơ sặc vào phổi nếu phải gây mê toàn thân. Hãy hỏi quy định của bệnh viện bạn. Với người đi cùng: mang theo đồ ăn vặt. Chuyển dạ có thể kéo dài cả ngày."
+      ]
+    },
+    "faq-vbac": {
+      "title": "Nếu đã từng mổ lấy thai, lần sau có luôn phải mổ không?",
+      "sub": "",
+      "t": [
+        "Không nhất thiết. Sinh thường sau mổ lấy thai (VBAC) là lựa chọn an toàn và phù hợp cho nhiều phụ nữ có một vết mổ ngang thấp ở tử cung trước đây. Tỷ lệ thành công từ 60–80%. Những yếu tố quyết định gồm lý do của lần mổ trước, thai kỳ hiện tại, kiểu vết mổ ở tử cung, và khả năng xử lý cấp cứu của bệnh viện. Nếu bạn quan tâm, hãy nói sớm khi bắt đầu khám thai."
+      ]
+    },
+    "faq-bf-bc": {
+      "title": "Tôi có thể có thai khi đang cho con bú không?",
+      "sub": "",
+      "t": [
+        "Có. Cho con bú hoàn toàn có làm giảm rụng trứng phần nào, nhưng",
+        "không phải là cách tránh thai đáng tin cậy",
+        ". Bạn có thể rụng trứng và có thai trước khi có kinh trở lại. \"Phương pháp vô kinh do cho con bú\" đòi hỏi điều kiện rất cụ thể (chỉ bú mẹ, mỗi 4 giờ ban ngày / 6 giờ ban đêm, không bú thêm sữa khác, chưa có kinh lại) và ngay cả khi đủ điều kiện nghiêm ngặt đó cũng chỉ hiệu quả khoảng 98%. Hãy bàn về biện pháp tránh thai trước khi xuất viện."
+      ]
+    },
+    "faq-stress-milk": {
+      "title": "Căng thẳng có làm mất sữa không?",
+      "sub": "",
+      "t": [
+        "Căng thẳng mạnh có thể tạm thời cản trở phản xạ xuống sữa. Nhưng một lần căng thẳng sẽ không làm mất sữa. Lượng sữa phụ thuộc vào nhu cầu. Em bé bú càng thường xuyên và hiệu quả, hoặc bạn hút sữa càng nhiều, cơ thể càng tạo nhiều sữa. Nếu căng thẳng hay sự hỗn loạn xung quanh khiến em bé bú không tốt, nhu cầu có thể giảm và lượng sữa có thể giảm theo. Cách giúp sữa xuống: da kề da, giữ ấm, thư giãn, và nhìn ảnh em bé khi hút sữa. Hãy nói với bác sĩ về các cách giảm căng thẳng không dùng thuốc."
+      ]
+    },
+    "faq-bonding": {
+      "title": "Tôi có phải thấy gắn bó với con ngay lập tức không?",
+      "sub": "",
+      "t": [
+        "Không. Gắn bó là một quá trình, không phải một khoảnh khắc. Nhiều người mẹ thấy yêu thương sâu sắc ngay lúc sinh; người khác cần vài ngày, vài tuần hoặc lâu hơn để cảm xúc đó lớn dần. Cả hai đều hoàn toàn bình thường. Kiệt sức, ca sinh khó, kết quả bất ngờ và trầm cảm sau sinh đều có thể ảnh hưởng đến sự gắn bó lúc đầu. Nếu bạn thấy xa cách hoặc tê dại với em bé hơn vài tuần, hãy nói với bác sĩ. Đó có thể là dấu hiệu trầm cảm sau sinh, và bệnh này chữa được."
+      ]
+    },
+    "faq-ibuprofen-bf": {
+      "title": "Tôi có được uống ibuprofen khi cho con bú không?",
+      "sub": "",
+      "t": [
+        "Có. Ibuprofen là một trong những thuốc không kê đơn an toàn nhất khi cho con bú. Rất ít thuốc đi vào sữa mẹ. Acetaminophen (Tylenol) cũng an toàn. Đây là các thuốc giảm đau được ưu tiên sau sinh và khi cho con bú. Aspirin liều cao không được khuyên dùng (aspirin liều thấp do bác sĩ kê là chuyện khác. Hãy bàn với bác sĩ). Naproxen (Aleve) vào sữa nhiều hơn và thường không được ưu tiên. Luôn hỏi lại nhóm chăm sóc về trường hợp của bạn."
+      ]
+    },
+    "faq-jaundice": {
+      "title": "Bé nhà tôi trông vàng. Khi nào là nghiêm trọng?",
+      "sub": "",
+      "t": [
+        "Vàng da sơ sinh (tăng bilirubin máu) gặp ở khoảng 60% trẻ đủ tháng trong tuần đầu. Nguyên nhân là do hồng cầu thời bào thai bị phân hủy bình thường. Gan chỉ đang theo kịp. Phần lớn trường hợp nhẹ và tự hết không cần điều trị. Đáng lo khi bilirubin rất cao (nguy cơ tổn thương não ở mức cực cao), khi bé rất lừ đừ, không bú, hoặc vàng da xuất hiện trong 24 giờ đầu. Bệnh viện sẽ kiểm tra bilirubin trước khi xuất viện và ở lần khám của bé lúc 2–5 ngày tuổi. Chiếu đèn (đèn bili) rất hiệu quả nếu cần."
+      ]
+    },
+    "faq-newborn-procedures": {
+      "title": "Có phải làm tất cả các thủ thuật cho trẻ sơ sinh không?",
+      "sub": "",
+      "t": [
+        "Các thủ thuật tiêu chuẩn cho trẻ sơ sinh gồm:",
+        "Tiêm vitamin K",
+        "(giảm nguy cơ chảy máu não gây tử vong),",
+        "thuốc mỡ tra mắt erythromycin",
+        "(giảm nhiễm trùng mắt, kể cả do lậu),",
+        "mũi vắc-xin viêm gan B đầu tiên",
+        ", và",
+        "lấy máu sàng lọc chuyển hóa sơ sinh",
+        "(lấy máu gót chân để tìm khoảng 30 bệnh, gồm PKU, suy giáp và thiếu máu hồng cầu hình liềm). Bằng chứng cho các thủ thuật này không mạnh như nhau, và hỏi riêng từng cái là hợp lý. Vitamin K và lấy máu gót chân có lý do rõ nhất: vitamin K ngăn một kiểu chảy máu hiếm nhưng thảm khốc, còn lấy máu gót chân tìm ra những bệnh chỉ chữa được nếu phát hiện trong những ngày đầu. Mũi viêm gan B quan trọng nhất khi tình trạng viêm gan B của chính bạn là dương tính hoặc chưa rõ. Thuốc mỡ tra mắt dựa trên bằng chứng yếu hơn, và một số nước đã ngừng dùng thường quy, dù nhiều tiểu bang ở Mỹ bắt buộc theo luật. Ở phần lớn các tiểu bang, bạn có quyền từ chối hợp pháp. Hãy hỏi nhóm chăm sóc xem cái nào áp dụng cho trường hợp của bạn."
+      ]
+    },
+    "faq-first-bath": {
+      "title": "Khi nào bé cần tắm lần đầu?",
+      "sub": "",
+      "t": [
+        "WHO và AAP hiện khuyên hoãn lần tắm đầu ít nhất 24 giờ sau sinh (tốt nhất là 48 giờ). Lớp chất trắng (chất gây, vernix caseosa) có tác dụng kháng khuẩn và giúp giữ ẩm cho da. Hoãn tắm cũng giúp giữ thân nhiệt, giúp đường huyết ổn định và có liên quan đến việc bắt đầu bú mẹ tốt hơn. Chờ đợi là cách tốt nhất hiện nay, không chỉ là sở thích."
+      ]
     }
   },
   "srcHash": {
@@ -282,7 +447,72 @@ window.MYOB_LOCALES.vi = {
     "content.signs-of-labor.t.16": "ac6a34b445ceccaa",
     "content.signs-of-labor.t.17": "b007f20008122ab6",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "380945be7751b37c"
+    "content.normal-newborn.t.32": "380945be7751b37c",
+    "content.faq-deli.title": "ce705cdc639700b6",
+    "content.faq-deli.t.0": "208a1054e9463d0e",
+    "content.faq-deli.t.1": "7180ed78d9040f96",
+    "content.faq-deli.t.2": "86ed7bf6b9c01890",
+    "content.faq-coffee.title": "5389638ea8a88dc8",
+    "content.faq-coffee.t.0": "ac1cf8bc0364371a",
+    "content.faq-coffee.t.1": "d49405defc21c3ec",
+    "content.faq-coffee.t.2": "19f22003cc780ded",
+    "content.faq-hair-dye.title": "3cbc4f5501467bbb",
+    "content.faq-hair-dye.t.0": "194b47e06a23e60e",
+    "content.faq-exercise-mc.title": "055753c567df011f",
+    "content.faq-exercise-mc.t.0": "2b2d76b57f4bc45f",
+    "content.faq-sex-pregnancy.title": "8399c3d543c4147f",
+    "content.faq-sex-pregnancy.t.0": "9b3a7841e4c3a343",
+    "content.faq-vaccines.title": "22cf8d87c3c18165",
+    "content.faq-vaccines.t.0": "54aa1c57cf3d489d",
+    "content.faq-vaccines.t.1": "2cc75b12a1fc2494",
+    "content.faq-vaccines.t.2": "1038f5417eda7317",
+    "content.faq-vaccines.t.3": "de4ce992cde7736c",
+    "content.faq-vaccines.t.4": "fc3cba8b30791ee5",
+    "content.faq-vaccines.t.5": "8e2d5dd7b662e6cd",
+    "content.faq-vaccines.t.6": "1fbad66cf49cff52",
+    "content.faq-vaccines.t.7": "bd443dcd8ee958d3",
+    "content.faq-eat-for-two.title": "7109ae5ce8714502",
+    "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
+    "content.faq-hot-tub.title": "2230219d6f10d437",
+    "content.faq-hot-tub.t.0": "b73f80715bdad85f",
+    "content.faq-epidural-csec.title": "85af8aced19ce724",
+    "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
+    "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
+    "content.faq-epidural-csec.t.2": "d9849263c1e6467d",
+    "content.faq-routine-episiotomy.title": "063590cb3bfbb7f9",
+    "content.faq-routine-episiotomy.t.0": "f9f4d22fb4ca4b41",
+    "content.faq-routine-episiotomy.t.1": "8a8e3958d3c9cdb6",
+    "content.faq-routine-episiotomy.t.2": "7d6842265369b750",
+    "content.faq-water-breaking.title": "3024fe7ba7f6b3ed",
+    "content.faq-water-breaking.t.0": "ffd7e16a191f9018",
+    "content.faq-eat-in-labor.title": "5de8ba9361616d39",
+    "content.faq-eat-in-labor.t.0": "23ad9f490ae5def7",
+    "content.faq-vbac.title": "4fb6dce62d75356c",
+    "content.faq-vbac.t.0": "2a66625080510032",
+    "content.faq-bf-bc.title": "0683d2b28ff53b78",
+    "content.faq-bf-bc.t.0": "fd3cd5c648b45a44",
+    "content.faq-bf-bc.t.1": "1ab0f2cdfd636c5f",
+    "content.faq-bf-bc.t.2": "b97f0ac57c1360c3",
+    "content.faq-stress-milk.title": "601e567b1be30855",
+    "content.faq-stress-milk.t.0": "02db447559e1251f",
+    "content.faq-bonding.title": "a87f7534c89adb7e",
+    "content.faq-bonding.t.0": "e686292ec2702bc0",
+    "content.faq-ibuprofen-bf.title": "471f20ca8e18c184",
+    "content.faq-ibuprofen-bf.t.0": "394b672da5bd8c7f",
+    "content.faq-jaundice.title": "b2eb8cb7eb9ba4ed",
+    "content.faq-jaundice.t.0": "529658accf30fbf6",
+    "content.faq-newborn-procedures.title": "3b92e7e6a50686d0",
+    "content.faq-newborn-procedures.t.0": "d72fcb8dc5811617",
+    "content.faq-newborn-procedures.t.1": "503ae631290ccfd3",
+    "content.faq-newborn-procedures.t.2": "555768324f0aff84",
+    "content.faq-newborn-procedures.t.3": "c99e7877ef7ce6e1",
+    "content.faq-newborn-procedures.t.4": "40e5e1dc519cece2",
+    "content.faq-newborn-procedures.t.5": "502e42f21156da6c",
+    "content.faq-newborn-procedures.t.6": "cd0c11353cd68b73",
+    "content.faq-newborn-procedures.t.7": "d06e909e2132ca54",
+    "content.faq-newborn-procedures.t.8": "0f46858bcf9a15d9",
+    "content.faq-first-bath.title": "1ece0a9772ca9db5",
+    "content.faq-first-bath.t.0": "23fa392719b4b945"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -406,6 +636,71 @@ window.MYOB_LOCALES.vi = {
     "visits.ppFull.i1": 1,
     "visits.ppFull.i2": 1,
     "visits.ppFull.i3": 1,
-    "tools.contractionTimer": 1
+    "tools.contractionTimer": 1,
+    "content.faq-deli.title": 1,
+    "content.faq-deli.t.0": 1,
+    "content.faq-deli.t.1": 1,
+    "content.faq-deli.t.2": 1,
+    "content.faq-coffee.title": 1,
+    "content.faq-coffee.t.0": 1,
+    "content.faq-coffee.t.1": 1,
+    "content.faq-coffee.t.2": 1,
+    "content.faq-hair-dye.title": 1,
+    "content.faq-hair-dye.t.0": 1,
+    "content.faq-exercise-mc.title": 1,
+    "content.faq-exercise-mc.t.0": 1,
+    "content.faq-sex-pregnancy.title": 1,
+    "content.faq-sex-pregnancy.t.0": 1,
+    "content.faq-vaccines.title": 1,
+    "content.faq-vaccines.t.0": 1,
+    "content.faq-vaccines.t.1": 1,
+    "content.faq-vaccines.t.2": 1,
+    "content.faq-vaccines.t.3": 1,
+    "content.faq-vaccines.t.4": 1,
+    "content.faq-vaccines.t.5": 1,
+    "content.faq-vaccines.t.6": 1,
+    "content.faq-vaccines.t.7": 1,
+    "content.faq-eat-for-two.title": 1,
+    "content.faq-eat-for-two.t.0": 1,
+    "content.faq-hot-tub.title": 1,
+    "content.faq-hot-tub.t.0": 1,
+    "content.faq-epidural-csec.title": 1,
+    "content.faq-epidural-csec.t.0": 1,
+    "content.faq-epidural-csec.t.1": 1,
+    "content.faq-epidural-csec.t.2": 1,
+    "content.faq-routine-episiotomy.title": 1,
+    "content.faq-routine-episiotomy.t.0": 1,
+    "content.faq-routine-episiotomy.t.1": 1,
+    "content.faq-routine-episiotomy.t.2": 1,
+    "content.faq-water-breaking.title": 1,
+    "content.faq-water-breaking.t.0": 1,
+    "content.faq-eat-in-labor.title": 1,
+    "content.faq-eat-in-labor.t.0": 1,
+    "content.faq-vbac.title": 1,
+    "content.faq-vbac.t.0": 1,
+    "content.faq-bf-bc.title": 1,
+    "content.faq-bf-bc.t.0": 1,
+    "content.faq-bf-bc.t.1": 1,
+    "content.faq-bf-bc.t.2": 1,
+    "content.faq-stress-milk.title": 1,
+    "content.faq-stress-milk.t.0": 1,
+    "content.faq-bonding.title": 1,
+    "content.faq-bonding.t.0": 1,
+    "content.faq-ibuprofen-bf.title": 1,
+    "content.faq-ibuprofen-bf.t.0": 1,
+    "content.faq-jaundice.title": 1,
+    "content.faq-jaundice.t.0": 1,
+    "content.faq-newborn-procedures.title": 1,
+    "content.faq-newborn-procedures.t.0": 1,
+    "content.faq-newborn-procedures.t.1": 1,
+    "content.faq-newborn-procedures.t.2": 1,
+    "content.faq-newborn-procedures.t.3": 1,
+    "content.faq-newborn-procedures.t.4": 1,
+    "content.faq-newborn-procedures.t.5": 1,
+    "content.faq-newborn-procedures.t.6": 1,
+    "content.faq-newborn-procedures.t.7": 1,
+    "content.faq-newborn-procedures.t.8": 1,
+    "content.faq-first-bath.title": 1,
+    "content.faq-first-bath.t.0": 1
   }
 };

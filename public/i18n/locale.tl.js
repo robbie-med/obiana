@@ -272,6 +272,171 @@ window.MYOB_LOCALES.tl = {
         "Tawagan agad ang doktor ng baby kung may",
         "Lagnat ≥ 100.4°F sa puwit (seryoso sa bagong silang. Laging sa puwit kunin ang temperatura) · Ayaw dumede · Matinding paninilaw · Umuungol sa bawat hinga · Napakaputla ng balat · Iyak na hindi mapatahan · Mas kaunti sa 6 na basang diaper bawat araw pagkalipas ng ika-5 araw · Naninigas na leeg. Asul o kulay-abo na labi o mukha: tumawag sa 911."
       ]
+    },
+    "faq-deli": {
+      "title": "Puwede ba akong kumain ng deli meat at malambot na keso?",
+      "sub": "",
+      "t": [
+        "Ang pangunahing panganib ay ang",
+        "Listeria",
+        ", isang impeksiyon ng bakterya na bihira pero maaaring maging malubha sa pagbubuntis (maaaring tumawid sa inunan). Payo ng FDA na iwasan ang keso na hindi pasteurized at deli meat maliban kung pinainit hanggang umusok (165°F). Ligtas ang karamihan ng pasteurized na malambot na keso (tulad ng pasteurized na brie, feta na nasa pakete). Ang eksepsiyon ay queso fresco, queso blanco, panela at mga katulad na sariwang keso: kahit ang pasteurized ay nagdulot na ng listeria outbreak, kaya kainin lang ang mga ito kung niluto hanggang umusok. Napakababa ng kabuuang panganib mula sa paminsan-minsang deli meat. Kung hindi sigurado, initin ito."
+      ]
+    },
+    "faq-coffee": {
+      "title": "Puwede ba ako uminom ng kahit kaunting caffeine?",
+      "sub": "",
+      "t": [
+        "Oo. Inirerekomenda ng ACOG na limitahan ang caffeine sa",
+        "mas mababa sa 200 mg bawat araw",
+        "(mga isang 12-oz na tasa ng drip coffee). Sa ganitong dami, walang napatunayang pinsala sa pagbubuntis. May caffeine din ang tsaa, soda at tsokolate. Bilangin silang lahat nang sabay. Makatwiran ang magbawas; ang tuluyang pagtigil ay personal na desisyon, hindi kailangan sa medisina."
+      ]
+    },
+    "faq-hair-dye": {
+      "title": "Puwede ba akong magpakulay ng buhok habang buntis?",
+      "sub": "",
+      "t": [
+        "Oo, pero isipin kung bakit mo ito gagawin. Napakaliit na dami ng pangkulay ang nasisipsip ng anit. Walang nalathalang pag-aaral na nagpakita ng pinsala sa sanggol sa dami na ginagamit sa karaniwang pagpapakulay sa salon o sa bahay. Mas kaunti pa ang dikit sa anit ng highlights (foil). Kung nag-aalala ka, maghintay hanggang ikalawang trimester, kapag buo na ang mga pangunahing organ, o huwag na lang gawin."
+      ]
+    },
+    "faq-exercise-mc": {
+      "title": "Nagdudulot ba ng pagkalaglag ang ehersisyo?",
+      "sub": "",
+      "t": [
+        "Hindi. Hindi nagdudulot ng pagkalaglag ang katamtamang ehersisyo sa malusog na pagbubuntis. Ang tamang dami ng ehersisyo ay nagpoprotekta, hindi nakakasama. Tingnan ang mga gabay sa ehersisyo sa seksiyong Prenatal. Kung sinabi ng iyong doktor na huwag kang mag-ehersisyo, itanong kung bakit, at sundin ang payong iyon."
+      ]
+    },
+    "faq-sex-pregnancy": {
+      "title": "Ligtas bang makipagtalik habang buntis?",
+      "sub": "",
+      "t": [
+        "Oo, sa normal na pagbubuntis na walang komplikasyon. Hindi nagdudulot ang pakikipagtalik ng pagkalaglag, maagang panganganak, o pinsala sa sanggol (na protektado ng amniotic fluid). Irerekomenda lang ng doktor ang pelvic rest (walang pakikipagtalik) sa mga partikular na sitwasyon: placenta previa, panganib ng maagang panganganak, pagdurugo sa ari na hindi maipaliwanag, ilang kondisyon ng cervix, o pagkatapos pumutok ang panubigan. Kung hindi ka sigurado, itanong sa susunod mong check-up."
+      ]
+    },
+    "faq-vaccines": {
+      "title": "Ligtas ba ang mga bakuna habang buntis?",
+      "sub": "",
+      "t": [
+        "Dalawa ang inirerekomenda sa bawat pagbubuntis at mukhang ligtas: ang Tdap booster at ang flu shot. Ang mga live vaccine ay dapat maghintay hanggang pagkapanganak.",
+        "Tdap, para sa whooping cough (pertussis)",
+        "Ibinibigay sa pagitan ng 27 at 36 na linggo, sa bawat pagbubuntis, kahit nakuha mo na ito sa nakaraan. Ang pangunahing layunin ay hindi para protektahan ka. Gumagawa ang katawan mo ng antibodies at ipinapasa ito sa inunan, kaya isinisilang ang sanggol na may proteksiyon na laban sa whooping cough. Mahalaga ito dahil pinakamapanganib ang whooping cough sa mga unang buwan ng buhay, bago pa sapat ang edad ng sanggol para mabakunahan. Dapat ding updated ang bakuna ng sinumang madalas kakarga sa sanggol.",
+        "Flu shot",
+        "Inirerekomenda sa anumang trimester sa panahon ng trangkaso. Binabago ng pagbubuntis ang paggana ng baga at immune system mo, kaya mas malaki ang tsansa na maospital ka dahil sa trangkaso. Tumatawid din ang antibodies sa sanggol at pinoprotektahan siya sa unang ilang buwan. Ang iniiniksiyon na bakuna ang ginagamit sa pagbubuntis: ang nasal spray ay live vaccine.",
+        "Ang mga naghihintay hanggang pagkapanganak",
+        "Ang mga live vaccine, ibig sabihin MMR (tigdas, beke at rubella) at varicella (bulutong-tubig), ay hindi ibinibigay habang buntis. Kung ipinakita ng maagang blood test mo na wala kang immunity sa rubella o bulutong-tubig, ang karaniwang plano ay bakunahan ka bago ka umuwi mula sa ospital, na nagpoprotekta rin sa susunod na pagbubuntis. Pareho silang ligtas habang nagpapasuso.",
+        "Kung may iba kang bakunang hindi pa nakukuha, o magbibiyahe ka, o may outbreak kung saan ka nakatira, sabihin sa iyong doktor."
+      ]
+    },
+    "faq-eat-for-two": {
+      "title": "Kailangan ko bang \"kumain para sa dalawa\"?",
+      "sub": "",
+      "t": [
+        "Hindi. Ang \"pagkain para sa dalawa\" ay isang maling paniniwala. Sa unang trimester, hindi mo kailangan ng dagdag na calories. Sa ikalawa, mga 340 na dagdag bawat araw; sa ikatlo, mga 450. Isa o dalawang meryenda iyon, hindi ikalawang plato. Mas mahalaga ang kalidad ng nutrisyon kaysa sa dami. Pagtuunan ang protina, iron, folate, calcium at omega-3 fatty acids. Tumutulong ang prenatal vitamin na punan ang kulang, pero hindi nito dapat palitan ang balanseng pagkain."
+      ]
+    },
+    "faq-hot-tub": {
+      "title": "Puwede ba akong maligo sa bathtub o gumamit ng hot tub?",
+      "sub": "",
+      "t": [
+        "Ayos lang ang maligamgam na paliligo sa buong pagbubuntis. Hindi inirerekomenda ang hot tub, sauna at steam room na nagpapataas ng temperatura ng katawan nang higit sa 102°F (39°C), lalo na sa unang trimester, kung kailan ang mataas na temperatura ay may kaugnayan sa neural tube defects. Kung gagamit ka ng hot tub, panatilihing komportable (hindi mainit) ang temperatura, limitahan sa 10 minuto, at iwasan sa unang trimester. Ligtas ang maligamgam na paliligo sa karaniwang temperatura ng tubig sa bahay (98–100°F)."
+      ]
+    },
+    "faq-epidural-csec": {
+      "title": "Pinapataas ba ng epidural ang panganib ng C-section?",
+      "sub": "",
+      "t": [
+        "Hindi. Isa ito sa mga pinakapinag-aralang tanong sa obstetrics. Maraming malalaking randomized controlled trial at meta-analysis ang nagpapatunay na ang epidural ay",
+        "hindi",
+        "nagpapataas ng bilang ng C-section. Medyo pinahahaba ng epidural ang yugto ng pag-ire, at mas malamang ang panganganak gamit ang vacuum o forceps, na dapat timbangin kasama ng ginhawa sa sakit. Puwede kang humingi nito anumang oras sa active labor. Ang praktikal na hangganan ay hindi bilang ng sentimetro kundi kung gaano kabilis ang labor, dahil maaaring hindi na umabot sa oras kung napakabilis ng labor."
+      ]
+    },
+    "faq-routine-episiotomy": {
+      "title": "Kailangan ko ba ng episiotomy para hindi mapunit?",
+      "sub": "",
+      "t": [
+        "Hindi. Hindi na inirerekomenda ng ACOG ang routine episiotomy (isang hiwa sa bukana ng ari). Palaging ipinapakita ng ebidensiya na",
+        "mas mabuting gumagaling ang natural na punit sa pangkalahatan",
+        "at mas kaunti ang komplikasyon (kasama ang sakit at pangmatagalang problema sa pelvic floor) kaysa sa routine episiotomy. Karamihan ng babaeng nanganganak sa normal na paraan ay may kaunting punit, pero marami ang maliit lang (first-degree). Angkop pa rin ang episiotomy kapag may tiyak na dahilan, gaya ng kapag kailangang mailabas agad ang sanggol dahil sa fetal distress."
+      ]
+    },
+    "faq-water-breaking": {
+      "title": "Kung pumutok ang panubigan ko, kailangan ko bang ma-C-section?",
+      "sub": "",
+      "t": [
+        "Hindi. Kung pumutok ang panubigan sa takdang buwan, karamihan ng babae ay kusang naglelabor sa loob ng mga isang araw. Kung hindi magsimula ang labor, kadalasang inaalok ang induction, dahil tumataas ang tsansa ng impeksiyon habang tumatagal na bukas ang panubigan. Tumataas na panganib ito na sabay ninyong titimbangin, hindi deadline na nalampasan mo. Kung GBS-positive ka, sisimulan agad ang antibiotics. Kailangan lang ng C-section kung may hiwalay na dahilan para dito, at ang pagputok ng panubigan ay hindi isa sa mga iyon."
+      ]
+    },
+    "faq-eat-in-labor": {
+      "title": "Puwede ba akong kumain o uminom habang naglelabor?",
+      "sub": "",
+      "t": [
+        "Para sa mga babaeng mababa ang panganib sa maagang labor, sinusuportahan ng kasalukuyang gabay ng ACOG ang magaang pagkain at malinaw na inumin. Kapag may epidural ka na, naka-Pitocin, o mas mataas ang panganib na kailanganin ang general anesthesia (posibleng C-section), karamihan ng ospital ay naglilimita sa ice chips o pagsipsip ng tubig dahil sa panganib ng aspiration kung kailanganin ang general anesthesia. Itanong ang patakaran ng iyong ospital. Para sa iyong kasama: magdala ng meryenda. Maaaring buong araw ang labor."
+      ]
+    },
+    "faq-vbac": {
+      "title": "Kung na-C-section na ako dati, lagi ko bang kailangan ulit?",
+      "sub": "",
+      "t": [
+        "Hindi palagi. Ang normal na panganganak pagkatapos ng cesarean (VBAC) ay ligtas at angkop na opsiyon para sa maraming babae na may isang naunang low-transverse na hiwa sa matris. 60–80% ang tsansang magtagumpay. Ang mga salik ay ang dahilan ng naunang C-section, ang kasalukuyang pagbubuntis, ang uri ng hiwa sa matris, at ang kakayahan ng iyong ospital na humawak ng emergency. Banggitin ito nang maaga sa prenatal care kung interesado ka."
+      ]
+    },
+    "faq-bf-bc": {
+      "title": "Puwede ba akong mabuntis habang nagpapasuso?",
+      "sub": "",
+      "t": [
+        "Oo. Bagaman pinipigilan nang kaunti ng eksklusibong pagpapasuso ang obulasyon, ito ay",
+        "hindi maaasahang paraan ng kontrasepsiyon",
+        ". Maaari kang mag-ovulate, at mabuntis, bago bumalik ang regla mo. Ang \"lactational amenorrhea method\" ay nangangailangan ng napakatiyak na kondisyon (eksklusibong pagpapasuso bawat 4 na oras sa araw / 6 na oras sa gabi, walang dagdag na gatas, hindi pa bumabalik ang regla) at mga 98% lang ang bisa kahit sa mahigpit na kondisyong iyon. Pag-usapan ang birth control bago ka umuwi mula sa ospital."
+      ]
+    },
+    "faq-stress-milk": {
+      "title": "Natutuyo ba ang gatas dahil sa stress?",
+      "sub": "",
+      "t": [
+        "Maaaring pansamantalang maabala ng matinding stress ang letdown reflex (ang paglabas ng gatas). Pero hindi matutuyo ang gatas dahil sa isang nakaka-stress na pangyayari. Nakadepende ang dami ng gatas sa demand. Habang mas madalas at mas mahusay sumuso ang sanggol o mag-pump ka, mas maraming gatas ang ginagawa ng katawan mo. Kung pinipigilan ng stress o kaguluhan sa paligid ang maayos na pagsuso ng sanggol, maaaring bumaba ang demand at bumaba ang gatas. Mga nakakatulong sa letdown: skin-to-skin, init, mga paraan ng pagre-relax, at pagtingin sa litrato ng sanggol habang nagpa-pump. Kausapin ang iyong doktor tungkol sa mga paraan ng pagbabawas ng stress nang walang gamot."
+      ]
+    },
+    "faq-bonding": {
+      "title": "Dapat ko bang maramdaman agad ang pagkakabuklod sa aking sanggol?",
+      "sub": "",
+      "t": [
+        "Hindi. Ang bonding ay isang proseso, hindi iisang sandali. Maraming ina ang nakakaramdam agad ng malalim na pagmamahal pagkapanganak; ang iba ay nangangailangan ng ilang araw, linggo o mas matagal pa para lumago ang damdaming iyon. Pareho itong ganap na normal. Pagod ng katawan, mahirap na panganganak, hindi inaasahang resulta at PPD ay maaaring makaapekto sa maagang bonding. Kung pakiramdam mo ay hiwalay ka o manhid sa iyong sanggol nang higit sa ilang linggo, sabihin sa iyong doktor. Maaaring senyales ito ng postpartum depression, na nagagamot."
+      ]
+    },
+    "faq-ibuprofen-bf": {
+      "title": "Puwede ba akong uminom ng ibuprofen habang nagpapasuso?",
+      "sub": "",
+      "t": [
+        "Oo. Ang ibuprofen ay isa sa pinakaligtas na OTC na gamot habang nagpapasuso. Napakakaunti ang napupunta sa gatas. Ligtas din ang acetaminophen (Tylenol). Ito ang mga pinipiling gamot sa sakit pagkapanganak at habang nagpapasuso. Hindi inirerekomenda ang mataas na dosis ng aspirin (iba ang usapan sa mababang dosis na aspirin na inireseta. Pag-usapan ito sa iyong doktor). Mas maraming napupunta sa gatas ang naproxen (Aleve) at karaniwang hindi ito pinipili. Laging kumpirmahin sa iyong care team para sa iyong sitwasyon."
+      ]
+    },
+    "faq-jaundice": {
+      "title": "Mukhang naninilaw ang sanggol ko. Kailan ito seryoso?",
+      "sub": "",
+      "t": [
+        "Ang paninilaw ng bagong silang (hyperbilirubinemia) ay nangyayari sa mga 60% ng sanggol na isinilang sa takdang buwan sa unang linggo. Sanhi ito ng normal na pagkasira ng red blood cells mula sa sinapupunan. Humahabol lang ang atay. Karamihan ay banayad at kusang nawawala nang walang gamutan. Nagiging alalahanin ito kapag napakataas ng bilirubin (panganib ng pinsala sa utak sa sobrang taas), o kapag sobrang antukin ang sanggol, hindi sumususo, o lumitaw ang paninilaw sa unang 24 na oras. Susuriin ng ospital ang bilirubin bago umuwi at sa check-up ng sanggol sa edad na 2–5 araw. Napakabisa ng phototherapy (bili lights) kung kailangan."
+      ]
+    },
+    "faq-newborn-procedures": {
+      "title": "Kailangan bang gawin ang lahat ng procedure sa bagong silang?",
+      "sub": "",
+      "t": [
+        "Kasama sa karaniwang procedure sa bagong silang ang:",
+        "Iniksiyon ng vitamin K",
+        "(binabawasan ang panganib ng nakamamatay na pagdurugo sa utak),",
+        "erythromycin na pamahid sa mata",
+        "(binabawasan ang impeksiyon sa mata kasama ang gonorrhea),",
+        "unang dose ng bakuna sa Hepatitis B",
+        ", at ang",
+        "pagkuha ng dugo para sa newborn metabolic screening",
+        "(heel stick para sa mga 30 kondisyon kasama ang PKU, hypothyroidism at sickle cell). Hindi pare-pareho ang lakas ng ebidensiya sa likod ng mga ito, at makatwirang itanong ang bawat isa nang hiwalay. Ang vitamin K at heel stick ang may pinakamalinaw na dahilan: pinipigilan ng vitamin K ang bihira pero malubhang pagdurugo, at nahahanap ng heel stick ang mga kondisyong magagamot lang kung matuklasan sa mga unang araw. Pinakamahalaga ang dose ng hepatitis B kapag positibo o hindi alam ang sarili mong hepatitis B status. Mas mahina ang ebidensiya sa pamahid sa mata, at ilang bansa na ang tumigil sa pagbibigay nito nang routine, bagaman maraming estado sa US ang nag-uutos nito sa batas. Sa karamihan ng estado, legal kang puwedeng tumanggi. Tanungin ang iyong team kung alin dito ang angkop sa iyong sitwasyon."
+      ]
+    },
+    "faq-first-bath": {
+      "title": "Kailan kailangan ng sanggol ang unang paligo?",
+      "sub": "",
+      "t": [
+        "Inirerekomenda na ngayon ng WHO at AAP na ipagpaliban ang unang paligo nang hindi bababa sa 24 na oras pagkapanganak (mas mabuti kung 48 oras). Ang puting balot (vernix caseosa) ay may katangiang lumalaban sa mikrobyo at tumutulong magbasa-basa ng balat. Nakakatulong din ang pagpapaliban ng paligo na mapanatili ang temperatura ng katawan, sinusuportahan ang matatag na blood sugar, at may kaugnayan sa mas mahusay na pagsisimula ng pagpapasuso. Ang paghihintay ang kasalukuyang pinakamabuting gawain, hindi lang kagustuhan."
+      ]
     }
   },
   "srcHash": {
@@ -287,7 +452,72 @@ window.MYOB_LOCALES.tl = {
     "content.signs-of-labor.t.16": "ac6a34b445ceccaa",
     "content.signs-of-labor.t.17": "b007f20008122ab6",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "380945be7751b37c"
+    "content.normal-newborn.t.32": "380945be7751b37c",
+    "content.faq-deli.title": "ce705cdc639700b6",
+    "content.faq-deli.t.0": "208a1054e9463d0e",
+    "content.faq-deli.t.1": "7180ed78d9040f96",
+    "content.faq-deli.t.2": "86ed7bf6b9c01890",
+    "content.faq-coffee.title": "5389638ea8a88dc8",
+    "content.faq-coffee.t.0": "ac1cf8bc0364371a",
+    "content.faq-coffee.t.1": "d49405defc21c3ec",
+    "content.faq-coffee.t.2": "19f22003cc780ded",
+    "content.faq-hair-dye.title": "3cbc4f5501467bbb",
+    "content.faq-hair-dye.t.0": "194b47e06a23e60e",
+    "content.faq-exercise-mc.title": "055753c567df011f",
+    "content.faq-exercise-mc.t.0": "2b2d76b57f4bc45f",
+    "content.faq-sex-pregnancy.title": "8399c3d543c4147f",
+    "content.faq-sex-pregnancy.t.0": "9b3a7841e4c3a343",
+    "content.faq-vaccines.title": "22cf8d87c3c18165",
+    "content.faq-vaccines.t.0": "54aa1c57cf3d489d",
+    "content.faq-vaccines.t.1": "2cc75b12a1fc2494",
+    "content.faq-vaccines.t.2": "1038f5417eda7317",
+    "content.faq-vaccines.t.3": "de4ce992cde7736c",
+    "content.faq-vaccines.t.4": "fc3cba8b30791ee5",
+    "content.faq-vaccines.t.5": "8e2d5dd7b662e6cd",
+    "content.faq-vaccines.t.6": "1fbad66cf49cff52",
+    "content.faq-vaccines.t.7": "bd443dcd8ee958d3",
+    "content.faq-eat-for-two.title": "7109ae5ce8714502",
+    "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
+    "content.faq-hot-tub.title": "2230219d6f10d437",
+    "content.faq-hot-tub.t.0": "b73f80715bdad85f",
+    "content.faq-epidural-csec.title": "85af8aced19ce724",
+    "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
+    "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
+    "content.faq-epidural-csec.t.2": "d9849263c1e6467d",
+    "content.faq-routine-episiotomy.title": "063590cb3bfbb7f9",
+    "content.faq-routine-episiotomy.t.0": "f9f4d22fb4ca4b41",
+    "content.faq-routine-episiotomy.t.1": "8a8e3958d3c9cdb6",
+    "content.faq-routine-episiotomy.t.2": "7d6842265369b750",
+    "content.faq-water-breaking.title": "3024fe7ba7f6b3ed",
+    "content.faq-water-breaking.t.0": "ffd7e16a191f9018",
+    "content.faq-eat-in-labor.title": "5de8ba9361616d39",
+    "content.faq-eat-in-labor.t.0": "23ad9f490ae5def7",
+    "content.faq-vbac.title": "4fb6dce62d75356c",
+    "content.faq-vbac.t.0": "2a66625080510032",
+    "content.faq-bf-bc.title": "0683d2b28ff53b78",
+    "content.faq-bf-bc.t.0": "fd3cd5c648b45a44",
+    "content.faq-bf-bc.t.1": "1ab0f2cdfd636c5f",
+    "content.faq-bf-bc.t.2": "b97f0ac57c1360c3",
+    "content.faq-stress-milk.title": "601e567b1be30855",
+    "content.faq-stress-milk.t.0": "02db447559e1251f",
+    "content.faq-bonding.title": "a87f7534c89adb7e",
+    "content.faq-bonding.t.0": "e686292ec2702bc0",
+    "content.faq-ibuprofen-bf.title": "471f20ca8e18c184",
+    "content.faq-ibuprofen-bf.t.0": "394b672da5bd8c7f",
+    "content.faq-jaundice.title": "b2eb8cb7eb9ba4ed",
+    "content.faq-jaundice.t.0": "529658accf30fbf6",
+    "content.faq-newborn-procedures.title": "3b92e7e6a50686d0",
+    "content.faq-newborn-procedures.t.0": "d72fcb8dc5811617",
+    "content.faq-newborn-procedures.t.1": "503ae631290ccfd3",
+    "content.faq-newborn-procedures.t.2": "555768324f0aff84",
+    "content.faq-newborn-procedures.t.3": "c99e7877ef7ce6e1",
+    "content.faq-newborn-procedures.t.4": "40e5e1dc519cece2",
+    "content.faq-newborn-procedures.t.5": "502e42f21156da6c",
+    "content.faq-newborn-procedures.t.6": "cd0c11353cd68b73",
+    "content.faq-newborn-procedures.t.7": "d06e909e2132ca54",
+    "content.faq-newborn-procedures.t.8": "0f46858bcf9a15d9",
+    "content.faq-first-bath.title": "1ece0a9772ca9db5",
+    "content.faq-first-bath.t.0": "23fa392719b4b945"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -411,6 +641,71 @@ window.MYOB_LOCALES.tl = {
     "visits.ppFull.i1": 1,
     "visits.ppFull.i2": 1,
     "visits.ppFull.i3": 1,
-    "tools.contractionTimer": 1
+    "tools.contractionTimer": 1,
+    "content.faq-deli.title": 1,
+    "content.faq-deli.t.0": 1,
+    "content.faq-deli.t.1": 1,
+    "content.faq-deli.t.2": 1,
+    "content.faq-coffee.title": 1,
+    "content.faq-coffee.t.0": 1,
+    "content.faq-coffee.t.1": 1,
+    "content.faq-coffee.t.2": 1,
+    "content.faq-hair-dye.title": 1,
+    "content.faq-hair-dye.t.0": 1,
+    "content.faq-exercise-mc.title": 1,
+    "content.faq-exercise-mc.t.0": 1,
+    "content.faq-sex-pregnancy.title": 1,
+    "content.faq-sex-pregnancy.t.0": 1,
+    "content.faq-vaccines.title": 1,
+    "content.faq-vaccines.t.0": 1,
+    "content.faq-vaccines.t.1": 1,
+    "content.faq-vaccines.t.2": 1,
+    "content.faq-vaccines.t.3": 1,
+    "content.faq-vaccines.t.4": 1,
+    "content.faq-vaccines.t.5": 1,
+    "content.faq-vaccines.t.6": 1,
+    "content.faq-vaccines.t.7": 1,
+    "content.faq-eat-for-two.title": 1,
+    "content.faq-eat-for-two.t.0": 1,
+    "content.faq-hot-tub.title": 1,
+    "content.faq-hot-tub.t.0": 1,
+    "content.faq-epidural-csec.title": 1,
+    "content.faq-epidural-csec.t.0": 1,
+    "content.faq-epidural-csec.t.1": 1,
+    "content.faq-epidural-csec.t.2": 1,
+    "content.faq-routine-episiotomy.title": 1,
+    "content.faq-routine-episiotomy.t.0": 1,
+    "content.faq-routine-episiotomy.t.1": 1,
+    "content.faq-routine-episiotomy.t.2": 1,
+    "content.faq-water-breaking.title": 1,
+    "content.faq-water-breaking.t.0": 1,
+    "content.faq-eat-in-labor.title": 1,
+    "content.faq-eat-in-labor.t.0": 1,
+    "content.faq-vbac.title": 1,
+    "content.faq-vbac.t.0": 1,
+    "content.faq-bf-bc.title": 1,
+    "content.faq-bf-bc.t.0": 1,
+    "content.faq-bf-bc.t.1": 1,
+    "content.faq-bf-bc.t.2": 1,
+    "content.faq-stress-milk.title": 1,
+    "content.faq-stress-milk.t.0": 1,
+    "content.faq-bonding.title": 1,
+    "content.faq-bonding.t.0": 1,
+    "content.faq-ibuprofen-bf.title": 1,
+    "content.faq-ibuprofen-bf.t.0": 1,
+    "content.faq-jaundice.title": 1,
+    "content.faq-jaundice.t.0": 1,
+    "content.faq-newborn-procedures.title": 1,
+    "content.faq-newborn-procedures.t.0": 1,
+    "content.faq-newborn-procedures.t.1": 1,
+    "content.faq-newborn-procedures.t.2": 1,
+    "content.faq-newborn-procedures.t.3": 1,
+    "content.faq-newborn-procedures.t.4": 1,
+    "content.faq-newborn-procedures.t.5": 1,
+    "content.faq-newborn-procedures.t.6": 1,
+    "content.faq-newborn-procedures.t.7": 1,
+    "content.faq-newborn-procedures.t.8": 1,
+    "content.faq-first-bath.title": 1,
+    "content.faq-first-bath.t.0": 1
   }
 };

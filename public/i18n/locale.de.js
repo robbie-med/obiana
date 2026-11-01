@@ -269,6 +269,171 @@ window.MYOB_LOCALES.de = {
         "Rufen Sie sofort die Ärztin Ihres Babys an bei",
         "Fieber ≥ 100.4°F rektal (bei Neugeborenen ernst. Immer rektal messen) · Trinkt nicht · Starke Gelbfärbung · Stöhnen bei jedem Atemzug · Sehr blasse Haut · Untröstliches Weinen · Weniger als 6 nasse Windeln am Tag nach dem 5. Tag · Steifer Nacken. Blaue oder graue Lippen oder Gesicht: 911 anrufen."
       ]
+    },
+    "faq-deli": {
+      "title": "Darf ich Aufschnitt und Weichkäse essen?",
+      "sub": "",
+      "t": [
+        "Das Hauptrisiko ist",
+        "Listeriose",
+        ", eine bakterielle Infektion, die selten ist, in der Schwangerschaft aber gefährlich sein kann (sie kann über die Plazenta gehen). Die FDA rät, Käse aus Rohmilch und Aufschnitt zu meiden, außer er wurde erhitzt, bis er dampft (165°F). Die meisten pasteurisierten Weichkäse (etwa pasteurisierter Brie, Feta aus der Packung) sind sicher. Die Ausnahme sind Queso fresco, Queso blanco, Panela und ähnliche Frischkäse: Auch pasteurisierte haben Listerien-Ausbrüche verursacht, essen Sie sie also nur, wenn sie gekocht sind, bis sie dampfen. Das Gesamtrisiko durch gelegentlichen Aufschnitt ist sehr gering. Im Zweifel: erhitzen."
+      ]
+    },
+    "faq-coffee": {
+      "title": "Darf ich überhaupt Koffein trinken?",
+      "sub": "",
+      "t": [
+        "Ja. ACOG empfiehlt, Koffein auf",
+        "weniger als 200 mg pro Tag",
+        "zu begrenzen (etwa eine 12-oz-Tasse Filterkaffee). In dieser Menge ist ein Schaden für die Schwangerschaft nicht belegt. Auch Tee, Limonade und Schokolade enthalten Koffein. Zählen Sie alles zusammen. Weniger zu trinken ist vernünftig; ganz darauf zu verzichten ist Ihre persönliche Entscheidung, medizinisch nötig ist es nicht."
+      ]
+    },
+    "faq-hair-dye": {
+      "title": "Darf ich mir in der Schwangerschaft die Haare färben?",
+      "sub": "",
+      "t": [
+        "Ja, aber überlegen Sie, warum Sie es tun. Haarfarbe wird in sehr kleinen Mengen über die Kopfhaut aufgenommen. Keine veröffentlichte Studie hat einen Schaden für das Ungeborene bei den Mengen gezeigt, die beim normalen Färben im Salon oder zu Hause vorkommen. Strähnchen (mit Folie) berühren die Kopfhaut noch weniger. Wenn Sie sich Sorgen machen, warten Sie bis zum zweiten Trimester, wenn die wichtigsten Organe fertig angelegt sind, oder lassen Sie es einfach."
+      ]
+    },
+    "faq-exercise-mc": {
+      "title": "Kann Sport eine Fehlgeburt auslösen?",
+      "sub": "",
+      "t": [
+        "Nein. Mäßige Bewegung löst bei einer gesunden Schwangerschaft keine Fehlgeburt aus. Ein gewisses Maß an Bewegung schützt, statt zu schaden. Sehen Sie sich die Bewegungsempfehlungen im Bereich Schwangerschaft an. Wenn Ihr Arzt Ihnen von Sport abgeraten hat, fragen Sie nach dem Grund und halten Sie sich daran."
+      ]
+    },
+    "faq-sex-pregnancy": {
+      "title": "Ist Sex in der Schwangerschaft sicher?",
+      "sub": "",
+      "t": [
+        "Ja, in einer normalen Schwangerschaft ohne Komplikationen. Sex löst keine Fehlgeburt und keine frühen Wehen aus und schadet dem Baby nicht (es ist durch das Fruchtwasser gepolstert). Ihr Arzt empfiehlt Beckenruhe (kein Geschlechtsverkehr) nur in bestimmten Situationen: Placenta praevia, Risiko für Frühgeburt, unerklärte Blutungen aus der Scheide, bestimmte Probleme am Gebärmutterhals oder nach dem Blasensprung. Wenn Sie unsicher sind, fragen Sie beim nächsten Termin."
+      ]
+    },
+    "faq-vaccines": {
+      "title": "Sind Impfungen in der Schwangerschaft sicher?",
+      "sub": "",
+      "t": [
+        "Zwei werden in jeder Schwangerschaft empfohlen und scheinen sicher zu sein: die Tdap-Auffrischung und die Grippeimpfung. Lebendimpfstoffe müssen bis nach der Geburt warten.",
+        "Tdap, gegen Keuchhusten",
+        "Wird zwischen der 27. und 36. Woche gegeben, in jeder Schwangerschaft, auch wenn Sie sie in der letzten schon hatten. Es geht vor allem nicht um Ihren Schutz. Ihr Körper bildet Antikörper und gibt sie über die Plazenta weiter, sodass das Baby schon mit Schutz gegen Keuchhusten zur Welt kommt. Das ist wichtig, weil Keuchhusten in den ersten Lebensmonaten am gefährlichsten ist, bevor ein Baby alt genug für die eigene Impfung ist. Wer das Baby regelmäßig im Arm halten wird, sollte ebenfalls geimpft sein.",
+        "Grippeimpfung",
+        "In der Grippesaison in jedem Trimester empfohlen. Die Schwangerschaft verändert, wie Lunge und Immunsystem arbeiten, und dadurch bringt eine Grippe Sie deutlich eher ins Krankenhaus. Die Antikörper gehen auch auf das Baby über und schützen es in den ersten Monaten. In der Schwangerschaft wird der gespritzte Impfstoff verwendet: Das Nasenspray ist ein Lebendimpfstoff.",
+        "Was bis nach der Geburt wartet",
+        "Lebendimpfstoffe, also MMR (Masern, Mumps und Röteln) und Varizellen (Windpocken), werden in der Schwangerschaft nicht gegeben. Zeigt Ihre erste Blutuntersuchung, dass Sie gegen Röteln oder Windpocken nicht immun sind, wird meist vor der Entlassung aus dem Krankenhaus geimpft. Das schützt auch eine spätere Schwangerschaft. Beide sind in der Stillzeit sicher.",
+        "Wenn Ihnen eine andere Impfung fehlt, Sie verreisen oder es bei Ihnen einen Ausbruch gibt, sagen Sie es Ihrem Arzt."
+      ]
+    },
+    "faq-eat-for-two": {
+      "title": "Muss ich „für zwei essen“?",
+      "sub": "",
+      "t": [
+        "Nein. „Für zwei essen“ ist ein Mythos. Im ersten Trimester brauchen Sie keine zusätzlichen Kalorien. Im zweiten etwa 340 mehr pro Tag, im dritten etwa 450. Das sind ein oder zwei Snacks, kein zweiter Teller. Die Qualität der Ernährung zählt viel mehr als die Menge. Achten Sie auf Eiweiß, Eisen, Folsäure, Kalzium und Omega-3-Fettsäuren. Ihr Schwangerschaftsvitamin füllt Lücken, ersetzt aber keine ausgewogene Ernährung."
+      ]
+    },
+    "faq-hot-tub": {
+      "title": "Darf ich baden oder in einen Whirlpool gehen?",
+      "sub": "",
+      "t": [
+        "Warme Bäder sind in der ganzen Schwangerschaft in Ordnung. Whirlpools, Saunen und Dampfbäder, die Ihre Körperkerntemperatur über 102°F (39°C) steigen lassen, werden nicht empfohlen, vor allem im ersten Trimester, wenn eine erhöhte Temperatur mit Neuralrohrdefekten in Verbindung steht. Wenn Sie doch in einen Whirlpool gehen, halten Sie die Temperatur angenehm (nicht heiß), bleiben Sie höchstens 10 Minuten und meiden Sie ihn im ersten Trimester. Ein warmes Bad mit normaler Badewassertemperatur (98–100°F) ist sicher."
+      ]
+    },
+    "faq-epidural-csec": {
+      "title": "Erhöht eine PDA das Kaiserschnitt-Risiko?",
+      "sub": "",
+      "t": [
+        "Nein. Das ist eine der am besten untersuchten Fragen der Geburtshilfe. Mehrere große randomisierte kontrollierte Studien und Metaanalysen bestätigen, dass eine PDA die Kaiserschnittrate",
+        "nicht",
+        "erhöht. Mit einer PDA dauert die Pressphase etwas länger, und eine Saugglocken- oder Zangengeburt wird wahrscheinlicher. Das sollten Sie gegen die Schmerzlinderung abwägen. Sie können in der aktiven Geburt jederzeit danach fragen. Die praktische Grenze ist keine Zentimeterzahl, sondern wie schnell die Geburt vorangeht, denn bei einer sehr schnellen Geburt reicht die Zeit vielleicht nicht."
+      ]
+    },
+    "faq-routine-episiotomy": {
+      "title": "Brauche ich einen Dammschnitt, damit ich nicht reiße?",
+      "sub": "",
+      "t": [
+        "Nein. Einen routinemäßigen Dammschnitt (ein Schnitt am Scheideneingang) empfiehlt ACOG nicht mehr. Die Studien zeigen immer wieder, dass",
+        "natürliche Risse meist besser heilen",
+        "und weniger Komplikationen verursachen (auch Schmerzen und lange anhaltende Probleme mit dem Beckenboden) als routinemäßige Dammschnitte. Die meisten Frauen, die vaginal gebären, reißen etwas ein, aber oft nur leicht (ersten Grades). Ein Dammschnitt ist weiterhin richtig, wenn es einen bestimmten Grund gibt, etwa wenn das Baby wegen Not schnell geboren werden muss."
+      ]
+    },
+    "faq-water-breaking": {
+      "title": "Brauche ich einen Kaiserschnitt, wenn die Fruchtblase platzt?",
+      "sub": "",
+      "t": [
+        "Nein. Wenn die Fruchtblase am Termin platzt, setzen die Wehen bei den meisten Frauen innerhalb etwa eines Tages von selbst ein. Kommen keine Wehen, wird meist eine Einleitung angeboten, weil das Infektionsrisiko steigt, je länger die Fruchtblase offen ist. Das ist ein wachsendes Risiko, das Sie gemeinsam abwägen, keine verpasste Frist. Wenn Sie GBS-positiv sind, wird sofort mit Antibiotika begonnen. Ein Kaiserschnitt ist nur nötig, wenn es einen anderen Grund dafür gibt, und der Blasensprung allein ist keiner."
+      ]
+    },
+    "faq-eat-in-labor": {
+      "title": "Darf ich unter der Geburt essen oder trinken?",
+      "sub": "",
+      "t": [
+        "Für Frauen mit geringem Risiko in der frühen Geburtsphase erlauben die aktuellen ACOG-Empfehlungen leichtes Essen und klare Getränke. Wenn Sie eine PDA haben, Pitocin bekommen oder ein höheres Risiko für eine Vollnarkose haben (möglicher Kaiserschnitt), beschränken die meisten Krankenhäuser auf Eiswürfel oder kleine Schlucke Wasser, weil bei einer Vollnarkose Mageninhalt in die Lunge gelangen könnte. Fragen Sie nach den Regeln Ihres Krankenhauses. Für Ihre Begleitperson: Snacks mitbringen. Eine Geburt kann ein langer Tag sein."
+      ]
+    },
+    "faq-vbac": {
+      "title": "Brauche ich nach einem Kaiserschnitt immer wieder einen?",
+      "sub": "",
+      "t": [
+        "Nicht unbedingt. Eine vaginale Geburt nach Kaiserschnitt (VBAC) ist für viele Frauen mit einem früheren tiefen Querschnitt an der Gebärmutter eine sichere und passende Möglichkeit. Sie gelingt in 60–80% der Fälle. Ob sie für Sie infrage kommt, hängt vom Grund für den früheren Kaiserschnitt ab, von der jetzigen Schwangerschaft, der Art des Schnitts an der Gebärmutter und davon, ob Ihr Krankenhaus einen Notfall bewältigen kann. Sprechen Sie es früh in der Vorsorge an, wenn Sie Interesse haben."
+      ]
+    },
+    "faq-bf-bc": {
+      "title": "Kann ich beim Stillen schwanger werden?",
+      "sub": "",
+      "t": [
+        "Ja. Ausschließliches Stillen unterdrückt den Eisprung zwar etwas, ist aber",
+        "keine zuverlässige Verhütung",
+        ". Sie können einen Eisprung haben und schwanger werden, bevor Ihre Periode zurückkommt. Die „Laktations-Amenorrhoe-Methode“ verlangt sehr genaue Bedingungen (ausschließlich stillen, tagsüber alle 4 Stunden, nachts alle 6 Stunden, kein Zufüttern, Periode noch nicht zurück) und schützt selbst dann nur zu etwa 98%. Sprechen Sie vor der Entlassung aus dem Krankenhaus über Verhütung."
+      ]
+    },
+    "faq-stress-milk": {
+      "title": "Lässt Stress die Muttermilch versiegen?",
+      "sub": "",
+      "t": [
+        "Akuter Stress kann den Milchspendereflex (das Fließen der Milch) vorübergehend stören. Aber ein einzelnes stressiges Ereignis lässt die Milch nicht versiegen. Die Milchmenge richtet sich nach der Nachfrage. Je öfter und besser Ihr Baby trinkt oder Sie abpumpen, desto mehr Milch bildet Ihr Körper. Wenn Stress oder Trubel um Sie herum verhindert, dass Ihr Baby gut trinkt, kann die Nachfrage sinken und damit die Milchmenge. Was beim Milchspendereflex hilft: Hautkontakt, Wärme, Entspannungsübungen und beim Abpumpen ein Foto Ihres Babys anschauen. Sprechen Sie mit Ihrem Arzt über Wege, Stress ohne Medikamente zu senken."
+      ]
+    },
+    "faq-bonding": {
+      "title": "Sollte ich sofort eine Bindung zu meinem Baby spüren?",
+      "sub": "",
+      "t": [
+        "Nein. Bindung ist ein Prozess, kein einzelner Moment. Viele Mütter spüren gleich bei der Geburt tiefe Liebe; andere brauchen Tage, Wochen oder länger, bis dieses Gefühl wächst. Beides ist völlig normal. Erschöpfung, eine schwere Geburt, ein unerwarteter Verlauf und eine Wochenbettdepression können die frühe Bindung beeinflussen. Wenn Sie sich Ihrem Baby gegenüber länger als ein paar Wochen fern oder wie betäubt fühlen, sagen Sie es Ihrem Arzt. Es kann ein Zeichen einer Wochenbettdepression sein, und die ist behandelbar."
+      ]
+    },
+    "faq-ibuprofen-bf": {
+      "title": "Darf ich beim Stillen Ibuprofen nehmen?",
+      "sub": "",
+      "t": [
+        "Ja. Ibuprofen ist eines der sichersten rezeptfreien Medikamente in der Stillzeit. Sehr wenig geht in die Muttermilch über. Paracetamol (Tylenol) ist ebenfalls sicher. Das sind die bevorzugten Schmerzmittel nach der Geburt und in der Stillzeit. Hoch dosiertes Aspirin wird nicht empfohlen (niedrig dosiertes, verschriebenes Aspirin ist etwas anderes. Sprechen Sie mit Ihrem Arzt). Naproxen (Aleve) geht stärker in die Milch über und wird meist nicht bevorzugt. Klären Sie Ihre persönliche Situation immer mit Ihrem Behandlungsteam."
+      ]
+    },
+    "faq-jaundice": {
+      "title": "Mein Baby sieht gelb aus. Wann ist es ernst?",
+      "sub": "",
+      "t": [
+        "Neugeborenengelbsucht (Hyperbilirubinämie) betrifft etwa 60% der reif geborenen Babys in der ersten Woche. Sie entsteht durch den normalen Abbau der roten Blutkörperchen aus der Zeit im Mutterleib. Die Leber holt nur noch auf. Meist ist sie leicht und verschwindet ohne Behandlung. Bedenklich wird es, wenn das Bilirubin sehr hoch ist (bei extremen Werten droht ein Hirnschaden), wenn das Baby sehr schläfrig ist, nicht trinkt oder die Gelbsucht in den ersten 24 Stunden auftritt. Ihr Krankenhaus prüft das Bilirubin vor der Entlassung und bei der Untersuchung des Babys nach 2–5 Tagen. Eine Lichttherapie (Blaulicht) wirkt sehr gut, falls nötig."
+      ]
+    },
+    "faq-newborn-procedures": {
+      "title": "Müssen alle Maßnahmen beim Neugeborenen sein?",
+      "sub": "",
+      "t": [
+        "Die üblichen Maßnahmen beim Neugeborenen sind:",
+        "Vitamin-K-Spritze",
+        "(senkt das Risiko einer tödlichen Hirnblutung),",
+        "Erythromycin-Augensalbe",
+        "(verringert Augeninfektionen, auch durch Gonorrhö),",
+        "erste Dosis der Hepatitis-B-Impfung",
+        "und die",
+        "Blutabnahme für das Neugeborenen-Screening",
+        "(Fersenstich für etwa 30 Erkrankungen, darunter PKU, Schilddrüsenunterfunktion und Sichelzellkrankheit). Die Belege dafür sind nicht alle gleich stark, und es ist vernünftig, einzeln danach zu fragen. Vitamin K und der Fersenstich sind am klarsten begründet: Vitamin K verhindert eine seltene, aber katastrophale Blutung, und der Fersenstich findet Erkrankungen, die sich nur behandeln lassen, wenn sie in den ersten Tagen erkannt werden. Die Hepatitis-B-Dosis ist am wichtigsten, wenn Ihr eigener Hepatitis-B-Status positiv oder unbekannt ist. Die Augensalbe beruht auf schwächeren Belegen, und mehrere Länder geben sie nicht mehr routinemäßig, obwohl viele US-Bundesstaaten sie gesetzlich vorschreiben. In den meisten Bundesstaaten dürfen Sie ablehnen. Fragen Sie Ihr Team, was davon für Ihre Situation gilt."
+      ]
+    },
+    "faq-first-bath": {
+      "title": "Wann braucht mein Baby das erste Bad?",
+      "sub": "",
+      "t": [
+        "WHO und AAP empfehlen heute, das erste Bad mindestens 24 Stunden nach der Geburt zu verschieben (am besten 48 Stunden). Die weiße Schicht (Käseschmiere, Vernix caseosa) wirkt gegen Keime und hält die Haut feucht. Ein späteres Bad hilft auch, die Körpertemperatur zu halten, stützt einen stabilen Blutzucker und hängt mit einem besseren Stillbeginn zusammen. Warten ist heute die beste Praxis, nicht nur Geschmackssache."
+      ]
     }
   },
   "srcHash": {
@@ -284,7 +449,72 @@ window.MYOB_LOCALES.de = {
     "content.signs-of-labor.t.16": "ac6a34b445ceccaa",
     "content.signs-of-labor.t.17": "b007f20008122ab6",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "380945be7751b37c"
+    "content.normal-newborn.t.32": "380945be7751b37c",
+    "content.faq-deli.title": "ce705cdc639700b6",
+    "content.faq-deli.t.0": "208a1054e9463d0e",
+    "content.faq-deli.t.1": "7180ed78d9040f96",
+    "content.faq-deli.t.2": "86ed7bf6b9c01890",
+    "content.faq-coffee.title": "5389638ea8a88dc8",
+    "content.faq-coffee.t.0": "ac1cf8bc0364371a",
+    "content.faq-coffee.t.1": "d49405defc21c3ec",
+    "content.faq-coffee.t.2": "19f22003cc780ded",
+    "content.faq-hair-dye.title": "3cbc4f5501467bbb",
+    "content.faq-hair-dye.t.0": "194b47e06a23e60e",
+    "content.faq-exercise-mc.title": "055753c567df011f",
+    "content.faq-exercise-mc.t.0": "2b2d76b57f4bc45f",
+    "content.faq-sex-pregnancy.title": "8399c3d543c4147f",
+    "content.faq-sex-pregnancy.t.0": "9b3a7841e4c3a343",
+    "content.faq-vaccines.title": "22cf8d87c3c18165",
+    "content.faq-vaccines.t.0": "54aa1c57cf3d489d",
+    "content.faq-vaccines.t.1": "2cc75b12a1fc2494",
+    "content.faq-vaccines.t.2": "1038f5417eda7317",
+    "content.faq-vaccines.t.3": "de4ce992cde7736c",
+    "content.faq-vaccines.t.4": "fc3cba8b30791ee5",
+    "content.faq-vaccines.t.5": "8e2d5dd7b662e6cd",
+    "content.faq-vaccines.t.6": "1fbad66cf49cff52",
+    "content.faq-vaccines.t.7": "bd443dcd8ee958d3",
+    "content.faq-eat-for-two.title": "7109ae5ce8714502",
+    "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
+    "content.faq-hot-tub.title": "2230219d6f10d437",
+    "content.faq-hot-tub.t.0": "b73f80715bdad85f",
+    "content.faq-epidural-csec.title": "85af8aced19ce724",
+    "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
+    "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
+    "content.faq-epidural-csec.t.2": "d9849263c1e6467d",
+    "content.faq-routine-episiotomy.title": "063590cb3bfbb7f9",
+    "content.faq-routine-episiotomy.t.0": "f9f4d22fb4ca4b41",
+    "content.faq-routine-episiotomy.t.1": "8a8e3958d3c9cdb6",
+    "content.faq-routine-episiotomy.t.2": "7d6842265369b750",
+    "content.faq-water-breaking.title": "3024fe7ba7f6b3ed",
+    "content.faq-water-breaking.t.0": "ffd7e16a191f9018",
+    "content.faq-eat-in-labor.title": "5de8ba9361616d39",
+    "content.faq-eat-in-labor.t.0": "23ad9f490ae5def7",
+    "content.faq-vbac.title": "4fb6dce62d75356c",
+    "content.faq-vbac.t.0": "2a66625080510032",
+    "content.faq-bf-bc.title": "0683d2b28ff53b78",
+    "content.faq-bf-bc.t.0": "fd3cd5c648b45a44",
+    "content.faq-bf-bc.t.1": "1ab0f2cdfd636c5f",
+    "content.faq-bf-bc.t.2": "b97f0ac57c1360c3",
+    "content.faq-stress-milk.title": "601e567b1be30855",
+    "content.faq-stress-milk.t.0": "02db447559e1251f",
+    "content.faq-bonding.title": "a87f7534c89adb7e",
+    "content.faq-bonding.t.0": "e686292ec2702bc0",
+    "content.faq-ibuprofen-bf.title": "471f20ca8e18c184",
+    "content.faq-ibuprofen-bf.t.0": "394b672da5bd8c7f",
+    "content.faq-jaundice.title": "b2eb8cb7eb9ba4ed",
+    "content.faq-jaundice.t.0": "529658accf30fbf6",
+    "content.faq-newborn-procedures.title": "3b92e7e6a50686d0",
+    "content.faq-newborn-procedures.t.0": "d72fcb8dc5811617",
+    "content.faq-newborn-procedures.t.1": "503ae631290ccfd3",
+    "content.faq-newborn-procedures.t.2": "555768324f0aff84",
+    "content.faq-newborn-procedures.t.3": "c99e7877ef7ce6e1",
+    "content.faq-newborn-procedures.t.4": "40e5e1dc519cece2",
+    "content.faq-newborn-procedures.t.5": "502e42f21156da6c",
+    "content.faq-newborn-procedures.t.6": "cd0c11353cd68b73",
+    "content.faq-newborn-procedures.t.7": "d06e909e2132ca54",
+    "content.faq-newborn-procedures.t.8": "0f46858bcf9a15d9",
+    "content.faq-first-bath.title": "1ece0a9772ca9db5",
+    "content.faq-first-bath.t.0": "23fa392719b4b945"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -408,6 +638,71 @@ window.MYOB_LOCALES.de = {
     "visits.ppFull.i1": 1,
     "visits.ppFull.i2": 1,
     "visits.ppFull.i3": 1,
-    "tools.contractionTimer": 1
+    "tools.contractionTimer": 1,
+    "content.faq-deli.title": 1,
+    "content.faq-deli.t.0": 1,
+    "content.faq-deli.t.1": 1,
+    "content.faq-deli.t.2": 1,
+    "content.faq-coffee.title": 1,
+    "content.faq-coffee.t.0": 1,
+    "content.faq-coffee.t.1": 1,
+    "content.faq-coffee.t.2": 1,
+    "content.faq-hair-dye.title": 1,
+    "content.faq-hair-dye.t.0": 1,
+    "content.faq-exercise-mc.title": 1,
+    "content.faq-exercise-mc.t.0": 1,
+    "content.faq-sex-pregnancy.title": 1,
+    "content.faq-sex-pregnancy.t.0": 1,
+    "content.faq-vaccines.title": 1,
+    "content.faq-vaccines.t.0": 1,
+    "content.faq-vaccines.t.1": 1,
+    "content.faq-vaccines.t.2": 1,
+    "content.faq-vaccines.t.3": 1,
+    "content.faq-vaccines.t.4": 1,
+    "content.faq-vaccines.t.5": 1,
+    "content.faq-vaccines.t.6": 1,
+    "content.faq-vaccines.t.7": 1,
+    "content.faq-eat-for-two.title": 1,
+    "content.faq-eat-for-two.t.0": 1,
+    "content.faq-hot-tub.title": 1,
+    "content.faq-hot-tub.t.0": 1,
+    "content.faq-epidural-csec.title": 1,
+    "content.faq-epidural-csec.t.0": 1,
+    "content.faq-epidural-csec.t.1": 1,
+    "content.faq-epidural-csec.t.2": 1,
+    "content.faq-routine-episiotomy.title": 1,
+    "content.faq-routine-episiotomy.t.0": 1,
+    "content.faq-routine-episiotomy.t.1": 1,
+    "content.faq-routine-episiotomy.t.2": 1,
+    "content.faq-water-breaking.title": 1,
+    "content.faq-water-breaking.t.0": 1,
+    "content.faq-eat-in-labor.title": 1,
+    "content.faq-eat-in-labor.t.0": 1,
+    "content.faq-vbac.title": 1,
+    "content.faq-vbac.t.0": 1,
+    "content.faq-bf-bc.title": 1,
+    "content.faq-bf-bc.t.0": 1,
+    "content.faq-bf-bc.t.1": 1,
+    "content.faq-bf-bc.t.2": 1,
+    "content.faq-stress-milk.title": 1,
+    "content.faq-stress-milk.t.0": 1,
+    "content.faq-bonding.title": 1,
+    "content.faq-bonding.t.0": 1,
+    "content.faq-ibuprofen-bf.title": 1,
+    "content.faq-ibuprofen-bf.t.0": 1,
+    "content.faq-jaundice.title": 1,
+    "content.faq-jaundice.t.0": 1,
+    "content.faq-newborn-procedures.title": 1,
+    "content.faq-newborn-procedures.t.0": 1,
+    "content.faq-newborn-procedures.t.1": 1,
+    "content.faq-newborn-procedures.t.2": 1,
+    "content.faq-newborn-procedures.t.3": 1,
+    "content.faq-newborn-procedures.t.4": 1,
+    "content.faq-newborn-procedures.t.5": 1,
+    "content.faq-newborn-procedures.t.6": 1,
+    "content.faq-newborn-procedures.t.7": 1,
+    "content.faq-newborn-procedures.t.8": 1,
+    "content.faq-first-bath.title": 1,
+    "content.faq-first-bath.t.0": 1
   }
 };

@@ -273,6 +273,171 @@ window.MYOB_LOCALES.pl = {
         "Od razu dzwoń do lekarza dziecka, gdy",
         "Gorączka ≥ 100.4°F mierzona w odbycie (groźna u noworodka. Zawsze mierz w odbycie) · Odmawia jedzenia · Silne zażółcenie · Postękiwanie przy każdym oddechu · Bardzo blada skóra · Płacz nie do uspokojenia · Mniej niż 6 mokrych pieluch dziennie po 5. dniu · Sztywny kark. Sine lub szare usta albo twarz: dzwoń pod 911."
       ]
+    },
+    "faq-deli": {
+      "title": "Czy mogę jeść wędliny i miękkie sery?",
+      "sub": "",
+      "t": [
+        "Główne ryzyko to",
+        "listerioza",
+        ", zakażenie bakteryjne, które zdarza się rzadko, ale w ciąży może być groźne (może przejść przez łożysko). FDA zaleca unikać serów z niepasteryzowanego mleka i wędlin, chyba że są podgrzane do parowania (165°F). Większość pasteryzowanych serów miękkich (np. pasteryzowany brie, feta z opakowania) jest bezpieczna. Wyjątkiem są queso fresco, queso blanco, panela i podobne sery świeże: nawet pasteryzowane wywoływały ogniska listeriozy, więc jedz je tylko ugotowane do parowania. Ogólne ryzyko od jedzenia wędlin od czasu do czasu jest bardzo małe. W razie wątpliwości podgrzej."
+      ]
+    },
+    "faq-coffee": {
+      "title": "Czy mogę pić kofeinę?",
+      "sub": "",
+      "t": [
+        "Tak. ACOG zaleca ograniczenie kofeiny do",
+        "mniej niż 200 mg dziennie",
+        "(mniej więcej jeden kubek 12-oz kawy z ekspresu przelewowego). Przy takiej ilości nie wykazano szkody dla ciąży. Herbata, napoje gazowane i czekolada też zawierają kofeinę. Licz wszystko razem. Ograniczenie jest rozsądne; całkowita rezygnacja to osobisty wybór, a nie wymóg medyczny."
+      ]
+    },
+    "faq-hair-dye": {
+      "title": "Czy mogę farbować włosy w ciąży?",
+      "sub": "",
+      "t": [
+        "Tak, ale zastanów się, dlaczego chcesz to zrobić. Farba do włosów wchłania się przez skórę głowy w bardzo małych ilościach. Żadne opublikowane badania nie wykazały szkody dla płodu przy ilościach używanych przy zwykłym farbowaniu u fryzjera czy w domu. Pasemka (w folii) mają jeszcze mniejszy kontakt ze skórą głowy. Jeśli się martwisz, poczekaj do drugiego trymestru, gdy główne narządy są już ukształtowane, albo po prostu tego nie rób."
+      ]
+    },
+    "faq-exercise-mc": {
+      "title": "Czy ćwiczenia powodują poronienie?",
+      "sub": "",
+      "t": [
+        "Nie. Umiarkowany wysiłek nie powoduje poronienia w zdrowej ciąży. Pewna ilość ruchu chroni, a nie szkodzi. Zobacz zalecenia dotyczące ćwiczeń w części o ciąży. Jeśli lekarz powiedział Ci, żeby nie ćwiczyć, zapytaj dlaczego i stosuj się do tego."
+      ]
+    },
+    "faq-sex-pregnancy": {
+      "title": "Czy seks w ciąży jest bezpieczny?",
+      "sub": "",
+      "t": [
+        "Tak, w prawidłowej ciąży bez powikłań. Seks nie powoduje poronienia ani przedwczesnego porodu i nie szkodzi dziecku (chroni je płyn owodniowy). Lekarz zaleci oszczędzanie się (bez stosunków) tylko w określonych sytuacjach: łożysko przodujące, ryzyko przedwczesnego porodu, niewyjaśnione krwawienie z pochwy, niektóre problemy z szyjką macicy albo po odejściu wód. Jeśli nie masz pewności, zapytaj na następnej wizycie."
+      ]
+    },
+    "faq-vaccines": {
+      "title": "Czy szczepienia w ciąży są bezpieczne?",
+      "sub": "",
+      "t": [
+        "Dwa są zalecane w każdej ciąży i wydają się bezpieczne: przypominająca dawka Tdap i szczepionka na grypę. Szczepionki żywe muszą poczekać do po porodzie.",
+        "Tdap, na krztusiec",
+        "Podawana między 27. a 36. tygodniem, w każdej ciąży, nawet jeśli dostałaś ją w poprzedniej. Nie chodzi głównie o ochronę Ciebie. Twój organizm wytwarza przeciwciała i przekazuje je przez łożysko, więc dziecko rodzi się już z ochroną przed krztuścem. To ważne, bo krztusiec jest najgroźniejszy w pierwszych miesiącach życia, zanim dziecko może zostać zaszczepione. Każdy, kto będzie często trzymał dziecko na rękach, też powinien mieć aktualne szczepienie.",
+        "Szczepionka na grypę",
+        "Zalecana w każdym trymestrze w sezonie grypowym. Ciąża zmienia pracę płuc i układu odpornościowego, przez co grypa znacznie częściej kończy się szpitalem. Przeciwciała przechodzą też do dziecka i chronią je przez pierwsze miesiące. W ciąży stosuje się szczepionkę w zastrzyku: szczepionka do nosa jest żywa.",
+        "Te, które czekają do po porodzie",
+        "Szczepionek żywych, czyli MMR (odra, świnka i różyczka) i na ospę wietrzną, nie podaje się w ciąży. Jeśli pierwsze badania krwi pokażą, że nie masz odporności na różyczkę lub ospę wietrzną, zwykle szczepi się przed wyjściem ze szpitala, co chroni też przyszłą ciążę. Obie są bezpieczne podczas karmienia piersią.",
+        "Jeśli brakuje Ci innego szczepienia, wyjeżdżasz albo w Twojej okolicy jest ognisko choroby, powiedz o tym lekarzowi."
+      ]
+    },
+    "faq-eat-for-two": {
+      "title": "Czy muszę „jeść za dwoje”?",
+      "sub": "",
+      "t": [
+        "Nie. „Jedzenie za dwoje” to mit. W pierwszym trymestrze nie potrzebujesz dodatkowych kalorii. W drugim około 340 więcej dziennie, w trzecim około 450. To jedna lub dwie przekąski, a nie drugi talerz. Jakość odżywiania liczy się dużo bardziej niż ilość. Zadbaj o białko, żelazo, foliany, wapń i kwasy omega-3. Witamina ciążowa uzupełnia braki, ale nie zastąpi zbilansowanej diety."
+      ]
+    },
+    "faq-hot-tub": {
+      "title": "Czy mogę brać kąpiel albo korzystać z jacuzzi?",
+      "sub": "",
+      "t": [
+        "Ciepłe kąpiele są w porządku przez całą ciążę. Jacuzzi, sauny i łaźnie parowe, które podnoszą temperaturę wewnątrz ciała powyżej 102°F (39°C), nie są zalecane, zwłaszcza w pierwszym trymestrze, gdy podwyższona temperatura wiąże się z wadami cewy nerwowej. Jeśli korzystasz z jacuzzi, ustaw przyjemną temperaturę (nie gorącą), ogranicz czas do 10 minut i unikaj go w pierwszym trymestrze. Ciepła kąpiel w zwykłej domowej temperaturze wody (98–100°F) jest bezpieczna."
+      ]
+    },
+    "faq-epidural-csec": {
+      "title": "Czy znieczulenie zewnątrzoponowe zwiększa ryzyko cesarskiego cięcia?",
+      "sub": "",
+      "t": [
+        "Nie. To jedno z najlepiej zbadanych pytań w położnictwie. Wiele dużych randomizowanych badań kontrolowanych i metaanaliz potwierdza, że znieczulenie zewnątrzoponowe",
+        "nie",
+        "zwiększa liczby cesarskich cięć. Znieczulenie trochę wydłuża etap parcia i zwiększa szansę porodu z użyciem próżnociągu lub kleszczy, co warto zestawić z ulgą w bólu. Możesz o nie poprosić w każdym momencie aktywnego porodu. Praktycznym ograniczeniem nie jest liczba centymetrów, tylko tempo porodu, bo przy bardzo szybkim porodzie może zabraknąć czasu."
+      ]
+    },
+    "faq-routine-episiotomy": {
+      "title": "Czy potrzebuję nacięcia krocza, żeby nie pękło?",
+      "sub": "",
+      "t": [
+        "Nie. ACOG nie zaleca już rutynowego nacięcia krocza (chirurgicznego cięcia przy wejściu do pochwy). Badania stale pokazują, że",
+        "naturalne pęknięcia zwykle lepiej się goją",
+        "i dają mniej powikłań (w tym bólu i długotrwałych problemów z dnem miednicy) niż rutynowe nacięcia. Większość kobiet rodzących drogami natury ma jakieś pęknięcie, ale wiele z nich jest drobnych (pierwszego stopnia). Nacięcie nadal jest właściwe, gdy jest konkretny powód, np. gdy dziecko musi szybko się urodzić z powodu zagrożenia."
+      ]
+    },
+    "faq-water-breaking": {
+      "title": "Czy jeśli odejdą mi wody, muszę mieć cesarskie cięcie?",
+      "sub": "",
+      "t": [
+        "Nie. Jeśli wody odejdą w terminie, u większości kobiet poród zaczyna się sam w ciągu mniej więcej doby. Jeśli się nie zacznie, zwykle proponuje się indukcję, bo ryzyko zakażenia rośnie, im dłużej błony są pęknięte. To rosnące ryzyko, które razem rozważacie, a nie przegapiony termin. Jeśli masz dodatni wynik GBS, od razu zaczyna się antybiotyki. Cesarskie cięcie jest potrzebne tylko z innego powodu, a samo odejście wód takim powodem nie jest."
+      ]
+    },
+    "faq-eat-in-labor": {
+      "title": "Czy mogę jeść lub pić w czasie porodu?",
+      "sub": "",
+      "t": [
+        "Dla kobiet z niskim ryzykiem we wczesnym porodzie obecne zalecenia ACOG dopuszczają lekkie jedzenie i klarowne napoje. Gdy masz znieczulenie zewnątrzoponowe, dostajesz Pitocin albo masz większe ryzyko znieczulenia ogólnego (możliwe cesarskie cięcie), większość szpitali ogranicza to do kostek lodu lub łyków wody, z powodu ryzyka zachłyśnięcia, gdyby znieczulenie ogólne okazało się konieczne. Zapytaj o zasady w Twoim szpitalu. Dla osoby towarzyszącej: weź przekąski. Poród może trwać cały dzień."
+      ]
+    },
+    "faq-vbac": {
+      "title": "Czy po cesarskim cięciu zawsze muszę mieć kolejne?",
+      "sub": "",
+      "t": [
+        "Niekoniecznie. Poród drogami natury po cesarskim cięciu (VBAC) to bezpieczna i dobra możliwość dla wielu kobiet z jednym wcześniejszym poprzecznym cięciem w dolnej części macicy. Udaje się w 60–80% przypadków. Znaczenie mają powód wcześniejszego cesarskiego cięcia, obecna ciąża, rodzaj cięcia macicy i to, czy szpital poradzi sobie w nagłej sytuacji. Jeśli Cię to interesuje, poruszaj ten temat wcześnie w opiece przedporodowej."
+      ]
+    },
+    "faq-bf-bc": {
+      "title": "Czy mogę zajść w ciążę, karmiąc piersią?",
+      "sub": "",
+      "t": [
+        "Tak. Karmienie wyłącznie piersią do pewnego stopnia hamuje owulację, ale",
+        "nie jest pewną antykoncepcją",
+        ". Możesz mieć owulację i zajść w ciążę, zanim wróci miesiączka. „Metoda laktacyjnego braku miesiączki” wymaga bardzo konkretnych warunków (karmienie wyłącznie piersią co 4 godziny w dzień i co 6 godzin w nocy, bez dokarmiania, miesiączka jeszcze nie wróciła) i nawet wtedy jest skuteczna tylko w około 98%. Porozmawiaj o antykoncepcji przed wyjściem ze szpitala."
+      ]
+    },
+    "faq-stress-milk": {
+      "title": "Czy stres sprawia, że znika mleko?",
+      "sub": "",
+      "t": [
+        "Silny stres może na chwilę zaburzyć odruch wypływu mleka. Ale jedno stresujące wydarzenie nie sprawi, że mleko zniknie. Ilość mleka zależy od zapotrzebowania. Im częściej i skuteczniej dziecko ssie lub Ty odciągasz, tym więcej mleka wytwarza organizm. Jeśli stres lub zamieszanie wokół przeszkadza dziecku dobrze jeść, zapotrzebowanie może spaść i mleka może być mniej. Co pomaga w wypływie mleka: kontakt skóra do skóry, ciepło, techniki relaksacyjne i patrzenie na zdjęcie dziecka podczas odciągania. Porozmawiaj z lekarzem o sposobach zmniejszania stresu bez leków."
+      ]
+    },
+    "faq-bonding": {
+      "title": "Czy od razu powinnam czuć więź z dzieckiem?",
+      "sub": "",
+      "t": [
+        "Nie. Więź to proces, a nie jedna chwila. Wiele matek czuje głęboką miłość od razu po porodzie; inne potrzebują dni, tygodni albo dłużej, żeby to uczucie się rozwinęło. Jedno i drugie jest zupełnie normalne. Wyczerpanie, trudny poród, nieoczekiwany przebieg i depresja poporodowa mogą wpływać na wczesną więź. Jeśli przez więcej niż kilka tygodni czujesz się odcięta od dziecka albo odrętwiała, powiedz o tym lekarzowi. Może to być objaw depresji poporodowej, którą da się leczyć."
+      ]
+    },
+    "faq-ibuprofen-bf": {
+      "title": "Czy mogę brać ibuprofen, karmiąc piersią?",
+      "sub": "",
+      "t": [
+        "Tak. Ibuprofen to jeden z najbezpieczniejszych leków bez recepty podczas karmienia piersią. Bardzo mało przechodzi do mleka. Paracetamol (Tylenol) też jest bezpieczny. To preferowane leki przeciwbólowe po porodzie i podczas karmienia. Aspiryna w dużych dawkach nie jest zalecana (przepisana aspiryna w małej dawce to inna sprawa. Porozmawiaj z lekarzem). Naproksen (Aleve) przechodzi do mleka w większej ilości i zwykle nie jest preferowany. Zawsze potwierdź swoją sytuację z zespołem opieki."
+      ]
+    },
+    "faq-jaundice": {
+      "title": "Moje dziecko wygląda na żółte. Kiedy to poważne?",
+      "sub": "",
+      "t": [
+        "Żółtaczka noworodków (hiperbilirubinemia) dotyczy około 60% dzieci urodzonych o czasie w pierwszym tygodniu. Wynika z normalnego rozpadu czerwonych krwinek z życia płodowego. Wątroba po prostu nadrabia. Najczęściej jest łagodna i mija bez leczenia. Niepokój budzi, gdy bilirubina jest bardzo wysoka (przy skrajnych poziomach ryzyko uszkodzenia mózgu), gdy dziecko jest bardzo senne, nie je albo żółtaczka pojawia się w pierwszych 24 godzinach. Szpital sprawdzi bilirubinę przed wypisem i na wizycie dziecka w 2–5 dniu. Jeśli trzeba, fototerapia (lampy) działa bardzo dobrze."
+      ]
+    },
+    "faq-newborn-procedures": {
+      "title": "Czy wszystkie zabiegi u noworodka muszą się odbyć?",
+      "sub": "",
+      "t": [
+        "Standardowe zabiegi u noworodka to:",
+        "zastrzyk z witaminy K",
+        "(zmniejsza ryzyko śmiertelnego krwawienia do mózgu),",
+        "maść do oczu z erytromycyną",
+        "(zmniejsza zakażenia oczu, w tym rzeżączką),",
+        "pierwsza dawka szczepionki na WZW typu B",
+        "oraz",
+        "pobranie krwi do badań przesiewowych noworodka",
+        "(nakłucie pięty w kierunku około 30 chorób, w tym PKU, niedoczynności tarczycy i anemii sierpowatej). Dowody za nimi nie są równie mocne i rozsądnie jest pytać o każdy osobno. Witamina K i nakłucie pięty mają najmocniejsze uzasadnienie: witamina K zapobiega rzadkiemu, ale katastrofalnemu krwawieniu, a nakłucie pięty wykrywa choroby, które można leczyć tylko wtedy, gdy zostaną wykryte w pierwszych dniach. Dawka na WZW typu B jest najważniejsza, gdy Twój własny wynik jest dodatni lub nieznany. Maść do oczu ma słabsze dowody i kilka krajów przestało ją rutynowo podawać, choć wiele stanów USA wymaga jej prawnie. W większości stanów możesz legalnie odmówić. Zapytaj zespół, co z tego dotyczy Twojej sytuacji."
+      ]
+    },
+    "faq-first-bath": {
+      "title": "Kiedy dziecko potrzebuje pierwszej kąpieli?",
+      "sub": "",
+      "t": [
+        "WHO i AAP zalecają teraz odłożenie pierwszej kąpieli o co najmniej 24 godziny po porodzie (najlepiej 48 godzin). Biała maź (maź płodowa, vernix caseosa) działa przeciwdrobnoustrojowo i nawilża skórę. Późniejsza kąpiel pomaga też utrzymać temperaturę ciała, wspiera stabilny poziom cukru we krwi i wiąże się z lepszym początkiem karmienia piersią. Czekanie to obecnie najlepsza praktyka, a nie tylko kwestia upodobań."
+      ]
     }
   },
   "srcHash": {
@@ -288,7 +453,72 @@ window.MYOB_LOCALES.pl = {
     "content.signs-of-labor.t.16": "ac6a34b445ceccaa",
     "content.signs-of-labor.t.17": "b007f20008122ab6",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "380945be7751b37c"
+    "content.normal-newborn.t.32": "380945be7751b37c",
+    "content.faq-deli.title": "ce705cdc639700b6",
+    "content.faq-deli.t.0": "208a1054e9463d0e",
+    "content.faq-deli.t.1": "7180ed78d9040f96",
+    "content.faq-deli.t.2": "86ed7bf6b9c01890",
+    "content.faq-coffee.title": "5389638ea8a88dc8",
+    "content.faq-coffee.t.0": "ac1cf8bc0364371a",
+    "content.faq-coffee.t.1": "d49405defc21c3ec",
+    "content.faq-coffee.t.2": "19f22003cc780ded",
+    "content.faq-hair-dye.title": "3cbc4f5501467bbb",
+    "content.faq-hair-dye.t.0": "194b47e06a23e60e",
+    "content.faq-exercise-mc.title": "055753c567df011f",
+    "content.faq-exercise-mc.t.0": "2b2d76b57f4bc45f",
+    "content.faq-sex-pregnancy.title": "8399c3d543c4147f",
+    "content.faq-sex-pregnancy.t.0": "9b3a7841e4c3a343",
+    "content.faq-vaccines.title": "22cf8d87c3c18165",
+    "content.faq-vaccines.t.0": "54aa1c57cf3d489d",
+    "content.faq-vaccines.t.1": "2cc75b12a1fc2494",
+    "content.faq-vaccines.t.2": "1038f5417eda7317",
+    "content.faq-vaccines.t.3": "de4ce992cde7736c",
+    "content.faq-vaccines.t.4": "fc3cba8b30791ee5",
+    "content.faq-vaccines.t.5": "8e2d5dd7b662e6cd",
+    "content.faq-vaccines.t.6": "1fbad66cf49cff52",
+    "content.faq-vaccines.t.7": "bd443dcd8ee958d3",
+    "content.faq-eat-for-two.title": "7109ae5ce8714502",
+    "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
+    "content.faq-hot-tub.title": "2230219d6f10d437",
+    "content.faq-hot-tub.t.0": "b73f80715bdad85f",
+    "content.faq-epidural-csec.title": "85af8aced19ce724",
+    "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
+    "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
+    "content.faq-epidural-csec.t.2": "d9849263c1e6467d",
+    "content.faq-routine-episiotomy.title": "063590cb3bfbb7f9",
+    "content.faq-routine-episiotomy.t.0": "f9f4d22fb4ca4b41",
+    "content.faq-routine-episiotomy.t.1": "8a8e3958d3c9cdb6",
+    "content.faq-routine-episiotomy.t.2": "7d6842265369b750",
+    "content.faq-water-breaking.title": "3024fe7ba7f6b3ed",
+    "content.faq-water-breaking.t.0": "ffd7e16a191f9018",
+    "content.faq-eat-in-labor.title": "5de8ba9361616d39",
+    "content.faq-eat-in-labor.t.0": "23ad9f490ae5def7",
+    "content.faq-vbac.title": "4fb6dce62d75356c",
+    "content.faq-vbac.t.0": "2a66625080510032",
+    "content.faq-bf-bc.title": "0683d2b28ff53b78",
+    "content.faq-bf-bc.t.0": "fd3cd5c648b45a44",
+    "content.faq-bf-bc.t.1": "1ab0f2cdfd636c5f",
+    "content.faq-bf-bc.t.2": "b97f0ac57c1360c3",
+    "content.faq-stress-milk.title": "601e567b1be30855",
+    "content.faq-stress-milk.t.0": "02db447559e1251f",
+    "content.faq-bonding.title": "a87f7534c89adb7e",
+    "content.faq-bonding.t.0": "e686292ec2702bc0",
+    "content.faq-ibuprofen-bf.title": "471f20ca8e18c184",
+    "content.faq-ibuprofen-bf.t.0": "394b672da5bd8c7f",
+    "content.faq-jaundice.title": "b2eb8cb7eb9ba4ed",
+    "content.faq-jaundice.t.0": "529658accf30fbf6",
+    "content.faq-newborn-procedures.title": "3b92e7e6a50686d0",
+    "content.faq-newborn-procedures.t.0": "d72fcb8dc5811617",
+    "content.faq-newborn-procedures.t.1": "503ae631290ccfd3",
+    "content.faq-newborn-procedures.t.2": "555768324f0aff84",
+    "content.faq-newborn-procedures.t.3": "c99e7877ef7ce6e1",
+    "content.faq-newborn-procedures.t.4": "40e5e1dc519cece2",
+    "content.faq-newborn-procedures.t.5": "502e42f21156da6c",
+    "content.faq-newborn-procedures.t.6": "cd0c11353cd68b73",
+    "content.faq-newborn-procedures.t.7": "d06e909e2132ca54",
+    "content.faq-newborn-procedures.t.8": "0f46858bcf9a15d9",
+    "content.faq-first-bath.title": "1ece0a9772ca9db5",
+    "content.faq-first-bath.t.0": "23fa392719b4b945"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -412,6 +642,71 @@ window.MYOB_LOCALES.pl = {
     "visits.ppFull.i1": 1,
     "visits.ppFull.i2": 1,
     "visits.ppFull.i3": 1,
-    "tools.contractionTimer": 1
+    "tools.contractionTimer": 1,
+    "content.faq-deli.title": 1,
+    "content.faq-deli.t.0": 1,
+    "content.faq-deli.t.1": 1,
+    "content.faq-deli.t.2": 1,
+    "content.faq-coffee.title": 1,
+    "content.faq-coffee.t.0": 1,
+    "content.faq-coffee.t.1": 1,
+    "content.faq-coffee.t.2": 1,
+    "content.faq-hair-dye.title": 1,
+    "content.faq-hair-dye.t.0": 1,
+    "content.faq-exercise-mc.title": 1,
+    "content.faq-exercise-mc.t.0": 1,
+    "content.faq-sex-pregnancy.title": 1,
+    "content.faq-sex-pregnancy.t.0": 1,
+    "content.faq-vaccines.title": 1,
+    "content.faq-vaccines.t.0": 1,
+    "content.faq-vaccines.t.1": 1,
+    "content.faq-vaccines.t.2": 1,
+    "content.faq-vaccines.t.3": 1,
+    "content.faq-vaccines.t.4": 1,
+    "content.faq-vaccines.t.5": 1,
+    "content.faq-vaccines.t.6": 1,
+    "content.faq-vaccines.t.7": 1,
+    "content.faq-eat-for-two.title": 1,
+    "content.faq-eat-for-two.t.0": 1,
+    "content.faq-hot-tub.title": 1,
+    "content.faq-hot-tub.t.0": 1,
+    "content.faq-epidural-csec.title": 1,
+    "content.faq-epidural-csec.t.0": 1,
+    "content.faq-epidural-csec.t.1": 1,
+    "content.faq-epidural-csec.t.2": 1,
+    "content.faq-routine-episiotomy.title": 1,
+    "content.faq-routine-episiotomy.t.0": 1,
+    "content.faq-routine-episiotomy.t.1": 1,
+    "content.faq-routine-episiotomy.t.2": 1,
+    "content.faq-water-breaking.title": 1,
+    "content.faq-water-breaking.t.0": 1,
+    "content.faq-eat-in-labor.title": 1,
+    "content.faq-eat-in-labor.t.0": 1,
+    "content.faq-vbac.title": 1,
+    "content.faq-vbac.t.0": 1,
+    "content.faq-bf-bc.title": 1,
+    "content.faq-bf-bc.t.0": 1,
+    "content.faq-bf-bc.t.1": 1,
+    "content.faq-bf-bc.t.2": 1,
+    "content.faq-stress-milk.title": 1,
+    "content.faq-stress-milk.t.0": 1,
+    "content.faq-bonding.title": 1,
+    "content.faq-bonding.t.0": 1,
+    "content.faq-ibuprofen-bf.title": 1,
+    "content.faq-ibuprofen-bf.t.0": 1,
+    "content.faq-jaundice.title": 1,
+    "content.faq-jaundice.t.0": 1,
+    "content.faq-newborn-procedures.title": 1,
+    "content.faq-newborn-procedures.t.0": 1,
+    "content.faq-newborn-procedures.t.1": 1,
+    "content.faq-newborn-procedures.t.2": 1,
+    "content.faq-newborn-procedures.t.3": 1,
+    "content.faq-newborn-procedures.t.4": 1,
+    "content.faq-newborn-procedures.t.5": 1,
+    "content.faq-newborn-procedures.t.6": 1,
+    "content.faq-newborn-procedures.t.7": 1,
+    "content.faq-newborn-procedures.t.8": 1,
+    "content.faq-first-bath.title": 1,
+    "content.faq-first-bath.t.0": 1
   }
 };

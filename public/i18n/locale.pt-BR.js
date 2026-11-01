@@ -274,6 +274,171 @@ window.MYOB_LOCALES["pt-BR"] = {
         "Ligue imediatamente para o médico do bebê se houver",
         "Febre ≥ 100.4°F retal (grave em recém-nascidos. Meça sempre a temperatura retal) · Recusa para mamar · Amarelão forte · Gemido a cada respiração · Pele muito pálida · Choro que não acalma · Menos de 6 fraldas molhadas por dia depois do 5º dia · Pescoço rígido. Lábios ou rosto azulados ou acinzentados: ligue para 911."
       ]
+    },
+    "faq-deli": {
+      "title": "Posso comer frios e queijos moles?",
+      "sub": "",
+      "t": [
+        "O principal risco é a",
+        "Listeria",
+        ", uma infecção por bactéria que é rara, mas pode ser grave na gravidez (pode atravessar a placenta). A FDA recomenda evitar queijos não pasteurizados e frios, a menos que sejam aquecidos até soltar vapor (165°F). A maioria dos queijos moles pasteurizados (como brie pasteurizado, feta de pacote) é segura. A exceção são o queso fresco, o queso blanco, a panela e queijos frescos parecidos: mesmo os pasteurizados já causaram surtos de listeria, então coma-os só cozidos até soltar vapor. O risco geral de comer frios de vez em quando é muito baixo. Na dúvida, aqueça."
+      ]
+    },
+    "faq-coffee": {
+      "title": "Posso tomar alguma cafeína?",
+      "sub": "",
+      "t": [
+        "Sim. O ACOG recomenda limitar a cafeína a",
+        "menos de 200 mg por dia",
+        "(mais ou menos uma xícara de 12-oz de café coado). Nessa quantidade, não há evidência de dano à gravidez. Chá, refrigerante e chocolate também têm cafeína. Some tudo. Diminuir é razoável; cortar totalmente é uma escolha pessoal, não uma exigência médica."
+      ]
+    },
+    "faq-hair-dye": {
+      "title": "Posso pintar o cabelo na gravidez?",
+      "sub": "",
+      "t": [
+        "Sim, mas pense no motivo. A tinta de cabelo é absorvida pelo couro cabeludo em quantidades muito pequenas. Nenhum estudo publicado mostrou dano ao bebê nas quantidades de uma coloração normal no salão ou em casa. Mechas (com papel alumínio) têm ainda menos contato com o couro cabeludo. Se você estiver preocupada, espere até o segundo trimestre, quando os principais órgãos já estão formados, ou simplesmente não pinte."
+      ]
+    },
+    "faq-exercise-mc": {
+      "title": "Exercício causa aborto espontâneo?",
+      "sub": "",
+      "t": [
+        "Não. Exercício moderado não causa aborto espontâneo em gestações saudáveis. Uma certa quantidade de exercício protege, não faz mal. Veja as orientações de exercício na seção Pré-natal. Se o seu médico disse para você não se exercitar, pergunte o motivo e siga a orientação."
+      ]
+    },
+    "faq-sex-pregnancy": {
+      "title": "É seguro fazer sexo na gravidez?",
+      "sub": "",
+      "t": [
+        "Sim, numa gravidez normal sem complicações. Sexo não causa aborto espontâneo nem trabalho de parto precoce e não faz mal ao bebê (que fica protegido pelo líquido amniótico). O seu médico só vai recomendar repouso pélvico (sem relação sexual) em situações específicas: placenta prévia, risco de parto prematuro, sangramento vaginal sem explicação, certos problemas no colo do útero ou depois que a bolsa rompeu. Se não tiver certeza, pergunte na próxima consulta."
+      ]
+    },
+    "faq-vaccines": {
+      "title": "As vacinas são seguras na gravidez?",
+      "sub": "",
+      "t": [
+        "Duas são recomendadas em toda gravidez e parecem ser seguras: o reforço da Tdap e a vacina da gripe. As vacinas de vírus vivo esperam até depois do parto.",
+        "Tdap, contra coqueluche",
+        "Aplicada entre 27 e 36 semanas, em toda gravidez, mesmo que você tenha tomado na última. O objetivo principal não é proteger você. Seu corpo produz anticorpos e passa pela placenta, então o bebê já nasce com proteção contra a coqueluche. Isso importa porque a coqueluche é mais perigosa nos primeiros meses de vida, antes de o bebê ter idade para ser vacinado. Quem for pegar o bebê no colo com frequência também deve estar com a vacina em dia.",
+        "Vacina da gripe",
+        "Recomendada em qualquer trimestre durante a temporada de gripe. A gravidez muda o funcionamento dos pulmões e do sistema imunológico, o que torna bem mais provável que a gripe leve você ao hospital. Os anticorpos também passam para o bebê e o protegem nos primeiros meses. Na gravidez se usa a vacina injetável: o spray nasal é uma vacina de vírus vivo.",
+        "As que esperam até depois do parto",
+        "Vacinas de vírus vivo, ou seja, a tríplice viral MMR (sarampo, caxumba e rubéola) e a de varicela (catapora), não são dadas na gravidez. Se o seu primeiro exame de sangue mostrar que você não tem imunidade contra rubéola ou catapora, o plano habitual é vacinar antes de você sair do hospital, o que também protege uma futura gravidez. As duas são seguras durante a amamentação.",
+        "Se estiver com outra vacina atrasada, for viajar ou houver um surto onde você mora, avise o seu médico."
+      ]
+    },
+    "faq-eat-for-two": {
+      "title": "Preciso \"comer por dois\"?",
+      "sub": "",
+      "t": [
+        "Não. \"Comer por dois\" é um mito. No primeiro trimestre, você não precisa de calorias a mais. No segundo, cerca de 340 a mais por dia; no terceiro, cerca de 450. Isso é um ou dois lanches, não um segundo prato. A qualidade da alimentação importa muito mais que a quantidade. Priorize proteína, ferro, folato, cálcio e ácidos graxos ômega-3. Sua vitamina pré-natal ajuda a cobrir lacunas, mas não deve substituir uma alimentação equilibrada."
+      ]
+    },
+    "faq-hot-tub": {
+      "title": "Posso tomar banho de banheira ou usar ofurô?",
+      "sub": "",
+      "t": [
+        "Banhos mornos de banheira são tranquilos durante toda a gravidez. Ofurôs, saunas e salas de vapor que elevam sua temperatura interna acima de 102°F (39°C) não são recomendados, principalmente no primeiro trimestre, quando a temperatura alta está ligada a defeitos do tubo neural. Se for usar ofurô, mantenha a temperatura agradável (não quente), fique no máximo 10 minutos e evite no primeiro trimestre. Um banho morno na temperatura comum da água de casa (98–100°F) é seguro."
+      ]
+    },
+    "faq-epidural-csec": {
+      "title": "A peridural aumenta o risco de cesárea?",
+      "sub": "",
+      "t": [
+        "Não. Essa é uma das perguntas mais estudadas da obstetrícia. Vários grandes ensaios clínicos randomizados e metanálises confirmam que a peridural",
+        "não",
+        "aumenta as taxas de cesárea. A peridural deixa a fase de empurrar um pouco mais longa e torna mais provável um parto com vácuo ou fórceps, o que vale pesar junto com o alívio da dor. Você pode pedir em qualquer momento do trabalho de parto ativo. O limite prático não é um número de centímetros, mas a velocidade do trabalho de parto, já que um parto muito rápido pode não dar tempo."
+      ]
+    },
+    "faq-routine-episiotomy": {
+      "title": "Preciso de episiotomia para evitar laceração?",
+      "sub": "",
+      "t": [
+        "Não. O ACOG não recomenda mais a episiotomia de rotina (um corte cirúrgico na entrada da vagina). As evidências mostram sempre que",
+        "as lacerações naturais geralmente cicatrizam melhor",
+        "e causam menos complicações (incluindo dor e problemas de assoalho pélvico a longo prazo) do que as episiotomias de rotina. A maioria das mulheres que têm parto normal tem alguma laceração, mas muitas são leves (de primeiro grau). A episiotomia ainda é adequada quando há um motivo específico, como quando o bebê precisa nascer rápido por sofrimento fetal."
+      ]
+    },
+    "faq-water-breaking": {
+      "title": "Se a bolsa estourar, preciso fazer cesárea?",
+      "sub": "",
+      "t": [
+        "Não. Se a bolsa estourar a termo, a maioria das mulheres entra em trabalho de parto sozinha em cerca de um dia. Se o trabalho de parto não começar, geralmente se oferece indução, porque a chance de infecção aumenta quanto mais tempo a bolsa fica rompida. É um risco crescente para pesar juntos, não um prazo que você perdeu. Se você for GBS positivo, os antibióticos começam na hora. A cesárea só é necessária se houver outro motivo para ela, e a bolsa estourar, por si só, não é um."
+      ]
+    },
+    "faq-eat-in-labor": {
+      "title": "Posso comer ou beber durante o trabalho de parto?",
+      "sub": "",
+      "t": [
+        "Para mulheres de baixo risco no início do trabalho de parto, a orientação atual do ACOG permite comida leve e líquidos claros. Depois que você toma peridural, está com Pitocin ou tem risco maior de precisar de anestesia geral (possível cesárea), a maioria dos hospitais limita a lascas de gelo ou goles de água, pelo risco de aspiração se a anestesia geral for necessária. Pergunte a regra do seu hospital. Para o seu acompanhante: leve lanches. O trabalho de parto pode durar o dia todo."
+      ]
+    },
+    "faq-vbac": {
+      "title": "Se já tive uma cesárea, sempre vou precisar de outra?",
+      "sub": "",
+      "t": [
+        "Não necessariamente. O parto normal depois de cesárea (VBAC) é uma opção segura e adequada para muitas mulheres com uma cesárea anterior com corte transversal baixo no útero. A taxa de sucesso vai de 60–80%. O que conta é o motivo da cesárea anterior, a gravidez atual, o tipo de corte no útero e a capacidade do seu hospital de lidar com uma emergência. Se tiver interesse, fale disso logo no início do pré-natal."
+      ]
+    },
+    "faq-bf-bc": {
+      "title": "Posso engravidar amamentando?",
+      "sub": "",
+      "t": [
+        "Sim. A amamentação exclusiva reduz a ovulação até certo ponto, mas",
+        "não é um método anticoncepcional confiável",
+        ". Você pode ovular e engravidar antes de a menstruação voltar. O \"método da amenorreia lactacional\" exige condições bem específicas (amamentação exclusiva a cada 4 horas de dia / 6 horas à noite, sem complemento, menstruação ainda não voltou) e, mesmo nessas condições rígidas, só tem cerca de 98% de eficácia. Converse sobre anticoncepção antes de sair do hospital."
+      ]
+    },
+    "faq-stress-milk": {
+      "title": "O estresse seca o leite?",
+      "sub": "",
+      "t": [
+        "Um estresse forte pode atrapalhar por um tempo o reflexo de ejeção (a descida do leite). Mas um único momento de estresse não faz o leite secar. A produção de leite depende da demanda. Quanto mais vezes e melhor o bebê mama ou você tira leite, mais leite o corpo produz. Se o estresse ou a agitação ao redor impedem o bebê de mamar bem, a demanda pode cair, e a produção também. O que ajuda a descida do leite: contato pele a pele, calor, técnicas de relaxamento e olhar uma foto do bebê enquanto tira leite. Converse com o seu médico sobre formas de reduzir o estresse sem remédios."
+      ]
+    },
+    "faq-bonding": {
+      "title": "Eu deveria sentir um vínculo imediato com o meu bebê?",
+      "sub": "",
+      "t": [
+        "Não. O vínculo é um processo, não um momento só. Muitas mães sentem um amor profundo logo no nascimento; outras precisam de dias, semanas ou mais para esse sentimento crescer. As duas coisas são completamente normais. Cansaço físico, partos difíceis, resultados inesperados e a depressão pós-parto podem afetar o vínculo no começo. Se você se sentir desconectada ou anestesiada em relação ao bebê por mais de duas semanas, conte ao seu médico. Pode ser um sinal de depressão pós-parto, que tem tratamento."
+      ]
+    },
+    "faq-ibuprofen-bf": {
+      "title": "Posso tomar ibuprofeno amamentando?",
+      "sub": "",
+      "t": [
+        "Sim. O ibuprofeno é um dos remédios sem receita mais seguros na amamentação. Muito pouco passa para o leite. O paracetamol (Tylenol) também é seguro. Esses são os analgésicos preferidos no pós-parto e na amamentação. Aspirina em dose alta não é recomendada (aspirina em dose baixa receitada é outra história. Converse com o seu médico). O naproxeno (Aleve) passa mais para o leite e geralmente não é o preferido. Confirme sempre com a sua equipe de saúde para a sua situação."
+      ]
+    },
+    "faq-jaundice": {
+      "title": "Meu bebê está amarelado. Quando é grave?",
+      "sub": "",
+      "t": [
+        "A icterícia do recém-nascido (hiperbilirrubinemia) atinge cerca de 60% dos bebês a termo na primeira semana. Ela vem da quebra normal dos glóbulos vermelhos do feto. O fígado está só se ajustando. A maioria dos casos é leve e passa sem tratamento. Preocupa quando a bilirrubina está muito alta (risco de dano cerebral em níveis extremos), quando o bebê está muito sonolento, não mama, ou quando a icterícia aparece nas primeiras 24 horas. O hospital vai medir a bilirrubina antes da alta e na consulta do bebê com 2–5 dias. O tratamento com fototerapia (banho de luz) funciona muito bem, se for preciso."
+      ]
+    },
+    "faq-newborn-procedures": {
+      "title": "Todos os procedimentos do recém-nascido precisam ser feitos?",
+      "sub": "",
+      "t": [
+        "Os procedimentos padrão do recém-nascido incluem:",
+        "injeção de vitamina K",
+        "(diminui o risco de sangramento fatal no cérebro),",
+        "pomada de eritromicina nos olhos",
+        "(reduz infecções nos olhos, incluindo gonorreia),",
+        "primeira dose da vacina de hepatite B",
+        "e a",
+        "coleta de sangue para a triagem metabólica neonatal",
+        "(teste do pezinho para cerca de 30 doenças, incluindo PKU, hipotireoidismo e anemia falciforme). As evidências por trás deles não têm todas a mesma força, e é razoável perguntar sobre cada um separadamente. A vitamina K e o teste do pezinho têm o motivo mais claro: a vitamina K previne um sangramento raro, mas catastrófico, e o teste do pezinho encontra doenças que só podem ser tratadas se forem descobertas nos primeiros dias. A dose de hepatite B importa mais quando o seu próprio resultado de hepatite B é positivo ou desconhecido. A pomada nos olhos tem evidência mais fraca, e vários países deixaram de dar como rotina, embora muitos estados dos EUA exijam por lei. Na maioria dos estados você pode recusar legalmente. Pergunte à sua equipe quais se aplicam à sua situação."
+      ]
+    },
+    "faq-first-bath": {
+      "title": "Quando o bebê precisa do primeiro banho?",
+      "sub": "",
+      "t": [
+        "A OMS (WHO) e a AAP agora recomendam adiar o primeiro banho por pelo menos 24 horas depois do nascimento (de preferência 48 horas). A camada branca (vérnix caseoso) tem ação antimicrobiana e ajuda a hidratar a pele. Adiar o banho também ajuda a manter a temperatura do corpo, ajuda o açúcar no sangue a ficar estável e está ligado a um começo melhor da amamentação. Esperar é a melhor prática atual, não só uma preferência."
+      ]
     }
   },
   "srcHash": {
@@ -289,7 +454,72 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.signs-of-labor.t.16": "ac6a34b445ceccaa",
     "content.signs-of-labor.t.17": "b007f20008122ab6",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "380945be7751b37c"
+    "content.normal-newborn.t.32": "380945be7751b37c",
+    "content.faq-deli.title": "ce705cdc639700b6",
+    "content.faq-deli.t.0": "208a1054e9463d0e",
+    "content.faq-deli.t.1": "7180ed78d9040f96",
+    "content.faq-deli.t.2": "86ed7bf6b9c01890",
+    "content.faq-coffee.title": "5389638ea8a88dc8",
+    "content.faq-coffee.t.0": "ac1cf8bc0364371a",
+    "content.faq-coffee.t.1": "d49405defc21c3ec",
+    "content.faq-coffee.t.2": "19f22003cc780ded",
+    "content.faq-hair-dye.title": "3cbc4f5501467bbb",
+    "content.faq-hair-dye.t.0": "194b47e06a23e60e",
+    "content.faq-exercise-mc.title": "055753c567df011f",
+    "content.faq-exercise-mc.t.0": "2b2d76b57f4bc45f",
+    "content.faq-sex-pregnancy.title": "8399c3d543c4147f",
+    "content.faq-sex-pregnancy.t.0": "9b3a7841e4c3a343",
+    "content.faq-vaccines.title": "22cf8d87c3c18165",
+    "content.faq-vaccines.t.0": "54aa1c57cf3d489d",
+    "content.faq-vaccines.t.1": "2cc75b12a1fc2494",
+    "content.faq-vaccines.t.2": "1038f5417eda7317",
+    "content.faq-vaccines.t.3": "de4ce992cde7736c",
+    "content.faq-vaccines.t.4": "fc3cba8b30791ee5",
+    "content.faq-vaccines.t.5": "8e2d5dd7b662e6cd",
+    "content.faq-vaccines.t.6": "1fbad66cf49cff52",
+    "content.faq-vaccines.t.7": "bd443dcd8ee958d3",
+    "content.faq-eat-for-two.title": "7109ae5ce8714502",
+    "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
+    "content.faq-hot-tub.title": "2230219d6f10d437",
+    "content.faq-hot-tub.t.0": "b73f80715bdad85f",
+    "content.faq-epidural-csec.title": "85af8aced19ce724",
+    "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
+    "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
+    "content.faq-epidural-csec.t.2": "d9849263c1e6467d",
+    "content.faq-routine-episiotomy.title": "063590cb3bfbb7f9",
+    "content.faq-routine-episiotomy.t.0": "f9f4d22fb4ca4b41",
+    "content.faq-routine-episiotomy.t.1": "8a8e3958d3c9cdb6",
+    "content.faq-routine-episiotomy.t.2": "7d6842265369b750",
+    "content.faq-water-breaking.title": "3024fe7ba7f6b3ed",
+    "content.faq-water-breaking.t.0": "ffd7e16a191f9018",
+    "content.faq-eat-in-labor.title": "5de8ba9361616d39",
+    "content.faq-eat-in-labor.t.0": "23ad9f490ae5def7",
+    "content.faq-vbac.title": "4fb6dce62d75356c",
+    "content.faq-vbac.t.0": "2a66625080510032",
+    "content.faq-bf-bc.title": "0683d2b28ff53b78",
+    "content.faq-bf-bc.t.0": "fd3cd5c648b45a44",
+    "content.faq-bf-bc.t.1": "1ab0f2cdfd636c5f",
+    "content.faq-bf-bc.t.2": "b97f0ac57c1360c3",
+    "content.faq-stress-milk.title": "601e567b1be30855",
+    "content.faq-stress-milk.t.0": "02db447559e1251f",
+    "content.faq-bonding.title": "a87f7534c89adb7e",
+    "content.faq-bonding.t.0": "e686292ec2702bc0",
+    "content.faq-ibuprofen-bf.title": "471f20ca8e18c184",
+    "content.faq-ibuprofen-bf.t.0": "394b672da5bd8c7f",
+    "content.faq-jaundice.title": "b2eb8cb7eb9ba4ed",
+    "content.faq-jaundice.t.0": "529658accf30fbf6",
+    "content.faq-newborn-procedures.title": "3b92e7e6a50686d0",
+    "content.faq-newborn-procedures.t.0": "d72fcb8dc5811617",
+    "content.faq-newborn-procedures.t.1": "503ae631290ccfd3",
+    "content.faq-newborn-procedures.t.2": "555768324f0aff84",
+    "content.faq-newborn-procedures.t.3": "c99e7877ef7ce6e1",
+    "content.faq-newborn-procedures.t.4": "40e5e1dc519cece2",
+    "content.faq-newborn-procedures.t.5": "502e42f21156da6c",
+    "content.faq-newborn-procedures.t.6": "cd0c11353cd68b73",
+    "content.faq-newborn-procedures.t.7": "d06e909e2132ca54",
+    "content.faq-newborn-procedures.t.8": "0f46858bcf9a15d9",
+    "content.faq-first-bath.title": "1ece0a9772ca9db5",
+    "content.faq-first-bath.t.0": "23fa392719b4b945"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -413,6 +643,71 @@ window.MYOB_LOCALES["pt-BR"] = {
     "visits.ppFull.i1": 1,
     "visits.ppFull.i2": 1,
     "visits.ppFull.i3": 1,
-    "tools.contractionTimer": 1
+    "tools.contractionTimer": 1,
+    "content.faq-deli.title": 1,
+    "content.faq-deli.t.0": 1,
+    "content.faq-deli.t.1": 1,
+    "content.faq-deli.t.2": 1,
+    "content.faq-coffee.title": 1,
+    "content.faq-coffee.t.0": 1,
+    "content.faq-coffee.t.1": 1,
+    "content.faq-coffee.t.2": 1,
+    "content.faq-hair-dye.title": 1,
+    "content.faq-hair-dye.t.0": 1,
+    "content.faq-exercise-mc.title": 1,
+    "content.faq-exercise-mc.t.0": 1,
+    "content.faq-sex-pregnancy.title": 1,
+    "content.faq-sex-pregnancy.t.0": 1,
+    "content.faq-vaccines.title": 1,
+    "content.faq-vaccines.t.0": 1,
+    "content.faq-vaccines.t.1": 1,
+    "content.faq-vaccines.t.2": 1,
+    "content.faq-vaccines.t.3": 1,
+    "content.faq-vaccines.t.4": 1,
+    "content.faq-vaccines.t.5": 1,
+    "content.faq-vaccines.t.6": 1,
+    "content.faq-vaccines.t.7": 1,
+    "content.faq-eat-for-two.title": 1,
+    "content.faq-eat-for-two.t.0": 1,
+    "content.faq-hot-tub.title": 1,
+    "content.faq-hot-tub.t.0": 1,
+    "content.faq-epidural-csec.title": 1,
+    "content.faq-epidural-csec.t.0": 1,
+    "content.faq-epidural-csec.t.1": 1,
+    "content.faq-epidural-csec.t.2": 1,
+    "content.faq-routine-episiotomy.title": 1,
+    "content.faq-routine-episiotomy.t.0": 1,
+    "content.faq-routine-episiotomy.t.1": 1,
+    "content.faq-routine-episiotomy.t.2": 1,
+    "content.faq-water-breaking.title": 1,
+    "content.faq-water-breaking.t.0": 1,
+    "content.faq-eat-in-labor.title": 1,
+    "content.faq-eat-in-labor.t.0": 1,
+    "content.faq-vbac.title": 1,
+    "content.faq-vbac.t.0": 1,
+    "content.faq-bf-bc.title": 1,
+    "content.faq-bf-bc.t.0": 1,
+    "content.faq-bf-bc.t.1": 1,
+    "content.faq-bf-bc.t.2": 1,
+    "content.faq-stress-milk.title": 1,
+    "content.faq-stress-milk.t.0": 1,
+    "content.faq-bonding.title": 1,
+    "content.faq-bonding.t.0": 1,
+    "content.faq-ibuprofen-bf.title": 1,
+    "content.faq-ibuprofen-bf.t.0": 1,
+    "content.faq-jaundice.title": 1,
+    "content.faq-jaundice.t.0": 1,
+    "content.faq-newborn-procedures.title": 1,
+    "content.faq-newborn-procedures.t.0": 1,
+    "content.faq-newborn-procedures.t.1": 1,
+    "content.faq-newborn-procedures.t.2": 1,
+    "content.faq-newborn-procedures.t.3": 1,
+    "content.faq-newborn-procedures.t.4": 1,
+    "content.faq-newborn-procedures.t.5": 1,
+    "content.faq-newborn-procedures.t.6": 1,
+    "content.faq-newborn-procedures.t.7": 1,
+    "content.faq-newborn-procedures.t.8": 1,
+    "content.faq-first-bath.title": 1,
+    "content.faq-first-bath.t.0": 1
   }
 };
