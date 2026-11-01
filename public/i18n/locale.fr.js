@@ -921,8 +921,8 @@ window.MYOB_LOCALES.fr = {
         "Réduit les maux de dos, les gonflements, la constipation et la fatigue",
         "Diminue le risque de diabète gestationnel, de pré-éclampsie et de prise de poids excessive",
         "Améliore le sommeil, l'humeur et l'énergie",
-        "Conduit souvent à un travail plus court et à une récupération plus rapide",
-        "Les bébés de mères actives ont souvent des rythmes cardiaques plus sains",
+        "Associé dans certaines études à un travail plus court et une récupération plus facile",
+        "Donne l'endurance que demandent à la fois l'accouchement et porter un nouveau-né",
         "Bons choix à tout moment",
         "La marche",
         ". La plus simple, la plus sûre et accessible à tous les niveaux de forme",
@@ -983,11 +983,11 @@ window.MYOB_LOCALES.fr = {
         "Examen vaginal (SVE) pour vérifier la dilatation et l'effacement du col de l'utérus",
         "Mise en place d'un moniteur fœtal externe. Deux sangles autour de votre ventre, l'une pour suivre les contractions et l'autre le rythme cardiaque du bébé",
         "Vérification de la tension artérielle, de la température, du pouls et de la saturation en oxygène",
-        "Mise en place d'une perfusion intraveineuse (un petit cathéter dans votre bras, procédure courante)",
+        "On vous pose une voie veineuse, un petit cathéter dans le bras. Si vous êtes à faible risque, vous pouvez demander un obturateur, qui garde l'accès sans perfusion qui coule, ou demander si elle est vraiment nécessaire",
         "Échantillon d'urine",
         "Confirmation de votre statut GBS (streptocoque du groupe B) d'après votre dossier prénatal",
         "Étape 2 : Admise ou invitée à attendre",
-        "Si votre col est dilaté à moins de 4–6 cm (selon l'hôpital et les circonstances), on pourrait vous renvoyer chez vous ou vous proposer de marcher pendant 1–2 heures avant une nouvelle vérification. Ce n'est pas un refus. Le début du travail est vraiment plus sûr et plus confortable à la maison. Ne vous découragez pas.",
+        "Si votre col est ouvert à moins de 4–6 cm (selon l'hôpital et la situation), on peut vous renvoyer chez vous ou vous demander de marcher 1–2 heures avant de vous réexaminer. Le début du travail est plus sûr et plus confortable à la maison.",
         "Étape 3 : Salle de travail",
         "Une fois admise, vous restez dans votre chambre pour toute la durée. Votre infirmière est votre guide principale et viendra vous voir régulièrement. C'est le moment de discuter de vos préférences pour l'accouchement et des options de gestion de la douleur.",
         "À apporter à l'hôpital",
@@ -1023,7 +1023,7 @@ window.MYOB_LOCALES.fr = {
         "Déclenchement du travail",
         "Si votre col a besoin d'aide, votre médecin peut utiliser des médicaments (misoprostol, ocytocine/Pitocin) ou un cathéter à ballonnet pour mûrir et ouvrir le col. Un déclenchement peut prendre 12 à 24 heures ou plus, surtout pour un premier bébé avec un col peu favorable. Prévoyez que cela prenne du temps.",
         "Surveillance fœtale",
-        "La plupart des hôpitaux utilisent une surveillance fœtale électronique continue pendant le travail actif. Elle suit le rythme cardiaque du bébé par rapport aux contractions, ce qui aide l'équipe à détecter rapidement tout signe de détresse. Si vous souhaitez marcher ou utiliser une baignoire, demandez si des moniteurs sans fil (télémétrie) sont disponibles."
+        "La plupart des hôpitaux utilisent un monitoring fœtal électronique continu pendant la phase active, qui suit le rythme cardiaque du bébé par rapport à vos contractions. Pour un accouchement à faible risque, l'écoute intermittente, quand une infirmière vérifie le cœur à intervalles réguliers, donne les mêmes résultats pour le bébé avec moins de césariennes et moins de ventouses ou de forceps. Le monitoring continu a plus de sens si vous avez une péridurale, si le travail est déclenché ou si vous avez un problème qui demande plus de surveillance. Si vous voulez marcher ou utiliser une baignoire, demandez s'il existe des moniteurs sans fil (télémétrie)."
       ]
     },
     "pain-management": {
@@ -1082,14 +1082,14 @@ window.MYOB_LOCALES.fr = {
         "Fait clé. Le mythe de la césarienne",
         "La péridurale n'augmente",
         "pas",
-        "le taux de césariennes. C'est l'un des mythes les plus répandus et les mieux étudiés en obstétrique. Plusieurs grands essais randomisés le confirment. Vous pouvez demander une péridurale à tout moment du travail actif."
+        "augmentent le taux de césariennes. C'est l'une des questions les plus étudiées en obstétrique, et les grands essais randomisés sont d'accord. Il y a de vrais compromis : la phase de poussée a tendance à durer plus longtemps, et une ventouse ou des forceps sont un peu plus probables. Vous pouvez demander une péridurale à n'importe quel moment de la phase active. La vraie limite n'est pas un nombre de centimètres, mais la vitesse du travail, car un travail très rapide peut ne pas laisser le temps de la poser."
       ]
     },
     "csection": {
       "title": "La césarienne : pourquoi elle a lieu et à quoi s'attendre",
       "sub": "Prévue ou non prévue, le déroulement, la récupération",
       "t": [
-        "Une césarienne est un accouchement chirurgical par des incisions dans l'abdomen et l'utérus. Environ 30 % des naissances aux États-Unis ont lieu par césarienne.",
+        "Une césarienne est un accouchement chirurgical par incisions dans l'abdomen et l'utérus. Environ 1 naissance sur 3 aux États-Unis se fait par césarienne.",
         "Raisons prévues (programmées)",
         "Placenta previa. Le placenta recouvre l'ouverture du col de l'utérus",
         "Bébé en siège (pieds en bas) ou en position transversale (de travers) qui ne s'est pas retourné",
@@ -1191,8 +1191,8 @@ window.MYOB_LOCALES.fr = {
         "Utilisez une poire de toilette (peri-bottle) avec de l'eau tiède après chaque passage aux toilettes. D'avant en arrière",
         "Des poches de glace pendant les premières 24 heures, puis des bains de siège tièdes (10 à 15 min, 2 à 3 fois par jour)",
         "Des compresses à l'hamamélis (par ex. Tucks) apaisent le gonflement et les hémorroïdes",
-        "Un émollient fécal (docusate/colace)",
-        ". Commencez immédiatement ; la constipation avec des points de suture au périnée est très inconfortable et pousser risque de déchirer les points",
+        "Constipation",
+        ". Très fréquente les premières semaines, et vraiment inconfortable avec des points au périnée. L'eau, les fibres et bouger aident le plus. Le docusate (Colace) est donné dans presque tous les hôpitaux, mais les études montrent qu'il fait à peine mieux qu'un placebo ; s'il ne fait rien pour vous, demandez plutôt un laxatif osmotique comme le polyéthylène glycol (Miralax).",
         "La gestion de la douleur",
         "Alterner l'ibuprofène (600 mg toutes les 6 heures) et l'acétaminophène (650 mg toutes les 6 heures) à heures fixes fonctionne bien mieux que d'attendre que la douleur s'intensifie. Demandez à votre infirmière un horaire écrit dès le premier jour et suivez-le."
       ]
@@ -1220,8 +1220,8 @@ window.MYOB_LOCALES.fr = {
       "title": "Le repos pelvien et la reprise des rapports",
       "sub": "Pourquoi la recommandation des 6 semaines existe",
       "t": [
-        "L'ACOG recommande d'attendre au moins 6 semaines après l'accouchement avant d'avoir des rapports vaginaux. Voici pourquoi cette recommandation existe.",
-        "Pourquoi 6 semaines ?",
+        "Six semaines, c'est le chiffre donné à la plupart des femmes, et il tombe avec la visite postnatale, mais c'est une habitude, pas une règle fixe. Ce qui compte vraiment, c'est que les saignements soient finis, que toute déchirure ou cicatrice soit guérie et que vous vous sentiez prête. Pour certaines femmes, cela vient plus tôt ; pour beaucoup, plus tard. Voici ce qui guérit en dessous.",
+        "D'où viennent les six semaines",
         "L'utérus a besoin de 4 à 6 semaines pour se contracter complètement et pour que la zone d'attache du placenta cicatrise entièrement",
         "Les déchirures vaginales, les lacérations ou les points d'épisiotomie ont besoin de temps pour guérir",
         "Les incisions de césarienne, la cicatrice externe comme l'incision de l'utérus à l'intérieur, demandent au moins 6 semaines",
@@ -1500,14 +1500,14 @@ window.MYOB_LOCALES.fr = {
       "title": "Puis-je me teindre les cheveux pendant la grossesse ?",
       "sub": "",
       "t": [
-        "Oui. La teinture capillaire est absorbée par le cuir chevelu en très petites quantités. Aucune étude publiée n'a montré de danger pour le fœtus aux quantités utilisées lors d'une coloration normale en salon ou à la maison. La plupart des médecins la considèrent sûre, surtout après le premier trimestre. Les mèches (au papier d'aluminium) ont encore moins de contact avec le cuir chevelu. Si vous êtes inquiète, attendez le deuxième trimestre, quand le développement des principaux organes est terminé."
+        "Oui, mais demandez-vous pourquoi vous le faites. La teinture est absorbée par le cuir chevelu en très petites quantités. Aucune étude publiée n'a montré de tort au fœtus aux quantités d'une coloration normale, au salon ou à la maison. Les mèches (papier aluminium) touchent encore moins le cuir chevelu. Si cela vous inquiète, attendez le deuxième trimestre, quand les principaux organes sont formés, ou ne le faites simplement pas."
       ]
     },
     "faq-exercise-mc": {
       "title": "L'exercice physique provoque-t-il une fausse couche ?",
       "sub": "",
       "t": [
-        "Non. L'exercice modéré ne provoque pas de fausse couche dans les grossesses en bonne santé. C'est l'un des mythes les plus répandus sur la grossesse. Les fausses couches précoces sont presque toujours causées par des anomalies chromosomiques de l'embryon, pas par l'exercice, les rapports sexuels, le stress ou quoi que ce soit que la mère aurait fait. L'exercice est protecteur, pas dangereux. Consultez les recommandations sur l'exercice dans la section Prénatal."
+        "Non. L'activité physique modérée ne provoque pas de fausse couche dans une grossesse en bonne santé. Une certaine quantité d'exercice protège, elle ne fait pas de mal. Voyez les conseils d'activité dans la section Prénatal. Si votre médecin vous a dit de ne pas faire d'exercice, demandez pourquoi, et suivez ce conseil."
       ]
     },
     "faq-sex-pregnancy": {
@@ -1521,7 +1521,7 @@ window.MYOB_LOCALES.fr = {
       "title": "Les vaccins sont-ils sûrs pendant la grossesse ?",
       "sub": "",
       "t": [
-        "Certains oui, d’autres non. Parlez-en à votre médecin."
+        "Deux sont recommandés à chaque grossesse et semblent sans danger : le rappel Tdap et le vaccin contre la grippe. Les vaccins vivants doivent attendre après l'accouchement."
       ]
     },
     "faq-eat-for-two": {
@@ -1544,7 +1544,7 @@ window.MYOB_LOCALES.fr = {
       "t": [
         "Non. C'est l'une des questions les plus étudiées en obstétrique. De nombreux grands essais contrôlés randomisés et méta-analyses confirment que la péridurale n'augmente",
         "pas",
-        "le taux de césariennes. Elle peut allonger légèrement la phase de poussée, mais cela se gère en toute sécurité avec de la patience et l'aide du personnel infirmier. Vous pouvez demander une péridurale à tout moment du travail actif. Il n'y a pas de seuil « trop tôt » ni « trop tard »."
+        "augmentent le taux de césariennes. La péridurale allonge un peu la phase de poussée et rend une ventouse ou des forceps plus probables, ce qui mérite d'être pesé face au soulagement de la douleur. Vous pouvez la demander à tout moment de la phase active. La vraie limite n'est pas un seuil en centimètres mais la vitesse du travail, car un travail très rapide peut ne pas laisser le temps."
       ]
     },
     "faq-routine-episiotomy": {
@@ -1560,7 +1560,7 @@ window.MYOB_LOCALES.fr = {
       "title": "Si je perds les eaux, devrai-je avoir une césarienne ?",
       "sub": "",
       "t": [
-        "Non. Si vos membranes se rompent (perte des eaux) à terme, la plupart des femmes entrent en travail d'elles-mêmes dans les 12 heures. Si le travail ne commence pas, un déclenchement est proposé pour réduire le risque d'infection. La recommandation est de terminer l'accouchement dans les 18 à 24 heures. Si vous êtes positive au GBS (streptocoque du groupe B), des antibiotiques sont commencés immédiatement. Une césarienne n'est nécessaire que s'il existe d'autres indications. La perte des eaux à elle seule n'en est pas une."
+        "Non. Si vous perdez les eaux à terme, la plupart des femmes entrent en travail d'elles-mêmes en un jour environ. Si le travail ne commence pas, on propose en général un déclenchement, car le risque d'infection augmente plus les membranes restent ouvertes longtemps. C'est un risque qui monte, à peser ensemble, pas un délai que vous auriez manqué. Si vous êtes GBS-positive, les antibiotiques commencent tout de suite. Une césarienne n'est nécessaire que s'il y a une autre raison ; la perte des eaux seule n'en est pas une."
       ]
     },
     "faq-eat-in-labor": {
@@ -1590,7 +1590,7 @@ window.MYOB_LOCALES.fr = {
       "title": "Le stress peut-il tarir le lait maternel ?",
       "sub": "",
       "t": [
-        "Le stress aigu peut temporairement perturber le réflexe d'éjection (la libération du lait), mais il n'affecte pas la production de lait à long terme. La production de lait dépend de la demande : plus votre bébé tète fréquemment et efficacement, ou plus vous tirez votre lait souvent, plus votre corps produit de lait. Des stratégies qui aident l'éjection : le contact peau à peau, la chaleur, les techniques de relaxation et regarder une photo de votre bébé lorsque vous tirez votre lait."
+        "Un stress aigu peut gêner un moment le réflexe d'éjection (la sortie du lait). Mais un seul événement stressant ne fera pas tarir votre lait. La production dépend de la demande : plus votre bébé tète souvent et efficacement, ou plus vous tirez votre lait, plus votre corps en produit. Si votre stress ou l'agitation autour de vous empêchent le bébé de bien téter, la demande peut baisser, et votre production aussi. Ce qui aide l'éjection : le peau à peau, la chaleur, les techniques de relaxation, et regarder une photo de votre bébé en tirant votre lait. Parlez à votre médecin des façons de réduire le stress sans médicament."
       ]
     },
     "faq-bonding": {
@@ -1626,7 +1626,7 @@ window.MYOB_LOCALES.fr = {
         "la première dose du vaccin contre l’hépatite B",
         " et",
         "la prise de sang du dépistage néonatal",
-        "(piqûre au talon pour une trentaine de maladies, dont la phénylcétonurie, l’hypothyroïdie et la drépanocytose). Tous sont recommandés car le risque de ne pas intervenir tôt dépasse les risques des actes eux-mêmes. Vous pouvez légalement les refuser dans la plupart des États. Nous vous conseillons d’en discuter les risques avec votre médecin au préalable."
+        "(prélèvement au talon pour environ 30 maladies, dont la phénylcétonurie, l'hypothyroïdie et la drépanocytose). Les données derrière ces gestes n'ont pas toutes la même force, et il est raisonnable de poser la question pour chacun. La vitamine K et le prélèvement au talon sont les plus clairement justifiés : la vitamine K évite une hémorragie rare mais catastrophique, et le prélèvement trouve des maladies qu'on ne peut traiter que si on les repère dans les premiers jours. La dose contre l'hépatite B compte le plus quand votre propre statut pour l'hépatite B est positif ou inconnu. La pommade pour les yeux repose sur des données plus faibles, et plusieurs pays ont arrêté de la donner systématiquement, même si beaucoup d'États américains l'imposent par la loi. Dans la plupart des États, vous pouvez légalement refuser. Demandez à votre équipe lesquels s'appliquent à votre situation."
       ]
     },
     "faq-first-bath": {
@@ -1863,8 +1863,8 @@ window.MYOB_LOCALES.fr = {
     "content.exercise-pregnancy.t.2": "110c57cb0b0a8dd9",
     "content.exercise-pregnancy.t.3": "968f855e83990068",
     "content.exercise-pregnancy.t.4": "8e84601ee6d4bbec",
-    "content.exercise-pregnancy.t.5": "4932e1c33057d7ed",
-    "content.exercise-pregnancy.t.6": "c1a74c510a66c27b",
+    "content.exercise-pregnancy.t.5": "538448537353cad9",
+    "content.exercise-pregnancy.t.6": "21aec7ace6cef67e",
     "content.exercise-pregnancy.t.7": "bbab2f65105927ef",
     "content.exercise-pregnancy.t.8": "ea6b8258d77cb182",
     "content.exercise-pregnancy.t.9": "a600374167f2c88f",
@@ -1917,11 +1917,11 @@ window.MYOB_LOCALES.fr = {
     "content.what-happens-on-arrival.t.2": "82c5a96a551b0518",
     "content.what-happens-on-arrival.t.3": "604bae309bf67b16",
     "content.what-happens-on-arrival.t.4": "ebff6e6eb9fbf288",
-    "content.what-happens-on-arrival.t.5": "0ba013bea19ffea0",
+    "content.what-happens-on-arrival.t.5": "87a814d0f436694a",
     "content.what-happens-on-arrival.t.6": "60a98c56a9a2dd80",
     "content.what-happens-on-arrival.t.7": "2b1d87c271ab46c4",
     "content.what-happens-on-arrival.t.8": "2557fb10821bac0e",
-    "content.what-happens-on-arrival.t.9": "497a1818fb4542e6",
+    "content.what-happens-on-arrival.t.9": "361c19d6ee5b17f4",
     "content.what-happens-on-arrival.t.10": "92782e29e06813c3",
     "content.what-happens-on-arrival.t.11": "0a91819b6f404a29",
     "content.what-happens-on-arrival.t.12": "fd51bb1dd2656933",
@@ -1953,7 +1953,7 @@ window.MYOB_LOCALES.fr = {
     "content.stages-of-labor.t.22": "52f97a471cf613e9",
     "content.stages-of-labor.t.23": "6ca224f5bc85b27b",
     "content.stages-of-labor.t.24": "db249a914e17ad3b",
-    "content.stages-of-labor.t.25": "9b93f5f09fe16aee",
+    "content.stages-of-labor.t.25": "e20a4495efdec9c3",
     "content.pain-management.title": "e74231e2bfa35a90",
     "content.pain-management.sub": "53b06b5c9602e506",
     "content.pain-management.t.0": "6ead083c8916dd16",
@@ -2004,10 +2004,10 @@ window.MYOB_LOCALES.fr = {
     "content.epidural.t.21": "da27b75ab7eb0cac",
     "content.epidural.t.22": "b9ac582914c869e3",
     "content.epidural.t.23": "29b19c8a24cbf72c",
-    "content.epidural.t.24": "9dcb78ff88707bb1",
+    "content.epidural.t.24": "24dd5801d634e257",
     "content.csection.title": "157f676a005609f4",
     "content.csection.sub": "a289eb92dcfe05ac",
-    "content.csection.t.0": "caa3098b7f359029",
+    "content.csection.t.0": "22d4929764cdedb9",
     "content.csection.t.1": "f67b2512bc8d5ec0",
     "content.csection.t.2": "ee8947e22ae2f1a4",
     "content.csection.t.3": "815ded66fda88b70",
@@ -2097,8 +2097,8 @@ window.MYOB_LOCALES.fr = {
     "content.physical-recovery.t.17": "70868fecbb4e20d6",
     "content.physical-recovery.t.18": "fc4b66acb9af3776",
     "content.physical-recovery.t.19": "eb05a7e7edf581c1",
-    "content.physical-recovery.t.20": "004855c5406684f7",
-    "content.physical-recovery.t.21": "6e9a41cec35b8b08",
+    "content.physical-recovery.t.20": "d7d6213ef94d23fc",
+    "content.physical-recovery.t.21": "256e72c34673b5b9",
     "content.physical-recovery.t.22": "0b7e28c4ba795156",
     "content.physical-recovery.t.23": "34c3cbc0b064f6e6",
     "content.mood-ppd.title": "7e9b857b10765529",
@@ -2118,8 +2118,8 @@ window.MYOB_LOCALES.fr = {
     "content.mood-ppd.t.12": "fdecb44188e62243",
     "content.pelvic-rest.title": "faccbb545df2432a",
     "content.pelvic-rest.sub": "d7f295466becd49c",
-    "content.pelvic-rest.t.0": "a3b455f9a891ab93",
-    "content.pelvic-rest.t.1": "48807efffb0afbb5",
+    "content.pelvic-rest.t.0": "c3d28c08f86b68e6",
+    "content.pelvic-rest.t.1": "4b6ae3f5b238681b",
     "content.pelvic-rest.t.2": "dce88d30f754251e",
     "content.pelvic-rest.t.3": "499c199fea48a8a1",
     "content.pelvic-rest.t.4": "3ba747ba7a45dde0",
@@ -2347,13 +2347,13 @@ window.MYOB_LOCALES.fr = {
     "content.faq-coffee.t.1": "d49405defc21c3ec",
     "content.faq-coffee.t.2": "19f22003cc780ded",
     "content.faq-hair-dye.title": "3cbc4f5501467bbb",
-    "content.faq-hair-dye.t.0": "f32f2d9b3dae0f71",
+    "content.faq-hair-dye.t.0": "194b47e06a23e60e",
     "content.faq-exercise-mc.title": "055753c567df011f",
-    "content.faq-exercise-mc.t.0": "ce23aa3d3a4ea68b",
+    "content.faq-exercise-mc.t.0": "2b2d76b57f4bc45f",
     "content.faq-sex-pregnancy.title": "8399c3d543c4147f",
     "content.faq-sex-pregnancy.t.0": "9b3a7841e4c3a343",
     "content.faq-vaccines.title": "22cf8d87c3c18165",
-    "content.faq-vaccines.t.0": "6283a0613712aceb",
+    "content.faq-vaccines.t.0": "54aa1c57cf3d489d",
     "content.faq-eat-for-two.title": "7109ae5ce8714502",
     "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
     "content.faq-hot-tub.title": "2230219d6f10d437",
@@ -2361,13 +2361,13 @@ window.MYOB_LOCALES.fr = {
     "content.faq-epidural-csec.title": "85af8aced19ce724",
     "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
     "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
-    "content.faq-epidural-csec.t.2": "42f4cdc3b8816c69",
+    "content.faq-epidural-csec.t.2": "d9849263c1e6467d",
     "content.faq-routine-episiotomy.title": "063590cb3bfbb7f9",
     "content.faq-routine-episiotomy.t.0": "f9f4d22fb4ca4b41",
     "content.faq-routine-episiotomy.t.1": "8a8e3958d3c9cdb6",
     "content.faq-routine-episiotomy.t.2": "7d6842265369b750",
     "content.faq-water-breaking.title": "3024fe7ba7f6b3ed",
-    "content.faq-water-breaking.t.0": "c5e9bb8a081c06e8",
+    "content.faq-water-breaking.t.0": "ffd7e16a191f9018",
     "content.faq-eat-in-labor.title": "5de8ba9361616d39",
     "content.faq-eat-in-labor.t.0": "23ad9f490ae5def7",
     "content.faq-vbac.title": "4fb6dce62d75356c",
@@ -2377,7 +2377,7 @@ window.MYOB_LOCALES.fr = {
     "content.faq-bf-bc.t.1": "1ab0f2cdfd636c5f",
     "content.faq-bf-bc.t.2": "b97f0ac57c1360c3",
     "content.faq-stress-milk.title": "601e567b1be30855",
-    "content.faq-stress-milk.t.0": "0c1e1e0c9a282466",
+    "content.faq-stress-milk.t.0": "02db447559e1251f",
     "content.faq-bonding.title": "a87f7534c89adb7e",
     "content.faq-bonding.t.0": "e686292ec2702bc0",
     "content.faq-ibuprofen-bf.title": "471f20ca8e18c184",
@@ -2393,7 +2393,7 @@ window.MYOB_LOCALES.fr = {
     "content.faq-newborn-procedures.t.5": "502e42f21156da6c",
     "content.faq-newborn-procedures.t.6": "cd0c11353cd68b73",
     "content.faq-newborn-procedures.t.7": "d06e909e2132ca54",
-    "content.faq-newborn-procedures.t.8": "39e29bd47e16a8be",
+    "content.faq-newborn-procedures.t.8": "0f46858bcf9a15d9",
     "content.faq-first-bath.title": "1ece0a9772ca9db5",
     "content.faq-first-bath.t.0": "23fa392719b4b945",
     "content.prenatal-vitamins.title": "84b24fbf8b3afe05",

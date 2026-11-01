@@ -155,7 +155,7 @@ Don't build a second tool beside it.
 - Six Home strings are rendered nowhere: `home.afterDelivery`, `soaking1PadHr2`, `woundOpensOrOozes`, `legRednessSwelling`, `chestPainOrTroubleBreathing`, `thoughtsOfSelfHarm`. When to call takes the after-birth list from postpartum-danger t3. `soaking1PadHr2` was corrected anyway; the rest could be deleted.
 - es/fr/ko have no Today, When to call or Visits ui strings at all (they show English), so §1's voice rewrites only reached English. That's §4 drafting, not a regression.
 - Newborn fever reads "≥ 100.4°F rectal" in normal-newborn t32 and "&gt;100.4°F" elsewhere (Home, postpartum-danger, csection). Pick one.
-- es/fr/ko each have the same 18 stale content keys from before §1 (exercise-pregnancy t5/t6, what-happens-on-arrival t5/t9, pelvic-rest t0/t1, several FAQs…). None are clinical-keys; they need the same `--keys` pass.
+- **Done 2026-11-01:** the 18 content keys es/fr/ko had stale since before §1 are re-translated (`translation/keys/f4d.txt`); stamp report shows 0 stale.
 - The Translate page can only call a **content** sentence outdated: ui strings still carry no fingerprint (see above), so a ui string whose English changed is shown as "to confirm". Decided for §3: content only. Adding ui fingerprints is a merge.js/stamp.js change, best done with §4.
 - Until session E, the review app lists "Looks right" rows (`kind = 'confirm'`, suggestion = what is shipped) as ordinary suggestions. Accepting one rewrites the same text, so it's harmless, just noise.
 - Drafts typed into the old Translation Helper stay in `myob.i18nSuggestions` on that phone. They were never sent, and the new page doesn't send them (they were never confirmed for sending).

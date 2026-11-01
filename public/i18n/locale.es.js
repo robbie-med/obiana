@@ -920,8 +920,8 @@ window.MYOB_LOCALES.es = {
         "Reduce el dolor de espalda, la hinchazón, el estreñimiento y la fatiga",
         "Disminuye el riesgo de diabetes gestacional, preeclampsia y aumento excesivo de peso",
         "Mejora el sueño, el estado de ánimo y los niveles de energía",
-        "A menudo lleva a un trabajo de parto más corto y una recuperación más rápida",
-        "Los bebés de madres activas suelen tener patrones de frecuencia cardíaca más saludables",
+        "Algunos estudios lo relacionan con un trabajo de parto más corto y una recuperación más fácil",
+        "Da la resistencia que piden tanto el trabajo de parto como cargar a un recién nacido",
         "Buenas opciones en cualquier etapa",
         "Caminar",
         ": lo más fácil, seguro y accesible para cualquier nivel de condición física",
@@ -982,11 +982,11 @@ window.MYOB_LOCALES.es = {
         "Examen vaginal para revisar la dilatación y el borramiento del cuello uterino",
         "Se coloca un monitor fetal externo: dos correas alrededor de su abdomen, una que registra las contracciones y otra que registra la frecuencia cardíaca del bebé",
         "Se revisan la presión arterial, la temperatura, el pulso y la saturación de oxígeno",
-        "Se coloca una vía intravenosa (un catéter pequeño en el brazo, un procedimiento estándar)",
+        "Le colocan una vía intravenosa, un catéter pequeño en el brazo. Si su embarazo es de bajo riesgo, puede pedir un tapón salino, que mantiene la vía sin suero corriendo, o preguntar si de verdad hace falta",
         "Muestra de orina",
         "Se confirma su estado de GBS (estreptococo del grupo B) según sus registros prenatales",
         "Paso 2: La admiten o le piden esperar",
-        "Si su cuello uterino está dilatado menos de 4–6 cm (según el hospital y las circunstancias), es posible que la manden a casa o le pidan caminar durante 1–2 horas para volver a revisarla. Esto no es un rechazo: el trabajo de parto temprano es realmente más seguro y más cómodo en casa. No se desanime.",
+        "Si su cuello uterino tiene menos de 4–6 cm (según el hospital y las circunstancias), es posible que la manden a casa o le pidan caminar 1–2 horas para revisarla otra vez. El inicio del trabajo de parto es más seguro y más cómodo en casa.",
         "Paso 3: Sala de parto",
         "Una vez admitida, permanecerá en su habitación durante todo el proceso. Su enfermera es su guía principal y la revisará con regularidad. Este es el momento de hablar sobre sus preferencias para el parto y las opciones para el manejo del dolor.",
         "Traiga esto al hospital",
@@ -1022,7 +1022,7 @@ window.MYOB_LOCALES.es = {
         "Inducción del parto",
         "Si su cuello uterino necesita ayuda, su médico puede usar medicamentos (misoprostol, oxitocina/Pitocin) o un catéter de balón para madurar y abrir el cuello. La inducción puede tomar 12–24+ horas, sobre todo con el primer bebé y un cuello uterino no favorable. Planifique que tomará tiempo.",
         "Monitoreo fetal",
-        "La mayoría de los hospitales usan monitoreo fetal electrónico continuo durante el trabajo de parto activo. Esto registra los patrones de la frecuencia cardíaca del bebé en relación con las contracciones y ayuda al equipo a detectar temprano cualquier señal de sufrimiento fetal. Si quiere caminar o usar una tina, pregunte si hay monitores inalámbricos (de telemetría) disponibles."
+        "La mayoría de los hospitales usan monitoreo fetal electrónico continuo durante el trabajo de parto activo, que registra los latidos del bebé junto con sus contracciones. En un parto de bajo riesgo, escuchar a intervalos, cuando una enfermera revisa los latidos cada cierto tiempo, da los mismos resultados para el bebé con menos cesáreas y menos partos con ventosa o fórceps. El monitoreo continuo tiene más sentido si tiene epidural, si le están induciendo el parto o si tiene una condición que necesita más vigilancia. Si quiere caminar o usar una tina, pregunte si hay monitores inalámbricos (de telemetría)."
       ]
     },
     "pain-management": {
@@ -1081,14 +1081,14 @@ window.MYOB_LOCALES.es = {
         "Dato clave: el mito de la cesárea",
         "Las epidurales",
         "no",
-        "aumentan las tasas de cesárea. Este es uno de los mitos más comunes y mejor estudiados en obstetricia. Varios ensayos grandes y aleatorizados lo confirman. Puede pedir una epidural en cualquier momento del trabajo de parto activo."
+        "aumentan las tasas de cesárea. Es una de las preguntas más estudiadas en obstetricia, y los grandes ensayos aleatorizados coinciden. Sí hay contrapartes reales: la etapa de pujar suele durar más, y un parto con ventosa o fórceps es algo más probable. Puede pedir una epidural en cualquier momento del trabajo de parto activo. El límite práctico no es una regla de cuántos centímetros tiene, sino qué tan rápido avanza el parto, porque un parto muy rápido puede no dejar tiempo para ponerla."
       ]
     },
     "csection": {
       "title": "Cesárea: por qué ocurre y qué esperar",
       "sub": "Planeada vs. no planeada, el procedimiento y la recuperación",
       "t": [
-        "Una cesárea es un parto quirúrgico a través de incisiones en el abdomen y el útero. Cerca del 30% de los nacimientos en EE. UU. son por cesárea.",
+        "Una cesárea es un parto quirúrgico a través de cortes en el abdomen y el útero. Cerca de 1 de cada 3 nacimientos en EE. UU. es por cesárea.",
         "Razones planeadas (programadas)",
         "Placenta previa: la placenta cubre la abertura del cuello uterino",
         "Bebé en posición de nalgas (con los pies abajo) o transversal (de lado) que no se ha volteado",
@@ -1190,8 +1190,8 @@ window.MYOB_LOCALES.es = {
         "Use la botella de irrigación (peri-bottle) con agua tibia después de cada visita al baño. De adelante hacia atrás",
         "Bolsas de hielo durante las primeras 24 horas; luego cambie a baños de asiento tibios (10–15 min, 2–3 veces al día)",
         "Las toallitas de hamamelis (por ejemplo, Tucks) alivian la hinchazón y las hemorroides",
-        "Ablandador de heces (docusato/Colace)",
-        ". Comience de inmediato; el estreñimiento con puntos en el periné es muy incómodo y hacer fuerza puede romper los puntos",
+        "Estreñimiento",
+        ". Muy común en las primeras semanas, y de verdad incómodo con puntos en el periné. El agua, la fibra y moverse son lo que más ayuda. Casi todos los hospitales dan docusato (Colace), aunque los estudios muestran que funciona apenas mejor que un placebo, así que si no le hace nada, pregunte por un laxante osmótico como el polietilenglicol (Miralax).",
         "Manejo del dolor",
         "Alternar ibuprofeno (600 mg cada 6 horas) y acetaminofén (650 mg cada 6 horas) en un horario fijo funciona mucho mejor que esperar a que el dolor aumente. Pídale a su enfermera un horario por escrito el día 1 y sígalo."
       ]
@@ -1219,8 +1219,8 @@ window.MYOB_LOCALES.es = {
       "title": "Reposo pélvico y reanudación de las relaciones sexuales",
       "sub": "Por qué existe la recomendación de las 6 semanas",
       "t": [
-        "ACOG recomienda esperar al menos 6 semanas después del parto antes de tener relaciones sexuales vaginales. Aquí le explicamos por qué existe esta recomendación.",
-        "¿Por qué 6 semanas?",
+        "Seis semanas es el número que le dan a la mayoría, y coincide con la consulta de posparto, pero es una costumbre, no una regla fija. Lo que de verdad importa es que el sangrado haya parado, que cualquier desgarro o herida haya sanado y que usted se sienta lista. Para algunas mujeres eso llega antes; para muchas, después. Esto es lo que está sanando por dentro.",
+        "De dónde salen las seis semanas",
         "El útero necesita de 4 a 6 semanas para contraerse por completo y para que el sitio donde estaba adherida la placenta sane del todo",
         "Cualquier desgarro, laceración o punto de episiotomía necesita tiempo para sanar",
         "Las incisiones de la cesárea, tanto la cicatriz externa como la incisión interna del útero, necesitan al menos 6 semanas",
@@ -1499,14 +1499,14 @@ window.MYOB_LOCALES.es = {
       "title": "¿Puedo pintarme el cabello durante el embarazo?",
       "sub": "",
       "t": [
-        "Sí. El tinte para el cabello se absorbe por el cuero cabelludo en cantidades muy pequeñas. Ningún estudio publicado ha demostrado daño al feto con las cantidades que se usan al pintarse el cabello en un salón o en casa. La mayoría de los médicos lo consideran seguro, sobre todo después del primer trimestre. Las mechas (con papel de aluminio) tienen aún menos contacto con el cuero cabelludo. Si le preocupa, espere hasta el segundo trimestre, cuando ya se completó el desarrollo de los órganos principales."
+        "Sí, pero piense por qué lo hace. El tinte para el cabello se absorbe por el cuero cabelludo en cantidades muy pequeñas. Ningún estudio publicado ha mostrado daño al feto con las cantidades de un tinte normal en el salón o en casa. Las mechas (con papel de aluminio) tienen aún menos contacto con el cuero cabelludo. Si le preocupa, espere al segundo trimestre, cuando ya se formaron los órganos principales, o simplemente no lo haga."
       ]
     },
     "faq-exercise-mc": {
       "title": "¿El ejercicio causa aborto espontáneo?",
       "sub": "",
       "t": [
-        "No. El ejercicio moderado no causa aborto espontáneo en embarazos saludables. Este es uno de los mitos más extendidos sobre el embarazo. Los abortos espontáneos tempranos casi siempre se deben a anomalías cromosómicas en el embrión, no al ejercicio, las relaciones sexuales, el estrés ni nada que haya hecho la madre. El ejercicio protege, no hace daño. Vea las pautas de ejercicio en la sección Prenatal."
+        "No. El ejercicio moderado no causa aborto espontáneo en embarazos sanos. Cierta cantidad de ejercicio protege, no hace daño. Vea las pautas de ejercicio en la sección Prenatal. Si su médico le dijo que no haga ejercicio, pregunte por qué y siga esa indicación."
       ]
     },
     "faq-sex-pregnancy": {
@@ -1520,7 +1520,7 @@ window.MYOB_LOCALES.es = {
       "title": "¿Son seguras las vacunas durante el embarazo?",
       "sub": "",
       "t": [
-        "Algunas sí, otras no. Consulte con su médico."
+        "Dos se recomiendan en cada embarazo y parecen ser seguras: el refuerzo Tdap y la vacuna de la gripe. Las vacunas vivas tienen que esperar hasta después del parto."
       ]
     },
     "faq-eat-for-two": {
@@ -1543,7 +1543,7 @@ window.MYOB_LOCALES.es = {
       "t": [
         "No. Esta es una de las preguntas más estudiadas en obstetricia. Varios ensayos controlados aleatorios grandes y metaanálisis confirman que las epidurales",
         "no",
-        "aumentan la tasa de cesáreas. La epidural puede alargar un poco la etapa de pujos, pero esto se maneja con seguridad con paciencia y la guía de la enfermera. Puede pedir una epidural en cualquier momento del trabajo de parto activo: no existe un momento \"demasiado pronto\" ni \"demasiado tarde\"."
+        "aumentan las tasas de cesárea. La epidural sí alarga algo la etapa de pujar y hace más probable un parto con ventosa o fórceps, y vale la pena pesarlo junto con el alivio del dolor. Puede pedirla en cualquier momento del trabajo de parto activo. El límite práctico no es un número de centímetros, sino qué tan rápido avanza el parto, porque un parto muy rápido puede no dejar tiempo."
       ]
     },
     "faq-routine-episiotomy": {
@@ -1559,7 +1559,7 @@ window.MYOB_LOCALES.es = {
       "title": "Si se me rompe la fuente, ¿tengo que tener una cesárea?",
       "sub": "",
       "t": [
-        "No. Si se le rompen las membranas (se le rompe la fuente) a término, la mayoría de las mujeres entran en trabajo de parto por sí solas en un plazo de 12 horas. Si el trabajo de parto no comienza, se ofrece una inducción para reducir el riesgo de infección: la guía indica completar el parto dentro de 18–24 horas. Si usted es GBS-positiva, se inician antibióticos de inmediato. Solo se necesita una cesárea si hay otras indicaciones; la ruptura de la fuente por sí sola no es una de ellas."
+        "No. Si se le rompe la fuente a término, la mayoría de las mujeres empiezan el trabajo de parto solas en más o menos un día. Si no empieza, normalmente se ofrece una inducción, porque la probabilidad de infección sube mientras más tiempo estén abiertas las membranas. Es un riesgo que va subiendo y se decide en conjunto, no un plazo que usted perdió. Si es GBS-positiva, se empiezan los antibióticos de inmediato. Solo hace falta una cesárea si hay otra razón para hacerla, y romper la fuente por sí sola no lo es."
       ]
     },
     "faq-eat-in-labor": {
@@ -1589,7 +1589,7 @@ window.MYOB_LOCALES.es = {
       "title": "¿El estrés hace que la leche materna se seque?",
       "sub": "",
       "t": [
-        "El estrés agudo puede interferir temporalmente con el reflejo de bajada de la leche (la salida de la leche), pero no afecta la producción de leche a largo plazo. La producción de leche depende de la demanda: cuanto más frecuente y eficazmente el bebé se alimente al pecho o usted use el extractor, más leche producirá su cuerpo. Estrategias que ayudan a la bajada de la leche: contacto piel con piel, calor, técnicas de relajación y mirar una foto de su bebé cuando use el extractor."
+        "El estrés agudo puede interferir por un tiempo con el reflejo de bajada (la salida de la leche). Pero un solo momento de estrés no hará que se le seque la leche. La producción depende de la demanda: cuanto más seguido y mejor mame el bebé o use el extractor, más leche produce su cuerpo. Si su estrés o el caos a su alrededor impiden que el bebé coma bien, eso puede bajar la demanda y la cantidad de leche. Lo que ayuda a la bajada: contacto piel con piel, calor, técnicas de relajación y mirar una foto de su bebé cuando usa el extractor. Hable con su médico sobre formas de bajar el estrés sin medicamentos."
       ]
     },
     "faq-bonding": {
@@ -1625,7 +1625,7 @@ window.MYOB_LOCALES.es = {
         "primera dosis de la vacuna contra la hepatitis B",
         " y la",
         "extracción de sangre para el cribado metabólico neonatal",
-        "(punción del talón para unas 30 enfermedades, entre ellas la fenilcetonuria, el hipotiroidismo y la anemia falciforme). Todos se recomiendan porque el riesgo de no intervenir a tiempo supera los riesgos de los procedimientos. En la mayoría de los estados puede rechazarlos legalmente. Le recomendamos que hable antes de los riesgos con su médico."
+        "(punción del talón para unas 30 enfermedades, entre ellas la fenilcetonuria, el hipotiroidismo y la anemia falciforme). La evidencia detrás de cada uno no es igual de fuerte, y es razonable preguntar por cada uno por separado. La vitamina K y la punción del talón tienen la razón más clara: la vitamina K evita un sangrado raro pero catastrófico, y la punción del talón encuentra enfermedades que solo se pueden tratar si se detectan en los primeros días. La dosis de hepatitis B importa más cuando su propio resultado de hepatitis B es positivo o no se conoce. La pomada para los ojos tiene evidencia más débil, y varios países dejaron de ponerla de rutina, aunque muchos estados de EE. UU. la exigen por ley. En la mayoría de los estados puede rechazarlos legalmente. Pregunte a su equipo cuáles se aplican a su situación."
       ]
     },
     "faq-first-bath": {
@@ -1862,8 +1862,8 @@ window.MYOB_LOCALES.es = {
     "content.exercise-pregnancy.t.2": "110c57cb0b0a8dd9",
     "content.exercise-pregnancy.t.3": "968f855e83990068",
     "content.exercise-pregnancy.t.4": "8e84601ee6d4bbec",
-    "content.exercise-pregnancy.t.5": "4932e1c33057d7ed",
-    "content.exercise-pregnancy.t.6": "c1a74c510a66c27b",
+    "content.exercise-pregnancy.t.5": "538448537353cad9",
+    "content.exercise-pregnancy.t.6": "21aec7ace6cef67e",
     "content.exercise-pregnancy.t.7": "bbab2f65105927ef",
     "content.exercise-pregnancy.t.8": "ea6b8258d77cb182",
     "content.exercise-pregnancy.t.9": "a600374167f2c88f",
@@ -1916,11 +1916,11 @@ window.MYOB_LOCALES.es = {
     "content.what-happens-on-arrival.t.2": "82c5a96a551b0518",
     "content.what-happens-on-arrival.t.3": "604bae309bf67b16",
     "content.what-happens-on-arrival.t.4": "ebff6e6eb9fbf288",
-    "content.what-happens-on-arrival.t.5": "0ba013bea19ffea0",
+    "content.what-happens-on-arrival.t.5": "87a814d0f436694a",
     "content.what-happens-on-arrival.t.6": "60a98c56a9a2dd80",
     "content.what-happens-on-arrival.t.7": "2b1d87c271ab46c4",
     "content.what-happens-on-arrival.t.8": "2557fb10821bac0e",
-    "content.what-happens-on-arrival.t.9": "497a1818fb4542e6",
+    "content.what-happens-on-arrival.t.9": "361c19d6ee5b17f4",
     "content.what-happens-on-arrival.t.10": "92782e29e06813c3",
     "content.what-happens-on-arrival.t.11": "0a91819b6f404a29",
     "content.what-happens-on-arrival.t.12": "fd51bb1dd2656933",
@@ -1952,7 +1952,7 @@ window.MYOB_LOCALES.es = {
     "content.stages-of-labor.t.22": "52f97a471cf613e9",
     "content.stages-of-labor.t.23": "6ca224f5bc85b27b",
     "content.stages-of-labor.t.24": "db249a914e17ad3b",
-    "content.stages-of-labor.t.25": "9b93f5f09fe16aee",
+    "content.stages-of-labor.t.25": "e20a4495efdec9c3",
     "content.pain-management.title": "e74231e2bfa35a90",
     "content.pain-management.sub": "53b06b5c9602e506",
     "content.pain-management.t.0": "6ead083c8916dd16",
@@ -2003,10 +2003,10 @@ window.MYOB_LOCALES.es = {
     "content.epidural.t.21": "da27b75ab7eb0cac",
     "content.epidural.t.22": "b9ac582914c869e3",
     "content.epidural.t.23": "29b19c8a24cbf72c",
-    "content.epidural.t.24": "9dcb78ff88707bb1",
+    "content.epidural.t.24": "24dd5801d634e257",
     "content.csection.title": "157f676a005609f4",
     "content.csection.sub": "a289eb92dcfe05ac",
-    "content.csection.t.0": "caa3098b7f359029",
+    "content.csection.t.0": "22d4929764cdedb9",
     "content.csection.t.1": "f67b2512bc8d5ec0",
     "content.csection.t.2": "ee8947e22ae2f1a4",
     "content.csection.t.3": "815ded66fda88b70",
@@ -2096,8 +2096,8 @@ window.MYOB_LOCALES.es = {
     "content.physical-recovery.t.17": "70868fecbb4e20d6",
     "content.physical-recovery.t.18": "fc4b66acb9af3776",
     "content.physical-recovery.t.19": "eb05a7e7edf581c1",
-    "content.physical-recovery.t.20": "004855c5406684f7",
-    "content.physical-recovery.t.21": "6e9a41cec35b8b08",
+    "content.physical-recovery.t.20": "d7d6213ef94d23fc",
+    "content.physical-recovery.t.21": "256e72c34673b5b9",
     "content.physical-recovery.t.22": "0b7e28c4ba795156",
     "content.physical-recovery.t.23": "34c3cbc0b064f6e6",
     "content.mood-ppd.title": "7e9b857b10765529",
@@ -2117,8 +2117,8 @@ window.MYOB_LOCALES.es = {
     "content.mood-ppd.t.12": "fdecb44188e62243",
     "content.pelvic-rest.title": "faccbb545df2432a",
     "content.pelvic-rest.sub": "d7f295466becd49c",
-    "content.pelvic-rest.t.0": "a3b455f9a891ab93",
-    "content.pelvic-rest.t.1": "48807efffb0afbb5",
+    "content.pelvic-rest.t.0": "c3d28c08f86b68e6",
+    "content.pelvic-rest.t.1": "4b6ae3f5b238681b",
     "content.pelvic-rest.t.2": "dce88d30f754251e",
     "content.pelvic-rest.t.3": "499c199fea48a8a1",
     "content.pelvic-rest.t.4": "3ba747ba7a45dde0",
@@ -2346,13 +2346,13 @@ window.MYOB_LOCALES.es = {
     "content.faq-coffee.t.1": "d49405defc21c3ec",
     "content.faq-coffee.t.2": "19f22003cc780ded",
     "content.faq-hair-dye.title": "3cbc4f5501467bbb",
-    "content.faq-hair-dye.t.0": "f32f2d9b3dae0f71",
+    "content.faq-hair-dye.t.0": "194b47e06a23e60e",
     "content.faq-exercise-mc.title": "055753c567df011f",
-    "content.faq-exercise-mc.t.0": "ce23aa3d3a4ea68b",
+    "content.faq-exercise-mc.t.0": "2b2d76b57f4bc45f",
     "content.faq-sex-pregnancy.title": "8399c3d543c4147f",
     "content.faq-sex-pregnancy.t.0": "9b3a7841e4c3a343",
     "content.faq-vaccines.title": "22cf8d87c3c18165",
-    "content.faq-vaccines.t.0": "6283a0613712aceb",
+    "content.faq-vaccines.t.0": "54aa1c57cf3d489d",
     "content.faq-eat-for-two.title": "7109ae5ce8714502",
     "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
     "content.faq-hot-tub.title": "2230219d6f10d437",
@@ -2360,13 +2360,13 @@ window.MYOB_LOCALES.es = {
     "content.faq-epidural-csec.title": "85af8aced19ce724",
     "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
     "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
-    "content.faq-epidural-csec.t.2": "42f4cdc3b8816c69",
+    "content.faq-epidural-csec.t.2": "d9849263c1e6467d",
     "content.faq-routine-episiotomy.title": "063590cb3bfbb7f9",
     "content.faq-routine-episiotomy.t.0": "f9f4d22fb4ca4b41",
     "content.faq-routine-episiotomy.t.1": "8a8e3958d3c9cdb6",
     "content.faq-routine-episiotomy.t.2": "7d6842265369b750",
     "content.faq-water-breaking.title": "3024fe7ba7f6b3ed",
-    "content.faq-water-breaking.t.0": "c5e9bb8a081c06e8",
+    "content.faq-water-breaking.t.0": "ffd7e16a191f9018",
     "content.faq-eat-in-labor.title": "5de8ba9361616d39",
     "content.faq-eat-in-labor.t.0": "23ad9f490ae5def7",
     "content.faq-vbac.title": "4fb6dce62d75356c",
@@ -2376,7 +2376,7 @@ window.MYOB_LOCALES.es = {
     "content.faq-bf-bc.t.1": "1ab0f2cdfd636c5f",
     "content.faq-bf-bc.t.2": "b97f0ac57c1360c3",
     "content.faq-stress-milk.title": "601e567b1be30855",
-    "content.faq-stress-milk.t.0": "0c1e1e0c9a282466",
+    "content.faq-stress-milk.t.0": "02db447559e1251f",
     "content.faq-bonding.title": "a87f7534c89adb7e",
     "content.faq-bonding.t.0": "e686292ec2702bc0",
     "content.faq-ibuprofen-bf.title": "471f20ca8e18c184",
@@ -2392,7 +2392,7 @@ window.MYOB_LOCALES.es = {
     "content.faq-newborn-procedures.t.5": "502e42f21156da6c",
     "content.faq-newborn-procedures.t.6": "cd0c11353cd68b73",
     "content.faq-newborn-procedures.t.7": "d06e909e2132ca54",
-    "content.faq-newborn-procedures.t.8": "39e29bd47e16a8be",
+    "content.faq-newborn-procedures.t.8": "0f46858bcf9a15d9",
     "content.faq-first-bath.title": "1ece0a9772ca9db5",
     "content.faq-first-bath.t.0": "23fa392719b4b945",
     "content.prenatal-vitamins.title": "84b24fbf8b3afe05",

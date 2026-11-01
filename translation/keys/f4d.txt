@@ -1,0 +1,19 @@
+# Stale since before §1: re-translate in es/fr/ko
+content.exercise-pregnancy.t.5
+content.exercise-pregnancy.t.6
+content.what-happens-on-arrival.t.5
+content.what-happens-on-arrival.t.9
+content.stages-of-labor.t.25
+content.epidural.t.24
+content.csection.t.0
+content.physical-recovery.t.20
+content.physical-recovery.t.21
+content.pelvic-rest.t.0
+content.pelvic-rest.t.1
+content.faq-hair-dye.t.0
+content.faq-exercise-mc.t.0
+content.faq-vaccines.t.0
+content.faq-epidural-csec.t.2
+content.faq-water-breaking.t.0
+content.faq-stress-milk.t.0
+content.faq-newborn-procedures.t.8

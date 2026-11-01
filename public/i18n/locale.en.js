@@ -1641,7 +1641,7 @@ window.MYOB_LOCALES.en = {
       "title": "Does stress dry up breast milk?",
       "sub": "",
       "t": [
-        "Acute stress can temporarily interfere with the letdown reflex (the release of milk). But once stressful event will not cause milk to dry up. Milk supply is driven by demand. The more frequently and effectively your baby nurses or you pump, the more milk your body produces. If your stress or chaos around you prevents baby from feeding well, this could decrease demand and decrease the amount of milk you produce. Strategies that help letdown: skin-to-skin contact, warmth, relaxation techniques, and looking at a photo of your baby when pumping. Talk to your doctor about non-chemical ways of reducing stress."
+        "Acute stress can temporarily interfere with the letdown reflex (the release of milk). But one stressful event will not cause milk to dry up. Milk supply is driven by demand. The more frequently and effectively your baby nurses or you pump, the more milk your body produces. If your stress or chaos around you prevents baby from feeding well, this could decrease demand and decrease the amount of milk you produce. Strategies that help letdown: skin-to-skin contact, warmth, relaxation techniques, and looking at a photo of your baby when pumping. Talk to your doctor about non-chemical ways of reducing stress."
       ]
     },
     "faq-bonding": {

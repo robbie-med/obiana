@@ -915,8 +915,8 @@ window.MYOB_LOCALES.ko = {
         "허리 통증, 부종, 변비, 피로를 줄여줍니다",
         "임신성 당뇨, 자간전증, 과도한 체중 증가의 위험을 낮춥니다",
         "수면, 기분, 활력을 개선합니다",
-        "분만 시간이 짧아지고 회복이 빨라지는 경우가 많습니다",
-        "활동적인 산모의 아기는 심박수 패턴이 더 건강한 경우가 많습니다",
+        "일부 연구에서 더 짧은 진통과 더 쉬운 회복과 관련이 있었습니다",
+        "진통과 신생아를 안고 다니는 일 모두에 필요한 체력을 길러 줍니다",
         "어느 시기든 좋은 선택",
         "걷기",
         ". 가장 쉽고 안전하며 어떤 체력 수준에서도 가능합니다",
@@ -977,11 +977,11 @@ window.MYOB_LOCALES.ko = {
         "자궁경부 개대와 소실 정도를 확인하는 질 내진(SVE)",
         "외부 태아 모니터 부착. 배에 두 개의 띠를 두르고, 하나는 자궁 수축을, 다른 하나는 아기의 심박수를 추적합니다",
         "혈압, 체온, 맥박, 산소 포화도 확인",
-        "정맥 주사(IV) 확보 (팔에 작은 카테터를 놓는 표준 절차)",
+        "팔에 작은 관을 넣어 정맥 주사 통로를 만듭니다. 위험이 낮다면, 수액 없이 통로만 유지하는 식염수 잠금을 요청하거나, 정말 필요한지 물어볼 수 있습니다",
         "소변 검체 채취",
         "산전 기록에서 GBS(B군 연쇄상구균) 상태 확인",
         "2단계: 입원 또는 대기 요청",
-        "자궁경부가 4–6 cm 미만으로 열린 경우(병원과 상황에 따라 다름), 집으로 돌아가거나 1–2시간 정도 걸은 후 다시 검사를 받으라는 안내를 받을 수 있습니다. 이것은 거절이 아닙니다. 초기 진통은 집에서 지내는 편이 실제로 더 안전하고 편안합니다. 낙심하지 마세요.",
+        "자궁경부가 4–6 cm 미만이면(병원과 상황에 따라 다름), 집으로 돌려보내거나 1–2시간 걸은 뒤 다시 확인하자고 할 수 있습니다. 초기 진통은 집에서 보내는 것이 더 안전하고 편합니다.",
         "3단계: 분만실",
         "입원이 결정되면 출산까지 그 방에 머물게 됩니다. 담당 간호사가 산모님의 주된 안내자가 되어 정기적으로 상태를 확인합니다. 이때 출산에 대한 희망 사항과 통증 관리 방법을 상의하세요.",
         "병원에 가져갈 것",
@@ -1017,7 +1017,7 @@ window.MYOB_LOCALES.ko = {
         "분만 유도",
         "자궁경부에 도움이 필요한 경우, 의사가 약물(미소프로스톨, 옥시토신/피토신)이나 풍선 카테터를 사용해 자궁경부를 부드럽게 하고 열리게 할 수 있습니다. 분만 유도는 12–24시간 이상 걸릴 수 있으며, 특히 첫아기이고 자궁경부가 준비되지 않은 경우 더 오래 걸립니다. 시간이 걸릴 것을 염두에 두세요.",
         "태아 모니터링",
-        "대부분의 병원은 활동기 진통 동안 지속적인 전자 태아 모니터링을 사용합니다. 이는 수축과 연관된 아기의 심박수 패턴을 추적하여 태아 곤란증의 징후를 조기에 발견하는 데 도움이 됩니다. 걷거나 욕조를 사용하고 싶다면 무선(원격측정) 모니터가 있는지 문의하세요."
+        "대부분의 병원은 활동기 진통 동안 지속적인 전자 태아 감시를 하며, 진통에 따른 아기 심박을 기록합니다. 위험이 낮은 분만에서는 간호사가 정해진 간격으로 심장 소리를 듣는 간헐적 청진이 아기에게 같은 결과를 주면서 제왕절개와 흡입분만·겸자분만이 더 적습니다. 무통 주사를 맞았거나, 유도 분만 중이거나, 더 가까이 지켜봐야 할 질환이 있으면 지속 감시가 더 적절합니다. 걷거나 욕조를 쓰고 싶다면 무선(원격) 모니터가 있는지 물어보세요."
       ]
     },
     "pain-management": {
@@ -1076,14 +1076,14 @@ window.MYOB_LOCALES.ko = {
         "핵심 사실. 제왕절개 오해",
         "경막외 마취는 제왕절개율을 높이지",
         "않습니다",
-        ". 이것은 산과학에서 가장 흔하고 가장 많이 연구된 오해 중 하나입니다. 여러 대규모 무작위 시험이 이를 확인했습니다. 활동기 진통 중에는 언제든 경막외 마취를 요청할 수 있습니다."
+        "제왕절개율을 높이지 않습니다. 산과에서 가장 많이 연구된 질문 중 하나이며, 대규모 무작위 시험들의 결과가 같습니다. 실제로 주고받는 것이 있습니다. 힘주기 단계가 길어지는 경향이 있고, 흡입분만이나 겸자분만 가능성이 조금 높아집니다. 활동기 진통 중 언제든 무통 주사를 요청할 수 있습니다. 실제 한계는 몇 cm 열렸는지에 대한 규칙이 아니라 진통이 얼마나 빨리 진행되는지입니다. 진통이 아주 빠르면 놓을 시간이 없을 수 있습니다."
       ]
     },
     "csection": {
       "title": "제왕절개: 이유와 예상되는 과정",
       "sub": "예정 수술과 비예정 수술, 수술 과정, 회복",
       "t": [
-        "제왕절개는 복부와 자궁을 절개해 아기를 꺼내는 수술 분만입니다. 미국 출산의 약 30%가 제왕절개입니다.",
+        "제왕절개는 배와 자궁을 절개해 아기를 낳는 수술 분만입니다. 미국 출생의 약 3명 중 1명이 제왕절개로 태어납니다.",
         "예정된 (계획된) 이유",
         "전치태반. 태반이 자궁경부 입구를 덮고 있는 경우",
         "아기가 둔위(발이 아래) 또는 횡위(옆으로 누운 자세)이고 돌아오지 않은 경우",
@@ -1185,8 +1185,8 @@ window.MYOB_LOCALES.ko = {
         "화장실에 다녀올 때마다 미지근한 물이 든 회음부 세정병(페리 보틀)을 사용하세요. 앞에서 뒤로",
         "처음 24시간은 얼음찜질, 이후에는 따뜻한 좌욕으로 바꾸세요(10~15분, 하루 2~3회)",
         "위치하젤 패드(예: Tucks)가 부기와 치질을 진정시킵니다",
-        "변비약(도큐세이트/콜레이스)",
-        ". 즉시 시작하세요. 회음부 봉합 상태에서의 변비는 매우 불편하고, 힘을 주면 봉합 부위가 터질 위험이 있습니다",
+        "변비",
+        ". 처음 몇 주 동안 매우 흔하고, 회음부 봉합이 있으면 정말 불편합니다. 물, 섬유질, 몸 움직이기가 가장 도움이 됩니다. 거의 모든 병원에서 도큐세이트(Colace)를 주지만, 연구에서는 위약보다 거의 낫지 않았습니다. 효과가 없다면 폴리에틸렌 글리콜(Miralax) 같은 삼투성 완하제를 물어보세요.",
         "통증 관리",
         "이부프로펜(6시간마다 600 mg)과 아세트아미노펜(6시간마다 650 mg)을 일정에 맞춰 번갈아 복용하는 것이 통증이 심해질 때까지 기다리는 것보다 훨씬 효과적입니다. 1일차에 간호사에게 복용 일정을 글로 적어달라고 요청하고 그대로 지키세요."
       ]
@@ -1214,8 +1214,8 @@ window.MYOB_LOCALES.ko = {
       "title": "골반 휴식과 성관계 재개",
       "sub": "6주 권고가 있는 이유",
       "t": [
-        "ACOG(미국 산부인과학회)는 분만 후 최소 6주가 지날 때까지 질 성관계를 기다릴 것을 권장합니다. 이 지침이 있는 이유를 설명합니다.",
-        "왜 6주인가요?",
+        "대부분 6주라는 숫자를 듣고, 산후 진료와도 맞아떨어지지만, 정해진 규칙이 아니라 관례입니다. 정말 중요한 것은 출혈이 멈췄는지, 열상이나 절개 부위가 나았는지, 그리고 본인이 준비가 되었다고 느끼는지입니다. 더 빨리 그렇게 되는 사람도 있고, 더 늦게 되는 사람도 많습니다. 안쪽에서 회복되고 있는 것은 이렇습니다.",
+        "6주라는 숫자는 어디서 왔을까",
         "자궁이 완전히 수축하고 태반이 붙어 있던 자리가 완전히 아무는 데 4~6주가 필요합니다",
         "질 열상, 찢어짐 또는 회음절개 봉합 부위가 아물 시간이 필요합니다",
         "제왕절개 절개 부위, 겉으로 보이는 흉터와 자궁 내부의 절개 부위 모두, 최소 6주가 필요합니다",
@@ -1494,14 +1494,14 @@ window.MYOB_LOCALES.ko = {
       "title": "임신 중에 머리 염색을 해도 되나요?",
       "sub": "",
       "t": [
-        "네. 염색약은 두피를 통해 아주 소량만 흡수됩니다. 일반적인 미용실이나 가정 염색 수준의 양으로 태아에게 해롭다는 연구 결과는 발표된 바 없습니다. 대부분의 의사는 특히 임신 초기(첫 3개월) 이후에는 안전하다고 봅니다. 하이라이트(호일) 시술은 두피 접촉이 훨씬 적습니다. 걱정되신다면 주요 장기 발달이 끝나는 임신 중기까지 기다리셔도 됩니다."
+        "네, 하지만 왜 하려는지 생각해 보세요. 염색약은 두피를 통해 아주 적은 양이 흡수됩니다. 미용실이나 집에서 하는 보통 염색 정도의 양으로 태아에게 해가 있다는 연구는 발표된 적이 없습니다. 하이라이트(호일)는 두피에 닿는 양이 더 적습니다. 걱정되면 주요 장기가 다 만들어진 임신 중기까지 기다리거나, 그냥 하지 마세요."
       ]
     },
     "faq-exercise-mc": {
       "title": "운동이 유산을 일으키나요?",
       "sub": "",
       "t": [
-        "아니요. 건강한 임신에서 적당한 운동은 유산을 일으키지 않습니다. 이것은 임신에 관한 가장 널리 퍼진 속설 중 하나입니다. 초기 유산은 거의 항상 배아의 염색체 이상이 원인이며, 운동, 성관계, 스트레스, 산모가 한 어떤 행동 때문이 아닙니다. 운동은 해롭기는커녕 오히려 몸을 보호합니다. 임신 전 관리 섹션의 운동 지침을 참고하세요."
+        "아닙니다. 건강한 임신에서 적당한 운동은 유산을 일으키지 않습니다. 어느 정도의 운동은 해가 아니라 보호가 됩니다. 산전 부분의 운동 안내를 보세요. 담당 의사가 운동하지 말라고 했다면, 이유를 물어보고 그 안내를 따르세요."
       ]
     },
     "faq-sex-pregnancy": {
@@ -1515,7 +1515,7 @@ window.MYOB_LOCALES.ko = {
       "title": "임신 중 백신을 맞아도 안전한가요?",
       "sub": "",
       "t": [
-        "일부는 안전하고 일부는 그렇지 않습니다. 담당 의료진과 상의하세요."
+        "임신할 때마다 두 가지를 권하며, 안전한 것으로 보입니다: Tdap 추가 접종과 독감 주사. 생백신은 출산 후까지 기다려야 합니다."
       ]
     },
     "faq-eat-for-two": {
@@ -1538,7 +1538,7 @@ window.MYOB_LOCALES.ko = {
       "t": [
         "아니요. 이것은 산과학에서 가장 많이 연구된 질문 중 하나입니다. 여러 대규모 무작위 대조 연구와 메타 분석 결과, 경막외 마취는 제왕절개 비율을 높이지",
         "않는다",
-        "는 것이 확인되었습니다. 경막외 마취가 힘주기 단계를 약간 길어지게 할 수는 있지만, 여유를 갖고 간호사의 안내에 따르면 안전하게 진행됩니다. 경막외 마취는 활동기 진통 중이라면 언제든 요청할 수 있습니다. \"너무 이르다\"거나 \"너무 늦었다\"는 기준은 없습니다."
+        "제왕절개율을 높이지 않습니다. 무통 주사는 힘주기 단계를 다소 길게 하고 흡입분만이나 겸자분만 가능성을 높이므로, 통증 완화와 함께 따져 볼 만합니다. 활동기 진통 중 언제든 요청할 수 있습니다. 실제 한계는 몇 cm라는 기준이 아니라 진통이 얼마나 빨리 진행되는지입니다. 진통이 아주 빠르면 시간이 없을 수 있습니다."
       ]
     },
     "faq-routine-episiotomy": {
@@ -1554,7 +1554,7 @@ window.MYOB_LOCALES.ko = {
       "title": "양수가 터지면 제왕절개를 해야 하나요?",
       "sub": "",
       "t": [
-        "아니요. 만삭에 양막이 파열(양수가 터짐)되면 대부분의 산모님은 12시간 안에 자연스럽게 진통이 시작됩니다. 진통이 시작되지 않으면 감염 위험을 줄이기 위해 유도 분만을 권합니다. 지침상 18–24시간 안에 분만을 마치는 것입니다. GBS(B군 연쇄상구균) 양성이라면 즉시 항생제를 시작합니다. 다른 의학적 이유가 있을 때만 제왕절개가 필요합니다. 양수가 터졌다는 것만으로는 제왕절개 이유가 되지 않습니다."
+        "아닙니다. 만삭에 양수가 터지면 대부분 하루쯤 안에 저절로 진통이 시작됩니다. 진통이 시작되지 않으면, 양막이 열려 있는 시간이 길수록 감염 가능성이 올라가기 때문에 보통 유도 분만을 권합니다. 함께 따져 볼 점점 커지는 위험이지, 놓친 마감 시간이 아닙니다. GBS 양성이면 바로 항생제를 시작합니다. 제왕절개는 다른 이유가 있을 때만 필요하며, 양수가 터진 것만으로는 이유가 되지 않습니다."
       ]
     },
     "faq-eat-in-labor": {
@@ -1584,7 +1584,7 @@ window.MYOB_LOCALES.ko = {
       "title": "스트레스를 받으면 모유가 마르나요?",
       "sub": "",
       "t": [
-        "갑작스러운 스트레스는 사출 반사(젖이 나오는 반사)를 일시적으로 방해할 수 있지만, 장기적인 모유 생산에는 영향을 주지 않습니다. 모유의 양은 수요에 따라 결정됩니다. 아기가 더 자주, 더 효과적으로 젖을 빨거나 유축을 더 자주 할수록 몸은 더 많은 모유를 만듭니다. 사출에 도움이 되는 방법으로는 아기와의 피부 맞닿기(캥거루 케어), 몸을 따뜻하게 하기, 이완 기법, 그리고 유축할 때 아기 사진 보기 등이 있습니다."
+        "급성 스트레스는 사출 반사(젖이 나오는 것)를 잠시 방해할 수 있습니다. 하지만 스트레스를 한 번 받았다고 젖이 마르지는 않습니다. 젖의 양은 수요에 따라 정해집니다. 아기가 자주, 잘 빨거나 유축을 자주 할수록 몸은 젖을 더 만듭니다. 스트레스나 주변의 혼란 때문에 아기가 잘 먹지 못하면 수요가 줄고 젖 양도 줄 수 있습니다. 사출에 도움이 되는 것: 피부 맞닿기, 따뜻함, 이완 방법, 유축할 때 아기 사진 보기. 약 없이 스트레스를 줄이는 방법을 담당 의사와 상의하세요."
       ]
     },
     "faq-bonding": {
@@ -1620,7 +1620,7 @@ window.MYOB_LOCALES.ko = {
         "B형 간염 백신 1차 접종",
         ", 그리고",
         "신생아 대사 선별 채혈",
-        "(발뒤꿈치 채혈로 PKU, 갑상선기능저하증, 겸상적혈구병 등 약 30가지 질환 검사). 모두 권장되는 이유는 조기에 개입하지 않을 때의 위험이 처치 자체의 위험보다 크기 때문입니다. 대부분의 주에서 법적으로 거부하실 수 있습니다. 먼저 담당 의료진과 위험에 대해 상의하시기를 권합니다."
+        "(약 30가지 질환을 찾는 발뒤꿈치 채혈, 페닐케톤뇨증, 갑상선 기능 저하증, 겸상 적혈구병 포함). 이 처치들의 근거가 모두 같은 수준은 아니어서, 하나씩 따로 물어보는 것이 합리적입니다. 비타민 K와 발뒤꿈치 채혈은 근거가 가장 분명합니다. 비타민 K는 드물지만 치명적인 출혈을 막고, 발뒤꿈치 채혈은 첫 며칠 안에 찾아야만 치료할 수 있는 질환을 찾아냅니다. B형 간염 접종은 엄마의 B형 간염 결과가 양성이거나 모를 때 가장 중요합니다. 안연고는 근거가 더 약해서 여러 나라가 일상적으로 쓰는 것을 그만두었지만, 미국의 많은 주는 법으로 요구합니다. 대부분의 주에서 법적으로 거부할 수 있습니다. 어떤 것이 본인 상황에 해당하는지 의료진에게 물어보세요."
       ]
     },
     "faq-first-bath": {
@@ -1857,8 +1857,8 @@ window.MYOB_LOCALES.ko = {
     "content.exercise-pregnancy.t.2": "110c57cb0b0a8dd9",
     "content.exercise-pregnancy.t.3": "968f855e83990068",
     "content.exercise-pregnancy.t.4": "8e84601ee6d4bbec",
-    "content.exercise-pregnancy.t.5": "4932e1c33057d7ed",
-    "content.exercise-pregnancy.t.6": "c1a74c510a66c27b",
+    "content.exercise-pregnancy.t.5": "538448537353cad9",
+    "content.exercise-pregnancy.t.6": "21aec7ace6cef67e",
     "content.exercise-pregnancy.t.7": "bbab2f65105927ef",
     "content.exercise-pregnancy.t.8": "ea6b8258d77cb182",
     "content.exercise-pregnancy.t.9": "a600374167f2c88f",
@@ -1911,11 +1911,11 @@ window.MYOB_LOCALES.ko = {
     "content.what-happens-on-arrival.t.2": "82c5a96a551b0518",
     "content.what-happens-on-arrival.t.3": "604bae309bf67b16",
     "content.what-happens-on-arrival.t.4": "ebff6e6eb9fbf288",
-    "content.what-happens-on-arrival.t.5": "0ba013bea19ffea0",
+    "content.what-happens-on-arrival.t.5": "87a814d0f436694a",
     "content.what-happens-on-arrival.t.6": "60a98c56a9a2dd80",
     "content.what-happens-on-arrival.t.7": "2b1d87c271ab46c4",
     "content.what-happens-on-arrival.t.8": "2557fb10821bac0e",
-    "content.what-happens-on-arrival.t.9": "497a1818fb4542e6",
+    "content.what-happens-on-arrival.t.9": "361c19d6ee5b17f4",
     "content.what-happens-on-arrival.t.10": "92782e29e06813c3",
     "content.what-happens-on-arrival.t.11": "0a91819b6f404a29",
     "content.what-happens-on-arrival.t.12": "fd51bb1dd2656933",
@@ -1947,7 +1947,7 @@ window.MYOB_LOCALES.ko = {
     "content.stages-of-labor.t.22": "52f97a471cf613e9",
     "content.stages-of-labor.t.23": "6ca224f5bc85b27b",
     "content.stages-of-labor.t.24": "db249a914e17ad3b",
-    "content.stages-of-labor.t.25": "9b93f5f09fe16aee",
+    "content.stages-of-labor.t.25": "e20a4495efdec9c3",
     "content.pain-management.title": "e74231e2bfa35a90",
     "content.pain-management.sub": "53b06b5c9602e506",
     "content.pain-management.t.0": "6ead083c8916dd16",
@@ -1998,10 +1998,10 @@ window.MYOB_LOCALES.ko = {
     "content.epidural.t.21": "da27b75ab7eb0cac",
     "content.epidural.t.22": "b9ac582914c869e3",
     "content.epidural.t.23": "29b19c8a24cbf72c",
-    "content.epidural.t.24": "9dcb78ff88707bb1",
+    "content.epidural.t.24": "24dd5801d634e257",
     "content.csection.title": "157f676a005609f4",
     "content.csection.sub": "a289eb92dcfe05ac",
-    "content.csection.t.0": "caa3098b7f359029",
+    "content.csection.t.0": "22d4929764cdedb9",
     "content.csection.t.1": "f67b2512bc8d5ec0",
     "content.csection.t.2": "ee8947e22ae2f1a4",
     "content.csection.t.3": "815ded66fda88b70",
@@ -2091,8 +2091,8 @@ window.MYOB_LOCALES.ko = {
     "content.physical-recovery.t.17": "70868fecbb4e20d6",
     "content.physical-recovery.t.18": "fc4b66acb9af3776",
     "content.physical-recovery.t.19": "eb05a7e7edf581c1",
-    "content.physical-recovery.t.20": "004855c5406684f7",
-    "content.physical-recovery.t.21": "6e9a41cec35b8b08",
+    "content.physical-recovery.t.20": "d7d6213ef94d23fc",
+    "content.physical-recovery.t.21": "256e72c34673b5b9",
     "content.physical-recovery.t.22": "0b7e28c4ba795156",
     "content.physical-recovery.t.23": "34c3cbc0b064f6e6",
     "content.mood-ppd.title": "7e9b857b10765529",
@@ -2112,8 +2112,8 @@ window.MYOB_LOCALES.ko = {
     "content.mood-ppd.t.12": "fdecb44188e62243",
     "content.pelvic-rest.title": "faccbb545df2432a",
     "content.pelvic-rest.sub": "d7f295466becd49c",
-    "content.pelvic-rest.t.0": "a3b455f9a891ab93",
-    "content.pelvic-rest.t.1": "48807efffb0afbb5",
+    "content.pelvic-rest.t.0": "c3d28c08f86b68e6",
+    "content.pelvic-rest.t.1": "4b6ae3f5b238681b",
     "content.pelvic-rest.t.2": "dce88d30f754251e",
     "content.pelvic-rest.t.3": "499c199fea48a8a1",
     "content.pelvic-rest.t.4": "3ba747ba7a45dde0",
@@ -2341,13 +2341,13 @@ window.MYOB_LOCALES.ko = {
     "content.faq-coffee.t.1": "d49405defc21c3ec",
     "content.faq-coffee.t.2": "19f22003cc780ded",
     "content.faq-hair-dye.title": "3cbc4f5501467bbb",
-    "content.faq-hair-dye.t.0": "f32f2d9b3dae0f71",
+    "content.faq-hair-dye.t.0": "194b47e06a23e60e",
     "content.faq-exercise-mc.title": "055753c567df011f",
-    "content.faq-exercise-mc.t.0": "ce23aa3d3a4ea68b",
+    "content.faq-exercise-mc.t.0": "2b2d76b57f4bc45f",
     "content.faq-sex-pregnancy.title": "8399c3d543c4147f",
     "content.faq-sex-pregnancy.t.0": "9b3a7841e4c3a343",
     "content.faq-vaccines.title": "22cf8d87c3c18165",
-    "content.faq-vaccines.t.0": "6283a0613712aceb",
+    "content.faq-vaccines.t.0": "54aa1c57cf3d489d",
     "content.faq-eat-for-two.title": "7109ae5ce8714502",
     "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
     "content.faq-hot-tub.title": "2230219d6f10d437",
@@ -2355,13 +2355,13 @@ window.MYOB_LOCALES.ko = {
     "content.faq-epidural-csec.title": "85af8aced19ce724",
     "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
     "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
-    "content.faq-epidural-csec.t.2": "42f4cdc3b8816c69",
+    "content.faq-epidural-csec.t.2": "d9849263c1e6467d",
     "content.faq-routine-episiotomy.title": "063590cb3bfbb7f9",
     "content.faq-routine-episiotomy.t.0": "f9f4d22fb4ca4b41",
     "content.faq-routine-episiotomy.t.1": "8a8e3958d3c9cdb6",
     "content.faq-routine-episiotomy.t.2": "7d6842265369b750",
     "content.faq-water-breaking.title": "3024fe7ba7f6b3ed",
-    "content.faq-water-breaking.t.0": "c5e9bb8a081c06e8",
+    "content.faq-water-breaking.t.0": "ffd7e16a191f9018",
     "content.faq-eat-in-labor.title": "5de8ba9361616d39",
     "content.faq-eat-in-labor.t.0": "23ad9f490ae5def7",
     "content.faq-vbac.title": "4fb6dce62d75356c",
@@ -2371,7 +2371,7 @@ window.MYOB_LOCALES.ko = {
     "content.faq-bf-bc.t.1": "1ab0f2cdfd636c5f",
     "content.faq-bf-bc.t.2": "b97f0ac57c1360c3",
     "content.faq-stress-milk.title": "601e567b1be30855",
-    "content.faq-stress-milk.t.0": "0c1e1e0c9a282466",
+    "content.faq-stress-milk.t.0": "02db447559e1251f",
     "content.faq-bonding.title": "a87f7534c89adb7e",
     "content.faq-bonding.t.0": "e686292ec2702bc0",
     "content.faq-ibuprofen-bf.title": "471f20ca8e18c184",
@@ -2387,7 +2387,7 @@ window.MYOB_LOCALES.ko = {
     "content.faq-newborn-procedures.t.5": "502e42f21156da6c",
     "content.faq-newborn-procedures.t.6": "cd0c11353cd68b73",
     "content.faq-newborn-procedures.t.7": "d06e909e2132ca54",
-    "content.faq-newborn-procedures.t.8": "39e29bd47e16a8be",
+    "content.faq-newborn-procedures.t.8": "0f46858bcf9a15d9",
     "content.faq-first-bath.title": "1ece0a9772ca9db5",
     "content.faq-first-bath.t.0": "23fa392719b4b945",
     "content.prenatal-vitamins.title": "84b24fbf8b3afe05",
