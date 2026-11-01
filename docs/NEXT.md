@@ -69,14 +69,14 @@ Don't build a second tool beside it.
 
 ## 4. Draft translations
 - [ ] Machine-draft through the existing `translation/` pipeline, in this order:
-  1. When to call, Today, Visits and the tab names, all languages.
+  1. When to call, Today, Visits and the tab names, all languages. **Done 2026-11-01 (session F)** for all 15 languages except Zomi (`translation/keys/f4a.txt`, `f4b.txt`): es/fr/ko 89 strings, ar/ru/zh 102 (with the When-to-call card sentences, in new card shells), the nine smaller locales 121.
   2. The 9 cards es/fr/ko are missing (preeclampsia, antenatal mental health, alcohol, tobacco/cannabis, fish, car seat, vitamin D, circumcision, common discomforts).
   3. ar/ru/zh cards.
   4. The rest.
-- [ ] Every machine-drafted key is stamped **unreviewed** by `merge.js` (alongside its source fingerprint). The Translate page already reads it as a top-level `unreviewed` map in the locale, keyed like `/api/suggest` keys (bare ui path, `content.<id>.t.<n>`), e.g. `"unreviewed": {"content.mfm.t.3": 1}`. Drafts are live for readers; the stamp only orders them on the Translate page. A translator's Send or Looks right clears it.
+- [x] Every machine-drafted key is stamped **unreviewed** by `merge.js` (alongside its source fingerprint). The Translate page already reads it as a top-level `unreviewed` map in the locale, keyed like `/api/suggest` keys (bare ui path, `content.<id>.t.<n>`), e.g. `"unreviewed": {"content.mfm.t.3": 1}`. Drafts are live for readers; the stamp only orders them on the Translate page. A translator's Send or Looks right clears it.
 - [ ] Translators correct the drafts on the Translate page.
-- [ ] EPDS is never machine-translated.
-- [ ] `validate.js`/`merge.js` and the review merge accept only plain text plus `<br> <strong> <em>`, and keep `{placeholders}` and unit tokens byte for byte.
+- [x] EPDS is never machine-translated. (`englishOf()` excludes it; the EPDS text isn't in the locale catalogs.)
+- [x] `validate.js`/`merge.js` and the review merge accept only plain text plus `<br> <strong> <em>`, and keep `{placeholders}` and unit tokens byte for byte.
 
 ## 5. New content
 - [ ] **New cards.** First the three that When to call depends on:
@@ -168,3 +168,6 @@ Don't build a second tool beside it.
 - **Done 2026-11-01 (user report):** plain-voice pass. Removed every small subtitle (tool cards, Me, Today's When to call button, Home hero, the Tools note) and the "who says so" sources line; rewrote the disclaimers, privacy line, machine-translation notice, US-care notice, Help Improve copy and print footers. Zomi keeps its old wording for the two notices it had.
 - Still to look at for the same voice: guide card subtitles (`content.<id>.sub`) under every card title.
 - **Done 2026-11-01 (user report):** British English in the English source ("centre", "anaemia", "grey", "travelling", "towards", "in hospital", "straight away", "late on", "a great deal", "a litre a day" → "32 ounces (1 liter)"). check.js now fails on British spelling, idiom and UK units in `locale.en.js`. The one translated sentence affected (prenatal-vitamins t3, spelling only) was re-stamped in es/fr/ko rather than re-translated.
+- How drafts are made now (session F): `node translation/prepare.js --keys <file> --draft [lang…]` writes prompts for only what each locale lacks (cards included); Claude writes `translation/out/<lang>.keys.<tag>.json` from them; `validate.js`; `merge.js --keys <tag>` creates any missing card (blank slots read as English) and marks every drafted key `unreviewed`.
+- Zomi got no drafts: nobody here writes Zomi reliably, and step 1 is crisis text. It needs a Zomi speaker on the Translate page (`translation/ZOMI-NEEDED.md`).
+- **Done 2026-11-01 (user report):** "a · b · c" sentences in cards are drawn as real bulleted lists (cardBody, all languages, no text change); tool readouts no longer use "·".

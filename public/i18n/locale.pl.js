@@ -29,7 +29,8 @@ window.MYOB_LOCALES.pl = {
       "continue": "Rozumiem"
     },
     "tools": {
-      "helpUsImprove": "Pomóż nam ulepszyć"
+      "helpUsImprove": "Pomóż nam ulepszyć",
+      "contractionTimer": "Licznik skurczów"
     },
     "home": {
       "heroTitle": "Wiedz, czego się<br>spodziewać. Zadawaj<br>dobre pytania.",
@@ -410,6 +411,7 @@ window.MYOB_LOCALES.pl = {
     "visits.ppFull.title": 1,
     "visits.ppFull.i1": 1,
     "visits.ppFull.i2": 1,
-    "visits.ppFull.i3": 1
+    "visits.ppFull.i3": 1,
+    "tools.contractionTimer": 1
   }
 };

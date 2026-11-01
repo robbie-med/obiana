@@ -32,7 +32,8 @@ window.MYOB_LOCALES["pt-BR"] = {
       "continue": "Entendi"
     },
     "tools": {
-      "helpUsImprove": "Ajude a melhorar"
+      "helpUsImprove": "Ajude a melhorar",
+      "contractionTimer": "Cronômetro de contrações"
     },
     "home": {
       "heroTitle": "Saiba o que<br>esperar. Faça boas<br>perguntas.",
@@ -411,6 +412,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "visits.ppFull.title": 1,
     "visits.ppFull.i1": 1,
     "visits.ppFull.i2": 1,
-    "visits.ppFull.i3": 1
+    "visits.ppFull.i3": 1,
+    "tools.contractionTimer": 1
   }
 };

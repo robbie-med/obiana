@@ -64,8 +64,10 @@ function compareString(key, en, tr, errs, warns, lang) {
     warns.push(`${key}: HTML entities changed ${JSON.stringify(ee)} -> ${JSON.stringify(et)}`);
 
   // Units and clinical abbreviations that must survive verbatim.
-  for (const unit of ['°F', 'mg', ' cm', ' lb']) {
-    const c = s => String(s).split(unit).length - 1;
+  // A unit counts only after a number: Tagalog "mga" is not milligrams.
+  for (const unit of ['°F', 'mg', 'cm', 'lb']) {
+    const re = new RegExp('\\d\\s?' + unit + (unit === '°F' ? '' : '\\b'), 'g');
+    const c = s => (String(s).match(re) || []).length;
     if (c(en) !== c(tr)) warns.push(`${key}: "${unit.trim()}" count ${c(en)} -> ${c(tr)}`);
   }
   for (const abbr of ['GBS','NIPT','ACOG','AAP','VBAC','Tdap','RhoGAM','BMI','NST','IOM','MFM','Rh']) {

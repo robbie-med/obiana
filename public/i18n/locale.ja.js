@@ -32,7 +32,8 @@ window.MYOB_LOCALES.ja = {
       "continue": "理解しました"
     },
     "tools": {
-      "helpUsImprove": "改善にご協力ください"
+      "helpUsImprove": "改善にご協力ください",
+      "contractionTimer": "陣痛タイマー"
     },
     "home": {
       "heroTitle": "これから何が<br>起きるかを知り、<br>良い質問を。",
@@ -407,6 +408,7 @@ window.MYOB_LOCALES.ja = {
     "visits.ppFull.title": 1,
     "visits.ppFull.i1": 1,
     "visits.ppFull.i2": 1,
-    "visits.ppFull.i3": 1
+    "visits.ppFull.i3": 1,
+    "tools.contractionTimer": 1
   }
 };

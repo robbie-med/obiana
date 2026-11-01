@@ -29,7 +29,8 @@ window.MYOB_LOCALES.de = {
       "continue": "Ich habe verstanden"
     },
     "tools": {
-      "helpUsImprove": "Helfen Sie uns, besser zu werden"
+      "helpUsImprove": "Helfen Sie uns, besser zu werden",
+      "contractionTimer": "Wehen-Timer"
     },
     "home": {
       "heroTitle": "Wissen, was Sie<br>erwartet. Die richtigen<br>Fragen stellen.",
@@ -406,6 +407,7 @@ window.MYOB_LOCALES.de = {
     "visits.ppFull.title": 1,
     "visits.ppFull.i1": 1,
     "visits.ppFull.i2": 1,
-    "visits.ppFull.i3": 1
+    "visits.ppFull.i3": 1,
+    "tools.contractionTimer": 1
   }
 };
