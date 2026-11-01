@@ -38,7 +38,7 @@ Ticks are the status: tick an item in the commit that ships it. New findings go 
   - Parse with `parseIsoDate()`, never `Date.parse()`.
   - Seed from My Info only when the text is unambiguous: ISO `YYYY-MM-DD`, or a written month name. A plain `03/04/2027` doesn't seed.
 - [x] UTC date off-by-one (`public/app/tools/jaundice.js` `max=`, `public/app/tools/appts.js` default date, `settings.js` export filename): use `isoDate(Date.now())`, never `toISOString()`.
-- [ ] **Export misses keys** (`public/app/settings.js` `EXPORT_KEYS`): add `obiana.dates` and `myob.noticeAccepted`. Import reads the same list.
+- [x] **Export misses keys** (`public/app/settings.js` `EXPORT_KEYS`): add `obiana.dates` and `myob.noticeAccepted`. Import reads the same list.
 - [ ] Name exports `obiana-<date>.json` (local date).
 - [x] `translation/merge.js` skips `pt-BR` batches without a word (its filename regex is `[a-z]{2,3}`). Accept every code in the worker's `LOCALES`.
 - [ ] Delete the old root `CNAME`. It isn't deployed (only `public/` is), so this is cleanup only. Fix the stale "prod on GitHub Pages myob.robbiemed.org" note in the myob row of `PORTS.md`.

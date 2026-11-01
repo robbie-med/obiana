@@ -42,7 +42,8 @@ const EXPORT_KEYS = [
   'weight-profile', 'epds-history', 'birth-plan', 'birth-plan-notes', 'appt-notes',
   'nausea-log', 'nausea-snacks', 'nausea-week', 'nausea-tried',
   'myob.epdsLang', 'birth-plan-v2', 'appt-notes-v2',
-  'myob.lang', 'dark-mode', 'myob.usNoticeSeen',
+  'myob.lang', 'dark-mode', 'myob.usNoticeSeen', 'myob.noticeAccepted',
+  'obiana.dates',
 ];
 
 function exportData() {
