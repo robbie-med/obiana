@@ -34,7 +34,7 @@ Ticks are the status: tick an item in the commit that ships it. New findings go 
   - Done when `node translation/stamp.js report` lists none of the Section 1 keys as stale in any locale.
 
 ## 2. Small bugs
-- [ ] **ISO due dates seed one day early in the US.** `seedDatesFromMyInfo` (`public/app/core/dates.js`) and `public/app/tools/nausea.js` use `Date.parse()`, which reads `2027-03-04` as UTC midnight, so Chicago stores `2027-03-03` and her week count is off.
+- [x] **ISO due dates seed one day early in the US.** `seedDatesFromMyInfo` (`public/app/core/dates.js`) and `public/app/tools/nausea.js` use `Date.parse()`, which reads `2027-03-04` as UTC midnight, so Chicago stores `2027-03-03` and her week count is off.
   - Parse with `parseIsoDate()`, never `Date.parse()`.
   - Seed from My Info only when the text is unambiguous: ISO `YYYY-MM-DD`, or a written month name. A plain `03/04/2027` doesn't seed.
 - [ ] UTC date off-by-one (`public/app/tools/jaundice.js` `max=`, `public/app/tools/appts.js` default date, `settings.js` export filename): use `isoDate(Date.now())`, never `toISOString()`.

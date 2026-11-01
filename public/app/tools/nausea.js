@@ -125,8 +125,8 @@ function currentWeek() {
 
   try {
     const info = JSON.parse(localStorage.getItem('birth-guide-info') || '{}');
-    const t = Date.parse(info.edd || '');
-    if (!isNaN(t)) {
+    const t = parseDueText(info.edd);
+    if (t !== null) {
       const w = 40 - Math.round((t - Date.now()) / 6048e5);
       if (w >= 1 && w <= 45) return { week: w, source: 'edd' };
     }

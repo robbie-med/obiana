@@ -30,14 +30,32 @@ function todayMidnight() {
   return new Date(n.getFullYear(), n.getMonth(), n.getDate()).getTime();
 }
 
+// Local midnight of a date she typed into My Info, or null. Only text that
+// can't be misread counts: ISO "2027-03-04", or a written English month with a
+// day and four-digit year ("March 4, 2027", "4 Mar 2027"). "03/04/2027" is March 4th
+// to her and April 3rd to half the world, so it never counts. Never
+// Date.parse() an ISO date: it reads it as UTC midnight, which is the evening
+// before in the US.
+function parseDueText(s) {
+  s = String(s || '').trim();
+  const iso = parseIsoDate(s);
+  if (iso !== null) return iso;
+  if (!/\b\d{4}\b/.test(s) || !/\b\d{1,2}\b/.test(s) || /\d[\/.]\d/.test(s) ||
+      !/\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?(\s|,|$)/i.test(s)) return null;
+  const t = Date.parse(s);   // non-ISO text parses as local time
+  if (isNaN(t)) return null;
+  const x = new Date(t);
+  return new Date(x.getFullYear(), x.getMonth(), x.getDate()).getTime();
+}
+
 // Once only: if My Info already holds a due date that parses, start from it.
 function seedDatesFromMyInfo() {
   const d = getDates();
   if (d.edd || d.born || d.seeded) return;
   const info = safeLoad('birth-guide-info', {});
-  const t = Date.parse(info.edd || '');
+  const t = parseDueText(info.edd);
   const patch = { seeded: true };
-  if (!isNaN(t)) patch.edd = isoDate(t);
+  if (t !== null) patch.edd = isoDate(t);
   setDates(patch);
 }
 
