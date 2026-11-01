@@ -1,0 +1,23 @@
+# Session D (NEXT.md §3): the Translate page
+ui.tool.i18n.intro
+ui.tool.i18n.pickLanguage
+ui.tool.i18n.changeLanguage
+ui.tool.i18n.progress
+ui.tool.i18n.whereTabs
+ui.tool.i18n.whereOther
+ui.tool.i18n.banner_missing
+ui.tool.i18n.banner_draft
+ui.tool.i18n.banner_stale
+ui.tool.i18n.keepTokens
+ui.tool.i18n.tokensMissing
+ui.tool.i18n.tokensExtra
+ui.tool.i18n.send
+ui.tool.i18n.looksRight
+ui.tool.i18n.skip
+ui.tool.i18n.savedOffline
+ui.tool.i18n.queued
+ui.tool.i18n.allDone
+ui.tool.i18n.showSkipped
+ui.tools.translationHelper
+ui.tools.reviewSuggestWording
+ui.about.privacySubmit

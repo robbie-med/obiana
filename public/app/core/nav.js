@@ -5,7 +5,7 @@ let currentSection = 'home';
 
 const TOOL_PAGES = ['tools','tool-kick','tool-contractions','tool-feeding',
   'tool-diapers','tool-jaundice','tool-bp','tool-weight',
-  'tool-mood','tool-birthplan','tool-appts', 'tool-i18n', 'tool-improve', 'tool-nausea', 'tool-nausealog'];
+  'tool-mood','tool-birthplan','tool-appts', 'tool-improve', 'tool-nausea', 'tool-nausealog'];
 
 // Map tool sub-pages to their init functions (populated by app/tools/*.js)
 const TOOL_INITS = {};
@@ -81,7 +81,9 @@ function navigate(section, opts = {}) {
 
 // Tool sub-pages highlight Tools; guide sections highlight Guide.
 function highlightNav(section) {
-  const navSection = TOOL_PAGES.includes(section) ? 'tools'
+  // The Translate page is reached from Me, so Me stays lit.
+  const navSection = section === 'translate' ? 'myinfo'
+    : TOOL_PAGES.includes(section) ? 'tools'
     : GUIDE_SECTIONS.includes(section) ? 'guide' : section;
   const tabs = document.getElementById('guide-tabs');
   if (tabs) {

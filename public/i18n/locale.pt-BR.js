@@ -47,7 +47,7 @@ window.MYOB_LOCALES["pt-BR"] = {
       "whatThisIs": "O que é o Obiana",
       "privacyHeading": "Suas informações",
       "privacyOnDevice": "O que você digita fica neste telefone. Sem conta, sem login, nada é enviado. Limpar os dados do navegador apaga tudo, então use Exportar para guardar uma cópia.",
-      "privacySubmit": "Apenas dois botões enviam algo: o ajudante de tradução e Ajude a melhorar este guia. Eles enviam sua mensagem, seu país e uma forma embaralhada do seu endereço de rede para evitar spam. Não o seu nome. Nada dos seus registros."
+      "privacySubmit": "Apenas dois botões enviam algo: Ajude a traduzir e Ajude a melhorar este guia. Eles enviam sua mensagem, seu país e uma forma embaralhada do seu endereço de rede para evitar spam. Não o seu nome. Nada dos seus registros."
     }
   }
 };

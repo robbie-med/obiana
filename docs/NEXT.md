@@ -48,23 +48,24 @@ Ticks are the status: tick an item in the commit that ships it. New findings go 
 Rework the existing Translation Helper (`public/app/contribute/translate.js`) into this page. It already
 reads the live catalogs, shows "Needs updating" from the fingerprints and POSTs to `/api/suggest`.
 Don't build a second tool beside it.
-- [ ] Pick a language once.
-- [ ] One sentence at a time:
+- [x] Pick a language once.
+- [x] One sentence at a time:
   - where it appears ("Labor → Signs of labor");
   - the English;
   - the current translation, ready to edit;
   - **Send / Looks right / Skip**;
   - a progress count.
-- [ ] Order, within each section: missing → **unreviewed machine draft** → outdated → existing to confirm.
+- [x] Order, within each section: missing → **unreviewed machine draft** → outdated → existing to confirm.
   - Sections: When to call and its warning lists first, then tabs and Today, Visits, the cards in guide order, the rest.
-- [ ] `{placeholders}` locked (including the unit tokens in 5); no keys, no code, no files.
-- [ ] Sends automatically when online; queued in localStorage and retried when offline; no Export (remove the Helper's JSON export).
+- [x] `{placeholders}` locked (including the unit tokens in 5); no keys, no code, no files.
+- [x] Sends automatically when online; queued in localStorage and retried when offline; no Export (remove the Helper's JSON export).
 - [ ] Also: tap any sentence in the app to suggest a better wording (Me toggle). Build it on the existing `MYOB_EDIT_WRAP` slot wrapper, which already knows each slot's key. `contribute/improve.js` stays for culture/question/unclear notes.
-- [ ] Same `/api/suggest` endpoint. Worker:
+- [x] Same `/api/suggest` endpoint. Worker:
   - "Looks right" = a confirmation (`kind` column in D1);
   - confirmation counts are a signal for the review app, never an automatic merge (the endpoint is open, at 360/hr per IP);
   - Telegram: no message per sentence. An hourly Cron Trigger posts one digest when there's something new ("es: 23 sentences, 4 confirmations"). The worker keeps no session state.
 - [ ] Review app: confirmations counted per sentence; progress per language.
+- **Session D, 2026-11-01:** the page is `public/app/contribute/translate.js` (`#/translate`, `#/translate/<lang>` to share; the old `#/tool-i18n` lands there). Me and the Tools card link to it. The worker stores `kind` (`suggest`/`confirm`) and posts one hourly digest; the D1 column comes from `worker/migrations-0002-kind.sql`. Left for session E: tap any sentence, and the review app.
 
 ## 4. Draft translations
 - [ ] Machine-draft through the existing `translation/` pipeline, in this order:
@@ -72,7 +73,7 @@ Don't build a second tool beside it.
   2. The 9 cards es/fr/ko are missing (preeclampsia, antenatal mental health, alcohol, tobacco/cannabis, fish, car seat, vitamin D, circumcision, common discomforts).
   3. ar/ru/zh cards.
   4. The rest.
-- [ ] Every machine-drafted key is stamped **unreviewed** by `merge.js` (alongside its source fingerprint). Drafts are live for readers; the stamp only orders them on the Translate page. A translator's Send or Looks right clears it.
+- [ ] Every machine-drafted key is stamped **unreviewed** by `merge.js` (alongside its source fingerprint). The Translate page already reads it as a top-level `unreviewed` map in the locale, keyed like `/api/suggest` keys (bare ui path, `content.<id>.t.<n>`), e.g. `"unreviewed": {"content.mfm.t.3": 1}`. Drafts are live for readers; the stamp only orders them on the Translate page. A translator's Send or Looks right clears it.
 - [ ] Translators correct the drafts on the Translate page.
 - [ ] EPDS is never machine-translated.
 - [ ] `validate.js`/`merge.js` and the review merge accept only plain text plus `<br> <strong> <em>`, and keep `{placeholders}` and unit tokens byte for byte.
@@ -144,3 +145,8 @@ Don't build a second tool beside it.
 - es/fr/ko have no Today, When to call or Visits ui strings at all (they show English), so §1's voice rewrites only reached English. That's §4 drafting, not a regression.
 - Newborn fever reads "≥ 100.4°F rectal" in normal-newborn t32 and "&gt;100.4°F" elsewhere (Home, postpartum-danger, csection). Pick one.
 - es/fr/ko each have the same 18 stale content keys from before §1 (exercise-pregnancy t5/t6, what-happens-on-arrival t5/t9, pelvic-rest t0/t1, several FAQs…). None are clinical-keys; they need the same `--keys` pass.
+- The Translate page can only call a **content** sentence outdated: ui strings still carry no fingerprint (see above), so a ui string whose English changed is shown as "to confirm". Decided for §3: content only. Adding ui fingerprints is a merge.js/stamp.js change, best done with §4.
+- Until session E, the review app lists "Looks right" rows (`kind = 'confirm'`, suggestion = what is shipped) as ordinary suggestions. Accepting one rewrites the same text, so it's harmless, just noise.
+- Drafts typed into the old Translation Helper stay in `myob.i18nSuggestions` on that phone. They were never sent, and the new page doesn't send them (they were never confirmed for sending).
+- The nine stub locales show the Tools card name "Help translate" in English; only their privacy line was re-translated.
+- `validate.js` warns `"mg" count 0 -> 1` on Tagalog text: it reads the plural marker "mga" as the unit mg.

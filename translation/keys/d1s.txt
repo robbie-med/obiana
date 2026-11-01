@@ -1,0 +1,2 @@
+# Session D: privacy line names the Translate page
+ui.about.privacySubmit

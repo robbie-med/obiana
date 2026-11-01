@@ -11,6 +11,8 @@
 
 function routeFromHash() {
   const m = location.hash.match(/^#\/([\w-]+)(?:\/([\w-]+))?/);
+  // The Translation Helper became the Translate page; old links still land.
+  if (m && m[1] === 'tool-i18n') return { page: 'translate', card: null };
   // faq and guide are not pages; navigate() resolves them to a guide section.
   const known = m && (m[1] === 'faq' || m[1] === 'guide' || document.getElementById('page-' + m[1]));
   if (!known) return { page: 'home', card: null };

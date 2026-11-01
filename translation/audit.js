@@ -116,9 +116,9 @@
       // The validated EPDS/PHQ-9 text is not UI copy — it stays in the language
       // the instrument was validated in. Never flag it.
       if (k.startsWith('INSTRUMENT-')) continue;
-      // The Translation Helper renders raw key names and the English source
-      // side by side — that is its whole job, not an untranslated string.
-      if (k.startsWith('tool-i18n')) continue;
+      // The Translate page shows the English source next to the translation:
+      // that is its whole job, not an untranslated string.
+      if (k.startsWith('translate')) continue;
       // The Help Improve draft is whatever the tester typed, not app copy.
       if (k.startsWith('tool-improve') && /^__/.test(v)) continue;
       if (b.get(k) !== v) continue;

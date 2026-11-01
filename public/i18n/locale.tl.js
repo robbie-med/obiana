@@ -47,7 +47,7 @@ window.MYOB_LOCALES.tl = {
       "whatThisIs": "Ano ang Obiana",
       "privacyHeading": "Ang iyong impormasyon",
       "privacyOnDevice": "Ang iyong itinatala ay nananatili sa teleponong ito. Walang account, walang sign-in, walang ipinapadala. Mawawala ito kapag binura mo ang data ng browser, kaya gamitin ang Export para magkaroon ng kopya.",
-      "privacySubmit": "Dalawang button lang ang nagpapadala: ang translation helper at ang Help Improve This Guide. Ipinapadala nila ang iyong mensahe, ang iyong bansa, at isang naka-scramble na anyo ng iyong network address para maiwasan ang spam. Hindi ang pangalan mo. Wala sa iyong mga tala."
+      "privacySubmit": "Dalawang button lang ang nagpapadala: ang Help translate at ang Help Improve This Guide. Ipinapadala nila ang iyong mensahe, ang iyong bansa, at isang naka-scramble na anyo ng iyong network address para maiwasan ang spam. Hindi ang pangalan mo. Wala sa iyong mga tala."
     }
   }
 };

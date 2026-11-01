@@ -44,7 +44,7 @@ window.MYOB_LOCALES.de = {
       "whatThisIs": "Was Obiana ist",
       "privacyHeading": "Ihre Daten",
       "privacyOnDevice": "Was Sie eingeben, bleibt auf diesem Telefon. Kein Konto, keine Anmeldung, nichts wird gesendet. Beim Löschen der Browserdaten geht es verloren, nutzen Sie also Export für eine Kopie.",
-      "privacySubmit": "Nur zwei Schaltflächen senden etwas: die Übersetzungshilfe und Diese Anleitung verbessern. Sie senden Ihre Nachricht, Ihr Land und eine verschlüsselte Form Ihrer Netzwerkadresse gegen Spam. Nicht Ihren Namen. Nichts aus Ihren Aufzeichnungen."
+      "privacySubmit": "Nur zwei Schaltflächen senden etwas: Beim Übersetzen helfen und Diese Anleitung verbessern. Sie senden Ihre Nachricht, Ihr Land und eine verschlüsselte Form Ihrer Netzwerkadresse gegen Spam. Nicht Ihren Namen. Nichts aus Ihren Aufzeichnungen."
     }
   }
 };

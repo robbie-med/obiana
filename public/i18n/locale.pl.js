@@ -44,7 +44,7 @@ window.MYOB_LOCALES.pl = {
       "whatThisIs": "Czym jest Obiana",
       "privacyHeading": "Twoje dane",
       "privacyOnDevice": "To, co wpiszesz, zostaje na tym telefonie. Bez konta, bez logowania, nic nie jest wysyłane. Wyczyszczenie danych przeglądarki je usunie, więc użyj Eksportu, aby zachować kopię.",
-      "privacySubmit": "Coś wysyłają tylko dwa przyciski: pomocnik tłumaczenia i Pomóż ulepszyć ten przewodnik. Wysyłają twoją wiadomość, kraj i zaszyfrowaną postać adresu sieciowego, aby ograniczyć spam. Nie twoje imię. Nic z twoich zapisów."
+      "privacySubmit": "Coś wysyłają tylko dwa przyciski: Pomóż w tłumaczeniu i Pomóż ulepszyć ten przewodnik. Wysyłają twoją wiadomość, kraj i zaszyfrowaną postać adresu sieciowego, aby ograniczyć spam. Nie twoje imię. Nic z twoich zapisów."
     }
   }
 };

@@ -46,7 +46,11 @@
       "database_name": "obiana-suggestions",
       "database_id": "24fabf2e-e7f2-40bb-a9a4-f68b12e9b1b3"
     }
-  ]
+  ],
+
+  // Hourly digest of translation submissions to Telegram (worker scheduled()),
+  // instead of one message per sentence.
+  "triggers": { "crons": ["0 * * * *"] }
 
   // ─── Enabling translation suggestions ───────────────────
   // D1 is bound above. Note the binding MUST stay "DB": an unresolved or
@@ -55,7 +59,8 @@
   //
   // Secrets, set with `wrangler secret put` (never committed):
   //   HASH_SALT  — salt for the rate-limiting IP hash
-  //   TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID — optional; post each submission
+  //   TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID — optional; each reader note
+  //                (/api/feedback) and one hourly digest of translations go
   //                to the private "Obiana submissions" channel. Both are set
   //                by `python3 review/telegram_setup.py setup`.
 }

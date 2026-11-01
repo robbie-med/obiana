@@ -19,6 +19,15 @@
 // * No patient data crosses this boundary. The client sends a translation key,
 //   the English source and a proposed wording — nothing from any tracker. The
 //   app's promise that health data never leaves the device still holds.
+//
+// * Two kinds of row: 'suggest' (a new wording) and 'confirm' (a translator
+//   tapped Looks right on what is shipped). A confirmation is a signal for the
+//   review app, never an automatic merge: the endpoint is open to anyone.
+//
+// * Telegram gets no message per sentence. A translator working through a
+//   language sends hundreds; the hourly Cron Trigger (scheduled() below) posts
+//   one digest instead. It needs no state: each run counts the rows created in
+//   the clock hour that just ended.
 
 // Guide card bodies run to ~2400 characters in English and translations are
 // often longer, so a 2000 cap silently truncated the longest cards.
@@ -28,6 +37,7 @@ const FEEDBACK_KINDS = ['culture', 'question', 'unclear'];
 const FEEDBACK_HOURLY = 20;
 const MAX_NOTE = 500;
 const MAX_BODY = 8 * 1024;
+const SUGGEST_KINDS = ['suggest', 'confirm'];
 const HOURLY_LIMIT = 360;         // per IP; a reviewer working a language hit 59 in an hour at 60
 
 // Must match LOCALES in i18n/i18n.js (minus 'en', which needs no suggestions).
@@ -121,9 +131,13 @@ async function handleSuggest(request, env, ctx) {
   const source = String(body.source || '').slice(0, MAX_SUGGESTION);
   const current = String(body.current || '').slice(0, MAX_SUGGESTION);
   const note = String(body.note || '').slice(0, MAX_NOTE);
+  const kind = body.kind === undefined ? 'suggest' : String(body.kind);
 
   if (!LOCALES.includes(lang)) return json({ error: 'bad_lang' }, 400);
+  if (!SUGGEST_KINDS.includes(kind)) return json({ error: 'bad_kind' }, 400);
   if (!suggestion) return json({ error: 'empty_suggestion' }, 400);
+  // "Looks right" confirms what is shipped, so it carries it unchanged.
+  if (kind === 'confirm' && suggestion !== current.trim()) return json({ error: 'confirm_mismatch' }, 400);
   if (suggestion.length > MAX_SUGGESTION) return json({ error: 'suggestion_too_long' }, 400);
 
   const keys = await validKeys(env, request.url);
@@ -141,12 +155,10 @@ async function handleSuggest(request, env, ctx) {
   if (recent && recent.n >= HOURLY_LIMIT) return json({ error: 'rate_limited' }, 429);
 
   await env.DB.prepare(
-    `INSERT INTO suggestions (lang, key, source, current, suggestion, note, ip_hash, country)
-     VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8)`
+    `INSERT INTO suggestions (lang, key, source, current, suggestion, note, ip_hash, country, kind)
+     VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)`
   ).bind(lang, key, source, current, suggestion, note, ipHash,
-         request.headers.get('cf-ipcountry') || '').run();
-
-  notify(env, ctx, `🌐 ${lang} suggestion\n${key}\n\nEN: ${source.slice(0, 300)}\nNOW: ${current.slice(0, 300) || '(missing)'}\nNEW: ${suggestion.slice(0, 1500)}`);
+         request.headers.get('cf-ipcountry') || '', kind).run();
 
   return json({ ok: true });
 }
@@ -192,7 +204,40 @@ async function handleFeedback(request, env, ctx) {
   return json({ ok: true });
 }
 
+// D1 stores created_at as 'YYYY-MM-DD HH:MM:SS' in UTC.
+const d1Time = ms => new Date(ms).toISOString().slice(0, 19).replace('T', ' ');
+
+// One Telegram message for the clock hour that just ended, only if something
+// came in: "es: 23 sentences, 4 confirmations · fr: 2 sentences".
+async function hourlyDigest(env, scheduledTime) {
+  if (!env.DB || !env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return null;
+  const end = Math.floor(scheduledTime / 3600000) * 3600000;
+  const { results } = await env.DB.prepare(
+    `SELECT lang, kind, COUNT(*) AS n FROM suggestions
+      WHERE created_at >= ?1 AND created_at < ?2 GROUP BY lang, kind ORDER BY lang`
+  ).bind(d1Time(end - 3600000), d1Time(end)).all();
+  if (!results || !results.length) return null;
+  const by = {};
+  for (const r of results) (by[r.lang] = by[r.lang] || {})[r.kind || 'suggest'] = r.n;
+  const plural = (n, one, many) => `${n} ${n === 1 ? one : many}`;
+  const line = Object.entries(by).map(([lang, k]) => `${lang}: ` + [
+    k.suggest ? plural(k.suggest, 'sentence', 'sentences') : '',
+    k.confirm ? plural(k.confirm, 'confirmation', 'confirmations') : '',
+  ].filter(Boolean).join(', ')).join(' · ');
+  const text = `🌐 Translations, last hour\n${line}`;
+  await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/sendMessage`, {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ chat_id: env.TELEGRAM_CHAT_ID, text, disable_web_page_preview: true }),
+  });
+  return text;
+}
+
 export default {
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(hourlyDigest(env, event.scheduledTime).catch(() => {}));
+  },
+
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 

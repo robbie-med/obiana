@@ -44,7 +44,7 @@ window.MYOB_LOCALES.vi = {
       "whatThisIs": "Obiana là gì",
       "privacyHeading": "Thông tin của bạn",
       "privacyOnDevice": "Những gì bạn nhập chỉ ở lại trên điện thoại này. Không tài khoản, không đăng nhập, không gửi đi đâu. Xóa dữ liệu trình duyệt sẽ mất, nên hãy dùng Xuất để giữ một bản sao.",
-      "privacySubmit": "Chỉ hai nút gửi đi thứ gì đó: trợ lý dịch thuật và Giúp cải thiện hướng dẫn này. Chúng gửi tin nhắn của bạn, quốc gia, và một dạng đã xáo trộn của địa chỉ mạng để chặn spam. Không gửi tên bạn. Không gửi gì từ các bản ghi của bạn."
+      "privacySubmit": "Chỉ hai nút gửi đi thứ gì đó: Giúp dịch và Giúp cải thiện hướng dẫn này. Chúng gửi tin nhắn của bạn, quốc gia, và một dạng đã xáo trộn của địa chỉ mạng để chặn spam. Không gửi tên bạn. Không gửi gì từ các bản ghi của bạn."
     }
   }
 };

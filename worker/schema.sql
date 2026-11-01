@@ -12,7 +12,8 @@ CREATE TABLE IF NOT EXISTS suggestions (
   ip_hash     TEXT,                   -- salted hash, for rate limiting only
   country     TEXT,
   status      TEXT NOT NULL DEFAULT 'new',   -- new | accepted | rejected
-  created_at  TEXT NOT NULL DEFAULT (datetime('now'))
+  created_at  TEXT NOT NULL DEFAULT (datetime('now')),
+  kind        TEXT NOT NULL DEFAULT 'suggest' -- suggest | confirm ("Looks right")
 );
 
 CREATE INDEX IF NOT EXISTS idx_suggestions_lang    ON suggestions(lang, status);
