@@ -4,3 +4,9 @@ node_modules/
 __pycache__/
 *.pyc
 review/data/
+pi/
+
+# Private planning docs: legal/identity. Never commit, never serve.
+PROTECT.md
+LEGAL issues.md
+COMPLIANCE-PLAN.md

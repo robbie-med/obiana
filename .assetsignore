@@ -10,11 +10,19 @@
 .wrangler
 node_modules
 wrangler.jsonc
+package.json
+package-lock.json
+
+# No .md file is part of the site. Blanket-exclude them so a new doc can
+# never go live by accident (PROTECT.md etc. were served until 2026-11-01).
+*.md
 
 # Docs — not part of the served site
 README.md
 TRANSLATING.md
 ROADMAP.md
+CONTENT_MAP.md
+pi
 NOTICE.md
 LICENSE
 LICENSE-CONTENT
