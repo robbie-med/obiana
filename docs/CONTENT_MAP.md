@@ -16,9 +16,10 @@ existing cards are listed under their topic; topics with no card are under
 
 ## Prenatal care & tests
 
-- Visit schedule            `first-trimester`, `second-trimester`, `third-trimester`
-  - `[gap]` third-trimester skips the 28-week bloodwork: blood count, and a repeat syphilis test, which ACOG made universal in 2024 (first visit, third trimester, delivery)
-  - `[gap]` third-trimester never explains fetal testing (NST, biophysical profile, growth scans), though tool appts lists NST as a visit type
+- Visit schedule            `ui.visits` → first-trimester, second-trimester, third-trimester, followup-appts
+  - The week-by-week timeline (app/guide/visits.js, first Prenatal card, and on Today by her week) is built from the dot `%nob` / `%pnc` / `%pnc05`–`%pnc42` / `%28` / `%36` / `%pp6` schedule. It covers the 28-week blood count and repeat syphilis test, NST from about 32 weeks, aspirin, carrier screening, RSV, GBS at 36–37 weeks, ECV, membrane sweep and induction timing.
+  - `[twice]` the three trimester cards still describe the schedule too. Trim them to "what it feels like / what to ask" and point to the timeline.
+  - `[gap]` third-trimester never explains what an NST or biophysical profile is like; the timeline only says when they start
 - First-visit bloodwork     `first-trimester`     → myinfo, faq-vaccines, faq-newborn-procedures
 - Rh & RhoGAM               `third-trimester`     → myinfo
 - Genetic screening         `first-trimester`     → second-trimester, mfm
@@ -32,7 +33,7 @@ existing cards are listed under their topic; topics with no card are under
   - `[gap]` filed under Labor & Delivery; referral happens in pregnancy. Move to Prenatal.
 - Gestational diabetes      `second-trimester`
   - `[gap]` only the screening test is explained: nothing on diet, sugar checks, insulin or delivery timing after a diagnosis
-  - `[gap]` followup-appts omits the glucose test 4–12 weeks after birth, and that the diabetes risk is lifelong
+  - The glucose test 4–12 weeks after birth and lifelong checks are in the visit timeline (`ppFull`); followup-appts itself still omits them
 - Induction                 *no home*             `[gap]` split across third-trimester, stages-of-labor, sve, faq-water-breaking
 
 ## Staying well in pregnancy
@@ -72,17 +73,17 @@ existing cards are listed under their topic; topics with no card are under
 - BP thresholds             tool `bp`             `[gap]` 140/90 and 160/110 never appear in the preeclampsia card
 - Heavy bleeding            `physical-recovery`   → postpartum-danger, Home
   - `[clash]` csection says "a pad in 1 hour"; the rest say ">1 pad/hr for 2 hours"
-- Self-harm                 *no home*
-  - `[clash]` 988 (antenatal-mental-health) / doctor, 988 or ER (tool mood) /
-    ER or 911 (postpartum-danger) / call your doctor (Home) / no number (mood-ppd)
+- Self-harm                 `ui.urgent` → postpartum-danger, antenatal-mental-health, mood-ppd
+  - When to call lists it under ER/911 (postpartum-danger's own slot) and gives 988 and 1-833-TLC-MAMA under help lines.
+  - `[clash]` the cards still differ: 988 (antenatal-mental-health) / doctor, 988 or ER (tool mood) / no number (mood-ppd). Point them at When to call.
 - Fever 100.4°F             *same wording in 5 places* (Home, csection, postpartum-danger, bf-challenges, normal-newborn)
 - Blood clots               `postpartum-danger`   → Home, common-discomforts
 - When to go in             `signs-of-labor`      → tool cx (5-1-1)
 - Postpartum warning signs  `postpartum-danger`   → Home (leaves out fever)
-  - `[gap]` postpartum-danger never says to tell ER staff you gave birth in the last year, the core of CDC's Hear Her campaign
+  - When to call says to tell staff you gave birth in the last year (Hear Her); postpartum-danger itself still does not
   - `[gap]` postpartum-danger is missing items on the Hear Her list: fainting or dizziness, racing or pounding heart, severe belly pain, severe swelling of hands or face, overwhelming tiredness
-  - `[gap]` followup-appts: anyone with high blood pressure in pregnancy needs a BP check within days of going home (ACOG: 3–10 days), not only after a C-section
-- Newborn warning signs     `normal-newborn`      `[gap]` Home has no baby list
+  - The 3–10 day BP check after any hypertensive disorder is in the visit timeline (`ppBp`); followup-appts itself still only mentions it after a C-section
+- Newborn warning signs     `normal-newborn`      → ui.urgent (When to call shows the card's own list)
   - `[gap]` normal-newborn has no green (bilious) or forceful repeated vomiting, low temperature, pauses in breathing, or fewer wet diapers and stools than expected
 
 ## Labor & birth
@@ -148,13 +149,15 @@ existing cards are listed under their topic; topics with no card are under
 
 ## App
 
+- When to call              `ui.urgent` → postpartum-danger, signs-of-labor, normal-newborn
+  - A tab of its own. Its lists are the cards' own slots (postpartum-danger t0–t3, signs-of-labor t11–t17, normal-newborn t31–t32), so editing those slots changes it. Do not renumber them.
 - What Obiana is            `ui.about`
 - US care only              `ui.usNotice`
 - Not medical advice        `ui.disclaimer`
   - `[gap]` disclaimer promises "when this guide gives a number, it says who says so", but most cards don't (5-1-1, 1 in 3 C-sections, 75% epidurals, 1 in 8 PPD, 60% jaundice…)
 - Your data                 `ui.about`            → myinfo
 - Care team contacts        `ui.myinfo`
-  - `[gap]` myinfo has no built-in help lines: Poison Control 1-800-222-1222, maternal mental health 1-833-852-6262, 988, domestic violence 1-800-799-7233
+  - Help lines (988, 1-833-TLC-MAMA, Poison Control, domestic violence) are on When to call (`ui.urgent`), one tap from every screen
 
 ## Not written yet
 
@@ -200,7 +203,8 @@ Tier 3: nice to have
 - **Search only indexes guide cards** (`buildSearchIndex` in `app/guide/search.js`). Everything in tools is invisible to it.
 - **Pointers are plain text** ("see the Prenatal section"). A link token in
   `body-templates.js` would make pointing cheaper than repeating.
-- **Prenatal mixes visit cards with topic cards.** Put visits first, then topics.
+- **FAQ answers sit in their guide section** under "Quick answers" (`in` on each `CONTENT_STRUCTURE.faq` entry). There is no FAQ page; `#/faq/<id>` redirects.
+- **Prenatal mixes visit cards with topic cards.** The visit timeline is now first; the trimester cards still follow it.
 - **FAQ answers over ~600 chars are cards.** faq-vaccines and faq-newborn-procedures.
 - **No review date on any card.** Vaccine and medicine advice changed three times in 2025–26; a "last checked" date per card would show which ones are due.
 

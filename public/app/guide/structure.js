@@ -193,83 +193,103 @@ const CONTENT_STRUCTURE = {
   "faq": [
     {
       "id": "faq-deli",
-      "type": "myth"
+      "type": "myth",
+      "in": "pregnancy"
     },
     {
       "id": "faq-coffee",
-      "type": "myth"
+      "type": "myth",
+      "in": "pregnancy"
     },
     {
       "id": "faq-hair-dye",
-      "type": "myth"
+      "type": "myth",
+      "in": "pregnancy"
     },
     {
       "id": "faq-exercise-mc",
-      "type": "myth"
+      "type": "myth",
+      "in": "pregnancy"
     },
     {
       "id": "faq-sex-pregnancy",
-      "type": "faq"
+      "type": "faq",
+      "in": "pregnancy"
     },
     {
       "id": "faq-vaccines",
-      "type": "faq"
+      "type": "faq",
+      "in": "pregnancy"
     },
     {
       "id": "faq-eat-for-two",
-      "type": "myth"
+      "type": "myth",
+      "in": "pregnancy"
     },
     {
       "id": "faq-hot-tub",
-      "type": "faq"
+      "type": "faq",
+      "in": "pregnancy"
     },
     {
       "id": "faq-epidural-csec",
-      "type": "myth"
+      "type": "myth",
+      "in": "labor"
     },
     {
       "id": "faq-routine-episiotomy",
-      "type": "myth"
+      "type": "myth",
+      "in": "labor"
     },
     {
       "id": "faq-water-breaking",
-      "type": "myth"
+      "type": "myth",
+      "in": "labor"
     },
     {
       "id": "faq-eat-in-labor",
-      "type": "faq"
+      "type": "faq",
+      "in": "labor"
     },
     {
       "id": "faq-vbac",
-      "type": "faq"
+      "type": "faq",
+      "in": "labor"
     },
     {
       "id": "faq-bf-bc",
-      "type": "myth"
+      "type": "myth",
+      "in": "recovery"
     },
     {
       "id": "faq-stress-milk",
-      "type": "myth"
+      "type": "myth",
+      "in": "baby"
     },
     {
       "id": "faq-bonding",
-      "type": "myth"
+      "type": "myth",
+      "in": "recovery"
     },
     {
       "id": "faq-ibuprofen-bf",
-      "type": "faq"
+      "type": "faq",
+      "in": "baby"
     },
     {
       "id": "faq-jaundice",
-      "type": "faq"
+      "type": "faq",
+      "in": "baby"
     },
     {
       "id": "faq-newborn-procedures",
-      "type": "faq"
+      "type": "faq",
+      "in": "baby"
     },
     {
       "id": "faq-first-bath",
-      "type": "faq"
+      "type": "faq",
+      "in": "baby"
     }
   ]
 };

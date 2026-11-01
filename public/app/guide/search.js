@@ -20,7 +20,8 @@ function buildSearchIndex() {
       // Diacritic- and case-folded haystacks so "cesarea" finds "cesárea".
       const folded = I18n.foldMap(plainBody);
       SEARCH_INDEX.push({
-        section,
+        // FAQ answers live inside their guide section now.
+        section: section === 'faq' ? (item.in || 'pregnancy') : section,
         id: item.id,
         title: item.title,
         sub: item.sub || '',
@@ -31,6 +32,12 @@ function buildSearchIndex() {
       });
     });
   }
+  // The visit timeline is built from data, not a card template.
+  const v = visitsCardItem();
+  const vText = visitsSearchText();
+  const vFold = I18n.foldMap(vText);
+  SEARCH_INDEX.push({ section: 'pregnancy', id: 'visits', title: v.title, sub: v.sub, body: vText,
+    bodyNorm: vFold.norm, bodyMap: vFold.map, titleNorm: I18n.normalize(v.title) });
 }
 
 // Card bodies are authored as HTML, so stripping tags leaves raw entities

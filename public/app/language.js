@@ -84,7 +84,7 @@ function applyLocaleToApp() {
   // Preserve anything typed but not yet saved — a language switch must not
   // silently discard the phone number the user is halfway through entering.
   const live = {};
-  document.querySelectorAll('#contacts-form input, #details-form input').forEach(el => {
+  document.querySelectorAll('#contacts-form input, #details-form input, #dates-form input').forEach(el => {
     if (el.value) live[el.id] = el.value;
   });
 

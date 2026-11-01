@@ -11,7 +11,9 @@
 
 function routeFromHash() {
   const m = location.hash.match(/^#\/([\w-]+)(?:\/([\w-]+))?/);
-  if (!m || !document.getElementById('page-' + m[1])) return { page: 'home', card: null };
+  // faq and guide are not pages; navigate() resolves them to a guide section.
+  const known = m && (m[1] === 'faq' || m[1] === 'guide' || document.getElementById('page-' + m[1]));
+  if (!known) return { page: 'home', card: null };
   return { page: m[1], card: m[2] || null };
 }
 
@@ -59,5 +61,9 @@ window.addEventListener('popstate', () => {
 function routeOnLoad() {
   const r = routeFromHash();
   history.replaceState({ page: r.page, prev: null }, '', routeUrl(r.page, r.card));
-  if (r.page !== 'home' || r.card) navigate(r.page, { fromHistory: true, card: r.card });
+  if (r.page !== 'home' || r.card) {
+    navigate(r.page, { fromHistory: true, card: r.card });
+    // #/guide and old #/faq links resolve to a section: show that address.
+    history.replaceState({ page: currentSection, prev: null }, '', routeUrl(currentSection, r.card));
+  }
 }

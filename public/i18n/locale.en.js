@@ -95,7 +95,8 @@ window.MYOB_LOCALES.en = {
       "appUpdated": "App updated. Reload for latest version",
       "importDone": "Data restored",
       "importFailed": "That file could not be read",
-      "importNothing": "No app data found in that file"
+      "importNothing": "No app data found in that file",
+      "notSaved": "Could not save on this phone. Is private browsing on?"
     },
     "tool": {
       "mood": {
@@ -719,7 +720,11 @@ window.MYOB_LOCALES.en = {
       "labor": "Labor &amp;<br>Delivery",
       "recovery": "Postpartum<br>Recovery",
       "baby": "Your<br>Newborn",
-      "toolsTrackers": "Tools &amp;<br>Trackers"
+      "toolsTrackers": "Tools &amp;<br>Trackers",
+      "today": "Today",
+      "guide": "Guide",
+      "urgent": "When to call",
+      "me": "Me"
     },
     "usNotice": {
       "title": "Care in the United States",
@@ -742,6 +747,136 @@ window.MYOB_LOCALES.en = {
       "sources": "When this guide gives a number, it says who says so. Usually ACOG or the AAP. Your care team follows them too.",
       "continue": "I understand",
       "toolsNote": "These tools hold what you type in. They do not diagnose."
+    },
+    "guide": {
+      "quickAnswers": "Quick answers"
+    },
+    "today": {
+      "whenToCallSub": "Warning signs, and who to call",
+      "whereNow": "Where are you now?",
+      "pregnant": "I'm pregnant",
+      "dueLabel": "Due date",
+      "babyHere": "My baby is here",
+      "bornLabel": "Baby's birthday",
+      "save": "Show me what's next",
+      "savedOnPhone": "Saved only on this phone. You can change it any time under Me.",
+      "week": "Week {week}",
+      "due": "Due {date}",
+      "babyDays": {
+        "one": "Your baby is 1 day old",
+        "other": "Your baby is {count} days old"
+      },
+      "babyWeeks": {
+        "one": "Your baby is 1 week old",
+        "other": "Your baby is {count} weeks old"
+      },
+      "visitsNow": "At your visits now",
+      "comingUp": "Coming up",
+      "allVisits": "All visits, week by week",
+      "toolsNow": "Useful now",
+      "changeDates": "Change dates"
+    },
+    "me": {
+      "datesTitle": "Your dates"
+    },
+    "urgent": {
+      "title": "When to call",
+      "call911": "Call 911",
+      "callLd": "Call labor & delivery",
+      "addLd": "Save your labor & delivery number under Me, so it is one tap from here.",
+      "tellThem": "If you gave birth in the last year, tell whoever you call or see. Some dangerous problems after birth are missed when staff don't know.",
+      "helpLines": "Help lines: free, any time",
+      "line988": "Thoughts of harming yourself, or in crisis: 988 Suicide & Crisis Lifeline. Call or text 988.",
+      "lineMama": "Feeling low, anxious or overwhelmed, in pregnancy or after: National Maternal Mental Health Hotline, 1-833-TLC-MAMA (1-833-852-6262). Call or text. Interpreters in many languages.",
+      "linePoison": "Swallowed something, you or the baby: Poison Control, 1-800-222-1222.",
+      "lineDv": "Not safe at home: National Domestic Violence Hotline, 1-800-799-7233, or text START to 88788.",
+      "call": "Call",
+      "text": "Text"
+    },
+    "visits": {
+      "title": "Your visits, week by week",
+      "sub": "What happens at each visit, and what is your choice",
+      "lead": "This is the usual US schedule. Yours may differ: your doctor or midwife adds visits and tests when you need them.",
+      "afterBirth": "After the birth",
+      "yourChoice": "Your choice",
+      "first": {
+        "when": "About 8–10 weeks",
+        "title": "First visit",
+        "i1": "Your due date is set from your last period, often with an early ultrasound.",
+        "i2": "Blood tests: blood type and Rh, blood count, immunity to rubella and chickenpox, hepatitis B and C, HIV and syphilis. A urine test, and tests for chlamydia and gonorrhea.",
+        "i3": "An early sugar test if you had diabetes in a past pregnancy or have other risk factors.",
+        "i4": "If you are at higher risk of preeclampsia, low-dose aspirin (81 mg a day) from 12 weeks lowers that risk. Ask whether it fits you."
+      },
+      "genetic": {
+        "when": "From 10 weeks",
+        "title": "Tests for the baby",
+        "i1": "A blood test from 10 weeks (cell-free DNA) screens for Down syndrome and a few other conditions. A screen is not a diagnosis: a positive result means a diagnostic test is offered.",
+        "i2": "Carrier screening checks whether you carry genes for conditions such as cystic fibrosis or spinal muscular atrophy.",
+        "i3": "You can have all, some or none of these."
+      },
+      "monthly": {
+        "when": "Every 4 weeks, until 28 weeks",
+        "title": "Regular visits",
+        "i1": "Blood pressure, weight, urine and the baby's heartbeat. From about 20 weeks, the size of your belly is measured too."
+      },
+      "anatomy": {
+        "when": "18–22 weeks",
+        "title": "Anatomy ultrasound",
+        "i1": "A detailed scan of the baby's body, growth and the placenta. You can usually learn the sex, if you want to."
+      },
+      "sugar": {
+        "when": "24–28 weeks",
+        "title": "Sugar test and blood work",
+        "i1": "A sweet drink, then a blood test an hour later, checks for gestational diabetes.",
+        "i2": "A blood count for anemia, and a repeat syphilis test.",
+        "i3": "If your blood type is Rh negative: an Rh shot (RhoGAM) at about 28 weeks."
+      },
+      "tdap": {
+        "when": "27–36 weeks",
+        "title": "Whooping cough shot (Tdap)",
+        "i1": "Your antibodies pass to the baby and protect them in the first months, before they can have their own shots. Given in every pregnancy."
+      },
+      "twoweekly": {
+        "when": "Every 2 weeks, from 28 weeks",
+        "title": "Visits get closer",
+        "i1": "Get to know your baby's usual pattern of movement. If the baby moves less than usual, call that day. Don't wait for the next visit.",
+        "i2": "If you have a condition such as high blood pressure or diabetes, extra checks of the baby (non-stress tests or ultrasounds) often start around 32 weeks."
+      },
+      "rsv": {
+        "when": "32–36 weeks, September to January",
+        "title": "RSV protection for the baby",
+        "i1": "Either an RSV vaccine for you at 32 to 36 weeks, or an antibody shot for the baby after birth. One or the other, not both. Each lowers the chance that the baby ends up in hospital with RSV in their first winter."
+      },
+      "gbs": {
+        "when": "36–37 weeks",
+        "title": "Group B strep swab, and the baby's position",
+        "i1": "A swab of the vagina and rectum. About 1 in 4 women carry GBS, and it does not harm you. If yours is positive, you get IV antibiotics in labor to protect the baby.",
+        "i2": "A check that the baby is head down. If the baby is bottom first (breech), you can be offered a procedure to turn the baby (external cephalic version), or plan a C-section.",
+        "i3": "Go over your birth plan: pain relief, who will be with you, feeding."
+      },
+      "weekly": {
+        "when": "Every week, from 36 weeks",
+        "title": "The last weeks",
+        "i1": "From 38 weeks you may be offered a membrane sweep: a finger sweep at the cervix that can help labor start.",
+        "i2": "Induction can be offered from 39 weeks. By 41 weeks it is recommended, because the risk to the baby starts to rise."
+      },
+      "ppBp": {
+        "when": "3–10 days after birth",
+        "title": "Blood pressure check, if yours was high",
+        "i1": "If you had high blood pressure or preeclampsia, have it checked within 3 to 10 days of the birth. Preeclampsia can start or get worse after delivery."
+      },
+      "pp3": {
+        "when": "Within 3 weeks of birth",
+        "title": "First check-in",
+        "i1": "Talk to your doctor or midwife about bleeding, pain, feeding, mood and sleep. A phone or video call can count."
+      },
+      "ppFull": {
+        "when": "By 12 weeks after birth, often at 4–6",
+        "title": "Full postpartum visit",
+        "i1": "A mood check, birth control, how you are healing, and any plans for a next pregnancy.",
+        "i2": "If you had gestational diabetes: a sugar test 4 to 12 weeks after birth. The risk of type 2 diabetes stays higher for life, so ask for a check every 1 to 3 years.",
+        "i3": "If you leak urine or stool, have pain with sex, or feel a bulge in the vagina, ask about pelvic floor physical therapy. It helps; it is not something you have to live with."
+      }
     }
   },
   "content": {

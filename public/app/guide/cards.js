@@ -68,6 +68,18 @@ function enRun(s) {
     : '<span class="src-en" lang="en" dir="ltr">' + s + '</span>';
 }
 
+// A ui string, marked as English (lang + dir) when the active locale has no
+// translation for it and t() fell back. Same reason as enRun(): in Arabic an
+// unmarked English sentence mirrors its own punctuation and number ranges.
+function uiIsEnglish(key) {
+  if (I18n.lang === I18n.FALLBACK) return false;
+  const own = String(key).split('.').reduce((o, k) => (o == null ? undefined : o[k]),
+    ((window.MYOB_LOCALES[I18n.lang] || {}).ui));
+  return own === undefined || own === null || own === '';
+}
+function tl(key, vars) { const s = t(key, vars); return uiIsEnglish(key) ? enRun(s) : s; }
+function tpl(key, count, vars) { const s = tp(key, count, vars); return uiIsEnglish(key) ? enRun(s) : s; }
+
 // Merge structure + active-locale prose. Falls back to English per card.
 // Rebuild a card body from the shared HTML template and the active locale's
 // per-sentence runs. Each {{n}} falls back to English on its own, so a card
@@ -116,6 +128,27 @@ function cardField(id, field) {
   return { text: fallback, en: lang !== I18n.FALLBACK && fallback !== '' };
 }
 
+// One sentence of a card, by its permanent slot number, with the same
+// per-slot English fallback as cardBody(). Lets another screen (When to call)
+// show a card's own, already translated, warning list instead of a copy that
+// would drift from it.
+function cardSlot(id, n) {
+  const mine = (((window.MYOB_LOCALES[I18n.lang] || {}).content || {})[id] || {}).t || [];
+  const base = (((window.MYOB_LOCALES[I18n.FALLBACK] || {}).content || {})[id] || {}).t || [];
+  const v = mine[n];
+  return (v === undefined || v === '') ? enRun(base[n]) : v;
+}
+
+// The same, for a slot that is a " · " separated list: split first, then mark
+// each English fallback item, so the lang/dir span never straddles items.
+function cardSlotItems(id, n) {
+  const mine = (((window.MYOB_LOCALES[I18n.lang] || {}).content || {})[id] || {}).t || [];
+  const base = (((window.MYOB_LOCALES[I18n.FALLBACK] || {}).content || {})[id] || {}).t || [];
+  const own = mine[n] !== undefined && mine[n] !== '';
+  return String(own ? mine[n] : (base[n] || '')).split(/\s+·\s+/).filter(Boolean)
+    .map(x => own ? x : enRun(x));
+}
+
 function getCards(section) {
   const list = CONTENT_STRUCTURE[section] || [];
   return list.map(item => {
@@ -134,13 +167,35 @@ function getCards(section) {
 // ═══════════════════════════════════════════════════════
 // RENDER CARDS
 // ═══════════════════════════════════════════════════════
+// The week-by-week visit schedule, shown as the first Prenatal card. Built
+// from data (app/guide/visits.js) rather than a body template.
+const VISITS_ICON = "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--teal)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12\" /><path d=\"M16 3v4\" /><path d=\"M8 3v4\" /><path d=\"M4 11h16\" /><path d=\"M8 15h2v2h-2z\" /></svg>";
+function visitsCardItem() {
+  // Plain t() for title and sub: the card header escapes them, and marks them
+  // English through titleEn/subEn, as getCards() does for every other card.
+  return { id: 'visits', icon: VISITS_ICON, color: '', title: t('visits.title'), sub: t('visits.sub'),
+    titleEn: uiIsEnglish('visits.title'), subEn: uiIsEnglish('visits.sub'), body: visitsTimelineHtml() };
+}
+
 function renderSection(section) {
   const container = document.getElementById('cards-' + section);
   if (!container || container.dataset.rendered) return;
 
+  // A guide section is: the visit timeline (Prenatal only), its own cards,
+  // then the FAQ answers whose home it is ("in" in CONTENT_STRUCTURE.faq),
+  // under a "Quick answers" heading. The FAQ is no longer a page of its own.
   const items = getCards(section);
+  if (section === 'pregnancy') items.unshift(visitsCardItem());
+  const quick = section === 'faq' ? [] : getCards('faq').filter(f => f.in === section);
+  items.push(...quick);
   items.forEach(item => {
-    const isFaq = section === 'faq';
+    const isFaq = !!item.type;
+    if (quick.length && item === quick[0]) {
+      const h = document.createElement('h2');
+      h.className = 'quick-answers-h';
+      h.textContent = t('guide.quickAnswers');
+      container.appendChild(h);
+    }
     const card = document.createElement('div');
     card.className = 'card';
     card.id = 'card-' + item.id;

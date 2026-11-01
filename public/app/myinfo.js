@@ -76,6 +76,12 @@ function renderMyInfo() {
     dForm.appendChild(row);
   });
 
+  // Dates (obiana.dates, ISO): what Today and the Guide go by.
+  const dates = getDates();
+  const eddEl = document.getElementById('me-edd'), bornEl = document.getElementById('me-born');
+  if (eddEl) eddEl.value = dates.edd || '';
+  if (bornEl) bornEl.value = dates.born || '';
+
   // Notes
   document.getElementById('notes-field').value = saved['notes'] || '';
 }
@@ -107,6 +113,9 @@ function saveInfo() {
     if (el) data[d.id] = el.value.trim();
   });
   data['notes'] = document.getElementById('notes-field').value;
+
+  const eddEl = document.getElementById('me-edd'), bornEl = document.getElementById('me-born');
+  if (eddEl && bornEl) setDates({ edd: eddEl.value, born: bornEl.value });
 
   safeSave('birth-guide-info', data);
 
