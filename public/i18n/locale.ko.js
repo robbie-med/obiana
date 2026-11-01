@@ -1845,6 +1845,41 @@ window.MYOB_LOCALES.ko = {
         "유산인 경우",
         "알려진 모든 임신의 약 10건 중 1건이 유산으로 끝나며, 대부분 첫 12주에 일어납니다. 출혈이 있으면, 특히 출혈이 많으면 그 가능성이 조금 더 높습니다. 대부분은 수정될 때 생긴 염색체 문제 때문이며, 당신이 한 일 때문이 아닙니다. 보통 어떻게 할지 선택할 수 있습니다: 저절로 나오기를 기다리기, 나오도록 돕는 약, 짧은 시술. 세 가지 모두 안전하며, 걸리는 시간과 집에서의 출혈량이 다릅니다. 몇 주이든 슬픔은 자연스럽습니다. 마음의 준비가 되면 바로 다시 임신을 시도해도 됩니다."
       ]
+    },
+    "preterm-labor": {
+      "title": "이른 진통(조산)",
+      "sub": "37주 전의 징후, 병원에 가면 무엇을 하는지",
+      "t": [
+        "37주 전의 진통은 이른 진통, 즉 조산입니다. 미국에서는 아기 약 10명 중 1명이 일찍 태어납니다. 빨리 진료를 받으면 의료진이 아기를 도울 시간이 생깁니다.",
+        "37주 전에 이 중 하나라도 있으면 지금 분만실로 가세요",
+        "10분마다 또는 더 자주 배가 뭉치거나 수축함, 즉 1시간에 6번 이상 · 생리통 같은 통증 · 왔다 갔다 하는 아래쪽 허리의 둔한 통증 · 아기가 아래로 미는 것 같은 골반의 압박감 · 질에서 액체가 샘 · 출혈이나 피 비침 · 분비물이 바뀌어 물 같거나, 점액 같거나, 피가 섞임",
+        "저절로 나아지는지 기다리지 마세요. 무엇을 느끼는지 확실하지 않으면 가정의, 산부인과 의사 또는 조산사나 분만실에 전화하세요.",
+        "병원에 도착하면",
+        "간호사가 수축과 아기의 심장 박동을 지켜보고, 자궁경부를 검사합니다. 면봉 검사(태아 피브로넥틴)나 자궁경부 길이를 재는 초음파를 할 수 있습니다. 이런 징후로 온 여성 중 많은 사람은 실제로는 진통이 아니어서 그날 집으로 돌아갑니다. 헛걸음이 아니라 잘한 방문입니다.",
+        "정말로 일찍 진통이 시작되었다면",
+        "34주 전이면 하루 간격으로 맞는 스테로이드 주사 2번이 아기의 폐를 돕고 태어난 뒤 심각한 문제의 가능성을 낮춥니다. 32주 전이면 정맥으로 맞는 마그네슘이 아기의 뇌를 보호하는 데 도움이 됩니다. 스테로이드가 효과를 낼 시간을 벌기 위해 약 2일 동안 수축을 늦추는 약을 쓸 수 있습니다. GBS 결과가 양성이거나 아직 모르면 항생제도 맞습니다.",
+        "조산 가능성이 더 높은 사람",
+        "이전 조산 · 초음파에서 짧은 자궁경부 · 쌍둥이 이상 · 지난 출산 후 18개월이 안 되어 임신 · 흡연 · 임신 중 출혈 · 고혈압이나 당뇨",
+        "도움이 되는 것과 안 되는 것",
+        "정밀 초음파에서 자궁경부가 짧으면 질 프로게스테론이 조산 가능성을 낮춥니다. 이전에 조산한 일부 여성에게는 자궁경부를 묶는 시술(자궁경부 원형 결찰술)을 권하기도 합니다. 누워서 쉬는 것은 조산을 막지 못하고 혈전 위험을 높입니다."
+      ]
+    },
+    "cholestasis": {
+      "title": "가려움과 임신성 담즙정체",
+      "sub": "정상적인 가려움, 그리고 혈액 검사를 받아 볼 만한 간 질환",
+      "t": [
+        "임신 중 약간의 가려움은 피부가 늘어나거나 건조해서 생기는 정상적인 것입니다. 간 질환인 임신성 담즙정체(ICP)의 가려움은 다릅니다. 손바닥과 발바닥에 많고, 밤에 심해지며, 발진이 없습니다.",
+        "이런 경우 가정의, 산부인과 의사 또는 조산사에게 전화하세요",
+        "손바닥이나 발바닥의 가려움 · 잠을 못 잘 정도의 온몸 가려움 · 진한 소변이나 흰빛의 대변 · 노란 피부나 눈",
+        "담즙정체란",
+        "간에서 담즙이 흐르는 것이 느려져 담즙산이 혈액에 쌓입니다. 미국 임신의 약 200~300건 중 1건에 생기며, 라틴계 여성과 쌍둥이 임신에서 더 흔합니다. 보통 30주 이후에 시작됩니다. 산모에게는 위험하지 않지만, 담즙산이 매우 높으면 사산 가능성이 높아지므로 혈액 검사를 받아 볼 만합니다.",
+        "검사와 치료",
+        "담즙산 혈액 검사와 간 기능 검사입니다. 이 병이 있으면 보통 1~2주마다 검사를 반복합니다. 우르소디올이라는 약이 가려움을 조금 덜어 줄 수 있지만, 아기를 보호한다고 밝혀지지는 않았습니다. 시원한 샤워, 헐렁한 면 옷, 보습제가 피부에 도움이 됩니다.",
+        "출산 시기",
+        "임신 말기에 아기의 위험이 높아지므로 의료진은 출산을 앞당겨 계획합니다. 담즙산이 100 µmol/L 이상이면 약 36주에, 그 밖에는 수치에 따라 보통 36~39주 사이에 출산합니다.",
+        "출산 후",
+        "가려움은 보통 며칠에서 몇 주 안에 사라집니다. 사라지지 않으면 간 기능 검사를 다시 해 달라고 하세요. 다음 임신에서 자주 재발하며 최대 10명 중 9명에게 다시 생기고, 에스트로겐이 든 피임약이 계기가 될 때도 있으니 이 병이 있었다고 의사에게 알리세요."
+      ]
     }
   },
   "srcHash": {
@@ -2591,7 +2626,34 @@ window.MYOB_LOCALES.ko = {
     "content.early-bleeding.t.8": "32597a3a399d6ccc",
     "content.early-bleeding.t.9": "3bec781a6352d1bc",
     "content.early-bleeding.t.10": "acd42387326fb2e1",
-    "content.early-bleeding.t.11": "60e022353a5f16df"
+    "content.early-bleeding.t.11": "60e022353a5f16df",
+    "content.preterm-labor.title": "ae48987c88922b7e",
+    "content.preterm-labor.sub": "7d8eb3f3a968f46d",
+    "content.preterm-labor.t.0": "f9b53041e8775edf",
+    "content.preterm-labor.t.1": "df896c67f68b56b1",
+    "content.preterm-labor.t.2": "0eacba71a407a517",
+    "content.preterm-labor.t.3": "987ad47eb7bb8374",
+    "content.preterm-labor.t.4": "b6f0f6f048ff2546",
+    "content.preterm-labor.t.5": "83569706640862c4",
+    "content.preterm-labor.t.6": "7dc117e6c840b21c",
+    "content.preterm-labor.t.7": "b14cf0796d3ffa9b",
+    "content.preterm-labor.t.8": "386f1f8ac363bda0",
+    "content.preterm-labor.t.9": "7eaf1505431b6df3",
+    "content.preterm-labor.t.10": "4504ce3422cfe61a",
+    "content.preterm-labor.t.11": "8723ee4f03856201",
+    "content.cholestasis.title": "31918d38968a5c26",
+    "content.cholestasis.sub": "916b75f40d3475f6",
+    "content.cholestasis.t.0": "ddddb22a8b124c28",
+    "content.cholestasis.t.1": "1b22f86607be7fe8",
+    "content.cholestasis.t.2": "ce5ffc287678f73a",
+    "content.cholestasis.t.3": "afae54057807af93",
+    "content.cholestasis.t.4": "e004853ae555977c",
+    "content.cholestasis.t.5": "ab304de680b4e7d8",
+    "content.cholestasis.t.6": "5afdbcd86051f732",
+    "content.cholestasis.t.7": "d128e9f11e6e0e0b",
+    "content.cholestasis.t.8": "047a19297e6e7eaf",
+    "content.cholestasis.t.9": "08ba7d67736fc981",
+    "content.cholestasis.t.10": "c747cef35fc34d5d"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -2841,6 +2903,33 @@ window.MYOB_LOCALES.ko = {
     "content.early-bleeding.t.8": 1,
     "content.early-bleeding.t.9": 1,
     "content.early-bleeding.t.10": 1,
-    "content.early-bleeding.t.11": 1
+    "content.early-bleeding.t.11": 1,
+    "content.preterm-labor.title": 1,
+    "content.preterm-labor.sub": 1,
+    "content.preterm-labor.t.0": 1,
+    "content.preterm-labor.t.1": 1,
+    "content.preterm-labor.t.2": 1,
+    "content.preterm-labor.t.3": 1,
+    "content.preterm-labor.t.4": 1,
+    "content.preterm-labor.t.5": 1,
+    "content.preterm-labor.t.6": 1,
+    "content.preterm-labor.t.7": 1,
+    "content.preterm-labor.t.8": 1,
+    "content.preterm-labor.t.9": 1,
+    "content.preterm-labor.t.10": 1,
+    "content.preterm-labor.t.11": 1,
+    "content.cholestasis.title": 1,
+    "content.cholestasis.sub": 1,
+    "content.cholestasis.t.0": 1,
+    "content.cholestasis.t.1": 1,
+    "content.cholestasis.t.2": 1,
+    "content.cholestasis.t.3": 1,
+    "content.cholestasis.t.4": 1,
+    "content.cholestasis.t.5": 1,
+    "content.cholestasis.t.6": 1,
+    "content.cholestasis.t.7": 1,
+    "content.cholestasis.t.8": 1,
+    "content.cholestasis.t.9": 1,
+    "content.cholestasis.t.10": 1
   }
 };

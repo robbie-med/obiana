@@ -1850,6 +1850,41 @@ window.MYOB_LOCALES.es = {
         "Si es un aborto espontáneo",
         "Alrededor de 1 de cada 10 de todos los embarazos conocidos termina en aborto espontáneo, la mayoría en las primeras 12 semanas. La probabilidad es algo mayor cuando hay sangrado, sobre todo si es abundante. La mayoría se deben a un problema de cromosomas que empezó en la concepción, no a algo que usted hizo. Por lo general puede elegir cómo manejarlo: esperar a que pase solo, un medicamento que ayuda a que pase o un procedimiento corto. Los tres son seguros; cambian en cuánto tardan y cuánto sangrado ocurre en casa. El duelo es normal, sin importar la semana. Puede intentarlo de nuevo en cuanto se sienta lista."
       ]
+    },
+    "preterm-labor": {
+      "title": "Parto temprano (prematuro)",
+      "sub": "Señales antes de las 37 semanas y qué pasa cuando va al hospital",
+      "t": [
+        "El parto antes de las 37 semanas es temprano, o prematuro. Alrededor de 1 de cada 10 bebés en EE. UU. nace antes de tiempo. Recibir atención rápido le da a su equipo tiempo para ayudar a su bebé.",
+        "Vaya ahora a labor y parto si tiene cualquiera de estas señales antes de las 37 semanas",
+        "Endurecimiento o contracciones cada 10 minutos o más seguido, es decir, 6 o más en una hora · Cólicos como de regla · Dolor bajo y sordo de espalda que va y viene · Presión en la pelvis, como si el bebé empujara hacia abajo · Líquido que sale de la vagina · Sangrado o manchado · Flujo que cambia y se vuelve aguado, como moco o con sangre",
+        "No espere a ver si se le pasa. Si no está segura de lo que siente, llame a su médico de familia, obstetra o partera, o llame a labor y parto.",
+        "Qué pasa cuando llega",
+        "La enfermera vigila sus contracciones y el latido del bebé, y le revisan el cuello del útero. Puede que le hagan una prueba con hisopo (fibronectina fetal) o una ecografía que mide el cuello del útero. Muchas mujeres que van con estas señales resultan no estar en trabajo de parto y vuelven a casa el mismo día. Esa es una buena visita, no una visita perdida.",
+        "Si de verdad está empezando el parto antes de tiempo",
+        "Antes de las 34 semanas, 2 inyecciones de esteroides con un día de diferencia ayudan a los pulmones del bebé y bajan la probabilidad de problemas graves después del nacimiento. Antes de las 32 semanas, el magnesio por la vena ayuda a proteger el cerebro del bebé. Pueden darle un medicamento para frenar las contracciones durante unos 2 días, para que los esteroides tengan tiempo de actuar. También recibirá antibióticos si su resultado de GBS es positivo o aún no se conoce.",
+        "Quién tiene más probabilidad de un parto temprano",
+        "Un parto prematuro anterior · Un cuello del útero corto en la ecografía · Gemelos o más · Quedar embarazada menos de 18 meses después del último parto · Fumar · Sangrado en el embarazo · Presión alta o diabetes",
+        "Qué ayuda y qué no",
+        "Si el cuello del útero es corto en la ecografía del segundo trimestre, la progesterona vaginal baja la probabilidad de un parto temprano. A algunas mujeres con un parto prematuro anterior se les ofrece un punto en el cuello del útero (cerclaje). El reposo en cama no previene el parto temprano y aumenta el riesgo de coágulos."
+      ]
+    },
+    "cholestasis": {
+      "title": "Picazón y colestasis",
+      "sub": "La picazón normal y la enfermedad del hígado que vale la pena revisar con un análisis",
+      "t": [
+        "Algo de picazón en el embarazo es normal, por la piel que se estira o está seca. La picazón de la colestasis del embarazo (ICP), una enfermedad del hígado, es diferente: suele ser en las palmas de las manos y las plantas de los pies, empeora de noche y no hay sarpullido.",
+        "Llame a su médico de familia, obstetra o partera si tiene",
+        "Picazón en las palmas o las plantas · Picazón en todo el cuerpo que no la deja dormir · Orina oscura o heces pálidas · Piel u ojos amarillos",
+        "Qué es la colestasis",
+        "El hígado hace más lento el paso de la bilis, y los ácidos biliares se acumulan en la sangre. Afecta a alrededor de 1 de cada 200 a 1 de cada 300 embarazos en EE. UU., más a menudo en mujeres latinas y en embarazos de gemelos. Suele empezar después de las 30 semanas. No es peligrosa para usted, pero los ácidos biliares muy altos aumentan la probabilidad de muerte fetal, y por eso vale la pena hacerse un análisis.",
+        "Análisis y tratamiento",
+        "Un análisis de sangre de ácidos biliares y pruebas del hígado. Si la tiene, el análisis suele repetirse cada una o dos semanas. Un medicamento llamado ursodiol puede aliviar un poco la picazón; no se ha demostrado que proteja al bebé. Las duchas frescas, la ropa holgada de algodón y la crema hidratante ayudan a la piel.",
+        "Cuándo nacerá el bebé",
+        "Como el riesgo para el bebé sube al final del embarazo, su equipo planeará el parto antes: alrededor de las 36 semanas si los ácidos biliares son de 100 µmol/L o más, y por lo general entre las 36 y 39 semanas en los demás casos, según sus niveles.",
+        "Después del nacimiento",
+        "La picazón suele desaparecer en unos días o unas semanas. Si no se quita, pida que le repitan las pruebas del hígado. A menudo vuelve en embarazos posteriores, en hasta 9 de cada 10, y a veces la pueden desencadenar los anticonceptivos con estrógeno, así que dígales a sus médicos que la tuvo."
+      ]
     }
   },
   "srcHash": {
@@ -2596,7 +2631,34 @@ window.MYOB_LOCALES.es = {
     "content.early-bleeding.t.8": "32597a3a399d6ccc",
     "content.early-bleeding.t.9": "3bec781a6352d1bc",
     "content.early-bleeding.t.10": "acd42387326fb2e1",
-    "content.early-bleeding.t.11": "60e022353a5f16df"
+    "content.early-bleeding.t.11": "60e022353a5f16df",
+    "content.preterm-labor.title": "ae48987c88922b7e",
+    "content.preterm-labor.sub": "7d8eb3f3a968f46d",
+    "content.preterm-labor.t.0": "f9b53041e8775edf",
+    "content.preterm-labor.t.1": "df896c67f68b56b1",
+    "content.preterm-labor.t.2": "0eacba71a407a517",
+    "content.preterm-labor.t.3": "987ad47eb7bb8374",
+    "content.preterm-labor.t.4": "b6f0f6f048ff2546",
+    "content.preterm-labor.t.5": "83569706640862c4",
+    "content.preterm-labor.t.6": "7dc117e6c840b21c",
+    "content.preterm-labor.t.7": "b14cf0796d3ffa9b",
+    "content.preterm-labor.t.8": "386f1f8ac363bda0",
+    "content.preterm-labor.t.9": "7eaf1505431b6df3",
+    "content.preterm-labor.t.10": "4504ce3422cfe61a",
+    "content.preterm-labor.t.11": "8723ee4f03856201",
+    "content.cholestasis.title": "31918d38968a5c26",
+    "content.cholestasis.sub": "916b75f40d3475f6",
+    "content.cholestasis.t.0": "ddddb22a8b124c28",
+    "content.cholestasis.t.1": "1b22f86607be7fe8",
+    "content.cholestasis.t.2": "ce5ffc287678f73a",
+    "content.cholestasis.t.3": "afae54057807af93",
+    "content.cholestasis.t.4": "e004853ae555977c",
+    "content.cholestasis.t.5": "ab304de680b4e7d8",
+    "content.cholestasis.t.6": "5afdbcd86051f732",
+    "content.cholestasis.t.7": "d128e9f11e6e0e0b",
+    "content.cholestasis.t.8": "047a19297e6e7eaf",
+    "content.cholestasis.t.9": "08ba7d67736fc981",
+    "content.cholestasis.t.10": "c747cef35fc34d5d"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -2846,6 +2908,33 @@ window.MYOB_LOCALES.es = {
     "content.early-bleeding.t.8": 1,
     "content.early-bleeding.t.9": 1,
     "content.early-bleeding.t.10": 1,
-    "content.early-bleeding.t.11": 1
+    "content.early-bleeding.t.11": 1,
+    "content.preterm-labor.title": 1,
+    "content.preterm-labor.sub": 1,
+    "content.preterm-labor.t.0": 1,
+    "content.preterm-labor.t.1": 1,
+    "content.preterm-labor.t.2": 1,
+    "content.preterm-labor.t.3": 1,
+    "content.preterm-labor.t.4": 1,
+    "content.preterm-labor.t.5": 1,
+    "content.preterm-labor.t.6": 1,
+    "content.preterm-labor.t.7": 1,
+    "content.preterm-labor.t.8": 1,
+    "content.preterm-labor.t.9": 1,
+    "content.preterm-labor.t.10": 1,
+    "content.preterm-labor.t.11": 1,
+    "content.cholestasis.title": 1,
+    "content.cholestasis.sub": 1,
+    "content.cholestasis.t.0": 1,
+    "content.cholestasis.t.1": 1,
+    "content.cholestasis.t.2": 1,
+    "content.cholestasis.t.3": 1,
+    "content.cholestasis.t.4": 1,
+    "content.cholestasis.t.5": 1,
+    "content.cholestasis.t.6": 1,
+    "content.cholestasis.t.7": 1,
+    "content.cholestasis.t.8": 1,
+    "content.cholestasis.t.9": 1,
+    "content.cholestasis.t.10": 1
   }
 };

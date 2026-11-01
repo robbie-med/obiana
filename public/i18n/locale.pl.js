@@ -1855,6 +1855,41 @@ window.MYOB_LOCALES.pl = {
         "Jeśli to poronienie",
         "Około 1 na 10 wszystkich znanych ciąż kończy się poronieniem, większość w pierwszych 12 tygodniach. Szansa jest nieco większa, gdy jest krwawienie, zwłaszcza obfite. Większość jest spowodowana problemem z chromosomami, który powstał przy poczęciu, a nie czymś, co zrobiłaś. Zwykle możesz wybrać, jak to przebiegnie: czekać, aż samo się zakończy, lek, który w tym pomoże, albo krótki zabieg. Wszystkie trzy są bezpieczne; różnią się tym, ile trwają i ile krwawienia jest w domu. Żałoba jest normalna, bez względu na tydzień. Możesz próbować znowu, gdy tylko poczujesz się gotowa."
       ]
+    },
+    "preterm-labor": {
+      "title": "Wczesny (przedwczesny) poród",
+      "sub": "Objawy przed 37 tygodniem i co się dzieje, gdy jedziesz do szpitala",
+      "t": [
+        "Poród przed 37 tygodniem jest wczesny, czyli przedwczesny. Około 1 na 10 dzieci w USA rodzi się za wcześnie. Szybka pomoc daje zespołowi czas, by pomóc Twojemu dziecku.",
+        "Jedź teraz na porodówkę, jeśli przed 37 tygodniem masz którykolwiek z tych objawów",
+        "Twardnienie brzucha lub skurcze co 10 minut lub częściej, czyli 6 lub więcej w godzinę · Skurcze jak przy miesiączce · Tępy ból w dole pleców, który przychodzi i odchodzi · Ucisk w miednicy, jakby dziecko pchało w dół · Wyciek płynu z pochwy · Krwawienie lub plamienie · Wydzielina, która się zmienia i robi się wodnista, śluzowa lub krwista",
+        "Nie czekaj, czy minie. Jeśli nie wiesz, co czujesz, zadzwoń do lekarza rodzinnego, ginekologa lub położnej albo na porodówkę.",
+        "Co się dzieje po przyjeździe",
+        "Pielęgniarka obserwuje Twoje skurcze i tętno dziecka, a lekarz bada szyjkę macicy. Możesz mieć wymaz (fibronektyna płodowa) albo USG mierzące szyjkę. Wiele kobiet, które przyjeżdżają z tymi objawami, okazuje się nie rodzić i wraca do domu tego samego dnia. To dobra wizyta, a nie zmarnowana.",
+        "Jeśli poród naprawdę zaczyna się za wcześnie",
+        "Przed 34 tygodniem 2 zastrzyki ze sterydów w odstępie jednego dnia pomagają płucom dziecka i zmniejszają ryzyko poważnych problemów po porodzie. Przed 32 tygodniem magnez podawany dożylnie pomaga chronić mózg dziecka. Lek hamujący skurcze może być podawany przez około 2 dni, żeby sterydy zdążyły zadziałać. Dostaniesz też antybiotyk, jeśli Twój wynik GBS jest dodatni albo jeszcze nieznany.",
+        "Komu częściej zdarza się wczesny poród",
+        "Wcześniejszy przedwczesny poród · Krótka szyjka macicy w USG · Bliźnięta lub więcej · Ciąża mniej niż 18 miesięcy po ostatnim porodzie · Palenie · Krwawienie w ciąży · Wysokie ciśnienie lub cukrzyca",
+        "Co pomaga, a co nie",
+        "Jeśli szyjka jest krótka w USG połówkowym, progesteron dopochwowy zmniejsza ryzyko wczesnego porodu. Niektórym kobietom po wcześniejszym przedwczesnym porodzie proponuje się szew na szyjkę (szew szyjkowy). Leżenie w łóżku nie zapobiega wczesnemu porodowi i zwiększa ryzyko zakrzepów."
+      ]
+    },
+    "cholestasis": {
+      "title": "Swędzenie i cholestaza",
+      "sub": "Normalne swędzenie i choroba wątroby, przy której warto zrobić badanie krwi",
+      "t": [
+        "Trochę swędzenia w ciąży jest normalne, z powodu rozciągającej się lub suchej skóry. Swędzenie przy cholestazie ciążowej (ICP), chorobie wątroby, jest inne: często dotyczy dłoni i podeszew stóp, jest gorsze w nocy i nie ma wysypki.",
+        "Zadzwoń do lekarza rodzinnego, ginekologa lub położnej, jeśli masz",
+        "Swędzenie dłoni lub podeszew · Swędzenie całego ciała, przez które nie śpisz · Ciemny mocz lub jasny stolec · Żółtą skórę lub oczy",
+        "Czym jest cholestaza",
+        "Wątroba spowalnia odpływ żółci i kwasy żółciowe gromadzą się we krwi. Dotyczy około 1 na 200 do 1 na 300 ciąż w USA, częściej u Latynosek i w ciąży bliźniaczej. Zwykle zaczyna się po 30 tygodniu. Nie jest groźna dla Ciebie, ale bardzo wysokie kwasy żółciowe zwiększają ryzyko obumarcia płodu, dlatego warto zrobić badanie krwi.",
+        "Badania i leczenie",
+        "Badanie krwi na kwasy żółciowe i próby wątrobowe. Jeśli ją masz, badanie zwykle powtarza się co tydzień lub dwa. Lek o nazwie ursodiol (kwas ursodeoksycholowy) może trochę złagodzić swędzenie; nie wykazano, że chroni dziecko. Chłodne prysznice, luźne bawełniane ubrania i krem nawilżający pomagają skórze.",
+        "Termin porodu",
+        "Ponieważ ryzyko dla dziecka rośnie pod koniec ciąży, zespół zaplanuje poród wcześniej: około 36 tygodnia, jeśli kwasy żółciowe wynoszą 100 µmol/L lub więcej, a w innych przypadkach zwykle między 36 a 39 tygodniem, zależnie od wyników.",
+        "Po porodzie",
+        "Swędzenie zwykle mija w ciągu kilku dni do kilku tygodni. Jeśli nie, poproś o ponowne sprawdzenie prób wątrobowych. Często wraca w kolejnych ciążach, nawet w 9 na 10, a czasem może ją wywołać antykoncepcja z estrogenem, więc mów lekarzom, że ją miałaś."
+      ]
     }
   },
   "srcHash": {
@@ -2601,7 +2636,34 @@ window.MYOB_LOCALES.pl = {
     "content.early-bleeding.t.8": "32597a3a399d6ccc",
     "content.early-bleeding.t.9": "3bec781a6352d1bc",
     "content.early-bleeding.t.10": "acd42387326fb2e1",
-    "content.early-bleeding.t.11": "60e022353a5f16df"
+    "content.early-bleeding.t.11": "60e022353a5f16df",
+    "content.preterm-labor.title": "ae48987c88922b7e",
+    "content.preterm-labor.sub": "7d8eb3f3a968f46d",
+    "content.preterm-labor.t.0": "f9b53041e8775edf",
+    "content.preterm-labor.t.1": "df896c67f68b56b1",
+    "content.preterm-labor.t.2": "0eacba71a407a517",
+    "content.preterm-labor.t.3": "987ad47eb7bb8374",
+    "content.preterm-labor.t.4": "b6f0f6f048ff2546",
+    "content.preterm-labor.t.5": "83569706640862c4",
+    "content.preterm-labor.t.6": "7dc117e6c840b21c",
+    "content.preterm-labor.t.7": "b14cf0796d3ffa9b",
+    "content.preterm-labor.t.8": "386f1f8ac363bda0",
+    "content.preterm-labor.t.9": "7eaf1505431b6df3",
+    "content.preterm-labor.t.10": "4504ce3422cfe61a",
+    "content.preterm-labor.t.11": "8723ee4f03856201",
+    "content.cholestasis.title": "31918d38968a5c26",
+    "content.cholestasis.sub": "916b75f40d3475f6",
+    "content.cholestasis.t.0": "ddddb22a8b124c28",
+    "content.cholestasis.t.1": "1b22f86607be7fe8",
+    "content.cholestasis.t.2": "ce5ffc287678f73a",
+    "content.cholestasis.t.3": "afae54057807af93",
+    "content.cholestasis.t.4": "e004853ae555977c",
+    "content.cholestasis.t.5": "ab304de680b4e7d8",
+    "content.cholestasis.t.6": "5afdbcd86051f732",
+    "content.cholestasis.t.7": "d128e9f11e6e0e0b",
+    "content.cholestasis.t.8": "047a19297e6e7eaf",
+    "content.cholestasis.t.9": "08ba7d67736fc981",
+    "content.cholestasis.t.10": "c747cef35fc34d5d"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -3953,6 +4015,33 @@ window.MYOB_LOCALES.pl = {
     "content.early-bleeding.t.8": 1,
     "content.early-bleeding.t.9": 1,
     "content.early-bleeding.t.10": 1,
-    "content.early-bleeding.t.11": 1
+    "content.early-bleeding.t.11": 1,
+    "content.preterm-labor.title": 1,
+    "content.preterm-labor.sub": 1,
+    "content.preterm-labor.t.0": 1,
+    "content.preterm-labor.t.1": 1,
+    "content.preterm-labor.t.2": 1,
+    "content.preterm-labor.t.3": 1,
+    "content.preterm-labor.t.4": 1,
+    "content.preterm-labor.t.5": 1,
+    "content.preterm-labor.t.6": 1,
+    "content.preterm-labor.t.7": 1,
+    "content.preterm-labor.t.8": 1,
+    "content.preterm-labor.t.9": 1,
+    "content.preterm-labor.t.10": 1,
+    "content.preterm-labor.t.11": 1,
+    "content.cholestasis.title": 1,
+    "content.cholestasis.sub": 1,
+    "content.cholestasis.t.0": 1,
+    "content.cholestasis.t.1": 1,
+    "content.cholestasis.t.2": 1,
+    "content.cholestasis.t.3": 1,
+    "content.cholestasis.t.4": 1,
+    "content.cholestasis.t.5": 1,
+    "content.cholestasis.t.6": 1,
+    "content.cholestasis.t.7": 1,
+    "content.cholestasis.t.8": 1,
+    "content.cholestasis.t.9": 1,
+    "content.cholestasis.t.10": 1
   }
 };

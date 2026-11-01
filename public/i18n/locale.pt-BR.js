@@ -1853,6 +1853,41 @@ window.MYOB_LOCALES["pt-BR"] = {
         "Se for um aborto espontâneo",
         "Cerca de 1 em cada 10 de todas as gestações conhecidas termina em aborto espontâneo, a maioria nas primeiras 12 semanas. A chance é um pouco maior quando há sangramento, principalmente se for forte. A maioria é causada por um problema nos cromossomos que começou na concepção, não por algo que você fez. Em geral você pode escolher como conduzir: esperar sair sozinho, um remédio para ajudar a sair ou um procedimento curto. Os três são seguros; mudam em quanto tempo levam e quanto sangramento acontece em casa. O luto é normal, em qualquer semana. Você pode tentar de novo assim que se sentir pronta."
       ]
+    },
+    "preterm-labor": {
+      "title": "Parto antes da hora (prematuro)",
+      "sub": "Sinais antes de 37 semanas, e o que acontece quando você vai ao hospital",
+      "t": [
+        "O trabalho de parto antes de 37 semanas é cedo, ou prematuro. Cerca de 1 em cada 10 bebês nos EUA nasce antes da hora. Receber atendimento rápido dá à sua equipe tempo para ajudar o seu bebê.",
+        "Vá agora ao centro obstétrico se tiver qualquer um destes sinais antes de 37 semanas",
+        "Endurecimento ou contrações a cada 10 minutos ou mais, ou seja, 6 ou mais em uma hora · Cólica como de menstruação · Dor baixa e surda nas costas que vai e volta · Pressão na pelve, como se o bebê estivesse empurrando para baixo · Líquido saindo da vagina · Sangramento ou escape · Corrimento que muda e fica aguado, com muco ou com sangue",
+        "Não espere para ver se passa. Se não tiver certeza do que está sentindo, ligue para o seu médico de família, obstetra ou parteira, ou ligue para o centro obstétrico.",
+        "O que acontece quando você chega",
+        "A enfermeira acompanha suas contrações e os batimentos do bebê, e o colo do útero é examinado. Você pode fazer um exame com cotonete (fibronectina fetal) ou um ultrassom que mede o colo. Muitas mulheres que chegam com esses sinais não estão em trabalho de parto e voltam para casa no mesmo dia. É uma boa consulta, não uma ida à toa.",
+        "Se o parto estiver mesmo começando cedo",
+        "Antes de 34 semanas, 2 injeções de corticoide com um dia de intervalo ajudam os pulmões do bebê e diminuem a chance de problemas graves depois do nascimento. Antes de 32 semanas, o magnésio na veia ajuda a proteger o cérebro do bebê. Pode ser dado um remédio para frear as contrações por cerca de 2 dias, para o corticoide ter tempo de agir. Você também recebe antibiótico se o seu resultado de GBS for positivo ou ainda não conhecido.",
+        "Quem tem mais chance de entrar em trabalho de parto cedo",
+        "Um parto prematuro anterior · Colo do útero curto no ultrassom · Gêmeos ou mais · Engravidar menos de 18 meses depois do último parto · Fumar · Sangramento na gravidez · Pressão alta ou diabetes",
+        "O que ajuda e o que não ajuda",
+        "Se o colo estiver curto no ultrassom morfológico, a progesterona vaginal diminui a chance de parto prematuro. Algumas mulheres com um parto prematuro anterior recebem a oferta de um ponto no colo do útero (cerclagem). Repouso na cama não previne o parto cedo e aumenta o risco de trombose."
+      ]
+    },
+    "cholestasis": {
+      "title": "Coceira e colestase",
+      "sub": "A coceira normal, e a doença do fígado que vale um exame de sangue",
+      "t": [
+        "Um pouco de coceira na gravidez é normal, pela pele que estica ou fica seca. A coceira da colestase da gravidez (ICP), uma doença do fígado, é diferente: costuma ser nas palmas das mãos e nas solas dos pés, piora à noite, e não há manchas na pele.",
+        "Ligue para seu médico de família, obstetra ou parteira se tiver",
+        "Coceira nas palmas ou nas solas · Coceira no corpo todo que não deixa você dormir · Xixi escuro ou fezes claras · Pele ou olhos amarelados",
+        "O que é a colestase",
+        "O fígado deixa a bile passar mais devagar, e os ácidos biliares se acumulam no sangue. Afeta cerca de 1 em 200 a 1 em 300 gestações nos EUA, com mais frequência em mulheres latinas e em gestações de gêmeos. Costuma começar depois de 30 semanas. Não é perigosa para você, mas ácidos biliares muito altos aumentam a chance de perda do bebê no útero, por isso vale fazer o exame de sangue.",
+        "Exames e tratamento",
+        "Um exame de sangue de ácidos biliares e exames do fígado. Se você tiver, o exame costuma ser repetido a cada uma ou duas semanas. Um remédio chamado ursodiol pode aliviar um pouco a coceira; não foi demonstrado que ele proteja o bebê. Banhos frescos, roupas folgadas de algodão e hidratante ajudam a pele.",
+        "Quando o bebê vai nascer",
+        "Como o risco para o bebê aumenta no fim da gravidez, a sua equipe vai planejar o parto mais cedo: por volta de 36 semanas se os ácidos biliares estiverem em 100 µmol/L ou mais, e geralmente entre 36 e 39 semanas nos outros casos, conforme os seus níveis.",
+        "Depois do nascimento",
+        "A coceira costuma passar em alguns dias ou poucas semanas. Se não passar, peça para repetir os exames do fígado. Ela costuma voltar em gestações seguintes, em até 9 em cada 10, e às vezes pode ser desencadeada por anticoncepcional com estrogênio, então conte aos seus médicos que teve."
+      ]
     }
   },
   "srcHash": {
@@ -2599,7 +2634,34 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.early-bleeding.t.8": "32597a3a399d6ccc",
     "content.early-bleeding.t.9": "3bec781a6352d1bc",
     "content.early-bleeding.t.10": "acd42387326fb2e1",
-    "content.early-bleeding.t.11": "60e022353a5f16df"
+    "content.early-bleeding.t.11": "60e022353a5f16df",
+    "content.preterm-labor.title": "ae48987c88922b7e",
+    "content.preterm-labor.sub": "7d8eb3f3a968f46d",
+    "content.preterm-labor.t.0": "f9b53041e8775edf",
+    "content.preterm-labor.t.1": "df896c67f68b56b1",
+    "content.preterm-labor.t.2": "0eacba71a407a517",
+    "content.preterm-labor.t.3": "987ad47eb7bb8374",
+    "content.preterm-labor.t.4": "b6f0f6f048ff2546",
+    "content.preterm-labor.t.5": "83569706640862c4",
+    "content.preterm-labor.t.6": "7dc117e6c840b21c",
+    "content.preterm-labor.t.7": "b14cf0796d3ffa9b",
+    "content.preterm-labor.t.8": "386f1f8ac363bda0",
+    "content.preterm-labor.t.9": "7eaf1505431b6df3",
+    "content.preterm-labor.t.10": "4504ce3422cfe61a",
+    "content.preterm-labor.t.11": "8723ee4f03856201",
+    "content.cholestasis.title": "31918d38968a5c26",
+    "content.cholestasis.sub": "916b75f40d3475f6",
+    "content.cholestasis.t.0": "ddddb22a8b124c28",
+    "content.cholestasis.t.1": "1b22f86607be7fe8",
+    "content.cholestasis.t.2": "ce5ffc287678f73a",
+    "content.cholestasis.t.3": "afae54057807af93",
+    "content.cholestasis.t.4": "e004853ae555977c",
+    "content.cholestasis.t.5": "ab304de680b4e7d8",
+    "content.cholestasis.t.6": "5afdbcd86051f732",
+    "content.cholestasis.t.7": "d128e9f11e6e0e0b",
+    "content.cholestasis.t.8": "047a19297e6e7eaf",
+    "content.cholestasis.t.9": "08ba7d67736fc981",
+    "content.cholestasis.t.10": "c747cef35fc34d5d"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -3951,6 +4013,33 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.early-bleeding.t.8": 1,
     "content.early-bleeding.t.9": 1,
     "content.early-bleeding.t.10": 1,
-    "content.early-bleeding.t.11": 1
+    "content.early-bleeding.t.11": 1,
+    "content.preterm-labor.title": 1,
+    "content.preterm-labor.sub": 1,
+    "content.preterm-labor.t.0": 1,
+    "content.preterm-labor.t.1": 1,
+    "content.preterm-labor.t.2": 1,
+    "content.preterm-labor.t.3": 1,
+    "content.preterm-labor.t.4": 1,
+    "content.preterm-labor.t.5": 1,
+    "content.preterm-labor.t.6": 1,
+    "content.preterm-labor.t.7": 1,
+    "content.preterm-labor.t.8": 1,
+    "content.preterm-labor.t.9": 1,
+    "content.preterm-labor.t.10": 1,
+    "content.preterm-labor.t.11": 1,
+    "content.cholestasis.title": 1,
+    "content.cholestasis.sub": 1,
+    "content.cholestasis.t.0": 1,
+    "content.cholestasis.t.1": 1,
+    "content.cholestasis.t.2": 1,
+    "content.cholestasis.t.3": 1,
+    "content.cholestasis.t.4": 1,
+    "content.cholestasis.t.5": 1,
+    "content.cholestasis.t.6": 1,
+    "content.cholestasis.t.7": 1,
+    "content.cholestasis.t.8": 1,
+    "content.cholestasis.t.9": 1,
+    "content.cholestasis.t.10": 1
   }
 };

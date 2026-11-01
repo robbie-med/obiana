@@ -1845,6 +1845,41 @@ window.MYOB_LOCALES.de = {
         "Wenn es eine Fehlgeburt ist",
         "Etwa 1 von 10 aller bekannten Schwangerschaften endet in einer Fehlgeburt, die meisten in den ersten 12 Wochen. Wenn es blutet, ist die Wahrscheinlichkeit etwas höher, vor allem bei starker Blutung. Die meisten entstehen durch ein Chromosomenproblem, das bei der Empfängnis begann, nicht durch etwas, das Sie getan haben. Meist können Sie wählen, wie es weitergeht: abwarten, bis es von selbst abgeht, ein Medikament, das dabei hilft, oder ein kurzer Eingriff. Alle drei sind sicher; sie unterscheiden sich darin, wie lange es dauert und wie viel Blutung zu Hause passiert. Trauer ist normal, egal in welcher Woche. Sie können es wieder versuchen, sobald Sie sich bereit fühlen."
       ]
+    },
+    "preterm-labor": {
+      "title": "Frühe Wehen (Frühgeburt)",
+      "sub": "Anzeichen vor der 37. Woche, und was passiert, wenn Sie hinfahren",
+      "t": [
+        "Wehen vor der 37. Woche sind zu früh, man spricht von Frühgeburt. Etwa 1 von 10 Babys in den USA kommt zu früh zur Welt. Schnelle Hilfe gibt Ihrem Team Zeit, Ihrem Baby zu helfen.",
+        "Fahren Sie jetzt in den Kreißsaal, wenn Sie vor der 37. Woche eines davon haben",
+        "Hartwerden des Bauchs oder Wehen alle 10 Minuten oder öfter, also 6 oder mehr in einer Stunde · Krämpfe wie bei der Periode · Dumpfe Schmerzen tief im Rücken, die kommen und gehen · Druck im Becken, als würde das Baby nach unten drücken · Flüssigkeit, die aus der Scheide läuft · Blutung oder Schmierblutung · Ausfluss, der sich verändert und wässrig, schleimig oder blutig wird",
+        "Warten Sie nicht ab, ob es vorbeigeht. Wenn Sie unsicher sind, was Sie spüren, rufen Sie Ihren Hausarzt, Frauenarzt oder Ihre Hebamme an oder den Kreißsaal.",
+        "Was passiert, wenn Sie ankommen",
+        "Die Pflegekraft überwacht Ihre Wehen und den Herzschlag Ihres Babys, und Ihr Muttermund wird untersucht. Vielleicht bekommen Sie einen Abstrich (fetales Fibronektin) oder einen Ultraschall, der Ihren Gebärmutterhals misst. Viele Frauen, die mit diesen Zeichen kommen, haben doch keine Wehen und gehen am selben Tag nach Hause. Das ist ein guter Besuch, kein umsonst gemachter.",
+        "Wenn die Geburt wirklich zu früh beginnt",
+        "Vor der 34. Woche helfen 2 Kortison-Spritzen im Abstand von einem Tag der Lunge des Babys und senken das Risiko für schwere Probleme nach der Geburt. Vor der 32. Woche schützt Magnesium über die Vene das Gehirn des Babys. Ein Medikament, das die Wehen bremst, kann für etwa 2 Tage gegeben werden, damit das Kortison Zeit hat zu wirken. Sie bekommen auch Antibiotika, wenn Ihr GBS-Befund positiv oder noch nicht bekannt ist.",
+        "Wer eher zu früh Wehen bekommt",
+        "Eine frühere Frühgeburt · Ein kurzer Gebärmutterhals im Ultraschall · Zwillinge oder mehr · Eine Schwangerschaft weniger als 18 Monate nach der letzten Geburt · Rauchen · Blutungen in der Schwangerschaft · Hoher Blutdruck oder Diabetes",
+        "Was hilft, und was nicht",
+        "Ist Ihr Gebärmutterhals beim Organ-Ultraschall kurz, senkt vaginales Progesteron das Risiko einer Frühgeburt. Manchen Frauen mit einer früheren Frühgeburt wird ein Faden am Muttermund angeboten (Cerclage). Bettruhe verhindert keine frühen Wehen und erhöht das Risiko für Blutgerinnsel."
+      ]
+    },
+    "cholestasis": {
+      "title": "Juckreiz und Schwangerschaftscholestase",
+      "sub": "Normaler Juckreiz, und die Lebererkrankung, die einen Bluttest wert ist",
+      "t": [
+        "Etwas Juckreiz ist in der Schwangerschaft normal, durch die gedehnte oder trockene Haut. Der Juckreiz bei Schwangerschaftscholestase (ICP), einer Lebererkrankung, ist anders: Er sitzt oft an den Handflächen und Fußsohlen, ist nachts schlimmer, und es gibt keinen Ausschlag.",
+        "Rufen Sie Ihren Hausarzt, Frauenarzt oder Ihre Hebamme an, wenn Sie Folgendes haben",
+        "Juckreiz an Handflächen oder Fußsohlen · Juckreiz am ganzen Körper, der Sie wach hält · Dunklen Urin oder hellen Stuhl · Gelbe Haut oder gelbe Augen",
+        "Was Cholestase ist",
+        "Die Leber lässt die Galle langsamer abfließen, und Gallensäuren sammeln sich im Blut. Sie betrifft etwa 1 von 200 bis 1 von 300 Schwangerschaften in den USA, häufiger bei Latinas und bei Zwillingen. Sie beginnt meist nach der 30. Woche. Für Sie ist sie nicht gefährlich, aber sehr hohe Gallensäuren erhöhen das Risiko einer Totgeburt. Deshalb lohnt sich ein Bluttest.",
+        "Tests und Behandlung",
+        "Ein Bluttest auf Gallensäuren und Leberwerte. Haben Sie sie, wird der Test meist alle ein bis zwei Wochen wiederholt. Ein Medikament namens Ursodiol kann den Juckreiz etwas lindern; dass es das Baby schützt, ist nicht belegt. Kühle Duschen, weite Baumwollkleidung und Feuchtigkeitscreme helfen der Haut.",
+        "Zeitpunkt der Geburt",
+        "Weil das Risiko für das Baby spät in der Schwangerschaft steigt, plant Ihr Team die Geburt früher: um die 36. Woche, wenn die Gallensäuren 100 µmol/L oder höher sind, und sonst meist zwischen der 36. und 39. Woche, je nach Ihren Werten.",
+        "Nach der Geburt",
+        "Der Juckreiz geht meist innerhalb von Tagen bis wenigen Wochen weg. Wenn nicht, bitten Sie darum, die Leberwerte noch einmal zu prüfen. In späteren Schwangerschaften kommt sie oft wieder, in bis zu 9 von 10, und Verhütungsmittel mit Östrogen können sie manchmal auslösen. Sagen Sie Ihren Ärzten deshalb, dass Sie sie hatten."
+      ]
     }
   },
   "srcHash": {
@@ -2591,7 +2626,34 @@ window.MYOB_LOCALES.de = {
     "content.early-bleeding.t.8": "32597a3a399d6ccc",
     "content.early-bleeding.t.9": "3bec781a6352d1bc",
     "content.early-bleeding.t.10": "acd42387326fb2e1",
-    "content.early-bleeding.t.11": "60e022353a5f16df"
+    "content.early-bleeding.t.11": "60e022353a5f16df",
+    "content.preterm-labor.title": "ae48987c88922b7e",
+    "content.preterm-labor.sub": "7d8eb3f3a968f46d",
+    "content.preterm-labor.t.0": "f9b53041e8775edf",
+    "content.preterm-labor.t.1": "df896c67f68b56b1",
+    "content.preterm-labor.t.2": "0eacba71a407a517",
+    "content.preterm-labor.t.3": "987ad47eb7bb8374",
+    "content.preterm-labor.t.4": "b6f0f6f048ff2546",
+    "content.preterm-labor.t.5": "83569706640862c4",
+    "content.preterm-labor.t.6": "7dc117e6c840b21c",
+    "content.preterm-labor.t.7": "b14cf0796d3ffa9b",
+    "content.preterm-labor.t.8": "386f1f8ac363bda0",
+    "content.preterm-labor.t.9": "7eaf1505431b6df3",
+    "content.preterm-labor.t.10": "4504ce3422cfe61a",
+    "content.preterm-labor.t.11": "8723ee4f03856201",
+    "content.cholestasis.title": "31918d38968a5c26",
+    "content.cholestasis.sub": "916b75f40d3475f6",
+    "content.cholestasis.t.0": "ddddb22a8b124c28",
+    "content.cholestasis.t.1": "1b22f86607be7fe8",
+    "content.cholestasis.t.2": "ce5ffc287678f73a",
+    "content.cholestasis.t.3": "afae54057807af93",
+    "content.cholestasis.t.4": "e004853ae555977c",
+    "content.cholestasis.t.5": "ab304de680b4e7d8",
+    "content.cholestasis.t.6": "5afdbcd86051f732",
+    "content.cholestasis.t.7": "d128e9f11e6e0e0b",
+    "content.cholestasis.t.8": "047a19297e6e7eaf",
+    "content.cholestasis.t.9": "08ba7d67736fc981",
+    "content.cholestasis.t.10": "c747cef35fc34d5d"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -3943,6 +4005,33 @@ window.MYOB_LOCALES.de = {
     "content.early-bleeding.t.8": 1,
     "content.early-bleeding.t.9": 1,
     "content.early-bleeding.t.10": 1,
-    "content.early-bleeding.t.11": 1
+    "content.early-bleeding.t.11": 1,
+    "content.preterm-labor.title": 1,
+    "content.preterm-labor.sub": 1,
+    "content.preterm-labor.t.0": 1,
+    "content.preterm-labor.t.1": 1,
+    "content.preterm-labor.t.2": 1,
+    "content.preterm-labor.t.3": 1,
+    "content.preterm-labor.t.4": 1,
+    "content.preterm-labor.t.5": 1,
+    "content.preterm-labor.t.6": 1,
+    "content.preterm-labor.t.7": 1,
+    "content.preterm-labor.t.8": 1,
+    "content.preterm-labor.t.9": 1,
+    "content.preterm-labor.t.10": 1,
+    "content.preterm-labor.t.11": 1,
+    "content.cholestasis.title": 1,
+    "content.cholestasis.sub": 1,
+    "content.cholestasis.t.0": 1,
+    "content.cholestasis.t.1": 1,
+    "content.cholestasis.t.2": 1,
+    "content.cholestasis.t.3": 1,
+    "content.cholestasis.t.4": 1,
+    "content.cholestasis.t.5": 1,
+    "content.cholestasis.t.6": 1,
+    "content.cholestasis.t.7": 1,
+    "content.cholestasis.t.8": 1,
+    "content.cholestasis.t.9": 1,
+    "content.cholestasis.t.10": 1
   }
 };

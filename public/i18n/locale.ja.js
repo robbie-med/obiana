@@ -1843,6 +1843,41 @@ window.MYOB_LOCALES.ja = {
         "流産だった場合",
         "わかっている妊娠全体の約10人に1人が流産になり、ほとんどは最初の12週です。出血があると、特に量が多いと、その可能性はいくらか高くなります。ほとんどは受精のときに始まった染色体の問題が原因で、あなたが何かをしたせいではありません。ふつうは対応のしかたを選べます：自然に出るのを待つ、出るのを助ける薬、短い処置。3つとも安全で、かかる時間と家での出血の量が違います。何週であっても悲しむのは自然なことです。気持ちの準備ができたら、すぐにまた妊娠を目指してかまいません。"
       ]
+    },
+    "preterm-labor": {
+      "title": "早すぎるお産（早産）",
+      "sub": "37週より前のサイン、病院に行ったら何をするか",
+      "t": [
+        "37週より前のお産は早く、早産といいます。米国では赤ちゃんの約10人に1人が早く生まれます。早く診てもらうと、ケアチームが赤ちゃんを助ける時間ができます。",
+        "37週より前にこれらがひとつでもあれば、今すぐ産科病棟（L&D）へ",
+        "10分ごとかそれより短い間隔のお腹の張りや収縮、つまり1時間に6回以上 · 生理痛のような痛み · 来たり引いたりする腰の低い鈍い痛み · 赤ちゃんが下に押しているような骨盤の圧迫感 · 膣から液がもれる · 出血や少量の出血 · おりものが変わり、水っぽい、粘液のよう、または血がまじる",
+        "おさまるか様子を見ないでください。何を感じているのかわからないときは、かかりつけ医、産科医、助産師、または産科病棟に電話してください。",
+        "病院に着いたら",
+        "看護師が収縮と赤ちゃんの心拍を見て、子宮頸管を診察します。綿棒の検査（胎児フィブロネクチン）や、子宮頸管の長さを測る超音波をすることもあります。こうしたサインで来た女性の多くは、実際には陣痛ではなく、その日のうちに家に帰ります。むだな受診ではなく、よい受診です。",
+        "本当に早くお産が始まっているとき",
+        "34週より前なら、1日あけて2回のステロイド注射が赤ちゃんの肺を助け、生まれた後の重い問題を減らします。32週より前なら、点滴のマグネシウムが赤ちゃんの脳を守るのに役立ちます。ステロイドが効く時間をかせぐため、収縮をおさえる薬を約2日使うことがあります。GBSの結果が陽性かまだわからないときは、抗菌薬も使います。",
+        "早産になりやすい人",
+        "前に早産をした · 超音波で子宮頸管が短い · 双子以上 · 前回の出産から18か月未満で妊娠 · 喫煙 · 妊娠中の出血 · 高血圧や糖尿病",
+        "役立つこと、役立たないこと",
+        "形態の超音波で子宮頸管が短ければ、膣のプロゲステロンで早産の可能性が下がります。前に早産をした女性には、子宮頸管をしばる手術（頸管縫縮術）が提案されることがあります。安静にしても早産は防げず、血栓のリスクが上がります。"
+      ]
+    },
+    "cholestasis": {
+      "title": "かゆみと妊娠性肝内胆汁うっ滞",
+      "sub": "ふつうのかゆみと、血液検査をする価値のある肝臓の病気",
+      "t": [
+        "妊娠中に少しかゆくなるのはふつうで、皮膚がのびたり乾燥したりするためです。肝臓の病気である妊娠性肝内胆汁うっ滞（ICP）のかゆみは違います。手のひらや足の裏に多く、夜にひどくなり、発疹はありません。",
+        "こんなときはかかりつけ医、産科医、助産師に電話",
+        "手のひらや足の裏のかゆみ · 眠れないほどの全身のかゆみ · 濃い色の尿や白っぽい便 · 皮膚や白目が黄色い",
+        "胆汁うっ滞とは",
+        "肝臓から胆汁が流れにくくなり、胆汁酸が血液にたまります。米国では妊娠の約200〜300人に1人に起こり、ラテン系の女性や双子の妊娠に多く見られます。ふつう30週以降に始まります。あなたにとって危険ではありませんが、胆汁酸がとても高いと死産の可能性が上がるので、血液検査をする価値があります。",
+        "検査と治療",
+        "胆汁酸と肝機能の血液検査です。この病気があれば、ふつう1〜2週ごとに検査をくり返します。ウルソデオキシコール酸（ursodiol）という薬でかゆみが少し楽になることがありますが、赤ちゃんを守るとは示されていません。ぬるめのシャワー、ゆったりした綿の服、保湿剤が肌を助けます。",
+        "出産の時期",
+        "妊娠の終わりに赤ちゃんのリスクが上がるため、ケアチームは早めの出産を計画します。胆汁酸が100 µmol/L以上なら36週ごろ、それ以外はふつう36〜39週の間に、値に合わせて決めます。",
+        "出産の後",
+        "かゆみはふつう数日から数週間で消えます。消えないときは、肝機能をもう一度調べてもらってください。次の妊娠でもよく再発し、10人に9人ほどまでで起こることがあります。エストロゲンを含む避妊薬がきっかけになることもあるので、この病気になったことを医師に伝えてください。"
+      ]
     }
   },
   "srcHash": {
@@ -2589,7 +2624,34 @@ window.MYOB_LOCALES.ja = {
     "content.early-bleeding.t.8": "32597a3a399d6ccc",
     "content.early-bleeding.t.9": "3bec781a6352d1bc",
     "content.early-bleeding.t.10": "acd42387326fb2e1",
-    "content.early-bleeding.t.11": "60e022353a5f16df"
+    "content.early-bleeding.t.11": "60e022353a5f16df",
+    "content.preterm-labor.title": "ae48987c88922b7e",
+    "content.preterm-labor.sub": "7d8eb3f3a968f46d",
+    "content.preterm-labor.t.0": "f9b53041e8775edf",
+    "content.preterm-labor.t.1": "df896c67f68b56b1",
+    "content.preterm-labor.t.2": "0eacba71a407a517",
+    "content.preterm-labor.t.3": "987ad47eb7bb8374",
+    "content.preterm-labor.t.4": "b6f0f6f048ff2546",
+    "content.preterm-labor.t.5": "83569706640862c4",
+    "content.preterm-labor.t.6": "7dc117e6c840b21c",
+    "content.preterm-labor.t.7": "b14cf0796d3ffa9b",
+    "content.preterm-labor.t.8": "386f1f8ac363bda0",
+    "content.preterm-labor.t.9": "7eaf1505431b6df3",
+    "content.preterm-labor.t.10": "4504ce3422cfe61a",
+    "content.preterm-labor.t.11": "8723ee4f03856201",
+    "content.cholestasis.title": "31918d38968a5c26",
+    "content.cholestasis.sub": "916b75f40d3475f6",
+    "content.cholestasis.t.0": "ddddb22a8b124c28",
+    "content.cholestasis.t.1": "1b22f86607be7fe8",
+    "content.cholestasis.t.2": "ce5ffc287678f73a",
+    "content.cholestasis.t.3": "afae54057807af93",
+    "content.cholestasis.t.4": "e004853ae555977c",
+    "content.cholestasis.t.5": "ab304de680b4e7d8",
+    "content.cholestasis.t.6": "5afdbcd86051f732",
+    "content.cholestasis.t.7": "d128e9f11e6e0e0b",
+    "content.cholestasis.t.8": "047a19297e6e7eaf",
+    "content.cholestasis.t.9": "08ba7d67736fc981",
+    "content.cholestasis.t.10": "c747cef35fc34d5d"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -3941,6 +4003,33 @@ window.MYOB_LOCALES.ja = {
     "content.early-bleeding.t.8": 1,
     "content.early-bleeding.t.9": 1,
     "content.early-bleeding.t.10": 1,
-    "content.early-bleeding.t.11": 1
+    "content.early-bleeding.t.11": 1,
+    "content.preterm-labor.title": 1,
+    "content.preterm-labor.sub": 1,
+    "content.preterm-labor.t.0": 1,
+    "content.preterm-labor.t.1": 1,
+    "content.preterm-labor.t.2": 1,
+    "content.preterm-labor.t.3": 1,
+    "content.preterm-labor.t.4": 1,
+    "content.preterm-labor.t.5": 1,
+    "content.preterm-labor.t.6": 1,
+    "content.preterm-labor.t.7": 1,
+    "content.preterm-labor.t.8": 1,
+    "content.preterm-labor.t.9": 1,
+    "content.preterm-labor.t.10": 1,
+    "content.preterm-labor.t.11": 1,
+    "content.cholestasis.title": 1,
+    "content.cholestasis.sub": 1,
+    "content.cholestasis.t.0": 1,
+    "content.cholestasis.t.1": 1,
+    "content.cholestasis.t.2": 1,
+    "content.cholestasis.t.3": 1,
+    "content.cholestasis.t.4": 1,
+    "content.cholestasis.t.5": 1,
+    "content.cholestasis.t.6": 1,
+    "content.cholestasis.t.7": 1,
+    "content.cholestasis.t.8": 1,
+    "content.cholestasis.t.9": 1,
+    "content.cholestasis.t.10": 1
   }
 };

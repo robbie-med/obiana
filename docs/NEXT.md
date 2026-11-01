@@ -81,8 +81,8 @@ Don't build a second tool beside it.
 ## 5. New content
 - [ ] **New cards.** First the three that When to call depends on:
   - early bleeding/ectopic. **Done 2026-11-01:** `early-bleeding` (after First Trimester), numbers checked against ACOG by the user (15–25% bleed, 1–2 in 100 ectopic, about 10% of known pregnancies miscarry; Rh line says only Rh-negative readers may need the shot). Drafted in all 15 non-Zomi languages (`translation/keys/f4t.txt`).
-  - preterm labor
-  - itching/cholestasis
+  - preterm labor. **Done 2026-11-01:** `preterm-labor` (after Preeclampsia), checked by the user against CDC 2024 (10.41%), ACOG CO 455 and the steroid/tocolysis/progesterone guidance.
+  - itching/cholestasis. **Done 2026-11-01:** `cholestasis`, checked by the user against SMFM Consult #53 (0.3–0.5%, 36 weeks at ≥100 µmol/L, recurrence up to 90%) and CDC MEC (estrogen category 2). Both drafted in all 15 non-Zomi languages (`translation/keys/f4u.txt`).
 
   Then split **Common Discomforts** into cards (one session; your clinical review of the drafts before merge). Each card: why it happens, what to try first, over-the-counter medicines that are fine in pregnancy, when to call. Warning-sign cards first:
   - Peeing: more often, leaking, or burning (UTI; fever with back or side pain is a kidney infection, go in)

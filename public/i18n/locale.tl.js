@@ -1848,6 +1848,41 @@ window.MYOB_LOCALES.tl = {
         "Kung pagkalaglag ito",
         "Mga 1 sa 10 ng lahat ng nalalamang pagbubuntis ang nauuwi sa pagkalaglag, karamihan sa unang 12 linggo. Medyo mas mataas ang tsansa kapag may pagdurugo na, lalo na kung malakas. Karamihan ay dahil sa problema sa chromosome na nagsimula sa paglilihi, hindi dahil sa anumang ginawa mo. Kadalasang puwede mong piliin kung paano ito haharapin: hintaying kusang lumabas, gamot para tumulong lumabas, o maikling procedure. Ligtas ang tatlo; nagkakaiba sila sa tagal at sa dami ng pagdurugo sa bahay. Normal ang pagdadalamhati, anumang linggo. Puwede kang sumubok ulit kapag handa ka na."
       ]
+    },
+    "preterm-labor": {
+      "title": "Maagang Labor (Preterm)",
+      "sub": "Mga senyales bago mag-37 linggo, at ang mangyayari pagdating mo",
+      "t": [
+        "Ang labor bago mag-37 linggo ay maaga, o preterm. Mga 1 sa 10 sanggol sa US ang ipinapanganak nang maaga. Ang mabilis na pagpapatingin ay nagbibigay ng oras sa iyong team para matulungan ang sanggol mo.",
+        "Pumunta na sa labor and delivery kung may alinman dito bago mag-37 linggo",
+        "Paninigas o contraction bawat 10 minuto o mas madalas, ibig sabihin 6 o higit pa sa isang oras · Pananakit na parang may regla · Mahina at mapurol na sakit sa ibabang likod na dumarating at nawawala · Presyon sa balakang, na parang itinutulak pababa ng sanggol · Tumatagas na tubig mula sa ari · Pagdurugo o spotting · Discharge na nagbabago at nagiging matubig, malapot o may dugo",
+        "Huwag hintaying mawala ito. Kung hindi ka sigurado sa nararamdaman mo, tawagan ang iyong family doctor, OB o midwife, o tawagan ang labor and delivery.",
+        "Ang mangyayari pagdating mo",
+        "Binabantayan ng nurse ang contraction mo at ang tibok ng puso ng sanggol, at sinusuri ang cervix mo. Maaaring magkaroon ka ng swab test (fetal fibronectin) o ultrasound na sumusukat sa cervix. Maraming babaeng pumupunta dahil sa mga senyales na ito ang hindi pala naglelabor at umuuwi rin sa araw na iyon. Magandang pagpapatingin iyon, hindi sayang.",
+        "Kung talagang maagang nagsisimula ang labor",
+        "Bago mag-34 linggo, 2 steroid shot na isang araw ang pagitan ay tumutulong sa baga ng sanggol at nagpapababa ng tsansa ng malulubhang problema pagkapanganak. Bago mag-32 linggo, ang magnesium sa IV ay tumutulong protektahan ang utak ng sanggol. Maaaring bigyan ng gamot na nagpapabagal ng contraction nang mga 2 araw para magkaroon ng oras na gumana ang steroid. Bibigyan ka rin ng antibiotics kung positibo o hindi pa alam ang resulta ng GBS mo.",
+        "Sino ang mas malamang na maagang maglabor",
+        "Naunang preterm birth · Maikling cervix sa ultrasound · Kambal o higit pa · Nabuntis nang wala pang 18 buwan mula sa huling panganganak · Paninigarilyo · Pagdurugo habang buntis · Altapresyon o diabetes",
+        "Ang nakakatulong, at ang hindi",
+        "Kung maikli ang cervix mo sa anatomy ultrasound, binabawasan ng vaginal progesterone ang tsansa ng maagang panganganak. May mga babaeng nagkaroon na ng preterm birth na inaalok ng tahi sa cervix (cerclage). Hindi napipigilan ng bed rest ang maagang labor, at pinapataas nito ang panganib ng blood clot."
+      ]
+    },
+    "cholestasis": {
+      "title": "Pangangati at Cholestasis",
+      "sub": "Normal na pangangati, at ang sakit sa atay na dapat ipa-blood test",
+      "t": [
+        "Normal ang kaunting pangangati habang buntis, dahil sa pag-unat o panunuyo ng balat. Iba ang pangangati ng cholestasis of pregnancy (ICP), isang sakit sa atay: kadalasang nasa palad at talampakan, mas malala sa gabi, at walang pantal.",
+        "Tawagan ang iyong family doctor, OB o midwife kung may",
+        "Pangangati sa palad o talampakan · Pangangati sa buong katawan na hindi ka makatulog · Maitim na ihi o maputlang dumi · Dilaw na balat o mata",
+        "Ano ang cholestasis",
+        "Bumabagal ang daloy ng apdo mula sa atay, at naiipon ang bile acids sa dugo. Nangyayari ito sa mga 1 sa 200 hanggang 1 sa 300 pagbubuntis sa US, mas madalas sa mga Latina at sa kambal. Kadalasang nagsisimula ito pagkalipas ng 30 linggo. Hindi ito delikado para sa iyo, pero ang napakataas na bile acids ay nagpapataas ng tsansa ng stillbirth, kaya sulit itong ipa-blood test.",
+        "Pagsusuri at gamutan",
+        "Blood test para sa bile acids at liver tests. Kung mayroon ka nito, kadalasang inuulit ang test bawat isa o dalawang linggo. Ang gamot na ursodiol ay maaaring bahagyang magpagaan ng pangangati; hindi pa napatunayang pinoprotektahan nito ang sanggol. Nakakatulong sa balat ang malamig na paligo, maluwag na damit na cotton, at moisturizer.",
+        "Kailan manganganak",
+        "Dahil tumataas ang panganib sa sanggol sa huling bahagi ng pagbubuntis, magpaplano ang iyong team ng mas maagang panganganak: mga 36 na linggo kung ang bile acids ay 100 µmol/L o higit pa, at kadalasang sa pagitan ng 36 at 39 na linggo kung hindi, depende sa antas mo.",
+        "Pagkapanganak",
+        "Kadalasang nawawala ang pangangati sa loob ng ilang araw hanggang ilang linggo. Kung hindi, humingi na ulitin ang liver tests. Madalas itong bumalik sa mga susunod na pagbubuntis, hanggang 9 sa 10, at minsan maaari itong mapalitaw ng birth control na may estrogen, kaya sabihin sa mga doktor mo na nagkaroon ka nito."
+      ]
     }
   },
   "srcHash": {
@@ -2594,7 +2629,34 @@ window.MYOB_LOCALES.tl = {
     "content.early-bleeding.t.8": "32597a3a399d6ccc",
     "content.early-bleeding.t.9": "3bec781a6352d1bc",
     "content.early-bleeding.t.10": "acd42387326fb2e1",
-    "content.early-bleeding.t.11": "60e022353a5f16df"
+    "content.early-bleeding.t.11": "60e022353a5f16df",
+    "content.preterm-labor.title": "ae48987c88922b7e",
+    "content.preterm-labor.sub": "7d8eb3f3a968f46d",
+    "content.preterm-labor.t.0": "f9b53041e8775edf",
+    "content.preterm-labor.t.1": "df896c67f68b56b1",
+    "content.preterm-labor.t.2": "0eacba71a407a517",
+    "content.preterm-labor.t.3": "987ad47eb7bb8374",
+    "content.preterm-labor.t.4": "b6f0f6f048ff2546",
+    "content.preterm-labor.t.5": "83569706640862c4",
+    "content.preterm-labor.t.6": "7dc117e6c840b21c",
+    "content.preterm-labor.t.7": "b14cf0796d3ffa9b",
+    "content.preterm-labor.t.8": "386f1f8ac363bda0",
+    "content.preterm-labor.t.9": "7eaf1505431b6df3",
+    "content.preterm-labor.t.10": "4504ce3422cfe61a",
+    "content.preterm-labor.t.11": "8723ee4f03856201",
+    "content.cholestasis.title": "31918d38968a5c26",
+    "content.cholestasis.sub": "916b75f40d3475f6",
+    "content.cholestasis.t.0": "ddddb22a8b124c28",
+    "content.cholestasis.t.1": "1b22f86607be7fe8",
+    "content.cholestasis.t.2": "ce5ffc287678f73a",
+    "content.cholestasis.t.3": "afae54057807af93",
+    "content.cholestasis.t.4": "e004853ae555977c",
+    "content.cholestasis.t.5": "ab304de680b4e7d8",
+    "content.cholestasis.t.6": "5afdbcd86051f732",
+    "content.cholestasis.t.7": "d128e9f11e6e0e0b",
+    "content.cholestasis.t.8": "047a19297e6e7eaf",
+    "content.cholestasis.t.9": "08ba7d67736fc981",
+    "content.cholestasis.t.10": "c747cef35fc34d5d"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -3946,6 +4008,33 @@ window.MYOB_LOCALES.tl = {
     "content.early-bleeding.t.8": 1,
     "content.early-bleeding.t.9": 1,
     "content.early-bleeding.t.10": 1,
-    "content.early-bleeding.t.11": 1
+    "content.early-bleeding.t.11": 1,
+    "content.preterm-labor.title": 1,
+    "content.preterm-labor.sub": 1,
+    "content.preterm-labor.t.0": 1,
+    "content.preterm-labor.t.1": 1,
+    "content.preterm-labor.t.2": 1,
+    "content.preterm-labor.t.3": 1,
+    "content.preterm-labor.t.4": 1,
+    "content.preterm-labor.t.5": 1,
+    "content.preterm-labor.t.6": 1,
+    "content.preterm-labor.t.7": 1,
+    "content.preterm-labor.t.8": 1,
+    "content.preterm-labor.t.9": 1,
+    "content.preterm-labor.t.10": 1,
+    "content.preterm-labor.t.11": 1,
+    "content.cholestasis.title": 1,
+    "content.cholestasis.sub": 1,
+    "content.cholestasis.t.0": 1,
+    "content.cholestasis.t.1": 1,
+    "content.cholestasis.t.2": 1,
+    "content.cholestasis.t.3": 1,
+    "content.cholestasis.t.4": 1,
+    "content.cholestasis.t.5": 1,
+    "content.cholestasis.t.6": 1,
+    "content.cholestasis.t.7": 1,
+    "content.cholestasis.t.8": 1,
+    "content.cholestasis.t.9": 1,
+    "content.cholestasis.t.10": 1
   }
 };

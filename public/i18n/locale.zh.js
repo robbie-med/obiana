@@ -1845,6 +1845,41 @@ window.MYOB_LOCALES.zh = {
         "如果是流产",
         "在所有已知的怀孕中，大约每 10 次有 1 次以流产结束，大多数发生在头 12 周。一旦有出血，尤其是出血量大，这个可能性会稍高一些。大多数流产是受孕时就出现的染色体问题造成的，不是因为您做了什么。通常您可以选择处理方式：等它自然排出、用药物帮助排出，或做一个短小的手术。三种都安全，区别在于需要多长时间以及在家出血多少。无论在哪一周，悲伤都是正常的。只要您觉得准备好了，就可以再次尝试怀孕。"
       ]
+    },
+    "preterm-labor": {
+      "title": "过早分娩（早产）",
+      "sub": "37 周前的征兆，以及去医院后会怎样",
+      "t": [
+        "37 周前开始分娩就是过早，也叫早产。美国大约每 10 个宝宝中有 1 个是早产的。尽快就医能让医疗团队有时间帮助您的宝宝。",
+        "如果 37 周前有以下任何一种情况，请立即去产房",
+        "每 10 分钟或更频繁地发紧或宫缩，也就是一小时 6 次或更多 · 像月经一样的腹痛 · 时有时无的下背部钝痛 · 骨盆有压迫感，好像宝宝在往下推 · 阴道有液体流出 · 出血或点滴出血 · 分泌物发生变化，变得像水、像黏液或带血",
+        "不要等着看会不会好转。如果不确定自己的感觉，请给您的家庭医生、产科医生或助产士打电话，或者打给产房。",
+        "到医院后会怎样",
+        "护士会监测您的宫缩和宝宝的心跳，并检查您的宫颈。您可能要做一个拭子检查（胎儿纤维连接蛋白）或测量宫颈长度的超声。很多带着这些征兆来的女性其实并没有临产，当天就回家了。这是一次好的就诊，不是白跑一趟。",
+        "如果真的提前开始分娩",
+        "34 周前，间隔一天打 2 针类固醇能帮助宝宝的肺，并降低出生后出现严重问题的可能。32 周前，静脉输注镁能帮助保护宝宝的大脑。可能会用大约 2 天减缓宫缩的药，让类固醇有时间起作用。如果您的 GBS 结果是阳性或还不知道，也会用抗生素。",
+        "哪些人更容易早产",
+        "以前早产过 · 超声显示宫颈短 · 双胞胎或更多 · 上次分娩后不到 18 个月又怀孕 · 吸烟 · 孕期出血 · 高血压或糖尿病",
+        "什么有用，什么没用",
+        "如果大排畸超声显示宫颈短，阴道用孕酮能降低早产的可能。有些以前早产过的女性会被建议做宫颈环扎。卧床休息不能预防早产，还会增加血栓的风险。"
+      ]
+    },
+    "cholestasis": {
+      "title": "皮肤瘙痒和妊娠期胆汁淤积",
+      "sub": "正常的瘙痒，以及值得抽血检查的肝脏疾病",
+      "t": [
+        "怀孕时有些瘙痒是正常的，因为皮肤被撑开或变干。妊娠期肝内胆汁淤积症（ICP）是一种肝脏疾病，它引起的瘙痒不一样：常在手掌和脚底，夜里更重，而且没有皮疹。",
+        "如果您有以下情况，请给您的家庭医生、产科医生或助产士打电话",
+        "手掌或脚底瘙痒 · 全身痒得睡不着 · 尿色深或大便颜色浅 · 皮肤或眼睛发黄",
+        "什么是胆汁淤积",
+        "肝脏排出胆汁变慢，胆汁酸在血液中堆积。在美国，大约每 200 到 300 次怀孕中有 1 次出现，在拉丁裔女性和双胎妊娠中更常见。通常在 30 周后开始。它对您本人不危险，但胆汁酸很高会增加死胎的可能，所以值得抽血检查。",
+        "检查和治疗",
+        "抽血查胆汁酸和肝功能。如果确诊，通常每一到两周复查一次。一种叫熊去氧胆酸（ursodiol）的药可以稍微减轻瘙痒，但没有证据表明它能保护宝宝。凉水淋浴、宽松的棉质衣服和保湿霜对皮肤有帮助。",
+        "分娩时间",
+        "因为孕晚期宝宝的风险会升高，医疗团队会安排提前分娩：如果胆汁酸达到 100 µmol/L 或更高，大约在 36 周；其他情况通常在 36 到 39 周之间，根据您的数值决定。",
+        "分娩之后",
+        "瘙痒通常在几天到几周内消失。如果没有消失，请要求复查肝功能。以后怀孕常会再次出现，最多可达 10 次中有 9 次，含雌激素的避孕药有时也会诱发，所以请告诉医生您得过这种病。"
+      ]
     }
   },
   "srcHash": {
@@ -2591,7 +2626,34 @@ window.MYOB_LOCALES.zh = {
     "content.early-bleeding.t.8": "32597a3a399d6ccc",
     "content.early-bleeding.t.9": "3bec781a6352d1bc",
     "content.early-bleeding.t.10": "acd42387326fb2e1",
-    "content.early-bleeding.t.11": "60e022353a5f16df"
+    "content.early-bleeding.t.11": "60e022353a5f16df",
+    "content.preterm-labor.title": "ae48987c88922b7e",
+    "content.preterm-labor.sub": "7d8eb3f3a968f46d",
+    "content.preterm-labor.t.0": "f9b53041e8775edf",
+    "content.preterm-labor.t.1": "df896c67f68b56b1",
+    "content.preterm-labor.t.2": "0eacba71a407a517",
+    "content.preterm-labor.t.3": "987ad47eb7bb8374",
+    "content.preterm-labor.t.4": "b6f0f6f048ff2546",
+    "content.preterm-labor.t.5": "83569706640862c4",
+    "content.preterm-labor.t.6": "7dc117e6c840b21c",
+    "content.preterm-labor.t.7": "b14cf0796d3ffa9b",
+    "content.preterm-labor.t.8": "386f1f8ac363bda0",
+    "content.preterm-labor.t.9": "7eaf1505431b6df3",
+    "content.preterm-labor.t.10": "4504ce3422cfe61a",
+    "content.preterm-labor.t.11": "8723ee4f03856201",
+    "content.cholestasis.title": "31918d38968a5c26",
+    "content.cholestasis.sub": "916b75f40d3475f6",
+    "content.cholestasis.t.0": "ddddb22a8b124c28",
+    "content.cholestasis.t.1": "1b22f86607be7fe8",
+    "content.cholestasis.t.2": "ce5ffc287678f73a",
+    "content.cholestasis.t.3": "afae54057807af93",
+    "content.cholestasis.t.4": "e004853ae555977c",
+    "content.cholestasis.t.5": "ab304de680b4e7d8",
+    "content.cholestasis.t.6": "5afdbcd86051f732",
+    "content.cholestasis.t.7": "d128e9f11e6e0e0b",
+    "content.cholestasis.t.8": "047a19297e6e7eaf",
+    "content.cholestasis.t.9": "08ba7d67736fc981",
+    "content.cholestasis.t.10": "c747cef35fc34d5d"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -3470,6 +3532,33 @@ window.MYOB_LOCALES.zh = {
     "content.early-bleeding.t.8": 1,
     "content.early-bleeding.t.9": 1,
     "content.early-bleeding.t.10": 1,
-    "content.early-bleeding.t.11": 1
+    "content.early-bleeding.t.11": 1,
+    "content.preterm-labor.title": 1,
+    "content.preterm-labor.sub": 1,
+    "content.preterm-labor.t.0": 1,
+    "content.preterm-labor.t.1": 1,
+    "content.preterm-labor.t.2": 1,
+    "content.preterm-labor.t.3": 1,
+    "content.preterm-labor.t.4": 1,
+    "content.preterm-labor.t.5": 1,
+    "content.preterm-labor.t.6": 1,
+    "content.preterm-labor.t.7": 1,
+    "content.preterm-labor.t.8": 1,
+    "content.preterm-labor.t.9": 1,
+    "content.preterm-labor.t.10": 1,
+    "content.preterm-labor.t.11": 1,
+    "content.cholestasis.title": 1,
+    "content.cholestasis.sub": 1,
+    "content.cholestasis.t.0": 1,
+    "content.cholestasis.t.1": 1,
+    "content.cholestasis.t.2": 1,
+    "content.cholestasis.t.3": 1,
+    "content.cholestasis.t.4": 1,
+    "content.cholestasis.t.5": 1,
+    "content.cholestasis.t.6": 1,
+    "content.cholestasis.t.7": 1,
+    "content.cholestasis.t.8": 1,
+    "content.cholestasis.t.9": 1,
+    "content.cholestasis.t.10": 1
   }
 };

@@ -1840,6 +1840,41 @@ window.MYOB_LOCALES.vi = {
         "Nếu là sẩy thai",
         "Khoảng 1 trong 10 của tất cả các thai kỳ đã biết kết thúc bằng sẩy thai, phần lớn trong 12 tuần đầu. Khả năng này cao hơn một chút khi đã có ra máu, nhất là ra máu nhiều. Phần lớn là do vấn đề nhiễm sắc thể bắt đầu từ lúc thụ thai, không phải do bạn đã làm gì. Thường bạn có thể chọn cách xử trí: chờ tự ra, dùng thuốc giúp ra, hoặc một thủ thuật ngắn. Cả ba đều an toàn; khác nhau ở thời gian và lượng máu ra tại nhà. Đau buồn là bình thường, dù ở tuần nào. Bạn có thể thử có thai lại ngay khi thấy sẵn sàng."
       ]
+    },
+    "preterm-labor": {
+      "title": "Chuyển dạ sớm (sinh non)",
+      "sub": "Dấu hiệu trước 37 tuần, và điều gì xảy ra khi bạn vào viện",
+      "t": [
+        "Chuyển dạ trước 37 tuần là sớm, gọi là sinh non. Khoảng 1 trong 10 em bé ở Mỹ sinh sớm. Được chăm sóc nhanh giúp nhóm chăm sóc có thời gian giúp bé.",
+        "Đến khoa sinh ngay nếu bạn có bất kỳ dấu hiệu nào sau đây trước 37 tuần",
+        "Gò cứng bụng hoặc cơn gò mỗi 10 phút hoặc dày hơn, tức là 6 lần trở lên trong một giờ · Đau quặn như đau bụng kinh · Đau âm ỉ ở thắt lưng dưới, lúc có lúc không · Cảm giác nặng ở vùng chậu, như bé đang đẩy xuống · Rỉ nước từ âm đạo · Ra máu hoặc ra máu bấm · Dịch âm đạo thay đổi, trở nên loãng như nước, như nhầy, hoặc có máu",
+        "Đừng chờ xem có hết không. Nếu không chắc mình đang cảm thấy gì, hãy gọi bác sĩ gia đình, bác sĩ sản hoặc nữ hộ sinh, hoặc gọi khoa sinh.",
+        "Điều gì xảy ra khi bạn đến",
+        "Điều dưỡng theo dõi cơn gò và nhịp tim của bé, và bạn được khám cổ tử cung. Bạn có thể được làm xét nghiệm phết (fibronectin thai) hoặc siêu âm đo chiều dài cổ tử cung. Nhiều phụ nữ đến vì các dấu hiệu này hóa ra không chuyển dạ và về nhà ngay trong ngày. Đó là một lần khám tốt, không phải đi uổng công.",
+        "Nếu thật sự chuyển dạ sớm",
+        "Trước 34 tuần, 2 mũi tiêm steroid cách nhau một ngày giúp phổi của bé và giảm khả năng có vấn đề nặng sau sinh. Trước 32 tuần, magie truyền tĩnh mạch giúp bảo vệ não của bé. Có thể dùng thuốc làm chậm cơn gò trong khoảng 2 ngày để steroid có thời gian tác dụng. Bạn cũng được dùng kháng sinh nếu kết quả GBS dương tính hoặc chưa biết.",
+        "Ai dễ chuyển dạ sớm hơn",
+        "Từng sinh non · Cổ tử cung ngắn trên siêu âm · Song thai trở lên · Có thai lại chưa đến 18 tháng sau lần sinh trước · Hút thuốc · Ra máu khi mang thai · Huyết áp cao hoặc tiểu đường",
+        "Điều gì giúp được, điều gì không",
+        "Nếu cổ tử cung ngắn trên siêu âm hình thái, progesterone đặt âm đạo giảm khả năng sinh sớm. Một số phụ nữ từng sinh non được đề nghị khâu cổ tử cung (khâu vòng cổ tử cung). Nằm nghỉ tại giường không ngăn được sinh non và làm tăng nguy cơ cục máu đông."
+      ]
+    },
+    "cholestasis": {
+      "title": "Ngứa và ứ mật thai kỳ",
+      "sub": "Ngứa bình thường, và bệnh gan đáng làm xét nghiệm máu",
+      "t": [
+        "Ngứa một chút khi mang thai là bình thường, do da căng ra hoặc khô. Ngứa do ứ mật trong gan thai kỳ (ICP), một bệnh gan, thì khác: thường ở lòng bàn tay và lòng bàn chân, nặng hơn về đêm, và không có phát ban.",
+        "Gọi bác sĩ gia đình, bác sĩ sản hoặc nữ hộ sinh nếu bạn có",
+        "Ngứa lòng bàn tay hoặc bàn chân · Ngứa khắp người đến mất ngủ · Nước tiểu sẫm màu hoặc phân bạc màu · Da hoặc mắt vàng",
+        "Ứ mật là gì",
+        "Gan làm dòng mật chảy chậm lại, và axit mật tích tụ trong máu. Bệnh gặp ở khoảng 1 trong 200 đến 1 trong 300 thai kỳ ở Mỹ, thường hơn ở phụ nữ gốc Latinh và khi mang song thai. Thường bắt đầu sau 30 tuần. Bệnh không nguy hiểm cho bạn, nhưng axit mật rất cao làm tăng khả năng thai chết lưu, vì vậy đáng làm xét nghiệm máu.",
+        "Xét nghiệm và điều trị",
+        "Xét nghiệm máu axit mật và chức năng gan. Nếu bạn bị, xét nghiệm thường được làm lại mỗi một hai tuần. Thuốc ursodiol có thể giảm ngứa một chút; chưa có bằng chứng thuốc bảo vệ được bé. Tắm nước mát, mặc đồ cotton rộng và kem dưỡng ẩm giúp da dễ chịu.",
+        "Thời điểm sinh",
+        "Vì nguy cơ cho bé tăng vào cuối thai kỳ, nhóm chăm sóc sẽ lên kế hoạch sinh sớm hơn: khoảng 36 tuần nếu axit mật từ 100 µmol/L trở lên, và thường từ 36 đến 39 tuần trong các trường hợp khác, tùy mức của bạn.",
+        "Sau khi sinh",
+        "Ngứa thường hết trong vài ngày đến vài tuần. Nếu không hết, hãy xin làm lại xét nghiệm gan. Bệnh thường tái lại ở các lần mang thai sau, tới 9 trong 10 lần, và đôi khi thuốc tránh thai có estrogen có thể gây lại, vì vậy hãy báo bác sĩ rằng bạn từng bị."
+      ]
     }
   },
   "srcHash": {
@@ -2586,7 +2621,34 @@ window.MYOB_LOCALES.vi = {
     "content.early-bleeding.t.8": "32597a3a399d6ccc",
     "content.early-bleeding.t.9": "3bec781a6352d1bc",
     "content.early-bleeding.t.10": "acd42387326fb2e1",
-    "content.early-bleeding.t.11": "60e022353a5f16df"
+    "content.early-bleeding.t.11": "60e022353a5f16df",
+    "content.preterm-labor.title": "ae48987c88922b7e",
+    "content.preterm-labor.sub": "7d8eb3f3a968f46d",
+    "content.preterm-labor.t.0": "f9b53041e8775edf",
+    "content.preterm-labor.t.1": "df896c67f68b56b1",
+    "content.preterm-labor.t.2": "0eacba71a407a517",
+    "content.preterm-labor.t.3": "987ad47eb7bb8374",
+    "content.preterm-labor.t.4": "b6f0f6f048ff2546",
+    "content.preterm-labor.t.5": "83569706640862c4",
+    "content.preterm-labor.t.6": "7dc117e6c840b21c",
+    "content.preterm-labor.t.7": "b14cf0796d3ffa9b",
+    "content.preterm-labor.t.8": "386f1f8ac363bda0",
+    "content.preterm-labor.t.9": "7eaf1505431b6df3",
+    "content.preterm-labor.t.10": "4504ce3422cfe61a",
+    "content.preterm-labor.t.11": "8723ee4f03856201",
+    "content.cholestasis.title": "31918d38968a5c26",
+    "content.cholestasis.sub": "916b75f40d3475f6",
+    "content.cholestasis.t.0": "ddddb22a8b124c28",
+    "content.cholestasis.t.1": "1b22f86607be7fe8",
+    "content.cholestasis.t.2": "ce5ffc287678f73a",
+    "content.cholestasis.t.3": "afae54057807af93",
+    "content.cholestasis.t.4": "e004853ae555977c",
+    "content.cholestasis.t.5": "ab304de680b4e7d8",
+    "content.cholestasis.t.6": "5afdbcd86051f732",
+    "content.cholestasis.t.7": "d128e9f11e6e0e0b",
+    "content.cholestasis.t.8": "047a19297e6e7eaf",
+    "content.cholestasis.t.9": "08ba7d67736fc981",
+    "content.cholestasis.t.10": "c747cef35fc34d5d"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -3938,6 +4000,33 @@ window.MYOB_LOCALES.vi = {
     "content.early-bleeding.t.8": 1,
     "content.early-bleeding.t.9": 1,
     "content.early-bleeding.t.10": 1,
-    "content.early-bleeding.t.11": 1
+    "content.early-bleeding.t.11": 1,
+    "content.preterm-labor.title": 1,
+    "content.preterm-labor.sub": 1,
+    "content.preterm-labor.t.0": 1,
+    "content.preterm-labor.t.1": 1,
+    "content.preterm-labor.t.2": 1,
+    "content.preterm-labor.t.3": 1,
+    "content.preterm-labor.t.4": 1,
+    "content.preterm-labor.t.5": 1,
+    "content.preterm-labor.t.6": 1,
+    "content.preterm-labor.t.7": 1,
+    "content.preterm-labor.t.8": 1,
+    "content.preterm-labor.t.9": 1,
+    "content.preterm-labor.t.10": 1,
+    "content.preterm-labor.t.11": 1,
+    "content.cholestasis.title": 1,
+    "content.cholestasis.sub": 1,
+    "content.cholestasis.t.0": 1,
+    "content.cholestasis.t.1": 1,
+    "content.cholestasis.t.2": 1,
+    "content.cholestasis.t.3": 1,
+    "content.cholestasis.t.4": 1,
+    "content.cholestasis.t.5": 1,
+    "content.cholestasis.t.6": 1,
+    "content.cholestasis.t.7": 1,
+    "content.cholestasis.t.8": 1,
+    "content.cholestasis.t.9": 1,
+    "content.cholestasis.t.10": 1
   }
 };

@@ -1851,6 +1851,41 @@ window.MYOB_LOCALES.fr = {
         "Si c’est une fausse couche",
         "Environ 1 sur 10 de toutes les grossesses connues se termine par une fausse couche, la plupart pendant les 12 premières semaines. Le risque est un peu plus élevé quand il y a des saignements, surtout abondants. La plupart sont dues à un problème de chromosomes apparu dès la conception, pas à quelque chose que vous avez fait. Vous pouvez en général choisir la prise en charge : attendre que cela passe tout seul, un médicament pour aider, ou une courte intervention. Les trois sont sûres ; elles diffèrent par la durée et la quantité de saignement à la maison. Le chagrin est normal, quelle que soit la semaine. Vous pouvez réessayer dès que vous vous sentez prête."
       ]
+    },
+    "preterm-labor": {
+      "title": "Accouchement précoce (prématuré)",
+      "sub": "Les signes avant 37 semaines, et ce qui se passe quand vous allez à la maternité",
+      "t": [
+        "Le travail avant 37 semaines est précoce, ou prématuré. Environ 1 bébé sur 10 aux États-Unis naît avant terme. Être prise en charge vite donne à votre équipe le temps d’aider votre bébé.",
+        "Allez maintenant en salle de naissance si vous avez l’un de ces signes avant 37 semaines",
+        "Durcissements ou contractions toutes les 10 minutes ou plus souvent, soit 6 ou plus en une heure · Crampes comme pendant les règles · Mal de dos bas et sourd qui va et vient · Pression dans le bassin, comme si le bébé poussait vers le bas · Liquide qui s’écoule du vagin · Saignement ou petites pertes de sang · Pertes qui changent et deviennent aqueuses, glaireuses ou sanglantes",
+        "N’attendez pas de voir si ça passe. Si vous n’êtes pas sûre de ce que vous ressentez, appelez votre médecin de famille, gynécologue-obstétricien ou sage-femme, ou appelez la salle de naissance.",
+        "Ce qui se passe quand vous arrivez",
+        "L’infirmière surveille vos contractions et le cœur de votre bébé, et on examine votre col. Vous pouvez avoir un test par prélèvement (fibronectine fœtale) ou une échographie qui mesure votre col. Beaucoup de femmes qui viennent avec ces signes ne sont finalement pas en travail et rentrent chez elles le jour même. C’est une bonne visite, pas une visite pour rien.",
+        "Si le travail commence vraiment trop tôt",
+        "Avant 34 semaines, 2 injections de corticoïdes à un jour d’intervalle aident les poumons du bébé et diminuent le risque de problèmes graves après la naissance. Avant 32 semaines, le magnésium par perfusion aide à protéger le cerveau du bébé. Un médicament pour ralentir les contractions peut être donné pendant environ 2 jours, pour laisser aux corticoïdes le temps d’agir. Vous recevrez aussi des antibiotiques si votre résultat GBS est positif ou pas encore connu.",
+        "Qui a plus de risques d’accoucher tôt",
+        "Un accouchement prématuré avant · Un col court à l’échographie · Des jumeaux ou plus · Une grossesse moins de 18 mois après le dernier accouchement · Le tabac · Des saignements pendant la grossesse · Une tension élevée ou un diabète",
+        "Ce qui aide, et ce qui n’aide pas",
+        "Si votre col est court à l’échographie morphologique, la progestérone par voie vaginale diminue le risque d’accouchement précoce. À certaines femmes ayant déjà accouché prématurément, on propose un point sur le col (cerclage). Le repos au lit n’empêche pas l’accouchement précoce et augmente le risque de caillots."
+      ]
+    },
+    "cholestasis": {
+      "title": "Démangeaisons et cholestase",
+      "sub": "Les démangeaisons normales, et la maladie du foie qui mérite une prise de sang",
+      "t": [
+        "Quelques démangeaisons pendant la grossesse sont normales, à cause de la peau qui s’étire ou qui est sèche. Les démangeaisons de la cholestase gravidique (ICP), une maladie du foie, sont différentes : elles touchent souvent les paumes et la plante des pieds, sont pires la nuit, et il n’y a pas d’éruption.",
+        "Appelez votre médecin de famille, gynécologue-obstétricien ou sage-femme si vous avez",
+        "Des démangeaisons aux paumes ou à la plante des pieds · Des démangeaisons partout qui vous empêchent de dormir · Des urines foncées ou des selles pâles · La peau ou les yeux jaunes",
+        "Ce qu’est la cholestase",
+        "Le foie ralentit l’écoulement de la bile, et les acides biliaires s’accumulent dans le sang. Elle touche environ 1 grossesse sur 200 à 1 sur 300 aux États-Unis, plus souvent chez les femmes latino-américaines et en cas de jumeaux. Elle commence en général après 30 semaines. Elle n’est pas dangereuse pour vous, mais des acides biliaires très élevés augmentent le risque de mort fœtale, c’est pourquoi une prise de sang en vaut la peine.",
+        "Examens et traitement",
+        "Une prise de sang pour les acides biliaires et des tests du foie. Si vous l’avez, le test est en général refait toutes les une à deux semaines. Un médicament appelé ursodiol peut un peu soulager les démangeaisons ; il n’a pas été démontré qu’il protège le bébé. Les douches fraîches, les vêtements amples en coton et la crème hydratante aident la peau.",
+        "Le moment de l’accouchement",
+        "Comme le risque pour le bébé augmente en fin de grossesse, votre équipe prévoira l’accouchement plus tôt : vers 36 semaines si les acides biliaires sont à 100 µmol/L ou plus, et en général entre 36 et 39 semaines sinon, selon vos taux.",
+        "Après la naissance",
+        "Les démangeaisons disparaissent en général en quelques jours à quelques semaines. Si ce n’est pas le cas, demandez à refaire les tests du foie. Elle revient souvent lors de grossesses suivantes, jusqu’à 9 fois sur 10, et elle peut parfois être déclenchée par une contraception contenant des œstrogènes, alors dites à vos médecins que vous l’avez eue."
+      ]
     }
   },
   "srcHash": {
@@ -2597,7 +2632,34 @@ window.MYOB_LOCALES.fr = {
     "content.early-bleeding.t.8": "32597a3a399d6ccc",
     "content.early-bleeding.t.9": "3bec781a6352d1bc",
     "content.early-bleeding.t.10": "acd42387326fb2e1",
-    "content.early-bleeding.t.11": "60e022353a5f16df"
+    "content.early-bleeding.t.11": "60e022353a5f16df",
+    "content.preterm-labor.title": "ae48987c88922b7e",
+    "content.preterm-labor.sub": "7d8eb3f3a968f46d",
+    "content.preterm-labor.t.0": "f9b53041e8775edf",
+    "content.preterm-labor.t.1": "df896c67f68b56b1",
+    "content.preterm-labor.t.2": "0eacba71a407a517",
+    "content.preterm-labor.t.3": "987ad47eb7bb8374",
+    "content.preterm-labor.t.4": "b6f0f6f048ff2546",
+    "content.preterm-labor.t.5": "83569706640862c4",
+    "content.preterm-labor.t.6": "7dc117e6c840b21c",
+    "content.preterm-labor.t.7": "b14cf0796d3ffa9b",
+    "content.preterm-labor.t.8": "386f1f8ac363bda0",
+    "content.preterm-labor.t.9": "7eaf1505431b6df3",
+    "content.preterm-labor.t.10": "4504ce3422cfe61a",
+    "content.preterm-labor.t.11": "8723ee4f03856201",
+    "content.cholestasis.title": "31918d38968a5c26",
+    "content.cholestasis.sub": "916b75f40d3475f6",
+    "content.cholestasis.t.0": "ddddb22a8b124c28",
+    "content.cholestasis.t.1": "1b22f86607be7fe8",
+    "content.cholestasis.t.2": "ce5ffc287678f73a",
+    "content.cholestasis.t.3": "afae54057807af93",
+    "content.cholestasis.t.4": "e004853ae555977c",
+    "content.cholestasis.t.5": "ab304de680b4e7d8",
+    "content.cholestasis.t.6": "5afdbcd86051f732",
+    "content.cholestasis.t.7": "d128e9f11e6e0e0b",
+    "content.cholestasis.t.8": "047a19297e6e7eaf",
+    "content.cholestasis.t.9": "08ba7d67736fc981",
+    "content.cholestasis.t.10": "c747cef35fc34d5d"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -2847,6 +2909,33 @@ window.MYOB_LOCALES.fr = {
     "content.early-bleeding.t.8": 1,
     "content.early-bleeding.t.9": 1,
     "content.early-bleeding.t.10": 1,
-    "content.early-bleeding.t.11": 1
+    "content.early-bleeding.t.11": 1,
+    "content.preterm-labor.title": 1,
+    "content.preterm-labor.sub": 1,
+    "content.preterm-labor.t.0": 1,
+    "content.preterm-labor.t.1": 1,
+    "content.preterm-labor.t.2": 1,
+    "content.preterm-labor.t.3": 1,
+    "content.preterm-labor.t.4": 1,
+    "content.preterm-labor.t.5": 1,
+    "content.preterm-labor.t.6": 1,
+    "content.preterm-labor.t.7": 1,
+    "content.preterm-labor.t.8": 1,
+    "content.preterm-labor.t.9": 1,
+    "content.preterm-labor.t.10": 1,
+    "content.preterm-labor.t.11": 1,
+    "content.cholestasis.title": 1,
+    "content.cholestasis.sub": 1,
+    "content.cholestasis.t.0": 1,
+    "content.cholestasis.t.1": 1,
+    "content.cholestasis.t.2": 1,
+    "content.cholestasis.t.3": 1,
+    "content.cholestasis.t.4": 1,
+    "content.cholestasis.t.5": 1,
+    "content.cholestasis.t.6": 1,
+    "content.cholestasis.t.7": 1,
+    "content.cholestasis.t.8": 1,
+    "content.cholestasis.t.9": 1,
+    "content.cholestasis.t.10": 1
   }
 };
