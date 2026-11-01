@@ -708,7 +708,7 @@ window.MYOB_LOCALES.ko = {
         "첫 산전 진료는 보통 8–10주경에 하며 가장 오래 걸리는 진료 중 하나입니다. 궁금한 점을 적어 오시고, 파트너가 있다면 함께 오셔도 좋습니다.",
         "첫 진료 (8–10주)",
         "전체 건강 문진, 신체 검사, 골반 검사, 자궁경부암 검사(시기가 된 경우)",
-        "혈액 검사: 혈액형 및 Rh 인자, CBC(전혈구 검사), 풍진 면역, HIV, B형 간염, 성병 검사",
+        "혈액 검사: 혈액형 및 Rh 인자, CBC(전혈구 검사), 풍진 면역, HIV, B형 간염, C형 간염, 매독, 성병 검사",
         "감염, 단백질, 포도당을 확인하는 소변 검사",
         "기준 혈압, 체중 측정, 초음파로 출산 예정일 확인",
         "이번 진료에서 물어보세요",
@@ -759,7 +759,7 @@ window.MYOB_LOCALES.ko = {
         ". Rh 음성인 경우에 맞습니다. 면역 체계가 미래의 Rh 양성 아기를 공격하는 것을 예방합니다",
         "Tdap 백신",
         "(백일해 추가 접종). 27–36주에 접종을 강력히 권장합니다. 항체가 태반을 통해 아기에게 전달되어, 아기가 접종받을 수 있기 전까지 신생아를 보호합니다",
-        "35–37주. B군 연쇄상구균(GBS) 검사",
+        "36–37주. B군 연쇄상구균(GBS) 검사",
         "질과 직장을 간단히 면봉으로 채취하는 검사입니다. 여성의 약 25%가 정상적으로 GBS를 보유하고 있으며, 성병이 아니고 산모에게 해롭지도 않습니다. 양성이면 분만 중 정맥 항생제를 투여하여 출산 중 아기가 감염되지 않도록 보호합니다.",
         "36–40주. 자궁경부 검사 및 아기 위치 확인",
         "의사가 자궁경부 검사를 제안할 수 있습니다. 자궁경부가 얼마나 열렸고 얇아졌는지 확인합니다",
@@ -814,7 +814,7 @@ window.MYOB_LOCALES.ko = {
         "수정된 근력 운동",
         ". 가볍거나 중간 정도의 무게로 합니다. 숨을 참는 것(발살바 호흡)은 피하세요",
         "케겔 운동",
-        ". 골반저 근육을 수축했다 이완합니다. 10회씩 3세트를 매일 하세요",
+        ". 골반저 근육을 3~5초 동안 조였다가 풀어 주세요. 10회씩, 하루 3번 하세요",
         "임신 초기 이후 피해야 할 것",
         "똑바로 누워서 하는 운동(대정맥을 압박합니다)",
         "접촉 스포츠 또는 넘어지거나 부딪힐 위험이 있는 활동",
@@ -1123,7 +1123,7 @@ window.MYOB_LOCALES.ko = {
         "분만 후 다시 활동하는 것은 기분, 활력, 신체 회복을 좋게 합니다. 하지만 시기가 중요합니다.",
         "바로 시작(1~2일차)",
         "케겔 운동",
-        ". 편하다면 24~48시간 이내에 시작하세요. 회복을 빠르게 하고, 요실금 위험을 줄이며, 골반저 근육의 긴장도를 회복합니다. 5~10초씩 유지하는 동작 10회를 한 세트로, 하루에 여러 번 3세트씩 하세요.",
+        ". 편하다면 24~48시간 이내에 시작하세요. 회복을 빠르게 하고, 요실금 위험을 줄이며, 골반저 근육의 긴장도를 회복합니다. 3~5초 동안 조였다가 풀어 주세요. 10회씩, 하루 3번 하세요.",
         "가벼운 걷기",
         ". 1~2일차부터 짧은 산책을 권장합니다. 몸이 준비되는 대로 늘려가세요.",
         "깊은 복식 호흡",
@@ -1185,13 +1185,13 @@ window.MYOB_LOCALES.ko = {
         "유두 통증",
         "먼저 젖 물리기 자세를 확인하세요. 가장 흔한 원인입니다. 수유 후 짜낸 모유나 라놀린을 바르세요. 공기 중에 말리세요. 보통 생후 5일 이후 젖이 제대로 나오고 물리는 자세가 좋아지면 나아집니다.",
         "젖 몽우리(울혈)",
-        "자주 수유하거나 유축하세요(2–3시간마다). 수유 전에 따뜻한 찜질을 하면 젖이 잘 나옵니다. 수유 후에는 차가운 찜질로 붓기를 줄이세요. 미열이 날 수 있습니다. &gt;100.4°F이면 의사에게 연락하세요.",
+        "아기가 배고파할 때마다 먹이세요. 가슴을 비우려고 유축하지 마세요. 그러면 몸이 젖을 더 많이 만듭니다. 가슴이 너무 단단해서 아기가 물기 어렵다면, 먼저 손으로 젖을 조금 짜서 부드럽게 하세요. 수유 후에는 차가운 찜질로 붓기를 줄이세요. 미열이 날 수 있습니다. &gt;100.4°F이면 의사에게 연락하세요.",
         "젖양이 부족한 것 같을 때",
         "더 자주 먹이세요. 젖양은 수요를 따라갑니다. 젖 물리기 자세를 바로잡으세요. 수유 후 유축을 하면 더 만들라는 신호가 됩니다. 모유 수유 상담사를 만나세요. 부족하다고 느끼는 경우 대부분 실제로는 충분합니다.",
         "유관 막힘",
-        "가슴에 단단하고 아픈 덩어리가 생깁니다. 수유 중에 유두 쪽으로 마사지하세요. 수유 전에 따뜻한 찜질을 하세요. 그쪽 가슴을 자주 비우세요. 보통 1–2일 안에 좋아집니다.",
+        "가슴에 단단하고 아픈 덩어리가 생깁니다. 평소처럼 수유를 계속하되, 비우려고 따로 더 유축하지는 마세요. 얼음찜질과 이부프로펜이 통증과 붓기를 줄여 줍니다. 피부를 가볍게만 쓸어 주세요. 세게 마사지하거나 따뜻하게 하면 더 나빠질 수 있습니다. 보통 1–2일 안에 좋아집니다.",
         "유방염",
-        "독감 같은 증상(열, 몸살, 피로)과 함께 가슴의 빨갛고 아픈 부위가 생깁니다. 모유 수유를 계속하세요. 멈추면 더 나빠집니다. 보통 항생제가 필요합니다. 의사에게 연락하세요.",
+        "독감 같은 증상(열, 몸살, 피로)과 함께 가슴의 빨갛고 아픈 부위가 생깁니다. 모유 수유를 계속하세요. 멈추면 더 나빠집니다. 유관 막힘과 똑같이 관리하세요: 얼음찜질, 이부프로펜, 따뜻하게 하거나 세게 마사지하지 않기. 항생제 없이 좋아지는 경우도 많으니 의사에게 연락해 함께 결정하고, 열이 24시간 넘게 계속되면 다시 연락하세요.",
         "유두 칸디다증(아구창)",
         "수유 중과 수유 후에 날카롭고 타는 듯한 통증이 있습니다. 유두가 분홍빛으로 반짝입니다. 엄마와 아기가 동시에 항진균제 치료를 받아야 합니다. 담당 의사와 아기의 소아과 의사에게 연락하세요.",
         "유축",
@@ -1258,7 +1258,7 @@ window.MYOB_LOCALES.ko = {
         "마르는 동안 약한 냄새. 일반적으로 정상",
         "소아과 의사에게 연락해야 할 경우",
         "주변 피부로 발적이 퍼지는 경우",
-        ". 이것은 제대염(피부 감염)으로 신속한 치료가 필요합니다 · 고약하거나 심한 냄새 · 노란색 또는 초록색 고름 · 살짝 눌러도 멈추지 않는 출혈 · 특별한 이유 없이 5–6주가 지나도 떨어지지 않는 경우"
+        ". 이것은 제대염(피부 감염)으로 신속한 치료가 필요합니다 · 고약하거나 심한 냄새 · 노란색 또는 초록색 고름 · 살짝 눌러도 멈추지 않는 출혈 · 3주가 지나도 떨어지지 않는 경우"
       ]
     },
     "normal-newborn": {
@@ -1297,7 +1297,7 @@ window.MYOB_LOCALES.ko = {
         "짙은 색의 첫 변(태변)",
         "✓ 정상. 24–48시간 안에 나와야 합니다",
         "즉시 소아과 의사에게 연락해야 할 경우",
-        "직장 체온 ≥ 100.4°F의 열(신생아에게는 심각합니다. 항상 직장 체온을 재세요) · 먹기를 거부함 · 심한 황달 · 숨쉴 때마다 끙끙거리는 소리 · 파란 입술 또는 매우 창백한 피부 · 달래도 그치지 않는 울음 · 생후 5일 이후 젖은 기저귀가 하루 6장 미만 · 목이 뻣뻣함"
+        "직장 체온 ≥ 100.4°F의 열(신생아에게는 심각합니다. 항상 직장 체온을 재세요) · 먹기를 거부함 · 심한 황달 · 숨쉴 때마다 끙끙거리는 소리 · 매우 창백한 피부 · 달래도 그치지 않는 울음 · 생후 5일 이후 젖은 기저귀가 하루 6장 미만 · 목이 뻣뻣함. 입술이나 얼굴이 파랗거나 회색이면: 911에 전화하세요."
       ]
     },
     "safe-sleep": {
@@ -1363,7 +1363,7 @@ window.MYOB_LOCALES.ko = {
       "t": [
         "주된 위험은",
         "리스테리아(Listeria)",
-        "라는 세균 감염입니다. 드물지만 임신 중에는 심각할 수 있고 태반을 통과할 수 있습니다. FDA(미국 식품의약국)는 저온살균되지 않은 치즈와 델리 고기는 김이 날 정도(165°F)로 가열하지 않는 한 피하라고 권고합니다. 저온살균된 소프트 치즈 대부분(예: 저온살균 브리 치즈, 포장된 페타 치즈)은 안전합니다. 가끔 델리 고기를 먹는 것의 전반적인 위험은 매우 낮습니다. 이 지침은 예방 차원이며, 칠면조 샌드위치 하나로 반드시 병에 걸린다는 뜻은 아닙니다. 걱정될 때는 가열해서 드세요."
+        "라는 세균 감염입니다. 드물지만 임신 중에는 심각할 수 있고 태반을 통과할 수 있습니다. FDA(미국 식품의약국)는 저온살균되지 않은 치즈와 델리 고기는 김이 날 정도(165°F)로 가열하지 않는 한 피하라고 권고합니다. 저온살균된 소프트 치즈 대부분(예: 저온살균 브리 치즈, 포장된 페타 치즈)은 안전합니다. 단, 케소 프레스코, 케소 블랑코, 파넬라 같은 생치즈는 예외입니다. 저온살균 제품이라도 리스테리아 집단 감염을 일으킨 적이 있으니, 김이 날 정도로 익혀서만 드세요. 가끔 델리 고기를 먹는 것의 전반적인 위험은 매우 낮습니다. 이 지침은 예방 차원이며, 칠면조 샌드위치 하나로 반드시 병에 걸린다는 뜻은 아닙니다. 걱정될 때는 가열해서 드세요."
       ]
     },
     "faq-coffee": {
@@ -1407,7 +1407,7 @@ window.MYOB_LOCALES.ko = {
       "title": "두 사람 몫으로 먹어야 하나요?",
       "sub": "",
       "t": [
-        "아니요. \"두 사람 몫으로 먹기\"는 잘못된 상식입니다. 임신 초기에는 추가로 필요한 칼로리가 아주 적습니다. 임신 후기가 되면 하루에 약 300칼로리만 더 드시면 됩니다(우유 한 잔과 바나나 하나 정도). 양보다 영양의 질이 훨씬 더 중요합니다. 단백질, 철분, 엽산, 칼슘, 오메가-3 지방산에 집중하세요. 임산부용 비타민이 부족한 부분을 채워 주지만, 균형 잡힌 식사를 대신할 수는 없습니다."
+        "아니요. \"두 사람 몫으로 먹기\"는 잘못된 상식입니다. 임신 초기에는 칼로리를 더 드실 필요가 없습니다. 중기에는 하루 약 340칼로리, 후기에는 약 450칼로리를 더 드시면 됩니다. 간식 한두 번 정도이지, 한 끼를 더 먹는 양이 아닙니다. 양보다 영양의 질이 훨씬 더 중요합니다. 단백질, 철분, 엽산, 칼슘, 오메가-3 지방산에 집중하세요. 임산부용 비타민이 부족한 부분을 채워 주지만, 균형 잡힌 식사를 대신할 수는 없습니다."
       ]
     },
     "faq-hot-tub": {
@@ -1541,7 +1541,7 @@ window.MYOB_LOCALES.ko = {
     "content.first-trimester.t.0": "993a5a8404470322",
     "content.first-trimester.t.1": "bab78bac791860a2",
     "content.first-trimester.t.2": "d35fe8a139623937",
-    "content.first-trimester.t.3": "524c80c18dc0a7bf",
+    "content.first-trimester.t.3": "feb92220b6a3dc52",
     "content.first-trimester.t.4": "503f8d2fc2962bdd",
     "content.first-trimester.t.5": "6c1c57c6bda4b704",
     "content.first-trimester.t.6": "7adf4d6aece6bdb0",
@@ -1584,7 +1584,7 @@ window.MYOB_LOCALES.ko = {
     "content.third-trimester.t.3": "3a4c95370bc1992d",
     "content.third-trimester.t.4": "c2c44747e0cfa895",
     "content.third-trimester.t.5": "876b4f4b088f3cad",
-    "content.third-trimester.t.6": "4d4439ca91b61c48",
+    "content.third-trimester.t.6": "90d6013194d662f3",
     "content.third-trimester.t.7": "134a2f19f49227bf",
     "content.third-trimester.t.8": "51d0ca6ed5b6456c",
     "content.third-trimester.t.9": "0272ad189d11d4ee",
@@ -1631,7 +1631,7 @@ window.MYOB_LOCALES.ko = {
     "content.exercise-pregnancy.t.16": "90dbf49f841bbe4d",
     "content.exercise-pregnancy.t.17": "9c618c6da4082b37",
     "content.exercise-pregnancy.t.18": "12b67af8e151f51a",
-    "content.exercise-pregnancy.t.19": "6d8f7385430b5903",
+    "content.exercise-pregnancy.t.19": "94dfb2c7109bb5bd",
     "content.exercise-pregnancy.t.20": "8e778a0d814b4a87",
     "content.exercise-pregnancy.t.21": "bf189cc02bf246f6",
     "content.exercise-pregnancy.t.22": "f36e3fb1cd54221b",
@@ -1892,7 +1892,7 @@ window.MYOB_LOCALES.ko = {
     "content.postpartum-exercise.t.0": "508524d1c3302c3f",
     "content.postpartum-exercise.t.1": "61bbfbbd3f8fd583",
     "content.postpartum-exercise.t.2": "12b67af8e151f51a",
-    "content.postpartum-exercise.t.3": "970b47dc25b5b802",
+    "content.postpartum-exercise.t.3": "11602c89018b0d2b",
     "content.postpartum-exercise.t.4": "c166b7b79031ba65",
     "content.postpartum-exercise.t.5": "528fba145f3bf68e",
     "content.postpartum-exercise.t.6": "205373f50cf86acf",
@@ -1942,13 +1942,13 @@ window.MYOB_LOCALES.ko = {
     "content.bf-challenges.t.2": "7d8bf4ad4287bdff",
     "content.bf-challenges.t.3": "c4998859be296f4b",
     "content.bf-challenges.t.4": "3a2ce81ac9dcbe3c",
-    "content.bf-challenges.t.5": "b2e83cc8d02634ce",
+    "content.bf-challenges.t.5": "827dba0e278ee0e4",
     "content.bf-challenges.t.6": "4a83c479c8b90393",
     "content.bf-challenges.t.7": "40cb72bdfa8524ab",
     "content.bf-challenges.t.8": "7c415028fad1dc52",
-    "content.bf-challenges.t.9": "aea2edc66f4999b4",
+    "content.bf-challenges.t.9": "e1848feeb04802d8",
     "content.bf-challenges.t.10": "cf8928d9d6eb7dff",
-    "content.bf-challenges.t.11": "7ba0b8e9760763d7",
+    "content.bf-challenges.t.11": "494e7d8f99587fd9",
     "content.bf-challenges.t.12": "99075ec3f001d689",
     "content.bf-challenges.t.13": "c3e8643e9f8348b8",
     "content.bf-challenges.t.14": "ee72bccd36e7050f",
@@ -2007,7 +2007,7 @@ window.MYOB_LOCALES.ko = {
     "content.cord-care.t.18": "52ca8e21b2455a9b",
     "content.cord-care.t.19": "0582b7d004ef5f5a",
     "content.cord-care.t.20": "e84c55fb80131475",
-    "content.cord-care.t.21": "23d5176384204c4d",
+    "content.cord-care.t.21": "f664017ed63426a8",
     "content.normal-newborn.title": "36ce406dff06fabf",
     "content.normal-newborn.sub": "0e2865c9f7761393",
     "content.normal-newborn.t.0": "0a9f5139a1a2d107",
@@ -2042,7 +2042,7 @@ window.MYOB_LOCALES.ko = {
     "content.normal-newborn.t.29": "a646ba8ef31029a4",
     "content.normal-newborn.t.30": "b96a48ec64c8f9ba",
     "content.normal-newborn.t.31": "29001b64c41acf52",
-    "content.normal-newborn.t.32": "a9eb520678659aa0",
+    "content.normal-newborn.t.32": "380945be7751b37c",
     "content.safe-sleep.title": "8f76ca906ecc7552",
     "content.safe-sleep.sub": "280c3d91955a45cb",
     "content.safe-sleep.t.0": "606d4b033e9658bd",
@@ -2095,7 +2095,7 @@ window.MYOB_LOCALES.ko = {
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
-    "content.faq-deli.t.2": "69397a25e496e293",
+    "content.faq-deli.t.2": "86ed7bf6b9c01890",
     "content.faq-coffee.title": "5389638ea8a88dc8",
     "content.faq-coffee.t.0": "ac1cf8bc0364371a",
     "content.faq-coffee.t.1": "d49405defc21c3ec",
@@ -2109,7 +2109,7 @@ window.MYOB_LOCALES.ko = {
     "content.faq-vaccines.title": "22cf8d87c3c18165",
     "content.faq-vaccines.t.0": "6283a0613712aceb",
     "content.faq-eat-for-two.title": "7109ae5ce8714502",
-    "content.faq-eat-for-two.t.0": "06aa4878e42fc87e",
+    "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
     "content.faq-hot-tub.title": "2230219d6f10d437",
     "content.faq-hot-tub.t.0": "b73f80715bdad85f",
     "content.faq-epidural-csec.title": "85af8aced19ce724",

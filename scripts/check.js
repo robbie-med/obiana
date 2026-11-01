@@ -253,10 +253,11 @@ function compare(baseDir, out) {
     }
     if (args.has('--compare')) {
       const diffs = compare(path.join(SNAP, 'baseline'), result.out);
+      fs.writeFileSync(path.join(SNAP, 'diff.txt'), diffs.join('\n') + '\n');
       if (diffs.length) {
         failed = true;
         console.log(`• compare to baseline ... ${diffs.length} difference(s)\n  ` +
-          diffs.slice(0, 60).join('\n  ') + (diffs.length > 60 ? `\n  ...and ${diffs.length - 60} more` : ''));
+          diffs.slice(0, 60).join('\n  ') + (diffs.length > 60 ? `\n  ...and ${diffs.length - 60} more (full list: scripts/.snapshots/diff.txt)` : ''));
       } else console.log('• compare to baseline ... identical');
     }
   }

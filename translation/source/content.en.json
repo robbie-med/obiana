@@ -6,7 +6,7 @@
       "Your first prenatal visit is usually around 8–10 weeks and is one of the longest. Bring your questions and your partner if you have one.",
       "First Visit (8–10 Weeks)",
       "Full health history, physical exam, pelvic exam, Pap smear (if due)",
-      "Blood work: blood type &amp; Rh factor, CBC, rubella immunity, HIV, hepatitis B, STI screening",
+      "Blood work: blood type &amp; Rh factor, CBC, rubella immunity, HIV, hepatitis B, hepatitis C, syphilis, STI screening",
       "Urine test for infection, protein, glucose",
       "Blood pressure baseline, weight, due date confirmation by ultrasound",
       "Ask at This Visit",
@@ -57,7 +57,7 @@
       "if you are Rh-negative. Prevents your immune system from attacking a future Rh-positive baby",
       "Tdap vaccine",
       "(whooping cough booster). Strongly recommended 27–36 weeks. Antibodies pass to baby through the placenta, protecting the newborn before they can be vaccinated",
-      "35–37 Weeks. Group B Strep (GBS) Swab",
+      "36–37 Weeks. Group B Strep (GBS) Swab",
       "A simple vaginal and rectal swab. About 25% of women carry GBS normally. It's not an STI and doesn't harm you. If positive, you'll receive IV antibiotics during labor to protect baby from infection during delivery.",
       "36–40 Weeks. Cervical Checks &amp; Baby's Position",
       "Your doctor may offer to check your cervix. How dilated and effaced it is",
@@ -112,7 +112,7 @@
       "Modified strength training",
       ". Light to moderate weights; avoid breath-holding (Valsalva)",
       "Kegel exercises",
-      ". Contract and release the pelvic floor, 3 sets of 10 daily, every day",
+      ". Squeeze the pelvic floor for 3–5 seconds, then relax. 10 squeezes, 3 times a day",
       "What to Avoid After the First Trimester",
       "Exercises lying flat on your back (compresses the vena cava)",
       "Contact sports or activities with fall or collision risk",
@@ -421,7 +421,7 @@
       "Getting active again after delivery improves mood, energy, and physical recovery, but the timeline matters.",
       "Start Immediately (Days 1–2)",
       "Kegel exercises",
-      ". Start within 24–48 hours if comfortable. These speed healing, reduce urinary leakage risk, and rebuild pelvic floor tone. 3 sets of 10 holds (5–10 seconds each), multiple times per day.",
+      ". Start within 24–48 hours if comfortable. These speed healing, reduce urinary leakage risk, and rebuild pelvic floor tone. Squeeze for 3–5 seconds, then relax: 10 squeezes, 3 times a day.",
       "Gentle walking",
       ". Short walks are encouraged starting Day 1–2. Builds up as you feel ready.",
       "Deep belly breathing",
@@ -484,13 +484,13 @@
       "Sore nipples",
       "Check latch first. This is the #1 cause. Apply expressed breast milk or lanolin after feeds. Air dry. Usually improves after day 5 once milk comes in and latch improves.",
       "Engorgement",
-      "Feed or pump frequently (every 2–3 hrs). Warm compress before feeding to help letdown. Cold pack after feeding to reduce swelling. Can cause a low-grade fever. If &gt;100.4°F, call your doctor.",
+      "Feed your baby whenever they're hungry. Don't pump to empty the breast: that tells your body to make even more milk. If the breast is too firm to latch, hand express a little first to soften it. Cold pack after feeding to reduce swelling. Can cause a low-grade fever. If &gt;100.4°F, call your doctor.",
       "Low supply concerns",
       "Feed more frequently. Supply follows demand. Ensure good latch. Pump after feeds to signal more production. See a lactation consultant. Most perceived low supply is actually sufficient supply.",
       "Clogged duct",
-      "Firm, tender lump in breast. Massage toward the nipple during feeds. Warm compress before nursing. Frequent emptying of that breast. Usually resolves in 1–2 days.",
+      "Firm, tender lump in breast. Keep feeding as usual, but don't pump extra to empty it. Ice and ibuprofen help the pain and swelling. Stroke the skin only lightly: deep massage and heat can make it worse. Usually resolves in 1–2 days.",
       "Mastitis",
-      "Flu-like symptoms (fever, body aches, fatigue) + a red, painful area of breast. Keep breastfeeding. Stopping makes it worse. Usually requires antibiotics. Call your doctor.",
+      "Flu-like symptoms (fever, body aches, fatigue) + a red, painful area of breast. Keep breastfeeding. Stopping makes it worse. Same care as a clogged duct: ice, ibuprofen, no heat or deep massage. Many cases get better without antibiotics, so call your doctor to decide together, and call again if a fever lasts more than 24 hours.",
       "Nipple thrush",
       "Sharp, burning pain during and after feeds. Pinkish, shiny nipples. Both you and baby need antifungal treatment at the same time. Call your doctor and baby's pediatrician.",
       "Pumping",
@@ -557,7 +557,7 @@
       "A mild smell as it dries. Generally normal",
       "Call the Pediatrician If",
       "Redness spreading on the surrounding skin",
-      ". This is omphalitis (a skin infection) and needs prompt treatment · Foul or strong smell · Yellow or green pus · Bleeding that doesn't stop with gentle pressure · Stump still attached at 5–6 weeks without explanation"
+      ". This is omphalitis (a skin infection) and needs prompt treatment · Foul or strong smell · Yellow or green pus · Bleeding that doesn't stop with gentle pressure · Stump still attached after 3 weeks"
     ]
   },
   "normal-newborn": {
@@ -596,7 +596,7 @@
       "Dark first stool (meconium)",
       "✓ Yes. Should pass within 24–48 hrs",
       "Call the Pediatrician Immediately For",
-      "Fever ≥ 100.4°F rectal (serious in newborns. Always take rectal temp) · Refusing to eat · Extreme yellowing · Grunting with every breath · Blue lips or very pale skin · Inconsolable crying · Fewer than 6 wet diapers/day after day 5 · Stiff neck"
+      "Fever ≥ 100.4°F rectal (serious in newborns. Always take rectal temp) · Refusing to eat · Extreme yellowing · Grunting with every breath · Very pale skin · Inconsolable crying · Fewer than 6 wet diapers/day after day 5 · Stiff neck. Blue or gray lips or face: call 911."
     ]
   },
   "safe-sleep": {
@@ -662,7 +662,7 @@
     "t": [
       "The main risk is",
       "Listeria",
-      ", a bacterial infection that's rare but can be serious in pregnancy (can cross the placenta). The FDA advises avoiding unpasteurized cheese and deli meats unless heated to steaming (165°F). Most pasteurized soft cheeses (like pasteurized brie, feta from a package) are safe. The overall risk from occasional deli meat is very low. When in doubt, heat it."
+      ", a bacterial infection that's rare but can be serious in pregnancy (can cross the placenta). The FDA advises avoiding unpasteurized cheese and deli meats unless heated to steaming (165°F). Most pasteurized soft cheeses (like pasteurized brie, feta from a package) are safe. The exception is queso fresco, queso blanco, panela and similar fresh cheeses: even pasteurized ones have caused listeria outbreaks, so eat them only cooked until steaming. The overall risk from occasional deli meat is very low. When in doubt, heat it."
     ]
   },
   "faq-coffee": {
@@ -713,7 +713,7 @@
     "title": "Do I need to \"eat for two\"?",
     "sub": "",
     "t": [
-      "No. \"eating for two\" is a myth. In the first trimester, extra calorie needs are minimal. By the third trimester, you need roughly 300 extra calories per day (about a glass of milk and a banana). Quality of nutrition matters far more than quantity. Focus on protein, iron, folate, calcium, and omega-3 fatty acids. Your prenatal vitamin helps fill gaps but shouldn't replace a balanced diet."
+      "No. \"eating for two\" is a myth. In the first trimester, you need no extra calories. In the second, about 340 extra a day; in the third, about 450. That is a snack or two, not a second plate. Quality of nutrition matters far more than quantity. Focus on protein, iron, folate, calcium, and omega-3 fatty acids. Your prenatal vitamin helps fill gaps but shouldn't replace a balanced diet."
     ]
   },
   "faq-hot-tub": {
@@ -882,7 +882,7 @@
       "Once a week at most",
       "Albacore or white tuna, halibut, grouper, Chilean sea bass, bluefish.",
       "Do not eat",
-      "Shark, swordfish, king mackerel, tilefish, marlin, orange roughy, bigeye tuna. These are large, long-lived predators and carry the most mercury.",
+      "Shark, swordfish, king mackerel, tilefish from the Gulf of Mexico, marlin, orange roughy, bigeye tuna. These are large, long-lived predators and carry the most mercury.",
       "Cooking",
       "Cook to 145°F, until the flesh is opaque and flakes apart. Raw fish is generally a bad idea in pregnancy, and so is smoked fish from the refrigerated case unless you cook it into a dish. The risk there is listeria, not mercury.",
       "Fish you catch yourself",

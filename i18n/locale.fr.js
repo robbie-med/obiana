@@ -710,7 +710,7 @@ window.MYOB_LOCALES.fr = {
         "Votre première visite prénatale a généralement lieu vers 8 à 10 semaines et c'est l'une des plus longues. Apportez vos questions et votre partenaire si vous en avez un.",
         "Première visite (8 à 10 semaines)",
         "Antécédents médicaux complets, examen physique, examen pelvien, frottis de Pap (si nécessaire)",
-        "Analyses de sang : groupe sanguin et facteur Rh, hémogramme (CBC), immunité contre la rubéole, VIH, hépatite B, dépistage des infections sexuellement transmissibles",
+        "Analyses de sang : groupe sanguin et facteur Rh, hémogramme (CBC), immunité contre la rubéole, VIH, hépatite B, hépatite C, syphilis, dépistage des infections sexuellement transmissibles",
         "Analyse d'urine : infection, protéines, glucose",
         "Tension artérielle de référence, poids, confirmation de la date d'accouchement par échographie",
         "À demander lors de cette visite",
@@ -761,7 +761,7 @@ window.MYOB_LOCALES.fr = {
         "si vous êtes Rh-négative. Empêche votre système immunitaire d'attaquer un futur bébé Rh-positif",
         "Vaccin Tdap",
         "(rappel contre la coqueluche). Fortement recommandé entre 27 et 36 semaines. Les anticorps passent au bébé par le placenta et protègent le nouveau-né avant qu'il puisse être vacciné",
-        "35 à 37 semaines. Prélèvement du streptocoque du groupe B (GBS)",
+        "36 à 37 semaines. Prélèvement du streptocoque du groupe B (GBS)",
         "Un simple prélèvement vaginal et rectal. Environ 25 % des femmes portent normalement le GBS. Ce n'est pas une infection sexuellement transmissible et cela ne vous fait pas de mal. Si le test est positif, vous recevrez des antibiotiques par perfusion pendant le travail pour protéger le bébé d'une infection lors de l'accouchement.",
         "36 à 40 semaines. Examens du col et position du bébé",
         "Votre médecin peut proposer de vérifier votre col. Son degré de dilatation et d'effacement",
@@ -816,7 +816,7 @@ window.MYOB_LOCALES.fr = {
         "La musculation adaptée",
         ". Poids légers à modérés ; évitez de retenir votre souffle (manœuvre de Valsalva)",
         "Les exercices de Kegel",
-        ". Contractez et relâchez le plancher pelvien, 3 séries de 10 par jour, tous les jours",
+        ". Contractez le plancher pelvien 3 à 5 secondes, puis relâchez. 10 contractions, 3 fois par jour",
         "Ce qu'il faut éviter après le premier trimestre",
         "Les exercices allongée à plat sur le dos (compriment la veine cave)",
         "Les sports de contact ou les activités avec risque de chute ou de collision",
@@ -1125,7 +1125,7 @@ window.MYOB_LOCALES.fr = {
         "Se remettre en activité après l'accouchement améliore l'humeur, l'énergie et la récupération physique, mais le calendrier compte.",
         "À commencer immédiatement (jours 1 à 2)",
         "Les exercices de Kegel",
-        ". Commencez dans les 24 à 48 heures si vous êtes à l'aise. Ils accélèrent la guérison, réduisent le risque de fuites urinaires et restaurent le tonus du plancher pelvien. 3 séries de 10 contractions (5 à 10 secondes chacune), plusieurs fois par jour.",
+        ". Commencez dans les 24 à 48 heures si vous êtes à l'aise. Ils accélèrent la guérison, réduisent le risque de fuites urinaires et restaurent le tonus du plancher pelvien. Contractez 3 à 5 secondes, puis relâchez : 10 contractions, 3 fois par jour.",
         "La marche douce",
         ". De courtes promenades sont encouragées dès le jour 1 ou 2. Augmentez progressivement selon vos sensations.",
         "La respiration abdominale profonde",
@@ -1187,13 +1187,13 @@ window.MYOB_LOCALES.fr = {
         "Mamelons douloureux",
         "Vérifiez d'abord la prise du sein. C'est la cause n° 1. Appliquez du lait maternel exprimé ou de la lanoline après les tétées. Laissez sécher à l'air. Cela s'améliore en général après le jour 5, quand le lait arrive et que la prise s'améliore.",
         "Engorgement",
-        "Allaitez ou tirez fréquemment (toutes les 2–3 h). Compresse chaude avant la tétée pour aider le réflexe d'éjection. Compresse froide après la tétée pour réduire le gonflement. Peut causer une légère fièvre. Si &gt;100.4°F, appelez votre médecin.",
+        "Nourrissez votre bébé chaque fois qu'il a faim. Ne tirez pas votre lait pour vider le sein : cela pousse le corps à en produire encore plus. Si le sein est trop ferme pour que bébé le prenne, exprimez d'abord un peu de lait à la main pour l'assouplir. Compresse froide après la tétée pour réduire le gonflement. Peut causer une légère fièvre. Si &gt;100.4°F, appelez votre médecin.",
         "Inquiétudes sur la production de lait",
         "Allaitez plus souvent. La production suit la demande. Assurez-vous d'une bonne prise du sein. Tirez après les tétées pour stimuler la production. Consultez un(e) conseiller(ère) en lactation. La plupart du temps, la production jugée insuffisante est en réalité suffisante.",
         "Canal lactifère bouché",
-        "Boule dure et sensible dans le sein. Massez vers le mamelon pendant les tétées. Compresse chaude avant d'allaiter. Videz souvent ce sein. Se résout en général en 1–2 jours.",
+        "Boule dure et sensible dans le sein. Continuez d'allaiter normalement, mais ne tirez pas de lait en plus pour le vider. La glace et l'ibuprofène soulagent la douleur et le gonflement. Effleurez seulement la peau : un massage appuyé et la chaleur peuvent aggraver les choses. Se résout en général en 1–2 jours.",
         "Mastite",
-        "Symptômes proches de la grippe (fièvre, courbatures, fatigue) + une zone rouge et douloureuse du sein. Continuez d'allaiter. Arrêter aggrave la situation. Nécessite généralement des antibiotiques. Appelez votre médecin.",
+        "Symptômes proches de la grippe (fièvre, courbatures, fatigue) + une zone rouge et douloureuse du sein. Continuez d'allaiter. Arrêter aggrave la situation. Mêmes soins que pour un canal lactifère bouché : glace, ibuprofène, ni chaleur ni massage appuyé. Beaucoup de cas guérissent sans antibiotiques : appelez votre médecin pour décider ensemble, et rappelez si la fièvre dure plus de 24 heures.",
         "Muguet du mamelon",
         "Douleur vive et brûlante pendant et après les tétées. Mamelons rosés et luisants. Vous et bébé devez recevoir un traitement antifongique en même temps. Appelez votre médecin et le pédiatre de bébé.",
         "Tirer son lait",
@@ -1260,7 +1260,7 @@ window.MYOB_LOCALES.fr = {
         "Une légère odeur quand il sèche. Généralement normal",
         "Appelez le pédiatre si",
         "Rougeur qui s'étend sur la peau autour",
-        ". C'est une omphalite (infection de la peau) qui nécessite un traitement rapide · Odeur forte ou désagréable · Pus jaune ou vert · Saignement qui ne s'arrête pas avec une pression douce · Moignon encore attaché à 5–6 semaines sans explication"
+        ". C'est une omphalite (infection de la peau) qui nécessite un traitement rapide · Odeur forte ou désagréable · Pus jaune ou vert · Saignement qui ne s'arrête pas avec une pression douce · Moignon encore attaché après 3 semaines"
       ]
     },
     "normal-newborn": {
@@ -1299,7 +1299,7 @@ window.MYOB_LOCALES.fr = {
         "Premières selles foncées (méconium)",
         "✓ Oui. Doit passer dans les 24–48 h",
         "Appelez immédiatement le pédiatre en cas de",
-        "Fièvre ≥ 100.4°F par voie rectale (grave chez le nouveau-né. Prenez toujours la température par voie rectale) · Refus de manger · Jaunissement extrême · Grognement à chaque respiration · Lèvres bleues ou peau très pâle · Pleurs inconsolables · Moins de 6 couches mouillées/jour après le jour 5 · Raideur de la nuque"
+        "Fièvre ≥ 100.4°F par voie rectale (grave chez le nouveau-né. Prenez toujours la température par voie rectale) · Refus de manger · Jaunissement extrême · Grognement à chaque respiration · Peau très pâle · Pleurs inconsolables · Moins de 6 couches mouillées/jour après le jour 5 · Raideur de la nuque. Lèvres ou visage bleus ou gris : appelez le 911."
       ]
     },
     "safe-sleep": {
@@ -1365,7 +1365,7 @@ window.MYOB_LOCALES.fr = {
       "t": [
         "Le principal risque est la",
         "Listeria",
-        ", une infection bactérienne rare mais qui peut être grave pendant la grossesse (elle peut traverser le placenta). La FDA (agence américaine des aliments et médicaments) conseille d'éviter les fromages non pasteurisés et la charcuterie, sauf si elle est chauffée jusqu'à être fumante (165°F). La plupart des fromages à pâte molle pasteurisés (comme le brie pasteurisé, la feta en emballage) sont sûrs. Le risque global lié à une consommation occasionnelle de charcuterie est très faible. Ces conseils sont une précaution, et non une garantie qu'un sandwich à la dinde rendra malade. En cas de doute, faites chauffer."
+        ", une infection bactérienne rare mais qui peut être grave pendant la grossesse (elle peut traverser le placenta). La FDA (agence américaine des aliments et médicaments) conseille d'éviter les fromages non pasteurisés et la charcuterie, sauf si elle est chauffée jusqu'à être fumante (165°F). La plupart des fromages à pâte molle pasteurisés (comme le brie pasteurisé, la feta en emballage) sont sûrs. Exception : le queso fresco, le queso blanco, la panela et les fromages frais du même type. Même pasteurisés, ils ont causé des épidémies de listériose : mangez-les seulement chauffés jusqu'à être fumants. Le risque global lié à une consommation occasionnelle de charcuterie est très faible. Ces conseils sont une précaution, et non une garantie qu'un sandwich à la dinde rendra malade. En cas de doute, faites chauffer."
       ]
     },
     "faq-coffee": {
@@ -1409,7 +1409,7 @@ window.MYOB_LOCALES.fr = {
       "title": "Dois-je « manger pour deux » ?",
       "sub": "",
       "t": [
-        "Non. « manger pour deux » est un mythe. Au premier trimestre, les besoins en calories supplémentaires sont minimes. Au troisième trimestre, vous avez besoin d'environ 300 calories de plus par jour (à peu près un verre de lait et une banane). La qualité de votre alimentation compte bien plus que la quantité. Privilégiez les protéines, le fer, les folates, le calcium et les acides gras oméga-3. Votre vitamine prénatale aide à combler les manques, mais elle ne doit pas remplacer une alimentation équilibrée."
+        "Non. « manger pour deux » est un mythe. Au premier trimestre, vous n'avez besoin d'aucune calorie supplémentaire. Au deuxième, d'environ 340 calories de plus par jour ; au troisième, d'environ 450. Cela représente une ou deux collations, pas une deuxième assiette. La qualité de votre alimentation compte bien plus que la quantité. Privilégiez les protéines, le fer, les folates, le calcium et les acides gras oméga-3. Votre vitamine prénatale aide à combler les manques, mais elle ne doit pas remplacer une alimentation équilibrée."
       ]
     },
     "faq-hot-tub": {
@@ -1543,7 +1543,7 @@ window.MYOB_LOCALES.fr = {
     "content.first-trimester.t.0": "993a5a8404470322",
     "content.first-trimester.t.1": "bab78bac791860a2",
     "content.first-trimester.t.2": "d35fe8a139623937",
-    "content.first-trimester.t.3": "524c80c18dc0a7bf",
+    "content.first-trimester.t.3": "feb92220b6a3dc52",
     "content.first-trimester.t.4": "503f8d2fc2962bdd",
     "content.first-trimester.t.5": "6c1c57c6bda4b704",
     "content.first-trimester.t.6": "7adf4d6aece6bdb0",
@@ -1586,7 +1586,7 @@ window.MYOB_LOCALES.fr = {
     "content.third-trimester.t.3": "3a4c95370bc1992d",
     "content.third-trimester.t.4": "c2c44747e0cfa895",
     "content.third-trimester.t.5": "876b4f4b088f3cad",
-    "content.third-trimester.t.6": "4d4439ca91b61c48",
+    "content.third-trimester.t.6": "90d6013194d662f3",
     "content.third-trimester.t.7": "134a2f19f49227bf",
     "content.third-trimester.t.8": "51d0ca6ed5b6456c",
     "content.third-trimester.t.9": "0272ad189d11d4ee",
@@ -1633,7 +1633,7 @@ window.MYOB_LOCALES.fr = {
     "content.exercise-pregnancy.t.16": "90dbf49f841bbe4d",
     "content.exercise-pregnancy.t.17": "9c618c6da4082b37",
     "content.exercise-pregnancy.t.18": "12b67af8e151f51a",
-    "content.exercise-pregnancy.t.19": "6d8f7385430b5903",
+    "content.exercise-pregnancy.t.19": "94dfb2c7109bb5bd",
     "content.exercise-pregnancy.t.20": "8e778a0d814b4a87",
     "content.exercise-pregnancy.t.21": "bf189cc02bf246f6",
     "content.exercise-pregnancy.t.22": "f36e3fb1cd54221b",
@@ -1894,7 +1894,7 @@ window.MYOB_LOCALES.fr = {
     "content.postpartum-exercise.t.0": "508524d1c3302c3f",
     "content.postpartum-exercise.t.1": "61bbfbbd3f8fd583",
     "content.postpartum-exercise.t.2": "12b67af8e151f51a",
-    "content.postpartum-exercise.t.3": "970b47dc25b5b802",
+    "content.postpartum-exercise.t.3": "11602c89018b0d2b",
     "content.postpartum-exercise.t.4": "c166b7b79031ba65",
     "content.postpartum-exercise.t.5": "528fba145f3bf68e",
     "content.postpartum-exercise.t.6": "205373f50cf86acf",
@@ -1944,13 +1944,13 @@ window.MYOB_LOCALES.fr = {
     "content.bf-challenges.t.2": "7d8bf4ad4287bdff",
     "content.bf-challenges.t.3": "c4998859be296f4b",
     "content.bf-challenges.t.4": "3a2ce81ac9dcbe3c",
-    "content.bf-challenges.t.5": "b2e83cc8d02634ce",
+    "content.bf-challenges.t.5": "827dba0e278ee0e4",
     "content.bf-challenges.t.6": "4a83c479c8b90393",
     "content.bf-challenges.t.7": "40cb72bdfa8524ab",
     "content.bf-challenges.t.8": "7c415028fad1dc52",
-    "content.bf-challenges.t.9": "aea2edc66f4999b4",
+    "content.bf-challenges.t.9": "e1848feeb04802d8",
     "content.bf-challenges.t.10": "cf8928d9d6eb7dff",
-    "content.bf-challenges.t.11": "7ba0b8e9760763d7",
+    "content.bf-challenges.t.11": "494e7d8f99587fd9",
     "content.bf-challenges.t.12": "99075ec3f001d689",
     "content.bf-challenges.t.13": "c3e8643e9f8348b8",
     "content.bf-challenges.t.14": "ee72bccd36e7050f",
@@ -2009,7 +2009,7 @@ window.MYOB_LOCALES.fr = {
     "content.cord-care.t.18": "52ca8e21b2455a9b",
     "content.cord-care.t.19": "0582b7d004ef5f5a",
     "content.cord-care.t.20": "e84c55fb80131475",
-    "content.cord-care.t.21": "23d5176384204c4d",
+    "content.cord-care.t.21": "f664017ed63426a8",
     "content.normal-newborn.title": "36ce406dff06fabf",
     "content.normal-newborn.sub": "0e2865c9f7761393",
     "content.normal-newborn.t.0": "0a9f5139a1a2d107",
@@ -2044,7 +2044,7 @@ window.MYOB_LOCALES.fr = {
     "content.normal-newborn.t.29": "a646ba8ef31029a4",
     "content.normal-newborn.t.30": "b96a48ec64c8f9ba",
     "content.normal-newborn.t.31": "29001b64c41acf52",
-    "content.normal-newborn.t.32": "a9eb520678659aa0",
+    "content.normal-newborn.t.32": "380945be7751b37c",
     "content.safe-sleep.title": "8f76ca906ecc7552",
     "content.safe-sleep.sub": "280c3d91955a45cb",
     "content.safe-sleep.t.0": "606d4b033e9658bd",
@@ -2097,7 +2097,7 @@ window.MYOB_LOCALES.fr = {
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
-    "content.faq-deli.t.2": "69397a25e496e293",
+    "content.faq-deli.t.2": "86ed7bf6b9c01890",
     "content.faq-coffee.title": "5389638ea8a88dc8",
     "content.faq-coffee.t.0": "ac1cf8bc0364371a",
     "content.faq-coffee.t.1": "d49405defc21c3ec",
@@ -2111,7 +2111,7 @@ window.MYOB_LOCALES.fr = {
     "content.faq-vaccines.title": "22cf8d87c3c18165",
     "content.faq-vaccines.t.0": "6283a0613712aceb",
     "content.faq-eat-for-two.title": "7109ae5ce8714502",
-    "content.faq-eat-for-two.t.0": "06aa4878e42fc87e",
+    "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
     "content.faq-hot-tub.title": "2230219d6f10d437",
     "content.faq-hot-tub.t.0": "b73f80715bdad85f",
     "content.faq-epidural-csec.title": "85af8aced19ce724",

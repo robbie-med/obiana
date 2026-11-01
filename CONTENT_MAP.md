@@ -50,7 +50,7 @@ existing cards are listed under their topic; topics with no card are under
 - Hair dye                  `faq-hair-dye`
 - Sex                       `faq-sex-pregnancy`
 - Exercise                  `exercise-pregnancy`  → faq-exercise-mc (good model: answer + pointer)
-- Kegels                    `postpartum-exercise` → exercise-pregnancy `[clash]` "daily" vs "several times a day"
+- Kegels                    `postpartum-exercise` → exercise-pregnancy
 - Discomforts               `common-discomforts`  → physical-recovery `[twice]` hemorrhoid/constipation advice
   - `[gap]` common-discomforts has no urinary symptoms: burning or urgency (UTI, treat promptly), and fever with back or side pain (kidney infection, go in)
   - `[gap]` common-discomforts misses headache, nosebleeds and bleeding gums, carpal tunnel, varicose veins
