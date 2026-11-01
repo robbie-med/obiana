@@ -50,7 +50,7 @@ function initJaundice() {
     </div>
     <div class="callout alert" role="alert" style="margin:0 16px 8px">
       <div class="callout-title">${t('tool.jaundice.callImmediatelyIf')}</div>
-      <p>${t('tool.jaundice.redFlags')}</p>
+      ${dotList(t('tool.jaundice.redFlags'))}
     </div>` : `
     <div style="padding:24px 20px;text-align:center;color:var(--ink-soft)">${t('tool.jaundice.setBirthDateHint')}</div>`}
     <div style="height:16px"></div>`;

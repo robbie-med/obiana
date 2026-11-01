@@ -32,7 +32,7 @@ function initDiapers() {
     </div>
     <div class="callout" style="margin:4px 16px 8px">
       <div class="callout-title">${t('tool.diaper.whatToExpectByAge')}</div>
-      <p>${t('tool.diaper.day1212')}</p>
+      ${dotList(t('tool.diaper.day1212'))}
     </div>
     <div class="history-section-title">${t('tool.diaper.todaySLog')}</div>
     <div class="history-list-card" id="diaper-list"></div>

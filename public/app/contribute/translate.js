@@ -397,7 +397,8 @@ function trRender(el) {
 const TR_TAP_KEY = 'myob.suggestTap';
 
 function trWrap(key, raw, shown) {
-  return `<span class="sg-slot" data-sg-key="${key}">${shown}</span>`;
+  const tag = /^<ul\b/.test(shown) ? 'div' : 'span';   // a list sentence is a block
+  return `<${tag} class="sg-slot" data-sg-key="${key}">${shown}</${tag}>`;
 }
 
 function trTapOn() {

@@ -304,7 +304,7 @@ window.MYOB_LOCALES.fr = {
           "normal": "Normale"
         },
         "recentSummary": "Votre dernière mesure ({reading}) se situe dans la plage {cat}. Contactez votre médecin aujourd’hui.",
-        "savedReading": "{reading} enregistré · {cat}"
+        "savedReading": "{reading} enregistré : {cat}"
       },
       "weight": {
         "yourProfile": "Votre profil",
@@ -351,7 +351,7 @@ window.MYOB_LOCALES.fr = {
         "interval": "toutes les {t}",
         "alertGo": "Contractions toutes les {mins} min environ, d’environ {secs}s. Appelez la maternité maintenant.",
         "alert511": "Toutes les {mins} min environ, d’environ {secs}s. Si c’est votre premier bébé, rendez-vous à la maternité. Appelez si vous perdez les eaux ou en cas de doute.",
-        "alertProgress": "Dernière heure : environ {mins} min d’intervalle · environ {secs}s · {n} contractions. Le rythme 5-1-1 n’est pas encore atteint."
+        "alertProgress": "Dans la dernière heure : {n} contractions, environ toutes les {mins} min, d'environ {secs}s chacune. Pas encore 5-1-1."
       },
       "i18n": {
         "intro": "Vérifiez Obiana dans votre langue, une phrase à la fois. Corrigez ce qui sonne faux, ou touchez C'est juste.",
@@ -486,7 +486,7 @@ window.MYOB_LOCALES.fr = {
         "didYouTry": "Avez-vous essayé quelque chose ? (facultatif)",
         "logged": "Enregistré",
         "whatHelpsYou": "Ce qui semble vous aider",
-        "avgAfter": "moyenne {avg} · {n} fois",
+        "avgAfter": "moyenne {avg}, {n} fois",
         "lowerIsBetter": "Plus c’est bas, mieux c’est. C’est votre propre relevé, pas une preuve médicale.",
         "recent": "Entrées récentes",
         "noEntries": "Aucune entrée pour le moment. Notez comment vous vous sentez plusieurs fois et vous verrez ce qui vous aide.",

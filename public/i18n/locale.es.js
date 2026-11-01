@@ -303,7 +303,7 @@ window.MYOB_LOCALES.es = {
           "normal": "Normal"
         },
         "recentSummary": "Su lectura más reciente ({reading}) está en el rango {cat}. Comuníquese hoy con su médico.",
-        "savedReading": "{reading} guardado · {cat}"
+        "savedReading": "{reading} guardado: {cat}"
       },
       "weight": {
         "yourProfile": "Su perfil",
@@ -350,7 +350,7 @@ window.MYOB_LOCALES.es = {
         "interval": "cada {t}",
         "alertGo": "Contracciones cada {mins} min aproximadamente, de unos {secs}s. Llame ahora a la sala de partos.",
         "alert511": "Cada {mins} min aproximadamente, de unos {secs}s. Si es su primer bebé, vaya al hospital. Llame si rompe aguas o tiene dudas.",
-        "alertProgress": "Última hora: cada {mins} min aprox. · unos {secs}s · {n} contracciones. Aún no se alcanza el patrón 5-1-1."
+        "alertProgress": "En la última hora: {n} contracciones, cada {mins} min aprox., de unos {secs}s cada una. Todavía no es 5-1-1."
       },
       "i18n": {
         "intro": "Revise Obiana en su idioma, una frase a la vez. Cambie lo que no suene bien, o toque Está bien.",
@@ -485,7 +485,7 @@ window.MYOB_LOCALES.es = {
         "didYouTry": "¿Probó algo? (opcional)",
         "logged": "Registrado",
         "whatHelpsYou": "Lo que parece ayudarle",
-        "avgAfter": "media {avg} · {n} veces",
+        "avgAfter": "promedio {avg}, {n} veces",
         "lowerIsBetter": "Cuanto más bajo, mejor. Es solo su propio registro, no una prueba médica.",
         "recent": "Registros recientes",
         "noEntries": "Aún no hay registros. Anote cómo se siente varias veces y aquí verá qué le ayuda.",

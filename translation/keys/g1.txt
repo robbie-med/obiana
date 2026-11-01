@@ -1,0 +1,5 @@
+# No more "·" separators in tool readouts
+ui.tool.feed.bottleOz
+ui.tool.bp.savedReading
+ui.tool.cx.alertProgress
+ui.tool.nausea.avgAfter

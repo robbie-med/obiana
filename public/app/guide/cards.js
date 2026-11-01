@@ -100,20 +100,37 @@ function cardBody(id) {
   // file. The third argument is what the slot would show unwrapped. Unset
   // otherwise, where the branch costs one property lookup per slot.
   const wrap = window.MYOB_EDIT_WRAP;
-  return tpl.replace(/\{\{(\d+)\}\}/g, (m, i) => {
-    const n = +i;
-    const v = mine[n];
-    if (wrap) return wrap('content.' + id + '.t.' + n, v === undefined ? '' : v,
-      (v === undefined || v === '') ? enRun(fallback[n]) : v);
-    // Only a MISSING translation falls back. A translation that has fallen
-    // behind the English still reads correctly in the reader's own language,
-    // and swapping it for an English sentence mid-paragraph is a worse
-    // outcome than slightly dated wording. The fingerprints still record that
-    // it needs updating; that shows up in the Translation Helper, which is
-    // where a contributor can act on it. See staleSet().
-    if (v === undefined || v === "") return enRun(fallback[n]);
-    return v;
-  });
+  const key = n => 'content.' + id + '.t.' + n;
+  const own = n => mine[n] !== undefined && mine[n] !== '';
+  // Only a MISSING translation falls back. A translation that has fallen
+  // behind the English still reads correctly in the reader's own language,
+  // and swapping it for an English sentence mid-paragraph is a worse
+  // outcome than slightly dated wording. The fingerprints still record that
+  // it needs updating; that shows up on the Translate page, which is where a
+  // contributor can act on it. See staleSet().
+  const shown = n => own(n) ? mine[n] : enRun(fallback[n]);
+  const slot = n => wrap ? wrap(key(n), own(n) ? mine[n] : '', shown(n)) : shown(n);
+  // A sentence written as "a · b · c" is a list, and is drawn as one: a real
+  // bulleted list in place of its paragraph, in every language, with no
+  // change to the text or its translations. Each English stand-in item is
+  // marked separately, as in cardSlotItems().
+  const items = n => {
+    const text = own(n) ? mine[n] : (fallback[n] || '');
+    if (!/\s·\s/.test(text)) return null;
+    return text.split(/\s+·\s+/).filter(Boolean).map(x => own(n) ? x : enRun(x));
+  };
+  const list = (n, lead) => {
+    const li = items(n).map((x, k) => `<li>${k === 0 && lead ? lead + ' ' + x : x}</li>`).join('');
+    const ul = `<ul class="dot-list">${li}</ul>`;
+    return wrap ? wrap(key(n), own(n) ? mine[n] : '', ul) : ul;
+  };
+  return tpl
+    // <p><strong>{{a}}</strong> {{b}}</p> where b is a list: the bold lead-in
+    // opens the first item ("Water breaks (gush or constant trickle)").
+    .replace(/<p>\s*<strong>\{\{(\d+)\}\}<\/strong>\s*\{\{(\d+)\}\}\s*<\/p>/g, (m, a, b) =>
+      items(+b) ? list(+b, `<strong>${slot(+a)}</strong>`) : m)
+    .replace(/<p>\s*\{\{(\d+)\}\}\s*<\/p>/g, (m, n) => items(+n) ? list(+n) : m)
+    .replace(/\{\{(\d+)\}\}/g, (m, n) => slot(+n));
 }
 
 // Per FIELD, not per card. I18n.data() resolves the whole card object, so a
@@ -143,6 +160,12 @@ function cardSlot(id, n) {
 
 // The same, for a slot that is a " · " separated list: split first, then mark
 // each English fallback item, so the lang/dir span never straddles items.
+// A ui string written as "a · b · c", drawn as a bulleted list (tools).
+function dotList(s) {
+  const parts = String(s).split(/\s+·\s+/).filter(Boolean);
+  return parts.length > 1 ? `<ul class="dot-list">${parts.map(x => `<li>${x}</li>`).join('')}</ul>` : `<p>${s}</p>`;
+}
+
 function cardSlotItems(id, n) {
   const mine = (((window.MYOB_LOCALES[I18n.lang] || {}).content || {})[id] || {}).t || [];
   const base = (((window.MYOB_LOCALES[I18n.FALLBACK] || {}).content || {})[id] || {}).t || [];

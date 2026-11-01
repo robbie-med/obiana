@@ -302,7 +302,7 @@ window.MYOB_LOCALES.zh = {
           "normal": "正常"
         },
         "recentSummary": "你最近一次读数（{reading}）处于「{cat}」范围。请今天联系你的医生。",
-        "savedReading": "已保存 {reading} · {cat}"
+        "savedReading": "已保存 {reading}：{cat}"
       },
       "weight": {
         "yourProfile": "你的基本信息",
@@ -349,7 +349,7 @@ window.MYOB_LOCALES.zh = {
         "interval": "间隔 {t}",
         "alertGo": "宫缩间隔约 {mins} 分钟，每次约 {secs} 秒。请立即致电产房。",
         "alert511": "间隔约 {mins} 分钟，每次约 {secs} 秒。如果这是第一胎，请前往医院。破水或不确定时请致电。",
-        "alertProgress": "最近一小时：间隔约 {mins} 分钟 · 每次约 {secs} 秒 · 共 {n} 次宫缩。尚未达到 5-1-1 规律。"
+        "alertProgress": "最近一小时：{n} 次宫缩，间隔约 {mins} 分钟，每次约 {secs} 秒。还没到 5-1-1。"
       },
       "i18n": {
         "intro": "用您的语言检查 Obiana，一次一句。读起来不对的就改，没问题就点“没问题”。",
@@ -484,7 +484,7 @@ window.MYOB_LOCALES.zh = {
         "didYouTry": "你试了什么吗？（可不填）",
         "logged": "已记录",
         "whatHelpsYou": "对你有用的",
-        "avgAfter": "平均 {avg} · {n} 次",
+        "avgAfter": "平均 {avg}，{n} 次",
         "lowerIsBetter": "数字越低越好。这只是你自己的记录，不是医学证据。",
         "recent": "最近的记录",
         "noEntries": "还没有记录。多记几次，这里就会显示什么对你有用。",

@@ -274,7 +274,7 @@ window.MYOB_LOCALES.en = {
           "one": "{count} min",
           "other": "{count} min"
         },
-        "bottleOz": "Bottle · {oz} oz"
+        "bottleOz": "Bottle, {oz} oz"
       },
       "diaper": {
         "wetToday": "Wet Today",
@@ -328,7 +328,7 @@ window.MYOB_LOCALES.en = {
           "normal": "Normal"
         },
         "recentSummary": "Your most recent reading ({reading}) is in the {cat} range. Contact your doctor today.",
-        "savedReading": "{reading} saved · {cat}"
+        "savedReading": "{reading} saved: {cat}"
       },
       "weight": {
         "yourProfile": "Your Profile",
@@ -384,7 +384,7 @@ window.MYOB_LOCALES.en = {
         "interval": "every {t}",
         "alertGo": "Contractions about {mins} min apart, lasting about {secs}s. Call L&D now.",
         "alert511": "About {mins} min apart, about {secs}s long. That is the 5-1-1 pattern most US hospitals use. With a first baby this usually means go in. This timer does not know your pregnancy. Call L&D if you are unsure, if your water breaks, or if you were told to come sooner.",
-        "alertProgress": "Last hour: about {mins} min apart · about {secs}s long · {n} contractions. 5-1-1 pattern not yet reached.",
+        "alertProgress": "In the last hour: {n} contractions, about {mins} min apart, each about {secs}s long. Not yet 5-1-1.",
         "reachedIn": "Reached in {time}",
         "contractionEnding": "Contraction Ending"
       },
@@ -521,7 +521,7 @@ window.MYOB_LOCALES.en = {
         "didYouTry": "Did you try something? (optional)",
         "logged": "Logged",
         "whatHelpsYou": "What seems to help you",
-        "avgAfter": "avg {avg} · {n} times",
+        "avgAfter": "average {avg}, {n} times",
         "lowerIsBetter": "Lower is better. This is only your own record, not medical proof.",
         "recent": "Recent entries",
         "noEntries": "No entries yet. Log how you feel a few times and this will show what helps you.",
@@ -1783,7 +1783,7 @@ window.MYOB_LOCALES.en = {
         "If you are feeling like harming yourself or others",
         "Call 911 or go to the ER now. You can also call or text 988, the Suicide & Crisis Lifeline, any time.",
         "Medicines",
-        "Untreated and uncontrolled depression is not a safe option: it is linked with preterm birth, lower birthweight, and a much higher chance of postpartum depression. Many women have sucessful pregnancies without needing medication. Several SSRIs have decent pregnancy safety data and are prescribed routinely. If you stopped something the day you saw the positive test, tell your doctor so you can discuss your options.",
+        "Untreated and uncontrolled depression is not a safe option: it is linked with preterm birth, lower birthweight, and a much higher chance of postpartum depression. Many women have successful pregnancies without needing medication. Several SSRIs have decent pregnancy safety data and are prescribed routinely. If you stopped something the day you saw the positive test, tell your doctor so you can discuss your options.",
         "What else helps",
         "Talking therapy works, alone or alongside medication, and is worth asking for early because waiting lists are long. Be sure to talk to your doctor about and engage in the non-chemical aspects of depression and anxiety: good sleep, sunshine, exercise, community, therapy, prayer, etc. Morning sickness is an especially difficult time."
       ]

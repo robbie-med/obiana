@@ -302,7 +302,7 @@ window.MYOB_LOCALES.ko = {
           "normal": "정상"
         },
         "recentSummary": "가장 최근 측정값({reading})은 {cat} 범위입니다. 오늘 중으로 의료진에게 연락하세요.",
-        "savedReading": "{reading} 저장됨 · {cat}"
+        "savedReading": "{reading} 저장됨: {cat}"
       },
       "weight": {
         "yourProfile": "내 프로필",
@@ -349,7 +349,7 @@ window.MYOB_LOCALES.ko = {
         "interval": "{t} 간격",
         "alertGo": "진통 간격 약 {mins}분, 지속 약 {secs}초입니다. 지금 분만실에 전화하세요.",
         "alert511": "간격 약 {mins}분, 지속 약 {secs}초입니다. 첫 출산이라면 병원으로 가세요. 양수가 터지거나 확실하지 않으면 전화하세요.",
-        "alertProgress": "지난 1시간: 약 {mins}분 간격 · 약 {secs}초 지속 · 진통 {n}회. 아직 5-1-1 패턴에 도달하지 않았습니다."
+        "alertProgress": "지난 1시간: 진통 {n}회, 약 {mins}분 간격, 한 번에 약 {secs}초. 아직 5-1-1이 아닙니다."
       },
       "i18n": {
         "intro": "Obiana를 사용하시는 언어로 한 문장씩 확인해 주세요. 어색한 부분은 고치고, 괜찮으면 맞아요를 누르세요.",
@@ -484,7 +484,7 @@ window.MYOB_LOCALES.ko = {
         "didYouTry": "무언가 시도하셨나요? (선택)",
         "logged": "기록되었습니다",
         "whatHelpsYou": "나에게 도움이 된 것",
-        "avgAfter": "평균 {avg} · {n}회",
+        "avgAfter": "평균 {avg}, {n}회",
         "lowerIsBetter": "낮을수록 좋습니다. 본인의 기록일 뿐 의학적 근거는 아닙니다.",
         "recent": "최근 기록",
         "noEntries": "아직 기록이 없습니다. 몇 번 기록하시면 무엇이 도움이 되는지 보여 드립니다.",
