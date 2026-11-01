@@ -34,7 +34,10 @@ const FOREIGN_SCRIPT = {
   zom: { re: /[\u0400-\u04FF\u4E00-\u9FFF\uAC00-\uD7AF\u0600-\u06FF]/, label: 'non-Latin' },
 };
 
-const placeholders = s => (String(s).match(/\{(\w+)\}/g) || []).sort();
+// {count} and the unit tokens of NEXT.md §6 ({temp:100.4}): byte for byte.
+const placeholders = s => (String(s).match(/\{[^{}\s]+\}/g) || []).sort();
+// The only markup a translation may carry (NEXT.md §4).
+const ALLOWED_TAG = /^<\/?(br|strong|em)\s*\/?>$/i;
 const tags = s => (String(s).match(/<\/?[a-zA-Z][^>]*>/g) || [])
   .map(t => t.replace(/\s+/g, ' ').toLowerCase()).sort();
 const entities = s => (String(s).match(/&[a-zA-Z]+;|&#\d+;/g) || []).sort();
@@ -51,7 +54,9 @@ function compareString(key, en, tr, errs, warns, lang) {
     errs.push(`${key}: placeholders changed  ${JSON.stringify(pe)} -> ${JSON.stringify(pt)}`);
 
   const te = tags(en), tt = tags(tr);
-  if (te.join('|') !== tt.join('|'))
+  const stray = tt.filter(t => !ALLOWED_TAG.test(t));
+  if (stray.length) errs.push(`${key}: markup other than <br> <strong> <em>: ${[...new Set(stray)].join(' ')}`);
+  else if (te.join('|') !== tt.join('|'))
     errs.push(`${key}: HTML tags changed (${te.length} -> ${tt.length})`);
 
   const ee = entities(en), et = entities(tr);
@@ -81,7 +86,17 @@ function comparePlural(k, en, tr, errs, warns, lang) {
   if (cats.some(c => !PLURAL_CATS.includes(c)))
     errs.push(`${k}: invalid plural category (${cats.join(',')})`);
   if (!cats.includes('other')) errs.push(`${k}: missing required "other" form`);
-  for (const c of cats) compareString(`${k}.${c}`, en.other || en.one, tr[c], errs, warns, lang);
+  // Same category in English when it has one ("one" carries no {count}), else "other".
+  // The zero/one/two forms may spell the number out ("يومان", two days), so
+  // they may drop {count}; every other placeholder still has to survive.
+  for (const c of cats) {
+    // Russian "one" is also 21, 31…, so it needs {count} where English "one" has none.
+    let src = String(en.other || en.one);
+    if (!String(tr[c]).includes('{count}')) src = src.replace(/\{count\}/g, '');
+    if (!['zero', 'one', 'two'].includes(c) && !String(tr[c]).includes('{count}') && String(en.other).includes('{count}'))
+      errs.push(`${k}.${c}: the "${c}" form needs {count}`);
+    compareString(`${k}.${c}`, src, tr[c], errs, warns, lang);
+  }
 }
 
 // Key-list batch: the expected keys and their English were fixed when the

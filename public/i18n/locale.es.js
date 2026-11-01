@@ -659,7 +659,11 @@ window.MYOB_LOCALES.es = {
       "labor": "Parto y<br>Nacimiento",
       "recovery": "Recuperación<br>Posparto",
       "baby": "Su Recién<br>Nacido",
-      "toolsTrackers": "Herramientas y<br>Registros"
+      "toolsTrackers": "Herramientas y<br>Registros",
+      "today": "Hoy",
+      "guide": "Guía",
+      "urgent": "Cuándo llamar",
+      "me": "Yo"
     },
     "usNotice": {
       "title": "Atención en los Estados Unidos",
@@ -689,6 +693,131 @@ window.MYOB_LOCALES.es = {
       "sizeLarger": "Más grande",
       "language": "Idioma",
       "darkMode": "Modo oscuro"
+    },
+    "urgent": {
+      "title": "Cuándo llamar",
+      "call911": "Llame al 911",
+      "callLd": "Llame a trabajo de parto y parto",
+      "addLd": "Agregue el número de trabajo de parto y parto en Yo.",
+      "tellThem": "Si tuvo un bebé en el último año, dígaselo a cualquier persona a quien llame o vea. Algunos problemas graves después del parto se pasan por alto cuando el personal no lo sabe.",
+      "helpLines": "Líneas de ayuda: gratis, a cualquier hora",
+      "line988": "Pensamientos de hacerse daño, o en crisis: llame o envíe un mensaje de texto al 988, la Línea de Prevención del Suicidio y Crisis.",
+      "lineMama": "Si se siente decaída, ansiosa o abrumada, durante el embarazo o después: Línea Nacional de Salud Mental Materna, 1-833-TLC-MAMA (1-833-852-6262). Llame o envíe un mensaje de texto. Hay intérpretes en muchos idiomas.",
+      "linePoison": "Si usted o el bebé se tragaron algo: Control de Envenenamientos (Poison Control), 1-800-222-1222.",
+      "lineDv": "Si no está segura en casa: Línea Nacional contra la Violencia Doméstica, 1-800-799-7233, o envíe START por mensaje de texto al 88788.",
+      "call": "Llamar",
+      "text": "Mensaje"
+    },
+    "today": {
+      "whereNow": "¿En qué etapa está?",
+      "pregnant": "Estoy embarazada",
+      "dueLabel": "Fecha probable de parto",
+      "babyHere": "Mi bebé ya nació",
+      "bornLabel": "Fecha de nacimiento del bebé",
+      "save": "Muéstreme lo que sigue",
+      "savedOnPhone": "Esto se queda en su teléfono. Puede cambiarlo cuando quiera en Yo.",
+      "week": "Semana {week}",
+      "due": "Fecha probable: {date}",
+      "babyDays": {
+        "one": "Su bebé tiene 1 día",
+        "many": "Su bebé tiene {count} días",
+        "other": "Su bebé tiene {count} días"
+      },
+      "babyWeeks": {
+        "one": "Su bebé tiene 1 semana",
+        "many": "Su bebé tiene {count} semanas",
+        "other": "Su bebé tiene {count} semanas"
+      },
+      "visitsNow": "En sus consultas ahora",
+      "comingUp": "Lo que viene",
+      "allVisits": "Todas las consultas, semana a semana",
+      "toolsNow": "Útil ahora",
+      "changeDates": "Cambiar fechas"
+    },
+    "visits": {
+      "title": "Sus consultas, semana a semana",
+      "sub": "Qué pasa en cada consulta y qué decide usted",
+      "lead": "Este es el calendario habitual en EE. UU. El suyo puede ser diferente: su médico de familia, obstetra o partera agrega consultas y pruebas cuando las necesita.",
+      "afterBirth": "Después del parto",
+      "yourChoice": "Usted decide",
+      "first": {
+        "when": "Alrededor de las 8–10 semanas",
+        "title": "Primera consulta",
+        "i1": "Su fecha probable de parto se calcula a partir de su última regla, a menudo con una ecografía temprana.",
+        "i2": "Análisis de sangre: grupo sanguíneo y Rh, hemograma, inmunidad a la rubéola y la varicela, hepatitis B y C, VIH y sífilis. Un análisis de orina y pruebas de clamidia y gonorrea.",
+        "i3": "Una prueba de azúcar temprana si tuvo diabetes en un embarazo anterior o tiene otros factores de riesgo.",
+        "i4": "Si tiene un riesgo más alto de preeclampsia, la aspirina en dosis baja (81 mg al día) desde las 12 semanas reduce ese riesgo. Pregunte si es adecuada para usted."
+      },
+      "genetic": {
+        "when": "Desde las 10 semanas",
+        "title": "Pruebas para el bebé",
+        "i1": "Un análisis de sangre desde las 10 semanas (ADN libre de células) detecta el síndrome de Down y algunas otras condiciones. Un examen de detección no es un diagnóstico: un resultado positivo significa que se le ofrece una prueba de diagnóstico.",
+        "i2": "La prueba de portadora revisa si usted tiene genes de condiciones como la fibrosis quística o la atrofia muscular espinal.",
+        "i3": "Puede hacerse todas, algunas o ninguna de estas pruebas."
+      },
+      "monthly": {
+        "when": "Cada 4 semanas, hasta las 28 semanas",
+        "title": "Consultas regulares",
+        "i1": "Presión arterial, peso, orina y los latidos del bebé. Desde las 20 semanas, más o menos, también le miden el tamaño de la barriga."
+      },
+      "anatomy": {
+        "when": "18–22 semanas",
+        "title": "Ecografía de anatomía",
+        "i1": "Una ecografía detallada del cuerpo del bebé, su crecimiento y la placenta. Normalmente puede saber el sexo, si lo desea."
+      },
+      "sugar": {
+        "when": "24–28 semanas",
+        "title": "Prueba de azúcar y análisis de sangre",
+        "i1": "Una bebida dulce y, una hora después, un análisis de sangre para detectar la diabetes gestacional.",
+        "i2": "Un hemograma para ver si hay anemia, y otra prueba de sífilis.",
+        "i3": "Si su grupo sanguíneo es Rh negativo: una inyección de Rh (RhoGAM) alrededor de las 28 semanas."
+      },
+      "tdap": {
+        "when": "27–36 semanas",
+        "title": "Vacuna contra la tos ferina (Tdap)",
+        "i1": "Sus anticuerpos pasan al bebé y lo protegen en los primeros meses, antes de que pueda recibir sus propias vacunas. Se pone en cada embarazo."
+      },
+      "twoweekly": {
+        "when": "Cada 2 semanas, desde las 28 semanas",
+        "title": "Las consultas se hacen más seguidas",
+        "i1": "Conozca cómo se mueve normalmente su bebé. Contar las patadas es opcional. Si el bebé se mueve menos de lo normal, llame ese mismo día. No espere a la próxima consulta.",
+        "i2": "Si tiene una condición como presión alta o diabetes, los controles adicionales del bebé (pruebas sin estrés o ecografías) suelen empezar alrededor de las 32 semanas."
+      },
+      "rsv": {
+        "when": "32–36 semanas, de septiembre a enero",
+        "title": "Protección contra el VRS para el bebé",
+        "i1": "O una vacuna contra el VRS para usted entre las 32 y 36 semanas, o una inyección de anticuerpos para el bebé después de nacer. Una u otra, no las dos. Cada una reduce la probabilidad de que el bebé termine en el hospital por el VRS en su primer invierno."
+      },
+      "gbs": {
+        "when": "36–37 semanas",
+        "title": "Prueba de estreptococo del grupo B y la posición del bebé",
+        "i1": "Una muestra con hisopo de la vagina y el recto. Cerca de 1 de cada 4 mujeres tiene GBS, y no le hace daño a usted. Si su resultado es positivo, recibe antibióticos por vena durante el parto para proteger al bebé.",
+        "i2": "Se revisa que el bebé esté con la cabeza hacia abajo. Si el bebé viene de nalgas, le pueden ofrecer una forma de girarlo (versión cefálica externa), o puede planear una cesárea.",
+        "i3": "Repase su plan de parto: alivio del dolor, quién estará con usted, alimentación."
+      },
+      "weekly": {
+        "when": "Cada semana, desde las 36 semanas",
+        "title": "Las últimas semanas",
+        "i1": "Desde las 38 semanas le pueden ofrecer un despegamiento de membranas: un barrido con el dedo en el cuello del útero que puede ayudar a que empiece el parto.",
+        "i2": "La inducción se puede ofrecer desde las 39 semanas. A las 41 semanas se recomienda, porque el riesgo para el bebé empieza a aumentar."
+      },
+      "ppBp": {
+        "when": "3–10 días después del parto",
+        "title": "Control de la presión, si la tuvo alta",
+        "i1": "Si tuvo presión alta o preeclampsia, hágase un control entre 3 y 10 días después del parto. La preeclampsia puede empezar o empeorar después del parto."
+      },
+      "pp3": {
+        "when": "Dentro de las 3 semanas después del parto",
+        "title": "Primer control",
+        "i1": "Hable con su médico de familia, obstetra o partera sobre el sangrado, el dolor, la alimentación, el ánimo y el sueño. Una llamada o videollamada puede contar."
+      },
+      "ppFull": {
+        "when": "Antes de las 12 semanas después del parto, a menudo a las 4–6",
+        "title": "Consulta completa de posparto",
+        "i1": "Un control del ánimo, anticonceptivos, cómo está sanando y cualquier plan para otro embarazo.",
+        "i2": "Si tuvo diabetes gestacional: una prueba de azúcar entre 4 y 12 semanas después del parto. El riesgo de diabetes tipo 2 sigue siendo más alto toda la vida, así que pida un control cada 1 a 3 años.",
+        "i3": "Si se le escapa la orina o las heces, siente dolor en las relaciones sexuales o un bulto en la vagina, pregunte por la fisioterapia del piso pélvico. Ayuda. No tiene que vivir con eso."
+      }
     }
   },
   "content": {
@@ -2156,5 +2285,96 @@ window.MYOB_LOCALES.es = {
     "content.prenatal-vitamins.t.10": "5be7a760570cdd4e",
     "content.prenatal-vitamins.t.11": "b240717212e31574",
     "content.prenatal-vitamins.t.12": "31df9755cd54b707"
+  },
+  "unreviewed": {
+    "urgent.title": 1,
+    "urgent.call911": 1,
+    "urgent.callLd": 1,
+    "urgent.addLd": 1,
+    "urgent.tellThem": 1,
+    "urgent.helpLines": 1,
+    "urgent.line988": 1,
+    "urgent.lineMama": 1,
+    "urgent.linePoison": 1,
+    "urgent.lineDv": 1,
+    "urgent.call": 1,
+    "urgent.text": 1,
+    "nav.today": 1,
+    "nav.guide": 1,
+    "nav.urgent": 1,
+    "nav.me": 1,
+    "today.whereNow": 1,
+    "today.pregnant": 1,
+    "today.dueLabel": 1,
+    "today.babyHere": 1,
+    "today.bornLabel": 1,
+    "today.save": 1,
+    "today.savedOnPhone": 1,
+    "today.week": 1,
+    "today.due": 1,
+    "today.babyDays": 1,
+    "today.babyWeeks": 1,
+    "today.visitsNow": 1,
+    "today.comingUp": 1,
+    "today.allVisits": 1,
+    "today.toolsNow": 1,
+    "today.changeDates": 1,
+    "visits.title": 1,
+    "visits.sub": 1,
+    "visits.lead": 1,
+    "visits.afterBirth": 1,
+    "visits.yourChoice": 1,
+    "visits.first.when": 1,
+    "visits.first.title": 1,
+    "visits.first.i1": 1,
+    "visits.first.i2": 1,
+    "visits.first.i3": 1,
+    "visits.first.i4": 1,
+    "visits.genetic.when": 1,
+    "visits.genetic.title": 1,
+    "visits.genetic.i1": 1,
+    "visits.genetic.i2": 1,
+    "visits.genetic.i3": 1,
+    "visits.monthly.when": 1,
+    "visits.monthly.title": 1,
+    "visits.monthly.i1": 1,
+    "visits.anatomy.when": 1,
+    "visits.anatomy.title": 1,
+    "visits.anatomy.i1": 1,
+    "visits.sugar.when": 1,
+    "visits.sugar.title": 1,
+    "visits.sugar.i1": 1,
+    "visits.sugar.i2": 1,
+    "visits.sugar.i3": 1,
+    "visits.tdap.when": 1,
+    "visits.tdap.title": 1,
+    "visits.tdap.i1": 1,
+    "visits.twoweekly.when": 1,
+    "visits.twoweekly.title": 1,
+    "visits.twoweekly.i1": 1,
+    "visits.twoweekly.i2": 1,
+    "visits.rsv.when": 1,
+    "visits.rsv.title": 1,
+    "visits.rsv.i1": 1,
+    "visits.gbs.when": 1,
+    "visits.gbs.title": 1,
+    "visits.gbs.i1": 1,
+    "visits.gbs.i2": 1,
+    "visits.gbs.i3": 1,
+    "visits.weekly.when": 1,
+    "visits.weekly.title": 1,
+    "visits.weekly.i1": 1,
+    "visits.weekly.i2": 1,
+    "visits.ppBp.when": 1,
+    "visits.ppBp.title": 1,
+    "visits.ppBp.i1": 1,
+    "visits.pp3.when": 1,
+    "visits.pp3.title": 1,
+    "visits.pp3.i1": 1,
+    "visits.ppFull.when": 1,
+    "visits.ppFull.title": 1,
+    "visits.ppFull.i1": 1,
+    "visits.ppFull.i2": 1,
+    "visits.ppFull.i3": 1
   }
 };

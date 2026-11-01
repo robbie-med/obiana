@@ -47,20 +47,44 @@ function mergeKeys([tag, ...langs]) {
     const data = JSON.parse(fs.readFileSync(file, 'utf8'));
     const localeFile = path.join(ROOT, `public/i18n/locale.${lang}.js`);
     const parsed = readLocale(fs, localeFile, lang);
+    // A draft batch (prepare.js --draft) may fill a card this locale does not
+    // have yet: it is created with every sentence blank, which reads as English
+    // slot by slot, then the drafted ones are written in.
     try {
-      for (const [k, v] of Object.entries(data)) setSlot(parsed.obj, k, v);
+      for (const [k, v] of Object.entries(data)) {
+        if (man.draft) ensureCard(parsed.obj, k);
+        setSlot(parsed.obj, k, v);
+      }
     } catch (e) {
       console.log(`✗ ${lang}: skipped, nothing written. ${e.message}`);
       continue;
     }
     const stamps = Object.keys(man.srcHash || {}).length;
     if (stamps) parsed.obj.srcHash = Object.assign(parsed.obj.srcHash || {}, man.srcHash);
+    // Machine drafts are marked, keyed like /api/suggest keys (bare ui path,
+    // content.<id>.…), so the Translate page puts them in front of a
+    // translator. The review app clears a mark when a person has checked it.
+    if (man.draft) {
+      const marks = parsed.obj.unreviewed || {};
+      for (const k of Object.keys(data)) marks[k.replace(/^ui\./, '')] = 1;
+      parsed.obj.unreviewed = marks;
+    }
     writeLocale(fs, localeFile, parsed);
     const nUi = Object.keys(data).filter(k => k.startsWith('ui.')).length;
     console.log(`✓ ${lang}: ${nUi} ui, ${Object.keys(data).length - nUi} content (${stamps} stamped) -> public/i18n/locale.${lang}.js`);
   }
   console.log('\nThen: node scripts/check.js --compare, and node scripts/bump.js before pushing.');
 }
+
+function ensureCard(obj, key) {
+  const m = /^content\.([^.]+)\./.exec(key);
+  if (!m || (obj.content && obj.content[m[1]])) return;
+  const en = EN().content[m[1]];
+  if (!en) throw new Error(`${key}: no such card in English`);
+  (obj.content ||= {})[m[1]] = { title: '', sub: '', t: (en.t || []).map(() => '') };
+}
+var _en = null;   // var, not let: mergeKeys() runs before this line is reached
+function EN() { return _en || (_en = readLocale(fs, path.join(ROOT, 'public/i18n/locale.en.js'), 'en').obj); }
 
 const files = fs.existsSync(OUT) ? fs.readdirSync(OUT).filter(f => f.endsWith('.json')) : [];
 if (!files.length) { console.log('translation/out/ is empty — run run-kimi.sh first'); process.exit(0); }

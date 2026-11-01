@@ -37,6 +37,7 @@ run() {
 # file's name is the batch tag.
 #   bash translation/run-kimi.sh --keys translation/keys/s1.txt        every locale that has them
 #   bash translation/run-kimi.sh --keys translation/keys/s1.txt es ar  these, drafting missing ui keys too
+#   node translation/prepare.js --keys <file> --draft [lang ...]       only what is missing, marked unreviewed
 # then: node translation/merge.js --keys s1
 if [ "${1:-}" = "--keys" ]; then
   KEYFILE="${2:?usage: run-kimi.sh --keys <file> [lang ...]}"; shift 2

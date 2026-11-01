@@ -189,6 +189,22 @@ def load_unreviewed(lang):
     return drafts if isinstance(drafts, dict) else {}
 
 
+TOKEN = re.compile(r"\{[^{}\s]+\}")
+TAG = re.compile(r"</?[a-zA-Z][^>]*>")
+ALLOWED_TAG = re.compile(r"^</?(br|strong|em)\s*/?>$", re.I)
+
+
+def wording_problem(english, text):
+    """Why a wording cannot go into a locale, or None (NEXT.md §4): plain text
+    plus <br> <strong> <em>, and every {placeholder} or unit token kept."""
+    stray = [t for t in TAG.findall(text) if not ALLOWED_TAG.match(t)]
+    if stray:
+        return "markup other than <br> <strong> <em>: " + " ".join(sorted(set(stray)))
+    if sorted(TOKEN.findall(english or "")) != sorted(TOKEN.findall(text)):
+        return "placeholders differ from the English: " + " ".join(sorted(TOKEN.findall(english or "")))
+    return None
+
+
 def sentence_count():
     """Every English string a translator can work on (same set as the app's
     Translate page: ui strings and card fields, blank slots excluded)."""
@@ -355,6 +371,9 @@ class Handler(BaseHTTPRequestHandler):
                 return self._send(400, {"error": "missing fields"})
             if lang not in LOCALES or not re.fullmatch(r"[\w.-]+", key):
                 return self._send(400, {"error": "bad lang or key"})
+            problem = wording_problem(load_locale("en").get(key, ""), text)
+            if problem:
+                return self._send(400, {"error": problem})
             try:
                 # From the row, not the request: a page left open for a week
                 # would post whatever English it loaded back then.

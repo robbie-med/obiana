@@ -660,7 +660,11 @@ window.MYOB_LOCALES.fr = {
       "labor": "Travail et<br>accouchement",
       "recovery": "Récupération<br>post-partum",
       "baby": "Votre<br>nouveau-né",
-      "toolsTrackers": "Outils et<br>suivis"
+      "toolsTrackers": "Outils et<br>suivis",
+      "today": "Aujourd'hui",
+      "guide": "Guide",
+      "urgent": "Quand appeler",
+      "me": "Moi"
     },
     "usNotice": {
       "title": "Soins aux États-Unis",
@@ -690,6 +694,131 @@ window.MYOB_LOCALES.fr = {
       "sizeLarger": "Plus grande",
       "language": "Langue",
       "darkMode": "Mode sombre"
+    },
+    "urgent": {
+      "title": "Quand appeler",
+      "call911": "Appeler le 911",
+      "callLd": "Appeler la salle de naissance",
+      "addLd": "Ajoutez le numéro de la salle de naissance dans Moi.",
+      "tellThem": "Si vous avez accouché dans l'année, dites-le à toute personne que vous appelez ou voyez. Certains problèmes graves après l'accouchement passent inaperçus quand le personnel ne le sait pas.",
+      "helpLines": "Lignes d'aide : gratuites, à toute heure",
+      "line988": "Pensées de vous faire du mal, ou en crise : appelez ou envoyez un SMS au 988, la ligne de prévention du suicide et de crise.",
+      "lineMama": "Si vous vous sentez déprimée, anxieuse ou dépassée, pendant la grossesse ou après : National Maternal Mental Health Hotline, 1-833-TLC-MAMA (1-833-852-6262). Appel ou SMS. Interprètes dans de nombreuses langues.",
+      "linePoison": "Si vous ou le bébé avez avalé quelque chose : centre antipoison (Poison Control), 1-800-222-1222.",
+      "lineDv": "Si vous n'êtes pas en sécurité chez vous : National Domestic Violence Hotline, 1-800-799-7233, ou envoyez START par SMS au 88788.",
+      "call": "Appeler",
+      "text": "SMS"
+    },
+    "today": {
+      "whereNow": "Où en êtes-vous ?",
+      "pregnant": "Je suis enceinte",
+      "dueLabel": "Date prévue d'accouchement",
+      "babyHere": "Mon bébé est né",
+      "bornLabel": "Date de naissance du bébé",
+      "save": "Montrez-moi la suite",
+      "savedOnPhone": "Cela reste sur votre téléphone. Vous pouvez le changer à tout moment dans Moi.",
+      "week": "Semaine {week}",
+      "due": "Accouchement prévu le {date}",
+      "babyDays": {
+        "one": "Votre bébé a 1 jour",
+        "many": "Votre bébé a {count} jours",
+        "other": "Votre bébé a {count} jours"
+      },
+      "babyWeeks": {
+        "one": "Votre bébé a 1 semaine",
+        "many": "Votre bébé a {count} semaines",
+        "other": "Votre bébé a {count} semaines"
+      },
+      "visitsNow": "À vos rendez-vous en ce moment",
+      "comingUp": "À venir",
+      "allVisits": "Tous les rendez-vous, semaine par semaine",
+      "toolsNow": "Utile maintenant",
+      "changeDates": "Changer les dates"
+    },
+    "visits": {
+      "title": "Vos rendez-vous, semaine par semaine",
+      "sub": "Ce qui se passe à chaque rendez-vous, et ce que vous décidez",
+      "lead": "Voici le calendrier habituel aux États-Unis. Le vôtre peut être différent : votre médecin de famille, votre obstétricien ou votre sage-femme ajoute des rendez-vous et des examens quand vous en avez besoin.",
+      "afterBirth": "Après la naissance",
+      "yourChoice": "Votre choix",
+      "first": {
+        "when": "Vers 8–10 semaines",
+        "title": "Premier rendez-vous",
+        "i1": "Votre date d'accouchement est calculée à partir de vos dernières règles, souvent avec une échographie précoce.",
+        "i2": "Prises de sang : groupe sanguin et Rh, numération sanguine, immunité contre la rubéole et la varicelle, hépatites B et C, VIH et syphilis. Une analyse d'urine, et des tests de chlamydia et de gonorrhée.",
+        "i3": "Un test de sucre précoce si vous avez eu du diabète lors d'une grossesse précédente ou si vous avez d'autres facteurs de risque.",
+        "i4": "Si votre risque de prééclampsie est plus élevé, l'aspirine à faible dose (81 mg par jour) à partir de 12 semaines réduit ce risque. Demandez si elle vous convient."
+      },
+      "genetic": {
+        "when": "À partir de 10 semaines",
+        "title": "Tests pour le bébé",
+        "i1": "Une prise de sang à partir de 10 semaines (ADN fœtal libre) dépiste la trisomie 21 et quelques autres anomalies. Un dépistage n'est pas un diagnostic : un résultat positif signifie qu'on vous propose un test de diagnostic.",
+        "i2": "Le dépistage des porteurs vérifie si vous portez des gènes de maladies comme la mucoviscidose ou l'amyotrophie spinale.",
+        "i3": "Vous pouvez faire tous ces tests, certains ou aucun."
+      },
+      "monthly": {
+        "when": "Toutes les 4 semaines, jusqu'à 28 semaines",
+        "title": "Rendez-vous réguliers",
+        "i1": "Tension, poids, urine et battements de cœur du bébé. À partir de 20 semaines environ, on mesure aussi la taille de votre ventre."
+      },
+      "anatomy": {
+        "when": "18–22 semaines",
+        "title": "Échographie morphologique",
+        "i1": "Un examen détaillé du corps du bébé, de sa croissance et du placenta. Vous pouvez généralement connaître le sexe, si vous le souhaitez."
+      },
+      "sugar": {
+        "when": "24–28 semaines",
+        "title": "Test de sucre et prise de sang",
+        "i1": "Une boisson sucrée, puis une prise de sang une heure après, pour dépister le diabète gestationnel.",
+        "i2": "Une numération sanguine pour l'anémie, et un nouveau test de syphilis.",
+        "i3": "Si votre groupe sanguin est Rh négatif : une injection anti-Rh (RhoGAM) vers 28 semaines."
+      },
+      "tdap": {
+        "when": "27–36 semaines",
+        "title": "Vaccin contre la coqueluche (Tdap)",
+        "i1": "Vos anticorps passent au bébé et le protègent les premiers mois, avant qu'il puisse recevoir ses propres vaccins. Il se fait à chaque grossesse."
+      },
+      "twoweekly": {
+        "when": "Toutes les 2 semaines, à partir de 28 semaines",
+        "title": "Les rendez-vous se rapprochent",
+        "i1": "Apprenez comment votre bébé bouge d'habitude. Compter les mouvements est facultatif. Si le bébé bouge moins que d'habitude, appelez le jour même. N'attendez pas le prochain rendez-vous.",
+        "i2": "Si vous avez un problème comme de l'hypertension ou du diabète, des contrôles supplémentaires du bébé (monitorings ou échographies) commencent souvent vers 32 semaines."
+      },
+      "rsv": {
+        "when": "32–36 semaines, de septembre à janvier",
+        "title": "Protection du bébé contre le VRS",
+        "i1": "Soit un vaccin contre le VRS pour vous entre 32 et 36 semaines, soit une injection d'anticorps pour le bébé après la naissance. L'un ou l'autre, pas les deux. Chacun réduit le risque que le bébé finisse à l'hôpital à cause du VRS pendant son premier hiver."
+      },
+      "gbs": {
+        "when": "36–37 semaines",
+        "title": "Prélèvement pour le streptocoque B, et position du bébé",
+        "i1": "Un prélèvement du vagin et du rectum. Environ 1 femme sur 4 porte le GBS, et cela ne vous fait pas de mal. Si votre résultat est positif, vous recevez des antibiotiques par perfusion pendant le travail pour protéger le bébé.",
+        "i2": "On vérifie que le bébé a la tête en bas. Si le bébé se présente par le siège, on peut vous proposer de le retourner (version par manœuvre externe), ou vous pouvez prévoir une césarienne.",
+        "i3": "Revoyez votre projet de naissance : soulagement de la douleur, qui sera avec vous, alimentation du bébé."
+      },
+      "weekly": {
+        "when": "Chaque semaine, à partir de 36 semaines",
+        "title": "Les dernières semaines",
+        "i1": "À partir de 38 semaines, on peut vous proposer un décollement des membranes : un balayage avec le doigt au niveau du col qui peut aider le travail à commencer.",
+        "i2": "Le déclenchement peut être proposé à partir de 39 semaines. À 41 semaines, il est recommandé, car le risque pour le bébé commence à augmenter."
+      },
+      "ppBp": {
+        "when": "3–10 jours après la naissance",
+        "title": "Contrôle de la tension, si elle était élevée",
+        "i1": "Si vous avez eu de l'hypertension ou une prééclampsie, faites contrôler votre tension entre 3 et 10 jours après la naissance. La prééclampsie peut commencer ou s'aggraver après l'accouchement."
+      },
+      "pp3": {
+        "when": "Dans les 3 semaines après la naissance",
+        "title": "Premier point",
+        "i1": "Parlez à votre médecin de famille, votre obstétricien ou votre sage-femme des saignements, de la douleur, de l'alimentation, du moral et du sommeil. Un appel téléphonique ou vidéo peut compter."
+      },
+      "ppFull": {
+        "when": "Avant 12 semaines après la naissance, souvent vers 4–6",
+        "title": "Visite postnatale complète",
+        "i1": "Le moral, la contraception, votre guérison et vos projets pour une prochaine grossesse.",
+        "i2": "Si vous avez eu un diabète gestationnel : un test de sucre entre 4 et 12 semaines après la naissance. Le risque de diabète de type 2 reste plus élevé toute la vie, alors demandez un contrôle tous les 1 à 3 ans.",
+        "i3": "Si vous avez des fuites d'urine ou de selles, des douleurs pendant les rapports, ou si vous sentez une boule dans le vagin, demandez une rééducation du périnée. Ça aide. Vous n'avez pas à vivre avec."
+      }
     }
   },
   "content": {
@@ -2157,5 +2286,96 @@ window.MYOB_LOCALES.fr = {
     "content.prenatal-vitamins.t.10": "5be7a760570cdd4e",
     "content.prenatal-vitamins.t.11": "b240717212e31574",
     "content.prenatal-vitamins.t.12": "31df9755cd54b707"
+  },
+  "unreviewed": {
+    "urgent.title": 1,
+    "urgent.call911": 1,
+    "urgent.callLd": 1,
+    "urgent.addLd": 1,
+    "urgent.tellThem": 1,
+    "urgent.helpLines": 1,
+    "urgent.line988": 1,
+    "urgent.lineMama": 1,
+    "urgent.linePoison": 1,
+    "urgent.lineDv": 1,
+    "urgent.call": 1,
+    "urgent.text": 1,
+    "nav.today": 1,
+    "nav.guide": 1,
+    "nav.urgent": 1,
+    "nav.me": 1,
+    "today.whereNow": 1,
+    "today.pregnant": 1,
+    "today.dueLabel": 1,
+    "today.babyHere": 1,
+    "today.bornLabel": 1,
+    "today.save": 1,
+    "today.savedOnPhone": 1,
+    "today.week": 1,
+    "today.due": 1,
+    "today.babyDays": 1,
+    "today.babyWeeks": 1,
+    "today.visitsNow": 1,
+    "today.comingUp": 1,
+    "today.allVisits": 1,
+    "today.toolsNow": 1,
+    "today.changeDates": 1,
+    "visits.title": 1,
+    "visits.sub": 1,
+    "visits.lead": 1,
+    "visits.afterBirth": 1,
+    "visits.yourChoice": 1,
+    "visits.first.when": 1,
+    "visits.first.title": 1,
+    "visits.first.i1": 1,
+    "visits.first.i2": 1,
+    "visits.first.i3": 1,
+    "visits.first.i4": 1,
+    "visits.genetic.when": 1,
+    "visits.genetic.title": 1,
+    "visits.genetic.i1": 1,
+    "visits.genetic.i2": 1,
+    "visits.genetic.i3": 1,
+    "visits.monthly.when": 1,
+    "visits.monthly.title": 1,
+    "visits.monthly.i1": 1,
+    "visits.anatomy.when": 1,
+    "visits.anatomy.title": 1,
+    "visits.anatomy.i1": 1,
+    "visits.sugar.when": 1,
+    "visits.sugar.title": 1,
+    "visits.sugar.i1": 1,
+    "visits.sugar.i2": 1,
+    "visits.sugar.i3": 1,
+    "visits.tdap.when": 1,
+    "visits.tdap.title": 1,
+    "visits.tdap.i1": 1,
+    "visits.twoweekly.when": 1,
+    "visits.twoweekly.title": 1,
+    "visits.twoweekly.i1": 1,
+    "visits.twoweekly.i2": 1,
+    "visits.rsv.when": 1,
+    "visits.rsv.title": 1,
+    "visits.rsv.i1": 1,
+    "visits.gbs.when": 1,
+    "visits.gbs.title": 1,
+    "visits.gbs.i1": 1,
+    "visits.gbs.i2": 1,
+    "visits.gbs.i3": 1,
+    "visits.weekly.when": 1,
+    "visits.weekly.title": 1,
+    "visits.weekly.i1": 1,
+    "visits.weekly.i2": 1,
+    "visits.ppBp.when": 1,
+    "visits.ppBp.title": 1,
+    "visits.ppBp.i1": 1,
+    "visits.pp3.when": 1,
+    "visits.pp3.title": 1,
+    "visits.pp3.i1": 1,
+    "visits.ppFull.when": 1,
+    "visits.ppFull.title": 1,
+    "visits.ppFull.i1": 1,
+    "visits.ppFull.i2": 1,
+    "visits.ppFull.i3": 1
   }
 };

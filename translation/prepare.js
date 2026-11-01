@@ -140,7 +140,12 @@ function prepareKeys(argv) {
   const { workerLocales, expectPath, englishOf, slotOf } = require('./batch.js');
   const die = msg => { console.error(msg); process.exit(1); };
 
-  const [file, ...langArgs] = argv;
+  // --draft (NEXT.md §4): machine drafts for what is NOT translated yet. Only
+  // keys missing in that locale, including whole cards it does not have;
+  // nothing already there is touched. merge.js marks each one unreviewed.
+  let [file, ...langArgs] = argv;
+  const draft = langArgs[0] === '--draft';
+  if (draft) langArgs = langArgs.slice(1);
   if (!file || !fs.existsSync(file)) die('usage: node translation/prepare.js --keys <keyfile> [lang ...]');
   const tag = path.basename(file).replace(/\.[^.]*$/, '');
   if (!/^[\w-]+$/.test(tag)) die(`key file name must be letters, digits, - or _ (it becomes the batch tag): ${tag}`);
@@ -179,7 +184,11 @@ function prepareKeys(argv) {
     const meta = NAMES[lang];
     if (!meta) die(`no language name for ${lang} in prepare.js NAMES`);
     const obj = readLocale(fs, path.join(ROOT, `public/i18n/locale.${lang}.js`), lang).obj;
-    const mine = keys.filter(k => { const s = slotOf(obj, k); return langArgs.length ? s.slot : s.text !== undefined; });
+    const mine = keys.filter(k => {
+      const s = slotOf(obj, k);
+      if (draft) return s.text === undefined;
+      return langArgs.length ? s.slot : s.text !== undefined;
+    });
     const outRel = `translation/out/${lang}.keys.${tag}.json`;
     if (!mine.length) { fs.rmSync(path.join(ROOT, outRel), { force: true }); continue; }
 
@@ -188,8 +197,9 @@ function prepareKeys(argv) {
     const prompt = `${rules(lang, meta)}
 ## This batch
 
-${mine.length} strings the English has just been corrected in. Translate the
-English as it stands now, from scratch. The keys say where each one lives:
+${draft ? `${mine.length} strings with no ${meta.name} translation yet. Translate each one from
+the English. The keys say where each one lives:` : `${mine.length} strings the English has just been corrected in. Translate the
+English as it stands now, from scratch. The keys say where each one lives:`}
 
 - "ui.…"                short interface text: buttons, labels, headings, short
                         lines on a phone screen. Keep them SHORT. Some contain
@@ -209,7 +219,7 @@ Write the translated JSON object, the same ${mine.length} keys, to:
 ${outRel}
 `;
     fs.writeFileSync(path.join(PROMPTS, `${lang}.keys.${tag}.md`), prompt);
-    fs.writeFileSync(expectPath(lang, tag), JSON.stringify({ tag, lang, keys: input, srcHash }, null, 2) + '\n');
+    fs.writeFileSync(expectPath(lang, tag), JSON.stringify({ tag, lang, draft, keys: input, srcHash }, null, 2) + '\n');
     if (before[lang] !== prompt) fs.rmSync(path.join(ROOT, outRel), { force: true });
     made.push(`${lang}:${mine.length}`);
   }

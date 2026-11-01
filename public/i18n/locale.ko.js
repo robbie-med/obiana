@@ -658,7 +658,11 @@ window.MYOB_LOCALES.ko = {
       "labor": "진통과<br>분만",
       "recovery": "산후<br>회복",
       "baby": "우리<br>신생아",
-      "toolsTrackers": "도구 및<br>기록"
+      "toolsTrackers": "도구 및<br>기록",
+      "today": "오늘",
+      "guide": "안내",
+      "urgent": "연락할 때",
+      "me": "나"
     },
     "usNotice": {
       "title": "미국에서의 진료 안내",
@@ -688,6 +692,127 @@ window.MYOB_LOCALES.ko = {
       "sizeLarger": "더 크게",
       "language": "언어",
       "darkMode": "다크 모드"
+    },
+    "urgent": {
+      "title": "연락해야 할 때",
+      "call911": "911에 전화",
+      "callLd": "분만실에 전화",
+      "addLd": "나 메뉴에 분만실 번호를 추가하세요.",
+      "tellThem": "지난 1년 안에 출산하셨다면, 전화하거나 만나는 사람 누구에게든 알리세요. 의료진이 모르면 출산 후의 심각한 문제를 놓치는 경우가 있습니다.",
+      "helpLines": "상담 전화: 무료, 언제든지",
+      "line988": "스스로를 해치고 싶은 생각이 들거나 위기 상황이라면: 988(자살 예방 및 위기 상담 전화)로 전화나 문자를 하세요.",
+      "lineMama": "임신 중이나 출산 후에 우울하거나 불안하거나 벅차다면: 전국 모성 정신건강 상담 전화(National Maternal Mental Health Hotline), 1-833-TLC-MAMA (1-833-852-6262). 전화나 문자. 여러 언어 통역 가능.",
+      "linePoison": "본인이나 아기가 무언가를 삼켰다면: 독극물 통제 센터(Poison Control), 1-800-222-1222.",
+      "lineDv": "집이 안전하지 않다면: 전국 가정폭력 상담 전화(National Domestic Violence Hotline), 1-800-799-7233, 또는 88788로 START를 문자로 보내세요.",
+      "call": "전화",
+      "text": "문자"
+    },
+    "today": {
+      "whereNow": "지금 어느 단계인가요?",
+      "pregnant": "임신 중이에요",
+      "dueLabel": "출산 예정일",
+      "babyHere": "아기가 태어났어요",
+      "bornLabel": "아기 생일",
+      "save": "다음 할 일 보기",
+      "savedOnPhone": "이 정보는 휴대전화에만 저장됩니다. 나 메뉴에서 언제든 바꿀 수 있습니다.",
+      "week": "{week}주",
+      "due": "예정일 {date}",
+      "babyDays": {
+        "other": "아기가 태어난 지 {count}일"
+      },
+      "babyWeeks": {
+        "other": "아기가 태어난 지 {count}주"
+      },
+      "visitsNow": "지금 진료에서",
+      "comingUp": "다음 일정",
+      "allVisits": "모든 진료, 주별로 보기",
+      "toolsNow": "지금 유용한 도구",
+      "changeDates": "날짜 바꾸기"
+    },
+    "visits": {
+      "title": "주별 진료 일정",
+      "sub": "진료마다 무엇을 하는지, 무엇을 직접 정하는지",
+      "lead": "미국의 일반적인 일정입니다. 본인의 일정은 다를 수 있습니다. 필요하면 가정의학과 의사, 산부인과 의사 또는 조산사가 진료와 검사를 추가합니다.",
+      "afterBirth": "출산 후",
+      "yourChoice": "본인 선택",
+      "first": {
+        "when": "약 8–10주",
+        "title": "첫 진료",
+        "i1": "출산 예정일은 마지막 생리일을 기준으로 정하며, 초기 초음파를 함께 보는 경우가 많습니다.",
+        "i2": "혈액 검사: 혈액형과 Rh, 혈구 검사, 풍진과 수두 면역, B형과 C형 간염, HIV, 매독. 소변 검사, 그리고 클라미디아와 임질 검사.",
+        "i3": "이전 임신 때 당뇨가 있었거나 다른 위험 요인이 있으면 이른 당 검사를 합니다.",
+        "i4": "임신중독증(전자간증) 위험이 높다면, 12주부터 저용량 아스피린(하루 81 mg)이 그 위험을 낮춥니다. 본인에게 맞는지 물어보세요."
+      },
+      "genetic": {
+        "when": "10주부터",
+        "title": "아기를 위한 검사",
+        "i1": "10주부터 하는 혈액 검사(세포 유리 DNA)는 다운 증후군과 몇 가지 다른 질환을 선별합니다. 선별 검사는 진단이 아닙니다. 양성이 나오면 진단 검사를 권합니다.",
+        "i2": "보인자 검사는 낭포성 섬유증이나 척수성 근위축증 같은 질환의 유전자를 가지고 있는지 확인합니다.",
+        "i3": "이 검사들은 모두, 일부만, 또는 하나도 받지 않아도 됩니다."
+      },
+      "monthly": {
+        "when": "28주까지 4주마다",
+        "title": "정기 진료",
+        "i1": "혈압, 체중, 소변, 아기 심장 소리. 약 20주부터는 배 크기도 잽니다."
+      },
+      "anatomy": {
+        "when": "18–22주",
+        "title": "정밀 초음파",
+        "i1": "아기의 몸, 성장, 태반을 자세히 봅니다. 원하면 보통 성별도 알 수 있습니다."
+      },
+      "sugar": {
+        "when": "24–28주",
+        "title": "당 검사와 혈액 검사",
+        "i1": "단 음료를 마시고 한 시간 뒤 혈액 검사를 해서 임신성 당뇨를 확인합니다.",
+        "i2": "빈혈을 보는 혈구 검사와 매독 재검사.",
+        "i3": "혈액형이 Rh 음성이라면: 약 28주에 Rh 주사(RhoGAM)."
+      },
+      "tdap": {
+        "when": "27–36주",
+        "title": "백일해 예방 주사(Tdap)",
+        "i1": "엄마의 항체가 아기에게 전해져, 아기가 직접 예방 접종을 받기 전 첫 몇 달 동안 아기를 지켜 줍니다. 임신할 때마다 맞습니다."
+      },
+      "twoweekly": {
+        "when": "28주부터 2주마다",
+        "title": "진료가 잦아집니다",
+        "i1": "아기가 평소 어떻게 움직이는지 알아 두세요. 태동 세기는 선택 사항입니다. 아기가 평소보다 덜 움직이면 그날 바로 연락하세요. 다음 진료까지 기다리지 마세요.",
+        "i2": "고혈압이나 당뇨 같은 질환이 있으면, 아기를 추가로 확인하는 검사(비수축 검사나 초음파)가 보통 32주쯤 시작됩니다."
+      },
+      "rsv": {
+        "when": "32–36주, 9월부터 1월 사이",
+        "title": "아기를 위한 RSV 예방",
+        "i1": "32–36주에 엄마가 RSV 백신을 맞거나, 출생 후 아기가 항체 주사를 맞습니다. 둘 중 하나만, 둘 다는 아닙니다. 어느 쪽이든 아기가 첫 겨울에 RSV로 입원할 가능성을 낮춥니다."
+      },
+      "gbs": {
+        "when": "36–37주",
+        "title": "B군 연쇄상구균 검사와 아기 자세",
+        "i1": "질과 항문에서 면봉으로 검체를 채취합니다. 여성 약 4명 중 1명이 GBS를 가지고 있으며, 엄마에게는 해가 없습니다. 양성이면 진통 중에 정맥 항생제를 맞아 아기를 보호합니다.",
+        "i2": "아기 머리가 아래로 향해 있는지 확인합니다. 아기가 엉덩이부터 나오는 자세(둔위)라면, 아기를 돌리는 방법(외회전술)을 권유받거나 제왕절개를 계획할 수 있습니다.",
+        "i3": "출산 계획을 다시 확인하세요: 진통 완화, 누가 함께할지, 수유."
+      },
+      "weekly": {
+        "when": "36주부터 매주",
+        "title": "마지막 몇 주",
+        "i1": "38주부터 양막 박리를 권유받을 수 있습니다. 자궁경부를 손가락으로 쓸어 진통이 시작되도록 돕는 방법입니다.",
+        "i2": "39주부터 유도 분만을 권할 수 있습니다. 41주가 되면 아기의 위험이 높아지기 시작하므로 유도 분만을 권장합니다."
+      },
+      "ppBp": {
+        "when": "출산 후 3–10일",
+        "title": "혈압이 높았다면 혈압 확인",
+        "i1": "고혈압이나 임신중독증이 있었다면, 출산 후 3–10일 안에 혈압을 확인하세요. 임신중독증은 출산 후에 시작되거나 나빠질 수 있습니다."
+      },
+      "pp3": {
+        "when": "출산 후 3주 이내",
+        "title": "첫 확인",
+        "i1": "가정의학과 의사, 산부인과 의사 또는 조산사와 출혈, 통증, 수유, 기분, 잠에 대해 이야기하세요. 전화나 화상 통화로도 됩니다."
+      },
+      "ppFull": {
+        "when": "출산 후 12주 이내, 보통 4–6주",
+        "title": "산후 종합 진료",
+        "i1": "기분 확인, 피임, 회복 상태, 다음 임신 계획.",
+        "i2": "임신성 당뇨가 있었다면: 출산 후 4–12주에 당 검사를 하세요. 제2형 당뇨 위험은 평생 높게 유지되므로 1–3년마다 검사를 요청하세요.",
+        "i3": "소변이나 변이 새거나, 성관계 때 아프거나, 질에 무언가 튀어나온 느낌이 있다면 골반저 물리치료에 대해 물어보세요. 도움이 됩니다. 참고 살 필요가 없습니다."
+      }
     }
   },
   "content": {
@@ -2155,5 +2280,96 @@ window.MYOB_LOCALES.ko = {
     "content.prenatal-vitamins.t.10": "5be7a760570cdd4e",
     "content.prenatal-vitamins.t.11": "b240717212e31574",
     "content.prenatal-vitamins.t.12": "31df9755cd54b707"
+  },
+  "unreviewed": {
+    "urgent.title": 1,
+    "urgent.call911": 1,
+    "urgent.callLd": 1,
+    "urgent.addLd": 1,
+    "urgent.tellThem": 1,
+    "urgent.helpLines": 1,
+    "urgent.line988": 1,
+    "urgent.lineMama": 1,
+    "urgent.linePoison": 1,
+    "urgent.lineDv": 1,
+    "urgent.call": 1,
+    "urgent.text": 1,
+    "nav.today": 1,
+    "nav.guide": 1,
+    "nav.urgent": 1,
+    "nav.me": 1,
+    "today.whereNow": 1,
+    "today.pregnant": 1,
+    "today.dueLabel": 1,
+    "today.babyHere": 1,
+    "today.bornLabel": 1,
+    "today.save": 1,
+    "today.savedOnPhone": 1,
+    "today.week": 1,
+    "today.due": 1,
+    "today.babyDays": 1,
+    "today.babyWeeks": 1,
+    "today.visitsNow": 1,
+    "today.comingUp": 1,
+    "today.allVisits": 1,
+    "today.toolsNow": 1,
+    "today.changeDates": 1,
+    "visits.title": 1,
+    "visits.sub": 1,
+    "visits.lead": 1,
+    "visits.afterBirth": 1,
+    "visits.yourChoice": 1,
+    "visits.first.when": 1,
+    "visits.first.title": 1,
+    "visits.first.i1": 1,
+    "visits.first.i2": 1,
+    "visits.first.i3": 1,
+    "visits.first.i4": 1,
+    "visits.genetic.when": 1,
+    "visits.genetic.title": 1,
+    "visits.genetic.i1": 1,
+    "visits.genetic.i2": 1,
+    "visits.genetic.i3": 1,
+    "visits.monthly.when": 1,
+    "visits.monthly.title": 1,
+    "visits.monthly.i1": 1,
+    "visits.anatomy.when": 1,
+    "visits.anatomy.title": 1,
+    "visits.anatomy.i1": 1,
+    "visits.sugar.when": 1,
+    "visits.sugar.title": 1,
+    "visits.sugar.i1": 1,
+    "visits.sugar.i2": 1,
+    "visits.sugar.i3": 1,
+    "visits.tdap.when": 1,
+    "visits.tdap.title": 1,
+    "visits.tdap.i1": 1,
+    "visits.twoweekly.when": 1,
+    "visits.twoweekly.title": 1,
+    "visits.twoweekly.i1": 1,
+    "visits.twoweekly.i2": 1,
+    "visits.rsv.when": 1,
+    "visits.rsv.title": 1,
+    "visits.rsv.i1": 1,
+    "visits.gbs.when": 1,
+    "visits.gbs.title": 1,
+    "visits.gbs.i1": 1,
+    "visits.gbs.i2": 1,
+    "visits.gbs.i3": 1,
+    "visits.weekly.when": 1,
+    "visits.weekly.title": 1,
+    "visits.weekly.i1": 1,
+    "visits.weekly.i2": 1,
+    "visits.ppBp.when": 1,
+    "visits.ppBp.title": 1,
+    "visits.ppBp.i1": 1,
+    "visits.pp3.when": 1,
+    "visits.pp3.title": 1,
+    "visits.pp3.i1": 1,
+    "visits.ppFull.when": 1,
+    "visits.ppFull.title": 1,
+    "visits.ppFull.i1": 1,
+    "visits.ppFull.i2": 1,
+    "visits.ppFull.i3": 1
   }
 };
