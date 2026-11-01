@@ -11,7 +11,7 @@ clinical correction in English never reaches another language by itself.
 Sessions, one per fresh session: A setup, B §2, C §1, D/E §3, F §4 (background) + §5 one card at a time, G §6, H §7.
 Ticks are the status: tick an item in the commit that ships it. New findings go to "Found while working" at the end, not fixed on the spot.
 - [x] Checkboxes in this file.
-- [ ] `scripts/preflight.sh`: the gate before every push.
+- [x] `scripts/preflight.sh`: the gate before every push.
 - [ ] `scripts/hooks/pre-push` runs preflight on exactly what is pushed, and only lets `obiana-main` → `obiana/main` through.
 - [ ] Key-list re-translate mode: `bash translation/run-kimi.sh --keys <file> [lang…]`, then `node translation/merge.js --keys <tag>`.
 - [ ] `translation/merge.js` pt-BR fix (the §2 item).
