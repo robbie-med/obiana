@@ -64,6 +64,16 @@ const CONTENT_STRUCTURE = {
       "color": ""
     },
     {
+      "id": "preterm-labor",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--teal)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 7v5l3 3\" /> <path d=\"M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0\" /></svg>",
+      "color": ""
+    },
+    {
+      "id": "cholestasis",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--teal)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M8 13v-7.5a1.5 1.5 0 0 1 3 0v6.5\" /> <path d=\"M11 5.5v-2a1.5 1.5 0 1 1 3 0v8.5\" /> <path d=\"M14 5.5a1.5 1.5 0 0 1 3 0v6.5\" /> <path d=\"M17 7.5a1.5 1.5 0 0 1 3 0v8.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7a69.74 69.74 0 0 1 -.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47\" /></svg>",
+      "color": ""
+    },
+    {
       "id": "antenatal-mental-health",
       "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--teal)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M15.5 13a3.5 3.5 0 0 0 -3.5 3.5v1a3.5 3.5 0 0 0 7 0v-1.8\" /> <path d=\"M8.5 13a3.5 3.5 0 0 1 3.5 3.5v1a3.5 3.5 0 0 1 -7 0v-1.8\" /> <path d=\"M17.5 16a3.5 3.5 0 0 0 0 -7h-.5\" /> <path d=\"M19 9.3v-2.8a3.5 3.5 0 0 0 -7 0\" /> <path d=\"M6.5 16a3.5 3.5 0 0 1 0 -7h.5\" /> <path d=\"M5 9.3v-2.8a3.5 3.5 0 0 1 7 0v10\" /></svg>",
       "color": ""

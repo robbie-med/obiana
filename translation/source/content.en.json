@@ -925,6 +925,41 @@
       "Usually in the first week, with the same warning signs. If they turn up once you are home, call your doctor or go to the emergency room. Don't save it for the postpartum appointment."
     ]
   },
+  "preterm-labor": {
+    "title": "Early (Preterm) Labor",
+    "sub": "Signs before 37 weeks, and what happens when you go in",
+    "t": [
+      "Labor before 37 weeks is early, or preterm. About 1 in 10 babies in the US are born early. Getting care fast gives your team time to help your baby.",
+      "Go to labor and delivery now if you have any of these before 37 weeks",
+      "Tightening or contractions every 10 minutes or more often, which is 6 or more in an hour · Cramps like a period · A low, dull backache that comes and goes · Pressure in your pelvis, like the baby is pushing down · Fluid leaking from your vagina · Bleeding or spotting · Discharge that changes and becomes watery, mucus-like or bloody",
+      "Do not wait to see if it goes away. If you are not sure what you are feeling, call your family doctor, OB or midwife, or call labor and delivery.",
+      "What happens when you go in",
+      "The nurse watches your contractions and your baby's heartbeat, and your cervix is checked. You may have a swab test (fetal fibronectin) or an ultrasound that measures your cervix. Many women who go in with these signs turn out not to be in labor and go home the same day. That is a good visit, not a wasted one.",
+      "If labor is really starting early",
+      "Before 34 weeks, 2 steroid shots given a day apart help the baby's lungs and lower the chance of serious problems after birth. Before 32 weeks, magnesium through your IV helps protect the baby's brain. Medicine to slow contractions may be given for about 2 days so the steroids have time to work. You will also get antibiotics if your GBS result is positive or not known yet.",
+      "Who is more likely to go into labor early",
+      "A preterm birth before · A short cervix seen on ultrasound · Twins or more · Getting pregnant less than 18 months after your last birth · Smoking · Bleeding in pregnancy · High blood pressure or diabetes",
+      "What helps, and what doesn't",
+      "If your cervix is short on the anatomy ultrasound, vaginal progesterone lowers the chance of an early birth. Some women with a past preterm birth are offered a stitch in the cervix (cerclage). Bed rest does not prevent early labor, and it raises the risk of blood clots."
+    ]
+  },
+  "cholestasis": {
+    "title": "Itching and Cholestasis",
+    "sub": "Normal itching, and the liver condition worth a blood test",
+    "t": [
+      "Some itching in pregnancy is normal, from stretching skin or dry skin. Itching on your palms and the soles of your feet, often worse at night and with no rash, can be a sign of a liver condition called cholestasis of pregnancy (ICP).",
+      "Call your family doctor, OB or midwife if you have",
+      "Itching on your palms or soles · Itching all over that keeps you awake · Dark urine or pale stools · Yellow skin or eyes",
+      "What cholestasis is",
+      "The liver slows the flow of bile, and bile acids build up in your blood. It affects about 1 in 100 to 1 in 200 pregnancies in the US, more often in Latina women and in pregnancies with twins. It usually starts after 30 weeks. It is not dangerous for you, but very high bile acids raise the chance of stillbirth, which is why it is worth a blood test.",
+      "Testing and treatment",
+      "A blood test for bile acids and liver tests. If you have it, the test is usually repeated every week or two. A medicine called ursodiol can ease the itching a little; it has not been shown to protect the baby. Cool showers, loose cotton clothes and moisturizer help the skin.",
+      "Timing of birth",
+      "Because the risk to the baby rises late in pregnancy, your team will plan delivery early: at about 36 weeks if bile acids are 100 or higher, and usually between 36 and 39 weeks otherwise, depending on your levels.",
+      "After the birth",
+      "The itching usually goes away within days to a few weeks. It often comes back in a later pregnancy, and birth control with estrogen can bring it back, so tell your doctors you had it."
+    ]
+  },
   "antenatal-mental-health": {
     "title": "Mental Health During Pregnancy",
     "sub": "Anxiety, depression, and medications",
