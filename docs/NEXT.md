@@ -84,6 +84,17 @@ Don't build a second tool beside it.
   - preterm labor
   - itching/cholestasis
 
+  Then split **Common Discomforts** into cards (one session; your clinical review of the drafts before merge). Each card: why it happens, what to try first, over-the-counter medicines that are fine in pregnancy, when to call. Warning-sign cards first:
+  - Peeing: more often, leaking, or burning (UTI; fever with back or side pain is a kidney infection, go in)
+  - Headaches, stuffy nose, nosebleeds, bleeding gums (a headache that won't go away is a preeclampsia sign: point to it)
+  - Constipation and hemorrhoids (fiber toward 25–30 g a day, water, walking, footstool, less-iron vitamin; psyllium or methylcellulose, then MiraLAX; Colace safe but weak; senna or bisacodyl now and then; no mineral or castor oil; witch hazel, sitz bath, short hydrocortisone. Call for more than streaks of blood, a hard very painful lump, bad belly pain or vomiting, days without a bowel movement with cramping)
+  - Heartburn
+  - Back, hip and round ligament pain
+  - Sleep and leg cramps
+  - Swelling and varicose veins
+
+  Itching stays with the cholestasis card above. Retire `common-discomforts` (check.js allows removing a whole card; old links land on Prenatal). Move each existing sentence to its new card with its translation and fingerprint, so es/fr/ko keep what they have; translate only new or changed sentences. Point physical-recovery's hemorrhoid/constipation lines at the new card. Clears the discomfort `[gap]` and `[twice]` lines in `docs/CONTENT_MAP.md`.
+
   Then:
   - crying/never shake
   - safety at home
@@ -156,3 +167,4 @@ Don't build a second tool beside it.
 - **Done 2026-11-01 (user report):** Me has a Settings section: text size (zooms the reading area; the stylesheet is in px), language, dark mode, and the tap-to-suggest switch.
 - **Done 2026-11-01 (user report):** plain-voice pass. Removed every small subtitle (tool cards, Me, Today's When to call button, Home hero, the Tools note) and the "who says so" sources line; rewrote the disclaimers, privacy line, machine-translation notice, US-care notice, Help Improve copy and print footers. Zomi keeps its old wording for the two notices it had.
 - Still to look at for the same voice: guide card subtitles (`content.<id>.sub`) under every card title.
+- **Done 2026-11-01 (user report):** British English in the English source ("centre", "anaemia", "grey", "travelling", "towards", "in hospital", "straight away", "late on", "a great deal", "a litre a day" → "32 ounces (1 liter)"). check.js now fails on British spelling, idiom and UK units in `locale.en.js`. The one translated sentence affected (prenatal-vitamins t3, spelling only) was re-stamped in es/fr/ko rather than re-translated.

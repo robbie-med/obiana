@@ -2147,7 +2147,7 @@ window.MYOB_LOCALES.fr = {
     "content.prenatal-vitamins.t.0": "cecdc7bf46ea9625",
     "content.prenatal-vitamins.t.1": "80c6ea991d55ecd7",
     "content.prenatal-vitamins.t.2": "cbdc0e9b697c26fd",
-    "content.prenatal-vitamins.t.3": "9e19f20ef24da0cc",
+    "content.prenatal-vitamins.t.3": "7734a7795baeb973",
     "content.prenatal-vitamins.t.4": "dcc1f16da48a3bbf",
     "content.prenatal-vitamins.t.5": "8133c418e652d012",
     "content.prenatal-vitamins.t.6": "eb2d0eebbb191ff9",

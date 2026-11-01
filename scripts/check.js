@@ -98,6 +98,22 @@ function precacheGuard() {
   return `${wanted.length} files`;
 }
 
+// ─── US English ─────────────────────────────────────────
+// The readers get their care in the US, so the English is American: spelling,
+// idiom and units. These have all slipped in before.
+const BRITISH = /\b(centre|colour\w*|favour\w*|behaviour\w*|labour\w*|anaemi\w*|haemo\w*|oedema|foetus|paediatr\w*|oestrogen|diarrhoea|gynaecolog\w*|caesarean|manoeuvre|grey|litres?|metres?|fibre|towards|travell\w*|whilst|amongst|programme|practise|ageing|judgement|mum|mums|nappy|nappies|paracetamol|in hospital|straight away|late on|a great deal|fortnight|(?:organ|recogn|real|minim|emphas|apolog|summar|priorit|visual|stabil|steril|special)is(?:e|ed|es|ing|ation))\b/i;
+function usEnglishGuard() {
+  const src = fs.readFileSync(path.join(P.web, 'i18n', 'locale.en.js'), 'utf8');
+  const bad = [];
+  src.split('\n').forEach((line, i) => {
+    if (/^\s*\/\//.test(line)) return;
+    const m = BRITISH.exec(line);
+    if (m) bad.push(`locale.en.js:${i + 1} "${m[0]}"`);
+  });
+  if (bad.length) { console.log('\n  British English: ' + bad.join(', ')); return false; }
+  return 'no British spelling or idiom';
+}
+
 // ─── Stub DOM ───────────────────────────────────────────
 // A Proxy that absorbs any property read, write or call, so top-level DOM code
 // in the runtime files executes without a browser. Elements fetched by id are
@@ -280,6 +296,7 @@ function compare(baseDir, out) {
   step('translation fingerprints', () => runNode('stamp.js', 'verify'));
   step('card slot ids', slotGuard);
   step('index.html assets precached', precacheGuard);
+  step('US English', usEnglishGuard);
   let result;
   process.stdout.write('• render every card, ui string and tool in every locale ... ');
   try {

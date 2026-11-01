@@ -310,7 +310,7 @@ window.MYOB_LOCALES.en = {
         "day14": "2-week visit. Jaundice should be resolved in term babies. Persistent jaundice beyond 2 weeks may need further evaluation. Tell your doctor.",
         "day21": "Jaundice lasting beyond 3 weeks is considered prolonged and should be evaluated. Breastfed babies can have mild jaundice longer, but it still needs to be checked.",
         "dayWatch": "Day {day}. What to watch for",
-        "redFlags": "Baby won't wake to feed · Deeply yellow skin spreading to legs · Arching back or high-pitched cry · White or grey stools · Very dark urine"
+        "redFlags": "Baby won't wake to feed · Deeply yellow skin spreading to legs · Arching back or high-pitched cry · White or gray stools · Very dark urine"
       },
       "bp": {
         "logBloodPressure": "+ Log Blood Pressure",
@@ -830,7 +830,7 @@ window.MYOB_LOCALES.en = {
       "rsv": {
         "when": "32–36 weeks, September to January",
         "title": "RSV protection for the baby",
-        "i1": "Either an RSV vaccine for you at 32 to 36 weeks, or an antibody shot for the baby after birth. One or the other, not both. Each lowers the chance that the baby ends up in hospital with RSV in their first winter."
+        "i1": "Either an RSV vaccine for you at 32 to 36 weeks, or an antibody shot for the baby after birth. One or the other, not both. Each lowers the chance that the baby ends up in the hospital with RSV in their first winter."
       },
       "gbs": {
         "when": "36–37 weeks",
@@ -1569,10 +1569,10 @@ window.MYOB_LOCALES.en = {
         "Tdap, for whooping cough",
         "Given between 27 and 36 weeks, in every pregnancy, even if you had it in the last one. The main point is not to protect you. Your body makes antibodies and passes them across the placenta, so the baby is born already carrying protection against whooping cough. That matters because whooping cough is most dangerous in the first months of life, before a baby is old enough to be vaccinated. Anyone who will be holding the baby regularly should be up to date too.",
         "Flu shot",
-        "Recommended in any trimester during flu season. Pregnancy changes how your lungs and immune system work, which makes flu considerably more likely to put you in hospital. The antibodies cross to the baby as well and cover the first few months. The injected vaccine is the one used in pregnancy: the nasal spray is a live vaccine.",
+        "Recommended in any trimester during flu season. Pregnancy changes how your lungs and immune system work, which makes flu considerably more likely to put you in the hospital. The antibodies cross to the baby as well and cover the first few months. The injected vaccine is the one used in pregnancy: the nasal spray is a live vaccine.",
         "The ones that wait until after delivery",
         "Live vaccines, meaning MMR (measles, mumps and rubella) and varicella (chickenpox), are not given during pregnancy. If your early bloodwork shows you are not immune to rubella or chickenpox, the usual plan is to vaccinate before you leave the hospital, which also protects a future pregnancy. Both are safe while breastfeeding.",
-        "If you are behind on something else, or you are travelling, or there is an outbreak where you live, tell your doctor."
+        "If you are behind on something else, or you are traveling, or there is an outbreak where you live, tell your doctor."
       ]
     },
     "faq-eat-for-two": {
@@ -1611,7 +1611,7 @@ window.MYOB_LOCALES.en = {
       "title": "If my water breaks, do I have to have a C-section?",
       "sub": "",
       "t": [
-        "No. If your water breaks at term, most women go into labor on their own within about a day. If labor does not start, induction is usually offered, because the chance of infection climbs the longer the membranes are open. That is a rising risk to weigh together, not a deadline you have missed. If you are GBS-positive, antibiotics are started straight away. A C-section is only needed if there is a separate reason for one, and water breaking by itself is not one."
+        "No. If your water breaks at term, most women go into labor on their own within about a day. If labor does not start, induction is usually offered, because the chance of infection climbs the longer the membranes are open. That is a rising risk to weigh together, not a deadline you have missed. If you are GBS-positive, antibiotics are started right away. A C-section is only needed if there is a separate reason for one, and water breaking by itself is not one."
       ]
     },
     "faq-eat-in-labor": {
@@ -1694,7 +1694,7 @@ window.MYOB_LOCALES.en = {
         "Folic acid.",
         "You should be taking folic acid if there is a chance you could be or could get pregnant. Taking 400 to 800 mcg daily before conception and through early pregnancy substantially reduces neural tube defects. That protection happens in the first weeks, often before a pregnancy is confirmed.",
         "Iron",
-        "supports the large increase in your blood volume and helps prevent anaemia.",
+        "supports the large increase in your blood volume and helps prevent anemia.",
         "Iodine, vitamin D, calcium and DHA",
         "are commonly included and reasonable.",
         "If the vitamin makes you nauseated",
@@ -1794,13 +1794,13 @@ window.MYOB_LOCALES.en = {
       "t": [
         "None of these are dangerous. All of them are miserable.",
         "Heartburn",
-        "Very common, and worst late on when there is simply no room left. Smaller meals, nothing within three hours of lying down, and raising the head of the bed rather than stacking pillows, which mostly bends you in the middle. Calcium carbonate antacids such as Tums are safe and count towards your calcium. If that is not enough, ask your doctor: famotidine and the proton pump inhibitors are both used in pregnancy.",
+        "Very common, and worst near the end when there is simply no room left. Smaller meals, nothing within three hours of lying down, and raising the head of the bed rather than stacking pillows, which mostly bends you in the middle. Calcium carbonate antacids such as Tums are safe and count toward your calcium. If that is not enough, ask your doctor: famotidine and the proton pump inhibitors are both used in pregnancy.",
         "Round ligament pain",
-        "A sharp catch low on one side when you stand up, roll over or cough, usually in the second trimester. The ligaments holding the uterus are stretching. Move into position more slowly, bend towards the pain when you cough, and try warmth. It is sharp but brief. Pain that stays, or arrives with bleeding, fever or regular tightening, is something to call your doctor about (or go the the emergency department if you are bleeding).",
+        "A sharp catch low on one side when you stand up, roll over or cough, usually in the second trimester. The ligaments holding the uterus are stretching. Move into position more slowly, bend toward the pain when you cough, and try warmth. It is sharp but brief. Pain that stays, or arrives with bleeding, fever or regular tightening, is something to call your doctor about (or go the the emergency department if you are bleeding).",
         "Hemorrhoids and constipation",
         "These two travel together. Water, fiber and moving around are the first line. Witch hazel pads and a sitz bath help the symptoms. Do not sit and strain on the toilet. A footstool that raises your knees changes the angle and makes a real difference. Most improve after delivery.",
         "Back and pelvic pain",
-        "Your centre of gravity has moved forward and the ligaments have softened. A maternity support belt helps some people a great deal. So does not standing propped on one hip, a pillow between the knees at night, and flat shoes. Physical therapy exists for this but you will probably need to ask for a referral.",
+        "Your center of gravity has moved forward and the ligaments have softened. A maternity support belt helps some people a lot. So does not standing propped on one hip, a pillow between the knees at night, and flat shoes. Physical therapy exists for this but you will probably need to ask for a referral.",
         "Sleep",
         "Side sleeping is advised in the second half, and the left side gets mentioned most, but either side is fine. What matters is not spending long stretches flat on your back. If you wake up on your back, just turn over. A pillow wedged behind you stops you rolling back. Night-time leg cramps respond to stretching the calf and to staying hydrated, and magnesium supplementation if you need it.",
         "Swelling",
@@ -1828,7 +1828,7 @@ window.MYOB_LOCALES.en = {
       "t": [
         "Breast milk is low in vitamin D in almost everyone. It is a known gap with a simple fix.",
         "What is recommended",
-        "400 IU of vitamin D daily, starting in the first few days, for any baby who is breastfed or having mostly breast milk. It carries on until the baby is taking about a litre a day of formula or, later, fortified milk, because those are already supplemented.",
+        "400 IU of vitamin D daily, starting in the first few days, for any baby who is breastfed or having mostly breast milk. Keep giving it until the baby drinks about 32 ounces (1 liter) a day of formula or, later, fortified milk, because those already have vitamin D added.",
         "A formula-fed baby taking a full quantity does not need extra. Combination feeding usually still does, since it depends how much formula is actually going in.",
         "Why it matters",
         "Vitamin D is what allows the body to absorb calcium and build bone. Real deficiency causes rickets, which is uncommon but has not gone away, and is more likely in babies with darker skin, at northern latitudes, and over the winter.",
