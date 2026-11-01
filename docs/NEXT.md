@@ -71,7 +71,7 @@ Don't build a second tool beside it.
 - [ ] Machine-draft through the existing `translation/` pipeline, in this order:
   1. When to call, Today, Visits and the tab names, all languages. **Done 2026-11-01 (session F)** for all 15 languages except Zomi (`translation/keys/f4a.txt`, `f4b.txt`): es/fr/ko 89 strings, ar/ru/zh 102 (with the When-to-call card sentences, in new card shells), the nine smaller locales 121.
   2. The 9 cards es/fr/ko are missing (preeclampsia, antenatal mental health, alcohol, tobacco/cannabis, fish, car seat, vitamin D, circumcision, common discomforts). **Done 2026-11-01** for 8 of them (`translation/keys/f4c.txt`); common discomforts waits for its §5 split.
-  3. ar/ru/zh cards.
+  3. ar/ru/zh cards. **Done 2026-11-01** (`translation/keys/f4e`, `f4h`, `f4i`, `f4k`, `f4l`): every card but common discomforts. es/fr/ko also got the sentences appended to existing cards since their translation (`f4m`). All six now: 730 current, 0 stale, only common discomforts untranslated.
   4. The rest.
 - [x] Every machine-drafted key is stamped **unreviewed** by `merge.js` (alongside its source fingerprint). The Translate page already reads it as a top-level `unreviewed` map in the locale, keyed like `/api/suggest` keys (bare ui path, `content.<id>.t.<n>`), e.g. `"unreviewed": {"content.mfm.t.3": 1}`. Drafts are live for readers; the stamp only orders them on the Translate page. A translator's Send or Looks right clears it.
 - [ ] Translators correct the drafts on the Translate page.

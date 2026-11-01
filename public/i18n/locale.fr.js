@@ -1269,7 +1269,8 @@ window.MYOB_LOCALES.fr = {
         "Allez aux urgences ou appelez le 911 en cas de",
         "Douleur à la poitrine ou difficulté à respirer · Convulsions · Maux de tête soudains et violents, différents de tout ce que vous avez connu · Symptômes d'AVC (visage qui tombe, faiblesse d'un bras, parole pâteuse) · Pensées de vous faire du mal ou d'en faire à votre bébé",
         "Appelez votre médecin de famille, votre obstétricien ou votre sage-femme en cas de",
-        "Fièvre &gt;100.4°F · Une serviette hygiénique trempée en une heure · Maux de tête sévères non soulagés par l'ibuprofène/paracétamol (Tylenol) · Troubles de la vision · Rougeur, gonflement ou chaleur d'une jambe (TVP) · Ouverture de la plaie, rougeur qui s'étend ou présence de pus · Difficulté à uriner · Signes de PPD ou d'anxiété"
+        "Fièvre &gt;100.4°F · Une serviette hygiénique trempée en une heure · Maux de tête sévères non soulagés par l'ibuprofène/paracétamol (Tylenol) · Troubles de la vision · Rougeur, gonflement ou chaleur d'une jambe (TVP) · Ouverture de la plaie, rougeur qui s'étend ou présence de pus · Difficulté à uriner · Signes de PPD ou d'anxiété",
+        "Le calendrier de vos rendez-vous après la naissance, et les questions à apporter à la visite des six semaines, se trouvent dans la fiche Rendez-vous de suivi, sous Bébé, à côté des rendez-vous de votre bébé, pour voir les deux ensemble."
       ]
     },
     "breastfeeding": {
@@ -1521,7 +1522,14 @@ window.MYOB_LOCALES.fr = {
       "title": "Les vaccins sont-ils sûrs pendant la grossesse ?",
       "sub": "",
       "t": [
-        "Deux sont recommandés à chaque grossesse et semblent sans danger : le rappel Tdap et le vaccin contre la grippe. Les vaccins vivants doivent attendre après l'accouchement."
+        "Deux sont recommandés à chaque grossesse et semblent sans danger : le rappel Tdap et le vaccin contre la grippe. Les vaccins vivants doivent attendre après l'accouchement.",
+        "Tdap, contre la coqueluche",
+        "Fait entre 27 et 36 semaines, à chaque grossesse, même si vous l'avez eu lors de la précédente. Le but principal n'est pas de vous protéger. Votre corps fabrique des anticorps et les fait passer par le placenta, donc le bébé naît déjà protégé contre la coqueluche. C'est important, car la coqueluche est la plus dangereuse dans les premiers mois de vie, avant que le bébé soit assez grand pour être vacciné. Toute personne qui portera souvent le bébé devrait aussi être à jour.",
+        "Vaccin contre la grippe",
+        "Recommandé à n'importe quel trimestre pendant la saison de la grippe. La grossesse change le fonctionnement des poumons et de l'immunité, ce qui rend une hospitalisation pour la grippe bien plus probable. Les anticorps passent aussi au bébé et le protègent les premiers mois. Pendant la grossesse, on utilise le vaccin injectable : le spray nasal est un vaccin vivant.",
+        "Ceux qui attendent après l'accouchement",
+        "Les vaccins vivants, c'est-à-dire le ROR (rougeole, oreillons, rubéole) et celui de la varicelle, ne sont pas faits pendant la grossesse. Si vos premières prises de sang montrent que vous n'êtes pas immunisée contre la rubéole ou la varicelle, on vous vaccine en général avant la sortie de l'hôpital, ce qui protège aussi une future grossesse. Les deux sont sans danger pendant l'allaitement.",
+        "Si vous êtes en retard sur un autre vaccin, si vous voyagez ou s'il y a une épidémie là où vous vivez, parlez-en à votre médecin."
       ]
     },
     "faq-eat-for-two": {
@@ -2503,7 +2511,15 @@ window.MYOB_LOCALES.fr = {
     "content.circumcision.t.5": "2d62b3babd67ab3c",
     "content.circumcision.t.6": "0f49a9344a26fe2a",
     "content.circumcision.t.7": "51bb2ecb4d379d51",
-    "content.circumcision.t.8": "f7774e648f8e13da"
+    "content.circumcision.t.8": "f7774e648f8e13da",
+    "content.postpartum-danger.t.4": "0a1264f55f4a42c3",
+    "content.faq-vaccines.t.1": "2cc75b12a1fc2494",
+    "content.faq-vaccines.t.2": "1038f5417eda7317",
+    "content.faq-vaccines.t.3": "de4ce992cde7736c",
+    "content.faq-vaccines.t.4": "fc3cba8b30791ee5",
+    "content.faq-vaccines.t.5": "8e2d5dd7b662e6cd",
+    "content.faq-vaccines.t.6": "1fbad66cf49cff52",
+    "content.faq-vaccines.t.7": "bd443dcd8ee958d3"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -2687,6 +2703,14 @@ window.MYOB_LOCALES.fr = {
     "content.circumcision.t.5": 1,
     "content.circumcision.t.6": 1,
     "content.circumcision.t.7": 1,
-    "content.circumcision.t.8": 1
+    "content.circumcision.t.8": 1,
+    "content.postpartum-danger.t.4": 1,
+    "content.faq-vaccines.t.1": 1,
+    "content.faq-vaccines.t.2": 1,
+    "content.faq-vaccines.t.3": 1,
+    "content.faq-vaccines.t.4": 1,
+    "content.faq-vaccines.t.5": 1,
+    "content.faq-vaccines.t.6": 1,
+    "content.faq-vaccines.t.7": 1
   }
 };

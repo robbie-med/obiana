@@ -1268,7 +1268,8 @@ window.MYOB_LOCALES.es = {
         "Vaya a la sala de emergencias o llame al 911 si tiene",
         "Dolor en el pecho o dificultad para respirar · Convulsiones · Dolor de cabeza repentino e intenso, distinto a cualquier otro · Síntomas de derrame cerebral (cara caída, debilidad en un brazo, dificultad para hablar) · Pensamientos de hacerse daño a sí misma o a su bebé",
         "Llame a su médico de familia, obstetra o partera si tiene",
-        "Fiebre &gt;100.4°F · Empapa 1 toalla sanitaria en una hora · Dolor de cabeza intenso que no se alivia con ibuprofeno/Tylenol · Cambios en la visión · Enrojecimiento, hinchazón o calor en una pierna (DVT, coágulo en una vena profunda) · Herida que se abre, enrojecimiento que se extiende o pus · Dificultad para orinar · Signos de PPD o ansiedad"
+        "Fiebre &gt;100.4°F · Empapa 1 toalla sanitaria en una hora · Dolor de cabeza intenso que no se alivia con ibuprofeno/Tylenol · Cambios en la visión · Enrojecimiento, hinchazón o calor en una pierna (DVT, coágulo en una vena profunda) · Herida que se abre, enrojecimiento que se extiende o pus · Dificultad para orinar · Signos de PPD o ansiedad",
+        "El calendario de sus consultas de posparto, y las preguntas que vale la pena llevar a la consulta de las seis semanas, están en la tarjeta de Citas de seguimiento en la sección Bebé, junto a las consultas de su bebé, para que vea las dos cosas juntas."
       ]
     },
     "breastfeeding": {
@@ -1520,7 +1521,14 @@ window.MYOB_LOCALES.es = {
       "title": "¿Son seguras las vacunas durante el embarazo?",
       "sub": "",
       "t": [
-        "Dos se recomiendan en cada embarazo y parecen ser seguras: el refuerzo Tdap y la vacuna de la gripe. Las vacunas vivas tienen que esperar hasta después del parto."
+        "Dos se recomiendan en cada embarazo y parecen ser seguras: el refuerzo Tdap y la vacuna de la gripe. Las vacunas vivas tienen que esperar hasta después del parto.",
+        "Tdap, contra la tos ferina",
+        "Se pone entre las 27 y 36 semanas, en cada embarazo, aunque se la hayan puesto en el anterior. Lo principal no es protegerla a usted. Su cuerpo produce anticuerpos y los pasa por la placenta, así que el bebé nace ya con protección contra la tos ferina. Eso importa porque la tos ferina es más peligrosa en los primeros meses de vida, antes de que el bebé tenga edad para vacunarse. Todos los que vayan a cargar al bebé con frecuencia también deben estar al día.",
+        "Vacuna contra la gripe",
+        "Se recomienda en cualquier trimestre durante la temporada de gripe. El embarazo cambia cómo funcionan sus pulmones y su sistema inmune, y eso hace mucho más probable que la gripe la lleve al hospital. Los anticuerpos también pasan al bebé y lo protegen los primeros meses. En el embarazo se usa la vacuna inyectada: el aerosol nasal es una vacuna viva.",
+        "Las que esperan hasta después del parto",
+        "Las vacunas vivas, es decir, la MMR (sarampión, paperas y rubéola) y la de la varicela, no se ponen durante el embarazo. Si sus primeros análisis muestran que no tiene inmunidad a la rubéola o la varicela, lo habitual es vacunarla antes de salir del hospital, lo que también protege un embarazo futuro. Las dos son seguras durante la lactancia.",
+        "Si le falta alguna otra vacuna, si va a viajar o si hay un brote donde vive, dígaselo a su médico."
       ]
     },
     "faq-eat-for-two": {
@@ -2502,7 +2510,15 @@ window.MYOB_LOCALES.es = {
     "content.circumcision.t.5": "2d62b3babd67ab3c",
     "content.circumcision.t.6": "0f49a9344a26fe2a",
     "content.circumcision.t.7": "51bb2ecb4d379d51",
-    "content.circumcision.t.8": "f7774e648f8e13da"
+    "content.circumcision.t.8": "f7774e648f8e13da",
+    "content.postpartum-danger.t.4": "0a1264f55f4a42c3",
+    "content.faq-vaccines.t.1": "2cc75b12a1fc2494",
+    "content.faq-vaccines.t.2": "1038f5417eda7317",
+    "content.faq-vaccines.t.3": "de4ce992cde7736c",
+    "content.faq-vaccines.t.4": "fc3cba8b30791ee5",
+    "content.faq-vaccines.t.5": "8e2d5dd7b662e6cd",
+    "content.faq-vaccines.t.6": "1fbad66cf49cff52",
+    "content.faq-vaccines.t.7": "bd443dcd8ee958d3"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -2686,6 +2702,14 @@ window.MYOB_LOCALES.es = {
     "content.circumcision.t.5": 1,
     "content.circumcision.t.6": 1,
     "content.circumcision.t.7": 1,
-    "content.circumcision.t.8": 1
+    "content.circumcision.t.8": 1,
+    "content.postpartum-danger.t.4": 1,
+    "content.faq-vaccines.t.1": 1,
+    "content.faq-vaccines.t.2": 1,
+    "content.faq-vaccines.t.3": 1,
+    "content.faq-vaccines.t.4": 1,
+    "content.faq-vaccines.t.5": 1,
+    "content.faq-vaccines.t.6": 1,
+    "content.faq-vaccines.t.7": 1
   }
 };

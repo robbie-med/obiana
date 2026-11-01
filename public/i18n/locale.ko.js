@@ -1263,7 +1263,8 @@ window.MYOB_LOCALES.ko = {
         "다음의 경우 응급실에 가거나 911에 전화하세요",
         "흉통 또는 호흡 곤란 · 경련 · 전에 겪어본 적 없는 갑작스러운 심한 두통 · 뇌졸중 증상(얼굴 한쪽 처짐, 팔 힘 빠짐, 발음 어눌함) · 자신이나 아기를 해치고 싶은 생각",
         "다음의 경우 가정의학과 의사, 산부인과 의사 또는 조산사에게 연락하세요",
-        "열 &gt;100.4°F · 1시간 안에 패드 1장이 흠뻑 젖음 · 이부프로펜/타이레놀로도 낫지 않는 심한 두통 · 시야 변화 · 다리의 발적, 부기 또는 열감(DVT, 심부정맥혈전증) · 상처가 벌어지거나 발적이 번지거나 고름이 나옴 · 소변 보기 어려움 · PPD 또는 불안 증상"
+        "열 &gt;100.4°F · 1시간 안에 패드 1장이 흠뻑 젖음 · 이부프로펜/타이레놀로도 낫지 않는 심한 두통 · 시야 변화 · 다리의 발적, 부기 또는 열감(DVT, 심부정맥혈전증) · 상처가 벌어지거나 발적이 번지거나 고름이 나옴 · 소변 보기 어려움 · PPD 또는 불안 증상",
+        "산후 진료 일정과 6주 진료 때 가져갈 만한 질문은 아기 항목의 후속 진료 카드에 있습니다. 아기 진료와 함께 볼 수 있도록 나란히 정리되어 있습니다."
       ]
     },
     "breastfeeding": {
@@ -1515,7 +1516,14 @@ window.MYOB_LOCALES.ko = {
       "title": "임신 중 백신을 맞아도 안전한가요?",
       "sub": "",
       "t": [
-        "임신할 때마다 두 가지를 권하며, 안전한 것으로 보입니다: Tdap 추가 접종과 독감 주사. 생백신은 출산 후까지 기다려야 합니다."
+        "임신할 때마다 두 가지를 권하며, 안전한 것으로 보입니다: Tdap 추가 접종과 독감 주사. 생백신은 출산 후까지 기다려야 합니다.",
+        "Tdap, 백일해 예방",
+        "27–36주 사이에, 이전 임신 때 맞았더라도 임신할 때마다 맞습니다. 주된 목적은 엄마를 보호하는 것이 아닙니다. 엄마 몸이 항체를 만들어 태반으로 보내므로, 아기는 백일해에 대한 보호를 가지고 태어납니다. 백일해는 아기가 예방 접종을 받을 수 있는 나이가 되기 전, 생후 첫 몇 달에 가장 위험하기 때문에 중요합니다. 아기를 자주 안을 사람들도 접종을 최신으로 유지해야 합니다.",
+        "독감 주사",
+        "독감 철에는 임신 어느 시기든 권장됩니다. 임신은 폐와 면역 체계가 일하는 방식을 바꿔, 독감으로 입원할 가능성을 크게 높입니다. 항체는 아기에게도 전해져 첫 몇 달을 보호합니다. 임신 중에는 주사형 백신을 씁니다. 코에 뿌리는 백신은 생백신입니다.",
+        "출산 후까지 기다리는 백신",
+        "생백신, 즉 MMR(홍역, 볼거리, 풍진)과 수두 백신은 임신 중에 맞지 않습니다. 초기 혈액 검사에서 풍진이나 수두 면역이 없다고 나오면, 보통 퇴원 전에 접종하며, 이는 다음 임신도 보호합니다. 둘 다 모유 수유 중에는 안전합니다.",
+        "다른 예방 접종이 밀렸거나, 여행을 가거나, 사는 곳에 유행이 있다면 담당 의사에게 알리세요."
       ]
     },
     "faq-eat-for-two": {
@@ -2497,7 +2505,15 @@ window.MYOB_LOCALES.ko = {
     "content.circumcision.t.5": "2d62b3babd67ab3c",
     "content.circumcision.t.6": "0f49a9344a26fe2a",
     "content.circumcision.t.7": "51bb2ecb4d379d51",
-    "content.circumcision.t.8": "f7774e648f8e13da"
+    "content.circumcision.t.8": "f7774e648f8e13da",
+    "content.postpartum-danger.t.4": "0a1264f55f4a42c3",
+    "content.faq-vaccines.t.1": "2cc75b12a1fc2494",
+    "content.faq-vaccines.t.2": "1038f5417eda7317",
+    "content.faq-vaccines.t.3": "de4ce992cde7736c",
+    "content.faq-vaccines.t.4": "fc3cba8b30791ee5",
+    "content.faq-vaccines.t.5": "8e2d5dd7b662e6cd",
+    "content.faq-vaccines.t.6": "1fbad66cf49cff52",
+    "content.faq-vaccines.t.7": "bd443dcd8ee958d3"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -2681,6 +2697,14 @@ window.MYOB_LOCALES.ko = {
     "content.circumcision.t.5": 1,
     "content.circumcision.t.6": 1,
     "content.circumcision.t.7": 1,
-    "content.circumcision.t.8": 1
+    "content.circumcision.t.8": 1,
+    "content.postpartum-danger.t.4": 1,
+    "content.faq-vaccines.t.1": 1,
+    "content.faq-vaccines.t.2": 1,
+    "content.faq-vaccines.t.3": 1,
+    "content.faq-vaccines.t.4": 1,
+    "content.faq-vaccines.t.5": 1,
+    "content.faq-vaccines.t.6": 1,
+    "content.faq-vaccines.t.7": 1
   }
 };

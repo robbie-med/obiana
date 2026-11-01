@@ -76,12 +76,17 @@ function mergeKeys([tag, ...langs]) {
   console.log('\nThen: node scripts/check.js --compare, and node scripts/bump.js before pushing.');
 }
 
+// A draft may land in a card this locale lacks, or in a sentence appended to
+// the English card after this locale's copy was made. Either way the card is
+// brought up to the English length with blank slots, which read as English.
 function ensureCard(obj, key) {
   const m = /^content\.([^.]+)\./.exec(key);
-  if (!m || (obj.content && obj.content[m[1]])) return;
+  if (!m) return;
   const en = EN().content[m[1]];
   if (!en) throw new Error(`${key}: no such card in English`);
-  (obj.content ||= {})[m[1]] = { title: '', sub: '', t: (en.t || []).map(() => '') };
+  const card = ((obj.content ||= {})[m[1]] ||= { title: '', sub: '', t: [] });
+  card.t ||= [];
+  while (card.t.length < (en.t || []).length) card.t.push('');
 }
 var _en = null;   // var, not let: mergeKeys() runs before this line is reached
 function EN() { return _en || (_en = readLocale(fs, path.join(ROOT, 'public/i18n/locale.en.js'), 'en').obj); }

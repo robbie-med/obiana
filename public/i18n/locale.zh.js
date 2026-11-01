@@ -1616,6 +1616,171 @@ window.MYOB_LOCALES.zh = {
         "出院前要问的问题",
         "第一次预约前有问题打给谁？ · 宝宝吃得好吗？不好的话我怎么知道？ · 什么情况下我要打给宝宝的医生？ · 有没有需要随访的异常检查结果？ · 夜里需要叫醒宝宝喂奶吗？ · 我的伤口怎么护理？"
       ]
+    },
+    "faq-deli": {
+      "title": "可以吃冷切肉和软奶酪吗？",
+      "sub": "",
+      "t": [
+        "主要风险是",
+        "李斯特菌",
+        "，一种少见但在孕期可能很严重的细菌感染（可以通过胎盘）。FDA 建议避免未经巴氏消毒的奶酪和冷切肉，除非加热到冒热气（165°F）。大多数巴氏消毒的软奶酪（如巴氏消毒的布里、包装好的菲达）是安全的。例外是 queso fresco、queso blanco、panela 等新鲜奶酪：即使是巴氏消毒的也引起过李斯特菌暴发，所以只吃煮到冒热气的。偶尔吃冷切肉的整体风险很低。拿不准时，就加热。"
+      ]
+    },
+    "faq-coffee": {
+      "title": "可以喝含咖啡因的东西吗？",
+      "sub": "",
+      "t": [
+        "可以。ACOG 建议咖啡因限制在",
+        "每天少于 200 mg",
+        "（大约一杯 12 盎司的滴滤咖啡）。在这个量以内，没有证据显示对怀孕有害。茶、汽水和巧克力也含咖啡因，要加在一起算。减少是合理的；完全不喝是个人选择，不是医学上必须的。"
+      ]
+    },
+    "faq-hair-dye": {
+      "title": "怀孕时可以染发吗？",
+      "sub": "",
+      "t": [
+        "可以，但想一想为什么要染。染发剂经头皮吸收的量非常少。没有发表的研究显示，在美发店或家里正常染发的量会伤害胎儿。挑染（用锡纸）接触头皮更少。如果担心，等到孕中期主要器官发育完成后再染，或者干脆不染。"
+      ]
+    },
+    "faq-exercise-mc": {
+      "title": "运动会导致流产吗？",
+      "sub": "",
+      "t": [
+        "不会。健康的怀孕中，中等强度运动不会导致流产。适量运动有保护作用，不是有害的。请看孕期部分的运动指南。如果医生让您不要运动，问清楚原因，并按医生说的做。"
+      ]
+    },
+    "faq-sex-pregnancy": {
+      "title": "怀孕期间同房安全吗？",
+      "sub": "",
+      "t": [
+        "在没有并发症的正常怀孕中是安全的。同房不会导致流产、早产，也不会伤害宝宝（宝宝有羊水保护）。只有在特定情况下，医生才会建议盆腔休息（不同房）：前置胎盘、早产风险、不明原因的阴道出血、某些宫颈问题，或已经破水。如果不确定，下次产检时问。"
+      ]
+    },
+    "faq-vaccines": {
+      "title": "孕期打疫苗安全吗？",
+      "sub": "",
+      "t": [
+        "有两种每次怀孕都建议打，而且看来是安全的：Tdap 加强针和流感疫苗。活疫苗要等分娩后再打。",
+        "Tdap，预防百日咳",
+        "在 27 到 36 周之间打，每次怀孕都打，即使上次怀孕打过。主要目的不是保护您。您的身体产生抗体并通过胎盘传给宝宝，所以宝宝一出生就带着对百日咳的保护。这很重要，因为百日咳在宝宝还小不能接种的头几个月最危险。经常抱宝宝的人也都应该按时接种。",
+        "流感疫苗",
+        "流感季节在孕期任何阶段都建议打。怀孕会改变肺和免疫系统的工作方式，让流感更容易让您住院。抗体也会传给宝宝，保护头几个月。孕期用的是注射疫苗：鼻喷疫苗是活疫苗。",
+        "要等到分娩后的疫苗",
+        "活疫苗，即 MMR（麻疹、腮腺炎和风疹）和水痘疫苗，孕期不打。如果早期验血显示您对风疹或水痘没有免疫力，通常会在出院前接种，这也能保护下一次怀孕。两者哺乳期都安全。",
+        "如果您还有别的疫苗没打、要出远门，或者您住的地方有疫情，告诉医生。"
+      ]
+    },
+    "faq-eat-for-two": {
+      "title": "需要“一人吃两人补”吗？",
+      "sub": "",
+      "t": [
+        "不需要。“一人吃两人补”是误区。孕早期不需要额外热量。孕中期每天多约 340 卡；孕晚期多约 450 卡。那是一两份加餐，不是第二盘饭。营养的质量比数量重要得多。重点吃蛋白质、铁、叶酸、钙和 omega-3 脂肪酸。孕期维生素能补缺口，但不能代替均衡饮食。"
+      ]
+    },
+    "faq-hot-tub": {
+      "title": "可以泡澡或泡热水池吗？",
+      "sub": "",
+      "t": [
+        "整个孕期都可以洗温水澡。会把核心体温升到 102°F（39°C）以上的热水池、桑拿和蒸汽房不建议，尤其在孕早期，体温升高与神经管缺陷有关。如果要泡热水池，温度要舒服（不烫），最多 10 分钟，孕早期不要泡。家里一般水温（98–100°F）的温水澡是安全的。"
+      ]
+    },
+    "faq-epidural-csec": {
+      "title": "打无痛会增加剖宫产的风险吗？",
+      "sub": "",
+      "t": [
+        "不会。这是产科研究最多的问题之一。多项大型随机对照试验和荟萃分析证实，硬膜外镇痛",
+        "不会",
+        "增加剖宫产率。它确实会让用力阶段稍长一些，也让胎吸或产钳助产更可能，这值得和止痛效果一起权衡。活跃期任何时候都可以要求。实际的限制不是开几厘米，而是产程进展有多快，因为产程太快可能来不及。"
+      ]
+    },
+    "faq-routine-episiotomy": {
+      "title": "需要侧切来避免撕裂吗？",
+      "sub": "",
+      "t": [
+        "不需要。ACOG 已不再建议常规侧切（在阴道口做手术切口）。证据一再显示",
+        "自然撕裂通常愈合得更好",
+        "，并发症（包括疼痛和长期的盆底问题）也比常规侧切少。大多数顺产的女性都会有一定程度的撕裂，但很多是轻微的（一度）。在有具体原因时，比如因为胎儿窘迫需要尽快娩出，侧切仍然合适。"
+      ]
+    },
+    "faq-water-breaking": {
+      "title": "破水了就一定要剖宫产吗？",
+      "sub": "",
+      "t": [
+        "不是。足月破水后，大多数女性在一天左右内会自然临产。如果没有开始，通常会建议引产，因为胎膜破开越久，感染的几率越高。这是一个逐渐上升、需要一起权衡的风险，不是您错过的期限。如果您是 GBS 阳性，会马上开始用抗生素。只有在另有原因时才需要剖宫产，破水本身不是原因。"
+      ]
+    },
+    "faq-eat-in-labor": {
+      "title": "分娩时可以吃东西或喝水吗？",
+      "sub": "",
+      "t": [
+        "对于早期产程中的低风险女性，ACOG 现行指南支持吃清淡食物和喝清流质。一旦打了无痛、用了催产素，或需要全身麻醉的风险较高（可能剖宫产），大多数医院只允许含冰块或小口喝水，因为一旦需要全麻有误吸风险。问问您医院的具体规定。给陪产人：带点零食。分娩可能是很长的一天。"
+      ]
+    },
+    "faq-vbac": {
+      "title": "以前剖过，是不是每次都要剖？",
+      "sub": "",
+      "t": [
+        "不一定。对于很多以前做过一次子宫下段横切口剖宫产的女性，剖宫产后阴道分娩（VBAC）是安全合适的选择。成功率在 60–80%。影响能否尝试的因素包括上次剖宫产的原因、这次怀孕的情况、子宫切口类型，以及医院处理紧急情况的能力。如果有兴趣，在产检早期就提出来。"
+      ]
+    },
+    "faq-bf-bc": {
+      "title": "哺乳期会怀孕吗？",
+      "sub": "",
+      "t": [
+        "会。纯母乳喂养在一定程度上抑制排卵，但它",
+        "不是可靠的避孕方法",
+        "。月经恢复前就可能排卵、怀孕。“哺乳期闭经避孕法”需要非常具体的条件（纯母乳，白天每 4 小时 / 夜里每 6 小时喂一次，不加配方奶，月经没恢复），而且只有在这些严格条件下才约 98% 有效。出院前讨论避孕。"
+      ]
+    },
+    "faq-stress-milk": {
+      "title": "压力会让奶水回掉吗？",
+      "sub": "",
+      "t": [
+        "急性压力会暂时影响喷乳反射（乳汁流出）。但一次压力事件不会让奶水回掉。奶量由需求决定：宝宝吸得越勤、越有效，或您吸奶越多，身体产的奶就越多。如果压力或周围的混乱让宝宝吃不好，需求就可能下降，奶量也会减少。帮助喷乳的方法：肌肤接触、保暖、放松技巧，吸奶时看宝宝的照片。和医生谈谈不用药物减压的方法。"
+      ]
+    },
+    "faq-bonding": {
+      "title": "应该马上就和宝宝有感情吗？",
+      "sub": "",
+      "t": [
+        "不是。亲子联结是一个过程，不是一瞬间。很多妈妈一出生就深深地爱上宝宝；也有人需要几天、几周或更久。两种都完全正常。身体疲惫、分娩困难、意外的结果和产后抑郁都可能影响早期的联结。如果您对宝宝感到疏离或麻木超过两周，告诉医生。这可能是产后抑郁的迹象，是可以治疗的。"
+      ]
+    },
+    "faq-ibuprofen-bf": {
+      "title": "哺乳期可以吃布洛芬吗？",
+      "sub": "",
+      "t": [
+        "可以。布洛芬是哺乳期最安全的非处方药之一，进入母乳的量非常少。对乙酰氨基酚（泰诺）也安全。这两种是产后和哺乳期首选的止痛药。不建议大剂量阿司匹林（医生开的低剂量阿司匹林是另一回事，请和医生讨论）。萘普生（Aleve）进入母乳更多，一般不首选。具体情况请务必和医护团队确认。"
+      ]
+    },
+    "faq-jaundice": {
+      "title": "宝宝看起来黄黄的，什么时候严重？",
+      "sub": "",
+      "t": [
+        "新生儿黄疸（高胆红素血症）在第一周影响约 60% 的足月宝宝。它是胎儿红细胞正常分解造成的，肝脏只是还没跟上。大多数是轻微的，不治疗也会消退。当胆红素非常高（极高时有脑损伤风险），或宝宝很嗜睡、不吃奶，或黄疸在出生 24 小时内出现时，就需要重视。医院会在出院前和宝宝 2–5 天检查时查胆红素。需要时光疗（蓝光）非常有效。"
+      ]
+    },
+    "faq-newborn-procedures": {
+      "title": "新生儿的所有处置都必须做吗？",
+      "sub": "",
+      "t": [
+        "标准的新生儿处置包括：",
+        "维生素 K 注射",
+        "（降低致命脑出血的风险），",
+        "红霉素眼膏",
+        "（减少包括淋病在内的眼部感染），",
+        "第一剂乙肝疫苗",
+        "，以及",
+        "新生儿代谢筛查采血",
+        "（足跟采血，筛查约 30 种疾病，包括苯丙酮尿症、甲状腺功能减退和镰状细胞病）。这些处置背后的证据强度不一样，分别问清楚是合理的。维生素 K 和足跟采血的理由最明确：维生素 K 能预防罕见但致命的出血，足跟采血能发现只有在头几天发现才能治疗的疾病。乙肝疫苗在您自己乙肝结果阳性或不明时最重要。眼膏的证据较弱，好几个国家已不再常规使用，不过美国很多州法律要求使用。大多数州您可以依法拒绝。问问您的团队哪些适用于您的情况。"
+      ]
+    },
+    "faq-first-bath": {
+      "title": "宝宝什么时候洗第一次澡？",
+      "sub": "",
+      "t": [
+        "WHO 和 AAP 现在建议出生后至少推迟 24 小时（最好 48 小时）再洗第一次澡。白色的胎脂有抗菌作用，也能帮助皮肤保湿。推迟洗澡还有助于保持体温、稳定血糖，并与更好地开始母乳喂养有关。等一等是现在的最佳做法，不只是个人偏好。"
+      ]
     }
   },
   "srcHash": {
@@ -2283,7 +2448,72 @@ window.MYOB_LOCALES.zh = {
     "content.followup-appts.t.20": "a84fe398c55bf882",
     "content.followup-appts.t.21": "08cdbbf8d5412882",
     "content.followup-appts.t.22": "8f54998cdd27f7ca",
-    "content.followup-appts.t.23": "6f3197957c539aeb"
+    "content.followup-appts.t.23": "6f3197957c539aeb",
+    "content.faq-deli.title": "ce705cdc639700b6",
+    "content.faq-deli.t.0": "208a1054e9463d0e",
+    "content.faq-deli.t.1": "7180ed78d9040f96",
+    "content.faq-deli.t.2": "86ed7bf6b9c01890",
+    "content.faq-coffee.title": "5389638ea8a88dc8",
+    "content.faq-coffee.t.0": "ac1cf8bc0364371a",
+    "content.faq-coffee.t.1": "d49405defc21c3ec",
+    "content.faq-coffee.t.2": "19f22003cc780ded",
+    "content.faq-hair-dye.title": "3cbc4f5501467bbb",
+    "content.faq-hair-dye.t.0": "194b47e06a23e60e",
+    "content.faq-exercise-mc.title": "055753c567df011f",
+    "content.faq-exercise-mc.t.0": "2b2d76b57f4bc45f",
+    "content.faq-sex-pregnancy.title": "8399c3d543c4147f",
+    "content.faq-sex-pregnancy.t.0": "9b3a7841e4c3a343",
+    "content.faq-vaccines.title": "22cf8d87c3c18165",
+    "content.faq-vaccines.t.0": "54aa1c57cf3d489d",
+    "content.faq-vaccines.t.1": "2cc75b12a1fc2494",
+    "content.faq-vaccines.t.2": "1038f5417eda7317",
+    "content.faq-vaccines.t.3": "de4ce992cde7736c",
+    "content.faq-vaccines.t.4": "fc3cba8b30791ee5",
+    "content.faq-vaccines.t.5": "8e2d5dd7b662e6cd",
+    "content.faq-vaccines.t.6": "1fbad66cf49cff52",
+    "content.faq-vaccines.t.7": "bd443dcd8ee958d3",
+    "content.faq-eat-for-two.title": "7109ae5ce8714502",
+    "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
+    "content.faq-hot-tub.title": "2230219d6f10d437",
+    "content.faq-hot-tub.t.0": "b73f80715bdad85f",
+    "content.faq-epidural-csec.title": "85af8aced19ce724",
+    "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
+    "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
+    "content.faq-epidural-csec.t.2": "d9849263c1e6467d",
+    "content.faq-routine-episiotomy.title": "063590cb3bfbb7f9",
+    "content.faq-routine-episiotomy.t.0": "f9f4d22fb4ca4b41",
+    "content.faq-routine-episiotomy.t.1": "8a8e3958d3c9cdb6",
+    "content.faq-routine-episiotomy.t.2": "7d6842265369b750",
+    "content.faq-water-breaking.title": "3024fe7ba7f6b3ed",
+    "content.faq-water-breaking.t.0": "ffd7e16a191f9018",
+    "content.faq-eat-in-labor.title": "5de8ba9361616d39",
+    "content.faq-eat-in-labor.t.0": "23ad9f490ae5def7",
+    "content.faq-vbac.title": "4fb6dce62d75356c",
+    "content.faq-vbac.t.0": "2a66625080510032",
+    "content.faq-bf-bc.title": "0683d2b28ff53b78",
+    "content.faq-bf-bc.t.0": "fd3cd5c648b45a44",
+    "content.faq-bf-bc.t.1": "1ab0f2cdfd636c5f",
+    "content.faq-bf-bc.t.2": "b97f0ac57c1360c3",
+    "content.faq-stress-milk.title": "601e567b1be30855",
+    "content.faq-stress-milk.t.0": "02db447559e1251f",
+    "content.faq-bonding.title": "a87f7534c89adb7e",
+    "content.faq-bonding.t.0": "e686292ec2702bc0",
+    "content.faq-ibuprofen-bf.title": "471f20ca8e18c184",
+    "content.faq-ibuprofen-bf.t.0": "394b672da5bd8c7f",
+    "content.faq-jaundice.title": "b2eb8cb7eb9ba4ed",
+    "content.faq-jaundice.t.0": "529658accf30fbf6",
+    "content.faq-newborn-procedures.title": "3b92e7e6a50686d0",
+    "content.faq-newborn-procedures.t.0": "d72fcb8dc5811617",
+    "content.faq-newborn-procedures.t.1": "503ae631290ccfd3",
+    "content.faq-newborn-procedures.t.2": "555768324f0aff84",
+    "content.faq-newborn-procedures.t.3": "c99e7877ef7ce6e1",
+    "content.faq-newborn-procedures.t.4": "40e5e1dc519cece2",
+    "content.faq-newborn-procedures.t.5": "502e42f21156da6c",
+    "content.faq-newborn-procedures.t.6": "cd0c11353cd68b73",
+    "content.faq-newborn-procedures.t.7": "d06e909e2132ca54",
+    "content.faq-newborn-procedures.t.8": "0f46858bcf9a15d9",
+    "content.faq-first-bath.title": "1ece0a9772ca9db5",
+    "content.faq-first-bath.t.0": "23fa392719b4b945"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -3039,6 +3269,71 @@ window.MYOB_LOCALES.zh = {
     "content.followup-appts.t.20": 1,
     "content.followup-appts.t.21": 1,
     "content.followup-appts.t.22": 1,
-    "content.followup-appts.t.23": 1
+    "content.followup-appts.t.23": 1,
+    "content.faq-deli.title": 1,
+    "content.faq-deli.t.0": 1,
+    "content.faq-deli.t.1": 1,
+    "content.faq-deli.t.2": 1,
+    "content.faq-coffee.title": 1,
+    "content.faq-coffee.t.0": 1,
+    "content.faq-coffee.t.1": 1,
+    "content.faq-coffee.t.2": 1,
+    "content.faq-hair-dye.title": 1,
+    "content.faq-hair-dye.t.0": 1,
+    "content.faq-exercise-mc.title": 1,
+    "content.faq-exercise-mc.t.0": 1,
+    "content.faq-sex-pregnancy.title": 1,
+    "content.faq-sex-pregnancy.t.0": 1,
+    "content.faq-vaccines.title": 1,
+    "content.faq-vaccines.t.0": 1,
+    "content.faq-vaccines.t.1": 1,
+    "content.faq-vaccines.t.2": 1,
+    "content.faq-vaccines.t.3": 1,
+    "content.faq-vaccines.t.4": 1,
+    "content.faq-vaccines.t.5": 1,
+    "content.faq-vaccines.t.6": 1,
+    "content.faq-vaccines.t.7": 1,
+    "content.faq-eat-for-two.title": 1,
+    "content.faq-eat-for-two.t.0": 1,
+    "content.faq-hot-tub.title": 1,
+    "content.faq-hot-tub.t.0": 1,
+    "content.faq-epidural-csec.title": 1,
+    "content.faq-epidural-csec.t.0": 1,
+    "content.faq-epidural-csec.t.1": 1,
+    "content.faq-epidural-csec.t.2": 1,
+    "content.faq-routine-episiotomy.title": 1,
+    "content.faq-routine-episiotomy.t.0": 1,
+    "content.faq-routine-episiotomy.t.1": 1,
+    "content.faq-routine-episiotomy.t.2": 1,
+    "content.faq-water-breaking.title": 1,
+    "content.faq-water-breaking.t.0": 1,
+    "content.faq-eat-in-labor.title": 1,
+    "content.faq-eat-in-labor.t.0": 1,
+    "content.faq-vbac.title": 1,
+    "content.faq-vbac.t.0": 1,
+    "content.faq-bf-bc.title": 1,
+    "content.faq-bf-bc.t.0": 1,
+    "content.faq-bf-bc.t.1": 1,
+    "content.faq-bf-bc.t.2": 1,
+    "content.faq-stress-milk.title": 1,
+    "content.faq-stress-milk.t.0": 1,
+    "content.faq-bonding.title": 1,
+    "content.faq-bonding.t.0": 1,
+    "content.faq-ibuprofen-bf.title": 1,
+    "content.faq-ibuprofen-bf.t.0": 1,
+    "content.faq-jaundice.title": 1,
+    "content.faq-jaundice.t.0": 1,
+    "content.faq-newborn-procedures.title": 1,
+    "content.faq-newborn-procedures.t.0": 1,
+    "content.faq-newborn-procedures.t.1": 1,
+    "content.faq-newborn-procedures.t.2": 1,
+    "content.faq-newborn-procedures.t.3": 1,
+    "content.faq-newborn-procedures.t.4": 1,
+    "content.faq-newborn-procedures.t.5": 1,
+    "content.faq-newborn-procedures.t.6": 1,
+    "content.faq-newborn-procedures.t.7": 1,
+    "content.faq-newborn-procedures.t.8": 1,
+    "content.faq-first-bath.title": 1,
+    "content.faq-first-bath.t.0": 1
   }
 };

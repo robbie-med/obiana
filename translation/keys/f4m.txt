@@ -1,0 +1,9 @@
+# es/fr/ko: sentences added to existing cards after their translation
+content.postpartum-danger.t.4
+content.faq-vaccines.t.1
+content.faq-vaccines.t.2
+content.faq-vaccines.t.3
+content.faq-vaccines.t.4
+content.faq-vaccines.t.5
+content.faq-vaccines.t.6
+content.faq-vaccines.t.7
