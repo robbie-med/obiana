@@ -165,7 +165,7 @@ Ordered by harm if missing. The card in each line is where it belongs or should 
 
 Tier 1: a reader could miss something dangerous
 
-- Bleeding & pain in early pregnancy  `[gap]` no card says which bleeding or cramping in the first trimester is urgent, or names ectopic pregnancy (one-sided pain, shoulder pain, fainting). first-trimester only says "mention bleeding".
+- Bleeding & pain in early pregnancy  `early-bleeding` (ER and call-today lists, ectopic, what the team does, miscarriage basics; draft 2026-11-01 awaiting clinical review) → first-trimester
 - Preterm labor signs       `[gap]` Home lists "contractions before 37 weeks" and nothing else: no regular tightening, period-like cramps, low back ache, pelvic pressure or discharge change, and no "go in now"
 - Itching late in pregnancy `[gap]` intrahepatic cholestasis (itchy palms and soles, third trimester) needs a blood test and changes delivery timing. common-discomforts never mentions itching.
 - Crying & never shaking    `[gap]` normal-newborn lists "inconsolable crying" as a red flag only. Nothing on normal crying peaks, colic, or what to do when you are at your limit (put baby down safely, step away, call someone).

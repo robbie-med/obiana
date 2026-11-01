@@ -14,6 +14,11 @@ const CONTENT_STRUCTURE = {
       "color": ""
     },
     {
+      "id": "early-bleeding",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--teal)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 3c-3.5 4.5 -6 8 -6 11a6 6 0 0 0 12 0c0 -3 -2.5 -6.5 -6 -11z\" /></svg>",
+      "color": ""
+    },
+    {
       "id": "prenatal-vitamins",
       "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--teal)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4.5 12.5l8 -8a4.94 4.94 0 0 1 7 7l-8 8a4.94 4.94 0 0 1 -7 -7\" /> <path d=\"M8.5 8.5l7 7\" /></svg>",
       "color": ""

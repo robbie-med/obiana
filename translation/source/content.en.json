@@ -889,6 +889,24 @@
       "Check your state advisory for those waters. The national lists do not cover local contamination."
     ]
   },
+  "early-bleeding": {
+    "title": "Bleeding and Pain in Early Pregnancy",
+    "sub": "What is common, what is urgent, and ectopic pregnancy",
+    "t": [
+      "Spotting or light bleeding in the first 12 weeks is common: about 1 in 5 women have some. Often the pregnancy goes on normally. Sometimes it is the start of a miscarriage, and rarely it is a pregnancy growing outside the uterus (ectopic), which is an emergency.",
+      "Go to the ER now if you have",
+      "Bleeding that soaks through 1 pad in an hour · Bad pain in your belly, especially on one side · Pain at the tip of your shoulder · Dizziness or fainting · Fever with bleeding or cramping",
+      "Call your family doctor, OB or midwife today if you have",
+      "Any bleeding you have not told them about, even light · Cramping that gets worse · Tissue that you pass",
+      "Until you are seen, use pads, not tampons, so you can see how much you are bleeding. Rest as much as you feel you need. Activity, work and sex do not cause miscarriage.",
+      "Ectopic pregnancy",
+      "About 1 to 2 in 100 pregnancies implant outside the uterus, almost always in a fallopian tube. It cannot grow into a baby, and as it grows it can burst the tube and bleed inside your belly. It usually shows up at 6 to 8 weeks. It is more likely if you had one before, had surgery on your tubes, had chlamydia or another pelvic infection, got pregnant with an IUD in place, or used IVF. Smoking raises the risk too. Found early, it is treated with a medicine (methotrexate) or with surgery.",
+      "What your team will do",
+      "Usually an ultrasound and a blood test for the pregnancy hormone (hCG). If it is too early to see the pregnancy on ultrasound, the blood test is repeated 2 days later: a level that does not rise as expected, with no pregnancy seen in the uterus, raises concern for ectopic. If your blood type is Rh negative, tell them. Depending on how far along you are, you may need an Rh shot.",
+      "If it is a miscarriage",
+      "About 1 in 10 known pregnancies end in miscarriage, most of them in the first 12 weeks. Most are caused by a chromosome problem that started at conception, not by anything you did. You can usually choose how it is managed: waiting for it to pass on its own, medicine to help it pass, or a short procedure. All three are safe; they differ in how long it takes and how much bleeding happens at home. Grief is normal, whatever the week. You can try again as soon as you feel ready."
+    ]
+  },
   "preeclampsia": {
     "title": "Preeclampsia",
     "sub": "Signs, risk, and the aspirin question",
