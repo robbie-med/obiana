@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Obiana content tree</title>
+<!--
+  CONTENT TREE: served only by editor/server.py at /__editor/tree, never shipped.
+
+  The whole guide as one tree: sections, cards in reading order, and every
+  sentence slot of the selected card laid out by the role it plays in the card
+  (lead, heading, list item, callout). Edit the wording, reorder or move cards,
+  and see the card rendered with the real stylesheet as you type.
+
+  Text saves through /api/save, the same endpoint the in-page editor uses.
+  Order saves through /api/structure, which rewrites CONTENT_STRUCTURE in
+  content.js and re-tints a card's template when it changes section.
+
+  Notes beside each card come from CONTENT_MAP.md in the repo root. Edit that
+  file to change them; this page only reads it.
+-->
+<style>
+:root {
+  --bg: #f4f7f7; --pane: #ffffff; --sunk: #eef3f3; --line: #d8e2e2; --line-strong: #b9c9c9;
+  --ink: #1a2424; --ink-mid: #3d4e4e; --ink-soft: #667676;
+  --teal: #1d4e4e; --teal-tint: #e3f0f0; --gold: #9b6921; --gold-tint: #fbf1de;
+  --rose: #b25952; --rose-tint: #fbecea; --navy: #2a3d6e; --navy-tint: #e9edf8;
+  --plum: #5e3073; --plum-tint: #f2ebf7; --slate: #4a5a66; --slate-tint: #e9edf0;
+  --clash: #b3261e; --clash-tint: #fde8e6; --twice: #a35200; --twice-tint: #fff0dc;
+  --gap: #5a4fa8; --gap-tint: #ecebfa; --dirty: #fff3c4; --dirty-line: #d9a400;
+  --ok: #2e7d32; --accent: #1d4e4e; --accent-ink: #ffffff;
+  --mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1616; --pane: #151e1e; --sunk: #1b2626; --line: #283636; --line-strong: #3a4c4c;
+    --ink: #e2eded; --ink-mid: #bccccc; --ink-soft: #8ea2a2;
+    --teal: #7fc8c8; --teal-tint: #173030; --gold: #e2b56c; --gold-tint: #2c2413;
+    --rose: #eb9a92; --rose-tint: #321f1d; --navy: #a3b4ec; --navy-tint: #1b2237;
+    --plum: #cfa6e2; --plum-tint: #291c32; --slate: #a9b8c3; --slate-tint: #1f272c;
+    --clash: #ff8a80; --clash-tint: #3a1a18; --twice: #ffb35c; --twice-tint: #33240f;
+    --gap: #b3a9f5; --gap-tint: #231f3d; --dirty: #3a3110; --dirty-line: #c9a02a;
+    --ok: #81c784; --accent: #7fc8c8; --accent-ink: #0f1616;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body { background: var(--bg); color: var(--ink); font: 14px/1.5 system-ui, -apple-system, 'Segoe UI', sans-serif; display: flex; flex-direction: column; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* ── top bar ── */
+.bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 8px 14px; background: var(--pane); border-bottom: 1px solid var(--line); }
+.brand { font-weight: 700; letter-spacing: .02em; margin-right: 6px; }
+.brand small { font-weight: 500; color: var(--ink-soft); margin-left: 6px; }
+.bar .spacer { flex: 1; }
+.btn { padding: 6px 12px; border-radius: 7px; border: 1px solid var(--line-strong); background: var(--pane); font-weight: 600; font-size: 13px; }
+.btn:hover:not(:disabled) { background: var(--sunk); }
+.btn:disabled { opacity: .45; cursor: default; }
+.btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.btn.warn { background: var(--twice); color: #fff; border-color: var(--twice); }
+.pill { font-size: 12.5px; color: var(--ink-soft); }
+.pill.on { color: var(--twice); font-weight: 600; }
+.bar a { color: var(--ink-soft); font-size: 13px; }
+
+.banner { padding: 8px 14px; background: var(--gold-tint); border-bottom: 1px solid var(--line); font-size: 13.5px; color: var(--ink-mid); }
+.banner b { color: var(--ink); }
+.banner ul { margin: 4px 0 0; padding-left: 18px; }
+
+/* ── panes ── */
+.app { flex: 1; min-height: 0; display: grid; grid-template-columns: 300px minmax(0, 1fr) minmax(320px, 440px); }
+.pane { min-height: 0; overflow: auto; }
+#tree { border-right: 1px solid var(--line); background: var(--pane); padding: 10px 0 40px; }
+#edit { padding: 18px 22px 80px; }
+#side { border-left: 1px solid var(--line); background: var(--pane); padding: 14px 16px 60px; display: flex; flex-direction: column; gap: 16px; }
+@media (max-width: 1150px) {
+  .app { grid-template-columns: 260px minmax(0, 1fr); }
+  #side { grid-column: 2; border-left: 0; border-top: 1px solid var(--line); }
+  .app { grid-template-rows: minmax(0, 1fr) auto; }
+  #tree { grid-row: 1 / span 2; }
+}
+
+/* ── tree ── */
+.find { margin: 0 12px 10px; width: calc(100% - 24px); padding: 7px 10px; border-radius: 7px; border: 1px solid var(--line); background: var(--bg); }
+.sec { margin-bottom: 8px; }
+.sec-h { display: flex; align-items: center; gap: 8px; padding: 6px 12px; font-size: 11.5px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--c, var(--ink-soft)); }
+.sec-h .n { font-weight: 500; color: var(--ink-soft); letter-spacing: 0; text-transform: none; }
+.sec-pregnancy { --c: var(--teal); --t: var(--teal-tint); }
+.sec-labor { --c: var(--gold); --t: var(--gold-tint); }
+.sec-recovery { --c: var(--rose); --t: var(--rose-tint); }
+.sec-baby { --c: var(--navy); --t: var(--navy-tint); }
+.sec-faq { --c: var(--plum); --t: var(--plum-tint); }
+.sec-ui { --c: var(--slate); --t: var(--slate-tint); }
+ol.cards { list-style: none; margin: 0; padding: 0 0 4px; min-height: 8px; }
+ol.cards.drop-end { box-shadow: inset 0 -2px 0 var(--c); }
+.row { display: grid; grid-template-columns: 14px minmax(0, 1fr) auto; align-items: center; gap: 6px; padding: 4px 8px 4px 10px; cursor: pointer; border-left: 3px solid transparent; }
+.row:hover { background: var(--sunk); }
+.row.sel { background: var(--t, var(--sunk)); border-left-color: var(--c); }
+.row.moved .label::after { content: ' (moved)'; color: var(--twice); font-size: 11.5px; }
+.row.drop-before { box-shadow: inset 0 2px 0 var(--c); }
+.row.dragging { opacity: .4; }
+.grip { color: var(--ink-soft); cursor: grab; font-size: 11px; line-height: 1; user-select: none; text-align: center; }
+.row.static .grip { visibility: hidden; }
+.label { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13.5px; }
+.label.dirty { font-style: italic; }
+.label.dirty::before { content: '● '; color: var(--dirty-line); font-style: normal; }
+.marks { display: flex; gap: 3px; align-items: center; }
+.dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.dot.clash { background: var(--clash); } .dot.twice { background: var(--twice); } .dot.gap { background: var(--gap); }
+.mv { display: none; gap: 1px; }
+.row:hover .mv, .row.sel .mv { display: flex; }
+.mv button { border: 0; background: none; color: var(--ink-soft); padding: 0 3px; font-size: 12px; line-height: 1.4; border-radius: 4px; }
+.mv button:hover { background: var(--line); color: var(--ink); }
+.mv select { font-size: 11.5px; padding: 0 2px; border-radius: 4px; border: 1px solid var(--line); background: var(--pane); max-width: 74px; }
+
+/* ── editor ── */
+.empty { color: var(--ink-soft); padding: 40px 0; text-align: center; }
+.ed-head { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: baseline; margin-bottom: 14px; }
+.ed-head h1 { font-size: 20px; margin: 0; font-weight: 650; flex: 1 1 100%; text-wrap: balance; }
+.chip { font-size: 12px; padding: 1px 8px; border-radius: 5px; background: var(--t, var(--sunk)); color: var(--c, var(--ink-mid)); font-weight: 600; }
+.mono { font-family: var(--mono); font-size: 12px; color: var(--ink-soft); }
+.size { font-size: 12.5px; color: var(--ink-soft); }
+.size.over { color: var(--twice); font-weight: 600; }
+.field { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 4px 12px; align-items: start; padding: 5px 0; }
+.field > .lab { font-size: 12px; color: var(--ink-soft); padding-top: 7px; line-height: 1.3; }
+.field > .lab .k { display: block; font-family: var(--mono); font-size: 10.5px; opacity: .8; }
+.field.heading { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
+.field.heading textarea { font-weight: 650; font-size: 15px; }
+.field.callout .slots { border-left: 3px solid var(--c, var(--teal)); padding-left: 8px; }
+.field.alert .slots { border-left-color: var(--clash); }
+.field.gold .slots { border-left-color: var(--gold); }
+.slots { display: grid; gap: 4px; min-width: 0; }
+.slot { display: grid; grid-template-columns: minmax(0, 1fr); position: relative; }
+.slot .tag { position: absolute; right: 6px; top: 5px; font-size: 10px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--ink-soft); pointer-events: none; }
+textarea.t { width: 100%; resize: vertical; min-height: 34px; padding: 6px 9px; border-radius: 7px; border: 1px solid var(--line); background: var(--pane); line-height: 1.45; overflow: hidden; }
+textarea.t:hover { border-color: var(--line-strong); }
+textarea.t.strong { font-weight: 650; }
+textarea.t.em { font-style: italic; }
+textarea.t.dirty { background: var(--dirty); border-color: var(--dirty-line); }
+textarea.t.lead { font-size: 15px; }
+.uikey { font-family: var(--mono); font-size: 11px; color: var(--ink-soft); word-break: break-all; }
+
+/* ── side ── */
+.side-h { font-size: 11.5px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 6px; display: flex; justify-content: space-between; }
+iframe.preview { width: 100%; border: 1px solid var(--line); border-radius: 10px; background: #fff; height: 420px; }
+.note { border: 1px solid var(--line); border-radius: 9px; padding: 8px 10px; margin-bottom: 8px; font-size: 13px; }
+.note .topic { font-weight: 650; display: flex; gap: 6px; align-items: center; }
+.note .topic .role { font-weight: 500; font-size: 11.5px; color: var(--ink-soft); margin-left: auto; }
+.note .line { color: var(--ink-mid); margin-top: 3px; white-space: pre-wrap; }
+.note .line code { font-family: var(--mono); font-size: 11.5px; }
+.flag { font-size: 10.5px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; padding: 0 5px; border-radius: 4px; }
+.flag.clash { background: var(--clash-tint); color: var(--clash); }
+.flag.twice { background: var(--twice-tint); color: var(--twice); }
+.flag.gap { background: var(--gap-tint); color: var(--gap); }
+.muted { color: var(--ink-soft); font-size: 13px; }
+
+/* ── modal ── */
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,.45); display: flex; align-items: center; justify-content: center; padding: 20px; z-index: 50; }
+.modal .box { background: var(--pane); border: 1px solid var(--line); border-radius: 12px; padding: 18px; width: min(640px, 100%); max-height: 90vh; overflow: auto; }
+.modal h2 { margin: 0 0 6px; font-size: 17px; }
+.modal textarea { width: 100%; padding: 8px; border-radius: 7px; border: 1px solid var(--line); background: var(--bg); }
+.modal .acts { display: flex; gap: 8px; margin-top: 10px; }
+.modal pre { background: var(--sunk); border-radius: 8px; padding: 10px; font: 11.5px/1.5 var(--mono); white-space: pre-wrap; max-height: 300px; overflow: auto; }
+.toast { position: fixed; left: 50%; bottom: 18px; transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 8px 14px; border-radius: 8px; font-size: 13.5px; z-index: 60; }
+.toast.bad { background: var(--clash); color: #fff; }
+</style>
+</head>
+<body>
+<div class="bar">
+  <span class="brand">Content tree <small>Obiana · English</small></span>
+  <button class="btn" id="suggest" title="Load a cleaner card order into the tree. Nothing is saved until you press Save order.">Suggested order</button>
+  <button class="btn" id="resetOrder" disabled>Undo order changes</button>
+  <button class="btn warn" id="saveOrder" disabled>Save order</button>
+  <span class="pill" id="orderState"></span>
+  <span class="spacer"></span>
+  <span class="pill" id="textState">No unsaved text</span>
+  <button class="btn primary" id="saveText" disabled>Save text</button>
+  <button class="btn" id="publish">Publish…</button>
+  <a href="/" title="The live app with click-to-edit">Site editor</a>
+</div>
+<div class="banner" id="banner" hidden></div>
+<div class="app">
+  <nav class="pane" id="tree" aria-label="Content tree">
+    <input class="find" id="find" type="search" placeholder="Filter cards…" aria-label="Filter cards">
+    <div id="treeBody"></div>
+  </nav>
+  <main class="pane" id="edit"><p class="empty">Loading…</p></main>
+  <aside class="pane" id="side"></aside>
+</div>
+
+<script>
+'use strict';
+
+// ─── constants ──────────────────────────────────────────
+const SECTIONS = ['pregnancy', 'labor', 'recovery', 'baby', 'faq'];
+const SEC_LABEL_FALLBACK = { pregnancy: 'Prenatal', labor: 'Labor & Delivery', recovery: 'Recovery', baby: 'Newborn', faq: 'FAQ' };
+const TINT = { pregnancy: '', labor: 'gold', recovery: 'rose', baby: 'navy' };
+
+// UI branches worth editing from here: the tools that carry clinical text,
+// Home's warning lists, and the trust screens.
+const UI_GROUPS = [
+  ['Tools', [
+    ['tool.nausea', 'Nausea helper'], ['tool.kick', 'Kick counter'], ['tool.cx', 'Contraction timer'],
+    ['tool.bp', 'Blood pressure'], ['modalBp', 'Blood pressure: log dialog'], ['tool.weight', 'Weight tracker'],
+    ['tool.mood', 'Mood check-in'], ['tool.feed', 'Feeding log'], ['tool.diaper', 'Diaper log'],
+    ['tool.jaundice', 'Jaundice tracker'], ['tool.birthplan', 'Birth plan'], ['tool.appts', 'Visit notes'],
+    ['tools', 'Tools menu'],
+  ]],
+  ['Home & app', [
+    ['home', 'Home'], ['disclaimer', 'Before you start'], ['usNotice', 'US care notice'],
+    ['about', 'About'], ['myinfo', 'My Info'],
+  ]],
+];
+// Map names used in CONTENT_MAP.md ("tool nausea", `ui.about`) to UI branches.
+const MAP_UI_ALIAS = { nausea: 'tool.nausea', kick: 'tool.kick', cx: 'tool.cx', bp: 'tool.bp', weight: 'tool.weight',
+  mood: 'tool.mood', feed: 'tool.feed', diaper: 'tool.diaper', jaundice: 'tool.jaundice', 'birth plan': 'tool.birthplan',
+  'ui.about': 'about', 'ui.usNotice': 'usNotice', 'ui.disclaimer': 'disclaimer', 'ui.myinfo': 'myinfo', Home: 'home' };
+
+// A cleaner reading order. Nothing changes until "Save order".
+const SUGGESTED = {
+  pregnancy: ['first-trimester', 'second-trimester', 'third-trimester', 'sve', 'mfm', 'preeclampsia',
+    'prenatal-vitamins', 'fish-mercury', 'alcohol', 'tobacco-cannabis', 'exercise-pregnancy',
+    'common-discomforts', 'antenatal-mental-health'],
+  labor: ['signs-of-labor', 'what-happens-on-arrival', 'stages-of-labor', 'pain-management', 'epidural', 'csection'],
+  recovery: ['immediate-postpartum', 'physical-recovery', 'postpartum-danger', 'mood-ppd', 'pelvic-rest', 'postpartum-exercise'],
+  baby: ['breastfeeding', 'bf-challenges', 'formula', 'vitamin-d-drops', 'normal-newborn', 'cord-care',
+    'safe-sleep', 'car-seat', 'circumcision', 'followup-appts'],
+  faq: ['faq-deli', 'faq-coffee', 'faq-eat-for-two', 'faq-hot-tub', 'faq-hair-dye', 'faq-exercise-mc',
+    'faq-sex-pregnancy', 'faq-vaccines', 'faq-water-breaking', 'faq-eat-in-labor', 'faq-epidural-csec',
+    'faq-routine-episiotomy', 'faq-vbac', 'faq-bonding', 'faq-stress-milk', 'faq-bf-bc', 'faq-ibuprofen-bf',
+    'faq-jaundice', 'faq-newborn-procedures', 'faq-first-bath'],
+};
+const SUGGESTED_WHY = [
+  '<b>Prenatal:</b> visits and tests first, in time order (trimesters, cervical exams, MFM, preeclampsia), then staying-well topics. MFM moves here from Labor & Delivery.',
+  '<b>Recovery:</b> warning signs move up, straight after physical recovery.',
+  '<b>Newborn:</b> feeding, then the baby’s body, then safety, then decisions, then appointments.',
+  '<b>FAQ:</b> grouped by stage: food and body, pregnancy, labor, after birth, baby.',
+];
+
+// ─── state ──────────────────────────────────────────────
+let STRUCT, TPL, EN, UI, MAP = [];
+let saved = {}, order = {};          // section -> [ids]
+const homeSec = {};                  // id -> section on disk
+const typeOf = {};                   // id -> 'myth' | 'faq' | undefined
+const dirty = new Map();             // key -> new text
+let sel = null;                      // { kind: 'card', id } | { kind: 'ui', path }
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const plain = s => String(s ?? '').replace(/<br\s*\/?>/g, ' ').replace(/<[^>]+>/g, '')
+  .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, ' ');
+
+function dig(obj, path) { return path.split('.').reduce((o, k) => (o == null ? o : o[k]), obj); }
+function orig(key) {
+  const [root, ...rest] = key.split('.');
+  return dig(root === 'content' ? EN : UI, rest.join('.'));
+}
+function val(key) { return dirty.has(key) ? dirty.get(key) : (orig(key) ?? ''); }
+function cardKey(id, f) { return `content.${id}.${f}`; }
+function title(id) { return plain(val(cardKey(id, 'title'))) || id; }
+function secLabel(s) { return plain((UI.section || {})[s]) || SEC_LABEL_FALLBACK[s]; }
+
+// ─── load ───────────────────────────────────────────────
+async function load() {
+  const [tree, keys] = await Promise.all([
+    fetch('/api/tree').then(r => r.json()), fetch('/api/keys').then(r => r.json())]);
+  if (tree.error || keys.error) throw new Error(tree.error || keys.error);
+  STRUCT = tree.structure; TPL = tree.templates; EN = keys.content; UI = keys.ui;
+  MAP = parseMap(tree.map || '');
+  saved = {}; order = {};
+  for (const s of SECTIONS) {
+    saved[s] = (STRUCT[s] || []).map(e => e.id);
+    order[s] = saved[s].slice();
+    (STRUCT[s] || []).forEach(e => { homeSec[e.id] = s; typeOf[e.id] = e.type; });
+  }
+}
+
+// ─── CONTENT_MAP.md ─────────────────────────────────────
+// One topic per "- " line, with indented lines belonging to it. Ids are matched
+// as whole hyphenated words so "epidural" never matches "faq-epidural-csec".
+function parseMap(md) {
+  const ids = Object.keys(EN || {});
+  const blocks = []; let group = '', cur = null, stop = false;
+  for (const raw of md.split('\n')) {
+    if (/^## /.test(raw)) { group = raw.slice(3).trim(); stop = /structural|rules/i.test(group); cur = null; continue; }
+    if (stop) continue;
+    if (/^- /.test(raw)) { cur = { group, lines: [raw.slice(2)] }; blocks.push(cur); continue; }
+    if (cur && /^\s+- /.test(raw)) { cur.lines.push(raw.trim()); continue; }
+    // A wrapped continuation belongs to the bullet above it.
+    if (cur && /^\s+\S/.test(raw)) { cur.lines[cur.lines.length - 1] += ' ' + raw.trim(); continue; }
+    if (!raw.trim()) cur = null;
+  }
+  const hit = (text, id) => new RegExp(`(^|[^\\w-])${id.replace(/[-]/g, '\\-')}(?![\\w-])`).test(text);
+  const uiRe = alias => alias === 'birth plan' ? /birth plan/
+    : alias === 'Home' ? /\bHome\b/
+    : alias.startsWith('ui.') ? new RegExp('`' + alias.replace('.', '\\.') + '`')
+    : new RegExp('tool `?' + alias + '`?(?![\\w])');
+  const refsIn = text => {
+    const r = new Set(ids.filter(id => hit(text, id)));
+    for (const [alias, path] of Object.entries(MAP_UI_ALIAS)) if (uiRe(alias).test(text)) r.add('ui:' + path);
+    return r;
+  };
+  const flagsIn = text => ['clash', 'twice', 'gap'].filter(f => text.includes('[' + f + ']'));
+  return blocks.map(b => {
+    const topic = b.lines[0].split(/\s{2,}/)[0].trim();
+    const rest = b.lines[0].slice(topic.length);
+    const before = rest.split('→')[0];
+    const texts = [rest, ...b.lines.slice(1)];
+    // The home is whatever is in backticks before the arrow on the topic line.
+    const home = /`/.test(before) ? refsIn(before) : new Set();
+    if (/\bHome\b/.test(before)) home.delete('ui:home');
+    const lines = texts.map(t => ({ refs: refsIn(t), flags: flagsIn(t) }));
+    const mention = new Set(lines.flatMap(l => [...l.refs]).filter(r => !home.has(r)));
+    const flags = [...new Set(lines.flatMap(l => l.flags))];
+    return { group: b.group, topic, lines: b.lines, flags, home, mention, perLine: lines };
+  });
+}
+function notesFor(ref) {
+  return MAP.filter(b => b.home.has(ref) || b.mention.has(ref))
+    .map(b => ({ ...b, role: b.home.has(ref) ? 'home' : 'mentioned' }))
+    .sort((a, b) => (a.role === 'home' ? 0 : 1) - (b.role === 'home' ? 0 : 1));
+}
+// Dots in the tree: every flag on a topic this card is home to, but only the
+// flags on lines that name this card when it is merely mentioned. Otherwise a
+// card picks up a dot for every problem in any topic that happens to cite it.
+function flagsFor(ref) {
+  const f = new Set();
+  for (const b of MAP) {
+    if (b.home.has(ref)) b.flags.forEach(x => f.add(x));
+    else b.perLine.forEach(l => { if (l.refs.has(ref)) l.flags.forEach(x => f.add(x)); });
+  }
+  return ['clash', 'twice', 'gap'].filter(x => f.has(x));
+}
+
+// ─── template → editable layout ─────────────────────────
+// Walks the card's HTML skeleton and works out what each {{n}} slot is: a lead,
+// a heading, a list item, a callout title... Slots inside the same element
+// (a bold lead-in and the sentence after it) are grouped on one row.
+const BLOCK = new Set(['p', 'li', 'h3', 'th', 'td', 'div']);
+const VOID = new Set(['br', 'hr', 'img']);
+function layout(tpl) {
+  const rows = []; const stack = []; let bid = 0, tr = 0, cell = 0;
+  const re = /<(\/?)([a-zA-Z0-9]+)([^>]*)>|\{\{(\d+)\}\}/g; let m;
+  while ((m = re.exec(tpl))) {
+    if (m[4] !== undefined) {
+      const n = +m[4];
+      const block = [...stack].reverse().find(s => BLOCK.has(s.tag) && !(s.tag === 'div' && !/callout-title/.test(s.cls)));
+      const callout = stack.find(s => s.tag === 'div' && /\bcallout\b/.test(s.cls));
+      const strong = stack.some(s => s.tag === 'strong' && (!block || s.depth > block.depth));
+      const em = stack.some(s => s.tag === 'em' && (!block || s.depth > block.depth));
+      let role = 'Paragraph', kind = '';
+      if (!block) role = 'Text';
+      else if (block.tag === 'h3') { role = 'Heading'; kind = 'heading'; }
+      else if (block.tag === 'div') role = 'Callout title';
+      else if (block.tag === 'li') role = 'List item';
+      else if (block.tag === 'th') role = `Table header ${block.cell}`;
+      else if (block.tag === 'td') role = `Row ${block.tr} · col ${block.cell}`;
+      else if (/\blead\b/.test(block.cls)) { role = 'Lead'; kind = 'lead'; }
+      else if (callout) role = 'Callout text';
+      if (callout) {
+        kind += ' callout' + (/\balert\b/.test(callout.cls) ? ' alert' : /\bgold\b/.test(callout.cls) ? ' gold' : '');
+        if (role === 'Paragraph') role = 'Callout text';
+      }
+      const id = block ? block.bid : 'b' + n;
+      const last = rows[rows.length - 1];
+      const slot = { n, strong, em };
+      if (last && last.id === id) last.slots.push(slot);
+      else rows.push({ id, role, kind, slots: [slot] });
+      continue;
+    }
+    const close = m[1] === '/', tag = m[2].toLowerCase(), attrs = m[3] || '';
+    if (VOID.has(tag) || attrs.trim().endsWith('/')) continue;
+    if (close) {
+      const i = stack.map(s => s.tag).lastIndexOf(tag);
+      if (i >= 0) stack.length = i;
+      continue;
+    }
+    if (tag === 'table') tr = 0;
+    if (tag === 'tr') { tr++; cell = 0; }
+    if (tag === 'td' || tag === 'th') cell++;
+    const cls = (attrs.match(/class="([^"]*)"/) || [, ''])[1];
+    stack.push({ tag, cls, bid: 'b' + (bid++), depth: stack.length, tr: tag === 'th' ? 0 : tr - 1, cell });
+  }
+  return rows;
+}
+
+function renderBody(id) {
+  const tpl = TPL[id] || ''; const t = n => val(cardKey(id, 't.' + n));
+  return tpl.replace(/\{\{(\d+)\}\}/g, (_, n) => t(n));   // raw, as cardBody() does in production
+}
+function cardChars(id) {
+  const t = (EN[id] || {}).t || [];
+  return t.reduce((sum, _, n) => sum + plain(val(cardKey(id, 't.' + n))).length, 0);
+}
+
+// ─── tree ───────────────────────────────────────────────
+function moved(id) { return SECTIONS.find(s => order[s].includes(id)) !== homeSec[id]; }
+function orderChanged() { return SECTIONS.some(s => order[s].join() !== saved[s].join()); }
+function cardDirty(id) { for (const k of dirty.keys()) if (k.startsWith(`content.${id}.`)) return true; return false; }
+function uiDirty(path) { for (const k of dirty.keys()) if (k.startsWith(`ui.${path}.`)) return true; return false; }
+
+function renderTree() {
+  const q = $('#find').value.trim().toLowerCase();
+  let html = '';
+  for (const s of SECTIONS) {
+    const ids = order[s].filter(id => !q || id.includes(q) || title(id).toLowerCase().includes(q));
+    html += `<div class="sec sec-${s}" data-sec="${s}"><div class="sec-h">${esc(secLabel(s))} <span class="n">${order[s].length}</span></div><ol class="cards" data-sec="${s}">`;
+    for (const id of ids) {
+      const marks = flagsFor(id).map(f => `<span class="dot ${f}" title="${f} — see notes"></span>`).join('');
+      const opts = s === 'faq' ? '' : `<select data-act="to" aria-label="Move to section">${SECTIONS.filter(x => x !== 'faq').map(x => `<option value="${x}"${x === s ? ' selected' : ''}>${esc(secLabel(x).split(' ')[0])}</option>`).join('')}</select>`;
+      html += `<li class="row${sel && sel.kind === 'card' && sel.id === id ? ' sel' : ''}${moved(id) ? ' moved' : ''}" draggable="${q ? 'false' : 'true'}" data-id="${id}" data-sec="${s}">
+        <span class="grip" aria-hidden="true">⋮⋮</span>
+        <span class="label${cardDirty(id) ? ' dirty' : ''}" title="${esc(id)}">${esc(title(id))}</span>
+        <span class="marks">${marks}<span class="mv"><button data-act="up" title="Move up" aria-label="Move up">↑</button><button data-act="down" title="Move down" aria-label="Move down">↓</button>${opts}</span></span>
+      </li>`;
+    }
+    html += '</ol></div>';
+  }
+  for (const [g, items] of UI_GROUPS) {
+    const list = items.filter(([p, l]) => dig(UI, p) && (!q || l.toLowerCase().includes(q) || p.includes(q)));
+    if (!list.length) continue;
+    html += `<div class="sec sec-ui"><div class="sec-h">${esc(g)}</div><ol class="cards">`;
+    for (const [p, l] of list) {
+      const marks = flagsFor('ui:' + p).map(f => `<span class="dot ${f}"></span>`).join('');
+      html += `<li class="row static${sel && sel.kind === 'ui' && sel.path === p ? ' sel' : ''}" data-ui="${p}"><span class="grip"></span><span class="label${uiDirty(p) ? ' dirty' : ''}">${esc(l)}</span><span class="marks">${marks}</span></li>`;
+    }
+    html += '</ol></div>';
+  }
+  $('#treeBody').innerHTML = html;
+  renderBar();
+}
+
+function moveCard(id, toSec, beforeId) {
+  const from = SECTIONS.find(s => order[s].includes(id));
+  if ((from === 'faq') !== (toSec === 'faq')) { toast('FAQ entries and guide cards can’t swap sections.', true); return; }
+  order[from] = order[from].filter(x => x !== id);
+  const list = order[toSec];
+  const i = beforeId ? list.indexOf(beforeId) : -1;
+  if (i >= 0) list.splice(i, 0, id); else list.push(id);
+  renderTree();
+  if (sel && sel.kind === 'card' && sel.id === id) renderEditor();
+}
+
+$('#treeBody').addEventListener('click', e => {
+  const row = e.target.closest('.row'); if (!row) return;
+  const act = e.target.dataset.act;
+  if (act === 'to') return;
+  if (row.dataset.ui) { select({ kind: 'ui', path: row.dataset.ui }); return; }
+  const id = row.dataset.id, s = row.dataset.sec;
+  if (act === 'up' || act === 'down') {
+    const l = order[s], i = l.indexOf(id), j = act === 'up' ? i - 1 : i + 1;
+    if (j < 0 || j >= l.length) return;
+    [l[i], l[j]] = [l[j], l[i]]; renderTree(); return;
+  }
+  select({ kind: 'card', id });
+});
+$('#treeBody').addEventListener('change', e => {
+  if (e.target.dataset.act !== 'to') return;
+  moveCard(e.target.closest('.row').dataset.id, e.target.value);
+});
+
+// Drag and drop: drop on a row inserts before it; drop on a section's empty
+// tail appends to it.
+let dragId = null;
+$('#treeBody').addEventListener('dragstart', e => {
+  const row = e.target.closest('.row[data-id]'); if (!row) return;
+  dragId = row.dataset.id; row.classList.add('dragging');
+  e.dataTransfer.effectAllowed = 'move'; e.dataTransfer.setData('text/plain', dragId);
+});
+$('#treeBody').addEventListener('dragend', () => { dragId = null; clearDrop(); renderTree(); });
+function clearDrop() { document.querySelectorAll('.drop-before,.drop-end').forEach(x => x.classList.remove('drop-before', 'drop-end')); }
+$('#treeBody').addEventListener('dragover', e => {
+  if (!dragId) return;
+  const row = e.target.closest('.row[data-id]'), list = e.target.closest('ol.cards[data-sec]');
+  if (!list) return;
+  e.preventDefault(); clearDrop();
+  if (row && row.dataset.id !== dragId) row.classList.add('drop-before');
+  else if (!row) list.classList.add('drop-end');
+});
+$('#treeBody').addEventListener('drop', e => {
+  if (!dragId) return;
+  const row = e.target.closest('.row[data-id]'), list = e.target.closest('ol.cards[data-sec]');
+  if (!list) return;
+  e.preventDefault();
+  const before = row && row.dataset.id !== dragId ? row.dataset.id : null;
+  const id = dragId; dragId = null; clearDrop();
+  moveCard(id, list.dataset.sec, before);
+});
+$('#find').addEventListener('input', renderTree);
+
+// ─── editor ─────────────────────────────────────────────
+function select(s) {
+  sel = s;
+  try { localStorage.setItem('ct.sel', JSON.stringify(s)); } catch (_) {}
+  renderTree(); renderEditor();
+}
+
+function textarea(key, cls, label) {
+  const v = val(key), d = dirty.has(key);
+  return `<textarea class="t ${cls || ''}${d ? ' dirty' : ''}" data-key="${esc(key)}" rows="1" aria-label="${esc(label || key)}" spellcheck="true">${esc(v)}</textarea>`;
+}
+
+function renderEditor() {
+  const ed = $('#edit');
+  if (!sel) { ed.innerHTML = '<p class="empty">Pick a card on the left.</p>'; renderSide(); return; }
+  if (sel.kind === 'ui') return renderUiEditor();
+  const id = sel.id;
+  if (!EN[id]) { ed.innerHTML = '<p class="empty">That card no longer exists.</p>'; return; }
+  const s = SECTIONS.find(x => order[x].includes(id));
+  const isFaq = s === 'faq';
+  const chars = cardChars(id);
+  let h = `<div class="ed-head sec-${s}"><h1>${esc(title(id))}</h1>
+    <span class="chip">${esc(secLabel(s))}${typeOf[id] ? ' · ' + typeOf[id] : ''}</span>
+    <span class="mono">content.${esc(id)}</span>
+    <span class="size${isFaq && chars > 600 ? ' over' : ''}">${chars.toLocaleString('en-US')} characters${isFaq && chars > 600 ? ' · long for an FAQ answer' : ''}</span></div>`;
+  h += `<div class="field"><div class="lab">${isFaq ? 'Question' : 'Title'}</div><div class="slots">${textarea(cardKey(id, 'title'), 'strong', 'Title')}</div></div>`;
+  if (!isFaq || val(cardKey(id, 'sub'))) h += `<div class="field"><div class="lab">Subtitle</div><div class="slots">${textarea(cardKey(id, 'sub'), '', 'Subtitle')}</div></div>`;
+  for (const row of layout(TPL[id] || '')) {
+    const k = row.slots.map(x => 't' + x.n).join(' ');
+    h += `<div class="field ${row.kind} sec-${s}"><div class="lab">${esc(row.role)}<span class="k">${k}</span></div><div class="slots">`;
+    for (const sl of row.slots) {
+      const cls = [sl.strong ? 'strong' : '', sl.em ? 'em' : '', /lead/.test(row.kind) ? 'lead' : ''].join(' ');
+      h += `<div class="slot">${textarea(cardKey(id, 't.' + sl.n), cls, `${row.role} t${sl.n}`)}${sl.strong ? '<span class="tag">bold</span>' : sl.em ? '<span class="tag">italic</span>' : ''}</div>`;
+    }
+    h += '</div></div>';
+  }
+  ed.innerHTML = h;
+  ed.querySelectorAll('textarea.t').forEach(grow);
+  renderSide();
+}
+
+function leaves(obj, prefix, out = []) {
+  for (const [k, v] of Object.entries(obj || {})) {
+    if (v && typeof v === 'object') leaves(v, prefix + '.' + k, out);
+    else if (typeof v === 'string') out.push(prefix + '.' + k);
+  }
+  return out;
+}
+function renderUiEditor() {
+  const p = sel.path; const label = UI_GROUPS.flatMap(g => g[1]).find(x => x[0] === p);
+  const keys = leaves(dig(UI, p), 'ui.' + p);
+  let h = `<div class="ed-head sec-ui"><h1>${esc(label ? label[1] : p)}</h1><span class="chip">UI text</span><span class="mono">ui.${esc(p)}</span>
+    <span class="size">${keys.length} strings</span></div>`;
+  for (const key of keys) {
+    h += `<div class="field"><div class="lab"><span class="uikey">${esc(key.slice(p.length + 4))}</span></div><div class="slots">${textarea(key, '', key)}</div></div>`;
+  }
+  $('#edit').innerHTML = h;
+  $('#edit').querySelectorAll('textarea.t').forEach(grow);
+  renderSide();
+}
+
+function grow(ta) { ta.style.height = 'auto'; ta.style.height = (ta.scrollHeight + 2) + 'px'; }
+
+let previewTimer = null;
+$('#edit').addEventListener('input', e => {
+  const ta = e.target.closest('textarea.t'); if (!ta) return;
+  const key = ta.dataset.key, v = ta.value;
+  if (v === (orig(key) ?? '')) dirty.delete(key); else dirty.set(key, v);
+  ta.classList.toggle('dirty', dirty.has(key));
+  grow(ta);
+  clearTimeout(previewTimer);
+  previewTimer = setTimeout(() => { renderPreview(); renderTree(); }, 250);
+});
+
+// ─── side: preview + map notes ──────────────────────────
+function renderSide() {
+  const side = $('#side');
+  if (!sel) { side.innerHTML = ''; return; }
+  const ref = sel.kind === 'card' ? sel.id : 'ui:' + sel.path;
+  let h = '';
+  if (sel.kind === 'card') h += `<div><div class="side-h"><span>Preview</span><span>real stylesheet</span></div><iframe class="preview" id="preview" title="Card preview"></iframe></div>`;
+  const notes = notesFor(ref);
+  h += `<div><div class="side-h"><span>Content map</span><span>from CONTENT_MAP.md</span></div>`;
+  if (!notes.length) h += `<p class="muted">No topics on the map point here${MAP.length ? '' : ' (CONTENT_MAP.md not found)'}.</p>`;
+  for (const b of notes) {
+    const flags = b.flags.map(f => `<span class="flag ${f}">${f}</span>`).join(' ');
+    const body = b.lines.map((l, i) => i === 0 ? l.slice(b.topic.length).trim() : l)
+      .map(l => esc(l).replace(/`([^`]+)`/g, '<code>$1</code>').replace(/\[(clash|twice|gap)\]/g, '<span class="flag $1">$1</span>'));
+    h += `<div class="note"><div class="topic">${esc(b.topic)} ${flags}<span class="role">${b.role === 'home' ? 'home card' : 'mentioned here'} · ${esc(b.group)}</span></div>${body.map(l => `<div class="line">${l}</div>`).join('')}</div>`;
+  }
+  h += '</div>';
+  side.innerHTML = h;
+  renderPreview();
+}
+
+function renderPreview() {
+  const f = $('#preview'); if (!f || !sel || sel.kind !== 'card') return;
+  const id = sel.id, s = SECTIONS.find(x => order[x].includes(id));
+  const sub = plain(val(cardKey(id, 'sub')));
+  const head = s === 'faq'
+    ? `<div class="faq-header acc-header" style="cursor:default"><span class="faq-q">${esc(plain(val(cardKey(id, 'title'))))}</span></div>`
+    : `<div class="acc-header" style="cursor:default"><span class="acc-titles"><span class="acc-title">${esc(plain(val(cardKey(id, 'title'))))}</span>${sub ? `<span class="acc-sub">${esc(sub)}</span>` : ''}</span></div>`;
+  const doc = `<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="${location.origin}/styles.css">
+    <style>body{margin:0;padding:12px;background:var(--bg)}</style></head>
+    <body><div class="card open">${head}<div class="acc-body">${renderBody(id)}</div></div></body></html>`;
+  const y = f.contentWindow ? f.contentWindow.scrollY : 0;
+  f.srcdoc = doc;
+  f.onload = () => { try { f.contentWindow.scrollTo(0, y); } catch (_) {} };
+}
+
+// ─── bar, save, publish ─────────────────────────────────
+function renderBar() {
+  const n = dirty.size, oc = orderChanged();
+  $('#textState').textContent = n ? `${n} unsaved text edit${n > 1 ? 's' : ''}` : 'No unsaved text';
+  $('#textState').classList.toggle('on', n > 0);
+  $('#saveText').disabled = !n;
+  $('#saveOrder').disabled = !oc; $('#resetOrder').disabled = !oc;
+  const mv = Object.keys(homeSec).filter(moved);
+  $('#orderState').textContent = oc ? `Order changed${mv.length ? ` · ${mv.length} moved section` : ''}` : '';
+  $('#orderState').classList.toggle('on', oc);
+  if (!oc) $('#banner').hidden = true;
+}
+
+$('#saveText').onclick = async () => {
+  const edits = [...dirty].map(([key, value]) => ({ key, value }));
+  try {
+    const r = await fetch('/api/save', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ edits }) });
+    const d = await r.json(); if (!r.ok) throw new Error(d.error || 'save failed');
+    const keys = await fetch('/api/keys').then(r => r.json());
+    EN = keys.content; UI = keys.ui; dirty.clear();
+    toast(`Saved ${d.applied.length} change${d.applied.length === 1 ? '' : 's'} to locale.en.js`);
+    renderTree(); renderEditor();
+  } catch (err) { toast(err.message, true); }
+};
+
+$('#saveOrder').onclick = async () => {
+  try {
+    const r = await fetch('/api/structure', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ order }) });
+    const d = await r.json(); if (!r.ok) throw new Error(d.error || 'save failed');
+    const keepDirty = new Map(dirty);
+    await load(); keepDirty.forEach((v, k) => dirty.set(k, v));
+    $('#banner').hidden = true;
+    toast(d.moved && d.moved.length ? `Order saved. ${d.moved.map(m => m.id + ' → ' + secLabel(m.to)).join(', ')}` : 'Order saved');
+    renderTree(); renderEditor();
+  } catch (err) { toast(err.message, true); }
+};
+
+$('#resetOrder').onclick = () => { SECTIONS.forEach(s => order[s] = saved[s].slice()); $('#banner').hidden = true; renderTree(); renderEditor(); };
+
+$('#suggest').onclick = () => {
+  const placed = new Set();
+  const next = {};
+  for (const s of SECTIONS) {
+    next[s] = SUGGESTED[s].filter(id => homeSec[id] && !placed.has(id) && ((homeSec[id] === 'faq') === (s === 'faq')));
+    next[s].forEach(id => placed.add(id));
+  }
+  for (const s of SECTIONS) saved[s].forEach(id => { if (!placed.has(id)) { next[s].push(id); placed.add(id); } });
+  order = next;
+  const b = $('#banner');
+  b.innerHTML = `<b>Suggested order loaded, not saved.</b> Look it over, drag anything you disagree with, then Save order.<ul>${SUGGESTED_WHY.map(x => `<li>${x}</li>`).join('')}</ul>`;
+  b.hidden = false;
+  renderTree(); if (sel) renderEditor();
+};
+
+$('#publish').onclick = () => {
+  const w = document.createElement('div'); w.className = 'modal';
+  w.innerHTML = `<div class="box"><h2>Publish to obiana</h2>
+    <p class="muted" id="pubSub">Checking…</p>
+    <textarea id="pubMsg" rows="3" placeholder="What changed, and why"></textarea>
+    <p class="muted">Regenerates the translation snapshot, verifies fingerprints, lints every locale, bumps the cache version, commits, and pushes to obiana/main.</p>
+    <div class="acts"><button class="btn warn" id="pubGo">Publish</button><button class="btn" id="pubX">Cancel</button></div>
+    <pre id="pubLog" hidden></pre></div>`;
+  document.body.appendChild(w);
+  const close = () => w.remove();
+  w.querySelector('#pubX').onclick = close;
+  w.onclick = e => { if (e.target === w) close(); };
+  const unsaved = dirty.size + (orderChanged() ? 1 : 0);
+  fetch('/api/status').then(r => r.json()).then(s => {
+    w.querySelector('#pubSub').textContent = (s.uncommitted ? `${s.uncommitted} changed file(s) will be committed.` : 'Nothing to publish: no changed files.')
+      + (unsaved ? ' Unsaved edits on this page are NOT included until you save them.' : '');
+  });
+  w.querySelector('#pubMsg').focus();
+  w.querySelector('#pubGo').onclick = async e => {
+    const msg = w.querySelector('#pubMsg').value.trim(); if (!msg) return w.querySelector('#pubMsg').focus();
+    e.target.disabled = true; const log = w.querySelector('#pubLog'); log.hidden = false; log.textContent = 'Working…';
+    try {
+      const r = await fetch('/api/publish', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ message: msg }) });
+      const d = await r.json();
+      log.textContent = (d.steps || []).map(s => `${s.ok ? 'ok  ' : 'FAIL'} ${s.step}\n${(s.out || '').split('\n').map(l => '      ' + l).join('\n')}`).join('\n\n');
+      if (!r.ok) { log.textContent += '\n\n' + (d.error || 'failed'); e.target.disabled = false; return; }
+      toast('Published');
+    } catch (err) { log.textContent += '\n' + err.message; e.target.disabled = false; }
+  };
+};
+
+function toast(msg, bad) {
+  const t = document.createElement('div'); t.className = 'toast' + (bad ? ' bad' : ''); t.textContent = msg;
+  document.body.appendChild(t); setTimeout(() => t.remove(), bad ? 6000 : 3000);
+}
+
+window.addEventListener('beforeunload', e => { if (dirty.size || orderChanged()) { e.preventDefault(); e.returnValue = ''; } });
+document.addEventListener('keydown', e => {
+  if ((e.ctrlKey || e.metaKey) && e.key === 's') { e.preventDefault(); if (dirty.size) $('#saveText').click(); }
+});
+
+// ─── boot ───────────────────────────────────────────────
+load().then(() => {
+  try { const s = JSON.parse(localStorage.getItem('ct.sel') || 'null'); if (s && (s.kind === 'ui' ? dig(UI, s.path) : EN[s.id])) sel = s; } catch (_) {}
+  if (!sel) sel = { kind: 'card', id: order.pregnancy[0] };
+  renderTree(); renderEditor();
+}).catch(err => { $('#edit').innerHTML = `<p class="empty">Could not load: ${esc(err.message)}</p>`; });
+</script>
+</body>
+</html>

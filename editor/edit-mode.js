@@ -126,6 +126,7 @@
       '<span class="ed-count"></span>' +
       '<button class="ed-savebtn">Save to file</button>' +
       '<button class="ed-publishbtn">Publish…</button>' +
+      '<a class="ed-treelink" href="/__editor/tree">Content tree</a>' +
       '<span class="ed-status"></span>';
     document.body.appendChild(bar);
     bar.querySelector('.ed-savebtn').onclick = save;
@@ -270,6 +271,7 @@
 .ed-bar button:disabled { opacity: .45; cursor: default; }
 .ed-savebtn { background: #1f6f4a !important; border-color: #2e9a68 !important; color: #fff !important; }
 .ed-publishbtn { background: #7a3d10 !important; border-color: #b06a20 !important; color: #fff !important; }
+.ed-treelink { color: #8fd0ef; font-weight: 600; }
 .ed-status.ed-ok { color: #7fe0a8; } .ed-status.ed-bad { color: #ff9c9c; }
 .ed-trans { margin-inline-start: auto; font-size: 11.5px; opacity: .85; font-family: ui-monospace, monospace; }
 body { padding-bottom: 60px !important; }

@@ -39,6 +39,19 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REMOTE = "obiana"                # never origin: see the note in start.sh
 BRANCH = "obiana-main"
 
+# Everything Publish may commit: what the editor writes (English locale, card
+# structure, templates), what snapshot.js regenerates, and what bump_version()
+# touches. Nothing outside this list is ever staged.
+PUBLISH_PATHS = [
+    "i18n/locale.en.js",
+    "i18n/body-templates.js",
+    "content.js",
+    "translation/source",
+    "i18n/i18n.js",
+    "sw.js",
+    "index.html",
+]
+
 MIME = {
     ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8",
     ".css": "text/css; charset=utf-8", ".json": "application/json; charset=utf-8",
@@ -108,6 +121,58 @@ def dig_get(obj, key):
         if node is None:
             return None
     return node
+
+
+# ─── card structure (content tree) ──────────────────────
+# CONTENT_STRUCTURE in content.js and MYOB_BODY_TPL in body-templates.js are
+# both plain JSON inside a JS assignment, and both round-trip byte-identically
+# through json.dumps(indent=2), so rewriting them leaves no formatting noise.
+SECTIONS = ("pregnancy", "labor", "recovery", "baby", "faq")
+
+# Each section tints its cards: the icon stroke, the lead paragraph, table
+# headers and its own callouts. Gold callouts ("ask at this visit") and alert
+# callouts mean the same thing in every section and are left alone.
+ICON_INK = {"pregnancy": "teal", "labor": "gold", "recovery": "rose", "baby": "navy"}
+TINT = {"pregnancy": "", "labor": "gold", "recovery": "rose", "baby": "navy"}
+CALLOUT_TINT = {"pregnancy": "", "labor": "", "recovery": "rose", "baby": "navy"}
+
+
+def _json_block(rel, marker):
+    path = os.path.join(ROOT, rel)
+    src = io.open(path, encoding="utf-8").read()
+    a = src.index(marker) + len(marker)
+    b = src.index("\n};", a) + 2 if rel == "content.js" else src.rindex("}") + 1
+    return path, src, a, b, json.loads(src[a:b])
+
+
+def read_structure():
+    return _json_block("content.js", "const CONTENT_STRUCTURE = ")
+
+
+def read_templates():
+    return _json_block("i18n/body-templates.js", "window.MYOB_BODY_TPL = ")
+
+
+def _write_block(path, src, a, b, obj):
+    io.open(path, "w", encoding="utf-8").write(
+        src[:a] + json.dumps(obj, indent=2, ensure_ascii=False) + src[b:])
+
+
+def retint(entry, tpl, frm, to):
+    """Re-colour a card moved from section `frm` to section `to`."""
+    entry = dict(entry)
+    if entry.get("icon") and frm in ICON_INK and to in ICON_INK:
+        entry["icon"] = entry["icon"].replace(f"var(--{ICON_INK[frm]})", f"var(--{ICON_INK[to]})")
+    if "color" in entry and to in TINT:
+        entry["color"] = TINT[to]          # icon background: "" for Prenatal
+    if tpl:
+        lead = ("lead " + TINT[to]).strip()
+        tpl = re.sub(r'class="lead(?: (?:gold|rose|navy|plum))?"', f'class="{lead}"', tpl)
+        th = f'<th class="{TINT[to]}">' if TINT[to] else "<th>"
+        tpl = re.sub(r'<th class="(?:gold|rose|navy)">', th, tpl)
+        callout = ("callout " + CALLOUT_TINT[to]).strip()
+        tpl = re.sub(r'class="callout (?:rose|navy)"', f'class="{callout}"', tpl)
+    return entry, tpl
 
 
 # ─── shell helpers ──────────────────────────────────────
@@ -181,6 +246,20 @@ class Handler(BaseHTTPRequestHandler):
             f = os.path.join(os.path.dirname(os.path.abspath(__file__)), "edit-mode.js")
             return self._raw(200, io.open(f, encoding="utf-8").read(), MIME[".js"])
 
+        if path in ("/__editor/tree", "/tree"):
+            f = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tree.html")
+            return self._raw(200, io.open(f, encoding="utf-8").read(), MIME[".html"])
+
+        if path == "/api/tree":
+            try:
+                structure = read_structure()[4]
+                templates = read_templates()[4]
+            except Exception as e:
+                return self._send(500, {"error": str(e)})
+            mp = os.path.join(ROOT, "CONTENT_MAP.md")
+            cmap = io.open(mp, encoding="utf-8").read() if os.path.isfile(mp) else ""
+            return self._send(200, {"structure": structure, "templates": templates, "map": cmap})
+
         if path == "/api/status":
             return self._send(200, self.status())
 
@@ -216,7 +295,48 @@ class Handler(BaseHTTPRequestHandler):
             return self.save(body)
         if u.path == "/api/publish":
             return self.publish(body)
+        if u.path == "/api/structure":
+            return self.save_structure(body)
         return self._send(404, {"error": "not found"})
+
+    def save_structure(self, body):
+        """Reorder cards, or move them between the four guide sections.
+
+        FAQ entries render as question rows with no icon, and guide cards as
+        accordions with one, so neither may cross into the other's section.
+        """
+        order = body.get("order")
+        if not isinstance(order, dict) or set(order) != set(SECTIONS):
+            return self._send(400, {"error": "order must list every section"})
+        try:
+            cpath, csrc, ca, cb, structure = read_structure()
+            tpath, tsrc, ta, tb, templates = read_templates()
+            home = {e["id"]: (sec, e) for sec, lst in structure.items() for e in lst}
+            seen = [i for sec in SECTIONS for i in order[sec]]
+            if sorted(seen) != sorted(home) or len(seen) != len(set(seen)):
+                return self._send(400, {"error": "every card must appear exactly once"})
+            new, moved, tpl_changed = {}, [], False
+            for sec in SECTIONS:
+                new[sec] = []
+                for cid in order[sec]:
+                    frm, entry = home[cid]
+                    if (frm == "faq") != (sec == "faq"):
+                        return self._send(400, {"error": f"{cid}: FAQ entries and guide cards cannot swap sections"})
+                    if frm != sec:
+                        entry, tpl = retint(entry, templates.get(cid), frm, sec)
+                        if tpl is not None and tpl != templates.get(cid):
+                            templates[cid] = tpl
+                            tpl_changed = True
+                        moved.append({"id": cid, "from": frm, "to": sec})
+                    new[sec].append(entry)
+            if new == structure:
+                return self._send(200, {"ok": True, "moved": [], "unchanged": True, "status": self.status()})
+            _write_block(cpath, csrc, ca, cb, new)
+            if tpl_changed:
+                _write_block(tpath, tsrc, ta, tb, templates)
+        except Exception as e:
+            return self._send(500, {"error": str(e)})
+        return self._send(200, {"ok": True, "moved": moved, "status": self.status()})
 
     def save(self, body):
         edits = body.get("edits")
@@ -252,7 +372,11 @@ class Handler(BaseHTTPRequestHandler):
             return self._send(400, {"error": "a commit message is required"})
         steps = []
         try:
-            if not git("status", "--porcelain"):
+            # Only the files this editor writes are ever staged. Publish used to
+            # run `git add -A`, which swept in whatever else was lying in the
+            # working tree: private notes, half-finished work from another
+            # session, anything. Everything else stays uncommitted.
+            if not git("status", "--porcelain", "--", *PUBLISH_PATHS):
                 return self._send(400, {"error": "nothing to publish"})
 
             # The pipeline's English input is generated, not hand-kept. If this
@@ -262,20 +386,17 @@ class Handler(BaseHTTPRequestHandler):
             if rc != 0:
                 return self._send(500, {"error": "snapshot failed", "steps": steps})
 
-            rc, out = node("translation/stamp.js", "verify")
-            steps.append({"step": "verify fingerprints", "ok": rc == 0, "out": out})
+            # One preflight: locale lint, fingerprint verify, and a render of
+            # every card, ui string and tool in every locale (scripts/check.js).
+            rc, out = node("scripts/check.js")
+            steps.append({"step": "check", "ok": rc == 0, "out": out})
             if rc != 0:
-                return self._send(500, {"error": "fingerprint verify failed", "steps": steps})
-
-            rc, out = node("translation/lint-locales.js")
-            steps.append({"step": "lint locales", "ok": rc == 0, "out": out})
-            if rc != 0:
-                return self._send(500, {"error": "locale lint failed", "steps": steps})
+                return self._send(500, {"error": "check failed", "steps": steps})
 
             v = bump_version()
             steps.append({"step": "cache version", "ok": True, "out": f"now v{v}"})
 
-            git("add", "-A")
+            git("add", "--", *PUBLISH_PATHS)
             git("commit", "-m", message)
             head = git("rev-parse", "--short", "HEAD")
             git("push", REMOTE, f"{BRANCH}:main")

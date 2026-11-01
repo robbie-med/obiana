@@ -10,3 +10,6 @@ pi/
 PROTECT.md
 LEGAL issues.md
 COMPLIANCE-PLAN.md
+
+# check.js render output
+scripts/.snapshots/

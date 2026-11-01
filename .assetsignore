@@ -47,3 +47,6 @@ review
 # Local English editor — writes to the repo and pushes to GitHub. Serving it
 # publicly would put an edit surface on the live site.
 editor
+
+# Dev scripts (check.js etc.) — never part of the site
+scripts
