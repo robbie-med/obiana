@@ -31,7 +31,7 @@ DB = "obiana-suggestions"
 
 
 def src_hash(s):
-    """Mirror of srcHashOf() in translation/hash.js and content.js.
+    """Mirror of srcHashOf() in translation/hash.js and public/app/guide/cards.js.
 
     Two-lane FNV-1a over NFC-normalised UTF-8 bytes. UTF-8 is what makes this
     agree with the JavaScript byte for byte; NFC stops a decomposed accent from

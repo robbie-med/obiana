@@ -78,7 +78,7 @@ for (const file of fs.readdirSync(DIR).filter(f => /^locale\.[a-z]{2,3}(?:-[A-Za
 console.log(problems ? `\n${problems} locale(s) with leakage` : '\nNo foreign-script leakage.');
 
 // ─── Fingerprint implementations must not drift ─────────
-// srcHashOf exists three times: translation/hash.js, content.js (the render
+// srcHashOf exists three times: translation/hash.js, public/app/guide/cards.js (the render
 // path cannot require()) and review/server.py. If they disagree, accepted
 // suggestions get fingerprints the app will never match and read as
 // permanently stale. Re-run the shared vectors through every copy.
@@ -91,18 +91,18 @@ if (canonBad.length) {
   console.log(`\n✗ translation/hash.js: ${canonBad.length} vector(s) wrong`);
 }
 
-// Extract and run content.js's copy without executing the whole file.
-const contentSrc = fs.readFileSync(path.join(ROOT, 'public', 'content.js'), 'utf8');
+// Extract and run cards.js's copy without executing the whole file.
+const contentSrc = fs.readFileSync(path.join(ROOT, 'public', 'app', 'guide', 'cards.js'), 'utf8');
 const m = contentSrc.match(/function srcHashOf\(s\) \{[\s\S]*?\n\}/);
 if (!m) {
   hashProblems++;
-  console.log('\n✗ content.js: srcHashOf not found');
+  console.log('\n✗ cards.js: srcHashOf not found');
 } else {
   const mirror = new Function(m[0] + '; return srcHashOf;')();
   const bad = checkVectors(mirror);
   if (bad.length) {
     hashProblems++;
-    console.log(`\n✗ content.js srcHashOf disagrees on ${bad.length} vector(s)`);
+    console.log(`\n✗ cards.js srcHashOf disagrees on ${bad.length} vector(s)`);
     bad.slice(0, 3).forEach(b => console.log(`    ${JSON.stringify(b.input)}: got ${b.got}, want ${b.want}`));
   }
 }
@@ -119,6 +119,6 @@ for (const [input, want] of SRC_HASH_VECTORS) {
   }
 }
 
-if (!hashProblems) console.log('Fingerprint implementations agree (hash.js, content.js, server.py).');
+if (!hashProblems) console.log('Fingerprint implementations agree (hash.js, cards.js, server.py).');
 
 process.exit(problems || hashProblems ? 1 : 0);

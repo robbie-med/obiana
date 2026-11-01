@@ -22,9 +22,9 @@ the Tools, Home and app text.
   using the real stylesheet. **Save text** uses the same save as the page
   editor.
 - **Reorder or move cards.** Drag, or use ↑ ↓ and the section menu. **Save
-  order** rewrites `CONTENT_STRUCTURE` in `content.js`. A card moved to another
+  order** rewrites `CONTENT_STRUCTURE` in `public/app/guide/structure.js`. A card moved to another
   section is re-tinted to match it (icon, lead, table headers, section
-  callouts) in `content.js` and `i18n/body-templates.js`. FAQ entries and guide
+  callouts) in `app/guide/structure.js` and `i18n/body-templates.js`. FAQ entries and guide
   cards render differently, so neither can move into the other's section.
 - **Suggested order** loads a proposed arrangement into the tree without
   saving it.
@@ -39,7 +39,7 @@ Guide content is stored one entry per sentence, keyed `content.<card>.t.<n>`,
 and the shared card template fills those into fixed slots. A sentence on screen
 therefore already corresponds to exactly one entry in the locale file, so you
 can edit it where you read it, with the sentences either side of it visible.
-`content.js` marks each slot as it renders, rather than the editor matching on
+`cardBody()` in `public/app/guide/cards.js` marks each slot as it renders, rather than the editor matching on
 text afterwards, because two cards can legitimately contain the same sentence.
 
 ## What Publish does, in order
@@ -67,7 +67,7 @@ running count per language, and `node translation/stamp.js report` is the
 retranslation worklist.
 
 The stale translation **keeps showing** to readers of that language
-(`cardBody` in `content.js`): a slightly dated sentence in her own language
+(`cardBody` in `public/app/guide/cards.js`): a slightly dated sentence in her own language
 beats an English one mid-paragraph. That is right for rewording, and wrong for
 a **safety correction**. When the old advice was wrong (a threshold, a "call
 911" that said "call the pediatrician"), also delete that slot and its
@@ -83,5 +83,5 @@ until the translation catches up.
 - **Never on the public site.** Only `public/` is deployed (`wrangler.jsonc`),
   and the editor lives outside it.
 - The service worker is disabled in transit, for the editor only. Left running,
-  it would serve its own cached `content.js` and locale file, so an edit would
+  it would serve its own cached app scripts and locale file, so an edit would
   save to disk and then not appear.

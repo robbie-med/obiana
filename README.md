@@ -63,8 +63,12 @@ Details and sources: [scripts/epds/SOURCES.md](scripts/epds/SOURCES.md).
 public/               THE SITE. Only this folder is deployed; nothing else is served.
   index.html          shell: every page and modal
   styles.css          all styles, including dark mode, RTL and print
-  content.js          card structure, nav, search, My Info, PWA, language picker
-  tools.js            the interactive tools
+  app/
+    core/             storage, navigation, toast/undo, PWA install and service worker
+    guide/            structure.js (card list), cards.js (rendering), search.js
+    tools/            one file per tool: kick, contractions, feeding, diapers, ...
+    contribute/       in-app Translation Helper and "Help Improve This Guide"
+    myinfo.js  settings.js  first-run.js  language.js  boot.js
   sw.js               service worker, cache-first
   manifest.json       PWA metadata
   flags/              bundled SVG flags (see NOTICE.md)
@@ -72,9 +76,6 @@ public/               THE SITE. Only this folder is deployed; nothing else is se
     i18n.js           locale loading, t(), formatting, search folding
     body-templates.js the HTML skeleton of every card, shared by all languages
     locale.<lang>.js  one file per language: ui strings + guide content
-    translate-tool.js in-app Translation Helper
-    improve-tool.js   in-app "Help Improve This Guide"
-    nausea-tool.js    nausea helper and log
     epds/             validated screening instruments
 worker/               Cloudflare Worker: /api/suggest, /api/feedback
 scripts/              check.js (preflight), bump.js (cache version), epds/ (instrument tooling)

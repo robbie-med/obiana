@@ -22,7 +22,7 @@ any country:
 The US flag on the care notice is separate: it refers to the healthcare system
 the guide describes, not to a language.
 
-## Card icons, inlined in `content.js`
+## Card icons, inlined in `app/guide/structure.js`
 
 From [Tabler Icons](https://github.com/tabler/tabler-icons) (outline set),
 MIT licensed, Copyright (c) 2020-2026 Pawel Kuna. Retain the MIT notice if you

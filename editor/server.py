@@ -38,6 +38,9 @@ HOST = "127.0.0.1"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # The deployed site. Only this folder is uploaded to Cloudflare.
 WEB = os.path.join(ROOT, "public")
+# Files the editor reads or rewrites inside public/.
+STRUCTURE_JS = "app/guide/structure.js"   # CONTENT_STRUCTURE (card order, icons)
+SW_REG_JS = "app/core/pwa.js"             # service worker registration, stripped in transit
 REMOTE = "obiana"                # never origin: see the note in start.sh
 BRANCH = "obiana-main"
 
@@ -47,7 +50,7 @@ BRANCH = "obiana-main"
 PUBLISH_PATHS = [
     "public/i18n/locale.en.js",
     "public/i18n/body-templates.js",
-    "public/content.js",
+    "public/app/guide/structure.js",
     "translation/source",
     "public/i18n/i18n.js",
     "public/sw.js",
@@ -126,7 +129,7 @@ def dig_get(obj, key):
 
 
 # ─── card structure (content tree) ──────────────────────
-# CONTENT_STRUCTURE in content.js and MYOB_BODY_TPL in body-templates.js are
+# CONTENT_STRUCTURE in app/guide/structure.js and MYOB_BODY_TPL in body-templates.js are
 # both plain JSON inside a JS assignment, and both round-trip byte-identically
 # through json.dumps(indent=2), so rewriting them leaves no formatting noise.
 SECTIONS = ("pregnancy", "labor", "recovery", "baby", "faq")
@@ -143,12 +146,12 @@ def _json_block(rel, marker):
     path = os.path.join(WEB, rel)
     src = io.open(path, encoding="utf-8").read()
     a = src.index(marker) + len(marker)
-    b = src.index("\n};", a) + 2 if rel == "content.js" else src.rindex("}") + 1
+    b = src.index("\n};", a) + 2 if rel == STRUCTURE_JS else src.rindex("}") + 1
     return path, src, a, b, json.loads(src[a:b])
 
 
 def read_structure():
-    return _json_block("content.js", "const CONTENT_STRUCTURE = ")
+    return _json_block(STRUCTURE_JS, "const CONTENT_STRUCTURE = ")
 
 
 def read_templates():
@@ -206,10 +209,10 @@ def inject_html(html):
 
 
 def strip_sw(js):
-    """Stop content.js registering a service worker under the editor.
+    """Stop the app registering a service worker under the editor.
 
-    The registration lives in content.js, not index.html. Left alone, the
-    worker caches its own copies of content.js and the locale file, so an edit
+    The registration lives in app/core/pwa.js, not index.html. Left alone, the
+    worker caches its own copies of the app scripts and the locale file, so an edit
     saves to disk and then does not appear on reload. That is the difference
     between a tool you trust and one you fight.
     """
@@ -280,7 +283,7 @@ class Handler(BaseHTTPRequestHandler):
         ext = os.path.splitext(full)[1]
         if ext == ".html":
             return self._raw(200, inject_html(io.open(full, encoding="utf-8").read()), MIME[".html"])
-        if os.path.basename(full) == "content.js":
+        if os.path.relpath(full, WEB) == SW_REG_JS:
             return self._raw(200, strip_sw(io.open(full, encoding="utf-8").read()), MIME[".js"])
         return self._raw(200, io.open(full, "rb").read(), MIME.get(ext, "application/octet-stream"))
 

@@ -32,7 +32,7 @@ const OUT = path.join(__dirname, 'source');
 const en = readLocale(fs, path.join(ROOT, 'public/i18n/locale.en.js'), 'en').obj;
 
 // ─── ui ─────────────────────────────────────────────────
-// Flat dot-keyed, matching what translate-tool.js and the worker derive. A
+// Flat dot-keyed, matching what app/contribute/translate.js and the worker derive. A
 // node whose children are all CLDR plural categories is kept whole, because
 // prepare.js and validate.js both special-case plural objects.
 const PLURAL = new Set(['zero', 'one', 'two', 'few', 'many', 'other']);

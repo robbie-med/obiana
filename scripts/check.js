@@ -7,7 +7,7 @@
 //   node scripts/check.js --compare    ...and diff the render against the baseline
 //
 // The render loads the REAL runtime files (i18n.js, body-templates.js, every
-// locale, content.js, tools.js, the i18n/*-tool.js files) into a Node vm with a
+// locale, every app/ script) into a Node vm with a
 // stub DOM, then for every locale records:
 //   - every guide card: title, sub, body HTML, exactly as cardBody() builds it
 //   - every ui.* string as t() resolves it (with English fallback)
@@ -48,6 +48,54 @@ function runNode(script, ...a) {
   const r = spawnSync(process.execPath, [path.join(P.translation, script), ...a], { encoding: 'utf8' });
   if (r.status !== 0) { console.log('\n' + (r.stdout + r.stderr).trim()); return false; }
   return true;
+}
+
+
+// ─── Slot ids are permanent ─────────────────────────────
+// content.<id>.t[n] is an id shared by the template ({{n}}), every locale's
+// translation, every srcHash entry and every pending reader suggestion in D1.
+// Inserting a sentence mid-array shifts all later ids and silently attaches
+// every translation to the wrong sentence. So the rule is: append new
+// sentences at the end and place {{n}} wherever it belongs in the template;
+// blank a removed sentence to "" rather than deleting it.
+// Compared against the last committed snapshot of English (translation/source).
+function slotGuard() {
+  const r = spawnSync('git', ['show', 'HEAD:translation/source/content.en.json'], { cwd: ROOT, encoding: 'utf8' });
+  if (r.status !== 0) return 'skipped (no committed snapshot)';
+  const before = JSON.parse(r.stdout);
+  global.window = { MYOB_LOCALES: {} };
+  const enFile = path.join(P.web, 'i18n', 'locale.en.js');
+  delete require.cache[require.resolve(enFile)];
+  require(enFile);
+  const now = global.window.MYOB_LOCALES.en.content;
+  const bad = [];
+  for (const [id, old] of Object.entries(before)) {
+    const cur = now[id];
+    if (!cur) continue;                        // card removed: allowed
+    const a = old.t || [], b = cur.t || [];
+    if (b.length < a.length) bad.push(`${id}: ${a.length} slots before, ${b.length} now. Blank a removed sentence to "" instead of deleting it.`);
+    a.forEach((txt, i) => {
+      if (!txt || b[i] === txt) return;
+      const j = b.indexOf(txt);
+      if (j !== -1 && j !== i) bad.push(`${id}: the sentence in t.${i} is now t.${j}. Slots must not move; append new ones at the end.`);
+    });
+  }
+  if (bad.length) { console.log('\n  ' + bad.slice(0, 20).join('\n  ')); return false; }
+  return `${Object.keys(before).length} cards, no slot moved or removed`;
+}
+
+
+// ─── Offline completeness ───────────────────────────────
+// Every script and stylesheet index.html loads must be precached by sw.js, at
+// the same ?v=, or the installed app breaks the first time it opens offline.
+function precacheGuard() {
+  const html = fs.readFileSync(path.join(P.web, 'index.html'), 'utf8');
+  const sw = fs.readFileSync(path.join(P.web, 'sw.js'), 'utf8');
+  const wanted = [...html.matchAll(/<(?:script[^>]*\ssrc|link[^>]*rel="stylesheet"[^>]*\shref)="\.?\/?([^"]+)"/g)]
+    .map(m => m[1]).filter(u => !/^https?:/.test(u));
+  const missing = wanted.filter(u => !sw.includes(`'./${u}'`));
+  if (missing.length) { console.log('\n  not precached by sw.js: ' + missing.join(', ')); return false; }
+  return `${wanted.length} files`;
 }
 
 // ─── Stub DOM ───────────────────────────────────────────
@@ -230,6 +278,8 @@ function compare(baseDir, out) {
 (async () => {
   step('locale lint', () => runNode('lint-locales.js'));
   step('translation fingerprints', () => runNode('stamp.js', 'verify'));
+  step('card slot ids', slotGuard);
+  step('index.html assets precached', precacheGuard);
   let result;
   process.stdout.write('• render every card, ui string and tool in every locale ... ');
   try {

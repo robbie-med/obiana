@@ -16,7 +16,7 @@
   let saving = false;
 
   // ─── Slot marking ─────────────────────────────────────
-  // content.js calls this for every filled body slot when it is set. Marking
+  // cardBody() (app/guide/cards.js) calls this for every filled body slot when it is set. Marking
   // happens in the render rather than by matching text afterwards, because two
   // cards can legitimately contain the same sentence.
   window.MYOB_EDIT_WRAP = function (key, text) {

@@ -5,6 +5,13 @@
 // is a slot filled from content.<id>.t[n] in the active locale, falling back
 // to English per slot, so a half-translated card is still fully readable.
 //
+// Slot numbers are permanent ids, not positions. {{7}} means content.<id>.t[7]
+// in every locale, in every srcHash map and in every pending reader suggestion.
+// To add a sentence, append it to the END of the English t array and put its
+// {{n}} wherever it belongs here. To remove one, set it to "" and drop its
+// {{n}}. Never insert or delete mid-array: every later translation would
+// attach to the wrong sentence. scripts/check.js refuses a moved slot.
+//
 // Translators never see this file. They translate sentences; the markup here
 // cannot be broken by them.
 //

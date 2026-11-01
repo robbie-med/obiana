@@ -16,7 +16,7 @@
 // Translation Helper marks those keys "Needs updating" so a person decides.
 //
 // This file is the JS source of truth. Two mirrors exist and MUST agree:
-//   - content.js       srcHashOf()   the render path cannot require() this
+//   - app/guide/cards.js srcHashOf()   the render path cannot require() this
 //   - review/server.py src_hash()    the click-to-merge review app
 // translation/lint-locales.js re-runs SRC_HASH_VECTORS through every copy, so
 // a divergence fails the lint rather than quietly mis-stamping a locale.
@@ -76,7 +76,7 @@ function checkVectors(fn) {
 }
 
 // The canonical key enumerator. Every consumer that flattens guide content
-// must produce these exact strings: translate-tool.js flattenLocale(), the
+// must produce these exact strings: app/contribute/translate.js flattenLocale(), the
 // worker's validKeys(), and review/server.py load_locale() all independently
 // arrive at the same shape, and the fingerprint map is keyed by it too.
 //

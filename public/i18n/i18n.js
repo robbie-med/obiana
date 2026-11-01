@@ -67,7 +67,7 @@ const I18n = (() => {
 
   // Bumped alongside sw.js CACHE_NAME so an updated locale file is actually
   // re-fetched instead of served from the browser's heuristic cache.
-  const ASSET_VERSION = '91';
+  const ASSET_VERSION = '92';
 
   const FALLBACK = 'en';
   const STORAGE_KEY = 'myob.lang';
@@ -364,6 +364,6 @@ const I18n = (() => {
   };
 })();
 
-// Convenience alias used throughout content.js / tools.js templates.
+// Convenience alias used throughout the app/ templates.
 const t = (key, vars) => I18n.t(key, vars);
 const tp = (key, count, vars) => I18n.tp(key, count, vars);

@@ -4,9 +4,9 @@
 // FALLBACK layer: every other locale falls back to these keys, so nothing
 // here may be removed without updating every locale.
 //
-// `content` is keyed by card id and matches CONTENT_STRUCTURE in content.js.
-// Icons/colors live in content.js (single-sourced); only prose lives here.
-// `epds` is a validated instrument — see the note in tools.js before editing.
+// `content` is keyed by card id and matches CONTENT_STRUCTURE in app/guide/structure.js.
+// Icons/colors live in app/guide/structure.js (single-sourced); only prose lives here.
+// The EPDS lives in i18n/epds/, not here: see the note in app/tools/mood.js.
 
 window.MYOB_LOCALES = window.MYOB_LOCALES || {};
 

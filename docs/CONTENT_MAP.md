@@ -59,7 +59,7 @@ existing cards are listed under their topic; topics with no card are under
 - Nausea, hyperemesis       tool `nausea`
   - `[twice]` prenatal-vitamins repeats the iron-at-night advice
   - `[gap]` not searchable. tobacco-cannabis calls it "a whole section" with no link.
-- Weight gain               tool `weight`         `[gap]` IOM ranges only in tools.js, not searchable
+- Weight gain               tool `weight`         `[gap]` IOM ranges only in the weight tool, not searchable
 - Fetal movement            tool `kick`           `[gap]` the counting caveat is only in the tool
 
 ## Warning signs
@@ -197,7 +197,7 @@ Tier 3: nice to have
 
 ## Structural notes
 
-- **Search only indexes guide cards** (`content.js:493`). Everything in tools is invisible to it.
+- **Search only indexes guide cards** (`buildSearchIndex` in `app/guide/search.js`). Everything in tools is invisible to it.
 - **Pointers are plain text** ("see the Prenatal section"). A link token in
   `body-templates.js` would make pointing cheaper than repeating.
 - **Prenatal mixes visit cards with topic cards.** Put visits first, then topics.
@@ -213,3 +213,4 @@ Tier 3: nice to have
 4. Numbers that tell someone to call or go in use identical wording everywhere.
 5. Clinical explanation goes in a card, not a tool.
 6. New card? Find its topic here first.
+7. Card sentences are numbered slots (`t[n]`) and the numbers are permanent ids. Add a sentence at the end of the array and place its `{{n}}` in `public/i18n/body-templates.js`; blank a removed one to `""`. `scripts/check.js` refuses a moved slot.
