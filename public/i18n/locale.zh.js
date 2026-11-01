@@ -53,10 +53,6 @@ window.MYOB_LOCALES.zh = {
         "pharmacy": "药房"
       },
       "detail": {
-        "edd": {
-          "label": "预产期（EDD）",
-          "placeholder": "例如 2026 年 7 月 15 日"
-        },
         "bloodtype": {
           "label": "血型与 Rh 因子",
           "placeholder": "例如 O 型阳性"
@@ -76,7 +72,6 @@ window.MYOB_LOCALES.zh = {
       },
       "myInformation": "我的信息",
       "myCareTeamKeyDetails": "我的医疗团队<br>与重要信息",
-      "savedOnYourPhoneTap": "已保存在你的手机上 · 点击即可拨打或发短信",
       "careTeamContacts": "医疗团队联系方式",
       "myPregnancyDetails": "我的怀孕信息",
       "questionsForMyDoctor": "想问医生的问题",
@@ -103,7 +98,7 @@ window.MYOB_LOCALES.zh = {
         "getMyScore": "查看我的得分",
         "pastCheckIns": "过往记录",
         "selfHarmGuidance": "您表示曾有过伤害自己的想法。如果现在有这样的想法，请拨打 911 或去急诊室。您也可以随时拨打或发短信至 988（自杀与危机生命线），并告诉您的医生。",
-        "continueWeekly": "请继续每周自评。如果情绪有变化，这个工具可以帮你追踪。",
+        "continueWeekly": "下周再来自查一次。",
         "talkToDoctor": "和医生谈一谈，哪怕只是关于一个筛查分数，始终是好的一步。产后抑郁是很可以治疗的。",
         "instrumentLanguage": "问卷语言：",
         "change": "更改",
@@ -218,7 +213,7 @@ window.MYOB_LOCALES.zh = {
         "printPdf": "打印 / PDF",
         "additionalNotes": "补充说明：",
         "myBirthPreferences": "我的分娩意愿",
-        "pregnancyBirthGuideEvidenceBased": "怀孕与分娩指南 · 循证内容 · 私密且可离线使用",
+        "pregnancyBirthGuideEvidenceBased": "由 Obiana 制作，obiana.app",
         "anyOtherPreferencesConcernsOr": "其他想让医疗团队知道的意愿、顾虑或信息……",
         "copiedToClipboard": "已复制到剪贴板！",
         "copyNotSupportedOnThis": "此浏览器不支持复制",
@@ -386,8 +381,8 @@ window.MYOB_LOCALES.zh = {
         "cancel": "取消"
       },
       "improve": {
-        "intro": "这本指南是人写的，读者告诉我们缺了什么，它才会变得更好。说说在你们的文化里这件事是怎么做的，问一个我们没有写到的话题，或者指出任何读起来不清楚的地方。",
-        "notDoctor": "这些内容会交给编写这本指南的人。这不是联系你自己医生的渠道，这里也不会有人回复。",
+        "intro": "告诉我们缺少什么：您的文化里怎么做、本指南没有回答的问题，或者难以理解的地方。",
+        "notDoctor": "这里没有人回复。关于您自己的诊疗，请联系您的家庭医生、产科医生或助产士。",
         "whatKind": "你想分享什么？",
         "kindCulture": "在我们的文化里做法不一样",
         "kindQuestion": "这本指南没有回答的问题",
@@ -398,7 +393,7 @@ window.MYOB_LOCALES.zh = {
         "messagePlaceholder": "写多写少都可以……",
         "send": "发送",
         "sending": "发送中…",
-        "thanks": "谢谢你。这有助于让指南更好。",
+        "thanks": "谢谢。",
         "writeFirst": "请先写点内容",
         "failed": "发送失败。你写的内容已保存在本机。",
         "rateLimited": "发送太频繁，请稍后再试",
@@ -514,7 +509,7 @@ window.MYOB_LOCALES.zh = {
     "lang": {
       "label": "语言",
       "change": "切换语言",
-      "unreviewedNotice": "此翻译由机器生成，尚未经过医务人员审核。做出医疗决定前，请与你的医疗团队确认，或切换到英文。",
+      "unreviewedNotice": "这是机器翻译的，还没有医生检查过。如有不清楚的地方，请问您的医护团队。",
       "loadFailed": "加载失败",
       "inProgress": "翻译进行中"
     },
@@ -552,8 +547,7 @@ window.MYOB_LOCALES.zh = {
       "legRednessSwelling": "腿部发红或肿胀",
       "chestPainOrTroubleBreathing": "胸痛或呼吸困难",
       "thoughtsOfSelfHarm": "有伤害自己的念头",
-      "heroTitle": "了解会发生<br>什么。问出好<br>问题。",
-      "heroDesc": "从第一次产检到分娩和恢复，Obiana 把所有内容都放在一处。"
+      "heroTitle": "了解会发生<br>什么。问出好<br>问题。"
     },
     "pregnancy": {
       "section1": "第 1 部分",
@@ -576,38 +570,24 @@ window.MYOB_LOCALES.zh = {
       "trackersPlanners": "记录<br>与计划工具",
       "labor": "分娩",
       "kickCounter": "胎动计数器",
-      "10MovesIn2Hours": "可选。了解宝宝的胎动",
       "contractionTimer": "宫缩计时器",
-      "tapStartStop51": "点击开始/停止 · 5-1-1 提醒 · 何时去医院",
       "newbornPostpartum": "新生儿与产后",
       "feedingLog": "喂养记录",
-      "breastOrBottle24Hr": "母乳或奶瓶 · 24 小时计数 · 次数偏少时提醒",
       "diaperLog": "尿布记录",
-      "wetDirtyCountDailyTotals": "尿湿与大便计数 · 每日汇总供医生查看",
       "jaundiceTracker": "黄疸追踪",
-      "dayByDayGuidanceFrom": "从出生起逐日指导",
       "moodCheckIn": "情绪自评",
-      "epdsScreenWeeklyTrackingFlags": "EPDS 筛查 · 每周追踪 · 提示需关注的情况",
       "pregnancyMonitoring": "孕期监测",
       "bloodPressure": "血压",
-      "logReadingsFlags14090": "记录读数 · 自动标记 ≥ 140/90",
       "weightTracker": "体重追踪",
-      "logByWeekIomGain": "按孕周记录 · 依据你的 BMI 给出 IOM 增重建议",
       "planning": "计划",
       "birthPlanBuilder": "分娩计划工具",
-      "guidedChoicesShareableOnePage": "引导式选择 · 可分享的一页摘要",
       "visitNotes": "就诊笔记",
-      "questionsBeforeNotesDuringEvery": "就诊前的问题 · 每次就诊的记录",
       "translationHelper": "帮助翻译",
-      "reviewSuggestWording": "用您的语言检查 Obiana，一次一句",
       "improveGuide": "帮助改进这本指南",
-      "shareCustomAsk": "说说你们的文化怎么做 · 问任何不清楚的地方",
       "helpUsImprove": "帮助我们改进",
       "nauseaHelper": "孕吐与进食",
-      "nauseaHelperDesc": "进食节奏 · 可以试试 · 手腕按压",
       "feelingWell": "照顾自己",
-      "nauseaLog": "孕吐记录",
-      "nauseaLogDesc": "打分 · 记下试过什么 · 看看什么有效"
+      "nauseaLog": "孕吐记录"
     },
     "toolbp": {
       "bloodPressureLog": "血压记录"
@@ -682,25 +662,32 @@ window.MYOB_LOCALES.zh = {
     },
     "usNotice": {
       "title": "在美国接受的照护",
-      "body": "本指南描述的是美国提供的产前照护，写给在美国接受照护的准妈妈。各国的产前照护差异很大。其他国家的产检安排、检查项目和建议，可能与这里写的不同。如果你在其他国家接受照护，这个应用可能并不适合你。",
+      "body": "Obiana 按照美国的产前保健来写。其他国家的产检、检查和建议可能不同。",
       "continue": "我明白了"
     },
     "about": {
-      "openSource": "自由开源软件。欢迎分支，但请保持自由开源。",
+      "openSource": "免费开源。",
       "viewSource": "查看源代码（AGPL-3.0）",
       "whatThisIs": "关于 Obiana",
       "privacyHeading": "您的信息",
       "privacyOnDevice": "您输入的内容只保存在这部手机上。没有账号，无需登录，不会上传任何内容。清除浏览器数据后会丢失，请用导出功能保存副本。",
-      "privacySubmit": "只有两个按钮会发送内容：帮助翻译和帮助改进本指南。它们会发送您写的信息、国家，以及经过加扰的网络地址，仅用于防止垃圾信息。不发送您的姓名，也不发送任何记录内容。"
+      "privacySubmit": "只有两个按钮会发送内容：帮助翻译和帮助改进本指南。它们会发送您写的内容、您的国家，以及经过加扰的网络地址，用于防止垃圾信息。绝不发送您的姓名或记录内容。"
     },
     "disclaimer": {
       "title": "开始之前",
-      "education": "Obiana 说明通常会发生什么。它不是医疗建议。它不了解您，也不了解您的怀孕情况。您的家庭医生、产科医生或助产士才了解。",
-      "tools": "这些工具只保存您输入的内容。它们不测量也不诊断任何东西。当工具提示联系他人时，意思是去询问。",
-      "emergency": "紧急情况请勿使用本应用。请拨打 911 或产房电话。",
-      "sources": "本指南给出数字时会说明来源，通常是 ACOG 或 AAP。您的医疗团队也遵循这些标准。",
-      "continue": "我明白了",
-      "toolsNote": "这些工具保存您输入的内容，不做诊断。"
+      "education": "这是一般信息，不是医疗建议。关于您自己的怀孕情况，请问您的家庭医生、产科医生或助产士。",
+      "tools": "记录工具只保存您输入的内容，不能诊断任何问题。",
+      "emergency": "紧急情况请拨打 911。",
+      "continue": "我明白了"
+    },
+    "me": {
+      "settings": "设置",
+      "textSize": "文字大小",
+      "sizeNormal": "标准",
+      "sizeLarge": "大",
+      "sizeLarger": "更大",
+      "language": "语言",
+      "darkMode": "深色模式"
     }
   }
 };

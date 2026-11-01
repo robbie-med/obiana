@@ -18,36 +18,33 @@ window.MYOB_LOCALES.tl = {
       "title": "Obiana Handbook sa Pagbubuntis"
     },
     "lang": {
-      "unreviewedNotice": "Ang pagsasaling ito ay gawa ng makina at hindi pa nasusuri ng isang clinician. Para sa mga desisyong medikal, kumpirmahin sa inyong care team o lumipat sa Ingles.",
+      "unreviewedNotice": "Makina ang nagsalin nito, at hindi pa ito nasusuri ng doktor. Kung may hindi malinaw, magtanong sa iyong care team.",
       "loadFailed": "Hindi ma-load",
       "inProgress": "Isinasalin pa"
     },
     "usNotice": {
       "title": "Pangangalaga sa Estados Unidos",
-      "body": "Inilalarawan ng gabay na ito ang prenatal care na ibinibigay sa Estados Unidos, at isinulat para sa mga inang nagpapaalaga rito. Malaki ang pagkakaiba ng prenatal care sa bawat bansa. Ang iskedyul ng pagpapatingin, mga pagsusuri at rekomendasyon sa ibang lugar ay maaaring hindi tumugma sa nababasa ninyo rito. Kung nagpapaalaga kayo sa ibang bansa, malamang na hindi para sa inyo ang app na ito.",
+      "body": "Sinusunod ng Obiana ang prenatal care sa United States. Maaaring iba ang mga pagbisita, test at payo sa ibang bansa.",
       "continue": "Naiintindihan ko"
     },
     "tools": {
       "helpUsImprove": "Tulungan Kaming Bumuti"
     },
     "home": {
-      "heroTitle": "Alamin ang<br>aasahan. Magtanong<br>nang mahusay.",
-      "heroDesc": "Mula sa iyong unang prenatal na pagpapatingin hanggang sa panganganak at paggaling, pinagsasama ng Obiana ang lahat sa isang lugar."
+      "heroTitle": "Alamin ang<br>aasahan. Magtanong<br>nang mahusay."
     },
     "disclaimer": {
       "title": "Bago magsimula",
-      "education": "Ipinapaliwanag ng Obiana ang karaniwang nangyayari. Hindi ito payong medikal. Hindi ka nito kilala at hindi nito alam ang iyong pagbubuntis. Alam ito ng iyong family doctor, OB o komadrona.",
-      "tools": "Ang mga tracker ay nag-iimbak lamang ng iyong itinatala. Wala itong sinusukat o dinidiyagnos. Kapag sinabi nitong tumawag, ibig sabihin ay magtanong.",
-      "emergency": "Huwag gamitin ang app na ito sa emergency. Tumawag sa 911 o sa labor and delivery.",
-      "sources": "Kapag may binibigay na numero ang gabay na ito, sinasabi rin kung kanino ito galing. Kadalasan ay ACOG o AAP. Sinusunod din ito ng iyong care team.",
-      "continue": "Naiintindihan ko",
-      "toolsNote": "Iniimbak ng mga tool na ito ang iyong itinatala. Hindi ito nagdidiyagnos."
+      "education": "Pangkalahatang impormasyon ito, hindi payong medikal. Itanong sa iyong family doctor, OB o komadrona ang tungkol sa sarili mong pagbubuntis.",
+      "tools": "Iniimbak lang ng mga tracker ang tina-type mo. Hindi sila makakapag-diagnose ng anuman.",
+      "emergency": "Sa emergency, tumawag sa 911.",
+      "continue": "Naiintindihan ko"
     },
     "about": {
       "whatThisIs": "Ano ang Obiana",
       "privacyHeading": "Ang iyong impormasyon",
       "privacyOnDevice": "Ang iyong itinatala ay nananatili sa teleponong ito. Walang account, walang sign-in, walang ipinapadala. Mawawala ito kapag binura mo ang data ng browser, kaya gamitin ang Export para magkaroon ng kopya.",
-      "privacySubmit": "Dalawang button lang ang nagpapadala: ang Help translate at ang Help Improve This Guide. Ipinapadala nila ang iyong mensahe, ang iyong bansa, at isang naka-scramble na anyo ng iyong network address para maiwasan ang spam. Hindi ang pangalan mo. Wala sa iyong mga tala."
+      "privacySubmit": "Dalawang button lang ang nagpapadala: ang Help translate at ang Help Improve This Guide. Ipinapadala nila ang isinulat mo, ang iyong bansa, at isang naka-scramble na network address para maiwasan ang spam. Hindi kailanman ang pangalan mo o ang laman ng iyong mga tracker."
     }
   }
 };

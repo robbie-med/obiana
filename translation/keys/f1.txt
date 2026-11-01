@@ -1,0 +1,14 @@
+# Plain-voice pass 2026-11-01: disclaimers, privacy, notices, footers
+ui.disclaimer.education
+ui.disclaimer.tools
+ui.disclaimer.emergency
+ui.about.privacySubmit
+ui.about.openSource
+ui.lang.unreviewedNotice
+ui.tool.birthplan.pregnancyBirthGuideEvidenceBased
+ui.tool.birthplan.generatedWith
+ui.tool.improve.intro
+ui.tool.improve.notDoctor
+ui.tool.improve.thanks
+ui.tool.mood.continueWeekly
+ui.usNotice.body

@@ -55,10 +55,6 @@ window.MYOB_LOCALES.fr = {
         "pharmacy": "Pharmacie"
       },
       "detail": {
-        "edd": {
-          "label": "Date prévue d'accouchement (EDD)",
-          "placeholder": "p. ex. 15 juillet 2026"
-        },
         "bloodtype": {
           "label": "Groupe sanguin et facteur Rh",
           "placeholder": "p. ex. O positif"
@@ -78,7 +74,6 @@ window.MYOB_LOCALES.fr = {
       },
       "myInformation": "Mes informations",
       "myCareTeamKeyDetails": "Mon équipe de soins &amp;<br>Détails clés",
-      "savedOnYourPhoneTap": "Enregistré sur votre téléphone · Touchez pour appeler ou texter",
       "careTeamContacts": "Contacts de l'équipe de soins",
       "myPregnancyDetails": "Détails de ma grossesse",
       "questionsForMyDoctor": "Questions pour mon médecin",
@@ -105,7 +100,7 @@ window.MYOB_LOCALES.fr = {
         "getMyScore": "Obtenir mon score",
         "pastCheckIns": "Évaluations précédentes",
         "selfHarmGuidance": "Vous avez répondu avoir eu des pensées de vous faire du mal. Si vous en avez en ce moment, appelez le 911 ou allez aux urgences. Vous pouvez aussi appeler ou envoyer un SMS au 988, la ligne de prévention du suicide et de crise, à toute heure, et en parler à votre médecin.",
-        "continueWeekly": "Continuez à faire le point chaque semaine. Si votre humeur change, cet outil vous aidera à le suivre.",
+        "continueWeekly": "Refaites le point la semaine prochaine.",
         "talkToDoctor": "Parler à votre médecin, même d’un simple score de dépistage, est toujours une bonne démarche. La dépression du post-partum se soigne très bien.",
         "instrumentLanguage": "Langue du questionnaire :",
         "change": "Changer",
@@ -220,7 +215,7 @@ window.MYOB_LOCALES.fr = {
         "printPdf": "Imprimer / PDF",
         "additionalNotes": "Notes supplémentaires :",
         "myBirthPreferences": "Mes préférences de naissance",
-        "pregnancyBirthGuideEvidenceBased": "Guide grossesse &amp; naissance · Basé sur les preuves · Privé &amp; hors ligne",
+        "pregnancyBirthGuideEvidenceBased": "Fait avec Obiana, obiana.app",
         "anyOtherPreferencesConcernsOr": "Autres préférences, inquiétudes ou informations pour votre équipe soignante…",
         "copiedToClipboard": "Copié dans le presse-papiers !",
         "copyNotSupportedOnThis": "La copie n’est pas prise en charge par ce navigateur",
@@ -388,8 +383,8 @@ window.MYOB_LOCALES.fr = {
         "cancel": "Annuler"
       },
       "improve": {
-        "intro": "Ce guide est écrit par des personnes, et il s’améliore quand ses lectrices nous disent ce qui manque. Racontez-nous comment les choses se font dans votre culture, posez une question sur un sujet non traité, ou signalez ce qui n’était pas clair.",
-        "notDoctor": "Ce message arrive aux personnes qui rédigent ce guide. Ce n’est pas un moyen de joindre votre médecin et personne ne répond ici.",
+        "intro": "Dites-nous ce qui manque : comment une chose se fait dans votre culture, une question à laquelle ce guide ne répond pas, ou un passage difficile à suivre.",
+        "notDoctor": "Personne ne répond ici. Pour vos propres soins, appelez votre médecin de famille, votre obstétricien ou votre sage-femme.",
         "whatKind": "Que souhaitez-vous partager ?",
         "kindCulture": "Dans ma culture, on fait autrement",
         "kindQuestion": "Une question à laquelle ce guide ne répond pas",
@@ -400,7 +395,7 @@ window.MYOB_LOCALES.fr = {
         "messagePlaceholder": "Écrivez autant ou aussi peu que vous le souhaitez…",
         "send": "Envoyer",
         "sending": "Envoi…",
-        "thanks": "Merci. Cela aide à améliorer le guide.",
+        "thanks": "Merci.",
         "writeFirst": "Merci d’écrire quelque chose d’abord",
         "failed": "Envoi impossible. Votre texte est enregistré ici.",
         "rateLimited": "Trop de messages, réessayez plus tard",
@@ -516,7 +511,7 @@ window.MYOB_LOCALES.fr = {
     "lang": {
       "label": "Langue",
       "change": "Changer de langue",
-      "unreviewedNotice": "Cette traduction est générée automatiquement et n'a pas encore été vérifiée par un professionnel de santé. Pour toute décision médicale, confirmez avec votre équipe soignante ou passez à l'anglais.",
+      "unreviewedNotice": "Une machine a traduit ceci, et aucun médecin ne l'a encore vérifié. Si quelque chose n'est pas clair, demandez à votre équipe de soins.",
       "loadFailed": "Chargement impossible",
       "inProgress": "Traduction en cours"
     },
@@ -554,8 +549,7 @@ window.MYOB_LOCALES.fr = {
       "legRednessSwelling": "Rougeur/gonflement d'une jambe",
       "chestPainOrTroubleBreathing": "Douleur à la poitrine ou difficulté à respirer",
       "thoughtsOfSelfHarm": "Pensées de vous faire du mal",
-      "heroTitle": "Sachez à quoi<br>vous attendre. Posez les<br>bonnes questions.",
-      "heroDesc": "De votre première consultation prénatale jusqu’à l’accouchement et la récupération, Obiana réunit tout au même endroit."
+      "heroTitle": "Sachez à quoi<br>vous attendre. Posez les<br>bonnes questions."
     },
     "pregnancy": {
       "section1": "Section 1",
@@ -578,38 +572,24 @@ window.MYOB_LOCALES.fr = {
       "trackersPlanners": "Suivis &amp;<br>planificateurs",
       "labor": "Travail",
       "kickCounter": "Compteur de coups",
-      "10MovesIn2Hours": "Facultatif. Apprenez à connaître les mouvements de votre bébé",
       "contractionTimer": "Minuteur de contractions",
-      "tapStartStop51": "Touchez début/fin · alerte 5-1-1 · Quand y aller",
       "newbornPostpartum": "Nouveau-né &amp; post-partum",
       "feedingLog": "Journal des tétées",
-      "breastOrBottle24Hr": "Sein ou biberon · total sur 24 h · alertes si trop peu",
       "diaperLog": "Journal des couches",
-      "wetDirtyCountDailyTotals": "Couches mouillées et souillées · totaux quotidiens pour le médecin",
       "jaundiceTracker": "Suivi de la jaunisse",
-      "dayByDayGuidanceFrom": "Conseils jour par jour depuis la naissance",
       "moodCheckIn": "Suivi de l'humeur",
-      "epdsScreenWeeklyTrackingFlags": "Questionnaire EPDS · Suivi hebdomadaire · Signale les problèmes",
       "pregnancyMonitoring": "Suivi de grossesse",
       "bloodPressure": "Tension artérielle",
-      "logReadingsFlags14090": "Notez vos mesures · Signale ≥ 140/90 automatiquement",
       "weightTracker": "Suivi du poids",
-      "logByWeekIomGain": "Notez par semaine · Repères IOM selon votre IMC",
       "planning": "Préparation",
       "birthPlanBuilder": "Plan de naissance",
-      "guidedChoicesShareableOnePage": "Choix guidés · Résumé d'une page à partager",
       "visitNotes": "Notes de visite",
-      "questionsBeforeNotesDuringEvery": "Questions avant · Notes à chaque visite",
       "translationHelper": "Aidez à traduire",
-      "reviewSuggestWording": "Vérifiez Obiana dans votre langue, une phrase à la fois",
       "improveGuide": "Aidez à améliorer ce guide",
-      "shareCustomAsk": "Dites-nous comment cela se fait dans votre culture · Posez vos questions",
       "helpUsImprove": "Aidez-nous à améliorer",
       "nauseaHelper": "Nausées et alimentation",
-      "nauseaHelperDesc": "Rythme des collations · Quoi essayer · Acupression",
       "feelingWell": "Se sentir bien",
-      "nauseaLog": "Journal des nausées",
-      "nauseaLogDesc": "Notez-les · Indiquez ce que vous avez essayé · Voyez ce qui aide"
+      "nauseaLog": "Journal des nausées"
     },
     "toolbp": {
       "bloodPressureLog": "Journal de tension"
@@ -684,25 +664,32 @@ window.MYOB_LOCALES.fr = {
     },
     "usNotice": {
       "title": "Soins aux États-Unis",
-      "body": "Ce guide décrit le suivi prénatal tel qu’il est assuré aux États-Unis et s’adresse aux mères suivies ici. Le suivi prénatal varie beaucoup d’un pays à l’autre. Le calendrier des consultations, les examens et les recommandations ailleurs peuvent ne pas correspondre à ce que vous lisez ici. Si vous êtes suivie dans un autre pays, cette application n’est probablement pas faite pour vous.",
+      "body": "Obiana suit le suivi de grossesse des États-Unis. Les visites, les examens et les conseils peuvent être différents dans d'autres pays.",
       "continue": "Je comprends"
     },
     "about": {
-      "openSource": "Libre et open source. Forkez-le, gardez-le libre.",
+      "openSource": "Gratuit et open source.",
       "viewSource": "Voir le code source (AGPL-3.0)",
       "whatThisIs": "Ce qu'est Obiana",
       "privacyHeading": "Vos informations",
       "privacyOnDevice": "Ce que vous saisissez reste sur ce téléphone. Pas de compte, pas de connexion, rien n'est envoyé. Effacer les données du navigateur les supprime, utilisez Exporter pour en garder une copie.",
-      "privacySubmit": "Deux boutons envoient quelque chose : Aidez à traduire et Aidez à améliorer ce guide. Ils envoient votre message, votre pays et une forme brouillée de votre adresse réseau, pour limiter le spam. Pas votre nom. Rien de vos suivis."
+      "privacySubmit": "Seuls deux boutons envoient quelque chose : Aidez à traduire et Aidez à améliorer ce guide. Ils envoient ce que vous avez écrit, votre pays et une adresse réseau brouillée pour limiter le spam. Jamais votre nom ni le contenu de vos suivis."
     },
     "disclaimer": {
       "title": "Avant de commencer",
-      "education": "Obiana explique ce qui se passe en général. Ce n'est pas un avis médical. L'application ne vous connaît pas, ni votre grossesse. Votre médecin de famille, votre obstétricien ou votre sage-femme, oui.",
-      "tools": "Les outils ne gardent que ce que vous saisissez. Ils ne mesurent ni ne diagnostiquent rien. Quand l'un dit d'appeler, cela veut dire demander.",
-      "emergency": "N'utilisez pas cette application en cas d'urgence. Appelez le 911 ou le service des naissances.",
-      "sources": "Quand ce guide donne un chiffre, il dit qui le dit. Le plus souvent l'ACOG ou l'AAP. Votre équipe médicale les suit aussi.",
-      "continue": "Je comprends",
-      "toolsNote": "Ces outils gardent ce que vous saisissez. Ils ne posent pas de diagnostic."
+      "education": "Ce sont des informations générales, pas un avis médical. Posez vos questions sur votre grossesse à votre médecin de famille, votre obstétricien ou votre sage-femme.",
+      "tools": "Les suivis gardent ce que vous saisissez. Ils ne peuvent rien diagnostiquer.",
+      "emergency": "En cas d'urgence, appelez le 911.",
+      "continue": "Je comprends"
+    },
+    "me": {
+      "settings": "Réglages",
+      "textSize": "Taille du texte",
+      "sizeNormal": "Normale",
+      "sizeLarge": "Grande",
+      "sizeLarger": "Plus grande",
+      "language": "Langue",
+      "darkMode": "Mode sombre"
     }
   },
   "content": {

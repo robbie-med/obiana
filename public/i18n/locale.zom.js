@@ -24,9 +24,6 @@ window.MYOB_LOCALES.zom = {
       "loadFailed": "Could not load",
       "inProgress": "Translation in progress"
     },
-    "home": {
-      "heroDesc": "From your first prenatal visit through delivery and recovery, Obiana keeps everything in one place."
-    },
     "usNotice": {
       "title": "Care in the United States",
       "body": "This guide describes prenatal care as it is provided in the United States, and is written for mothers receiving their care here. Prenatal care differs a great deal between countries. Visit schedules, tests and recommendations elsewhere may not match what you read here. If you are receiving care in another country, this app probably isn’t for you.",
@@ -69,10 +66,6 @@ window.MYOB_LOCALES.zom = {
         "pharmacy": "Zatui zuak na"
       },
       "detail": {
-        "edd": {
-          "label": "Nau suah ding ni",
-          "placeholder": "gen teh na, July 15, 2026"
-        },
         "bloodtype": {
           "label": "Si nam leh a RH Factor",
           "placeholder": "gen teh na: O positive (O+)"
@@ -92,7 +85,6 @@ window.MYOB_LOCALES.zom = {
       },
       "myInformation": "Kei thu te",
       "myCareTeamKeyDetails": "Kei ong khual te leh thupi pawl khat",
-      "savedOnYourPhoneTap": "Phone ah kep na. Call ding a hih kei leh lai khak ding mek in.",
       "careTeamContacts": "Ong khual team te ii kizop na contact te",
       "myPregnancyDetails": "Ka naupaai na thu te",
       "questionsForMyDoctor": "Ka Siavuan a ding dotna tuam tuam te",

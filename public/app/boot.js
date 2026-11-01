@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   await I18n.boot();
   I18n.onChange(applyLocaleToApp);
   I18n.onChange(trApplyTap);          // after the rebuild: tap-to-suggest follows the language
+  // Me reads its dates and settings fresh each time it opens (myinfo.js loads
+  // before nav.js defines TOOL_INITS, so this is registered here).
+  TOOL_INITS['myinfo'] = () => { refreshMeDates(); renderSettings(); };
 
   document.title = I18n.t('app.title');
   buildSearchIndex();

@@ -13,11 +13,11 @@
 <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="./apple-touch-icon.png">
 <link rel="manifest" href="./manifest.json">
-<link rel="stylesheet" href="./styles.css?v=99">
-<link rel="stylesheet" href="./fonts/fonts.css?v=99">
+<link rel="stylesheet" href="./styles.css?v=100">
+<link rel="stylesheet" href="./fonts/fonts.css?v=100">
 </head>
 <body>
-<script src="./app/core/theme.js?v=99"></script>
+<script src="./app/core/theme.js?v=100"></script>
 <a href="#app" class="skip-link" data-i18n="common.skipToContent">Skip to content</a>
 <main id="app">
 
@@ -88,9 +88,9 @@
     <div class="notice-panel" id="notice-panel-1">
       <div class="us-notice-title" id="us-notice-title" data-i18n="disclaimer.title">Before you start</div>
       <div class="us-notice-body">
-        <p data-i18n="disclaimer.education">Obiana explains what usually happens. It is not medical advice. It does not know you or your pregnancy. Your doctor or midwife does.</p>
-        <p data-i18n="disclaimer.tools">The trackers only hold what you type in. They do not measure or diagnose anything. When one says to call someone, it means ask.</p>
-        <p class="notice-emphasis" data-i18n="disclaimer.emergency">Do not use this app in an emergency. Call 911 or your labor and delivery line.</p>
+        <p data-i18n="disclaimer.education">This is general information, not medical advice. Ask your family doctor, OB or midwife about your own pregnancy.</p>
+        <p data-i18n="disclaimer.tools">The trackers keep what you type. They can't diagnose anything.</p>
+        <p class="notice-emphasis" data-i18n="disclaimer.emergency">In an emergency, call 911.</p>
         <!-- Shown only for locales that have not been read by a clinician. The
              gate covers the whole overlay, so the banner in the header is not
              visible here, and a disclaimer read as authoritative when it was
@@ -103,7 +103,7 @@
     <div class="notice-panel" id="notice-panel-2" hidden>
       <div class="us-notice-flag" aria-hidden="true"><img src="./flags/us.svg" alt=""></div>
       <div class="us-notice-title" data-i18n="usNotice.title">Care in the United States</div>
-      <div class="us-notice-body" data-i18n="usNotice.body">This guide describes prenatal care as it is provided in the United States, and is written for mothers receiving their care here. Prenatal care differs a great deal between countries. Visit schedules, tests and recommendations elsewhere may not match what you read here. If you are receiving care in another country, this app probably isn’t for you.</div>
+      <div class="us-notice-body" data-i18n="usNotice.body">Obiana follows prenatal care in the United States. Visits, tests and advice in other countries can be different.</div>
       <button class="us-notice-btn" id="us-notice-ok" data-i18n="usNotice.continue">I understand</button>
     </div>
 
@@ -126,7 +126,6 @@
   <div id="page-home" class="page active">
     <div class="home-hero">
       <h1 class="home-hero-title" data-i18n="home.heroTitle" data-i18n-html>Know what to<br>expect. Ask great<br>questions.</h1>
-      <div class="home-hero-desc" data-i18n="home.heroDesc">From your first prenatal visit through delivery and recovery, Obiana keeps everything in one place.</div>
     </div>
 
     <!-- Rendered by app/today.js: When to call, her week or her baby's age,
@@ -207,7 +206,6 @@
   <div id="page-myinfo" class="page">
     <div class="myinfo-hero">
       <h1 class="myinfo-hero-title" data-i18n="myinfo.myCareTeamKeyDetails" data-i18n-html>My Care Team &amp;<br>Key Details</h1>
-      <div class="myinfo-hero-sub" data-i18n="myinfo.savedOnYourPhoneTap">Saved on your phone · Tap to call or text</div>
     </div>
     <div class="form-section mt16" id="dates-form">
       <h2 class="form-section-title" data-i18n="me.datesTitle">Your dates</h2>
@@ -239,35 +237,53 @@
       <input type="file" id="import-file" accept="application/json,.json" hidden onchange="handleImportFile(this)">
     </div>
 
+    <div class="form-section mt16" id="settings-form">
+      <h2 class="form-section-title" data-i18n="me.settings">Settings</h2>
+      <div class="setting-row">
+        <span class="setting-label" id="text-size-label" data-i18n="me.textSize">Text size</span>
+        <div class="size-choices" role="group" aria-labelledby="text-size-label">
+          <button type="button" class="size-btn s1" data-size="1" data-i18n-aria-label="me.sizeNormal" aria-label="Normal">A</button>
+          <button type="button" class="size-btn s2" data-size="2" data-i18n-aria-label="me.sizeLarge" aria-label="Large">A</button>
+          <button type="button" class="size-btn s3" data-size="3" data-i18n-aria-label="me.sizeLarger" aria-label="Larger">A</button>
+        </div>
+      </div>
+      <div class="setting-row">
+        <span class="setting-label" data-i18n="me.language">Language</span>
+        <button type="button" class="setting-btn" id="settings-lang"></button>
+      </div>
+      <label class="setting-row" for="settings-dark">
+        <span class="setting-label" data-i18n="me.darkMode">Dark mode</span>
+        <input type="checkbox" class="setting-check" id="settings-dark">
+      </label>
+      <label class="setting-row" id="me-suggest-row" for="me-suggest-toggle" hidden>
+        <span class="setting-label" data-i18n="tool.i18n.tapToggle">Tap a sentence to suggest better wording</span>
+        <input type="checkbox" class="setting-check" id="me-suggest-toggle">
+      </label>
+    </div>
+
     <!-- Translators find the Translate page here. -->
     <button type="button" class="me-translate" onclick="navigate('translate')">
       <span class="me-translate-title" data-i18n="tools.translationHelper">Help translate</span>
-      <span class="me-translate-sub" data-i18n="tools.reviewSuggestWording">Check Obiana in your language, one sentence at a time</span>
     </button>
-    <label class="me-suggest" id="me-suggest-row" hidden>
-      <input type="checkbox" id="me-suggest-toggle">
-      <span data-i18n="tool.i18n.tapToggle">Tap a sentence to suggest better wording</span>
-    </label>
 
     <!-- The same disclaimer as the first-run gate, reachable at any time
          rather than only once, plus the privacy statement. Both are short
          because the honest version of each is short. -->
     <div class="about-block">
       <h2 class="about-heading" data-i18n="about.whatThisIs">What Obiana is</h2>
-      <p data-i18n="disclaimer.education">Obiana explains what usually happens. It is not medical advice. It does not know you or your pregnancy. Your doctor or midwife does.</p>
-      <p data-i18n="disclaimer.tools">The trackers only hold what you type in. They do not measure or diagnose anything. When one says to call someone, it means ask.</p>
-      <p class="about-emphasis" data-i18n="disclaimer.emergency">Do not use this app in an emergency. Call 911 or your labor and delivery line.</p>
-      <p data-i18n="disclaimer.sources">When this guide gives a number, it says who says so. Usually ACOG or the AAP. Your care team follows them too.</p>
+      <p data-i18n="disclaimer.education">This is general information, not medical advice. Ask your family doctor, OB or midwife about your own pregnancy.</p>
+      <p data-i18n="disclaimer.tools">The trackers keep what you type. They can't diagnose anything.</p>
+      <p class="about-emphasis" data-i18n="disclaimer.emergency">In an emergency, call 911.</p>
 
       <h2 class="about-heading" data-i18n="about.privacyHeading">Your information</h2>
       <p data-i18n="about.privacyOnDevice">What you type stays on this phone. No account, no sign-in, nothing sent. Clearing your browser data erases it, so use Export to keep a copy.</p>
-      <p data-i18n="about.privacySubmit">Two buttons send something: Help translate and Help Improve This Guide. They send your message, your country, and a scrambled form of your network address to stop spam. Not your name. Nothing from your trackers.</p>
+      <p data-i18n="about.privacySubmit">Only two buttons send anything: Help translate and Help Improve This Guide. They send what you wrote, your country, and a scrambled network address to stop spam. Never your name or what is in your trackers.</p>
     </div>
 
     <!-- AGPL section 13: a hosted copy has to offer its source to the people
          using it, so this link is a licence obligation, not decoration. -->
     <div class="source-note">
-      <span data-i18n="about.openSource">Free and open source. Fork it, keep it free.</span>
+      <span data-i18n="about.openSource">Free and open source.</span>
       <a href="https://github.com/robbie-med/obiana" target="_blank" rel="noopener"
          data-i18n="about.viewSource">View source (AGPL-3.0)</a>
     </div>
@@ -280,7 +296,6 @@
       <h1 class="hero-title" data-i18n="tools.trackersPlanners" data-i18n-html>Trackers &amp;<br>Planners</h1>
     </div>
 
-    <p class="tools-note" data-i18n="disclaimer.toolsNote">These tools hold what you type in. They do not diagnose.</p>
 
     <div class="tool-section-label" data-i18n="tools.feelingWell">Feeling Well</div>
     <div class="tool-grid">
@@ -289,14 +304,12 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--rose)" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 15s1.5-1.5 4-1.5 4 1.5 4 1.5"/><circle cx="9" cy="10" r="0.9" fill="var(--rose)" stroke="none"/><circle cx="15" cy="10" r="0.9" fill="var(--rose)" stroke="none"/></svg>
         </div>
         <div class="tool-card-name" data-i18n="tools.nauseaHelper">Nausea &amp; Eating</div>
-        <div class="tool-card-desc" data-i18n="tools.nauseaHelperDesc">Snack rhythm · What to try · Acupressure</div>
       </button>
       <button class="tool-card-btn" onclick="navigate('tool-nausealog')">
         <div class="tool-card-icon" style="background:var(--plum-light)">
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--plum)" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
         </div>
         <div class="tool-card-name" data-i18n="tools.nauseaLog">Nausea Log</div>
-        <div class="tool-card-desc" data-i18n="tools.nauseaLogDesc">Rate it · Record what you tried · See what helps you</div>
       </button>
     </div>
 
@@ -307,14 +320,12 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
         </div>
         <div class="tool-card-name" data-i18n="tools.kickCounter">Kick Counter</div>
-        <div class="tool-card-desc" data-i18n="tools.10MovesIn2Hours" data-i18n-html>Optional. Get to know your baby's movements</div>
       </button>
       <button class="tool-card-btn" onclick="navigate('tool-contractions')">
         <div class="tool-card-icon" style="background:var(--gold-light)">
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
         </div>
         <div class="tool-card-name" data-i18n="tools.contractionTimer">Contraction Timer</div>
-        <div class="tool-card-desc" data-i18n="tools.tapStartStop51">Tap start/stop · 5-1-1 alert · When to go in</div>
       </button>
     </div>
 
@@ -325,28 +336,24 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--rose)" stroke-width="2"><path d="M12 2a5 5 0 015 5c0 2.5-2 4.5-2 7H9c0-2.5-2-4.5-2-7a5 5 0 015-5z"/><path d="M9 20h6"/><path d="M10 16v4"/><path d="M14 16v4"/></svg>
         </div>
         <div class="tool-card-name" data-i18n="tools.feedingLog">Feeding Log</div>
-        <div class="tool-card-desc" data-i18n="tools.breastOrBottle24Hr">Breast or bottle · 24-hr count · Alerts if low</div>
       </button>
       <button class="tool-card-btn" onclick="navigate('tool-diapers')">
         <div class="tool-card-icon" style="background:var(--navy-light)">
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="2"><path d="M3 3h18v18H3z" rx="2"/><path d="M3 9h5l3 6 3-6h5"/></svg>
         </div>
         <div class="tool-card-name" data-i18n="tools.diaperLog">Diaper Log</div>
-        <div class="tool-card-desc" data-i18n="tools.wetDirtyCountDailyTotals" data-i18n-html>Wet &amp; dirty count · Daily totals for the doctor</div>
       </button>
       <button class="tool-card-btn" onclick="navigate('tool-jaundice')">
         <div class="tool-card-icon" style="background:var(--gold-light)">
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
         </div>
         <div class="tool-card-name" data-i18n="tools.jaundiceTracker">Jaundice Tracker</div>
-        <div class="tool-card-desc" data-i18n="tools.dayByDayGuidanceFrom">Day-by-day guidance from birth</div>
       </button>
       <button class="tool-card-btn" onclick="navigate('tool-mood')">
         <div class="tool-card-icon" style="background:var(--plum-light)">
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--plum)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><circle cx="9" cy="9" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="9" r="1" fill="currentColor" stroke="none"/></svg>
         </div>
         <div class="tool-card-name" data-i18n="tools.moodCheckIn">Mood Check-In</div>
-        <div class="tool-card-desc" data-i18n="tools.epdsScreenWeeklyTrackingFlags">EPDS screen · Weekly tracking · Flags concerns</div>
       </button>
     </div>
 
@@ -357,14 +364,12 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="#c44" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
         </div>
         <div class="tool-card-name" data-i18n="tools.bloodPressure">Blood Pressure</div>
-        <div class="tool-card-desc" data-i18n="tools.logReadingsFlags14090">Log readings · Flags ≥ 140/90 automatically</div>
       </button>
       <button class="tool-card-btn" onclick="navigate('tool-weight')">
         <div class="tool-card-icon" style="background:var(--teal-light)">
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2"><path d="M12 2a3 3 0 013 3H9a3 3 0 013-3z"/><rect x="2" y="5" width="20" height="16" rx="2"/><path d="M12 12v4"/><path d="M8 14h8"/></svg>
         </div>
         <div class="tool-card-name" data-i18n="tools.weightTracker">Weight Tracker</div>
-        <div class="tool-card-desc" data-i18n="tools.logByWeekIomGain">Log by week · IOM gain guidelines for your BMI</div>
       </button>
     </div>
 
@@ -375,14 +380,12 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/><polyline points="9 9 10 9"/></svg>
         </div>
         <div class="tool-card-name" data-i18n="tools.birthPlanBuilder">Birth Plan Builder</div>
-        <div class="tool-card-desc" data-i18n="tools.guidedChoicesShareableOnePage">Guided choices · Shareable one-page summary</div>
       </button>
       <button class="tool-card-btn" onclick="navigate('tool-appts')">
         <div class="tool-card-icon" style="background:var(--navy-light)">
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
         </div>
         <div class="tool-card-name" data-i18n="tools.visitNotes">Visit Notes</div>
-        <div class="tool-card-desc" data-i18n="tools.questionsBeforeNotesDuringEvery">Questions before · Notes during every visit</div>
       </button>
     </div>
 
@@ -393,14 +396,12 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 010 18a15 15 0 010-18z"/></svg>
         </div>
         <div class="tool-card-name" data-i18n="tools.translationHelper">Help translate</div>
-        <div class="tool-card-desc" data-i18n="tools.reviewSuggestWording">Check Obiana in your language, one sentence at a time</div>
       </button>
       <button class="tool-card-btn" onclick="navigate('tool-improve')">
         <div class="tool-card-icon" style="background:var(--gold-light)">
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
         </div>
         <div class="tool-card-name" data-i18n="tools.improveGuide">Help Improve This Guide</div>
-        <div class="tool-card-desc" data-i18n="tools.shareCustomAsk">Share how it is done in your culture · Ask about anything unclear</div>
       </button>
     </div>
 
@@ -748,48 +749,48 @@
      subtree is gone from the box tree, so printing produced a blank page. -->
 <div id="print-view"></div>
 
-<script src="./i18n/i18n.js?v=99"></script>
-<script src="./i18n/body-templates.js?v=99"></script>
-<script src="./i18n/epds/epds.en.js?v=99"></script>
-<script src="./i18n/epds/epds.es.js?v=99"></script>
-<script src="./i18n/epds/epds.cnh.js?v=99"></script>
-<script src="./i18n/epds/epds.ko.js?v=99"></script>
-<script src="./i18n/epds/epds.zh.js?v=99"></script>
-<script src="./i18n/epds/epds.ar.js?v=99"></script>
-<script src="./i18n/epds/phq9.fr.js?v=99"></script>
-<script src="./i18n/epds/phq9.ru.js?v=99"></script>
+<script src="./i18n/i18n.js?v=100"></script>
+<script src="./i18n/body-templates.js?v=100"></script>
+<script src="./i18n/epds/epds.en.js?v=100"></script>
+<script src="./i18n/epds/epds.es.js?v=100"></script>
+<script src="./i18n/epds/epds.cnh.js?v=100"></script>
+<script src="./i18n/epds/epds.ko.js?v=100"></script>
+<script src="./i18n/epds/epds.zh.js?v=100"></script>
+<script src="./i18n/epds/epds.ar.js?v=100"></script>
+<script src="./i18n/epds/phq9.fr.js?v=100"></script>
+<script src="./i18n/epds/phq9.ru.js?v=100"></script>
 <!-- App: classic scripts sharing one global scope, in dependency order.
      Guide and app shell first, then the tools, then the contributor tools. -->
-<script src="./app/guide/structure.js?v=99"></script>
-<script src="./app/core/storage.js?v=99"></script>
-<script src="./app/core/dates.js?v=99"></script>
-<script src="./app/guide/cards.js?v=99"></script>
-<script src="./app/guide/visits.js?v=99"></script>
-<script src="./app/myinfo.js?v=99"></script>
-<script src="./app/guide/search.js?v=99"></script>
-<script src="./app/core/nav.js?v=99"></script>
-<script src="./app/core/router.js?v=99"></script>
-<script src="./app/guide/urgent.js?v=99"></script>
-<script src="./app/today.js?v=99"></script>
-<script src="./app/core/pwa.js?v=99"></script>
-<script src="./app/core/ui.js?v=99"></script>
-<script src="./app/settings.js?v=99"></script>
-<script src="./app/first-run.js?v=99"></script>
-<script src="./app/language.js?v=99"></script>
-<script src="./app/boot.js?v=99"></script>
-<script src="./app/tools/shared.js?v=99"></script>
-<script src="./app/tools/kick.js?v=99"></script>
-<script src="./app/tools/contractions.js?v=99"></script>
-<script src="./app/tools/feeding.js?v=99"></script>
-<script src="./app/tools/diapers.js?v=99"></script>
-<script src="./app/tools/jaundice.js?v=99"></script>
-<script src="./app/tools/bp.js?v=99"></script>
-<script src="./app/tools/weight.js?v=99"></script>
-<script src="./app/tools/mood.js?v=99"></script>
-<script src="./app/tools/birthplan.js?v=99"></script>
-<script src="./app/tools/appts.js?v=99"></script>
-<script src="./app/contribute/translate.js?v=99"></script>
-<script src="./app/contribute/improve.js?v=99"></script>
-<script src="./app/tools/nausea.js?v=99"></script>
+<script src="./app/guide/structure.js?v=100"></script>
+<script src="./app/core/storage.js?v=100"></script>
+<script src="./app/core/dates.js?v=100"></script>
+<script src="./app/guide/cards.js?v=100"></script>
+<script src="./app/guide/visits.js?v=100"></script>
+<script src="./app/myinfo.js?v=100"></script>
+<script src="./app/guide/search.js?v=100"></script>
+<script src="./app/core/nav.js?v=100"></script>
+<script src="./app/core/router.js?v=100"></script>
+<script src="./app/guide/urgent.js?v=100"></script>
+<script src="./app/today.js?v=100"></script>
+<script src="./app/core/pwa.js?v=100"></script>
+<script src="./app/core/ui.js?v=100"></script>
+<script src="./app/settings.js?v=100"></script>
+<script src="./app/first-run.js?v=100"></script>
+<script src="./app/language.js?v=100"></script>
+<script src="./app/boot.js?v=100"></script>
+<script src="./app/tools/shared.js?v=100"></script>
+<script src="./app/tools/kick.js?v=100"></script>
+<script src="./app/tools/contractions.js?v=100"></script>
+<script src="./app/tools/feeding.js?v=100"></script>
+<script src="./app/tools/diapers.js?v=100"></script>
+<script src="./app/tools/jaundice.js?v=100"></script>
+<script src="./app/tools/bp.js?v=100"></script>
+<script src="./app/tools/weight.js?v=100"></script>
+<script src="./app/tools/mood.js?v=100"></script>
+<script src="./app/tools/birthplan.js?v=100"></script>
+<script src="./app/tools/appts.js?v=100"></script>
+<script src="./app/contribute/translate.js?v=100"></script>
+<script src="./app/contribute/improve.js?v=100"></script>
+<script src="./app/tools/nausea.js?v=100"></script>
 </body>
 </html>

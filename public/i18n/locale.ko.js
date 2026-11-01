@@ -53,10 +53,6 @@ window.MYOB_LOCALES.ko = {
         "pharmacy": "약국"
       },
       "detail": {
-        "edd": {
-          "label": "출산 예정일 (EDD)",
-          "placeholder": "예: 2026년 7월 15일"
-        },
         "bloodtype": {
           "label": "혈액형 및 Rh 요인",
           "placeholder": "예: O형 양성"
@@ -76,7 +72,6 @@ window.MYOB_LOCALES.ko = {
       },
       "myInformation": "내 정보",
       "myCareTeamKeyDetails": "내 진료팀 &amp;<br>주요 정보",
-      "savedOnYourPhoneTap": "휴대폰에 저장됨 · 눌러서 전화 또는 문자",
       "careTeamContacts": "진료팀 연락처",
       "myPregnancyDetails": "내 임신 정보",
       "questionsForMyDoctor": "의사에게 물어볼 질문",
@@ -103,7 +98,7 @@ window.MYOB_LOCALES.ko = {
         "getMyScore": "내 점수 확인",
         "pastCheckIns": "이전 검사 기록",
         "selfHarmGuidance": "스스로를 해치고 싶은 생각이 들었다고 답하셨습니다. 지금 그런 생각이 든다면 911에 전화하거나 응급실에 가세요. 988(자살 예방 및 위기 상담 전화)로 언제든 전화나 문자를 할 수도 있습니다. 담당 의사에게도 알리세요.",
-        "continueWeekly": "매주 계속 확인해 보세요. 기분이 달라지면 이 도구로 추적할 수 있습니다.",
+        "continueWeekly": "다음 주에 다시 확인해 보세요.",
         "talkToDoctor": "선별 점수에 대해서라도 의료진과 이야기하는 것은 언제나 좋은 일입니다. 산후우울증은 치료가 잘 됩니다.",
         "instrumentLanguage": "설문지 언어:",
         "change": "변경",
@@ -218,7 +213,7 @@ window.MYOB_LOCALES.ko = {
         "printPdf": "인쇄 / PDF",
         "additionalNotes": "추가 메모:",
         "myBirthPreferences": "나의 분만 희망사항",
-        "pregnancyBirthGuideEvidenceBased": "임신 &amp; 출산 가이드 · 근거 기반 · 비공개 &amp; 오프라인",
+        "pregnancyBirthGuideEvidenceBased": "Obiana로 만들었습니다, obiana.app",
         "anyOtherPreferencesConcernsOr": "의료진에게 전달할 다른 희망사항, 걱정, 정보가 있으면 적어 주세요…",
         "copiedToClipboard": "클립보드에 복사했어요!",
         "copyNotSupportedOnThis": "이 브라우저에서는 복사를 지원하지 않아요",
@@ -386,8 +381,8 @@ window.MYOB_LOCALES.ko = {
         "cancel": "취소"
       },
       "improve": {
-        "intro": "이 안내서는 사람이 씁니다. 읽는 분들이 빠진 내용을 알려주실 때 더 좋아집니다. 우리 문화에서는 어떻게 하는지 들려주시거나, 다루지 않은 주제를 물어보시거나, 이해하기 어려웠던 부분을 알려주세요.",
-        "notDoctor": "이 내용은 안내서를 만드는 사람들에게 전달됩니다. 담당 의료진에게 연락하는 방법이 아니며, 여기서 답장을 드리지는 않습니다.",
+        "intro": "부족한 점을 알려 주세요. 내 문화에서는 어떻게 하는지, 이 안내서에 없는 질문, 이해하기 어려웠던 부분 등.",
+        "notDoctor": "여기에는 답장이 오지 않습니다. 본인 진료는 가정의학과 의사, 산부인과 의사 또는 조산사에게 전화하세요.",
         "whatKind": "어떤 이야기를 들려주시겠어요?",
         "kindCulture": "우리 문화에서는 다르게 합니다",
         "kindQuestion": "이 안내서에 없는 질문이 있습니다",
@@ -398,7 +393,7 @@ window.MYOB_LOCALES.ko = {
         "messagePlaceholder": "길게 쓰셔도 짧게 쓰셔도 좋습니다…",
         "send": "보내기",
         "sending": "보내는 중…",
-        "thanks": "감사합니다. 안내서를 더 좋게 만드는 데 도움이 됩니다.",
+        "thanks": "감사합니다.",
         "writeFirst": "먼저 내용을 입력해 주세요",
         "failed": "보내지 못했습니다. 입력하신 내용은 여기에 저장되었습니다.",
         "rateLimited": "메시지를 너무 많이 보내셨습니다. 나중에 다시 시도해 주세요",
@@ -514,7 +509,7 @@ window.MYOB_LOCALES.ko = {
     "lang": {
       "label": "언어",
       "change": "언어 변경",
-      "unreviewedNotice": "이 번역은 기계 번역으로 아직 의료진의 검토를 거치지 않았습니다. 의료 관련 결정은 담당 의료진과 확인하시거나 영어로 전환해 주세요.",
+      "unreviewedNotice": "기계가 번역했으며 아직 의사가 확인하지 않았습니다. 이해되지 않는 부분은 담당 의료진에게 물어보세요.",
       "loadFailed": "불러올 수 없습니다",
       "inProgress": "번역 진행 중"
     },
@@ -552,8 +547,7 @@ window.MYOB_LOCALES.ko = {
       "legRednessSwelling": "다리의 발적/부종",
       "chestPainOrTroubleBreathing": "가슴 통증 또는 호흡 곤란",
       "thoughtsOfSelfHarm": "자해 충동",
-      "heroTitle": "미리 알고,<br>좋은 질문을<br>하세요.",
-      "heroDesc": "첫 산전 진료부터 분만과 회복까지, Obiana가 모든 것을 한곳에 모아 드립니다."
+      "heroTitle": "미리 알고,<br>좋은 질문을<br>하세요."
     },
     "pregnancy": {
       "section1": "1부",
@@ -576,38 +570,24 @@ window.MYOB_LOCALES.ko = {
       "trackersPlanners": "기록과<br>계획",
       "labor": "진통",
       "kickCounter": "태동 세기",
-      "10MovesIn2Hours": "선택 사항. 아기의 움직임을 알아 가세요",
       "contractionTimer": "진통 타이머",
-      "tapStartStop51": "시작/정지 누르기 · 5-1-1 알림 · 병원 갈 시기",
       "newbornPostpartum": "신생아와 산후",
       "feedingLog": "수유 기록",
-      "breastOrBottle24Hr": "모유 또는 젖병 · 24시간 횟수 · 부족 시 알림",
       "diaperLog": "기저귀 기록",
-      "wetDirtyCountDailyTotals": "젖은 기저귀와 대변 횟수 · 의사에게 보여줄 하루 합계",
       "jaundiceTracker": "황달 추적",
-      "dayByDayGuidanceFrom": "출생 후 날짜별 안내",
       "moodCheckIn": "기분 체크인",
-      "epdsScreenWeeklyTrackingFlags": "EPDS 검사 · 매주 기록 · 문제가 있으면 알려드려요",
       "pregnancyMonitoring": "임신 중 건강 체크",
       "bloodPressure": "혈압",
-      "logReadingsFlags14090": "혈압 기록 · 140/90 이상이면 자동으로 알려드려요",
       "weightTracker": "체중 기록",
-      "logByWeekIomGain": "주차별 기록 · 내 BMI에 맞는 IOM 체중 증가 기준",
       "planning": "계획하기",
       "birthPlanBuilder": "출산 계획 만들기",
-      "guidedChoicesShareableOnePage": "차근차근 선택하기 · 한 장짜리 요약 공유 가능",
       "visitNotes": "진료 메모",
-      "questionsBeforeNotesDuringEvery": "진료 전 질문 · 매 진료마다 메모",
       "translationHelper": "번역 돕기",
-      "reviewSuggestWording": "Obiana를 사용하시는 언어로 한 문장씩 확인하기",
       "improveGuide": "이 안내서 개선에 도움 주기",
-      "shareCustomAsk": "우리 문화에서는 어떻게 하는지 알려주기 · 궁금한 점 묻기",
       "helpUsImprove": "개선에 도움 주기",
       "nauseaHelper": "메스꺼움과 식사",
-      "nauseaHelperDesc": "간식 리듬 · 시도해 볼 것 · 손목 지압",
       "feelingWell": "컨디션 관리",
-      "nauseaLog": "메스꺼움 기록",
-      "nauseaLogDesc": "정도 기록 · 시도한 것 기록 · 도움 된 것 확인"
+      "nauseaLog": "메스꺼움 기록"
     },
     "toolbp": {
       "bloodPressureLog": "혈압 기록"
@@ -682,25 +662,32 @@ window.MYOB_LOCALES.ko = {
     },
     "usNotice": {
       "title": "미국에서의 진료 안내",
-      "body": "이 안내서는 미국에서 제공되는 산전 관리를 설명하며, 미국에서 진료를 받는 산모를 위해 작성되었습니다. 산전 관리는 나라마다 크게 다릅니다. 다른 나라의 진료 일정, 검사, 권고 사항은 여기에 적힌 내용과 다를 수 있습니다. 다른 나라에서 진료를 받고 계신다면 이 앱은 아마 맞지 않을 것입니다.",
+      "body": "Obiana는 미국의 산전 관리를 따릅니다. 다른 나라에서는 진료, 검사, 권고가 다를 수 있습니다.",
       "continue": "이해했습니다"
     },
     "about": {
-      "openSource": "자유 오픈소스입니다. 포크하셔도 되지만 자유롭게 유지해 주세요.",
+      "openSource": "무료 오픈 소스입니다.",
       "viewSource": "소스 코드 보기 (AGPL-3.0)",
       "whatThisIs": "Obiana란",
       "privacyHeading": "내 정보",
       "privacyOnDevice": "입력한 내용은 이 휴대전화에만 저장됩니다. 계정도 로그인도 없고 아무것도 전송되지 않습니다. 브라우저 데이터를 지우면 사라지니 내보내기로 사본을 보관하세요.",
-      "privacySubmit": "전송하는 버튼은 두 개뿐입니다. 번역 돕기와 이 안내서 개선하기입니다. 작성한 내용, 국가, 스팸 방지를 위해 변환한 네트워크 주소를 보냅니다. 이름은 보내지 않습니다. 기록 내용도 보내지 않습니다."
+      "privacySubmit": "무언가를 보내는 버튼은 두 개뿐입니다. 번역 돕기와 이 안내서 개선하기입니다. 작성한 내용, 국가, 스팸 방지를 위해 변환한 네트워크 주소를 보냅니다. 이름이나 기록 내용은 절대 보내지 않습니다."
     },
     "disclaimer": {
       "title": "시작하기 전에",
-      "education": "Obiana는 보통 어떤 일이 일어나는지 설명합니다. 의학적 조언이 아닙니다. 당신과 당신의 임신을 알지 못합니다. 가정의학과 의사, 산부인과 의사 또는 조산사가 압니다.",
-      "tools": "기록 도구는 직접 입력한 내용만 저장합니다. 무엇도 측정하거나 진단하지 않습니다. 연락하라고 안내하면 물어보라는 뜻입니다.",
-      "emergency": "응급 상황에는 이 앱을 사용하지 마세요. 911 또는 분만실로 전화하세요.",
-      "sources": "이 안내서가 수치를 제시할 때는 출처를 밝힙니다. 보통 ACOG 또는 AAP입니다. 담당 의료진도 같은 기준을 따릅니다.",
-      "continue": "이해했습니다",
-      "toolsNote": "이 도구들은 입력한 내용을 저장합니다. 진단하지 않습니다."
+      "education": "일반적인 정보이며 의학적 조언이 아닙니다. 본인의 임신에 대해서는 가정의학과 의사, 산부인과 의사 또는 조산사에게 물어보세요.",
+      "tools": "기록 도구는 입력하신 내용을 보관할 뿐, 아무것도 진단할 수 없습니다.",
+      "emergency": "응급 상황에서는 911에 전화하세요.",
+      "continue": "이해했습니다"
+    },
+    "me": {
+      "settings": "설정",
+      "textSize": "글자 크기",
+      "sizeNormal": "보통",
+      "sizeLarge": "크게",
+      "sizeLarger": "더 크게",
+      "language": "언어",
+      "darkMode": "다크 모드"
     }
   },
   "content": {

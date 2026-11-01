@@ -1,0 +1,8 @@
+# Me → Settings
+ui.me.settings
+ui.me.textSize
+ui.me.sizeNormal
+ui.me.sizeLarge
+ui.me.sizeLarger
+ui.me.language
+ui.me.darkMode

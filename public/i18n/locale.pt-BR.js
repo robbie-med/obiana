@@ -18,36 +18,33 @@ window.MYOB_LOCALES["pt-BR"] = {
       "title": "Obiana Manual da Gravidez"
     },
     "lang": {
-      "unreviewedNotice": "Esta tradução foi gerada automaticamente e ainda não foi revisada por um profissional de saúde. Para decisões médicas, confirme com sua equipe de saúde ou mude para o inglês.",
+      "unreviewedNotice": "Uma máquina traduziu isto, e um médico ainda não revisou. Se algo não estiver claro, pergunte à sua equipe de saúde.",
       "loadFailed": "Não foi possível carregar",
       "inProgress": "Tradução em andamento"
     },
     "usNotice": {
       "title": "Atendimento nos Estados Unidos",
-      "body": "Este guia descreve o pré-natal como ele é feito nos Estados Unidos e foi escrito para mães que fazem o acompanhamento aqui. O pré-natal varia muito de país para país. O calendário de consultas, os exames e as recomendações em outros lugares podem não corresponder ao que você lê aqui. Se você faz o acompanhamento em outro país, provavelmente este aplicativo não é para você.",
+      "body": "O Obiana segue o pré-natal dos Estados Unidos. Consultas, exames e orientações podem ser diferentes em outros países.",
       "continue": "Entendi"
     },
     "tools": {
       "helpUsImprove": "Ajude a melhorar"
     },
     "home": {
-      "heroTitle": "Saiba o que<br>esperar. Faça boas<br>perguntas.",
-      "heroDesc": "Da primeira consulta pré-natal ao parto e à recuperação, o Obiana reúne tudo em um só lugar."
+      "heroTitle": "Saiba o que<br>esperar. Faça boas<br>perguntas."
     },
     "disclaimer": {
       "title": "Antes de começar",
-      "education": "O Obiana explica o que costuma acontecer. Não é orientação médica. Ele não conhece você nem sua gravidez. Seu médico de família, obstetra ou parteira conhece.",
-      "tools": "Os registros guardam apenas o que você digita. Não medem nem diagnosticam nada. Quando um deles diz para ligar para alguém, significa perguntar.",
-      "emergency": "Não use este aplicativo em uma emergência. Ligue para 911 ou para a maternidade.",
-      "sources": "Quando este guia dá um número, ele diz quem o recomenda. Geralmente ACOG ou AAP. Sua equipe de saúde também segue essas fontes.",
-      "continue": "Entendi",
-      "toolsNote": "Estas ferramentas guardam o que você digita. Elas não diagnosticam."
+      "education": "Isto é informação geral, não orientação médica. Pergunte ao seu médico de família, obstetra ou parteira sobre a sua própria gravidez.",
+      "tools": "Os registros guardam o que você digita. Eles não podem diagnosticar nada.",
+      "emergency": "Em uma emergência, ligue para 911.",
+      "continue": "Entendi"
     },
     "about": {
       "whatThisIs": "O que é o Obiana",
       "privacyHeading": "Suas informações",
       "privacyOnDevice": "O que você digita fica neste telefone. Sem conta, sem login, nada é enviado. Limpar os dados do navegador apaga tudo, então use Exportar para guardar uma cópia.",
-      "privacySubmit": "Apenas dois botões enviam algo: Ajude a traduzir e Ajude a melhorar este guia. Eles enviam sua mensagem, seu país e uma forma embaralhada do seu endereço de rede para evitar spam. Não o seu nome. Nada dos seus registros."
+      "privacySubmit": "Apenas dois botões enviam algo: Ajude a traduzir e Ajude a melhorar este guia. Eles enviam o que você escreveu, seu país e um endereço de rede embaralhado para evitar spam. Nunca o seu nome nem o que está nos seus registros."
     }
   }
 };

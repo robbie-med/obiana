@@ -13,6 +13,7 @@ function toggleDarkMode() {
   const isDark = document.body.classList.toggle('dark');
   safeSet('dark-mode', isDark ? '1' : '0');
   updateThemeIcon();
+  renderSettings();
 }
 
 function updateThemeIcon() {
@@ -43,8 +44,50 @@ const EXPORT_KEYS = [
   'nausea-log', 'nausea-snacks', 'nausea-week', 'nausea-tried',
   'myob.epdsLang', 'birth-plan-v2', 'appt-notes-v2',
   'myob.lang', 'dark-mode', 'myob.usNoticeSeen', 'myob.noticeAccepted',
-  'obiana.dates',
+  'obiana.dates', 'obiana.textSize',
 ];
+
+// ═══════════════════════════════════════════════════════
+// SETTINGS (Me): text size, language, dark mode
+// ═══════════════════════════════════════════════════════
+// Text size scales the reading area (#content) with CSS zoom, because the
+// stylesheet sizes text in px. The class is set before first paint by
+// core/theme.js, so a large-text reader never sees small text flash.
+const TEXT_SIZE_KEY = 'obiana.textSize';
+
+function setTextSize(n) {
+  n = [1, 2, 3].includes(+n) ? +n : 1;
+  safeSet(TEXT_SIZE_KEY, String(n));
+  document.body.classList.remove('text-2', 'text-3');
+  if (n > 1) document.body.classList.add('text-' + n);
+  renderSettings();
+}
+
+function renderSettings() {
+  const size = +(safeGet(TEXT_SIZE_KEY, '1')) || 1;
+  document.querySelectorAll('.size-btn').forEach(b =>
+    b.setAttribute('aria-pressed', String(+b.dataset.size === size)));
+  const lang = document.getElementById('settings-lang');
+  if (lang) lang.textContent = (I18n.LOCALES[I18n.lang] || {}).native || I18n.lang;
+  const dark = document.getElementById('settings-dark');
+  if (dark) dark.checked = document.body.classList.contains('dark');
+}
+
+document.addEventListener('click', e => {
+  const size = e.target.closest && e.target.closest('.size-btn');
+  if (size) setTextSize(size.dataset.size);
+});
+// On the button itself, so the header popover's outside-tap handler on
+// document never sees this click and closes what it just opened.
+document.getElementById('settings-lang')?.addEventListener('click', e => {
+  e.stopPropagation();
+  openLangPop();
+});
+document.addEventListener('change', e => {
+  if (e.target && e.target.id === 'settings-dark') {
+    if (e.target.checked !== document.body.classList.contains('dark')) toggleDarkMode();
+  }
+});
 
 function exportData() {
   const keys = EXPORT_KEYS;

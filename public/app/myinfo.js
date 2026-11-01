@@ -12,8 +12,9 @@ const CONTACTS = [
   { id: "pharmacy",   hasName: true,  hasPhone: true },
 ];
 
+// The due date is not here: it lives in "Your dates" (obiana.dates, a real
+// date field) so Today, the Guide and Me all read the same one.
 const DETAILS = [
-  { id: "edd",       type: "text" },
   { id: "bloodtype", type: "text" },
   { id: "gbs",       type: "text" },
   { id: "allergies", type: "text" },
@@ -76,15 +77,31 @@ function renderMyInfo() {
     dForm.appendChild(row);
   });
 
-  // Dates (obiana.dates, ISO): what Today and the Guide go by.
-  const dates = getDates();
-  const eddEl = document.getElementById('me-edd'), bornEl = document.getElementById('me-born');
-  if (eddEl) eddEl.value = dates.edd || '';
-  if (bornEl) bornEl.value = dates.born || '';
+  refreshMeDates();
+  if (typeof renderSettings === 'function') renderSettings();
 
   // Notes
   document.getElementById('notes-field').value = saved['notes'] || '';
 }
+
+// ─── Your dates ─────────────────────────────────────────
+// One store (obiana.dates) for Today, the Guide and Me. The fields are read
+// fresh every time Me opens and saved the moment they change, so a date set on
+// Today shows here, and a stale field can never be written back over it.
+function refreshMeDates() {
+  const d = getDates();
+  const eddEl = document.getElementById('me-edd'), bornEl = document.getElementById('me-born');
+  if (eddEl && document.activeElement !== eddEl) eddEl.value = d.edd || '';
+  if (bornEl && document.activeElement !== bornEl) bornEl.value = d.born || '';
+}
+
+document.addEventListener('change', e => {
+  const id = e.target && e.target.id;
+  if (id !== 'me-edd' && id !== 'me-born') return;
+  const ok = setDates(id === 'me-edd' ? { edd: e.target.value } : { born: e.target.value });
+  showToast(I18n.t(ok ? 'myinfo.saved' : 'toast.notSaved'));
+  renderToday();
+});
 
 function escHtml(s) {
   return (s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -113,9 +130,9 @@ function saveInfo() {
     if (el) data[d.id] = el.value.trim();
   });
   data['notes'] = document.getElementById('notes-field').value;
-
-  const eddEl = document.getElementById('me-edd'), bornEl = document.getElementById('me-born');
-  if (eddEl && bornEl) setDates({ edd: eddEl.value, born: bornEl.value });
+  // Kept so an older free-text due date is not lost; it is no longer shown.
+  const old = safeLoad('birth-guide-info', {});
+  if (old.edd) data.edd = old.edd;
 
   safeSave('birth-guide-info', data);
 

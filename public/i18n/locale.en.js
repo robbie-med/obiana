@@ -51,10 +51,6 @@ window.MYOB_LOCALES.en = {
         "pharmacy": "Pharmacy"
       },
       "detail": {
-        "edd": {
-          "label": "Due Date (EDD)",
-          "placeholder": "e.g. July 15, 2026"
-        },
         "bloodtype": {
           "label": "Blood Type & Rh Factor",
           "placeholder": "e.g. O positive"
@@ -74,7 +70,6 @@ window.MYOB_LOCALES.en = {
       },
       "myInformation": "My Information",
       "myCareTeamKeyDetails": "My Care Team &amp;<br>Key Details",
-      "savedOnYourPhoneTap": "Saved on your phone · Tap to call or text",
       "careTeamContacts": "Care Team Contacts",
       "myPregnancyDetails": "My Pregnancy Details",
       "questionsForMyDoctor": "Questions for My Doctor",
@@ -117,7 +112,7 @@ window.MYOB_LOCALES.en = {
         "scoreNote": "Score out of {max} on the {instrument}, using the published cutoffs for that questionnaire. It is a screening tool, not a diagnosis. Go through the result with your care team.",
         "pastCheckIns": "Past Check-Ins",
         "selfHarmGuidance": "You answered that thoughts of harming yourself have come to you. If you have them now, call 911 or go to the ER. You can also call or text 988, the Suicide & Crisis Lifeline, any time, and tell your doctor.",
-        "continueWeekly": "Continue checking in weekly. If your mood changes, this tool will help you track it.",
+        "continueWeekly": "Check in again next week.",
         "talkToDoctor": "Talking to your doctor, even about a screening score, is always a good step. PPD is very treatable.",
         "important": "Important",
         "phq9Title": "Patient Health Questionnaire (PHQ-9)"
@@ -229,13 +224,13 @@ window.MYOB_LOCALES.en = {
         "printPdf": "Print / PDF",
         "additionalNotes": "Additional notes:",
         "myBirthPreferences": "My Birth Preferences",
-        "pregnancyBirthGuideEvidenceBased": "Pregnancy &amp; Birth Guide · Evidence-based · Private &amp; offline",
+        "pregnancyBirthGuideEvidenceBased": "Made with Obiana, obiana.app",
         "anyOtherPreferencesConcernsOr": "Any other preferences, concerns, or information for your care team…",
         "copiedToClipboard": "Copied to clipboard!",
         "copyNotSupportedOnThis": "Copy not supported on this browser",
         "selectPreferences": "Select your preferences below. Your summary will appear at the bottom. You can share it with your care team.",
         "generatedOn": "Generated {date}",
-        "generatedWith": "Generated with Obiana Pregnancy Handbook"
+        "generatedWith": "Made with Obiana, obiana.app"
       },
       "kick": {
         "startSession": "Start Session",
@@ -423,8 +418,8 @@ window.MYOB_LOCALES.en = {
         "cancel": "Cancel"
       },
       "improve": {
-        "intro": "This guide is written by people, and it gets better when readers tell us what is missing. Share how something is done in your culture, ask about a topic we do not cover, or point out anything that did not read clearly.",
-        "notDoctor": "This goes to the people who write this guide. It is not a way to reach your own doctor, and nobody replies here.",
+        "intro": "Tell us what's missing: how something is done in your culture, a question this guide doesn't answer, or a part that was hard to follow.",
+        "notDoctor": "Nobody replies here. For your own care, call your family doctor, OB or midwife.",
         "whatKind": "What would you like to share?",
         "kindCulture": "In my culture we do it differently",
         "kindQuestion": "A question this guide does not answer",
@@ -435,7 +430,7 @@ window.MYOB_LOCALES.en = {
         "messagePlaceholder": "Write as much or as little as you like…",
         "send": "Send",
         "sending": "Sending…",
-        "thanks": "Thank you. This helps make the guide better.",
+        "thanks": "Thank you.",
         "writeFirst": "Please write something first",
         "failed": "Could not send. Your text is saved here.",
         "rateLimited": "Too many messages, please try again later",
@@ -551,7 +546,7 @@ window.MYOB_LOCALES.en = {
     "lang": {
       "label": "Language",
       "change": "Change language",
-      "unreviewedNotice": "This translation is machine-generated and has not yet been reviewed by a clinician. For medical decisions, please confirm with your care team or switch to English.",
+      "unreviewedNotice": "A machine translated this, and a doctor hasn't checked it yet. If anything is unclear, ask your care team.",
       "loadFailed": "Could not load",
       "inProgress": "Translation in progress"
     },
@@ -589,8 +584,7 @@ window.MYOB_LOCALES.en = {
       "legRednessSwelling": "Leg redness/swelling",
       "chestPainOrTroubleBreathing": "Chest pain or trouble breathing",
       "thoughtsOfSelfHarm": "Thoughts of self-harm",
-      "heroTitle": "Know what to<br>expect. Ask great<br>questions.",
-      "heroDesc": "From your first prenatal visit through delivery and recovery, Obiana keeps everything in one place."
+      "heroTitle": "Know what to<br>expect. Ask great<br>questions."
     },
     "pregnancy": {
       "section1": "Section 1",
@@ -613,38 +607,24 @@ window.MYOB_LOCALES.en = {
       "trackersPlanners": "Trackers &amp;<br>Planners",
       "labor": "Labor",
       "kickCounter": "Kick Counter",
-      "10MovesIn2Hours": "Optional. Get to know your baby's movements",
       "contractionTimer": "Contraction Timer",
-      "tapStartStop51": "Tap start/stop · 5-1-1 alert · When to go in",
       "newbornPostpartum": "Newborn &amp; Postpartum",
       "feedingLog": "Feeding Log",
-      "breastOrBottle24Hr": "Breast or bottle · 24-hr count · Alerts if low",
       "diaperLog": "Diaper Log",
-      "wetDirtyCountDailyTotals": "Wet &amp; dirty count · Daily totals for the doctor",
       "jaundiceTracker": "Jaundice Tracker",
-      "dayByDayGuidanceFrom": "Day-by-day guidance from birth",
       "moodCheckIn": "Mood Check-In",
-      "epdsScreenWeeklyTrackingFlags": "EPDS screen · Weekly tracking · Flags concerns",
       "pregnancyMonitoring": "Pregnancy Monitoring",
       "bloodPressure": "Blood Pressure",
-      "logReadingsFlags14090": "Log readings · Flags ≥ 140/90 automatically",
       "weightTracker": "Weight Tracker",
-      "logByWeekIomGain": "Log by week · IOM gain guidelines for your BMI",
       "planning": "Planning",
       "birthPlanBuilder": "Birth Plan Builder",
-      "guidedChoicesShareableOnePage": "Guided choices · Shareable one-page summary",
       "visitNotes": "Visit Notes",
-      "questionsBeforeNotesDuringEvery": "Questions before · Notes during every visit",
       "translationHelper": "Help translate",
-      "reviewSuggestWording": "Check Obiana in your language, one sentence at a time",
       "improveGuide": "Help Improve This Guide",
-      "shareCustomAsk": "Share how it is done in your culture · Ask about anything unclear",
       "helpUsImprove": "Help Us Improve",
       "nauseaHelper": "Nausea & Eating",
-      "nauseaHelperDesc": "Snack rhythm · What to try · Acupressure",
       "feelingWell": "Feeling Well",
-      "nauseaLog": "Nausea Log",
-      "nauseaLogDesc": "Rate it · Record what you tried · See what helps you"
+      "nauseaLog": "Nausea Log"
     },
     "toolbp": {
       "bloodPressureLog": "Blood Pressure Log"
@@ -729,31 +709,28 @@ window.MYOB_LOCALES.en = {
     },
     "usNotice": {
       "title": "Care in the United States",
-      "body": "This guide describes prenatal care as it is provided in the United States, and is written for mothers receiving their care here. Prenatal care differs a great deal between countries. Visit schedules, tests and recommendations elsewhere may not match what you read here. If you are receiving care in another country, this app probably isn’t for you.",
+      "body": "Obiana follows prenatal care in the United States. Visits, tests and advice in other countries can be different.",
       "continue": "I understand"
     },
     "about": {
-      "openSource": "Free and open source. Fork it, keep it free.",
+      "openSource": "Free and open source.",
       "viewSource": "View source (AGPL-3.0)",
       "whatThisIs": "What Obiana is",
       "privacyHeading": "Your information",
       "privacyOnDevice": "What you type stays on this phone. No account, no sign-in, nothing sent. Clearing your browser data erases it, so use Export to keep a copy.",
-      "privacySubmit": "Two buttons send something: Help translate and Help Improve This Guide. They send your message, your country, and a scrambled form of your network address to stop spam. Not your name. Nothing from your trackers."
+      "privacySubmit": "Only two buttons send anything: Help translate and Help Improve This Guide. They send what you wrote, your country, and a scrambled network address to stop spam. Never your name or what is in your trackers."
     },
     "disclaimer": {
       "title": "Before you start",
-      "education": "Obiana explains what usually happens. It is not medical advice. It does not know you or your pregnancy. Your family doctor, OB or midwife does.",
-      "tools": "The trackers only hold what you type in. They do not measure or diagnose anything. When one says to call someone, it means ask.",
-      "emergency": "Do not use this app in an emergency. Call 911 or your labor and delivery line.",
-      "sources": "When this guide gives a number, it says who says so. Usually ACOG or the AAP. Your care team follows them too.",
-      "continue": "I understand",
-      "toolsNote": "These tools hold what you type in. They do not diagnose."
+      "education": "This is general information, not medical advice. Ask your family doctor, OB or midwife about your own pregnancy.",
+      "tools": "The trackers keep what you type. They can't diagnose anything.",
+      "emergency": "In an emergency, call 911.",
+      "continue": "I understand"
     },
     "guide": {
       "quickAnswers": "Quick answers"
     },
     "today": {
-      "whenToCallSub": "Warning signs, and who to call",
       "whereNow": "Where are you now?",
       "pregnant": "I'm pregnant",
       "dueLabel": "Due date",
@@ -778,7 +755,14 @@ window.MYOB_LOCALES.en = {
       "changeDates": "Change dates"
     },
     "me": {
-      "datesTitle": "Your dates"
+      "datesTitle": "Your dates",
+      "settings": "Settings",
+      "textSize": "Text size",
+      "sizeNormal": "Normal",
+      "sizeLarge": "Large",
+      "sizeLarger": "Larger",
+      "language": "Language",
+      "darkMode": "Dark mode"
     },
     "urgent": {
       "title": "When to call",

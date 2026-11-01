@@ -15,36 +15,33 @@ window.MYOB_LOCALES.vi = {
       "title": "Obiana Sổ tay Thai kỳ"
     },
     "lang": {
-      "unreviewedNotice": "Bản dịch này do máy tạo ra và chưa được nhân viên y tế kiểm tra. Với các quyết định y tế, vui lòng xác nhận với nhóm chăm sóc của bạn hoặc chuyển sang tiếng Anh.",
+      "unreviewedNotice": "Máy đã dịch phần này và bác sĩ chưa kiểm tra. Nếu có gì chưa rõ, hãy hỏi đội ngũ chăm sóc của bạn.",
       "loadFailed": "Không tải được",
       "inProgress": "Đang dịch"
     },
     "usNotice": {
       "title": "Chăm sóc tại Hoa Kỳ",
-      "body": "Cẩm nang này mô tả việc chăm sóc trước sinh như được cung cấp tại Hoa Kỳ và được viết cho các bà mẹ đang được chăm sóc tại đây. Chăm sóc trước sinh khác nhau rất nhiều giữa các quốc gia. Lịch khám, các xét nghiệm và khuyến nghị ở nơi khác có thể không giống những gì bạn đọc ở đây. Nếu bạn đang được chăm sóc ở quốc gia khác, ứng dụng này có lẽ không dành cho bạn.",
+      "body": "Obiana theo cách chăm sóc thai kỳ tại Hoa Kỳ. Ở các nước khác, lịch khám, xét nghiệm và lời khuyên có thể khác.",
       "continue": "Tôi đã hiểu"
     },
     "tools": {
       "helpUsImprove": "Giúp chúng tôi cải thiện"
     },
     "home": {
-      "heroTitle": "Biết điều gì<br>sắp đến. Hỏi những<br>câu hỏi hay.",
-      "heroDesc": "Từ lần khám thai đầu tiên đến khi sinh và hồi phục, Obiana giữ mọi thứ ở một nơi."
+      "heroTitle": "Biết điều gì<br>sắp đến. Hỏi những<br>câu hỏi hay."
     },
     "disclaimer": {
       "title": "Trước khi bắt đầu",
-      "education": "Obiana giải thích những gì thường xảy ra. Đây không phải lời khuyên y tế. Ứng dụng không biết bạn hay thai kỳ của bạn. Bác sĩ gia đình, bác sĩ sản khoa hoặc nữ hộ sinh của bạn thì biết.",
-      "tools": "Các công cụ theo dõi chỉ lưu những gì bạn nhập vào. Chúng không đo và không chẩn đoán điều gì. Khi công cụ nhắc gọi cho ai đó, nghĩa là hãy hỏi.",
-      "emergency": "Đừng dùng ứng dụng này khi khẩn cấp. Hãy gọi 911 hoặc khoa sinh.",
-      "sources": "Khi hướng dẫn này đưa ra một con số, nó nói rõ nguồn. Thường là ACOG hoặc AAP. Nhóm chăm sóc của bạn cũng theo các nguồn đó.",
-      "continue": "Tôi đã hiểu",
-      "toolsNote": "Các công cụ này lưu những gì bạn nhập. Chúng không chẩn đoán."
+      "education": "Đây là thông tin chung, không phải lời khuyên y tế. Hãy hỏi bác sĩ gia đình, bác sĩ sản khoa hoặc nữ hộ sinh về thai kỳ của chính bạn.",
+      "tools": "Các công cụ theo dõi chỉ lưu những gì bạn nhập. Chúng không thể chẩn đoán gì.",
+      "emergency": "Khi khẩn cấp, hãy gọi 911.",
+      "continue": "Tôi đã hiểu"
     },
     "about": {
       "whatThisIs": "Obiana là gì",
       "privacyHeading": "Thông tin của bạn",
       "privacyOnDevice": "Những gì bạn nhập chỉ ở lại trên điện thoại này. Không tài khoản, không đăng nhập, không gửi đi đâu. Xóa dữ liệu trình duyệt sẽ mất, nên hãy dùng Xuất để giữ một bản sao.",
-      "privacySubmit": "Chỉ hai nút gửi đi thứ gì đó: Giúp dịch và Giúp cải thiện hướng dẫn này. Chúng gửi tin nhắn của bạn, quốc gia, và một dạng đã xáo trộn của địa chỉ mạng để chặn spam. Không gửi tên bạn. Không gửi gì từ các bản ghi của bạn."
+      "privacySubmit": "Chỉ hai nút gửi đi thứ gì đó: Giúp dịch và Giúp cải thiện hướng dẫn này. Chúng gửi những gì bạn viết, quốc gia của bạn và một địa chỉ mạng đã xáo trộn để chặn spam. Không bao giờ gửi tên bạn hay nội dung trong các công cụ theo dõi."
     }
   }
 };

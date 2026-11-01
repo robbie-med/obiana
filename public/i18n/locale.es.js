@@ -54,10 +54,6 @@ window.MYOB_LOCALES.es = {
         "pharmacy": "Farmacia"
       },
       "detail": {
-        "edd": {
-          "label": "Fecha Probable de Parto (FPP)",
-          "placeholder": "p. ej. 15 de julio de 2026"
-        },
         "bloodtype": {
           "label": "Tipo de Sangre y Factor Rh",
           "placeholder": "p. ej. O positivo"
@@ -77,7 +73,6 @@ window.MYOB_LOCALES.es = {
       },
       "myInformation": "Mi Información",
       "myCareTeamKeyDetails": "Mi Equipo de Atención y<br>Datos Clave",
-      "savedOnYourPhoneTap": "Guardado en su teléfono · Toque para llamar o enviar mensaje",
       "careTeamContacts": "Contactos de Mi Equipo de Atención",
       "myPregnancyDetails": "Datos de Mi Embarazo",
       "questionsForMyDoctor": "Preguntas para Mi Médico",
@@ -104,7 +99,7 @@ window.MYOB_LOCALES.es = {
         "getMyScore": "Ver Mi Puntuación",
         "pastCheckIns": "Evaluaciones anteriores",
         "selfHarmGuidance": "Usted respondió que ha tenido pensamientos de hacerse daño. Si los tiene ahora, llame al 911 o vaya a la sala de emergencias. También puede llamar o enviar un mensaje de texto al 988, la Línea de Prevención del Suicidio y Crisis, a cualquier hora, y dígaselo a su médico.",
-        "continueWeekly": "Siga evaluándose cada semana. Si su estado de ánimo cambia, esta herramienta le ayudará a seguirlo.",
+        "continueWeekly": "Vuelva a hacer el chequeo la próxima semana.",
         "talkToDoctor": "Hablar con su médico, incluso sobre una puntuación de detección, siempre es un buen paso. La depresión posparto tiene muy buen tratamiento.",
         "instrumentLanguage": "Idioma del cuestionario:",
         "change": "Cambiar",
@@ -219,7 +214,7 @@ window.MYOB_LOCALES.es = {
         "printPdf": "Imprimir / PDF",
         "additionalNotes": "Notas adicionales:",
         "myBirthPreferences": "Mis preferencias de parto",
-        "pregnancyBirthGuideEvidenceBased": "Guía de embarazo y parto · Basada en evidencia · Privada y sin conexión",
+        "pregnancyBirthGuideEvidenceBased": "Hecho con Obiana, obiana.app",
         "anyOtherPreferencesConcernsOr": "¿Otras preferencias, inquietudes o información para su equipo de atención?…",
         "copiedToClipboard": "¡Copiado al portapapeles!",
         "copyNotSupportedOnThis": "Este navegador no permite copiar",
@@ -387,8 +382,8 @@ window.MYOB_LOCALES.es = {
         "cancel": "Cancelar"
       },
       "improve": {
-        "intro": "Esta guía la escriben personas y mejora cuando quienes la leen nos dicen qué falta. Cuéntenos cómo se hace algo en su cultura, pregunte por un tema que no cubrimos o señale cualquier cosa que no se entienda bien.",
-        "notDoctor": "Esto llega a las personas que escriben esta guía. No es una vía para comunicarse con su médico y nadie responde aquí.",
+        "intro": "Díganos qué falta: cómo se hace algo en su cultura, una pregunta que esta guía no responde, o una parte difícil de entender.",
+        "notDoctor": "Aquí nadie responde. Para su propia atención, llame a su médico de familia, obstetra o partera.",
         "whatKind": "¿Qué le gustaría compartir?",
         "kindCulture": "En mi cultura se hace de otra manera",
         "kindQuestion": "Una pregunta que esta guía no responde",
@@ -399,7 +394,7 @@ window.MYOB_LOCALES.es = {
         "messagePlaceholder": "Escriba todo lo que quiera, sea mucho o poco…",
         "send": "Enviar",
         "sending": "Enviando…",
-        "thanks": "Gracias. Esto ayuda a mejorar la guía.",
+        "thanks": "Gracias.",
         "writeFirst": "Escriba algo primero",
         "failed": "No se pudo enviar. Su texto está guardado aquí.",
         "rateLimited": "Demasiados mensajes, inténtelo más tarde",
@@ -515,7 +510,7 @@ window.MYOB_LOCALES.es = {
     "lang": {
       "label": "Idioma",
       "change": "Cambiar idioma",
-      "unreviewedNotice": "Esta traducción fue generada automáticamente y aún no ha sido revisada por un médico. Para decisiones médicas, confirme con su equipo de atención o cambie al inglés.",
+      "unreviewedNotice": "Esto lo tradujo una máquina y un médico todavía no lo ha revisado. Si algo no está claro, pregunte a su equipo de atención.",
       "loadFailed": "No se pudo cargar",
       "inProgress": "Traducción en curso"
     },
@@ -553,8 +548,7 @@ window.MYOB_LOCALES.es = {
       "legRednessSwelling": "Enrojecimiento o hinchazón de una pierna",
       "chestPainOrTroubleBreathing": "Dolor en el pecho o dificultad para respirar",
       "thoughtsOfSelfHarm": "Pensamientos de hacerse daño",
-      "heroTitle": "Sepa qué<br>esperar. Haga buenas<br>preguntas.",
-      "heroDesc": "Desde su primera visita prenatal hasta el parto y la recuperación, Obiana lo mantiene todo en un solo lugar."
+      "heroTitle": "Sepa qué<br>esperar. Haga buenas<br>preguntas."
     },
     "pregnancy": {
       "section1": "Sección 1",
@@ -577,38 +571,24 @@ window.MYOB_LOCALES.es = {
       "trackersPlanners": "Seguimientos y<br>planificadores",
       "labor": "Trabajo de parto",
       "kickCounter": "Contador de patadas",
-      "10MovesIn2Hours": "Opcional. Conozca los movimientos de su bebé",
       "contractionTimer": "Cronómetro de contracciones",
-      "tapStartStop51": "Toque inicio/parada · Alerta 5-1-1 · Cuándo ir al hospital",
       "newbornPostpartum": "Recién nacido y posparto",
       "feedingLog": "Registro de alimentación",
-      "breastOrBottle24Hr": "Pecho o biberón · Conteo de 24 horas · Alertas si es bajo",
       "diaperLog": "Registro de pañales",
-      "wetDirtyCountDailyTotals": "Conteo de mojados y sucios · Totales diarios para el médico",
       "jaundiceTracker": "Seguimiento de ictericia",
-      "dayByDayGuidanceFrom": "Guía día por día desde el nacimiento",
       "moodCheckIn": "Chequeo del Ánimo",
-      "epdsScreenWeeklyTrackingFlags": "Evaluación EPDS · Seguimiento semanal · Detecta señales de alerta",
       "pregnancyMonitoring": "Monitoreo del Embarazo",
       "bloodPressure": "Presión Arterial",
-      "logReadingsFlags14090": "Registre lecturas · Detecta ≥ 140/90 automáticamente",
       "weightTracker": "Control de Peso",
-      "logByWeekIomGain": "Registro por semana · Guías de aumento de peso del IOM según su BMI",
       "planning": "Planificación",
       "birthPlanBuilder": "Plan de Parto",
-      "guidedChoicesShareableOnePage": "Opciones guiadas · Resumen de una página para compartir",
       "visitNotes": "Notas de la Cita",
-      "questionsBeforeNotesDuringEvery": "Preguntas antes · Notas durante cada cita",
       "translationHelper": "Ayude a traducir",
-      "reviewSuggestWording": "Revise Obiana en su idioma, una frase a la vez",
       "improveGuide": "Ayude a mejorar esta guía",
-      "shareCustomAsk": "Cuéntenos cómo se hace en su cultura · Pregunte lo que no esté claro",
       "helpUsImprove": "Ayúdenos a mejorar",
       "nauseaHelper": "Náuseas y alimentación",
-      "nauseaHelperDesc": "Ritmo de comidas · Qué probar · Acupresión",
       "feelingWell": "Sentirse bien",
-      "nauseaLog": "Registro de náuseas",
-      "nauseaLogDesc": "Puntúelas · Anote qué probó · Vea qué le ayuda"
+      "nauseaLog": "Registro de náuseas"
     },
     "toolbp": {
       "bloodPressureLog": "Registro de Presión Arterial"
@@ -683,25 +663,32 @@ window.MYOB_LOCALES.es = {
     },
     "usNotice": {
       "title": "Atención en los Estados Unidos",
-      "body": "Esta guía describe la atención prenatal tal como se ofrece en los Estados Unidos y está dirigida a madres que reciben su atención aquí. La atención prenatal varía mucho de un país a otro. El calendario de visitas, las pruebas y las recomendaciones en otros lugares pueden no coincidir con lo que lee aquí. Si recibe atención en otro país, es probable que esta aplicación no sea para usted.",
+      "body": "Obiana sigue la atención prenatal de los Estados Unidos. Las visitas, las pruebas y los consejos pueden ser diferentes en otros países.",
       "continue": "Entiendo"
     },
     "about": {
-      "openSource": "Libre y de código abierto. Haga un fork, manténgalo libre.",
+      "openSource": "Gratis y de código abierto.",
       "viewSource": "Ver el código (AGPL-3.0)",
       "whatThisIs": "Qué es Obiana",
       "privacyHeading": "Su información",
       "privacyOnDevice": "Lo que usted escribe se queda en este teléfono. Sin cuenta, sin registro, no se envía nada. Si borra los datos del navegador se pierde, así que use Exportar para guardar una copia.",
-      "privacySubmit": "Dos botones envían algo: Ayude a traducir y Ayude a mejorar esta guía. Envían su mensaje, su país y una forma cifrada de su dirección de red para evitar spam. No su nombre. Nada de sus registros."
+      "privacySubmit": "Solo dos botones envían algo: Ayude a traducir y Ayude a mejorar esta guía. Envían lo que usted escribió, su país y una dirección de red cifrada para evitar spam. Nunca su nombre ni lo que hay en sus registros."
     },
     "disclaimer": {
       "title": "Antes de empezar",
-      "education": "Obiana explica lo que suele pasar. No es consejo médico. No la conoce a usted ni su embarazo. Su médico de familia, obstetra o partera sí.",
-      "tools": "Las herramientas solo guardan lo que usted escribe. No miden ni diagnostican nada. Cuando una dice que llame a alguien, significa preguntar.",
-      "emergency": "No use esta aplicación en una emergencia. Llame al 911 o a la línea de partos de su hospital.",
-      "sources": "Cuando esta guía da un número, dice quién lo dice. Casi siempre ACOG o la AAP. Su equipo médico también los sigue.",
-      "continue": "Entiendo",
-      "toolsNote": "Estas herramientas guardan lo que usted escribe. No diagnostican."
+      "education": "Esta es información general, no consejo médico. Pregunte a su médico de familia, obstetra o partera sobre su propio embarazo.",
+      "tools": "Los registros guardan lo que usted escribe. No pueden diagnosticar nada.",
+      "emergency": "En una emergencia, llame al 911.",
+      "continue": "Entiendo"
+    },
+    "me": {
+      "settings": "Ajustes",
+      "textSize": "Tamaño del texto",
+      "sizeNormal": "Normal",
+      "sizeLarge": "Grande",
+      "sizeLarger": "Más grande",
+      "language": "Idioma",
+      "darkMode": "Modo oscuro"
     }
   },
   "content": {

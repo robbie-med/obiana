@@ -64,7 +64,6 @@ function renderToday() {
 
   let h = `<button type="button" class="today-urgent" onclick="navigate('urgent')">
       <span class="today-urgent-title">${tl('urgent.title')}</span>
-      <span class="today-urgent-sub">${tl('today.whenToCallSub')}</span>
     </button>`;
 
   if (!s.stage) {

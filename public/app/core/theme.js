@@ -8,3 +8,8 @@ try {
     document.body.classList.add('dark');
   }
 } catch (e) { /* storage blocked: initDarkMode() decides later */ }
+// Text size (Me → Settings), same reason: set before anything paints.
+try {
+  const size = localStorage.getItem('obiana.textSize');
+  if (size === '2' || size === '3') document.body.classList.add('text-' + size);
+} catch (e) { /* default size */ }
