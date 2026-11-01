@@ -41,7 +41,7 @@ Ticks are the status: tick an item in the commit that ships it. New findings go 
 - [x] **Export misses keys** (`public/app/settings.js` `EXPORT_KEYS`): add `obiana.dates` and `myob.noticeAccepted`. Import reads the same list.
 - [x] Name exports `obiana-<date>.json` (local date).
 - [x] `translation/merge.js` skips `pt-BR` batches without a word (its filename regex is `[a-z]{2,3}`). Accept every code in the worker's `LOCALES`.
-- [ ] Delete the old root `CNAME`. It isn't deployed (only `public/` is), so this is cleanup only. Fix the stale "prod on GitHub Pages myob.robbiemed.org" note in the myob row of `PORTS.md`.
+- [x] Delete the old root `CNAME`. It isn't deployed (only `public/` is), so this is cleanup only. Fix the stale "prod on GitHub Pages myob.robbiemed.org" note in the myob row of `PORTS.md`.
 
 ## 3. Translate page (`#/translate`, linked from Me, shareable)
 Rework the existing Translation Helper (`public/app/contribute/translate.js`) into this page. It already
