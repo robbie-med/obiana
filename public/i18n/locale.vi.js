@@ -33,7 +33,7 @@ window.MYOB_LOCALES.vi = {
     },
     "disclaimer": {
       "title": "Trước khi bắt đầu",
-      "education": "Obiana giải thích những gì thường xảy ra. Đây không phải lời khuyên y tế. Ứng dụng không biết bạn hay thai kỳ của bạn. Bác sĩ hoặc nữ hộ sinh của bạn thì biết.",
+      "education": "Obiana giải thích những gì thường xảy ra. Đây không phải lời khuyên y tế. Ứng dụng không biết bạn hay thai kỳ của bạn. Bác sĩ gia đình, bác sĩ sản khoa hoặc nữ hộ sinh của bạn thì biết.",
       "tools": "Các công cụ theo dõi chỉ lưu những gì bạn nhập vào. Chúng không đo và không chẩn đoán điều gì. Khi công cụ nhắc gọi cho ai đó, nghĩa là hãy hỏi.",
       "emergency": "Đừng dùng ứng dụng này khi khẩn cấp. Hãy gọi 911 hoặc khoa sinh.",
       "sources": "Khi hướng dẫn này đưa ra một con số, nó nói rõ nguồn. Thường là ACOG hoặc AAP. Nhóm chăm sóc của bạn cũng theo các nguồn đó.",

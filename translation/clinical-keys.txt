@@ -1,0 +1,31 @@
+# Clinical content keys: preflight fails if any is stale in a locale that has it.
+# Section 1 corrections, plus the card slots When to call is built from (guide/urgent.js).
+# ui keys carry no fingerprint, so stamp.js cannot see them; they are not listed here.
+content.second-trimester.t.16
+content.mfm.t.15
+content.postpartum-danger.t.2
+content.bf-challenges.t.13
+content.formula.t.4
+content.cord-care.t.19
+content.normal-newborn.t.31
+content.followup-appts.t.1
+content.followup-appts.t.12
+content.followup-appts.t.23
+content.faq-jaundice.t.0
+content.postpartum-danger.t.3
+content.physical-recovery.t.15
+content.csection.t.26
+content.antenatal-mental-health.t.4
+content.mood-ppd.t.6
+content.postpartum-danger.t.0
+content.postpartum-danger.t.1
+content.signs-of-labor.t.11
+content.signs-of-labor.t.12
+content.signs-of-labor.t.13
+content.signs-of-labor.t.14
+content.signs-of-labor.t.15
+content.signs-of-labor.t.16
+content.signs-of-labor.t.17
+content.normal-newborn.t.32
+content.antenatal-mental-health.t.3
+content.mood-ppd.t.10

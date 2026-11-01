@@ -61,7 +61,7 @@ window.MYOB_LOCALES.zom = {
       "text": "Lai khak",
       "contact": {
         "familydoc": "Innkuan Siavuan",
-        "ob": "Naupaai en Siavuan/ Naungek suak huh Siamah",
+        "ob": "Innkuan Siavuan, Naupaai en Siavuan ahihkeileh Naungek suak huh Siamah",
         "peds": "Naupang Siavuan",
         "mfm": "Naupaai lau huai a en Siavuan",
         "lactation": "Naungek nawipiak dan hilh Sia/Siamah",

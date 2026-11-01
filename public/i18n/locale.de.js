@@ -33,7 +33,7 @@ window.MYOB_LOCALES.de = {
     },
     "disclaimer": {
       "title": "Bevor Sie beginnen",
-      "education": "Obiana erklärt, was normalerweise passiert. Es ist keine medizinische Beratung. Die App kennt Sie und Ihre Schwangerschaft nicht. Ihre Ärztin oder Hebamme schon.",
+      "education": "Obiana erklärt, was normalerweise passiert. Es ist keine medizinische Beratung. Die App kennt Sie und Ihre Schwangerschaft nicht. Ihre Hausärztin, Ihre Frauenärztin oder Ihre Hebamme schon.",
       "tools": "Die Tracker speichern nur, was Sie selbst eingeben. Sie messen nichts und stellen keine Diagnose. Wenn einer sagt, Sie sollen anrufen, heißt das nachfragen.",
       "emergency": "Nutzen Sie diese App nicht im Notfall. Rufen Sie 911 oder den Kreißsaal an.",
       "sources": "Wenn diese Anleitung eine Zahl nennt, nennt sie auch die Quelle. Meist ACOG oder AAP. Ihr Behandlungsteam richtet sich ebenfalls danach.",

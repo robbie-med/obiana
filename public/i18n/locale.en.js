@@ -43,8 +43,8 @@ window.MYOB_LOCALES.en = {
       "text": "Text",
       "contact": {
         "familydoc": "Family Doctor",
-        "ob": "OB / Midwife",
-        "peds": "Pediatrician",
+        "ob": "Family doctor, OB or midwife",
+        "peds": "Baby's doctor",
         "mfm": "MFM Specialist",
         "lactation": "Lactation Consultant",
         "ld": "Hospital / L&D Triage",
@@ -116,7 +116,7 @@ window.MYOB_LOCALES.en = {
         "change": "Change",
         "scoreNote": "Score out of {max} on the {instrument}, using the published cutoffs for that questionnaire. It is a screening tool, not a diagnosis. Go through the result with your care team.",
         "pastCheckIns": "Past Check-Ins",
-        "selfHarmGuidance": "You answered that thoughts of self-harm have occurred to you. Please reach out to your doctor, call or text 988 (Suicide & Crisis Lifeline), or go to the nearest emergency room.",
+        "selfHarmGuidance": "You answered that thoughts of harming yourself have come to you. If you have them now, call 911 or go to the ER. You can also call or text 988, the Suicide & Crisis Lifeline, any time, and tell your doctor.",
         "continueWeekly": "Continue checking in weekly. If your mood changes, this tool will help you track it.",
         "talkToDoctor": "Talking to your doctor, even about a screening score, is always a good step. PPD is very treatable.",
         "important": "Important",
@@ -251,8 +251,8 @@ window.MYOB_LOCALES.en = {
         "startAnotherSession": "Start Another Session",
         "sessionHistory": "Session History",
         "noSessions": "No sessions yet",
-        "countMovements": "Count fetal movements during an active session. What matters most is learning your own baby's usual pattern and telling your team when it changes. Formal counting on its own has not been shown to reduce stillbirth, so treat this as a way to learn that pattern rather than a test to pass. A drop in movement is worth a call whatever this counter says.",
-        "goal": "Goal: 10 movements within 2 hours",
+        "countMovements": "Counting kicks is optional. It's one way to get to know how your baby usually moves. What matters is noticing a change. If your baby moves less than usual, call that day, whatever this counter says.",
+        "goal": "A common guide: 10 movements in 2 hours",
         "tapForEach": "👶 Tap for Each Movement",
         "endEarly": "End Session Early",
         "pass": "Pass",
@@ -307,8 +307,8 @@ window.MYOB_LOCALES.en = {
         "day1": "First day. Bilirubin is being checked before hospital discharge. Baby is monitored by the nursing staff.",
         "day2": "Bilirubin levels are rising. Hospital checks before discharge. Watch for yellowing of skin and whites of eyes.",
         "day3": "Jaundice peaks around days 3–5 in most babies. Yellow color may be more visible. Feeding frequently (8–12 times/day) helps the body clear bilirubin.",
-        "day4": "Peak jaundice period. Make sure baby is feeding well and having wet diapers. Pediatrician visit may be scheduled around now.",
-        "day5": "Pediatrician visit: weight check + bilirubin level. Levels should start to level off. If baby is sleepy and not feeding, call your doctor.",
+        "day4": "Peak jaundice period. Make sure baby is feeding well and having wet diapers. Your baby's doctor may want to see the baby around now.",
+        "day5": "Visit with your baby's doctor: weight check + bilirubin level. Levels should start to level off. If baby is sleepy and not feeding, call your baby's doctor.",
         "day6": "Levels should start declining in full-term babies. Continue feeding frequently. If skin is deeply yellow or baby won't wake to feed. Call your doctor.",
         "day7": "Most term babies' jaundice is improving by now. Watch for yellowing spreading to legs and feet, which signals higher levels.",
         "day10": "In most term babies, jaundice is nearly resolved. If it's persisting or worsening, your doctor will want to check a bilirubin level.",
@@ -572,7 +572,7 @@ window.MYOB_LOCALES.en = {
       "myInfoContacts": "My Info &amp;<br>Contacts",
       "saveYourCareTeamContacts": "Save Your Care Team Contacts",
       "tapToCallOrText": "Tap to call or text directly from the app",
-      "callYourDoctorIf": "Call Your Doctor If…",
+      "callYourDoctorIf": "Call Your Family Doctor, OB or Midwife If…",
       "duringPregnancy": "During Pregnancy",
       "vaginalBleeding": "Vaginal bleeding",
       "fluidGushingOrTrickling": "Fluid gushing or trickling",
@@ -583,7 +583,7 @@ window.MYOB_LOCALES.en = {
       "fever1004F": "Fever &gt;100.4°F",
       "contractionsBefore37Weeks": "Contractions before 37 weeks",
       "afterDelivery": "After Delivery",
-      "soaking1PadHr2": "Soaking &gt;1 pad/hr × 2 hrs",
+      "soaking1PadHr2": "Soaking through 1 pad in an hour",
       "woundOpensOrOozes": "Wound opens or oozes",
       "legRednessSwelling": "Leg redness/swelling",
       "chestPainOrTroubleBreathing": "Chest pain or trouble breathing",
@@ -612,7 +612,7 @@ window.MYOB_LOCALES.en = {
       "trackersPlanners": "Trackers &amp;<br>Planners",
       "labor": "Labor",
       "kickCounter": "Kick Counter",
-      "10MovesIn2Hours": "10 moves in 2 hours. Log sessions &amp; history",
+      "10MovesIn2Hours": "Optional. Get to know your baby's movements",
       "contractionTimer": "Contraction Timer",
       "tapStartStop51": "Tap start/stop · 5-1-1 alert · When to go in",
       "newbornPostpartum": "Newborn &amp; Postpartum",
@@ -687,8 +687,8 @@ window.MYOB_LOCALES.en = {
     },
     "apptType": {
       "selectType": "Select type…",
-      "obRoutine": "OB – Routine",
-      "obTriage": "OB – L&amp;D Triage / Unscheduled",
+      "obRoutine": "Prenatal – Routine",
+      "obTriage": "L&amp;D Triage / Unscheduled",
       "mfmConsult": "MFM Consultation",
       "mfmFollowup": "MFM Follow-up",
       "endo": "Endocrinology",
@@ -699,9 +699,9 @@ window.MYOB_LOCALES.en = {
       "lactation": "Lactation Consult",
       "pp2wk": "Postpartum – 2 weeks",
       "pp6wk": "Postpartum – 6 weeks",
-      "peds25d": "Pediatrician – 2–5 days",
-      "peds2wk": "Pediatrician – 2 weeks",
-      "peds2mo": "Pediatrician – 2 months",
+      "peds25d": "Baby's doctor – 2–5 days",
+      "peds2wk": "Baby's doctor – 2 weeks",
+      "peds2mo": "Baby's doctor – 2 months",
       "family": "Family Doctor",
       "other": "Other"
     },
@@ -741,7 +741,7 @@ window.MYOB_LOCALES.en = {
     },
     "disclaimer": {
       "title": "Before you start",
-      "education": "Obiana explains what usually happens. It is not medical advice. It does not know you or your pregnancy. Your doctor or midwife does.",
+      "education": "Obiana explains what usually happens. It is not medical advice. It does not know you or your pregnancy. Your family doctor, OB or midwife does.",
       "tools": "The trackers only hold what you type in. They do not measure or diagnose anything. When one says to call someone, it means ask.",
       "emergency": "Do not use this app in an emergency. Call 911 or your labor and delivery line.",
       "sources": "When this guide gives a number, it says who says so. Usually ACOG or the AAP. Your care team follows them too.",
@@ -759,7 +759,7 @@ window.MYOB_LOCALES.en = {
       "babyHere": "My baby is here",
       "bornLabel": "Baby's birthday",
       "save": "Show me what's next",
-      "savedOnPhone": "Saved only on this phone. You can change it any time under Me.",
+      "savedOnPhone": "This stays on your phone. You can change it any time under Me.",
       "week": "Week {week}",
       "due": "Due {date}",
       "babyDays": {
@@ -783,10 +783,10 @@ window.MYOB_LOCALES.en = {
       "title": "When to call",
       "call911": "Call 911",
       "callLd": "Call labor & delivery",
-      "addLd": "Save your labor & delivery number under Me, so it is one tap from here.",
-      "tellThem": "If you gave birth in the last year, tell whoever you call or see. Some dangerous problems after birth are missed when staff don't know.",
+      "addLd": "Add your labor & delivery number under Me.",
+      "tellThem": "If you had a baby in the last year, tell anyone you call or see. Some serious problems after birth are missed when staff don't know.",
       "helpLines": "Help lines: free, any time",
-      "line988": "Thoughts of harming yourself, or in crisis: 988 Suicide & Crisis Lifeline. Call or text 988.",
+      "line988": "Thoughts of harming yourself, or in crisis: call or text 988, the Suicide & Crisis Lifeline.",
       "lineMama": "Feeling low, anxious or overwhelmed, in pregnancy or after: National Maternal Mental Health Hotline, 1-833-TLC-MAMA (1-833-852-6262). Call or text. Interpreters in many languages.",
       "linePoison": "Swallowed something, you or the baby: Poison Control, 1-800-222-1222.",
       "lineDv": "Not safe at home: National Domestic Violence Hotline, 1-800-799-7233, or text START to 88788.",
@@ -795,8 +795,8 @@ window.MYOB_LOCALES.en = {
     },
     "visits": {
       "title": "Your visits, week by week",
-      "sub": "What happens at each visit, and what is your choice",
-      "lead": "This is the usual US schedule. Yours may differ: your doctor or midwife adds visits and tests when you need them.",
+      "sub": "What happens at each visit, and what's up to you",
+      "lead": "This is the usual US schedule. Yours may be different: your family doctor, OB or midwife adds visits and tests when you need them.",
       "afterBirth": "After the birth",
       "yourChoice": "Your choice",
       "first": {
@@ -805,7 +805,7 @@ window.MYOB_LOCALES.en = {
         "i1": "Your due date is set from your last period, often with an early ultrasound.",
         "i2": "Blood tests: blood type and Rh, blood count, immunity to rubella and chickenpox, hepatitis B and C, HIV and syphilis. A urine test, and tests for chlamydia and gonorrhea.",
         "i3": "An early sugar test if you had diabetes in a past pregnancy or have other risk factors.",
-        "i4": "If you are at higher risk of preeclampsia, low-dose aspirin (81 mg a day) from 12 weeks lowers that risk. Ask whether it fits you."
+        "i4": "If you are at higher risk of preeclampsia, low-dose aspirin (81 mg a day) from 12 weeks lowers that risk. Ask if it's right for you."
       },
       "genetic": {
         "when": "From 10 weeks",
@@ -834,12 +834,12 @@ window.MYOB_LOCALES.en = {
       "tdap": {
         "when": "27–36 weeks",
         "title": "Whooping cough shot (Tdap)",
-        "i1": "Your antibodies pass to the baby and protect them in the first months, before they can have their own shots. Given in every pregnancy."
+        "i1": "Your antibodies pass to the baby and protect them in the first months, before they can have their own shots. You get it in every pregnancy."
       },
       "twoweekly": {
         "when": "Every 2 weeks, from 28 weeks",
         "title": "Visits get closer",
-        "i1": "Get to know your baby's usual pattern of movement. If the baby moves less than usual, call that day. Don't wait for the next visit.",
+        "i1": "Get to know how your baby usually moves. Counting kicks is optional. If the baby moves less than usual, call that day. Don't wait for the next visit.",
         "i2": "If you have a condition such as high blood pressure or diabetes, extra checks of the baby (non-stress tests or ultrasounds) often start around 32 weeks."
       },
       "rsv": {
@@ -851,7 +851,7 @@ window.MYOB_LOCALES.en = {
         "when": "36–37 weeks",
         "title": "Group B strep swab, and the baby's position",
         "i1": "A swab of the vagina and rectum. About 1 in 4 women carry GBS, and it does not harm you. If yours is positive, you get IV antibiotics in labor to protect the baby.",
-        "i2": "A check that the baby is head down. If the baby is bottom first (breech), you can be offered a procedure to turn the baby (external cephalic version), or plan a C-section.",
+        "i2": "A check that the baby is head down. If the baby is bottom first (breech), you may be offered a way to turn the baby (external cephalic version), or you can plan a C-section.",
         "i3": "Go over your birth plan: pain relief, who will be with you, feeding."
       },
       "weekly": {
@@ -868,14 +868,14 @@ window.MYOB_LOCALES.en = {
       "pp3": {
         "when": "Within 3 weeks of birth",
         "title": "First check-in",
-        "i1": "Talk to your doctor or midwife about bleeding, pain, feeding, mood and sleep. A phone or video call can count."
+        "i1": "Talk to your family doctor, OB or midwife about bleeding, pain, feeding, mood and sleep. A phone or video call can count."
       },
       "ppFull": {
         "when": "By 12 weeks after birth, often at 4–6",
         "title": "Full postpartum visit",
         "i1": "A mood check, birth control, how you are healing, and any plans for a next pregnancy.",
         "i2": "If you had gestational diabetes: a sugar test 4 to 12 weeks after birth. The risk of type 2 diabetes stays higher for life, so ask for a check every 1 to 3 years.",
-        "i3": "If you leak urine or stool, have pain with sex, or feel a bulge in the vagina, ask about pelvic floor physical therapy. It helps; it is not something you have to live with."
+        "i3": "If you leak urine or stool, have pain with sex, or feel a bulge in the vagina, ask about pelvic floor physical therapy. It helps. You don't have to live with it."
       }
     }
   },
@@ -925,7 +925,7 @@ window.MYOB_LOCALES.en = {
         "If the result is elevated (not \"failed\". It's a screen), you do a longer 3-hour diagnostic test",
         "Gestational diabetes is manageable. Diet, exercise, sometimes medication",
         "Start Thinking About",
-        "Childbirth classes, birth preferences, breastfeeding intentions, pediatrician selection, leave planning, baby gear."
+        "Childbirth classes, birth preferences, breastfeeding intentions, choosing your baby's doctor, leave planning, baby gear."
       ]
     },
     "third-trimester": {
@@ -1173,7 +1173,7 @@ window.MYOB_LOCALES.en = {
         "No lifting anything heavier than your baby for 4–6 weeks",
         "Incision is a horizontal \"bikini-line\" scar, closed with staples or absorbable sutures",
         "Call After C-Section Discharge If",
-        "Incision opens, shows redness spreading outward, or has unusual drainage · Fever &gt;100.4°F · Worsening rather than improving pain · Soaking a pad in 1 hour",
+        "Incision opens, shows redness spreading outward, or has unusual drainage · Fever &gt;100.4°F · Worsening rather than improving pain · Soaking through 1 pad in an hour",
         "VBAC. Vaginal Birth After Cesarean",
         "If you've had one prior low-transverse C-section, a VBAC may be an option for this pregnancy. Success rates are 60–80%. Discuss this early in your prenatal care."
       ]
@@ -1197,7 +1197,7 @@ window.MYOB_LOCALES.en = {
         "What MFM Actually Does",
         "Performs specialized ultrasounds. Detailed fetal anatomy survey, fetal echocardiogram, serial growth scans",
         "Advises on medications, delivery timing, and mode of delivery",
-        "May co-manage your care alongside your OB or midwife, or take over primary care in complex cases",
+        "May co-manage your care alongside your family doctor, OB or midwife, or take over primary care in complex cases",
         "Most patients still deliver with their original provider",
         "Ask Your MFM",
         "What is the specific concern? How will it be monitored? Does it change how or when I deliver? Will I need more frequent visits or ultrasounds?"
@@ -1244,7 +1244,7 @@ window.MYOB_LOCALES.en = {
         "Yellow-white, scant",
         "✓ Yes",
         "Call Your Provider If",
-        "Soaking more than 1 pad per hour for 2 consecutive hours · Passing golf ball-sized clots · Bright red bleeding returns after it has lightened · Foul-smelling discharge",
+        "Soaking through 1 pad in an hour · Passing golf ball-sized clots · Bright red bleeding returns after it has lightened · Foul-smelling discharge",
         "Perineal Care (After Vaginal Birth)",
         "Use peri-bottle with warm water after every bathroom visit. Front to back",
         "Ice packs for the first 24 hours, then switch to warm sitz baths (10–15 min, 2–3x/day)",
@@ -1265,7 +1265,7 @@ window.MYOB_LOCALES.en = {
         "Postpartum Depression (PPD). 1 in 8 Mothers",
         "PPD is a medical condition. A treatable mood disorder, not a character flaw or a sign of bad mothering.",
         "Symptoms of PPD",
-        "Persistent sadness or emptiness · Difficulty bonding with your baby · Feeling like a bad mother or that your baby would be better off without you · Severe anxiety or panic attacks · Inability to sleep even when baby sleeps · Loss of interest in things you used to enjoy · Thoughts of harming yourself or baby",
+        "Persistent sadness or emptiness · Difficulty bonding with your baby · Feeling like a bad mother or that your baby would be better off without you · Severe anxiety or panic attacks · Inability to sleep even when baby sleeps · Loss of interest in things you used to enjoy · Thoughts of harming yourself or your baby: call 911 or go to the ER now, or call or text 988",
         "If these symptoms persist beyond 2 weeks or are severe at any point, tell your care team. PPD is effectively treated with therapy, support groups, and/or medication (many of which are safe with breastfeeding).",
         "Don't wait until your 6-week visit to mention it.",
         "Postpartum Psychosis. Rare but a Medical Emergency",
@@ -1326,8 +1326,8 @@ window.MYOB_LOCALES.en = {
       "t": [
         "Go to the ER or Call 911 For",
         "Chest pain or difficulty breathing · Seizure · Sudden severe headache unlike any before · Stroke symptoms (face drooping, arm weakness, slurred speech) · Thoughts of harming yourself or your baby",
-        "Call Your OB / Midwife For",
-        "Fever &gt;100.4°F · Soaking more than 1 pad per hour for 2 hours · Severe headache not relieved by ibuprofen/Tylenol · Vision changes · Leg redness, swelling, or warmth (DVT) · Wound opening, redness spreading, or pus · Difficulty urinating · Signs of PPD or anxiety",
+        "Call Your Family Doctor, OB or Midwife For",
+        "Fever &gt;100.4°F · Soaking through 1 pad in an hour · Severe headache not relieved by ibuprofen/Tylenol · Vision changes · Leg redness, swelling, or warmth (DVT) · Wound opening, redness spreading, or pus · Difficulty urinating · Signs of PPD or anxiety",
         "Your postpartum visit schedule, and the questions worth taking to the six-week visit, are in the Follow-Up Appointments card under Baby, alongside the pediatric schedule so you can see both together."
       ]
     },
@@ -1373,7 +1373,7 @@ window.MYOB_LOCALES.en = {
         "Mastitis",
         "Flu-like symptoms (fever, body aches, fatigue) + a red, painful area of breast. Keep breastfeeding. Stopping makes it worse. Same care as a clogged duct: ice, ibuprofen, no heat or deep massage. Many cases get better without antibiotics, so call your doctor to decide together, and call again if a fever lasts more than 24 hours.",
         "Nipple thrush",
-        "Sharp, burning pain during and after feeds. Pinkish, shiny nipples. Both you and baby need antifungal treatment at the same time. Call your doctor and baby's pediatrician.",
+        "Sharp, burning pain during and after feeds. Pinkish, shiny nipples. Both you and baby need antifungal treatment at the same time. Call your doctor and your baby's doctor.",
         "Pumping",
         "Electric double breast pumps are covered by most U.S. insurance plans under the ACA. Pumping maintains supply when baby can't nurse, allows others to feed baby, and builds a freezer stash. Milk can be refrigerated for 4 days or frozen 6–12 months.",
         "It's Okay to Supplement or Formula Feed",
@@ -1388,7 +1388,7 @@ window.MYOB_LOCALES.en = {
         "Choosing a Formula",
         "Standard cow's milk-based, iron-fortified formula is appropriate for most healthy term babies",
         "Soy formula is appropriate for certain dietary or religious reasons",
-        "Hypoallergenic (hydrolyzed) formulas are for babies with confirmed milk protein allergy. Don't switch without talking to your pediatrician",
+        "Hypoallergenic (hydrolyzed) formulas are for babies with confirmed milk protein allergy. Don't switch without talking to your baby's doctor",
         "Don't change formula brands frequently hoping to solve normal fussiness. Most switching doesn't help",
         "Preparing Formula",
         "Follow package instructions exactly. The ratio of powder to water is carefully designed",
@@ -1436,7 +1436,7 @@ window.MYOB_LOCALES.en = {
         "Small amount of dried blood at the base as it separates. Normal",
         "Slight moisture or minimal clear discharge at the base. Usually normal",
         "A mild smell as it dries. Generally normal",
-        "Call the Pediatrician If",
+        "Call Your Baby's Doctor If",
         "Redness spreading on the surrounding skin",
         ". This is omphalitis (a skin infection) and needs prompt treatment · Foul or strong smell · Yellow or green pus · Bleeding that doesn't stop with gentle pressure · Stump still attached after 3 weeks"
       ]
@@ -1476,7 +1476,7 @@ window.MYOB_LOCALES.en = {
         "✓ Yes. Harmless, resolves in days",
         "Dark first stool (meconium)",
         "✓ Yes. Should pass within 24–48 hrs",
-        "Call the Pediatrician Immediately For",
+        "Call Your Baby's Doctor Right Away For",
         "Fever ≥ 100.4°F rectal (serious in newborns. Always take rectal temp) · Refusing to eat · Extreme yellowing · Grunting with every breath · Very pale skin · Inconsolable crying · Fewer than 6 wet diapers/day after day 5 · Stiff neck. Blue or gray lips or face: call 911."
       ]
     },
@@ -1512,7 +1512,7 @@ window.MYOB_LOCALES.en = {
       "sub": "The schedule and what happens at each visit",
       "t": [
         "Before you leave the hospital, confirm these appointments are scheduled. Don't leave without them.",
-        "For Baby (Pediatrician)",
+        "For Your Baby",
         "When",
         "Purpose",
         "2–5 days old",
@@ -1523,7 +1523,7 @@ window.MYOB_LOCALES.en = {
         "First vaccines, growth and development milestones",
         "4, 6, 9, 12 months",
         "Growth, development, vaccines (schedule continues through childhood)",
-        "For You (OB/Midwife)",
+        "For You",
         "When",
         "Purpose",
         "1–3 days",
@@ -1534,7 +1534,7 @@ window.MYOB_LOCALES.en = {
         "6 weeks",
         "Full physical, pelvic exam, contraception discussion, exercise clearance",
         "Questions to Ask Before Leaving the Hospital",
-        "Who do I call if I have a question before my first appointment? · Is baby feeding well. How will I know if not? · What's my threshold for calling the pediatrician? · Were any tests abnormal that need follow-up? · Do I need to wake baby to feed at night? · What are my wound care instructions?"
+        "Who do I call if I have a question before my first appointment? · Is baby feeding well. How will I know if not? · What's my threshold for calling the baby's doctor? · Were any tests abnormal that need follow-up? · Do I need to wake baby to feed at night? · What are my wound care instructions?"
       ]
     },
     "faq-deli": {
@@ -1677,7 +1677,7 @@ window.MYOB_LOCALES.en = {
       "title": "My baby looks yellow. When is it serious?",
       "sub": "",
       "t": [
-        "Newborn jaundice (hyperbilirubinemia) affects about 60% of term babies in the first week. It's caused by normal breakdown of fetal red blood cells. The liver is just catching up. Most cases are mild and resolve without treatment. It becomes a concern when bilirubin levels are very high (risk of brain damage at extreme levels) or when baby is very sleepy, not feeding, or the jaundice appears in the first 24 hours. Your hospital will check bilirubin before discharge and at the 2–5 day pediatrician visit. Treatment with phototherapy (bili lights) is very effective if needed."
+        "Newborn jaundice (hyperbilirubinemia) affects about 60% of term babies in the first week. It's caused by normal breakdown of fetal red blood cells. The liver is just catching up. Most cases are mild and resolve without treatment. It becomes a concern when bilirubin levels are very high (risk of brain damage at extreme levels) or when baby is very sleepy, not feeding, or the jaundice appears in the first 24 hours. Your hospital will check bilirubin before discharge and at the baby's checkup at 2–5 days. Treatment with phototherapy (bili lights) is very effective if needed."
       ]
     },
     "faq-newborn-procedures": {
@@ -1796,7 +1796,7 @@ window.MYOB_LOCALES.en = {
         "Worth telling someone",
         "Low mood most days · Losing interest in things you normally enjoy · Anxiety that will not switch off, or intrusive frightening thoughts · Not sleeping even when you have the chance · Feeling detached from the pregnancy · Any thought of harming yourself",
         "If you are feeling like harming yourself or others",
-        "Tell your team, or call or text 988.",
+        "Call 911 or go to the ER now. You can also call or text 988, the Suicide & Crisis Lifeline, any time.",
         "Medicines",
         "Untreated and uncontrolled depression is not a safe option: it is linked with preterm birth, lower birthweight, and a much higher chance of postpartum depression. Many women have sucessful pregnancies without needing medication. Several SSRIs have decent pregnancy safety data and are prescribed routinely. If you stopped something the day you saw the positive test, tell your doctor so you can discuss your options.",
         "What else helps",

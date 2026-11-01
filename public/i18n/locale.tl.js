@@ -36,7 +36,7 @@ window.MYOB_LOCALES.tl = {
     },
     "disclaimer": {
       "title": "Bago magsimula",
-      "education": "Ipinapaliwanag ng Obiana ang karaniwang nangyayari. Hindi ito payong medikal. Hindi ka nito kilala at hindi nito alam ang iyong pagbubuntis. Alam ito ng iyong doktor o komadrona.",
+      "education": "Ipinapaliwanag ng Obiana ang karaniwang nangyayari. Hindi ito payong medikal. Hindi ka nito kilala at hindi nito alam ang iyong pagbubuntis. Alam ito ng iyong family doctor, OB o komadrona.",
       "tools": "Ang mga tracker ay nag-iimbak lamang ng iyong itinatala. Wala itong sinusukat o dinidiyagnos. Kapag sinabi nitong tumawag, ibig sabihin ay magtanong.",
       "emergency": "Huwag gamitin ang app na ito sa emergency. Tumawag sa 911 o sa labor and delivery.",
       "sources": "Kapag may binibigay na numero ang gabay na ito, sinasabi rin kung kanino ito galing. Kadalasan ay ACOG o AAP. Sinusunod din ito ng iyong care team.",

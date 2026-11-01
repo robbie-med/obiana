@@ -33,7 +33,7 @@ window.MYOB_LOCALES.pl = {
     },
     "disclaimer": {
       "title": "Zanim zaczniesz",
-      "education": "Obiana wyjaśnia, co zwykle się dzieje. To nie jest porada medyczna. Aplikacja nie zna ciebie ani twojej ciąży. Twój lekarz lub położna zna.",
+      "education": "Obiana wyjaśnia, co zwykle się dzieje. To nie jest porada medyczna. Aplikacja nie zna ciebie ani twojej ciąży. Twój lekarz rodzinny, ginekolog-położnik lub położna zna.",
       "tools": "Narzędzia przechowują tylko to, co sama wpiszesz. Niczego nie mierzą ani nie diagnozują. Gdy któreś radzi zadzwonić, znaczy to zapytać.",
       "emergency": "Nie używaj tej aplikacji w nagłym wypadku. Zadzwoń pod 911 lub na porodówkę.",
       "sources": "Gdy ten przewodnik podaje liczbę, podaje też źródło. Zwykle ACOG lub AAP. Twój zespół medyczny również się nimi kieruje.",

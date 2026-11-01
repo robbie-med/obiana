@@ -13,11 +13,11 @@
 <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="./apple-touch-icon.png">
 <link rel="manifest" href="./manifest.json">
-<link rel="stylesheet" href="./styles.css?v=96">
-<link rel="stylesheet" href="./fonts/fonts.css?v=96">
+<link rel="stylesheet" href="./styles.css?v=97">
+<link rel="stylesheet" href="./fonts/fonts.css?v=97">
 </head>
 <body>
-<script src="./app/core/theme.js?v=96"></script>
+<script src="./app/core/theme.js?v=97"></script>
 <a href="#app" class="skip-link" data-i18n="common.skipToContent">Skip to content</a>
 <main id="app">
 
@@ -297,7 +297,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
         </div>
         <div class="tool-card-name" data-i18n="tools.kickCounter">Kick Counter</div>
-        <div class="tool-card-desc" data-i18n="tools.10MovesIn2Hours" data-i18n-html>10 moves in 2 hours · log sessions &amp; history</div>
+        <div class="tool-card-desc" data-i18n="tools.10MovesIn2Hours" data-i18n-html>Optional. Get to know your baby's movements</div>
       </button>
       <button class="tool-card-btn" onclick="navigate('tool-contractions')">
         <div class="tool-card-icon" style="background:var(--gold-light)">
@@ -694,8 +694,8 @@
       <label class="form-label" for="appt-type" data-i18n="modalAppt.visitType">Visit Type</label>
       <select class="tool-select" id="appt-type">
         <option value="" data-i18n="apptType.selectType">Select type…</option>
-        <option value="ob-routine" data-i18n="apptType.obRoutine">OB – Routine</option>
-        <option value="ob-triage" data-i18n="apptType.obTriage" data-i18n-html>OB – L&amp;D Triage / Unscheduled</option>
+        <option value="ob-routine" data-i18n="apptType.obRoutine">Prenatal – Routine</option>
+        <option value="ob-triage" data-i18n="apptType.obTriage" data-i18n-html>L&amp;D Triage / Unscheduled</option>
         <option value="mfm-consult" data-i18n="apptType.mfmConsult">MFM Consultation</option>
         <option value="mfm-followup" data-i18n="apptType.mfmFollowup">MFM Follow-up</option>
         <option value="endo" data-i18n="apptType.endo">Endocrinology</option>
@@ -706,9 +706,9 @@
         <option value="lactation" data-i18n="apptType.lactation">Lactation Consult</option>
         <option value="pp-2wk" data-i18n="apptType.pp2wk">Postpartum – 2 weeks</option>
         <option value="pp-6wk" data-i18n="apptType.pp6wk">Postpartum – 6 weeks</option>
-        <option value="peds-2-5d" data-i18n="apptType.peds25d">Pediatrician – 2–5 days</option>
-        <option value="peds-2wk" data-i18n="apptType.peds2wk">Pediatrician – 2 weeks</option>
-        <option value="peds-2mo" data-i18n="apptType.peds2mo">Pediatrician – 2 months</option>
+        <option value="peds-2-5d" data-i18n="apptType.peds25d">Baby's doctor – 2–5 days</option>
+        <option value="peds-2wk" data-i18n="apptType.peds2wk">Baby's doctor – 2 weeks</option>
+        <option value="peds-2mo" data-i18n="apptType.peds2mo">Baby's doctor – 2 months</option>
         <option value="family" data-i18n="apptType.family">Family Doctor</option>
         <option value="other" data-i18n="apptType.other">Other</option>
       </select>
@@ -738,48 +738,48 @@
      subtree is gone from the box tree, so printing produced a blank page. -->
 <div id="print-view"></div>
 
-<script src="./i18n/i18n.js?v=96"></script>
-<script src="./i18n/body-templates.js?v=96"></script>
-<script src="./i18n/epds/epds.en.js?v=96"></script>
-<script src="./i18n/epds/epds.es.js?v=96"></script>
-<script src="./i18n/epds/epds.cnh.js?v=96"></script>
-<script src="./i18n/epds/epds.ko.js?v=96"></script>
-<script src="./i18n/epds/epds.zh.js?v=96"></script>
-<script src="./i18n/epds/epds.ar.js?v=96"></script>
-<script src="./i18n/epds/phq9.fr.js?v=96"></script>
-<script src="./i18n/epds/phq9.ru.js?v=96"></script>
+<script src="./i18n/i18n.js?v=97"></script>
+<script src="./i18n/body-templates.js?v=97"></script>
+<script src="./i18n/epds/epds.en.js?v=97"></script>
+<script src="./i18n/epds/epds.es.js?v=97"></script>
+<script src="./i18n/epds/epds.cnh.js?v=97"></script>
+<script src="./i18n/epds/epds.ko.js?v=97"></script>
+<script src="./i18n/epds/epds.zh.js?v=97"></script>
+<script src="./i18n/epds/epds.ar.js?v=97"></script>
+<script src="./i18n/epds/phq9.fr.js?v=97"></script>
+<script src="./i18n/epds/phq9.ru.js?v=97"></script>
 <!-- App: classic scripts sharing one global scope, in dependency order.
      Guide and app shell first, then the tools, then the contributor tools. -->
-<script src="./app/guide/structure.js?v=96"></script>
-<script src="./app/core/storage.js?v=96"></script>
-<script src="./app/core/dates.js?v=96"></script>
-<script src="./app/guide/cards.js?v=96"></script>
-<script src="./app/guide/visits.js?v=96"></script>
-<script src="./app/myinfo.js?v=96"></script>
-<script src="./app/guide/search.js?v=96"></script>
-<script src="./app/core/nav.js?v=96"></script>
-<script src="./app/core/router.js?v=96"></script>
-<script src="./app/guide/urgent.js?v=96"></script>
-<script src="./app/today.js?v=96"></script>
-<script src="./app/core/pwa.js?v=96"></script>
-<script src="./app/core/ui.js?v=96"></script>
-<script src="./app/settings.js?v=96"></script>
-<script src="./app/first-run.js?v=96"></script>
-<script src="./app/language.js?v=96"></script>
-<script src="./app/boot.js?v=96"></script>
-<script src="./app/tools/shared.js?v=96"></script>
-<script src="./app/tools/kick.js?v=96"></script>
-<script src="./app/tools/contractions.js?v=96"></script>
-<script src="./app/tools/feeding.js?v=96"></script>
-<script src="./app/tools/diapers.js?v=96"></script>
-<script src="./app/tools/jaundice.js?v=96"></script>
-<script src="./app/tools/bp.js?v=96"></script>
-<script src="./app/tools/weight.js?v=96"></script>
-<script src="./app/tools/mood.js?v=96"></script>
-<script src="./app/tools/birthplan.js?v=96"></script>
-<script src="./app/tools/appts.js?v=96"></script>
-<script src="./app/contribute/translate.js?v=96"></script>
-<script src="./app/contribute/improve.js?v=96"></script>
-<script src="./app/tools/nausea.js?v=96"></script>
+<script src="./app/guide/structure.js?v=97"></script>
+<script src="./app/core/storage.js?v=97"></script>
+<script src="./app/core/dates.js?v=97"></script>
+<script src="./app/guide/cards.js?v=97"></script>
+<script src="./app/guide/visits.js?v=97"></script>
+<script src="./app/myinfo.js?v=97"></script>
+<script src="./app/guide/search.js?v=97"></script>
+<script src="./app/core/nav.js?v=97"></script>
+<script src="./app/core/router.js?v=97"></script>
+<script src="./app/guide/urgent.js?v=97"></script>
+<script src="./app/today.js?v=97"></script>
+<script src="./app/core/pwa.js?v=97"></script>
+<script src="./app/core/ui.js?v=97"></script>
+<script src="./app/settings.js?v=97"></script>
+<script src="./app/first-run.js?v=97"></script>
+<script src="./app/language.js?v=97"></script>
+<script src="./app/boot.js?v=97"></script>
+<script src="./app/tools/shared.js?v=97"></script>
+<script src="./app/tools/kick.js?v=97"></script>
+<script src="./app/tools/contractions.js?v=97"></script>
+<script src="./app/tools/feeding.js?v=97"></script>
+<script src="./app/tools/diapers.js?v=97"></script>
+<script src="./app/tools/jaundice.js?v=97"></script>
+<script src="./app/tools/bp.js?v=97"></script>
+<script src="./app/tools/weight.js?v=97"></script>
+<script src="./app/tools/mood.js?v=97"></script>
+<script src="./app/tools/birthplan.js?v=97"></script>
+<script src="./app/tools/appts.js?v=97"></script>
+<script src="./app/contribute/translate.js?v=97"></script>
+<script src="./app/contribute/improve.js?v=97"></script>
+<script src="./app/tools/nausea.js?v=97"></script>
 </body>
 </html>

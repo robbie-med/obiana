@@ -17,21 +17,22 @@ Ticks are the status: tick an item in the commit that ships it. New findings go 
 - [x] `translation/merge.js` pt-BR fix (the §2 item).
 
 ## 1. Content fixes (your decisions)
-- [ ] **Family doctor everywhere a provider is named.** About 21 places in `public/i18n/locale.en.js`:
+- [x] **Family doctor everywhere a provider is named.** About 21 places in `public/i18n/locale.en.js`:
   - "Call Your OB / Midwife" → "Call your family doctor, OB or midwife"
   - "doctor or midwife" (×3) → "family doctor, OB or midwife"
   - "Pediatrician" (×14) → "your baby's doctor" where it means whoever sees the baby.
   - Same in the new Visits/Today/When to call strings.
-- [ ] **Bleeding threshold: 1 pad in an hour, everywhere.** postpartum-danger t3, physical-recovery, csection, Home strings, `ui` `soaking1PadHr2`.
-- [ ] **5-1-1 stays as written.**
-- [ ] **Kick counting is optional.** Something you can do, not something you must. Kick tool intro, the Tools card text ("10 moves in 2 hours"), the Visits line.
-- [ ] **Self-harm: every card says the same as When to call.** antenatal-mental-health, mood-ppd and the mood tool currently differ (988 / ER / doctor).
+- [x] **Bleeding threshold: 1 pad in an hour, everywhere.** postpartum-danger t3, physical-recovery, csection, Home strings, `ui` `soaking1PadHr2`.
+- [x] **5-1-1 stays as written.**
+- [x] **Kick counting is optional.** Something you can do, not something you must. Kick tool intro, the Tools card text ("10 moves in 2 hours"), the Visits line.
+- [x] **Self-harm: every card says the same as When to call.** antenatal-mental-health, mood-ppd and the mood tool currently differ (988 / ER / doctor).
   - No 988 line before the mood questions. The mood tool shows `tool.mood.selfHarmGuidance` (with 988) only after an answer; check that nothing else puts it first.
-- [ ] **Rewrite my new strings in a plain, warm voice.** Today, When to call, Visits: shorter, natural, nothing stiff. Example: "Save your labor & delivery number under Me, so it is one tap from here" → "Add your labor & delivery number under Me."
-- [ ] **Translated slots, in every locale that has them, not only es/fr/ko.**
+- [x] **Rewrite my new strings in a plain, warm voice.** Today, When to call, Visits: shorter, natural, nothing stiff. Example: "Save your labor & delivery number under Me, so it is one tap from here" → "Add your labor & delivery number under Me."
+- [x] **Translated slots, in every locale that has them, not only es/fr/ko.**
   - Each changed key is re-translated wherever it exists. Today that includes ru (the 2-hour pad threshold) and ar/ru/zh/zom (their own crisis lines), as well as es/fr/ko.
   - Then `node translation/stamp.js stamp <lang> <key>…`.
   - Done when `node translation/stamp.js report` lists none of the Section 1 keys as stale in any locale.
+  - **Done 2026-11-01:** 44 English strings (`translation/keys/s1.txt`, `s1b.txt`), translated by Claude in-session (not Kimi) into es/fr/ko (30), ar/ru/zh (15+1), zom (2) and the nine stub locales (the disclaimer). `merge.js --keys` stamped the content keys. `translation/clinical-keys.txt` now gates them, plus the slots When to call is built from.
 
 ## 2. Small bugs
 - [x] **ISO due dates seed one day early in the US.** `seedDatesFromMyInfo` (`public/app/core/dates.js`) and `public/app/tools/nausea.js` use `Date.parse()`, which reads `2027-03-04` as UTC midnight, so Chicago stores `2027-03-03` and her week count is off.
@@ -138,3 +139,8 @@ Don't build a second tool beside it.
 - `run-kimi.sh` full mode filters languages with `grep -qw "$lang"`, so asking for `pt-BR` would also match a `pt` batch. No `pt` locale exists today.
 - **Done 2026-11-01:** obiana.app was serving a Cloudflare Web Analytics beacon (`static.cloudflareinsights.com/beacon.min.js`), injected at the edge into HTML for browsers. Turned off with the zone setting `rum` = off (the work_admin token can't edit the Web Analytics site itself; the site record and its old data still exist, beacon not served). robbiemed.org has the same auto-injected beacon; not touched.
 - myob.robbiemed.org is not the obiana Worker. It is GitHub Pages from the myOB repo, frozen at asset version 60 (2026-08-16, "Point this site at Obiana…"). "Live site serves the new version" means obiana.app.
+- zom `tool.mood.selfHarmGuidance` keeps its old Zomi wording (doctor, 988 or the ER). The new English adds "call 911 or go to the ER now"; that needs a Zomi speaker, not a guess. The contact labels were re-translated.
+- Six Home strings are rendered nowhere: `home.afterDelivery`, `soaking1PadHr2`, `woundOpensOrOozes`, `legRednessSwelling`, `chestPainOrTroubleBreathing`, `thoughtsOfSelfHarm`. When to call takes the after-birth list from postpartum-danger t3. `soaking1PadHr2` was corrected anyway; the rest could be deleted.
+- es/fr/ko have no Today, When to call or Visits ui strings at all (they show English), so §1's voice rewrites only reached English. That's §4 drafting, not a regression.
+- Newborn fever reads "≥ 100.4°F rectal" in normal-newborn t32 and "&gt;100.4°F" elsewhere (Home, postpartum-danger, csection). Pick one.
+- es/fr/ko each have the same 18 stale content keys from before §1 (exercise-pregnancy t5/t6, what-happens-on-arrival t5/t9, pelvic-rest t0/t1, several FAQs…). None are clinical-keys; they need the same `--keys` pass.

@@ -36,7 +36,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     },
     "disclaimer": {
       "title": "Antes de começar",
-      "education": "O Obiana explica o que costuma acontecer. Não é orientação médica. Ele não conhece você nem sua gravidez. Seu médico ou sua parteira conhecem.",
+      "education": "O Obiana explica o que costuma acontecer. Não é orientação médica. Ele não conhece você nem sua gravidez. Seu médico de família, obstetra ou parteira conhece.",
       "tools": "Os registros guardam apenas o que você digita. Não medem nem diagnosticam nada. Quando um deles diz para ligar para alguém, significa perguntar.",
       "emergency": "Não use este aplicativo em uma emergência. Ligue para 911 ou para a maternidade.",
       "sources": "Quando este guia dá um número, ele diz quem o recomenda. Geralmente ACOG ou AAP. Sua equipe de saúde também segue essas fontes.",
