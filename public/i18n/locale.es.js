@@ -1832,6 +1832,24 @@ window.MYOB_LOCALES.es = {
         "Si decide no hacerla",
         "No retraiga el prepucio. En los bebés normalmente está pegado y se separa solo a lo largo de varios años; forzarlo causa las cicatrices que se busca evitar. Limpie la parte de afuera como cualquier otra piel."
       ]
+    },
+    "early-bleeding": {
+      "title": "Sangrado y dolor al inicio del embarazo",
+      "sub": "Qué es común, qué es urgente y el embarazo ectópico",
+      "t": [
+        "Manchar o sangrar un poco en las primeras 12 semanas es común: alrededor de 1 de cada 5 mujeres lo tiene. A menudo el embarazo sigue con normalidad. A veces es el comienzo de un aborto espontáneo y, rara vez, es un embarazo que crece fuera del útero (ectópico), que es una emergencia.",
+        "Vaya a la sala de emergencias ahora si tiene",
+        "Sangrado que empapa 1 toalla sanitaria en una hora · Dolor fuerte en el vientre, sobre todo de un lado · Dolor en la punta del hombro · Mareo o desmayo · Fiebre con sangrado o cólicos",
+        "Llame hoy a su médico de familia, obstetra o partera si tiene",
+        "Cualquier sangrado que no les haya contado, aunque sea leve · Cólicos que empeoran · Tejido que expulsa",
+        "Hasta que la vean, use toallas sanitarias, no tampones, para ver cuánto sangra. Descanse lo que sienta que necesita. La actividad, el trabajo y las relaciones sexuales no causan un aborto espontáneo.",
+        "Embarazo ectópico",
+        "Alrededor de 1 a 2 de cada 100 embarazos se implantan fuera del útero, casi siempre en una trompa de Falopio. No puede convertirse en un bebé y, al crecer, puede romper la trompa y sangrar dentro del vientre. Suele aparecer entre las 6 y 8 semanas. Es más probable si ya tuvo uno, tuvo cirugía en las trompas, tuvo clamidia u otra infección pélvica, quedó embarazada con un DIU puesto o usó FIV. Fumar también aumenta el riesgo. Si se detecta a tiempo, se trata con un medicamento (metotrexato) o con cirugía.",
+        "Lo que hará su equipo",
+        "Por lo general, una ecografía y un análisis de sangre de la hormona del embarazo (hCG). Si es muy pronto para ver el embarazo en la ecografía, el análisis se repite 2 días después: un nivel que no sube como se espera, sin embarazo visible en el útero, hace sospechar un ectópico. Si su tipo de sangre es Rh negativo, dígaselo, porque puede necesitar una inyección de Rh. Si la necesita depende de cuántas semanas tenga y de qué esté causando el sangrado.",
+        "Si es un aborto espontáneo",
+        "Alrededor de 1 de cada 10 de todos los embarazos conocidos termina en aborto espontáneo, la mayoría en las primeras 12 semanas. La probabilidad es algo mayor cuando hay sangrado, sobre todo si es abundante. La mayoría se deben a un problema de cromosomas que empezó en la concepción, no a algo que usted hizo. Por lo general puede elegir cómo manejarlo: esperar a que pase solo, un medicamento que ayuda a que pase o un procedimiento corto. Los tres son seguros; cambian en cuánto tardan y cuánto sangrado ocurre en casa. El duelo es normal, sin importar la semana. Puede intentarlo de nuevo en cuanto se sienta lista."
+      ]
     }
   },
   "srcHash": {
@@ -2564,7 +2582,21 @@ window.MYOB_LOCALES.es = {
     "content.faq-vaccines.t.4": "fc3cba8b30791ee5",
     "content.faq-vaccines.t.5": "8e2d5dd7b662e6cd",
     "content.faq-vaccines.t.6": "1fbad66cf49cff52",
-    "content.faq-vaccines.t.7": "bd443dcd8ee958d3"
+    "content.faq-vaccines.t.7": "bd443dcd8ee958d3",
+    "content.early-bleeding.title": "6e936ac7d2b997f5",
+    "content.early-bleeding.sub": "1260fb6aebf58cbc",
+    "content.early-bleeding.t.0": "bc384c0c8f76bc22",
+    "content.early-bleeding.t.1": "3c8fd394bdf64c72",
+    "content.early-bleeding.t.2": "ca57cbe5780f841f",
+    "content.early-bleeding.t.3": "f5d83643cd61ff09",
+    "content.early-bleeding.t.4": "5a94db92ac079aa8",
+    "content.early-bleeding.t.5": "ce359a85e71e6b53",
+    "content.early-bleeding.t.6": "7223af83139f77f5",
+    "content.early-bleeding.t.7": "763751f26b5541cc",
+    "content.early-bleeding.t.8": "32597a3a399d6ccc",
+    "content.early-bleeding.t.9": "3bec781a6352d1bc",
+    "content.early-bleeding.t.10": "acd42387326fb2e1",
+    "content.early-bleeding.t.11": "60e022353a5f16df"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -2800,6 +2832,20 @@ window.MYOB_LOCALES.es = {
     "common.skipToContent": 1,
     "common.undo": 1,
     "guide.quickAnswers": 1,
-    "me.datesTitle": 1
+    "me.datesTitle": 1,
+    "content.early-bleeding.title": 1,
+    "content.early-bleeding.sub": 1,
+    "content.early-bleeding.t.0": 1,
+    "content.early-bleeding.t.1": 1,
+    "content.early-bleeding.t.2": 1,
+    "content.early-bleeding.t.3": 1,
+    "content.early-bleeding.t.4": 1,
+    "content.early-bleeding.t.5": 1,
+    "content.early-bleeding.t.6": 1,
+    "content.early-bleeding.t.7": 1,
+    "content.early-bleeding.t.8": 1,
+    "content.early-bleeding.t.9": 1,
+    "content.early-bleeding.t.10": 1,
+    "content.early-bleeding.t.11": 1
   }
 };

@@ -1835,6 +1835,24 @@ window.MYOB_LOCALES["pt-BR"] = {
         "Perguntas para fazer antes de sair do hospital",
         "Para quem ligo se tiver uma dúvida antes da primeira consulta? · O bebê está mamando bem. Como vou saber se não estiver? · Quando devo ligar para o médico do bebê? · Algum exame deu alterado e precisa de acompanhamento? · Preciso acordar o bebê à noite para mamar? · Quais são as orientações para cuidar da incisão?"
       ]
+    },
+    "early-bleeding": {
+      "title": "Sangramento e dor no início da gravidez",
+      "sub": "O que é comum, o que é urgente, e a gravidez ectópica",
+      "t": [
+        "Escape ou sangramento leve nas primeiras 12 semanas é comum: cerca de 1 em cada 5 mulheres tem. Muitas vezes a gravidez segue normalmente. Às vezes é o começo de um aborto espontâneo e, raramente, é uma gravidez crescendo fora do útero (ectópica), que é uma emergência.",
+        "Vá ao pronto-socorro agora se tiver",
+        "Sangramento que encharca 1 absorvente em uma hora · Dor forte na barriga, principalmente de um lado · Dor na ponta do ombro · Tontura ou desmaio · Febre com sangramento ou cólica",
+        "Ligue hoje para seu médico de família, obstetra ou parteira se tiver",
+        "Qualquer sangramento que você ainda não contou, mesmo leve · Cólica que piora · Tecido que sai",
+        "Até ser atendida, use absorvente externo, não interno, para ver quanto está sangrando. Descanse o quanto sentir que precisa. Atividade, trabalho e sexo não causam aborto espontâneo.",
+        "Gravidez ectópica",
+        "Cerca de 1 a 2 em cada 100 gestações se implantam fora do útero, quase sempre numa trompa. Ela não pode virar um bebê e, ao crescer, pode romper a trompa e sangrar dentro da barriga. Costuma aparecer entre 6 e 8 semanas. É mais provável se você já teve uma, fez cirurgia nas trompas, teve clamídia ou outra infecção pélvica, engravidou com DIU ou fez FIV. Fumar também aumenta o risco. Descoberta cedo, é tratada com um remédio (metotrexato) ou com cirurgia.",
+        "O que a sua equipe vai fazer",
+        "Geralmente um ultrassom e um exame de sangue do hormônio da gravidez (hCG). Se for cedo demais para ver a gravidez no ultrassom, o exame de sangue é repetido 2 dias depois: um nível que não sobe como esperado, sem gravidez vista no útero, levanta suspeita de ectópica. Se o seu tipo sanguíneo for Rh negativo, avise, porque você pode precisar de uma injeção anti-Rh. Se você precisa ou não depende de quantas semanas você está e do que está causando o sangramento.",
+        "Se for um aborto espontâneo",
+        "Cerca de 1 em cada 10 de todas as gestações conhecidas termina em aborto espontâneo, a maioria nas primeiras 12 semanas. A chance é um pouco maior quando há sangramento, principalmente se for forte. A maioria é causada por um problema nos cromossomos que começou na concepção, não por algo que você fez. Em geral você pode escolher como conduzir: esperar sair sozinho, um remédio para ajudar a sair ou um procedimento curto. Os três são seguros; mudam em quanto tempo levam e quanto sangramento acontece em casa. O luto é normal, em qualquer semana. Você pode tentar de novo assim que se sentir pronta."
+      ]
     }
   },
   "srcHash": {
@@ -2567,7 +2585,21 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.followup-appts.t.20": "a84fe398c55bf882",
     "content.followup-appts.t.21": "08cdbbf8d5412882",
     "content.followup-appts.t.22": "8f54998cdd27f7ca",
-    "content.followup-appts.t.23": "6f3197957c539aeb"
+    "content.followup-appts.t.23": "6f3197957c539aeb",
+    "content.early-bleeding.title": "6e936ac7d2b997f5",
+    "content.early-bleeding.sub": "1260fb6aebf58cbc",
+    "content.early-bleeding.t.0": "bc384c0c8f76bc22",
+    "content.early-bleeding.t.1": "3c8fd394bdf64c72",
+    "content.early-bleeding.t.2": "ca57cbe5780f841f",
+    "content.early-bleeding.t.3": "f5d83643cd61ff09",
+    "content.early-bleeding.t.4": "5a94db92ac079aa8",
+    "content.early-bleeding.t.5": "ce359a85e71e6b53",
+    "content.early-bleeding.t.6": "7223af83139f77f5",
+    "content.early-bleeding.t.7": "763751f26b5541cc",
+    "content.early-bleeding.t.8": "32597a3a399d6ccc",
+    "content.early-bleeding.t.9": "3bec781a6352d1bc",
+    "content.early-bleeding.t.10": "acd42387326fb2e1",
+    "content.early-bleeding.t.11": "60e022353a5f16df"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -3905,6 +3937,20 @@ window.MYOB_LOCALES["pt-BR"] = {
     "me.sizeLarge": 1,
     "me.sizeLarger": 1,
     "me.language": 1,
-    "me.darkMode": 1
+    "me.darkMode": 1,
+    "content.early-bleeding.title": 1,
+    "content.early-bleeding.sub": 1,
+    "content.early-bleeding.t.0": 1,
+    "content.early-bleeding.t.1": 1,
+    "content.early-bleeding.t.2": 1,
+    "content.early-bleeding.t.3": 1,
+    "content.early-bleeding.t.4": 1,
+    "content.early-bleeding.t.5": 1,
+    "content.early-bleeding.t.6": 1,
+    "content.early-bleeding.t.7": 1,
+    "content.early-bleeding.t.8": 1,
+    "content.early-bleeding.t.9": 1,
+    "content.early-bleeding.t.10": 1,
+    "content.early-bleeding.t.11": 1
   }
 };

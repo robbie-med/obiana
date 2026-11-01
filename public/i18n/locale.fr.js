@@ -1833,6 +1833,24 @@ window.MYOB_LOCALES.fr = {
         "Si vous décidez de ne pas la faire",
         "Ne décalottez pas le prépuce. Chez le nourrisson, il est normalement collé et se détache tout seul en plusieurs années ; le forcer cause les cicatrices qu'on veut éviter. Lavez l'extérieur comme n'importe quelle autre peau."
       ]
+    },
+    "early-bleeding": {
+      "title": "Saignements et douleurs en début de grossesse",
+      "sub": "Ce qui est fréquent, ce qui est urgent, et la grossesse extra-utérine",
+      "t": [
+        "Des petites pertes de sang ou un léger saignement pendant les 12 premières semaines sont fréquents : environ 1 femme sur 5 en a. Souvent, la grossesse se poursuit normalement. Parfois, c’est le début d’une fausse couche et, rarement, c’est une grossesse qui se développe hors de l’utérus (extra-utérine), ce qui est une urgence.",
+        "Allez aux urgences maintenant si vous avez",
+        "Un saignement qui imbibe 1 serviette en une heure · Une forte douleur au ventre, surtout d’un côté · Une douleur au bout de l’épaule · Des vertiges ou un malaise · De la fièvre avec des saignements ou des crampes",
+        "Appelez aujourd’hui votre médecin de famille, gynécologue-obstétricien ou sage-femme si vous avez",
+        "Tout saignement dont vous ne leur avez pas parlé, même léger · Des crampes qui s’aggravent · Des tissus que vous expulsez",
+        "En attendant d’être vue, utilisez des serviettes, pas de tampons, pour voir combien vous saignez. Reposez-vous autant que vous en ressentez le besoin. L’activité, le travail et les rapports sexuels ne provoquent pas de fausse couche.",
+        "Grossesse extra-utérine",
+        "Environ 1 à 2 grossesses sur 100 s’implantent hors de l’utérus, presque toujours dans une trompe. Elle ne peut pas devenir un bébé et, en grandissant, elle peut rompre la trompe et saigner dans le ventre. Elle se manifeste en général entre 6 et 8 semaines. Elle est plus probable si vous en avez déjà eu une, avez été opérée des trompes, avez eu une chlamydia ou une autre infection pelvienne, êtes tombée enceinte avec un stérilet en place, ou avez eu une FIV. Le tabac augmente aussi le risque. Découverte tôt, elle se traite par un médicament (méthotrexate) ou par chirurgie.",
+        "Ce que votre équipe fera",
+        "En général, une échographie et une prise de sang pour l’hormone de grossesse (hCG). S’il est trop tôt pour voir la grossesse à l’échographie, la prise de sang est refaite 2 jours plus tard : un taux qui ne monte pas comme prévu, sans grossesse visible dans l’utérus, fait craindre une grossesse extra-utérine. Si votre groupe sanguin est Rh négatif, dites-le, car vous pourriez avoir besoin d’une injection anti-Rh. Le besoin dépend du stade de la grossesse et de la cause du saignement.",
+        "Si c’est une fausse couche",
+        "Environ 1 sur 10 de toutes les grossesses connues se termine par une fausse couche, la plupart pendant les 12 premières semaines. Le risque est un peu plus élevé quand il y a des saignements, surtout abondants. La plupart sont dues à un problème de chromosomes apparu dès la conception, pas à quelque chose que vous avez fait. Vous pouvez en général choisir la prise en charge : attendre que cela passe tout seul, un médicament pour aider, ou une courte intervention. Les trois sont sûres ; elles diffèrent par la durée et la quantité de saignement à la maison. Le chagrin est normal, quelle que soit la semaine. Vous pouvez réessayer dès que vous vous sentez prête."
+      ]
     }
   },
   "srcHash": {
@@ -2565,7 +2583,21 @@ window.MYOB_LOCALES.fr = {
     "content.faq-vaccines.t.4": "fc3cba8b30791ee5",
     "content.faq-vaccines.t.5": "8e2d5dd7b662e6cd",
     "content.faq-vaccines.t.6": "1fbad66cf49cff52",
-    "content.faq-vaccines.t.7": "bd443dcd8ee958d3"
+    "content.faq-vaccines.t.7": "bd443dcd8ee958d3",
+    "content.early-bleeding.title": "6e936ac7d2b997f5",
+    "content.early-bleeding.sub": "1260fb6aebf58cbc",
+    "content.early-bleeding.t.0": "bc384c0c8f76bc22",
+    "content.early-bleeding.t.1": "3c8fd394bdf64c72",
+    "content.early-bleeding.t.2": "ca57cbe5780f841f",
+    "content.early-bleeding.t.3": "f5d83643cd61ff09",
+    "content.early-bleeding.t.4": "5a94db92ac079aa8",
+    "content.early-bleeding.t.5": "ce359a85e71e6b53",
+    "content.early-bleeding.t.6": "7223af83139f77f5",
+    "content.early-bleeding.t.7": "763751f26b5541cc",
+    "content.early-bleeding.t.8": "32597a3a399d6ccc",
+    "content.early-bleeding.t.9": "3bec781a6352d1bc",
+    "content.early-bleeding.t.10": "acd42387326fb2e1",
+    "content.early-bleeding.t.11": "60e022353a5f16df"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -2801,6 +2833,20 @@ window.MYOB_LOCALES.fr = {
     "common.skipToContent": 1,
     "common.undo": 1,
     "guide.quickAnswers": 1,
-    "me.datesTitle": 1
+    "me.datesTitle": 1,
+    "content.early-bleeding.title": 1,
+    "content.early-bleeding.sub": 1,
+    "content.early-bleeding.t.0": 1,
+    "content.early-bleeding.t.1": 1,
+    "content.early-bleeding.t.2": 1,
+    "content.early-bleeding.t.3": 1,
+    "content.early-bleeding.t.4": 1,
+    "content.early-bleeding.t.5": 1,
+    "content.early-bleeding.t.6": 1,
+    "content.early-bleeding.t.7": 1,
+    "content.early-bleeding.t.8": 1,
+    "content.early-bleeding.t.9": 1,
+    "content.early-bleeding.t.10": 1,
+    "content.early-bleeding.t.11": 1
   }
 };

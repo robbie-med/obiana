@@ -1827,6 +1827,24 @@ window.MYOB_LOCALES.ko = {
         "하지 않기로 했다면",
         "포피를 뒤로 젖히지 마세요. 아기 때는 원래 붙어 있고 몇 년에 걸쳐 저절로 떨어집니다. 억지로 젖히면 오히려 막으려던 흉터가 생깁니다. 바깥쪽은 다른 피부처럼 닦아 주세요."
       ]
+    },
+    "early-bleeding": {
+      "title": "임신 초기의 출혈과 통증",
+      "sub": "흔한 것, 급한 것, 그리고 자궁외임신",
+      "t": [
+        "첫 12주에 피가 조금 묻어나거나 약간 출혈이 있는 것은 흔합니다. 여성 약 5명 중 1명이 겪습니다. 임신이 정상적으로 이어지는 경우가 많습니다. 때로는 유산의 시작이고, 드물게는 자궁 밖에서 자라는 임신(자궁외임신)으로, 이는 응급 상황입니다.",
+        "이런 경우 지금 바로 응급실로 가세요",
+        "1시간에 생리대 1개가 흠뻑 젖는 출혈 · 심한 배 통증, 특히 한쪽 · 어깨 끝의 통증 · 어지럼증이나 실신 · 출혈이나 복통과 함께 나는 열",
+        "이런 경우 오늘 가정의, 산부인과 의사 또는 조산사에게 전화하세요",
+        "아직 알리지 않은 출혈, 적더라도 · 점점 심해지는 복통 · 조직이 나온 경우",
+        "진료를 받을 때까지 출혈량을 알 수 있도록 탐폰 말고 생리대를 쓰세요. 필요한 만큼 쉬세요. 활동, 일, 성관계는 유산을 일으키지 않습니다.",
+        "자궁외임신",
+        "임신 100건 중 약 1~2건은 자궁 밖에 착상하며, 거의 항상 나팔관입니다. 아기로 자랄 수 없고, 자라면서 나팔관이 터져 배 안에 출혈이 생길 수 있습니다. 보통 6~8주에 나타납니다. 전에 자궁외임신을 한 적이 있거나, 나팔관 수술을 받았거나, 클라미디아나 다른 골반 감염이 있었거나, 자궁 내 장치(IUD)를 한 채 임신했거나, 시험관 시술(IVF)을 받은 경우 더 흔합니다. 흡연도 위험을 높입니다. 일찍 발견하면 약(메토트렉세이트)이나 수술로 치료합니다.",
+        "의료진이 하는 일",
+        "보통 초음파와 임신 호르몬(hCG) 혈액 검사입니다. 초음파로 임신을 보기에 너무 이르면 2일 뒤에 혈액 검사를 다시 합니다. 수치가 기대만큼 오르지 않고 자궁 안에 임신이 보이지 않으면 자궁외임신을 의심합니다. 혈액형이 Rh 음성이면 알려 주세요. Rh 주사가 필요할 수 있습니다. 필요한지는 임신 주수와 출혈의 원인에 따라 다릅니다.",
+        "유산인 경우",
+        "알려진 모든 임신의 약 10건 중 1건이 유산으로 끝나며, 대부분 첫 12주에 일어납니다. 출혈이 있으면, 특히 출혈이 많으면 그 가능성이 조금 더 높습니다. 대부분은 수정될 때 생긴 염색체 문제 때문이며, 당신이 한 일 때문이 아닙니다. 보통 어떻게 할지 선택할 수 있습니다: 저절로 나오기를 기다리기, 나오도록 돕는 약, 짧은 시술. 세 가지 모두 안전하며, 걸리는 시간과 집에서의 출혈량이 다릅니다. 몇 주이든 슬픔은 자연스럽습니다. 마음의 준비가 되면 바로 다시 임신을 시도해도 됩니다."
+      ]
     }
   },
   "srcHash": {
@@ -2559,7 +2577,21 @@ window.MYOB_LOCALES.ko = {
     "content.faq-vaccines.t.4": "fc3cba8b30791ee5",
     "content.faq-vaccines.t.5": "8e2d5dd7b662e6cd",
     "content.faq-vaccines.t.6": "1fbad66cf49cff52",
-    "content.faq-vaccines.t.7": "bd443dcd8ee958d3"
+    "content.faq-vaccines.t.7": "bd443dcd8ee958d3",
+    "content.early-bleeding.title": "6e936ac7d2b997f5",
+    "content.early-bleeding.sub": "1260fb6aebf58cbc",
+    "content.early-bleeding.t.0": "bc384c0c8f76bc22",
+    "content.early-bleeding.t.1": "3c8fd394bdf64c72",
+    "content.early-bleeding.t.2": "ca57cbe5780f841f",
+    "content.early-bleeding.t.3": "f5d83643cd61ff09",
+    "content.early-bleeding.t.4": "5a94db92ac079aa8",
+    "content.early-bleeding.t.5": "ce359a85e71e6b53",
+    "content.early-bleeding.t.6": "7223af83139f77f5",
+    "content.early-bleeding.t.7": "763751f26b5541cc",
+    "content.early-bleeding.t.8": "32597a3a399d6ccc",
+    "content.early-bleeding.t.9": "3bec781a6352d1bc",
+    "content.early-bleeding.t.10": "acd42387326fb2e1",
+    "content.early-bleeding.t.11": "60e022353a5f16df"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -2795,6 +2827,20 @@ window.MYOB_LOCALES.ko = {
     "common.skipToContent": 1,
     "common.undo": 1,
     "guide.quickAnswers": 1,
-    "me.datesTitle": 1
+    "me.datesTitle": 1,
+    "content.early-bleeding.title": 1,
+    "content.early-bleeding.sub": 1,
+    "content.early-bleeding.t.0": 1,
+    "content.early-bleeding.t.1": 1,
+    "content.early-bleeding.t.2": 1,
+    "content.early-bleeding.t.3": 1,
+    "content.early-bleeding.t.4": 1,
+    "content.early-bleeding.t.5": 1,
+    "content.early-bleeding.t.6": 1,
+    "content.early-bleeding.t.7": 1,
+    "content.early-bleeding.t.8": 1,
+    "content.early-bleeding.t.9": 1,
+    "content.early-bleeding.t.10": 1,
+    "content.early-bleeding.t.11": 1
   }
 };

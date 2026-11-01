@@ -1830,6 +1830,24 @@ window.MYOB_LOCALES.tl = {
         "Mga Tanong Bago Umuwi Mula sa Ospital",
         "Sino ang tatawagan ko kung may tanong ako bago ang unang appointment? · Maayos ba ang pagdede ng sanggol. Paano ko malalaman kung hindi? · Kailan ako dapat tumawag sa doktor ng sanggol? · May abnormal bang test na kailangang i-follow up? · Kailangan ko bang gisingin ang sanggol sa gabi para dumede? · Ano ang mga instruksiyon sa pag-aalaga ng sugat ko?"
       ]
+    },
+    "early-bleeding": {
+      "title": "Pagdurugo at Sakit sa Maagang Pagbubuntis",
+      "sub": "Ano ang karaniwan, ano ang apurahan, at ectopic na pagbubuntis",
+      "t": [
+        "Karaniwan ang spotting o bahagyang pagdurugo sa unang 12 linggo: mga 1 sa 5 babae ang nagkakaroon nito. Kadalasang tuloy-tuloy na normal ang pagbubuntis. Minsan ito ang simula ng pagkalaglag, at bihira itong pagbubuntis na lumalaki sa labas ng matris (ectopic), na isang emergency.",
+        "Pumunta agad sa ER kung may",
+        "Pagdurugong nakakababad ng 1 pad sa loob ng isang oras · Matinding sakit ng tiyan, lalo na sa isang gilid · Sakit sa dulo ng balikat · Pagkahilo o pagkahimatay · Lagnat kasabay ng pagdurugo o pananakit ng puson",
+        "Tawagan ngayong araw ang iyong family doctor, OB o midwife kung may",
+        "Anumang pagdurugo na hindi mo pa nasasabi, kahit bahagya · Pananakit ng puson na lumalala · May lumabas na tissue",
+        "Hanggang matingnan ka, gumamit ng pad, hindi tampon, para makita mo kung gaano karami ang dugo. Magpahinga hangga't kailangan mo. Hindi nagdudulot ng pagkalaglag ang pagkilos, pagtatrabaho at pakikipagtalik.",
+        "Ectopic na pagbubuntis",
+        "Mga 1 hanggang 2 sa 100 pagbubuntis ang kumakapit sa labas ng matris, halos palagi sa fallopian tube. Hindi ito puwedeng maging sanggol, at habang lumalaki ay maaaring pumutok ang tube at magdugo sa loob ng tiyan. Kadalasang lumalabas ito sa 6 hanggang 8 linggo. Mas malamang ito kung nagkaroon ka na dati, naoperahan sa tube, nagka-chlamydia o ibang impeksiyon sa balakang, nabuntis habang may IUD, o gumamit ng IVF. Nagpapataas din ng panganib ang paninigarilyo. Kapag maagang nakita, ginagamot ito ng gamot (methotrexate) o ng operasyon.",
+        "Ang gagawin ng iyong team",
+        "Kadalasang ultrasound at blood test para sa hormone ng pagbubuntis (hCG). Kung masyado pang maaga para makita ang pagbubuntis sa ultrasound, inuulit ang blood test pagkalipas ng 2 araw: ang antas na hindi tumataas gaya ng inaasahan, at walang makitang pagbubuntis sa matris, ay nagpapahiwatig ng ectopic. Kung Rh negative ang blood type mo, sabihin sa kanila, dahil maaaring kailangan mo ng Rh shot. Kung kailangan mo ito ay depende sa kung ilang linggo ka na at kung ano ang sanhi ng pagdurugo.",
+        "Kung pagkalaglag ito",
+        "Mga 1 sa 10 ng lahat ng nalalamang pagbubuntis ang nauuwi sa pagkalaglag, karamihan sa unang 12 linggo. Medyo mas mataas ang tsansa kapag may pagdurugo na, lalo na kung malakas. Karamihan ay dahil sa problema sa chromosome na nagsimula sa paglilihi, hindi dahil sa anumang ginawa mo. Kadalasang puwede mong piliin kung paano ito haharapin: hintaying kusang lumabas, gamot para tumulong lumabas, o maikling procedure. Ligtas ang tatlo; nagkakaiba sila sa tagal at sa dami ng pagdurugo sa bahay. Normal ang pagdadalamhati, anumang linggo. Puwede kang sumubok ulit kapag handa ka na."
+      ]
     }
   },
   "srcHash": {
@@ -2562,7 +2580,21 @@ window.MYOB_LOCALES.tl = {
     "content.followup-appts.t.20": "a84fe398c55bf882",
     "content.followup-appts.t.21": "08cdbbf8d5412882",
     "content.followup-appts.t.22": "8f54998cdd27f7ca",
-    "content.followup-appts.t.23": "6f3197957c539aeb"
+    "content.followup-appts.t.23": "6f3197957c539aeb",
+    "content.early-bleeding.title": "6e936ac7d2b997f5",
+    "content.early-bleeding.sub": "1260fb6aebf58cbc",
+    "content.early-bleeding.t.0": "bc384c0c8f76bc22",
+    "content.early-bleeding.t.1": "3c8fd394bdf64c72",
+    "content.early-bleeding.t.2": "ca57cbe5780f841f",
+    "content.early-bleeding.t.3": "f5d83643cd61ff09",
+    "content.early-bleeding.t.4": "5a94db92ac079aa8",
+    "content.early-bleeding.t.5": "ce359a85e71e6b53",
+    "content.early-bleeding.t.6": "7223af83139f77f5",
+    "content.early-bleeding.t.7": "763751f26b5541cc",
+    "content.early-bleeding.t.8": "32597a3a399d6ccc",
+    "content.early-bleeding.t.9": "3bec781a6352d1bc",
+    "content.early-bleeding.t.10": "acd42387326fb2e1",
+    "content.early-bleeding.t.11": "60e022353a5f16df"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -3900,6 +3932,20 @@ window.MYOB_LOCALES.tl = {
     "me.sizeLarge": 1,
     "me.sizeLarger": 1,
     "me.language": 1,
-    "me.darkMode": 1
+    "me.darkMode": 1,
+    "content.early-bleeding.title": 1,
+    "content.early-bleeding.sub": 1,
+    "content.early-bleeding.t.0": 1,
+    "content.early-bleeding.t.1": 1,
+    "content.early-bleeding.t.2": 1,
+    "content.early-bleeding.t.3": 1,
+    "content.early-bleeding.t.4": 1,
+    "content.early-bleeding.t.5": 1,
+    "content.early-bleeding.t.6": 1,
+    "content.early-bleeding.t.7": 1,
+    "content.early-bleeding.t.8": 1,
+    "content.early-bleeding.t.9": 1,
+    "content.early-bleeding.t.10": 1,
+    "content.early-bleeding.t.11": 1
   }
 };

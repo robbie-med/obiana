@@ -1825,6 +1825,24 @@ window.MYOB_LOCALES.ja = {
         "退院前に聞くこと",
         "最初の健診の前に質問があったら誰に電話すればいいですか？ · 赤ちゃんはよく飲めていますか。飲めていないとどうやってわかりますか？ · どんなときに赤ちゃんの医師に電話すればいいですか？ · フォローが必要な異常な検査はありましたか？ · 夜、授乳のために赤ちゃんを起こす必要はありますか？ · 傷のケアの指示は何ですか？"
       ]
+    },
+    "early-bleeding": {
+      "title": "妊娠初期の出血と痛み",
+      "sub": "よくあること、急ぐこと、異所性妊娠",
+      "t": [
+        "最初の12週の少量の出血やおりものに血がまじることはよくあります。約5人に1人の女性にあります。妊娠がそのまま順調に続くことも多いです。流産の始まりのこともあり、まれに子宮の外で育つ妊娠（異所性妊娠）のこともあります。これは緊急事態です。",
+        "こんなときは今すぐERへ",
+        "1時間でナプキン1枚がびっしょりになる出血 · お腹の強い痛み、特に片側 · 肩の先の痛み · めまいや気を失う · 出血や腹痛と一緒の発熱",
+        "こんなときは今日、かかりつけ医、産科医、助産師に電話",
+        "まだ伝えていない出血、少しでも · ひどくなる腹痛 · 組織のようなものが出た",
+        "診てもらうまでは、出血の量がわかるようにタンポンではなくナプキンを使いましょう。必要なだけ休みましょう。体を動かすこと、仕事、セックスで流産は起こりません。",
+        "異所性妊娠",
+        "約100人に1〜2人の妊娠は子宮の外に着床し、ほとんどは卵管です。赤ちゃんに育つことはできず、大きくなると卵管が破れてお腹の中で出血することがあります。ふつう6〜8週ごろにわかります。前に異所性妊娠をした、卵管の手術をした、クラミジアなど骨盤の感染症にかかった、IUDを入れたまま妊娠した、IVFを受けた場合に起こりやすくなります。喫煙もリスクを上げます。早く見つかれば、薬（メトトレキサート）か手術で治療します。",
+        "ケアチームがすること",
+        "ふつうは超音波と、妊娠ホルモン（hCG）の血液検査です。超音波で妊娠を見るにはまだ早い場合、2日後に血液検査をくり返します。値が期待どおりに上がらず、子宮内に妊娠が見えないときは、異所性妊娠が疑われます。血液型がRhマイナスなら伝えてください。Rhの注射が必要になることがあります。必要かどうかは、妊娠週数と出血の原因によります。",
+        "流産だった場合",
+        "わかっている妊娠全体の約10人に1人が流産になり、ほとんどは最初の12週です。出血があると、特に量が多いと、その可能性はいくらか高くなります。ほとんどは受精のときに始まった染色体の問題が原因で、あなたが何かをしたせいではありません。ふつうは対応のしかたを選べます：自然に出るのを待つ、出るのを助ける薬、短い処置。3つとも安全で、かかる時間と家での出血の量が違います。何週であっても悲しむのは自然なことです。気持ちの準備ができたら、すぐにまた妊娠を目指してかまいません。"
+      ]
     }
   },
   "srcHash": {
@@ -2557,7 +2575,21 @@ window.MYOB_LOCALES.ja = {
     "content.followup-appts.t.20": "a84fe398c55bf882",
     "content.followup-appts.t.21": "08cdbbf8d5412882",
     "content.followup-appts.t.22": "8f54998cdd27f7ca",
-    "content.followup-appts.t.23": "6f3197957c539aeb"
+    "content.followup-appts.t.23": "6f3197957c539aeb",
+    "content.early-bleeding.title": "6e936ac7d2b997f5",
+    "content.early-bleeding.sub": "1260fb6aebf58cbc",
+    "content.early-bleeding.t.0": "bc384c0c8f76bc22",
+    "content.early-bleeding.t.1": "3c8fd394bdf64c72",
+    "content.early-bleeding.t.2": "ca57cbe5780f841f",
+    "content.early-bleeding.t.3": "f5d83643cd61ff09",
+    "content.early-bleeding.t.4": "5a94db92ac079aa8",
+    "content.early-bleeding.t.5": "ce359a85e71e6b53",
+    "content.early-bleeding.t.6": "7223af83139f77f5",
+    "content.early-bleeding.t.7": "763751f26b5541cc",
+    "content.early-bleeding.t.8": "32597a3a399d6ccc",
+    "content.early-bleeding.t.9": "3bec781a6352d1bc",
+    "content.early-bleeding.t.10": "acd42387326fb2e1",
+    "content.early-bleeding.t.11": "60e022353a5f16df"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -3895,6 +3927,20 @@ window.MYOB_LOCALES.ja = {
     "me.sizeLarge": 1,
     "me.sizeLarger": 1,
     "me.language": 1,
-    "me.darkMode": 1
+    "me.darkMode": 1,
+    "content.early-bleeding.title": 1,
+    "content.early-bleeding.sub": 1,
+    "content.early-bleeding.t.0": 1,
+    "content.early-bleeding.t.1": 1,
+    "content.early-bleeding.t.2": 1,
+    "content.early-bleeding.t.3": 1,
+    "content.early-bleeding.t.4": 1,
+    "content.early-bleeding.t.5": 1,
+    "content.early-bleeding.t.6": 1,
+    "content.early-bleeding.t.7": 1,
+    "content.early-bleeding.t.8": 1,
+    "content.early-bleeding.t.9": 1,
+    "content.early-bleeding.t.10": 1,
+    "content.early-bleeding.t.11": 1
   }
 };

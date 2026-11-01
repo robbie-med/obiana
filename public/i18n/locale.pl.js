@@ -1837,6 +1837,24 @@ window.MYOB_LOCALES.pl = {
         "Pytania przed wyjściem ze szpitala",
         "Do kogo dzwonić, jeśli mam pytanie przed pierwszą wizytą? · Czy dziecko dobrze je. Jak poznam, że nie? · Kiedy dzwonić do lekarza dziecka? · Czy jakieś badania były nieprawidłowe i wymagają kontroli? · Czy muszę budzić dziecko w nocy do karmienia? · Jak mam dbać o ranę?"
       ]
+    },
+    "early-bleeding": {
+      "title": "Krwawienie i ból we wczesnej ciąży",
+      "sub": "Co jest częste, co pilne, i ciąża pozamaciczna",
+      "t": [
+        "Plamienie lub lekkie krwawienie w pierwszych 12 tygodniach jest częste: ma je około 1 na 5 kobiet. Często ciąża rozwija się dalej normalnie. Czasem to początek poronienia, a rzadko ciąża rozwijająca się poza macicą (pozamaciczna), która jest stanem nagłym.",
+        "Jedź teraz na SOR, jeśli masz",
+        "Krwawienie, które przemacza 1 podpaskę w godzinę · Silny ból brzucha, zwłaszcza z jednej strony · Ból w czubku barku · Zawroty głowy lub omdlenie · Gorączkę z krwawieniem lub skurczami",
+        "Zadzwoń dziś do lekarza rodzinnego, ginekologa lub położnej, jeśli masz",
+        "Każde krwawienie, o którym im jeszcze nie mówiłaś, nawet lekkie · Skurcze, które się nasilają · Tkankę, która z Ciebie wychodzi",
+        "Do czasu wizyty używaj podpasek, nie tamponów, żeby widzieć, ile krwawisz. Odpoczywaj tyle, ile czujesz, że potrzebujesz. Ruch, praca i seks nie powodują poronienia.",
+        "Ciąża pozamaciczna",
+        "Około 1 do 2 na 100 ciąż zagnieżdża się poza macicą, prawie zawsze w jajowodzie. Nie może z niej powstać dziecko, a rosnąc, może rozerwać jajowód i krwawić do brzucha. Zwykle daje objawy w 6–8 tygodniu. Jest bardziej prawdopodobna, jeśli miałaś ją wcześniej, operację jajowodów, chlamydię lub inną infekcję miednicy, zaszłaś w ciążę z wkładką (IUD) albo po in vitro (IVF). Palenie też zwiększa ryzyko. Wykryta wcześnie jest leczona lekiem (metotreksat) lub operacją.",
+        "Co zrobi Twój zespół",
+        "Zwykle USG i badanie krwi na hormon ciąży (hCG). Jeśli jest za wcześnie, by zobaczyć ciążę w USG, badanie krwi powtarza się po 2 dniach: poziom, który nie rośnie tak, jak powinien, bez ciąży widocznej w macicy, budzi podejrzenie ciąży pozamacicznej. Jeśli masz grupę krwi Rh ujemną, powiedz o tym, bo możesz potrzebować zastrzyku anty-Rh. To, czy go potrzebujesz, zależy od tygodnia ciąży i przyczyny krwawienia.",
+        "Jeśli to poronienie",
+        "Około 1 na 10 wszystkich znanych ciąż kończy się poronieniem, większość w pierwszych 12 tygodniach. Szansa jest nieco większa, gdy jest krwawienie, zwłaszcza obfite. Większość jest spowodowana problemem z chromosomami, który powstał przy poczęciu, a nie czymś, co zrobiłaś. Zwykle możesz wybrać, jak to przebiegnie: czekać, aż samo się zakończy, lek, który w tym pomoże, albo krótki zabieg. Wszystkie trzy są bezpieczne; różnią się tym, ile trwają i ile krwawienia jest w domu. Żałoba jest normalna, bez względu na tydzień. Możesz próbować znowu, gdy tylko poczujesz się gotowa."
+      ]
     }
   },
   "srcHash": {
@@ -2569,7 +2587,21 @@ window.MYOB_LOCALES.pl = {
     "content.followup-appts.t.20": "a84fe398c55bf882",
     "content.followup-appts.t.21": "08cdbbf8d5412882",
     "content.followup-appts.t.22": "8f54998cdd27f7ca",
-    "content.followup-appts.t.23": "6f3197957c539aeb"
+    "content.followup-appts.t.23": "6f3197957c539aeb",
+    "content.early-bleeding.title": "6e936ac7d2b997f5",
+    "content.early-bleeding.sub": "1260fb6aebf58cbc",
+    "content.early-bleeding.t.0": "bc384c0c8f76bc22",
+    "content.early-bleeding.t.1": "3c8fd394bdf64c72",
+    "content.early-bleeding.t.2": "ca57cbe5780f841f",
+    "content.early-bleeding.t.3": "f5d83643cd61ff09",
+    "content.early-bleeding.t.4": "5a94db92ac079aa8",
+    "content.early-bleeding.t.5": "ce359a85e71e6b53",
+    "content.early-bleeding.t.6": "7223af83139f77f5",
+    "content.early-bleeding.t.7": "763751f26b5541cc",
+    "content.early-bleeding.t.8": "32597a3a399d6ccc",
+    "content.early-bleeding.t.9": "3bec781a6352d1bc",
+    "content.early-bleeding.t.10": "acd42387326fb2e1",
+    "content.early-bleeding.t.11": "60e022353a5f16df"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -3907,6 +3939,20 @@ window.MYOB_LOCALES.pl = {
     "me.sizeLarge": 1,
     "me.sizeLarger": 1,
     "me.language": 1,
-    "me.darkMode": 1
+    "me.darkMode": 1,
+    "content.early-bleeding.title": 1,
+    "content.early-bleeding.sub": 1,
+    "content.early-bleeding.t.0": 1,
+    "content.early-bleeding.t.1": 1,
+    "content.early-bleeding.t.2": 1,
+    "content.early-bleeding.t.3": 1,
+    "content.early-bleeding.t.4": 1,
+    "content.early-bleeding.t.5": 1,
+    "content.early-bleeding.t.6": 1,
+    "content.early-bleeding.t.7": 1,
+    "content.early-bleeding.t.8": 1,
+    "content.early-bleeding.t.9": 1,
+    "content.early-bleeding.t.10": 1,
+    "content.early-bleeding.t.11": 1
   }
 };

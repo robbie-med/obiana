@@ -1827,6 +1827,24 @@ window.MYOB_LOCALES.de = {
         "Fragen vor der Entlassung aus dem Krankenhaus",
         "Wen rufe ich an, wenn ich vor dem ersten Termin eine Frage habe? · Trinkt mein Baby gut. Woran merke ich, wenn nicht? · Ab wann rufe ich den Arzt meines Babys an? · War ein Test auffällig, der kontrolliert werden muss? · Muss ich mein Baby nachts zum Füttern wecken? · Wie soll ich die Wunde pflegen?"
       ]
+    },
+    "early-bleeding": {
+      "title": "Blutung und Schmerzen in der frühen Schwangerschaft",
+      "sub": "Was häufig ist, was dringend ist, und Eileiterschwangerschaft",
+      "t": [
+        "Schmierblutungen oder leichte Blutungen in den ersten 12 Wochen sind häufig: Etwa 1 von 5 Frauen hat sie. Oft geht die Schwangerschaft normal weiter. Manchmal ist es der Beginn einer Fehlgeburt, und selten ist es eine Schwangerschaft außerhalb der Gebärmutter (Eileiterschwangerschaft), die ein Notfall ist.",
+        "Gehen Sie jetzt in die Notaufnahme, wenn Sie Folgendes haben",
+        "Blutung, die in einer Stunde 1 Binde durchweicht · Starke Bauchschmerzen, vor allem auf einer Seite · Schmerzen an der Schulterspitze · Schwindel oder Ohnmacht · Fieber mit Blutung oder Krämpfen",
+        "Rufen Sie heute Ihren Hausarzt, Frauenarzt oder Ihre Hebamme an, wenn Sie Folgendes haben",
+        "Jede Blutung, von der Sie noch nichts gesagt haben, auch leichte · Krämpfe, die schlimmer werden · Gewebe, das abgeht",
+        "Bis Sie untersucht werden, nehmen Sie Binden, keine Tampons, damit Sie sehen, wie stark Sie bluten. Ruhen Sie sich so viel aus, wie Sie brauchen. Bewegung, Arbeit und Sex lösen keine Fehlgeburt aus.",
+        "Eileiterschwangerschaft",
+        "Etwa 1 bis 2 von 100 Schwangerschaften nisten sich außerhalb der Gebärmutter ein, fast immer im Eileiter. Daraus kann kein Baby werden, und beim Wachsen kann der Eileiter platzen und in den Bauch bluten. Sie zeigt sich meist in der 6. bis 8. Woche. Wahrscheinlicher ist sie, wenn Sie schon einmal eine hatten, an den Eileitern operiert wurden, Chlamydien oder eine andere Beckeninfektion hatten, mit einer Spirale schwanger wurden oder eine IVF hatten. Rauchen erhöht das Risiko ebenfalls. Früh erkannt, wird sie mit einem Medikament (Methotrexat) oder einer Operation behandelt.",
+        "Was Ihr Team tun wird",
+        "Meist ein Ultraschall und ein Bluttest auf das Schwangerschaftshormon (hCG). Ist es zu früh, um die Schwangerschaft im Ultraschall zu sehen, wird der Bluttest 2 Tage später wiederholt: Ein Wert, der nicht wie erwartet steigt, ohne sichtbare Schwangerschaft in der Gebärmutter, weckt den Verdacht auf eine Eileiterschwangerschaft. Wenn Ihre Blutgruppe Rh-negativ ist, sagen Sie es, denn Sie brauchen vielleicht eine Rh-Spritze. Ob Sie eine brauchen, hängt davon ab, wie weit Sie sind und was die Blutung verursacht.",
+        "Wenn es eine Fehlgeburt ist",
+        "Etwa 1 von 10 aller bekannten Schwangerschaften endet in einer Fehlgeburt, die meisten in den ersten 12 Wochen. Wenn es blutet, ist die Wahrscheinlichkeit etwas höher, vor allem bei starker Blutung. Die meisten entstehen durch ein Chromosomenproblem, das bei der Empfängnis begann, nicht durch etwas, das Sie getan haben. Meist können Sie wählen, wie es weitergeht: abwarten, bis es von selbst abgeht, ein Medikament, das dabei hilft, oder ein kurzer Eingriff. Alle drei sind sicher; sie unterscheiden sich darin, wie lange es dauert und wie viel Blutung zu Hause passiert. Trauer ist normal, egal in welcher Woche. Sie können es wieder versuchen, sobald Sie sich bereit fühlen."
+      ]
     }
   },
   "srcHash": {
@@ -2559,7 +2577,21 @@ window.MYOB_LOCALES.de = {
     "content.followup-appts.t.20": "a84fe398c55bf882",
     "content.followup-appts.t.21": "08cdbbf8d5412882",
     "content.followup-appts.t.22": "8f54998cdd27f7ca",
-    "content.followup-appts.t.23": "6f3197957c539aeb"
+    "content.followup-appts.t.23": "6f3197957c539aeb",
+    "content.early-bleeding.title": "6e936ac7d2b997f5",
+    "content.early-bleeding.sub": "1260fb6aebf58cbc",
+    "content.early-bleeding.t.0": "bc384c0c8f76bc22",
+    "content.early-bleeding.t.1": "3c8fd394bdf64c72",
+    "content.early-bleeding.t.2": "ca57cbe5780f841f",
+    "content.early-bleeding.t.3": "f5d83643cd61ff09",
+    "content.early-bleeding.t.4": "5a94db92ac079aa8",
+    "content.early-bleeding.t.5": "ce359a85e71e6b53",
+    "content.early-bleeding.t.6": "7223af83139f77f5",
+    "content.early-bleeding.t.7": "763751f26b5541cc",
+    "content.early-bleeding.t.8": "32597a3a399d6ccc",
+    "content.early-bleeding.t.9": "3bec781a6352d1bc",
+    "content.early-bleeding.t.10": "acd42387326fb2e1",
+    "content.early-bleeding.t.11": "60e022353a5f16df"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -3897,6 +3929,20 @@ window.MYOB_LOCALES.de = {
     "me.sizeLarge": 1,
     "me.sizeLarger": 1,
     "me.language": 1,
-    "me.darkMode": 1
+    "me.darkMode": 1,
+    "content.early-bleeding.title": 1,
+    "content.early-bleeding.sub": 1,
+    "content.early-bleeding.t.0": 1,
+    "content.early-bleeding.t.1": 1,
+    "content.early-bleeding.t.2": 1,
+    "content.early-bleeding.t.3": 1,
+    "content.early-bleeding.t.4": 1,
+    "content.early-bleeding.t.5": 1,
+    "content.early-bleeding.t.6": 1,
+    "content.early-bleeding.t.7": 1,
+    "content.early-bleeding.t.8": 1,
+    "content.early-bleeding.t.9": 1,
+    "content.early-bleeding.t.10": 1,
+    "content.early-bleeding.t.11": 1
   }
 };

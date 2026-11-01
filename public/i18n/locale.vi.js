@@ -1822,6 +1822,24 @@ window.MYOB_LOCALES.vi = {
         "Câu hỏi trước khi xuất viện",
         "Tôi gọi ai nếu có câu hỏi trước lần khám đầu? · Bé bú có tốt không. Làm sao tôi biết nếu không? · Khi nào tôi cần gọi bác sĩ của bé? · Có xét nghiệm nào bất thường cần theo dõi không? · Ban đêm tôi có cần đánh thức bé dậy bú không? · Hướng dẫn chăm sóc vết thương của tôi là gì?"
       ]
+    },
+    "early-bleeding": {
+      "title": "Ra máu và đau khi mới mang thai",
+      "sub": "Điều thường gặp, điều khẩn cấp, và thai ngoài tử cung",
+      "t": [
+        "Ra máu bấm hoặc ra máu nhẹ trong 12 tuần đầu là thường gặp: khoảng 1 trong 5 phụ nữ bị. Thường thì thai vẫn phát triển bình thường. Đôi khi đó là dấu hiệu bắt đầu sẩy thai, và hiếm khi là thai làm tổ ngoài tử cung (thai ngoài tử cung), đây là cấp cứu.",
+        "Đến phòng cấp cứu ngay nếu bạn có",
+        "Ra máu thấm ướt 1 băng vệ sinh trong một giờ · Đau bụng dữ dội, nhất là một bên · Đau ở đầu vai · Chóng mặt hoặc ngất · Sốt kèm ra máu hoặc đau quặn",
+        "Gọi bác sĩ gia đình, bác sĩ sản hoặc nữ hộ sinh ngay hôm nay nếu bạn có",
+        "Bất kỳ lần ra máu nào bạn chưa báo, dù nhẹ · Đau quặn nặng dần · Ra mô",
+        "Cho đến khi được khám, hãy dùng băng vệ sinh, không dùng tampon, để biết mình ra máu bao nhiêu. Nghỉ ngơi nhiều như bạn thấy cần. Vận động, làm việc và quan hệ tình dục không gây sẩy thai.",
+        "Thai ngoài tử cung",
+        "Khoảng 1 đến 2 trong 100 thai kỳ làm tổ ngoài tử cung, hầu như luôn ở vòi trứng. Thai này không thể thành em bé, và khi lớn lên có thể làm vỡ vòi trứng và chảy máu trong bụng. Thường biểu hiện lúc 6 đến 8 tuần. Dễ xảy ra hơn nếu bạn từng bị trước đây, từng mổ vòi trứng, từng nhiễm chlamydia hay nhiễm trùng vùng chậu khác, có thai khi đang đặt vòng (IUD), hoặc làm thụ tinh ống nghiệm (IVF). Hút thuốc cũng làm tăng nguy cơ. Nếu phát hiện sớm, được điều trị bằng thuốc (methotrexate) hoặc phẫu thuật.",
+        "Nhóm chăm sóc sẽ làm gì",
+        "Thường là siêu âm và xét nghiệm máu hormone thai (hCG). Nếu còn quá sớm để thấy thai trên siêu âm, xét nghiệm máu được làm lại sau 2 ngày: nếu nồng độ không tăng như mong đợi và không thấy thai trong tử cung, sẽ nghi ngờ thai ngoài tử cung. Nếu nhóm máu của bạn là Rh âm, hãy báo họ, vì bạn có thể cần tiêm Rh. Có cần hay không tùy vào tuổi thai và nguyên nhân ra máu.",
+        "Nếu là sẩy thai",
+        "Khoảng 1 trong 10 của tất cả các thai kỳ đã biết kết thúc bằng sẩy thai, phần lớn trong 12 tuần đầu. Khả năng này cao hơn một chút khi đã có ra máu, nhất là ra máu nhiều. Phần lớn là do vấn đề nhiễm sắc thể bắt đầu từ lúc thụ thai, không phải do bạn đã làm gì. Thường bạn có thể chọn cách xử trí: chờ tự ra, dùng thuốc giúp ra, hoặc một thủ thuật ngắn. Cả ba đều an toàn; khác nhau ở thời gian và lượng máu ra tại nhà. Đau buồn là bình thường, dù ở tuần nào. Bạn có thể thử có thai lại ngay khi thấy sẵn sàng."
+      ]
     }
   },
   "srcHash": {
@@ -2554,7 +2572,21 @@ window.MYOB_LOCALES.vi = {
     "content.followup-appts.t.20": "a84fe398c55bf882",
     "content.followup-appts.t.21": "08cdbbf8d5412882",
     "content.followup-appts.t.22": "8f54998cdd27f7ca",
-    "content.followup-appts.t.23": "6f3197957c539aeb"
+    "content.followup-appts.t.23": "6f3197957c539aeb",
+    "content.early-bleeding.title": "6e936ac7d2b997f5",
+    "content.early-bleeding.sub": "1260fb6aebf58cbc",
+    "content.early-bleeding.t.0": "bc384c0c8f76bc22",
+    "content.early-bleeding.t.1": "3c8fd394bdf64c72",
+    "content.early-bleeding.t.2": "ca57cbe5780f841f",
+    "content.early-bleeding.t.3": "f5d83643cd61ff09",
+    "content.early-bleeding.t.4": "5a94db92ac079aa8",
+    "content.early-bleeding.t.5": "ce359a85e71e6b53",
+    "content.early-bleeding.t.6": "7223af83139f77f5",
+    "content.early-bleeding.t.7": "763751f26b5541cc",
+    "content.early-bleeding.t.8": "32597a3a399d6ccc",
+    "content.early-bleeding.t.9": "3bec781a6352d1bc",
+    "content.early-bleeding.t.10": "acd42387326fb2e1",
+    "content.early-bleeding.t.11": "60e022353a5f16df"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -3892,6 +3924,20 @@ window.MYOB_LOCALES.vi = {
     "me.sizeLarge": 1,
     "me.sizeLarger": 1,
     "me.language": 1,
-    "me.darkMode": 1
+    "me.darkMode": 1,
+    "content.early-bleeding.title": 1,
+    "content.early-bleeding.sub": 1,
+    "content.early-bleeding.t.0": 1,
+    "content.early-bleeding.t.1": 1,
+    "content.early-bleeding.t.2": 1,
+    "content.early-bleeding.t.3": 1,
+    "content.early-bleeding.t.4": 1,
+    "content.early-bleeding.t.5": 1,
+    "content.early-bleeding.t.6": 1,
+    "content.early-bleeding.t.7": 1,
+    "content.early-bleeding.t.8": 1,
+    "content.early-bleeding.t.9": 1,
+    "content.early-bleeding.t.10": 1,
+    "content.early-bleeding.t.11": 1
   }
 };

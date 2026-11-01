@@ -80,7 +80,7 @@ Don't build a second tool beside it.
 
 ## 5. New content
 - [ ] **New cards.** First the three that When to call depends on:
-  - early bleeding/ectopic
+  - early bleeding/ectopic. **Done 2026-11-01:** `early-bleeding` (after First Trimester), numbers checked against ACOG by the user (15–25% bleed, 1–2 in 100 ectopic, about 10% of known pregnancies miscarry; Rh line says only Rh-negative readers may need the shot). Drafted in all 15 non-Zomi languages (`translation/keys/f4t.txt`).
   - preterm labor
   - itching/cholestasis
 

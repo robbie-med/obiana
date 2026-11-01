@@ -1,0 +1,15 @@
+# NEXT.md §5: early-bleeding card (drafts)
+content.early-bleeding.title
+content.early-bleeding.sub
+content.early-bleeding.t.0
+content.early-bleeding.t.1
+content.early-bleeding.t.2
+content.early-bleeding.t.3
+content.early-bleeding.t.4
+content.early-bleeding.t.5
+content.early-bleeding.t.6
+content.early-bleeding.t.7
+content.early-bleeding.t.8
+content.early-bleeding.t.9
+content.early-bleeding.t.10
+content.early-bleeding.t.11

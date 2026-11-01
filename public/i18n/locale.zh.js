@@ -1827,6 +1827,24 @@ window.MYOB_LOCALES.zh = {
       "t": [
         "WHO 和 AAP 现在建议出生后至少推迟 24 小时（最好 48 小时）再洗第一次澡。白色的胎脂有抗菌作用，也能帮助皮肤保湿。推迟洗澡还有助于保持体温、稳定血糖，并与更好地开始母乳喂养有关。等一等是现在的最佳做法，不只是个人偏好。"
       ]
+    },
+    "early-bleeding": {
+      "title": "孕早期出血和疼痛",
+      "sub": "哪些常见，哪些紧急，以及宫外孕",
+      "t": [
+        "头 12 周出现点滴出血或少量出血很常见：大约每 5 位女性中有 1 位会有。很多时候怀孕会正常继续。有时这是流产的开始，少数情况下是怀孕长在子宫外（宫外孕），这是急症。",
+        "如果您有以下情况，请立即去急诊",
+        "出血在一小时内浸透 1 片卫生巾 · 腹部剧痛，尤其是一侧 · 肩膀尖端疼痛 · 头晕或晕倒 · 发烧并伴有出血或腹部绞痛",
+        "如果您有以下情况，请今天给您的家庭医生、产科医生或助产士打电话",
+        "任何还没告诉他们的出血，即使量很少 · 越来越重的腹部绞痛 · 有组织排出",
+        "在看医生之前，请用卫生巾，不要用卫生棉条，这样能看出出血有多少。觉得需要休息多少就休息多少。活动、工作和性生活不会导致流产。",
+        "宫外孕",
+        "大约每 100 次怀孕中有 1 到 2 次着床在子宫外，几乎都在输卵管。它不可能长成宝宝，长大时可能撑破输卵管，在腹腔内出血。通常在 6 到 8 周时出现。如果您以前有过宫外孕、做过输卵管手术、得过衣原体或其他盆腔感染、带着宫内节育器（IUD）怀孕，或做过试管婴儿（IVF），可能性更大。吸烟也会增加风险。早发现的话，可以用药物（甲氨蝶呤）或手术治疗。",
+        "您的医疗团队会做什么",
+        "通常做超声和孕激素（hCG）血液检查。如果太早，超声还看不到怀孕，会在 2 天后再抽一次血：如果数值没有按预期上升，子宫内也看不到怀孕，就要怀疑宫外孕。如果您的血型是 Rh 阴性，请告诉他们，因为您可能需要打 Rh 针。是否需要取决于怀孕多少周以及出血的原因。",
+        "如果是流产",
+        "在所有已知的怀孕中，大约每 10 次有 1 次以流产结束，大多数发生在头 12 周。一旦有出血，尤其是出血量大，这个可能性会稍高一些。大多数流产是受孕时就出现的染色体问题造成的，不是因为您做了什么。通常您可以选择处理方式：等它自然排出、用药物帮助排出，或做一个短小的手术。三种都安全，区别在于需要多长时间以及在家出血多少。无论在哪一周，悲伤都是正常的。只要您觉得准备好了，就可以再次尝试怀孕。"
+      ]
     }
   },
   "srcHash": {
@@ -2559,7 +2577,21 @@ window.MYOB_LOCALES.zh = {
     "content.faq-newborn-procedures.t.7": "d06e909e2132ca54",
     "content.faq-newborn-procedures.t.8": "0f46858bcf9a15d9",
     "content.faq-first-bath.title": "1ece0a9772ca9db5",
-    "content.faq-first-bath.t.0": "23fa392719b4b945"
+    "content.faq-first-bath.t.0": "23fa392719b4b945",
+    "content.early-bleeding.title": "6e936ac7d2b997f5",
+    "content.early-bleeding.sub": "1260fb6aebf58cbc",
+    "content.early-bleeding.t.0": "bc384c0c8f76bc22",
+    "content.early-bleeding.t.1": "3c8fd394bdf64c72",
+    "content.early-bleeding.t.2": "ca57cbe5780f841f",
+    "content.early-bleeding.t.3": "f5d83643cd61ff09",
+    "content.early-bleeding.t.4": "5a94db92ac079aa8",
+    "content.early-bleeding.t.5": "ce359a85e71e6b53",
+    "content.early-bleeding.t.6": "7223af83139f77f5",
+    "content.early-bleeding.t.7": "763751f26b5541cc",
+    "content.early-bleeding.t.8": "32597a3a399d6ccc",
+    "content.early-bleeding.t.9": "3bec781a6352d1bc",
+    "content.early-bleeding.t.10": "acd42387326fb2e1",
+    "content.early-bleeding.t.11": "60e022353a5f16df"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -3424,6 +3456,20 @@ window.MYOB_LOCALES.zh = {
     "common.skipToContent": 1,
     "common.undo": 1,
     "guide.quickAnswers": 1,
-    "me.datesTitle": 1
+    "me.datesTitle": 1,
+    "content.early-bleeding.title": 1,
+    "content.early-bleeding.sub": 1,
+    "content.early-bleeding.t.0": 1,
+    "content.early-bleeding.t.1": 1,
+    "content.early-bleeding.t.2": 1,
+    "content.early-bleeding.t.3": 1,
+    "content.early-bleeding.t.4": 1,
+    "content.early-bleeding.t.5": 1,
+    "content.early-bleeding.t.6": 1,
+    "content.early-bleeding.t.7": 1,
+    "content.early-bleeding.t.8": 1,
+    "content.early-bleeding.t.9": 1,
+    "content.early-bleeding.t.10": 1,
+    "content.early-bleeding.t.11": 1
   }
 };
