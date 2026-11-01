@@ -36,7 +36,9 @@ window.MYOB_LOCALES.zh = {
       "noResultsHint": "试试其他关键词，例如「无痛分娩」「脐带护理」或「出血」",
       "resultCount": {
         "other": "找到 {count} 条关于「{q}」的结果"
-      }
+      },
+      "label": "搜索所有主题",
+      "clear": "清除搜索"
     },
     "myinfo": {
       "namePlaceholder": "姓名",
@@ -76,13 +78,24 @@ window.MYOB_LOCALES.zh = {
       "myPregnancyDetails": "我的怀孕信息",
       "questionsForMyDoctor": "想问医生的问题",
       "saveMyInformation": "保存我的信息",
-      "exportData": "导出数据"
+      "exportData": "导出数据",
+      "saved": "✓ 已保存！",
+      "notesPlaceholder": "想到问题时就写在这里…",
+      "importData": "导入数据",
+      "importConfirm": "要从这个文件恢复 {n} 项已保存的内容吗？应用里同名的内容都会被替换。",
+      "notesLabel": "下次就诊要问的问题",
+      "callContact": "打电话给{name}",
+      "textContact": "发短信给{name}"
     },
     "toast": {
       "contactsSaved": "联系人已保存到你的手机",
       "appInstalled": "应用已安装！随时可从主屏幕打开",
       "dataExported": "数据已导出！",
-      "appUpdated": "应用已更新，请重新加载以获取最新版本"
+      "appUpdated": "应用已更新，请重新加载以获取最新版本",
+      "importDone": "数据已恢复",
+      "importFailed": "无法读取该文件",
+      "importNothing": "该文件中没有应用数据",
+      "notSaved": "无法在这部手机上保存。是否开启了无痕浏览？"
     },
     "tool": {
       "mood": {
@@ -104,7 +117,9 @@ window.MYOB_LOCALES.zh = {
         "change": "更改",
         "scoreNote": "满分 {max} 分 · {instrument} · 这是筛查工具而非诊断，请务必与你的医疗团队讨论结果",
         "chooseLanguage": "请选择你想用来作答的语言：",
-        "validatedOnlyNote": "只提供经过官方验证的问卷版本。机器翻译同样会算出分数，但那个分数没有意义。"
+        "validatedOnlyNote": "只提供经过官方验证的问卷版本。机器翻译同样会算出分数，但那个分数没有意义。",
+        "important": "重要",
+        "phq9Title": "患者健康问卷（PHQ-9）"
       },
       "birthplan": {
         "q": {
@@ -218,7 +233,8 @@ window.MYOB_LOCALES.zh = {
         "copiedToClipboard": "已复制到剪贴板！",
         "copyNotSupportedOnThis": "此浏览器不支持复制",
         "selectPreferences": "在下方选择你的意愿。摘要会显示在底部，可以分享给你的医疗团队。",
-        "generatedOn": "生成于 {date}"
+        "generatedOn": "生成于 {date}",
+        "generatedWith": "由 Obiana 制作，obiana.app"
       },
       "kick": {
         "startSession": "开始记录",
@@ -241,7 +257,8 @@ window.MYOB_LOCALES.zh = {
       "common": {
         "recentContractions": "最近的宫缩",
         "timeToGoToThe": "🚨 该去医院了",
-        "511PatternReached": "已达到 5-1-1 规律"
+        "511PatternReached": "已达到 5-1-1 规律",
+        "entryDeleted": "记录已删除"
       },
       "feed": {
         "feedsInLast24Hrs": "过去 24 小时喂养次数",
@@ -254,7 +271,8 @@ window.MYOB_LOCALES.zh = {
         "fewFeedsBody": "新生儿通常每 24 小时需要喂养 8–12 次。如果宝宝很难叫醒或体重没有增长，请联系你的医生。",
         "breast": "🤱 母乳",
         "bottle": "🍼 奶瓶",
-        "minutes": "{n} 分钟"
+        "minutes": "{n} 分钟",
+        "bottleOz": "奶瓶，{oz} oz"
       },
       "diaper": {
         "wetToday": "今天尿湿",
@@ -263,7 +281,13 @@ window.MYOB_LOCALES.zh = {
         "whatToExpectByAge": "按日龄的正常范围",
         "day1212": "第 1–2 天：1–2 片尿湿 · 第 3–4 天：3–4 片尿湿 · 第 5 天起：6 片以上尿湿、每天 3–4 次大便。第 5 天后尿湿少于 6 片 → 请联系你的医生。",
         "todaySLog": "今天的记录",
-        "noDiapers": "今天还没有尿布记录。"
+        "noDiapers": "今天还没有尿布记录。",
+        "loggedWet": "已记录湿尿布",
+        "loggedDirty": "已记录脏尿布",
+        "loggedGeneric": "已记录尿布",
+        "wet": "湿",
+        "dirty": "脏",
+        "both": "湿 + 脏"
       },
       "jaundice": {
         "babySBirthDate": "宝宝的出生日期",
@@ -324,7 +348,12 @@ window.MYOB_LOCALES.zh = {
           "over": "超重",
           "obese": "肥胖"
         },
-        "iomFor": "适合你的 IOM 建议（{range}）"
+        "iomFor": "适合你的 IOM 建议（{range}）",
+        "gainedSoFar": "到目前为止您已增重 {amount} lbs。",
+        "wk": "第 {n} 周",
+        "lbsValue": "{n} lbs",
+        "lbsTotal": "共 {n} lbs",
+        "savedToast": "已保存第 {week} 周 {lbs} lbs"
       },
       "appts": {
         "addVisit": "+ 添加就诊",
@@ -335,7 +364,12 @@ window.MYOB_LOCALES.zh = {
         "delete": "删除",
         "visitDeleted": "就诊记录已删除",
         "noVisits": "还没有就诊记录。在上方添加一条，用来记录问题和笔记。",
-        "deleteConfirm": "要删除这条就诊记录吗？"
+        "deleteConfirm": "要删除这条就诊记录吗？",
+        "untitledVisit": "未命名的就诊",
+        "editVisit": "编辑就诊",
+        "noQuestionsAdded": "未添加问题",
+        "visitUpdated": "就诊已更新",
+        "visitAdded": "就诊已添加"
       },
       "cx": {
         "noContractions": "还没有宫缩记录。<br>宫缩开始时点击「宫缩开始」。",
@@ -349,7 +383,9 @@ window.MYOB_LOCALES.zh = {
         "interval": "间隔 {t}",
         "alertGo": "宫缩间隔约 {mins} 分钟，每次约 {secs} 秒。请立即致电产房。",
         "alert511": "间隔约 {mins} 分钟，每次约 {secs} 秒。如果这是第一胎，请前往医院。破水或不确定时请致电。",
-        "alertProgress": "最近一小时：{n} 次宫缩，间隔约 {mins} 分钟，每次约 {secs} 秒。还没到 5-1-1。"
+        "alertProgress": "最近一小时：{n} 次宫缩，间隔约 {mins} 分钟，每次约 {secs} 秒。还没到 5-1-1。",
+        "reachedIn": "{time} 内达到",
+        "contractionEnding": "宫缩结束"
       },
       "i18n": {
         "intro": "用您的语言检查 Obiana，一次一句。读起来不对的就改，没问题就点“没问题”。",
@@ -625,7 +661,9 @@ window.MYOB_LOCALES.zh = {
       "date": "日期",
       "questionsToAskBeforehand": "就诊前想问的问题",
       "notesFromVisit": "就诊记录",
-      "saveVisit": "保存就诊"
+      "saveVisit": "保存就诊",
+      "questionsPlaceholder": "这次就诊我想问什么？",
+      "notesPlaceholder": "我们谈了什么？需要后续跟进吗？"
     },
     "apptType": {
       "selectType": "选择类型…",
@@ -651,7 +689,11 @@ window.MYOB_LOCALES.zh = {
       "addToPhone": "添加到手机"
     },
     "common": {
-      "toolsBack": "工具"
+      "toolsBack": "工具",
+      "eg": "例如 {n}",
+      "close": "关闭",
+      "skipToContent": "跳到正文",
+      "undo": "撤销"
     },
     "nav": {
       "prenatal": "产前<br>检查",
@@ -691,7 +733,8 @@ window.MYOB_LOCALES.zh = {
       "sizeLarge": "大",
       "sizeLarger": "更大",
       "language": "语言",
-      "darkMode": "深色模式"
+      "darkMode": "深色模式",
+      "datesTitle": "您的日期"
     },
     "urgent": {
       "title": "何时打电话",
@@ -813,6 +856,9 @@ window.MYOB_LOCALES.zh = {
         "i2": "如果您有过妊娠糖尿病：产后 4 到 12 周查血糖。2 型糖尿病的风险一辈子都偏高，所以每 1 到 3 年要求查一次。",
         "i3": "如果您漏尿或漏便、同房时疼痛，或感觉阴道有东西鼓出来，问问盆底物理治疗。它有用。您不必忍着。"
       }
+    },
+    "guide": {
+      "quickAnswers": "快速解答"
     }
   },
   "content": {
@@ -3334,6 +3380,50 @@ window.MYOB_LOCALES.zh = {
     "content.faq-newborn-procedures.t.7": 1,
     "content.faq-newborn-procedures.t.8": 1,
     "content.faq-first-bath.title": 1,
-    "content.faq-first-bath.t.0": 1
+    "content.faq-first-bath.t.0": 1,
+    "search.label": 1,
+    "search.clear": 1,
+    "myinfo.saved": 1,
+    "myinfo.notesPlaceholder": 1,
+    "myinfo.importData": 1,
+    "myinfo.importConfirm": 1,
+    "myinfo.notesLabel": 1,
+    "myinfo.callContact": 1,
+    "myinfo.textContact": 1,
+    "toast.importDone": 1,
+    "toast.importFailed": 1,
+    "toast.importNothing": 1,
+    "toast.notSaved": 1,
+    "tool.mood.important": 1,
+    "tool.mood.phq9Title": 1,
+    "tool.birthplan.generatedWith": 1,
+    "tool.common.entryDeleted": 1,
+    "tool.feed.bottleOz": 1,
+    "tool.diaper.loggedWet": 1,
+    "tool.diaper.loggedDirty": 1,
+    "tool.diaper.loggedGeneric": 1,
+    "tool.diaper.wet": 1,
+    "tool.diaper.dirty": 1,
+    "tool.diaper.both": 1,
+    "tool.weight.gainedSoFar": 1,
+    "tool.weight.wk": 1,
+    "tool.weight.lbsValue": 1,
+    "tool.weight.lbsTotal": 1,
+    "tool.weight.savedToast": 1,
+    "tool.appts.untitledVisit": 1,
+    "tool.appts.editVisit": 1,
+    "tool.appts.noQuestionsAdded": 1,
+    "tool.appts.visitUpdated": 1,
+    "tool.appts.visitAdded": 1,
+    "tool.cx.reachedIn": 1,
+    "tool.cx.contractionEnding": 1,
+    "modalAppt.questionsPlaceholder": 1,
+    "modalAppt.notesPlaceholder": 1,
+    "common.eg": 1,
+    "common.close": 1,
+    "common.skipToContent": 1,
+    "common.undo": 1,
+    "guide.quickAnswers": 1,
+    "me.datesTitle": 1
   }
 };

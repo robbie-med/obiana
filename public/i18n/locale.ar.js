@@ -41,7 +41,9 @@ window.MYOB_LOCALES.ar = {
         "few": "{count} نتائج لـ “{q}”",
         "many": "{count} نتيجة لـ “{q}”",
         "other": "{count} نتيجة لـ “{q}”"
-      }
+      },
+      "label": "ابحثي في كل المواضيع",
+      "clear": "امسحي البحث"
     },
     "myinfo": {
       "namePlaceholder": "الاسم",
@@ -81,13 +83,24 @@ window.MYOB_LOCALES.ar = {
       "myPregnancyDetails": "تفاصيل حملي",
       "questionsForMyDoctor": "أسئلة لطبيبي",
       "saveMyInformation": "حفظ معلوماتي",
-      "exportData": "تصدير البيانات"
+      "exportData": "تصدير البيانات",
+      "saved": "✓ تم الحفظ!",
+      "notesPlaceholder": "اكتبي أسئلتك هنا كلما خطرت لك…",
+      "importData": "استيراد البيانات",
+      "importConfirm": "هل تريدين استعادة {n} من العناصر المحفوظة من هذا الملف؟ سيُستبدل كل ما في التطبيق بالاسم نفسه.",
+      "notesLabel": "أسئلة لزيارتك القادمة",
+      "callContact": "اتصلي بـ {name}",
+      "textContact": "أرسلي رسالة إلى {name}"
     },
     "toast": {
       "contactsSaved": "تم حفظ جهات الاتصال على هاتفك",
       "appInstalled": "تم تثبيت التطبيق! افتحيه من شاشتك الرئيسية في أي وقت",
       "dataExported": "تم تصدير البيانات!",
-      "appUpdated": "تم تحديث التطبيق. أعيدي التحميل للحصول على أحدث إصدار"
+      "appUpdated": "تم تحديث التطبيق. أعيدي التحميل للحصول على أحدث إصدار",
+      "importDone": "تمت استعادة البيانات",
+      "importFailed": "تعذّرت قراءة هذا الملف",
+      "importNothing": "لا توجد بيانات للتطبيق في هذا الملف",
+      "notSaved": "تعذّر الحفظ على هذا الهاتف. هل التصفح الخاص مفعّل؟"
     },
     "tool": {
       "mood": {
@@ -109,7 +122,9 @@ window.MYOB_LOCALES.ar = {
         "change": "تغيير",
         "scoreNote": "النتيجة من {max} · {instrument} · أداة فحص أولي وليست تشخيصاً. ناقشي النتيجة دائماً مع فريق الرعاية",
         "chooseLanguage": "اختاري اللغة التي تودّين الإجابة بها:",
-        "validatedOnlyNote": "لا تُقدَّم إلا النسخ المُعتمدة رسمياً من هذا الاستبيان. الترجمة الآلية ستعطي نتيجة أيضاً، لكن تلك النتيجة لن تكون ذات معنى."
+        "validatedOnlyNote": "لا تُقدَّم إلا النسخ المُعتمدة رسمياً من هذا الاستبيان. الترجمة الآلية ستعطي نتيجة أيضاً، لكن تلك النتيجة لن تكون ذات معنى.",
+        "important": "مهم",
+        "phq9Title": "استبيان صحة المريض (PHQ-9)"
       },
       "birthplan": {
         "q": {
@@ -223,7 +238,8 @@ window.MYOB_LOCALES.ar = {
         "copiedToClipboard": "تم النسخ إلى الحافظة!",
         "copyNotSupportedOnThis": "النسخ غير مدعوم في هذا المتصفح",
         "selectPreferences": "اختاري تفضيلاتك أدناه. سيظهر الملخص في الأسفل ويمكنك مشاركته مع فريق الرعاية.",
-        "generatedOn": "أُنشئ في {date}"
+        "generatedOn": "أُنشئ في {date}",
+        "generatedWith": "صُنع باستخدام Obiana، obiana.app"
       },
       "kick": {
         "startSession": "بدء الجلسة",
@@ -246,7 +262,8 @@ window.MYOB_LOCALES.ar = {
       "common": {
         "recentContractions": "الانقباضات الأخيرة",
         "timeToGoToThe": "🚨 حان وقت الذهاب إلى المستشفى",
-        "511PatternReached": "تم بلوغ نمط 5-1-1"
+        "511PatternReached": "تم بلوغ نمط 5-1-1",
+        "entryDeleted": "تم حذف السجل"
       },
       "feed": {
         "feedsInLast24Hrs": "الرضعات خلال آخر 24 ساعة",
@@ -259,7 +276,8 @@ window.MYOB_LOCALES.ar = {
         "fewFeedsBody": "يحتاج المواليد عادةً إلى 8–12 رضعة كل 24 ساعة. إذا كان من الصعب إيقاظ الطفل أو لم يكن وزنه يزداد، اتصلي بطبيبك.",
         "breast": "🤱 رضاعة طبيعية",
         "bottle": "🍼 زجاجة",
-        "minutes": "{n} دقيقة"
+        "minutes": "{n} دقيقة",
+        "bottleOz": "رضّاعة، {oz} oz"
       },
       "diaper": {
         "wetToday": "مبلّلة اليوم",
@@ -268,7 +286,13 @@ window.MYOB_LOCALES.ar = {
         "whatToExpectByAge": "ما هو المتوقع حسب العمر",
         "day1212": "اليوم 1–2: حفاضان مبلّلان 1–2 · اليوم 3–4: 3–4 مبلّلة · اليوم 5 فما بعد: 6 أو أكثر مبلّلة، و3–4 متسخة يومياً. أقل من 6 حفاضات مبلّلة بعد اليوم الخامس ← اتصلي بطبيبك.",
         "todaySLog": "سجل اليوم",
-        "noDiapers": "لم تُسجَّل حفاضات اليوم."
+        "noDiapers": "لم تُسجَّل حفاضات اليوم.",
+        "loggedWet": "تم تسجيل حفاض مبلل",
+        "loggedDirty": "تم تسجيل حفاض متّسخ",
+        "loggedGeneric": "تم تسجيل الحفاض",
+        "wet": "مبلل",
+        "dirty": "متّسخ",
+        "both": "مبلل + متّسخ"
       },
       "jaundice": {
         "babySBirthDate": "تاريخ ميلاد الطفل",
@@ -329,7 +353,12 @@ window.MYOB_LOCALES.ar = {
           "over": "زيادة الوزن",
           "obese": "سمنة"
         },
-        "iomFor": "إرشاد IOM الخاص بك ({range})"
+        "iomFor": "إرشاد IOM الخاص بك ({range})",
+        "gainedSoFar": "زاد وزنك {amount} lbs حتى الآن.",
+        "wk": "أسبوع {n}",
+        "lbsValue": "{n} lbs",
+        "lbsTotal": "{n} lbs إجمالًا",
+        "savedToast": "تم حفظ {lbs} lbs في الأسبوع {week}"
       },
       "appts": {
         "addVisit": "+ إضافة زيارة",
@@ -340,7 +369,12 @@ window.MYOB_LOCALES.ar = {
         "delete": "حذف",
         "visitDeleted": "تم حذف الزيارة",
         "noVisits": "لا توجد زيارات مسجّلة بعد. أضيفي واحدة أعلاه لتتبّع أسئلتك وملاحظاتك.",
-        "deleteConfirm": "هل تريدين حذف هذه الزيارة؟"
+        "deleteConfirm": "هل تريدين حذف هذه الزيارة؟",
+        "untitledVisit": "زيارة بلا عنوان",
+        "editVisit": "تعديل الزيارة",
+        "noQuestionsAdded": "لم تُضَف أسئلة",
+        "visitUpdated": "تم تحديث الزيارة",
+        "visitAdded": "تمت إضافة الزيارة"
       },
       "cx": {
         "noContractions": "لم تُسجَّل أي انقباضات بعد.<br>اضغطي «بدء الانقباضة» عند بدء انقباضة.",
@@ -354,7 +388,9 @@ window.MYOB_LOCALES.ar = {
         "interval": "كل {t}",
         "alertGo": "انقباضات كل {mins} دقيقة تقريباً، ومدتها نحو {secs} ثانية. اتصلي بقسم الولادة الآن.",
         "alert511": "كل {mins} دقيقة تقريباً، ومدتها نحو {secs} ثانية. إذا كان هذا مولودك الأول فتوجّهي إلى المستشفى. اتصلي إذا نزل ماء الرأس أو راودك الشك.",
-        "alertProgress": "في الساعة الأخيرة: {n} انقباضات، كل {mins} دقيقة تقريبًا، تستمر كل منها نحو {secs} ثانية. ليست 5-1-1 بعد."
+        "alertProgress": "في الساعة الأخيرة: {n} انقباضات، كل {mins} دقيقة تقريبًا، تستمر كل منها نحو {secs} ثانية. ليست 5-1-1 بعد.",
+        "reachedIn": "تم الوصول خلال {time}",
+        "contractionEnding": "انتهاء الانقباض"
       },
       "i18n": {
         "intro": "راجعي Obiana بلغتك، جملة واحدة في كل مرة. غيّري ما يبدو غير صحيح، أو اضغطي على صحيح.",
@@ -630,7 +666,9 @@ window.MYOB_LOCALES.ar = {
       "date": "التاريخ",
       "questionsToAskBeforehand": "أسئلة تطرحينها قبل الزيارة",
       "notesFromVisit": "ملاحظات من الزيارة",
-      "saveVisit": "حفظ الزيارة"
+      "saveVisit": "حفظ الزيارة",
+      "questionsPlaceholder": "ماذا أريد أن أسأل في هذه الزيارة؟",
+      "notesPlaceholder": "عمّ تحدثنا؟ هل تلزم متابعة؟"
     },
     "apptType": {
       "selectType": "اختاري النوع…",
@@ -656,7 +694,11 @@ window.MYOB_LOCALES.ar = {
       "addToPhone": "أضيفيه إلى هاتفك"
     },
     "common": {
-      "toolsBack": "الأدوات"
+      "toolsBack": "الأدوات",
+      "eg": "مثلًا {n}",
+      "close": "إغلاق",
+      "skipToContent": "انتقلي إلى المحتوى",
+      "undo": "تراجع"
     },
     "nav": {
       "prenatal": "زيارات<br>ما قبل الولادة",
@@ -696,7 +738,8 @@ window.MYOB_LOCALES.ar = {
       "sizeLarge": "كبير",
       "sizeLarger": "أكبر",
       "language": "اللغة",
-      "darkMode": "الوضع الداكن"
+      "darkMode": "الوضع الداكن",
+      "datesTitle": "تواريخك"
     },
     "urgent": {
       "title": "متى تتصلين",
@@ -828,6 +871,9 @@ window.MYOB_LOCALES.ar = {
         "i2": "إذا كان لديك سكري الحمل: فحص سكر بعد 4 إلى 12 أسبوعًا من الولادة. يبقى خطر السكري من النوع 2 أعلى مدى الحياة، فاطلبي فحصًا كل 1 إلى 3 سنوات.",
         "i3": "إذا كان يتسرب منك البول أو البراز، أو تشعرين بألم أثناء الجماع، أو بانتفاخ في المهبل، اسألي عن العلاج الطبيعي لقاع الحوض. إنه يساعد. لستِ مضطرة للعيش مع ذلك."
       }
+    },
+    "guide": {
+      "quickAnswers": "إجابات سريعة"
     }
   },
   "content": {
@@ -3349,6 +3395,50 @@ window.MYOB_LOCALES.ar = {
     "content.faq-newborn-procedures.t.7": 1,
     "content.faq-newborn-procedures.t.8": 1,
     "content.faq-first-bath.title": 1,
-    "content.faq-first-bath.t.0": 1
+    "content.faq-first-bath.t.0": 1,
+    "search.label": 1,
+    "search.clear": 1,
+    "myinfo.saved": 1,
+    "myinfo.notesPlaceholder": 1,
+    "myinfo.importData": 1,
+    "myinfo.importConfirm": 1,
+    "myinfo.notesLabel": 1,
+    "myinfo.callContact": 1,
+    "myinfo.textContact": 1,
+    "toast.importDone": 1,
+    "toast.importFailed": 1,
+    "toast.importNothing": 1,
+    "toast.notSaved": 1,
+    "tool.mood.important": 1,
+    "tool.mood.phq9Title": 1,
+    "tool.birthplan.generatedWith": 1,
+    "tool.common.entryDeleted": 1,
+    "tool.feed.bottleOz": 1,
+    "tool.diaper.loggedWet": 1,
+    "tool.diaper.loggedDirty": 1,
+    "tool.diaper.loggedGeneric": 1,
+    "tool.diaper.wet": 1,
+    "tool.diaper.dirty": 1,
+    "tool.diaper.both": 1,
+    "tool.weight.gainedSoFar": 1,
+    "tool.weight.wk": 1,
+    "tool.weight.lbsValue": 1,
+    "tool.weight.lbsTotal": 1,
+    "tool.weight.savedToast": 1,
+    "tool.appts.untitledVisit": 1,
+    "tool.appts.editVisit": 1,
+    "tool.appts.noQuestionsAdded": 1,
+    "tool.appts.visitUpdated": 1,
+    "tool.appts.visitAdded": 1,
+    "tool.cx.reachedIn": 1,
+    "tool.cx.contractionEnding": 1,
+    "modalAppt.questionsPlaceholder": 1,
+    "modalAppt.notesPlaceholder": 1,
+    "common.eg": 1,
+    "common.close": 1,
+    "common.skipToContent": 1,
+    "common.undo": 1,
+    "guide.quickAnswers": 1,
+    "me.datesTitle": 1
   }
 };

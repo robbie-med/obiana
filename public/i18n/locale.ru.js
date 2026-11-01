@@ -39,7 +39,9 @@ window.MYOB_LOCALES.ru = {
         "few": "{count} результата по запросу «{q}»",
         "many": "{count} результатов по запросу «{q}»",
         "other": "{count} результата по запросу «{q}»"
-      }
+      },
+      "label": "Искать по всем темам",
+      "clear": "Очистить поиск"
     },
     "myinfo": {
       "namePlaceholder": "Имя",
@@ -79,13 +81,24 @@ window.MYOB_LOCALES.ru = {
       "myPregnancyDetails": "Данные о моей беременности",
       "questionsForMyDoctor": "Вопросы моему врачу",
       "saveMyInformation": "Сохранить мою информацию",
-      "exportData": "Экспорт данных"
+      "exportData": "Экспорт данных",
+      "saved": "✓ Сохранено!",
+      "notesPlaceholder": "Записывайте сюда вопросы, как только они появятся…",
+      "importData": "Импорт данных",
+      "importConfirm": "Восстановить {n} сохранённых элементов из этого файла? Всё в приложении с тем же названием будет заменено.",
+      "notesLabel": "Вопросы к следующему приёму",
+      "callContact": "Позвонить: {name}",
+      "textContact": "Написать: {name}"
     },
     "toast": {
       "contactsSaved": "Контакты сохранены на вашем телефоне",
       "appInstalled": "Приложение установлено! Открывайте его с главного экрана в любое время",
       "dataExported": "Данные экспортированы!",
-      "appUpdated": "Приложение обновлено. Перезагрузите страницу"
+      "appUpdated": "Приложение обновлено. Перезагрузите страницу",
+      "importDone": "Данные восстановлены",
+      "importFailed": "Не удалось прочитать этот файл",
+      "importNothing": "В этом файле нет данных приложения",
+      "notSaved": "Не удалось сохранить на этом телефоне. Включён ли приватный режим?"
     },
     "tool": {
       "mood": {
@@ -107,7 +120,9 @@ window.MYOB_LOCALES.ru = {
         "change": "Изменить",
         "scoreNote": "Балл из {max} · {instrument} · Это инструмент скрининга, а не диагноз. Обязательно обсудите результат с врачом",
         "chooseLanguage": "Выберите язык, на котором хотите отвечать:",
-        "validatedOnlyNote": "Предлагаются только официально валидированные версии этого опросника. Машинный перевод тоже выдал бы балл, но такой балл не имел бы смысла."
+        "validatedOnlyNote": "Предлагаются только официально валидированные версии этого опросника. Машинный перевод тоже выдал бы балл, но такой балл не имел бы смысла.",
+        "important": "Важно",
+        "phq9Title": "Опросник здоровья пациента (PHQ-9)"
       },
       "birthplan": {
         "q": {
@@ -221,7 +236,8 @@ window.MYOB_LOCALES.ru = {
         "copiedToClipboard": "Скопировано в буфер обмена!",
         "copyNotSupportedOnThis": "Копирование не поддерживается в этом браузере",
         "selectPreferences": "Выберите свои пожелания ниже. Сводка появится внизу, и вы сможете поделиться ею с медицинской командой.",
-        "generatedOn": "Создано {date}"
+        "generatedOn": "Создано {date}",
+        "generatedWith": "Создано в Obiana, obiana.app"
       },
       "kick": {
         "startSession": "Начать подсчёт",
@@ -244,7 +260,8 @@ window.MYOB_LOCALES.ru = {
       "common": {
         "recentContractions": "Недавние схватки",
         "timeToGoToThe": "🚨 Пора ехать в больницу",
-        "511PatternReached": "Достигнут режим 5-1-1"
+        "511PatternReached": "Достигнут режим 5-1-1",
+        "entryDeleted": "Запись удалена"
       },
       "feed": {
         "feedsInLast24Hrs": "Кормлений за последние 24 часа",
@@ -257,7 +274,8 @@ window.MYOB_LOCALES.ru = {
         "fewFeedsBody": "Новорождённым обычно нужно 8–12 кормлений за 24 часа. Если ребёнка трудно разбудить или он не прибавляет в весе, позвоните врачу.",
         "breast": "🤱 Грудь",
         "bottle": "🍼 Бутылочка",
-        "minutes": "{n} мин"
+        "minutes": "{n} мин",
+        "bottleOz": "Бутылочка, {oz} oz"
       },
       "diaper": {
         "wetToday": "Мокрых сегодня",
@@ -266,7 +284,13 @@ window.MYOB_LOCALES.ru = {
         "whatToExpectByAge": "Чего ожидать по дням",
         "day1212": "День 1–2: 1–2 мокрых подгузника · День 3–4: 3–4 мокрых · День 5+: 6+ мокрых, 3–4 грязных в сутки. Менее 6 мокрых подгузников после 5-го дня → позвоните врачу.",
         "todaySLog": "Записи за сегодня",
-        "noDiapers": "Сегодня подгузники не записаны."
+        "noDiapers": "Сегодня подгузники не записаны.",
+        "loggedWet": "Мокрый подгузник записан",
+        "loggedDirty": "Грязный подгузник записан",
+        "loggedGeneric": "Подгузник записан",
+        "wet": "Мокрый",
+        "dirty": "Грязный",
+        "both": "Мокрый + грязный"
       },
       "jaundice": {
         "babySBirthDate": "Дата рождения ребёнка",
@@ -327,7 +351,12 @@ window.MYOB_LOCALES.ru = {
           "over": "Избыточный вес",
           "obese": "Ожирение"
         },
-        "iomFor": "Рекомендация IOM для вас ({range})"
+        "iomFor": "Рекомендация IOM для вас ({range})",
+        "gainedSoFar": "Пока вы набрали {amount} lbs.",
+        "wk": "Нед. {n}",
+        "lbsValue": "{n} lbs",
+        "lbsTotal": "Всего {n} lbs",
+        "savedToast": "{lbs} lbs на {week} неделе сохранено"
       },
       "appts": {
         "addVisit": "+ Добавить визит",
@@ -338,7 +367,12 @@ window.MYOB_LOCALES.ru = {
         "delete": "Удалить",
         "visitDeleted": "Визит удалён",
         "noVisits": "Визитов пока нет. Добавьте визит выше, чтобы записывать вопросы и заметки.",
-        "deleteConfirm": "Удалить этот визит?"
+        "deleteConfirm": "Удалить этот визит?",
+        "untitledVisit": "Приём без названия",
+        "editVisit": "Изменить приём",
+        "noQuestionsAdded": "Вопросы не добавлены",
+        "visitUpdated": "Приём обновлён",
+        "visitAdded": "Приём добавлен"
       },
       "cx": {
         "noContractions": "Схватки пока не записаны.<br>Нажмите «Схватка началась», когда она начнётся.",
@@ -352,7 +386,9 @@ window.MYOB_LOCALES.ru = {
         "interval": "каждые {t}",
         "alertGo": "Схватки примерно каждые {mins} мин, длительностью около {secs} с. Звоните в родильное отделение сейчас.",
         "alert511": "Примерно каждые {mins} мин, около {secs} с. Если это ваш первый ребёнок, отправляйтесь в роддом. Позвоните, если отошли воды или вы сомневаетесь.",
-        "alertProgress": "За последний час: схваток {n}, примерно каждые {mins} мин, каждая около {secs} с. Пока не 5-1-1."
+        "alertProgress": "За последний час: схваток {n}, примерно каждые {mins} мин, каждая около {secs} с. Пока не 5-1-1.",
+        "reachedIn": "Достигнуто за {time}",
+        "contractionEnding": "Схватка закончилась"
       },
       "i18n": {
         "intro": "Проверьте Obiana на своём языке, по одному предложению. Исправьте то, что звучит неправильно, или нажмите «Всё верно».",
@@ -628,7 +664,9 @@ window.MYOB_LOCALES.ru = {
       "date": "Дата",
       "questionsToAskBeforehand": "Вопросы, которые задать заранее",
       "notesFromVisit": "Заметки после визита",
-      "saveVisit": "Сохранить визит"
+      "saveVisit": "Сохранить визит",
+      "questionsPlaceholder": "Что я хочу спросить на этом приёме?",
+      "notesPlaceholder": "О чём мы говорили? Нужно ли что-то проверить потом?"
     },
     "apptType": {
       "selectType": "Выберите тип…",
@@ -654,7 +692,11 @@ window.MYOB_LOCALES.ru = {
       "addToPhone": "Добавить на телефон"
     },
     "common": {
-      "toolsBack": "Инструменты"
+      "toolsBack": "Инструменты",
+      "eg": "напр. {n}",
+      "close": "Закрыть",
+      "skipToContent": "Перейти к содержанию",
+      "undo": "Отменить"
     },
     "nav": {
       "prenatal": "Визиты<br>до родов",
@@ -694,7 +736,8 @@ window.MYOB_LOCALES.ru = {
       "sizeLarge": "Крупный",
       "sizeLarger": "Ещё крупнее",
       "language": "Язык",
-      "darkMode": "Тёмная тема"
+      "darkMode": "Тёмная тема",
+      "datesTitle": "Ваши даты"
     },
     "urgent": {
       "title": "Когда звонить",
@@ -822,6 +865,9 @@ window.MYOB_LOCALES.ru = {
         "i2": "Если у вас был гестационный диабет: тест на сахар через 4–12 недель после родов. Риск диабета 2 типа остаётся выше всю жизнь, поэтому просите проверку каждые 1–3 года.",
         "i3": "Если у вас подтекает моча или кал, больно при сексе или ощущается выпячивание во влагалище, спросите о физиотерапии мышц тазового дна. Это помогает. Терпеть не нужно."
       }
+    },
+    "guide": {
+      "quickAnswers": "Короткие ответы"
     }
   },
   "content": {
@@ -3343,6 +3389,50 @@ window.MYOB_LOCALES.ru = {
     "content.faq-newborn-procedures.t.7": 1,
     "content.faq-newborn-procedures.t.8": 1,
     "content.faq-first-bath.title": 1,
-    "content.faq-first-bath.t.0": 1
+    "content.faq-first-bath.t.0": 1,
+    "search.label": 1,
+    "search.clear": 1,
+    "myinfo.saved": 1,
+    "myinfo.notesPlaceholder": 1,
+    "myinfo.importData": 1,
+    "myinfo.importConfirm": 1,
+    "myinfo.notesLabel": 1,
+    "myinfo.callContact": 1,
+    "myinfo.textContact": 1,
+    "toast.importDone": 1,
+    "toast.importFailed": 1,
+    "toast.importNothing": 1,
+    "toast.notSaved": 1,
+    "tool.mood.important": 1,
+    "tool.mood.phq9Title": 1,
+    "tool.birthplan.generatedWith": 1,
+    "tool.common.entryDeleted": 1,
+    "tool.feed.bottleOz": 1,
+    "tool.diaper.loggedWet": 1,
+    "tool.diaper.loggedDirty": 1,
+    "tool.diaper.loggedGeneric": 1,
+    "tool.diaper.wet": 1,
+    "tool.diaper.dirty": 1,
+    "tool.diaper.both": 1,
+    "tool.weight.gainedSoFar": 1,
+    "tool.weight.wk": 1,
+    "tool.weight.lbsValue": 1,
+    "tool.weight.lbsTotal": 1,
+    "tool.weight.savedToast": 1,
+    "tool.appts.untitledVisit": 1,
+    "tool.appts.editVisit": 1,
+    "tool.appts.noQuestionsAdded": 1,
+    "tool.appts.visitUpdated": 1,
+    "tool.appts.visitAdded": 1,
+    "tool.cx.reachedIn": 1,
+    "tool.cx.contractionEnding": 1,
+    "modalAppt.questionsPlaceholder": 1,
+    "modalAppt.notesPlaceholder": 1,
+    "common.eg": 1,
+    "common.close": 1,
+    "common.skipToContent": 1,
+    "common.undo": 1,
+    "guide.quickAnswers": 1,
+    "me.datesTitle": 1
   }
 };

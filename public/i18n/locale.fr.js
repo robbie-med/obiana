@@ -38,7 +38,9 @@ window.MYOB_LOCALES.fr = {
         "one": "{count} résultat pour « {q} »",
         "many": "{count} résultats pour « {q} »",
         "other": "{count} résultats pour « {q} »"
-      }
+      },
+      "label": "Rechercher dans tous les sujets",
+      "clear": "Effacer la recherche"
     },
     "myinfo": {
       "namePlaceholder": "Nom",
@@ -78,13 +80,24 @@ window.MYOB_LOCALES.fr = {
       "myPregnancyDetails": "Détails de ma grossesse",
       "questionsForMyDoctor": "Questions pour mon médecin",
       "saveMyInformation": "Enregistrer mes informations",
-      "exportData": "Exporter les données"
+      "exportData": "Exporter les données",
+      "saved": "✓ Enregistré !",
+      "notesPlaceholder": "Notez ici vos questions dès qu’elles vous viennent…",
+      "importData": "Importer des données",
+      "importConfirm": "Restaurer {n} éléments enregistrés depuis ce fichier ? Tout ce qui porte le même nom dans l’application sera remplacé.",
+      "notesLabel": "Questions pour votre prochain rendez-vous",
+      "callContact": "Appeler {name}",
+      "textContact": "Envoyer un SMS à {name}"
     },
     "toast": {
       "contactsSaved": "Contacts enregistrés sur votre téléphone",
       "appInstalled": "Application installée ! Ouvrez-la depuis votre écran d'accueil à tout moment",
       "dataExported": "Données exportées !",
-      "appUpdated": "Application mise à jour. Rechargez pour la dernière version"
+      "appUpdated": "Application mise à jour. Rechargez pour la dernière version",
+      "importDone": "Données restaurées",
+      "importFailed": "Impossible de lire ce fichier",
+      "importNothing": "Aucune donnée de l’application dans ce fichier",
+      "notSaved": "Impossible d’enregistrer sur ce téléphone. La navigation privée est-elle activée ?"
     },
     "tool": {
       "mood": {
@@ -106,7 +119,9 @@ window.MYOB_LOCALES.fr = {
         "change": "Changer",
         "scoreNote": "Score sur {max} · {instrument} · Outil de dépistage, pas un diagnostic. Parlez toujours du résultat à votre équipe soignante",
         "chooseLanguage": "Choisissez la langue dans laquelle vous souhaitez répondre :",
-        "validatedOnlyNote": "Seules les versions officiellement validées de ce questionnaire sont proposées. Une traduction automatique donnerait tout de même un score, mais ce score n’aurait aucune valeur."
+        "validatedOnlyNote": "Seules les versions officiellement validées de ce questionnaire sont proposées. Une traduction automatique donnerait tout de même un score, mais ce score n’aurait aucune valeur.",
+        "important": "Important",
+        "phq9Title": "Questionnaire sur la santé du patient (PHQ-9)"
       },
       "birthplan": {
         "q": {
@@ -220,7 +235,8 @@ window.MYOB_LOCALES.fr = {
         "copiedToClipboard": "Copié dans le presse-papiers !",
         "copyNotSupportedOnThis": "La copie n’est pas prise en charge par ce navigateur",
         "selectPreferences": "Sélectionnez vos préférences ci-dessous. Votre résumé apparaîtra en bas et vous pourrez le partager avec votre équipe soignante.",
-        "generatedOn": "Généré le {date}"
+        "generatedOn": "Généré le {date}",
+        "generatedWith": "Fait avec Obiana, obiana.app"
       },
       "kick": {
         "startSession": "Commencer la séance",
@@ -243,7 +259,8 @@ window.MYOB_LOCALES.fr = {
       "common": {
         "recentContractions": "Contractions récentes",
         "timeToGoToThe": "🚨 Il est temps d’aller à l’hôpital",
-        "511PatternReached": "Rythme 5-1-1 atteint"
+        "511PatternReached": "Rythme 5-1-1 atteint",
+        "entryDeleted": "Entrée supprimée"
       },
       "feed": {
         "feedsInLast24Hrs": "Tétées des dernières 24 h",
@@ -256,7 +273,8 @@ window.MYOB_LOCALES.fr = {
         "fewFeedsBody": "Les nouveau-nés ont généralement besoin de 8 à 12 tétées par 24 heures. Si le bébé est difficile à réveiller ou ne prend pas de poids, appelez votre médecin.",
         "breast": "🤱 Sein",
         "bottle": "🍼 Biberon",
-        "minutes": "{n} min"
+        "minutes": "{n} min",
+        "bottleOz": "Biberon, {oz} oz"
       },
       "diaper": {
         "wetToday": "Mouillées aujourd’hui",
@@ -265,7 +283,13 @@ window.MYOB_LOCALES.fr = {
         "whatToExpectByAge": "À quoi s’attendre selon l’âge",
         "day1212": "Jour 1–2 : 1–2 couches mouillées · Jour 3–4 : 3–4 mouillées · Jour 5+ : 6+ mouillées, 3–4 souillées par jour. Moins de 6 couches mouillées après le jour 5 → appelez votre médecin.",
         "todaySLog": "Journal du jour",
-        "noDiapers": "Aucune couche notée aujourd’hui."
+        "noDiapers": "Aucune couche notée aujourd’hui.",
+        "loggedWet": "Couche mouillée enregistrée",
+        "loggedDirty": "Couche sale enregistrée",
+        "loggedGeneric": "Couche enregistrée",
+        "wet": "Mouillée",
+        "dirty": "Sale",
+        "both": "Mouillée + sale"
       },
       "jaundice": {
         "babySBirthDate": "Date de naissance du bébé",
@@ -326,7 +350,12 @@ window.MYOB_LOCALES.fr = {
           "over": "Surpoids",
           "obese": "Obésité"
         },
-        "iomFor": "Recommandation IOM pour vous ({range})"
+        "iomFor": "Recommandation IOM pour vous ({range})",
+        "gainedSoFar": "Vous avez pris {amount} lbs jusqu’ici.",
+        "wk": "Sem. {n}",
+        "lbsValue": "{n} lbs",
+        "lbsTotal": "{n} lbs au total",
+        "savedToast": "{lbs} lbs à la semaine {week} enregistré"
       },
       "appts": {
         "addVisit": "+ Ajouter une visite",
@@ -337,7 +366,12 @@ window.MYOB_LOCALES.fr = {
         "delete": "Supprimer",
         "visitDeleted": "Visite supprimée",
         "noVisits": "Aucune visite enregistrée pour le moment. Ajoutez-en une ci-dessus pour suivre vos questions et vos notes.",
-        "deleteConfirm": "Supprimer cette visite ?"
+        "deleteConfirm": "Supprimer cette visite ?",
+        "untitledVisit": "Rendez-vous sans titre",
+        "editVisit": "Modifier le rendez-vous",
+        "noQuestionsAdded": "Aucune question ajoutée",
+        "visitUpdated": "Rendez-vous mis à jour",
+        "visitAdded": "Rendez-vous ajouté"
       },
       "cx": {
         "noContractions": "Aucune contraction enregistrée pour le moment.<br>Touchez « Début d'une contraction » quand une contraction commence.",
@@ -351,7 +385,9 @@ window.MYOB_LOCALES.fr = {
         "interval": "toutes les {t}",
         "alertGo": "Contractions toutes les {mins} min environ, d’environ {secs}s. Appelez la maternité maintenant.",
         "alert511": "Toutes les {mins} min environ, d’environ {secs}s. Si c’est votre premier bébé, rendez-vous à la maternité. Appelez si vous perdez les eaux ou en cas de doute.",
-        "alertProgress": "Dans la dernière heure : {n} contractions, environ toutes les {mins} min, d'environ {secs}s chacune. Pas encore 5-1-1."
+        "alertProgress": "Dans la dernière heure : {n} contractions, environ toutes les {mins} min, d'environ {secs}s chacune. Pas encore 5-1-1.",
+        "reachedIn": "Atteint en {time}",
+        "contractionEnding": "Fin de la contraction"
       },
       "i18n": {
         "intro": "Vérifiez Obiana dans votre langue, une phrase à la fois. Corrigez ce qui sonne faux, ou touchez C'est juste.",
@@ -627,7 +663,9 @@ window.MYOB_LOCALES.fr = {
       "date": "Date",
       "questionsToAskBeforehand": "Questions à poser avant",
       "notesFromVisit": "Notes de la visite",
-      "saveVisit": "Enregistrer"
+      "saveVisit": "Enregistrer",
+      "questionsPlaceholder": "Que voulez-vous demander à ce rendez-vous ?",
+      "notesPlaceholder": "De quoi avons-nous parlé ? Faut-il un suivi ?"
     },
     "apptType": {
       "selectType": "Choisir le type…",
@@ -653,7 +691,11 @@ window.MYOB_LOCALES.fr = {
       "addToPhone": "Ajouter au téléphone"
     },
     "common": {
-      "toolsBack": "Outils"
+      "toolsBack": "Outils",
+      "eg": "ex. {n}",
+      "close": "Fermer",
+      "skipToContent": "Aller au contenu",
+      "undo": "Annuler"
     },
     "nav": {
       "prenatal": "Visites<br>prénatales",
@@ -693,7 +735,8 @@ window.MYOB_LOCALES.fr = {
       "sizeLarge": "Grande",
       "sizeLarger": "Plus grande",
       "language": "Langue",
-      "darkMode": "Mode sombre"
+      "darkMode": "Mode sombre",
+      "datesTitle": "Vos dates"
     },
     "urgent": {
       "title": "Quand appeler",
@@ -819,6 +862,9 @@ window.MYOB_LOCALES.fr = {
         "i2": "Si vous avez eu un diabète gestationnel : un test de sucre entre 4 et 12 semaines après la naissance. Le risque de diabète de type 2 reste plus élevé toute la vie, alors demandez un contrôle tous les 1 à 3 ans.",
         "i3": "Si vous avez des fuites d'urine ou de selles, des douleurs pendant les rapports, ou si vous sentez une boule dans le vagin, demandez une rééducation du périnée. Ça aide. Vous n'avez pas à vivre avec."
       }
+    },
+    "guide": {
+      "quickAnswers": "Réponses rapides"
     }
   },
   "content": {
@@ -2711,6 +2757,50 @@ window.MYOB_LOCALES.fr = {
     "content.faq-vaccines.t.4": 1,
     "content.faq-vaccines.t.5": 1,
     "content.faq-vaccines.t.6": 1,
-    "content.faq-vaccines.t.7": 1
+    "content.faq-vaccines.t.7": 1,
+    "search.label": 1,
+    "search.clear": 1,
+    "myinfo.saved": 1,
+    "myinfo.notesPlaceholder": 1,
+    "myinfo.importData": 1,
+    "myinfo.importConfirm": 1,
+    "myinfo.notesLabel": 1,
+    "myinfo.callContact": 1,
+    "myinfo.textContact": 1,
+    "toast.importDone": 1,
+    "toast.importFailed": 1,
+    "toast.importNothing": 1,
+    "toast.notSaved": 1,
+    "tool.mood.important": 1,
+    "tool.mood.phq9Title": 1,
+    "tool.birthplan.generatedWith": 1,
+    "tool.common.entryDeleted": 1,
+    "tool.feed.bottleOz": 1,
+    "tool.diaper.loggedWet": 1,
+    "tool.diaper.loggedDirty": 1,
+    "tool.diaper.loggedGeneric": 1,
+    "tool.diaper.wet": 1,
+    "tool.diaper.dirty": 1,
+    "tool.diaper.both": 1,
+    "tool.weight.gainedSoFar": 1,
+    "tool.weight.wk": 1,
+    "tool.weight.lbsValue": 1,
+    "tool.weight.lbsTotal": 1,
+    "tool.weight.savedToast": 1,
+    "tool.appts.untitledVisit": 1,
+    "tool.appts.editVisit": 1,
+    "tool.appts.noQuestionsAdded": 1,
+    "tool.appts.visitUpdated": 1,
+    "tool.appts.visitAdded": 1,
+    "tool.cx.reachedIn": 1,
+    "tool.cx.contractionEnding": 1,
+    "modalAppt.questionsPlaceholder": 1,
+    "modalAppt.notesPlaceholder": 1,
+    "common.eg": 1,
+    "common.close": 1,
+    "common.skipToContent": 1,
+    "common.undo": 1,
+    "guide.quickAnswers": 1,
+    "me.datesTitle": 1
   }
 };

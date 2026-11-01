@@ -37,7 +37,9 @@ window.MYOB_LOCALES.es = {
       "resultCount": {
         "one": "{count} resultado para «{q}»",
         "other": "{count} resultados para «{q}»"
-      }
+      },
+      "label": "Buscar en todos los temas",
+      "clear": "Borrar búsqueda"
     },
     "myinfo": {
       "namePlaceholder": "Nombre",
@@ -77,13 +79,24 @@ window.MYOB_LOCALES.es = {
       "myPregnancyDetails": "Datos de Mi Embarazo",
       "questionsForMyDoctor": "Preguntas para Mi Médico",
       "saveMyInformation": "Guardar Mi Información",
-      "exportData": "Exportar Datos"
+      "exportData": "Exportar Datos",
+      "saved": "✓ ¡Guardado!",
+      "notesPlaceholder": "Escriba aquí sus preguntas cuando se le ocurran…",
+      "importData": "Importar datos",
+      "importConfirm": "¿Restaurar {n} elementos guardados de este archivo? Todo lo que haya en la aplicación con el mismo nombre se reemplazará.",
+      "notesLabel": "Preguntas para su próxima consulta",
+      "callContact": "Llamar a {name}",
+      "textContact": "Enviar mensaje a {name}"
     },
     "toast": {
       "contactsSaved": "Contactos guardados en su teléfono",
       "appInstalled": "¡Aplicación instalada! Ábrala desde su pantalla de inicio cuando quiera",
       "dataExported": "¡Datos exportados!",
-      "appUpdated": "Aplicación actualizada. Recargue para ver la versión más reciente"
+      "appUpdated": "Aplicación actualizada. Recargue para ver la versión más reciente",
+      "importDone": "Datos restaurados",
+      "importFailed": "No se pudo leer ese archivo",
+      "importNothing": "No se encontraron datos de la aplicación en ese archivo",
+      "notSaved": "No se pudo guardar en este teléfono. ¿Tiene activada la navegación privada?"
     },
     "tool": {
       "mood": {
@@ -105,7 +118,9 @@ window.MYOB_LOCALES.es = {
         "change": "Cambiar",
         "scoreNote": "Puntuación sobre {max} · {instrument} · Es una herramienta de detección, no un diagnóstico: comente siempre el resultado con su equipo médico",
         "chooseLanguage": "Elija el idioma en el que desea responder:",
-        "validatedOnlyNote": "Solo se ofrecen versiones oficialmente validadas de este cuestionario. Una traducción automática igualmente daría una puntuación, pero esa puntuación no tendría valor."
+        "validatedOnlyNote": "Solo se ofrecen versiones oficialmente validadas de este cuestionario. Una traducción automática igualmente daría una puntuación, pero esa puntuación no tendría valor.",
+        "important": "Importante",
+        "phq9Title": "Cuestionario de Salud del Paciente (PHQ-9)"
       },
       "birthplan": {
         "q": {
@@ -219,7 +234,8 @@ window.MYOB_LOCALES.es = {
         "copiedToClipboard": "¡Copiado al portapapeles!",
         "copyNotSupportedOnThis": "Este navegador no permite copiar",
         "selectPreferences": "Seleccione sus preferencias abajo. Su resumen aparecerá al final y podrá compartirlo con su equipo médico.",
-        "generatedOn": "Generado el {date}"
+        "generatedOn": "Generado el {date}",
+        "generatedWith": "Hecho con Obiana, obiana.app"
       },
       "kick": {
         "startSession": "Iniciar sesión",
@@ -242,7 +258,8 @@ window.MYOB_LOCALES.es = {
       "common": {
         "recentContractions": "Contracciones recientes",
         "timeToGoToThe": "🚨 Es hora de ir al hospital",
-        "511PatternReached": "Patrón 5-1-1 alcanzado"
+        "511PatternReached": "Patrón 5-1-1 alcanzado",
+        "entryDeleted": "Registro eliminado"
       },
       "feed": {
         "feedsInLast24Hrs": "Tomas en las últimas 24 h",
@@ -255,7 +272,8 @@ window.MYOB_LOCALES.es = {
         "fewFeedsBody": "Los recién nacidos suelen necesitar de 8 a 12 tomas cada 24 horas. Si le cuesta despertar al bebé o no está subiendo de peso, llame a su médico.",
         "breast": "🤱 Pecho",
         "bottle": "🍼 Biberón",
-        "minutes": "{n} min"
+        "minutes": "{n} min",
+        "bottleOz": "Biberón, {oz} oz"
       },
       "diaper": {
         "wetToday": "Mojados hoy",
@@ -264,7 +282,13 @@ window.MYOB_LOCALES.es = {
         "whatToExpectByAge": "Qué esperar según la edad",
         "day1212": "Día 1–2: 1–2 pañales mojados · Día 3–4: 3–4 mojados · Día 5+: 6+ mojados, 3–4 sucios al día. Menos de 6 pañales mojados después del día 5 → llame a su médico.",
         "todaySLog": "Registro de hoy",
-        "noDiapers": "No hay pañales registrados hoy."
+        "noDiapers": "No hay pañales registrados hoy.",
+        "loggedWet": "Pañal mojado registrado",
+        "loggedDirty": "Pañal sucio registrado",
+        "loggedGeneric": "Pañal registrado",
+        "wet": "Mojado",
+        "dirty": "Sucio",
+        "both": "Mojado + Sucio"
       },
       "jaundice": {
         "babySBirthDate": "Fecha de nacimiento del bebé",
@@ -325,7 +349,12 @@ window.MYOB_LOCALES.es = {
           "over": "Sobrepeso",
           "obese": "Obesidad"
         },
-        "iomFor": "Pauta del IOM para usted ({range})"
+        "iomFor": "Pauta del IOM para usted ({range})",
+        "gainedSoFar": "Ha aumentado {amount} lbs hasta ahora.",
+        "wk": "Sem {n}",
+        "lbsValue": "{n} lbs",
+        "lbsTotal": "{n} lbs en total",
+        "savedToast": "{lbs} lbs en la semana {week} guardado"
       },
       "appts": {
         "addVisit": "+ Agregar cita",
@@ -336,7 +365,12 @@ window.MYOB_LOCALES.es = {
         "delete": "Eliminar",
         "visitDeleted": "Cita eliminada",
         "noVisits": "Aún no hay visitas registradas. Añada una arriba para llevar el control de preguntas y notas.",
-        "deleteConfirm": "¿Eliminar esta visita?"
+        "deleteConfirm": "¿Eliminar esta visita?",
+        "untitledVisit": "Consulta sin título",
+        "editVisit": "Editar consulta",
+        "noQuestionsAdded": "No se agregaron preguntas",
+        "visitUpdated": "Consulta actualizada",
+        "visitAdded": "Consulta agregada"
       },
       "cx": {
         "noContractions": "Aún no hay contracciones registradas.<br>Toque \"Comienza una contracción\" cuando empiece una.",
@@ -350,7 +384,9 @@ window.MYOB_LOCALES.es = {
         "interval": "cada {t}",
         "alertGo": "Contracciones cada {mins} min aproximadamente, de unos {secs}s. Llame ahora a la sala de partos.",
         "alert511": "Cada {mins} min aproximadamente, de unos {secs}s. Si es su primer bebé, vaya al hospital. Llame si rompe aguas o tiene dudas.",
-        "alertProgress": "En la última hora: {n} contracciones, cada {mins} min aprox., de unos {secs}s cada una. Todavía no es 5-1-1."
+        "alertProgress": "En la última hora: {n} contracciones, cada {mins} min aprox., de unos {secs}s cada una. Todavía no es 5-1-1.",
+        "reachedIn": "Alcanzado en {time}",
+        "contractionEnding": "Fin de la contracción"
       },
       "i18n": {
         "intro": "Revise Obiana en su idioma, una frase a la vez. Cambie lo que no suene bien, o toque Está bien.",
@@ -626,7 +662,9 @@ window.MYOB_LOCALES.es = {
       "date": "Fecha",
       "questionsToAskBeforehand": "Preguntas para hacer antes",
       "notesFromVisit": "Notas de la cita",
-      "saveVisit": "Guardar Cita"
+      "saveVisit": "Guardar Cita",
+      "questionsPlaceholder": "¿Qué quiero preguntar en esta consulta?",
+      "notesPlaceholder": "¿De qué hablamos? ¿Hace falta algún seguimiento?"
     },
     "apptType": {
       "selectType": "Seleccione tipo…",
@@ -652,7 +690,11 @@ window.MYOB_LOCALES.es = {
       "addToPhone": "Agregar al Teléfono"
     },
     "common": {
-      "toolsBack": "Herramientas"
+      "toolsBack": "Herramientas",
+      "eg": "p. ej. {n}",
+      "close": "Cerrar",
+      "skipToContent": "Saltar al contenido",
+      "undo": "Deshacer"
     },
     "nav": {
       "prenatal": "Citas<br>Prenatales",
@@ -692,7 +734,8 @@ window.MYOB_LOCALES.es = {
       "sizeLarge": "Grande",
       "sizeLarger": "Más grande",
       "language": "Idioma",
-      "darkMode": "Modo oscuro"
+      "darkMode": "Modo oscuro",
+      "datesTitle": "Sus fechas"
     },
     "urgent": {
       "title": "Cuándo llamar",
@@ -818,6 +861,9 @@ window.MYOB_LOCALES.es = {
         "i2": "Si tuvo diabetes gestacional: una prueba de azúcar entre 4 y 12 semanas después del parto. El riesgo de diabetes tipo 2 sigue siendo más alto toda la vida, así que pida un control cada 1 a 3 años.",
         "i3": "Si se le escapa la orina o las heces, siente dolor en las relaciones sexuales o un bulto en la vagina, pregunte por la fisioterapia del piso pélvico. Ayuda. No tiene que vivir con eso."
       }
+    },
+    "guide": {
+      "quickAnswers": "Respuestas rápidas"
     }
   },
   "content": {
@@ -2710,6 +2756,50 @@ window.MYOB_LOCALES.es = {
     "content.faq-vaccines.t.4": 1,
     "content.faq-vaccines.t.5": 1,
     "content.faq-vaccines.t.6": 1,
-    "content.faq-vaccines.t.7": 1
+    "content.faq-vaccines.t.7": 1,
+    "search.label": 1,
+    "search.clear": 1,
+    "myinfo.saved": 1,
+    "myinfo.notesPlaceholder": 1,
+    "myinfo.importData": 1,
+    "myinfo.importConfirm": 1,
+    "myinfo.notesLabel": 1,
+    "myinfo.callContact": 1,
+    "myinfo.textContact": 1,
+    "toast.importDone": 1,
+    "toast.importFailed": 1,
+    "toast.importNothing": 1,
+    "toast.notSaved": 1,
+    "tool.mood.important": 1,
+    "tool.mood.phq9Title": 1,
+    "tool.birthplan.generatedWith": 1,
+    "tool.common.entryDeleted": 1,
+    "tool.feed.bottleOz": 1,
+    "tool.diaper.loggedWet": 1,
+    "tool.diaper.loggedDirty": 1,
+    "tool.diaper.loggedGeneric": 1,
+    "tool.diaper.wet": 1,
+    "tool.diaper.dirty": 1,
+    "tool.diaper.both": 1,
+    "tool.weight.gainedSoFar": 1,
+    "tool.weight.wk": 1,
+    "tool.weight.lbsValue": 1,
+    "tool.weight.lbsTotal": 1,
+    "tool.weight.savedToast": 1,
+    "tool.appts.untitledVisit": 1,
+    "tool.appts.editVisit": 1,
+    "tool.appts.noQuestionsAdded": 1,
+    "tool.appts.visitUpdated": 1,
+    "tool.appts.visitAdded": 1,
+    "tool.cx.reachedIn": 1,
+    "tool.cx.contractionEnding": 1,
+    "modalAppt.questionsPlaceholder": 1,
+    "modalAppt.notesPlaceholder": 1,
+    "common.eg": 1,
+    "common.close": 1,
+    "common.skipToContent": 1,
+    "common.undo": 1,
+    "guide.quickAnswers": 1,
+    "me.datesTitle": 1
   }
 };

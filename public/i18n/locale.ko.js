@@ -36,7 +36,9 @@ window.MYOB_LOCALES.ko = {
       "noResultsHint": "다른 검색어를 써 보세요. 예: \"무통주사\", \"제대 관리\", \"출혈\"",
       "resultCount": {
         "other": "“{q}” 검색 결과 {count}개"
-      }
+      },
+      "label": "모든 주제 검색",
+      "clear": "검색 지우기"
     },
     "myinfo": {
       "namePlaceholder": "이름",
@@ -76,13 +78,24 @@ window.MYOB_LOCALES.ko = {
       "myPregnancyDetails": "내 임신 정보",
       "questionsForMyDoctor": "의사에게 물어볼 질문",
       "saveMyInformation": "내 정보 저장",
-      "exportData": "데이터보내기"
+      "exportData": "데이터보내기",
+      "saved": "✓ 저장했습니다!",
+      "notesPlaceholder": "생각날 때마다 질문을 여기에 적으세요…",
+      "importData": "데이터 가져오기",
+      "importConfirm": "이 파일에서 저장된 항목 {n}개를 복원할까요? 앱에 같은 이름으로 있는 항목은 모두 바뀝니다.",
+      "notesLabel": "다음 진료 때 할 질문",
+      "callContact": "{name}에게 전화",
+      "textContact": "{name}에게 문자"
     },
     "toast": {
       "contactsSaved": "연락처가 휴대폰에 저장되었습니다",
       "appInstalled": "앱이 설치되었습니다! 홈 화면에서 언제든 여세요",
       "dataExported": "데이터를보냈습니다!",
-      "appUpdated": "앱이 업데이트되었습니다. 최신 버전을 보려면 새로고침하세요"
+      "appUpdated": "앱이 업데이트되었습니다. 최신 버전을 보려면 새로고침하세요",
+      "importDone": "데이터를 복원했습니다",
+      "importFailed": "그 파일을 읽을 수 없습니다",
+      "importNothing": "그 파일에 앱 데이터가 없습니다",
+      "notSaved": "이 휴대폰에 저장할 수 없습니다. 비공개 브라우징이 켜져 있나요?"
     },
     "tool": {
       "mood": {
@@ -104,7 +117,9 @@ window.MYOB_LOCALES.ko = {
         "change": "변경",
         "scoreNote": "{max}점 만점 · {instrument} · 진단이 아니라 선별 도구입니다. 결과는 반드시 의료진과 상의하세요",
         "chooseLanguage": "답변하실 언어를 선택하세요:",
-        "validatedOnlyNote": "공식적으로 검증된 판만 제공합니다. 기계 번역도 점수는 나오지만 그 점수는 의미가 없습니다."
+        "validatedOnlyNote": "공식적으로 검증된 판만 제공합니다. 기계 번역도 점수는 나오지만 그 점수는 의미가 없습니다.",
+        "important": "중요",
+        "phq9Title": "환자 건강 질문지(PHQ-9)"
       },
       "birthplan": {
         "q": {
@@ -218,7 +233,8 @@ window.MYOB_LOCALES.ko = {
         "copiedToClipboard": "클립보드에 복사했어요!",
         "copyNotSupportedOnThis": "이 브라우저에서는 복사를 지원하지 않아요",
         "selectPreferences": "아래에서 원하는 항목을 선택하세요. 요약이 아래에 표시되며 의료진과 공유할 수 있습니다.",
-        "generatedOn": "{date} 생성"
+        "generatedOn": "{date} 생성",
+        "generatedWith": "Obiana로 만듦, obiana.app"
       },
       "kick": {
         "startSession": "세션 시작",
@@ -241,7 +257,8 @@ window.MYOB_LOCALES.ko = {
       "common": {
         "recentContractions": "최근 진통",
         "timeToGoToThe": "🚨 병원에 갈 시간이에요",
-        "511PatternReached": "5-1-1 패턴 도달"
+        "511PatternReached": "5-1-1 패턴 도달",
+        "entryDeleted": "기록을 삭제했습니다"
       },
       "feed": {
         "feedsInLast24Hrs": "최근 24시간 수유 횟수",
@@ -254,7 +271,8 @@ window.MYOB_LOCALES.ko = {
         "fewFeedsBody": "신생아는 보통 24시간에 8~12회 수유가 필요합니다. 아기를 깨우기 어렵거나 체중이 늘지 않는다면 담당 의료진에게 연락하세요.",
         "breast": "🤱 모유",
         "bottle": "🍼 젖병",
-        "minutes": "{n}분"
+        "minutes": "{n}분",
+        "bottleOz": "젖병, {oz} oz"
       },
       "diaper": {
         "wetToday": "오늘 소변 기저귀",
@@ -263,7 +281,13 @@ window.MYOB_LOCALES.ko = {
         "whatToExpectByAge": "월령별 예상 횟수",
         "day1212": "생후 1–2일: 소변 기저귀 1–2회 · 생후 3–4일: 소변 3–4회 · 생후 5일 이후: 하루 소변 6회 이상, 대변 3–4회. 생후 5일 이후 소변 기저귀가 6회 미만이면 → 의사에게 전화하세요.",
         "todaySLog": "오늘의 기록",
-        "noDiapers": "오늘 기록된 기저귀가 없어요."
+        "noDiapers": "오늘 기록된 기저귀가 없어요.",
+        "loggedWet": "젖은 기저귀를 기록했습니다",
+        "loggedDirty": "대변 기저귀를 기록했습니다",
+        "loggedGeneric": "기저귀를 기록했습니다",
+        "wet": "소변",
+        "dirty": "대변",
+        "both": "소변 + 대변"
       },
       "jaundice": {
         "babySBirthDate": "아기 생년월일",
@@ -324,7 +348,12 @@ window.MYOB_LOCALES.ko = {
           "over": "과체중",
           "obese": "비만"
         },
-        "iomFor": "회원님을 위한 IOM 지침 ({range})"
+        "iomFor": "회원님을 위한 IOM 지침 ({range})",
+        "gainedSoFar": "지금까지 {amount} lbs 늘었습니다.",
+        "wk": "{n}주",
+        "lbsValue": "{n} lbs",
+        "lbsTotal": "총 {n} lbs",
+        "savedToast": "{week}주에 {lbs} lbs 저장했습니다"
       },
       "appts": {
         "addVisit": "+ 진료 추가",
@@ -335,7 +364,12 @@ window.MYOB_LOCALES.ko = {
         "delete": "삭제",
         "visitDeleted": "진료 기록이 삭제되었습니다",
         "noVisits": "아직 기록된 진료가 없습니다. 위에서 추가해 질문과 메모를 관리하세요.",
-        "deleteConfirm": "이 진료 기록을 삭제할까요?"
+        "deleteConfirm": "이 진료 기록을 삭제할까요?",
+        "untitledVisit": "제목 없는 진료",
+        "editVisit": "진료 수정",
+        "noQuestionsAdded": "추가한 질문 없음",
+        "visitUpdated": "진료를 수정했습니다",
+        "visitAdded": "진료를 추가했습니다"
       },
       "cx": {
         "noContractions": "아직 기록된 진통이 없습니다.<br>진통이 시작되면 \"진통 시작\"을 눌러 주세요.",
@@ -349,7 +383,9 @@ window.MYOB_LOCALES.ko = {
         "interval": "{t} 간격",
         "alertGo": "진통 간격 약 {mins}분, 지속 약 {secs}초입니다. 지금 분만실에 전화하세요.",
         "alert511": "간격 약 {mins}분, 지속 약 {secs}초입니다. 첫 출산이라면 병원으로 가세요. 양수가 터지거나 확실하지 않으면 전화하세요.",
-        "alertProgress": "지난 1시간: 진통 {n}회, 약 {mins}분 간격, 한 번에 약 {secs}초. 아직 5-1-1이 아닙니다."
+        "alertProgress": "지난 1시간: 진통 {n}회, 약 {mins}분 간격, 한 번에 약 {secs}초. 아직 5-1-1이 아닙니다.",
+        "reachedIn": "{time} 만에 도달",
+        "contractionEnding": "수축 끝"
       },
       "i18n": {
         "intro": "Obiana를 사용하시는 언어로 한 문장씩 확인해 주세요. 어색한 부분은 고치고, 괜찮으면 맞아요를 누르세요.",
@@ -625,7 +661,9 @@ window.MYOB_LOCALES.ko = {
       "date": "날짜",
       "questionsToAskBeforehand": "미리 물어볼 질문",
       "notesFromVisit": "진료 메모",
-      "saveVisit": "진료 저장"
+      "saveVisit": "진료 저장",
+      "questionsPlaceholder": "이번 진료에서 무엇을 물어볼까요?",
+      "notesPlaceholder": "무엇을 이야기했나요? 추가로 필요한 것이 있나요?"
     },
     "apptType": {
       "selectType": "종류 선택…",
@@ -651,7 +689,11 @@ window.MYOB_LOCALES.ko = {
       "addToPhone": "휴대폰에 추가"
     },
     "common": {
-      "toolsBack": "도구"
+      "toolsBack": "도구",
+      "eg": "예: {n}",
+      "close": "닫기",
+      "skipToContent": "본문으로 건너뛰기",
+      "undo": "실행 취소"
     },
     "nav": {
       "prenatal": "임신 중<br>진료",
@@ -691,7 +733,8 @@ window.MYOB_LOCALES.ko = {
       "sizeLarge": "크게",
       "sizeLarger": "더 크게",
       "language": "언어",
-      "darkMode": "다크 모드"
+      "darkMode": "다크 모드",
+      "datesTitle": "나의 날짜"
     },
     "urgent": {
       "title": "연락해야 할 때",
@@ -813,6 +856,9 @@ window.MYOB_LOCALES.ko = {
         "i2": "임신성 당뇨가 있었다면: 출산 후 4–12주에 당 검사를 하세요. 제2형 당뇨 위험은 평생 높게 유지되므로 1–3년마다 검사를 요청하세요.",
         "i3": "소변이나 변이 새거나, 성관계 때 아프거나, 질에 무언가 튀어나온 느낌이 있다면 골반저 물리치료에 대해 물어보세요. 도움이 됩니다. 참고 살 필요가 없습니다."
       }
+    },
+    "guide": {
+      "quickAnswers": "빠른 답"
     }
   },
   "content": {
@@ -2705,6 +2751,50 @@ window.MYOB_LOCALES.ko = {
     "content.faq-vaccines.t.4": 1,
     "content.faq-vaccines.t.5": 1,
     "content.faq-vaccines.t.6": 1,
-    "content.faq-vaccines.t.7": 1
+    "content.faq-vaccines.t.7": 1,
+    "search.label": 1,
+    "search.clear": 1,
+    "myinfo.saved": 1,
+    "myinfo.notesPlaceholder": 1,
+    "myinfo.importData": 1,
+    "myinfo.importConfirm": 1,
+    "myinfo.notesLabel": 1,
+    "myinfo.callContact": 1,
+    "myinfo.textContact": 1,
+    "toast.importDone": 1,
+    "toast.importFailed": 1,
+    "toast.importNothing": 1,
+    "toast.notSaved": 1,
+    "tool.mood.important": 1,
+    "tool.mood.phq9Title": 1,
+    "tool.birthplan.generatedWith": 1,
+    "tool.common.entryDeleted": 1,
+    "tool.feed.bottleOz": 1,
+    "tool.diaper.loggedWet": 1,
+    "tool.diaper.loggedDirty": 1,
+    "tool.diaper.loggedGeneric": 1,
+    "tool.diaper.wet": 1,
+    "tool.diaper.dirty": 1,
+    "tool.diaper.both": 1,
+    "tool.weight.gainedSoFar": 1,
+    "tool.weight.wk": 1,
+    "tool.weight.lbsValue": 1,
+    "tool.weight.lbsTotal": 1,
+    "tool.weight.savedToast": 1,
+    "tool.appts.untitledVisit": 1,
+    "tool.appts.editVisit": 1,
+    "tool.appts.noQuestionsAdded": 1,
+    "tool.appts.visitUpdated": 1,
+    "tool.appts.visitAdded": 1,
+    "tool.cx.reachedIn": 1,
+    "tool.cx.contractionEnding": 1,
+    "modalAppt.questionsPlaceholder": 1,
+    "modalAppt.notesPlaceholder": 1,
+    "common.eg": 1,
+    "common.close": 1,
+    "common.skipToContent": 1,
+    "common.undo": 1,
+    "guide.quickAnswers": 1,
+    "me.datesTitle": 1
   }
 };
