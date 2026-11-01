@@ -132,3 +132,7 @@ Don't build a second tool beside it.
 - Push only with `git push obiana obiana-main:main`.
 
 ## Found while working
+- `translation/merge.js` (full mode) writes `ui` only from the ui batches present. Run it for a language that has content batches but no ui batches and the locale's whole `ui` block is replaced with `{}`. Content has a guard for this; ui doesn't. (`--keys` mode patches in place and isn't affected.)
+- ui strings carry no `srcHash`, so `stamp.js report` never shows a ui key as stale. When to call, Today and Visits are ui strings, so §1's "done when report lists none of the §1 keys" can't see them. Re-translate them with `run-kimi.sh --keys` regardless, and decide whether ui needs fingerprints before §3 orders "outdated".
+- `translation/out/` still holds October's full batches for es/fr/ko/ar/ru/zh/zom. They no longer validate against today's snapshot, so full-mode merge skips them, but they are stale and worth deleting.
+- `run-kimi.sh` full mode filters languages with `grep -qw "$lang"`, so asking for `pt-BR` would also match a `pt` batch. No `pt` locale exists today.
