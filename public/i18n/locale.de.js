@@ -475,7 +475,8 @@ window.MYOB_LOCALES.de = {
         "recentContractions": "Letzte Wehen",
         "timeToGoToThe": "🚨 Zeit, ins Krankenhaus zu fahren",
         "511PatternReached": "5-1-1-Muster erreicht",
-        "entryDeleted": "Eintrag gelöscht"
+        "entryDeleted": "Eintrag gelöscht",
+        "delete": "Löschen"
       },
       "feed": {
         "feedsInLast24Hrs": "Mahlzeiten in den letzten 24 Std.",

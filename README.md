@@ -61,29 +61,36 @@ Details and sources: [scripts/epds/SOURCES.md](scripts/epds/SOURCES.md).
 
 ```
 public/               THE SITE. Only this folder is deployed; nothing else is served.
-  index.html          shell: every page and modal
+  index.html          shell: every page and modal, sharing and hreflang tags
   styles.css          all styles, including dark mode, RTL and print
   app/
-    core/             storage, navigation, toast/undo, PWA install and service worker
-    guide/            structure.js (card list), cards.js (rendering), search.js
-    tools/            one file per tool: kick, contractions, feeding, diapers, ...
-    contribute/       in-app Translation Helper and "Help Improve This Guide"
-    myinfo.js  settings.js  first-run.js  language.js  boot.js
+    core/             storage, dates, navigation, router, toast/undo, theme, PWA install
+    guide/            structure.js (card list), cards.js (rendering), visits.js (visit
+                      timeline), urgent.js (When to call), search.js
+    tools/            one file per tool: kick, contractions, feeding, diapers, jaundice,
+                      bp, weight, mood (loads its questionnaires on demand), birthplan,
+                      appts, nausea; shared.js
+    contribute/       translate.js (the Translate page, #/translate) and improve.js
+                      ("Help Improve This Guide")
+    today.js  myinfo.js  settings.js  first-run.js  language.js  boot.js
   sw.js               service worker, cache-first
-  manifest.json       PWA metadata
+  manifest.json       PWA metadata (icon-maskable-512.png for Android)
+  _headers            security headers for every static file
+  robots.txt  sitemap.xml   the root plus one ?lang= link per language
   flags/              bundled SVG flags (see NOTICE.md)
   i18n/
-    i18n.js           locale loading, t(), formatting, search folding
+    i18n.js           locale loading, t(), units ({temp:…} tokens), formatting, search folding
     body-templates.js the HTML skeleton of every card, shared by all languages
-    locale.<lang>.js  one file per language: ui strings + guide content
+    locale.<lang>.js  one file per language: ui strings + guide content + fingerprints
     epds/             validated screening instruments
-worker/               Cloudflare Worker: /api/suggest, /api/feedback
+worker/               Cloudflare Worker: /api/suggest, /api/feedback, /api/health
 scripts/              check.js (preflight), bump.js (cache version), epds/ (instrument tooling)
-translation/          batch translation pipeline, validators, runtime audit
+translation/          drafting pipeline (prepare, validate, merge), fingerprints (stamp),
+                      runtime audit; RUN.md
 editor/               local English editor (127.0.0.1:3906)
 review/               local app for reviewing what readers send in (127.0.0.1:3905)
-docs/                 CONTENT_MAP (where every topic lives), TRANSLATING, ROADMAP
-                      docs/private/ is gitignored
+docs/                 CONTENT_MAP (where every topic lives), NEXT (the work plan),
+                      TRANSLATING, ROADMAP. docs/private/ is gitignored
 ```
 
 Plain static files. No build step, no framework, no bundler.
@@ -127,14 +134,17 @@ which catches untranslated strings no source scan can see. Paste
 
 ## Contributing
 
-Both contribution paths are in the app itself, under **Tools > Help Us Improve**:
+Both contribution paths are in the app itself:
 
-- **Translation Helper**: every phrase against its English source, with a
-  submit button per phrase
+- **Help translate** (Me, or Tools > Help Us Improve; `#/translate/<lang>` opens
+  straight on a language): one sentence at a time, with the English, where it
+  appears, and the current translation ready to edit. Send, Looks right or Skip.
+  Works offline; what you send waits and goes when you are back online.
 - **Help Improve This Guide**: tell us how something is done in your culture,
   ask about a topic that is missing, or flag a passage that read badly
 
 Submissions go to a Cloudflare D1 database. Nothing is applied automatically.
+See [docs/TRANSLATING.md](docs/TRANSLATING.md).
 
 ## Licence
 

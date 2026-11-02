@@ -52,7 +52,7 @@ function renderFeedList() {
       <span class="feed-time">${fmtTimeOfDay(f.ts)}<br><span style="font-size:10px">${fmtDate(f.ts)}</span></span>
       <span class="feed-detail">${f.type === 'breast' ? t('tool.feed.breast') : t('tool.feed.bottle')}</span>
       <span class="feed-note">${detail}</span>
-      <button onclick="deleteFeed(${i})" style="background:none;border:none;color:var(--ink-soft);font-size:16px;cursor:pointer;padding:4px;-webkit-tap-highlight-color:transparent">×</button>
+      <button type="button" class="row-delete" onclick="deleteFeed(${i})" aria-label="${escHtml(I18n.t('tool.common.delete'))}">×</button>
     </div>`;
   }).join('');
 }

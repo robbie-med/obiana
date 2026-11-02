@@ -13,11 +13,42 @@
 <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="./apple-touch-icon.png">
 <link rel="manifest" href="./manifest.json">
-<link rel="stylesheet" href="./styles.css?v=118">
-<link rel="stylesheet" href="./fonts/fonts.css?v=118">
+<!-- Sharing and search. Language versions are the root plus ?lang= links;
+     the canonical is set to match the language on load (i18n.js updateCanonical). -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Obiana">
+<meta property="og:title" content="Obiana: Pregnancy Handbook">
+<meta property="og:description" content="Evidence-based pregnancy, birth and newborn guide in 17 languages. Free, open source, and works offline.">
+<meta property="og:url" content="https://obiana.app/">
+<meta property="og:image" content="https://obiana.app/icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Obiana">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" id="canonical" href="https://obiana.app/">
+<link rel="alternate" hreflang="x-default" href="https://obiana.app/">
+<link rel="alternate" hreflang="en" href="https://obiana.app/?lang=en">
+<link rel="alternate" hreflang="es" href="https://obiana.app/?lang=es">
+<link rel="alternate" hreflang="fr" href="https://obiana.app/?lang=fr">
+<link rel="alternate" hreflang="ko" href="https://obiana.app/?lang=ko">
+<link rel="alternate" hreflang="ar" href="https://obiana.app/?lang=ar">
+<link rel="alternate" hreflang="ru" href="https://obiana.app/?lang=ru">
+<link rel="alternate" hreflang="zh" href="https://obiana.app/?lang=zh">
+<link rel="alternate" hreflang="zom" href="https://obiana.app/?lang=zom">
+<link rel="alternate" hreflang="ja" href="https://obiana.app/?lang=ja">
+<link rel="alternate" hreflang="tl" href="https://obiana.app/?lang=tl">
+<link rel="alternate" hreflang="pt-BR" href="https://obiana.app/?lang=pt-BR">
+<link rel="alternate" hreflang="ps" href="https://obiana.app/?lang=ps">
+<link rel="alternate" hreflang="prs" href="https://obiana.app/?lang=prs">
+<link rel="alternate" hreflang="vi" href="https://obiana.app/?lang=vi">
+<link rel="alternate" hreflang="th" href="https://obiana.app/?lang=th">
+<link rel="alternate" hreflang="de" href="https://obiana.app/?lang=de">
+<link rel="alternate" hreflang="pl" href="https://obiana.app/?lang=pl">
+<link rel="stylesheet" href="./styles.css?v=119">
+<link rel="stylesheet" href="./fonts/fonts.css?v=119">
 </head>
 <body>
-<script src="./app/core/theme.js?v=118"></script>
+<script src="./app/core/theme.js?v=119"></script>
 <a href="#app" class="skip-link" data-i18n="common.skipToContent">Skip to content</a>
 <main id="app">
 
@@ -756,48 +787,40 @@
      subtree is gone from the box tree, so printing produced a blank page. -->
 <div id="print-view"></div>
 
-<script src="./i18n/i18n.js?v=118"></script>
-<script src="./i18n/body-templates.js?v=118"></script>
-<script src="./i18n/epds/epds.en.js?v=118"></script>
-<script src="./i18n/epds/epds.es.js?v=118"></script>
-<script src="./i18n/epds/epds.cnh.js?v=118"></script>
-<script src="./i18n/epds/epds.ko.js?v=118"></script>
-<script src="./i18n/epds/epds.zh.js?v=118"></script>
-<script src="./i18n/epds/epds.ar.js?v=118"></script>
-<script src="./i18n/epds/phq9.fr.js?v=118"></script>
-<script src="./i18n/epds/phq9.ru.js?v=118"></script>
+<script src="./i18n/i18n.js?v=119"></script>
+<script src="./i18n/body-templates.js?v=119"></script>
 <!-- App: classic scripts sharing one global scope, in dependency order.
      Guide and app shell first, then the tools, then the contributor tools. -->
-<script src="./app/guide/structure.js?v=118"></script>
-<script src="./app/core/storage.js?v=118"></script>
-<script src="./app/core/dates.js?v=118"></script>
-<script src="./app/guide/cards.js?v=118"></script>
-<script src="./app/guide/visits.js?v=118"></script>
-<script src="./app/myinfo.js?v=118"></script>
-<script src="./app/guide/search.js?v=118"></script>
-<script src="./app/core/nav.js?v=118"></script>
-<script src="./app/core/router.js?v=118"></script>
-<script src="./app/guide/urgent.js?v=118"></script>
-<script src="./app/today.js?v=118"></script>
-<script src="./app/core/pwa.js?v=118"></script>
-<script src="./app/core/ui.js?v=118"></script>
-<script src="./app/settings.js?v=118"></script>
-<script src="./app/first-run.js?v=118"></script>
-<script src="./app/language.js?v=118"></script>
-<script src="./app/boot.js?v=118"></script>
-<script src="./app/tools/shared.js?v=118"></script>
-<script src="./app/tools/kick.js?v=118"></script>
-<script src="./app/tools/contractions.js?v=118"></script>
-<script src="./app/tools/feeding.js?v=118"></script>
-<script src="./app/tools/diapers.js?v=118"></script>
-<script src="./app/tools/jaundice.js?v=118"></script>
-<script src="./app/tools/bp.js?v=118"></script>
-<script src="./app/tools/weight.js?v=118"></script>
-<script src="./app/tools/mood.js?v=118"></script>
-<script src="./app/tools/birthplan.js?v=118"></script>
-<script src="./app/tools/appts.js?v=118"></script>
-<script src="./app/contribute/translate.js?v=118"></script>
-<script src="./app/contribute/improve.js?v=118"></script>
-<script src="./app/tools/nausea.js?v=118"></script>
+<script src="./app/guide/structure.js?v=119"></script>
+<script src="./app/core/storage.js?v=119"></script>
+<script src="./app/core/dates.js?v=119"></script>
+<script src="./app/guide/cards.js?v=119"></script>
+<script src="./app/guide/visits.js?v=119"></script>
+<script src="./app/myinfo.js?v=119"></script>
+<script src="./app/guide/search.js?v=119"></script>
+<script src="./app/core/nav.js?v=119"></script>
+<script src="./app/core/router.js?v=119"></script>
+<script src="./app/guide/urgent.js?v=119"></script>
+<script src="./app/today.js?v=119"></script>
+<script src="./app/core/pwa.js?v=119"></script>
+<script src="./app/core/ui.js?v=119"></script>
+<script src="./app/settings.js?v=119"></script>
+<script src="./app/first-run.js?v=119"></script>
+<script src="./app/language.js?v=119"></script>
+<script src="./app/boot.js?v=119"></script>
+<script src="./app/tools/shared.js?v=119"></script>
+<script src="./app/tools/kick.js?v=119"></script>
+<script src="./app/tools/contractions.js?v=119"></script>
+<script src="./app/tools/feeding.js?v=119"></script>
+<script src="./app/tools/diapers.js?v=119"></script>
+<script src="./app/tools/jaundice.js?v=119"></script>
+<script src="./app/tools/bp.js?v=119"></script>
+<script src="./app/tools/weight.js?v=119"></script>
+<script src="./app/tools/mood.js?v=119"></script>
+<script src="./app/tools/birthplan.js?v=119"></script>
+<script src="./app/tools/appts.js?v=119"></script>
+<script src="./app/contribute/translate.js?v=119"></script>
+<script src="./app/contribute/improve.js?v=119"></script>
+<script src="./app/tools/nausea.js?v=119"></script>
 </body>
 </html>

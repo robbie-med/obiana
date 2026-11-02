@@ -471,7 +471,8 @@ window.MYOB_LOCALES.th = {
         "recentContractions": "การหดรัดตัวล่าสุด",
         "timeToGoToThe": "🚨 ถึงเวลาไปโรงพยาบาล",
         "511PatternReached": "ถึงรูปแบบ 5-1-1 แล้ว",
-        "entryDeleted": "ลบรายการแล้ว"
+        "entryDeleted": "ลบรายการแล้ว",
+        "delete": "ลบ"
       },
       "feed": {
         "feedsInLast24Hrs": "มื้อนมใน 24 ชม. ที่ผ่านมา",

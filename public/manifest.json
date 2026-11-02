@@ -1,8 +1,10 @@
 {
+  "id": "/",
   "name": "Obiana: Pregnancy Handbook",
   "short_name": "Obiana",
   "description": "Evidence-based pregnancy, birth and newborn guide in 17 languages. Free, open source, and works offline.",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
   "background_color": "#1d4e4e",
@@ -24,7 +26,13 @@
       "src": "./icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "categories": [
@@ -32,5 +40,6 @@
     "medical",
     "education"
   ],
-  "lang": "en-US"
+  "lang": "en-US",
+  "dir": "ltr"
 }

@@ -65,7 +65,7 @@ function renderDiaperList() {
       <span>${icons[d.type]}</span>
       <span style="flex:1;font-weight:600">${labels[d.type]}</span>
       <span style="color:var(--ink-soft)">${fmtTimeOfDay(d.ts)}</span>
-      <button onclick="deleteDiaper(${i})" style="background:none;border:none;color:var(--ink-soft);font-size:16px;cursor:pointer;margin-inline-start:6px;padding:2px 4px">×</button>
+      <button type="button" class="row-delete" onclick="deleteDiaper(${i})" aria-label="${escHtml(I18n.t('tool.common.delete'))}">×</button>
     </div>`).join('');
 }
 

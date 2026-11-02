@@ -261,7 +261,8 @@ window.MYOB_LOCALES.ru = {
         "recentContractions": "Недавние схватки",
         "timeToGoToThe": "🚨 Пора ехать в больницу",
         "511PatternReached": "Достигнут режим 5-1-1",
-        "entryDeleted": "Запись удалена"
+        "entryDeleted": "Запись удалена",
+        "delete": "Удалить"
       },
       "feed": {
         "feedsInLast24Hrs": "Кормлений за последние 24 часа",

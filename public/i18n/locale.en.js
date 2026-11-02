@@ -257,7 +257,8 @@ window.MYOB_LOCALES.en = {
         "recentContractions": "Recent Contractions",
         "timeToGoToThe": "🚨 Time to go to the hospital",
         "511PatternReached": "5-1-1 Pattern Reached",
-        "entryDeleted": "Entry deleted"
+        "entryDeleted": "Entry deleted",
+        "delete": "Delete"
       },
       "feed": {
         "feedsInLast24Hrs": "Feeds in last 24 hrs",

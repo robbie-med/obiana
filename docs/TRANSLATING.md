@@ -10,16 +10,31 @@ ship".
 
 ## 1. From inside the app (no setup)
 
-**Tools > Help Us Improve > Translation Helper.**
+Open **Me > Help translate** (also under **Tools > Help Us Improve**). A link
+of the form `https://obiana.app/#/translate/es` opens straight on one language.
 
-Pick your language and every phrase appears against its English source, marked
-`✓` translated, `≡` identical to English, or `✗` missing. Type a better version
-and press **Submit**. Filter to "Needs work" to see only what is unfinished.
+Pick your language once. Each sentence then shows where it appears in the app,
+the English, and the current translation ready to edit:
 
-Works on a phone. Nothing to install, no account, no repo.
+- **Send** your better wording,
+- **Looks right** if what is there is correct,
+- **Skip** to come back to it later.
 
-If you would rather not submit directly, **Export my suggestions** downloads a
-JSON file in exactly the shape the merge pipeline takes.
+Sentences readers need most come first (When to call, then the tabs, Today,
+the visit timeline, the guide cards in order), and within those: missing, then
+machine drafts nobody has checked, then sentences whose English changed.
+
+Works on a phone, with no account and nothing to install. It works offline
+too: what you send waits on the phone and goes when you are back online.
+Nothing from your trackers is ever sent, only the sentence and your wording.
+
+Some sentences contain things in braces: `{count}` is filled in by the app, and
+`{temp:100.4}`, `{vol:4-6}`, `{wt:12}` or `{lb:25-35}` are measured values the
+app shows in °F or °C, oz or mL, as the reader chose. Keep them exactly as they
+are, and don't add the unit yourself.
+
+You can also suggest a change right where you read it: turn on "Tap a sentence
+to suggest better wording" in Me > Settings, then tap any underlined sentence.
 
 ## 2. Cultural context and questions
 
@@ -102,7 +117,7 @@ sw: { name: 'Swahili', native: 'Kiswahili', dir: 'ltr',
 4. Add the file and flag to `ASSETS` in `sw.js`, and add the code to `LOCALES`
    in `worker/index.js` so submissions are accepted for it.
 
-The picker, first-run screen and Translation Helper all read `LOCALES` at
+The picker, first-run screen and Translate page all read `LOCALES` at
 runtime. Nothing else to register.
 
 Notes:

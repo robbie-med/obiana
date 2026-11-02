@@ -35,7 +35,13 @@ function epdsAvailable() {
     const e = window.MYOB_EPDS[c];
     const n = (e && e.instrument === 'PHQ-9') ? 9 : 10;
     return e && e.validated && Array.isArray(e.questions) && e.questions.length === n;
-  });
+  // In a fixed order: the forms load in parallel and register in whatever
+  // order they arrive, which must not reshuffle the list she chooses from.
+  }).sort((a, b) => epdsRank(a) - epdsRank(b));
+}
+function epdsRank(code) {
+  const i = EPDS_FILES.findIndex(f => f.split('.')[1] === code);
+  return i === -1 ? EPDS_FILES.length : i;
 }
 
 function getEPDS() {
@@ -60,9 +66,39 @@ let epdsHistory = safeLoad('epds-history', []);
 
 TOOL_INITS['tool-mood'] = initMood;
 
+// The validated questionnaires (about 45 KB) load only when the mood tool
+// opens, not with every page. The service worker precaches them, so this works
+// offline too. Same ?v= as this script, so a new version never mixes with old.
+const MOOD_V = (() => {
+  try { return new URL(document.currentScript.src, location.href).searchParams.get('v') || ''; }
+  catch (e) { return ''; }
+})();
+const EPDS_FILES = ['epds.en', 'epds.es', 'epds.cnh', 'epds.ko', 'epds.zh', 'epds.ar', 'phq9.fr', 'phq9.ru'];
+let epdsLoading = null;
+let epdsLoaded = false;
+function epdsReady() {
+  return epdsLoaded || Object.keys(window.MYOB_EPDS || {}).length >= EPDS_FILES.length;
+}
+function loadEPDS() {
+  if (!epdsLoading) {
+    epdsLoading = Promise.all(EPDS_FILES.map(f => new Promise(done => {
+      const s = document.createElement('script');
+      s.src = `./i18n/epds/${f}.js?v=${MOOD_V}`;
+      s.onload = s.onerror = done;   // a missing form just isn't offered
+      document.head.appendChild(s);
+    }))).then(() => { epdsLoaded = true; });
+  }
+  return epdsLoading;
+}
+
 function initMood() {
   const el = document.getElementById('mood-content');
   if (!el) return;
+  if (!epdsReady()) {
+    el.innerHTML = `<p class="history-empty">${t('tool.i18n.loading')}</p>`;
+    loadEPDS().then(() => { if (currentSection === 'tool-mood') initMood(); });
+    return;
+  }
   epdsAnswers = {};
 
   const epds = getEPDS();

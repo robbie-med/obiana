@@ -478,7 +478,8 @@ window.MYOB_LOCALES.ps = {
         "recentContractions": "وروستي انقباضونه",
         "timeToGoToThe": "🚨 روغتون ته د تګ وخت دی",
         "511PatternReached": "د 5-1-1 الګو ته ورسېد",
-        "entryDeleted": "توکی پاک شو"
+        "entryDeleted": "توکی پاک شو",
+        "delete": "پاکول"
       },
       "feed": {
         "feedsInLast24Hrs": "په تېرو 24 ساعتونو کې شیدې",

@@ -1,0 +1,16 @@
+# Response headers for every static file (Workers static assets read this
+# file; it is never served). API responses set the same headers in
+# worker/index.js.
+#
+# nosniff:          a file is only ever run as the type it is served as.
+# no-referrer:      leaving for a hotline or MotherToBaby tells them nothing
+#                   about which page she was reading.
+# frame-ancestors / X-Frame-Options: no other site can show Obiana inside a
+#                   frame and lay its own buttons over it.
+# Permissions:      the app never needs camera, microphone or location.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  X-Frame-Options: DENY
+  Content-Security-Policy: frame-ancestors 'none'
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()

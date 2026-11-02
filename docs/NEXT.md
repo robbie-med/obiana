@@ -120,18 +120,20 @@ Don't build a second tool beside it.
 - [x] The text around the tokens stays US.
 
 ## 7. Site polish
-- [ ] **Security:** `public/_headers` (nosniff, referrer policy, no framing); escape tool strings by default.
-- [ ] **Worker:**
-  - content-type check;
-  - real body size: read the body with an 8 KB cap. Don't trust `content-length`, which can be left off;
-  - origin check;
-  - `/api/health` runs a trivial D1 query;
-  - the worker logs only its own failures (`console.error` of the error name, never request bodies) to Cloudflare. Nothing is sent from the app.
-- [ ] **Accessibility:** label and enlarge the four delete buttons; move focus to the page heading on navigation.
-- [ ] **Speed:** smaller Spanish/Afghan flag files (`es.svg` 81 KB, `af.svg` 19 KB); load the 8 EPDS/PHQ-9 scripts only inside the mood tool, not from `index.html`.
-- [ ] **Sharing:** Open Graph tags, canonical, `robots.txt`, `sitemap.xml`, `?lang=` links with hreflang (root plus `?lang=` variants only; hash routes aren't indexed, so no per-card URLs); manifest `id`/`dir`/maskable icon.
-- [ ] **No telemetry, ever.** No error reporter, beacon or analytics in the app. Breakage is caught before release by `check.js` and the browser run.
-- [ ] **Docs:** README layout; TRANSLATING.md points to the Translate page.
+Done 2026-11-02 (v119), except where noted.
+- [x] **Security:** `public/_headers` (nosniff, no-referrer, X-Frame-Options DENY + `frame-ancestors 'none'`, no camera/mic/location); the global `t()`/`tp()` turn any `<` other than `<br>` into text (ui strings carry no other markup; render identical before and after).
+- [x] **Worker:**
+  - POSTs must be `application/json` (415 otherwise);
+  - body read with an 8 KB cap from the stream itself (413), `content-length` not trusted;
+  - Origin must equal the request's own origin (403);
+  - `/api/health` runs `SELECT 1`;
+  - failures logged as `console.error` of the error name and message only.
+  - Tested against a local SQLite copy of the D1 schema (`node:sqlite`; wrangler dev would have opened an unregistered inspector port).
+- [x] **Accessibility:** the four tracker × buttons have a translated "Delete" label and a 44 px target; navigating moves focus to the new page's heading (not on first load, not when a card is opening).
+- [x] **Speed:** `es.svg` is the civil flag (81 KB → 174 B); `af.svg` is the tricolor without the emblem, which is unreadable at flag size (19 KB → 229 B); the 8 EPDS/PHQ-9 files load when the mood tool opens (still precached; list order fixed).
+- [x] **Sharing:** Open Graph + twitter card, canonical (set per `?lang=` on load), hreflang for the root and each `?lang=`, `robots.txt`, `sitemap.xml`, manifest `id`/`scope`/`dir`, full-bleed `icon-maskable-512.png`.
+- [x] **No telemetry, ever.** Checked: no beacon, analytics or error reporter in `public/`.
+- [x] **Docs:** README layout and Contributing; TRANSLATING.md now starts from the Translate page and explains unit tokens.
 
 ## Order
 1 and 2 first (small, needed before translators start). Then 3. Then 4 and 5 in parallel, with 6 and 7 alongside.

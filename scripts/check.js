@@ -215,6 +215,9 @@ async function render() {
   for (const rel of order) {
     load(ctx, rel);
     if (/i18n\/i18n\.js$/.test(rel)) langs.forEach(l => load(ctx, `i18n/locale.${l}.js`));
+    // The mood tool loads its questionnaires on demand; here they load up front
+    // so every form is rendered and checked.
+    if (/i18n\/i18n\.js$/.test(rel)) fs.readdirSync(path.join(P.web, 'i18n', 'epds')).filter(f => f.endsWith('.js')).forEach(f => load(ctx, `i18n/epds/${f}`));
   }
   const run = code => vm.runInContext(code, ctx);
   const sections = run('Object.keys(CONTENT_STRUCTURE)');

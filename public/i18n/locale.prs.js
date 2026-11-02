@@ -478,7 +478,8 @@ window.MYOB_LOCALES.prs = {
         "recentContractions": "انقباض‌های اخیر",
         "timeToGoToThe": "🚨 وقت رفتن به شفاخانه است",
         "511PatternReached": "به الگوی 5-1-1 رسید",
-        "entryDeleted": "مورد پاک شد"
+        "entryDeleted": "مورد پاک شد",
+        "delete": "پاک کردن"
       },
       "feed": {
         "feedsInLast24Hrs": "شیر خوردن در 24 ساعت گذشته",

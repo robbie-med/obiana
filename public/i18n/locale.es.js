@@ -259,7 +259,8 @@ window.MYOB_LOCALES.es = {
         "recentContractions": "Contracciones recientes",
         "timeToGoToThe": "🚨 Es hora de ir al hospital",
         "511PatternReached": "Patrón 5-1-1 alcanzado",
-        "entryDeleted": "Registro eliminado"
+        "entryDeleted": "Registro eliminado",
+        "delete": "Eliminar"
       },
       "feed": {
         "feedsInLast24Hrs": "Tomas en las últimas 24 h",

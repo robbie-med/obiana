@@ -2325,3 +2325,9 @@ body.dark .today-urgent { background: #8f2a2a; }
 .dot-list { margin: 6px 0 10px; padding-inline-start: 22px; }
 .dot-list li { margin: 4px 0; line-height: 1.5; }
 .callout .dot-list { margin: 4px 0 2px; }
+
+/* The × on tracker rows: a labelled, finger-sized target (44px), not a 16px glyph. */
+.row-delete { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; background: none; border: none; color: var(--ink-soft); font-size: 20px; line-height: 1; cursor: pointer; padding: 0; margin-inline-start: 4px; border-radius: var(--radius-sm); -webkit-tap-highlight-color: transparent; }
+.row-delete:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+/* Headings take focus on navigation for screen readers; no ring for that. */
+.focus-target:focus { outline: none; }

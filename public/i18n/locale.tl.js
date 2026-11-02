@@ -478,7 +478,8 @@ window.MYOB_LOCALES.tl = {
         "recentContractions": "Mga Kamakailang Contraction",
         "timeToGoToThe": "🚨 Oras na para pumunta sa ospital",
         "511PatternReached": "Naabot ang 5-1-1 na Pattern",
-        "entryDeleted": "Nabura ang entry"
+        "entryDeleted": "Nabura ang entry",
+        "delete": "Burahin"
       },
       "feed": {
         "feedsInLast24Hrs": "Pagdede sa nakaraang 24 oras",

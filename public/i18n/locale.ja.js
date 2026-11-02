@@ -474,7 +474,8 @@ window.MYOB_LOCALES.ja = {
         "recentContractions": "最近の陣痛",
         "timeToGoToThe": "🚨 病院へ行く時間です",
         "511PatternReached": "5-1-1のパターンに達しました",
-        "entryDeleted": "記録を削除しました"
+        "entryDeleted": "記録を削除しました",
+        "delete": "削除"
       },
       "feed": {
         "feedsInLast24Hrs": "この24時間の授乳",

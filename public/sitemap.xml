@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://obiana.app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://obiana.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://obiana.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://obiana.app/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://obiana.app/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://obiana.app/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://obiana.app/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://obiana.app/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="zom" href="https://obiana.app/?lang=zom"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://obiana.app/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://obiana.app/?lang=tl"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://obiana.app/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://obiana.app/?lang=ps"/>
+    <xhtml:link rel="alternate" hreflang="prs" href="https://obiana.app/?lang=prs"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://obiana.app/?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://obiana.app/?lang=th"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://obiana.app/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://obiana.app/?lang=pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://obiana.app/"/>
+  </url>
+  <url>
+    <loc>https://obiana.app/?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://obiana.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://obiana.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://obiana.app/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://obiana.app/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://obiana.app/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://obiana.app/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://obiana.app/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="zom" href="https://obiana.app/?lang=zom"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://obiana.app/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://obiana.app/?lang=tl"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://obiana.app/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://obiana.app/?lang=ps"/>
+    <xhtml:link rel="alternate" hreflang="prs" href="https://obiana.app/?lang=prs"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://obiana.app/?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://obiana.app/?lang=th"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://obiana.app/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://obiana.app/?lang=pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://obiana.app/"/>
+  </url>
+  <url>
+    <loc>https://obiana.app/?lang=es</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://obiana.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://obiana.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://obiana.app/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://obiana.app/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://obiana.app/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://obiana.app/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://obiana.app/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="zom" href="https://obiana.app/?lang=zom"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://obiana.app/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://obiana.app/?lang=tl"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://obiana.app/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://obiana.app/?lang=ps"/>
+    <xhtml:link rel="alternate" hreflang="prs" href="https://obiana.app/?lang=prs"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://obiana.app/?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://obiana.app/?lang=th"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://obiana.app/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://obiana.app/?lang=pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://obiana.app/"/>
+  </url>
+  <url>
+    <loc>https://obiana.app/?lang=fr</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://obiana.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://obiana.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://obiana.app/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://obiana.app/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://obiana.app/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://obiana.app/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://obiana.app/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="zom" href="https://obiana.app/?lang=zom"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://obiana.app/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://obiana.app/?lang=tl"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://obiana.app/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://obiana.app/?lang=ps"/>
+    <xhtml:link rel="alternate" hreflang="prs" href="https://obiana.app/?lang=prs"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://obiana.app/?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://obiana.app/?lang=th"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://obiana.app/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://obiana.app/?lang=pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://obiana.app/"/>
+  </url>
+  <url>
+    <loc>https://obiana.app/?lang=ko</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://obiana.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://obiana.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://obiana.app/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://obiana.app/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://obiana.app/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://obiana.app/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://obiana.app/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="zom" href="https://obiana.app/?lang=zom"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://obiana.app/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://obiana.app/?lang=tl"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://obiana.app/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://obiana.app/?lang=ps"/>
+    <xhtml:link rel="alternate" hreflang="prs" href="https://obiana.app/?lang=prs"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://obiana.app/?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://obiana.app/?lang=th"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://obiana.app/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://obiana.app/?lang=pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://obiana.app/"/>
+  </url>
+  <url>
+    <loc>https://obiana.app/?lang=ar</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://obiana.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://obiana.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://obiana.app/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://obiana.app/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://obiana.app/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://obiana.app/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://obiana.app/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="zom" href="https://obiana.app/?lang=zom"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://obiana.app/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://obiana.app/?lang=tl"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://obiana.app/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://obiana.app/?lang=ps"/>
+    <xhtml:link rel="alternate" hreflang="prs" href="https://obiana.app/?lang=prs"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://obiana.app/?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://obiana.app/?lang=th"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://obiana.app/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://obiana.app/?lang=pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://obiana.app/"/>
+  </url>
+  <url>
+    <loc>https://obiana.app/?lang=ru</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://obiana.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://obiana.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://obiana.app/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://obiana.app/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://obiana.app/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://obiana.app/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://obiana.app/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="zom" href="https://obiana.app/?lang=zom"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://obiana.app/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://obiana.app/?lang=tl"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://obiana.app/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://obiana.app/?lang=ps"/>
+    <xhtml:link rel="alternate" hreflang="prs" href="https://obiana.app/?lang=prs"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://obiana.app/?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://obiana.app/?lang=th"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://obiana.app/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://obiana.app/?lang=pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://obiana.app/"/>
+  </url>
+  <url>
+    <loc>https://obiana.app/?lang=zh</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://obiana.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://obiana.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://obiana.app/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://obiana.app/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://obiana.app/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://obiana.app/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://obiana.app/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="zom" href="https://obiana.app/?lang=zom"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://obiana.app/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://obiana.app/?lang=tl"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://obiana.app/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://obiana.app/?lang=ps"/>
+    <xhtml:link rel="alternate" hreflang="prs" href="https://obiana.app/?lang=prs"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://obiana.app/?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://obiana.app/?lang=th"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://obiana.app/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://obiana.app/?lang=pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://obiana.app/"/>
+  </url>
+  <url>
+    <loc>https://obiana.app/?lang=zom</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://obiana.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://obiana.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://obiana.app/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://obiana.app/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://obiana.app/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://obiana.app/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://obiana.app/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="zom" href="https://obiana.app/?lang=zom"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://obiana.app/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://obiana.app/?lang=tl"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://obiana.app/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://obiana.app/?lang=ps"/>
+    <xhtml:link rel="alternate" hreflang="prs" href="https://obiana.app/?lang=prs"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://obiana.app/?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://obiana.app/?lang=th"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://obiana.app/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://obiana.app/?lang=pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://obiana.app/"/>
+  </url>
+  <url>
+    <loc>https://obiana.app/?lang=ja</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://obiana.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://obiana.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://obiana.app/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://obiana.app/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://obiana.app/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://obiana.app/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://obiana.app/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="zom" href="https://obiana.app/?lang=zom"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://obiana.app/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://obiana.app/?lang=tl"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://obiana.app/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://obiana.app/?lang=ps"/>
+    <xhtml:link rel="alternate" hreflang="prs" href="https://obiana.app/?lang=prs"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://obiana.app/?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://obiana.app/?lang=th"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://obiana.app/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://obiana.app/?lang=pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://obiana.app/"/>
+  </url>
+  <url>
+    <loc>https://obiana.app/?lang=tl</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://obiana.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://obiana.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://obiana.app/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://obiana.app/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://obiana.app/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://obiana.app/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://obiana.app/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="zom" href="https://obiana.app/?lang=zom"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://obiana.app/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://obiana.app/?lang=tl"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://obiana.app/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://obiana.app/?lang=ps"/>
+    <xhtml:link rel="alternate" hreflang="prs" href="https://obiana.app/?lang=prs"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://obiana.app/?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://obiana.app/?lang=th"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://obiana.app/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://obiana.app/?lang=pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://obiana.app/"/>
+  </url>
+  <url>
+    <loc>https://obiana.app/?lang=pt-BR</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://obiana.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://obiana.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://obiana.app/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://obiana.app/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://obiana.app/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://obiana.app/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://obiana.app/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="zom" href="https://obiana.app/?lang=zom"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://obiana.app/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://obiana.app/?lang=tl"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://obiana.app/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://obiana.app/?lang=ps"/>
+    <xhtml:link rel="alternate" hreflang="prs" href="https://obiana.app/?lang=prs"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://obiana.app/?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://obiana.app/?lang=th"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://obiana.app/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://obiana.app/?lang=pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://obiana.app/"/>
+  </url>
+  <url>
+    <loc>https://obiana.app/?lang=ps</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://obiana.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://obiana.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://obiana.app/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://obiana.app/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://obiana.app/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://obiana.app/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://obiana.app/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="zom" href="https://obiana.app/?lang=zom"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://obiana.app/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://obiana.app/?lang=tl"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://obiana.app/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://obiana.app/?lang=ps"/>
+    <xhtml:link rel="alternate" hreflang="prs" href="https://obiana.app/?lang=prs"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://obiana.app/?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://obiana.app/?lang=th"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://obiana.app/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://obiana.app/?lang=pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://obiana.app/"/>
+  </url>
+  <url>
+    <loc>https://obiana.app/?lang=prs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://obiana.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://obiana.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://obiana.app/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://obiana.app/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://obiana.app/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://obiana.app/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://obiana.app/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="zom" href="https://obiana.app/?lang=zom"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://obiana.app/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://obiana.app/?lang=tl"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://obiana.app/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://obiana.app/?lang=ps"/>
+    <xhtml:link rel="alternate" hreflang="prs" href="https://obiana.app/?lang=prs"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://obiana.app/?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://obiana.app/?lang=th"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://obiana.app/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://obiana.app/?lang=pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://obiana.app/"/>
+  </url>
+  <url>
+    <loc>https://obiana.app/?lang=vi</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://obiana.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://obiana.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://obiana.app/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://obiana.app/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://obiana.app/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://obiana.app/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://obiana.app/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="zom" href="https://obiana.app/?lang=zom"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://obiana.app/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://obiana.app/?lang=tl"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://obiana.app/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://obiana.app/?lang=ps"/>
+    <xhtml:link rel="alternate" hreflang="prs" href="https://obiana.app/?lang=prs"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://obiana.app/?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://obiana.app/?lang=th"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://obiana.app/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://obiana.app/?lang=pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://obiana.app/"/>
+  </url>
+  <url>
+    <loc>https://obiana.app/?lang=th</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://obiana.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://obiana.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://obiana.app/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://obiana.app/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://obiana.app/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://obiana.app/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://obiana.app/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="zom" href="https://obiana.app/?lang=zom"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://obiana.app/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://obiana.app/?lang=tl"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://obiana.app/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://obiana.app/?lang=ps"/>
+    <xhtml:link rel="alternate" hreflang="prs" href="https://obiana.app/?lang=prs"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://obiana.app/?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://obiana.app/?lang=th"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://obiana.app/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://obiana.app/?lang=pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://obiana.app/"/>
+  </url>
+  <url>
+    <loc>https://obiana.app/?lang=de</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://obiana.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://obiana.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://obiana.app/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://obiana.app/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://obiana.app/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://obiana.app/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://obiana.app/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="zom" href="https://obiana.app/?lang=zom"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://obiana.app/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://obiana.app/?lang=tl"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://obiana.app/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://obiana.app/?lang=ps"/>
+    <xhtml:link rel="alternate" hreflang="prs" href="https://obiana.app/?lang=prs"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://obiana.app/?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://obiana.app/?lang=th"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://obiana.app/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://obiana.app/?lang=pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://obiana.app/"/>
+  </url>
+  <url>
+    <loc>https://obiana.app/?lang=pl</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://obiana.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://obiana.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://obiana.app/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://obiana.app/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://obiana.app/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://obiana.app/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://obiana.app/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="zom" href="https://obiana.app/?lang=zom"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://obiana.app/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://obiana.app/?lang=tl"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://obiana.app/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://obiana.app/?lang=ps"/>
+    <xhtml:link rel="alternate" hreflang="prs" href="https://obiana.app/?lang=prs"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://obiana.app/?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://obiana.app/?lang=th"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://obiana.app/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://obiana.app/?lang=pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://obiana.app/"/>
+  </url>
+</urlset>

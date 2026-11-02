@@ -258,7 +258,8 @@ window.MYOB_LOCALES.ko = {
         "recentContractions": "최근 진통",
         "timeToGoToThe": "🚨 병원에 갈 시간이에요",
         "511PatternReached": "5-1-1 패턴 도달",
-        "entryDeleted": "기록을 삭제했습니다"
+        "entryDeleted": "기록을 삭제했습니다",
+        "delete": "삭제"
       },
       "feed": {
         "feedsInLast24Hrs": "최근 24시간 수유 횟수",

@@ -471,7 +471,8 @@ window.MYOB_LOCALES.vi = {
         "recentContractions": "Các cơn gò gần đây",
         "timeToGoToThe": "🚨 Đến lúc vào bệnh viện",
         "511PatternReached": "Đã đạt kiểu 5-1-1",
-        "entryDeleted": "Đã xóa mục"
+        "entryDeleted": "Đã xóa mục",
+        "delete": "Xóa"
       },
       "feed": {
         "feedsInLast24Hrs": "Số cữ bú trong 24 giờ qua",

@@ -87,7 +87,7 @@ function renderWeightList() {
       <span class="weight-wk">${escHtml(I18n.t('tool.weight.wk', { n: I18n.fmt.num(w.week) }))}</span>
       <span class="weight-val">${escHtml(I18n.t(wtKey('tool.weight.lbsValue'), { n: I18n.fmt.num(lbShow(w.lbs)) }))}</span>
       <span class="weight-gain">${gain !== null ? escHtml(I18n.t(wtKey('tool.weight.lbsTotal'), { n: (gain > 0 ? '+' : '') + I18n.fmt.num(gain) })) : fmtDate(w.ts)}</span>
-      <button onclick="deleteWeight(${i})" style="background:none;border:none;color:var(--ink-soft);font-size:16px;cursor:pointer;padding:4px">×</button>
+      <button type="button" class="row-delete" onclick="deleteWeight(${i})" aria-label="${escHtml(I18n.t('tool.common.delete'))}">×</button>
     </div>`;
   }).join('');
 }

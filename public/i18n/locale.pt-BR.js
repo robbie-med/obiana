@@ -482,7 +482,8 @@ window.MYOB_LOCALES["pt-BR"] = {
         "recentContractions": "Contrações recentes",
         "timeToGoToThe": "🚨 Hora de ir para o hospital",
         "511PatternReached": "Padrão 5-1-1 atingido",
-        "entryDeleted": "Registro apagado"
+        "entryDeleted": "Registro apagado",
+        "delete": "Apagar"
       },
       "feed": {
         "feedsInLast24Hrs": "Mamadas nas últimas 24 h",

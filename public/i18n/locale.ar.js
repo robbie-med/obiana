@@ -263,7 +263,8 @@ window.MYOB_LOCALES.ar = {
         "recentContractions": "الانقباضات الأخيرة",
         "timeToGoToThe": "🚨 حان وقت الذهاب إلى المستشفى",
         "511PatternReached": "تم بلوغ نمط 5-1-1",
-        "entryDeleted": "تم حذف السجل"
+        "entryDeleted": "تم حذف السجل",
+        "delete": "حذف"
       },
       "feed": {
         "feedsInLast24Hrs": "الرضعات خلال آخر 24 ساعة",

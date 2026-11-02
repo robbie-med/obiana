@@ -260,7 +260,8 @@ window.MYOB_LOCALES.fr = {
         "recentContractions": "Contractions récentes",
         "timeToGoToThe": "🚨 Il est temps d’aller à l’hôpital",
         "511PatternReached": "Rythme 5-1-1 atteint",
-        "entryDeleted": "Entrée supprimée"
+        "entryDeleted": "Entrée supprimée",
+        "delete": "Supprimer"
       },
       "feed": {
         "feedsInLast24Hrs": "Tétées des dernières 24 h",

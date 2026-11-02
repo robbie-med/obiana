@@ -47,7 +47,7 @@ function renderBPList() {
       <span class="bp-reading">${r.s}/${r.d}</span>
       <span class="bp-pill${cat.color === 'var(--caution)' ? ' caution' : ''}" style="background:${cat.color}">${cat.label}</span>
       <span class="bp-time">${fmtDateTime(r.ts)}</span>
-      <button onclick="deleteBP(${i})" style="background:none;border:none;color:var(--ink-soft);font-size:16px;cursor:pointer;padding:4px">×</button>
+      <button type="button" class="row-delete" onclick="deleteBP(${i})" aria-label="${escHtml(I18n.t('tool.common.delete'))}">×</button>
     </div>`;
   }).join('');
 }

@@ -258,7 +258,8 @@ window.MYOB_LOCALES.zh = {
         "recentContractions": "最近的宫缩",
         "timeToGoToThe": "🚨 该去医院了",
         "511PatternReached": "已达到 5-1-1 规律",
-        "entryDeleted": "记录已删除"
+        "entryDeleted": "记录已删除",
+        "delete": "删除"
       },
       "feed": {
         "feedsInLast24Hrs": "过去 24 小时喂养次数",

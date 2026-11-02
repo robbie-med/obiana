@@ -483,7 +483,8 @@ window.MYOB_LOCALES.pl = {
         "recentContractions": "Ostatnie skurcze",
         "timeToGoToThe": "🚨 Czas jechać do szpitala",
         "511PatternReached": "Osiągnięto wzór 5-1-1",
-        "entryDeleted": "Wpis usunięty"
+        "entryDeleted": "Wpis usunięty",
+        "delete": "Usuń"
       },
       "feed": {
         "feedsInLast24Hrs": "Karmienia w ostatnich 24 godz.",

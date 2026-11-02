@@ -77,6 +77,19 @@ function navigate(section, opts = {}) {
 
   if (!opts.fromHistory) pushRoute(section, opts.card || null, prev);
   if (opts.card) openCardById(opts.card);
+  else if (prev && prev !== section) focusPageHeading(page);
+}
+
+// A screen reader user who taps a tab otherwise stays on the tab bar and hears
+// nothing about the page that just appeared. Move focus to its heading (or the
+// page itself) so it is read out. Not on first load, and not when a card is
+// being opened, which takes focus itself.
+function focusPageHeading(page) {
+  if (!page) return;
+  const target = page.querySelector('h1, h2') || page;
+  if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+  target.classList.add('focus-target');
+  try { target.focus({ preventScroll: true }); } catch (e) { target.focus(); }
 }
 
 // Tool sub-pages highlight Tools; guide sections highlight Guide.

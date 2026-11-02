@@ -67,7 +67,7 @@ const I18n = (() => {
 
   // Bumped alongside sw.js CACHE_NAME so an updated locale file is actually
   // re-fetched instead of served from the browser's heuristic cache.
-  const ASSET_VERSION = '118';
+  const ASSET_VERSION = '119';
 
   const FALLBACK = 'en';
   const STORAGE_KEY = 'myob.lang';
@@ -374,6 +374,19 @@ const I18n = (() => {
     document.documentElement.lang = lang;
     document.documentElement.dir = meta.dir;
     document.documentElement.setAttribute('data-lang', lang);
+    updateCanonical();
+  }
+
+  // Each language version is the root plus ?lang=. A ?lang= page names itself
+  // as canonical, so search engines keep the versions apart (a canonical that
+  // pointed every version at the root would cancel the hreflang links). Every
+  // other URL, including the root with a saved language, points at the root.
+  function updateCanonical() {
+    const link = document.getElementById('canonical');
+    if (!link) return;
+    let q = null;
+    try { q = new URLSearchParams(location.search).get('lang'); } catch (e) {}
+    link.href = (q && LOCALES[q] && q === lang) ? `https://obiana.app/?lang=${q}` : 'https://obiana.app/';
   }
 
   async function setLocale(code, opts) {
@@ -421,6 +434,12 @@ const I18n = (() => {
   };
 })();
 
-// Convenience alias used throughout the app/ templates.
-const t = (key, vars) => I18n.t(key, vars);
-const tp = (key, count, vars) => I18n.tp(key, count, vars);
+// Convenience aliases used throughout the app/ templates, which put the result
+// straight into innerHTML. Escaped by default: ui strings carry no markup but
+// <br> (check.js renders all of them), so any other "<" in a translation or a
+// value is text, never a tag. A reader-suggested wording that slipped through
+// review as "<img onerror=…>" shows as those characters, not as code.
+// Entities (&gt;, &amp;) are left alone; they are how the strings spell > and &.
+const uiSafe = s => String(s).replace(/<(?!br\s*\/?>)/gi, '&lt;');
+const t = (key, vars) => uiSafe(I18n.t(key, vars));
+const tp = (key, count, vars) => uiSafe(I18n.tp(key, count, vars));

@@ -46,8 +46,61 @@ const LOCALES = ['es', 'fr', 'ko', 'ar', 'ru', 'zh', 'zom',
 
 const json = (obj, status = 200) => new Response(JSON.stringify(obj), {
   status,
-  headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' },
+  headers: {
+    'content-type': 'application/json; charset=utf-8',
+    'cache-control': 'no-store',
+    'x-content-type-options': 'nosniff',
+    'referrer-policy': 'no-referrer',
+  },
 });
+
+// Only the app itself posts here. Browsers always send Origin on a POST, so a
+// missing or foreign Origin is a script or another site, not a reader.
+// Compared with the request's own origin, so preview and local runs work too.
+function sameOrigin(request) {
+  const origin = request.headers.get('origin');
+  return !!origin && origin === new URL(request.url).origin;
+}
+
+// The body, read with a hard cap. content-length is advisory: a chunked
+// request leaves it off, so a cap that trusts it caps nothing. Returns null
+// once more than `limit` bytes have arrived, without reading the rest.
+async function readCapped(request, limit) {
+  if (!request.body) return '';
+  const reader = request.body.getReader();
+  const chunks = [];
+  let size = 0;
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    size += value.byteLength;
+    if (size > limit) { try { await reader.cancel(); } catch (e) {} return null; }
+    chunks.push(value);
+  }
+  const all = new Uint8Array(size);
+  let at = 0;
+  for (const c of chunks) { all.set(c, at); at += c.byteLength; }
+  return new TextDecoder().decode(all);
+}
+
+// Shared gate for both POST endpoints: method, origin, content type, size,
+// then JSON. Returns { body } or { res } with the error response to send.
+async function readJsonPost(request) {
+  if (request.method !== 'POST') return { res: json({ error: 'method_not_allowed' }, 405) };
+  if (!sameOrigin(request)) return { res: json({ error: 'bad_origin' }, 403) };
+  const type = (request.headers.get('content-type') || '').split(';')[0].trim().toLowerCase();
+  if (type !== 'application/json') return { res: json({ error: 'unsupported_media_type' }, 415) };
+  const text = await readCapped(request, MAX_BODY);
+  if (text === null) return { res: json({ error: 'too_large' }, 413) };
+  try { return { body: JSON.parse(text) }; } catch (e) { return { res: json({ error: 'bad_json' }, 400) }; }
+}
+
+// Logged to Cloudflare so a broken deploy is visible. The error's name and
+// message only: never the request, its body or its headers. Nothing is sent
+// from the app itself.
+function logFailure(where, e) {
+  console.error(`${where}: ${(e && e.name) || 'Error'}: ${String((e && e.message) || e).slice(0, 200)}`);
+}
 
 // Fire-and-forget post to the private "Obiana submissions" Telegram channel
 // (set up by review/telegram_setup.py). The submission is already safe in D1
@@ -112,18 +165,14 @@ async function validKeys(env, origin) {
 }
 
 async function handleSuggest(request, env, ctx) {
-  if (request.method !== 'POST') return json({ error: 'method_not_allowed' }, 405);
+  const gate = await readJsonPost(request);
+  if (gate.res) return gate.res;
+  const body = gate.body || {};
 
   // D1 is bound only once the operator has created the database. Until then
   // say so plainly — the client falls back to local save + Export, and the
   // rest of the site is unaffected.
   if (!env.DB) return json({ error: 'not_configured' }, 503);
-
-  const len = Number(request.headers.get('content-length') || 0);
-  if (len > MAX_BODY) return json({ error: 'too_large' }, 413);
-
-  let body;
-  try { body = await request.json(); } catch (e) { return json({ error: 'bad_json' }, 400); }
 
   const lang = String(body.lang || '');
   const key = String(body.key || '');
@@ -167,14 +216,10 @@ async function handleSuggest(request, env, ctx) {
 // not read clearly. Deliberately not a support queue — this is how the guide
 // gets better, and the UI says so.
 async function handleFeedback(request, env, ctx) {
-  if (request.method !== 'POST') return json({ error: 'method_not_allowed' }, 405);
+  const gate = await readJsonPost(request);
+  if (gate.res) return gate.res;
+  const body = gate.body || {};
   if (!env.DB) return json({ error: 'not_configured' }, 503);
-
-  const len = Number(request.headers.get('content-length') || 0);
-  if (len > MAX_BODY) return json({ error: 'too_large' }, 413);
-
-  let body;
-  try { body = await request.json(); } catch (e) { return json({ error: 'bad_json' }, 400); }
 
   const lang = String(body.lang || '');
   const kind = String(body.kind || '');
@@ -235,7 +280,7 @@ async function hourlyDigest(env, scheduledTime) {
 
 export default {
   async scheduled(event, env, ctx) {
-    ctx.waitUntil(hourlyDigest(env, event.scheduledTime).catch(() => {}));
+    ctx.waitUntil(hourlyDigest(env, event.scheduledTime).catch(e => logFailure('digest', e)));
   },
 
   async fetch(request, env, ctx) {
@@ -243,16 +288,25 @@ export default {
 
     if (url.pathname === '/api/suggest') {
       try { return await handleSuggest(request, env, ctx); }
-      catch (e) { return json({ error: 'server_error' }, 500); }
+      catch (e) { logFailure('suggest', e); return json({ error: 'server_error' }, 500); }
     }
 
     if (url.pathname === '/api/feedback') {
       try { return await handleFeedback(request, env, ctx); }
-      catch (e) { return json({ error: 'server_error' }, 500); }
+      catch (e) { logFailure('feedback', e); return json({ error: 'server_error' }, 500); }
     }
 
+    // A trivial query, so "ok" means the database answers, not just that the
+    // binding exists.
     if (url.pathname === '/api/health') {
-      return json({ ok: true, suggestions: env.DB ? 'enabled' : 'not_configured' });
+      if (!env.DB) return json({ ok: true, suggestions: 'not_configured' });
+      try {
+        const r = await env.DB.prepare('SELECT 1 AS ok').first();
+        return json({ ok: !!(r && r.ok === 1), suggestions: 'enabled' });
+      } catch (e) {
+        logFailure('health', e);
+        return json({ ok: false, suggestions: 'db_error' }, 503);
+      }
     }
 
     // Not an API path: fall through to static assets.
