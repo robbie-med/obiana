@@ -2003,6 +2003,9 @@ label.setting-row { cursor: pointer; }
 .size-btn { width: 44px; height: 44px; background: var(--white); color: var(--ink); border: 1.5px solid var(--rule); border-radius: var(--radius-sm); cursor: pointer; font-weight: 700; line-height: 1; }
 .size-btn.s1 { font-size: 14px; } .size-btn.s2 { font-size: 18px; } .size-btn.s3 { font-size: 22px; }
 .size-btn[aria-pressed="true"] { border-color: var(--teal); background: var(--teal-light); color: var(--teal); }
+.unit-choices { display: flex; gap: 8px; }
+.unit-btn { min-height: 44px; padding: 8px 12px; background: var(--white); color: var(--ink); border: 1.5px solid var(--rule); border-radius: var(--radius-sm); cursor: pointer; font-size: 14px; white-space: nowrap; }
+.unit-btn[aria-pressed="true"] { border-color: var(--teal); background: var(--teal-light); color: var(--teal); font-weight: 700; }
 
 /* Tap a sentence to suggest (Me toggle). */
 #suggest-bar[hidden] { display: none; }

@@ -73,7 +73,7 @@ window.MYOB_LOCALES["pt-BR"] = {
       "severeHeadache": "Dor de cabeça forte",
       "visionChanges": "Mudanças na visão",
       "suddenSwellingOfFaceHands": "Inchaço repentino no rosto ou nas mãos",
-      "fever1004F": "Febre &gt;100.4°F",
+      "fever1004F": "Febre &gt;{temp:100.4}",
       "contractionsBefore37Weeks": "Contrações antes de 37 semanas",
       "myInfoContacts": "Minhas informações &amp;<br>contatos",
       "saveYourCareTeamContacts": "Salve os contatos da sua equipe",
@@ -500,7 +500,8 @@ window.MYOB_LOCALES["pt-BR"] = {
           "many": "{count} min",
           "other": "{count} min"
         },
-        "bottleOz": "Mamadeira, {oz} oz"
+        "bottleOz": "Mamadeira, {oz} oz",
+        "bottleMl": "Mamadeira, {ml} mL"
       },
       "diaper": {
         "wetToday": "Xixi hoje",
@@ -581,7 +582,12 @@ window.MYOB_LOCALES["pt-BR"] = {
         "wk": "Sem {n}",
         "lbsValue": "{n} lbs",
         "lbsTotal": "{n} lbs no total",
-        "savedToast": "{lbs} lbs na semana {week} salvo"
+        "savedToast": "{lbs} lbs na semana {week} salvo",
+        "prePregnancyWeightKg": "Peso antes da gravidez (kg)",
+        "gainedSoFarKg": "Você ganhou {amount} kg até agora.",
+        "kgValue": "{n} kg",
+        "kgTotal": "{n} kg no total",
+        "savedToastKg": "{kg} kg na semana {week} salvo"
       },
       "appts": {
         "addVisit": "+ Adicionar consulta",
@@ -799,7 +805,8 @@ window.MYOB_LOCALES["pt-BR"] = {
       "both": "Os dois",
       "durationMinutes": "Duração (minutos)",
       "amountOz": "Quantidade (oz)",
-      "saveFeed": "Salvar mamada"
+      "saveFeed": "Salvar mamada",
+      "amountMl": "Quantidade (mL)"
     },
     "modalBp": {
       "logBloodPressure": "Registrar pressão",
@@ -813,7 +820,8 @@ window.MYOB_LOCALES["pt-BR"] = {
       "logWeight": "Registrar peso",
       "weightLbs": "Peso (lbs)",
       "weekOfPregnancy": "Semana de gravidez",
-      "save": "Salvar"
+      "save": "Salvar",
+      "weightKg": "Peso (kg)"
     },
     "modalAppt": {
       "addVisit": "Adicionar consulta",
@@ -866,7 +874,8 @@ window.MYOB_LOCALES["pt-BR"] = {
       "sizeLarge": "Grande",
       "sizeLarger": "Maior",
       "language": "Idioma",
-      "darkMode": "Modo escuro"
+      "darkMode": "Modo escuro",
+      "units": "Unidades"
     }
   },
   "content": {
@@ -877,7 +886,7 @@ window.MYOB_LOCALES["pt-BR"] = {
         "Vá ao pronto-socorro ou ligue para 911 se tiver",
         "Dor no peito ou dificuldade para respirar · Convulsão · Dor de cabeça forte e repentina, diferente de qualquer outra · Sinais de AVC (rosto caído, fraqueza no braço, fala enrolada) · Pensamentos de machucar você ou seu bebê",
         "Ligue para seu médico de família, obstetra ou parteira se tiver",
-        "Febre &gt;100.4°F · Encharcar 1 absorvente em uma hora · Dor de cabeça forte que não melhora com ibuprofeno/Tylenol · Mudanças na visão · Vermelhidão, inchaço ou calor na perna (DVT, coágulo em veia profunda) · Ferida abrindo, vermelhidão se espalhando ou pus · Dificuldade para urinar · Sinais de depressão pós-parto (PPD) ou ansiedade",
+        "Febre &gt;{temp:100.4} · Encharcar 1 absorvente em uma hora · Dor de cabeça forte que não melhora com ibuprofeno/Tylenol · Mudanças na visão · Vermelhidão, inchaço ou calor na perna (DVT, coágulo em veia profunda) · Ferida abrindo, vermelhidão se espalhando ou pus · Dificuldade para urinar · Sinais de depressão pós-parto (PPD) ou ansiedade",
         "Sua agenda de consultas pós-parto, e as perguntas que vale levar para a consulta de seis semanas, estão no cartão Consultas de acompanhamento, em Bebê, ao lado das consultas do seu bebê, para você ver as duas juntas."
       ]
     },
@@ -943,7 +952,7 @@ window.MYOB_LOCALES["pt-BR"] = {
         "Primeiro cocô escuro (mecônio)",
         "✓ Sim. Deve sair em 24–48 h",
         "Ligue imediatamente para o médico do bebê se houver",
-        "Febre ≥ 100.4°F retal (grave em recém-nascidos. Meça sempre a temperatura retal) · Recusa para mamar · Amarelão forte · Gemido a cada respiração · Pele muito pálida · Choro que não acalma · Menos de 6 fraldas molhadas por dia depois do 5º dia · Pescoço rígido. Lábios ou rosto azulados ou acinzentados: ligue para 911."
+        "Febre ≥ {temp:100.4} retal (grave em recém-nascidos. Meça sempre a temperatura retal) · Recusa para mamar · Amarelão forte · Gemido a cada respiração · Pele muito pálida · Choro que não acalma · Menos de 6 fraldas molhadas por dia depois do 5º dia · Pescoço rígido. Lábios ou rosto azulados ou acinzentados: ligue para 911."
       ]
     },
     "faq-deli": {
@@ -952,7 +961,7 @@ window.MYOB_LOCALES["pt-BR"] = {
       "t": [
         "O principal risco é a",
         "Listeria",
-        ", uma infecção por bactéria que é rara, mas pode ser grave na gravidez (pode atravessar a placenta). A FDA recomenda evitar queijos não pasteurizados e frios, a menos que sejam aquecidos até soltar vapor (165°F). A maioria dos queijos moles pasteurizados (como brie pasteurizado, feta de pacote) é segura. A exceção são o queso fresco, o queso blanco, a panela e queijos frescos parecidos: mesmo os pasteurizados já causaram surtos de listeria, então coma-os só cozidos até soltar vapor. O risco geral de comer frios de vez em quando é muito baixo. Na dúvida, aqueça. Evite também carne malpassada, ovo cru, leite ou suco não pasteurizado e brotos crus, e lave frutas e verduras. Peça para outra pessoa trocar a areia do gato, ou use luvas: fezes de gato e carne malpassada podem transmitir toxoplasmose."
+        ", uma infecção por bactéria que é rara, mas pode ser grave na gravidez (pode atravessar a placenta). A FDA recomenda evitar queijos não pasteurizados e frios, a menos que sejam aquecidos até soltar vapor ({temp:165}). A maioria dos queijos moles pasteurizados (como brie pasteurizado, feta de pacote) é segura. A exceção são o queso fresco, o queso blanco, a panela e queijos frescos parecidos: mesmo os pasteurizados já causaram surtos de listeria, então coma-os só cozidos até soltar vapor. O risco geral de comer frios de vez em quando é muito baixo. Na dúvida, aqueça. Evite também carne malpassada, ovo cru, leite ou suco não pasteurizado e brotos crus, e lave frutas e verduras. Peça para outra pessoa trocar a areia do gato, ou use luvas: fezes de gato e carne malpassada podem transmitir toxoplasmose."
       ]
     },
     "faq-coffee": {
@@ -961,7 +970,7 @@ window.MYOB_LOCALES["pt-BR"] = {
       "t": [
         "Sim. O ACOG recomenda limitar a cafeína a",
         "menos de 200 mg por dia",
-        "(mais ou menos uma xícara de 12-oz de café coado). Nessa quantidade, não há evidência de dano à gravidez. Chá, refrigerante e chocolate também têm cafeína. Some tudo. Diminuir é razoável; cortar totalmente é uma escolha pessoal, não uma exigência médica."
+        "(mais ou menos uma xícara de {vol:12} de café coado). Nessa quantidade, não há evidência de dano à gravidez. Chá, refrigerante e chocolate também têm cafeína. Some tudo. Diminuir é razoável; cortar totalmente é uma escolha pessoal, não uma exigência médica."
       ]
     },
     "faq-hair-dye": {
@@ -1010,7 +1019,7 @@ window.MYOB_LOCALES["pt-BR"] = {
       "title": "Posso tomar banho de banheira ou usar ofurô?",
       "sub": "",
       "t": [
-        "Banhos mornos de banheira são tranquilos durante toda a gravidez. Ofurôs, saunas e salas de vapor que elevam sua temperatura interna acima de 102°F (39°C) não são recomendados, principalmente no primeiro trimestre, quando a temperatura alta está ligada a defeitos do tubo neural. Se for usar ofurô, mantenha a temperatura agradável (não quente), fique no máximo 10 minutos e evite no primeiro trimestre. Um banho morno na temperatura comum da água de casa (98–100°F) é seguro."
+        "Banhos mornos de banheira são tranquilos durante toda a gravidez. Ofurôs, saunas e salas de vapor que elevam sua temperatura interna acima de {temp:102} não são recomendados, principalmente no primeiro trimestre, quando a temperatura alta está ligada a defeitos do tubo neural. Se for usar ofurô, mantenha a temperatura agradável (não quente), fique no máximo 10 minutos e evite no primeiro trimestre. Um banho morno na temperatura comum da água de casa ({temp:98-100}) é seguro."
       ]
     },
     "faq-epidural-csec": {
@@ -1369,7 +1378,7 @@ window.MYOB_LOCALES["pt-BR"] = {
         "Não levante nada mais pesado que o seu bebê por 4–6 semanas",
         "A incisão é uma cicatriz horizontal na \"linha do biquíni\", fechada com grampos ou pontos que se dissolvem",
         "Ligue depois da alta da cesárea se",
-        "A incisão abrir, a vermelhidão se espalhar para fora ou sair secreção estranha · Febre &gt;100.4°F · A dor piorar em vez de melhorar · Encharcar 1 absorvente em uma hora",
+        "A incisão abrir, a vermelhidão se espalhar para fora ou sair secreção estranha · Febre &gt;{temp:100.4} · A dor piorar em vez de melhorar · Encharcar 1 absorvente em uma hora",
         "VBAC. Parto normal depois de cesárea",
         "Se você teve uma cesárea anterior com corte transversal baixo, o VBAC pode ser uma opção nesta gravidez. A taxa de sucesso é de 60–80%. Converse sobre isso logo no início do pré-natal."
       ]
@@ -1580,7 +1589,7 @@ window.MYOB_LOCALES["pt-BR"] = {
       "t": [
         "O peixe é uma das melhores coisas que você pode comer na gravidez. Mas é preciso tomar cuidado com o mercúrio.",
         "Quanto",
-        "Duas a três porções por semana, cerca de 8 a 12 onças no total. Os peixes gordos são a principal fonte de DHA na comida, que o bebê usa para formar o cérebro e os olhos.",
+        "Duas a três porções por semana, cerca de {wt:8-12} no total. Os peixes gordos são a principal fonte de DHA na comida, que o bebê usa para formar o cérebro e os olhos.",
         "Coma à vontade, pouco mercúrio",
         "Salmão, sardinha, anchova, arenque, truta, tilápia, bacalhau fresco, bagre, polaca, atum light em lata, camarão, caranguejo, vieiras, ostras cozidas.",
         "No máximo uma vez por semana",
@@ -1588,7 +1597,7 @@ window.MYOB_LOCALES["pt-BR"] = {
         "Não coma",
         "Tubarão (cação), peixe-espada (espadarte), cavala-rei, peixe-batata do Golfo do México, marlim, olho-de-vidro-laranja, atum-patudo. São predadores grandes, que vivem muito e acumulam mais mercúrio.",
         "Preparo",
-        "Cozinhe a 145°F, até a carne ficar opaca e se soltar em lascas. Peixe cru geralmente não é boa ideia na gravidez, nem peixe defumado da geladeira do mercado, a não ser que você o cozinhe num prato. Ali o risco é listeria, não mercúrio.",
+        "Cozinhe a {temp:145}, até a carne ficar opaca e se soltar em lascas. Peixe cru geralmente não é boa ideia na gravidez, nem peixe defumado da geladeira do mercado, a não ser que você o cozinhe num prato. Ali o risco é listeria, não mercúrio.",
         "Peixe que você mesma pesca",
         "Veja o aviso do seu estado para aquelas águas. As listas nacionais não cobrem contaminação local."
       ]
@@ -1646,7 +1655,7 @@ window.MYOB_LOCALES["pt-BR"] = {
         "Fraldas:",
         "A partir do 4º–5º dia, espere pelo menos 6 fraldas molhadas e 3–4 cocôs amarelos e granulados por dia.",
         "Peso:",
-        "O peso de nascimento deve ser recuperado em 10–14 dias. Depois do 5º dia, espere ganho de ½–1 oz por dia.",
+        "O peso de nascimento deve ser recuperado em 10–14 dias. Depois do 5º dia, espere ganho de {wt:0.5-1} por dia.",
         "Bebê:",
         "Satisfeito depois das mamadas, alerta quando está acordado.",
         "Álcool, maconha e cigarro",
@@ -1662,7 +1671,7 @@ window.MYOB_LOCALES["pt-BR"] = {
         "Mamilos doloridos",
         "Confira a pega primeiro. É a causa nº 1. Passe leite materno ou lanolina depois das mamadas. Deixe secar ao ar. Geralmente melhora depois do 5º dia, quando o leite desce e a pega melhora.",
         "Ingurgitamento (peito empedrado)",
-        "Amamente o bebê sempre que ele tiver fome. Não tire leite para esvaziar o peito: isso diz ao corpo para fazer ainda mais leite. Se o peito estiver duro demais para a pega, tire um pouco com a mão antes para amolecer. Compressa fria depois da mamada para diminuir o inchaço. Pode dar febre baixa. Se &gt;100.4°F, ligue para o seu médico.",
+        "Amamente o bebê sempre que ele tiver fome. Não tire leite para esvaziar o peito: isso diz ao corpo para fazer ainda mais leite. Se o peito estiver duro demais para a pega, tire um pouco com a mão antes para amolecer. Compressa fria depois da mamada para diminuir o inchaço. Pode dar febre baixa. Se &gt;{temp:100.4}, ligue para o seu médico.",
         "Preocupação com pouco leite",
         "Amamente com mais frequência. A produção segue a demanda. Garanta uma boa pega. Tire leite depois das mamadas para sinalizar mais produção. Procure uma consultora de amamentação. Na maioria das vezes, o leite que parece pouco é, na verdade, suficiente.",
         "Ducto entupido",
@@ -1694,9 +1703,9 @@ window.MYOB_LOCALES["pt-BR"] = {
         "Nunca use micro-ondas",
         ". Aquece de forma desigual e pode queimar a boca do bebê",
         "Quanto e com que frequência",
-        "Recém-nascido (0–1 mês): 1–2 oz a cada 2–3 horas (8–12 mamadas/dia)",
-        "2 meses: 3–4 oz a cada 3–4 horas",
-        "4 meses: 4–6 oz a cada 4 horas",
+        "Recém-nascido (0–1 mês): {vol:1-2} a cada 2–3 horas (8–12 mamadas/dia)",
+        "2 meses: {vol:3-4} a cada 3–4 horas",
+        "4 meses: {vol:4-6} a cada 4 horas",
         "Ofereça em livre demanda. São referências, não regras",
         "Armazenamento",
         "Por quanto tempo",
@@ -1748,7 +1757,7 @@ window.MYOB_LOCALES["pt-BR"] = {
         "Por que as orientações diferem",
         "A Academia Americana de Pediatria concluiu que os benefícios superam os riscos, mas não o bastante para recomendar a todos os meninos. Várias entidades europeias leram os mesmos estudos e concluíram o contrário. Na prática é uma decisão da família, muitas vezes guiada pela religião, pela cultura e por como é o pai.",
         "Se você decidir fazer",
-        "Pergunte especificamente sobre o controle da dor: um bloqueio com anestesia local, não só água com açúcar. Existem opções eficazes e nem todo lugar usa. Veja o que o seu plano cobre. Depois, a ponta fica vermelha e pode ter uma camada amarelada e macia por cerca de uma semana; isso é a cicatrização normal. Passe vaselina a cada troca de fralda. Ligue para o médico do bebê se houver sangramento que não para com uma leve pressão, nenhuma fralda molhada em 8 horas, febre de 100.4°F ou mais, ou vermelhidão, inchaço ou bolhas com pus que se espalham.",
+        "Pergunte especificamente sobre o controle da dor: um bloqueio com anestesia local, não só água com açúcar. Existem opções eficazes e nem todo lugar usa. Veja o que o seu plano cobre. Depois, a ponta fica vermelha e pode ter uma camada amarelada e macia por cerca de uma semana; isso é a cicatrização normal. Passe vaselina a cada troca de fralda. Ligue para o médico do bebê se houver sangramento que não para com uma leve pressão, nenhuma fralda molhada em 8 horas, febre de {temp:100.4} ou mais, ou vermelhidão, inchaço ou bolhas com pus que se espalham.",
         "Se você decidir não fazer",
         "Não puxe o prepúcio para trás. Ele normalmente fica grudado na infância e se solta sozinho ao longo de vários anos; forçar causa justamente as cicatrizes que se quer evitar. Limpe por fora como qualquer outra pele."
       ]
@@ -1759,7 +1768,7 @@ window.MYOB_LOCALES["pt-BR"] = {
       "t": [
         "O leite materno tem pouca vitamina D em quase todas as mulheres. É uma lacuna conhecida com uma solução simples.",
         "O que é recomendado",
-        "400 IU de vitamina D por dia, a partir dos primeiros dias, para todo bebê amamentado ou que toma principalmente leite materno. Continue até o bebê tomar cerca de 32 onças (1 litro) por dia de fórmula ou, mais tarde, de leite enriquecido, porque eles já têm vitamina D.",
+        "400 IU de vitamina D por dia, a partir dos primeiros dias, para todo bebê amamentado ou que toma principalmente leite materno. Continue até o bebê tomar cerca de {vol:32} por dia de fórmula ou, mais tarde, de leite enriquecido, porque eles já têm vitamina D.",
         "Um bebê que toma fórmula na quantidade completa não precisa de mais. Na alimentação mista, geralmente ainda precisa, porque depende de quanta fórmula ele realmente toma.",
         "Por que importa",
         "A vitamina D é o que permite ao corpo absorver cálcio e formar ossos. A falta de verdade causa raquitismo, que é incomum mas não desapareceu, e é mais provável em bebês de pele mais escura, em latitudes mais ao norte e no inverno.",
@@ -2051,7 +2060,7 @@ window.MYOB_LOCALES["pt-BR"] = {
         "Nunca sacuda um bebê",
         "Sacudir pode causar lesão no cérebro, cegueira ou morte. Garanta que todas as pessoas que cuidam do seu bebê saibam disso.",
         "Ligue para o médico do bebê se o choro vier com",
-        "Febre de 100.4°F ou mais · Vômito ou dificuldade para mamar · Sinais de dor, ou um choro que soa diferente do normal",
+        "Febre de {temp:100.4} ou mais · Vômito ou dificuldade para mamar · Sinais de dor, ou um choro que soa diferente do normal",
         "Ligue para o 911 se o bebê",
         "Estiver mole, ou difícil de acordar · Tiver dificuldade para respirar · Ficar azul ou cinza",
         "Se você se sente sem esperança ou com raiva na maior parte do tempo",
@@ -2063,7 +2072,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.postpartum-danger.t.0": "8e2a678f78c207ed",
     "content.postpartum-danger.t.1": "d26dc5484bcab5f6",
     "content.postpartum-danger.t.2": "bee2b3c377a8a3e5",
-    "content.postpartum-danger.t.3": "8a9f90651b64d9d3",
+    "content.postpartum-danger.t.3": "03c000a554e9734b",
     "content.signs-of-labor.t.11": "3973fa2849b83e92",
     "content.signs-of-labor.t.12": "61f8135000473a76",
     "content.signs-of-labor.t.13": "d0b262a299176734",
@@ -2072,15 +2081,15 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.signs-of-labor.t.16": "ac6a34b445ceccaa",
     "content.signs-of-labor.t.17": "b007f20008122ab6",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "380945be7751b37c",
+    "content.normal-newborn.t.32": "11a67bb6600db664",
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
-    "content.faq-deli.t.2": "f834f951752931cb",
+    "content.faq-deli.t.2": "b648bd19bac268db",
     "content.faq-coffee.title": "5389638ea8a88dc8",
     "content.faq-coffee.t.0": "ac1cf8bc0364371a",
     "content.faq-coffee.t.1": "d49405defc21c3ec",
-    "content.faq-coffee.t.2": "19f22003cc780ded",
+    "content.faq-coffee.t.2": "de8179c055015bde",
     "content.faq-hair-dye.title": "3cbc4f5501467bbb",
     "content.faq-hair-dye.t.0": "194b47e06a23e60e",
     "content.faq-exercise-mc.title": "055753c567df011f",
@@ -2099,7 +2108,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.faq-eat-for-two.title": "7109ae5ce8714502",
     "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
     "content.faq-hot-tub.title": "2230219d6f10d437",
-    "content.faq-hot-tub.t.0": "b73f80715bdad85f",
+    "content.faq-hot-tub.t.0": "c7540b7dd2d9ca9f",
     "content.faq-epidural-csec.title": "85af8aced19ce724",
     "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
     "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
@@ -2376,7 +2385,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.csection.t.23": "03b0235cac26896a",
     "content.csection.t.24": "04b03da54128058f",
     "content.csection.t.25": "f6fa8c9fde0476e5",
-    "content.csection.t.26": "ca4bbc17e96e473d",
+    "content.csection.t.26": "ad79a07707d57275",
     "content.csection.t.27": "e04d3a00a0c48e1a",
     "content.csection.t.28": "24b632c57b1d608f",
     "content.mfm.title": "6c228d117e74de43",
@@ -2538,7 +2547,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.fish-mercury.sub": "7a8a6870bed495f6",
     "content.fish-mercury.t.0": "6734e1973f605319",
     "content.fish-mercury.t.1": "d909a26ae31f4ecc",
-    "content.fish-mercury.t.2": "ee651e46d479ff88",
+    "content.fish-mercury.t.2": "7341748092938246",
     "content.fish-mercury.t.3": "b09f865e34a2ab04",
     "content.fish-mercury.t.4": "45e5d986c9bdbc50",
     "content.fish-mercury.t.5": "6d00998d3f613893",
@@ -2546,7 +2555,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.fish-mercury.t.7": "7c04eb03eb7569d5",
     "content.fish-mercury.t.8": "73b85abd06fd7837",
     "content.fish-mercury.t.9": "450b169714695949",
-    "content.fish-mercury.t.10": "0d325b46201051b8",
+    "content.fish-mercury.t.10": "956c0b6e3e37d250",
     "content.fish-mercury.t.11": "a48919d4a78360fa",
     "content.fish-mercury.t.12": "500b3f883d2b066e",
     "content.preeclampsia.title": "35f619eb40c59015",
@@ -2592,7 +2601,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.breastfeeding.t.13": "3d9abf5543ae35bf",
     "content.breastfeeding.t.14": "a90a747355b91e39",
     "content.breastfeeding.t.15": "09b0e1598812ec27",
-    "content.breastfeeding.t.16": "6842a2bad7d347b4",
+    "content.breastfeeding.t.16": "67351f4c3f193876",
     "content.breastfeeding.t.17": "5e4777c90c2f7087",
     "content.breastfeeding.t.18": "6cbf79f457184afe",
     "content.bf-challenges.title": "c4bf4298d981c3ae",
@@ -2602,7 +2611,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.bf-challenges.t.2": "7d8bf4ad4287bdff",
     "content.bf-challenges.t.3": "c4998859be296f4b",
     "content.bf-challenges.t.4": "3a2ce81ac9dcbe3c",
-    "content.bf-challenges.t.5": "827dba0e278ee0e4",
+    "content.bf-challenges.t.5": "df4fff0e4157a4bc",
     "content.bf-challenges.t.6": "4a83c479c8b90393",
     "content.bf-challenges.t.7": "40cb72bdfa8524ab",
     "content.bf-challenges.t.8": "7c415028fad1dc52",
@@ -2630,9 +2639,9 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.formula.t.10": "ab87de70c4d2391a",
     "content.formula.t.11": "943a6627735430bd",
     "content.formula.t.12": "8f2489f83139650a",
-    "content.formula.t.13": "d59c2bf70e921d19",
-    "content.formula.t.14": "d75f988fa8406695",
-    "content.formula.t.15": "a8dbb0d025c765fe",
+    "content.formula.t.13": "0b6634e78f897e4d",
+    "content.formula.t.14": "441ff505b8c222ef",
+    "content.formula.t.15": "b925a44e213f3690",
     "content.formula.t.16": "b3187f2d31ac31fb",
     "content.formula.t.17": "34eddf06cc3c9298",
     "content.formula.t.18": "dbabf7d1094591bb",
@@ -2709,14 +2718,14 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.circumcision.t.3": "d4de604c37f414a2",
     "content.circumcision.t.4": "706bcd0238eac334",
     "content.circumcision.t.5": "2d62b3babd67ab3c",
-    "content.circumcision.t.6": "a8361fd6b7237104",
+    "content.circumcision.t.6": "1670453248f8c7b0",
     "content.circumcision.t.7": "51bb2ecb4d379d51",
     "content.circumcision.t.8": "f7774e648f8e13da",
     "content.vitamin-d-drops.title": "e813e486bcfad49c",
     "content.vitamin-d-drops.sub": "f691dcfe7e42f6ac",
     "content.vitamin-d-drops.t.0": "44e620a91a0a98eb",
     "content.vitamin-d-drops.t.1": "79b93282d2633c5c",
-    "content.vitamin-d-drops.t.2": "b433718b08a24cdd",
+    "content.vitamin-d-drops.t.2": "c753be0fea7c0729",
     "content.vitamin-d-drops.t.3": "4ff6969dc2636913",
     "content.vitamin-d-drops.t.4": "f5de3f9830ce47c2",
     "content.vitamin-d-drops.t.5": "391a2d9da997549b",
@@ -2939,7 +2948,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.crying-coping.t.7": "2a2c3908b18025f2",
     "content.crying-coping.t.8": "161f6ed3a80f8549",
     "content.crying-coping.t.9": "7146b80050ea63ce",
-    "content.crying-coping.t.10": "004727c64d6889d0",
+    "content.crying-coping.t.10": "d1ceb17e9cedfff0",
     "content.crying-coping.t.11": "87206f861037d230",
     "content.crying-coping.t.12": "10aefed99197f797",
     "content.crying-coping.t.13": "4b4e03aa59a82fec",

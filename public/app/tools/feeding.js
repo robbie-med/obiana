@@ -46,6 +46,7 @@ function renderFeedList() {
   el.innerHTML = feedLog.slice(0, 30).map((f, i) => {
     let detail = '';
     if (f.type === 'breast') detail = `${f.side ? t('modalFeed.' + f.side) : ''} · ${(f.duration ? I18n.tp('tool.feed.minutes', f.duration) : '?')}`;
+    else if (I18n.units.get() === 'metric') detail = I18n.t('tool.feed.bottleMl', { ml: f.oz == null ? '?' : I18n.fmt.num(Math.round(f.oz * 29.5735 / 5) * 5) });
     else detail = I18n.t('tool.feed.bottleOz', { oz: f.oz == null ? '?' : I18n.fmt.num(f.oz) });
     return `<div class="feed-row">
       <span class="feed-time">${fmtTimeOfDay(f.ts)}<br><span style="font-size:10px">${fmtDate(f.ts)}</span></span>
@@ -106,7 +107,9 @@ function saveFeed() {
     entry.side = _feedSide;
     entry.duration = parseInt(document.getElementById('feed-duration').value) || null;
   } else {
-    entry.oz = parseFloat(document.getElementById('feed-oz').value) || null;
+    // Stored in ounces, always; metric only changes what she types and sees.
+    const typed = parseFloat(document.getElementById('feed-oz').value) || null;
+    entry.oz = typed && I18n.units.get() === 'metric' ? +(typed / 29.5735).toFixed(2) : typed;
   }
   feedLog.unshift(entry);
   if (feedLog.length > 200) feedLog = feedLog.slice(0, 200);

@@ -291,12 +291,50 @@ function compare(baseDir, out) {
   return diffs;
 }
 
+// ─── Unit tokens ────────────────────────────────────────
+// A measured value is written as a token ({temp:100.4}, {vol:4-6}, {wt:12},
+// {lb:25-35}) so it can be drawn in US or metric units. English may not spell
+// one out bare, and every translation must carry exactly the tokens its English
+// has: a dropped or altered token would show her the wrong number, or a number
+// that no longer follows her unit setting.
+function unitTokenGuard() {
+  const { readLocale } = require(path.join(ROOT, 'translation', 'hash.js'));
+  const TOK = /\{(?:temp|vol|wt|lb):[\d.]+(?:-[\d.]+)?\}/g;
+  const BARE = /\d\s?°\s?[FC]\b|°F|\d\s?(?:oz|ounces?|lbs?|pounds?)\b/;
+  const toks = s => (String(s).match(TOK) || []).sort().join(' ');
+  const flat = (o, pre, out) => {
+    if (typeof o === 'string') out[pre] = o;
+    else if (o && typeof o === 'object') for (const [k, v] of Object.entries(o)) flat(v, pre ? pre + '.' + k : k, out);
+    return out;
+  };
+  const dir = path.join(P.web, 'i18n');
+  const en = flat({ ui: readLocale(fs, path.join(dir, 'locale.en.js'), 'en').obj.ui,
+                    content: readLocale(fs, path.join(dir, 'locale.en.js'), 'en').obj.content }, '', {});
+  const bad = [];
+  for (const [k, v] of Object.entries(en)) {
+    if (BARE.test(v.replace(TOK, ''))) bad.push(`en ${k}: bare unit value, use a token`);
+  }
+  for (const f of fs.readdirSync(dir)) {
+    const m = /^locale\.(.+)\.js$/.exec(f);
+    if (!m || m[1] === 'en') continue;
+    const o = readLocale(fs, path.join(dir, f), m[1]).obj;
+    const mine = flat({ ui: o.ui || {}, content: o.content || {} }, '', {});
+    for (const [k, v] of Object.entries(mine)) {
+      if (!v || !(k in en)) continue;
+      if (toks(v) !== toks(en[k])) bad.push(`${m[1]} ${k}: tokens "${toks(v)}" but English has "${toks(en[k])}"`);
+    }
+  }
+  if (bad.length) { console.log('\n  ' + bad.slice(0, 30).join('\n  ')); return false; }
+  return 'every measured value is a token, in every locale';
+}
+
 (async () => {
   step('locale lint', () => runNode('lint-locales.js'));
   step('translation fingerprints', () => runNode('stamp.js', 'verify'));
   step('card slot ids', slotGuard);
   step('index.html assets precached', precacheGuard);
   step('US English', usEnglishGuard);
+  step('unit tokens', unitTokenGuard);
   let result;
   process.stdout.write('• render every card, ui string and tool in every locale ... ');
   try {

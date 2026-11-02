@@ -70,7 +70,7 @@ window.MYOB_LOCALES.de = {
       "severeHeadache": "Starke Kopfschmerzen",
       "visionChanges": "Sehstörungen",
       "suddenSwellingOfFaceHands": "Plötzliche Schwellung von Gesicht oder Händen",
-      "fever1004F": "Fieber &gt;100.4°F",
+      "fever1004F": "Fieber &gt;{temp:100.4}",
       "contractionsBefore37Weeks": "Wehen vor der 37. Woche",
       "myInfoContacts": "Meine Angaben &amp;<br>Kontakte",
       "saveYourCareTeamContacts": "Kontakte Ihres Behandlungsteams speichern",
@@ -492,7 +492,8 @@ window.MYOB_LOCALES.de = {
           "one": "{count} Min.",
           "other": "{count} Min."
         },
-        "bottleOz": "Fläschchen, {oz} oz"
+        "bottleOz": "Fläschchen, {oz} oz",
+        "bottleMl": "Fläschchen, {ml} mL"
       },
       "diaper": {
         "wetToday": "Nass heute",
@@ -573,7 +574,12 @@ window.MYOB_LOCALES.de = {
         "wk": "Wo. {n}",
         "lbsValue": "{n} lbs",
         "lbsTotal": "{n} lbs insgesamt",
-        "savedToast": "{lbs} lbs in Woche {week} gespeichert"
+        "savedToast": "{lbs} lbs in Woche {week} gespeichert",
+        "prePregnancyWeightKg": "Gewicht vor der Schwangerschaft (kg)",
+        "gainedSoFarKg": "Sie haben bisher {amount} kg zugenommen.",
+        "kgValue": "{n} kg",
+        "kgTotal": "{n} kg insgesamt",
+        "savedToastKg": "{kg} kg in Woche {week} gespeichert"
       },
       "appts": {
         "addVisit": "+ Termin hinzufügen",
@@ -791,7 +797,8 @@ window.MYOB_LOCALES.de = {
       "both": "Beide",
       "durationMinutes": "Dauer (Minuten)",
       "amountOz": "Menge (oz)",
-      "saveFeed": "Mahlzeit speichern"
+      "saveFeed": "Mahlzeit speichern",
+      "amountMl": "Menge (mL)"
     },
     "modalBp": {
       "logBloodPressure": "Blutdruck eintragen",
@@ -805,7 +812,8 @@ window.MYOB_LOCALES.de = {
       "logWeight": "Gewicht eintragen",
       "weightLbs": "Gewicht (lbs)",
       "weekOfPregnancy": "Schwangerschaftswoche",
-      "save": "Speichern"
+      "save": "Speichern",
+      "weightKg": "Gewicht (kg)"
     },
     "modalAppt": {
       "addVisit": "Termin hinzufügen",
@@ -858,7 +866,8 @@ window.MYOB_LOCALES.de = {
       "sizeLarge": "Groß",
       "sizeLarger": "Größer",
       "language": "Sprache",
-      "darkMode": "Dunkelmodus"
+      "darkMode": "Dunkelmodus",
+      "units": "Maßeinheiten"
     }
   },
   "content": {
@@ -869,7 +878,7 @@ window.MYOB_LOCALES.de = {
         "Gehen Sie in die Notaufnahme oder rufen Sie 911 an bei",
         "Brustschmerzen oder Atemnot · Krampfanfall · Plötzliche, starke Kopfschmerzen wie nie zuvor · Zeichen eines Schlaganfalls (hängendes Gesicht, schwacher Arm, verwaschene Sprache) · Gedanken, sich selbst oder Ihrem Baby etwas anzutun",
         "Rufen Sie Ihre Hausärztin, Frauenärztin oder Hebamme an bei",
-        "Fieber &gt;100.4°F · 1 Binde in einer Stunde durchgeblutet · Starke Kopfschmerzen, die mit Ibuprofen/Tylenol nicht besser werden · Sehstörungen · Rötung, Schwellung oder Wärme im Bein (DVT, tiefe Venenthrombose) · Wunde geht auf, Rötung breitet sich aus oder Eiter · Probleme beim Wasserlassen · Zeichen einer Wochenbettdepression (PPD) oder Angst",
+        "Fieber &gt;{temp:100.4} · 1 Binde in einer Stunde durchgeblutet · Starke Kopfschmerzen, die mit Ibuprofen/Tylenol nicht besser werden · Sehstörungen · Rötung, Schwellung oder Wärme im Bein (DVT, tiefe Venenthrombose) · Wunde geht auf, Rötung breitet sich aus oder Eiter · Probleme beim Wasserlassen · Zeichen einer Wochenbettdepression (PPD) oder Angst",
         "Ihre Nachsorgetermine und die Fragen, die Sie zur Untersuchung nach sechs Wochen mitnehmen sollten, stehen in der Karte „Nachsorgetermine“ unter Baby, neben den Terminen Ihres Babys, damit Sie beides zusammen sehen."
       ]
     },
@@ -935,7 +944,7 @@ window.MYOB_LOCALES.de = {
         "Dunkler erster Stuhl (Kindspech, Mekonium)",
         "✓ Ja. Sollte in 24–48 Std. kommen",
         "Rufen Sie sofort die Ärztin Ihres Babys an bei",
-        "Fieber ≥ 100.4°F rektal (bei Neugeborenen ernst. Immer rektal messen) · Trinkt nicht · Starke Gelbfärbung · Stöhnen bei jedem Atemzug · Sehr blasse Haut · Untröstliches Weinen · Weniger als 6 nasse Windeln am Tag nach dem 5. Tag · Steifer Nacken. Blaue oder graue Lippen oder Gesicht: 911 anrufen."
+        "Fieber ≥ {temp:100.4} rektal (bei Neugeborenen ernst. Immer rektal messen) · Trinkt nicht · Starke Gelbfärbung · Stöhnen bei jedem Atemzug · Sehr blasse Haut · Untröstliches Weinen · Weniger als 6 nasse Windeln am Tag nach dem 5. Tag · Steifer Nacken. Blaue oder graue Lippen oder Gesicht: 911 anrufen."
       ]
     },
     "faq-deli": {
@@ -944,7 +953,7 @@ window.MYOB_LOCALES.de = {
       "t": [
         "Das Hauptrisiko ist",
         "Listeriose",
-        ", eine bakterielle Infektion, die selten ist, in der Schwangerschaft aber gefährlich sein kann (sie kann über die Plazenta gehen). Die FDA rät, Käse aus Rohmilch und Aufschnitt zu meiden, außer er wurde erhitzt, bis er dampft (165°F). Die meisten pasteurisierten Weichkäse (etwa pasteurisierter Brie, Feta aus der Packung) sind sicher. Die Ausnahme sind Queso fresco, Queso blanco, Panela und ähnliche Frischkäse: Auch pasteurisierte haben Listerien-Ausbrüche verursacht, essen Sie sie also nur, wenn sie gekocht sind, bis sie dampfen. Das Gesamtrisiko durch gelegentlichen Aufschnitt ist sehr gering. Im Zweifel: erhitzen. Meiden Sie auch nicht durchgegartes Fleisch, rohe Eier, nicht pasteurisierte Milch oder Säfte und rohe Sprossen, und waschen Sie Obst und Gemüse. Lassen Sie jemand anderen das Katzenklo sauber machen, oder tragen Sie Handschuhe: Katzenkot und nicht durchgegartes Fleisch können Toxoplasmose übertragen."
+        ", eine bakterielle Infektion, die selten ist, in der Schwangerschaft aber gefährlich sein kann (sie kann über die Plazenta gehen). Die FDA rät, Käse aus Rohmilch und Aufschnitt zu meiden, außer er wurde erhitzt, bis er dampft ({temp:165}). Die meisten pasteurisierten Weichkäse (etwa pasteurisierter Brie, Feta aus der Packung) sind sicher. Die Ausnahme sind Queso fresco, Queso blanco, Panela und ähnliche Frischkäse: Auch pasteurisierte haben Listerien-Ausbrüche verursacht, essen Sie sie also nur, wenn sie gekocht sind, bis sie dampfen. Das Gesamtrisiko durch gelegentlichen Aufschnitt ist sehr gering. Im Zweifel: erhitzen. Meiden Sie auch nicht durchgegartes Fleisch, rohe Eier, nicht pasteurisierte Milch oder Säfte und rohe Sprossen, und waschen Sie Obst und Gemüse. Lassen Sie jemand anderen das Katzenklo sauber machen, oder tragen Sie Handschuhe: Katzenkot und nicht durchgegartes Fleisch können Toxoplasmose übertragen."
       ]
     },
     "faq-coffee": {
@@ -953,7 +962,7 @@ window.MYOB_LOCALES.de = {
       "t": [
         "Ja. ACOG empfiehlt, Koffein auf",
         "weniger als 200 mg pro Tag",
-        "zu begrenzen (etwa eine 12-oz-Tasse Filterkaffee). In dieser Menge ist ein Schaden für die Schwangerschaft nicht belegt. Auch Tee, Limonade und Schokolade enthalten Koffein. Zählen Sie alles zusammen. Weniger zu trinken ist vernünftig; ganz darauf zu verzichten ist Ihre persönliche Entscheidung, medizinisch nötig ist es nicht."
+        "zu begrenzen (etwa eine {vol:12}-Tasse Filterkaffee). In dieser Menge ist ein Schaden für die Schwangerschaft nicht belegt. Auch Tee, Limonade und Schokolade enthalten Koffein. Zählen Sie alles zusammen. Weniger zu trinken ist vernünftig; ganz darauf zu verzichten ist Ihre persönliche Entscheidung, medizinisch nötig ist es nicht."
       ]
     },
     "faq-hair-dye": {
@@ -1002,7 +1011,7 @@ window.MYOB_LOCALES.de = {
       "title": "Darf ich baden oder in einen Whirlpool gehen?",
       "sub": "",
       "t": [
-        "Warme Bäder sind in der ganzen Schwangerschaft in Ordnung. Whirlpools, Saunen und Dampfbäder, die Ihre Körperkerntemperatur über 102°F (39°C) steigen lassen, werden nicht empfohlen, vor allem im ersten Trimester, wenn eine erhöhte Temperatur mit Neuralrohrdefekten in Verbindung steht. Wenn Sie doch in einen Whirlpool gehen, halten Sie die Temperatur angenehm (nicht heiß), bleiben Sie höchstens 10 Minuten und meiden Sie ihn im ersten Trimester. Ein warmes Bad mit normaler Badewassertemperatur (98–100°F) ist sicher."
+        "Warme Bäder sind in der ganzen Schwangerschaft in Ordnung. Whirlpools, Saunen und Dampfbäder, die Ihre Körperkerntemperatur über {temp:102} steigen lassen, werden nicht empfohlen, vor allem im ersten Trimester, wenn eine erhöhte Temperatur mit Neuralrohrdefekten in Verbindung steht. Wenn Sie doch in einen Whirlpool gehen, halten Sie die Temperatur angenehm (nicht heiß), bleiben Sie höchstens 10 Minuten und meiden Sie ihn im ersten Trimester. Ein warmes Bad mit normaler Badewassertemperatur ({temp:98-100}) ist sicher."
       ]
     },
     "faq-epidural-csec": {
@@ -1361,7 +1370,7 @@ window.MYOB_LOCALES.de = {
         "4–6 Wochen nichts heben, was schwerer ist als Ihr Baby",
         "Der Schnitt ist eine waagerechte Narbe an der „Bikinilinie“, verschlossen mit Klammern oder selbstauflösenden Fäden",
         "Rufen Sie nach der Entlassung an, wenn",
-        "Die Wunde aufgeht, die Rötung sich nach außen ausbreitet oder ungewöhnlich nässt · Fieber &gt;100.4°F · Die Schmerzen schlimmer statt besser werden · Sie in einer Stunde 1 Binde durchweichen",
+        "Die Wunde aufgeht, die Rötung sich nach außen ausbreitet oder ungewöhnlich nässt · Fieber &gt;{temp:100.4} · Die Schmerzen schlimmer statt besser werden · Sie in einer Stunde 1 Binde durchweichen",
         "VBAC. Vaginale Geburt nach Kaiserschnitt",
         "Wenn Sie einen früheren Kaiserschnitt mit tiefem Querschnitt hatten, ist in dieser Schwangerschaft vielleicht eine VBAC möglich. Sie gelingt in 60–80% der Fälle. Sprechen Sie früh in der Vorsorge darüber."
       ]
@@ -1572,7 +1581,7 @@ window.MYOB_LOCALES.de = {
       "t": [
         "Fisch gehört zum Besseren, was Sie in der Schwangerschaft essen können. Auf Quecksilber müssen Sie aber achten.",
         "Wie viel",
-        "Zwei bis drei Portionen pro Woche, zusammen etwa 8 bis 12 Unzen. Fettreicher Fisch ist die wichtigste Nahrungsquelle für DHA, das das Baby für Gehirn und Augen braucht.",
+        "Zwei bis drei Portionen pro Woche, zusammen etwa {wt:8-12}. Fettreicher Fisch ist die wichtigste Nahrungsquelle für DHA, das das Baby für Gehirn und Augen braucht.",
         "Unbedenklich, wenig Quecksilber",
         "Lachs, Sardinen, Sardellen, Hering, Forelle, Tilapia, Kabeljau, Wels, Seelachs, heller Thunfisch aus der Dose, Garnelen, Krabben, Jakobsmuscheln, gegarte Austern.",
         "Höchstens einmal pro Woche",
@@ -1580,7 +1589,7 @@ window.MYOB_LOCALES.de = {
         "Nicht essen",
         "Hai, Schwertfisch, Königsmakrele, Ziegelbarsch aus dem Golf von Mexiko, Marlin, Granatbarsch, Großaugenthun. Das sind große, langlebige Raubfische mit dem meisten Quecksilber.",
         "Zubereitung",
-        "Auf 145°F garen, bis das Fleisch undurchsichtig ist und zerfällt. Roher Fisch ist in der Schwangerschaft meist keine gute Idee, und geräucherter Fisch aus dem Kühlregal auch nicht, außer Sie garen ihn in einem Gericht. Das Risiko dort ist Listeriose, nicht Quecksilber.",
+        "Auf {temp:145} garen, bis das Fleisch undurchsichtig ist und zerfällt. Roher Fisch ist in der Schwangerschaft meist keine gute Idee, und geräucherter Fisch aus dem Kühlregal auch nicht, außer Sie garen ihn in einem Gericht. Das Risiko dort ist Listeriose, nicht Quecksilber.",
         "Selbst geangelter Fisch",
         "Lesen Sie die Hinweise Ihres Bundesstaats für dieses Gewässer. Die landesweiten Listen decken örtliche Verschmutzung nicht ab."
       ]
@@ -1638,7 +1647,7 @@ window.MYOB_LOCALES.de = {
         "Windeln:",
         "Ab dem 4.–5. Tag mindestens 6 nasse Windeln und 3–4 gelbe, körnige Stühle am Tag.",
         "Gewicht:",
-        "Das Geburtsgewicht sollte nach 10–14 Tagen wieder erreicht sein. Ab dem 5. Tag rechnen Sie mit ½–1 oz Zunahme pro Tag.",
+        "Das Geburtsgewicht sollte nach 10–14 Tagen wieder erreicht sein. Ab dem 5. Tag rechnen Sie mit {wt:0.5-1} Zunahme pro Tag.",
         "Baby:",
         "Nach dem Trinken zufrieden, in wachen Phasen aufmerksam.",
         "Alkohol, Cannabis und Rauchen",
@@ -1654,7 +1663,7 @@ window.MYOB_LOCALES.de = {
         "Wunde Brustwarzen",
         "Zuerst das Anlegen prüfen. Das ist die Ursache Nr. 1. Nach dem Stillen etwas ausgestrichene Muttermilch oder Lanolin auftragen. An der Luft trocknen lassen. Wird meist nach dem 5. Tag besser, wenn die Milch kommt und das Anlegen besser klappt.",
         "Brustdrüsenschwellung",
-        "Stillen Sie Ihr Baby, wann immer es Hunger hat. Pumpen Sie die Brust nicht leer: Das sagt Ihrem Körper, noch mehr Milch zu bilden. Ist die Brust zum Anlegen zu fest, streichen Sie zuerst etwas Milch mit der Hand aus, um sie weicher zu machen. Nach dem Stillen kühlen, um die Schwellung zu lindern. Kann leichtes Fieber machen. Bei &gt;100.4°F rufen Sie Ihren Arzt an.",
+        "Stillen Sie Ihr Baby, wann immer es Hunger hat. Pumpen Sie die Brust nicht leer: Das sagt Ihrem Körper, noch mehr Milch zu bilden. Ist die Brust zum Anlegen zu fest, streichen Sie zuerst etwas Milch mit der Hand aus, um sie weicher zu machen. Nach dem Stillen kühlen, um die Schwellung zu lindern. Kann leichtes Fieber machen. Bei &gt;{temp:100.4} rufen Sie Ihren Arzt an.",
         "Sorge um zu wenig Milch",
         "Häufiger stillen. Die Menge folgt der Nachfrage. Auf gutes Anlegen achten. Nach dem Stillen abpumpen, um mehr Bildung anzuregen. Zur Stillberaterin gehen. Meist ist die vermeintlich zu geringe Menge tatsächlich ausreichend.",
         "Milchstau",
@@ -1686,9 +1695,9 @@ window.MYOB_LOCALES.de = {
         "Nie in die Mikrowelle",
         ". Erwärmt ungleichmäßig und kann den Mund des Babys verbrühen",
         "Wie viel, wie oft",
-        "Neugeborene (0–1 Monat): 1–2 oz alle 2–3 Stunden (8–12 Mahlzeiten am Tag)",
-        "2 Monate: 3–4 oz alle 3–4 Stunden",
-        "4 Monate: 4–6 oz alle 4 Stunden",
+        "Neugeborene (0–1 Monat): {vol:1-2} alle 2–3 Stunden (8–12 Mahlzeiten am Tag)",
+        "2 Monate: {vol:3-4} alle 3–4 Stunden",
+        "4 Monate: {vol:4-6} alle 4 Stunden",
         "Füttern nach Bedarf. Das sind Richtwerte, keine Regeln",
         "Aufbewahrung",
         "Wie lange",
@@ -1740,7 +1749,7 @@ window.MYOB_LOCALES.de = {
         "Warum die Empfehlungen sich unterscheiden",
         "Die American Academy of Pediatrics kam zu dem Schluss, dass die Vorteile die Risiken überwiegen, aber nicht genug, um sie für jeden Jungen zu empfehlen. Mehrere europäische Gremien haben dieselben Studien gelesen und anders entschieden. In der Praxis ist es eine Entscheidung der Familie, oft geprägt von Religion, Kultur und davon, wie der Vater aussieht.",
         "Wenn Sie sich dafür entscheiden",
-        "Fragen Sie gezielt nach der Schmerzbehandlung: eine örtliche Betäubung (Nervenblockade), nicht nur Zuckerwasser. Es gibt wirksame Möglichkeiten, und sie werden nicht überall genutzt. Prüfen Sie, was Ihre Versicherung bezahlt. Danach ist die Spitze rot und kann etwa eine Woche lang einen weichen gelblichen Belag haben; das ist normale Heilung. Tragen Sie bei jedem Windelwechsel Vaseline auf. Rufen Sie die Ärztin oder den Arzt Ihres Babys an bei einer Blutung, die mit leichtem Druck nicht aufhört, keiner nassen Windel in 8 Stunden, Fieber von 100.4°F oder mehr oder sich ausbreitender Rötung, Schwellung oder Eiterbläschen.",
+        "Fragen Sie gezielt nach der Schmerzbehandlung: eine örtliche Betäubung (Nervenblockade), nicht nur Zuckerwasser. Es gibt wirksame Möglichkeiten, und sie werden nicht überall genutzt. Prüfen Sie, was Ihre Versicherung bezahlt. Danach ist die Spitze rot und kann etwa eine Woche lang einen weichen gelblichen Belag haben; das ist normale Heilung. Tragen Sie bei jedem Windelwechsel Vaseline auf. Rufen Sie die Ärztin oder den Arzt Ihres Babys an bei einer Blutung, die mit leichtem Druck nicht aufhört, keiner nassen Windel in 8 Stunden, Fieber von {temp:100.4} oder mehr oder sich ausbreitender Rötung, Schwellung oder Eiterbläschen.",
         "Wenn Sie sich dagegen entscheiden",
         "Ziehen Sie die Vorhaut nicht zurück. Sie ist im Säuglingsalter normalerweise angewachsen und löst sich über mehrere Jahre von selbst; Zwang verursacht genau die Narben, die vermieden werden sollen. Waschen Sie außen wie jede andere Haut."
       ]
@@ -1751,7 +1760,7 @@ window.MYOB_LOCALES.de = {
       "t": [
         "Muttermilch enthält bei fast allen Frauen wenig Vitamin D. Eine bekannte Lücke mit einer einfachen Lösung.",
         "Was empfohlen wird",
-        "400 IU Vitamin D täglich, ab den ersten Tagen, für jedes Baby, das gestillt wird oder überwiegend Muttermilch bekommt. Geben Sie es weiter, bis das Baby etwa 32 Unzen (1 Liter) am Tag Säuglingsnahrung oder später angereicherte Milch trinkt, denn darin ist schon Vitamin D enthalten.",
+        "400 IU Vitamin D täglich, ab den ersten Tagen, für jedes Baby, das gestillt wird oder überwiegend Muttermilch bekommt. Geben Sie es weiter, bis das Baby etwa {vol:32} am Tag Säuglingsnahrung oder später angereicherte Milch trinkt, denn darin ist schon Vitamin D enthalten.",
         "Ein Baby, das die volle Menge Säuglingsnahrung trinkt, braucht nichts extra. Bei gemischter Ernährung meist doch, weil es davon abhängt, wie viel Säuglingsnahrung es wirklich trinkt.",
         "Warum es wichtig ist",
         "Vitamin D ermöglicht dem Körper, Kalzium aufzunehmen und Knochen aufzubauen. Echter Mangel verursacht Rachitis. Sie ist selten, aber nicht verschwunden, und häufiger bei Babys mit dunklerer Haut, in nördlichen Breiten und im Winter.",
@@ -2043,7 +2052,7 @@ window.MYOB_LOCALES.de = {
         "Schütteln Sie niemals ein Baby",
         "Schütteln kann Hirnschäden, Blindheit oder den Tod verursachen. Sorgen Sie dafür, dass alle, die Ihr Baby betreuen, das wissen.",
         "Rufen Sie die Ärztin oder den Arzt Ihres Babys an, wenn zum Weinen dazukommt",
-        "Fieber von 100.4°F oder mehr · Erbrechen oder schlechtes Trinken · Anzeichen von Schmerzen, oder Weinen, das anders klingt als sonst",
+        "Fieber von {temp:100.4} oder mehr · Erbrechen oder schlechtes Trinken · Anzeichen von Schmerzen, oder Weinen, das anders klingt als sonst",
         "Rufen Sie 911 an, wenn Ihr Baby",
         "Schlaff ist oder schwer aufzuwecken · Schwer atmet · Blau oder grau wird",
         "Wenn Sie sich die meiste Zeit hoffnungslos oder wütend fühlen",
@@ -2055,7 +2064,7 @@ window.MYOB_LOCALES.de = {
     "content.postpartum-danger.t.0": "8e2a678f78c207ed",
     "content.postpartum-danger.t.1": "d26dc5484bcab5f6",
     "content.postpartum-danger.t.2": "bee2b3c377a8a3e5",
-    "content.postpartum-danger.t.3": "8a9f90651b64d9d3",
+    "content.postpartum-danger.t.3": "03c000a554e9734b",
     "content.signs-of-labor.t.11": "3973fa2849b83e92",
     "content.signs-of-labor.t.12": "61f8135000473a76",
     "content.signs-of-labor.t.13": "d0b262a299176734",
@@ -2064,15 +2073,15 @@ window.MYOB_LOCALES.de = {
     "content.signs-of-labor.t.16": "ac6a34b445ceccaa",
     "content.signs-of-labor.t.17": "b007f20008122ab6",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "380945be7751b37c",
+    "content.normal-newborn.t.32": "11a67bb6600db664",
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
-    "content.faq-deli.t.2": "f834f951752931cb",
+    "content.faq-deli.t.2": "b648bd19bac268db",
     "content.faq-coffee.title": "5389638ea8a88dc8",
     "content.faq-coffee.t.0": "ac1cf8bc0364371a",
     "content.faq-coffee.t.1": "d49405defc21c3ec",
-    "content.faq-coffee.t.2": "19f22003cc780ded",
+    "content.faq-coffee.t.2": "de8179c055015bde",
     "content.faq-hair-dye.title": "3cbc4f5501467bbb",
     "content.faq-hair-dye.t.0": "194b47e06a23e60e",
     "content.faq-exercise-mc.title": "055753c567df011f",
@@ -2091,7 +2100,7 @@ window.MYOB_LOCALES.de = {
     "content.faq-eat-for-two.title": "7109ae5ce8714502",
     "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
     "content.faq-hot-tub.title": "2230219d6f10d437",
-    "content.faq-hot-tub.t.0": "b73f80715bdad85f",
+    "content.faq-hot-tub.t.0": "c7540b7dd2d9ca9f",
     "content.faq-epidural-csec.title": "85af8aced19ce724",
     "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
     "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
@@ -2368,7 +2377,7 @@ window.MYOB_LOCALES.de = {
     "content.csection.t.23": "03b0235cac26896a",
     "content.csection.t.24": "04b03da54128058f",
     "content.csection.t.25": "f6fa8c9fde0476e5",
-    "content.csection.t.26": "ca4bbc17e96e473d",
+    "content.csection.t.26": "ad79a07707d57275",
     "content.csection.t.27": "e04d3a00a0c48e1a",
     "content.csection.t.28": "24b632c57b1d608f",
     "content.mfm.title": "6c228d117e74de43",
@@ -2530,7 +2539,7 @@ window.MYOB_LOCALES.de = {
     "content.fish-mercury.sub": "7a8a6870bed495f6",
     "content.fish-mercury.t.0": "6734e1973f605319",
     "content.fish-mercury.t.1": "d909a26ae31f4ecc",
-    "content.fish-mercury.t.2": "ee651e46d479ff88",
+    "content.fish-mercury.t.2": "7341748092938246",
     "content.fish-mercury.t.3": "b09f865e34a2ab04",
     "content.fish-mercury.t.4": "45e5d986c9bdbc50",
     "content.fish-mercury.t.5": "6d00998d3f613893",
@@ -2538,7 +2547,7 @@ window.MYOB_LOCALES.de = {
     "content.fish-mercury.t.7": "7c04eb03eb7569d5",
     "content.fish-mercury.t.8": "73b85abd06fd7837",
     "content.fish-mercury.t.9": "450b169714695949",
-    "content.fish-mercury.t.10": "0d325b46201051b8",
+    "content.fish-mercury.t.10": "956c0b6e3e37d250",
     "content.fish-mercury.t.11": "a48919d4a78360fa",
     "content.fish-mercury.t.12": "500b3f883d2b066e",
     "content.preeclampsia.title": "35f619eb40c59015",
@@ -2584,7 +2593,7 @@ window.MYOB_LOCALES.de = {
     "content.breastfeeding.t.13": "3d9abf5543ae35bf",
     "content.breastfeeding.t.14": "a90a747355b91e39",
     "content.breastfeeding.t.15": "09b0e1598812ec27",
-    "content.breastfeeding.t.16": "6842a2bad7d347b4",
+    "content.breastfeeding.t.16": "67351f4c3f193876",
     "content.breastfeeding.t.17": "5e4777c90c2f7087",
     "content.breastfeeding.t.18": "6cbf79f457184afe",
     "content.bf-challenges.title": "c4bf4298d981c3ae",
@@ -2594,7 +2603,7 @@ window.MYOB_LOCALES.de = {
     "content.bf-challenges.t.2": "7d8bf4ad4287bdff",
     "content.bf-challenges.t.3": "c4998859be296f4b",
     "content.bf-challenges.t.4": "3a2ce81ac9dcbe3c",
-    "content.bf-challenges.t.5": "827dba0e278ee0e4",
+    "content.bf-challenges.t.5": "df4fff0e4157a4bc",
     "content.bf-challenges.t.6": "4a83c479c8b90393",
     "content.bf-challenges.t.7": "40cb72bdfa8524ab",
     "content.bf-challenges.t.8": "7c415028fad1dc52",
@@ -2622,9 +2631,9 @@ window.MYOB_LOCALES.de = {
     "content.formula.t.10": "ab87de70c4d2391a",
     "content.formula.t.11": "943a6627735430bd",
     "content.formula.t.12": "8f2489f83139650a",
-    "content.formula.t.13": "d59c2bf70e921d19",
-    "content.formula.t.14": "d75f988fa8406695",
-    "content.formula.t.15": "a8dbb0d025c765fe",
+    "content.formula.t.13": "0b6634e78f897e4d",
+    "content.formula.t.14": "441ff505b8c222ef",
+    "content.formula.t.15": "b925a44e213f3690",
     "content.formula.t.16": "b3187f2d31ac31fb",
     "content.formula.t.17": "34eddf06cc3c9298",
     "content.formula.t.18": "dbabf7d1094591bb",
@@ -2701,14 +2710,14 @@ window.MYOB_LOCALES.de = {
     "content.circumcision.t.3": "d4de604c37f414a2",
     "content.circumcision.t.4": "706bcd0238eac334",
     "content.circumcision.t.5": "2d62b3babd67ab3c",
-    "content.circumcision.t.6": "a8361fd6b7237104",
+    "content.circumcision.t.6": "1670453248f8c7b0",
     "content.circumcision.t.7": "51bb2ecb4d379d51",
     "content.circumcision.t.8": "f7774e648f8e13da",
     "content.vitamin-d-drops.title": "e813e486bcfad49c",
     "content.vitamin-d-drops.sub": "f691dcfe7e42f6ac",
     "content.vitamin-d-drops.t.0": "44e620a91a0a98eb",
     "content.vitamin-d-drops.t.1": "79b93282d2633c5c",
-    "content.vitamin-d-drops.t.2": "b433718b08a24cdd",
+    "content.vitamin-d-drops.t.2": "c753be0fea7c0729",
     "content.vitamin-d-drops.t.3": "4ff6969dc2636913",
     "content.vitamin-d-drops.t.4": "f5de3f9830ce47c2",
     "content.vitamin-d-drops.t.5": "391a2d9da997549b",
@@ -2931,7 +2940,7 @@ window.MYOB_LOCALES.de = {
     "content.crying-coping.t.7": "2a2c3908b18025f2",
     "content.crying-coping.t.8": "161f6ed3a80f8549",
     "content.crying-coping.t.9": "7146b80050ea63ce",
-    "content.crying-coping.t.10": "004727c64d6889d0",
+    "content.crying-coping.t.10": "d1ceb17e9cedfff0",
     "content.crying-coping.t.11": "87206f861037d230",
     "content.crying-coping.t.12": "10aefed99197f797",
     "content.crying-coping.t.13": "4b4e03aa59a82fec",

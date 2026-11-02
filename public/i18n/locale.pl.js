@@ -70,7 +70,7 @@ window.MYOB_LOCALES.pl = {
       "severeHeadache": "Silny ból głowy",
       "visionChanges": "Zaburzenia widzenia",
       "suddenSwellingOfFaceHands": "Nagły obrzęk twarzy lub dłoni",
-      "fever1004F": "Gorączka &gt;100.4°F",
+      "fever1004F": "Gorączka &gt;{temp:100.4}",
       "contractionsBefore37Weeks": "Skurcze przed 37. tygodniem",
       "myInfoContacts": "Moje informacje &amp;<br>kontakty",
       "saveYourCareTeamContacts": "Zapisz kontakty do zespołu opieki",
@@ -502,7 +502,8 @@ window.MYOB_LOCALES.pl = {
           "many": "{count} min",
           "other": "{count} min"
         },
-        "bottleOz": "Butelka, {oz} oz"
+        "bottleOz": "Butelka, {oz} oz",
+        "bottleMl": "Butelka, {ml} mL"
       },
       "diaper": {
         "wetToday": "Mokre dziś",
@@ -583,7 +584,12 @@ window.MYOB_LOCALES.pl = {
         "wk": "Tydz. {n}",
         "lbsValue": "{n} lbs",
         "lbsTotal": "{n} lbs łącznie",
-        "savedToast": "Zapisano {lbs} lbs w tygodniu {week}"
+        "savedToast": "Zapisano {lbs} lbs w tygodniu {week}",
+        "prePregnancyWeightKg": "Waga przed ciążą (kg)",
+        "gainedSoFarKg": "Do tej pory przybrałaś {amount} kg.",
+        "kgValue": "{n} kg",
+        "kgTotal": "{n} kg łącznie",
+        "savedToastKg": "Zapisano {kg} kg w tygodniu {week}"
       },
       "appts": {
         "addVisit": "+ Dodaj wizytę",
@@ -801,7 +807,8 @@ window.MYOB_LOCALES.pl = {
       "both": "Obie",
       "durationMinutes": "Czas (minuty)",
       "amountOz": "Ilość (oz)",
-      "saveFeed": "Zapisz karmienie"
+      "saveFeed": "Zapisz karmienie",
+      "amountMl": "Ilość (mL)"
     },
     "modalBp": {
       "logBloodPressure": "Zapisz ciśnienie",
@@ -815,7 +822,8 @@ window.MYOB_LOCALES.pl = {
       "logWeight": "Zapisz wagę",
       "weightLbs": "Waga (lbs)",
       "weekOfPregnancy": "Tydzień ciąży",
-      "save": "Zapisz"
+      "save": "Zapisz",
+      "weightKg": "Waga (kg)"
     },
     "modalAppt": {
       "addVisit": "Dodaj wizytę",
@@ -868,7 +876,8 @@ window.MYOB_LOCALES.pl = {
       "sizeLarge": "Duży",
       "sizeLarger": "Większy",
       "language": "Język",
-      "darkMode": "Tryb ciemny"
+      "darkMode": "Tryb ciemny",
+      "units": "Jednostki"
     }
   },
   "content": {
@@ -879,7 +888,7 @@ window.MYOB_LOCALES.pl = {
         "Jedź na SOR lub dzwoń pod 911, gdy",
         "Ból w klatce piersiowej lub duszność · Drgawki · Nagły, silny ból głowy, jakiego nie było wcześniej · Objawy udaru (opadający kącik twarzy, osłabienie ręki, bełkotliwa mowa) · Myśli o skrzywdzeniu siebie lub dziecka",
         "Zadzwoń do lekarza rodzinnego, ginekologa-położnika lub położnej, gdy",
-        "Gorączka &gt;100.4°F · Przesiąknięcie 1 podpaski w ciągu godziny · Silny ból głowy, który nie mija po ibuprofenie/Tylenolu · Zaburzenia widzenia · Zaczerwienienie, obrzęk lub ucieplenie nogi (DVT, zakrzepica żył głębokich) · Rozejście się rany, szerzące się zaczerwienienie lub ropa · Trudności z oddawaniem moczu · Objawy depresji poporodowej (PPD) lub lęku",
+        "Gorączka &gt;{temp:100.4} · Przesiąknięcie 1 podpaski w ciągu godziny · Silny ból głowy, który nie mija po ibuprofenie/Tylenolu · Zaburzenia widzenia · Zaczerwienienie, obrzęk lub ucieplenie nogi (DVT, zakrzepica żył głębokich) · Rozejście się rany, szerzące się zaczerwienienie lub ropa · Trudności z oddawaniem moczu · Objawy depresji poporodowej (PPD) lub lęku",
         "Plan wizyt poporodowych i pytania, które warto zabrać na wizytę po sześciu tygodniach, znajdziesz na karcie „Wizyty kontrolne” w części Dziecko, obok wizyt Twojego dziecka, żeby widzieć jedno i drugie razem."
       ]
     },
@@ -945,7 +954,7 @@ window.MYOB_LOCALES.pl = {
         "Ciemny pierwszy stolec (smółka)",
         "✓ Tak. Powinien pojawić się w ciągu 24–48 godz.",
         "Od razu dzwoń do lekarza dziecka, gdy",
-        "Gorączka ≥ 100.4°F mierzona w odbycie (groźna u noworodka. Zawsze mierz w odbycie) · Odmawia jedzenia · Silne zażółcenie · Postękiwanie przy każdym oddechu · Bardzo blada skóra · Płacz nie do uspokojenia · Mniej niż 6 mokrych pieluch dziennie po 5. dniu · Sztywny kark. Sine lub szare usta albo twarz: dzwoń pod 911."
+        "Gorączka ≥ {temp:100.4} mierzona w odbycie (groźna u noworodka. Zawsze mierz w odbycie) · Odmawia jedzenia · Silne zażółcenie · Postękiwanie przy każdym oddechu · Bardzo blada skóra · Płacz nie do uspokojenia · Mniej niż 6 mokrych pieluch dziennie po 5. dniu · Sztywny kark. Sine lub szare usta albo twarz: dzwoń pod 911."
       ]
     },
     "faq-deli": {
@@ -954,7 +963,7 @@ window.MYOB_LOCALES.pl = {
       "t": [
         "Główne ryzyko to",
         "listerioza",
-        ", zakażenie bakteryjne, które zdarza się rzadko, ale w ciąży może być groźne (może przejść przez łożysko). FDA zaleca unikać serów z niepasteryzowanego mleka i wędlin, chyba że są podgrzane do parowania (165°F). Większość pasteryzowanych serów miękkich (np. pasteryzowany brie, feta z opakowania) jest bezpieczna. Wyjątkiem są queso fresco, queso blanco, panela i podobne sery świeże: nawet pasteryzowane wywoływały ogniska listeriozy, więc jedz je tylko ugotowane do parowania. Ogólne ryzyko od jedzenia wędlin od czasu do czasu jest bardzo małe. W razie wątpliwości podgrzej. Unikaj też niedogotowanego mięsa, surowych jajek, niepasteryzowanego mleka lub soku i surowych kiełków, a owoce i warzywa myj. Niech ktoś inny zmienia żwirek kotu, albo zakładaj rękawiczki: koci kał i niedogotowane mięso mogą przenosić toksoplazmozę."
+        ", zakażenie bakteryjne, które zdarza się rzadko, ale w ciąży może być groźne (może przejść przez łożysko). FDA zaleca unikać serów z niepasteryzowanego mleka i wędlin, chyba że są podgrzane do parowania ({temp:165}). Większość pasteryzowanych serów miękkich (np. pasteryzowany brie, feta z opakowania) jest bezpieczna. Wyjątkiem są queso fresco, queso blanco, panela i podobne sery świeże: nawet pasteryzowane wywoływały ogniska listeriozy, więc jedz je tylko ugotowane do parowania. Ogólne ryzyko od jedzenia wędlin od czasu do czasu jest bardzo małe. W razie wątpliwości podgrzej. Unikaj też niedogotowanego mięsa, surowych jajek, niepasteryzowanego mleka lub soku i surowych kiełków, a owoce i warzywa myj. Niech ktoś inny zmienia żwirek kotu, albo zakładaj rękawiczki: koci kał i niedogotowane mięso mogą przenosić toksoplazmozę."
       ]
     },
     "faq-coffee": {
@@ -963,7 +972,7 @@ window.MYOB_LOCALES.pl = {
       "t": [
         "Tak. ACOG zaleca ograniczenie kofeiny do",
         "mniej niż 200 mg dziennie",
-        "(mniej więcej jeden kubek 12-oz kawy z ekspresu przelewowego). Przy takiej ilości nie wykazano szkody dla ciąży. Herbata, napoje gazowane i czekolada też zawierają kofeinę. Licz wszystko razem. Ograniczenie jest rozsądne; całkowita rezygnacja to osobisty wybór, a nie wymóg medyczny."
+        "(mniej więcej jeden kubek {vol:12} kawy z ekspresu przelewowego). Przy takiej ilości nie wykazano szkody dla ciąży. Herbata, napoje gazowane i czekolada też zawierają kofeinę. Licz wszystko razem. Ograniczenie jest rozsądne; całkowita rezygnacja to osobisty wybór, a nie wymóg medyczny."
       ]
     },
     "faq-hair-dye": {
@@ -1012,7 +1021,7 @@ window.MYOB_LOCALES.pl = {
       "title": "Czy mogę brać kąpiel albo korzystać z jacuzzi?",
       "sub": "",
       "t": [
-        "Ciepłe kąpiele są w porządku przez całą ciążę. Jacuzzi, sauny i łaźnie parowe, które podnoszą temperaturę wewnątrz ciała powyżej 102°F (39°C), nie są zalecane, zwłaszcza w pierwszym trymestrze, gdy podwyższona temperatura wiąże się z wadami cewy nerwowej. Jeśli korzystasz z jacuzzi, ustaw przyjemną temperaturę (nie gorącą), ogranicz czas do 10 minut i unikaj go w pierwszym trymestrze. Ciepła kąpiel w zwykłej domowej temperaturze wody (98–100°F) jest bezpieczna."
+        "Ciepłe kąpiele są w porządku przez całą ciążę. Jacuzzi, sauny i łaźnie parowe, które podnoszą temperaturę wewnątrz ciała powyżej {temp:102}, nie są zalecane, zwłaszcza w pierwszym trymestrze, gdy podwyższona temperatura wiąże się z wadami cewy nerwowej. Jeśli korzystasz z jacuzzi, ustaw przyjemną temperaturę (nie gorącą), ogranicz czas do 10 minut i unikaj go w pierwszym trymestrze. Ciepła kąpiel w zwykłej domowej temperaturze wody ({temp:98-100}) jest bezpieczna."
       ]
     },
     "faq-epidural-csec": {
@@ -1371,7 +1380,7 @@ window.MYOB_LOCALES.pl = {
         "Przez 4–6 tygodni nie podnoś niczego cięższego niż dziecko",
         "Rana to pozioma blizna na „linii bikini”, zamknięta zszywkami lub szwami wchłanialnymi",
         "Zadzwoń po wypisie po cesarskim cięciu, jeśli",
-        "Rana się otwiera, zaczerwienienie rozchodzi się na boki albo jest nietypowa wydzielina · Gorączka &gt;100.4°F · Ból się nasila zamiast słabnąć · Przemaczasz 1 podpaskę w godzinę",
+        "Rana się otwiera, zaczerwienienie rozchodzi się na boki albo jest nietypowa wydzielina · Gorączka &gt;{temp:100.4} · Ból się nasila zamiast słabnąć · Przemaczasz 1 podpaskę w godzinę",
         "VBAC. Poród drogami natury po cesarskim cięciu",
         "Jeśli miałaś jedno wcześniejsze cesarskie cięcie z poprzecznym cięciem w dolnej części macicy, VBAC może być możliwy w tej ciąży. Udaje się w 60–80% przypadków. Omów to wcześnie w opiece przedporodowej."
       ]
@@ -1582,7 +1591,7 @@ window.MYOB_LOCALES.pl = {
       "t": [
         "Ryby to jedna z lepszych rzeczy, jakie możesz jeść w ciąży. Trzeba jednak uważać na rtęć.",
         "Ile",
-        "Dwie do trzech porcji tygodniowo, łącznie około 8 do 12 uncji. Tłuste ryby to główne źródło DHA w jedzeniu, którego dziecko używa do budowy mózgu i oczu.",
+        "Dwie do trzech porcji tygodniowo, łącznie około {wt:8-12}. Tłuste ryby to główne źródło DHA w jedzeniu, którego dziecko używa do budowy mózgu i oczu.",
         "Jedz swobodnie, mało rtęci",
         "Łosoś, sardynki, anchois, śledź, pstrąg, tilapia, dorsz, sum, mintaj, tuńczyk jasny z puszki, krewetki, kraby, przegrzebki, gotowane ostrygi.",
         "Najwyżej raz w tygodniu",
@@ -1590,7 +1599,7 @@ window.MYOB_LOCALES.pl = {
         "Nie jedz",
         "Rekin, miecznik, makrela królewska, płytecznik z Zatoki Meksykańskiej, marlin, gardłosz atlantycki, tuńczyk opastun. To duże, długo żyjące drapieżniki z największą ilością rtęci.",
         "Przygotowanie",
-        "Gotuj do 145°F, aż mięso będzie nieprzezroczyste i zacznie się rozpadać. Surowe ryby w ciąży to zwykle zły pomysł, podobnie wędzone ryby z lodówki sklepowej, chyba że ugotujesz je w potrawie. Tam ryzykiem jest listerioza, a nie rtęć.",
+        "Gotuj do {temp:145}, aż mięso będzie nieprzezroczyste i zacznie się rozpadać. Surowe ryby w ciąży to zwykle zły pomysł, podobnie wędzone ryby z lodówki sklepowej, chyba że ugotujesz je w potrawie. Tam ryzykiem jest listerioza, a nie rtęć.",
         "Ryby złowione samodzielnie",
         "Sprawdź zalecenia swojego stanu dla tych wód. Krajowe listy nie obejmują lokalnych zanieczyszczeń."
       ]
@@ -1648,7 +1657,7 @@ window.MYOB_LOCALES.pl = {
         "Pieluchy:",
         "Od 4–5 dnia co najmniej 6 mokrych pieluch i 3–4 żółte, grudkowate stolce dziennie.",
         "Waga:",
-        "Waga urodzeniowa powinna wrócić w ciągu 10–14 dni. Po 5 dniu spodziewaj się przyrostu ½–1 oz dziennie.",
+        "Waga urodzeniowa powinna wrócić w ciągu 10–14 dni. Po 5 dniu spodziewaj się przyrostu {wt:0.5-1} dziennie.",
         "Dziecko:",
         "Najedzone po karmieniu, przytomne, gdy nie śpi.",
         "Alkohol, marihuana i palenie",
@@ -1664,7 +1673,7 @@ window.MYOB_LOCALES.pl = {
         "Bolesne brodawki",
         "Najpierw sprawdź przystawienie. To przyczyna nr 1. Po karmieniu posmaruj odciągniętym mlekiem lub lanoliną. Susz na powietrzu. Zwykle poprawia się po 5 dniu, gdy pojawi się mleko i przystawienie będzie lepsze.",
         "Nawał pokarmu",
-        "Karm dziecko zawsze, gdy jest głodne. Nie odciągaj do opróżnienia piersi: to mówi organizmowi, żeby robił jeszcze więcej mleka. Jeśli pierś jest za twarda, by dziecko się przystawiło, najpierw odciągnij trochę ręką, żeby ją zmiękczyć. Po karmieniu zimny okład zmniejszy obrzęk. Może dawać niewielką gorączkę. Jeśli &gt;100.4°F, zadzwoń do lekarza.",
+        "Karm dziecko zawsze, gdy jest głodne. Nie odciągaj do opróżnienia piersi: to mówi organizmowi, żeby robił jeszcze więcej mleka. Jeśli pierś jest za twarda, by dziecko się przystawiło, najpierw odciągnij trochę ręką, żeby ją zmiękczyć. Po karmieniu zimny okład zmniejszy obrzęk. Może dawać niewielką gorączkę. Jeśli &gt;{temp:100.4}, zadzwoń do lekarza.",
         "Obawy o za mało mleka",
         "Karm częściej. Ilość mleka idzie za zapotrzebowaniem. Zadbaj o dobre przystawienie. Odciągaj po karmieniu, żeby dać sygnał do większej produkcji. Idź do doradczyni laktacyjnej. Najczęściej mleka, którego wydaje się za mało, jest tak naprawdę wystarczająco.",
         "Zatkany kanalik",
@@ -1696,9 +1705,9 @@ window.MYOB_LOCALES.pl = {
         "Nigdy w mikrofalówce",
         ". Grzeje nierówno i może poparzyć buzię dziecka",
         "Ile i jak często",
-        "Noworodek (0–1 miesiąc): 1–2 oz co 2–3 godziny (8–12 karmień dziennie)",
-        "2 miesiące: 3–4 oz co 3–4 godziny",
-        "4 miesiące: 4–6 oz co 4 godziny",
+        "Noworodek (0–1 miesiąc): {vol:1-2} co 2–3 godziny (8–12 karmień dziennie)",
+        "2 miesiące: {vol:3-4} co 3–4 godziny",
+        "4 miesiące: {vol:4-6} co 4 godziny",
         "Karm na żądanie. To wskazówki, nie zasady",
         "Przechowywanie",
         "Jak długo",
@@ -1750,7 +1759,7 @@ window.MYOB_LOCALES.pl = {
         "Dlaczego zalecenia się różnią",
         "Amerykańska Akademia Pediatrii uznała, że korzyści przeważają nad ryzykiem, ale nie na tyle, by zalecać zabieg każdemu chłopcu. Kilka europejskich instytucji przeczytało te same badania i uznało inaczej. W praktyce to decyzja rodziny, często kształtowana przez religię, kulturę i to, jak wygląda ojciec.",
         "Jeśli zdecydujesz się na zabieg",
-        "Zapytaj konkretnie o znieczulenie: blokadę miejscową, a nie samą wodę z cukrem. Skuteczne metody istnieją i nie wszędzie się ich używa. Sprawdź, co pokrywa ubezpieczenie. Potem czubek jest czerwony i przez mniej więcej tydzień może mieć miękki żółtawy nalot; to normalne gojenie. Przy każdej zmianie pieluszki nałóż wazelinę. Zadzwoń do lekarza dziecka, jeśli krwawienie nie ustaje po lekkim ucisku, nie ma mokrej pieluszki przez 8 godzin, jest gorączka 100.4°F lub wyższa albo szerzy się zaczerwienienie, obrzęk lub pęcherzyki z ropą.",
+        "Zapytaj konkretnie o znieczulenie: blokadę miejscową, a nie samą wodę z cukrem. Skuteczne metody istnieją i nie wszędzie się ich używa. Sprawdź, co pokrywa ubezpieczenie. Potem czubek jest czerwony i przez mniej więcej tydzień może mieć miękki żółtawy nalot; to normalne gojenie. Przy każdej zmianie pieluszki nałóż wazelinę. Zadzwoń do lekarza dziecka, jeśli krwawienie nie ustaje po lekkim ucisku, nie ma mokrej pieluszki przez 8 godzin, jest gorączka {temp:100.4} lub wyższa albo szerzy się zaczerwienienie, obrzęk lub pęcherzyki z ropą.",
         "Jeśli zdecydujesz się nie robić",
         "Nie odciągaj napletka. U niemowląt jest zwykle przyrośnięty i oddziela się sam przez kilka lat; robienie tego na siłę powoduje bliznowacenie, któremu ma się zapobiegać. Myj z zewnątrz jak każdą inną skórę."
       ]
@@ -1761,7 +1770,7 @@ window.MYOB_LOCALES.pl = {
       "t": [
         "Mleko matki u prawie każdej kobiety ma mało witaminy D. To znana luka z prostym rozwiązaniem.",
         "Co się zaleca",
-        "400 IU witaminy D dziennie, od pierwszych dni, dla każdego dziecka karmionego piersią lub dostającego głównie mleko matki. Podawaj, dopóki dziecko nie pije około 32 uncji (1 litra) dziennie mleka modyfikowanego, a później mleka wzbogaconego, bo one mają już dodaną witaminę D.",
+        "400 IU witaminy D dziennie, od pierwszych dni, dla każdego dziecka karmionego piersią lub dostającego głównie mleko matki. Podawaj, dopóki dziecko nie pije około {vol:32} dziennie mleka modyfikowanego, a później mleka wzbogaconego, bo one mają już dodaną witaminę D.",
         "Dziecko karmione mlekiem modyfikowanym w pełnej ilości nie potrzebuje dodatkowej. Przy karmieniu mieszanym zwykle nadal tak, bo zależy to od tego, ile mleka modyfikowanego naprawdę wypija.",
         "Dlaczego to ważne",
         "Witamina D pozwala organizmowi wchłaniać wapń i budować kości. Prawdziwy niedobór powoduje krzywicę, która jest rzadka, ale nie zniknęła, i częściej zdarza się u dzieci o ciemniejszej skórze, na północnych szerokościach i zimą.",
@@ -2053,7 +2062,7 @@ window.MYOB_LOCALES.pl = {
         "Nigdy nie potrząsaj dzieckiem",
         "Potrząsanie może spowodować uszkodzenie mózgu, ślepotę lub śmierć. Upewnij się, że wszyscy, którzy opiekują się dzieckiem, o tym wiedzą.",
         "Zadzwoń do lekarza dziecka, jeśli płaczowi towarzyszy",
-        "Gorączka 100.4°F lub wyższa · Wymioty lub słabe jedzenie · Oznaki bólu albo płacz, który brzmi inaczej niż zwykle",
+        "Gorączka {temp:100.4} lub wyższa · Wymioty lub słabe jedzenie · Oznaki bólu albo płacz, który brzmi inaczej niż zwykle",
         "Zadzwoń pod 911, jeśli dziecko",
         "Jest wiotkie albo trudno je obudzić · Ma trudności z oddychaniem · Robi się sine lub szare",
         "Jeśli przez większość czasu czujesz beznadzieję albo złość",
@@ -2065,7 +2074,7 @@ window.MYOB_LOCALES.pl = {
     "content.postpartum-danger.t.0": "8e2a678f78c207ed",
     "content.postpartum-danger.t.1": "d26dc5484bcab5f6",
     "content.postpartum-danger.t.2": "bee2b3c377a8a3e5",
-    "content.postpartum-danger.t.3": "8a9f90651b64d9d3",
+    "content.postpartum-danger.t.3": "03c000a554e9734b",
     "content.signs-of-labor.t.11": "3973fa2849b83e92",
     "content.signs-of-labor.t.12": "61f8135000473a76",
     "content.signs-of-labor.t.13": "d0b262a299176734",
@@ -2074,15 +2083,15 @@ window.MYOB_LOCALES.pl = {
     "content.signs-of-labor.t.16": "ac6a34b445ceccaa",
     "content.signs-of-labor.t.17": "b007f20008122ab6",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "380945be7751b37c",
+    "content.normal-newborn.t.32": "11a67bb6600db664",
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
-    "content.faq-deli.t.2": "f834f951752931cb",
+    "content.faq-deli.t.2": "b648bd19bac268db",
     "content.faq-coffee.title": "5389638ea8a88dc8",
     "content.faq-coffee.t.0": "ac1cf8bc0364371a",
     "content.faq-coffee.t.1": "d49405defc21c3ec",
-    "content.faq-coffee.t.2": "19f22003cc780ded",
+    "content.faq-coffee.t.2": "de8179c055015bde",
     "content.faq-hair-dye.title": "3cbc4f5501467bbb",
     "content.faq-hair-dye.t.0": "194b47e06a23e60e",
     "content.faq-exercise-mc.title": "055753c567df011f",
@@ -2101,7 +2110,7 @@ window.MYOB_LOCALES.pl = {
     "content.faq-eat-for-two.title": "7109ae5ce8714502",
     "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
     "content.faq-hot-tub.title": "2230219d6f10d437",
-    "content.faq-hot-tub.t.0": "b73f80715bdad85f",
+    "content.faq-hot-tub.t.0": "c7540b7dd2d9ca9f",
     "content.faq-epidural-csec.title": "85af8aced19ce724",
     "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
     "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
@@ -2378,7 +2387,7 @@ window.MYOB_LOCALES.pl = {
     "content.csection.t.23": "03b0235cac26896a",
     "content.csection.t.24": "04b03da54128058f",
     "content.csection.t.25": "f6fa8c9fde0476e5",
-    "content.csection.t.26": "ca4bbc17e96e473d",
+    "content.csection.t.26": "ad79a07707d57275",
     "content.csection.t.27": "e04d3a00a0c48e1a",
     "content.csection.t.28": "24b632c57b1d608f",
     "content.mfm.title": "6c228d117e74de43",
@@ -2540,7 +2549,7 @@ window.MYOB_LOCALES.pl = {
     "content.fish-mercury.sub": "7a8a6870bed495f6",
     "content.fish-mercury.t.0": "6734e1973f605319",
     "content.fish-mercury.t.1": "d909a26ae31f4ecc",
-    "content.fish-mercury.t.2": "ee651e46d479ff88",
+    "content.fish-mercury.t.2": "7341748092938246",
     "content.fish-mercury.t.3": "b09f865e34a2ab04",
     "content.fish-mercury.t.4": "45e5d986c9bdbc50",
     "content.fish-mercury.t.5": "6d00998d3f613893",
@@ -2548,7 +2557,7 @@ window.MYOB_LOCALES.pl = {
     "content.fish-mercury.t.7": "7c04eb03eb7569d5",
     "content.fish-mercury.t.8": "73b85abd06fd7837",
     "content.fish-mercury.t.9": "450b169714695949",
-    "content.fish-mercury.t.10": "0d325b46201051b8",
+    "content.fish-mercury.t.10": "956c0b6e3e37d250",
     "content.fish-mercury.t.11": "a48919d4a78360fa",
     "content.fish-mercury.t.12": "500b3f883d2b066e",
     "content.preeclampsia.title": "35f619eb40c59015",
@@ -2594,7 +2603,7 @@ window.MYOB_LOCALES.pl = {
     "content.breastfeeding.t.13": "3d9abf5543ae35bf",
     "content.breastfeeding.t.14": "a90a747355b91e39",
     "content.breastfeeding.t.15": "09b0e1598812ec27",
-    "content.breastfeeding.t.16": "6842a2bad7d347b4",
+    "content.breastfeeding.t.16": "67351f4c3f193876",
     "content.breastfeeding.t.17": "5e4777c90c2f7087",
     "content.breastfeeding.t.18": "6cbf79f457184afe",
     "content.bf-challenges.title": "c4bf4298d981c3ae",
@@ -2604,7 +2613,7 @@ window.MYOB_LOCALES.pl = {
     "content.bf-challenges.t.2": "7d8bf4ad4287bdff",
     "content.bf-challenges.t.3": "c4998859be296f4b",
     "content.bf-challenges.t.4": "3a2ce81ac9dcbe3c",
-    "content.bf-challenges.t.5": "827dba0e278ee0e4",
+    "content.bf-challenges.t.5": "df4fff0e4157a4bc",
     "content.bf-challenges.t.6": "4a83c479c8b90393",
     "content.bf-challenges.t.7": "40cb72bdfa8524ab",
     "content.bf-challenges.t.8": "7c415028fad1dc52",
@@ -2632,9 +2641,9 @@ window.MYOB_LOCALES.pl = {
     "content.formula.t.10": "ab87de70c4d2391a",
     "content.formula.t.11": "943a6627735430bd",
     "content.formula.t.12": "8f2489f83139650a",
-    "content.formula.t.13": "d59c2bf70e921d19",
-    "content.formula.t.14": "d75f988fa8406695",
-    "content.formula.t.15": "a8dbb0d025c765fe",
+    "content.formula.t.13": "0b6634e78f897e4d",
+    "content.formula.t.14": "441ff505b8c222ef",
+    "content.formula.t.15": "b925a44e213f3690",
     "content.formula.t.16": "b3187f2d31ac31fb",
     "content.formula.t.17": "34eddf06cc3c9298",
     "content.formula.t.18": "dbabf7d1094591bb",
@@ -2711,14 +2720,14 @@ window.MYOB_LOCALES.pl = {
     "content.circumcision.t.3": "d4de604c37f414a2",
     "content.circumcision.t.4": "706bcd0238eac334",
     "content.circumcision.t.5": "2d62b3babd67ab3c",
-    "content.circumcision.t.6": "a8361fd6b7237104",
+    "content.circumcision.t.6": "1670453248f8c7b0",
     "content.circumcision.t.7": "51bb2ecb4d379d51",
     "content.circumcision.t.8": "f7774e648f8e13da",
     "content.vitamin-d-drops.title": "e813e486bcfad49c",
     "content.vitamin-d-drops.sub": "f691dcfe7e42f6ac",
     "content.vitamin-d-drops.t.0": "44e620a91a0a98eb",
     "content.vitamin-d-drops.t.1": "79b93282d2633c5c",
-    "content.vitamin-d-drops.t.2": "b433718b08a24cdd",
+    "content.vitamin-d-drops.t.2": "c753be0fea7c0729",
     "content.vitamin-d-drops.t.3": "4ff6969dc2636913",
     "content.vitamin-d-drops.t.4": "f5de3f9830ce47c2",
     "content.vitamin-d-drops.t.5": "391a2d9da997549b",
@@ -2941,7 +2950,7 @@ window.MYOB_LOCALES.pl = {
     "content.crying-coping.t.7": "2a2c3908b18025f2",
     "content.crying-coping.t.8": "161f6ed3a80f8549",
     "content.crying-coping.t.9": "7146b80050ea63ce",
-    "content.crying-coping.t.10": "004727c64d6889d0",
+    "content.crying-coping.t.10": "d1ceb17e9cedfff0",
     "content.crying-coping.t.11": "87206f861037d230",
     "content.crying-coping.t.12": "10aefed99197f797",
     "content.crying-coping.t.13": "4b4e03aa59a82fec",

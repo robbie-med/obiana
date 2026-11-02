@@ -423,7 +423,7 @@
   "home.severeHeadache": "Severe headache",
   "home.visionChanges": "Vision changes",
   "home.suddenSwellingOfFaceHands": "Sudden swelling of face/hands",
-  "home.fever1004F": "Fever &gt;100.4°F",
+  "home.fever1004F": "Fever &gt;{temp:100.4}",
   "home.contractionsBefore37Weeks": "Contractions before 37 weeks",
   "home.afterDelivery": "After Delivery",
   "home.soaking1PadHr2": "Soaking through 1 pad in an hour",

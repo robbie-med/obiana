@@ -26,7 +26,7 @@ existing cards are listed under their topic; topics with no card are under
 - Anatomy scan, placenta    `second-trimester`    → csection, faq-sex-pregnancy, mfm
 - Group B strep             `ui.visits.gbs`     → what-happens-on-arrival, faq-water-breaking
 - Cervical exams, Bishop    `sve`                 → third-trimester, stages-of-labor
-- Vaccines                  `faq-vaccines`        → third-trimester `[twice]` Tdap explained in full in both
+- Vaccines                  `faq-vaccines`        → ui.visits.tdap (third-trimester no longer repeats Tdap)
   - `[gap]` faq-vaccines has no RSV: maternal vaccine at 32–36 weeks in season, or an antibody shot for the baby (nirsevimab or clesrovimab) instead. One or the other, not both.
   - `[gap]` faq-vaccines has no COVID. ACOG recommends it in any trimester (reaffirmed 2026); CDC dropped its pregnancy recommendation in 2025. Readers will hear both, so the card should say whose advice it follows.
 - High-risk / MFM           `mfm`

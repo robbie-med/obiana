@@ -67,7 +67,7 @@ const I18n = (() => {
 
   // Bumped alongside sw.js CACHE_NAME so an updated locale file is actually
   // re-fetched instead of served from the browser's heuristic cache.
-  const ASSET_VERSION = '117';
+  const ASSET_VERSION = '118';
 
   const FALLBACK = 'en';
   const STORAGE_KEY = 'myob.lang';
@@ -146,7 +146,7 @@ const I18n = (() => {
       s = String(s).replace(/\{(\w+)\}/g, (m, k) =>
         Object.prototype.hasOwnProperty.call(vars, k) ? vars[k] : m);
     }
-    return s;
+    return expandUnits(s);
   }
 
   // Plural helper driven by Intl.PluralRules so languages with non-binary
@@ -160,8 +160,8 @@ const I18n = (() => {
     try { cat = new Intl.PluralRules(intlTag()).select(count); }
     catch (e) { cat = count === 1 ? 'one' : 'other'; }
     const s = forms[cat] || forms.other || forms.one || '';
-    return String(s).replace(/\{(\w+)\}/g, (m, k) =>
-      k === 'count' ? count : (vars && k in vars ? vars[k] : m));
+    return expandUnits(String(s).replace(/\{(\w+)\}/g, (m, k) =>
+      k === 'count' ? count : (vars && k in vars ? vars[k] : m)));
   }
 
   // Non-UI structured data (content cards, contacts, birth-plan options…).
@@ -187,6 +187,19 @@ const I18n = (() => {
 
   function applyStatic(root) {
     const scope = root || document;
+
+    // Labels and number inputs that follow the unit setting carry both forms:
+    //   data-i18n-us / data-i18n-metric  the label key for each
+    //   data-us / data-metric            "example|min|max|step" for the input
+    const metric = getUnits() === 'metric';
+    scope.querySelectorAll('[data-i18n-metric]').forEach(el => {
+      el.setAttribute('data-i18n', el.getAttribute(metric ? 'data-i18n-metric' : 'data-i18n-us'));
+    });
+    scope.querySelectorAll('[data-metric]').forEach(el => {
+      const [eg, min, max, step] = el.getAttribute(metric ? 'data-metric' : 'data-us').split('|');
+      el.setAttribute('data-i18n-eg', eg);
+      el.min = min; el.max = max; el.step = step;
+    });
 
     scope.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
@@ -230,6 +243,50 @@ const I18n = (() => {
     dateTime(ts) { return fmt.date(ts) + ' ' + fmt.time(ts); },
     num(n, opts) { return new Intl.NumberFormat(intlTag(), opts).format(n); },
   };
+
+  // ─── Units ──────────────────────────────────────────────
+  // US units by default; metric if she picks it in Me. Card and ui text never
+  // spell a measured value out. It carries a token, in English and in every
+  // translation alike, and the token is drawn in the chosen unit:
+  //   {temp:100.4}  °F       → "100.4°F" or "38°C"
+  //   {vol:4-6}     fluid oz → "4–6 oz"  or "120–180 mL"
+  //   {wt:12}       oz (mass)→ "12 oz"   or "340 g"
+  //   {lb:25-35}    pounds   → "25–35 lbs" or "11.5–16 kg"
+  // The number in a token is always the US value, so one token means the same
+  // thing in every language, and check.js can hold translations to it.
+  const UNITS_KEY = 'obiana.units';
+  function getUnits() {
+    try { return localStorage.getItem(UNITS_KEY) === 'metric' ? 'metric' : 'us'; }
+    catch (e) { return 'us'; }
+  }
+  function setUnits(u) {
+    try { localStorage.setItem(UNITS_KEY, u === 'metric' ? 'metric' : 'us'); } catch (e) {}
+  }
+  const round = (x, step) => Math.round(x / step) * step;
+  // Metric values are rounded the way a clinic would say them, not to the
+  // precision of the arithmetic: 100.4°F is "38°C", 12 oz of fish "340 g".
+  const CONV = {
+    temp: { us: '°F', m: '°C', glue: '', to: f => { const c = (f - 32) * 5 / 9; return c >= 50 ? Math.round(c) : round(c, 0.1); } },
+    vol:  { us: 'oz', m: 'mL', glue: ' ', to: oz => { const ml = oz * 29.5735; return ml < 100 ? round(ml, 5) : round(ml, 10); } },
+    wt:   { us: 'oz', m: 'g',  glue: ' ', to: oz => { const g = oz * 28.3495; return g < 100 ? round(g, 5) : round(g, 10); } },
+    lb:   { us: 'lbs', m: 'kg', glue: ' ', to: lb => round(lb * 0.45359, 0.5) },
+  };
+  const UNIT_TOKEN = /\{(temp|vol|wt|lb):(\d+(?:\.\d+)?)(?:-(\d+(?:\.\d+)?))?\}/g;
+  function unitNum(n, kind, metric) {
+    if (!metric && kind === 'wt' && n === 0.5) return '½';
+    return fmt.num(+(+n).toFixed(1));
+  }
+  function unitValue(kind, a, b, units) {
+    const c = CONV[kind], metric = (units || getUnits()) === 'metric';
+    const v = x => metric ? c.to(+x) : +x;
+    const nums = [a, b].filter(x => x !== undefined).map(x => unitNum(v(x), kind, metric));
+    return nums.join('–') + c.glue + (metric ? c.m : c.us);
+  }
+  function expandUnits(s, units) {
+    if (typeof s !== 'string' || s.indexOf('{') === -1) return s;
+    return s.replace(UNIT_TOKEN, (m, kind, a, b) => unitValue(kind, a, b, units));
+  }
+  const units = { get: getUnits, set: setUnits, expand: expandUnits, value: unitValue, TOKEN: UNIT_TOKEN };
 
   // ─── Text normalization (search) ────────────────────────
   // Folds diacritics and case so "cesarea" matches "cesárea" and
@@ -360,7 +417,7 @@ const I18n = (() => {
     LOCALES, FALLBACK,
     boot, setLocale, onChange, hasExplicitChoice, ensureLoaded,
     t, tp, data, applyStatic,
-    fmt, normalize, tokenize, foldMap,
+    fmt, units, normalize, tokenize, foldMap,
   };
 })();
 

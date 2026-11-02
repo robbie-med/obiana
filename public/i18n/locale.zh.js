@@ -272,7 +272,8 @@ window.MYOB_LOCALES.zh = {
         "breast": "🤱 母乳",
         "bottle": "🍼 奶瓶",
         "minutes": "{n} 分钟",
-        "bottleOz": "奶瓶，{oz} oz"
+        "bottleOz": "奶瓶，{oz} oz",
+        "bottleMl": "奶瓶，{ml} mL"
       },
       "diaper": {
         "wetToday": "今天尿湿",
@@ -353,7 +354,12 @@ window.MYOB_LOCALES.zh = {
         "wk": "第 {n} 周",
         "lbsValue": "{n} lbs",
         "lbsTotal": "共 {n} lbs",
-        "savedToast": "已保存第 {week} 周 {lbs} lbs"
+        "savedToast": "已保存第 {week} 周 {lbs} lbs",
+        "prePregnancyWeightKg": "孕前体重（kg）",
+        "gainedSoFarKg": "到目前为止您已增重 {amount} kg。",
+        "kgValue": "{n} kg",
+        "kgTotal": "共 {n} kg",
+        "savedToastKg": "已保存第 {week} 周 {kg} kg"
       },
       "appts": {
         "addVisit": "+ 添加就诊",
@@ -575,7 +581,7 @@ window.MYOB_LOCALES.zh = {
       "severeHeadache": "剧烈头痛",
       "visionChanges": "视力改变",
       "suddenSwellingOfFaceHands": "面部或手部突然肿胀",
-      "fever1004F": "发热 &gt;100.4°F",
+      "fever1004F": "发热 &gt;{temp:100.4}",
       "contractionsBefore37Weeks": "不足 37 周出现宫缩",
       "afterDelivery": "分娩之后",
       "soaking1PadHr2": "1 小时内湿透 1 片卫生巾",
@@ -639,7 +645,8 @@ window.MYOB_LOCALES.zh = {
       "both": "两侧",
       "durationMinutes": "时长（分钟）",
       "amountOz": "奶量（oz）",
-      "saveFeed": "保存喂养记录"
+      "saveFeed": "保存喂养记录",
+      "amountMl": "奶量（mL）"
     },
     "modalBp": {
       "logBloodPressure": "记录血压",
@@ -653,7 +660,8 @@ window.MYOB_LOCALES.zh = {
       "logWeight": "记录体重",
       "weightLbs": "体重（lbs）",
       "weekOfPregnancy": "孕周",
-      "save": "保存"
+      "save": "保存",
+      "weightKg": "体重（kg）"
     },
     "modalAppt": {
       "addVisit": "添加就诊",
@@ -734,7 +742,8 @@ window.MYOB_LOCALES.zh = {
       "sizeLarger": "更大",
       "language": "语言",
       "darkMode": "深色模式",
-      "datesTitle": "您的日期"
+      "datesTitle": "您的日期",
+      "units": "单位"
     },
     "urgent": {
       "title": "何时打电话",
@@ -869,7 +878,7 @@ window.MYOB_LOCALES.zh = {
         "出现以下情况，请去急诊或拨打 911",
         "胸痛或呼吸困难 · 抽搐 · 突然剧烈头痛，以前从未有过 · 中风症状（脸部下垂、手臂无力、说话含糊） · 有伤害自己或宝宝的想法",
         "出现以下情况，请联系家庭医生、产科医生或助产士",
-        "发烧 &gt;100.4°F · 1 小时内湿透 1 片卫生巾 · 服用布洛芬或泰诺后仍不缓解的严重头痛 · 视力变化 · 腿部发红、肿胀或发热（DVT，深静脉血栓） · 伤口裂开、红肿扩散或流脓 · 排尿困难 · 产后抑郁（PPD）或焦虑的迹象",
+        "发烧 &gt;{temp:100.4} · 1 小时内湿透 1 片卫生巾 · 服用布洛芬或泰诺后仍不缓解的严重头痛 · 视力变化 · 腿部发红、肿胀或发热（DVT，深静脉血栓） · 伤口裂开、红肿扩散或流脓 · 排尿困难 · 产后抑郁（PPD）或焦虑的迹象",
         "您的产后随访安排，以及值得带到产后 6 周检查的问题，在“宝宝”下面的“随访预约”卡片里，和宝宝的就诊放在一起，方便一起看。"
       ]
     },
@@ -935,7 +944,7 @@ window.MYOB_LOCALES.zh = {
         "第一次大便颜色很深（胎便）",
         "✓ 正常。应在 24–48 小时内排出",
         "出现以下情况，立即联系宝宝的医生",
-        "肛温 ≥ 100.4°F（对新生儿来说很严重。一定要量肛温） · 拒绝吃奶 · 皮肤非常黄 · 每次呼吸都发出哼声 · 皮肤非常苍白 · 怎么哄都哭 · 出生 5 天后每天湿尿布少于 6 片 · 脖子僵硬。嘴唇或脸发青或发灰：拨打 911。"
+        "肛温 ≥ {temp:100.4}（对新生儿来说很严重。一定要量肛温） · 拒绝吃奶 · 皮肤非常黄 · 每次呼吸都发出哼声 · 皮肤非常苍白 · 怎么哄都哭 · 出生 5 天后每天湿尿布少于 6 片 · 脖子僵硬。嘴唇或脸发青或发灰：拨打 911。"
       ]
     },
     "first-trimester": {
@@ -1119,7 +1128,7 @@ window.MYOB_LOCALES.zh = {
       "t": [
         "鱼是孕期很好的食物之一。但要注意汞。",
         "吃多少",
-        "每周两到三份，总共约 8 到 12 盎司。油性鱼是食物中 DHA 的主要来源，宝宝用它来发育大脑和眼睛。",
+        "每周两到三份，总共约 {wt:8-12}。油性鱼是食物中 DHA 的主要来源，宝宝用它来发育大脑和眼睛。",
         "可以放心吃，汞含量低",
         "三文鱼、沙丁鱼、凤尾鱼、鲱鱼、鳟鱼、罗非鱼、鳕鱼、鲶鱼、狭鳕、罐装淡金枪鱼、虾、蟹、扇贝、煮熟的牡蛎。",
         "每周最多一次",
@@ -1127,7 +1136,7 @@ window.MYOB_LOCALES.zh = {
         "不要吃",
         "鲨鱼、剑鱼、大西洋马鲛、墨西哥湾方头鱼、枪鱼、橙棘鲷、大眼金枪鱼。这些是大型、长寿的捕食鱼类，汞含量最高。",
         "烹饪",
-        "煮到 145°F，直到鱼肉不透明、可以分成片。孕期一般不宜吃生鱼，冷藏柜里的熏鱼也一样，除非煮进菜里。那里的风险是李斯特菌，不是汞。",
+        "煮到 {temp:145}，直到鱼肉不透明、可以分成片。孕期一般不宜吃生鱼，冷藏柜里的熏鱼也一样，除非煮进菜里。那里的风险是李斯特菌，不是汞。",
         "自己钓的鱼",
         "查看您所在州对那片水域的建议。全国名单不包括当地污染。"
       ]
@@ -1306,7 +1315,7 @@ window.MYOB_LOCALES.zh = {
         "4–6 周内不要提比宝宝重的东西",
         "切口是横向的“比基尼线”疤痕，用钉子或可吸收线缝合",
         "剖宫产出院后出现以下情况请打电话",
-        "伤口裂开、周围红肿扩散或有异常渗液 · 发烧 &gt;100.4°F · 疼痛越来越重而不是减轻 · 1 小时内湿透 1 片卫生巾",
+        "伤口裂开、周围红肿扩散或有异常渗液 · 发烧 &gt;{temp:100.4} · 疼痛越来越重而不是减轻 · 1 小时内湿透 1 片卫生巾",
         "VBAC：剖宫产后阴道分娩",
         "如果您以前做过一次子宫下段横切口的剖宫产，这次怀孕可能可以选择 VBAC。成功率 60–80%。在产检早期就讨论。"
       ]
@@ -1473,7 +1482,7 @@ window.MYOB_LOCALES.zh = {
         "尿布：",
         "到第 4–5 天，每天至少 6 片湿尿布，3–4 次黄色颗粒状大便。",
         "体重：",
-        "10–14 天应恢复到出生体重。第 5 天以后，每天增重约 ½–1 oz。",
+        "10–14 天应恢复到出生体重。第 5 天以后，每天增重约 {wt:0.5-1}。",
         "宝宝：",
         "吃完满足，醒着时精神好。",
         "酒、大麻和吸烟",
@@ -1489,7 +1498,7 @@ window.MYOB_LOCALES.zh = {
         "乳头疼痛",
         "先检查含乳，这是头号原因。喂完后涂一点挤出的母乳或羊脂膏。让它自然晾干。通常第 5 天后奶下来、含乳改善就会好转。",
         "胀奶",
-        "宝宝饿了就喂。不要用吸奶器吸空：那会让身体产更多奶。如果乳房太硬含不住，先用手挤一点让它变软。喂完冷敷消肿。可能有低烧。如果超过 &gt;100.4°F，请联系医生。",
+        "宝宝饿了就喂。不要用吸奶器吸空：那会让身体产更多奶。如果乳房太硬含不住，先用手挤一点让它变软。喂完冷敷消肿。可能有低烧。如果超过 &gt;{temp:100.4}，请联系医生。",
         "担心奶少",
         "多喂，产量跟着需求走。确保含乳正确。喂完再吸一下，发出多产奶的信号。去看哺乳顾问。大多数“觉得奶少”其实是够的。",
         "乳腺管堵塞",
@@ -1521,9 +1530,9 @@ window.MYOB_LOCALES.zh = {
         "绝对不要用微波炉",
         "。加热不均匀，可能烫伤宝宝的嘴",
         "吃多少、多久一次",
-        "新生儿（0–1 个月）：每 2–3 小时 1–2 oz（每天 8–12 次）",
-        "2 个月：每 3–4 小时 3–4 oz",
-        "4 个月：每 4 小时 4–6 oz",
+        "新生儿（0–1 个月）：每 2–3 小时 {vol:1-2}（每天 8–12 次）",
+        "2 个月：每 3–4 小时 {vol:3-4}",
+        "4 个月：每 4 小时 {vol:4-6}",
         "按需喂养。这是参考，不是规定",
         "储存",
         "多久",
@@ -1575,7 +1584,7 @@ window.MYOB_LOCALES.zh = {
         "为什么建议不同",
         "美国儿科学会认为好处大于风险，但还不足以建议每个男孩都做。几个欧洲机构看了同样的研究，得出了不同结论。实际上这是家庭的决定，常常受宗教、文化以及父亲的样子影响。",
         "如果决定做",
-        "具体问清楚怎么止痛：要用局部麻醉阻滞，不能只喂糖水。有效的方法是有的，但不是到处都在用。查一查保险覆盖什么。术后龟头会发红，大约一周内可能有一层软软的黄色覆盖物，这是正常愈合。每次换尿布时涂凡士林。如果轻压也止不住出血、8 小时没有湿尿布、体温 100.4°F 或更高，或红肿、肿胀、脓疱在扩散，请打电话给宝宝的医生。",
+        "具体问清楚怎么止痛：要用局部麻醉阻滞，不能只喂糖水。有效的方法是有的，但不是到处都在用。查一查保险覆盖什么。术后龟头会发红，大约一周内可能有一层软软的黄色覆盖物，这是正常愈合。每次换尿布时涂凡士林。如果轻压也止不住出血、8 小时没有湿尿布、体温 {temp:100.4} 或更高，或红肿、肿胀、脓疱在扩散，请打电话给宝宝的医生。",
         "如果决定不做",
         "不要往后翻包皮。婴儿的包皮本来就是粘着的，几年内会自己分开；强行翻开反而造成想要避免的瘢痕。外面像其他皮肤一样擦洗就行。"
       ]
@@ -1586,7 +1595,7 @@ window.MYOB_LOCALES.zh = {
       "t": [
         "几乎每个人的母乳中维生素 D 都很少。这是已知的不足，解决办法很简单。",
         "建议是什么",
-        "所有母乳喂养或主要吃母乳的宝宝，从出生头几天起每天 400 IU 维生素 D。一直给到宝宝每天喝约 32 盎司（1 升）配方奶，或以后喝强化奶为止，因为这些已经添加了维生素 D。",
+        "所有母乳喂养或主要吃母乳的宝宝，从出生头几天起每天 400 IU 维生素 D。一直给到宝宝每天喝约 {vol:32}配方奶，或以后喝强化奶为止，因为这些已经添加了维生素 D。",
         "吃足量配方奶的宝宝不需要另外补。混合喂养通常还需要，要看实际喝了多少配方奶。",
         "为什么重要",
         "维生素 D 让身体吸收钙、长骨头。真正缺乏会导致佝偻病，不常见但没有消失，深色皮肤的宝宝、北方地区和冬天更容易发生。",
@@ -1672,7 +1681,7 @@ window.MYOB_LOCALES.zh = {
       "t": [
         "主要风险是",
         "李斯特菌",
-        "，一种少见但在孕期可能很严重的细菌感染（可以通过胎盘）。FDA 建议避免未经巴氏消毒的奶酪和冷切肉，除非加热到冒热气（165°F）。大多数巴氏消毒的软奶酪（如巴氏消毒的布里、包装好的菲达）是安全的。例外是 queso fresco、queso blanco、panela 等新鲜奶酪：即使是巴氏消毒的也引起过李斯特菌暴发，所以只吃煮到冒热气的。偶尔吃冷切肉的整体风险很低。拿不准时，就加热。还要避免没煮熟的肉、生鸡蛋、未经巴氏消毒的牛奶或果汁和生豆芽，水果蔬菜要洗干净。请别人帮忙换猫砂，或者戴手套：猫粪和没煮熟的肉会传播弓形虫病。"
+        "，一种少见但在孕期可能很严重的细菌感染（可以通过胎盘）。FDA 建议避免未经巴氏消毒的奶酪和冷切肉，除非加热到冒热气（{temp:165}）。大多数巴氏消毒的软奶酪（如巴氏消毒的布里、包装好的菲达）是安全的。例外是 queso fresco、queso blanco、panela 等新鲜奶酪：即使是巴氏消毒的也引起过李斯特菌暴发，所以只吃煮到冒热气的。偶尔吃冷切肉的整体风险很低。拿不准时，就加热。还要避免没煮熟的肉、生鸡蛋、未经巴氏消毒的牛奶或果汁和生豆芽，水果蔬菜要洗干净。请别人帮忙换猫砂，或者戴手套：猫粪和没煮熟的肉会传播弓形虫病。"
       ]
     },
     "faq-coffee": {
@@ -1681,7 +1690,7 @@ window.MYOB_LOCALES.zh = {
       "t": [
         "可以。ACOG 建议咖啡因限制在",
         "每天少于 200 mg",
-        "（大约一杯 12 盎司的滴滤咖啡）。在这个量以内，没有证据显示对怀孕有害。茶、汽水和巧克力也含咖啡因，要加在一起算。减少是合理的；完全不喝是个人选择，不是医学上必须的。"
+        "（大约一杯 {vol:12}的滴滤咖啡）。在这个量以内，没有证据显示对怀孕有害。茶、汽水和巧克力也含咖啡因，要加在一起算。减少是合理的；完全不喝是个人选择，不是医学上必须的。"
       ]
     },
     "faq-hair-dye": {
@@ -1730,7 +1739,7 @@ window.MYOB_LOCALES.zh = {
       "title": "可以泡澡或泡热水池吗？",
       "sub": "",
       "t": [
-        "整个孕期都可以洗温水澡。会把核心体温升到 102°F（39°C）以上的热水池、桑拿和蒸汽房不建议，尤其在孕早期，体温升高与神经管缺陷有关。如果要泡热水池，温度要舒服（不烫），最多 10 分钟，孕早期不要泡。家里一般水温（98–100°F）的温水澡是安全的。"
+        "整个孕期都可以洗温水澡。会把核心体温升到 {temp:102}以上的热水池、桑拿和蒸汽房不建议，尤其在孕早期，体温升高与神经管缺陷有关。如果要泡热水池，温度要舒服（不烫），最多 10 分钟，孕早期不要泡。家里一般水温（{temp:98-100}）的温水澡是安全的。"
       ]
     },
     "faq-epidural-csec": {
@@ -2043,7 +2052,7 @@ window.MYOB_LOCALES.zh = {
         "绝不能摇晃宝宝",
         "摇晃可能造成脑损伤、失明或死亡。确保每个照顾宝宝的人都知道这一点。",
         "如果哭闹同时有以下情况，请打电话给宝宝的医生",
-        "体温100.4°F或更高 · 呕吐或吃奶不好 · 有疼痛的表现，或哭声和平时不一样",
+        "体温{temp:100.4}或更高 · 呕吐或吃奶不好 · 有疼痛的表现，或哭声和平时不一样",
         "如果宝宝有以下情况，请拨打911",
         "软绵绵的，或很难叫醒 · 呼吸困难 · 变成青紫色或灰色",
         "如果您大部分时间都感到绝望或愤怒",
@@ -2055,7 +2064,7 @@ window.MYOB_LOCALES.zh = {
     "content.postpartum-danger.t.0": "8e2a678f78c207ed",
     "content.postpartum-danger.t.1": "d26dc5484bcab5f6",
     "content.postpartum-danger.t.2": "bee2b3c377a8a3e5",
-    "content.postpartum-danger.t.3": "8a9f90651b64d9d3",
+    "content.postpartum-danger.t.3": "03c000a554e9734b",
     "content.signs-of-labor.t.11": "3973fa2849b83e92",
     "content.signs-of-labor.t.12": "61f8135000473a76",
     "content.signs-of-labor.t.13": "d0b262a299176734",
@@ -2064,7 +2073,7 @@ window.MYOB_LOCALES.zh = {
     "content.signs-of-labor.t.16": "ac6a34b445ceccaa",
     "content.signs-of-labor.t.17": "b007f20008122ab6",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "380945be7751b37c",
+    "content.normal-newborn.t.32": "11a67bb6600db664",
     "content.first-trimester.title": "5aa84a82a481c63c",
     "content.first-trimester.sub": "c41238c8ac2948ca",
     "content.first-trimester.t.0": "448ad51c081a3eca",
@@ -2203,7 +2212,7 @@ window.MYOB_LOCALES.zh = {
     "content.fish-mercury.sub": "7a8a6870bed495f6",
     "content.fish-mercury.t.0": "6734e1973f605319",
     "content.fish-mercury.t.1": "d909a26ae31f4ecc",
-    "content.fish-mercury.t.2": "ee651e46d479ff88",
+    "content.fish-mercury.t.2": "7341748092938246",
     "content.fish-mercury.t.3": "b09f865e34a2ab04",
     "content.fish-mercury.t.4": "45e5d986c9bdbc50",
     "content.fish-mercury.t.5": "6d00998d3f613893",
@@ -2211,7 +2220,7 @@ window.MYOB_LOCALES.zh = {
     "content.fish-mercury.t.7": "7c04eb03eb7569d5",
     "content.fish-mercury.t.8": "73b85abd06fd7837",
     "content.fish-mercury.t.9": "450b169714695949",
-    "content.fish-mercury.t.10": "0d325b46201051b8",
+    "content.fish-mercury.t.10": "956c0b6e3e37d250",
     "content.fish-mercury.t.11": "a48919d4a78360fa",
     "content.fish-mercury.t.12": "500b3f883d2b066e",
     "content.preeclampsia.title": "35f619eb40c59015",
@@ -2377,7 +2386,7 @@ window.MYOB_LOCALES.zh = {
     "content.csection.t.23": "03b0235cac26896a",
     "content.csection.t.24": "04b03da54128058f",
     "content.csection.t.25": "f6fa8c9fde0476e5",
-    "content.csection.t.26": "ca4bbc17e96e473d",
+    "content.csection.t.26": "ad79a07707d57275",
     "content.csection.t.27": "e04d3a00a0c48e1a",
     "content.csection.t.28": "24b632c57b1d608f",
     "content.mfm.title": "6c228d117e74de43",
@@ -2519,7 +2528,7 @@ window.MYOB_LOCALES.zh = {
     "content.breastfeeding.t.13": "3d9abf5543ae35bf",
     "content.breastfeeding.t.14": "a90a747355b91e39",
     "content.breastfeeding.t.15": "09b0e1598812ec27",
-    "content.breastfeeding.t.16": "6842a2bad7d347b4",
+    "content.breastfeeding.t.16": "67351f4c3f193876",
     "content.breastfeeding.t.17": "5e4777c90c2f7087",
     "content.breastfeeding.t.18": "6cbf79f457184afe",
     "content.bf-challenges.title": "c4bf4298d981c3ae",
@@ -2529,7 +2538,7 @@ window.MYOB_LOCALES.zh = {
     "content.bf-challenges.t.2": "7d8bf4ad4287bdff",
     "content.bf-challenges.t.3": "c4998859be296f4b",
     "content.bf-challenges.t.4": "3a2ce81ac9dcbe3c",
-    "content.bf-challenges.t.5": "827dba0e278ee0e4",
+    "content.bf-challenges.t.5": "df4fff0e4157a4bc",
     "content.bf-challenges.t.6": "4a83c479c8b90393",
     "content.bf-challenges.t.7": "40cb72bdfa8524ab",
     "content.bf-challenges.t.8": "7c415028fad1dc52",
@@ -2557,9 +2566,9 @@ window.MYOB_LOCALES.zh = {
     "content.formula.t.10": "ab87de70c4d2391a",
     "content.formula.t.11": "943a6627735430bd",
     "content.formula.t.12": "8f2489f83139650a",
-    "content.formula.t.13": "d59c2bf70e921d19",
-    "content.formula.t.14": "d75f988fa8406695",
-    "content.formula.t.15": "a8dbb0d025c765fe",
+    "content.formula.t.13": "0b6634e78f897e4d",
+    "content.formula.t.14": "441ff505b8c222ef",
+    "content.formula.t.15": "b925a44e213f3690",
     "content.formula.t.16": "b3187f2d31ac31fb",
     "content.formula.t.17": "34eddf06cc3c9298",
     "content.formula.t.18": "dbabf7d1094591bb",
@@ -2636,14 +2645,14 @@ window.MYOB_LOCALES.zh = {
     "content.circumcision.t.3": "d4de604c37f414a2",
     "content.circumcision.t.4": "706bcd0238eac334",
     "content.circumcision.t.5": "2d62b3babd67ab3c",
-    "content.circumcision.t.6": "a8361fd6b7237104",
+    "content.circumcision.t.6": "1670453248f8c7b0",
     "content.circumcision.t.7": "51bb2ecb4d379d51",
     "content.circumcision.t.8": "f7774e648f8e13da",
     "content.vitamin-d-drops.title": "e813e486bcfad49c",
     "content.vitamin-d-drops.sub": "f691dcfe7e42f6ac",
     "content.vitamin-d-drops.t.0": "44e620a91a0a98eb",
     "content.vitamin-d-drops.t.1": "79b93282d2633c5c",
-    "content.vitamin-d-drops.t.2": "b433718b08a24cdd",
+    "content.vitamin-d-drops.t.2": "c753be0fea7c0729",
     "content.vitamin-d-drops.t.3": "4ff6969dc2636913",
     "content.vitamin-d-drops.t.4": "f5de3f9830ce47c2",
     "content.vitamin-d-drops.t.5": "391a2d9da997549b",
@@ -2711,11 +2720,11 @@ window.MYOB_LOCALES.zh = {
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
-    "content.faq-deli.t.2": "f834f951752931cb",
+    "content.faq-deli.t.2": "b648bd19bac268db",
     "content.faq-coffee.title": "5389638ea8a88dc8",
     "content.faq-coffee.t.0": "ac1cf8bc0364371a",
     "content.faq-coffee.t.1": "d49405defc21c3ec",
-    "content.faq-coffee.t.2": "19f22003cc780ded",
+    "content.faq-coffee.t.2": "de8179c055015bde",
     "content.faq-hair-dye.title": "3cbc4f5501467bbb",
     "content.faq-hair-dye.t.0": "194b47e06a23e60e",
     "content.faq-exercise-mc.title": "055753c567df011f",
@@ -2734,7 +2743,7 @@ window.MYOB_LOCALES.zh = {
     "content.faq-eat-for-two.title": "7109ae5ce8714502",
     "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
     "content.faq-hot-tub.title": "2230219d6f10d437",
-    "content.faq-hot-tub.t.0": "b73f80715bdad85f",
+    "content.faq-hot-tub.t.0": "c7540b7dd2d9ca9f",
     "content.faq-epidural-csec.title": "85af8aced19ce724",
     "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
     "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
@@ -2931,7 +2940,7 @@ window.MYOB_LOCALES.zh = {
     "content.crying-coping.t.7": "2a2c3908b18025f2",
     "content.crying-coping.t.8": "161f6ed3a80f8549",
     "content.crying-coping.t.9": "7146b80050ea63ce",
-    "content.crying-coping.t.10": "004727c64d6889d0",
+    "content.crying-coping.t.10": "d1ceb17e9cedfff0",
     "content.crying-coping.t.11": "87206f861037d230",
     "content.crying-coping.t.12": "10aefed99197f797",
     "content.crying-coping.t.13": "4b4e03aa59a82fec",

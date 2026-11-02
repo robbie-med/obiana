@@ -272,7 +272,8 @@ window.MYOB_LOCALES.ko = {
         "breast": "🤱 모유",
         "bottle": "🍼 젖병",
         "minutes": "{n}분",
-        "bottleOz": "젖병, {oz} oz"
+        "bottleOz": "젖병, {oz} oz",
+        "bottleMl": "젖병, {ml} mL"
       },
       "diaper": {
         "wetToday": "오늘 소변 기저귀",
@@ -353,7 +354,12 @@ window.MYOB_LOCALES.ko = {
         "wk": "{n}주",
         "lbsValue": "{n} lbs",
         "lbsTotal": "총 {n} lbs",
-        "savedToast": "{week}주에 {lbs} lbs 저장했습니다"
+        "savedToast": "{week}주에 {lbs} lbs 저장했습니다",
+        "prePregnancyWeightKg": "임신 전 체중 (kg)",
+        "gainedSoFarKg": "지금까지 {amount} kg 늘었습니다.",
+        "kgValue": "{n} kg",
+        "kgTotal": "총 {n} kg",
+        "savedToastKg": "{week}주에 {kg} kg 저장했습니다"
       },
       "appts": {
         "addVisit": "+ 진료 추가",
@@ -575,7 +581,7 @@ window.MYOB_LOCALES.ko = {
       "severeHeadache": "심한 두통",
       "visionChanges": "시야 변화",
       "suddenSwellingOfFaceHands": "얼굴/손의 갑작스러운 부종",
-      "fever1004F": "열 &gt;100.4°F",
+      "fever1004F": "열 &gt;{temp:100.4}",
       "contractionsBefore37Weeks": "37주 이전 진통",
       "afterDelivery": "출산 후",
       "soaking1PadHr2": "1시간 안에 패드 1장이 흠뻑 젖음",
@@ -639,7 +645,8 @@ window.MYOB_LOCALES.ko = {
       "both": "양쪽",
       "durationMinutes": "수유 시간 (분)",
       "amountOz": "양 (oz)",
-      "saveFeed": "수유 저장"
+      "saveFeed": "수유 저장",
+      "amountMl": "양 (mL)"
     },
     "modalBp": {
       "logBloodPressure": "혈압 기록하기",
@@ -653,7 +660,8 @@ window.MYOB_LOCALES.ko = {
       "logWeight": "체중 기록하기",
       "weightLbs": "체중 (lbs)",
       "weekOfPregnancy": "임신 주차",
-      "save": "저장"
+      "save": "저장",
+      "weightKg": "체중 (kg)"
     },
     "modalAppt": {
       "addVisit": "진료 추가",
@@ -734,7 +742,8 @@ window.MYOB_LOCALES.ko = {
       "sizeLarger": "더 크게",
       "language": "언어",
       "darkMode": "다크 모드",
-      "datesTitle": "나의 날짜"
+      "datesTitle": "나의 날짜",
+      "units": "단위"
     },
     "urgent": {
       "title": "연락해야 할 때",
@@ -1155,7 +1164,7 @@ window.MYOB_LOCALES.ko = {
         "4–6주 동안 아기보다 무거운 것은 들지 않습니다",
         "절개 부위는 가로 방향의 \"비키니 라인\" 흉터로, 스테이플 또는 흡수성 봉합사로 닫습니다",
         "제왕절개 퇴원 후 이런 경우 연락하세요",
-        "절개 부위가 벌어지거나, 발적이 바깥으로 번지거나, 이상한 분비물이 나오는 경우 · 열이 &gt;100.4°F인 경우 · 통증이 나아지기는커녕 심해지는 경우 · 1시간 안에 패드 1장이 흠뻑 젖는 경우",
+        "절개 부위가 벌어지거나, 발적이 바깥으로 번지거나, 이상한 분비물이 나오는 경우 · 열이 &gt;{temp:100.4}인 경우 · 통증이 나아지기는커녕 심해지는 경우 · 1시간 안에 패드 1장이 흠뻑 젖는 경우",
         "VBAC. 제왕절개 후 질 분만",
         "이전에 하부 횡절개 제왕절개를 한 번 받은 경우, 이번 임신에 VBAC(제왕절개 후 질 분만)이 가능할 수 있습니다. 성공률은 60–80%입니다. 산전 관리 초기에 상의하세요."
       ]
@@ -1309,7 +1318,7 @@ window.MYOB_LOCALES.ko = {
         "다음의 경우 응급실에 가거나 911에 전화하세요",
         "흉통 또는 호흡 곤란 · 경련 · 전에 겪어본 적 없는 갑작스러운 심한 두통 · 뇌졸중 증상(얼굴 한쪽 처짐, 팔 힘 빠짐, 발음 어눌함) · 자신이나 아기를 해치고 싶은 생각",
         "다음의 경우 가정의학과 의사, 산부인과 의사 또는 조산사에게 연락하세요",
-        "열 &gt;100.4°F · 1시간 안에 패드 1장이 흠뻑 젖음 · 이부프로펜/타이레놀로도 낫지 않는 심한 두통 · 시야 변화 · 다리의 발적, 부기 또는 열감(DVT, 심부정맥혈전증) · 상처가 벌어지거나 발적이 번지거나 고름이 나옴 · 소변 보기 어려움 · PPD 또는 불안 증상",
+        "열 &gt;{temp:100.4} · 1시간 안에 패드 1장이 흠뻑 젖음 · 이부프로펜/타이레놀로도 낫지 않는 심한 두통 · 시야 변화 · 다리의 발적, 부기 또는 열감(DVT, 심부정맥혈전증) · 상처가 벌어지거나 발적이 번지거나 고름이 나옴 · 소변 보기 어려움 · PPD 또는 불안 증상",
         "산후 진료 일정과 6주 진료 때 가져갈 만한 질문은 아기 항목의 후속 진료 카드에 있습니다. 아기 진료와 함께 볼 수 있도록 나란히 정리되어 있습니다."
       ]
     },
@@ -1333,7 +1342,7 @@ window.MYOB_LOCALES.ko = {
         "기저귀:",
         "생후 4–5일부터 하루에 젖은 기저귀 6장 이상, 노란색의 알갱이가 섞인 변 3–4회가 정상입니다.",
         "체중:",
-        "출생 시 체중은 생후 10–14일 안에 회복되어야 합니다. 생후 5일 이후에는 하루에 ½–1 oz 정도 늘어야 합니다.",
+        "출생 시 체중은 생후 10–14일 안에 회복되어야 합니다. 생후 5일 이후에는 하루에 {wt:0.5-1} 정도 늘어야 합니다.",
         "아기 상태:",
         "수유 후 만족해하고, 깨어 있을 때 활기가 있습니다.",
         "술, 대마, 흡연",
@@ -1349,7 +1358,7 @@ window.MYOB_LOCALES.ko = {
         "유두 통증",
         "먼저 젖 물리기 자세를 확인하세요. 가장 흔한 원인입니다. 수유 후 짜낸 모유나 라놀린을 바르세요. 공기 중에 말리세요. 보통 생후 5일 이후 젖이 제대로 나오고 물리는 자세가 좋아지면 나아집니다.",
         "젖 몽우리(울혈)",
-        "아기가 배고파할 때마다 먹이세요. 가슴을 비우려고 유축하지 마세요. 그러면 몸이 젖을 더 많이 만듭니다. 가슴이 너무 단단해서 아기가 물기 어렵다면, 먼저 손으로 젖을 조금 짜서 부드럽게 하세요. 수유 후에는 차가운 찜질로 붓기를 줄이세요. 미열이 날 수 있습니다. &gt;100.4°F이면 의사에게 연락하세요.",
+        "아기가 배고파할 때마다 먹이세요. 가슴을 비우려고 유축하지 마세요. 그러면 몸이 젖을 더 많이 만듭니다. 가슴이 너무 단단해서 아기가 물기 어렵다면, 먼저 손으로 젖을 조금 짜서 부드럽게 하세요. 수유 후에는 차가운 찜질로 붓기를 줄이세요. 미열이 날 수 있습니다. &gt;{temp:100.4}이면 의사에게 연락하세요.",
         "젖양이 부족한 것 같을 때",
         "더 자주 먹이세요. 젖양은 수요를 따라갑니다. 젖 물리기 자세를 바로잡으세요. 수유 후 유축을 하면 더 만들라는 신호가 됩니다. 모유 수유 상담사를 만나세요. 부족하다고 느끼는 경우 대부분 실제로는 충분합니다.",
         "유관 막힘",
@@ -1381,9 +1390,9 @@ window.MYOB_LOCALES.ko = {
         "절대 전자레인지를 사용하지 마세요",
         ". 고르게 데워지지 않아 아기 입을 데게 할 수 있습니다",
         "양과 횟수",
-        "신생아(0–1개월): 2–3시간마다 1–2 oz(하루 8–12회)",
-        "생후 2개월: 3–4시간마다 3–4 oz",
-        "생후 4개월: 4시간마다 4–6 oz",
+        "신생아(0–1개월): 2–3시간마다 {vol:1-2}(하루 8–12회)",
+        "생후 2개월: 3–4시간마다 {vol:3-4}",
+        "생후 4개월: 4시간마다 {vol:4-6}",
         "아기가 원할 때 먹이세요. 이것은 지침이지 규칙이 아닙니다",
         "보관",
         "기한",
@@ -1461,7 +1470,7 @@ window.MYOB_LOCALES.ko = {
         "짙은 색의 첫 변(태변)",
         "✓ 정상. 24–48시간 안에 나와야 합니다",
         "바로 아기 담당 의사에게 연락해야 할 경우",
-        "직장 체온 ≥ 100.4°F의 열(신생아에게는 심각합니다. 항상 직장 체온을 재세요) · 먹기를 거부함 · 심한 황달 · 숨쉴 때마다 끙끙거리는 소리 · 매우 창백한 피부 · 달래도 그치지 않는 울음 · 생후 5일 이후 젖은 기저귀가 하루 6장 미만 · 목이 뻣뻣함. 입술이나 얼굴이 파랗거나 회색이면: 911에 전화하세요."
+        "직장 체온 ≥ {temp:100.4}의 열(신생아에게는 심각합니다. 항상 직장 체온을 재세요) · 먹기를 거부함 · 심한 황달 · 숨쉴 때마다 끙끙거리는 소리 · 매우 창백한 피부 · 달래도 그치지 않는 울음 · 생후 5일 이후 젖은 기저귀가 하루 6장 미만 · 목이 뻣뻣함. 입술이나 얼굴이 파랗거나 회색이면: 911에 전화하세요."
       ]
     },
     "safe-sleep": {
@@ -1528,7 +1537,7 @@ window.MYOB_LOCALES.ko = {
       "t": [
         "주된 위험은",
         "리스테리아(Listeria)",
-        "라는 세균 감염입니다. 드물지만 임신 중에는 심각할 수 있고 태반을 통과할 수 있습니다. FDA(미국 식품의약국)는 저온살균되지 않은 치즈와 델리 고기는 김이 날 정도(165°F)로 가열하지 않는 한 피하라고 권고합니다. 저온살균된 소프트 치즈 대부분(예: 저온살균 브리 치즈, 포장된 페타 치즈)은 안전합니다. 단, 케소 프레스코, 케소 블랑코, 파넬라 같은 생치즈는 예외입니다. 저온살균 제품이라도 리스테리아 집단 감염을 일으킨 적이 있으니, 김이 날 정도로 익혀서만 드세요. 가끔 델리 고기를 먹는 것의 전반적인 위험은 매우 낮습니다. 이 지침은 예방 차원이며, 칠면조 샌드위치 하나로 반드시 병에 걸린다는 뜻은 아닙니다. 걱정될 때는 가열해서 드세요. 덜 익힌 고기, 날달걀, 살균하지 않은 우유나 주스, 생 새싹채소도 피하고, 과일과 채소는 씻어 드세요. 고양이 화장실 모래는 다른 사람에게 갈게 하거나 장갑을 끼세요. 고양이 배설물과 덜 익힌 고기는 톡소플라스마증을 옮길 수 있습니다."
+        "라는 세균 감염입니다. 드물지만 임신 중에는 심각할 수 있고 태반을 통과할 수 있습니다. FDA(미국 식품의약국)는 저온살균되지 않은 치즈와 델리 고기는 김이 날 정도({temp:165})로 가열하지 않는 한 피하라고 권고합니다. 저온살균된 소프트 치즈 대부분(예: 저온살균 브리 치즈, 포장된 페타 치즈)은 안전합니다. 단, 케소 프레스코, 케소 블랑코, 파넬라 같은 생치즈는 예외입니다. 저온살균 제품이라도 리스테리아 집단 감염을 일으킨 적이 있으니, 김이 날 정도로 익혀서만 드세요. 가끔 델리 고기를 먹는 것의 전반적인 위험은 매우 낮습니다. 이 지침은 예방 차원이며, 칠면조 샌드위치 하나로 반드시 병에 걸린다는 뜻은 아닙니다. 걱정될 때는 가열해서 드세요. 덜 익힌 고기, 날달걀, 살균하지 않은 우유나 주스, 생 새싹채소도 피하고, 과일과 채소는 씻어 드세요. 고양이 화장실 모래는 다른 사람에게 갈게 하거나 장갑을 끼세요. 고양이 배설물과 덜 익힌 고기는 톡소플라스마증을 옮길 수 있습니다."
       ]
     },
     "faq-coffee": {
@@ -1537,7 +1546,7 @@ window.MYOB_LOCALES.ko = {
       "t": [
         "네. ACOG(미국 산부인과학회)는 카페인을",
         "하루 200 mg 미만",
-        "으로 제한할 것을 권합니다(드립 커피 12온스 한 잔 정도). 이 정도 수준에서는 임신에 해롭다는 근거가 확립되지 않았습니다. 차, 탄산음료, 초콜릿에도 카페인이 들어 있으니 모두 합산해서 계산하세요. 줄이는 것은 합리적이지만, 완전히 끊는 것은 개인의 선택이지 의학적으로 꼭 필요한 것은 아닙니다."
+        "으로 제한할 것을 권합니다(드립 커피 {vol:12} 한 잔 정도). 이 정도 수준에서는 임신에 해롭다는 근거가 확립되지 않았습니다. 차, 탄산음료, 초콜릿에도 카페인이 들어 있으니 모두 합산해서 계산하세요. 줄이는 것은 합리적이지만, 완전히 끊는 것은 개인의 선택이지 의학적으로 꼭 필요한 것은 아닙니다."
       ]
     },
     "faq-hair-dye": {
@@ -1586,7 +1595,7 @@ window.MYOB_LOCALES.ko = {
       "title": "목욕이나 온수 욕조를 이용해도 되나요?",
       "sub": "",
       "t": [
-        "따뜻한 목욕은 임신 기간 내내 괜찮습니다. 다만 온수 욕조, 사우나, 찜질방처럼 몸의 중심 체온을 102°F (39°C) 이상으로 올리는 것은 권하지 않습니다. 특히 임신 초기에는 체온 상승이 신경관 결손과 관련이 있습니다. 온수 욕조를 꼭 이용하고 싶다면 뜨겁지 않은 편안한 온도로 맞추고, 10분 이내로 제한하고, 임신 초기에는 피하세요. 일반 가정의 물 온도(98–100°F)로 하는 따뜻한 목욕은 안전합니다."
+        "따뜻한 목욕은 임신 기간 내내 괜찮습니다. 다만 온수 욕조, 사우나, 찜질방처럼 몸의 중심 체온을 {temp:102} 이상으로 올리는 것은 권하지 않습니다. 특히 임신 초기에는 체온 상승이 신경관 결손과 관련이 있습니다. 온수 욕조를 꼭 이용하고 싶다면 뜨겁지 않은 편안한 온도로 맞추고, 10분 이내로 제한하고, 임신 초기에는 피하세요. 일반 가정의 물 온도({temp:98-100})로 하는 따뜻한 목욕은 안전합니다."
       ]
     },
     "faq-epidural-csec": {
@@ -1775,7 +1784,7 @@ window.MYOB_LOCALES.ko = {
       "t": [
         "생선은 임신 중에 먹기 좋은 음식입니다. 다만 수은은 조심해야 합니다.",
         "얼마나",
-        "일주일에 2–3번, 모두 합쳐 약 8–12온스. 기름진 생선은 음식으로 DHA를 얻는 주요 공급원이며, 아기는 이것으로 뇌와 눈을 만듭니다.",
+        "일주일에 2–3번, 모두 합쳐 약 {wt:8-12}. 기름진 생선은 음식으로 DHA를 얻는 주요 공급원이며, 아기는 이것으로 뇌와 눈을 만듭니다.",
         "마음껏 드세요, 수은이 적은 생선",
         "연어, 정어리, 멸치, 청어, 송어, 틸라피아, 대구, 메기, 명태, 라이트 참치 통조림, 새우, 게, 가리비, 익힌 굴.",
         "일주일에 한 번까지",
@@ -1783,7 +1792,7 @@ window.MYOB_LOCALES.ko = {
         "먹지 마세요",
         "상어, 황새치, 킹 고등어, 멕시코만산 옥돔(타일피시), 청새치, 오렌지 러피, 눈다랑어. 크고 오래 사는 포식 어종이라 수은이 가장 많습니다.",
         "조리",
-        "145°F까지 익혀, 살이 불투명해지고 결대로 갈라질 때까지 조리하세요. 임신 중 날생선은 대체로 좋지 않고, 냉장 코너의 훈제 생선도 요리에 넣어 익히지 않으면 마찬가지입니다. 이때 위험은 수은이 아니라 리스테리아입니다.",
+        "{temp:145}까지 익혀, 살이 불투명해지고 결대로 갈라질 때까지 조리하세요. 임신 중 날생선은 대체로 좋지 않고, 냉장 코너의 훈제 생선도 요리에 넣어 익히지 않으면 마찬가지입니다. 이때 위험은 수은이 아니라 리스테리아입니다.",
         "직접 잡은 생선",
         "그 물에 대한 주(州)의 권고를 확인하세요. 전국 목록에는 지역 오염이 반영되지 않습니다."
       ]
@@ -1808,7 +1817,7 @@ window.MYOB_LOCALES.ko = {
       "t": [
         "거의 모든 사람의 모유에는 비타민 D가 적습니다. 잘 알려진 부족분이고, 해결은 간단합니다.",
         "권장 사항",
-        "모유를 먹거나 주로 모유를 먹는 아기는 생후 첫 며칠부터 비타민 D를 하루 400 IU 먹입니다. 아기가 분유나, 나중에는 강화 우유를 하루 약 32온스(1리터) 마실 때까지 계속하세요. 이것들에는 이미 비타민 D가 들어 있기 때문입니다.",
+        "모유를 먹거나 주로 모유를 먹는 아기는 생후 첫 며칠부터 비타민 D를 하루 400 IU 먹입니다. 아기가 분유나, 나중에는 강화 우유를 하루 약 {vol:32} 마실 때까지 계속하세요. 이것들에는 이미 비타민 D가 들어 있기 때문입니다.",
         "분유를 충분한 양 먹는 아기는 따로 필요하지 않습니다. 혼합 수유는 실제로 먹는 분유 양에 따라 다르기 때문에 보통 여전히 필요합니다.",
         "왜 중요한지",
         "비타민 D가 있어야 몸이 칼슘을 흡수하고 뼈를 만듭니다. 실제 결핍은 구루병을 일으키는데, 흔하지는 않지만 사라지지 않았고, 피부색이 더 진한 아기, 북쪽 지역, 겨울철에 더 흔합니다.",
@@ -1826,7 +1835,7 @@ window.MYOB_LOCALES.ko = {
         "권고가 다른 이유",
         "미국소아과학회는 이점이 위험보다 크지만 모든 남자아이에게 권할 정도는 아니라고 결론 내렸습니다. 여러 유럽 단체는 같은 연구를 보고 다르게 결론 내렸습니다. 실제로는 가족의 결정이고, 종교, 문화, 아버지의 모습에 따라 정해지는 경우가 많습니다.",
         "하기로 했다면",
-        "통증 조절을 구체적으로 물어보세요. 설탕물만이 아니라 국소 마취 차단술이어야 합니다. 효과적인 방법이 있지만 모든 곳에서 쓰지는 않습니다. 보험 적용 여부도 확인하세요. 시술 후 끝부분이 빨갛고 일주일쯤 부드러운 노란 막이 생길 수 있는데, 정상적으로 아무는 과정입니다. 기저귀를 갈 때마다 바셀린을 발라 주세요. 살짝 눌러도 멈추지 않는 출혈, 8시간 동안 젖은 기저귀가 없음, 100.4°F 이상의 열, 번지는 붉은기·부기·고름 물집이 있으면 아기 의사에게 전화하세요.",
+        "통증 조절을 구체적으로 물어보세요. 설탕물만이 아니라 국소 마취 차단술이어야 합니다. 효과적인 방법이 있지만 모든 곳에서 쓰지는 않습니다. 보험 적용 여부도 확인하세요. 시술 후 끝부분이 빨갛고 일주일쯤 부드러운 노란 막이 생길 수 있는데, 정상적으로 아무는 과정입니다. 기저귀를 갈 때마다 바셀린을 발라 주세요. 살짝 눌러도 멈추지 않는 출혈, 8시간 동안 젖은 기저귀가 없음, {temp:100.4} 이상의 열, 번지는 붉은기·부기·고름 물집이 있으면 아기 의사에게 전화하세요.",
         "하지 않기로 했다면",
         "포피를 뒤로 젖히지 마세요. 아기 때는 원래 붙어 있고 몇 년에 걸쳐 저절로 떨어집니다. 억지로 젖히면 오히려 막으려던 흉터가 생깁니다. 바깥쪽은 다른 피부처럼 닦아 주세요."
       ]
@@ -2043,7 +2052,7 @@ window.MYOB_LOCALES.ko = {
         "절대 아기를 흔들지 마세요",
         "흔들면 뇌 손상, 실명 또는 사망이 생길 수 있습니다. 아기를 돌보는 모든 사람이 이것을 알도록 하세요.",
         "울음과 함께 이런 증상이 있으면 아기 의사에게 전화하세요",
-        "100.4°F 이상의 열 · 토하거나 잘 못 먹음 · 아파하는 모습, 또는 평소와 다르게 들리는 울음",
+        "{temp:100.4} 이상의 열 · 토하거나 잘 못 먹음 · 아파하는 모습, 또는 평소와 다르게 들리는 울음",
         "아기가 이러면 911에 전화하세요",
         "축 처지거나 잘 깨지 않음 · 숨쉬기 힘들어함 · 파랗거나 회색으로 변함",
         "대부분의 시간 동안 절망감이나 분노를 느낀다면",
@@ -2294,7 +2303,7 @@ window.MYOB_LOCALES.ko = {
     "content.csection.t.23": "03b0235cac26896a",
     "content.csection.t.24": "04b03da54128058f",
     "content.csection.t.25": "f6fa8c9fde0476e5",
-    "content.csection.t.26": "ca4bbc17e96e473d",
+    "content.csection.t.26": "ad79a07707d57275",
     "content.csection.t.27": "e04d3a00a0c48e1a",
     "content.csection.t.28": "24b632c57b1d608f",
     "content.mfm.title": "6c228d117e74de43",
@@ -2420,7 +2429,7 @@ window.MYOB_LOCALES.ko = {
     "content.postpartum-danger.t.0": "8e2a678f78c207ed",
     "content.postpartum-danger.t.1": "d26dc5484bcab5f6",
     "content.postpartum-danger.t.2": "bee2b3c377a8a3e5",
-    "content.postpartum-danger.t.3": "8a9f90651b64d9d3",
+    "content.postpartum-danger.t.3": "03c000a554e9734b",
     "content.breastfeeding.title": "c57faccf43d647e5",
     "content.breastfeeding.sub": "fceab506c1cfc26c",
     "content.breastfeeding.t.0": "866addc074fa03ba",
@@ -2439,7 +2448,7 @@ window.MYOB_LOCALES.ko = {
     "content.breastfeeding.t.13": "3d9abf5543ae35bf",
     "content.breastfeeding.t.14": "a90a747355b91e39",
     "content.breastfeeding.t.15": "09b0e1598812ec27",
-    "content.breastfeeding.t.16": "6842a2bad7d347b4",
+    "content.breastfeeding.t.16": "67351f4c3f193876",
     "content.breastfeeding.t.17": "5e4777c90c2f7087",
     "content.breastfeeding.t.18": "6cbf79f457184afe",
     "content.bf-challenges.title": "c4bf4298d981c3ae",
@@ -2449,7 +2458,7 @@ window.MYOB_LOCALES.ko = {
     "content.bf-challenges.t.2": "7d8bf4ad4287bdff",
     "content.bf-challenges.t.3": "c4998859be296f4b",
     "content.bf-challenges.t.4": "3a2ce81ac9dcbe3c",
-    "content.bf-challenges.t.5": "827dba0e278ee0e4",
+    "content.bf-challenges.t.5": "df4fff0e4157a4bc",
     "content.bf-challenges.t.6": "4a83c479c8b90393",
     "content.bf-challenges.t.7": "40cb72bdfa8524ab",
     "content.bf-challenges.t.8": "7c415028fad1dc52",
@@ -2477,9 +2486,9 @@ window.MYOB_LOCALES.ko = {
     "content.formula.t.10": "ab87de70c4d2391a",
     "content.formula.t.11": "943a6627735430bd",
     "content.formula.t.12": "8f2489f83139650a",
-    "content.formula.t.13": "d59c2bf70e921d19",
-    "content.formula.t.14": "d75f988fa8406695",
-    "content.formula.t.15": "a8dbb0d025c765fe",
+    "content.formula.t.13": "0b6634e78f897e4d",
+    "content.formula.t.14": "441ff505b8c222ef",
+    "content.formula.t.15": "b925a44e213f3690",
     "content.formula.t.16": "b3187f2d31ac31fb",
     "content.formula.t.17": "34eddf06cc3c9298",
     "content.formula.t.18": "dbabf7d1094591bb",
@@ -2549,7 +2558,7 @@ window.MYOB_LOCALES.ko = {
     "content.normal-newborn.t.29": "a646ba8ef31029a4",
     "content.normal-newborn.t.30": "b96a48ec64c8f9ba",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "380945be7751b37c",
+    "content.normal-newborn.t.32": "11a67bb6600db664",
     "content.safe-sleep.title": "8f76ca906ecc7552",
     "content.safe-sleep.sub": "280c3d91955a45cb",
     "content.safe-sleep.t.0": "606d4b033e9658bd",
@@ -2602,11 +2611,11 @@ window.MYOB_LOCALES.ko = {
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
-    "content.faq-deli.t.2": "f834f951752931cb",
+    "content.faq-deli.t.2": "b648bd19bac268db",
     "content.faq-coffee.title": "5389638ea8a88dc8",
     "content.faq-coffee.t.0": "ac1cf8bc0364371a",
     "content.faq-coffee.t.1": "d49405defc21c3ec",
-    "content.faq-coffee.t.2": "19f22003cc780ded",
+    "content.faq-coffee.t.2": "de8179c055015bde",
     "content.faq-hair-dye.title": "3cbc4f5501467bbb",
     "content.faq-hair-dye.t.0": "194b47e06a23e60e",
     "content.faq-exercise-mc.title": "055753c567df011f",
@@ -2618,7 +2627,7 @@ window.MYOB_LOCALES.ko = {
     "content.faq-eat-for-two.title": "7109ae5ce8714502",
     "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
     "content.faq-hot-tub.title": "2230219d6f10d437",
-    "content.faq-hot-tub.t.0": "b73f80715bdad85f",
+    "content.faq-hot-tub.t.0": "c7540b7dd2d9ca9f",
     "content.faq-epidural-csec.title": "85af8aced19ce724",
     "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
     "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
@@ -2723,7 +2732,7 @@ window.MYOB_LOCALES.ko = {
     "content.fish-mercury.sub": "7a8a6870bed495f6",
     "content.fish-mercury.t.0": "6734e1973f605319",
     "content.fish-mercury.t.1": "d909a26ae31f4ecc",
-    "content.fish-mercury.t.2": "ee651e46d479ff88",
+    "content.fish-mercury.t.2": "7341748092938246",
     "content.fish-mercury.t.3": "b09f865e34a2ab04",
     "content.fish-mercury.t.4": "45e5d986c9bdbc50",
     "content.fish-mercury.t.5": "6d00998d3f613893",
@@ -2731,7 +2740,7 @@ window.MYOB_LOCALES.ko = {
     "content.fish-mercury.t.7": "7c04eb03eb7569d5",
     "content.fish-mercury.t.8": "73b85abd06fd7837",
     "content.fish-mercury.t.9": "450b169714695949",
-    "content.fish-mercury.t.10": "0d325b46201051b8",
+    "content.fish-mercury.t.10": "956c0b6e3e37d250",
     "content.fish-mercury.t.11": "a48919d4a78360fa",
     "content.fish-mercury.t.12": "500b3f883d2b066e",
     "content.car-seat.title": "adb50c1b58481985",
@@ -2748,7 +2757,7 @@ window.MYOB_LOCALES.ko = {
     "content.vitamin-d-drops.sub": "f691dcfe7e42f6ac",
     "content.vitamin-d-drops.t.0": "44e620a91a0a98eb",
     "content.vitamin-d-drops.t.1": "79b93282d2633c5c",
-    "content.vitamin-d-drops.t.2": "b433718b08a24cdd",
+    "content.vitamin-d-drops.t.2": "c753be0fea7c0729",
     "content.vitamin-d-drops.t.3": "4ff6969dc2636913",
     "content.vitamin-d-drops.t.4": "f5de3f9830ce47c2",
     "content.vitamin-d-drops.t.5": "391a2d9da997549b",
@@ -2762,7 +2771,7 @@ window.MYOB_LOCALES.ko = {
     "content.circumcision.t.3": "d4de604c37f414a2",
     "content.circumcision.t.4": "706bcd0238eac334",
     "content.circumcision.t.5": "2d62b3babd67ab3c",
-    "content.circumcision.t.6": "a8361fd6b7237104",
+    "content.circumcision.t.6": "1670453248f8c7b0",
     "content.circumcision.t.7": "51bb2ecb4d379d51",
     "content.circumcision.t.8": "f7774e648f8e13da",
     "content.postpartum-danger.t.4": "0a1264f55f4a42c3",
@@ -2931,7 +2940,7 @@ window.MYOB_LOCALES.ko = {
     "content.crying-coping.t.7": "2a2c3908b18025f2",
     "content.crying-coping.t.8": "161f6ed3a80f8549",
     "content.crying-coping.t.9": "7146b80050ea63ce",
-    "content.crying-coping.t.10": "004727c64d6889d0",
+    "content.crying-coping.t.10": "d1ceb17e9cedfff0",
     "content.crying-coping.t.11": "87206f861037d230",
     "content.crying-coping.t.12": "10aefed99197f797",
     "content.crying-coping.t.13": "4b4e03aa59a82fec",

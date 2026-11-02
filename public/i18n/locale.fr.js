@@ -274,7 +274,8 @@ window.MYOB_LOCALES.fr = {
         "breast": "🤱 Sein",
         "bottle": "🍼 Biberon",
         "minutes": "{n} min",
-        "bottleOz": "Biberon, {oz} oz"
+        "bottleOz": "Biberon, {oz} oz",
+        "bottleMl": "Biberon, {ml} mL"
       },
       "diaper": {
         "wetToday": "Mouillées aujourd’hui",
@@ -355,7 +356,12 @@ window.MYOB_LOCALES.fr = {
         "wk": "Sem. {n}",
         "lbsValue": "{n} lbs",
         "lbsTotal": "{n} lbs au total",
-        "savedToast": "{lbs} lbs à la semaine {week} enregistré"
+        "savedToast": "{lbs} lbs à la semaine {week} enregistré",
+        "prePregnancyWeightKg": "Poids avant la grossesse (kg)",
+        "gainedSoFarKg": "Vous avez pris {amount} kg jusqu’ici.",
+        "kgValue": "{n} kg",
+        "kgTotal": "{n} kg au total",
+        "savedToastKg": "{kg} kg à la semaine {week} enregistré"
       },
       "appts": {
         "addVisit": "+ Ajouter une visite",
@@ -577,7 +583,7 @@ window.MYOB_LOCALES.fr = {
       "severeHeadache": "Maux de tête intenses",
       "visionChanges": "Troubles de la vision",
       "suddenSwellingOfFaceHands": "Gonflement soudain du visage/des mains",
-      "fever1004F": "Fièvre &gt;100,4°F",
+      "fever1004F": "Fièvre &gt;{temp:100.4}",
       "contractionsBefore37Weeks": "Contractions avant 37 semaines",
       "afterDelivery": "Après l'accouchement",
       "soaking1PadHr2": "1 serviette trempée en une heure",
@@ -641,7 +647,8 @@ window.MYOB_LOCALES.fr = {
       "both": "Les deux",
       "durationMinutes": "Durée (minutes)",
       "amountOz": "Quantité (oz)",
-      "saveFeed": "Enregistrer"
+      "saveFeed": "Enregistrer",
+      "amountMl": "Quantité (mL)"
     },
     "modalBp": {
       "logBloodPressure": "Mesurer la tension",
@@ -655,7 +662,8 @@ window.MYOB_LOCALES.fr = {
       "logWeight": "Noter le poids",
       "weightLbs": "Poids (lb)",
       "weekOfPregnancy": "Semaine de grossesse",
-      "save": "Enregistrer"
+      "save": "Enregistrer",
+      "weightKg": "Poids (kg)"
     },
     "modalAppt": {
       "addVisit": "Ajouter une visite",
@@ -736,7 +744,8 @@ window.MYOB_LOCALES.fr = {
       "sizeLarger": "Plus grande",
       "language": "Langue",
       "darkMode": "Mode sombre",
-      "datesTitle": "Vos dates"
+      "datesTitle": "Vos dates",
+      "units": "Unités"
     },
     "urgent": {
       "title": "Quand appeler",
@@ -1161,7 +1170,7 @@ window.MYOB_LOCALES.fr = {
         "Ne soulevez rien de plus lourd que votre bébé pendant 4 à 6 semaines",
         "L'incision est une cicatrice horizontale « au niveau du maillot », fermée avec des agrafes ou des sutures résorbables",
         "Appelez après la sortie d'une césarienne si",
-        "L'incision s'ouvre, présente une rougeur qui s'étend, ou un écoulement inhabituel · Fièvre &gt;100.4°F · Douleur qui s'aggrave au lieu de s'améliorer · Une serviette hygiénique trempée en une heure",
+        "L'incision s'ouvre, présente une rougeur qui s'étend, ou un écoulement inhabituel · Fièvre &gt;{temp:100.4} · Douleur qui s'aggrave au lieu de s'améliorer · Une serviette hygiénique trempée en une heure",
         "VBAC. Accouchement vaginal après césarienne",
         "Si vous avez eu une césarienne antérieure avec incision transverse basse, un VBAC (accouchement vaginal après césarienne) peut être une option pour cette grossesse. Les taux de réussite sont de 60 à 80 %. Discutez-en tôt dans votre suivi prénatal."
       ]
@@ -1315,7 +1324,7 @@ window.MYOB_LOCALES.fr = {
         "Allez aux urgences ou appelez le 911 en cas de",
         "Douleur à la poitrine ou difficulté à respirer · Convulsions · Maux de tête soudains et violents, différents de tout ce que vous avez connu · Symptômes d'AVC (visage qui tombe, faiblesse d'un bras, parole pâteuse) · Pensées de vous faire du mal ou d'en faire à votre bébé",
         "Appelez votre médecin de famille, votre obstétricien ou votre sage-femme en cas de",
-        "Fièvre &gt;100.4°F · Une serviette hygiénique trempée en une heure · Maux de tête sévères non soulagés par l'ibuprofène/paracétamol (Tylenol) · Troubles de la vision · Rougeur, gonflement ou chaleur d'une jambe (TVP) · Ouverture de la plaie, rougeur qui s'étend ou présence de pus · Difficulté à uriner · Signes de PPD ou d'anxiété",
+        "Fièvre &gt;{temp:100.4} · Une serviette hygiénique trempée en une heure · Maux de tête sévères non soulagés par l'ibuprofène/paracétamol (Tylenol) · Troubles de la vision · Rougeur, gonflement ou chaleur d'une jambe (TVP) · Ouverture de la plaie, rougeur qui s'étend ou présence de pus · Difficulté à uriner · Signes de PPD ou d'anxiété",
         "Le calendrier de vos rendez-vous après la naissance, et les questions à apporter à la visite des six semaines, se trouvent dans la fiche Rendez-vous de suivi, sous Bébé, à côté des rendez-vous de votre bébé, pour voir les deux ensemble."
       ]
     },
@@ -1339,7 +1348,7 @@ window.MYOB_LOCALES.fr = {
         "Couches :",
         "Vers le jour 4–5, attendez-vous à au moins 6 couches mouillées et 3–4 selles jaunes granuleuses par jour.",
         "Poids :",
-        "Le poids de naissance doit être retrouvé en 10–14 jours. Après le jour 5, attendez-vous à une prise de ½–1 oz par jour.",
+        "Le poids de naissance doit être retrouvé en 10–14 jours. Après le jour 5, attendez-vous à une prise de {wt:0.5-1} par jour.",
         "Bébé :",
         "Satisfait après les tétées, alerte pendant les périodes d'éveil.",
         "Alcool, cannabis et tabac",
@@ -1355,7 +1364,7 @@ window.MYOB_LOCALES.fr = {
         "Mamelons douloureux",
         "Vérifiez d'abord la prise du sein. C'est la cause n° 1. Appliquez du lait maternel exprimé ou de la lanoline après les tétées. Laissez sécher à l'air. Cela s'améliore en général après le jour 5, quand le lait arrive et que la prise s'améliore.",
         "Engorgement",
-        "Nourrissez votre bébé chaque fois qu'il a faim. Ne tirez pas votre lait pour vider le sein : cela pousse le corps à en produire encore plus. Si le sein est trop ferme pour que bébé le prenne, exprimez d'abord un peu de lait à la main pour l'assouplir. Compresse froide après la tétée pour réduire le gonflement. Peut causer une légère fièvre. Si &gt;100.4°F, appelez votre médecin.",
+        "Nourrissez votre bébé chaque fois qu'il a faim. Ne tirez pas votre lait pour vider le sein : cela pousse le corps à en produire encore plus. Si le sein est trop ferme pour que bébé le prenne, exprimez d'abord un peu de lait à la main pour l'assouplir. Compresse froide après la tétée pour réduire le gonflement. Peut causer une légère fièvre. Si &gt;{temp:100.4}, appelez votre médecin.",
         "Inquiétudes sur la production de lait",
         "Allaitez plus souvent. La production suit la demande. Assurez-vous d'une bonne prise du sein. Tirez après les tétées pour stimuler la production. Consultez un(e) conseiller(ère) en lactation. La plupart du temps, la production jugée insuffisante est en réalité suffisante.",
         "Canal lactifère bouché",
@@ -1387,9 +1396,9 @@ window.MYOB_LOCALES.fr = {
         "Jamais au micro-ondes",
         ". Chauffe de façon inégale et peut brûler la bouche de bébé",
         "Combien, à quelle fréquence",
-        "Nouveau-né (0–1 mois) : 1–2 oz toutes les 2–3 heures (8–12 biberons/jour)",
-        "2 mois : 3–4 oz toutes les 3–4 heures",
-        "4 mois : 4–6 oz toutes les 4 heures",
+        "Nouveau-né (0–1 mois) : {vol:1-2} toutes les 2–3 heures (8–12 biberons/jour)",
+        "2 mois : {vol:3-4} toutes les 3–4 heures",
+        "4 mois : {vol:4-6} toutes les 4 heures",
         "Nourrissez à la demande. Ce sont des repères, pas des règles",
         "Conservation",
         "Durée",
@@ -1467,7 +1476,7 @@ window.MYOB_LOCALES.fr = {
         "Premières selles foncées (méconium)",
         "✓ Oui. Doit passer dans les 24–48 h",
         "Appelez tout de suite le médecin du bébé en cas de",
-        "Fièvre ≥ 100.4°F par voie rectale (grave chez le nouveau-né. Prenez toujours la température par voie rectale) · Refus de manger · Jaunissement extrême · Grognement à chaque respiration · Peau très pâle · Pleurs inconsolables · Moins de 6 couches mouillées/jour après le jour 5 · Raideur de la nuque. Lèvres ou visage bleus ou gris : appelez le 911."
+        "Fièvre ≥ {temp:100.4} par voie rectale (grave chez le nouveau-né. Prenez toujours la température par voie rectale) · Refus de manger · Jaunissement extrême · Grognement à chaque respiration · Peau très pâle · Pleurs inconsolables · Moins de 6 couches mouillées/jour après le jour 5 · Raideur de la nuque. Lèvres ou visage bleus ou gris : appelez le 911."
       ]
     },
     "safe-sleep": {
@@ -1534,7 +1543,7 @@ window.MYOB_LOCALES.fr = {
       "t": [
         "Le principal risque est la",
         "Listeria",
-        ", une infection bactérienne rare mais qui peut être grave pendant la grossesse (elle peut traverser le placenta). La FDA (agence américaine des aliments et médicaments) conseille d'éviter les fromages non pasteurisés et la charcuterie, sauf si elle est chauffée jusqu'à être fumante (165°F). La plupart des fromages à pâte molle pasteurisés (comme le brie pasteurisé, la feta en emballage) sont sûrs. Exception : le queso fresco, le queso blanco, la panela et les fromages frais du même type. Même pasteurisés, ils ont causé des épidémies de listériose : mangez-les seulement chauffés jusqu'à être fumants. Le risque global lié à une consommation occasionnelle de charcuterie est très faible. Ces conseils sont une précaution, et non une garantie qu'un sandwich à la dinde rendra malade. En cas de doute, faites chauffer. Évitez aussi la viande pas assez cuite, les œufs crus, le lait ou les jus non pasteurisés et les graines germées crues, et lavez les fruits et légumes. Demandez à quelqu'un d'autre de changer la litière du chat, ou portez des gants : les excréments de chat et la viande pas assez cuite peuvent transmettre la toxoplasmose."
+        ", une infection bactérienne rare mais qui peut être grave pendant la grossesse (elle peut traverser le placenta). La FDA (agence américaine des aliments et médicaments) conseille d'éviter les fromages non pasteurisés et la charcuterie, sauf si elle est chauffée jusqu'à être fumante ({temp:165}). La plupart des fromages à pâte molle pasteurisés (comme le brie pasteurisé, la feta en emballage) sont sûrs. Exception : le queso fresco, le queso blanco, la panela et les fromages frais du même type. Même pasteurisés, ils ont causé des épidémies de listériose : mangez-les seulement chauffés jusqu'à être fumants. Le risque global lié à une consommation occasionnelle de charcuterie est très faible. Ces conseils sont une précaution, et non une garantie qu'un sandwich à la dinde rendra malade. En cas de doute, faites chauffer. Évitez aussi la viande pas assez cuite, les œufs crus, le lait ou les jus non pasteurisés et les graines germées crues, et lavez les fruits et légumes. Demandez à quelqu'un d'autre de changer la litière du chat, ou portez des gants : les excréments de chat et la viande pas assez cuite peuvent transmettre la toxoplasmose."
       ]
     },
     "faq-coffee": {
@@ -1543,7 +1552,7 @@ window.MYOB_LOCALES.fr = {
       "t": [
         "Oui. L'ACOG (collège américain des obstétriciens) recommande de limiter la caféine à",
         "moins de 200 mg par jour",
-        "(environ une tasse de café filtre de 12 oz). À ce niveau, aucun effet nocif sur la grossesse n'est établi. Le thé, les sodas et le chocolat contiennent aussi de la caféine. Comptez-les tous ensemble. Réduire votre consommation est raisonnable ; l'arrêter complètement est un choix personnel, pas une nécessité médicale."
+        "(environ une tasse de café filtre de {vol:12}). À ce niveau, aucun effet nocif sur la grossesse n'est établi. Le thé, les sodas et le chocolat contiennent aussi de la caféine. Comptez-les tous ensemble. Réduire votre consommation est raisonnable ; l'arrêter complètement est un choix personnel, pas une nécessité médicale."
       ]
     },
     "faq-hair-dye": {
@@ -1592,7 +1601,7 @@ window.MYOB_LOCALES.fr = {
       "title": "Puis-je prendre des bains ou utiliser un jacuzzi ?",
       "sub": "",
       "t": [
-        "Les bains chauds sont sans danger pendant toute la grossesse. Les jacuzzis, saunas et hammams qui font monter votre température corporelle au-dessus de 102°F (39°C) ne sont pas recommandés, surtout au premier trimestre, car une température élevée est associée à des malformations du tube neural. Si vous utilisez un jacuzzi, gardez une température agréable (pas brûlante), limitez-vous à 10 minutes et évitez-le au premier trimestre. Un bain chaud à la température habituelle de l'eau du robinet (98–100°F) est sans danger."
+        "Les bains chauds sont sans danger pendant toute la grossesse. Les jacuzzis, saunas et hammams qui font monter votre température corporelle au-dessus de {temp:102} ne sont pas recommandés, surtout au premier trimestre, car une température élevée est associée à des malformations du tube neural. Si vous utilisez un jacuzzi, gardez une température agréable (pas brûlante), limitez-vous à 10 minutes et évitez-le au premier trimestre. Un bain chaud à la température habituelle de l'eau du robinet ({temp:98-100}) est sans danger."
       ]
     },
     "faq-epidural-csec": {
@@ -1781,7 +1790,7 @@ window.MYOB_LOCALES.fr = {
       "t": [
         "Le poisson fait partie des bons aliments pendant la grossesse. Il faut seulement faire attention au mercure.",
         "Combien",
-        "Deux à trois portions par semaine, environ 8 à 12 onces au total. Les poissons gras sont la principale source alimentaire de DHA, que le bébé utilise pour former son cerveau et ses yeux.",
+        "Deux à trois portions par semaine, environ {wt:8-12} au total. Les poissons gras sont la principale source alimentaire de DHA, que le bébé utilise pour former son cerveau et ses yeux.",
         "À volonté, pauvres en mercure",
         "Saumon, sardines, anchois, hareng, truite, tilapia, morue, poisson-chat, lieu, thon pâle en conserve, crevettes, crabe, pétoncles, huîtres cuites.",
         "Une fois par semaine au plus",
@@ -1789,7 +1798,7 @@ window.MYOB_LOCALES.fr = {
         "À ne pas manger",
         "Requin, espadon, thazard royal, tile du golfe du Mexique, marlin, hoplostète orange, thon obèse. Ce sont de grands prédateurs qui vivent longtemps et contiennent le plus de mercure.",
         "Cuisson",
-        "Cuisez à 145°F, jusqu'à ce que la chair soit opaque et se défasse en lamelles. Le poisson cru est en général une mauvaise idée pendant la grossesse, tout comme le poisson fumé du rayon frais, sauf cuit dans un plat. Là, le risque est la listeria, pas le mercure.",
+        "Cuisez à {temp:145}, jusqu'à ce que la chair soit opaque et se défasse en lamelles. Le poisson cru est en général une mauvaise idée pendant la grossesse, tout comme le poisson fumé du rayon frais, sauf cuit dans un plat. Là, le risque est la listeria, pas le mercure.",
         "Le poisson que vous pêchez vous-même",
         "Consultez l'avis de votre État pour ces eaux. Les listes nationales ne couvrent pas la pollution locale."
       ]
@@ -1814,7 +1823,7 @@ window.MYOB_LOCALES.fr = {
       "t": [
         "Le lait maternel contient peu de vitamine D chez presque tout le monde. C'est un manque connu, facile à corriger.",
         "Ce qui est recommandé",
-        "400 UI de vitamine D par jour, dès les premiers jours, pour tout bébé allaité ou nourri surtout au lait maternel. Continuez jusqu'à ce que le bébé boive environ 32 onces (1 litre) par jour de lait infantile ou, plus tard, de lait enrichi, car ceux-ci contiennent déjà de la vitamine D.",
+        "400 UI de vitamine D par jour, dès les premiers jours, pour tout bébé allaité ou nourri surtout au lait maternel. Continuez jusqu'à ce que le bébé boive environ {vol:32} par jour de lait infantile ou, plus tard, de lait enrichi, car ceux-ci contiennent déjà de la vitamine D.",
         "Un bébé nourri au lait infantile en quantité complète n'a pas besoin de plus. En allaitement mixte, il en faut en général encore, selon la quantité de lait infantile réellement bue.",
         "Pourquoi c'est important",
         "La vitamine D permet au corps d'absorber le calcium et de construire les os. Une vraie carence cause le rachitisme, rare mais pas disparu, et plus probable chez les bébés à la peau plus foncée, dans le nord et en hiver.",
@@ -1832,7 +1841,7 @@ window.MYOB_LOCALES.fr = {
         "Pourquoi les avis diffèrent",
         "L'Académie américaine de pédiatrie a conclu que les bénéfices dépassent les risques, mais pas assez pour la recommander à tous les garçons. Plusieurs instances européennes ont lu les mêmes études et conclu autrement. En pratique, c'est une décision de famille, souvent influencée par la religion, la culture et ce à quoi ressemble le père.",
         "Si vous décidez de la faire",
-        "Demandez précisément quel contrôle de la douleur est prévu : une anesthésie locale par bloc, pas seulement de l'eau sucrée. Des options efficaces existent et ne sont pas utilisées partout. Vérifiez ce que couvre votre assurance. Ensuite, le bout est rouge et peut avoir un dépôt jaunâtre et mou pendant environ une semaine ; c'est la cicatrisation normale. Mettez de la vaseline à chaque change. Appelez le médecin de votre bébé en cas de saignement qui ne s'arrête pas avec une légère pression, d'aucune couche mouillée en 8 heures, d'une fièvre de 100.4°F ou plus, ou de rougeur, gonflement ou cloques de pus qui s'étendent.",
+        "Demandez précisément quel contrôle de la douleur est prévu : une anesthésie locale par bloc, pas seulement de l'eau sucrée. Des options efficaces existent et ne sont pas utilisées partout. Vérifiez ce que couvre votre assurance. Ensuite, le bout est rouge et peut avoir un dépôt jaunâtre et mou pendant environ une semaine ; c'est la cicatrisation normale. Mettez de la vaseline à chaque change. Appelez le médecin de votre bébé en cas de saignement qui ne s'arrête pas avec une légère pression, d'aucune couche mouillée en 8 heures, d'une fièvre de {temp:100.4} ou plus, ou de rougeur, gonflement ou cloques de pus qui s'étendent.",
         "Si vous décidez de ne pas la faire",
         "Ne décalottez pas le prépuce. Chez le nourrisson, il est normalement collé et se détache tout seul en plusieurs années ; le forcer cause les cicatrices qu'on veut éviter. Lavez l'extérieur comme n'importe quelle autre peau."
       ]
@@ -2049,7 +2058,7 @@ window.MYOB_LOCALES.fr = {
         "Ne secouez jamais un bébé",
         "Secouer un bébé peut causer des lésions du cerveau, la cécité ou la mort. Assurez-vous que toutes les personnes qui s'occupent de votre bébé le savent.",
         "Appelez le médecin de votre bébé si les pleurs s'accompagnent de",
-        "Une fièvre de 100.4°F ou plus · Vomissements ou difficultés à téter · Signes de douleur, ou pleurs qui ne ressemblent pas aux pleurs habituels",
+        "Une fièvre de {temp:100.4} ou plus · Vomissements ou difficultés à téter · Signes de douleur, ou pleurs qui ne ressemblent pas aux pleurs habituels",
         "Appelez le 911 si votre bébé",
         "Est tout mou, ou difficile à réveiller · A du mal à respirer · Devient bleu ou gris",
         "Si vous vous sentez sans espoir ou en colère la plupart du temps",
@@ -2300,7 +2309,7 @@ window.MYOB_LOCALES.fr = {
     "content.csection.t.23": "03b0235cac26896a",
     "content.csection.t.24": "04b03da54128058f",
     "content.csection.t.25": "f6fa8c9fde0476e5",
-    "content.csection.t.26": "ca4bbc17e96e473d",
+    "content.csection.t.26": "ad79a07707d57275",
     "content.csection.t.27": "e04d3a00a0c48e1a",
     "content.csection.t.28": "24b632c57b1d608f",
     "content.mfm.title": "6c228d117e74de43",
@@ -2426,7 +2435,7 @@ window.MYOB_LOCALES.fr = {
     "content.postpartum-danger.t.0": "8e2a678f78c207ed",
     "content.postpartum-danger.t.1": "d26dc5484bcab5f6",
     "content.postpartum-danger.t.2": "bee2b3c377a8a3e5",
-    "content.postpartum-danger.t.3": "8a9f90651b64d9d3",
+    "content.postpartum-danger.t.3": "03c000a554e9734b",
     "content.breastfeeding.title": "c57faccf43d647e5",
     "content.breastfeeding.sub": "fceab506c1cfc26c",
     "content.breastfeeding.t.0": "866addc074fa03ba",
@@ -2445,7 +2454,7 @@ window.MYOB_LOCALES.fr = {
     "content.breastfeeding.t.13": "3d9abf5543ae35bf",
     "content.breastfeeding.t.14": "a90a747355b91e39",
     "content.breastfeeding.t.15": "09b0e1598812ec27",
-    "content.breastfeeding.t.16": "6842a2bad7d347b4",
+    "content.breastfeeding.t.16": "67351f4c3f193876",
     "content.breastfeeding.t.17": "5e4777c90c2f7087",
     "content.breastfeeding.t.18": "6cbf79f457184afe",
     "content.bf-challenges.title": "c4bf4298d981c3ae",
@@ -2455,7 +2464,7 @@ window.MYOB_LOCALES.fr = {
     "content.bf-challenges.t.2": "7d8bf4ad4287bdff",
     "content.bf-challenges.t.3": "c4998859be296f4b",
     "content.bf-challenges.t.4": "3a2ce81ac9dcbe3c",
-    "content.bf-challenges.t.5": "827dba0e278ee0e4",
+    "content.bf-challenges.t.5": "df4fff0e4157a4bc",
     "content.bf-challenges.t.6": "4a83c479c8b90393",
     "content.bf-challenges.t.7": "40cb72bdfa8524ab",
     "content.bf-challenges.t.8": "7c415028fad1dc52",
@@ -2483,9 +2492,9 @@ window.MYOB_LOCALES.fr = {
     "content.formula.t.10": "ab87de70c4d2391a",
     "content.formula.t.11": "943a6627735430bd",
     "content.formula.t.12": "8f2489f83139650a",
-    "content.formula.t.13": "d59c2bf70e921d19",
-    "content.formula.t.14": "d75f988fa8406695",
-    "content.formula.t.15": "a8dbb0d025c765fe",
+    "content.formula.t.13": "0b6634e78f897e4d",
+    "content.formula.t.14": "441ff505b8c222ef",
+    "content.formula.t.15": "b925a44e213f3690",
     "content.formula.t.16": "b3187f2d31ac31fb",
     "content.formula.t.17": "34eddf06cc3c9298",
     "content.formula.t.18": "dbabf7d1094591bb",
@@ -2555,7 +2564,7 @@ window.MYOB_LOCALES.fr = {
     "content.normal-newborn.t.29": "a646ba8ef31029a4",
     "content.normal-newborn.t.30": "b96a48ec64c8f9ba",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "380945be7751b37c",
+    "content.normal-newborn.t.32": "11a67bb6600db664",
     "content.safe-sleep.title": "8f76ca906ecc7552",
     "content.safe-sleep.sub": "280c3d91955a45cb",
     "content.safe-sleep.t.0": "606d4b033e9658bd",
@@ -2608,11 +2617,11 @@ window.MYOB_LOCALES.fr = {
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
-    "content.faq-deli.t.2": "f834f951752931cb",
+    "content.faq-deli.t.2": "b648bd19bac268db",
     "content.faq-coffee.title": "5389638ea8a88dc8",
     "content.faq-coffee.t.0": "ac1cf8bc0364371a",
     "content.faq-coffee.t.1": "d49405defc21c3ec",
-    "content.faq-coffee.t.2": "19f22003cc780ded",
+    "content.faq-coffee.t.2": "de8179c055015bde",
     "content.faq-hair-dye.title": "3cbc4f5501467bbb",
     "content.faq-hair-dye.t.0": "194b47e06a23e60e",
     "content.faq-exercise-mc.title": "055753c567df011f",
@@ -2624,7 +2633,7 @@ window.MYOB_LOCALES.fr = {
     "content.faq-eat-for-two.title": "7109ae5ce8714502",
     "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
     "content.faq-hot-tub.title": "2230219d6f10d437",
-    "content.faq-hot-tub.t.0": "b73f80715bdad85f",
+    "content.faq-hot-tub.t.0": "c7540b7dd2d9ca9f",
     "content.faq-epidural-csec.title": "85af8aced19ce724",
     "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
     "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
@@ -2729,7 +2738,7 @@ window.MYOB_LOCALES.fr = {
     "content.fish-mercury.sub": "7a8a6870bed495f6",
     "content.fish-mercury.t.0": "6734e1973f605319",
     "content.fish-mercury.t.1": "d909a26ae31f4ecc",
-    "content.fish-mercury.t.2": "ee651e46d479ff88",
+    "content.fish-mercury.t.2": "7341748092938246",
     "content.fish-mercury.t.3": "b09f865e34a2ab04",
     "content.fish-mercury.t.4": "45e5d986c9bdbc50",
     "content.fish-mercury.t.5": "6d00998d3f613893",
@@ -2737,7 +2746,7 @@ window.MYOB_LOCALES.fr = {
     "content.fish-mercury.t.7": "7c04eb03eb7569d5",
     "content.fish-mercury.t.8": "73b85abd06fd7837",
     "content.fish-mercury.t.9": "450b169714695949",
-    "content.fish-mercury.t.10": "0d325b46201051b8",
+    "content.fish-mercury.t.10": "956c0b6e3e37d250",
     "content.fish-mercury.t.11": "a48919d4a78360fa",
     "content.fish-mercury.t.12": "500b3f883d2b066e",
     "content.car-seat.title": "adb50c1b58481985",
@@ -2754,7 +2763,7 @@ window.MYOB_LOCALES.fr = {
     "content.vitamin-d-drops.sub": "f691dcfe7e42f6ac",
     "content.vitamin-d-drops.t.0": "44e620a91a0a98eb",
     "content.vitamin-d-drops.t.1": "79b93282d2633c5c",
-    "content.vitamin-d-drops.t.2": "b433718b08a24cdd",
+    "content.vitamin-d-drops.t.2": "c753be0fea7c0729",
     "content.vitamin-d-drops.t.3": "4ff6969dc2636913",
     "content.vitamin-d-drops.t.4": "f5de3f9830ce47c2",
     "content.vitamin-d-drops.t.5": "391a2d9da997549b",
@@ -2768,7 +2777,7 @@ window.MYOB_LOCALES.fr = {
     "content.circumcision.t.3": "d4de604c37f414a2",
     "content.circumcision.t.4": "706bcd0238eac334",
     "content.circumcision.t.5": "2d62b3babd67ab3c",
-    "content.circumcision.t.6": "a8361fd6b7237104",
+    "content.circumcision.t.6": "1670453248f8c7b0",
     "content.circumcision.t.7": "51bb2ecb4d379d51",
     "content.circumcision.t.8": "f7774e648f8e13da",
     "content.postpartum-danger.t.4": "0a1264f55f4a42c3",
@@ -2937,7 +2946,7 @@ window.MYOB_LOCALES.fr = {
     "content.crying-coping.t.7": "2a2c3908b18025f2",
     "content.crying-coping.t.8": "161f6ed3a80f8549",
     "content.crying-coping.t.9": "7146b80050ea63ce",
-    "content.crying-coping.t.10": "004727c64d6889d0",
+    "content.crying-coping.t.10": "d1ceb17e9cedfff0",
     "content.crying-coping.t.11": "87206f861037d230",
     "content.crying-coping.t.12": "10aefed99197f797",
     "content.crying-coping.t.13": "4b4e03aa59a82fec",

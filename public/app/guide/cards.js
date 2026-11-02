@@ -108,7 +108,8 @@ function cardBody(id) {
   // outcome than slightly dated wording. The fingerprints still record that
   // it needs updating; that shows up on the Translate page, which is where a
   // contributor can act on it. See staleSet().
-  const shown = n => own(n) ? mine[n] : enRun(fallback[n]);
+  const U = I18n.units.expand;
+  const shown = n => U(own(n) ? mine[n] : enRun(fallback[n]));
   const slot = n => wrap ? wrap(key(n), own(n) ? mine[n] : '', shown(n)) : shown(n);
   // A sentence written as "a · b · c" is a list, and is drawn as one: a real
   // bulleted list in place of its paragraph, in every language, with no
@@ -117,7 +118,7 @@ function cardBody(id) {
   const items = n => {
     const text = own(n) ? mine[n] : (fallback[n] || '');
     if (!/\s·\s/.test(text)) return null;
-    return text.split(/\s+·\s+/).filter(Boolean).map(x => own(n) ? x : enRun(x));
+    return text.split(/\s+·\s+/).filter(Boolean).map(x => U(own(n) ? x : enRun(x)));
   };
   const list = (n, lead) => {
     const li = items(n).map((x, k) => `<li>${k === 0 && lead ? lead + ' ' + x : x}</li>`).join('');
@@ -142,9 +143,9 @@ function cardField(id, field) {
   const base = ((window.MYOB_LOCALES[I18n.FALLBACK] || {}).content || {})[id] || {};
   const v = mine[field];
   // Same rule as the body: present beats up to date.
-  if (typeof v === 'string' && v !== '') return { text: v, en: false };
+  if (typeof v === 'string' && v !== '') return { text: I18n.units.expand(v), en: false };
   const fallback = typeof base[field] === 'string' ? base[field] : '';
-  return { text: fallback, en: lang !== I18n.FALLBACK && fallback !== '' };
+  return { text: I18n.units.expand(fallback), en: lang !== I18n.FALLBACK && fallback !== '' };
 }
 
 // One sentence of a card, by its permanent slot number, with the same
@@ -155,7 +156,7 @@ function cardSlot(id, n) {
   const mine = (((window.MYOB_LOCALES[I18n.lang] || {}).content || {})[id] || {}).t || [];
   const base = (((window.MYOB_LOCALES[I18n.FALLBACK] || {}).content || {})[id] || {}).t || [];
   const v = mine[n];
-  return (v === undefined || v === '') ? enRun(base[n]) : v;
+  return I18n.units.expand((v === undefined || v === '') ? enRun(base[n]) : v);
 }
 
 // The same, for a slot that is a " · " separated list: split first, then mark
@@ -171,7 +172,7 @@ function cardSlotItems(id, n) {
   const base = (((window.MYOB_LOCALES[I18n.FALLBACK] || {}).content || {})[id] || {}).t || [];
   const own = mine[n] !== undefined && mine[n] !== '';
   return String(own ? mine[n] : (base[n] || '')).split(/\s+·\s+/).filter(Boolean)
-    .map(x => own ? x : enRun(x));
+    .map(x => I18n.units.expand(own ? x : enRun(x)));
 }
 
 function getCards(section) {

@@ -274,7 +274,8 @@ window.MYOB_LOCALES.en = {
           "one": "{count} min",
           "other": "{count} min"
         },
-        "bottleOz": "Bottle, {oz} oz"
+        "bottleOz": "Bottle, {oz} oz",
+        "bottleMl": "Bottle, {ml} mL"
       },
       "diaper": {
         "wetToday": "Wet Today",
@@ -355,7 +356,12 @@ window.MYOB_LOCALES.en = {
         "wk": "Wk {n}",
         "lbsValue": "{n} lbs",
         "lbsTotal": "{n} lbs total",
-        "savedToast": "{lbs} lbs at week {week} saved"
+        "savedToast": "{lbs} lbs at week {week} saved",
+        "prePregnancyWeightKg": "Pre-pregnancy weight (kg)",
+        "gainedSoFarKg": "You have gained {amount} kg so far.",
+        "kgValue": "{n} kg",
+        "kgTotal": "{n} kg total",
+        "savedToastKg": "{kg} kg at week {week} saved"
       },
       "appts": {
         "addVisit": "+ Add Visit",
@@ -576,7 +582,7 @@ window.MYOB_LOCALES.en = {
       "severeHeadache": "Severe headache",
       "visionChanges": "Vision changes",
       "suddenSwellingOfFaceHands": "Sudden swelling of face/hands",
-      "fever1004F": "Fever &gt;100.4°F",
+      "fever1004F": "Fever &gt;{temp:100.4}",
       "contractionsBefore37Weeks": "Contractions before 37 weeks",
       "afterDelivery": "After Delivery",
       "soaking1PadHr2": "Soaking through 1 pad in an hour",
@@ -640,7 +646,8 @@ window.MYOB_LOCALES.en = {
       "both": "Both",
       "durationMinutes": "Duration (minutes)",
       "amountOz": "Amount (oz)",
-      "saveFeed": "Save Feed"
+      "saveFeed": "Save Feed",
+      "amountMl": "Amount (mL)"
     },
     "modalBp": {
       "logBloodPressure": "Log Blood Pressure",
@@ -654,7 +661,8 @@ window.MYOB_LOCALES.en = {
       "logWeight": "Log Weight",
       "weightLbs": "Weight (lbs)",
       "weekOfPregnancy": "Week of pregnancy",
-      "save": "Save"
+      "save": "Save",
+      "weightKg": "Weight (kg)"
     },
     "modalAppt": {
       "addVisit": "Add Visit",
@@ -762,7 +770,8 @@ window.MYOB_LOCALES.en = {
       "sizeLarge": "Large",
       "sizeLarger": "Larger",
       "language": "Language",
-      "darkMode": "Dark mode"
+      "darkMode": "Dark mode",
+      "units": "Units"
     },
     "urgent": {
       "title": "When to call",
@@ -1158,7 +1167,7 @@ window.MYOB_LOCALES.en = {
         "No lifting anything heavier than your baby for 4–6 weeks",
         "Incision is a horizontal \"bikini-line\" scar, closed with staples or absorbable sutures",
         "Call After C-Section Discharge If",
-        "Incision opens, shows redness spreading outward, or has unusual drainage · Fever &gt;100.4°F · Worsening rather than improving pain · Soaking through 1 pad in an hour",
+        "Incision opens, shows redness spreading outward, or has unusual drainage · Fever &gt;{temp:100.4} · Worsening rather than improving pain · Soaking through 1 pad in an hour",
         "VBAC. Vaginal Birth After Cesarean",
         "If you've had one prior low-transverse C-section, a VBAC may be an option for this pregnancy. Success rates are 60–80%. Discuss this early in your prenatal care."
       ]
@@ -1312,7 +1321,7 @@ window.MYOB_LOCALES.en = {
         "Go to the ER or Call 911 For",
         "Chest pain or difficulty breathing · Seizure · Sudden severe headache unlike any before · Stroke symptoms (face drooping, arm weakness, slurred speech) · Thoughts of harming yourself or your baby",
         "Call Your Family Doctor, OB or Midwife For",
-        "Fever &gt;100.4°F · Soaking through 1 pad in an hour · Severe headache not relieved by ibuprofen/Tylenol · Vision changes · Leg redness, swelling, or warmth (DVT) · Wound opening, redness spreading, or pus · Difficulty urinating · Signs of PPD or anxiety",
+        "Fever &gt;{temp:100.4} · Soaking through 1 pad in an hour · Severe headache not relieved by ibuprofen/Tylenol · Vision changes · Leg redness, swelling, or warmth (DVT) · Wound opening, redness spreading, or pus · Difficulty urinating · Signs of PPD or anxiety",
         "Your postpartum visit schedule, and the questions worth taking to the six-week visit, are in the Follow-Up Appointments card under Baby, alongside your baby's visits so you can see both together."
       ]
     },
@@ -1336,7 +1345,7 @@ window.MYOB_LOCALES.en = {
         "Diapers:",
         "By day 4–5, expect at least 6 wet diapers and 3–4 yellow seedy stools per day.",
         "Weight:",
-        "Birth weight should be regained by 10–14 days. After day 5, expect ½–1 oz gain per day.",
+        "Birth weight should be regained by 10–14 days. After day 5, expect {wt:0.5-1} gain per day.",
         "Baby:",
         "Satisfied after feeds, alert during awake periods.",
         "Alcohol, cannabis and smoking",
@@ -1352,7 +1361,7 @@ window.MYOB_LOCALES.en = {
         "Sore nipples",
         "Check latch first. This is the #1 cause. Apply expressed breast milk or lanolin after feeds. Air dry. Usually improves after day 5 once milk comes in and latch improves.",
         "Engorgement",
-        "Feed your baby whenever they're hungry. Don't pump to empty the breast: that tells your body to make even more milk. If the breast is too firm to latch, hand express a little first to soften it. Cold pack after feeding to reduce swelling. Can cause a low-grade fever. If &gt;100.4°F, call your doctor.",
+        "Feed your baby whenever they're hungry. Don't pump to empty the breast: that tells your body to make even more milk. If the breast is too firm to latch, hand express a little first to soften it. Cold pack after feeding to reduce swelling. Can cause a low-grade fever. If &gt;{temp:100.4}, call your doctor.",
         "Low supply concerns",
         "Feed more frequently. Supply follows demand. Ensure good latch. Pump after feeds to signal more production. See a lactation consultant. Most perceived low supply is actually sufficient supply.",
         "Clogged duct",
@@ -1384,9 +1393,9 @@ window.MYOB_LOCALES.en = {
         "Never microwave",
         ". Heats unevenly and can burn baby's mouth",
         "How Much, How Often",
-        "Newborn (0–1 month): 1–2 oz every 2–3 hours (8–12 feeds/day)",
-        "2 months: 3–4 oz every 3–4 hours",
-        "4 months: 4–6 oz every 4 hours",
+        "Newborn (0–1 month): {vol:1-2} every 2–3 hours (8–12 feeds/day)",
+        "2 months: {vol:3-4} every 3–4 hours",
+        "4 months: {vol:4-6} every 4 hours",
         "Feed on demand. These are guides, not rules",
         "Storage",
         "How Long",
@@ -1464,7 +1473,7 @@ window.MYOB_LOCALES.en = {
         "Dark first stool (meconium)",
         "✓ Yes. Should pass within 24–48 hrs",
         "Call Your Baby's Doctor Right Away For",
-        "Fever ≥ 100.4°F rectal (serious in newborns. Always take rectal temp) · Refusing to eat · Extreme yellowing · Grunting with every breath · Very pale skin · Inconsolable crying · Fewer than 6 wet diapers/day after day 5 · Stiff neck. Blue or gray lips or face: call 911."
+        "Fever ≥ {temp:100.4} rectal (serious in newborns. Always take rectal temp) · Refusing to eat · Extreme yellowing · Grunting with every breath · Very pale skin · Inconsolable crying · Fewer than 6 wet diapers/day after day 5 · Stiff neck. Blue or gray lips or face: call 911."
       ]
     },
     "safe-sleep": {
@@ -1509,7 +1518,7 @@ window.MYOB_LOCALES.en = {
         "Never shake a baby",
         "Shaking can cause brain damage, blindness or death. Make sure everyone who cares for your baby knows this.",
         "Call your baby's doctor if the crying comes with",
-        "A fever of 100.4°F or more · Vomiting or poor feeding · Signs of pain, or crying that sounds different from usual",
+        "A fever of {temp:100.4} or more · Vomiting or poor feeding · Signs of pain, or crying that sounds different from usual",
         "Call 911 if your baby",
         "Is limp, or hard to wake · Has trouble breathing · Turns blue or gray",
         "If you feel hopeless or angry most of the time",
@@ -1552,7 +1561,7 @@ window.MYOB_LOCALES.en = {
       "t": [
         "The main risk is",
         "Listeria",
-        ", a bacterial infection that's rare but can be serious in pregnancy (can cross the placenta). The FDA advises avoiding unpasteurized cheese and deli meats unless heated to steaming (165°F). Most pasteurized soft cheeses (like pasteurized brie, feta from a package) are safe. The exception is queso fresco, queso blanco, panela and similar fresh cheeses: even pasteurized ones have caused listeria outbreaks, so eat them only cooked until steaming. The overall risk from occasional deli meat is very low. When in doubt, heat it. Also avoid undercooked meat, raw eggs, unpasteurized milk or juice, and raw sprouts, and wash fruits and vegetables. Have someone else change the cat litter, or wear gloves: cat feces and undercooked meat can spread toxoplasmosis."
+        ", a bacterial infection that's rare but can be serious in pregnancy (can cross the placenta). The FDA advises avoiding unpasteurized cheese and deli meats unless heated to steaming ({temp:165}). Most pasteurized soft cheeses (like pasteurized brie, feta from a package) are safe. The exception is queso fresco, queso blanco, panela and similar fresh cheeses: even pasteurized ones have caused listeria outbreaks, so eat them only cooked until steaming. The overall risk from occasional deli meat is very low. When in doubt, heat it. Also avoid undercooked meat, raw eggs, unpasteurized milk or juice, and raw sprouts, and wash fruits and vegetables. Have someone else change the cat litter, or wear gloves: cat feces and undercooked meat can spread toxoplasmosis."
       ]
     },
     "faq-coffee": {
@@ -1561,7 +1570,7 @@ window.MYOB_LOCALES.en = {
       "t": [
         "Yes. ACOG recommends limiting caffeine to",
         "less than 200 mg per day",
-        "(approximately one 12-oz cup of drip coffee). At that level, evidence of harm to the pregnancy is not established. Tea, soda, and chocolate also contain caffeine. Count them all together. Cutting back is reasonable; cutting it out entirely is a personal choice, not medically required."
+        "(approximately one {vol:12} cup of drip coffee). At that level, evidence of harm to the pregnancy is not established. Tea, soda, and chocolate also contain caffeine. Count them all together. Cutting back is reasonable; cutting it out entirely is a personal choice, not medically required."
       ]
     },
     "faq-hair-dye": {
@@ -1610,7 +1619,7 @@ window.MYOB_LOCALES.en = {
       "title": "Can I take baths or use a hot tub?",
       "sub": "",
       "t": [
-        "Warm baths are fine throughout pregnancy. Hot tubs, saunas, and steam rooms that raise your core body temperature above 102°F (39°C) are not recommended, especially in the first trimester, when elevated temperature is associated with neural tube defects. If you do use a hot tub, keep the temperature comfortable (not hot), limit time to 10 minutes, and avoid it in the first trimester. A warm bath at typical household water temperature (98–100°F) is safe."
+        "Warm baths are fine throughout pregnancy. Hot tubs, saunas, and steam rooms that raise your core body temperature above {temp:102} are not recommended, especially in the first trimester, when elevated temperature is associated with neural tube defects. If you do use a hot tub, keep the temperature comfortable (not hot), limit time to 10 minutes, and avoid it in the first trimester. A warm bath at typical household water temperature ({temp:98-100}) is safe."
       ]
     },
     "faq-epidural-csec": {
@@ -1800,7 +1809,7 @@ window.MYOB_LOCALES.en = {
       "t": [
         "Fish is one of the better things you can eat while pregnant. You do need to watch out for mercury.",
         "How much",
-        "Two to three servings a week, about 8 to 12 ounces total. Oily fish are the main food source of DHA, which the baby uses to build brain and eyes.",
+        "Two to three servings a week, about {wt:8-12} total. Oily fish are the main food source of DHA, which the baby uses to build brain and eyes.",
         "Eat freely, low in mercury",
         "Salmon, sardines, anchovies, herring, trout, tilapia, cod, catfish, pollock, canned light tuna, shrimp, crab, scallops, cooked oysters.",
         "Once a week at most",
@@ -1808,7 +1817,7 @@ window.MYOB_LOCALES.en = {
         "Do not eat",
         "Shark, swordfish, king mackerel, tilefish from the Gulf of Mexico, marlin, orange roughy, bigeye tuna. These are large, long-lived predators and carry the most mercury.",
         "Cooking",
-        "Cook to 145°F, until the flesh is opaque and flakes apart. Raw fish is generally a bad idea in pregnancy, and so is smoked fish from the refrigerated case unless you cook it into a dish. The risk there is listeria, not mercury.",
+        "Cook to {temp:145}, until the flesh is opaque and flakes apart. Raw fish is generally a bad idea in pregnancy, and so is smoked fish from the refrigerated case unless you cook it into a dish. The risk there is listeria, not mercury.",
         "Fish you catch yourself",
         "Check your state advisory for those waters. The national lists do not cover local contamination."
       ]
@@ -2020,7 +2029,7 @@ window.MYOB_LOCALES.en = {
         "Why guidance differs",
         "The American Academy of Pediatrics concluded the benefits outweigh the risks but not enough to recommend it for every boy. Several European bodies read the same studies and concluded otherwise. In practice this is a family decision, often shaped by religion, culture, and what the father looks like.",
         "If you decide to do it",
-        "Ask about pain control specifically: a local anesthetic block, not sugar water alone. Effective options exist and are not used everywhere. Check what your insurance covers. Afterward, the tip looks red and may have a soft yellow coating for about a week; that is normal healing. Put petroleum jelly on it at each diaper change. Call your baby's doctor for bleeding that does not stop with gentle pressure, no wet diaper in 8 hours, a fever of 100.4°F or more, or spreading redness, swelling or pus-filled blisters.",
+        "Ask about pain control specifically: a local anesthetic block, not sugar water alone. Effective options exist and are not used everywhere. Check what your insurance covers. Afterward, the tip looks red and may have a soft yellow coating for about a week; that is normal healing. Put petroleum jelly on it at each diaper change. Call your baby's doctor for bleeding that does not stop with gentle pressure, no wet diaper in 8 hours, a fever of {temp:100.4} or more, or spreading redness, swelling or pus-filled blisters.",
         "If you decide not to",
         "Do not retract the foreskin. It is normally attached in infancy and separates on its own over several years; forcing it causes the scarring it is meant to prevent. Wipe the outside like any other skin."
       ]
@@ -2031,7 +2040,7 @@ window.MYOB_LOCALES.en = {
       "t": [
         "Breast milk is low in vitamin D in almost everyone. It is a known gap with a simple fix.",
         "What is recommended",
-        "400 IU of vitamin D daily, starting in the first few days, for any baby who is breastfed or having mostly breast milk. Keep giving it until the baby drinks about 32 ounces (1 liter) a day of formula or, later, fortified milk, because those already have vitamin D added.",
+        "400 IU of vitamin D daily, starting in the first few days, for any baby who is breastfed or having mostly breast milk. Keep giving it until the baby drinks about {vol:32} a day of formula or, later, fortified milk, because those already have vitamin D added.",
         "A formula-fed baby taking a full quantity does not need extra. Combination feeding usually still does, since it depends how much formula is actually going in.",
         "Why it matters",
         "Vitamin D is what allows the body to absorb calcium and build bone. Real deficiency causes rickets, which is uncommon but has not gone away, and is more likely in babies with darker skin, at northern latitudes, and over the winter.",

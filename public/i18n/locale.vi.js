@@ -70,7 +70,7 @@ window.MYOB_LOCALES.vi = {
       "severeHeadache": "Đau đầu dữ dội",
       "visionChanges": "Thay đổi thị lực",
       "suddenSwellingOfFaceHands": "Sưng mặt hoặc tay đột ngột",
-      "fever1004F": "Sốt &gt;100.4°F",
+      "fever1004F": "Sốt &gt;{temp:100.4}",
       "contractionsBefore37Weeks": "Có cơn gò trước 37 tuần",
       "myInfoContacts": "Thông tin &amp;<br>Danh bạ",
       "saveYourCareTeamContacts": "Lưu danh bạ nhóm chăm sóc",
@@ -487,7 +487,8 @@ window.MYOB_LOCALES.vi = {
         "minutes": {
           "other": "{count} phút"
         },
-        "bottleOz": "Bình, {oz} oz"
+        "bottleOz": "Bình, {oz} oz",
+        "bottleMl": "Bình, {ml} mL"
       },
       "diaper": {
         "wetToday": "Tã ướt hôm nay",
@@ -568,7 +569,12 @@ window.MYOB_LOCALES.vi = {
         "wk": "Tuần {n}",
         "lbsValue": "{n} lbs",
         "lbsTotal": "Tổng {n} lbs",
-        "savedToast": "Đã lưu {lbs} lbs ở tuần {week}"
+        "savedToast": "Đã lưu {lbs} lbs ở tuần {week}",
+        "prePregnancyWeightKg": "Cân nặng trước khi mang thai (kg)",
+        "gainedSoFarKg": "Đến nay bạn đã tăng {amount} kg.",
+        "kgValue": "{n} kg",
+        "kgTotal": "Tổng {n} kg",
+        "savedToastKg": "Đã lưu {kg} kg ở tuần {week}"
       },
       "appts": {
         "addVisit": "+ Thêm lần khám",
@@ -786,7 +792,8 @@ window.MYOB_LOCALES.vi = {
       "both": "Cả hai",
       "durationMinutes": "Thời gian (phút)",
       "amountOz": "Lượng (oz)",
-      "saveFeed": "Lưu cữ bú"
+      "saveFeed": "Lưu cữ bú",
+      "amountMl": "Lượng (mL)"
     },
     "modalBp": {
       "logBloodPressure": "Ghi huyết áp",
@@ -800,7 +807,8 @@ window.MYOB_LOCALES.vi = {
       "logWeight": "Ghi cân nặng",
       "weightLbs": "Cân nặng (lbs)",
       "weekOfPregnancy": "Tuần thai",
-      "save": "Lưu"
+      "save": "Lưu",
+      "weightKg": "Cân nặng (kg)"
     },
     "modalAppt": {
       "addVisit": "Thêm lần khám",
@@ -853,7 +861,8 @@ window.MYOB_LOCALES.vi = {
       "sizeLarge": "Lớn",
       "sizeLarger": "Lớn hơn",
       "language": "Ngôn ngữ",
-      "darkMode": "Chế độ tối"
+      "darkMode": "Chế độ tối",
+      "units": "Đơn vị đo"
     }
   },
   "content": {
@@ -864,7 +873,7 @@ window.MYOB_LOCALES.vi = {
         "Đến phòng cấp cứu hoặc gọi 911 khi có",
         "Đau ngực hoặc khó thở · Co giật · Đau đầu dữ dội đột ngột, chưa từng bị như vậy · Dấu hiệu đột quỵ (méo mặt, yếu tay, nói ngọng) · Ý nghĩ làm hại bản thân hoặc em bé",
         "Gọi bác sĩ gia đình, bác sĩ sản khoa hoặc nữ hộ sinh khi có",
-        "Sốt &gt;100.4°F · Thấm ướt 1 băng vệ sinh trong một giờ · Đau đầu dữ dội không đỡ khi dùng ibuprofen/Tylenol · Thay đổi thị lực · Chân đỏ, sưng hoặc nóng (DVT, cục máu đông ở tĩnh mạch sâu) · Vết mổ hở, đỏ lan rộng hoặc có mủ · Khó đi tiểu · Dấu hiệu trầm cảm sau sinh (PPD) hoặc lo âu",
+        "Sốt &gt;{temp:100.4} · Thấm ướt 1 băng vệ sinh trong một giờ · Đau đầu dữ dội không đỡ khi dùng ibuprofen/Tylenol · Thay đổi thị lực · Chân đỏ, sưng hoặc nóng (DVT, cục máu đông ở tĩnh mạch sâu) · Vết mổ hở, đỏ lan rộng hoặc có mủ · Khó đi tiểu · Dấu hiệu trầm cảm sau sinh (PPD) hoặc lo âu",
         "Lịch khám sau sinh của bạn, và những câu hỏi nên mang theo khi khám 6 tuần, nằm trong thẻ Lịch tái khám ở phần Em bé, cạnh lịch khám của bé để bạn xem cả hai cùng lúc."
       ]
     },
@@ -930,7 +939,7 @@ window.MYOB_LOCALES.vi = {
         "Phân đầu tiên màu sẫm (phân su)",
         "✓ Có. Nên đi trong 24–48 giờ",
         "Gọi bác sĩ của em bé ngay khi có",
-        "Sốt ≥ 100.4°F đo ở hậu môn (nghiêm trọng ở trẻ sơ sinh. Luôn đo nhiệt độ hậu môn) · Bỏ bú · Vàng da nặng · Rên khi thở · Da rất nhợt nhạt · Khóc không dỗ được · Ít hơn 6 tã ướt mỗi ngày sau ngày thứ 5 · Cứng cổ. Môi hoặc mặt tím tái hoặc xám: gọi 911."
+        "Sốt ≥ {temp:100.4} đo ở hậu môn (nghiêm trọng ở trẻ sơ sinh. Luôn đo nhiệt độ hậu môn) · Bỏ bú · Vàng da nặng · Rên khi thở · Da rất nhợt nhạt · Khóc không dỗ được · Ít hơn 6 tã ướt mỗi ngày sau ngày thứ 5 · Cứng cổ. Môi hoặc mặt tím tái hoặc xám: gọi 911."
       ]
     },
     "faq-deli": {
@@ -939,7 +948,7 @@ window.MYOB_LOCALES.vi = {
       "t": [
         "Nguy cơ chính là",
         "Listeria",
-        ", một bệnh nhiễm khuẩn hiếm gặp nhưng có thể nặng khi mang thai (có thể đi qua nhau thai). FDA khuyên tránh phô mai chưa tiệt trùng và thịt nguội, trừ khi được hâm nóng đến bốc hơi (165°F). Phần lớn phô mai mềm đã tiệt trùng (như brie tiệt trùng, feta đóng gói) đều an toàn. Ngoại lệ là queso fresco, queso blanco, panela và các loại phô mai tươi tương tự: ngay cả loại đã tiệt trùng cũng từng gây bùng phát listeria, nên chỉ ăn khi đã nấu đến bốc hơi. Nguy cơ chung từ việc thỉnh thoảng ăn thịt nguội là rất thấp. Khi không chắc, hãy hâm nóng. Cũng tránh thịt chưa chín kỹ, trứng sống, sữa hoặc nước ép chưa tiệt trùng, và giá sống, và rửa sạch rau quả. Nhờ người khác thay cát vệ sinh cho mèo, hoặc đeo găng tay: phân mèo và thịt chưa chín có thể lây bệnh toxoplasma."
+        ", một bệnh nhiễm khuẩn hiếm gặp nhưng có thể nặng khi mang thai (có thể đi qua nhau thai). FDA khuyên tránh phô mai chưa tiệt trùng và thịt nguội, trừ khi được hâm nóng đến bốc hơi ({temp:165}). Phần lớn phô mai mềm đã tiệt trùng (như brie tiệt trùng, feta đóng gói) đều an toàn. Ngoại lệ là queso fresco, queso blanco, panela và các loại phô mai tươi tương tự: ngay cả loại đã tiệt trùng cũng từng gây bùng phát listeria, nên chỉ ăn khi đã nấu đến bốc hơi. Nguy cơ chung từ việc thỉnh thoảng ăn thịt nguội là rất thấp. Khi không chắc, hãy hâm nóng. Cũng tránh thịt chưa chín kỹ, trứng sống, sữa hoặc nước ép chưa tiệt trùng, và giá sống, và rửa sạch rau quả. Nhờ người khác thay cát vệ sinh cho mèo, hoặc đeo găng tay: phân mèo và thịt chưa chín có thể lây bệnh toxoplasma."
       ]
     },
     "faq-coffee": {
@@ -948,7 +957,7 @@ window.MYOB_LOCALES.vi = {
       "t": [
         "Có. ACOG khuyên giới hạn caffeine ở mức",
         "dưới 200 mg mỗi ngày",
-        "(khoảng một cốc 12-oz cà phê pha phin/máy). Ở mức này, chưa có bằng chứng gây hại cho thai kỳ. Trà, nước ngọt có ga và sô-cô-la cũng có caffeine. Hãy tính tất cả cùng nhau. Giảm bớt là hợp lý; bỏ hẳn là lựa chọn cá nhân, không phải bắt buộc về y khoa."
+        "(khoảng một cốc {vol:12} cà phê pha phin/máy). Ở mức này, chưa có bằng chứng gây hại cho thai kỳ. Trà, nước ngọt có ga và sô-cô-la cũng có caffeine. Hãy tính tất cả cùng nhau. Giảm bớt là hợp lý; bỏ hẳn là lựa chọn cá nhân, không phải bắt buộc về y khoa."
       ]
     },
     "faq-hair-dye": {
@@ -997,7 +1006,7 @@ window.MYOB_LOCALES.vi = {
       "title": "Tôi có được tắm bồn hay ngâm bồn nước nóng không?",
       "sub": "",
       "t": [
-        "Tắm nước ấm thì ổn trong suốt thai kỳ. Bồn nước nóng, phòng xông hơi khô và xông hơi ướt làm thân nhiệt lên trên 102°F (39°C) thì không nên, nhất là trong tam cá nguyệt thứ nhất, khi thân nhiệt cao có liên quan đến dị tật ống thần kinh. Nếu dùng bồn nước nóng, giữ nhiệt độ dễ chịu (không nóng), tối đa 10 phút, và tránh trong tam cá nguyệt thứ nhất. Tắm nước ấm ở nhiệt độ bình thường trong nhà (98–100°F) là an toàn."
+        "Tắm nước ấm thì ổn trong suốt thai kỳ. Bồn nước nóng, phòng xông hơi khô và xông hơi ướt làm thân nhiệt lên trên {temp:102} thì không nên, nhất là trong tam cá nguyệt thứ nhất, khi thân nhiệt cao có liên quan đến dị tật ống thần kinh. Nếu dùng bồn nước nóng, giữ nhiệt độ dễ chịu (không nóng), tối đa 10 phút, và tránh trong tam cá nguyệt thứ nhất. Tắm nước ấm ở nhiệt độ bình thường trong nhà ({temp:98-100}) là an toàn."
       ]
     },
     "faq-epidural-csec": {
@@ -1356,7 +1365,7 @@ window.MYOB_LOCALES.vi = {
         "Không nâng gì nặng hơn em bé trong 4–6 tuần",
         "Vết mổ là sẹo ngang \"đường bikini\", đóng bằng ghim hoặc chỉ tự tiêu",
         "Sau khi xuất viện vì mổ lấy thai, hãy gọi nếu",
-        "Vết mổ hở, vùng đỏ lan rộng ra ngoài, hoặc có dịch bất thường · Sốt &gt;100.4°F · Đau nặng hơn thay vì đỡ dần · Thấm ướt 1 băng vệ sinh trong một giờ",
+        "Vết mổ hở, vùng đỏ lan rộng ra ngoài, hoặc có dịch bất thường · Sốt &gt;{temp:100.4} · Đau nặng hơn thay vì đỡ dần · Thấm ướt 1 băng vệ sinh trong một giờ",
         "VBAC. Sinh thường sau mổ lấy thai",
         "Nếu bạn đã từng mổ lấy thai một lần với vết mổ ngang thấp, VBAC có thể là một lựa chọn trong thai kỳ này. Tỷ lệ thành công 60–80%. Hãy bàn việc này sớm khi bắt đầu khám thai."
       ]
@@ -1567,7 +1576,7 @@ window.MYOB_LOCALES.vi = {
       "t": [
         "Cá là một trong những món tốt nhất khi mang thai. Nhưng bạn cần cẩn thận với thủy ngân.",
         "Bao nhiêu",
-        "Hai đến ba bữa một tuần, tổng khoảng 8 đến 12 ounce. Cá béo là nguồn DHA chính trong thức ăn, chất bé dùng để phát triển não và mắt.",
+        "Hai đến ba bữa một tuần, tổng khoảng {wt:8-12}. Cá béo là nguồn DHA chính trong thức ăn, chất bé dùng để phát triển não và mắt.",
         "Ăn thoải mái, ít thủy ngân",
         "Cá hồi, cá mòi, cá cơm, cá trích, cá hồi suối, cá rô phi, cá tuyết, cá trê/cá da trơn, cá minh thái, cá ngừ light đóng hộp, tôm, cua, sò điệp, hàu nấu chín.",
         "Tối đa một lần một tuần",
@@ -1575,7 +1584,7 @@ window.MYOB_LOCALES.vi = {
         "Không ăn",
         "Cá mập, cá kiếm, cá thu vua, cá đầu vuông (tilefish) từ Vịnh Mexico, cá cờ marlin, cá orange roughy, cá ngừ mắt to. Đây là những loài săn mồi lớn, sống lâu và chứa nhiều thủy ngân nhất.",
         "Nấu",
-        "Nấu đến 145°F, cho đến khi thịt cá đục và tách thớ. Cá sống thường không nên ăn khi mang thai, cá xông khói trong tủ lạnh siêu thị cũng vậy, trừ khi bạn nấu chín trong món ăn. Nguy cơ ở đó là listeria, không phải thủy ngân.",
+        "Nấu đến {temp:145}, cho đến khi thịt cá đục và tách thớ. Cá sống thường không nên ăn khi mang thai, cá xông khói trong tủ lạnh siêu thị cũng vậy, trừ khi bạn nấu chín trong món ăn. Nguy cơ ở đó là listeria, không phải thủy ngân.",
         "Cá bạn tự câu",
         "Hãy xem khuyến cáo của tiểu bang cho vùng nước đó. Danh sách toàn quốc không bao gồm ô nhiễm tại chỗ."
       ]
@@ -1633,7 +1642,7 @@ window.MYOB_LOCALES.vi = {
         "Tã:",
         "Đến ngày 4–5, ít nhất 6 tã ướt và 3–4 lần đi ngoài phân vàng lợn cợn mỗi ngày.",
         "Cân nặng:",
-        "Bé nên lấy lại cân nặng lúc sinh trong 10–14 ngày. Sau ngày 5, bé tăng khoảng ½–1 oz mỗi ngày.",
+        "Bé nên lấy lại cân nặng lúc sinh trong 10–14 ngày. Sau ngày 5, bé tăng khoảng {wt:0.5-1} mỗi ngày.",
         "Bé:",
         "Thỏa mãn sau khi bú, tỉnh táo khi thức.",
         "Rượu bia, cần sa và hút thuốc",
@@ -1649,7 +1658,7 @@ window.MYOB_LOCALES.vi = {
         "Đau đầu vú",
         "Kiểm tra cách ngậm bắt trước. Đây là nguyên nhân số 1. Bôi sữa mẹ vắt ra hoặc lanolin sau khi bú. Để khô tự nhiên. Thường đỡ sau ngày 5 khi sữa về và bé ngậm tốt hơn.",
         "Căng sữa",
-        "Cho bé bú bất cứ khi nào bé đói. Đừng hút cho cạn vú: việc đó báo cơ thể tạo thêm sữa. Nếu vú căng cứng quá khiến bé không ngậm được, vắt tay một ít trước cho mềm. Chườm lạnh sau khi bú để giảm sưng. Có thể sốt nhẹ. Nếu &gt;100.4°F, hãy gọi bác sĩ.",
+        "Cho bé bú bất cứ khi nào bé đói. Đừng hút cho cạn vú: việc đó báo cơ thể tạo thêm sữa. Nếu vú căng cứng quá khiến bé không ngậm được, vắt tay một ít trước cho mềm. Chườm lạnh sau khi bú để giảm sưng. Có thể sốt nhẹ. Nếu &gt;{temp:100.4}, hãy gọi bác sĩ.",
         "Lo ít sữa",
         "Cho bú thường hơn. Lượng sữa theo nhu cầu. Đảm bảo bé ngậm bắt tốt. Hút sữa sau khi bú để báo cơ thể tạo thêm. Gặp chuyên viên tư vấn sữa mẹ. Phần lớn trường hợp tưởng ít sữa thật ra là đủ.",
         "Tắc tia sữa",
@@ -1681,9 +1690,9 @@ window.MYOB_LOCALES.vi = {
         "Không bao giờ dùng lò vi sóng",
         ". Làm nóng không đều và có thể làm bỏng miệng bé",
         "Bao nhiêu, bao lâu một lần",
-        "Sơ sinh (0–1 tháng): 1–2 oz mỗi 2–3 giờ (8–12 cữ/ngày)",
-        "2 tháng: 3–4 oz mỗi 3–4 giờ",
-        "4 tháng: 4–6 oz mỗi 4 giờ",
+        "Sơ sinh (0–1 tháng): {vol:1-2} mỗi 2–3 giờ (8–12 cữ/ngày)",
+        "2 tháng: {vol:3-4} mỗi 3–4 giờ",
+        "4 tháng: {vol:4-6} mỗi 4 giờ",
         "Cho ăn theo nhu cầu. Đây là hướng dẫn, không phải quy định",
         "Bảo quản",
         "Bao lâu",
@@ -1735,7 +1744,7 @@ window.MYOB_LOCALES.vi = {
         "Vì sao hướng dẫn khác nhau",
         "Viện Hàn lâm Nhi khoa Hoa Kỳ kết luận lợi ích lớn hơn rủi ro nhưng chưa đủ để khuyên cho mọi bé trai. Một số tổ chức châu Âu đọc cùng các nghiên cứu và kết luận khác. Trên thực tế đây là quyết định của gia đình, thường chịu ảnh hưởng từ tôn giáo, văn hóa, và người cha như thế nào.",
         "Nếu bạn quyết định làm",
-        "Hãy hỏi cụ thể về giảm đau: gây tê tại chỗ, không chỉ nước đường. Có những cách hiệu quả nhưng không phải nơi nào cũng dùng. Kiểm tra xem bảo hiểm chi trả gì. Sau đó, đầu dương vật đỏ và có thể có một lớp mềm màu vàng trong khoảng một tuần; đó là lành vết thương bình thường. Bôi vaseline mỗi lần thay tã. Gọi bác sĩ của bé nếu chảy máu không cầm khi ấn nhẹ, không có tã ướt trong 8 giờ, sốt từ 100.4°F trở lên, hoặc đỏ, sưng hay bọng mủ lan rộng.",
+        "Hãy hỏi cụ thể về giảm đau: gây tê tại chỗ, không chỉ nước đường. Có những cách hiệu quả nhưng không phải nơi nào cũng dùng. Kiểm tra xem bảo hiểm chi trả gì. Sau đó, đầu dương vật đỏ và có thể có một lớp mềm màu vàng trong khoảng một tuần; đó là lành vết thương bình thường. Bôi vaseline mỗi lần thay tã. Gọi bác sĩ của bé nếu chảy máu không cầm khi ấn nhẹ, không có tã ướt trong 8 giờ, sốt từ {temp:100.4} trở lên, hoặc đỏ, sưng hay bọng mủ lan rộng.",
         "Nếu bạn quyết định không làm",
         "Đừng tuột bao quy đầu. Ở trẻ nhỏ nó thường dính và tự tách ra trong vài năm; cố tuột sẽ gây sẹo, chính điều muốn tránh. Lau bên ngoài như da ở chỗ khác."
       ]
@@ -1746,7 +1755,7 @@ window.MYOB_LOCALES.vi = {
       "t": [
         "Sữa mẹ ở hầu hết mọi người đều ít vitamin D. Đây là thiếu hụt đã biết và có cách bù đơn giản.",
         "Khuyến cáo",
-        "400 IU vitamin D mỗi ngày, bắt đầu từ vài ngày đầu, cho mọi bé bú mẹ hoặc chủ yếu bú sữa mẹ. Tiếp tục cho đến khi bé uống khoảng 32 ounce (1 lít) sữa công thức mỗi ngày hoặc, sau này, sữa có bổ sung, vì những loại đó đã có vitamin D.",
+        "400 IU vitamin D mỗi ngày, bắt đầu từ vài ngày đầu, cho mọi bé bú mẹ hoặc chủ yếu bú sữa mẹ. Tiếp tục cho đến khi bé uống khoảng {vol:32} sữa công thức mỗi ngày hoặc, sau này, sữa có bổ sung, vì những loại đó đã có vitamin D.",
         "Bé bú sữa công thức đủ lượng thì không cần thêm. Bú kết hợp thường vẫn cần, vì còn tùy bé thật sự uống bao nhiêu sữa công thức.",
         "Vì sao quan trọng",
         "Vitamin D giúp cơ thể hấp thu canxi và tạo xương. Thiếu thật sự gây còi xương, ít gặp nhưng chưa hết hẳn, và dễ xảy ra hơn ở bé da sẫm màu, ở vùng vĩ độ cao phía bắc, và vào mùa đông.",
@@ -2038,7 +2047,7 @@ window.MYOB_LOCALES.vi = {
         "Không bao giờ lắc em bé",
         "Lắc có thể gây tổn thương não, mù hoặc tử vong. Hãy chắc rằng mọi người chăm sóc bé đều biết điều này.",
         "Gọi bác sĩ của bé nếu bé khóc kèm theo",
-        "Sốt từ 100.4°F trở lên · Nôn hoặc bú kém · Có dấu hiệu đau, hoặc tiếng khóc khác với bình thường",
+        "Sốt từ {temp:100.4} trở lên · Nôn hoặc bú kém · Có dấu hiệu đau, hoặc tiếng khóc khác với bình thường",
         "Gọi 911 nếu bé",
         "Mềm nhũn, hoặc khó đánh thức · Khó thở · Tím tái hoặc xám",
         "Nếu bạn cảm thấy tuyệt vọng hoặc tức giận hầu hết thời gian",
@@ -2050,7 +2059,7 @@ window.MYOB_LOCALES.vi = {
     "content.postpartum-danger.t.0": "8e2a678f78c207ed",
     "content.postpartum-danger.t.1": "d26dc5484bcab5f6",
     "content.postpartum-danger.t.2": "bee2b3c377a8a3e5",
-    "content.postpartum-danger.t.3": "8a9f90651b64d9d3",
+    "content.postpartum-danger.t.3": "03c000a554e9734b",
     "content.signs-of-labor.t.11": "3973fa2849b83e92",
     "content.signs-of-labor.t.12": "61f8135000473a76",
     "content.signs-of-labor.t.13": "d0b262a299176734",
@@ -2059,15 +2068,15 @@ window.MYOB_LOCALES.vi = {
     "content.signs-of-labor.t.16": "ac6a34b445ceccaa",
     "content.signs-of-labor.t.17": "b007f20008122ab6",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "380945be7751b37c",
+    "content.normal-newborn.t.32": "11a67bb6600db664",
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
-    "content.faq-deli.t.2": "f834f951752931cb",
+    "content.faq-deli.t.2": "b648bd19bac268db",
     "content.faq-coffee.title": "5389638ea8a88dc8",
     "content.faq-coffee.t.0": "ac1cf8bc0364371a",
     "content.faq-coffee.t.1": "d49405defc21c3ec",
-    "content.faq-coffee.t.2": "19f22003cc780ded",
+    "content.faq-coffee.t.2": "de8179c055015bde",
     "content.faq-hair-dye.title": "3cbc4f5501467bbb",
     "content.faq-hair-dye.t.0": "194b47e06a23e60e",
     "content.faq-exercise-mc.title": "055753c567df011f",
@@ -2086,7 +2095,7 @@ window.MYOB_LOCALES.vi = {
     "content.faq-eat-for-two.title": "7109ae5ce8714502",
     "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
     "content.faq-hot-tub.title": "2230219d6f10d437",
-    "content.faq-hot-tub.t.0": "b73f80715bdad85f",
+    "content.faq-hot-tub.t.0": "c7540b7dd2d9ca9f",
     "content.faq-epidural-csec.title": "85af8aced19ce724",
     "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
     "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
@@ -2363,7 +2372,7 @@ window.MYOB_LOCALES.vi = {
     "content.csection.t.23": "03b0235cac26896a",
     "content.csection.t.24": "04b03da54128058f",
     "content.csection.t.25": "f6fa8c9fde0476e5",
-    "content.csection.t.26": "ca4bbc17e96e473d",
+    "content.csection.t.26": "ad79a07707d57275",
     "content.csection.t.27": "e04d3a00a0c48e1a",
     "content.csection.t.28": "24b632c57b1d608f",
     "content.mfm.title": "6c228d117e74de43",
@@ -2525,7 +2534,7 @@ window.MYOB_LOCALES.vi = {
     "content.fish-mercury.sub": "7a8a6870bed495f6",
     "content.fish-mercury.t.0": "6734e1973f605319",
     "content.fish-mercury.t.1": "d909a26ae31f4ecc",
-    "content.fish-mercury.t.2": "ee651e46d479ff88",
+    "content.fish-mercury.t.2": "7341748092938246",
     "content.fish-mercury.t.3": "b09f865e34a2ab04",
     "content.fish-mercury.t.4": "45e5d986c9bdbc50",
     "content.fish-mercury.t.5": "6d00998d3f613893",
@@ -2533,7 +2542,7 @@ window.MYOB_LOCALES.vi = {
     "content.fish-mercury.t.7": "7c04eb03eb7569d5",
     "content.fish-mercury.t.8": "73b85abd06fd7837",
     "content.fish-mercury.t.9": "450b169714695949",
-    "content.fish-mercury.t.10": "0d325b46201051b8",
+    "content.fish-mercury.t.10": "956c0b6e3e37d250",
     "content.fish-mercury.t.11": "a48919d4a78360fa",
     "content.fish-mercury.t.12": "500b3f883d2b066e",
     "content.preeclampsia.title": "35f619eb40c59015",
@@ -2579,7 +2588,7 @@ window.MYOB_LOCALES.vi = {
     "content.breastfeeding.t.13": "3d9abf5543ae35bf",
     "content.breastfeeding.t.14": "a90a747355b91e39",
     "content.breastfeeding.t.15": "09b0e1598812ec27",
-    "content.breastfeeding.t.16": "6842a2bad7d347b4",
+    "content.breastfeeding.t.16": "67351f4c3f193876",
     "content.breastfeeding.t.17": "5e4777c90c2f7087",
     "content.breastfeeding.t.18": "6cbf79f457184afe",
     "content.bf-challenges.title": "c4bf4298d981c3ae",
@@ -2589,7 +2598,7 @@ window.MYOB_LOCALES.vi = {
     "content.bf-challenges.t.2": "7d8bf4ad4287bdff",
     "content.bf-challenges.t.3": "c4998859be296f4b",
     "content.bf-challenges.t.4": "3a2ce81ac9dcbe3c",
-    "content.bf-challenges.t.5": "827dba0e278ee0e4",
+    "content.bf-challenges.t.5": "df4fff0e4157a4bc",
     "content.bf-challenges.t.6": "4a83c479c8b90393",
     "content.bf-challenges.t.7": "40cb72bdfa8524ab",
     "content.bf-challenges.t.8": "7c415028fad1dc52",
@@ -2617,9 +2626,9 @@ window.MYOB_LOCALES.vi = {
     "content.formula.t.10": "ab87de70c4d2391a",
     "content.formula.t.11": "943a6627735430bd",
     "content.formula.t.12": "8f2489f83139650a",
-    "content.formula.t.13": "d59c2bf70e921d19",
-    "content.formula.t.14": "d75f988fa8406695",
-    "content.formula.t.15": "a8dbb0d025c765fe",
+    "content.formula.t.13": "0b6634e78f897e4d",
+    "content.formula.t.14": "441ff505b8c222ef",
+    "content.formula.t.15": "b925a44e213f3690",
     "content.formula.t.16": "b3187f2d31ac31fb",
     "content.formula.t.17": "34eddf06cc3c9298",
     "content.formula.t.18": "dbabf7d1094591bb",
@@ -2696,14 +2705,14 @@ window.MYOB_LOCALES.vi = {
     "content.circumcision.t.3": "d4de604c37f414a2",
     "content.circumcision.t.4": "706bcd0238eac334",
     "content.circumcision.t.5": "2d62b3babd67ab3c",
-    "content.circumcision.t.6": "a8361fd6b7237104",
+    "content.circumcision.t.6": "1670453248f8c7b0",
     "content.circumcision.t.7": "51bb2ecb4d379d51",
     "content.circumcision.t.8": "f7774e648f8e13da",
     "content.vitamin-d-drops.title": "e813e486bcfad49c",
     "content.vitamin-d-drops.sub": "f691dcfe7e42f6ac",
     "content.vitamin-d-drops.t.0": "44e620a91a0a98eb",
     "content.vitamin-d-drops.t.1": "79b93282d2633c5c",
-    "content.vitamin-d-drops.t.2": "b433718b08a24cdd",
+    "content.vitamin-d-drops.t.2": "c753be0fea7c0729",
     "content.vitamin-d-drops.t.3": "4ff6969dc2636913",
     "content.vitamin-d-drops.t.4": "f5de3f9830ce47c2",
     "content.vitamin-d-drops.t.5": "391a2d9da997549b",
@@ -2926,7 +2935,7 @@ window.MYOB_LOCALES.vi = {
     "content.crying-coping.t.7": "2a2c3908b18025f2",
     "content.crying-coping.t.8": "161f6ed3a80f8549",
     "content.crying-coping.t.9": "7146b80050ea63ce",
-    "content.crying-coping.t.10": "004727c64d6889d0",
+    "content.crying-coping.t.10": "d1ceb17e9cedfff0",
     "content.crying-coping.t.11": "87206f861037d230",
     "content.crying-coping.t.12": "10aefed99197f797",
     "content.crying-coping.t.13": "4b4e03aa59a82fec",

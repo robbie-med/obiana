@@ -6,6 +6,20 @@ let weightProfile = safeLoad('weight-profile', {});
 
 TOOL_INITS['tool-weight'] = initWeight;
 
+// Weights are stored in pounds, always. Metric only changes what is shown and
+// what she types, so switching units never rewrites her history.
+const LB_KG = 0.45359237;
+const wtMetric = () => I18n.units.get() === 'metric';
+const lbShow = lb => wtMetric() ? +(lb * LB_KG).toFixed(1) : +lb;
+const lbFromInput = v => wtMetric() ? +(v / LB_KG).toFixed(1) : v;
+const WT_METRIC_KEY = {
+  'tool.weight.prePregnancyWeightLbs': 'tool.weight.prePregnancyWeightKg',
+  'tool.weight.gainedSoFar': 'tool.weight.gainedSoFarKg',
+  'tool.weight.lbsValue': 'tool.weight.kgValue',
+  'tool.weight.lbsTotal': 'tool.weight.kgTotal',
+};
+const wtKey = k => (wtMetric() && WT_METRIC_KEY[k]) || k;
+
 function getGainRange(bmi) {
   if (!bmi) return null;
   if (bmi < 18.5) return { min: 28, max: 40, label: I18n.t('tool.weight.bmi.under')  + ' (BMI < 18.5)' };
@@ -20,15 +34,15 @@ function initWeight() {
   const range = weightProfile.bmi ? getGainRange(weightProfile.bmi) : null;
   const baseline = weightProfile.baseWeight;
   const lastEntry = weightLog.length ? weightLog[weightLog.length - 1] : null;
-  const totalGain = (baseline && lastEntry) ? (lastEntry.lbs - baseline).toFixed(1) : null;
+  const totalGain = (baseline && lastEntry) ? lbShow(lastEntry.lbs - baseline).toFixed(1) : null;
 
   el.innerHTML = `
     <div class="weight-profile-card">
       <div class="wpc-title">${t('tool.weight.yourProfile')}</div>
       <div style="display:flex;gap:10px;margin-bottom:10px">
         <div style="flex:1">
-          <label class="form-label">${t('tool.weight.prePregnancyWeightLbs')}</label>
-          <input type="number" class="tool-input" id="wp-base" placeholder="${escHtml(I18n.t('common.eg', { n: I18n.fmt.num(140) }))}" value="${weightProfile.baseWeight || ''}" min="80" max="400">
+          <label class="form-label">${t(wtKey('tool.weight.prePregnancyWeightLbs'))}</label>
+          <input type="number" class="tool-input" id="wp-base" placeholder="${escHtml(I18n.t('common.eg', { n: I18n.fmt.num(wtMetric() ? 64 : 140) }))}" value="${weightProfile.baseWeight ? lbShow(weightProfile.baseWeight) : ''}" min="${wtMetric() ? 36 : 80}" max="${wtMetric() ? 180 : 400}" step="0.1">
         </div>
         <div style="flex:1">
           <label class="form-label">${t('tool.weight.prePregnancyBmi')}</label>
@@ -39,8 +53,8 @@ function initWeight() {
     </div>
     ${range ? `<div class="callout" style="margin:8px 16px">
       <div class="callout-title">${t('tool.weight.iomFor', { range: range.label })}</div>
-      <p>${t('tool.weight.recommendedGain')} <strong>${range.min}–${range.max} lbs</strong> ${t('tool.weight.forFullPregnancy')}
-      ${totalGain !== null ? ' ' + boldSlot('tool.weight.gainedSoFar', 'amount', (totalGain > 0 ? '+' : '') + I18n.fmt.num(totalGain)) : ''}</p>
+      <p>${t('tool.weight.recommendedGain')} <strong>${I18n.units.value('lb', range.min, range.max)}</strong> ${t('tool.weight.forFullPregnancy')}
+      ${totalGain !== null ? ' ' + boldSlot(wtKey('tool.weight.gainedSoFar'), 'amount', (totalGain > 0 ? '+' : '') + I18n.fmt.num(totalGain)) : ''}</p>
     </div>` : `<div class="callout" style="margin:8px 16px"><div class="callout-title">${t('tool.weight.setYourProfile')}</div><p>${t('tool.weight.setProfileHint')}</p></div>`}
     <div style="padding:0 16px 12px">
       <button class="big-action-btn btn-teal" onclick="openModal('weight')">${t('tool.weight.logWeight')}</button>
@@ -54,7 +68,7 @@ function initWeight() {
 function saveWeightProfile() {
   const base = parseFloat(document.getElementById('wp-base').value);
   const bmi = parseFloat(document.getElementById('wp-bmi').value);
-  if (base) weightProfile.baseWeight = base;
+  if (base) weightProfile.baseWeight = lbFromInput(base);
   if (bmi) weightProfile.bmi = bmi;
   safeSave('weight-profile', weightProfile);
   initWeight();
@@ -68,11 +82,11 @@ function renderWeightList() {
   const sorted = [...weightLog].sort((a, b) => b.week - a.week || b.ts - a.ts);
   const base = weightProfile.baseWeight;
   el.innerHTML = sorted.slice(0, 20).map((w, i) => {
-    const gain = base ? (w.lbs - base).toFixed(1) : null;
+    const gain = base ? lbShow(w.lbs - base).toFixed(1) : null;
     return `<div class="weight-row">
       <span class="weight-wk">${escHtml(I18n.t('tool.weight.wk', { n: I18n.fmt.num(w.week) }))}</span>
-      <span class="weight-val">${escHtml(I18n.t('tool.weight.lbsValue', { n: I18n.fmt.num(w.lbs) }))}</span>
-      <span class="weight-gain">${gain !== null ? escHtml(I18n.t('tool.weight.lbsTotal', { n: (gain > 0 ? '+' : '') + I18n.fmt.num(gain) })) : fmtDate(w.ts)}</span>
+      <span class="weight-val">${escHtml(I18n.t(wtKey('tool.weight.lbsValue'), { n: I18n.fmt.num(lbShow(w.lbs)) }))}</span>
+      <span class="weight-gain">${gain !== null ? escHtml(I18n.t(wtKey('tool.weight.lbsTotal'), { n: (gain > 0 ? '+' : '') + I18n.fmt.num(gain) })) : fmtDate(w.ts)}</span>
       <button onclick="deleteWeight(${i})" style="background:none;border:none;color:var(--ink-soft);font-size:16px;cursor:pointer;padding:4px">×</button>
     </div>`;
   }).join('');
@@ -94,7 +108,8 @@ function deleteWeight(idx) {
 }
 
 function saveWeight() {
-  const lbs = parseFloat(document.getElementById('weight-lbs').value);
+  const typed = parseFloat(document.getElementById('weight-lbs').value);
+  const lbs = typed ? lbFromInput(typed) : typed;
   const week = parseInt(document.getElementById('weight-week').value);
   if (!lbs || !week || lbs < 80 || lbs > 400 || week < 4 || week > 44) {
     showToast(t('tool.weight.enterValidWeightAndPregnancy'));
@@ -107,5 +122,7 @@ function saveWeight() {
   document.getElementById('weight-week').value = '';
   closeModal('weight');
   initWeight();
-  showToast(I18n.t('tool.weight.savedToast', { lbs: I18n.fmt.num(lbs), week: I18n.fmt.num(week) }));
+  showToast(wtMetric()
+    ? I18n.t('tool.weight.savedToastKg', { kg: I18n.fmt.num(typed), week: I18n.fmt.num(week) })
+    : I18n.t('tool.weight.savedToast', { lbs: I18n.fmt.num(lbs), week: I18n.fmt.num(week) }));
 }

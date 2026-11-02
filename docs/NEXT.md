@@ -112,12 +112,12 @@ Don't build a second tool beside it.
 - [ ] `docs/CONTENT_MAP.md` updated for each card.
 
 ## 6. Units setting in Me
-- [ ] US units (°F, lb, oz) by default; metric (°C, kg, mL) if she picks it.
-- [ ] Trackers store one unit internally and show the chosen one.
-- [ ] Card and When to call text: every value becomes a locked token in the English **and** in each translation, e.g. `{temp:100.4}` → "100.4°F" or "38°C", `{wt:5lb8oz}` → "5 lb 8 oz" or "2.5 kg". No regex over translated prose.
-  - English has about 13 such values. Translations carry their own (es and ko have 7 °F each), so replace them by key, not by search-and-replace.
-- [ ] `check.js` fails if a translation drops or alters a token its English has.
-- [ ] The text around the tokens stays US.
+- [x] US units (°F, lb, oz) by default; metric (°C, kg, mL) if she picks it. Me → Settings → Units (`obiana.units`, exported with her data). Done 2026-11-02.
+- [x] Trackers store one unit internally and show the chosen one. Weight stays in pounds and bottle feeds in ounces in storage; metric changes only what she types and sees, so switching loses nothing. Labels and input limits switch via `data-i18n-us`/`data-i18n-metric` and `data-us`/`data-metric`.
+- [x] Card and When to call text: every value is a token in English and in each translation: `{temp:100.4}`, `{vol:4-6}` (fluid oz), `{wt:8-12}` (oz of weight), `{lb:25-35}`. `I18n.units` draws them; the number is always the US value. 16 content keys + `ui.home.fever1004F`, replaced key by key in all 16 languages with an exact count per key, then re-stamped (meaning unchanged).
+  - Left as they are, because the US uses them too: cm (cervix), grams (fiber, MiraLAX, Tylenol), mL of cord blood.
+- [x] `check.js` "unit tokens": fails on a bare °F/oz/lb value in English, or a translation whose tokens differ from its English. `validate.js` already rejects a changed `{…}`; the translation prompt now explains tokens.
+- [x] The text around the tokens stays US.
 
 ## 7. Site polish
 - [ ] **Security:** `public/_headers` (nosniff, referrer policy, no framing); escape tool strings by default.
@@ -149,6 +149,7 @@ Don't build a second tool beside it.
 - Push only with `git push obiana obiana-main:main`.
 
 ## Found while working
+- The Translate page shows unit tokens raw (`{temp:100.4}`) in the English a contributor translates from. `validate.js`/`check.js` catch a dropped token, but a short hint on that page would save contributors a rejected suggestion.
 - `translation/merge.js` (full mode) writes `ui` only from the ui batches present. Run it for a language that has content batches but no ui batches and the locale's whole `ui` block is replaced with `{}`. Content has a guard for this; ui doesn't. (`--keys` mode patches in place and isn't affected.)
 - ui strings carry no `srcHash`, so `stamp.js report` never shows a ui key as stale. When to call, Today and Visits are ui strings, so §1's "done when report lists none of the §1 keys" can't see them. Re-translate them with `run-kimi.sh --keys` regardless, and decide whether ui needs fingerprints before §3 orders "outdated".
 - `translation/out/` still holds October's full batches for es/fr/ko/ar/ru/zh/zom. They no longer validate against today's snapshot, so full-mode merge skips them, but they are stale and worth deleting.

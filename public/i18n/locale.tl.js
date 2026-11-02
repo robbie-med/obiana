@@ -73,7 +73,7 @@ window.MYOB_LOCALES.tl = {
       "severeHeadache": "Matinding sakit ng ulo",
       "visionChanges": "Pagbabago sa paningin",
       "suddenSwellingOfFaceHands": "Biglang pamamaga ng mukha o kamay",
-      "fever1004F": "Lagnat &gt;100.4°F",
+      "fever1004F": "Lagnat &gt;{temp:100.4}",
       "contractionsBefore37Weeks": "Paghilab bago mag-37 linggo",
       "myInfoContacts": "Aking Info &amp;<br>Mga Contact",
       "saveYourCareTeamContacts": "I-save ang mga Contact ng Iyong Care Team",
@@ -495,7 +495,8 @@ window.MYOB_LOCALES.tl = {
           "one": "{count} min",
           "other": "{count} min"
         },
-        "bottleOz": "Bote, {oz} oz"
+        "bottleOz": "Bote, {oz} oz",
+        "bottleMl": "Bote, {ml} mL"
       },
       "diaper": {
         "wetToday": "Basa Ngayon",
@@ -576,7 +577,12 @@ window.MYOB_LOCALES.tl = {
         "wk": "Linggo {n}",
         "lbsValue": "{n} lbs",
         "lbsTotal": "{n} lbs lahat",
-        "savedToast": "Na-save ang {lbs} lbs sa linggo {week}"
+        "savedToast": "Na-save ang {lbs} lbs sa linggo {week}",
+        "prePregnancyWeightKg": "Timbang bago magbuntis (kg)",
+        "gainedSoFarKg": "Tumaba ka na ng {amount} kg sa ngayon.",
+        "kgValue": "{n} kg",
+        "kgTotal": "{n} kg lahat",
+        "savedToastKg": "Na-save ang {kg} kg sa linggo {week}"
       },
       "appts": {
         "addVisit": "+ Magdagdag ng Check-up",
@@ -794,7 +800,8 @@ window.MYOB_LOCALES.tl = {
       "both": "Pareho",
       "durationMinutes": "Tagal (minuto)",
       "amountOz": "Dami (oz)",
-      "saveFeed": "I-save ang Pagdede"
+      "saveFeed": "I-save ang Pagdede",
+      "amountMl": "Dami (mL)"
     },
     "modalBp": {
       "logBloodPressure": "Itala ang Blood Pressure",
@@ -808,7 +815,8 @@ window.MYOB_LOCALES.tl = {
       "logWeight": "Itala ang Timbang",
       "weightLbs": "Timbang (lbs)",
       "weekOfPregnancy": "Linggo ng pagbubuntis",
-      "save": "I-save"
+      "save": "I-save",
+      "weightKg": "Timbang (kg)"
     },
     "modalAppt": {
       "addVisit": "Magdagdag ng Check-up",
@@ -861,7 +869,8 @@ window.MYOB_LOCALES.tl = {
       "sizeLarge": "Malaki",
       "sizeLarger": "Mas malaki",
       "language": "Wika",
-      "darkMode": "Dark mode"
+      "darkMode": "Dark mode",
+      "units": "Mga yunit"
     }
   },
   "content": {
@@ -872,7 +881,7 @@ window.MYOB_LOCALES.tl = {
         "Pumunta sa ER o tumawag sa 911 kung may",
         "Pananakit ng dibdib o hirap huminga · Kombulsyon · Biglaang matinding sakit ng ulo na hindi pa naranasan · Senyales ng stroke (nakalaylay na mukha, mahinang braso, bulol na pagsasalita) · Iniisip na saktan ang sarili o ang baby",
         "Tawagan ang iyong family doctor, OB o komadrona kung may",
-        "Lagnat &gt;100.4°F · Basang-basa ang 1 napkin sa loob ng isang oras · Matinding sakit ng ulo na hindi nawawala sa ibuprofen/Tylenol · Pagbabago sa paningin · Pamumula, pamamaga, o init sa binti (DVT, namuong dugo sa malalim na ugat) · Bumubukang sugat, kumakalat na pamumula, o nana · Hirap umihi · Senyales ng postpartum depression (PPD) o pagkabalisa",
+        "Lagnat &gt;{temp:100.4} · Basang-basa ang 1 napkin sa loob ng isang oras · Matinding sakit ng ulo na hindi nawawala sa ibuprofen/Tylenol · Pagbabago sa paningin · Pamumula, pamamaga, o init sa binti (DVT, namuong dugo sa malalim na ugat) · Bumubukang sugat, kumakalat na pamumula, o nana · Hirap umihi · Senyales ng postpartum depression (PPD) o pagkabalisa",
         "Ang iskedyul ng iyong postpartum check-up, at ang mga tanong na dapat dalhin sa anim na linggong check-up, ay nasa card na Follow-Up na Check-up sa ilalim ng Sanggol, katabi ng mga check-up ng iyong sanggol para makita mo ang dalawa nang sabay."
       ]
     },
@@ -938,7 +947,7 @@ window.MYOB_LOCALES.tl = {
         "Maitim na unang dumi (meconium)",
         "✓ Oo. Dapat lumabas sa loob ng 24–48 oras",
         "Tawagan agad ang doktor ng baby kung may",
-        "Lagnat ≥ 100.4°F sa puwit (seryoso sa bagong silang. Laging sa puwit kunin ang temperatura) · Ayaw dumede · Matinding paninilaw · Umuungol sa bawat hinga · Napakaputla ng balat · Iyak na hindi mapatahan · Mas kaunti sa 6 na basang diaper bawat araw pagkalipas ng ika-5 araw · Naninigas na leeg. Asul o kulay-abo na labi o mukha: tumawag sa 911."
+        "Lagnat ≥ {temp:100.4} sa puwit (seryoso sa bagong silang. Laging sa puwit kunin ang temperatura) · Ayaw dumede · Matinding paninilaw · Umuungol sa bawat hinga · Napakaputla ng balat · Iyak na hindi mapatahan · Mas kaunti sa 6 na basang diaper bawat araw pagkalipas ng ika-5 araw · Naninigas na leeg. Asul o kulay-abo na labi o mukha: tumawag sa 911."
       ]
     },
     "faq-deli": {
@@ -947,7 +956,7 @@ window.MYOB_LOCALES.tl = {
       "t": [
         "Ang pangunahing panganib ay ang",
         "Listeria",
-        ", isang impeksiyon ng bakterya na bihira pero maaaring maging malubha sa pagbubuntis (maaaring tumawid sa inunan). Payo ng FDA na iwasan ang keso na hindi pasteurized at deli meat maliban kung pinainit hanggang umusok (165°F). Ligtas ang karamihan ng pasteurized na malambot na keso (tulad ng pasteurized na brie, feta na nasa pakete). Ang eksepsiyon ay queso fresco, queso blanco, panela at mga katulad na sariwang keso: kahit ang pasteurized ay nagdulot na ng listeria outbreak, kaya kainin lang ang mga ito kung niluto hanggang umusok. Napakababa ng kabuuang panganib mula sa paminsan-minsang deli meat. Kung hindi sigurado, initin ito. Iwasan din ang hilaw o hindi lutong karne, hilaw na itlog, hindi pasteurized na gatas o juice, at hilaw na toge, at hugasan ang prutas at gulay. Ipalinis sa iba ang litter ng pusa, o magsuot ng guwantes: ang dumi ng pusa at hindi lutong karne ay maaaring magdala ng toxoplasmosis."
+        ", isang impeksiyon ng bakterya na bihira pero maaaring maging malubha sa pagbubuntis (maaaring tumawid sa inunan). Payo ng FDA na iwasan ang keso na hindi pasteurized at deli meat maliban kung pinainit hanggang umusok ({temp:165}). Ligtas ang karamihan ng pasteurized na malambot na keso (tulad ng pasteurized na brie, feta na nasa pakete). Ang eksepsiyon ay queso fresco, queso blanco, panela at mga katulad na sariwang keso: kahit ang pasteurized ay nagdulot na ng listeria outbreak, kaya kainin lang ang mga ito kung niluto hanggang umusok. Napakababa ng kabuuang panganib mula sa paminsan-minsang deli meat. Kung hindi sigurado, initin ito. Iwasan din ang hilaw o hindi lutong karne, hilaw na itlog, hindi pasteurized na gatas o juice, at hilaw na toge, at hugasan ang prutas at gulay. Ipalinis sa iba ang litter ng pusa, o magsuot ng guwantes: ang dumi ng pusa at hindi lutong karne ay maaaring magdala ng toxoplasmosis."
       ]
     },
     "faq-coffee": {
@@ -956,7 +965,7 @@ window.MYOB_LOCALES.tl = {
       "t": [
         "Oo. Inirerekomenda ng ACOG na limitahan ang caffeine sa",
         "mas mababa sa 200 mg bawat araw",
-        "(mga isang 12-oz na tasa ng drip coffee). Sa ganitong dami, walang napatunayang pinsala sa pagbubuntis. May caffeine din ang tsaa, soda at tsokolate. Bilangin silang lahat nang sabay. Makatwiran ang magbawas; ang tuluyang pagtigil ay personal na desisyon, hindi kailangan sa medisina."
+        "(mga isang {vol:12} na tasa ng drip coffee). Sa ganitong dami, walang napatunayang pinsala sa pagbubuntis. May caffeine din ang tsaa, soda at tsokolate. Bilangin silang lahat nang sabay. Makatwiran ang magbawas; ang tuluyang pagtigil ay personal na desisyon, hindi kailangan sa medisina."
       ]
     },
     "faq-hair-dye": {
@@ -1005,7 +1014,7 @@ window.MYOB_LOCALES.tl = {
       "title": "Puwede ba akong maligo sa bathtub o gumamit ng hot tub?",
       "sub": "",
       "t": [
-        "Ayos lang ang maligamgam na paliligo sa buong pagbubuntis. Hindi inirerekomenda ang hot tub, sauna at steam room na nagpapataas ng temperatura ng katawan nang higit sa 102°F (39°C), lalo na sa unang trimester, kung kailan ang mataas na temperatura ay may kaugnayan sa neural tube defects. Kung gagamit ka ng hot tub, panatilihing komportable (hindi mainit) ang temperatura, limitahan sa 10 minuto, at iwasan sa unang trimester. Ligtas ang maligamgam na paliligo sa karaniwang temperatura ng tubig sa bahay (98–100°F)."
+        "Ayos lang ang maligamgam na paliligo sa buong pagbubuntis. Hindi inirerekomenda ang hot tub, sauna at steam room na nagpapataas ng temperatura ng katawan nang higit sa {temp:102}, lalo na sa unang trimester, kung kailan ang mataas na temperatura ay may kaugnayan sa neural tube defects. Kung gagamit ka ng hot tub, panatilihing komportable (hindi mainit) ang temperatura, limitahan sa 10 minuto, at iwasan sa unang trimester. Ligtas ang maligamgam na paliligo sa karaniwang temperatura ng tubig sa bahay ({temp:98-100})."
       ]
     },
     "faq-epidural-csec": {
@@ -1364,7 +1373,7 @@ window.MYOB_LOCALES.tl = {
         "Huwag magbuhat ng anumang mas mabigat sa sanggol mo sa loob ng 4–6 na linggo",
         "Ang hiwa ay pahalang na \"bikini-line\" na peklat, isinara gamit ang staple o natutunaw na tahi",
         "Tumawag Pagkauwi Mula sa C-Section Kung",
-        "Bumuka ang hiwa, kumakalat ang pamumula palabas, o may kakaibang lumalabas · Lagnat &gt;100.4°F · Lumalala sa halip na gumagaling ang sakit · Nababasa nang buo ang 1 pad sa loob ng isang oras",
+        "Bumuka ang hiwa, kumakalat ang pamumula palabas, o may kakaibang lumalabas · Lagnat &gt;{temp:100.4} · Lumalala sa halip na gumagaling ang sakit · Nababasa nang buo ang 1 pad sa loob ng isang oras",
         "VBAC. Normal na Panganganak Pagkatapos ng Cesarean",
         "Kung nagkaroon ka ng isang naunang low-transverse na C-section, maaaring opsiyon ang VBAC sa pagbubuntis na ito. 60–80% ang tsansang magtagumpay. Pag-usapan ito nang maaga sa prenatal care."
       ]
@@ -1575,7 +1584,7 @@ window.MYOB_LOCALES.tl = {
       "t": [
         "Ang isda ay isa sa mas magagandang pagkain habang buntis. Kailangan mo lang mag-ingat sa mercury.",
         "Gaano karami",
-        "Dalawa hanggang tatlong serving bawat linggo, mga 8 hanggang 12 onsa lahat-lahat. Ang matatabang isda ang pangunahing pagkaing pinagkukunan ng DHA, na ginagamit ng sanggol sa pagbuo ng utak at mata.",
+        "Dalawa hanggang tatlong serving bawat linggo, mga {wt:8-12} lahat-lahat. Ang matatabang isda ang pangunahing pagkaing pinagkukunan ng DHA, na ginagamit ng sanggol sa pagbuo ng utak at mata.",
         "Kumain nang malaya, mababa sa mercury",
         "Salmon, sardinas, dilis (anchovies), herring, trout, tilapia, bakalaw (cod), hito (catfish), pollock, de-latang light tuna, hipon, alimango, scallops, lutong talaba.",
         "Isang beses bawat linggo, pinakamarami",
@@ -1583,7 +1592,7 @@ window.MYOB_LOCALES.tl = {
         "Huwag kainin",
         "Pating, swordfish, king mackerel, tilefish mula sa Gulf of Mexico, marlin, orange roughy, bigeye tuna. Malalaki at matagal mabuhay na mandaragit ang mga ito at pinakamarami ang mercury.",
         "Pagluluto",
-        "Lutuin hanggang 145°F, hanggang hindi na malinaw ang laman at madaling himayin. Kadalasang hindi magandang ideya ang hilaw na isda sa pagbubuntis, pati ang smoked fish mula sa refrigerated na lalagyan maliban kung lulutuin mo ito sa ulam. Ang panganib doon ay listeria, hindi mercury.",
+        "Lutuin hanggang {temp:145}, hanggang hindi na malinaw ang laman at madaling himayin. Kadalasang hindi magandang ideya ang hilaw na isda sa pagbubuntis, pati ang smoked fish mula sa refrigerated na lalagyan maliban kung lulutuin mo ito sa ulam. Ang panganib doon ay listeria, hindi mercury.",
         "Isdang ikaw mismo ang nanghuli",
         "Tingnan ang advisory ng iyong estado para sa tubig na iyon. Hindi saklaw ng pambansang listahan ang lokal na kontaminasyon."
       ]
@@ -1641,7 +1650,7 @@ window.MYOB_LOCALES.tl = {
         "Diaper:",
         "Pagsapit ng araw 4–5, asahan ang hindi bababa sa 6 na basang diaper at 3–4 na dilaw at butil-butil na dumi bawat araw.",
         "Timbang:",
-        "Dapat bumalik ang timbang pagkasilang sa loob ng 10–14 na araw. Pagkalipas ng araw 5, asahan ang ½–1 oz na dagdag bawat araw.",
+        "Dapat bumalik ang timbang pagkasilang sa loob ng 10–14 na araw. Pagkalipas ng araw 5, asahan ang {wt:0.5-1} na dagdag bawat araw.",
         "Sanggol:",
         "Busog pagkatapos dumede, alerto kapag gising.",
         "Alak, cannabis at paninigarilyo",
@@ -1657,7 +1666,7 @@ window.MYOB_LOCALES.tl = {
         "Masakit na utong",
         "Tingnan muna ang latch. Ito ang #1 na sanhi. Magpahid ng piniga mong gatas o lanolin pagkatapos magpasuso. Patuyuin sa hangin. Kadalasang gumaganda pagkalipas ng araw 5 kapag dumating na ang gatas at gumanda ang latch.",
         "Engorgement (paninigas ng suso)",
-        "Pasusuhin ang sanggol tuwing gutom siya. Huwag mag-pump para ubusin ang laman ng suso: sinasabi nito sa katawan na gumawa pa ng mas maraming gatas. Kung masyadong matigas ang suso para mag-latch, pigain muna nang kaunti gamit ang kamay para lumambot. Malamig na pack pagkatapos magpasuso para mabawasan ang pamamaga. Maaaring magdulot ng mababang lagnat. Kung &gt;100.4°F, tawagan ang iyong doktor.",
+        "Pasusuhin ang sanggol tuwing gutom siya. Huwag mag-pump para ubusin ang laman ng suso: sinasabi nito sa katawan na gumawa pa ng mas maraming gatas. Kung masyadong matigas ang suso para mag-latch, pigain muna nang kaunti gamit ang kamay para lumambot. Malamig na pack pagkatapos magpasuso para mabawasan ang pamamaga. Maaaring magdulot ng mababang lagnat. Kung &gt;{temp:100.4}, tawagan ang iyong doktor.",
         "Pag-aalala na kulang ang gatas",
         "Magpasuso nang mas madalas. Sumusunod ang supply sa demand. Tiyaking maganda ang latch. Mag-pump pagkatapos magpasuso para senyasang gumawa pa. Pumunta sa lactation consultant. Karamihan ng inaakalang kulang na gatas ay talagang sapat.",
         "Baradong daluyan ng gatas",
@@ -1689,9 +1698,9 @@ window.MYOB_LOCALES.tl = {
         "Huwag kailanman gumamit ng microwave",
         ". Hindi pantay ang init at maaaring mapaso ang bibig ng sanggol",
         "Gaano Karami, Gaano Kadalas",
-        "Bagong silang (0–1 buwan): 1–2 oz bawat 2–3 oras (8–12 pagpapakain/araw)",
-        "2 buwan: 3–4 oz bawat 3–4 na oras",
-        "4 na buwan: 4–6 oz bawat 4 na oras",
+        "Bagong silang (0–1 buwan): {vol:1-2} bawat 2–3 oras (8–12 pagpapakain/araw)",
+        "2 buwan: {vol:3-4} bawat 3–4 na oras",
+        "4 na buwan: {vol:4-6} bawat 4 na oras",
         "Magpakain kapag gusto ng sanggol. Gabay lang ito, hindi patakaran",
         "Pag-iimbak",
         "Gaano Katagal",
@@ -1743,7 +1752,7 @@ window.MYOB_LOCALES.tl = {
         "Bakit magkakaiba ang gabay",
         "Nagpasya ang American Academy of Pediatrics na mas malaki ang benepisyo kaysa panganib pero hindi sapat para irekomenda sa bawat batang lalaki. Binasa ng ilang grupo sa Europa ang parehong pag-aaral at iba ang naging konklusyon. Sa totoo, desisyon ito ng pamilya, kadalasang hinuhubog ng relihiyon, kultura, at ng itsura ng ama.",
         "Kung magpapasya kang gawin ito",
-        "Itanong nang tiyak ang tungkol sa pag-alis ng sakit: isang local anesthetic block, hindi lang tubig na may asukal. May mabibisang opsiyon at hindi ginagamit sa lahat ng lugar. Tingnan kung ano ang sakop ng insurance mo. Pagkatapos, mapula ang dulo at maaaring may malambot na madilaw na takip nang mga isang linggo; normal na paggaling iyon. Lagyan ng petroleum jelly tuwing magpapalit ng diaper. Tawagan ang doktor ng sanggol kung may pagdurugong hindi tumitigil sa bahagyang pagdiin, walang basang diaper sa loob ng 8 oras, lagnat na 100.4°F o higit pa, o kumakalat na pamumula, pamamaga o paltos na may nana.",
+        "Itanong nang tiyak ang tungkol sa pag-alis ng sakit: isang local anesthetic block, hindi lang tubig na may asukal. May mabibisang opsiyon at hindi ginagamit sa lahat ng lugar. Tingnan kung ano ang sakop ng insurance mo. Pagkatapos, mapula ang dulo at maaaring may malambot na madilaw na takip nang mga isang linggo; normal na paggaling iyon. Lagyan ng petroleum jelly tuwing magpapalit ng diaper. Tawagan ang doktor ng sanggol kung may pagdurugong hindi tumitigil sa bahagyang pagdiin, walang basang diaper sa loob ng 8 oras, lagnat na {temp:100.4} o higit pa, o kumakalat na pamumula, pamamaga o paltos na may nana.",
         "Kung magpapasya kang huwag",
         "Huwag hilahin pabalik ang balat sa dulo (foreskin). Karaniwan itong nakadikit sa pagkasanggol at kusang humihiwalay sa loob ng ilang taon; ang pagpilit ay nagdudulot ng peklat na dapat sanang maiwasan. Punasan ang labas gaya ng ibang balat."
       ]
@@ -1754,7 +1763,7 @@ window.MYOB_LOCALES.tl = {
       "t": [
         "Mababa ang vitamin D sa gatas ng ina sa halos lahat. Kilalang kakulangan ito na may simpleng solusyon.",
         "Ang inirerekomenda",
-        "400 IU ng vitamin D araw-araw, simula sa mga unang araw, para sa sinumang sanggol na pinapasuso o halos gatas ng ina ang iniinom. Ituloy ito hanggang uminom ang sanggol ng mga 32 onsa (1 litro) bawat araw ng formula o, kalaunan, ng fortified na gatas, dahil may vitamin D na ang mga iyon.",
+        "400 IU ng vitamin D araw-araw, simula sa mga unang araw, para sa sinumang sanggol na pinapasuso o halos gatas ng ina ang iniinom. Ituloy ito hanggang uminom ang sanggol ng mga {vol:32} bawat araw ng formula o, kalaunan, ng fortified na gatas, dahil may vitamin D na ang mga iyon.",
         "Hindi kailangan ng dagdag ang sanggol na buong formula ang iniinom. Kadalasang kailangan pa rin sa pinagsamang pagpapakain, dahil depende ito sa kung gaano karaming formula talaga ang naiinom.",
         "Bakit ito mahalaga",
         "Ang vitamin D ang nagbibigay-daan sa katawan na sumipsip ng calcium at bumuo ng buto. Ang tunay na kakulangan ay nagdudulot ng rickets, na hindi karaniwan pero hindi pa nawawala, at mas malamang sa mga sanggol na mas maitim ang balat, sa hilagang lugar, at sa taglamig.",
@@ -2046,7 +2055,7 @@ window.MYOB_LOCALES.tl = {
         "Huwag kailanman alugin ang sanggol",
         "Ang pag-alog ay maaaring magdulot ng pinsala sa utak, pagkabulag o kamatayan. Siguraduhing alam ito ng lahat ng nag-aalaga sa sanggol mo.",
         "Tawagan ang doktor ng sanggol kung may kasama ang pag-iyak na",
-        "Lagnat na 100.4°F o higit pa · Pagsusuka o hirap dumede · Mga senyales ng sakit, o iyak na iba ang tunog kaysa karaniwan",
+        "Lagnat na {temp:100.4} o higit pa · Pagsusuka o hirap dumede · Mga senyales ng sakit, o iyak na iba ang tunog kaysa karaniwan",
         "Tumawag sa 911 kung ang sanggol mo ay",
         "Lupaypay, o mahirap gisingin · Hirap huminga · Nagiging asul o kulay-abo",
         "Kung madalas kang nawawalan ng pag-asa o galit",
@@ -2058,7 +2067,7 @@ window.MYOB_LOCALES.tl = {
     "content.postpartum-danger.t.0": "8e2a678f78c207ed",
     "content.postpartum-danger.t.1": "d26dc5484bcab5f6",
     "content.postpartum-danger.t.2": "bee2b3c377a8a3e5",
-    "content.postpartum-danger.t.3": "8a9f90651b64d9d3",
+    "content.postpartum-danger.t.3": "03c000a554e9734b",
     "content.signs-of-labor.t.11": "3973fa2849b83e92",
     "content.signs-of-labor.t.12": "61f8135000473a76",
     "content.signs-of-labor.t.13": "d0b262a299176734",
@@ -2067,15 +2076,15 @@ window.MYOB_LOCALES.tl = {
     "content.signs-of-labor.t.16": "ac6a34b445ceccaa",
     "content.signs-of-labor.t.17": "b007f20008122ab6",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "380945be7751b37c",
+    "content.normal-newborn.t.32": "11a67bb6600db664",
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
-    "content.faq-deli.t.2": "f834f951752931cb",
+    "content.faq-deli.t.2": "b648bd19bac268db",
     "content.faq-coffee.title": "5389638ea8a88dc8",
     "content.faq-coffee.t.0": "ac1cf8bc0364371a",
     "content.faq-coffee.t.1": "d49405defc21c3ec",
-    "content.faq-coffee.t.2": "19f22003cc780ded",
+    "content.faq-coffee.t.2": "de8179c055015bde",
     "content.faq-hair-dye.title": "3cbc4f5501467bbb",
     "content.faq-hair-dye.t.0": "194b47e06a23e60e",
     "content.faq-exercise-mc.title": "055753c567df011f",
@@ -2094,7 +2103,7 @@ window.MYOB_LOCALES.tl = {
     "content.faq-eat-for-two.title": "7109ae5ce8714502",
     "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
     "content.faq-hot-tub.title": "2230219d6f10d437",
-    "content.faq-hot-tub.t.0": "b73f80715bdad85f",
+    "content.faq-hot-tub.t.0": "c7540b7dd2d9ca9f",
     "content.faq-epidural-csec.title": "85af8aced19ce724",
     "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
     "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
@@ -2371,7 +2380,7 @@ window.MYOB_LOCALES.tl = {
     "content.csection.t.23": "03b0235cac26896a",
     "content.csection.t.24": "04b03da54128058f",
     "content.csection.t.25": "f6fa8c9fde0476e5",
-    "content.csection.t.26": "ca4bbc17e96e473d",
+    "content.csection.t.26": "ad79a07707d57275",
     "content.csection.t.27": "e04d3a00a0c48e1a",
     "content.csection.t.28": "24b632c57b1d608f",
     "content.mfm.title": "6c228d117e74de43",
@@ -2533,7 +2542,7 @@ window.MYOB_LOCALES.tl = {
     "content.fish-mercury.sub": "7a8a6870bed495f6",
     "content.fish-mercury.t.0": "6734e1973f605319",
     "content.fish-mercury.t.1": "d909a26ae31f4ecc",
-    "content.fish-mercury.t.2": "ee651e46d479ff88",
+    "content.fish-mercury.t.2": "7341748092938246",
     "content.fish-mercury.t.3": "b09f865e34a2ab04",
     "content.fish-mercury.t.4": "45e5d986c9bdbc50",
     "content.fish-mercury.t.5": "6d00998d3f613893",
@@ -2541,7 +2550,7 @@ window.MYOB_LOCALES.tl = {
     "content.fish-mercury.t.7": "7c04eb03eb7569d5",
     "content.fish-mercury.t.8": "73b85abd06fd7837",
     "content.fish-mercury.t.9": "450b169714695949",
-    "content.fish-mercury.t.10": "0d325b46201051b8",
+    "content.fish-mercury.t.10": "956c0b6e3e37d250",
     "content.fish-mercury.t.11": "a48919d4a78360fa",
     "content.fish-mercury.t.12": "500b3f883d2b066e",
     "content.preeclampsia.title": "35f619eb40c59015",
@@ -2587,7 +2596,7 @@ window.MYOB_LOCALES.tl = {
     "content.breastfeeding.t.13": "3d9abf5543ae35bf",
     "content.breastfeeding.t.14": "a90a747355b91e39",
     "content.breastfeeding.t.15": "09b0e1598812ec27",
-    "content.breastfeeding.t.16": "6842a2bad7d347b4",
+    "content.breastfeeding.t.16": "67351f4c3f193876",
     "content.breastfeeding.t.17": "5e4777c90c2f7087",
     "content.breastfeeding.t.18": "6cbf79f457184afe",
     "content.bf-challenges.title": "c4bf4298d981c3ae",
@@ -2597,7 +2606,7 @@ window.MYOB_LOCALES.tl = {
     "content.bf-challenges.t.2": "7d8bf4ad4287bdff",
     "content.bf-challenges.t.3": "c4998859be296f4b",
     "content.bf-challenges.t.4": "3a2ce81ac9dcbe3c",
-    "content.bf-challenges.t.5": "827dba0e278ee0e4",
+    "content.bf-challenges.t.5": "df4fff0e4157a4bc",
     "content.bf-challenges.t.6": "4a83c479c8b90393",
     "content.bf-challenges.t.7": "40cb72bdfa8524ab",
     "content.bf-challenges.t.8": "7c415028fad1dc52",
@@ -2625,9 +2634,9 @@ window.MYOB_LOCALES.tl = {
     "content.formula.t.10": "ab87de70c4d2391a",
     "content.formula.t.11": "943a6627735430bd",
     "content.formula.t.12": "8f2489f83139650a",
-    "content.formula.t.13": "d59c2bf70e921d19",
-    "content.formula.t.14": "d75f988fa8406695",
-    "content.formula.t.15": "a8dbb0d025c765fe",
+    "content.formula.t.13": "0b6634e78f897e4d",
+    "content.formula.t.14": "441ff505b8c222ef",
+    "content.formula.t.15": "b925a44e213f3690",
     "content.formula.t.16": "b3187f2d31ac31fb",
     "content.formula.t.17": "34eddf06cc3c9298",
     "content.formula.t.18": "dbabf7d1094591bb",
@@ -2704,14 +2713,14 @@ window.MYOB_LOCALES.tl = {
     "content.circumcision.t.3": "d4de604c37f414a2",
     "content.circumcision.t.4": "706bcd0238eac334",
     "content.circumcision.t.5": "2d62b3babd67ab3c",
-    "content.circumcision.t.6": "a8361fd6b7237104",
+    "content.circumcision.t.6": "1670453248f8c7b0",
     "content.circumcision.t.7": "51bb2ecb4d379d51",
     "content.circumcision.t.8": "f7774e648f8e13da",
     "content.vitamin-d-drops.title": "e813e486bcfad49c",
     "content.vitamin-d-drops.sub": "f691dcfe7e42f6ac",
     "content.vitamin-d-drops.t.0": "44e620a91a0a98eb",
     "content.vitamin-d-drops.t.1": "79b93282d2633c5c",
-    "content.vitamin-d-drops.t.2": "b433718b08a24cdd",
+    "content.vitamin-d-drops.t.2": "c753be0fea7c0729",
     "content.vitamin-d-drops.t.3": "4ff6969dc2636913",
     "content.vitamin-d-drops.t.4": "f5de3f9830ce47c2",
     "content.vitamin-d-drops.t.5": "391a2d9da997549b",
@@ -2934,7 +2943,7 @@ window.MYOB_LOCALES.tl = {
     "content.crying-coping.t.7": "2a2c3908b18025f2",
     "content.crying-coping.t.8": "161f6ed3a80f8549",
     "content.crying-coping.t.9": "7146b80050ea63ce",
-    "content.crying-coping.t.10": "004727c64d6889d0",
+    "content.crying-coping.t.10": "d1ceb17e9cedfff0",
     "content.crying-coping.t.11": "87206f861037d230",
     "content.crying-coping.t.12": "10aefed99197f797",
     "content.crying-coping.t.13": "4b4e03aa59a82fec",

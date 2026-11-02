@@ -73,7 +73,7 @@ window.MYOB_LOCALES.ja = {
       "severeHeadache": "ひどい頭痛",
       "visionChanges": "見え方の変化",
       "suddenSwellingOfFaceHands": "顔や手の急なむくみ",
-      "fever1004F": "発熱 &gt;100.4°F",
+      "fever1004F": "発熱 &gt;{temp:100.4}",
       "contractionsBefore37Weeks": "37週より前の陣痛",
       "myInfoContacts": "わたしの情報 &amp;<br>連絡先",
       "saveYourCareTeamContacts": "ケアチームの連絡先を保存",
@@ -490,7 +490,8 @@ window.MYOB_LOCALES.ja = {
         "minutes": {
           "other": "{count}分"
         },
-        "bottleOz": "哺乳びん、{oz} oz"
+        "bottleOz": "哺乳びん、{oz} oz",
+        "bottleMl": "哺乳びん、{ml} mL"
       },
       "diaper": {
         "wetToday": "今日のおしっこ",
@@ -571,7 +572,12 @@ window.MYOB_LOCALES.ja = {
         "wk": "{n}週",
         "lbsValue": "{n} lbs",
         "lbsTotal": "合計 {n} lbs",
-        "savedToast": "{week}週で{lbs} lbsを保存しました"
+        "savedToast": "{week}週で{lbs} lbsを保存しました",
+        "prePregnancyWeightKg": "妊娠前の体重（kg）",
+        "gainedSoFarKg": "ここまでに{amount} kg増えました。",
+        "kgValue": "{n} kg",
+        "kgTotal": "合計 {n} kg",
+        "savedToastKg": "{week}週で{kg} kgを保存しました"
       },
       "appts": {
         "addVisit": "＋ 健診を追加",
@@ -789,7 +795,8 @@ window.MYOB_LOCALES.ja = {
       "both": "両方",
       "durationMinutes": "時間（分）",
       "amountOz": "量（oz）",
-      "saveFeed": "授乳を保存"
+      "saveFeed": "授乳を保存",
+      "amountMl": "量（mL）"
     },
     "modalBp": {
       "logBloodPressure": "血圧を記録",
@@ -803,7 +810,8 @@ window.MYOB_LOCALES.ja = {
       "logWeight": "体重を記録",
       "weightLbs": "体重（lbs）",
       "weekOfPregnancy": "妊娠週数",
-      "save": "保存"
+      "save": "保存",
+      "weightKg": "体重（kg）"
     },
     "modalAppt": {
       "addVisit": "健診を追加",
@@ -856,7 +864,8 @@ window.MYOB_LOCALES.ja = {
       "sizeLarge": "大きい",
       "sizeLarger": "もっと大きい",
       "language": "言語",
-      "darkMode": "ダークモード"
+      "darkMode": "ダークモード",
+      "units": "単位"
     }
   },
   "content": {
@@ -867,7 +876,7 @@ window.MYOB_LOCALES.ja = {
         "次のときは救急外来へ、または911に電話",
         "胸の痛みや息苦しさ · けいれん · これまでにない突然のひどい頭痛 · 脳卒中の症状（顔のゆがみ、腕の力が入らない、ろれつが回らない） · 自分や赤ちゃんを傷つけたい気持ち",
         "次のときは家庭医、産科医、助産師に電話",
-        "発熱 &gt;100.4°F · 1時間でナプキン1枚がびっしょりになる · イブプロフェンやタイレノールで治まらないひどい頭痛 · 見え方の変化 · 脚の赤み、腫れ、熱っぽさ（DVT、深部静脈血栓） · 傷が開く、赤みが広がる、膿が出る · 尿が出にくい · 産後うつ（PPD）や不安のサイン",
+        "発熱 &gt;{temp:100.4} · 1時間でナプキン1枚がびっしょりになる · イブプロフェンやタイレノールで治まらないひどい頭痛 · 見え方の変化 · 脚の赤み、腫れ、熱っぽさ（DVT、深部静脈血栓） · 傷が開く、赤みが広がる、膿が出る · 尿が出にくい · 産後うつ（PPD）や不安のサイン",
         "産後健診の予定と、6週間後の健診で聞くとよい質問は、「赤ちゃん」の「健診の予定」カードにあります。赤ちゃんの健診と一緒に、両方を見られます。"
       ]
     },
@@ -933,7 +942,7 @@ window.MYOB_LOCALES.ja = {
         "最初の黒っぽい便（胎便）",
         "✓ はい。24–48時間以内に出るはずです",
         "次のときはすぐに赤ちゃんの医師に電話",
-        "直腸温 ≥ 100.4°F（新生児では重大。必ず直腸で測る） · 飲まない · 黄色みが強い · 息をするたびにうなる · 肌がとても青白い · 泣きやまない · 生後5日目以降、ぬれたおむつが1日6枚未満 · 首が硬い。唇や顔が青い、または灰色：911に電話。"
+        "直腸温 ≥ {temp:100.4}（新生児では重大。必ず直腸で測る） · 飲まない · 黄色みが強い · 息をするたびにうなる · 肌がとても青白い · 泣きやまない · 生後5日目以降、ぬれたおむつが1日6枚未満 · 首が硬い。唇や顔が青い、または灰色：911に電話。"
       ]
     },
     "faq-deli": {
@@ -942,7 +951,7 @@ window.MYOB_LOCALES.ja = {
       "t": [
         "主なリスクは",
         "リステリア",
-        "という細菌による感染症です。まれですが、妊娠中は重くなることがあります（胎盤を通ることがあります）。FDAは、殺菌されていないチーズや、湯気が出るまで（165°F）加熱していないデリミートを避けるよう勧めています。殺菌済みのソフトチーズ（殺菌済みのブリー、パック入りのフェタなど）のほとんどは安全です。例外はケソフレスコ、ケソブランコ、パネラなどのフレッシュチーズです。殺菌済みでもリステリアの集団感染が起きているので、湯気が出るまで加熱した場合だけ食べてください。たまにデリミートを食べる程度なら、全体のリスクはとても低いです。迷ったら加熱しましょう。生焼けの肉、生卵、殺菌されていない牛乳やジュース、生のスプラウトも避け、果物と野菜は洗ってください。猫のトイレの掃除はほかの人に頼むか、手袋をしてください。猫のふんと生焼けの肉はトキソプラズマ症をうつすことがあります。"
+        "という細菌による感染症です。まれですが、妊娠中は重くなることがあります（胎盤を通ることがあります）。FDAは、殺菌されていないチーズや、湯気が出るまで（{temp:165}）加熱していないデリミートを避けるよう勧めています。殺菌済みのソフトチーズ（殺菌済みのブリー、パック入りのフェタなど）のほとんどは安全です。例外はケソフレスコ、ケソブランコ、パネラなどのフレッシュチーズです。殺菌済みでもリステリアの集団感染が起きているので、湯気が出るまで加熱した場合だけ食べてください。たまにデリミートを食べる程度なら、全体のリスクはとても低いです。迷ったら加熱しましょう。生焼けの肉、生卵、殺菌されていない牛乳やジュース、生のスプラウトも避け、果物と野菜は洗ってください。猫のトイレの掃除はほかの人に頼むか、手袋をしてください。猫のふんと生焼けの肉はトキソプラズマ症をうつすことがあります。"
       ]
     },
     "faq-coffee": {
@@ -951,7 +960,7 @@ window.MYOB_LOCALES.ja = {
       "t": [
         "はい。ACOG（米国産科婦人科学会）はカフェインを",
         "1日200 mg未満",
-        "（ドリップコーヒー12-oz カップ約1杯分）に抑えるよう勧めています。この量で妊娠に害があるという証拠はありません。紅茶、炭酸飲料、チョコレートにもカフェインが含まれます。すべて合わせて数えてください。減らすのは理にかなっていますが、完全にやめるかどうかは個人の選択で、医学的に必要なわけではありません。"
+        "（ドリップコーヒー{vol:12} カップ約1杯分）に抑えるよう勧めています。この量で妊娠に害があるという証拠はありません。紅茶、炭酸飲料、チョコレートにもカフェインが含まれます。すべて合わせて数えてください。減らすのは理にかなっていますが、完全にやめるかどうかは個人の選択で、医学的に必要なわけではありません。"
       ]
     },
     "faq-hair-dye": {
@@ -1000,7 +1009,7 @@ window.MYOB_LOCALES.ja = {
       "title": "お風呂やジャグジーに入ってもいいですか？",
       "sub": "",
       "t": [
-        "ぬるめのお風呂なら妊娠中ずっと大丈夫です。体の深部温度が102°F（39°C）を超えるジャグジー、サウナ、スチームルームは勧められません。特に妊娠初期は、体温の上昇が神経管の異常と関係しています。ジャグジーを使うなら、温度は熱くない心地よい程度にし、10分までにして、妊娠初期は避けてください。家庭のふつうのお湯の温度（98–100°F）のお風呂は安全です。"
+        "ぬるめのお風呂なら妊娠中ずっと大丈夫です。体の深部温度が{temp:102}を超えるジャグジー、サウナ、スチームルームは勧められません。特に妊娠初期は、体温の上昇が神経管の異常と関係しています。ジャグジーを使うなら、温度は熱くない心地よい程度にし、10分までにして、妊娠初期は避けてください。家庭のふつうのお湯の温度（{temp:98-100}）のお風呂は安全です。"
       ]
     },
     "faq-epidural-csec": {
@@ -1359,7 +1368,7 @@ window.MYOB_LOCALES.ja = {
         "4–6週間は赤ちゃんより重い物を持ち上げない",
         "傷は横向きの「ビキニライン」の傷あとで、ホチキスか溶ける糸で閉じます",
         "帝王切開で退院した後、こんなときは電話",
-        "傷が開く、赤みが外へ広がる、いつもと違う液が出る · 発熱 &gt;100.4°F · 痛みがよくならずひどくなる · 1時間でナプキン1枚がびっしょりになる",
+        "傷が開く、赤みが外へ広がる、いつもと違う液が出る · 発熱 &gt;{temp:100.4} · 痛みがよくならずひどくなる · 1時間でナプキン1枚がびっしょりになる",
         "VBAC。帝王切開後の経膣分娩",
         "以前に子宮下部横切開の帝王切開を1回したことがあるなら、今回の妊娠でVBACが選べるかもしれません。成功率は60–80%です。妊婦健診の早い時期に相談してください。"
       ]
@@ -1570,7 +1579,7 @@ window.MYOB_LOCALES.ja = {
       "t": [
         "魚は妊娠中に食べるとよいものの1つです。ただし水銀には気をつける必要があります。",
         "どのくらい",
-        "週に2〜3回、合計で約8〜12オンスです。脂ののった魚は、赤ちゃんが脳や目を作るのに使うDHAのおもな食べ物です。",
+        "週に2〜3回、合計で約{wt:8-12}です。脂ののった魚は、赤ちゃんが脳や目を作るのに使うDHAのおもな食べ物です。",
         "自由に食べてよい、水銀が少ない魚",
         "サケ、イワシ、アンチョビ、ニシン、マス、ティラピア、タラ、ナマズ、スケトウダラ、ライトツナ缶、エビ、カニ、ホタテ、加熱したカキ。",
         "多くても週1回",
@@ -1578,7 +1587,7 @@ window.MYOB_LOCALES.ja = {
         "食べないもの",
         "サメ、メカジキ、キングサバ、メキシコ湾のアマダイ、カジキ、オレンジラフィー、メバチマグロ。大きくて長生きの捕食魚で、水銀がもっとも多いです。",
         "調理",
-        "145°Fまで、身が不透明になってほぐれるまで加熱します。妊娠中の生魚はふつうよくありません。冷蔵ケースのスモークサーモンなどのいぶした魚も、料理に入れて加熱しないならよくありません。そこでのリスクは水銀ではなくリステリアです。",
+        "{temp:145}まで、身が不透明になってほぐれるまで加熱します。妊娠中の生魚はふつうよくありません。冷蔵ケースのスモークサーモンなどのいぶした魚も、料理に入れて加熱しないならよくありません。そこでのリスクは水銀ではなくリステリアです。",
         "自分で釣った魚",
         "その水域についての州の勧告を確認してください。全国のリストは地域の汚染をカバーしていません。"
       ]
@@ -1636,7 +1645,7 @@ window.MYOB_LOCALES.ja = {
         "おむつ：",
         "4–5日目には、1日に少なくとも6回のおしっこと、3–4回の黄色いつぶつぶの便が目安です。",
         "体重：",
-        "10–14日で生まれたときの体重に戻るはずです。5日目以降は1日に½–1 oz増えるのが目安です。",
+        "10–14日で生まれたときの体重に戻るはずです。5日目以降は1日に{wt:0.5-1}増えるのが目安です。",
         "赤ちゃん：",
         "授乳の後は満足していて、起きている間は元気です。",
         "アルコール、大麻、たばこ",
@@ -1652,7 +1661,7 @@ window.MYOB_LOCALES.ja = {
         "乳首の痛み",
         "まず吸いつきを確認。これが原因の第1位です。授乳の後に、しぼった母乳かラノリンをぬります。空気で乾かします。母乳が出てきて吸いつきがよくなる5日目以降に、たいていよくなります。",
         "乳房の張り",
-        "赤ちゃんがおなかをすかせたらいつでも授乳しましょう。乳房を空にするために搾乳しないでください。体にもっと母乳を作れと伝えてしまいます。胸がかたすぎて吸いつけないなら、先に少し手でしぼってやわらかくします。授乳の後は冷やして腫れを減らします。微熱が出ることがあります。&gt;100.4°Fなら医師に電話してください。",
+        "赤ちゃんがおなかをすかせたらいつでも授乳しましょう。乳房を空にするために搾乳しないでください。体にもっと母乳を作れと伝えてしまいます。胸がかたすぎて吸いつけないなら、先に少し手でしぼってやわらかくします。授乳の後は冷やして腫れを減らします。微熱が出ることがあります。&gt;{temp:100.4}なら医師に電話してください。",
         "母乳の量の心配",
         "授乳の回数を増やしましょう。量は需要に合わせて増えます。よい吸いつきを確かめましょう。授乳の後に搾乳して、もっと作るよう体に知らせます。授乳の専門家に相談しましょう。足りないと感じる多くの場合、実際は十分出ています。",
         "乳管のつまり",
@@ -1684,9 +1693,9 @@ window.MYOB_LOCALES.ja = {
         "電子レンジは絶対に使わない",
         "。温まり方にむらがあり、赤ちゃんの口をやけどさせることがあります",
         "量と回数",
-        "新生児（0–1か月）：2–3時間ごとに1–2 oz（1日8–12回）",
-        "2か月：3–4時間ごとに3–4 oz",
-        "4か月：4時間ごとに4–6 oz",
+        "新生児（0–1か月）：2–3時間ごとに{vol:1-2}（1日8–12回）",
+        "2か月：3–4時間ごとに{vol:3-4}",
+        "4か月：4時間ごとに{vol:4-6}",
         "欲しがるときにあげましょう。これは目安で、決まりではありません",
         "保存",
         "期間",
@@ -1738,7 +1747,7 @@ window.MYOB_LOCALES.ja = {
         "なぜ指針が違うのか",
         "米国小児科学会は、利点はリスクを上回るが、すべての男の子に勧めるほどではないと結論づけました。いくつかのヨーロッパの団体は同じ研究を読んで、別の結論を出しました。実際には家族が決めることで、宗教、文化、父親がどうかに影響されることが多いです。",
         "行うと決めたら",
-        "痛みの対処について具体的に聞いてください：砂糖水だけでなく、局所麻酔のブロックです。効果的な方法はあるのに、どこでも使われているわけではありません。保険で何がカバーされるか確認してください。手術のあと、先端は赤く、1週間ほどやわらかい黄色っぽい膜がつくことがあります。これはふつうの治り方です。おむつを替えるたびにワセリンをぬってください。軽くおさえても止まらない出血、8時間ぬれたおむつがない、100.4°F以上の熱、広がる赤み・はれ・うみをもった水ぶくれがあれば、赤ちゃんの医師に電話してください。",
+        "痛みの対処について具体的に聞いてください：砂糖水だけでなく、局所麻酔のブロックです。効果的な方法はあるのに、どこでも使われているわけではありません。保険で何がカバーされるか確認してください。手術のあと、先端は赤く、1週間ほどやわらかい黄色っぽい膜がつくことがあります。これはふつうの治り方です。おむつを替えるたびにワセリンをぬってください。軽くおさえても止まらない出血、8時間ぬれたおむつがない、{temp:100.4}以上の熱、広がる赤み・はれ・うみをもった水ぶくれがあれば、赤ちゃんの医師に電話してください。",
         "行わないと決めたら",
         "包皮をむかないでください。赤ちゃんのころはふつうくっついていて、何年もかけて自然に離れます。無理にむくと、防ぎたいはずの傷あとができてしまいます。外側はほかの皮膚と同じようにふきましょう。"
       ]
@@ -1749,7 +1758,7 @@ window.MYOB_LOCALES.ja = {
       "t": [
         "母乳のビタミンDは、ほぼ誰でも少ないものです。わかっている不足で、簡単に補えます。",
         "勧められていること",
-        "母乳で育てている、またはほとんど母乳を飲んでいる赤ちゃんには、生後数日から毎日400 IUのビタミンD。赤ちゃんが1日に約32オンス（1リットル）のミルク、後には強化された牛乳を飲むようになるまで続けます。それらにはすでにビタミンDが加えられているからです。",
+        "母乳で育てている、またはほとんど母乳を飲んでいる赤ちゃんには、生後数日から毎日400 IUのビタミンD。赤ちゃんが1日に約{vol:32}のミルク、後には強化された牛乳を飲むようになるまで続けます。それらにはすでにビタミンDが加えられているからです。",
         "ミルクを十分な量飲んでいる赤ちゃんには追加は必要ありません。混合の場合は、実際にどれだけミルクを飲んでいるかによるので、ふつうはまだ必要です。",
         "なぜ大切か",
         "ビタミンDは、体がカルシウムを吸収して骨を作るのに必要です。本当に不足するとくる病になります。まれですがなくなってはおらず、肌の色が濃い赤ちゃん、北のほうの地域、冬の間に多くなります。",
@@ -2041,7 +2050,7 @@ window.MYOB_LOCALES.ja = {
         "赤ちゃんを決して揺さぶらない",
         "揺さぶると脳の損傷、失明、死亡を起こすことがあります。赤ちゃんの世話をする人全員がこのことを知っているようにしてください。",
         "泣くことに加えてこんな様子があれば赤ちゃんの医師に電話を",
-        "100.4°F以上の熱 · 吐く、またはうまく飲めない · 痛そうな様子、またはいつもと違う泣き方",
+        "{temp:100.4}以上の熱 · 吐く、またはうまく飲めない · 痛そうな様子、またはいつもと違う泣き方",
         "赤ちゃんがこんなときは911に電話を",
         "ぐったりしている、または起こしにくい · 息が苦しそう · 青や灰色になる",
         "ほとんどいつも絶望や怒りを感じるなら",
@@ -2053,7 +2062,7 @@ window.MYOB_LOCALES.ja = {
     "content.postpartum-danger.t.0": "8e2a678f78c207ed",
     "content.postpartum-danger.t.1": "d26dc5484bcab5f6",
     "content.postpartum-danger.t.2": "bee2b3c377a8a3e5",
-    "content.postpartum-danger.t.3": "8a9f90651b64d9d3",
+    "content.postpartum-danger.t.3": "03c000a554e9734b",
     "content.signs-of-labor.t.11": "3973fa2849b83e92",
     "content.signs-of-labor.t.12": "61f8135000473a76",
     "content.signs-of-labor.t.13": "d0b262a299176734",
@@ -2062,15 +2071,15 @@ window.MYOB_LOCALES.ja = {
     "content.signs-of-labor.t.16": "ac6a34b445ceccaa",
     "content.signs-of-labor.t.17": "b007f20008122ab6",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "380945be7751b37c",
+    "content.normal-newborn.t.32": "11a67bb6600db664",
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
-    "content.faq-deli.t.2": "f834f951752931cb",
+    "content.faq-deli.t.2": "b648bd19bac268db",
     "content.faq-coffee.title": "5389638ea8a88dc8",
     "content.faq-coffee.t.0": "ac1cf8bc0364371a",
     "content.faq-coffee.t.1": "d49405defc21c3ec",
-    "content.faq-coffee.t.2": "19f22003cc780ded",
+    "content.faq-coffee.t.2": "de8179c055015bde",
     "content.faq-hair-dye.title": "3cbc4f5501467bbb",
     "content.faq-hair-dye.t.0": "194b47e06a23e60e",
     "content.faq-exercise-mc.title": "055753c567df011f",
@@ -2089,7 +2098,7 @@ window.MYOB_LOCALES.ja = {
     "content.faq-eat-for-two.title": "7109ae5ce8714502",
     "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
     "content.faq-hot-tub.title": "2230219d6f10d437",
-    "content.faq-hot-tub.t.0": "b73f80715bdad85f",
+    "content.faq-hot-tub.t.0": "c7540b7dd2d9ca9f",
     "content.faq-epidural-csec.title": "85af8aced19ce724",
     "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
     "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
@@ -2366,7 +2375,7 @@ window.MYOB_LOCALES.ja = {
     "content.csection.t.23": "03b0235cac26896a",
     "content.csection.t.24": "04b03da54128058f",
     "content.csection.t.25": "f6fa8c9fde0476e5",
-    "content.csection.t.26": "ca4bbc17e96e473d",
+    "content.csection.t.26": "ad79a07707d57275",
     "content.csection.t.27": "e04d3a00a0c48e1a",
     "content.csection.t.28": "24b632c57b1d608f",
     "content.mfm.title": "6c228d117e74de43",
@@ -2528,7 +2537,7 @@ window.MYOB_LOCALES.ja = {
     "content.fish-mercury.sub": "7a8a6870bed495f6",
     "content.fish-mercury.t.0": "6734e1973f605319",
     "content.fish-mercury.t.1": "d909a26ae31f4ecc",
-    "content.fish-mercury.t.2": "ee651e46d479ff88",
+    "content.fish-mercury.t.2": "7341748092938246",
     "content.fish-mercury.t.3": "b09f865e34a2ab04",
     "content.fish-mercury.t.4": "45e5d986c9bdbc50",
     "content.fish-mercury.t.5": "6d00998d3f613893",
@@ -2536,7 +2545,7 @@ window.MYOB_LOCALES.ja = {
     "content.fish-mercury.t.7": "7c04eb03eb7569d5",
     "content.fish-mercury.t.8": "73b85abd06fd7837",
     "content.fish-mercury.t.9": "450b169714695949",
-    "content.fish-mercury.t.10": "0d325b46201051b8",
+    "content.fish-mercury.t.10": "956c0b6e3e37d250",
     "content.fish-mercury.t.11": "a48919d4a78360fa",
     "content.fish-mercury.t.12": "500b3f883d2b066e",
     "content.preeclampsia.title": "35f619eb40c59015",
@@ -2582,7 +2591,7 @@ window.MYOB_LOCALES.ja = {
     "content.breastfeeding.t.13": "3d9abf5543ae35bf",
     "content.breastfeeding.t.14": "a90a747355b91e39",
     "content.breastfeeding.t.15": "09b0e1598812ec27",
-    "content.breastfeeding.t.16": "6842a2bad7d347b4",
+    "content.breastfeeding.t.16": "67351f4c3f193876",
     "content.breastfeeding.t.17": "5e4777c90c2f7087",
     "content.breastfeeding.t.18": "6cbf79f457184afe",
     "content.bf-challenges.title": "c4bf4298d981c3ae",
@@ -2592,7 +2601,7 @@ window.MYOB_LOCALES.ja = {
     "content.bf-challenges.t.2": "7d8bf4ad4287bdff",
     "content.bf-challenges.t.3": "c4998859be296f4b",
     "content.bf-challenges.t.4": "3a2ce81ac9dcbe3c",
-    "content.bf-challenges.t.5": "827dba0e278ee0e4",
+    "content.bf-challenges.t.5": "df4fff0e4157a4bc",
     "content.bf-challenges.t.6": "4a83c479c8b90393",
     "content.bf-challenges.t.7": "40cb72bdfa8524ab",
     "content.bf-challenges.t.8": "7c415028fad1dc52",
@@ -2620,9 +2629,9 @@ window.MYOB_LOCALES.ja = {
     "content.formula.t.10": "ab87de70c4d2391a",
     "content.formula.t.11": "943a6627735430bd",
     "content.formula.t.12": "8f2489f83139650a",
-    "content.formula.t.13": "d59c2bf70e921d19",
-    "content.formula.t.14": "d75f988fa8406695",
-    "content.formula.t.15": "a8dbb0d025c765fe",
+    "content.formula.t.13": "0b6634e78f897e4d",
+    "content.formula.t.14": "441ff505b8c222ef",
+    "content.formula.t.15": "b925a44e213f3690",
     "content.formula.t.16": "b3187f2d31ac31fb",
     "content.formula.t.17": "34eddf06cc3c9298",
     "content.formula.t.18": "dbabf7d1094591bb",
@@ -2699,14 +2708,14 @@ window.MYOB_LOCALES.ja = {
     "content.circumcision.t.3": "d4de604c37f414a2",
     "content.circumcision.t.4": "706bcd0238eac334",
     "content.circumcision.t.5": "2d62b3babd67ab3c",
-    "content.circumcision.t.6": "a8361fd6b7237104",
+    "content.circumcision.t.6": "1670453248f8c7b0",
     "content.circumcision.t.7": "51bb2ecb4d379d51",
     "content.circumcision.t.8": "f7774e648f8e13da",
     "content.vitamin-d-drops.title": "e813e486bcfad49c",
     "content.vitamin-d-drops.sub": "f691dcfe7e42f6ac",
     "content.vitamin-d-drops.t.0": "44e620a91a0a98eb",
     "content.vitamin-d-drops.t.1": "79b93282d2633c5c",
-    "content.vitamin-d-drops.t.2": "b433718b08a24cdd",
+    "content.vitamin-d-drops.t.2": "c753be0fea7c0729",
     "content.vitamin-d-drops.t.3": "4ff6969dc2636913",
     "content.vitamin-d-drops.t.4": "f5de3f9830ce47c2",
     "content.vitamin-d-drops.t.5": "391a2d9da997549b",
@@ -2929,7 +2938,7 @@ window.MYOB_LOCALES.ja = {
     "content.crying-coping.t.7": "2a2c3908b18025f2",
     "content.crying-coping.t.8": "161f6ed3a80f8549",
     "content.crying-coping.t.9": "7146b80050ea63ce",
-    "content.crying-coping.t.10": "004727c64d6889d0",
+    "content.crying-coping.t.10": "d1ceb17e9cedfff0",
     "content.crying-coping.t.11": "87206f861037d230",
     "content.crying-coping.t.12": "10aefed99197f797",
     "content.crying-coping.t.13": "4b4e03aa59a82fec",

@@ -44,7 +44,7 @@ const EXPORT_KEYS = [
   'nausea-log', 'nausea-snacks', 'nausea-week', 'nausea-tried',
   'myob.epdsLang', 'birth-plan-v2', 'appt-notes-v2',
   'myob.lang', 'dark-mode', 'myob.usNoticeSeen', 'myob.noticeAccepted',
-  'obiana.dates', 'obiana.textSize',
+  'obiana.dates', 'obiana.textSize', 'obiana.units',
 ];
 
 // ═══════════════════════════════════════════════════════
@@ -71,11 +71,30 @@ function renderSettings() {
   if (lang) lang.textContent = (I18n.LOCALES[I18n.lang] || {}).native || I18n.lang;
   const dark = document.getElementById('settings-dark');
   if (dark) dark.checked = document.body.classList.contains('dark');
+  const u = I18n.units.get();
+  document.querySelectorAll('.unit-btn').forEach(b =>
+    b.setAttribute('aria-pressed', String(b.dataset.units === u)));
 }
 
 document.addEventListener('click', e => {
   const size = e.target.closest && e.target.closest('.size-btn');
   if (size) setTextSize(size.dataset.size);
+});
+
+// US units by default; metric if she picks it. Trackers keep storing US
+// values; only what is drawn changes, so switching back and forth loses
+// nothing. Cards, ui text and tools all re-render through the same path a
+// language change uses.
+function setUnits(u) {
+  if (u === I18n.units.get()) return;
+  I18n.units.set(u);
+  I18n.applyStatic(document);
+  applyLocaleToApp();
+  renderSettings();
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest && e.target.closest('.unit-btn');
+  if (b) setUnits(b.dataset.units);
 });
 // On the button itself, so the header popover's outside-tap handler on
 // document never sees this click and closes what it just opened.
