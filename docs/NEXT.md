@@ -103,6 +103,8 @@ Don't build a second tool beside it.
   - medicines in pregnancy
   - opioids
 
+  **Done 2026-11-01 (English, user-reviewed):** `crying-coping`, `safety-at-home` (hotline only, no statistics, per user), `medicines-pregnancy` (Tylenol up to 4 g/day, no NSAIDs or full-dose aspirin, no autism text, per user), `opioids`. Not yet translated: draft into 15 languages next (tag `f4x`).
+
   Seeds are dot `%pibleed`, `%piptl`, `%picry`, `%picouple` and `%pisafe`, plus `pi/ledger`.
 - [ ] Each new card goes into the Section 4 queue as soon as it lands. Don't start the second group until the first group has drafts in every language that has the trimester cards.
 - [ ] **Gaps inside cards:** RSV/COVID, toxoplasmosis, BP numbers, TLC-MAMA, VBAC rupture risk, circumcision care, breastfeeding and substances, milk storage, swaddling.
