@@ -975,7 +975,7 @@ window.MYOB_LOCALES.en = {
         "Lowers risk of gestational diabetes, preeclampsia, and excessive weight gain",
         "Improves sleep, mood, and energy levels",
         "Associated in some studies with shorter labor and easier recovery",
-        "Builds the stamina that labor and carrying a newborn both ask for",
+        "Builds the stamina that you need for labor and caring for a newborn",
         "Good Choices at Any Stage",
         "Walking",
         ". Easiest, safest, and accessible at any fitness level",
@@ -996,7 +996,7 @@ window.MYOB_LOCALES.en = {
         "Hot yoga or exercising in extreme heat",
         "High altitude activities if not acclimatized",
         "The Talk Test",
-        "You should be able to carry on a conversation while exercising. Too winded to talk? Slow down. This is a simple proxy for keeping intensity in the safe range.",
+        "You should be able to carry on a conversation while exercising. Too winded to talk? Slow down.",
         "Stop &amp; Call Your Family Doctor, OB or Midwife If",
         "Vaginal bleeding, dizziness, chest pain, severe shortness of breath, contractions, fluid leaking, decreased fetal movement, or calf pain and swelling."
       ]
@@ -1761,7 +1761,7 @@ window.MYOB_LOCALES.en = {
       "title": "Alcohol",
       "sub": "What is known, and what is not",
       "t": [
-        "No amount of alcohol has been shown to be safe in pregnancy, and no study has shown that a single drink causes harm. Both are true.",
+        "No amount of alcohol has been shown to be safe in pregnancy, and no study has shown that a single drink causes harm.",
         "What is known",
         "Regular and heavy drinking harms a developing baby. Fetal alcohol spectrum disorders are permanent and entirely preventable. Binge drinking matters most: a large amount arriving at once is harder on the baby than the same amount spread out.",
         "What is not known",
