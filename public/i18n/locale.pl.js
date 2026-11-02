@@ -70,17 +70,11 @@ window.MYOB_LOCALES.pl = {
       "severeHeadache": "Silny ból głowy",
       "visionChanges": "Zaburzenia widzenia",
       "suddenSwellingOfFaceHands": "Nagły obrzęk twarzy lub dłoni",
-      "fever1004F": "Gorączka &gt;{temp:100.4}",
+      "fever1004F": "Gorączka {temp:100.4} lub wyższa",
       "contractionsBefore37Weeks": "Skurcze przed 37. tygodniem",
       "myInfoContacts": "Moje informacje &amp;<br>kontakty",
       "saveYourCareTeamContacts": "Zapisz kontakty do zespołu opieki",
-      "tapToCallOrText": "Dotknij, by zadzwonić lub napisać prosto z aplikacji",
-      "afterDelivery": "Po porodzie",
-      "soaking1PadHr2": "Przemaczanie 1 podpaski w godzinę",
-      "woundOpensOrOozes": "Rana się otwiera lub sączy",
-      "legRednessSwelling": "Zaczerwienienie/obrzęk nogi",
-      "chestPainOrTroubleBreathing": "Ból w klatce piersiowej lub trudności z oddychaniem",
-      "thoughtsOfSelfHarm": "Myśli o skrzywdzeniu siebie"
+      "tapToCallOrText": "Dotknij, by zadzwonić lub napisać prosto z aplikacji"
     },
     "disclaimer": {
       "title": "Zanim zaczniesz",
@@ -633,7 +627,7 @@ window.MYOB_LOCALES.pl = {
         "banner_missing": "Jeszcze nie ma tłumaczenia. Napisz je albo pomiń.",
         "banner_draft": "To napisała maszyna. Sprawdź uważnie.",
         "banner_stale": "Angielski tekst zmienił się po przetłumaczeniu. Sprawdź, czy nadal mówi to samo.",
-        "keepTokens": "Zostaw je dokładnie tak, jak są. Dotknij, by dodać:",
+        "putBack": "Dotknij, by przywrócić:",
         "tokensMissing": "Przywróć {tokens}, zanim wyślesz.",
         "tokensExtra": "Usuń {tokens}. Nie ma tego w angielskim.",
         "send": "Wyślij",
@@ -650,7 +644,10 @@ window.MYOB_LOCALES.pl = {
         "tapBar": "Dotknij podkreślonego zdania, by zaproponować lepsze sformułowanie.",
         "tapOff": "Wyłącz",
         "sheetTitle": "Zaproponuj lepsze sformułowanie",
-        "cancel": "Anuluj"
+        "cancel": "Anuluj",
+        "oldDrafts": "Zdania wpisane w starym narzędziu do tłumaczenia nie zostały wysłane: {n}.",
+        "oldDraftsSend": "Wyślij je",
+        "oldDraftsDelete": "Usuń je"
       },
       "improve": {
         "intro": "Powiedz nam, czego brakuje: jak coś robi się w Twojej kulturze, pytania, na które ten poradnik nie odpowiada, albo fragmentu, który był trudny do zrozumienia.",
@@ -889,7 +886,7 @@ window.MYOB_LOCALES.pl = {
         "Jedź na SOR lub dzwoń pod 911, gdy",
         "Ból w klatce piersiowej lub duszność · Drgawki · Nagły, silny ból głowy, jakiego nie było wcześniej · Objawy udaru (opadający kącik twarzy, osłabienie ręki, bełkotliwa mowa) · Myśli o skrzywdzeniu siebie lub dziecka",
         "Zadzwoń do lekarza rodzinnego, ginekologa-położnika lub położnej, gdy",
-        "Gorączka &gt;{temp:100.4} · Przesiąknięcie 1 podpaski w ciągu godziny · Silny ból głowy, który nie mija po ibuprofenie/Tylenolu · Zaburzenia widzenia · Zaczerwienienie, obrzęk lub ucieplenie nogi (DVT, zakrzepica żył głębokich) · Rozejście się rany, szerzące się zaczerwienienie lub ropa · Trudności z oddawaniem moczu · Objawy depresji poporodowej (PPD) lub lęku",
+        "Gorączka {temp:100.4} lub wyższa · Przesiąknięcie 1 podpaski w ciągu godziny · Silny ból głowy, który nie mija po ibuprofenie/Tylenolu · Zaburzenia widzenia · Zaczerwienienie, obrzęk lub ucieplenie nogi (DVT, zakrzepica żył głębokich) · Rozejście się rany, szerzące się zaczerwienienie lub ropa · Trudności z oddawaniem moczu · Objawy depresji poporodowej (PPD) lub lęku",
         "Plan wizyt poporodowych i pytania, które warto zabrać na wizytę po sześciu tygodniach, znajdziesz na karcie „Wizyty kontrolne” w części Dziecko, obok wizyt Twojego dziecka, żeby widzieć jedno i drugie razem."
       ]
     },
@@ -955,7 +952,7 @@ window.MYOB_LOCALES.pl = {
         "Ciemny pierwszy stolec (smółka)",
         "✓ Tak. Powinien pojawić się w ciągu 24–48 godz.",
         "Od razu dzwoń do lekarza dziecka, gdy",
-        "Gorączka ≥ {temp:100.4} mierzona w odbycie (groźna u noworodka. Zawsze mierz w odbycie) · Odmawia jedzenia · Silne zażółcenie · Postękiwanie przy każdym oddechu · Bardzo blada skóra · Płacz nie do uspokojenia · Mniej niż 6 mokrych pieluch dziennie po 5. dniu · Sztywny kark. Sine lub szare usta albo twarz: dzwoń pod 911."
+        "Gorączka {temp:100.4} lub wyższa mierzona w odbycie (groźna u noworodka. Zawsze mierz w odbycie) · Odmawia jedzenia · Silne zażółcenie · Postękiwanie przy każdym oddechu · Bardzo blada skóra · Płacz nie do uspokojenia · Mniej niż 6 mokrych pieluch dziennie po 5. dniu · Sztywny kark. Sine lub szare usta albo twarz: dzwoń pod 911."
       ]
     },
     "faq-deli": {
@@ -1257,7 +1254,7 @@ window.MYOB_LOCALES.pl = {
         "Krok 3: Sala porodowa",
         "Po przyjęciu zostajesz w swojej sali do końca porodu. Pielęgniarka jest Twoją główną przewodniczką i będzie regularnie zaglądać. To dobry moment, żeby omówić swoje życzenia co do porodu i możliwości łagodzenia bólu.",
         "Zabierz do szpitala",
-        "Dowód tożsamości i kartę ubezpieczenia · Ten poradnik z Twoimi kontaktami · Ładowarkę do telefonu · Wygodne ubrania na poród i po porodzie · Ubranko dziecka na wyjście i fotelik samochodowy · Kosmetyki · Przekąski dla osoby towarzyszącej"
+        "Dowód tożsamości i kartę ubezpieczenia · Numery do Twojego zespołu opieki, zapisane w zakładce Ja · Ładowarkę do telefonu · Wygodne ubrania na poród i po porodzie · Ubranko dziecka na wyjście i fotelik samochodowy · Kosmetyki · Przekąski dla osoby towarzyszącej"
       ]
     },
     "stages-of-labor": {
@@ -1381,7 +1378,7 @@ window.MYOB_LOCALES.pl = {
         "Przez 4–6 tygodni nie podnoś niczego cięższego niż dziecko",
         "Rana to pozioma blizna na „linii bikini”, zamknięta zszywkami lub szwami wchłanialnymi",
         "Zadzwoń po wypisie po cesarskim cięciu, jeśli",
-        "Rana się otwiera, zaczerwienienie rozchodzi się na boki albo jest nietypowa wydzielina · Gorączka &gt;{temp:100.4} · Ból się nasila zamiast słabnąć · Przemaczasz 1 podpaskę w godzinę",
+        "Rana się otwiera, zaczerwienienie rozchodzi się na boki albo jest nietypowa wydzielina · Gorączka {temp:100.4} lub wyższa · Ból się nasila zamiast słabnąć · Przemaczasz 1 podpaskę w godzinę",
         "VBAC. Poród drogami natury po cesarskim cięciu",
         "Jeśli miałaś jedno wcześniejsze cesarskie cięcie z poprzecznym cięciem w dolnej części macicy, VBAC może być możliwy w tej ciąży. Udaje się w 60–80% przypadków. Omów to wcześnie w opiece przedporodowej."
       ]
@@ -1674,7 +1671,7 @@ window.MYOB_LOCALES.pl = {
         "Bolesne brodawki",
         "Najpierw sprawdź przystawienie. To przyczyna nr 1. Po karmieniu posmaruj odciągniętym mlekiem lub lanoliną. Susz na powietrzu. Zwykle poprawia się po 5 dniu, gdy pojawi się mleko i przystawienie będzie lepsze.",
         "Nawał pokarmu",
-        "Karm dziecko zawsze, gdy jest głodne. Nie odciągaj do opróżnienia piersi: to mówi organizmowi, żeby robił jeszcze więcej mleka. Jeśli pierś jest za twarda, by dziecko się przystawiło, najpierw odciągnij trochę ręką, żeby ją zmiękczyć. Po karmieniu zimny okład zmniejszy obrzęk. Może dawać niewielką gorączkę. Jeśli &gt;{temp:100.4}, zadzwoń do lekarza.",
+        "Karm dziecko zawsze, gdy jest głodne. Nie odciągaj do opróżnienia piersi: to mówi organizmowi, żeby robił jeszcze więcej mleka. Jeśli pierś jest za twarda, by dziecko się przystawiło, najpierw odciągnij trochę ręką, żeby ją zmiękczyć. Po karmieniu zimny okład zmniejszy obrzęk. Może dawać niewielką gorączkę. Jeśli wynosi {temp:100.4} lub więcej, zadzwoń do lekarza.",
         "Obawy o za mało mleka",
         "Karm częściej. Ilość mleka idzie za zapotrzebowaniem. Zadbaj o dobre przystawienie. Odciągaj po karmieniu, żeby dać sygnał do większej produkcji. Idź do doradczyni laktacyjnej. Najczęściej mleka, którego wydaje się za mało, jest tak naprawdę wystarczająco.",
         "Zatkany kanalik",
@@ -2075,7 +2072,7 @@ window.MYOB_LOCALES.pl = {
     "content.postpartum-danger.t.0": "8e2a678f78c207ed",
     "content.postpartum-danger.t.1": "d26dc5484bcab5f6",
     "content.postpartum-danger.t.2": "bee2b3c377a8a3e5",
-    "content.postpartum-danger.t.3": "03c000a554e9734b",
+    "content.postpartum-danger.t.3": "0373b234f57eb132",
     "content.signs-of-labor.t.11": "3973fa2849b83e92",
     "content.signs-of-labor.t.12": "61f8135000473a76",
     "content.signs-of-labor.t.13": "d0b262a299176734",
@@ -2084,7 +2081,7 @@ window.MYOB_LOCALES.pl = {
     "content.signs-of-labor.t.16": "ac6a34b445ceccaa",
     "content.signs-of-labor.t.17": "b007f20008122ab6",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "11a67bb6600db664",
+    "content.normal-newborn.t.32": "8535f75dd7c74fd7",
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
@@ -2280,7 +2277,7 @@ window.MYOB_LOCALES.pl = {
     "content.what-happens-on-arrival.t.10": "92782e29e06813c3",
     "content.what-happens-on-arrival.t.11": "0a91819b6f404a29",
     "content.what-happens-on-arrival.t.12": "fd51bb1dd2656933",
-    "content.what-happens-on-arrival.t.13": "ac94f10bf3c32979",
+    "content.what-happens-on-arrival.t.13": "43eaacf9556e91bf",
     "content.stages-of-labor.title": "86dbc82a7b2abf9c",
     "content.stages-of-labor.sub": "de461901641975a7",
     "content.stages-of-labor.t.0": "2e160bcd50a4746f",
@@ -2388,7 +2385,7 @@ window.MYOB_LOCALES.pl = {
     "content.csection.t.23": "03b0235cac26896a",
     "content.csection.t.24": "04b03da54128058f",
     "content.csection.t.25": "f6fa8c9fde0476e5",
-    "content.csection.t.26": "ad79a07707d57275",
+    "content.csection.t.26": "c0426d5eb45c638c",
     "content.csection.t.27": "e04d3a00a0c48e1a",
     "content.csection.t.28": "24b632c57b1d608f",
     "content.mfm.title": "6c228d117e74de43",
@@ -2614,7 +2611,7 @@ window.MYOB_LOCALES.pl = {
     "content.bf-challenges.t.2": "7d8bf4ad4287bdff",
     "content.bf-challenges.t.3": "c4998859be296f4b",
     "content.bf-challenges.t.4": "3a2ce81ac9dcbe3c",
-    "content.bf-challenges.t.5": "df4fff0e4157a4bc",
+    "content.bf-challenges.t.5": "4f38540115ee91ef",
     "content.bf-challenges.t.6": "4a83c479c8b90393",
     "content.bf-challenges.t.7": "40cb72bdfa8524ab",
     "content.bf-challenges.t.8": "7c415028fad1dc52",
@@ -4198,12 +4195,6 @@ window.MYOB_LOCALES.pl = {
     "home.myInfoContacts": 1,
     "home.saveYourCareTeamContacts": 1,
     "home.tapToCallOrText": 1,
-    "home.afterDelivery": 1,
-    "home.soaking1PadHr2": 1,
-    "home.woundOpensOrOozes": 1,
-    "home.legRednessSwelling": 1,
-    "home.chestPainOrTroubleBreathing": 1,
-    "home.thoughtsOfSelfHarm": 1,
     "pregnancy.section1": 1,
     "pregnancy.prenatalVisitsPregnancy": 1,
     "labor.section2": 1,

@@ -70,17 +70,11 @@ window.MYOB_LOCALES.de = {
       "severeHeadache": "Starke Kopfschmerzen",
       "visionChanges": "Sehstörungen",
       "suddenSwellingOfFaceHands": "Plötzliche Schwellung von Gesicht oder Händen",
-      "fever1004F": "Fieber &gt;{temp:100.4}",
+      "fever1004F": "Fieber von {temp:100.4} oder mehr",
       "contractionsBefore37Weeks": "Wehen vor der 37. Woche",
       "myInfoContacts": "Meine Angaben &amp;<br>Kontakte",
       "saveYourCareTeamContacts": "Kontakte Ihres Behandlungsteams speichern",
-      "tapToCallOrText": "Tippen, um direkt aus der App anzurufen oder eine SMS zu schreiben",
-      "afterDelivery": "Nach der Geburt",
-      "soaking1PadHr2": "In einer Stunde 1 Binde durchweichen",
-      "woundOpensOrOozes": "Wunde geht auf oder nässt",
-      "legRednessSwelling": "Rötung/Schwellung am Bein",
-      "chestPainOrTroubleBreathing": "Brustschmerzen oder Atemnot",
-      "thoughtsOfSelfHarm": "Gedanken, sich etwas anzutun"
+      "tapToCallOrText": "Tippen, um direkt aus der App anzurufen oder eine SMS zu schreiben"
     },
     "disclaimer": {
       "title": "Bevor Sie beginnen",
@@ -623,7 +617,7 @@ window.MYOB_LOCALES.de = {
         "banner_missing": "Noch keine Übersetzung. Schreiben Sie eine oder überspringen Sie.",
         "banner_draft": "Das hat eine Maschine geschrieben. Prüfen Sie es sorgfältig.",
         "banner_stale": "Das Englische wurde nach dieser Übersetzung geändert. Prüfen Sie, ob es noch dasselbe sagt.",
-        "keepTokens": "Lassen Sie diese genau so, wie sie sind. Tippen Sie eins an, um es einzufügen:",
+        "putBack": "Zum Wiedereinfügen antippen:",
         "tokensMissing": "Setzen Sie {tokens} wieder ein, bevor Sie senden.",
         "tokensExtra": "Entfernen Sie {tokens}. Im Englischen steht das nicht.",
         "send": "Senden",
@@ -640,7 +634,10 @@ window.MYOB_LOCALES.de = {
         "tapBar": "Tippen Sie auf einen unterstrichenen Satz, um eine bessere Formulierung vorzuschlagen.",
         "tapOff": "Ausschalten",
         "sheetTitle": "Bessere Formulierung vorschlagen",
-        "cancel": "Abbrechen"
+        "cancel": "Abbrechen",
+        "oldDrafts": "Sätze, die Sie im alten Übersetzungswerkzeug geschrieben haben, wurden nie gesendet: {n}.",
+        "oldDraftsSend": "Senden",
+        "oldDraftsDelete": "Löschen"
       },
       "improve": {
         "intro": "Sagen Sie uns, was fehlt: wie etwas in Ihrer Kultur gemacht wird, eine Frage, die dieser Ratgeber nicht beantwortet, oder ein Teil, der schwer zu verstehen war.",
@@ -879,7 +876,7 @@ window.MYOB_LOCALES.de = {
         "Gehen Sie in die Notaufnahme oder rufen Sie 911 an bei",
         "Brustschmerzen oder Atemnot · Krampfanfall · Plötzliche, starke Kopfschmerzen wie nie zuvor · Zeichen eines Schlaganfalls (hängendes Gesicht, schwacher Arm, verwaschene Sprache) · Gedanken, sich selbst oder Ihrem Baby etwas anzutun",
         "Rufen Sie Ihre Hausärztin, Frauenärztin oder Hebamme an bei",
-        "Fieber &gt;{temp:100.4} · 1 Binde in einer Stunde durchgeblutet · Starke Kopfschmerzen, die mit Ibuprofen/Tylenol nicht besser werden · Sehstörungen · Rötung, Schwellung oder Wärme im Bein (DVT, tiefe Venenthrombose) · Wunde geht auf, Rötung breitet sich aus oder Eiter · Probleme beim Wasserlassen · Zeichen einer Wochenbettdepression (PPD) oder Angst",
+        "Fieber von {temp:100.4} oder mehr · 1 Binde in einer Stunde durchgeblutet · Starke Kopfschmerzen, die mit Ibuprofen/Tylenol nicht besser werden · Sehstörungen · Rötung, Schwellung oder Wärme im Bein (DVT, tiefe Venenthrombose) · Wunde geht auf, Rötung breitet sich aus oder Eiter · Probleme beim Wasserlassen · Zeichen einer Wochenbettdepression (PPD) oder Angst",
         "Ihre Nachsorgetermine und die Fragen, die Sie zur Untersuchung nach sechs Wochen mitnehmen sollten, stehen in der Karte „Nachsorgetermine“ unter Baby, neben den Terminen Ihres Babys, damit Sie beides zusammen sehen."
       ]
     },
@@ -945,7 +942,7 @@ window.MYOB_LOCALES.de = {
         "Dunkler erster Stuhl (Kindspech, Mekonium)",
         "✓ Ja. Sollte in 24–48 Std. kommen",
         "Rufen Sie sofort die Ärztin Ihres Babys an bei",
-        "Fieber ≥ {temp:100.4} rektal (bei Neugeborenen ernst. Immer rektal messen) · Trinkt nicht · Starke Gelbfärbung · Stöhnen bei jedem Atemzug · Sehr blasse Haut · Untröstliches Weinen · Weniger als 6 nasse Windeln am Tag nach dem 5. Tag · Steifer Nacken. Blaue oder graue Lippen oder Gesicht: 911 anrufen."
+        "Fieber von {temp:100.4} oder mehr rektal (bei Neugeborenen ernst. Immer rektal messen) · Trinkt nicht · Starke Gelbfärbung · Stöhnen bei jedem Atemzug · Sehr blasse Haut · Untröstliches Weinen · Weniger als 6 nasse Windeln am Tag nach dem 5. Tag · Steifer Nacken. Blaue oder graue Lippen oder Gesicht: 911 anrufen."
       ]
     },
     "faq-deli": {
@@ -1247,7 +1244,7 @@ window.MYOB_LOCALES.de = {
         "Schritt 3: Kreißsaal",
         "Nach der Aufnahme bleiben Sie bis zur Geburt in Ihrem Zimmer. Ihre Pflegekraft ist Ihre wichtigste Begleitung und schaut regelmäßig nach Ihnen. Jetzt ist die Zeit, über Ihre Wünsche zur Geburt und die Möglichkeiten zur Schmerzlinderung zu sprechen.",
         "Das nehmen Sie mit ins Krankenhaus",
-        "Ausweis und Versicherungskarte · Dieses Heft mit Ihren Kontakten · Ladekabel · Bequeme Kleidung für die Geburt und danach · Kleidung für das Baby für den Heimweg und Autositz · Kulturbeutel · Snacks für die Begleitperson"
+        "Ausweis und Versicherungskarte · Die Telefonnummern Ihres Behandlungsteams, gespeichert unter Ich · Ladekabel · Bequeme Kleidung für die Geburt und danach · Kleidung für das Baby für den Heimweg und Autositz · Kulturbeutel · Snacks für die Begleitperson"
       ]
     },
     "stages-of-labor": {
@@ -1371,7 +1368,7 @@ window.MYOB_LOCALES.de = {
         "4–6 Wochen nichts heben, was schwerer ist als Ihr Baby",
         "Der Schnitt ist eine waagerechte Narbe an der „Bikinilinie“, verschlossen mit Klammern oder selbstauflösenden Fäden",
         "Rufen Sie nach der Entlassung an, wenn",
-        "Die Wunde aufgeht, die Rötung sich nach außen ausbreitet oder ungewöhnlich nässt · Fieber &gt;{temp:100.4} · Die Schmerzen schlimmer statt besser werden · Sie in einer Stunde 1 Binde durchweichen",
+        "Die Wunde aufgeht, die Rötung sich nach außen ausbreitet oder ungewöhnlich nässt · Fieber von {temp:100.4} oder mehr · Die Schmerzen schlimmer statt besser werden · Sie in einer Stunde 1 Binde durchweichen",
         "VBAC. Vaginale Geburt nach Kaiserschnitt",
         "Wenn Sie einen früheren Kaiserschnitt mit tiefem Querschnitt hatten, ist in dieser Schwangerschaft vielleicht eine VBAC möglich. Sie gelingt in 60–80% der Fälle. Sprechen Sie früh in der Vorsorge darüber."
       ]
@@ -1664,7 +1661,7 @@ window.MYOB_LOCALES.de = {
         "Wunde Brustwarzen",
         "Zuerst das Anlegen prüfen. Das ist die Ursache Nr. 1. Nach dem Stillen etwas ausgestrichene Muttermilch oder Lanolin auftragen. An der Luft trocknen lassen. Wird meist nach dem 5. Tag besser, wenn die Milch kommt und das Anlegen besser klappt.",
         "Brustdrüsenschwellung",
-        "Stillen Sie Ihr Baby, wann immer es Hunger hat. Pumpen Sie die Brust nicht leer: Das sagt Ihrem Körper, noch mehr Milch zu bilden. Ist die Brust zum Anlegen zu fest, streichen Sie zuerst etwas Milch mit der Hand aus, um sie weicher zu machen. Nach dem Stillen kühlen, um die Schwellung zu lindern. Kann leichtes Fieber machen. Bei &gt;{temp:100.4} rufen Sie Ihren Arzt an.",
+        "Stillen Sie Ihr Baby, wann immer es Hunger hat. Pumpen Sie die Brust nicht leer: Das sagt Ihrem Körper, noch mehr Milch zu bilden. Ist die Brust zum Anlegen zu fest, streichen Sie zuerst etwas Milch mit der Hand aus, um sie weicher zu machen. Nach dem Stillen kühlen, um die Schwellung zu lindern. Kann leichtes Fieber machen. Ab {temp:100.4} rufen Sie Ihren Arzt an.",
         "Sorge um zu wenig Milch",
         "Häufiger stillen. Die Menge folgt der Nachfrage. Auf gutes Anlegen achten. Nach dem Stillen abpumpen, um mehr Bildung anzuregen. Zur Stillberaterin gehen. Meist ist die vermeintlich zu geringe Menge tatsächlich ausreichend.",
         "Milchstau",
@@ -2065,7 +2062,7 @@ window.MYOB_LOCALES.de = {
     "content.postpartum-danger.t.0": "8e2a678f78c207ed",
     "content.postpartum-danger.t.1": "d26dc5484bcab5f6",
     "content.postpartum-danger.t.2": "bee2b3c377a8a3e5",
-    "content.postpartum-danger.t.3": "03c000a554e9734b",
+    "content.postpartum-danger.t.3": "0373b234f57eb132",
     "content.signs-of-labor.t.11": "3973fa2849b83e92",
     "content.signs-of-labor.t.12": "61f8135000473a76",
     "content.signs-of-labor.t.13": "d0b262a299176734",
@@ -2074,7 +2071,7 @@ window.MYOB_LOCALES.de = {
     "content.signs-of-labor.t.16": "ac6a34b445ceccaa",
     "content.signs-of-labor.t.17": "b007f20008122ab6",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "11a67bb6600db664",
+    "content.normal-newborn.t.32": "8535f75dd7c74fd7",
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
@@ -2270,7 +2267,7 @@ window.MYOB_LOCALES.de = {
     "content.what-happens-on-arrival.t.10": "92782e29e06813c3",
     "content.what-happens-on-arrival.t.11": "0a91819b6f404a29",
     "content.what-happens-on-arrival.t.12": "fd51bb1dd2656933",
-    "content.what-happens-on-arrival.t.13": "ac94f10bf3c32979",
+    "content.what-happens-on-arrival.t.13": "43eaacf9556e91bf",
     "content.stages-of-labor.title": "86dbc82a7b2abf9c",
     "content.stages-of-labor.sub": "de461901641975a7",
     "content.stages-of-labor.t.0": "2e160bcd50a4746f",
@@ -2378,7 +2375,7 @@ window.MYOB_LOCALES.de = {
     "content.csection.t.23": "03b0235cac26896a",
     "content.csection.t.24": "04b03da54128058f",
     "content.csection.t.25": "f6fa8c9fde0476e5",
-    "content.csection.t.26": "ad79a07707d57275",
+    "content.csection.t.26": "c0426d5eb45c638c",
     "content.csection.t.27": "e04d3a00a0c48e1a",
     "content.csection.t.28": "24b632c57b1d608f",
     "content.mfm.title": "6c228d117e74de43",
@@ -2604,7 +2601,7 @@ window.MYOB_LOCALES.de = {
     "content.bf-challenges.t.2": "7d8bf4ad4287bdff",
     "content.bf-challenges.t.3": "c4998859be296f4b",
     "content.bf-challenges.t.4": "3a2ce81ac9dcbe3c",
-    "content.bf-challenges.t.5": "df4fff0e4157a4bc",
+    "content.bf-challenges.t.5": "4f38540115ee91ef",
     "content.bf-challenges.t.6": "4a83c479c8b90393",
     "content.bf-challenges.t.7": "40cb72bdfa8524ab",
     "content.bf-challenges.t.8": "7c415028fad1dc52",
@@ -4188,12 +4185,6 @@ window.MYOB_LOCALES.de = {
     "home.myInfoContacts": 1,
     "home.saveYourCareTeamContacts": 1,
     "home.tapToCallOrText": 1,
-    "home.afterDelivery": 1,
-    "home.soaking1PadHr2": 1,
-    "home.woundOpensOrOozes": 1,
-    "home.legRednessSwelling": 1,
-    "home.chestPainOrTroubleBreathing": 1,
-    "home.thoughtsOfSelfHarm": 1,
     "pregnancy.section1": 1,
     "pregnancy.prenatalVisitsPregnancy": 1,
     "labor.section2": 1,

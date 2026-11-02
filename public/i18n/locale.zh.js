@@ -407,7 +407,7 @@ window.MYOB_LOCALES.zh = {
         "banner_missing": "还没有翻译。请写一句，或跳过。",
         "banner_draft": "这是机器翻译的。请仔细检查。",
         "banner_stale": "这句翻译之后英文改过了。请确认意思还一样。",
-        "keepTokens": "这些请原样保留。点一下即可插入：",
+        "putBack": "点一下即可放回：",
         "tokensMissing": "发送前请把 {tokens} 放回去。",
         "tokensExtra": "请删掉 {tokens}。英文里没有。",
         "send": "发送",
@@ -421,7 +421,10 @@ window.MYOB_LOCALES.zh = {
         "tapBar": "点任何带下划线的句子，建议更好的说法。",
         "tapOff": "关闭",
         "sheetTitle": "建议更好的说法",
-        "cancel": "取消"
+        "cancel": "取消",
+        "oldDrafts": "您在旧翻译工具里写的句子从未发送：{n} 句。",
+        "oldDraftsSend": "发送",
+        "oldDraftsDelete": "删除"
       },
       "improve": {
         "intro": "告诉我们缺少什么：您的文化里怎么做、本指南没有回答的问题，或者难以理解的地方。",
@@ -582,14 +585,8 @@ window.MYOB_LOCALES.zh = {
       "severeHeadache": "剧烈头痛",
       "visionChanges": "视力改变",
       "suddenSwellingOfFaceHands": "面部或手部突然肿胀",
-      "fever1004F": "发热 &gt;{temp:100.4}",
+      "fever1004F": "发热 {temp:100.4} 或更高",
       "contractionsBefore37Weeks": "不足 37 周出现宫缩",
-      "afterDelivery": "分娩之后",
-      "soaking1PadHr2": "1 小时内湿透 1 片卫生巾",
-      "woundOpensOrOozes": "伤口裂开或渗液",
-      "legRednessSwelling": "腿部发红或肿胀",
-      "chestPainOrTroubleBreathing": "胸痛或呼吸困难",
-      "thoughtsOfSelfHarm": "有伤害自己的念头",
       "heroTitle": "了解会发生<br>什么。问出好<br>问题。"
     },
     "pregnancy": {
@@ -879,7 +876,7 @@ window.MYOB_LOCALES.zh = {
         "出现以下情况，请去急诊或拨打 911",
         "胸痛或呼吸困难 · 抽搐 · 突然剧烈头痛，以前从未有过 · 中风症状（脸部下垂、手臂无力、说话含糊） · 有伤害自己或宝宝的想法",
         "出现以下情况，请联系家庭医生、产科医生或助产士",
-        "发烧 &gt;{temp:100.4} · 1 小时内湿透 1 片卫生巾 · 服用布洛芬或泰诺后仍不缓解的严重头痛 · 视力变化 · 腿部发红、肿胀或发热（DVT，深静脉血栓） · 伤口裂开、红肿扩散或流脓 · 排尿困难 · 产后抑郁（PPD）或焦虑的迹象",
+        "发烧 {temp:100.4} 或更高 · 1 小时内湿透 1 片卫生巾 · 服用布洛芬或泰诺后仍不缓解的严重头痛 · 视力变化 · 腿部发红、肿胀或发热（DVT，深静脉血栓） · 伤口裂开、红肿扩散或流脓 · 排尿困难 · 产后抑郁（PPD）或焦虑的迹象",
         "您的产后随访安排，以及值得带到产后 6 周检查的问题，在“宝宝”下面的“随访预约”卡片里，和宝宝的就诊放在一起，方便一起看。"
       ]
     },
@@ -945,7 +942,7 @@ window.MYOB_LOCALES.zh = {
         "第一次大便颜色很深（胎便）",
         "✓ 正常。应在 24–48 小时内排出",
         "出现以下情况，立即联系宝宝的医生",
-        "肛温 ≥ {temp:100.4}（对新生儿来说很严重。一定要量肛温） · 拒绝吃奶 · 皮肤非常黄 · 每次呼吸都发出哼声 · 皮肤非常苍白 · 怎么哄都哭 · 出生 5 天后每天湿尿布少于 6 片 · 脖子僵硬。嘴唇或脸发青或发灰：拨打 911。"
+        "肛温 {temp:100.4} 或更高（对新生儿来说很严重。一定要量肛温） · 拒绝吃奶 · 皮肤非常黄 · 每次呼吸都发出哼声 · 皮肤非常苍白 · 怎么哄都哭 · 出生 5 天后每天湿尿布少于 6 片 · 脖子僵硬。嘴唇或脸发青或发灰：拨打 911。"
       ]
     },
     "first-trimester": {
@@ -1192,7 +1189,7 @@ window.MYOB_LOCALES.zh = {
         "第 3 步：产房",
         "入院后，您会一直待在自己的房间。护士是您最主要的向导，会定时来看您。这是讨论分娩偏好和镇痛选择的时候。",
         "带到医院的东西",
-        "身份证件和保险卡 · 这本记有联系方式的手册 · 手机充电器 · 分娩和恢复时穿的舒适衣服 · 宝宝出院的衣服和汽车安全座椅 · 洗漱用品 · 给陪产人的零食"
+        "身份证件和保险卡 · 保存在“我”里的医护团队电话 · 手机充电器 · 分娩和恢复时穿的舒适衣服 · 宝宝出院的衣服和汽车安全座椅 · 洗漱用品 · 给陪产人的零食"
       ]
     },
     "stages-of-labor": {
@@ -1316,7 +1313,7 @@ window.MYOB_LOCALES.zh = {
         "4–6 周内不要提比宝宝重的东西",
         "切口是横向的“比基尼线”疤痕，用钉子或可吸收线缝合",
         "剖宫产出院后出现以下情况请打电话",
-        "伤口裂开、周围红肿扩散或有异常渗液 · 发烧 &gt;{temp:100.4} · 疼痛越来越重而不是减轻 · 1 小时内湿透 1 片卫生巾",
+        "伤口裂开、周围红肿扩散或有异常渗液 · 发烧 {temp:100.4} 或更高 · 疼痛越来越重而不是减轻 · 1 小时内湿透 1 片卫生巾",
         "VBAC：剖宫产后阴道分娩",
         "如果您以前做过一次子宫下段横切口的剖宫产，这次怀孕可能可以选择 VBAC。成功率 60–80%。在产检早期就讨论。"
       ]
@@ -1499,7 +1496,7 @@ window.MYOB_LOCALES.zh = {
         "乳头疼痛",
         "先检查含乳，这是头号原因。喂完后涂一点挤出的母乳或羊脂膏。让它自然晾干。通常第 5 天后奶下来、含乳改善就会好转。",
         "胀奶",
-        "宝宝饿了就喂。不要用吸奶器吸空：那会让身体产更多奶。如果乳房太硬含不住，先用手挤一点让它变软。喂完冷敷消肿。可能有低烧。如果超过 &gt;{temp:100.4}，请联系医生。",
+        "宝宝饿了就喂。不要用吸奶器吸空：那会让身体产更多奶。如果乳房太硬含不住，先用手挤一点让它变软。喂完冷敷消肿。可能有低烧。如果达到 {temp:100.4} 或更高，请联系医生。",
         "担心奶少",
         "多喂，产量跟着需求走。确保含乳正确。喂完再吸一下，发出多产奶的信号。去看哺乳顾问。大多数“觉得奶少”其实是够的。",
         "乳腺管堵塞",
@@ -2065,7 +2062,7 @@ window.MYOB_LOCALES.zh = {
     "content.postpartum-danger.t.0": "8e2a678f78c207ed",
     "content.postpartum-danger.t.1": "d26dc5484bcab5f6",
     "content.postpartum-danger.t.2": "bee2b3c377a8a3e5",
-    "content.postpartum-danger.t.3": "03c000a554e9734b",
+    "content.postpartum-danger.t.3": "0373b234f57eb132",
     "content.signs-of-labor.t.11": "3973fa2849b83e92",
     "content.signs-of-labor.t.12": "61f8135000473a76",
     "content.signs-of-labor.t.13": "d0b262a299176734",
@@ -2074,7 +2071,7 @@ window.MYOB_LOCALES.zh = {
     "content.signs-of-labor.t.16": "ac6a34b445ceccaa",
     "content.signs-of-labor.t.17": "b007f20008122ab6",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "11a67bb6600db664",
+    "content.normal-newborn.t.32": "8535f75dd7c74fd7",
     "content.first-trimester.title": "5aa84a82a481c63c",
     "content.first-trimester.sub": "c41238c8ac2948ca",
     "content.first-trimester.t.0": "448ad51c081a3eca",
@@ -2279,7 +2276,7 @@ window.MYOB_LOCALES.zh = {
     "content.what-happens-on-arrival.t.10": "92782e29e06813c3",
     "content.what-happens-on-arrival.t.11": "0a91819b6f404a29",
     "content.what-happens-on-arrival.t.12": "fd51bb1dd2656933",
-    "content.what-happens-on-arrival.t.13": "ac94f10bf3c32979",
+    "content.what-happens-on-arrival.t.13": "43eaacf9556e91bf",
     "content.stages-of-labor.title": "86dbc82a7b2abf9c",
     "content.stages-of-labor.sub": "de461901641975a7",
     "content.stages-of-labor.t.0": "2e160bcd50a4746f",
@@ -2387,7 +2384,7 @@ window.MYOB_LOCALES.zh = {
     "content.csection.t.23": "03b0235cac26896a",
     "content.csection.t.24": "04b03da54128058f",
     "content.csection.t.25": "f6fa8c9fde0476e5",
-    "content.csection.t.26": "ad79a07707d57275",
+    "content.csection.t.26": "c0426d5eb45c638c",
     "content.csection.t.27": "e04d3a00a0c48e1a",
     "content.csection.t.28": "24b632c57b1d608f",
     "content.mfm.title": "6c228d117e74de43",
@@ -2539,7 +2536,7 @@ window.MYOB_LOCALES.zh = {
     "content.bf-challenges.t.2": "7d8bf4ad4287bdff",
     "content.bf-challenges.t.3": "c4998859be296f4b",
     "content.bf-challenges.t.4": "3a2ce81ac9dcbe3c",
-    "content.bf-challenges.t.5": "df4fff0e4157a4bc",
+    "content.bf-challenges.t.5": "4f38540115ee91ef",
     "content.bf-challenges.t.6": "4a83c479c8b90393",
     "content.bf-challenges.t.7": "40cb72bdfa8524ab",
     "content.bf-challenges.t.8": "7c415028fad1dc52",

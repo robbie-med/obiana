@@ -409,7 +409,7 @@ window.MYOB_LOCALES.fr = {
         "banner_missing": "Pas encore de traduction. Écrivez-en une, ou passez.",
         "banner_draft": "Une machine a écrit ceci. Vérifiez-le attentivement.",
         "banner_stale": "L'anglais a changé après cette traduction. Vérifiez qu'elle dit toujours la même chose.",
-        "keepTokens": "Gardez ceci exactement tel quel. Touchez-en un pour l'ajouter :",
+        "putBack": "Touchez pour le remettre :",
         "tokensMissing": "Remettez {tokens} avant d'envoyer.",
         "tokensExtra": "Retirez {tokens}. L'anglais ne l'a pas.",
         "send": "Envoyer",
@@ -423,7 +423,10 @@ window.MYOB_LOCALES.fr = {
         "tapBar": "Touchez une phrase soulignée pour proposer une meilleure formulation.",
         "tapOff": "Désactiver",
         "sheetTitle": "Proposer une meilleure formulation",
-        "cancel": "Annuler"
+        "cancel": "Annuler",
+        "oldDrafts": "Les phrases écrites dans l'ancien outil de traduction n'ont jamais été envoyées : {n}.",
+        "oldDraftsSend": "Les envoyer",
+        "oldDraftsDelete": "Les supprimer"
       },
       "improve": {
         "intro": "Dites-nous ce qui manque : comment une chose se fait dans votre culture, une question à laquelle ce guide ne répond pas, ou un passage difficile à suivre.",
@@ -584,14 +587,8 @@ window.MYOB_LOCALES.fr = {
       "severeHeadache": "Maux de tête intenses",
       "visionChanges": "Troubles de la vision",
       "suddenSwellingOfFaceHands": "Gonflement soudain du visage/des mains",
-      "fever1004F": "Fièvre &gt;{temp:100.4}",
+      "fever1004F": "Fièvre de {temp:100.4} ou plus",
       "contractionsBefore37Weeks": "Contractions avant 37 semaines",
-      "afterDelivery": "Après l'accouchement",
-      "soaking1PadHr2": "1 serviette trempée en une heure",
-      "woundOpensOrOozes": "La plaie s'ouvre ou suinte",
-      "legRednessSwelling": "Rougeur/gonflement d'une jambe",
-      "chestPainOrTroubleBreathing": "Douleur à la poitrine ou difficulté à respirer",
-      "thoughtsOfSelfHarm": "Pensées de vous faire du mal",
       "heroTitle": "Sachez à quoi<br>vous attendre. Posez les<br>bonnes questions."
     },
     "pregnancy": {
@@ -1047,7 +1044,7 @@ window.MYOB_LOCALES.fr = {
         "Étape 3 : Salle de travail",
         "Une fois admise, vous restez dans votre chambre pour toute la durée. Votre infirmière est votre guide principale et viendra vous voir régulièrement. C'est le moment de discuter de vos préférences pour l'accouchement et des options de gestion de la douleur.",
         "À apporter à l'hôpital",
-        "Pièce d'identité et carte d'assurance · Ce livret avec vos contacts · Chargeur de téléphone · Vêtements confortables pour le travail et la récupération · Tenue de sortie du bébé et siège d'auto · Articles de toilette · Collations pour la personne qui vous accompagne"
+        "Pièce d'identité et carte d'assurance · Les numéros de votre équipe de soins, enregistrés dans Moi · Chargeur de téléphone · Vêtements confortables pour le travail et la récupération · Tenue de sortie du bébé et siège d'auto · Articles de toilette · Collations pour la personne qui vous accompagne"
       ]
     },
     "stages-of-labor": {
@@ -1171,7 +1168,7 @@ window.MYOB_LOCALES.fr = {
         "Ne soulevez rien de plus lourd que votre bébé pendant 4 à 6 semaines",
         "L'incision est une cicatrice horizontale « au niveau du maillot », fermée avec des agrafes ou des sutures résorbables",
         "Appelez après la sortie d'une césarienne si",
-        "L'incision s'ouvre, présente une rougeur qui s'étend, ou un écoulement inhabituel · Fièvre &gt;{temp:100.4} · Douleur qui s'aggrave au lieu de s'améliorer · Une serviette hygiénique trempée en une heure",
+        "L'incision s'ouvre, présente une rougeur qui s'étend, ou un écoulement inhabituel · Fièvre de {temp:100.4} ou plus · Douleur qui s'aggrave au lieu de s'améliorer · Une serviette hygiénique trempée en une heure",
         "VBAC. Accouchement vaginal après césarienne",
         "Si vous avez eu une césarienne antérieure avec incision transverse basse, un VBAC (accouchement vaginal après césarienne) peut être une option pour cette grossesse. Les taux de réussite sont de 60 à 80 %. Discutez-en tôt dans votre suivi prénatal."
       ]
@@ -1325,7 +1322,7 @@ window.MYOB_LOCALES.fr = {
         "Allez aux urgences ou appelez le 911 en cas de",
         "Douleur à la poitrine ou difficulté à respirer · Convulsions · Maux de tête soudains et violents, différents de tout ce que vous avez connu · Symptômes d'AVC (visage qui tombe, faiblesse d'un bras, parole pâteuse) · Pensées de vous faire du mal ou d'en faire à votre bébé",
         "Appelez votre médecin de famille, votre obstétricien ou votre sage-femme en cas de",
-        "Fièvre &gt;{temp:100.4} · Une serviette hygiénique trempée en une heure · Maux de tête sévères non soulagés par l'ibuprofène/paracétamol (Tylenol) · Troubles de la vision · Rougeur, gonflement ou chaleur d'une jambe (TVP) · Ouverture de la plaie, rougeur qui s'étend ou présence de pus · Difficulté à uriner · Signes de PPD ou d'anxiété",
+        "Fièvre de {temp:100.4} ou plus · Une serviette hygiénique trempée en une heure · Maux de tête sévères non soulagés par l'ibuprofène/paracétamol (Tylenol) · Troubles de la vision · Rougeur, gonflement ou chaleur d'une jambe (TVP) · Ouverture de la plaie, rougeur qui s'étend ou présence de pus · Difficulté à uriner · Signes de PPD ou d'anxiété",
         "Le calendrier de vos rendez-vous après la naissance, et les questions à apporter à la visite des six semaines, se trouvent dans la fiche Rendez-vous de suivi, sous Bébé, à côté des rendez-vous de votre bébé, pour voir les deux ensemble."
       ]
     },
@@ -1365,7 +1362,7 @@ window.MYOB_LOCALES.fr = {
         "Mamelons douloureux",
         "Vérifiez d'abord la prise du sein. C'est la cause n° 1. Appliquez du lait maternel exprimé ou de la lanoline après les tétées. Laissez sécher à l'air. Cela s'améliore en général après le jour 5, quand le lait arrive et que la prise s'améliore.",
         "Engorgement",
-        "Nourrissez votre bébé chaque fois qu'il a faim. Ne tirez pas votre lait pour vider le sein : cela pousse le corps à en produire encore plus. Si le sein est trop ferme pour que bébé le prenne, exprimez d'abord un peu de lait à la main pour l'assouplir. Compresse froide après la tétée pour réduire le gonflement. Peut causer une légère fièvre. Si &gt;{temp:100.4}, appelez votre médecin.",
+        "Nourrissez votre bébé chaque fois qu'il a faim. Ne tirez pas votre lait pour vider le sein : cela pousse le corps à en produire encore plus. Si le sein est trop ferme pour que bébé le prenne, exprimez d'abord un peu de lait à la main pour l'assouplir. Compresse froide après la tétée pour réduire le gonflement. Peut causer une légère fièvre. Si elle atteint {temp:100.4} ou plus, appelez votre médecin.",
         "Inquiétudes sur la production de lait",
         "Allaitez plus souvent. La production suit la demande. Assurez-vous d'une bonne prise du sein. Tirez après les tétées pour stimuler la production. Consultez un(e) conseiller(ère) en lactation. La plupart du temps, la production jugée insuffisante est en réalité suffisante.",
         "Canal lactifère bouché",
@@ -1477,7 +1474,7 @@ window.MYOB_LOCALES.fr = {
         "Premières selles foncées (méconium)",
         "✓ Oui. Doit passer dans les 24–48 h",
         "Appelez tout de suite le médecin du bébé en cas de",
-        "Fièvre ≥ {temp:100.4} par voie rectale (grave chez le nouveau-né. Prenez toujours la température par voie rectale) · Refus de manger · Jaunissement extrême · Grognement à chaque respiration · Peau très pâle · Pleurs inconsolables · Moins de 6 couches mouillées/jour après le jour 5 · Raideur de la nuque. Lèvres ou visage bleus ou gris : appelez le 911."
+        "Fièvre de {temp:100.4} ou plus par voie rectale (grave chez le nouveau-né. Prenez toujours la température par voie rectale) · Refus de manger · Jaunissement extrême · Grognement à chaque respiration · Peau très pâle · Pleurs inconsolables · Moins de 6 couches mouillées/jour après le jour 5 · Raideur de la nuque. Lèvres ou visage bleus ou gris : appelez le 911."
       ]
     },
     "safe-sleep": {
@@ -2202,7 +2199,7 @@ window.MYOB_LOCALES.fr = {
     "content.what-happens-on-arrival.t.10": "92782e29e06813c3",
     "content.what-happens-on-arrival.t.11": "0a91819b6f404a29",
     "content.what-happens-on-arrival.t.12": "fd51bb1dd2656933",
-    "content.what-happens-on-arrival.t.13": "ac94f10bf3c32979",
+    "content.what-happens-on-arrival.t.13": "43eaacf9556e91bf",
     "content.stages-of-labor.title": "86dbc82a7b2abf9c",
     "content.stages-of-labor.sub": "de461901641975a7",
     "content.stages-of-labor.t.0": "2e160bcd50a4746f",
@@ -2310,7 +2307,7 @@ window.MYOB_LOCALES.fr = {
     "content.csection.t.23": "03b0235cac26896a",
     "content.csection.t.24": "04b03da54128058f",
     "content.csection.t.25": "f6fa8c9fde0476e5",
-    "content.csection.t.26": "ad79a07707d57275",
+    "content.csection.t.26": "c0426d5eb45c638c",
     "content.csection.t.27": "e04d3a00a0c48e1a",
     "content.csection.t.28": "24b632c57b1d608f",
     "content.mfm.title": "6c228d117e74de43",
@@ -2436,7 +2433,7 @@ window.MYOB_LOCALES.fr = {
     "content.postpartum-danger.t.0": "8e2a678f78c207ed",
     "content.postpartum-danger.t.1": "d26dc5484bcab5f6",
     "content.postpartum-danger.t.2": "bee2b3c377a8a3e5",
-    "content.postpartum-danger.t.3": "03c000a554e9734b",
+    "content.postpartum-danger.t.3": "0373b234f57eb132",
     "content.breastfeeding.title": "c57faccf43d647e5",
     "content.breastfeeding.sub": "fceab506c1cfc26c",
     "content.breastfeeding.t.0": "866addc074fa03ba",
@@ -2465,7 +2462,7 @@ window.MYOB_LOCALES.fr = {
     "content.bf-challenges.t.2": "7d8bf4ad4287bdff",
     "content.bf-challenges.t.3": "c4998859be296f4b",
     "content.bf-challenges.t.4": "3a2ce81ac9dcbe3c",
-    "content.bf-challenges.t.5": "df4fff0e4157a4bc",
+    "content.bf-challenges.t.5": "4f38540115ee91ef",
     "content.bf-challenges.t.6": "4a83c479c8b90393",
     "content.bf-challenges.t.7": "40cb72bdfa8524ab",
     "content.bf-challenges.t.8": "7c415028fad1dc52",
@@ -2565,7 +2562,7 @@ window.MYOB_LOCALES.fr = {
     "content.normal-newborn.t.29": "a646ba8ef31029a4",
     "content.normal-newborn.t.30": "b96a48ec64c8f9ba",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "11a67bb6600db664",
+    "content.normal-newborn.t.32": "8535f75dd7c74fd7",
     "content.safe-sleep.title": "8f76ca906ecc7552",
     "content.safe-sleep.sub": "280c3d91955a45cb",
     "content.safe-sleep.t.0": "606d4b033e9658bd",

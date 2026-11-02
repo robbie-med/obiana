@@ -73,17 +73,11 @@ window.MYOB_LOCALES.ja = {
       "severeHeadache": "ひどい頭痛",
       "visionChanges": "見え方の変化",
       "suddenSwellingOfFaceHands": "顔や手の急なむくみ",
-      "fever1004F": "発熱 &gt;{temp:100.4}",
+      "fever1004F": "{temp:100.4}以上の発熱",
       "contractionsBefore37Weeks": "37週より前の陣痛",
       "myInfoContacts": "わたしの情報 &amp;<br>連絡先",
       "saveYourCareTeamContacts": "ケアチームの連絡先を保存",
-      "tapToCallOrText": "タップしてアプリから直接電話やテキスト",
-      "afterDelivery": "出産後",
-      "soaking1PadHr2": "1時間でナプキン1枚がびっしょり",
-      "woundOpensOrOozes": "傷が開く、液が出る",
-      "legRednessSwelling": "足の赤み・腫れ",
-      "chestPainOrTroubleBreathing": "胸の痛み、息苦しさ",
-      "thoughtsOfSelfHarm": "自分を傷つける考え"
+      "tapToCallOrText": "タップしてアプリから直接電話やテキスト"
     },
     "disclaimer": {
       "title": "はじめる前に",
@@ -621,7 +615,7 @@ window.MYOB_LOCALES.ja = {
         "banner_missing": "まだ訳がありません。書くか、とばしてください。",
         "banner_draft": "これは機械が書きました。よく確認してください。",
         "banner_stale": "この訳の後で英語が変わりました。同じ意味のままか確認してください。",
-        "keepTokens": "これらはそのまま残してください。タップすると入ります：",
+        "putBack": "タップすると元に戻ります：",
         "tokensMissing": "送る前に{tokens}を戻してください。",
         "tokensExtra": "{tokens}を消してください。英語にはありません。",
         "send": "送信",
@@ -638,7 +632,10 @@ window.MYOB_LOCALES.ja = {
         "tapBar": "下線のある文をタップすると、よりよい言い方を提案できます。",
         "tapOff": "オフにする",
         "sheetTitle": "よりよい言い方を提案",
-        "cancel": "キャンセル"
+        "cancel": "キャンセル",
+        "oldDrafts": "以前の翻訳ツールで書いた文は送信されていません：{n}件。",
+        "oldDraftsSend": "送信する",
+        "oldDraftsDelete": "削除する"
       },
       "improve": {
         "intro": "足りないことを教えてください：あなたの文化でのやり方、このガイドが答えていない質問、わかりにくかったところ。",
@@ -877,7 +874,7 @@ window.MYOB_LOCALES.ja = {
         "次のときは救急外来へ、または911に電話",
         "胸の痛みや息苦しさ · けいれん · これまでにない突然のひどい頭痛 · 脳卒中の症状（顔のゆがみ、腕の力が入らない、ろれつが回らない） · 自分や赤ちゃんを傷つけたい気持ち",
         "次のときは家庭医、産科医、助産師に電話",
-        "発熱 &gt;{temp:100.4} · 1時間でナプキン1枚がびっしょりになる · イブプロフェンやタイレノールで治まらないひどい頭痛 · 見え方の変化 · 脚の赤み、腫れ、熱っぽさ（DVT、深部静脈血栓） · 傷が開く、赤みが広がる、膿が出る · 尿が出にくい · 産後うつ（PPD）や不安のサイン",
+        "{temp:100.4}以上の発熱 · 1時間でナプキン1枚がびっしょりになる · イブプロフェンやタイレノールで治まらないひどい頭痛 · 見え方の変化 · 脚の赤み、腫れ、熱っぽさ（DVT、深部静脈血栓） · 傷が開く、赤みが広がる、膿が出る · 尿が出にくい · 産後うつ（PPD）や不安のサイン",
         "産後健診の予定と、6週間後の健診で聞くとよい質問は、「赤ちゃん」の「健診の予定」カードにあります。赤ちゃんの健診と一緒に、両方を見られます。"
       ]
     },
@@ -943,7 +940,7 @@ window.MYOB_LOCALES.ja = {
         "最初の黒っぽい便（胎便）",
         "✓ はい。24–48時間以内に出るはずです",
         "次のときはすぐに赤ちゃんの医師に電話",
-        "直腸温 ≥ {temp:100.4}（新生児では重大。必ず直腸で測る） · 飲まない · 黄色みが強い · 息をするたびにうなる · 肌がとても青白い · 泣きやまない · 生後5日目以降、ぬれたおむつが1日6枚未満 · 首が硬い。唇や顔が青い、または灰色：911に電話。"
+        "直腸温 {temp:100.4}以上（新生児では重大。必ず直腸で測る） · 飲まない · 黄色みが強い · 息をするたびにうなる · 肌がとても青白い · 泣きやまない · 生後5日目以降、ぬれたおむつが1日6枚未満 · 首が硬い。唇や顔が青い、または灰色：911に電話。"
       ]
     },
     "faq-deli": {
@@ -1245,7 +1242,7 @@ window.MYOB_LOCALES.ja = {
         "ステップ3：陣痛室",
         "入院したら、お産が終わるまで自分の部屋で過ごします。看護師がおもな案内役で、定期的に様子を見に来ます。出産の希望や痛みの対処法を話し合うのはこのときです。",
         "病院に持っていくもの",
-        "身分証明書と保険証 · 連絡先を書いたこの冊子 · 携帯の充電器 · お産と産後用の楽な服 · 赤ちゃんの退院用の服とチャイルドシート · 洗面用具 · 付き添いの人のおやつ"
+        "身分証明書と保険証 · 「わたし」に保存した担当チームの電話番号 · 携帯の充電器 · お産と産後用の楽な服 · 赤ちゃんの退院用の服とチャイルドシート · 洗面用具 · 付き添いの人のおやつ"
       ]
     },
     "stages-of-labor": {
@@ -1369,7 +1366,7 @@ window.MYOB_LOCALES.ja = {
         "4–6週間は赤ちゃんより重い物を持ち上げない",
         "傷は横向きの「ビキニライン」の傷あとで、ホチキスか溶ける糸で閉じます",
         "帝王切開で退院した後、こんなときは電話",
-        "傷が開く、赤みが外へ広がる、いつもと違う液が出る · 発熱 &gt;{temp:100.4} · 痛みがよくならずひどくなる · 1時間でナプキン1枚がびっしょりになる",
+        "傷が開く、赤みが外へ広がる、いつもと違う液が出る · {temp:100.4}以上の発熱 · 痛みがよくならずひどくなる · 1時間でナプキン1枚がびっしょりになる",
         "VBAC。帝王切開後の経膣分娩",
         "以前に子宮下部横切開の帝王切開を1回したことがあるなら、今回の妊娠でVBACが選べるかもしれません。成功率は60–80%です。妊婦健診の早い時期に相談してください。"
       ]
@@ -1662,7 +1659,7 @@ window.MYOB_LOCALES.ja = {
         "乳首の痛み",
         "まず吸いつきを確認。これが原因の第1位です。授乳の後に、しぼった母乳かラノリンをぬります。空気で乾かします。母乳が出てきて吸いつきがよくなる5日目以降に、たいていよくなります。",
         "乳房の張り",
-        "赤ちゃんがおなかをすかせたらいつでも授乳しましょう。乳房を空にするために搾乳しないでください。体にもっと母乳を作れと伝えてしまいます。胸がかたすぎて吸いつけないなら、先に少し手でしぼってやわらかくします。授乳の後は冷やして腫れを減らします。微熱が出ることがあります。&gt;{temp:100.4}なら医師に電話してください。",
+        "赤ちゃんがおなかをすかせたらいつでも授乳しましょう。乳房を空にするために搾乳しないでください。体にもっと母乳を作れと伝えてしまいます。胸がかたすぎて吸いつけないなら、先に少し手でしぼってやわらかくします。授乳の後は冷やして腫れを減らします。微熱が出ることがあります。{temp:100.4}以上なら医師に電話してください。",
         "母乳の量の心配",
         "授乳の回数を増やしましょう。量は需要に合わせて増えます。よい吸いつきを確かめましょう。授乳の後に搾乳して、もっと作るよう体に知らせます。授乳の専門家に相談しましょう。足りないと感じる多くの場合、実際は十分出ています。",
         "乳管のつまり",
@@ -2063,7 +2060,7 @@ window.MYOB_LOCALES.ja = {
     "content.postpartum-danger.t.0": "8e2a678f78c207ed",
     "content.postpartum-danger.t.1": "d26dc5484bcab5f6",
     "content.postpartum-danger.t.2": "bee2b3c377a8a3e5",
-    "content.postpartum-danger.t.3": "03c000a554e9734b",
+    "content.postpartum-danger.t.3": "0373b234f57eb132",
     "content.signs-of-labor.t.11": "3973fa2849b83e92",
     "content.signs-of-labor.t.12": "61f8135000473a76",
     "content.signs-of-labor.t.13": "d0b262a299176734",
@@ -2072,7 +2069,7 @@ window.MYOB_LOCALES.ja = {
     "content.signs-of-labor.t.16": "ac6a34b445ceccaa",
     "content.signs-of-labor.t.17": "b007f20008122ab6",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "11a67bb6600db664",
+    "content.normal-newborn.t.32": "8535f75dd7c74fd7",
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
@@ -2268,7 +2265,7 @@ window.MYOB_LOCALES.ja = {
     "content.what-happens-on-arrival.t.10": "92782e29e06813c3",
     "content.what-happens-on-arrival.t.11": "0a91819b6f404a29",
     "content.what-happens-on-arrival.t.12": "fd51bb1dd2656933",
-    "content.what-happens-on-arrival.t.13": "ac94f10bf3c32979",
+    "content.what-happens-on-arrival.t.13": "43eaacf9556e91bf",
     "content.stages-of-labor.title": "86dbc82a7b2abf9c",
     "content.stages-of-labor.sub": "de461901641975a7",
     "content.stages-of-labor.t.0": "2e160bcd50a4746f",
@@ -2376,7 +2373,7 @@ window.MYOB_LOCALES.ja = {
     "content.csection.t.23": "03b0235cac26896a",
     "content.csection.t.24": "04b03da54128058f",
     "content.csection.t.25": "f6fa8c9fde0476e5",
-    "content.csection.t.26": "ad79a07707d57275",
+    "content.csection.t.26": "c0426d5eb45c638c",
     "content.csection.t.27": "e04d3a00a0c48e1a",
     "content.csection.t.28": "24b632c57b1d608f",
     "content.mfm.title": "6c228d117e74de43",
@@ -2602,7 +2599,7 @@ window.MYOB_LOCALES.ja = {
     "content.bf-challenges.t.2": "7d8bf4ad4287bdff",
     "content.bf-challenges.t.3": "c4998859be296f4b",
     "content.bf-challenges.t.4": "3a2ce81ac9dcbe3c",
-    "content.bf-challenges.t.5": "df4fff0e4157a4bc",
+    "content.bf-challenges.t.5": "4f38540115ee91ef",
     "content.bf-challenges.t.6": "4a83c479c8b90393",
     "content.bf-challenges.t.7": "40cb72bdfa8524ab",
     "content.bf-challenges.t.8": "7c415028fad1dc52",
@@ -4186,12 +4183,6 @@ window.MYOB_LOCALES.ja = {
     "home.myInfoContacts": 1,
     "home.saveYourCareTeamContacts": 1,
     "home.tapToCallOrText": 1,
-    "home.afterDelivery": 1,
-    "home.soaking1PadHr2": 1,
-    "home.woundOpensOrOozes": 1,
-    "home.legRednessSwelling": 1,
-    "home.chestPainOrTroubleBreathing": 1,
-    "home.thoughtsOfSelfHarm": 1,
     "pregnancy.section1": 1,
     "pregnancy.prenatalVisitsPregnancy": 1,
     "labor.section2": 1,

@@ -405,7 +405,7 @@ window.MYOB_LOCALES.en = {
         "banner_missing": "No translation yet. Write one, or skip.",
         "banner_draft": "A machine wrote this. Check it carefully.",
         "banner_stale": "The English changed after this was translated. Check it still says the same.",
-        "keepTokens": "Keep these exactly as they are. Tap one to add it:",
+        "putBack": "Tap to put back:",
         "tokensMissing": "Put back {tokens} before you send.",
         "tokensExtra": "Remove {tokens}. The English doesn't have it.",
         "send": "Send",
@@ -422,7 +422,10 @@ window.MYOB_LOCALES.en = {
         "tapBar": "Tap any underlined sentence to suggest better wording.",
         "tapOff": "Turn off",
         "sheetTitle": "Suggest better wording",
-        "cancel": "Cancel"
+        "cancel": "Cancel",
+        "oldDrafts": "Sentences you wrote in the old translation tool were never sent: {n}.",
+        "oldDraftsSend": "Send them",
+        "oldDraftsDelete": "Delete them"
       },
       "improve": {
         "intro": "Tell us what's missing: how something is done in your culture, a question this guide doesn't answer, or a part that was hard to follow.",
@@ -583,14 +586,8 @@ window.MYOB_LOCALES.en = {
       "severeHeadache": "Severe headache",
       "visionChanges": "Vision changes",
       "suddenSwellingOfFaceHands": "Sudden swelling of face/hands",
-      "fever1004F": "Fever &gt;{temp:100.4}",
+      "fever1004F": "Fever of {temp:100.4} or more",
       "contractionsBefore37Weeks": "Contractions before 37 weeks",
-      "afterDelivery": "After Delivery",
-      "soaking1PadHr2": "Soaking through 1 pad in an hour",
-      "woundOpensOrOozes": "Wound opens or oozes",
-      "legRednessSwelling": "Leg redness/swelling",
-      "chestPainOrTroubleBreathing": "Chest pain or trouble breathing",
-      "thoughtsOfSelfHarm": "Thoughts of self-harm",
       "heroTitle": "Know what to<br>expect. Ask great<br>questions."
     },
     "pregnancy": {
@@ -1044,7 +1041,7 @@ window.MYOB_LOCALES.en = {
         "Step 3: Labor Room",
         "Once admitted, you're in your room for the duration. Your nurse is your primary guide and will be checking on you regularly. This is the time to discuss your birth preferences and pain management options.",
         "Bring This to the Hospital",
-        "ID and insurance card · This booklet with your contacts · Phone charger · Comfortable clothes for labor and recovery · Baby's going-home outfit and car seat · Toiletries · Snacks for support person"
+        "ID and insurance card · Your care team's phone numbers, saved under Me · Phone charger · Comfortable clothes for labor and recovery · Baby's going-home outfit and car seat · Toiletries · Snacks for support person"
       ]
     },
     "stages-of-labor": {
@@ -1168,7 +1165,7 @@ window.MYOB_LOCALES.en = {
         "No lifting anything heavier than your baby for 4–6 weeks",
         "Incision is a horizontal \"bikini-line\" scar, closed with staples or absorbable sutures",
         "Call After C-Section Discharge If",
-        "Incision opens, shows redness spreading outward, or has unusual drainage · Fever &gt;{temp:100.4} · Worsening rather than improving pain · Soaking through 1 pad in an hour",
+        "Incision opens, shows redness spreading outward, or has unusual drainage · Fever of {temp:100.4} or more · Worsening rather than improving pain · Soaking through 1 pad in an hour",
         "VBAC. Vaginal Birth After Cesarean",
         "If you've had one prior low-transverse C-section, a VBAC may be an option for this pregnancy. Success rates are 60–80%. Discuss this early in your prenatal care."
       ]
@@ -1322,7 +1319,7 @@ window.MYOB_LOCALES.en = {
         "Go to the ER or Call 911 For",
         "Chest pain or difficulty breathing · Seizure · Sudden severe headache unlike any before · Stroke symptoms (face drooping, arm weakness, slurred speech) · Thoughts of harming yourself or your baby",
         "Call Your Family Doctor, OB or Midwife For",
-        "Fever &gt;{temp:100.4} · Soaking through 1 pad in an hour · Severe headache not relieved by ibuprofen/Tylenol · Vision changes · Leg redness, swelling, or warmth (DVT) · Wound opening, redness spreading, or pus · Difficulty urinating · Signs of PPD or anxiety",
+        "Fever of {temp:100.4} or more · Soaking through 1 pad in an hour · Severe headache not relieved by ibuprofen/Tylenol · Vision changes · Leg redness, swelling, or warmth (DVT) · Wound opening, redness spreading, or pus · Difficulty urinating · Signs of PPD or anxiety",
         "Your postpartum visit schedule, and the questions worth taking to the six-week visit, are in the Follow-Up Appointments card under Baby, alongside your baby's visits so you can see both together."
       ]
     },
@@ -1362,7 +1359,7 @@ window.MYOB_LOCALES.en = {
         "Sore nipples",
         "Check latch first. This is the #1 cause. Apply expressed breast milk or lanolin after feeds. Air dry. Usually improves after day 5 once milk comes in and latch improves.",
         "Engorgement",
-        "Feed your baby whenever they're hungry. Don't pump to empty the breast: that tells your body to make even more milk. If the breast is too firm to latch, hand express a little first to soften it. Cold pack after feeding to reduce swelling. Can cause a low-grade fever. If &gt;{temp:100.4}, call your doctor.",
+        "Feed your baby whenever they're hungry. Don't pump to empty the breast: that tells your body to make even more milk. If the breast is too firm to latch, hand express a little first to soften it. Cold pack after feeding to reduce swelling. Can cause a low-grade fever. If it is {temp:100.4} or more, call your doctor.",
         "Low supply concerns",
         "Feed more frequently. Supply follows demand. Ensure good latch. Pump after feeds to signal more production. See a lactation consultant. Most perceived low supply is actually sufficient supply.",
         "Clogged duct",
@@ -1474,7 +1471,7 @@ window.MYOB_LOCALES.en = {
         "Dark first stool (meconium)",
         "✓ Yes. Should pass within 24–48 hrs",
         "Call Your Baby's Doctor Right Away For",
-        "Fever ≥ {temp:100.4} rectal (serious in newborns. Always take rectal temp) · Refusing to eat · Extreme yellowing · Grunting with every breath · Very pale skin · Inconsolable crying · Fewer than 6 wet diapers/day after day 5 · Stiff neck. Blue or gray lips or face: call 911."
+        "Fever of {temp:100.4} or more, rectal (serious in newborns. Always take rectal temp) · Refusing to eat · Extreme yellowing · Grunting with every breath · Very pale skin · Inconsolable crying · Fewer than 6 wet diapers/day after day 5 · Stiff neck. Blue or gray lips or face: call 911."
       ]
     },
     "safe-sleep": {

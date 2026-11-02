@@ -408,7 +408,7 @@ window.MYOB_LOCALES.es = {
         "banner_missing": "Todavía no hay traducción. Escriba una, u omítala.",
         "banner_draft": "Esto lo escribió una máquina. Revíselo con cuidado.",
         "banner_stale": "El inglés cambió después de esta traducción. Revise que todavía diga lo mismo.",
-        "keepTokens": "Deje esto exactamente igual. Toque uno para añadirlo:",
+        "putBack": "Toque para volver a ponerlo:",
         "tokensMissing": "Vuelva a poner {tokens} antes de enviar.",
         "tokensExtra": "Quite {tokens}. El inglés no lo tiene.",
         "send": "Enviar",
@@ -422,7 +422,10 @@ window.MYOB_LOCALES.es = {
         "tapBar": "Toque cualquier frase subrayada para sugerir una mejor redacción.",
         "tapOff": "Desactivar",
         "sheetTitle": "Sugerir una mejor redacción",
-        "cancel": "Cancelar"
+        "cancel": "Cancelar",
+        "oldDrafts": "Las frases que escribió en la herramienta de traducción anterior nunca se enviaron: {n}.",
+        "oldDraftsSend": "Enviarlas",
+        "oldDraftsDelete": "Borrarlas"
       },
       "improve": {
         "intro": "Díganos qué falta: cómo se hace algo en su cultura, una pregunta que esta guía no responde, o una parte difícil de entender.",
@@ -583,14 +586,8 @@ window.MYOB_LOCALES.es = {
       "severeHeadache": "Dolor de cabeza fuerte",
       "visionChanges": "Cambios en la vista",
       "suddenSwellingOfFaceHands": "Hinchazón repentina de cara o manos",
-      "fever1004F": "Fiebre &gt;{temp:100.4}",
+      "fever1004F": "Fiebre de {temp:100.4} o más",
       "contractionsBefore37Weeks": "Contracciones antes de las 37 semanas",
-      "afterDelivery": "Después del parto",
-      "soaking1PadHr2": "Empapar 1 toalla sanitaria en una hora",
-      "woundOpensOrOozes": "La herida se abre o supura",
-      "legRednessSwelling": "Enrojecimiento o hinchazón de una pierna",
-      "chestPainOrTroubleBreathing": "Dolor en el pecho o dificultad para respirar",
-      "thoughtsOfSelfHarm": "Pensamientos de hacerse daño",
       "heroTitle": "Sepa qué<br>esperar. Haga buenas<br>preguntas."
     },
     "pregnancy": {
@@ -1046,7 +1043,7 @@ window.MYOB_LOCALES.es = {
         "Paso 3: Sala de parto",
         "Una vez admitida, permanecerá en su habitación durante todo el proceso. Su enfermera es su guía principal y la revisará con regularidad. Este es el momento de hablar sobre sus preferencias para el parto y las opciones para el manejo del dolor.",
         "Traiga esto al hospital",
-        "Identificación y tarjeta del seguro médico · Este folleto con sus contactos · Cargador del teléfono · Ropa cómoda para el parto y la recuperación · Ropa del bebé para ir a casa y asiento para el auto · Artículos de higiene personal · Refrigerios para la persona que la acompaña"
+        "Identificación y tarjeta del seguro médico · Los teléfonos de su equipo de atención, guardados en Yo · Cargador del teléfono · Ropa cómoda para el parto y la recuperación · Ropa del bebé para ir a casa y asiento para el auto · Artículos de higiene personal · Refrigerios para la persona que la acompaña"
       ]
     },
     "stages-of-labor": {
@@ -1170,7 +1167,7 @@ window.MYOB_LOCALES.es = {
         "No levante nada más pesado que su bebé durante 4–6 semanas",
         "La incisión es una cicatriz horizontal \"a la altura del bikini\", cerrada con grapas o suturas absorbibles",
         "Llame después del alta de la cesárea si",
-        "La incisión se abre, presenta enrojecimiento que se extiende o tiene secreción inusual · Fiebre &gt;{temp:100.4} · Dolor que empeora en lugar de mejorar · Empapa 1 toalla sanitaria en una hora",
+        "La incisión se abre, presenta enrojecimiento que se extiende o tiene secreción inusual · Fiebre de {temp:100.4} o más · Dolor que empeora en lugar de mejorar · Empapa 1 toalla sanitaria en una hora",
         "VBAC: parto vaginal después de una cesárea",
         "Si tuvo una cesárea previa con incisión transversal baja, un VBAC (parto vaginal después de cesárea) puede ser una opción en este embarazo. Las tasas de éxito son del 60–80%. Hable de esto temprano durante su atención prenatal."
       ]
@@ -1324,7 +1321,7 @@ window.MYOB_LOCALES.es = {
         "Vaya a la sala de emergencias o llame al 911 si tiene",
         "Dolor en el pecho o dificultad para respirar · Convulsiones · Dolor de cabeza repentino e intenso, distinto a cualquier otro · Síntomas de derrame cerebral (cara caída, debilidad en un brazo, dificultad para hablar) · Pensamientos de hacerse daño a sí misma o a su bebé",
         "Llame a su médico de familia, obstetra o partera si tiene",
-        "Fiebre &gt;{temp:100.4} · Empapa 1 toalla sanitaria en una hora · Dolor de cabeza intenso que no se alivia con ibuprofeno/Tylenol · Cambios en la visión · Enrojecimiento, hinchazón o calor en una pierna (DVT, coágulo en una vena profunda) · Herida que se abre, enrojecimiento que se extiende o pus · Dificultad para orinar · Signos de PPD o ansiedad",
+        "Fiebre de {temp:100.4} o más · Empapa 1 toalla sanitaria en una hora · Dolor de cabeza intenso que no se alivia con ibuprofeno/Tylenol · Cambios en la visión · Enrojecimiento, hinchazón o calor en una pierna (DVT, coágulo en una vena profunda) · Herida que se abre, enrojecimiento que se extiende o pus · Dificultad para orinar · Signos de PPD o ansiedad",
         "El calendario de sus consultas de posparto, y las preguntas que vale la pena llevar a la consulta de las seis semanas, están en la tarjeta de Citas de seguimiento en la sección Bebé, junto a las consultas de su bebé, para que vea las dos cosas juntas."
       ]
     },
@@ -1364,7 +1361,7 @@ window.MYOB_LOCALES.es = {
         "Pezones doloridos",
         "Revise primero el agarre: es la causa número 1. Aplique leche materna extraída o lanolina después de las tomas. Deje secar al aire. Suele mejorar después del día 5, cuando baja la leche y mejora el agarre.",
         "Congestión mamaria",
-        "Amamante a su bebé cada vez que tenga hambre. No se extraiga leche para vaciar el pecho: eso le indica al cuerpo que produzca todavía más. Si el pecho está demasiado firme para que el bebé se prenda, extraiga un poco a mano primero para ablandarlo. Compresa fría después de alimentar para reducir la hinchazón. Puede causar fiebre baja: si es &gt;{temp:100.4}, llame a su médico.",
+        "Amamante a su bebé cada vez que tenga hambre. No se extraiga leche para vaciar el pecho: eso le indica al cuerpo que produzca todavía más. Si el pecho está demasiado firme para que el bebé se prenda, extraiga un poco a mano primero para ablandarlo. Compresa fría después de alimentar para reducir la hinchazón. Puede causar fiebre baja: si es de {temp:100.4} o más, llame a su médico.",
         "Preocupación por poca leche",
         "Alimente con más frecuencia: la producción sigue a la demanda. Asegure un buen agarre. Extráigase leche después de las tomas para estimular más producción. Consulte a una especialista en lactancia. La mayoría de las veces que se percibe poca leche, en realidad la producción es suficiente.",
         "Conducto obstruido",
@@ -1476,7 +1473,7 @@ window.MYOB_LOCALES.es = {
         "Primera deposición oscura (meconio)",
         "✓ Sí: debe salir dentro de las 24–48 horas",
         "Llame al médico del bebé de inmediato por",
-        "Fiebre ≥ {temp:100.4} rectal (grave en recién nacidos: siempre tome la temperatura rectal) · Que rechace la comida · Amarillamiento extremo · Quejidos con cada respiración · Piel muy pálida · Llanto inconsolable · Menos de 6 pañales mojados al día después del día 5 · Cuello rígido. Labios o cara azules o grises: llame al 911."
+        "Fiebre de {temp:100.4} o más, rectal (grave en recién nacidos: siempre tome la temperatura rectal) · Que rechace la comida · Amarillamiento extremo · Quejidos con cada respiración · Piel muy pálida · Llanto inconsolable · Menos de 6 pañales mojados al día después del día 5 · Cuello rígido. Labios o cara azules o grises: llame al 911."
       ]
     },
     "safe-sleep": {
@@ -2201,7 +2198,7 @@ window.MYOB_LOCALES.es = {
     "content.what-happens-on-arrival.t.10": "92782e29e06813c3",
     "content.what-happens-on-arrival.t.11": "0a91819b6f404a29",
     "content.what-happens-on-arrival.t.12": "fd51bb1dd2656933",
-    "content.what-happens-on-arrival.t.13": "ac94f10bf3c32979",
+    "content.what-happens-on-arrival.t.13": "43eaacf9556e91bf",
     "content.stages-of-labor.title": "86dbc82a7b2abf9c",
     "content.stages-of-labor.sub": "de461901641975a7",
     "content.stages-of-labor.t.0": "2e160bcd50a4746f",
@@ -2309,7 +2306,7 @@ window.MYOB_LOCALES.es = {
     "content.csection.t.23": "03b0235cac26896a",
     "content.csection.t.24": "04b03da54128058f",
     "content.csection.t.25": "f6fa8c9fde0476e5",
-    "content.csection.t.26": "ad79a07707d57275",
+    "content.csection.t.26": "c0426d5eb45c638c",
     "content.csection.t.27": "e04d3a00a0c48e1a",
     "content.csection.t.28": "24b632c57b1d608f",
     "content.mfm.title": "6c228d117e74de43",
@@ -2435,7 +2432,7 @@ window.MYOB_LOCALES.es = {
     "content.postpartum-danger.t.0": "8e2a678f78c207ed",
     "content.postpartum-danger.t.1": "d26dc5484bcab5f6",
     "content.postpartum-danger.t.2": "bee2b3c377a8a3e5",
-    "content.postpartum-danger.t.3": "03c000a554e9734b",
+    "content.postpartum-danger.t.3": "0373b234f57eb132",
     "content.breastfeeding.title": "c57faccf43d647e5",
     "content.breastfeeding.sub": "fceab506c1cfc26c",
     "content.breastfeeding.t.0": "866addc074fa03ba",
@@ -2464,7 +2461,7 @@ window.MYOB_LOCALES.es = {
     "content.bf-challenges.t.2": "7d8bf4ad4287bdff",
     "content.bf-challenges.t.3": "c4998859be296f4b",
     "content.bf-challenges.t.4": "3a2ce81ac9dcbe3c",
-    "content.bf-challenges.t.5": "df4fff0e4157a4bc",
+    "content.bf-challenges.t.5": "4f38540115ee91ef",
     "content.bf-challenges.t.6": "4a83c479c8b90393",
     "content.bf-challenges.t.7": "40cb72bdfa8524ab",
     "content.bf-challenges.t.8": "7c415028fad1dc52",
@@ -2564,7 +2561,7 @@ window.MYOB_LOCALES.es = {
     "content.normal-newborn.t.29": "a646ba8ef31029a4",
     "content.normal-newborn.t.30": "b96a48ec64c8f9ba",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "11a67bb6600db664",
+    "content.normal-newborn.t.32": "8535f75dd7c74fd7",
     "content.safe-sleep.title": "8f76ca906ecc7552",
     "content.safe-sleep.sub": "280c3d91955a45cb",
     "content.safe-sleep.t.0": "606d4b033e9658bd",

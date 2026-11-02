@@ -85,6 +85,93 @@ function trMissingTokens(en, text) {
   return { missing, extra: have };
 }
 
+// ─── Pills ──────────────────────────────────────────────
+// Tokens are never shown as code. Each is a locked pill, in the English and
+// in the editor alike, reading as the English reads ("100.4°F") or, for a
+// {placeholder}, its name. The editor is a contenteditable box so a pill can
+// sit inside the text; what is read back out of it is the plain string with
+// the tokens in place, exactly what a textarea would have given.
+function trPillLabel(tok) {
+  if (/^\{(temp|vol|wt|lb):/.test(tok)) return I18n.units.expand(tok, 'us');
+  return tok.slice(1, -1);
+}
+function trPillHtml(tok) {
+  return `<span class="tr-pill" contenteditable="false" data-token="${escHtml(tok)}" dir="ltr">${escHtml(trPillLabel(tok))}</span>`;
+}
+// English as shown above the editor: its own HTML, tokens as pills.
+function trSourceHtml(source) {
+  return String(source).replace(/\{[^{}\s]+\}/g, tok => trPillHtml(tok));
+}
+// Editable text → editor HTML: text escaped, newlines as <br>, tokens as pills.
+function trEditorHtml(text) {
+  return String(text).split(/(\{[^{}\s]+\})/).map((part, i) =>
+    i % 2 ? trPillHtml(part) : escHtml(part).replace(/\n/g, '<br>')).join('');
+}
+// Editor → editable text. Browsers wrap new lines in <div> or <p> on Enter.
+function trEditorText(ed) {
+  let out = '';
+  const walk = node => {
+    for (const n of node.childNodes) {
+      if (n.nodeType === 3) out += n.nodeValue;
+      else if (n.nodeType !== 1) continue;
+      else if (n.dataset && n.dataset.token) out += n.dataset.token;
+      else if (n.nodeName === 'BR') out += '\n';
+      else {
+        const block = /^(DIV|P)$/.test(n.nodeName);
+        if (block && out && !out.endsWith('\n')) out += '\n';
+        walk(n);
+      }
+    }
+  };
+  walk(ed);
+  return out.replace(/​/g, '').replace(/ /g, ' ');
+}
+// Wire an editor: plain-text paste only, and a row of the pills it has lost,
+// each tap putting one back where the cursor was.
+function trWireEditor(ed, source, keepRow, onChange) {
+  let saved = null;
+  const remember = () => {
+    const sel = getSelection();
+    if (sel.rangeCount && ed.contains(sel.getRangeAt(0).commonAncestorContainer)) saved = sel.getRangeAt(0).cloneRange();
+  };
+  document.addEventListener('selectionchange', remember);
+  ed.addEventListener('paste', ev => {
+    ev.preventDefault();
+    const text = (ev.clipboardData || window.clipboardData).getData('text/plain');
+    document.execCommand('insertText', false, text);
+  });
+  ed.addEventListener('keydown', ev => {
+    if (ev.key === 'Enter') { ev.preventDefault(); document.execCommand('insertLineBreak'); }
+  });
+  const drawKeep = () => {
+    if (!keepRow) return;
+    const { missing } = trMissingTokens(source, trEditorText(ed));
+    keepRow.hidden = !missing.length;
+    keepRow.innerHTML = missing.length ? `${escHtml(t('tool.i18n.putBack'))} ` + [...new Set(missing)].map(x =>
+      `<button type="button" class="tr-pill tr-pill-btn" data-token="${escHtml(x)}" dir="ltr">${escHtml(trPillLabel(x))}</button>`).join(' ') : '';
+  };
+  if (keepRow) {
+    keepRow.addEventListener('mousedown', ev => { if (ev.target.closest('[data-token]')) ev.preventDefault(); });
+    keepRow.addEventListener('click', ev => {
+      const b = ev.target.closest('[data-token]'); if (!b) return;
+      ed.focus();
+      const sel = getSelection();
+      let r = saved;
+      if (!r || !ed.contains(r.commonAncestorContainer)) { r = document.createRange(); r.selectNodeContents(ed); r.collapse(false); }
+      r.deleteContents();
+      const tmp = document.createElement('span'); tmp.innerHTML = trPillHtml(b.dataset.token);
+      const pill = tmp.firstChild;
+      r.insertNode(pill); r.setStartAfter(pill); r.collapse(true);
+      sel.removeAllRanges(); sel.addRange(r); saved = r.cloneRange();
+      drawKeep(); onChange();
+    });
+  }
+  ed.addEventListener('input', () => { drawKeep(); onChange(); });
+  drawKeep();
+  return () => document.removeEventListener('selectionchange', remember);
+}
+const trTokenNames = list => list.map(trPillLabel).join(', ');
+
 // ─── The order ──────────────────────────────────────────
 function trSlotOrder(id) {
   const tpl = (window.MYOB_BODY_TPL || {})[id] || '';
@@ -239,9 +326,57 @@ function trMark(lang, item, a) {
   trSave(TR_MARKS_KEY, all);
 }
 
+// ─── Drafts left in the old Translation Helper ──────────
+// The old Helper kept what she typed in myob.i18nSuggestions ({lang: {key:
+// text}}) for a JSON export that no longer exists, so those sentences were
+// never sent. The page offers them once: send (through the same queue) or
+// delete. Nothing is sent without her tap.
+const TR_OLD_KEY = 'myob.i18nSuggestions';
+function trOldDrafts() {
+  const old = trLoad(TR_OLD_KEY, {});
+  const en = flattenLocale(window.MYOB_LOCALES.en);
+  const list = [];
+  for (const [lang, keys] of Object.entries(old || {})) {
+    if (!I18n.LOCALES[lang] || lang === I18n.FALLBACK || !keys || typeof keys !== 'object') continue;
+    const mine = flattenLocale((window.MYOB_LOCALES || {})[lang] || {});
+    for (const [key, text] of Object.entries(keys)) {
+      const source = en[key];
+      if (typeof source !== 'string' || typeof text !== 'string' || !text.trim()) continue;
+      const cur = typeof mine[key] === 'string' ? mine[key] : '';
+      if (text.trim() === cur.trim()) continue;          // already what ships
+      list.push({ lang, key, kind: 'suggest', suggestion: text.trim(), source, current: cur });
+    }
+  }
+  return list;
+}
+function trOldDraftsHtml() {
+  const n = trOldDrafts().length;
+  if (!n) { try { localStorage.removeItem(TR_OLD_KEY); } catch (e) {} return ''; }
+  return `<div class="tr-banner draft tr-old" id="tr-old">${escHtml(t('tool.i18n.oldDrafts', { n: I18n.fmt.num(n) }))}
+    <div class="tr-actions"><button type="button" class="btn-sm btn-teal" id="tr-old-send">${escHtml(t('tool.i18n.oldDraftsSend'))}</button>
+    <button type="button" class="btn-sm tr-skip" id="tr-old-delete">${escHtml(t('tool.i18n.oldDraftsDelete'))}</button></div></div>`;
+}
+function trWireOldDrafts(rerender) {
+  const send = document.getElementById('tr-old-send');
+  if (!send) return;
+  send.addEventListener('click', () => {
+    const list = trOldDrafts();
+    const q = trLoad(TR_QUEUE_KEY, []); q.push(...list); trSave(TR_QUEUE_KEY, q);
+    try { localStorage.removeItem(TR_OLD_KEY); } catch (e) {}
+    trFlush();
+    rerender();
+    showToast(t(navigator.onLine ? 'tool.i18n.sent' : 'tool.i18n.savedOffline'));
+  });
+  document.getElementById('tr-old-delete').addEventListener('click', () => {
+    try { localStorage.removeItem(TR_OLD_KEY); } catch (e) {}
+    rerender();
+  });
+}
+
 // ─── The page ───────────────────────────────────────────
 let _trLang = null;
 let _trShowSkipped = false;
+let _trUnwire = null;   // the current editor's document listener
 
 function trTargetLang() {
   const fromHash = (location.hash.match(/^#\/translate\/([\w-]+)/) || [])[1];
@@ -299,7 +434,8 @@ function trRender(el) {
       <button type="button" class="tr-link" id="tr-change">${escHtml(t('tool.i18n.changeLanguage'))}</button>
     </div>
     <div class="tr-bar" aria-hidden="true"><span style="width:${items.length ? (100 * done / items.length).toFixed(1) : 0}%"></span></div>
-    <p class="tr-queued" id="tr-queued" role="status" hidden></p>`;
+    <p class="tr-queued" id="tr-queued" role="status" hidden></p>
+    ${trOldDraftsHtml()}`;
 
   if (!next) {
     el.innerHTML = `<div class="tr-wrap">${head}
@@ -311,19 +447,19 @@ function trRender(el) {
   } else {
     const html = trIsHtml(next.source);
     const editable = trToEdit(next.cur, html);
-    const tokens = trTokens(next.source);
     const banner = next.state === 0 ? 'missing' : next.state === 1 ? 'draft' : next.state === 2 ? 'stale' : '';
     el.innerHTML = `<div class="tr-wrap">${head}
       <div class="card tr-card">
         <div class="tr-where">${escHtml(next.where())}</div>
         ${banner ? `<p class="tr-banner ${banner}">${escHtml(t('tool.i18n.banner_' + banner))}</p>` : ''}
         <div class="tr-label">English</div>
-        <div class="tr-en" lang="en" dir="ltr">${next.source}</div>
-        <label class="tr-label" for="tr-text" lang="${lang}" dir="${meta.dir}">${escHtml(meta.native)}</label>
-        <textarea id="tr-text" class="tool-textarea tr-text" rows="${Math.min(10, Math.max(3, Math.ceil(next.source.length / 45)))}"
-          lang="${lang}" dir="${meta.dir}" autocapitalize="sentences">${escHtml(editable)}</textarea>
-        ${tokens.length ? `<p class="tr-keep">${escHtml(t('tool.i18n.keepTokens'))}
-          ${[...new Set(tokens)].map(x => `<button type="button" class="tr-token" data-token="${escHtml(x)}" dir="ltr">${escHtml(x)}</button>`).join(' ')}</p>` : ''}
+        <div class="tr-en" lang="en" dir="ltr">${trSourceHtml(next.source)}</div>
+        <div class="tr-label" id="tr-text-label" lang="${lang}" dir="${meta.dir}">${escHtml(meta.native)}</div>
+        <div id="tr-text" class="tool-textarea tr-text" contenteditable="true" role="textbox" aria-multiline="true"
+          aria-labelledby="tr-text-label" spellcheck="true" autocapitalize="sentences"
+          style="min-height:${Math.min(10, Math.max(3, Math.ceil(next.source.length / 45))) * 1.5 + 1.3}em"
+          lang="${lang}" dir="${meta.dir}">${trEditorHtml(editable)}</div>
+        <p class="tr-keep" id="tr-keep" hidden></p>
         <p class="tr-error" id="tr-error" role="alert" hidden></p>
         <div class="tr-actions">
           <button type="button" class="btn-sm btn-teal" id="tr-send">${escHtml(t('tool.i18n.send'))}</button>
@@ -338,29 +474,24 @@ function trRender(el) {
     const send = document.getElementById('tr-send');
     const ok = document.getElementById('tr-ok');
     const err = document.getElementById('tr-error');
+    const text = () => trEditorText(ta);
     const sync = () => {
-      const changed = ta.value.trim() !== editable.trim();
-      send.disabled = !ta.value.trim() || !changed;
+      const changed = text().trim() !== editable.trim();
+      send.disabled = !text().trim() || !changed;
       ok.disabled = changed;
       err.hidden = true;
     };
-    ta.addEventListener('input', sync);
+    if (_trUnwire) _trUnwire();
+    _trUnwire = trWireEditor(ta, next.source, document.getElementById('tr-keep'), sync);
     sync();
-
-    el.querySelectorAll('[data-token]').forEach(b => b.addEventListener('click', () => {
-      const s = ta.selectionStart ?? ta.value.length, e = ta.selectionEnd ?? s;
-      ta.value = ta.value.slice(0, s) + b.dataset.token + ta.value.slice(e);
-      ta.focus(); ta.setSelectionRange(s + b.dataset.token.length, s + b.dataset.token.length);
-      sync();
-    }));
 
     const advance = msg => { trRender(el); if (msg) showToast(msg); };
     send.addEventListener('click', () => {
-      const suggestion = trFromEdit(ta.value, html);
+      const suggestion = trFromEdit(text(), html);
       const { missing, extra } = trMissingTokens(next.source, suggestion);
       if (missing.length || extra.length) {
         err.textContent = t(missing.length ? 'tool.i18n.tokensMissing' : 'tool.i18n.tokensExtra',
-          { tokens: (missing.length ? missing : extra).join(' ') });
+          { tokens: trTokenNames(missing.length ? missing : extra) });
         err.hidden = false;
         return;
       }
@@ -376,6 +507,7 @@ function trRender(el) {
     document.getElementById('tr-skip').addEventListener('click', () => { trMark(lang, next, 'skip'); advance(); });
   }
 
+  trWireOldDrafts(() => trRender(el));
   document.getElementById('tr-change').addEventListener('click', () => {
     trSave(TR_LANG_KEY, null);
     _trShowSkipped = false;
@@ -478,8 +610,6 @@ function trOpenSheet(key, from) {
   const cur = typeof curRaw === 'string' ? curRaw : '';
   const html = trIsHtml(source);
   const editable = trToEdit(cur, html);
-  const tokens = [...new Set(trTokens(source))];
-
   let sheet = document.getElementById('suggest-sheet');
   if (!sheet) { sheet = document.createElement('div'); sheet.id = 'suggest-sheet'; document.body.appendChild(sheet); }
   sheet.setAttribute('role', 'dialog');
@@ -488,11 +618,12 @@ function trOpenSheet(key, from) {
   sheet.innerHTML = `<div class="sg-inner">
       <h2 id="sg-title" class="sg-title">${escHtml(t('tool.i18n.sheetTitle'))}</h2>
       <div class="tr-label">English</div>
-      <div class="tr-en" lang="en" dir="ltr">${source}</div>
-      <label class="tr-label" for="sg-text" lang="${lang}" dir="${meta.dir}">${escHtml(meta.native)}</label>
-      <textarea id="sg-text" class="tool-textarea tr-text" rows="4" lang="${lang}" dir="${meta.dir}">${escHtml(editable)}</textarea>
-      ${tokens.length ? `<p class="tr-keep">${escHtml(t('tool.i18n.keepTokens'))}
-        ${tokens.map(x => `<button type="button" class="tr-token" data-token="${escHtml(x)}" dir="ltr">${escHtml(x)}</button>`).join(' ')}</p>` : ''}
+      <div class="tr-en" lang="en" dir="ltr">${trSourceHtml(source)}</div>
+      <div class="tr-label" id="sg-text-label" lang="${lang}" dir="${meta.dir}">${escHtml(meta.native)}</div>
+      <div id="sg-text" class="tool-textarea tr-text" contenteditable="true" role="textbox" aria-multiline="true"
+        aria-labelledby="sg-text-label" spellcheck="true" style="min-height:7.3em"
+        lang="${lang}" dir="${meta.dir}">${trEditorHtml(editable)}</div>
+      <p class="tr-keep" id="sg-keep" hidden></p>
       <p class="tr-error" id="sg-error" role="alert" hidden></p>
       <div class="tr-actions">
         <button type="button" class="btn-sm btn-teal" id="sg-send">${escHtml(t('tool.i18n.send'))}</button>
@@ -504,24 +635,21 @@ function trOpenSheet(key, from) {
   const ta = document.getElementById('sg-text');
   const send = document.getElementById('sg-send');
   const err = document.getElementById('sg-error');
-  const close = () => { sheet.hidden = true; document.removeEventListener('keydown', onKey, true); if (from && from.focus) from.focus(); };
+  const text = () => trEditorText(ta);
+  let unwire = null;
+  const close = () => { sheet.hidden = true; document.removeEventListener('keydown', onKey, true); if (unwire) unwire(); if (from && from.focus) from.focus(); };
   const onKey = ev => { if (ev.key === 'Escape') { ev.preventDefault(); close(); } };
   document.addEventListener('keydown', onKey, true);
-  const sync = () => { send.disabled = !ta.value.trim() || ta.value.trim() === editable.trim(); err.hidden = true; };
-  ta.addEventListener('input', sync); sync();
+  const sync = () => { send.disabled = !text().trim() || text().trim() === editable.trim(); err.hidden = true; };
+  unwire = trWireEditor(ta, source, document.getElementById('sg-keep'), sync); sync();
   sheet.onclick = ev => { if (ev.target === sheet) close(); };
-  sheet.querySelectorAll('[data-token]').forEach(b => b.addEventListener('click', () => {
-    const s = ta.selectionStart ?? ta.value.length, e = ta.selectionEnd ?? s;
-    ta.value = ta.value.slice(0, s) + b.dataset.token + ta.value.slice(e);
-    ta.focus(); sync();
-  }));
   document.getElementById('sg-cancel').onclick = close;
   send.onclick = () => {
-    const suggestion = trFromEdit(ta.value, html);
+    const suggestion = trFromEdit(text(), html);
     const { missing, extra } = trMissingTokens(source, suggestion);
     if (missing.length || extra.length) {
       err.textContent = t(missing.length ? 'tool.i18n.tokensMissing' : 'tool.i18n.tokensExtra',
-        { tokens: (missing.length ? missing : extra).join(' ') });
+        { tokens: trTokenNames(missing.length ? missing : extra) });
       err.hidden = false;
       return;
     }

@@ -73,17 +73,11 @@ window.MYOB_LOCALES.tl = {
       "severeHeadache": "Matinding sakit ng ulo",
       "visionChanges": "Pagbabago sa paningin",
       "suddenSwellingOfFaceHands": "Biglang pamamaga ng mukha o kamay",
-      "fever1004F": "Lagnat &gt;{temp:100.4}",
+      "fever1004F": "Lagnat na {temp:100.4} o higit pa",
       "contractionsBefore37Weeks": "Paghilab bago mag-37 linggo",
       "myInfoContacts": "Aking Info &amp;<br>Mga Contact",
       "saveYourCareTeamContacts": "I-save ang mga Contact ng Iyong Care Team",
-      "tapToCallOrText": "I-tap para tumawag o mag-text mula mismo sa app",
-      "afterDelivery": "Pagkapanganak",
-      "soaking1PadHr2": "Nababasa nang buo ang 1 pad sa loob ng isang oras",
-      "woundOpensOrOozes": "Bumubuka o nagnanana ang sugat",
-      "legRednessSwelling": "Pamumula/pamamaga ng binti",
-      "chestPainOrTroubleBreathing": "Sakit sa dibdib o hirap huminga",
-      "thoughtsOfSelfHarm": "Naiisip na saktan ang sarili"
+      "tapToCallOrText": "I-tap para tumawag o mag-text mula mismo sa app"
     },
     "disclaimer": {
       "title": "Bago magsimula",
@@ -96,7 +90,7 @@ window.MYOB_LOCALES.tl = {
       "whatThisIs": "Ano ang Obiana",
       "privacyHeading": "Ang iyong impormasyon",
       "privacyOnDevice": "Ang iyong itinatala ay nananatili sa teleponong ito. Walang account, walang sign-in, walang ipinapadala. Mawawala ito kapag binura mo ang data ng browser, kaya gamitin ang Export para magkaroon ng kopya.",
-      "privacySubmit": "Dalawang button lang ang nagpapadala: ang Help translate at ang Help Improve This Guide. Ipinapadala nila ang isinulat mo, ang iyong bansa, at isang naka-scramble na network address para maiwasan ang spam. Hindi kailanman ang pangalan mo o ang laman ng iyong mga tracker.",
+      "privacySubmit": "Dalawang button lang ang nagpapadala: ang Tumulong magsalin at ang Tumulong Pagandahin ang Gabay na Ito. Ipinapadala nila ang isinulat mo, ang iyong bansa, at isang naka-scramble na network address para maiwasan ang spam. Hindi kailanman ang pangalan mo o ang laman ng iyong mga tracker.",
       "openSource": "Libre at open source.",
       "viewSource": "Tingnan ang source (AGPL-3.0)"
     },
@@ -626,7 +620,7 @@ window.MYOB_LOCALES.tl = {
         "banner_missing": "Wala pang salin. Sumulat ng isa, o laktawan.",
         "banner_draft": "Isang makina ang sumulat nito. Suriin itong mabuti.",
         "banner_stale": "Nagbago ang Ingles pagkatapos itong isalin. Tiyaking pareho pa rin ang sinasabi.",
-        "keepTokens": "Panatilihin ang mga ito nang eksakto. I-tap ang isa para idagdag:",
+        "putBack": "I-tap para ibalik:",
         "tokensMissing": "Ibalik ang {tokens} bago ipadala.",
         "tokensExtra": "Alisin ang {tokens}. Wala ito sa Ingles.",
         "send": "Ipadala",
@@ -643,7 +637,10 @@ window.MYOB_LOCALES.tl = {
         "tapBar": "I-tap ang anumang may salungguhit na pangungusap para magmungkahi ng mas magandang salita.",
         "tapOff": "I-off",
         "sheetTitle": "Magmungkahi ng mas magandang salita",
-        "cancel": "Kanselahin"
+        "cancel": "Kanselahin",
+        "oldDrafts": "Hindi naipadala ang mga pangungusap na isinulat mo sa lumang translation tool: {n}.",
+        "oldDraftsSend": "Ipadala",
+        "oldDraftsDelete": "Burahin"
       },
       "improve": {
         "intro": "Sabihin sa amin ang kulang: paano ginagawa ang isang bagay sa kultura mo, tanong na hindi sinasagot ng gabay na ito, o bahaging mahirap sundan.",
@@ -882,7 +879,7 @@ window.MYOB_LOCALES.tl = {
         "Pumunta sa ER o tumawag sa 911 kung may",
         "Pananakit ng dibdib o hirap huminga · Kombulsyon · Biglaang matinding sakit ng ulo na hindi pa naranasan · Senyales ng stroke (nakalaylay na mukha, mahinang braso, bulol na pagsasalita) · Iniisip na saktan ang sarili o ang baby",
         "Tawagan ang iyong family doctor, OB o komadrona kung may",
-        "Lagnat &gt;{temp:100.4} · Basang-basa ang 1 napkin sa loob ng isang oras · Matinding sakit ng ulo na hindi nawawala sa ibuprofen/Tylenol · Pagbabago sa paningin · Pamumula, pamamaga, o init sa binti (DVT, namuong dugo sa malalim na ugat) · Bumubukang sugat, kumakalat na pamumula, o nana · Hirap umihi · Senyales ng postpartum depression (PPD) o pagkabalisa",
+        "Lagnat na {temp:100.4} o higit pa · Basang-basa ang 1 napkin sa loob ng isang oras · Matinding sakit ng ulo na hindi nawawala sa ibuprofen/Tylenol · Pagbabago sa paningin · Pamumula, pamamaga, o init sa binti (DVT, namuong dugo sa malalim na ugat) · Bumubukang sugat, kumakalat na pamumula, o nana · Hirap umihi · Senyales ng postpartum depression (PPD) o pagkabalisa",
         "Ang iskedyul ng iyong postpartum check-up, at ang mga tanong na dapat dalhin sa anim na linggong check-up, ay nasa card na Follow-Up na Check-up sa ilalim ng Sanggol, katabi ng mga check-up ng iyong sanggol para makita mo ang dalawa nang sabay."
       ]
     },
@@ -948,7 +945,7 @@ window.MYOB_LOCALES.tl = {
         "Maitim na unang dumi (meconium)",
         "✓ Oo. Dapat lumabas sa loob ng 24–48 oras",
         "Tawagan agad ang doktor ng baby kung may",
-        "Lagnat ≥ {temp:100.4} sa puwit (seryoso sa bagong silang. Laging sa puwit kunin ang temperatura) · Ayaw dumede · Matinding paninilaw · Umuungol sa bawat hinga · Napakaputla ng balat · Iyak na hindi mapatahan · Mas kaunti sa 6 na basang diaper bawat araw pagkalipas ng ika-5 araw · Naninigas na leeg. Asul o kulay-abo na labi o mukha: tumawag sa 911."
+        "Lagnat na {temp:100.4} o higit pa sa puwit (seryoso sa bagong silang. Laging sa puwit kunin ang temperatura) · Ayaw dumede · Matinding paninilaw · Umuungol sa bawat hinga · Napakaputla ng balat · Iyak na hindi mapatahan · Mas kaunti sa 6 na basang diaper bawat araw pagkalipas ng ika-5 araw · Naninigas na leeg. Asul o kulay-abo na labi o mukha: tumawag sa 911."
       ]
     },
     "faq-deli": {
@@ -1250,7 +1247,7 @@ window.MYOB_LOCALES.tl = {
         "Hakbang 3: Labor Room",
         "Kapag na-admit na, sa kuwarto ka na hanggang matapos. Ang nurse mo ang pangunahing gabay at regular kang titingnan. Ito ang oras para pag-usapan ang mga gusto mo sa panganganak at mga opsiyon sa pag-alis ng sakit.",
         "Dalhin Ito sa Ospital",
-        "ID at insurance card · Ang booklet na ito na may mga contact mo · Charger ng telepono · Komportableng damit para sa labor at paggaling · Damit pauwi ng sanggol at car seat · Mga gamit sa paglilinis ng katawan · Meryenda para sa kasama mo"
+        "ID at insurance card · Ang mga numero ng iyong care team, naka-save sa Ako · Charger ng telepono · Komportableng damit para sa labor at paggaling · Damit pauwi ng sanggol at car seat · Mga gamit sa paglilinis ng katawan · Meryenda para sa kasama mo"
       ]
     },
     "stages-of-labor": {
@@ -1374,7 +1371,7 @@ window.MYOB_LOCALES.tl = {
         "Huwag magbuhat ng anumang mas mabigat sa sanggol mo sa loob ng 4–6 na linggo",
         "Ang hiwa ay pahalang na \"bikini-line\" na peklat, isinara gamit ang staple o natutunaw na tahi",
         "Tumawag Pagkauwi Mula sa C-Section Kung",
-        "Bumuka ang hiwa, kumakalat ang pamumula palabas, o may kakaibang lumalabas · Lagnat &gt;{temp:100.4} · Lumalala sa halip na gumagaling ang sakit · Nababasa nang buo ang 1 pad sa loob ng isang oras",
+        "Bumuka ang hiwa, kumakalat ang pamumula palabas, o may kakaibang lumalabas · Lagnat na {temp:100.4} o higit pa · Lumalala sa halip na gumagaling ang sakit · Nababasa nang buo ang 1 pad sa loob ng isang oras",
         "VBAC. Normal na Panganganak Pagkatapos ng Cesarean",
         "Kung nagkaroon ka ng isang naunang low-transverse na C-section, maaaring opsiyon ang VBAC sa pagbubuntis na ito. 60–80% ang tsansang magtagumpay. Pag-usapan ito nang maaga sa prenatal care."
       ]
@@ -1667,7 +1664,7 @@ window.MYOB_LOCALES.tl = {
         "Masakit na utong",
         "Tingnan muna ang latch. Ito ang #1 na sanhi. Magpahid ng piniga mong gatas o lanolin pagkatapos magpasuso. Patuyuin sa hangin. Kadalasang gumaganda pagkalipas ng araw 5 kapag dumating na ang gatas at gumanda ang latch.",
         "Engorgement (paninigas ng suso)",
-        "Pasusuhin ang sanggol tuwing gutom siya. Huwag mag-pump para ubusin ang laman ng suso: sinasabi nito sa katawan na gumawa pa ng mas maraming gatas. Kung masyadong matigas ang suso para mag-latch, pigain muna nang kaunti gamit ang kamay para lumambot. Malamig na pack pagkatapos magpasuso para mabawasan ang pamamaga. Maaaring magdulot ng mababang lagnat. Kung &gt;{temp:100.4}, tawagan ang iyong doktor.",
+        "Pasusuhin ang sanggol tuwing gutom siya. Huwag mag-pump para ubusin ang laman ng suso: sinasabi nito sa katawan na gumawa pa ng mas maraming gatas. Kung masyadong matigas ang suso para mag-latch, pigain muna nang kaunti gamit ang kamay para lumambot. Malamig na pack pagkatapos magpasuso para mabawasan ang pamamaga. Maaaring magdulot ng mababang lagnat. Kung {temp:100.4} o higit pa, tawagan ang iyong doktor.",
         "Pag-aalala na kulang ang gatas",
         "Magpasuso nang mas madalas. Sumusunod ang supply sa demand. Tiyaking maganda ang latch. Mag-pump pagkatapos magpasuso para senyasang gumawa pa. Pumunta sa lactation consultant. Karamihan ng inaakalang kulang na gatas ay talagang sapat.",
         "Baradong daluyan ng gatas",
@@ -2068,7 +2065,7 @@ window.MYOB_LOCALES.tl = {
     "content.postpartum-danger.t.0": "8e2a678f78c207ed",
     "content.postpartum-danger.t.1": "d26dc5484bcab5f6",
     "content.postpartum-danger.t.2": "bee2b3c377a8a3e5",
-    "content.postpartum-danger.t.3": "03c000a554e9734b",
+    "content.postpartum-danger.t.3": "0373b234f57eb132",
     "content.signs-of-labor.t.11": "3973fa2849b83e92",
     "content.signs-of-labor.t.12": "61f8135000473a76",
     "content.signs-of-labor.t.13": "d0b262a299176734",
@@ -2077,7 +2074,7 @@ window.MYOB_LOCALES.tl = {
     "content.signs-of-labor.t.16": "ac6a34b445ceccaa",
     "content.signs-of-labor.t.17": "b007f20008122ab6",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "11a67bb6600db664",
+    "content.normal-newborn.t.32": "8535f75dd7c74fd7",
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
@@ -2273,7 +2270,7 @@ window.MYOB_LOCALES.tl = {
     "content.what-happens-on-arrival.t.10": "92782e29e06813c3",
     "content.what-happens-on-arrival.t.11": "0a91819b6f404a29",
     "content.what-happens-on-arrival.t.12": "fd51bb1dd2656933",
-    "content.what-happens-on-arrival.t.13": "ac94f10bf3c32979",
+    "content.what-happens-on-arrival.t.13": "43eaacf9556e91bf",
     "content.stages-of-labor.title": "86dbc82a7b2abf9c",
     "content.stages-of-labor.sub": "de461901641975a7",
     "content.stages-of-labor.t.0": "2e160bcd50a4746f",
@@ -2381,7 +2378,7 @@ window.MYOB_LOCALES.tl = {
     "content.csection.t.23": "03b0235cac26896a",
     "content.csection.t.24": "04b03da54128058f",
     "content.csection.t.25": "f6fa8c9fde0476e5",
-    "content.csection.t.26": "ad79a07707d57275",
+    "content.csection.t.26": "c0426d5eb45c638c",
     "content.csection.t.27": "e04d3a00a0c48e1a",
     "content.csection.t.28": "24b632c57b1d608f",
     "content.mfm.title": "6c228d117e74de43",
@@ -2607,7 +2604,7 @@ window.MYOB_LOCALES.tl = {
     "content.bf-challenges.t.2": "7d8bf4ad4287bdff",
     "content.bf-challenges.t.3": "c4998859be296f4b",
     "content.bf-challenges.t.4": "3a2ce81ac9dcbe3c",
-    "content.bf-challenges.t.5": "df4fff0e4157a4bc",
+    "content.bf-challenges.t.5": "4f38540115ee91ef",
     "content.bf-challenges.t.6": "4a83c479c8b90393",
     "content.bf-challenges.t.7": "40cb72bdfa8524ab",
     "content.bf-challenges.t.8": "7c415028fad1dc52",
@@ -4191,12 +4188,6 @@ window.MYOB_LOCALES.tl = {
     "home.myInfoContacts": 1,
     "home.saveYourCareTeamContacts": 1,
     "home.tapToCallOrText": 1,
-    "home.afterDelivery": 1,
-    "home.soaking1PadHr2": 1,
-    "home.woundOpensOrOozes": 1,
-    "home.legRednessSwelling": 1,
-    "home.chestPainOrTroubleBreathing": 1,
-    "home.thoughtsOfSelfHarm": 1,
     "pregnancy.section1": 1,
     "pregnancy.prenatalVisitsPregnancy": 1,
     "labor.section2": 1,

@@ -73,17 +73,11 @@ window.MYOB_LOCALES["pt-BR"] = {
       "severeHeadache": "Dor de cabeça forte",
       "visionChanges": "Mudanças na visão",
       "suddenSwellingOfFaceHands": "Inchaço repentino no rosto ou nas mãos",
-      "fever1004F": "Febre &gt;{temp:100.4}",
+      "fever1004F": "Febre de {temp:100.4} ou mais",
       "contractionsBefore37Weeks": "Contrações antes de 37 semanas",
       "myInfoContacts": "Minhas informações &amp;<br>contatos",
       "saveYourCareTeamContacts": "Salve os contatos da sua equipe",
-      "tapToCallOrText": "Toque para ligar ou mandar mensagem direto do app",
-      "afterDelivery": "Depois do parto",
-      "soaking1PadHr2": "Encharcar 1 absorvente em uma hora",
-      "woundOpensOrOozes": "A incisão abre ou vaza",
-      "legRednessSwelling": "Perna vermelha/inchada",
-      "chestPainOrTroubleBreathing": "Dor no peito ou falta de ar",
-      "thoughtsOfSelfHarm": "Pensamentos de se machucar"
+      "tapToCallOrText": "Toque para ligar ou mandar mensagem direto do app"
     },
     "disclaimer": {
       "title": "Antes de começar",
@@ -631,7 +625,7 @@ window.MYOB_LOCALES["pt-BR"] = {
         "banner_missing": "Ainda sem tradução. Escreva uma ou pule.",
         "banner_draft": "Uma máquina escreveu isto. Revise com cuidado.",
         "banner_stale": "O inglês mudou depois desta tradução. Confira se ainda diz a mesma coisa.",
-        "keepTokens": "Mantenha estes exatamente como estão. Toque em um para inserir:",
+        "putBack": "Toque para colocar de volta:",
         "tokensMissing": "Coloque {tokens} de volta antes de enviar.",
         "tokensExtra": "Tire {tokens}. O inglês não tem isso.",
         "send": "Enviar",
@@ -648,7 +642,10 @@ window.MYOB_LOCALES["pt-BR"] = {
         "tapBar": "Toque em qualquer frase sublinhada para sugerir um texto melhor.",
         "tapOff": "Desligar",
         "sheetTitle": "Sugerir texto melhor",
-        "cancel": "Cancelar"
+        "cancel": "Cancelar",
+        "oldDrafts": "As frases que você escreveu na ferramenta de tradução antiga nunca foram enviadas: {n}.",
+        "oldDraftsSend": "Enviar",
+        "oldDraftsDelete": "Apagar"
       },
       "improve": {
         "intro": "Conte o que está faltando: como algo é feito na sua cultura, uma pergunta que este guia não responde, ou uma parte difícil de entender.",
@@ -887,7 +884,7 @@ window.MYOB_LOCALES["pt-BR"] = {
         "Vá ao pronto-socorro ou ligue para 911 se tiver",
         "Dor no peito ou dificuldade para respirar · Convulsão · Dor de cabeça forte e repentina, diferente de qualquer outra · Sinais de AVC (rosto caído, fraqueza no braço, fala enrolada) · Pensamentos de machucar você ou seu bebê",
         "Ligue para seu médico de família, obstetra ou parteira se tiver",
-        "Febre &gt;{temp:100.4} · Encharcar 1 absorvente em uma hora · Dor de cabeça forte que não melhora com ibuprofeno/Tylenol · Mudanças na visão · Vermelhidão, inchaço ou calor na perna (DVT, coágulo em veia profunda) · Ferida abrindo, vermelhidão se espalhando ou pus · Dificuldade para urinar · Sinais de depressão pós-parto (PPD) ou ansiedade",
+        "Febre de {temp:100.4} ou mais · Encharcar 1 absorvente em uma hora · Dor de cabeça forte que não melhora com ibuprofeno/Tylenol · Mudanças na visão · Vermelhidão, inchaço ou calor na perna (DVT, coágulo em veia profunda) · Ferida abrindo, vermelhidão se espalhando ou pus · Dificuldade para urinar · Sinais de depressão pós-parto (PPD) ou ansiedade",
         "Sua agenda de consultas pós-parto, e as perguntas que vale levar para a consulta de seis semanas, estão no cartão Consultas de acompanhamento, em Bebê, ao lado das consultas do seu bebê, para você ver as duas juntas."
       ]
     },
@@ -953,7 +950,7 @@ window.MYOB_LOCALES["pt-BR"] = {
         "Primeiro cocô escuro (mecônio)",
         "✓ Sim. Deve sair em 24–48 h",
         "Ligue imediatamente para o médico do bebê se houver",
-        "Febre ≥ {temp:100.4} retal (grave em recém-nascidos. Meça sempre a temperatura retal) · Recusa para mamar · Amarelão forte · Gemido a cada respiração · Pele muito pálida · Choro que não acalma · Menos de 6 fraldas molhadas por dia depois do 5º dia · Pescoço rígido. Lábios ou rosto azulados ou acinzentados: ligue para 911."
+        "Febre de {temp:100.4} ou mais, retal (grave em recém-nascidos. Meça sempre a temperatura retal) · Recusa para mamar · Amarelão forte · Gemido a cada respiração · Pele muito pálida · Choro que não acalma · Menos de 6 fraldas molhadas por dia depois do 5º dia · Pescoço rígido. Lábios ou rosto azulados ou acinzentados: ligue para 911."
       ]
     },
     "faq-deli": {
@@ -1255,7 +1252,7 @@ window.MYOB_LOCALES["pt-BR"] = {
         "Passo 3: Sala de parto",
         "Depois de internada, você fica no seu quarto até o fim. A enfermeira é sua principal guia e vai ver você com regularidade. É a hora de falar sobre suas preferências para o parto e as opções para a dor.",
         "Leve para o hospital",
-        "Documento e carteirinha do plano de saúde · Este guia com seus contatos · Carregador do celular · Roupas confortáveis para o parto e o pós-parto · Roupa do bebê para a saída e a cadeirinha do carro · Itens de higiene · Lanches para o acompanhante"
+        "Documento e carteirinha do plano de saúde · Os telefones da sua equipe de cuidado, salvos em Eu · Carregador do celular · Roupas confortáveis para o parto e o pós-parto · Roupa do bebê para a saída e a cadeirinha do carro · Itens de higiene · Lanches para o acompanhante"
       ]
     },
     "stages-of-labor": {
@@ -1379,7 +1376,7 @@ window.MYOB_LOCALES["pt-BR"] = {
         "Não levante nada mais pesado que o seu bebê por 4–6 semanas",
         "A incisão é uma cicatriz horizontal na \"linha do biquíni\", fechada com grampos ou pontos que se dissolvem",
         "Ligue depois da alta da cesárea se",
-        "A incisão abrir, a vermelhidão se espalhar para fora ou sair secreção estranha · Febre &gt;{temp:100.4} · A dor piorar em vez de melhorar · Encharcar 1 absorvente em uma hora",
+        "A incisão abrir, a vermelhidão se espalhar para fora ou sair secreção estranha · Febre de {temp:100.4} ou mais · A dor piorar em vez de melhorar · Encharcar 1 absorvente em uma hora",
         "VBAC. Parto normal depois de cesárea",
         "Se você teve uma cesárea anterior com corte transversal baixo, o VBAC pode ser uma opção nesta gravidez. A taxa de sucesso é de 60–80%. Converse sobre isso logo no início do pré-natal."
       ]
@@ -1672,7 +1669,7 @@ window.MYOB_LOCALES["pt-BR"] = {
         "Mamilos doloridos",
         "Confira a pega primeiro. É a causa nº 1. Passe leite materno ou lanolina depois das mamadas. Deixe secar ao ar. Geralmente melhora depois do 5º dia, quando o leite desce e a pega melhora.",
         "Ingurgitamento (peito empedrado)",
-        "Amamente o bebê sempre que ele tiver fome. Não tire leite para esvaziar o peito: isso diz ao corpo para fazer ainda mais leite. Se o peito estiver duro demais para a pega, tire um pouco com a mão antes para amolecer. Compressa fria depois da mamada para diminuir o inchaço. Pode dar febre baixa. Se &gt;{temp:100.4}, ligue para o seu médico.",
+        "Amamente o bebê sempre que ele tiver fome. Não tire leite para esvaziar o peito: isso diz ao corpo para fazer ainda mais leite. Se o peito estiver duro demais para a pega, tire um pouco com a mão antes para amolecer. Compressa fria depois da mamada para diminuir o inchaço. Pode dar febre baixa. Se chegar a {temp:100.4} ou mais, ligue para o seu médico.",
         "Preocupação com pouco leite",
         "Amamente com mais frequência. A produção segue a demanda. Garanta uma boa pega. Tire leite depois das mamadas para sinalizar mais produção. Procure uma consultora de amamentação. Na maioria das vezes, o leite que parece pouco é, na verdade, suficiente.",
         "Ducto entupido",
@@ -2073,7 +2070,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.postpartum-danger.t.0": "8e2a678f78c207ed",
     "content.postpartum-danger.t.1": "d26dc5484bcab5f6",
     "content.postpartum-danger.t.2": "bee2b3c377a8a3e5",
-    "content.postpartum-danger.t.3": "03c000a554e9734b",
+    "content.postpartum-danger.t.3": "0373b234f57eb132",
     "content.signs-of-labor.t.11": "3973fa2849b83e92",
     "content.signs-of-labor.t.12": "61f8135000473a76",
     "content.signs-of-labor.t.13": "d0b262a299176734",
@@ -2082,7 +2079,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.signs-of-labor.t.16": "ac6a34b445ceccaa",
     "content.signs-of-labor.t.17": "b007f20008122ab6",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "11a67bb6600db664",
+    "content.normal-newborn.t.32": "8535f75dd7c74fd7",
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
@@ -2278,7 +2275,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.what-happens-on-arrival.t.10": "92782e29e06813c3",
     "content.what-happens-on-arrival.t.11": "0a91819b6f404a29",
     "content.what-happens-on-arrival.t.12": "fd51bb1dd2656933",
-    "content.what-happens-on-arrival.t.13": "ac94f10bf3c32979",
+    "content.what-happens-on-arrival.t.13": "43eaacf9556e91bf",
     "content.stages-of-labor.title": "86dbc82a7b2abf9c",
     "content.stages-of-labor.sub": "de461901641975a7",
     "content.stages-of-labor.t.0": "2e160bcd50a4746f",
@@ -2386,7 +2383,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.csection.t.23": "03b0235cac26896a",
     "content.csection.t.24": "04b03da54128058f",
     "content.csection.t.25": "f6fa8c9fde0476e5",
-    "content.csection.t.26": "ad79a07707d57275",
+    "content.csection.t.26": "c0426d5eb45c638c",
     "content.csection.t.27": "e04d3a00a0c48e1a",
     "content.csection.t.28": "24b632c57b1d608f",
     "content.mfm.title": "6c228d117e74de43",
@@ -2612,7 +2609,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.bf-challenges.t.2": "7d8bf4ad4287bdff",
     "content.bf-challenges.t.3": "c4998859be296f4b",
     "content.bf-challenges.t.4": "3a2ce81ac9dcbe3c",
-    "content.bf-challenges.t.5": "df4fff0e4157a4bc",
+    "content.bf-challenges.t.5": "4f38540115ee91ef",
     "content.bf-challenges.t.6": "4a83c479c8b90393",
     "content.bf-challenges.t.7": "40cb72bdfa8524ab",
     "content.bf-challenges.t.8": "7c415028fad1dc52",
@@ -4196,12 +4193,6 @@ window.MYOB_LOCALES["pt-BR"] = {
     "home.myInfoContacts": 1,
     "home.saveYourCareTeamContacts": 1,
     "home.tapToCallOrText": 1,
-    "home.afterDelivery": 1,
-    "home.soaking1PadHr2": 1,
-    "home.woundOpensOrOozes": 1,
-    "home.legRednessSwelling": 1,
-    "home.chestPainOrTroubleBreathing": 1,
-    "home.thoughtsOfSelfHarm": 1,
     "pregnancy.section1": 1,
     "pregnancy.prenatalVisitsPregnancy": 1,
     "labor.section2": 1,

@@ -15,7 +15,8 @@ PASS=0; FAIL=0; SKIP=0
 
 run() {
   local lang="$1" out="$2" prompt="$3"
-  if [ -n "$WANT" ] && ! grep -qw "$lang" <<< "$WANT"; then return; fi
+  # Exact match: "pt-BR" must not also select a "pt" batch.
+  if [ -n "$WANT" ] && [[ " $WANT " != *" $lang "* ]]; then return; fi
 
   if [ -f "$out" ] && node translation/validate.js "$out" >/dev/null 2>&1; then
     echo "  skip (already valid): $out"; SKIP=$((SKIP+1)); return

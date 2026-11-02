@@ -70,17 +70,11 @@ window.MYOB_LOCALES.vi = {
       "severeHeadache": "Đau đầu dữ dội",
       "visionChanges": "Thay đổi thị lực",
       "suddenSwellingOfFaceHands": "Sưng mặt hoặc tay đột ngột",
-      "fever1004F": "Sốt &gt;{temp:100.4}",
+      "fever1004F": "Sốt từ {temp:100.4} trở lên",
       "contractionsBefore37Weeks": "Có cơn gò trước 37 tuần",
       "myInfoContacts": "Thông tin &amp;<br>Danh bạ",
       "saveYourCareTeamContacts": "Lưu danh bạ nhóm chăm sóc",
-      "tapToCallOrText": "Chạm để gọi hoặc nhắn tin ngay từ ứng dụng",
-      "afterDelivery": "Sau khi sinh",
-      "soaking1PadHr2": "Thấm ướt 1 băng vệ sinh trong một giờ",
-      "woundOpensOrOozes": "Vết mổ hở hoặc rỉ dịch",
-      "legRednessSwelling": "Chân đỏ/sưng",
-      "chestPainOrTroubleBreathing": "Đau ngực hoặc khó thở",
-      "thoughtsOfSelfHarm": "Ý nghĩ tự làm hại bản thân"
+      "tapToCallOrText": "Chạm để gọi hoặc nhắn tin ngay từ ứng dụng"
     },
     "disclaimer": {
       "title": "Trước khi bắt đầu",
@@ -618,7 +612,7 @@ window.MYOB_LOCALES.vi = {
         "banner_missing": "Chưa có bản dịch. Viết một bản, hoặc bỏ qua.",
         "banner_draft": "Máy đã viết câu này. Hãy kiểm tra kỹ.",
         "banner_stale": "Tiếng Anh đã thay đổi sau khi dịch câu này. Hãy kiểm tra xem còn cùng ý không.",
-        "keepTokens": "Giữ nguyên những phần này. Chạm vào để thêm:",
+        "putBack": "Chạm để thêm lại:",
         "tokensMissing": "Thêm lại {tokens} trước khi gửi.",
         "tokensExtra": "Bỏ {tokens}. Tiếng Anh không có phần này.",
         "send": "Gửi",
@@ -635,7 +629,10 @@ window.MYOB_LOCALES.vi = {
         "tapBar": "Chạm vào câu có gạch chân để đề xuất cách viết tốt hơn.",
         "tapOff": "Tắt",
         "sheetTitle": "Đề xuất cách viết tốt hơn",
-        "cancel": "Hủy"
+        "cancel": "Hủy",
+        "oldDrafts": "Các câu bạn viết trong công cụ dịch cũ chưa bao giờ được gửi: {n}.",
+        "oldDraftsSend": "Gửi đi",
+        "oldDraftsDelete": "Xóa"
       },
       "improve": {
         "intro": "Hãy cho chúng tôi biết điều còn thiếu: cách làm trong văn hóa của bạn, một câu hỏi mà hướng dẫn này chưa trả lời, hoặc một phần khó hiểu.",
@@ -874,7 +871,7 @@ window.MYOB_LOCALES.vi = {
         "Đến phòng cấp cứu hoặc gọi 911 khi có",
         "Đau ngực hoặc khó thở · Co giật · Đau đầu dữ dội đột ngột, chưa từng bị như vậy · Dấu hiệu đột quỵ (méo mặt, yếu tay, nói ngọng) · Ý nghĩ làm hại bản thân hoặc em bé",
         "Gọi bác sĩ gia đình, bác sĩ sản khoa hoặc nữ hộ sinh khi có",
-        "Sốt &gt;{temp:100.4} · Thấm ướt 1 băng vệ sinh trong một giờ · Đau đầu dữ dội không đỡ khi dùng ibuprofen/Tylenol · Thay đổi thị lực · Chân đỏ, sưng hoặc nóng (DVT, cục máu đông ở tĩnh mạch sâu) · Vết mổ hở, đỏ lan rộng hoặc có mủ · Khó đi tiểu · Dấu hiệu trầm cảm sau sinh (PPD) hoặc lo âu",
+        "Sốt từ {temp:100.4} trở lên · Thấm ướt 1 băng vệ sinh trong một giờ · Đau đầu dữ dội không đỡ khi dùng ibuprofen/Tylenol · Thay đổi thị lực · Chân đỏ, sưng hoặc nóng (DVT, cục máu đông ở tĩnh mạch sâu) · Vết mổ hở, đỏ lan rộng hoặc có mủ · Khó đi tiểu · Dấu hiệu trầm cảm sau sinh (PPD) hoặc lo âu",
         "Lịch khám sau sinh của bạn, và những câu hỏi nên mang theo khi khám 6 tuần, nằm trong thẻ Lịch tái khám ở phần Em bé, cạnh lịch khám của bé để bạn xem cả hai cùng lúc."
       ]
     },
@@ -940,7 +937,7 @@ window.MYOB_LOCALES.vi = {
         "Phân đầu tiên màu sẫm (phân su)",
         "✓ Có. Nên đi trong 24–48 giờ",
         "Gọi bác sĩ của em bé ngay khi có",
-        "Sốt ≥ {temp:100.4} đo ở hậu môn (nghiêm trọng ở trẻ sơ sinh. Luôn đo nhiệt độ hậu môn) · Bỏ bú · Vàng da nặng · Rên khi thở · Da rất nhợt nhạt · Khóc không dỗ được · Ít hơn 6 tã ướt mỗi ngày sau ngày thứ 5 · Cứng cổ. Môi hoặc mặt tím tái hoặc xám: gọi 911."
+        "Sốt từ {temp:100.4} trở lên đo ở hậu môn (nghiêm trọng ở trẻ sơ sinh. Luôn đo nhiệt độ hậu môn) · Bỏ bú · Vàng da nặng · Rên khi thở · Da rất nhợt nhạt · Khóc không dỗ được · Ít hơn 6 tã ướt mỗi ngày sau ngày thứ 5 · Cứng cổ. Môi hoặc mặt tím tái hoặc xám: gọi 911."
       ]
     },
     "faq-deli": {
@@ -1242,7 +1239,7 @@ window.MYOB_LOCALES.vi = {
         "Bước 3: Phòng sinh",
         "Khi đã nhập viện, bạn ở trong phòng của mình suốt cuộc chuyển dạ. Điều dưỡng là người hướng dẫn chính và sẽ kiểm tra bạn thường xuyên. Đây là lúc bàn về mong muốn khi sinh và các cách giảm đau.",
         "Mang theo đến bệnh viện",
-        "Giấy tờ tùy thân và thẻ bảo hiểm · Cuốn sổ này có danh bạ của bạn · Sạc điện thoại · Quần áo thoải mái khi sinh và sau sinh · Quần áo về nhà và ghế ô tô cho bé · Đồ dùng vệ sinh cá nhân · Đồ ăn vặt cho người đi cùng"
+        "Giấy tờ tùy thân và thẻ bảo hiểm · Số điện thoại của nhóm chăm sóc, đã lưu trong mục Tôi · Sạc điện thoại · Quần áo thoải mái khi sinh và sau sinh · Quần áo về nhà và ghế ô tô cho bé · Đồ dùng vệ sinh cá nhân · Đồ ăn vặt cho người đi cùng"
       ]
     },
     "stages-of-labor": {
@@ -1366,7 +1363,7 @@ window.MYOB_LOCALES.vi = {
         "Không nâng gì nặng hơn em bé trong 4–6 tuần",
         "Vết mổ là sẹo ngang \"đường bikini\", đóng bằng ghim hoặc chỉ tự tiêu",
         "Sau khi xuất viện vì mổ lấy thai, hãy gọi nếu",
-        "Vết mổ hở, vùng đỏ lan rộng ra ngoài, hoặc có dịch bất thường · Sốt &gt;{temp:100.4} · Đau nặng hơn thay vì đỡ dần · Thấm ướt 1 băng vệ sinh trong một giờ",
+        "Vết mổ hở, vùng đỏ lan rộng ra ngoài, hoặc có dịch bất thường · Sốt từ {temp:100.4} trở lên · Đau nặng hơn thay vì đỡ dần · Thấm ướt 1 băng vệ sinh trong một giờ",
         "VBAC. Sinh thường sau mổ lấy thai",
         "Nếu bạn đã từng mổ lấy thai một lần với vết mổ ngang thấp, VBAC có thể là một lựa chọn trong thai kỳ này. Tỷ lệ thành công 60–80%. Hãy bàn việc này sớm khi bắt đầu khám thai."
       ]
@@ -1659,7 +1656,7 @@ window.MYOB_LOCALES.vi = {
         "Đau đầu vú",
         "Kiểm tra cách ngậm bắt trước. Đây là nguyên nhân số 1. Bôi sữa mẹ vắt ra hoặc lanolin sau khi bú. Để khô tự nhiên. Thường đỡ sau ngày 5 khi sữa về và bé ngậm tốt hơn.",
         "Căng sữa",
-        "Cho bé bú bất cứ khi nào bé đói. Đừng hút cho cạn vú: việc đó báo cơ thể tạo thêm sữa. Nếu vú căng cứng quá khiến bé không ngậm được, vắt tay một ít trước cho mềm. Chườm lạnh sau khi bú để giảm sưng. Có thể sốt nhẹ. Nếu &gt;{temp:100.4}, hãy gọi bác sĩ.",
+        "Cho bé bú bất cứ khi nào bé đói. Đừng hút cho cạn vú: việc đó báo cơ thể tạo thêm sữa. Nếu vú căng cứng quá khiến bé không ngậm được, vắt tay một ít trước cho mềm. Chườm lạnh sau khi bú để giảm sưng. Có thể sốt nhẹ. Nếu từ {temp:100.4} trở lên, hãy gọi bác sĩ.",
         "Lo ít sữa",
         "Cho bú thường hơn. Lượng sữa theo nhu cầu. Đảm bảo bé ngậm bắt tốt. Hút sữa sau khi bú để báo cơ thể tạo thêm. Gặp chuyên viên tư vấn sữa mẹ. Phần lớn trường hợp tưởng ít sữa thật ra là đủ.",
         "Tắc tia sữa",
@@ -2060,7 +2057,7 @@ window.MYOB_LOCALES.vi = {
     "content.postpartum-danger.t.0": "8e2a678f78c207ed",
     "content.postpartum-danger.t.1": "d26dc5484bcab5f6",
     "content.postpartum-danger.t.2": "bee2b3c377a8a3e5",
-    "content.postpartum-danger.t.3": "03c000a554e9734b",
+    "content.postpartum-danger.t.3": "0373b234f57eb132",
     "content.signs-of-labor.t.11": "3973fa2849b83e92",
     "content.signs-of-labor.t.12": "61f8135000473a76",
     "content.signs-of-labor.t.13": "d0b262a299176734",
@@ -2069,7 +2066,7 @@ window.MYOB_LOCALES.vi = {
     "content.signs-of-labor.t.16": "ac6a34b445ceccaa",
     "content.signs-of-labor.t.17": "b007f20008122ab6",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "11a67bb6600db664",
+    "content.normal-newborn.t.32": "8535f75dd7c74fd7",
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
@@ -2265,7 +2262,7 @@ window.MYOB_LOCALES.vi = {
     "content.what-happens-on-arrival.t.10": "92782e29e06813c3",
     "content.what-happens-on-arrival.t.11": "0a91819b6f404a29",
     "content.what-happens-on-arrival.t.12": "fd51bb1dd2656933",
-    "content.what-happens-on-arrival.t.13": "ac94f10bf3c32979",
+    "content.what-happens-on-arrival.t.13": "43eaacf9556e91bf",
     "content.stages-of-labor.title": "86dbc82a7b2abf9c",
     "content.stages-of-labor.sub": "de461901641975a7",
     "content.stages-of-labor.t.0": "2e160bcd50a4746f",
@@ -2373,7 +2370,7 @@ window.MYOB_LOCALES.vi = {
     "content.csection.t.23": "03b0235cac26896a",
     "content.csection.t.24": "04b03da54128058f",
     "content.csection.t.25": "f6fa8c9fde0476e5",
-    "content.csection.t.26": "ad79a07707d57275",
+    "content.csection.t.26": "c0426d5eb45c638c",
     "content.csection.t.27": "e04d3a00a0c48e1a",
     "content.csection.t.28": "24b632c57b1d608f",
     "content.mfm.title": "6c228d117e74de43",
@@ -2599,7 +2596,7 @@ window.MYOB_LOCALES.vi = {
     "content.bf-challenges.t.2": "7d8bf4ad4287bdff",
     "content.bf-challenges.t.3": "c4998859be296f4b",
     "content.bf-challenges.t.4": "3a2ce81ac9dcbe3c",
-    "content.bf-challenges.t.5": "df4fff0e4157a4bc",
+    "content.bf-challenges.t.5": "4f38540115ee91ef",
     "content.bf-challenges.t.6": "4a83c479c8b90393",
     "content.bf-challenges.t.7": "40cb72bdfa8524ab",
     "content.bf-challenges.t.8": "7c415028fad1dc52",
@@ -4183,12 +4180,6 @@ window.MYOB_LOCALES.vi = {
     "home.myInfoContacts": 1,
     "home.saveYourCareTeamContacts": 1,
     "home.tapToCallOrText": 1,
-    "home.afterDelivery": 1,
-    "home.soaking1PadHr2": 1,
-    "home.woundOpensOrOozes": 1,
-    "home.legRednessSwelling": 1,
-    "home.chestPainOrTroubleBreathing": 1,
-    "home.thoughtsOfSelfHarm": 1,
     "pregnancy.section1": 1,
     "pregnancy.prenatalVisitsPregnancy": 1,
     "labor.section2": 1,

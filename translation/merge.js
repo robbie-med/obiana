@@ -136,7 +136,7 @@ for (const [lang, groups] of Object.entries(byLang)) {
   // instrument and never comes from this pipeline. Same for the srcHash map
   // and any existing content: this file rewrites the locale wholesale, so
   // anything not carried across here is destroyed.
-  let existingEpds = null, existingHashes = null, existingContent = null;
+  let existingEpds = null, existingHashes = null, existingContent = null, existingUi = null;
   if (fs.existsSync(localeFile)) {
     global.window = { MYOB_LOCALES: {} };
     delete require.cache[require.resolve(localeFile)];
@@ -146,6 +146,7 @@ for (const [lang, groups] of Object.entries(byLang)) {
       existingEpds = prev.epds || null;
       existingHashes = prev.srcHash || null;
       existingContent = prev.content || null;
+      existingUi = prev.ui || null;
     } catch (e) {}
   }
 
@@ -154,7 +155,8 @@ for (const [lang, groups] of Object.entries(byLang)) {
     // hand only after a clinician has read this language's content.
     reviewed: false,
     translationStatus: 'machine',
-    ui: nest(uiFlat),
+    // Running with only content batches present must not wipe the ui block.
+    ui: groups.ui.length ? nest(uiFlat) : (existingUi || {}),
   };
   // Running with only ui batches present must not silently drop the guide.
   if (Object.keys(content).length) obj.content = content;

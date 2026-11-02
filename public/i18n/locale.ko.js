@@ -407,7 +407,7 @@ window.MYOB_LOCALES.ko = {
         "banner_missing": "아직 번역이 없습니다. 번역을 쓰거나 건너뛰세요.",
         "banner_draft": "기계가 쓴 번역입니다. 꼼꼼히 확인해 주세요.",
         "banner_stale": "이 번역 후에 영어가 바뀌었습니다. 여전히 같은 뜻인지 확인해 주세요.",
-        "keepTokens": "이 부분은 그대로 두세요. 누르면 추가됩니다:",
+        "putBack": "누르면 다시 들어갑니다:",
         "tokensMissing": "보내기 전에 {tokens}을(를) 다시 넣어 주세요.",
         "tokensExtra": "{tokens}을(를) 지우세요. 영어에는 없습니다.",
         "send": "보내기",
@@ -421,7 +421,10 @@ window.MYOB_LOCALES.ko = {
         "tapBar": "밑줄 친 문장을 누르면 더 나은 표현을 제안할 수 있습니다.",
         "tapOff": "끄기",
         "sheetTitle": "더 나은 표현 제안하기",
-        "cancel": "취소"
+        "cancel": "취소",
+        "oldDrafts": "이전 번역 도구에서 쓴 문장이 전송되지 않았습니다: {n}개.",
+        "oldDraftsSend": "보내기",
+        "oldDraftsDelete": "삭제하기"
       },
       "improve": {
         "intro": "부족한 점을 알려 주세요. 내 문화에서는 어떻게 하는지, 이 안내서에 없는 질문, 이해하기 어려웠던 부분 등.",
@@ -582,14 +585,8 @@ window.MYOB_LOCALES.ko = {
       "severeHeadache": "심한 두통",
       "visionChanges": "시야 변화",
       "suddenSwellingOfFaceHands": "얼굴/손의 갑작스러운 부종",
-      "fever1004F": "열 &gt;{temp:100.4}",
+      "fever1004F": "{temp:100.4} 이상의 열",
       "contractionsBefore37Weeks": "37주 이전 진통",
-      "afterDelivery": "출산 후",
-      "soaking1PadHr2": "1시간 안에 패드 1장이 흠뻑 젖음",
-      "woundOpensOrOozes": "상처가 벌어지거나 진물이 날 때",
-      "legRednessSwelling": "다리의 발적/부종",
-      "chestPainOrTroubleBreathing": "가슴 통증 또는 호흡 곤란",
-      "thoughtsOfSelfHarm": "자해 충동",
       "heroTitle": "미리 알고,<br>좋은 질문을<br>하세요."
     },
     "pregnancy": {
@@ -1041,7 +1038,7 @@ window.MYOB_LOCALES.ko = {
         "3단계: 분만실",
         "입원이 결정되면 출산까지 그 방에 머물게 됩니다. 담당 간호사가 산모님의 주된 안내자가 되어 정기적으로 상태를 확인합니다. 이때 출산에 대한 희망 사항과 통증 관리 방법을 상의하세요.",
         "병원에 가져갈 것",
-        "신분증과 보험 카드 · 연락처가 적힌 이 책자 · 휴대폰 충전기 · 진통 및 회복 기간에 입을 편안한 옷 · 아기의 퇴원용 옷과 카시트 · 세멘도구 · 동반 보호자를 위한 간식"
+        "신분증과 보험 카드 · '나'에 저장해 둔 의료진 전화번호 · 휴대폰 충전기 · 진통 및 회복 기간에 입을 편안한 옷 · 아기의 퇴원용 옷과 카시트 · 세멘도구 · 동반 보호자를 위한 간식"
       ]
     },
     "stages-of-labor": {
@@ -1165,7 +1162,7 @@ window.MYOB_LOCALES.ko = {
         "4–6주 동안 아기보다 무거운 것은 들지 않습니다",
         "절개 부위는 가로 방향의 \"비키니 라인\" 흉터로, 스테이플 또는 흡수성 봉합사로 닫습니다",
         "제왕절개 퇴원 후 이런 경우 연락하세요",
-        "절개 부위가 벌어지거나, 발적이 바깥으로 번지거나, 이상한 분비물이 나오는 경우 · 열이 &gt;{temp:100.4}인 경우 · 통증이 나아지기는커녕 심해지는 경우 · 1시간 안에 패드 1장이 흠뻑 젖는 경우",
+        "절개 부위가 벌어지거나, 발적이 바깥으로 번지거나, 이상한 분비물이 나오는 경우 · {temp:100.4} 이상의 열이 나는 경우 · 통증이 나아지기는커녕 심해지는 경우 · 1시간 안에 패드 1장이 흠뻑 젖는 경우",
         "VBAC. 제왕절개 후 질 분만",
         "이전에 하부 횡절개 제왕절개를 한 번 받은 경우, 이번 임신에 VBAC(제왕절개 후 질 분만)이 가능할 수 있습니다. 성공률은 60–80%입니다. 산전 관리 초기에 상의하세요."
       ]
@@ -1319,7 +1316,7 @@ window.MYOB_LOCALES.ko = {
         "다음의 경우 응급실에 가거나 911에 전화하세요",
         "흉통 또는 호흡 곤란 · 경련 · 전에 겪어본 적 없는 갑작스러운 심한 두통 · 뇌졸중 증상(얼굴 한쪽 처짐, 팔 힘 빠짐, 발음 어눌함) · 자신이나 아기를 해치고 싶은 생각",
         "다음의 경우 가정의학과 의사, 산부인과 의사 또는 조산사에게 연락하세요",
-        "열 &gt;{temp:100.4} · 1시간 안에 패드 1장이 흠뻑 젖음 · 이부프로펜/타이레놀로도 낫지 않는 심한 두통 · 시야 변화 · 다리의 발적, 부기 또는 열감(DVT, 심부정맥혈전증) · 상처가 벌어지거나 발적이 번지거나 고름이 나옴 · 소변 보기 어려움 · PPD 또는 불안 증상",
+        "{temp:100.4} 이상의 열 · 1시간 안에 패드 1장이 흠뻑 젖음 · 이부프로펜/타이레놀로도 낫지 않는 심한 두통 · 시야 변화 · 다리의 발적, 부기 또는 열감(DVT, 심부정맥혈전증) · 상처가 벌어지거나 발적이 번지거나 고름이 나옴 · 소변 보기 어려움 · PPD 또는 불안 증상",
         "산후 진료 일정과 6주 진료 때 가져갈 만한 질문은 아기 항목의 후속 진료 카드에 있습니다. 아기 진료와 함께 볼 수 있도록 나란히 정리되어 있습니다."
       ]
     },
@@ -1359,7 +1356,7 @@ window.MYOB_LOCALES.ko = {
         "유두 통증",
         "먼저 젖 물리기 자세를 확인하세요. 가장 흔한 원인입니다. 수유 후 짜낸 모유나 라놀린을 바르세요. 공기 중에 말리세요. 보통 생후 5일 이후 젖이 제대로 나오고 물리는 자세가 좋아지면 나아집니다.",
         "젖 몽우리(울혈)",
-        "아기가 배고파할 때마다 먹이세요. 가슴을 비우려고 유축하지 마세요. 그러면 몸이 젖을 더 많이 만듭니다. 가슴이 너무 단단해서 아기가 물기 어렵다면, 먼저 손으로 젖을 조금 짜서 부드럽게 하세요. 수유 후에는 차가운 찜질로 붓기를 줄이세요. 미열이 날 수 있습니다. &gt;{temp:100.4}이면 의사에게 연락하세요.",
+        "아기가 배고파할 때마다 먹이세요. 가슴을 비우려고 유축하지 마세요. 그러면 몸이 젖을 더 많이 만듭니다. 가슴이 너무 단단해서 아기가 물기 어렵다면, 먼저 손으로 젖을 조금 짜서 부드럽게 하세요. 수유 후에는 차가운 찜질로 붓기를 줄이세요. 미열이 날 수 있습니다. {temp:100.4} 이상이면 의사에게 연락하세요.",
         "젖양이 부족한 것 같을 때",
         "더 자주 먹이세요. 젖양은 수요를 따라갑니다. 젖 물리기 자세를 바로잡으세요. 수유 후 유축을 하면 더 만들라는 신호가 됩니다. 모유 수유 상담사를 만나세요. 부족하다고 느끼는 경우 대부분 실제로는 충분합니다.",
         "유관 막힘",
@@ -1471,7 +1468,7 @@ window.MYOB_LOCALES.ko = {
         "짙은 색의 첫 변(태변)",
         "✓ 정상. 24–48시간 안에 나와야 합니다",
         "바로 아기 담당 의사에게 연락해야 할 경우",
-        "직장 체온 ≥ {temp:100.4}의 열(신생아에게는 심각합니다. 항상 직장 체온을 재세요) · 먹기를 거부함 · 심한 황달 · 숨쉴 때마다 끙끙거리는 소리 · 매우 창백한 피부 · 달래도 그치지 않는 울음 · 생후 5일 이후 젖은 기저귀가 하루 6장 미만 · 목이 뻣뻣함. 입술이나 얼굴이 파랗거나 회색이면: 911에 전화하세요."
+        "직장 체온 {temp:100.4} 이상의 열(신생아에게는 심각합니다. 항상 직장 체온을 재세요) · 먹기를 거부함 · 심한 황달 · 숨쉴 때마다 끙끙거리는 소리 · 매우 창백한 피부 · 달래도 그치지 않는 울음 · 생후 5일 이후 젖은 기저귀가 하루 6장 미만 · 목이 뻣뻣함. 입술이나 얼굴이 파랗거나 회색이면: 911에 전화하세요."
       ]
     },
     "safe-sleep": {
@@ -2196,7 +2193,7 @@ window.MYOB_LOCALES.ko = {
     "content.what-happens-on-arrival.t.10": "92782e29e06813c3",
     "content.what-happens-on-arrival.t.11": "0a91819b6f404a29",
     "content.what-happens-on-arrival.t.12": "fd51bb1dd2656933",
-    "content.what-happens-on-arrival.t.13": "ac94f10bf3c32979",
+    "content.what-happens-on-arrival.t.13": "43eaacf9556e91bf",
     "content.stages-of-labor.title": "86dbc82a7b2abf9c",
     "content.stages-of-labor.sub": "de461901641975a7",
     "content.stages-of-labor.t.0": "2e160bcd50a4746f",
@@ -2304,7 +2301,7 @@ window.MYOB_LOCALES.ko = {
     "content.csection.t.23": "03b0235cac26896a",
     "content.csection.t.24": "04b03da54128058f",
     "content.csection.t.25": "f6fa8c9fde0476e5",
-    "content.csection.t.26": "ad79a07707d57275",
+    "content.csection.t.26": "c0426d5eb45c638c",
     "content.csection.t.27": "e04d3a00a0c48e1a",
     "content.csection.t.28": "24b632c57b1d608f",
     "content.mfm.title": "6c228d117e74de43",
@@ -2430,7 +2427,7 @@ window.MYOB_LOCALES.ko = {
     "content.postpartum-danger.t.0": "8e2a678f78c207ed",
     "content.postpartum-danger.t.1": "d26dc5484bcab5f6",
     "content.postpartum-danger.t.2": "bee2b3c377a8a3e5",
-    "content.postpartum-danger.t.3": "03c000a554e9734b",
+    "content.postpartum-danger.t.3": "0373b234f57eb132",
     "content.breastfeeding.title": "c57faccf43d647e5",
     "content.breastfeeding.sub": "fceab506c1cfc26c",
     "content.breastfeeding.t.0": "866addc074fa03ba",
@@ -2459,7 +2456,7 @@ window.MYOB_LOCALES.ko = {
     "content.bf-challenges.t.2": "7d8bf4ad4287bdff",
     "content.bf-challenges.t.3": "c4998859be296f4b",
     "content.bf-challenges.t.4": "3a2ce81ac9dcbe3c",
-    "content.bf-challenges.t.5": "df4fff0e4157a4bc",
+    "content.bf-challenges.t.5": "4f38540115ee91ef",
     "content.bf-challenges.t.6": "4a83c479c8b90393",
     "content.bf-challenges.t.7": "40cb72bdfa8524ab",
     "content.bf-challenges.t.8": "7c415028fad1dc52",
@@ -2559,7 +2556,7 @@ window.MYOB_LOCALES.ko = {
     "content.normal-newborn.t.29": "a646ba8ef31029a4",
     "content.normal-newborn.t.30": "b96a48ec64c8f9ba",
     "content.normal-newborn.t.31": "3f69f29898ba59ba",
-    "content.normal-newborn.t.32": "11a67bb6600db664",
+    "content.normal-newborn.t.32": "8535f75dd7c74fd7",
     "content.safe-sleep.title": "8f76ca906ecc7552",
     "content.safe-sleep.sub": "280c3d91955a45cb",
     "content.safe-sleep.t.0": "606d4b033e9658bd",

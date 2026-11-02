@@ -125,7 +125,7 @@ window.MYOB_LOCALES.zom = {
         "change": "Laih",
         "scoreNote": "{instrument} questionnaire ah, score mat lak pan {max} hi ta, hih questionnaire a ding published cutoffs in ki zang hi. Hih pen screening tool bek hi, diagnosis hi het lo hi. Hih result pen nang ong en te tawh en kik khawm in ki kum un.",
         "pastCheckIns": "A beisa check-in te",
-        "selfHarmGuidance": "Nang-leh-nang ki natsak nop na ngaihsut na nei ngei in dawng teh. Na Siavuan te tawh na ki zom in, 988 (Suicide & Crisis Lifeline) te ho pih, lai khak, ahihkeileh emergency room naai pen ah na pai in."
+        "selfHarmGuidance": "Nang-leh-nang ki natsak nop na ngaihsut na nei ngei in dawng teh. Na Siavuan te tawh na ki zom in, 988 (Suicide & Crisis Lifeline) te ho pih, lai khak, ahihkeileh emergency room naai pen ah na pai in. 911 Ho in."
       }
     }
   }
