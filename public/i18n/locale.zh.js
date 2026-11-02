@@ -1053,7 +1053,7 @@ window.MYOB_LOCALES.zh = {
         "-5 到 +5",
         "宝宝的头下降了多少。0 = 在坐骨棘水平（中点）。+3 到 +5 = 快出来了。",
         "Bishop 评分",
-        "医护人员有时用一个综合评分（Bishop 评分），包括扩张、消退、先露位置、宫颈软硬和位置，来预测宫颈是否准备好分娩。评分 ≥ 8 表示宫颈条件好，引产容易成功。",
+        "医生有时用一个综合评分（Bishop 评分），包括扩张、消退、先露位置、宫颈软硬和位置，来预测宫颈是否准备好分娩。评分 ≥ 8 表示宫颈条件好，引产容易成功。",
         "孕晚期的宫颈检查是可选的。36–38 周时宫口开了多少，并不能准确预测什么时候开始分娩。在活跃期，每 2–4 小时检查一次，跟踪宫口开到 10 cm 的进度。"
       ]
     },
@@ -1740,7 +1740,7 @@ window.MYOB_LOCALES.zh = {
       "title": "可以泡澡或泡热水池吗？",
       "sub": "",
       "t": [
-        "整个孕期都可以洗温水澡。会把核心体温升到 {temp:102}以上的热水池、桑拿和蒸汽房不建议，尤其在孕早期，体温升高与神经管缺陷有关。如果要泡热水池，温度要舒服（不烫），最多 10 分钟，孕早期不要泡。家里一般水温（{temp:98-100}）的温水澡是安全的。"
+        "整个孕期都可以洗温水澡。会把核心体温升到 {temp:102=39}以上的热水池、桑拿和蒸汽房不建议，尤其在孕早期，体温升高与神经管缺陷有关。如果要泡热水池，温度要舒服（不烫），最多 10 分钟，孕早期不要泡。家里一般水温（{temp:98-100}）的温水澡是安全的。"
       ]
     },
     "faq-epidural-csec": {
@@ -2153,7 +2153,7 @@ window.MYOB_LOCALES.zh = {
     "content.sve.t.11": "5942c1408bde8d76",
     "content.sve.t.12": "84486cd7e99298e5",
     "content.sve.t.13": "57a43c9bbcc13765",
-    "content.sve.t.14": "93209107b7c45b7d",
+    "content.sve.t.14": "73b3bb95fbedb9fb",
     "content.sve.t.15": "c4dd6ac97ed3ff6b",
     "content.exercise-pregnancy.title": "cf75aa879d88d165",
     "content.exercise-pregnancy.sub": "a70f9e3c265205e2",
@@ -2744,7 +2744,7 @@ window.MYOB_LOCALES.zh = {
     "content.faq-eat-for-two.title": "7109ae5ce8714502",
     "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
     "content.faq-hot-tub.title": "2230219d6f10d437",
-    "content.faq-hot-tub.t.0": "c7540b7dd2d9ca9f",
+    "content.faq-hot-tub.t.0": "9229e75e5b12dde0",
     "content.faq-epidural-csec.title": "85af8aced19ce724",
     "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
     "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",

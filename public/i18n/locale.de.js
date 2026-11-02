@@ -1012,7 +1012,7 @@ window.MYOB_LOCALES.de = {
       "title": "Darf ich baden oder in einen Whirlpool gehen?",
       "sub": "",
       "t": [
-        "Warme Bäder sind in der ganzen Schwangerschaft in Ordnung. Whirlpools, Saunen und Dampfbäder, die Ihre Körperkerntemperatur über {temp:102} steigen lassen, werden nicht empfohlen, vor allem im ersten Trimester, wenn eine erhöhte Temperatur mit Neuralrohrdefekten in Verbindung steht. Wenn Sie doch in einen Whirlpool gehen, halten Sie die Temperatur angenehm (nicht heiß), bleiben Sie höchstens 10 Minuten und meiden Sie ihn im ersten Trimester. Ein warmes Bad mit normaler Badewassertemperatur ({temp:98-100}) ist sicher."
+        "Warme Bäder sind in der ganzen Schwangerschaft in Ordnung. Whirlpools, Saunen und Dampfbäder, die Ihre Körperkerntemperatur über {temp:102=39} steigen lassen, werden nicht empfohlen, vor allem im ersten Trimester, wenn eine erhöhte Temperatur mit Neuralrohrdefekten in Verbindung steht. Wenn Sie doch in einen Whirlpool gehen, halten Sie die Temperatur angenehm (nicht heiß), bleiben Sie höchstens 10 Minuten und meiden Sie ihn im ersten Trimester. Ein warmes Bad mit normaler Badewassertemperatur ({temp:98-100}) ist sicher."
       ]
     },
     "faq-epidural-csec": {
@@ -1506,7 +1506,7 @@ window.MYOB_LOCALES.de = {
         "-5 to +5",
         "Wie tief der Kopf des Babys getreten ist. 0 = auf Höhe der Sitzbeinstacheln (Mitte). +3 bis +5 = fast draußen.",
         "Der Bishop-Score",
-        "Fachleute nutzen manchmal einen kombinierten Wert (Bishop-Score) aus Öffnung, Verkürzung, Höhenstand, Festigkeit und Lage des Muttermunds, um abzuschätzen, wie geburtsbereit er ist. Ein Wert ≥ 8 spricht für einen reifen Muttermund und eine erfolgreiche Einleitung.",
+        "Ärztinnen und Ärzte nutzen manchmal einen kombinierten Wert (Bishop-Score) aus Öffnung, Verkürzung, Höhenstand, Festigkeit und Lage des Muttermunds, um abzuschätzen, wie geburtsbereit er ist. Ein Wert ≥ 8 spricht für einen reifen Muttermund und eine erfolgreiche Einleitung.",
         "Tastuntersuchungen in der späten Schwangerschaft sind freiwillig. Die Öffnung in der 36.–38. Woche sagt nicht genau voraus, wann die Geburt beginnt. In der aktiven Phase zeigen Tastuntersuchungen alle 2–4 Stunden den Fortschritt bis 10 cm."
       ]
     },
@@ -2101,7 +2101,7 @@ window.MYOB_LOCALES.de = {
     "content.faq-eat-for-two.title": "7109ae5ce8714502",
     "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
     "content.faq-hot-tub.title": "2230219d6f10d437",
-    "content.faq-hot-tub.t.0": "c7540b7dd2d9ca9f",
+    "content.faq-hot-tub.t.0": "9229e75e5b12dde0",
     "content.faq-epidural-csec.title": "85af8aced19ce724",
     "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
     "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
@@ -2480,7 +2480,7 @@ window.MYOB_LOCALES.de = {
     "content.sve.t.11": "5942c1408bde8d76",
     "content.sve.t.12": "84486cd7e99298e5",
     "content.sve.t.13": "57a43c9bbcc13765",
-    "content.sve.t.14": "93209107b7c45b7d",
+    "content.sve.t.14": "73b3bb95fbedb9fb",
     "content.sve.t.15": "c4dd6ac97ed3ff6b",
     "content.exercise-pregnancy.title": "cf75aa879d88d165",
     "content.exercise-pregnancy.sub": "a70f9e3c265205e2",

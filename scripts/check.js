@@ -302,7 +302,7 @@ function compare(baseDir, out) {
 // that no longer follows her unit setting.
 function unitTokenGuard() {
   const { readLocale } = require(path.join(ROOT, 'translation', 'hash.js'));
-  const TOK = /\{(?:temp|vol|wt|lb):[\d.]+(?:-[\d.]+)?\}/g;
+  const TOK = /\{(?:temp|vol|wt|lb):[\d.]+(?:-[\d.]+)?(?:=[\d.]+(?:-[\d.]+)?)?\}/g;
   const BARE = /\d\s?°\s?[FC]\b|°F|\d\s?(?:oz|ounces?|lbs?|pounds?)\b/;
   const toks = s => (String(s).match(TOK) || []).sort().join(' ');
   const flat = (o, pre, out) => {

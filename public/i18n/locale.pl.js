@@ -1022,7 +1022,7 @@ window.MYOB_LOCALES.pl = {
       "title": "Czy mogę brać kąpiel albo korzystać z jacuzzi?",
       "sub": "",
       "t": [
-        "Ciepłe kąpiele są w porządku przez całą ciążę. Jacuzzi, sauny i łaźnie parowe, które podnoszą temperaturę wewnątrz ciała powyżej {temp:102}, nie są zalecane, zwłaszcza w pierwszym trymestrze, gdy podwyższona temperatura wiąże się z wadami cewy nerwowej. Jeśli korzystasz z jacuzzi, ustaw przyjemną temperaturę (nie gorącą), ogranicz czas do 10 minut i unikaj go w pierwszym trymestrze. Ciepła kąpiel w zwykłej domowej temperaturze wody ({temp:98-100}) jest bezpieczna."
+        "Ciepłe kąpiele są w porządku przez całą ciążę. Jacuzzi, sauny i łaźnie parowe, które podnoszą temperaturę wewnątrz ciała powyżej {temp:102=39}, nie są zalecane, zwłaszcza w pierwszym trymestrze, gdy podwyższona temperatura wiąże się z wadami cewy nerwowej. Jeśli korzystasz z jacuzzi, ustaw przyjemną temperaturę (nie gorącą), ogranicz czas do 10 minut i unikaj go w pierwszym trymestrze. Ciepła kąpiel w zwykłej domowej temperaturze wody ({temp:98-100}) jest bezpieczna."
       ]
     },
     "faq-epidural-csec": {
@@ -1516,7 +1516,7 @@ window.MYOB_LOCALES.pl = {
         "-5 to +5",
         "Jak nisko zeszła główka dziecka. 0 = na wysokości kolców kulszowych (środek). +3 do +5 = prawie na zewnątrz.",
         "Skala Bishopa",
-        "Czasem używa się łącznej punktacji (skali Bishopa), która obejmuje rozwarcie, skrócenie, wysokość główki, konsystencję i położenie szyjki, żeby ocenić, jak bardzo szyjka jest gotowa do porodu. Wynik ≥ 8 wskazuje na dojrzałą szyjkę i udaną indukcję.",
+        "Lekarze czasem używają łącznej punktacji (skali Bishopa), która obejmuje rozwarcie, skrócenie, wysokość główki, konsystencję i położenie szyjki, żeby ocenić, jak bardzo szyjka jest gotowa do porodu. Wynik ≥ 8 wskazuje na dojrzałą szyjkę i udaną indukcję.",
         "Badania szyjki pod koniec ciąży są dobrowolne. Rozwarcie w 36–38 tygodniu nie przewiduje dokładnie, kiedy zacznie się poród. W fazie aktywnej badania co 2–4 godziny śledzą postęp do 10 cm."
       ]
     },
@@ -2111,7 +2111,7 @@ window.MYOB_LOCALES.pl = {
     "content.faq-eat-for-two.title": "7109ae5ce8714502",
     "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
     "content.faq-hot-tub.title": "2230219d6f10d437",
-    "content.faq-hot-tub.t.0": "c7540b7dd2d9ca9f",
+    "content.faq-hot-tub.t.0": "9229e75e5b12dde0",
     "content.faq-epidural-csec.title": "85af8aced19ce724",
     "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
     "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
@@ -2490,7 +2490,7 @@ window.MYOB_LOCALES.pl = {
     "content.sve.t.11": "5942c1408bde8d76",
     "content.sve.t.12": "84486cd7e99298e5",
     "content.sve.t.13": "57a43c9bbcc13765",
-    "content.sve.t.14": "93209107b7c45b7d",
+    "content.sve.t.14": "73b3bb95fbedb9fb",
     "content.sve.t.15": "c4dd6ac97ed3ff6b",
     "content.exercise-pregnancy.title": "cf75aa879d88d165",
     "content.exercise-pregnancy.sub": "a70f9e3c265205e2",

@@ -963,7 +963,7 @@ window.MYOB_LOCALES.es = {
         "-5 a +5",
         "Qué tanto ha bajado la cabeza del bebé. 0 = a la altura de las espinas isquiáticas (punto medio). +3 a +5 = casi fuera.",
         "La puntuación de Bishop",
-        "Los proveedores a veces usan una puntuación combinada (puntuación de Bishop) que incluye la dilatación, el borramiento, la estación, la consistencia y la posición del cuello uterino para predecir qué tan listo está para el trabajo de parto. Una puntuación ≥ 8 sugiere un cuello uterino favorable y una inducción exitosa.",
+        "Los médicos a veces usan una puntuación combinada (puntuación de Bishop) que incluye la dilatación, el borramiento, la estación, la consistencia y la posición del cuello uterino para predecir qué tan listo está para el trabajo de parto. Una puntuación ≥ 8 sugiere un cuello uterino favorable y una inducción exitosa.",
         "Los SVE al final del embarazo son opcionales: la dilatación cervical a las 36–38 semanas no predice exactamente cuándo empezará el trabajo de parto. Durante el trabajo de parto activo, los SVE cada 2–4 horas siguen su progreso hacia los 10 cm."
       ]
     },
@@ -1601,7 +1601,7 @@ window.MYOB_LOCALES.es = {
       "title": "¿Puedo darme baños de tina o usar un jacuzzi?",
       "sub": "",
       "t": [
-        "Los baños tibios están bien durante todo el embarazo. Los jacuzzis, saunas y baños de vapor que elevan la temperatura interna de su cuerpo por encima de {temp:102} no se recomiendan, sobre todo en el primer trimestre, cuando la temperatura elevada se asocia con defectos del tubo neural. Si usa un jacuzzi, mantenga la temperatura agradable (no caliente), limite el tiempo a 10 minutos y evítelo en el primer trimestre. Un baño tibio con agua a la temperatura normal de casa ({temp:98-100}) es seguro."
+        "Los baños tibios están bien durante todo el embarazo. Los jacuzzis, saunas y baños de vapor que elevan la temperatura interna de su cuerpo por encima de {temp:102=39} no se recomiendan, sobre todo en el primer trimestre, cuando la temperatura elevada se asocia con defectos del tubo neural. Si usa un jacuzzi, mantenga la temperatura agradable (no caliente), limite el tiempo a 10 minutos y evítelo en el primer trimestre. Un baño tibio con agua a la temperatura normal de casa ({temp:98-100}) es seguro."
       ]
     },
     "faq-epidural-csec": {
@@ -2130,7 +2130,7 @@ window.MYOB_LOCALES.es = {
     "content.sve.t.11": "5942c1408bde8d76",
     "content.sve.t.12": "84486cd7e99298e5",
     "content.sve.t.13": "57a43c9bbcc13765",
-    "content.sve.t.14": "93209107b7c45b7d",
+    "content.sve.t.14": "73b3bb95fbedb9fb",
     "content.sve.t.15": "c4dd6ac97ed3ff6b",
     "content.exercise-pregnancy.title": "cf75aa879d88d165",
     "content.exercise-pregnancy.sub": "a70f9e3c265205e2",
@@ -2633,7 +2633,7 @@ window.MYOB_LOCALES.es = {
     "content.faq-eat-for-two.title": "7109ae5ce8714502",
     "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
     "content.faq-hot-tub.title": "2230219d6f10d437",
-    "content.faq-hot-tub.t.0": "c7540b7dd2d9ca9f",
+    "content.faq-hot-tub.t.0": "9229e75e5b12dde0",
     "content.faq-epidural-csec.title": "85af8aced19ce724",
     "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
     "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",

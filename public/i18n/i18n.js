@@ -67,7 +67,7 @@ const I18n = (() => {
 
   // Bumped alongside sw.js CACHE_NAME so an updated locale file is actually
   // re-fetched instead of served from the browser's heuristic cache.
-  const ASSET_VERSION = '119';
+  const ASSET_VERSION = '120';
 
   const FALLBACK = 'en';
   const STORAGE_KEY = 'myob.lang';
@@ -252,6 +252,7 @@ const I18n = (() => {
   //   {vol:4-6}     fluid oz → "4–6 oz"  or "120–180 mL"
   //   {wt:12}       oz (mass)→ "12 oz"   or "340 g"
   //   {lb:25-35}    pounds   → "25–35 lbs" or "11.5–16 kg"
+  //   {temp:102=39} °F, with the metric value fixed → "102°F" or "39°C"
   // The number in a token is always the US value, so one token means the same
   // thing in every language, and check.js can hold translations to it.
   const UNITS_KEY = 'obiana.units';
@@ -271,20 +272,24 @@ const I18n = (() => {
     wt:   { us: 'oz', m: 'g',  glue: ' ', to: oz => { const g = oz * 28.3495; return g < 100 ? round(g, 5) : round(g, 10); } },
     lb:   { us: 'lbs', m: 'kg', glue: ' ', to: lb => round(lb * 0.45359, 0.5) },
   };
-  const UNIT_TOKEN = /\{(temp|vol|wt|lb):(\d+(?:\.\d+)?)(?:-(\d+(?:\.\d+)?))?\}/g;
+  // A token may fix its metric value when the conversion would not be the
+  // figure a clinic says: {temp:102=39} is "102°F" or "39°C", not "38.9°C".
+  const UNIT_TOKEN = /\{(temp|vol|wt|lb):(\d+(?:\.\d+)?)(?:-(\d+(?:\.\d+)?))?(?:=(\d+(?:\.\d+)?)(?:-(\d+(?:\.\d+)?))?)?\}/g;
   function unitNum(n, kind, metric) {
     if (!metric && kind === 'wt' && n === 0.5) return '½';
     return fmt.num(+(+n).toFixed(1));
   }
-  function unitValue(kind, a, b, units) {
+  function unitValue(kind, a, b, units, ma, mb) {
     const c = CONV[kind], metric = (units || getUnits()) === 'metric';
+    const fixed = metric && ma !== undefined;
     const v = x => metric ? c.to(+x) : +x;
-    const nums = [a, b].filter(x => x !== undefined).map(x => unitNum(v(x), kind, metric));
+    const nums = (fixed ? [ma, mb] : [a, b]).filter(x => x !== undefined)
+      .map(x => unitNum(fixed ? +x : v(x), kind, metric));
     return nums.join('–') + c.glue + (metric ? c.m : c.us);
   }
   function expandUnits(s, units) {
     if (typeof s !== 'string' || s.indexOf('{') === -1) return s;
-    return s.replace(UNIT_TOKEN, (m, kind, a, b) => unitValue(kind, a, b, units));
+    return s.replace(UNIT_TOKEN, (m, kind, a, b, ma, mb) => unitValue(kind, a, b, units, ma, mb));
   }
   const units = { get: getUnits, set: setUnits, expand: expandUnits, value: unitValue, TOKEN: UNIT_TOKEN };
 

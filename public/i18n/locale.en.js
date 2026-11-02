@@ -961,7 +961,7 @@ window.MYOB_LOCALES.en = {
         "-5 to +5",
         "How far baby's head has descended. 0 = at the ischial spines (midpoint). +3 to +5 = nearly out.",
         "The Bishop Score",
-        "Providers sometimes use a combined score (Bishop Score) that includes dilation, effacement, station, cervical consistency, and position to predict how labor-ready your cervix is. A score ≥ 8 suggests a favorable cervix and successful induction.",
+        "Doctors sometimes use a combined score (Bishop Score) that includes dilation, effacement, station, cervical consistency, and position to predict how labor-ready your cervix is. A score ≥ 8 suggests a favorable cervix and successful induction.",
         "SVEs in late pregnancy are optional. Cervical dilation at 36–38 weeks doesn't predict exactly when labor will start. During active labor, SVEs every 2–4 hours track your progress toward 10 cm."
       ]
     },
@@ -1620,7 +1620,7 @@ window.MYOB_LOCALES.en = {
       "title": "Can I take baths or use a hot tub?",
       "sub": "",
       "t": [
-        "Warm baths are fine throughout pregnancy. Hot tubs, saunas, and steam rooms that raise your core body temperature above {temp:102} are not recommended, especially in the first trimester, when elevated temperature is associated with neural tube defects. If you do use a hot tub, keep the temperature comfortable (not hot), limit time to 10 minutes, and avoid it in the first trimester. A warm bath at typical household water temperature ({temp:98-100}) is safe."
+        "Warm baths are fine throughout pregnancy. Hot tubs, saunas, and steam rooms that raise your core body temperature above {temp:102=39} are not recommended, especially in the first trimester, when elevated temperature is associated with neural tube defects. If you do use a hot tub, keep the temperature comfortable (not hot), limit time to 10 minutes, and avoid it in the first trimester. A warm bath at typical household water temperature ({temp:98-100}) is safe."
       ]
     },
     "faq-epidural-csec": {

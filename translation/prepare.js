@@ -88,7 +88,7 @@ The readers are pregnant patients receiving care **in the United States**.
 1. **Placeholders** like {count}, {q}, {n}, {total}, {langs}, {date}, {range}.
    Copy them character-for-character. Never translate the word inside the braces.
    They are replaced with live values at runtime.
-   **Unit tokens** such as {temp:100.4}, {vol:4-6}, {wt:12} and {lb:25-35} are
+   **Unit tokens** such as {temp:100.4}, {temp:102=39}, {vol:4-6}, {wt:12} and {lb:25-35} are
    measured values. Copy them exactly, number included, and never write the
    unit yourself (no °F, oz, mL, lbs): the app draws each token in the unit
    the reader chose.

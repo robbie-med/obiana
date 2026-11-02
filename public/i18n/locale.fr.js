@@ -964,7 +964,7 @@ window.MYOB_LOCALES.fr = {
         "-5 à +5",
         "La descente de la tête du bébé. 0 = au niveau des épines ischiatiques (point milieu). +3 à +5 = presque sortie.",
         "Le score de Bishop",
-        "Les soignants utilisent parfois un score combiné (score de Bishop) qui tient compte de la dilatation, de l'effacement, de la hauteur, de la consistance et de la position du col pour prédire si votre col est prêt pour le travail. Un score ≥ 8 suggère un col favorable et un déclenchement réussi.",
+        "Les médecins utilisent parfois un score combiné (score de Bishop) qui tient compte de la dilatation, de l'effacement, de la hauteur, de la consistance et de la position du col pour prédire si votre col est prêt pour le travail. Un score ≥ 8 suggère un col favorable et un déclenchement réussi.",
         "Les touchers vaginaux en fin de grossesse sont facultatifs. La dilatation du col entre 36 et 38 semaines ne prédit pas exactement quand le travail commencera. Pendant le travail actif, un toucher toutes les 2 à 4 heures permet de suivre votre progression vers 10 cm."
       ]
     },
@@ -1602,7 +1602,7 @@ window.MYOB_LOCALES.fr = {
       "title": "Puis-je prendre des bains ou utiliser un jacuzzi ?",
       "sub": "",
       "t": [
-        "Les bains chauds sont sans danger pendant toute la grossesse. Les jacuzzis, saunas et hammams qui font monter votre température corporelle au-dessus de {temp:102} ne sont pas recommandés, surtout au premier trimestre, car une température élevée est associée à des malformations du tube neural. Si vous utilisez un jacuzzi, gardez une température agréable (pas brûlante), limitez-vous à 10 minutes et évitez-le au premier trimestre. Un bain chaud à la température habituelle de l'eau du robinet ({temp:98-100}) est sans danger."
+        "Les bains chauds sont sans danger pendant toute la grossesse. Les jacuzzis, saunas et hammams qui font monter votre température corporelle au-dessus de {temp:102=39} ne sont pas recommandés, surtout au premier trimestre, car une température élevée est associée à des malformations du tube neural. Si vous utilisez un jacuzzi, gardez une température agréable (pas brûlante), limitez-vous à 10 minutes et évitez-le au premier trimestre. Un bain chaud à la température habituelle de l'eau du robinet ({temp:98-100}) est sans danger."
       ]
     },
     "faq-epidural-csec": {
@@ -2131,7 +2131,7 @@ window.MYOB_LOCALES.fr = {
     "content.sve.t.11": "5942c1408bde8d76",
     "content.sve.t.12": "84486cd7e99298e5",
     "content.sve.t.13": "57a43c9bbcc13765",
-    "content.sve.t.14": "93209107b7c45b7d",
+    "content.sve.t.14": "73b3bb95fbedb9fb",
     "content.sve.t.15": "c4dd6ac97ed3ff6b",
     "content.exercise-pregnancy.title": "cf75aa879d88d165",
     "content.exercise-pregnancy.sub": "a70f9e3c265205e2",
@@ -2634,7 +2634,7 @@ window.MYOB_LOCALES.fr = {
     "content.faq-eat-for-two.title": "7109ae5ce8714502",
     "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
     "content.faq-hot-tub.title": "2230219d6f10d437",
-    "content.faq-hot-tub.t.0": "c7540b7dd2d9ca9f",
+    "content.faq-hot-tub.t.0": "9229e75e5b12dde0",
     "content.faq-epidural-csec.title": "85af8aced19ce724",
     "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
     "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",

@@ -1007,7 +1007,7 @@ window.MYOB_LOCALES.vi = {
       "title": "Tôi có được tắm bồn hay ngâm bồn nước nóng không?",
       "sub": "",
       "t": [
-        "Tắm nước ấm thì ổn trong suốt thai kỳ. Bồn nước nóng, phòng xông hơi khô và xông hơi ướt làm thân nhiệt lên trên {temp:102} thì không nên, nhất là trong tam cá nguyệt thứ nhất, khi thân nhiệt cao có liên quan đến dị tật ống thần kinh. Nếu dùng bồn nước nóng, giữ nhiệt độ dễ chịu (không nóng), tối đa 10 phút, và tránh trong tam cá nguyệt thứ nhất. Tắm nước ấm ở nhiệt độ bình thường trong nhà ({temp:98-100}) là an toàn."
+        "Tắm nước ấm thì ổn trong suốt thai kỳ. Bồn nước nóng, phòng xông hơi khô và xông hơi ướt làm thân nhiệt lên trên {temp:102=39} thì không nên, nhất là trong tam cá nguyệt thứ nhất, khi thân nhiệt cao có liên quan đến dị tật ống thần kinh. Nếu dùng bồn nước nóng, giữ nhiệt độ dễ chịu (không nóng), tối đa 10 phút, và tránh trong tam cá nguyệt thứ nhất. Tắm nước ấm ở nhiệt độ bình thường trong nhà ({temp:98-100}) là an toàn."
       ]
     },
     "faq-epidural-csec": {
@@ -1501,7 +1501,7 @@ window.MYOB_LOCALES.vi = {
         "-5 to +5",
         "Đầu em bé đã xuống đến đâu. 0 = ngang gai hông (điểm giữa). +3 đến +5 = gần ra.",
         "Chỉ số Bishop",
-        "Nhân viên y tế đôi khi dùng điểm tổng hợp (chỉ số Bishop) gồm độ mở, độ xóa, độ lọt, độ mềm và vị trí cổ tử cung để dự đoán cổ tử cung sẵn sàng chuyển dạ đến đâu. Điểm ≥ 8 cho thấy cổ tử cung thuận lợi và khởi phát dễ thành công.",
+        "Bác sĩ đôi khi dùng điểm tổng hợp (chỉ số Bishop) gồm độ mở, độ xóa, độ lọt, độ mềm và vị trí cổ tử cung để dự đoán cổ tử cung sẵn sàng chuyển dạ đến đâu. Điểm ≥ 8 cho thấy cổ tử cung thuận lợi và khởi phát dễ thành công.",
         "Khám cổ tử cung cuối thai kỳ là tùy chọn. Độ mở lúc 36–38 tuần không dự đoán chính xác khi nào chuyển dạ bắt đầu. Trong chuyển dạ tích cực, khám mỗi 2–4 giờ để theo dõi tiến triển đến 10 cm."
       ]
     },
@@ -2096,7 +2096,7 @@ window.MYOB_LOCALES.vi = {
     "content.faq-eat-for-two.title": "7109ae5ce8714502",
     "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
     "content.faq-hot-tub.title": "2230219d6f10d437",
-    "content.faq-hot-tub.t.0": "c7540b7dd2d9ca9f",
+    "content.faq-hot-tub.t.0": "9229e75e5b12dde0",
     "content.faq-epidural-csec.title": "85af8aced19ce724",
     "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
     "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
@@ -2475,7 +2475,7 @@ window.MYOB_LOCALES.vi = {
     "content.sve.t.11": "5942c1408bde8d76",
     "content.sve.t.12": "84486cd7e99298e5",
     "content.sve.t.13": "57a43c9bbcc13765",
-    "content.sve.t.14": "93209107b7c45b7d",
+    "content.sve.t.14": "73b3bb95fbedb9fb",
     "content.sve.t.15": "c4dd6ac97ed3ff6b",
     "content.exercise-pregnancy.title": "cf75aa879d88d165",
     "content.exercise-pregnancy.sub": "a70f9e3c265205e2",

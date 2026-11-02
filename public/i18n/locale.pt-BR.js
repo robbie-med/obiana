@@ -1020,7 +1020,7 @@ window.MYOB_LOCALES["pt-BR"] = {
       "title": "Posso tomar banho de banheira ou usar ofurô?",
       "sub": "",
       "t": [
-        "Banhos mornos de banheira são tranquilos durante toda a gravidez. Ofurôs, saunas e salas de vapor que elevam sua temperatura interna acima de {temp:102} não são recomendados, principalmente no primeiro trimestre, quando a temperatura alta está ligada a defeitos do tubo neural. Se for usar ofurô, mantenha a temperatura agradável (não quente), fique no máximo 10 minutos e evite no primeiro trimestre. Um banho morno na temperatura comum da água de casa ({temp:98-100}) é seguro."
+        "Banhos mornos de banheira são tranquilos durante toda a gravidez. Ofurôs, saunas e salas de vapor que elevam sua temperatura interna acima de {temp:102=39} não são recomendados, principalmente no primeiro trimestre, quando a temperatura alta está ligada a defeitos do tubo neural. Se for usar ofurô, mantenha a temperatura agradável (não quente), fique no máximo 10 minutos e evite no primeiro trimestre. Um banho morno na temperatura comum da água de casa ({temp:98-100}) é seguro."
       ]
     },
     "faq-epidural-csec": {
@@ -1514,7 +1514,7 @@ window.MYOB_LOCALES["pt-BR"] = {
         "-5 to +5",
         "Quanto a cabeça do bebê já desceu. 0 = na altura das espinhas isquiáticas (meio do caminho). +3 a +5 = quase saindo.",
         "O índice de Bishop",
-        "Os profissionais às vezes usam uma pontuação combinada (índice de Bishop) que inclui dilatação, apagamento, altura, consistência e posição do colo para prever o quanto o colo está pronto para o parto. Uma pontuação ≥ 8 sugere um colo favorável e uma indução bem-sucedida.",
+        "Os médicos às vezes usam uma pontuação combinada (índice de Bishop) que inclui dilatação, apagamento, altura, consistência e posição do colo para prever o quanto o colo está pronto para o parto. Uma pontuação ≥ 8 sugere um colo favorável e uma indução bem-sucedida.",
         "Os toques no fim da gravidez são opcionais. A dilatação com 36–38 semanas não prevê exatamente quando o trabalho de parto vai começar. No trabalho de parto ativo, toques a cada 2–4 horas acompanham o avanço até 10 cm."
       ]
     },
@@ -2109,7 +2109,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.faq-eat-for-two.title": "7109ae5ce8714502",
     "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
     "content.faq-hot-tub.title": "2230219d6f10d437",
-    "content.faq-hot-tub.t.0": "c7540b7dd2d9ca9f",
+    "content.faq-hot-tub.t.0": "9229e75e5b12dde0",
     "content.faq-epidural-csec.title": "85af8aced19ce724",
     "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
     "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
@@ -2488,7 +2488,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.sve.t.11": "5942c1408bde8d76",
     "content.sve.t.12": "84486cd7e99298e5",
     "content.sve.t.13": "57a43c9bbcc13765",
-    "content.sve.t.14": "93209107b7c45b7d",
+    "content.sve.t.14": "73b3bb95fbedb9fb",
     "content.sve.t.15": "c4dd6ac97ed3ff6b",
     "content.exercise-pregnancy.title": "cf75aa879d88d165",
     "content.exercise-pregnancy.sub": "a70f9e3c265205e2",

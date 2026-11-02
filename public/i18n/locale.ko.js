@@ -958,7 +958,7 @@ window.MYOB_LOCALES.ko = {
         "-5에서 +5",
         "아기 머리가 얼마나 내려왔는지. 0 = 좌골극 높이(중간 지점). +3에서 +5 = 거의 나옴.",
         "비숍 점수(Bishop Score)",
-        "의료진은 개대, 소실, 위치, 자궁경부의 질감, 방향을 합산한 점수(비숍 점수)를 사용하여 자궁경부가 분만에 얼마나 준비되었는지 예측하기도 합니다. 점수가 8점 이상이면 자궁경부 상태가 좋고 유도 분만 성공 가능성이 높음을 의미합니다.",
+        "의사는 개대, 소실, 위치, 자궁경부의 질감, 방향을 합산한 점수(비숍 점수)를 사용하여 자궁경부가 분만에 얼마나 준비되었는지 예측하기도 합니다. 점수가 8점 이상이면 자궁경부 상태가 좋고 유도 분만 성공 가능성이 높음을 의미합니다.",
         "임신 후기의 SVE는 선택 사항입니다. 36–38주의 자궁경부 개대 정도가 분만 시작 시기를 정확히 예측하지는 못합니다. 활동성 분만 중에는 2–4시간마다 SVE를 하여 10 cm까지의 진행 상황을 추적합니다."
       ]
     },
@@ -1596,7 +1596,7 @@ window.MYOB_LOCALES.ko = {
       "title": "목욕이나 온수 욕조를 이용해도 되나요?",
       "sub": "",
       "t": [
-        "따뜻한 목욕은 임신 기간 내내 괜찮습니다. 다만 온수 욕조, 사우나, 찜질방처럼 몸의 중심 체온을 {temp:102} 이상으로 올리는 것은 권하지 않습니다. 특히 임신 초기에는 체온 상승이 신경관 결손과 관련이 있습니다. 온수 욕조를 꼭 이용하고 싶다면 뜨겁지 않은 편안한 온도로 맞추고, 10분 이내로 제한하고, 임신 초기에는 피하세요. 일반 가정의 물 온도({temp:98-100})로 하는 따뜻한 목욕은 안전합니다."
+        "따뜻한 목욕은 임신 기간 내내 괜찮습니다. 다만 온수 욕조, 사우나, 찜질방처럼 몸의 중심 체온을 {temp:102=39} 이상으로 올리는 것은 권하지 않습니다. 특히 임신 초기에는 체온 상승이 신경관 결손과 관련이 있습니다. 온수 욕조를 꼭 이용하고 싶다면 뜨겁지 않은 편안한 온도로 맞추고, 10분 이내로 제한하고, 임신 초기에는 피하세요. 일반 가정의 물 온도({temp:98-100})로 하는 따뜻한 목욕은 안전합니다."
       ]
     },
     "faq-epidural-csec": {
@@ -2125,7 +2125,7 @@ window.MYOB_LOCALES.ko = {
     "content.sve.t.11": "5942c1408bde8d76",
     "content.sve.t.12": "84486cd7e99298e5",
     "content.sve.t.13": "57a43c9bbcc13765",
-    "content.sve.t.14": "93209107b7c45b7d",
+    "content.sve.t.14": "73b3bb95fbedb9fb",
     "content.sve.t.15": "c4dd6ac97ed3ff6b",
     "content.exercise-pregnancy.title": "cf75aa879d88d165",
     "content.exercise-pregnancy.sub": "a70f9e3c265205e2",
@@ -2628,7 +2628,7 @@ window.MYOB_LOCALES.ko = {
     "content.faq-eat-for-two.title": "7109ae5ce8714502",
     "content.faq-eat-for-two.t.0": "1b020d6a6bc10158",
     "content.faq-hot-tub.title": "2230219d6f10d437",
-    "content.faq-hot-tub.t.0": "c7540b7dd2d9ca9f",
+    "content.faq-hot-tub.t.0": "9229e75e5b12dde0",
     "content.faq-epidural-csec.title": "85af8aced19ce724",
     "content.faq-epidural-csec.t.0": "0598cc9adadeee14",
     "content.faq-epidural-csec.t.1": "29b19c8a24cbf72c",
