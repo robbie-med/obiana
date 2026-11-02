@@ -1251,7 +1251,7 @@ window.MYOB_LOCALES.en = {
         "PPD is a medical condition. A treatable mood disorder, not a character flaw or a sign of bad mothering.",
         "Symptoms of PPD",
         "Persistent sadness or emptiness · Difficulty bonding with your baby · Feeling like a bad mother or that your baby would be better off without you · Severe anxiety or panic attacks · Inability to sleep even when baby sleeps · Loss of interest in things you used to enjoy · Thoughts of harming yourself or your baby: call 911 or go to the ER now, or call or text 988",
-        "If these symptoms persist beyond 2 weeks or are severe at any point, tell your care team. PPD is effectively treated with therapy, support groups, and/or medication (many of which are safe with breastfeeding).",
+        "If these symptoms persist beyond 2 weeks or are severe at any point, tell your care team. PPD is effectively treated with therapy, support groups, and/or medication (many of which are safe with breastfeeding). The National Maternal Mental Health Hotline, 1-833-852-6262, is free, any time, by call or text, in many languages.",
         "Don't wait until your 6-week visit to mention it.",
         "Postpartum Psychosis. Rare but a Medical Emergency",
         "Hallucinations, delusions, extreme confusion, or agitation in the days after birth. Call 911 or go to the ER immediately. This is rare (1–2 in 1,000) but requires urgent treatment.",
@@ -1338,7 +1338,9 @@ window.MYOB_LOCALES.en = {
         "Weight:",
         "Birth weight should be regained by 10–14 days. After day 5, expect ½–1 oz gain per day.",
         "Baby:",
-        "Satisfied after feeds, alert during awake periods."
+        "Satisfied after feeds, alert during awake periods.",
+        "Alcohol, cannabis and smoking",
+        "An occasional drink is fine: wait 2 hours after one drink before breastfeeding. Pumping and throwing out the milk does not clear alcohol faster. Avoid cannabis: THC gets into milk and stays there for days. If you smoke, breastfeeding is still better than formula. Smoke outside and never near the baby; nicotine patches or gum are fine."
       ]
     },
     "bf-challenges": {
@@ -1360,7 +1362,7 @@ window.MYOB_LOCALES.en = {
         "Nipple thrush",
         "Sharp, burning pain during and after feeds. Pinkish, shiny nipples. Both you and baby need antifungal treatment at the same time. Call your doctor and your baby's doctor.",
         "Pumping",
-        "Electric double breast pumps are covered by most U.S. insurance plans under the ACA. Pumping maintains supply when baby can't nurse, allows others to feed baby, and builds a freezer stash. Milk can be refrigerated for 4 days or frozen 6–12 months.",
+        "Electric double breast pumps are covered by most U.S. insurance plans under the ACA. Pumping maintains supply when baby can't nurse, allows others to feed baby, and builds a freezer stash. Milk keeps 4 hours at room temperature, 4 days in the fridge, and 6–12 months in the freezer. Thaw it in the fridge or in warm water, never in the microwave, use it within 24 hours, and don't refreeze it.",
         "It's Okay to Supplement or Formula Feed",
         "If breastfeeding is not working despite support, supplementing with formula is not failure. It's feeding your baby. A fed, thriving baby matters most. Many families combine breast and formula feeding successfully."
       ]
@@ -1489,7 +1491,8 @@ window.MYOB_LOCALES.en = {
         "Keep baby comfortably cool. Overheating is a risk factor",
         "Tummy Time (Awake &amp; Supervised Only)",
         "Tummy time while baby is awake and watched is essential for neck and shoulder development and preventing flat spots on the head. Start with 2–3 minutes several times a day from birth. Build to 30 total minutes per day by 3 months.",
-        "Never place a sleeping baby in a swing, car seat (outside the car), bouncy seat, or inclined sleeper for extended sleep. These are not safe sleep environments."
+        "Never place a sleeping baby in a swing, car seat (outside the car), bouncy seat, or inclined sleeper for extended sleep. These are not safe sleep environments.",
+        "If you swaddle, keep it loose at the hips, always put baby down on the back, and stop as soon as baby starts trying to roll"
       ]
     },
     "crying-coping": {
@@ -1549,7 +1552,7 @@ window.MYOB_LOCALES.en = {
       "t": [
         "The main risk is",
         "Listeria",
-        ", a bacterial infection that's rare but can be serious in pregnancy (can cross the placenta). The FDA advises avoiding unpasteurized cheese and deli meats unless heated to steaming (165°F). Most pasteurized soft cheeses (like pasteurized brie, feta from a package) are safe. The exception is queso fresco, queso blanco, panela and similar fresh cheeses: even pasteurized ones have caused listeria outbreaks, so eat them only cooked until steaming. The overall risk from occasional deli meat is very low. When in doubt, heat it."
+        ", a bacterial infection that's rare but can be serious in pregnancy (can cross the placenta). The FDA advises avoiding unpasteurized cheese and deli meats unless heated to steaming (165°F). Most pasteurized soft cheeses (like pasteurized brie, feta from a package) are safe. The exception is queso fresco, queso blanco, panela and similar fresh cheeses: even pasteurized ones have caused listeria outbreaks, so eat them only cooked until steaming. The overall risk from occasional deli meat is very low. When in doubt, heat it. Also avoid undercooked meat, raw eggs, unpasteurized milk or juice, and raw sprouts, and wash fruits and vegetables. Have someone else change the cat litter, or wear gloves: cat feces and undercooked meat can spread toxoplasmosis."
       ]
     },
     "faq-coffee": {
@@ -1646,7 +1649,7 @@ window.MYOB_LOCALES.en = {
       "title": "If I had a C-section before, do I always need another one?",
       "sub": "",
       "t": [
-        "Not necessarily. Vaginal birth after cesarean (VBAC) is a safe and appropriate option for many women with one prior low-transverse uterine incision. Success rates range from 60–80%. Factors that affect candidacy include the reason for the prior C-section, your current pregnancy, the type of uterine incision, and your hospital's capacity to handle an emergency. Bring this up early in prenatal care if you are interested."
+        "Not necessarily. Vaginal birth after cesarean (VBAC) is a safe and appropriate option for many women with one prior low-transverse uterine incision. Success rates range from 60–80%. The main risk is the scar opening during labor (uterine rupture): about 5 to 9 in 1,000 women with one prior low-transverse cut. Factors that affect candidacy include the reason for the prior C-section, your current pregnancy, the type of uterine incision, and your hospital's capacity to handle an emergency. Bring this up early in prenatal care if you are interested."
       ]
     },
     "faq-bf-bc": {
@@ -1834,7 +1837,7 @@ window.MYOB_LOCALES.en = {
       "t": [
         "A blood pressure condition that can come on fast, usually after 20 weeks and sometimes in the week or two after delivery. Catching it early genuinely changes how it ends.",
         "What it is",
-        "High blood pressure plus signs that other organs are being affected, most often the kidneys or liver. It also reduces blood flow through the placenta, which is why it affects the baby's growth. Delivery is the only cure, so that conversation can move faster than you expect.",
+        "High blood pressure plus signs that other organs are being affected, most often the kidneys or liver. It also reduces blood flow through the placenta, which is why it affects the baby's growth. Delivery is the only cure, so that conversation can move faster than you expect. A blood pressure of 140/90 or higher (either number) is high. 160/110 or higher is severe: go to labor and delivery now.",
         "Call your doctor today if you have",
         "A headache that will not go away · Vision changes: dark spots, flashing · Pain under the ribs on the right, or high in the stomach · Sudden swelling of the face or hands · Shortness of breath",
         "or any other sign your doctor told you to look out for.",
@@ -1893,7 +1896,7 @@ window.MYOB_LOCALES.en = {
         "Medicines",
         "Untreated and uncontrolled depression is not a safe option: it is linked with preterm birth, lower birthweight, and a much higher chance of postpartum depression. Many women have successful pregnancies without needing medication. Several SSRIs have decent pregnancy safety data and are prescribed routinely. If you stopped something the day you saw the positive test, tell your doctor so you can discuss your options.",
         "What else helps",
-        "Talking therapy works, alone or alongside medication, and is worth asking for early because waiting lists are long. Be sure to talk to your doctor about and engage in the non-chemical aspects of depression and anxiety: good sleep, sunshine, exercise, community, therapy, prayer, etc. Morning sickness is an especially difficult time."
+        "Talking therapy works, alone or alongside medication, and is worth asking for early because waiting lists are long. Be sure to talk to your doctor about and engage in the non-chemical aspects of depression and anxiety: good sleep, sunshine, exercise, community, therapy, prayer, etc. Morning sickness is an especially difficult time. The National Maternal Mental Health Hotline, 1-833-852-6262, is free, any time, by call or text, in many languages."
       ]
     },
     "safety-at-home": {
@@ -2017,7 +2020,7 @@ window.MYOB_LOCALES.en = {
         "Why guidance differs",
         "The American Academy of Pediatrics concluded the benefits outweigh the risks but not enough to recommend it for every boy. Several European bodies read the same studies and concluded otherwise. In practice this is a family decision, often shaped by religion, culture, and what the father looks like.",
         "If you decide to do it",
-        "Ask about pain control specifically: a local anesthetic block, not sugar water alone. Effective options exist and are not used everywhere. Check what your insurance covers.",
+        "Ask about pain control specifically: a local anesthetic block, not sugar water alone. Effective options exist and are not used everywhere. Check what your insurance covers. Afterward, the tip looks red and may have a soft yellow coating for about a week; that is normal healing. Put petroleum jelly on it at each diaper change. Call your baby's doctor for bleeding that does not stop with gentle pressure, no wet diaper in 8 hours, a fever of 100.4°F or more, or spreading redness, swelling or pus-filled blisters.",
         "If you decide not to",
         "Do not retract the foreskin. It is normally attached in infancy and separates on its own over several years; forcing it causes the scarring it is meant to prevent. Wipe the outside like any other skin."
       ]
