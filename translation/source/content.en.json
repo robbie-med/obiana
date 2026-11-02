@@ -626,6 +626,27 @@
       "Never place a sleeping baby in a swing, car seat (outside the car), bouncy seat, or inclined sleeper for extended sleep. These are not safe sleep environments."
     ]
   },
+  "crying-coping": {
+    "title": "Crying, and Coping When It Is Too Much",
+    "sub": "Normal crying, colic, and never shaking a baby",
+    "t": [
+      "Babies cry about 2 hours a day on average in the first 6 weeks, and about 1 hour by 10 to 12 weeks. Some cry for hours with nothing wrong.",
+      "Things to try",
+      "Feeding or burping · A clean diaper · Holding your baby skin-to-skin · Swaddling, only until your baby starts to roll · Rocking, swaying or walking · Shushing sounds or white noise · A walk in the stroller or a car ride",
+      "Colic",
+      "Crying 3 hours or more a day, on 3 or more days a week. About 1 in 5 babies have it in the first 6 weeks, and almost none by 3 months. Gas drops (simethicone) work no better than nothing, gripe water has not been tested, and probiotic drops may help a little.",
+      "If you are at your limit",
+      "Put your baby on their back in the crib, leave the room for 10 minutes, and call someone. It is OK to let your baby cry while you calm down.",
+      "Never shake a baby",
+      "Shaking can cause brain damage, blindness or death. Make sure everyone who cares for your baby knows this.",
+      "Call your baby's doctor if the crying comes with",
+      "A fever of 100.4°F or more · Vomiting or poor feeding · Signs of pain, or crying that sounds different from usual",
+      "Call 911 if your baby",
+      "Is limp, or hard to wake · Has trouble breathing · Turns blue or gray",
+      "If you feel hopeless or angry most of the time",
+      "Tell your doctor, or call or text the National Maternal Mental Health Hotline, 1-833-852-6262, any time."
+    ]
+  },
   "followup-appts": {
     "title": "Follow-Up Appointments for Baby & You",
     "sub": "The schedule and what happens at each visit",
@@ -840,6 +861,23 @@
       "Avoid vitamin A supplements in high doses, which can harm a developing baby. Do not double up on a prenatal to get more of something. If you take other supplements or herbal products, bring the actual bottles to your next visit."
     ]
   },
+  "medicines-pregnancy": {
+    "title": "Medicines in Pregnancy",
+    "sub": "Pain, colds, allergies, and where to ask",
+    "t": [
+      "Do not stop a prescribed medicine on your own when you find out you are pregnant. Medicines for depression, asthma, seizures, thyroid and blood pressure often need to continue. Tell your doctor what you take as early as you can.",
+      "Pain and fever",
+      "Use Tylenol (acetaminophen), no more than 4 grams a day.",
+      "Avoid ibuprofen (Advil, Motrin), naproxen (Aleve) and full-dose aspirin. After 20 weeks they can affect the baby's kidneys and heart and lower the fluid around the baby.",
+      "Low-dose aspirin (81 mg) is fine.",
+      "Colds and allergies",
+      "Saline nose spray, honey for a cough and rest first. Loratadine (Claritin), cetirizine (Zyrtec), guaifenesin (Mucinex) and dextromethorphan are fine. Ask before taking decongestants such as pseudoephedrine, especially in the first trimester. Avoid combination cold products.",
+      "Herbs and supplements",
+      "They are not tested in pregnancy and do not always contain what the label says. Bring the bottles to your next visit.",
+      "Questions about a medicine",
+      "MotherToBaby, free, in English and Spanish: call 1-866-626-6847 or text 1-855-999-3525."
+    ]
+  },
   "alcohol": {
     "title": "Alcohol",
     "sub": "What is known, and what is not",
@@ -868,6 +906,23 @@
       "A baby around smoke has more asthma, more chest infections and more ear infections. Smoking outside is not enough on its own, because smoke settles into clothes, hair, furniture and car seats. Ask anyone who smokes to change or wash before holding the baby, and keep the house and car smoke-free.",
       "Getting help",
       "There is real help for quitting, including counseling and, for tobacco, options safer in pregnancy than continuing to smoke. Ask at a prenatal visit."
+    ]
+  },
+  "opioids": {
+    "title": "Opioids and Other Drugs",
+    "sub": "Treatment, overdose, and the baby",
+    "t": [
+      "If you use opioids, including pain pills, heroin or fentanyl, treatment with medicine is safer for you and your baby than stopping on your own. Tell your family doctor, OB or midwife.",
+      "Treatment with medicine",
+      "Buprenorphine (Suboxone, Subutex) or methadone stop withdrawal and cravings and protect you from overdose. Stopping suddenly (detox) about doubles the chance of using again. With buprenorphine, fewer babies have withdrawal and fewer are born early than with methadone.",
+      "Overdose",
+      "Keep naloxone (Narcan) at home and show someone how to use it; it is sold without a prescription. Fentanyl is mixed into many street drugs, including pills that look like prescription ones. Overdose risk is highest in the year after the birth, especially 7 to 12 months after, so keep treatment going.",
+      "For the baby",
+      "Your baby may have withdrawal in the first days: fussiness, shaking, poor feeding, trouble sleeping. Your baby will be watched in the hospital for a few days. Skin-to-skin, a quiet room and breastfeeding lower the need for medicine. Breastfeeding is encouraged on buprenorphine or methadone if you are not using other drugs.",
+      "Reporting rules",
+      "Federal law asks hospitals to make a care plan for babies exposed to drugs. State laws differ on what is reported; a social worker can explain the rules where you live.",
+      "Help finding treatment",
+      "SAMHSA helpline, free, every day, in English and Spanish: 1-800-662-4357."
     ]
   },
   "fish-mercury": {
@@ -973,6 +1028,15 @@
       "Untreated and uncontrolled depression is not a safe option: it is linked with preterm birth, lower birthweight, and a much higher chance of postpartum depression. Many women have successful pregnancies without needing medication. Several SSRIs have decent pregnancy safety data and are prescribed routinely. If you stopped something the day you saw the positive test, tell your doctor so you can discuss your options.",
       "What else helps",
       "Talking therapy works, alone or alongside medication, and is worth asking for early because waiting lists are long. Be sure to talk to your doctor about and engage in the non-chemical aspects of depression and anxiety: good sleep, sunshine, exercise, community, therapy, prayer, etc. Morning sickness is an especially difficult time."
+    ]
+  },
+  "safety-at-home": {
+    "title": "Safety at Home",
+    "sub": "Help if a partner hurts, threatens or controls you",
+    "t": [
+      "If you have concerns about safety at home, your family doctor, OB or midwife can see you alone.",
+      "National Domestic Violence Hotline",
+      "Call 1-800-799-7233, text START to 88788, or chat at thehotline.org. It is free, open every day, in many languages, and you do not have to give your name."
     ]
   },
   "discomfort-urinary": {

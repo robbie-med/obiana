@@ -166,10 +166,10 @@ Tier 1: a reader could miss something dangerous
 - Bleeding & pain in early pregnancy  `early-bleeding` (ER and call-today lists, ectopic, what the team does, miscarriage basics; reviewed 2026-11-01) → first-trimester
 - Preterm labor signs       `preterm-labor` (go-in list before 37 weeks, what happens at L&D, steroids/magnesium, risk factors, progesterone/cerclage, no bed rest; reviewed 2026-11-01) → Home
 - Itching late in pregnancy `cholestasis` (normal itching vs ICP, call list, bile acids, ursodiol, delivery timing, recurrence; reviewed 2026-11-01)
-- Crying & never shaking    `[gap]` normal-newborn lists "inconsolable crying" as a red flag only. Nothing on normal crying peaks, colic, or what to do when you are at your limit (put baby down safely, step away, call someone).
-- Safety at home            `[gap]` no intimate-partner-violence content or hotline, though violence rises in pregnancy and homicide is a leading cause of pregnancy-associated death in the US
-- Opioids & other drugs     `[gap]` nothing on opioid use: treatment with buprenorphine or methadone is safe and recommended, stopping suddenly is not, and babies may need watching for withdrawal. Belongs beside tobacco-cannabis and alcohol.
-- Medicines in pregnancy    `[gap]` first-trimester tells readers to ask what is safe; nothing answers. Acetaminophen (ACOG still calls it the safest pain reliever, despite the 2025 FDA label move), no ibuprofen or other NSAIDs after 20 weeks, cold and allergy remedies, herbal products, and MotherToBaby (1-866-626-6847) for questions.
+- Crying & never shaking    `crying-coping` (draft 2026-11-01, awaiting review) → normal-newborn
+- Safety at home            `safety-at-home` (draft 2026-11-01, awaiting review) → urgent help lines
+- Opioids & other drugs     `opioids` (draft 2026-11-01, awaiting review) → tobacco-cannabis, alcohol
+- Medicines in pregnancy    `medicines-pregnancy` (draft 2026-11-01, awaiting review) → first-trimester, discomfort cards
 
 Tier 2: standard of care, commonly asked
 
