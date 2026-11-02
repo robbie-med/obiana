@@ -954,7 +954,7 @@ window.MYOB_LOCALES.pl = {
       "t": [
         "Główne ryzyko to",
         "listerioza",
-        ", zakażenie bakteryjne, które zdarza się rzadko, ale w ciąży może być groźne (może przejść przez łożysko). FDA zaleca unikać serów z niepasteryzowanego mleka i wędlin, chyba że są podgrzane do parowania (165°F). Większość pasteryzowanych serów miękkich (np. pasteryzowany brie, feta z opakowania) jest bezpieczna. Wyjątkiem są queso fresco, queso blanco, panela i podobne sery świeże: nawet pasteryzowane wywoływały ogniska listeriozy, więc jedz je tylko ugotowane do parowania. Ogólne ryzyko od jedzenia wędlin od czasu do czasu jest bardzo małe. W razie wątpliwości podgrzej."
+        ", zakażenie bakteryjne, które zdarza się rzadko, ale w ciąży może być groźne (może przejść przez łożysko). FDA zaleca unikać serów z niepasteryzowanego mleka i wędlin, chyba że są podgrzane do parowania (165°F). Większość pasteryzowanych serów miękkich (np. pasteryzowany brie, feta z opakowania) jest bezpieczna. Wyjątkiem są queso fresco, queso blanco, panela i podobne sery świeże: nawet pasteryzowane wywoływały ogniska listeriozy, więc jedz je tylko ugotowane do parowania. Ogólne ryzyko od jedzenia wędlin od czasu do czasu jest bardzo małe. W razie wątpliwości podgrzej. Unikaj też niedogotowanego mięsa, surowych jajek, niepasteryzowanego mleka lub soku i surowych kiełków, a owoce i warzywa myj. Niech ktoś inny zmienia żwirek kotu, albo zakładaj rękawiczki: koci kał i niedogotowane mięso mogą przenosić toksoplazmozę."
       ]
     },
     "faq-coffee": {
@@ -1051,7 +1051,7 @@ window.MYOB_LOCALES.pl = {
       "title": "Czy po cesarskim cięciu zawsze muszę mieć kolejne?",
       "sub": "",
       "t": [
-        "Niekoniecznie. Poród drogami natury po cesarskim cięciu (VBAC) to bezpieczna i dobra możliwość dla wielu kobiet z jednym wcześniejszym poprzecznym cięciem w dolnej części macicy. Udaje się w 60–80% przypadków. Znaczenie mają powód wcześniejszego cesarskiego cięcia, obecna ciąża, rodzaj cięcia macicy i to, czy szpital poradzi sobie w nagłej sytuacji. Jeśli Cię to interesuje, poruszaj ten temat wcześnie w opiece przedporodowej."
+        "Niekoniecznie. Poród drogami natury po cesarskim cięciu (VBAC) to bezpieczna i dobra możliwość dla wielu kobiet z jednym wcześniejszym poprzecznym cięciem w dolnej części macicy. Udaje się w 60–80% przypadków. Głównym ryzykiem jest rozejście się blizny podczas porodu (pęknięcie macicy): u około 5 do 9 na 1000 kobiet z jednym wcześniejszym poprzecznym cięciem w dolnej części macicy. Znaczenie mają powód wcześniejszego cesarskiego cięcia, obecna ciąża, rodzaj cięcia macicy i to, czy szpital poradzi sobie w nagłej sytuacji. Jeśli Cię to interesuje, poruszaj ten temat wcześnie w opiece przedporodowej."
       ]
     },
     "faq-bf-bc": {
@@ -1176,7 +1176,7 @@ window.MYOB_LOCALES.pl = {
         "Depresja poporodowa to choroba. Uleczalne zaburzenie nastroju, a nie wada charakteru ani znak, że jesteś złą matką.",
         "Objawy depresji poporodowej",
         "Ciągły smutek lub pustka · Trudność w nawiązaniu więzi z dzieckiem · Poczucie, że jesteś złą matką albo że dziecku byłoby lepiej bez Ciebie · Silny lęk lub ataki paniki · Brak snu, nawet gdy dziecko śpi · Utrata zainteresowania rzeczami, które kiedyś sprawiały Ci radość · Myśli o skrzywdzeniu siebie lub dziecka: zadzwoń teraz pod 911 lub jedź na SOR, albo zadzwoń lub napisz SMS pod 988",
-        "Jeśli te objawy trwają dłużej niż 2 tygodnie albo w którymś momencie są silne, powiedz o tym zespołowi opieki. Depresję poporodową skutecznie leczy się terapią, grupami wsparcia i/lub lekami (wiele z nich jest bezpiecznych przy karmieniu piersią).",
+        "Jeśli te objawy trwają dłużej niż 2 tygodnie albo w którymś momencie są silne, powiedz o tym zespołowi opieki. Depresję poporodową skutecznie leczy się terapią, grupami wsparcia i/lub lekami (wiele z nich jest bezpiecznych przy karmieniu piersią). National Maternal Mental Health Hotline, 1-833-852-6262, jest bezpłatna, o każdej porze, telefonicznie lub SMS-em, w wielu językach.",
         "Nie czekaj z tym do wizyty po 6 tygodniach.",
         "Psychoza poporodowa. Rzadka, ale to stan nagły",
         "Omamy, urojenia, silne splątanie lub pobudzenie w dniach po porodzie. Natychmiast zadzwoń pod 911 lub jedź na SOR. To rzadkie (1–2 na 1000), ale wymaga pilnego leczenia.",
@@ -1601,7 +1601,7 @@ window.MYOB_LOCALES.pl = {
       "t": [
         "Choroba związana z ciśnieniem, która może pojawić się szybko, zwykle po 20 tygodniu, a czasem w tydzień lub dwa po porodzie. Wczesne wykrycie naprawdę zmienia jej przebieg.",
         "Co to jest",
-        "Wysokie ciśnienie oraz oznaki, że inne narządy są zajęte, najczęściej nerki lub wątroba. Zmniejsza też przepływ krwi przez łożysko, dlatego wpływa na wzrost dziecka. Jedynym lekarstwem jest poród, więc ta rozmowa może nastąpić szybciej, niż się spodziewasz.",
+        "Wysokie ciśnienie oraz oznaki, że inne narządy są zajęte, najczęściej nerki lub wątroba. Zmniejsza też przepływ krwi przez łożysko, dlatego wpływa na wzrost dziecka. Jedynym lekarstwem jest poród, więc ta rozmowa może nastąpić szybciej, niż się spodziewasz. Ciśnienie 140/90 lub wyższe (którakolwiek liczba) jest wysokie. 160/110 lub wyższe jest ciężkie: jedź teraz na izbę porodową.",
         "Zadzwoń dziś do lekarza, jeśli masz",
         "Ból głowy, który nie mija · Zaburzenia widzenia: ciemne plamy, błyski · Ból pod żebrami po prawej lub wysoko w nadbrzuszu · Nagły obrzęk twarzy lub dłoni · Duszność",
         "albo inny objaw, na który lekarz kazał Ci uważać.",
@@ -1625,7 +1625,7 @@ window.MYOB_LOCALES.pl = {
         "Leki",
         "Nieleczona i niekontrolowana depresja nie jest bezpiecznym wyborem: wiąże się z przedwczesnym porodem, mniejszą masą urodzeniową i dużo większą szansą na depresję poporodową. Wiele kobiet ma udaną ciążę bez leków. Kilka leków z grupy SSRI ma przyzwoite dane o bezpieczeństwie w ciąży i jest rutynowo przepisywanych. Jeśli odstawiłaś jakiś lek w dniu pozytywnego testu, powiedz lekarzowi, żebyście omówili możliwości.",
         "Co jeszcze pomaga",
-        "Psychoterapia działa, sama lub razem z lekami, i warto poprosić o nią wcześnie, bo kolejki są długie. Koniecznie porozmawiaj z lekarzem o niefarmakologicznych sposobach radzenia sobie z depresją i lękiem i zadbaj o nie: dobry sen, słońce, ruch, wspólnota, terapia, modlitwa itp. Czas porannych mdłości jest szczególnie trudny."
+        "Psychoterapia działa, sama lub razem z lekami, i warto poprosić o nią wcześnie, bo kolejki są długie. Koniecznie porozmawiaj z lekarzem o niefarmakologicznych sposobach radzenia sobie z depresją i lękiem i zadbaj o nie: dobry sen, słońce, ruch, wspólnota, terapia, modlitwa itp. Czas porannych mdłości jest szczególnie trudny. National Maternal Mental Health Hotline, 1-833-852-6262, jest bezpłatna, o każdej porze, telefonicznie lub SMS-em, w wielu językach."
       ]
     },
     "breastfeeding": {
@@ -1650,7 +1650,9 @@ window.MYOB_LOCALES.pl = {
         "Waga:",
         "Waga urodzeniowa powinna wrócić w ciągu 10–14 dni. Po 5 dniu spodziewaj się przyrostu ½–1 oz dziennie.",
         "Dziecko:",
-        "Najedzone po karmieniu, przytomne, gdy nie śpi."
+        "Najedzone po karmieniu, przytomne, gdy nie śpi.",
+        "Alkohol, marihuana i palenie",
+        "Okazjonalny drink jest w porządku: po jednym drinku odczekaj 2 godziny przed karmieniem. Odciąganie i wylewanie mleka nie usuwa alkoholu szybciej. Unikaj marihuany: THC przechodzi do mleka i zostaje w nim przez kilka dni. Jeśli palisz, karmienie piersią i tak jest lepsze niż mleko modyfikowane. Pal na zewnątrz i nigdy przy dziecku; plastry lub gumy z nikotyną są w porządku."
       ]
     },
     "bf-challenges": {
@@ -1672,7 +1674,7 @@ window.MYOB_LOCALES.pl = {
         "Grzybica brodawek",
         "Ostry, piekący ból podczas i po karmieniu. Różowe, błyszczące brodawki. Ty i dziecko potrzebujecie leczenia przeciwgrzybiczego w tym samym czasie. Zadzwoń do swojego lekarza i do lekarza dziecka.",
         "Odciąganie",
-        "Elektryczne laktatory na obie piersi są w USA pokrywane przez większość ubezpieczeń w ramach ACA. Odciąganie podtrzymuje laktację, gdy dziecko nie może ssać, pozwala innym karmić dziecko i tworzy zapas w zamrażarce. Mleko można trzymać w lodówce 4 dni, a zamrożone 6–12 miesięcy.",
+        "Elektryczne laktatory na obie piersi są w USA pokrywane przez większość ubezpieczeń w ramach ACA. Odciąganie podtrzymuje laktację, gdy dziecko nie może ssać, pozwala innym karmić dziecko i tworzy zapas w zamrażarce. Mleko można trzymać 4 godziny w temperaturze pokojowej, 4 dni w lodówce i 6–12 miesięcy w zamrażarce. Rozmrażaj je w lodówce lub w ciepłej wodzie, nigdy w mikrofalówce, zużyj w ciągu 24 godzin i nie zamrażaj ponownie.",
         "Dokarmianie lub mleko modyfikowane są w porządku",
         "Jeśli karmienie piersią nie działa mimo wsparcia, dokarmianie mlekiem modyfikowanym to nie porażka. To karmienie dziecka. Najważniejsze jest najedzone, dobrze rozwijające się dziecko. Wiele rodzin z powodzeniem łączy pierś i butelkę."
       ]
@@ -1748,7 +1750,7 @@ window.MYOB_LOCALES.pl = {
         "Dlaczego zalecenia się różnią",
         "Amerykańska Akademia Pediatrii uznała, że korzyści przeważają nad ryzykiem, ale nie na tyle, by zalecać zabieg każdemu chłopcu. Kilka europejskich instytucji przeczytało te same badania i uznało inaczej. W praktyce to decyzja rodziny, często kształtowana przez religię, kulturę i to, jak wygląda ojciec.",
         "Jeśli zdecydujesz się na zabieg",
-        "Zapytaj konkretnie o znieczulenie: blokadę miejscową, a nie samą wodę z cukrem. Skuteczne metody istnieją i nie wszędzie się ich używa. Sprawdź, co pokrywa ubezpieczenie.",
+        "Zapytaj konkretnie o znieczulenie: blokadę miejscową, a nie samą wodę z cukrem. Skuteczne metody istnieją i nie wszędzie się ich używa. Sprawdź, co pokrywa ubezpieczenie. Potem czubek jest czerwony i przez mniej więcej tydzień może mieć miękki żółtawy nalot; to normalne gojenie. Przy każdej zmianie pieluszki nałóż wazelinę. Zadzwoń do lekarza dziecka, jeśli krwawienie nie ustaje po lekkim ucisku, nie ma mokrej pieluszki przez 8 godzin, jest gorączka 100.4°F lub wyższa albo szerzy się zaczerwienienie, obrzęk lub pęcherzyki z ropą.",
         "Jeśli zdecydujesz się nie robić",
         "Nie odciągaj napletka. U niemowląt jest zwykle przyrośnięty i oddziela się sam przez kilka lat; robienie tego na siłę powoduje bliznowacenie, któremu ma się zapobiegać. Myj z zewnątrz jak każdą inną skórę."
       ]
@@ -1805,7 +1807,8 @@ window.MYOB_LOCALES.pl = {
         "Dziecku ma być przyjemnie chłodno. Przegrzanie to czynnik ryzyka",
         "Leżenie na brzuchu (tylko na jawie &amp; pod nadzorem)",
         "Leżenie na brzuchu, gdy dziecko nie śpi i jest pilnowane, jest niezbędne dla rozwoju szyi i ramion i zapobiega spłaszczeniu główki. Zacznij od 2–3 minut kilka razy dziennie od urodzenia. Do 3 miesiąca dojdź do łącznie 30 minut dziennie.",
-        "Nigdy nie zostawiaj śpiącego dziecka na dłuższy sen w huśtawce, foteliku (poza samochodem), leżaczku ani pochyłym posłaniu. To nie są bezpieczne miejsca do snu."
+        "Nigdy nie zostawiaj śpiącego dziecka na dłuższy sen w huśtawce, foteliku (poza samochodem), leżaczku ani pochyłym posłaniu. To nie są bezpieczne miejsca do snu.",
+        "Jeśli otulasz dziecko, zostaw luz w biodrach, zawsze kładź je na plecach i przestań, gdy tylko zacznie próbować się przewracać"
       ]
     },
     "followup-appts": {
@@ -2075,7 +2078,7 @@ window.MYOB_LOCALES.pl = {
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
-    "content.faq-deli.t.2": "86ed7bf6b9c01890",
+    "content.faq-deli.t.2": "f834f951752931cb",
     "content.faq-coffee.title": "5389638ea8a88dc8",
     "content.faq-coffee.t.0": "ac1cf8bc0364371a",
     "content.faq-coffee.t.1": "d49405defc21c3ec",
@@ -2112,7 +2115,7 @@ window.MYOB_LOCALES.pl = {
     "content.faq-eat-in-labor.title": "5de8ba9361616d39",
     "content.faq-eat-in-labor.t.0": "23ad9f490ae5def7",
     "content.faq-vbac.title": "4fb6dce62d75356c",
-    "content.faq-vbac.t.0": "2a66625080510032",
+    "content.faq-vbac.t.0": "e38f425a11a42430",
     "content.faq-bf-bc.title": "0683d2b28ff53b78",
     "content.faq-bf-bc.t.0": "fd3cd5c648b45a44",
     "content.faq-bf-bc.t.1": "1ab0f2cdfd636c5f",
@@ -2190,7 +2193,7 @@ window.MYOB_LOCALES.pl = {
     "content.mood-ppd.t.4": "43a9a0194074522f",
     "content.mood-ppd.t.5": "794b0242064db6e0",
     "content.mood-ppd.t.6": "8ccfda079a0f2bb1",
-    "content.mood-ppd.t.7": "d0c868c402841cda",
+    "content.mood-ppd.t.7": "49a0b939085edcd7",
     "content.mood-ppd.t.8": "44ec48519e4d008f",
     "content.mood-ppd.t.9": "524037558408bf9f",
     "content.mood-ppd.t.10": "3c46be789836524a",
@@ -2561,7 +2564,7 @@ window.MYOB_LOCALES.pl = {
     "content.preeclampsia.sub": "f9ff93747e02e746",
     "content.preeclampsia.t.0": "012bab03fc234669",
     "content.preeclampsia.t.1": "065b8fa07086ba26",
-    "content.preeclampsia.t.2": "e940c7d81df0e732",
+    "content.preeclampsia.t.2": "99247147c9df8841",
     "content.preeclampsia.t.3": "80e3b3785e41ff32",
     "content.preeclampsia.t.4": "a3dc86808b674e1a",
     "content.preeclampsia.t.5": "f858f3feee379d5c",
@@ -2581,7 +2584,7 @@ window.MYOB_LOCALES.pl = {
     "content.antenatal-mental-health.t.5": "293bffca71d9d7c0",
     "content.antenatal-mental-health.t.6": "0906edec260abb02",
     "content.antenatal-mental-health.t.7": "736e65988b5d2316",
-    "content.antenatal-mental-health.t.8": "228b594922aaa6ef",
+    "content.antenatal-mental-health.t.8": "390c4e000fd9b536",
     "content.breastfeeding.title": "c57faccf43d647e5",
     "content.breastfeeding.sub": "fceab506c1cfc26c",
     "content.breastfeeding.t.0": "866addc074fa03ba",
@@ -2620,7 +2623,7 @@ window.MYOB_LOCALES.pl = {
     "content.bf-challenges.t.12": "99075ec3f001d689",
     "content.bf-challenges.t.13": "03fb5ce1844631eb",
     "content.bf-challenges.t.14": "ee72bccd36e7050f",
-    "content.bf-challenges.t.15": "b15406d3f4fcc479",
+    "content.bf-challenges.t.15": "20b0559f07c7d289",
     "content.bf-challenges.t.16": "3a9cce6f1d3df325",
     "content.bf-challenges.t.17": "acb9cdb3370cee4d",
     "content.formula.title": "ee81492549b61dd7",
@@ -2717,7 +2720,7 @@ window.MYOB_LOCALES.pl = {
     "content.circumcision.t.3": "d4de604c37f414a2",
     "content.circumcision.t.4": "706bcd0238eac334",
     "content.circumcision.t.5": "2d62b3babd67ab3c",
-    "content.circumcision.t.6": "0f49a9344a26fe2a",
+    "content.circumcision.t.6": "a8361fd6b7237104",
     "content.circumcision.t.7": "51bb2ecb4d379d51",
     "content.circumcision.t.8": "f7774e648f8e13da",
     "content.vitamin-d-drops.title": "e813e486bcfad49c",
@@ -2951,7 +2954,10 @@ window.MYOB_LOCALES.pl = {
     "content.crying-coping.t.11": "87206f861037d230",
     "content.crying-coping.t.12": "10aefed99197f797",
     "content.crying-coping.t.13": "4b4e03aa59a82fec",
-    "content.crying-coping.t.14": "555f6cca8c9ce900"
+    "content.crying-coping.t.14": "555f6cca8c9ce900",
+    "content.safe-sleep.t.21": "7583aee8e4b99b96",
+    "content.breastfeeding.t.19": "48a3e985cdc5711f",
+    "content.breastfeeding.t.20": "86b0f7602ed6090e"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -4452,6 +4458,9 @@ window.MYOB_LOCALES.pl = {
     "content.crying-coping.t.11": 1,
     "content.crying-coping.t.12": 1,
     "content.crying-coping.t.13": 1,
-    "content.crying-coping.t.14": 1
+    "content.crying-coping.t.14": 1,
+    "content.safe-sleep.t.21": 1,
+    "content.breastfeeding.t.19": 1,
+    "content.breastfeeding.t.20": 1
   }
 };

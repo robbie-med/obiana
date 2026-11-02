@@ -107,7 +107,7 @@ Don't build a second tool beside it.
 
   Seeds are dot `%pibleed`, `%piptl`, `%picry`, `%picouple` and `%pisafe`, plus `pi/ledger`.
 - [ ] Each new card goes into the Section 4 queue as soon as it lands. Don't start the second group until the first group has drafts in every language that has the trimester cards.
-- [ ] **Gaps inside cards:** RSV/COVID, toxoplasmosis, BP numbers, TLC-MAMA, VBAC rupture risk, circumcision care, breastfeeding and substances, milk storage, swaddling.
+- [x] **Gaps inside cards:** toxoplasmosis (faq-deli), BP numbers (preeclampsia), TLC-MAMA (antenatal-mental-health, mood-ppd), VBAC rupture 5–9 in 1,000 (faq-vbac), circumcision care, breastfeeding and substances (new section), milk storage (bf-challenges), swaddling (safe-sleep). Done 2026-11-02, user-approved, drafted in 15 languages (`f4y`, `f4z`). RSV/COVID skipped by user.
 - [ ] **Trim the trimester cards** to what she feels and what to ask; the Visits timeline holds the schedule.
 - [ ] `docs/CONTENT_MAP.md` updated for each card.
 

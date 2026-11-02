@@ -1253,7 +1253,7 @@ window.MYOB_LOCALES.es = {
         "La PPD es una condición médica: un trastorno del estado de ánimo que se puede tratar, no un defecto de carácter ni una señal de que es mala madre.",
         "Síntomas de la PPD",
         "Tristeza o sensación de vacío que no desaparece · Dificultad para crear un vínculo con su bebé · Sentir que es una mala madre o que su bebé estaría mejor sin usted · Ansiedad intensa o ataques de pánico · No poder dormir ni siquiera cuando el bebé duerme · Pérdida de interés en las cosas que antes disfrutaba · Pensamientos de hacerse daño a sí misma o a su bebé: llame al 911 o vaya a la sala de emergencias ahora, o llame o envíe un mensaje de texto al 988",
-        "Si estos síntomas duran más de 2 semanas o son intensos en cualquier momento, dígaselo a su equipo de atención. La PPD se trata eficazmente con terapia, grupos de apoyo o medicamentos (muchos de los cuales son seguros durante la lactancia).",
+        "Si estos síntomas duran más de 2 semanas o son intensos en cualquier momento, dígaselo a su equipo de atención. La PPD se trata eficazmente con terapia, grupos de apoyo o medicamentos (muchos de los cuales son seguros durante la lactancia). La Línea Nacional de Salud Mental Materna, 1-833-852-6262, es gratis, a cualquier hora, por llamada o mensaje de texto, en muchos idiomas.",
         "No espere hasta su visita de las 6 semanas para mencionarlo.",
         "Psicosis posparto. Poco común, pero es una emergencia médica",
         "Alucinaciones, delirios, confusión extrema o agitación en los días después del parto. Llame al 911 o vaya a la sala de emergencias de inmediato. Es poco común (1–2 de cada 1,000), pero requiere tratamiento urgente.",
@@ -1340,7 +1340,9 @@ window.MYOB_LOCALES.es = {
         "Peso:",
         "El peso al nacer debe recuperarse entre los 10 y 14 días. Después del día 5, espere un aumento de ½–1 oz por día.",
         "El bebé:",
-        "Satisfecho después de comer, alerta cuando está despierto."
+        "Satisfecho después de comer, alerta cuando está despierto.",
+        "Alcohol, cannabis y cigarrillo",
+        "Una bebida de vez en cuando está bien: espere 2 horas después de una bebida antes de amamantar. Sacarse la leche y tirarla no elimina el alcohol más rápido. Evite el cannabis: el THC pasa a la leche y se queda ahí por días. Si fuma, amamantar sigue siendo mejor que la fórmula. Fume afuera y nunca cerca del bebé; los parches o chicles de nicotina están bien."
       ]
     },
     "bf-challenges": {
@@ -1362,7 +1364,7 @@ window.MYOB_LOCALES.es = {
         "Candidiasis del pezón",
         "Dolor agudo y ardiente durante y después de las tomas. Pezones rosados y brillantes. Tanto usted como el bebé necesitan tratamiento antimicótico al mismo tiempo. Llame a su médico y al médico del bebé.",
         "Extracción de leche",
-        "Los sacaleches eléctricos dobles están cubiertos por la mayoría de los seguros médicos de EE. UU. bajo la ACA (Ley de Cuidado de Salud Asequible). La extracción mantiene la producción cuando el bebé no puede mamar, permite que otras personas alimenten al bebé y ayuda a crear una reserva en el congelador. La leche puede refrigerarse por 4 días o congelarse de 6 a 12 meses.",
+        "Los sacaleches eléctricos dobles están cubiertos por la mayoría de los seguros médicos de EE. UU. bajo la ACA (Ley de Cuidado de Salud Asequible). La extracción mantiene la producción cuando el bebé no puede mamar, permite que otras personas alimenten al bebé y ayuda a crear una reserva en el congelador. La leche dura 4 horas a temperatura ambiente, 4 días en el refrigerador y de 6 a 12 meses en el congelador. Descongélela en el refrigerador o en agua tibia, nunca en el microondas, úsela dentro de 24 horas y no la vuelva a congelar.",
         "Está bien complementar o alimentar con fórmula",
         "Si la lactancia no funciona a pesar del apoyo, complementar con fórmula no es un fracaso: es alimentar a su bebé. Lo más importante es un bebé alimentado y saludable. Muchas familias combinan con éxito la leche materna y la fórmula."
       ]
@@ -1491,7 +1493,8 @@ window.MYOB_LOCALES.es = {
         "Mantenga al bebé cómodamente fresco: el sobrecalentamiento es un factor de riesgo",
         "Tiempo boca abajo (solo despierto y supervisado)",
         "El tiempo boca abajo, mientras el bebé está despierto y vigilado, es esencial para el desarrollo del cuello y los hombros y para prevenir zonas planas en la cabeza. Empiece con 2–3 minutos varias veces al día desde el nacimiento. Aumente hasta 30 minutos en total por día a los 3 meses.",
-        "Nunca deje a un bebé dormido por períodos prolongados en un columpio, asiento de auto (fuera del auto), silla mecedora o dormilón inclinado: estos no son entornos de sueño seguros."
+        "Nunca deje a un bebé dormido por períodos prolongados en un columpio, asiento de auto (fuera del auto), silla mecedora o dormilón inclinado: estos no son entornos de sueño seguros.",
+        "Si lo envuelve, déjelo suelto en las caderas, acuéstelo siempre boca arriba y deje de envolverlo en cuanto empiece a intentar darse vuelta"
       ]
     },
     "followup-appts": {
@@ -1530,7 +1533,7 @@ window.MYOB_LOCALES.es = {
       "t": [
         "El riesgo principal es la",
         "Listeria",
-        ", una infección bacterial que es poco común, pero puede ser grave durante el embarazo (puede atravesar la placenta). La FDA recomienda evitar los quesos no pasteurizados y los embutidos, a menos que se calienten hasta que humeen (165°F). La mayoría de los quesos blandos pasteurizados (como el brie pasteurizado o el queso feta de paquete) son seguros. La excepción son el queso fresco, el queso blanco, la panela y otros quesos frescos similares: incluso los pasteurizados han causado brotes de listeria, así que cómalos solo cocinados hasta que humeen. El riesgo general de comer embutidos de vez en cuando es muy bajo: esta recomendación es preventiva, no significa que un sándwich de pavo vaya a causarle una enfermedad. Si tiene dudas, caliéntelo."
+        ", una infección bacterial que es poco común, pero puede ser grave durante el embarazo (puede atravesar la placenta). La FDA recomienda evitar los quesos no pasteurizados y los embutidos, a menos que se calienten hasta que humeen (165°F). La mayoría de los quesos blandos pasteurizados (como el brie pasteurizado o el queso feta de paquete) son seguros. La excepción son el queso fresco, el queso blanco, la panela y otros quesos frescos similares: incluso los pasteurizados han causado brotes de listeria, así que cómalos solo cocinados hasta que humeen. El riesgo general de comer embutidos de vez en cuando es muy bajo: esta recomendación es preventiva, no significa que un sándwich de pavo vaya a causarle una enfermedad. Si tiene dudas, caliéntelo. Evite también la carne poco cocida, los huevos crudos, la leche o el jugo sin pasteurizar y los brotes crudos, y lave las frutas y verduras. Pida que otra persona cambie la arena del gato, o use guantes: las heces de gato y la carne poco cocida pueden transmitir la toxoplasmosis."
       ]
     },
     "faq-coffee": {
@@ -1627,7 +1630,7 @@ window.MYOB_LOCALES.es = {
       "title": "Si tuve una cesárea antes, ¿siempre necesitaré otra?",
       "sub": "",
       "t": [
-        "No necesariamente. El parto vaginal después de una cesárea (VBAC) es una opción segura y adecuada para muchas mujeres con una incisión uterina transversa baja previa. Las tasas de éxito van de 60 a 80%. Los factores que afectan si usted es candidata incluyen el motivo de la cesárea anterior, su embarazo actual, el tipo de incisión uterina y la capacidad de su hospital para manejar una emergencia. Mencione esto al principio de su atención prenatal si le interesa."
+        "No necesariamente. El parto vaginal después de una cesárea (VBAC) es una opción segura y adecuada para muchas mujeres con una incisión uterina transversa baja previa. Las tasas de éxito van de 60 a 80%. El riesgo principal es que la cicatriz se abra durante el trabajo de parto (ruptura uterina): alrededor de 5 a 9 de cada 1,000 mujeres con una incisión transversa baja previa. Los factores que afectan si usted es candidata incluyen el motivo de la cesárea anterior, su embarazo actual, el tipo de incisión uterina y la capacidad de su hospital para manejar una emergencia. Mencione esto al principio de su atención prenatal si le interesa."
       ]
     },
     "faq-bf-bc": {
@@ -1714,7 +1717,7 @@ window.MYOB_LOCALES.es = {
       "t": [
         "Un problema de presión arterial que puede aparecer rápido, normalmente después de las 20 semanas y a veces en la primera o segunda semana después del parto. Detectarlo a tiempo de verdad cambia cómo termina.",
         "Qué es",
-        "Presión arterial alta más señales de que otros órganos están afectados, sobre todo los riñones o el hígado. También reduce el flujo de sangre por la placenta, por eso afecta el crecimiento del bebé. El parto es la única cura, así que esa conversación puede llegar antes de lo que espera.",
+        "Presión arterial alta más señales de que otros órganos están afectados, sobre todo los riñones o el hígado. También reduce el flujo de sangre por la placenta, por eso afecta el crecimiento del bebé. El parto es la única cura, así que esa conversación puede llegar antes de lo que espera. Una presión de 140/90 o más (cualquiera de los dos números) es alta. 160/110 o más es grave: vaya ahora a la sala de partos.",
         "Llame hoy a su médico si tiene",
         "Un dolor de cabeza que no se quita · Cambios en la vista: manchas oscuras, destellos · Dolor debajo de las costillas del lado derecho, o en la parte alta del estómago · Hinchazón repentina de la cara o las manos · Falta de aire",
         "o cualquier otra señal que su médico le haya dicho que vigile.",
@@ -1738,7 +1741,7 @@ window.MYOB_LOCALES.es = {
         "Medicamentos",
         "La depresión sin tratar y sin control no es una opción segura: se relaciona con parto prematuro, menor peso al nacer y una probabilidad mucho mayor de depresión posparto. Muchas mujeres tienen embarazos sin problemas sin necesitar medicamentos. Varios ISRS tienen buenos datos de seguridad en el embarazo y se recetan de forma habitual. Si dejó un medicamento el día que vio la prueba positiva, dígaselo a su médico para hablar de sus opciones.",
         "Qué más ayuda",
-        "La terapia de conversación funciona, sola o junto con medicamentos, y conviene pedirla pronto porque las listas de espera son largas. Hable con su médico y cuide también lo que no es medicamento: dormir bien, el sol, el ejercicio, la comunidad, la terapia, la oración, etc. Las náuseas del embarazo son una época especialmente difícil."
+        "La terapia de conversación funciona, sola o junto con medicamentos, y conviene pedirla pronto porque las listas de espera son largas. Hable con su médico y cuide también lo que no es medicamento: dormir bien, el sol, el ejercicio, la comunidad, la terapia, la oración, etc. Las náuseas del embarazo son una época especialmente difícil. La Línea Nacional de Salud Mental Materna, 1-833-852-6262, es gratis, a cualquier hora, por llamada o mensaje de texto, en muchos idiomas."
       ]
     },
     "alcohol": {
@@ -1828,7 +1831,7 @@ window.MYOB_LOCALES.es = {
         "Por qué las recomendaciones son distintas",
         "La Academia Americana de Pediatría concluyó que los beneficios superan los riesgos, pero no lo suficiente para recomendarla a todos los niños. Varias organizaciones europeas leyeron los mismos estudios y concluyeron otra cosa. En la práctica es una decisión de familia, a menudo influida por la religión, la cultura y cómo es el padre.",
         "Si decide hacerla",
-        "Pregunte en concreto por el control del dolor: un bloqueo con anestesia local, no solo agua con azúcar. Hay opciones eficaces y no se usan en todas partes. Revise qué cubre su seguro.",
+        "Pregunte en concreto por el control del dolor: un bloqueo con anestesia local, no solo agua con azúcar. Hay opciones eficaces y no se usan en todas partes. Revise qué cubre su seguro. Después, la punta se ve roja y puede tener una capa suave amarillenta durante más o menos una semana; eso es la cicatrización normal. Póngale vaselina en cada cambio de pañal. Llame al médico de su bebé si hay sangrado que no para con presión suave, ningún pañal mojado en 8 horas, fiebre de 100.4°F o más, o enrojecimiento, hinchazón o ampollas con pus que se extienden.",
         "Si decide no hacerla",
         "No retraiga el prepucio. En los bebés normalmente está pegado y se separa solo a lo largo de varios años; forzarlo causa las cicatrices que se busca evitar. Limpie la parte de afuera como cualquier otra piel."
       ]
@@ -2382,7 +2385,7 @@ window.MYOB_LOCALES.es = {
     "content.mood-ppd.t.4": "43a9a0194074522f",
     "content.mood-ppd.t.5": "794b0242064db6e0",
     "content.mood-ppd.t.6": "8ccfda079a0f2bb1",
-    "content.mood-ppd.t.7": "d0c868c402841cda",
+    "content.mood-ppd.t.7": "49a0b939085edcd7",
     "content.mood-ppd.t.8": "44ec48519e4d008f",
     "content.mood-ppd.t.9": "524037558408bf9f",
     "content.mood-ppd.t.10": "3c46be789836524a",
@@ -2470,7 +2473,7 @@ window.MYOB_LOCALES.es = {
     "content.bf-challenges.t.12": "99075ec3f001d689",
     "content.bf-challenges.t.13": "03fb5ce1844631eb",
     "content.bf-challenges.t.14": "ee72bccd36e7050f",
-    "content.bf-challenges.t.15": "b15406d3f4fcc479",
+    "content.bf-challenges.t.15": "20b0559f07c7d289",
     "content.bf-challenges.t.16": "3a9cce6f1d3df325",
     "content.bf-challenges.t.17": "acb9cdb3370cee4d",
     "content.formula.title": "ee81492549b61dd7",
@@ -2613,7 +2616,7 @@ window.MYOB_LOCALES.es = {
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
-    "content.faq-deli.t.2": "86ed7bf6b9c01890",
+    "content.faq-deli.t.2": "f834f951752931cb",
     "content.faq-coffee.title": "5389638ea8a88dc8",
     "content.faq-coffee.t.0": "ac1cf8bc0364371a",
     "content.faq-coffee.t.1": "d49405defc21c3ec",
@@ -2643,7 +2646,7 @@ window.MYOB_LOCALES.es = {
     "content.faq-eat-in-labor.title": "5de8ba9361616d39",
     "content.faq-eat-in-labor.t.0": "23ad9f490ae5def7",
     "content.faq-vbac.title": "4fb6dce62d75356c",
-    "content.faq-vbac.t.0": "2a66625080510032",
+    "content.faq-vbac.t.0": "e38f425a11a42430",
     "content.faq-bf-bc.title": "0683d2b28ff53b78",
     "content.faq-bf-bc.t.0": "fd3cd5c648b45a44",
     "content.faq-bf-bc.t.1": "1ab0f2cdfd636c5f",
@@ -2687,7 +2690,7 @@ window.MYOB_LOCALES.es = {
     "content.preeclampsia.sub": "f9ff93747e02e746",
     "content.preeclampsia.t.0": "012bab03fc234669",
     "content.preeclampsia.t.1": "065b8fa07086ba26",
-    "content.preeclampsia.t.2": "e940c7d81df0e732",
+    "content.preeclampsia.t.2": "99247147c9df8841",
     "content.preeclampsia.t.3": "80e3b3785e41ff32",
     "content.preeclampsia.t.4": "a3dc86808b674e1a",
     "content.preeclampsia.t.5": "f858f3feee379d5c",
@@ -2707,7 +2710,7 @@ window.MYOB_LOCALES.es = {
     "content.antenatal-mental-health.t.5": "293bffca71d9d7c0",
     "content.antenatal-mental-health.t.6": "0906edec260abb02",
     "content.antenatal-mental-health.t.7": "736e65988b5d2316",
-    "content.antenatal-mental-health.t.8": "228b594922aaa6ef",
+    "content.antenatal-mental-health.t.8": "390c4e000fd9b536",
     "content.alcohol.title": "a6d772bd1220badb",
     "content.alcohol.sub": "806fccc4f2daace2",
     "content.alcohol.t.0": "0e0d14a608d5d95c",
@@ -2773,7 +2776,7 @@ window.MYOB_LOCALES.es = {
     "content.circumcision.t.3": "d4de604c37f414a2",
     "content.circumcision.t.4": "706bcd0238eac334",
     "content.circumcision.t.5": "2d62b3babd67ab3c",
-    "content.circumcision.t.6": "0f49a9344a26fe2a",
+    "content.circumcision.t.6": "a8361fd6b7237104",
     "content.circumcision.t.7": "51bb2ecb4d379d51",
     "content.circumcision.t.8": "f7774e648f8e13da",
     "content.postpartum-danger.t.4": "0a1264f55f4a42c3",
@@ -2946,7 +2949,10 @@ window.MYOB_LOCALES.es = {
     "content.crying-coping.t.11": "87206f861037d230",
     "content.crying-coping.t.12": "10aefed99197f797",
     "content.crying-coping.t.13": "4b4e03aa59a82fec",
-    "content.crying-coping.t.14": "555f6cca8c9ce900"
+    "content.crying-coping.t.14": "555f6cca8c9ce900",
+    "content.safe-sleep.t.21": "7583aee8e4b99b96",
+    "content.breastfeeding.t.19": "48a3e985cdc5711f",
+    "content.breastfeeding.t.20": "86b0f7602ed6090e"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -3345,6 +3351,9 @@ window.MYOB_LOCALES.es = {
     "content.crying-coping.t.11": 1,
     "content.crying-coping.t.12": 1,
     "content.crying-coping.t.13": 1,
-    "content.crying-coping.t.14": 1
+    "content.crying-coping.t.14": 1,
+    "content.safe-sleep.t.21": 1,
+    "content.breastfeeding.t.19": 1,
+    "content.breastfeeding.t.20": 1
   }
 };

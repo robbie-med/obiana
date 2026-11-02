@@ -1138,7 +1138,7 @@ window.MYOB_LOCALES.zh = {
       "t": [
         "一种可能来得很快的血压问题，通常在 20 周以后，有时在产后一两周内。及早发现真的会改变结局。",
         "是什么",
-        "高血压，加上其他器官受影响的迹象，最常见的是肾脏或肝脏。它还会减少流经胎盘的血液，所以会影响宝宝的生长。分娩是唯一的治疗方法，所以关于分娩的讨论可能比您预想的来得快。",
+        "高血压，加上其他器官受影响的迹象，最常见的是肾脏或肝脏。它还会减少流经胎盘的血液，所以会影响宝宝的生长。分娩是唯一的治疗方法，所以关于分娩的讨论可能比您预想的来得快。血压 140/90 或更高（任一数字）就是偏高。160/110 或更高是严重情况：马上去产房。",
         "有以下情况，今天就联系医生",
         "头痛一直不好 · 视力变化：黑点、闪光 · 右侧肋骨下方或上腹部疼痛 · 脸或手突然肿 · 气短",
         "或医生让您注意的任何其他症状。",
@@ -1162,7 +1162,7 @@ window.MYOB_LOCALES.zh = {
         "药物",
         "不治疗、不控制的抑郁不是安全的选择：它与早产、出生体重偏低以及产后抑郁的几率大大增加有关。很多女性不需要药物也能顺利度过孕期。好几种 SSRI 在孕期有不错的安全性数据，常规开处方。如果您在看到验孕阳性那天停了药，告诉医生，一起讨论您的选择。",
         "还有什么有帮助",
-        "谈话治疗有效，单独用或和药物一起用都可以，最好早点申请，因为排队时间长。一定要和医生谈，也要重视抑郁和焦虑中非药物的部分：好的睡眠、阳光、运动、社群、心理治疗、祈祷等。孕吐期尤其难熬。"
+        "谈话治疗有效，单独用或和药物一起用都可以，最好早点申请，因为排队时间长。一定要和医生谈，也要重视抑郁和焦虑中非药物的部分：好的睡眠、阳光、运动、社群、心理治疗、祈祷等。孕吐期尤其难熬。全国孕产妇心理健康热线 1-833-852-6262 免费，随时可以打电话或发短信，有多种语言。"
       ]
     },
     "what-happens-on-arrival": {
@@ -1399,7 +1399,7 @@ window.MYOB_LOCALES.zh = {
         "产后抑郁是一种疾病：可以治疗的情绪障碍，不是性格缺陷，也不说明您是不好的妈妈。",
         "产后抑郁的症状",
         "持续的悲伤或空虚 · 很难和宝宝建立感情 · 觉得自己是不好的妈妈，或宝宝没有您会更好 · 严重焦虑或惊恐发作 · 宝宝睡了自己也睡不着 · 对以前喜欢的事失去兴趣 · 有伤害自己或宝宝的念头：现在就拨打 911 或去急诊室，或拨打或发短信至 988",
-        "如果这些症状超过 2 周，或任何时候很严重，请告诉您的医护团队。产后抑郁可以通过心理治疗、互助小组和/或药物（很多哺乳期也安全）有效治疗。",
+        "如果这些症状超过 2 周，或任何时候很严重，请告诉您的医护团队。产后抑郁可以通过心理治疗、互助小组和/或药物（很多哺乳期也安全）有效治疗。全国孕产妇心理健康热线 1-833-852-6262 免费，随时可以打电话或发短信，有多种语言。",
         "不要等到产后 6 周检查时才说。",
         "产后精神病。少见，但是急症",
         "产后几天内出现幻觉、妄想、极度混乱或躁动。立即拨打 911 或去急诊室。很少见（每 1,000 人中 1–2 人），但需要紧急治疗。",
@@ -1475,7 +1475,9 @@ window.MYOB_LOCALES.zh = {
         "体重：",
         "10–14 天应恢复到出生体重。第 5 天以后，每天增重约 ½–1 oz。",
         "宝宝：",
-        "吃完满足，醒着时精神好。"
+        "吃完满足，醒着时精神好。",
+        "酒、大麻和吸烟",
+        "偶尔喝一杯没关系：喝一杯后等 2 小时再喂奶。把奶吸出来倒掉并不能让酒精更快消除。避免大麻：THC 会进入母乳并在里面停留好几天。如果您吸烟，母乳喂养仍然比配方奶好。到外面吸，绝不要在宝宝附近吸；尼古丁贴片或口香糖可以用。"
       ]
     },
     "bf-challenges": {
@@ -1497,7 +1499,7 @@ window.MYOB_LOCALES.zh = {
         "乳头念珠菌感染",
         "喂奶时和喂奶后乳头剧烈灼痛。乳头粉红发亮。您和宝宝需要同时接受抗真菌治疗。联系您的医生和宝宝的医生。",
         "吸奶",
-        "根据 ACA，美国大多数保险都覆盖双边电动吸奶器。宝宝不能吃奶时吸奶可以维持奶量，也能让别人喂宝宝，还能在冰箱存奶。母乳冷藏可放 4 天，冷冻 6–12 个月。",
+        "根据 ACA，美国大多数保险都覆盖双边电动吸奶器。宝宝不能吃奶时吸奶可以维持奶量，也能让别人喂宝宝，还能在冰箱存奶。母乳室温可放 4 小时，冷藏 4 天，冷冻 6–12 个月。在冰箱里或温水中解冻，绝不要用微波炉，24 小时内用完，不要再次冷冻。",
         "补充配方奶或用配方奶喂养都没关系",
         "如果有了支持母乳喂养还是不顺利，补配方奶不是失败，这是在喂养您的宝宝。吃饱、长得好的宝宝最重要。很多家庭成功地混合喂养。"
       ]
@@ -1573,7 +1575,7 @@ window.MYOB_LOCALES.zh = {
         "为什么建议不同",
         "美国儿科学会认为好处大于风险，但还不足以建议每个男孩都做。几个欧洲机构看了同样的研究，得出了不同结论。实际上这是家庭的决定，常常受宗教、文化以及父亲的样子影响。",
         "如果决定做",
-        "具体问清楚怎么止痛：要用局部麻醉阻滞，不能只喂糖水。有效的方法是有的，但不是到处都在用。查一查保险覆盖什么。",
+        "具体问清楚怎么止痛：要用局部麻醉阻滞，不能只喂糖水。有效的方法是有的，但不是到处都在用。查一查保险覆盖什么。术后龟头会发红，大约一周内可能有一层软软的黄色覆盖物，这是正常愈合。每次换尿布时涂凡士林。如果轻压也止不住出血、8 小时没有湿尿布、体温 100.4°F 或更高，或红肿、肿胀、脓疱在扩散，请打电话给宝宝的医生。",
         "如果决定不做",
         "不要往后翻包皮。婴儿的包皮本来就是粘着的，几年内会自己分开；强行翻开反而造成想要避免的瘢痕。外面像其他皮肤一样擦洗就行。"
       ]
@@ -1630,7 +1632,8 @@ window.MYOB_LOCALES.zh = {
         "让宝宝凉爽舒适。过热是风险因素",
         "趴着玩（只在醒着 &amp; 有人看着时）",
         "宝宝醒着并有人看着时趴着玩，对脖子和肩膀发育以及防止扁头非常重要。从出生开始每天几次，每次 2–3 分钟。到 3 个月时每天累计达到 30 分钟。",
-        "绝对不要让睡着的宝宝长时间待在秋千、汽车安全座椅（车外）、弹跳椅或倾斜睡篮里。这些都不是安全的睡眠环境。"
+        "绝对不要让睡着的宝宝长时间待在秋千、汽车安全座椅（车外）、弹跳椅或倾斜睡篮里。这些都不是安全的睡眠环境。",
+        "如果包襁褓，髋部要留松，始终让宝宝仰卧，宝宝一开始尝试翻身就停止包裹"
       ]
     },
     "followup-appts": {
@@ -1669,7 +1672,7 @@ window.MYOB_LOCALES.zh = {
       "t": [
         "主要风险是",
         "李斯特菌",
-        "，一种少见但在孕期可能很严重的细菌感染（可以通过胎盘）。FDA 建议避免未经巴氏消毒的奶酪和冷切肉，除非加热到冒热气（165°F）。大多数巴氏消毒的软奶酪（如巴氏消毒的布里、包装好的菲达）是安全的。例外是 queso fresco、queso blanco、panela 等新鲜奶酪：即使是巴氏消毒的也引起过李斯特菌暴发，所以只吃煮到冒热气的。偶尔吃冷切肉的整体风险很低。拿不准时，就加热。"
+        "，一种少见但在孕期可能很严重的细菌感染（可以通过胎盘）。FDA 建议避免未经巴氏消毒的奶酪和冷切肉，除非加热到冒热气（165°F）。大多数巴氏消毒的软奶酪（如巴氏消毒的布里、包装好的菲达）是安全的。例外是 queso fresco、queso blanco、panela 等新鲜奶酪：即使是巴氏消毒的也引起过李斯特菌暴发，所以只吃煮到冒热气的。偶尔吃冷切肉的整体风险很低。拿不准时，就加热。还要避免没煮熟的肉、生鸡蛋、未经巴氏消毒的牛奶或果汁和生豆芽，水果蔬菜要洗干净。请别人帮忙换猫砂，或者戴手套：猫粪和没煮熟的肉会传播弓形虫病。"
       ]
     },
     "faq-coffee": {
@@ -1766,7 +1769,7 @@ window.MYOB_LOCALES.zh = {
       "title": "以前剖过，是不是每次都要剖？",
       "sub": "",
       "t": [
-        "不一定。对于很多以前做过一次子宫下段横切口剖宫产的女性，剖宫产后阴道分娩（VBAC）是安全合适的选择。成功率在 60–80%。影响能否尝试的因素包括上次剖宫产的原因、这次怀孕的情况、子宫切口类型，以及医院处理紧急情况的能力。如果有兴趣，在产检早期就提出来。"
+        "不一定。对于很多以前做过一次子宫下段横切口剖宫产的女性，剖宫产后阴道分娩（VBAC）是安全合适的选择。成功率在 60–80%。主要风险是分娩时疤痕裂开（子宫破裂）：以前做过一次子宫下段横切口的女性中，每 1,000 人约有 5 到 9 人。影响能否尝试的因素包括上次剖宫产的原因、这次怀孕的情况、子宫切口类型，以及医院处理紧急情况的能力。如果有兴趣，在产检早期就提出来。"
       ]
     },
     "faq-bf-bc": {
@@ -2224,7 +2227,7 @@ window.MYOB_LOCALES.zh = {
     "content.preeclampsia.sub": "f9ff93747e02e746",
     "content.preeclampsia.t.0": "012bab03fc234669",
     "content.preeclampsia.t.1": "065b8fa07086ba26",
-    "content.preeclampsia.t.2": "e940c7d81df0e732",
+    "content.preeclampsia.t.2": "99247147c9df8841",
     "content.preeclampsia.t.3": "80e3b3785e41ff32",
     "content.preeclampsia.t.4": "a3dc86808b674e1a",
     "content.preeclampsia.t.5": "f858f3feee379d5c",
@@ -2244,7 +2247,7 @@ window.MYOB_LOCALES.zh = {
     "content.antenatal-mental-health.t.5": "293bffca71d9d7c0",
     "content.antenatal-mental-health.t.6": "0906edec260abb02",
     "content.antenatal-mental-health.t.7": "736e65988b5d2316",
-    "content.antenatal-mental-health.t.8": "228b594922aaa6ef",
+    "content.antenatal-mental-health.t.8": "390c4e000fd9b536",
     "content.signs-of-labor.title": "52cb5412ef782f14",
     "content.signs-of-labor.sub": "8a5367edcb0445ab",
     "content.signs-of-labor.t.0": "dc2bf8da47b6707c",
@@ -2460,7 +2463,7 @@ window.MYOB_LOCALES.zh = {
     "content.mood-ppd.t.4": "43a9a0194074522f",
     "content.mood-ppd.t.5": "794b0242064db6e0",
     "content.mood-ppd.t.6": "8ccfda079a0f2bb1",
-    "content.mood-ppd.t.7": "d0c868c402841cda",
+    "content.mood-ppd.t.7": "49a0b939085edcd7",
     "content.mood-ppd.t.8": "44ec48519e4d008f",
     "content.mood-ppd.t.9": "524037558408bf9f",
     "content.mood-ppd.t.10": "3c46be789836524a",
@@ -2545,7 +2548,7 @@ window.MYOB_LOCALES.zh = {
     "content.bf-challenges.t.12": "99075ec3f001d689",
     "content.bf-challenges.t.13": "03fb5ce1844631eb",
     "content.bf-challenges.t.14": "ee72bccd36e7050f",
-    "content.bf-challenges.t.15": "b15406d3f4fcc479",
+    "content.bf-challenges.t.15": "20b0559f07c7d289",
     "content.bf-challenges.t.16": "3a9cce6f1d3df325",
     "content.bf-challenges.t.17": "acb9cdb3370cee4d",
     "content.formula.title": "ee81492549b61dd7",
@@ -2642,7 +2645,7 @@ window.MYOB_LOCALES.zh = {
     "content.circumcision.t.3": "d4de604c37f414a2",
     "content.circumcision.t.4": "706bcd0238eac334",
     "content.circumcision.t.5": "2d62b3babd67ab3c",
-    "content.circumcision.t.6": "0f49a9344a26fe2a",
+    "content.circumcision.t.6": "a8361fd6b7237104",
     "content.circumcision.t.7": "51bb2ecb4d379d51",
     "content.circumcision.t.8": "f7774e648f8e13da",
     "content.vitamin-d-drops.title": "e813e486bcfad49c",
@@ -2717,7 +2720,7 @@ window.MYOB_LOCALES.zh = {
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
-    "content.faq-deli.t.2": "86ed7bf6b9c01890",
+    "content.faq-deli.t.2": "f834f951752931cb",
     "content.faq-coffee.title": "5389638ea8a88dc8",
     "content.faq-coffee.t.0": "ac1cf8bc0364371a",
     "content.faq-coffee.t.1": "d49405defc21c3ec",
@@ -2754,7 +2757,7 @@ window.MYOB_LOCALES.zh = {
     "content.faq-eat-in-labor.title": "5de8ba9361616d39",
     "content.faq-eat-in-labor.t.0": "23ad9f490ae5def7",
     "content.faq-vbac.title": "4fb6dce62d75356c",
-    "content.faq-vbac.t.0": "2a66625080510032",
+    "content.faq-vbac.t.0": "e38f425a11a42430",
     "content.faq-bf-bc.title": "0683d2b28ff53b78",
     "content.faq-bf-bc.t.0": "fd3cd5c648b45a44",
     "content.faq-bf-bc.t.1": "1ab0f2cdfd636c5f",
@@ -2941,7 +2944,10 @@ window.MYOB_LOCALES.zh = {
     "content.crying-coping.t.11": "87206f861037d230",
     "content.crying-coping.t.12": "10aefed99197f797",
     "content.crying-coping.t.13": "4b4e03aa59a82fec",
-    "content.crying-coping.t.14": "555f6cca8c9ce900"
+    "content.crying-coping.t.14": "555f6cca8c9ce900",
+    "content.safe-sleep.t.21": "7583aee8e4b99b96",
+    "content.breastfeeding.t.19": "48a3e985cdc5711f",
+    "content.breastfeeding.t.20": "86b0f7602ed6090e"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -3969,6 +3975,9 @@ window.MYOB_LOCALES.zh = {
     "content.crying-coping.t.11": 1,
     "content.crying-coping.t.12": 1,
     "content.crying-coping.t.13": 1,
-    "content.crying-coping.t.14": 1
+    "content.crying-coping.t.14": 1,
+    "content.safe-sleep.t.21": 1,
+    "content.breastfeeding.t.19": 1,
+    "content.breastfeeding.t.20": 1
   }
 };

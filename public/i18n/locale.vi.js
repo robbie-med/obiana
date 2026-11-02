@@ -939,7 +939,7 @@ window.MYOB_LOCALES.vi = {
       "t": [
         "Nguy cơ chính là",
         "Listeria",
-        ", một bệnh nhiễm khuẩn hiếm gặp nhưng có thể nặng khi mang thai (có thể đi qua nhau thai). FDA khuyên tránh phô mai chưa tiệt trùng và thịt nguội, trừ khi được hâm nóng đến bốc hơi (165°F). Phần lớn phô mai mềm đã tiệt trùng (như brie tiệt trùng, feta đóng gói) đều an toàn. Ngoại lệ là queso fresco, queso blanco, panela và các loại phô mai tươi tương tự: ngay cả loại đã tiệt trùng cũng từng gây bùng phát listeria, nên chỉ ăn khi đã nấu đến bốc hơi. Nguy cơ chung từ việc thỉnh thoảng ăn thịt nguội là rất thấp. Khi không chắc, hãy hâm nóng."
+        ", một bệnh nhiễm khuẩn hiếm gặp nhưng có thể nặng khi mang thai (có thể đi qua nhau thai). FDA khuyên tránh phô mai chưa tiệt trùng và thịt nguội, trừ khi được hâm nóng đến bốc hơi (165°F). Phần lớn phô mai mềm đã tiệt trùng (như brie tiệt trùng, feta đóng gói) đều an toàn. Ngoại lệ là queso fresco, queso blanco, panela và các loại phô mai tươi tương tự: ngay cả loại đã tiệt trùng cũng từng gây bùng phát listeria, nên chỉ ăn khi đã nấu đến bốc hơi. Nguy cơ chung từ việc thỉnh thoảng ăn thịt nguội là rất thấp. Khi không chắc, hãy hâm nóng. Cũng tránh thịt chưa chín kỹ, trứng sống, sữa hoặc nước ép chưa tiệt trùng, và giá sống, và rửa sạch rau quả. Nhờ người khác thay cát vệ sinh cho mèo, hoặc đeo găng tay: phân mèo và thịt chưa chín có thể lây bệnh toxoplasma."
       ]
     },
     "faq-coffee": {
@@ -1036,7 +1036,7 @@ window.MYOB_LOCALES.vi = {
       "title": "Nếu đã từng mổ lấy thai, lần sau có luôn phải mổ không?",
       "sub": "",
       "t": [
-        "Không nhất thiết. Sinh thường sau mổ lấy thai (VBAC) là lựa chọn an toàn và phù hợp cho nhiều phụ nữ có một vết mổ ngang thấp ở tử cung trước đây. Tỷ lệ thành công từ 60–80%. Những yếu tố quyết định gồm lý do của lần mổ trước, thai kỳ hiện tại, kiểu vết mổ ở tử cung, và khả năng xử lý cấp cứu của bệnh viện. Nếu bạn quan tâm, hãy nói sớm khi bắt đầu khám thai."
+        "Không nhất thiết. Sinh thường sau mổ lấy thai (VBAC) là lựa chọn an toàn và phù hợp cho nhiều phụ nữ có một vết mổ ngang thấp ở tử cung trước đây. Tỷ lệ thành công từ 60–80%. Nguy cơ chính là vết sẹo bị toác ra khi chuyển dạ (vỡ tử cung): khoảng 5 đến 9 trên 1.000 phụ nữ có một vết mổ ngang thấp trước đây. Những yếu tố quyết định gồm lý do của lần mổ trước, thai kỳ hiện tại, kiểu vết mổ ở tử cung, và khả năng xử lý cấp cứu của bệnh viện. Nếu bạn quan tâm, hãy nói sớm khi bắt đầu khám thai."
       ]
     },
     "faq-bf-bc": {
@@ -1161,7 +1161,7 @@ window.MYOB_LOCALES.vi = {
         "Trầm cảm sau sinh là một bệnh. Một rối loạn khí sắc chữa được, không phải khuyết điểm tính cách hay dấu hiệu bạn là người mẹ tồi.",
         "Triệu chứng trầm cảm sau sinh",
         "Buồn hoặc trống rỗng kéo dài · Khó gắn bó với em bé · Cảm thấy mình là người mẹ tồi hoặc em bé sẽ tốt hơn nếu không có mình · Lo âu nặng hoặc cơn hoảng loạn · Không ngủ được ngay cả khi bé ngủ · Mất hứng thú với những điều trước đây bạn thích · Ý nghĩ làm hại bản thân hoặc em bé: gọi 911 hoặc đến phòng cấp cứu ngay, hoặc gọi hay nhắn tin 988",
-        "Nếu các triệu chứng này kéo dài quá 2 tuần hoặc nặng vào bất kỳ lúc nào, hãy báo nhóm chăm sóc. Trầm cảm sau sinh được điều trị hiệu quả bằng trị liệu tâm lý, nhóm hỗ trợ và/hoặc thuốc (nhiều thuốc an toàn khi cho con bú).",
+        "Nếu các triệu chứng này kéo dài quá 2 tuần hoặc nặng vào bất kỳ lúc nào, hãy báo nhóm chăm sóc. Trầm cảm sau sinh được điều trị hiệu quả bằng trị liệu tâm lý, nhóm hỗ trợ và/hoặc thuốc (nhiều thuốc an toàn khi cho con bú). Đường dây nóng Quốc gia về Sức khỏe Tâm thần Bà mẹ, 1-833-852-6262, miễn phí, bất cứ lúc nào, gọi hoặc nhắn tin, bằng nhiều ngôn ngữ.",
         "Đừng đợi đến lần khám 6 tuần mới nói.",
         "Loạn thần sau sinh. Hiếm nhưng là cấp cứu y khoa",
         "Ảo giác, hoang tưởng, lú lẫn nặng hoặc kích động trong những ngày sau sinh. Gọi 911 hoặc đến phòng cấp cứu ngay lập tức. Tình trạng này hiếm (1–2 trên 1.000) nhưng cần điều trị khẩn cấp.",
@@ -1586,7 +1586,7 @@ window.MYOB_LOCALES.vi = {
       "t": [
         "Một bệnh huyết áp có thể đến nhanh, thường sau 20 tuần và đôi khi trong một hai tuần sau sinh. Phát hiện sớm thật sự thay đổi kết cục.",
         "Đó là gì",
-        "Huyết áp cao kèm dấu hiệu các cơ quan khác bị ảnh hưởng, thường là thận hoặc gan. Nó cũng làm giảm dòng máu qua nhau thai, nên ảnh hưởng đến sự phát triển của bé. Sinh là cách chữa duy nhất, nên câu chuyện đó có thể đến nhanh hơn bạn nghĩ.",
+        "Huyết áp cao kèm dấu hiệu các cơ quan khác bị ảnh hưởng, thường là thận hoặc gan. Nó cũng làm giảm dòng máu qua nhau thai, nên ảnh hưởng đến sự phát triển của bé. Sinh là cách chữa duy nhất, nên câu chuyện đó có thể đến nhanh hơn bạn nghĩ. Huyết áp từ 140/90 trở lên (bất kỳ con số nào) là cao. Từ 160/110 trở lên là nặng: hãy đến khoa sinh ngay.",
         "Gọi bác sĩ ngay hôm nay nếu bạn có",
         "Đau đầu không hết · Thay đổi thị lực: đốm tối, chớp sáng · Đau dưới sườn bên phải, hoặc cao ở vùng thượng vị · Mặt hoặc tay sưng đột ngột · Khó thở",
         "hoặc bất kỳ dấu hiệu nào khác bác sĩ dặn bạn để ý.",
@@ -1610,7 +1610,7 @@ window.MYOB_LOCALES.vi = {
         "Thuốc",
         "Trầm cảm không điều trị và không kiểm soát không phải lựa chọn an toàn: nó liên quan đến sinh non, cân nặng lúc sinh thấp hơn và khả năng trầm cảm sau sinh cao hơn nhiều. Nhiều phụ nữ có thai kỳ suôn sẻ mà không cần thuốc. Một số thuốc SSRI có dữ liệu an toàn khá tốt khi mang thai và được kê thường xuyên. Nếu bạn đã ngừng thuốc nào đó ngay ngày thấy que thử dương tính, hãy nói với bác sĩ để bàn các lựa chọn.",
         "Những gì khác cũng giúp",
-        "Trị liệu tâm lý có hiệu quả, riêng lẻ hoặc cùng với thuốc, và nên xin sớm vì danh sách chờ dài. Hãy nhớ nói với bác sĩ và thực hiện những mặt không dùng thuốc của trầm cảm và lo âu: ngủ đủ, ánh nắng, vận động, cộng đồng, trị liệu, cầu nguyện, v.v. Thời gian ốm nghén là giai đoạn đặc biệt khó khăn."
+        "Trị liệu tâm lý có hiệu quả, riêng lẻ hoặc cùng với thuốc, và nên xin sớm vì danh sách chờ dài. Hãy nhớ nói với bác sĩ và thực hiện những mặt không dùng thuốc của trầm cảm và lo âu: ngủ đủ, ánh nắng, vận động, cộng đồng, trị liệu, cầu nguyện, v.v. Thời gian ốm nghén là giai đoạn đặc biệt khó khăn. Đường dây nóng Quốc gia về Sức khỏe Tâm thần Bà mẹ, 1-833-852-6262, miễn phí, bất cứ lúc nào, gọi hoặc nhắn tin, bằng nhiều ngôn ngữ."
       ]
     },
     "breastfeeding": {
@@ -1635,7 +1635,9 @@ window.MYOB_LOCALES.vi = {
         "Cân nặng:",
         "Bé nên lấy lại cân nặng lúc sinh trong 10–14 ngày. Sau ngày 5, bé tăng khoảng ½–1 oz mỗi ngày.",
         "Bé:",
-        "Thỏa mãn sau khi bú, tỉnh táo khi thức."
+        "Thỏa mãn sau khi bú, tỉnh táo khi thức.",
+        "Rượu bia, cần sa và hút thuốc",
+        "Thỉnh thoảng uống một ly thì không sao: đợi 2 giờ sau một ly rồi mới cho bú. Hút sữa ra rồi bỏ đi không làm rượu hết nhanh hơn. Tránh cần sa: THC đi vào sữa và ở lại trong đó nhiều ngày. Nếu bạn hút thuốc, cho bú mẹ vẫn tốt hơn sữa công thức. Hút thuốc bên ngoài và không bao giờ gần em bé; miếng dán hoặc kẹo cao su nicotine thì không sao."
       ]
     },
     "bf-challenges": {
@@ -1657,7 +1659,7 @@ window.MYOB_LOCALES.vi = {
         "Nấm đầu vú",
         "Đau nhói, rát bỏng khi và sau khi bú. Đầu vú hồng và bóng. Cả bạn và bé đều cần điều trị kháng nấm cùng lúc. Hãy gọi bác sĩ của bạn và bác sĩ của bé.",
         "Hút sữa",
-        "Máy hút sữa điện đôi được hầu hết bảo hiểm ở Mỹ chi trả theo ACA. Hút sữa giúp duy trì lượng sữa khi bé không bú trực tiếp được, cho người khác cho bé ăn, và tạo kho sữa đông lạnh. Sữa có thể để tủ lạnh 4 ngày hoặc đông lạnh 6–12 tháng.",
+        "Máy hút sữa điện đôi được hầu hết bảo hiểm ở Mỹ chi trả theo ACA. Hút sữa giúp duy trì lượng sữa khi bé không bú trực tiếp được, cho người khác cho bé ăn, và tạo kho sữa đông lạnh. Sữa giữ được 4 giờ ở nhiệt độ phòng, 4 ngày trong tủ lạnh và 6–12 tháng trong ngăn đông. Rã đông trong tủ lạnh hoặc trong nước ấm, không bao giờ dùng lò vi sóng, dùng trong vòng 24 giờ và không đông lạnh lại.",
         "Bổ sung hay cho bú sữa công thức là ổn",
         "Nếu cho con bú không thành dù đã có hỗ trợ, bổ sung sữa công thức không phải thất bại. Đó là nuôi con. Một em bé được ăn no và phát triển tốt là quan trọng nhất. Nhiều gia đình kết hợp sữa mẹ và sữa công thức thành công."
       ]
@@ -1733,7 +1735,7 @@ window.MYOB_LOCALES.vi = {
         "Vì sao hướng dẫn khác nhau",
         "Viện Hàn lâm Nhi khoa Hoa Kỳ kết luận lợi ích lớn hơn rủi ro nhưng chưa đủ để khuyên cho mọi bé trai. Một số tổ chức châu Âu đọc cùng các nghiên cứu và kết luận khác. Trên thực tế đây là quyết định của gia đình, thường chịu ảnh hưởng từ tôn giáo, văn hóa, và người cha như thế nào.",
         "Nếu bạn quyết định làm",
-        "Hãy hỏi cụ thể về giảm đau: gây tê tại chỗ, không chỉ nước đường. Có những cách hiệu quả nhưng không phải nơi nào cũng dùng. Kiểm tra xem bảo hiểm chi trả gì.",
+        "Hãy hỏi cụ thể về giảm đau: gây tê tại chỗ, không chỉ nước đường. Có những cách hiệu quả nhưng không phải nơi nào cũng dùng. Kiểm tra xem bảo hiểm chi trả gì. Sau đó, đầu dương vật đỏ và có thể có một lớp mềm màu vàng trong khoảng một tuần; đó là lành vết thương bình thường. Bôi vaseline mỗi lần thay tã. Gọi bác sĩ của bé nếu chảy máu không cầm khi ấn nhẹ, không có tã ướt trong 8 giờ, sốt từ 100.4°F trở lên, hoặc đỏ, sưng hay bọng mủ lan rộng.",
         "Nếu bạn quyết định không làm",
         "Đừng tuột bao quy đầu. Ở trẻ nhỏ nó thường dính và tự tách ra trong vài năm; cố tuột sẽ gây sẹo, chính điều muốn tránh. Lau bên ngoài như da ở chỗ khác."
       ]
@@ -1790,7 +1792,8 @@ window.MYOB_LOCALES.vi = {
         "Giữ bé mát dễ chịu. Quá nóng là một yếu tố nguy cơ",
         "Nằm sấp (chỉ khi thức &amp; có người trông)",
         "Cho bé nằm sấp khi thức và có người trông là rất cần cho sự phát triển cổ và vai, và ngừa bẹt đầu. Bắt đầu với 2–3 phút vài lần mỗi ngày từ lúc sinh. Tăng dần đến tổng 30 phút mỗi ngày lúc 3 tháng.",
-        "Không bao giờ để bé ngủ lâu trên xích đu, ghế ô tô (ngoài xe), ghế rung hay giường nghiêng. Đó không phải chỗ ngủ an toàn."
+        "Không bao giờ để bé ngủ lâu trên xích đu, ghế ô tô (ngoài xe), ghế rung hay giường nghiêng. Đó không phải chỗ ngủ an toàn.",
+        "Nếu quấn bé, để lỏng ở hông, luôn đặt bé nằm ngửa, và ngưng quấn ngay khi bé bắt đầu tập lật"
       ]
     },
     "followup-appts": {
@@ -2060,7 +2063,7 @@ window.MYOB_LOCALES.vi = {
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
-    "content.faq-deli.t.2": "86ed7bf6b9c01890",
+    "content.faq-deli.t.2": "f834f951752931cb",
     "content.faq-coffee.title": "5389638ea8a88dc8",
     "content.faq-coffee.t.0": "ac1cf8bc0364371a",
     "content.faq-coffee.t.1": "d49405defc21c3ec",
@@ -2097,7 +2100,7 @@ window.MYOB_LOCALES.vi = {
     "content.faq-eat-in-labor.title": "5de8ba9361616d39",
     "content.faq-eat-in-labor.t.0": "23ad9f490ae5def7",
     "content.faq-vbac.title": "4fb6dce62d75356c",
-    "content.faq-vbac.t.0": "2a66625080510032",
+    "content.faq-vbac.t.0": "e38f425a11a42430",
     "content.faq-bf-bc.title": "0683d2b28ff53b78",
     "content.faq-bf-bc.t.0": "fd3cd5c648b45a44",
     "content.faq-bf-bc.t.1": "1ab0f2cdfd636c5f",
@@ -2175,7 +2178,7 @@ window.MYOB_LOCALES.vi = {
     "content.mood-ppd.t.4": "43a9a0194074522f",
     "content.mood-ppd.t.5": "794b0242064db6e0",
     "content.mood-ppd.t.6": "8ccfda079a0f2bb1",
-    "content.mood-ppd.t.7": "d0c868c402841cda",
+    "content.mood-ppd.t.7": "49a0b939085edcd7",
     "content.mood-ppd.t.8": "44ec48519e4d008f",
     "content.mood-ppd.t.9": "524037558408bf9f",
     "content.mood-ppd.t.10": "3c46be789836524a",
@@ -2546,7 +2549,7 @@ window.MYOB_LOCALES.vi = {
     "content.preeclampsia.sub": "f9ff93747e02e746",
     "content.preeclampsia.t.0": "012bab03fc234669",
     "content.preeclampsia.t.1": "065b8fa07086ba26",
-    "content.preeclampsia.t.2": "e940c7d81df0e732",
+    "content.preeclampsia.t.2": "99247147c9df8841",
     "content.preeclampsia.t.3": "80e3b3785e41ff32",
     "content.preeclampsia.t.4": "a3dc86808b674e1a",
     "content.preeclampsia.t.5": "f858f3feee379d5c",
@@ -2566,7 +2569,7 @@ window.MYOB_LOCALES.vi = {
     "content.antenatal-mental-health.t.5": "293bffca71d9d7c0",
     "content.antenatal-mental-health.t.6": "0906edec260abb02",
     "content.antenatal-mental-health.t.7": "736e65988b5d2316",
-    "content.antenatal-mental-health.t.8": "228b594922aaa6ef",
+    "content.antenatal-mental-health.t.8": "390c4e000fd9b536",
     "content.breastfeeding.title": "c57faccf43d647e5",
     "content.breastfeeding.sub": "fceab506c1cfc26c",
     "content.breastfeeding.t.0": "866addc074fa03ba",
@@ -2605,7 +2608,7 @@ window.MYOB_LOCALES.vi = {
     "content.bf-challenges.t.12": "99075ec3f001d689",
     "content.bf-challenges.t.13": "03fb5ce1844631eb",
     "content.bf-challenges.t.14": "ee72bccd36e7050f",
-    "content.bf-challenges.t.15": "b15406d3f4fcc479",
+    "content.bf-challenges.t.15": "20b0559f07c7d289",
     "content.bf-challenges.t.16": "3a9cce6f1d3df325",
     "content.bf-challenges.t.17": "acb9cdb3370cee4d",
     "content.formula.title": "ee81492549b61dd7",
@@ -2702,7 +2705,7 @@ window.MYOB_LOCALES.vi = {
     "content.circumcision.t.3": "d4de604c37f414a2",
     "content.circumcision.t.4": "706bcd0238eac334",
     "content.circumcision.t.5": "2d62b3babd67ab3c",
-    "content.circumcision.t.6": "0f49a9344a26fe2a",
+    "content.circumcision.t.6": "a8361fd6b7237104",
     "content.circumcision.t.7": "51bb2ecb4d379d51",
     "content.circumcision.t.8": "f7774e648f8e13da",
     "content.vitamin-d-drops.title": "e813e486bcfad49c",
@@ -2936,7 +2939,10 @@ window.MYOB_LOCALES.vi = {
     "content.crying-coping.t.11": "87206f861037d230",
     "content.crying-coping.t.12": "10aefed99197f797",
     "content.crying-coping.t.13": "4b4e03aa59a82fec",
-    "content.crying-coping.t.14": "555f6cca8c9ce900"
+    "content.crying-coping.t.14": "555f6cca8c9ce900",
+    "content.safe-sleep.t.21": "7583aee8e4b99b96",
+    "content.breastfeeding.t.19": "48a3e985cdc5711f",
+    "content.breastfeeding.t.20": "86b0f7602ed6090e"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -4437,6 +4443,9 @@ window.MYOB_LOCALES.vi = {
     "content.crying-coping.t.11": 1,
     "content.crying-coping.t.12": 1,
     "content.crying-coping.t.13": 1,
-    "content.crying-coping.t.14": 1
+    "content.crying-coping.t.14": 1,
+    "content.safe-sleep.t.21": 1,
+    "content.breastfeeding.t.19": 1,
+    "content.breastfeeding.t.20": 1
   }
 };

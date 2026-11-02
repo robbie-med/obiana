@@ -944,7 +944,7 @@ window.MYOB_LOCALES.de = {
       "t": [
         "Das Hauptrisiko ist",
         "Listeriose",
-        ", eine bakterielle Infektion, die selten ist, in der Schwangerschaft aber gefährlich sein kann (sie kann über die Plazenta gehen). Die FDA rät, Käse aus Rohmilch und Aufschnitt zu meiden, außer er wurde erhitzt, bis er dampft (165°F). Die meisten pasteurisierten Weichkäse (etwa pasteurisierter Brie, Feta aus der Packung) sind sicher. Die Ausnahme sind Queso fresco, Queso blanco, Panela und ähnliche Frischkäse: Auch pasteurisierte haben Listerien-Ausbrüche verursacht, essen Sie sie also nur, wenn sie gekocht sind, bis sie dampfen. Das Gesamtrisiko durch gelegentlichen Aufschnitt ist sehr gering. Im Zweifel: erhitzen."
+        ", eine bakterielle Infektion, die selten ist, in der Schwangerschaft aber gefährlich sein kann (sie kann über die Plazenta gehen). Die FDA rät, Käse aus Rohmilch und Aufschnitt zu meiden, außer er wurde erhitzt, bis er dampft (165°F). Die meisten pasteurisierten Weichkäse (etwa pasteurisierter Brie, Feta aus der Packung) sind sicher. Die Ausnahme sind Queso fresco, Queso blanco, Panela und ähnliche Frischkäse: Auch pasteurisierte haben Listerien-Ausbrüche verursacht, essen Sie sie also nur, wenn sie gekocht sind, bis sie dampfen. Das Gesamtrisiko durch gelegentlichen Aufschnitt ist sehr gering. Im Zweifel: erhitzen. Meiden Sie auch nicht durchgegartes Fleisch, rohe Eier, nicht pasteurisierte Milch oder Säfte und rohe Sprossen, und waschen Sie Obst und Gemüse. Lassen Sie jemand anderen das Katzenklo sauber machen, oder tragen Sie Handschuhe: Katzenkot und nicht durchgegartes Fleisch können Toxoplasmose übertragen."
       ]
     },
     "faq-coffee": {
@@ -1041,7 +1041,7 @@ window.MYOB_LOCALES.de = {
       "title": "Brauche ich nach einem Kaiserschnitt immer wieder einen?",
       "sub": "",
       "t": [
-        "Nicht unbedingt. Eine vaginale Geburt nach Kaiserschnitt (VBAC) ist für viele Frauen mit einem früheren tiefen Querschnitt an der Gebärmutter eine sichere und passende Möglichkeit. Sie gelingt in 60–80% der Fälle. Ob sie für Sie infrage kommt, hängt vom Grund für den früheren Kaiserschnitt ab, von der jetzigen Schwangerschaft, der Art des Schnitts an der Gebärmutter und davon, ob Ihr Krankenhaus einen Notfall bewältigen kann. Sprechen Sie es früh in der Vorsorge an, wenn Sie Interesse haben."
+        "Nicht unbedingt. Eine vaginale Geburt nach Kaiserschnitt (VBAC) ist für viele Frauen mit einem früheren tiefen Querschnitt an der Gebärmutter eine sichere und passende Möglichkeit. Sie gelingt in 60–80% der Fälle. Das Hauptrisiko ist, dass die Narbe während der Wehen aufreißt (Uterusruptur): bei etwa 5 bis 9 von 1.000 Frauen mit einem früheren tiefen Querschnitt. Ob sie für Sie infrage kommt, hängt vom Grund für den früheren Kaiserschnitt ab, von der jetzigen Schwangerschaft, der Art des Schnitts an der Gebärmutter und davon, ob Ihr Krankenhaus einen Notfall bewältigen kann. Sprechen Sie es früh in der Vorsorge an, wenn Sie Interesse haben."
       ]
     },
     "faq-bf-bc": {
@@ -1166,7 +1166,7 @@ window.MYOB_LOCALES.de = {
         "Eine Wochenbettdepression ist eine Krankheit. Eine behandelbare Störung der Stimmung, keine Charakterschwäche und kein Zeichen, dass Sie eine schlechte Mutter sind.",
         "Anzeichen einer Wochenbettdepression",
         "Anhaltende Traurigkeit oder Leere · Schwierigkeiten, eine Bindung zu Ihrem Baby aufzubauen · Das Gefühl, eine schlechte Mutter zu sein oder dass es Ihrem Baby ohne Sie besser ginge · Starke Ängste oder Panikattacken · Nicht schlafen können, auch wenn das Baby schläft · Kein Interesse mehr an Dingen, die Ihnen früher Freude gemacht haben · Gedanken, sich selbst oder Ihrem Baby etwas anzutun: rufen Sie sofort 911 an oder gehen Sie in die Notaufnahme, oder rufen Sie 988 an oder schreiben Sie eine SMS an 988",
-        "Wenn diese Beschwerden länger als 2 Wochen anhalten oder irgendwann stark sind, sagen Sie es Ihrem Behandlungsteam. Eine Wochenbettdepression lässt sich gut behandeln, mit Gesprächstherapie, Selbsthilfegruppen und/oder Medikamenten (viele davon sind beim Stillen sicher).",
+        "Wenn diese Beschwerden länger als 2 Wochen anhalten oder irgendwann stark sind, sagen Sie es Ihrem Behandlungsteam. Eine Wochenbettdepression lässt sich gut behandeln, mit Gesprächstherapie, Selbsthilfegruppen und/oder Medikamenten (viele davon sind beim Stillen sicher). Die National Maternal Mental Health Hotline, 1-833-852-6262, ist kostenlos, rund um die Uhr, per Anruf oder SMS, in vielen Sprachen.",
         "Warten Sie damit nicht bis zur Untersuchung nach 6 Wochen.",
         "Wochenbettpsychose. Selten, aber ein medizinischer Notfall",
         "Halluzinationen, Wahnvorstellungen, starke Verwirrung oder Unruhe in den Tagen nach der Geburt. Rufen Sie sofort 911 an oder gehen Sie in die Notaufnahme. Das ist selten (1–2 von 1.000), muss aber dringend behandelt werden.",
@@ -1591,7 +1591,7 @@ window.MYOB_LOCALES.de = {
       "t": [
         "Eine Blutdruckerkrankung, die schnell kommen kann, meist nach der 20. Woche und manchmal in den ein, zwei Wochen nach der Geburt. Früh erkannt, nimmt sie wirklich einen anderen Verlauf.",
         "Was es ist",
-        "Hoher Blutdruck plus Zeichen, dass andere Organe betroffen sind, meist Nieren oder Leber. Sie verringert auch die Durchblutung der Plazenta, weshalb sie das Wachstum des Babys beeinflusst. Heilen kann nur die Geburt, deshalb kann dieses Gespräch schneller kommen, als Sie denken.",
+        "Hoher Blutdruck plus Zeichen, dass andere Organe betroffen sind, meist Nieren oder Leber. Sie verringert auch die Durchblutung der Plazenta, weshalb sie das Wachstum des Babys beeinflusst. Heilen kann nur die Geburt, deshalb kann dieses Gespräch schneller kommen, als Sie denken. Ein Blutdruck von 140/90 oder höher (einer der beiden Werte) ist hoch. 160/110 oder höher ist schwer: Gehen Sie sofort in den Kreißsaal.",
         "Rufen Sie heute Ihren Arzt an bei",
         "Kopfschmerzen, die nicht weggehen · Sehstörungen: dunkle Flecken, Lichtblitze · Schmerzen rechts unter den Rippen oder hoch im Oberbauch · Plötzlicher Schwellung von Gesicht oder Händen · Atemnot",
         "oder jedem anderen Zeichen, auf das Ihr Arzt Sie hingewiesen hat.",
@@ -1615,7 +1615,7 @@ window.MYOB_LOCALES.de = {
         "Medikamente",
         "Eine unbehandelte und unkontrollierte Depression ist keine sichere Wahl: Sie hängt mit Frühgeburt, niedrigerem Geburtsgewicht und einer viel höheren Wahrscheinlichkeit einer Wochenbettdepression zusammen. Viele Frauen haben eine gute Schwangerschaft ohne Medikamente. Für mehrere SSRI gibt es ordentliche Daten zur Sicherheit in der Schwangerschaft, sie werden routinemäßig verschrieben. Wenn Sie ein Medikament an dem Tag abgesetzt haben, an dem der Test positiv war, sagen Sie es Ihrem Arzt, damit Sie über Ihre Möglichkeiten sprechen können.",
         "Was sonst hilft",
-        "Gesprächstherapie wirkt, allein oder zusammen mit Medikamenten, und es lohnt sich, früh danach zu fragen, weil die Wartelisten lang sind. Sprechen Sie unbedingt mit Ihrem Arzt über die Seiten von Depression und Angst, die nichts mit Medikamenten zu tun haben, und kümmern Sie sich darum: guter Schlaf, Sonne, Bewegung, Gemeinschaft, Therapie, Gebet usw. Die Zeit der Schwangerschaftsübelkeit ist besonders schwer."
+        "Gesprächstherapie wirkt, allein oder zusammen mit Medikamenten, und es lohnt sich, früh danach zu fragen, weil die Wartelisten lang sind. Sprechen Sie unbedingt mit Ihrem Arzt über die Seiten von Depression und Angst, die nichts mit Medikamenten zu tun haben, und kümmern Sie sich darum: guter Schlaf, Sonne, Bewegung, Gemeinschaft, Therapie, Gebet usw. Die Zeit der Schwangerschaftsübelkeit ist besonders schwer. Die National Maternal Mental Health Hotline, 1-833-852-6262, ist kostenlos, rund um die Uhr, per Anruf oder SMS, in vielen Sprachen."
       ]
     },
     "breastfeeding": {
@@ -1640,7 +1640,9 @@ window.MYOB_LOCALES.de = {
         "Gewicht:",
         "Das Geburtsgewicht sollte nach 10–14 Tagen wieder erreicht sein. Ab dem 5. Tag rechnen Sie mit ½–1 oz Zunahme pro Tag.",
         "Baby:",
-        "Nach dem Trinken zufrieden, in wachen Phasen aufmerksam."
+        "Nach dem Trinken zufrieden, in wachen Phasen aufmerksam.",
+        "Alkohol, Cannabis und Rauchen",
+        "Ab und zu ein Glas ist in Ordnung: Warten Sie nach einem Glas 2 Stunden, bevor Sie stillen. Abpumpen und Wegschütten baut den Alkohol nicht schneller ab. Meiden Sie Cannabis: THC geht in die Milch über und bleibt dort tagelang. Wenn Sie rauchen, ist Stillen trotzdem besser als Säuglingsnahrung. Rauchen Sie draußen und nie in der Nähe des Babys; Nikotinpflaster oder -kaugummi sind in Ordnung."
       ]
     },
     "bf-challenges": {
@@ -1662,7 +1664,7 @@ window.MYOB_LOCALES.de = {
         "Soor an der Brustwarze",
         "Stechende, brennende Schmerzen beim und nach dem Stillen. Rosa, glänzende Brustwarzen. Sie und Ihr Baby brauchen gleichzeitig eine Behandlung gegen Pilze. Rufen Sie Ihren Arzt und den Arzt Ihres Babys an.",
         "Abpumpen",
-        "Elektrische Doppelmilchpumpen werden in den USA nach dem ACA von den meisten Versicherungen bezahlt. Abpumpen hält die Milchmenge, wenn das Baby nicht an der Brust trinken kann, lässt andere das Baby füttern und schafft einen Vorrat im Gefrierfach. Milch hält im Kühlschrank 4 Tage, eingefroren 6–12 Monate.",
+        "Elektrische Doppelmilchpumpen werden in den USA nach dem ACA von den meisten Versicherungen bezahlt. Abpumpen hält die Milchmenge, wenn das Baby nicht an der Brust trinken kann, lässt andere das Baby füttern und schafft einen Vorrat im Gefrierfach. Milch hält 4 Stunden bei Raumtemperatur, 4 Tage im Kühlschrank und 6–12 Monate im Gefrierfach. Tauen Sie sie im Kühlschrank oder in warmem Wasser auf, nie in der Mikrowelle, verbrauchen Sie sie innerhalb von 24 Stunden und frieren Sie sie nicht wieder ein.",
         "Zufüttern oder Fläschchen ist in Ordnung",
         "Wenn Stillen trotz Unterstützung nicht klappt, ist Zufüttern mit Säuglingsnahrung kein Versagen. Es ist Ihr Baby ernähren. Ein satt und gut gedeihendes Baby zählt am meisten. Viele Familien kombinieren Stillen und Fläschchen erfolgreich."
       ]
@@ -1738,7 +1740,7 @@ window.MYOB_LOCALES.de = {
         "Warum die Empfehlungen sich unterscheiden",
         "Die American Academy of Pediatrics kam zu dem Schluss, dass die Vorteile die Risiken überwiegen, aber nicht genug, um sie für jeden Jungen zu empfehlen. Mehrere europäische Gremien haben dieselben Studien gelesen und anders entschieden. In der Praxis ist es eine Entscheidung der Familie, oft geprägt von Religion, Kultur und davon, wie der Vater aussieht.",
         "Wenn Sie sich dafür entscheiden",
-        "Fragen Sie gezielt nach der Schmerzbehandlung: eine örtliche Betäubung (Nervenblockade), nicht nur Zuckerwasser. Es gibt wirksame Möglichkeiten, und sie werden nicht überall genutzt. Prüfen Sie, was Ihre Versicherung bezahlt.",
+        "Fragen Sie gezielt nach der Schmerzbehandlung: eine örtliche Betäubung (Nervenblockade), nicht nur Zuckerwasser. Es gibt wirksame Möglichkeiten, und sie werden nicht überall genutzt. Prüfen Sie, was Ihre Versicherung bezahlt. Danach ist die Spitze rot und kann etwa eine Woche lang einen weichen gelblichen Belag haben; das ist normale Heilung. Tragen Sie bei jedem Windelwechsel Vaseline auf. Rufen Sie die Ärztin oder den Arzt Ihres Babys an bei einer Blutung, die mit leichtem Druck nicht aufhört, keiner nassen Windel in 8 Stunden, Fieber von 100.4°F oder mehr oder sich ausbreitender Rötung, Schwellung oder Eiterbläschen.",
         "Wenn Sie sich dagegen entscheiden",
         "Ziehen Sie die Vorhaut nicht zurück. Sie ist im Säuglingsalter normalerweise angewachsen und löst sich über mehrere Jahre von selbst; Zwang verursacht genau die Narben, die vermieden werden sollen. Waschen Sie außen wie jede andere Haut."
       ]
@@ -1795,7 +1797,8 @@ window.MYOB_LOCALES.de = {
         "Halten Sie das Baby angenehm kühl. Überhitzung ist ein Risikofaktor",
         "Bauchlage (nur wach &amp; unter Aufsicht)",
         "Bauchlage, während das Baby wach ist und beobachtet wird, ist wichtig für die Entwicklung von Nacken und Schultern und gegen abgeflachte Stellen am Kopf. Beginnen Sie ab der Geburt mit 2–3 Minuten mehrmals am Tag. Steigern Sie bis 3 Monate auf insgesamt 30 Minuten am Tag.",
-        "Lassen Sie ein schlafendes Baby nie länger in einer Schaukel, im Autositz (außerhalb des Autos), in einer Wippe oder einem schräg gestellten Schlafplatz schlafen. Das sind keine sicheren Schlafplätze."
+        "Lassen Sie ein schlafendes Baby nie länger in einer Schaukel, im Autositz (außerhalb des Autos), in einer Wippe oder einem schräg gestellten Schlafplatz schlafen. Das sind keine sicheren Schlafplätze.",
+        "Wenn Sie pucken, lassen Sie die Hüften locker, legen Sie Ihr Baby immer auf den Rücken und hören Sie auf, sobald es versucht, sich zu drehen"
       ]
     },
     "followup-appts": {
@@ -2065,7 +2068,7 @@ window.MYOB_LOCALES.de = {
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
-    "content.faq-deli.t.2": "86ed7bf6b9c01890",
+    "content.faq-deli.t.2": "f834f951752931cb",
     "content.faq-coffee.title": "5389638ea8a88dc8",
     "content.faq-coffee.t.0": "ac1cf8bc0364371a",
     "content.faq-coffee.t.1": "d49405defc21c3ec",
@@ -2102,7 +2105,7 @@ window.MYOB_LOCALES.de = {
     "content.faq-eat-in-labor.title": "5de8ba9361616d39",
     "content.faq-eat-in-labor.t.0": "23ad9f490ae5def7",
     "content.faq-vbac.title": "4fb6dce62d75356c",
-    "content.faq-vbac.t.0": "2a66625080510032",
+    "content.faq-vbac.t.0": "e38f425a11a42430",
     "content.faq-bf-bc.title": "0683d2b28ff53b78",
     "content.faq-bf-bc.t.0": "fd3cd5c648b45a44",
     "content.faq-bf-bc.t.1": "1ab0f2cdfd636c5f",
@@ -2180,7 +2183,7 @@ window.MYOB_LOCALES.de = {
     "content.mood-ppd.t.4": "43a9a0194074522f",
     "content.mood-ppd.t.5": "794b0242064db6e0",
     "content.mood-ppd.t.6": "8ccfda079a0f2bb1",
-    "content.mood-ppd.t.7": "d0c868c402841cda",
+    "content.mood-ppd.t.7": "49a0b939085edcd7",
     "content.mood-ppd.t.8": "44ec48519e4d008f",
     "content.mood-ppd.t.9": "524037558408bf9f",
     "content.mood-ppd.t.10": "3c46be789836524a",
@@ -2551,7 +2554,7 @@ window.MYOB_LOCALES.de = {
     "content.preeclampsia.sub": "f9ff93747e02e746",
     "content.preeclampsia.t.0": "012bab03fc234669",
     "content.preeclampsia.t.1": "065b8fa07086ba26",
-    "content.preeclampsia.t.2": "e940c7d81df0e732",
+    "content.preeclampsia.t.2": "99247147c9df8841",
     "content.preeclampsia.t.3": "80e3b3785e41ff32",
     "content.preeclampsia.t.4": "a3dc86808b674e1a",
     "content.preeclampsia.t.5": "f858f3feee379d5c",
@@ -2571,7 +2574,7 @@ window.MYOB_LOCALES.de = {
     "content.antenatal-mental-health.t.5": "293bffca71d9d7c0",
     "content.antenatal-mental-health.t.6": "0906edec260abb02",
     "content.antenatal-mental-health.t.7": "736e65988b5d2316",
-    "content.antenatal-mental-health.t.8": "228b594922aaa6ef",
+    "content.antenatal-mental-health.t.8": "390c4e000fd9b536",
     "content.breastfeeding.title": "c57faccf43d647e5",
     "content.breastfeeding.sub": "fceab506c1cfc26c",
     "content.breastfeeding.t.0": "866addc074fa03ba",
@@ -2610,7 +2613,7 @@ window.MYOB_LOCALES.de = {
     "content.bf-challenges.t.12": "99075ec3f001d689",
     "content.bf-challenges.t.13": "03fb5ce1844631eb",
     "content.bf-challenges.t.14": "ee72bccd36e7050f",
-    "content.bf-challenges.t.15": "b15406d3f4fcc479",
+    "content.bf-challenges.t.15": "20b0559f07c7d289",
     "content.bf-challenges.t.16": "3a9cce6f1d3df325",
     "content.bf-challenges.t.17": "acb9cdb3370cee4d",
     "content.formula.title": "ee81492549b61dd7",
@@ -2707,7 +2710,7 @@ window.MYOB_LOCALES.de = {
     "content.circumcision.t.3": "d4de604c37f414a2",
     "content.circumcision.t.4": "706bcd0238eac334",
     "content.circumcision.t.5": "2d62b3babd67ab3c",
-    "content.circumcision.t.6": "0f49a9344a26fe2a",
+    "content.circumcision.t.6": "a8361fd6b7237104",
     "content.circumcision.t.7": "51bb2ecb4d379d51",
     "content.circumcision.t.8": "f7774e648f8e13da",
     "content.vitamin-d-drops.title": "e813e486bcfad49c",
@@ -2941,7 +2944,10 @@ window.MYOB_LOCALES.de = {
     "content.crying-coping.t.11": "87206f861037d230",
     "content.crying-coping.t.12": "10aefed99197f797",
     "content.crying-coping.t.13": "4b4e03aa59a82fec",
-    "content.crying-coping.t.14": "555f6cca8c9ce900"
+    "content.crying-coping.t.14": "555f6cca8c9ce900",
+    "content.safe-sleep.t.21": "7583aee8e4b99b96",
+    "content.breastfeeding.t.19": "48a3e985cdc5711f",
+    "content.breastfeeding.t.20": "86b0f7602ed6090e"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -4442,6 +4448,9 @@ window.MYOB_LOCALES.de = {
     "content.crying-coping.t.11": 1,
     "content.crying-coping.t.12": 1,
     "content.crying-coping.t.13": 1,
-    "content.crying-coping.t.14": 1
+    "content.crying-coping.t.14": 1,
+    "content.safe-sleep.t.21": 1,
+    "content.breastfeeding.t.19": 1,
+    "content.breastfeeding.t.20": 1
   }
 };

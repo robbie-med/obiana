@@ -1254,7 +1254,7 @@ window.MYOB_LOCALES.fr = {
         "La PPD est un problème médical. Un trouble de l'humeur qui se soigne, pas un défaut de caractère ni le signe que vous êtes une mauvaise mère.",
         "Les symptômes de la PPD",
         "Tristesse ou sentiment de vide persistant · Difficulté à créer un lien avec votre bébé · Sentiment d'être une mauvaise mère ou que votre bébé serait mieux sans vous · Anxiété sévère ou crises de panique · Incapacité à dormir même quand le bébé dort · Perte d'intérêt pour les choses que vous aimiez · Pensées de vous faire du mal ou d'en faire à votre bébé : appelez le 911 ou allez aux urgences tout de suite, ou appelez ou envoyez un SMS au 988",
-        "Si ces symptômes durent plus de 2 semaines ou s'ils sont sévères à tout moment, parlez-en à votre équipe soignante. La PPD se soigne efficacement par une thérapie, des groupes de soutien et/ou des médicaments (dont beaucoup sont compatibles avec l'allaitement).",
+        "Si ces symptômes durent plus de 2 semaines ou s'ils sont sévères à tout moment, parlez-en à votre équipe soignante. La PPD se soigne efficacement par une thérapie, des groupes de soutien et/ou des médicaments (dont beaucoup sont compatibles avec l'allaitement). La ligne nationale de santé mentale maternelle, 1-833-852-6262, est gratuite, à toute heure, par appel ou texto, dans de nombreuses langues.",
         "N'attendez pas la visite des 6 semaines pour en parler.",
         "La psychose du post-partum. Rare, mais une urgence médicale",
         "Hallucinations, idées délirantes, confusion extrême ou agitation dans les jours qui suivent la naissance. Appelez le 911 ou allez aux urgences immédiatement. C'est rare (1 à 2 cas sur 1 000), mais cela exige un traitement urgent.",
@@ -1341,7 +1341,9 @@ window.MYOB_LOCALES.fr = {
         "Poids :",
         "Le poids de naissance doit être retrouvé en 10–14 jours. Après le jour 5, attendez-vous à une prise de ½–1 oz par jour.",
         "Bébé :",
-        "Satisfait après les tétées, alerte pendant les périodes d'éveil."
+        "Satisfait après les tétées, alerte pendant les périodes d'éveil.",
+        "Alcool, cannabis et tabac",
+        "Un verre de temps en temps ne pose pas de problème : attendez 2 heures après un verre avant d'allaiter. Tirer son lait et le jeter n'élimine pas l'alcool plus vite. Évitez le cannabis : le THC passe dans le lait et y reste plusieurs jours. Si vous fumez, allaiter reste mieux que le lait infantile. Fumez dehors et jamais près du bébé ; les patchs ou gommes à la nicotine conviennent."
       ]
     },
     "bf-challenges": {
@@ -1363,7 +1365,7 @@ window.MYOB_LOCALES.fr = {
         "Muguet du mamelon",
         "Douleur vive et brûlante pendant et après les tétées. Mamelons rosés et luisants. Vous et bébé devez recevoir un traitement antifongique en même temps. Appelez votre médecin et le médecin du bébé.",
         "Tirer son lait",
-        "Les tire-lait électriques doubles sont couverts par la plupart des assurances américaines dans le cadre de l'ACA. Tirer son lait maintient la production quand bébé ne peut pas téter, permet à d'autres de nourrir bébé et constitue une réserve au congélateur. Le lait se conserve 4 jours au réfrigérateur ou 6–12 mois au congélateur.",
+        "Les tire-lait électriques doubles sont couverts par la plupart des assurances américaines dans le cadre de l'ACA. Tirer son lait maintient la production quand bébé ne peut pas téter, permet à d'autres de nourrir bébé et constitue une réserve au congélateur. Le lait se conserve 4 heures à température ambiante, 4 jours au réfrigérateur et 6–12 mois au congélateur. Décongelez-le au réfrigérateur ou dans de l'eau tiède, jamais au micro-ondes, utilisez-le dans les 24 heures et ne le recongelez pas.",
         "Compléter ou donner du lait infantile, c'est bien aussi",
         "Si l'allaitement ne fonctionne pas malgré le soutien, compléter avec du lait infantile n'est pas un échec. C'est nourrir votre bébé. Un bébé nourri et en bonne santé est ce qui compte le plus. Beaucoup de familles combinent avec succès sein et lait infantile."
       ]
@@ -1492,7 +1494,8 @@ window.MYOB_LOCALES.fr = {
         "Gardez bébé confortablement au frais. La surchauffe est un facteur de risque",
         "Le temps sur le ventre (éveillé et surveillé uniquement)",
         "Le temps sur le ventre, quand bébé est éveillé et surveillé, est essentiel pour le développement du cou et des épaules et pour prévenir les plages aplaties sur la tête. Commencez par 2–3 minutes plusieurs fois par jour dès la naissance. Atteignez 30 minutes au total par jour à 3 mois.",
-        "Ne laissez jamais un bébé endormi dans une balançoire, un siège auto (hors de la voiture), un transat ou un siège incliné pour un sommeil prolongé. Ce ne sont pas des environnements de sommeil sûrs."
+        "Ne laissez jamais un bébé endormi dans une balançoire, un siège auto (hors de la voiture), un transat ou un siège incliné pour un sommeil prolongé. Ce ne sont pas des environnements de sommeil sûrs.",
+        "Si vous emmaillotez bébé, laissez les hanches libres, couchez-le toujours sur le dos et arrêtez dès qu'il essaie de se retourner"
       ]
     },
     "followup-appts": {
@@ -1531,7 +1534,7 @@ window.MYOB_LOCALES.fr = {
       "t": [
         "Le principal risque est la",
         "Listeria",
-        ", une infection bactérienne rare mais qui peut être grave pendant la grossesse (elle peut traverser le placenta). La FDA (agence américaine des aliments et médicaments) conseille d'éviter les fromages non pasteurisés et la charcuterie, sauf si elle est chauffée jusqu'à être fumante (165°F). La plupart des fromages à pâte molle pasteurisés (comme le brie pasteurisé, la feta en emballage) sont sûrs. Exception : le queso fresco, le queso blanco, la panela et les fromages frais du même type. Même pasteurisés, ils ont causé des épidémies de listériose : mangez-les seulement chauffés jusqu'à être fumants. Le risque global lié à une consommation occasionnelle de charcuterie est très faible. Ces conseils sont une précaution, et non une garantie qu'un sandwich à la dinde rendra malade. En cas de doute, faites chauffer."
+        ", une infection bactérienne rare mais qui peut être grave pendant la grossesse (elle peut traverser le placenta). La FDA (agence américaine des aliments et médicaments) conseille d'éviter les fromages non pasteurisés et la charcuterie, sauf si elle est chauffée jusqu'à être fumante (165°F). La plupart des fromages à pâte molle pasteurisés (comme le brie pasteurisé, la feta en emballage) sont sûrs. Exception : le queso fresco, le queso blanco, la panela et les fromages frais du même type. Même pasteurisés, ils ont causé des épidémies de listériose : mangez-les seulement chauffés jusqu'à être fumants. Le risque global lié à une consommation occasionnelle de charcuterie est très faible. Ces conseils sont une précaution, et non une garantie qu'un sandwich à la dinde rendra malade. En cas de doute, faites chauffer. Évitez aussi la viande pas assez cuite, les œufs crus, le lait ou les jus non pasteurisés et les graines germées crues, et lavez les fruits et légumes. Demandez à quelqu'un d'autre de changer la litière du chat, ou portez des gants : les excréments de chat et la viande pas assez cuite peuvent transmettre la toxoplasmose."
       ]
     },
     "faq-coffee": {
@@ -1628,7 +1631,7 @@ window.MYOB_LOCALES.fr = {
       "title": "Si j'ai déjà eu une césarienne, en aurai-je toujours une autre ?",
       "sub": "",
       "t": [
-        "Pas forcément. L'accouchement par voie basse après césarienne (VBAC) est une option sûre et appropriée pour de nombreuses femmes ayant une seule cicatrice utérine transversale basse antérieure. Les taux de réussite varient de 60 à 80 %. Les facteurs qui influencent l'éligibilité comprennent la raison de la césarienne précédente, votre grossesse actuelle, le type de cicatrice utérine et la capacité de votre hôpital à gérer une urgence. Abordez ce sujet tôt dans le suivi prénatal si cela vous intéresse."
+        "Pas forcément. L'accouchement par voie basse après césarienne (VBAC) est une option sûre et appropriée pour de nombreuses femmes ayant une seule cicatrice utérine transversale basse antérieure. Les taux de réussite varient de 60 à 80 %. Le principal risque est que la cicatrice s'ouvre pendant le travail (rupture utérine) : environ 5 à 9 femmes sur 1 000 avec une cicatrice transversale basse antérieure. Les facteurs qui influencent l'éligibilité comprennent la raison de la césarienne précédente, votre grossesse actuelle, le type de cicatrice utérine et la capacité de votre hôpital à gérer une urgence. Abordez ce sujet tôt dans le suivi prénatal si cela vous intéresse."
       ]
     },
     "faq-bf-bc": {
@@ -1715,7 +1718,7 @@ window.MYOB_LOCALES.fr = {
       "t": [
         "Un problème de tension qui peut s'installer vite, en général après 20 semaines et parfois dans la semaine ou les deux semaines après l'accouchement. Le repérer tôt change vraiment la suite.",
         "Ce que c'est",
-        "Une tension élevée avec des signes que d'autres organes sont touchés, le plus souvent les reins ou le foie. Elle réduit aussi le flux de sang dans le placenta, c'est pourquoi elle freine la croissance du bébé. L'accouchement est le seul remède, alors cette discussion peut arriver plus vite que prévu.",
+        "Une tension élevée avec des signes que d'autres organes sont touchés, le plus souvent les reins ou le foie. Elle réduit aussi le flux de sang dans le placenta, c'est pourquoi elle freine la croissance du bébé. L'accouchement est le seul remède, alors cette discussion peut arriver plus vite que prévu. Une tension de 140/90 ou plus (l'un ou l'autre chiffre) est élevée. 160/110 ou plus est grave : allez tout de suite à la maternité.",
         "Appelez votre médecin aujourd'hui si vous avez",
         "Un mal de tête qui ne passe pas · Des troubles de la vue : taches sombres, éclairs · Une douleur sous les côtes à droite, ou en haut de l'estomac · Un gonflement soudain du visage ou des mains · Un essoufflement",
         "ou tout autre signe que votre médecin vous a dit de surveiller.",
@@ -1739,7 +1742,7 @@ window.MYOB_LOCALES.fr = {
         "Médicaments",
         "Une dépression non traitée et non contrôlée n'est pas une option sûre : elle est liée aux naissances prématurées, à un poids de naissance plus faible et à un risque bien plus élevé de dépression postnatale. Beaucoup de femmes vivent une grossesse réussie sans médicament. Plusieurs ISRS ont de bonnes données de sécurité pendant la grossesse et sont prescrits couramment. Si vous avez arrêté un traitement le jour du test positif, dites-le à votre médecin pour parler de vos options.",
         "Ce qui aide aussi",
-        "La psychothérapie fonctionne, seule ou avec un médicament, et mieux vaut la demander tôt car les listes d'attente sont longues. Parlez-en à votre médecin et prenez soin aussi de ce qui n'est pas médicamenteux : bon sommeil, soleil, activité physique, entourage, thérapie, prière, etc. La période des nausées est particulièrement difficile."
+        "La psychothérapie fonctionne, seule ou avec un médicament, et mieux vaut la demander tôt car les listes d'attente sont longues. Parlez-en à votre médecin et prenez soin aussi de ce qui n'est pas médicamenteux : bon sommeil, soleil, activité physique, entourage, thérapie, prière, etc. La période des nausées est particulièrement difficile. La ligne nationale de santé mentale maternelle, 1-833-852-6262, est gratuite, à toute heure, par appel ou texto, dans de nombreuses langues."
       ]
     },
     "alcohol": {
@@ -1829,7 +1832,7 @@ window.MYOB_LOCALES.fr = {
         "Pourquoi les avis diffèrent",
         "L'Académie américaine de pédiatrie a conclu que les bénéfices dépassent les risques, mais pas assez pour la recommander à tous les garçons. Plusieurs instances européennes ont lu les mêmes études et conclu autrement. En pratique, c'est une décision de famille, souvent influencée par la religion, la culture et ce à quoi ressemble le père.",
         "Si vous décidez de la faire",
-        "Demandez précisément quel contrôle de la douleur est prévu : une anesthésie locale par bloc, pas seulement de l'eau sucrée. Des options efficaces existent et ne sont pas utilisées partout. Vérifiez ce que couvre votre assurance.",
+        "Demandez précisément quel contrôle de la douleur est prévu : une anesthésie locale par bloc, pas seulement de l'eau sucrée. Des options efficaces existent et ne sont pas utilisées partout. Vérifiez ce que couvre votre assurance. Ensuite, le bout est rouge et peut avoir un dépôt jaunâtre et mou pendant environ une semaine ; c'est la cicatrisation normale. Mettez de la vaseline à chaque change. Appelez le médecin de votre bébé en cas de saignement qui ne s'arrête pas avec une légère pression, d'aucune couche mouillée en 8 heures, d'une fièvre de 100.4°F ou plus, ou de rougeur, gonflement ou cloques de pus qui s'étendent.",
         "Si vous décidez de ne pas la faire",
         "Ne décalottez pas le prépuce. Chez le nourrisson, il est normalement collé et se détache tout seul en plusieurs années ; le forcer cause les cicatrices qu'on veut éviter. Lavez l'extérieur comme n'importe quelle autre peau."
       ]
@@ -2383,7 +2386,7 @@ window.MYOB_LOCALES.fr = {
     "content.mood-ppd.t.4": "43a9a0194074522f",
     "content.mood-ppd.t.5": "794b0242064db6e0",
     "content.mood-ppd.t.6": "8ccfda079a0f2bb1",
-    "content.mood-ppd.t.7": "d0c868c402841cda",
+    "content.mood-ppd.t.7": "49a0b939085edcd7",
     "content.mood-ppd.t.8": "44ec48519e4d008f",
     "content.mood-ppd.t.9": "524037558408bf9f",
     "content.mood-ppd.t.10": "3c46be789836524a",
@@ -2471,7 +2474,7 @@ window.MYOB_LOCALES.fr = {
     "content.bf-challenges.t.12": "99075ec3f001d689",
     "content.bf-challenges.t.13": "03fb5ce1844631eb",
     "content.bf-challenges.t.14": "ee72bccd36e7050f",
-    "content.bf-challenges.t.15": "b15406d3f4fcc479",
+    "content.bf-challenges.t.15": "20b0559f07c7d289",
     "content.bf-challenges.t.16": "3a9cce6f1d3df325",
     "content.bf-challenges.t.17": "acb9cdb3370cee4d",
     "content.formula.title": "ee81492549b61dd7",
@@ -2614,7 +2617,7 @@ window.MYOB_LOCALES.fr = {
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
-    "content.faq-deli.t.2": "86ed7bf6b9c01890",
+    "content.faq-deli.t.2": "f834f951752931cb",
     "content.faq-coffee.title": "5389638ea8a88dc8",
     "content.faq-coffee.t.0": "ac1cf8bc0364371a",
     "content.faq-coffee.t.1": "d49405defc21c3ec",
@@ -2644,7 +2647,7 @@ window.MYOB_LOCALES.fr = {
     "content.faq-eat-in-labor.title": "5de8ba9361616d39",
     "content.faq-eat-in-labor.t.0": "23ad9f490ae5def7",
     "content.faq-vbac.title": "4fb6dce62d75356c",
-    "content.faq-vbac.t.0": "2a66625080510032",
+    "content.faq-vbac.t.0": "e38f425a11a42430",
     "content.faq-bf-bc.title": "0683d2b28ff53b78",
     "content.faq-bf-bc.t.0": "fd3cd5c648b45a44",
     "content.faq-bf-bc.t.1": "1ab0f2cdfd636c5f",
@@ -2688,7 +2691,7 @@ window.MYOB_LOCALES.fr = {
     "content.preeclampsia.sub": "f9ff93747e02e746",
     "content.preeclampsia.t.0": "012bab03fc234669",
     "content.preeclampsia.t.1": "065b8fa07086ba26",
-    "content.preeclampsia.t.2": "e940c7d81df0e732",
+    "content.preeclampsia.t.2": "99247147c9df8841",
     "content.preeclampsia.t.3": "80e3b3785e41ff32",
     "content.preeclampsia.t.4": "a3dc86808b674e1a",
     "content.preeclampsia.t.5": "f858f3feee379d5c",
@@ -2708,7 +2711,7 @@ window.MYOB_LOCALES.fr = {
     "content.antenatal-mental-health.t.5": "293bffca71d9d7c0",
     "content.antenatal-mental-health.t.6": "0906edec260abb02",
     "content.antenatal-mental-health.t.7": "736e65988b5d2316",
-    "content.antenatal-mental-health.t.8": "228b594922aaa6ef",
+    "content.antenatal-mental-health.t.8": "390c4e000fd9b536",
     "content.alcohol.title": "a6d772bd1220badb",
     "content.alcohol.sub": "806fccc4f2daace2",
     "content.alcohol.t.0": "0e0d14a608d5d95c",
@@ -2774,7 +2777,7 @@ window.MYOB_LOCALES.fr = {
     "content.circumcision.t.3": "d4de604c37f414a2",
     "content.circumcision.t.4": "706bcd0238eac334",
     "content.circumcision.t.5": "2d62b3babd67ab3c",
-    "content.circumcision.t.6": "0f49a9344a26fe2a",
+    "content.circumcision.t.6": "a8361fd6b7237104",
     "content.circumcision.t.7": "51bb2ecb4d379d51",
     "content.circumcision.t.8": "f7774e648f8e13da",
     "content.postpartum-danger.t.4": "0a1264f55f4a42c3",
@@ -2947,7 +2950,10 @@ window.MYOB_LOCALES.fr = {
     "content.crying-coping.t.11": "87206f861037d230",
     "content.crying-coping.t.12": "10aefed99197f797",
     "content.crying-coping.t.13": "4b4e03aa59a82fec",
-    "content.crying-coping.t.14": "555f6cca8c9ce900"
+    "content.crying-coping.t.14": "555f6cca8c9ce900",
+    "content.safe-sleep.t.21": "7583aee8e4b99b96",
+    "content.breastfeeding.t.19": "48a3e985cdc5711f",
+    "content.breastfeeding.t.20": "86b0f7602ed6090e"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -3346,6 +3352,9 @@ window.MYOB_LOCALES.fr = {
     "content.crying-coping.t.11": 1,
     "content.crying-coping.t.12": 1,
     "content.crying-coping.t.13": 1,
-    "content.crying-coping.t.14": 1
+    "content.crying-coping.t.14": 1,
+    "content.safe-sleep.t.21": 1,
+    "content.breastfeeding.t.19": 1,
+    "content.breastfeeding.t.20": 1
   }
 };

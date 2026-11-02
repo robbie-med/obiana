@@ -952,7 +952,7 @@ window.MYOB_LOCALES["pt-BR"] = {
       "t": [
         "O principal risco é a",
         "Listeria",
-        ", uma infecção por bactéria que é rara, mas pode ser grave na gravidez (pode atravessar a placenta). A FDA recomenda evitar queijos não pasteurizados e frios, a menos que sejam aquecidos até soltar vapor (165°F). A maioria dos queijos moles pasteurizados (como brie pasteurizado, feta de pacote) é segura. A exceção são o queso fresco, o queso blanco, a panela e queijos frescos parecidos: mesmo os pasteurizados já causaram surtos de listeria, então coma-os só cozidos até soltar vapor. O risco geral de comer frios de vez em quando é muito baixo. Na dúvida, aqueça."
+        ", uma infecção por bactéria que é rara, mas pode ser grave na gravidez (pode atravessar a placenta). A FDA recomenda evitar queijos não pasteurizados e frios, a menos que sejam aquecidos até soltar vapor (165°F). A maioria dos queijos moles pasteurizados (como brie pasteurizado, feta de pacote) é segura. A exceção são o queso fresco, o queso blanco, a panela e queijos frescos parecidos: mesmo os pasteurizados já causaram surtos de listeria, então coma-os só cozidos até soltar vapor. O risco geral de comer frios de vez em quando é muito baixo. Na dúvida, aqueça. Evite também carne malpassada, ovo cru, leite ou suco não pasteurizado e brotos crus, e lave frutas e verduras. Peça para outra pessoa trocar a areia do gato, ou use luvas: fezes de gato e carne malpassada podem transmitir toxoplasmose."
       ]
     },
     "faq-coffee": {
@@ -1049,7 +1049,7 @@ window.MYOB_LOCALES["pt-BR"] = {
       "title": "Se já tive uma cesárea, sempre vou precisar de outra?",
       "sub": "",
       "t": [
-        "Não necessariamente. O parto normal depois de cesárea (VBAC) é uma opção segura e adequada para muitas mulheres com uma cesárea anterior com corte transversal baixo no útero. A taxa de sucesso vai de 60–80%. O que conta é o motivo da cesárea anterior, a gravidez atual, o tipo de corte no útero e a capacidade do seu hospital de lidar com uma emergência. Se tiver interesse, fale disso logo no início do pré-natal."
+        "Não necessariamente. O parto normal depois de cesárea (VBAC) é uma opção segura e adequada para muitas mulheres com uma cesárea anterior com corte transversal baixo no útero. A taxa de sucesso vai de 60–80%. O principal risco é a cicatriz abrir durante o trabalho de parto (ruptura uterina): cerca de 5 a 9 em cada 1.000 mulheres com um corte transversal baixo anterior. O que conta é o motivo da cesárea anterior, a gravidez atual, o tipo de corte no útero e a capacidade do seu hospital de lidar com uma emergência. Se tiver interesse, fale disso logo no início do pré-natal."
       ]
     },
     "faq-bf-bc": {
@@ -1174,7 +1174,7 @@ window.MYOB_LOCALES["pt-BR"] = {
         "A depressão pós-parto é uma doença. Um transtorno de humor que tem tratamento, não uma falha de caráter nem sinal de que você é uma mãe ruim.",
         "Sintomas de depressão pós-parto",
         "Tristeza ou vazio que não passa · Dificuldade de criar vínculo com o bebê · Sentir que é uma mãe ruim ou que o bebê ficaria melhor sem você · Ansiedade forte ou crises de pânico · Não conseguir dormir mesmo quando o bebê dorme · Perder o interesse pelo que você gostava · Pensamentos de machucar a si mesma ou ao bebê: ligue para o 911 ou vá ao pronto-socorro agora, ou ligue ou mande mensagem para o 988",
-        "Se esses sintomas durarem mais de 2 semanas ou forem fortes a qualquer momento, conte à sua equipe de saúde. A depressão pós-parto tem bom tratamento com terapia, grupos de apoio e/ou remédios (muitos são seguros na amamentação).",
+        "Se esses sintomas durarem mais de 2 semanas ou forem fortes a qualquer momento, conte à sua equipe de saúde. A depressão pós-parto tem bom tratamento com terapia, grupos de apoio e/ou remédios (muitos são seguros na amamentação). A Linha Nacional de Saúde Mental Materna, 1-833-852-6262, é gratuita, a qualquer hora, por ligação ou mensagem de texto, em muitos idiomas.",
         "Não espere a consulta de 6 semanas para falar disso.",
         "Psicose pós-parto. Rara, mas é uma emergência médica",
         "Alucinações, delírios, confusão extrema ou agitação nos dias depois do parto. Ligue para o 911 ou vá ao pronto-socorro imediatamente. É raro (1–2 em 1.000), mas precisa de tratamento urgente.",
@@ -1599,7 +1599,7 @@ window.MYOB_LOCALES["pt-BR"] = {
       "t": [
         "Uma doença de pressão alta que pode chegar rápido, geralmente depois de 20 semanas e às vezes na primeira ou segunda semana depois do parto. Descobrir cedo muda de verdade como ela termina.",
         "O que é",
-        "Pressão alta mais sinais de que outros órgãos estão sendo afetados, na maioria das vezes os rins ou o fígado. Ela também diminui o fluxo de sangue pela placenta, e por isso afeta o crescimento do bebê. O parto é a única cura, então essa conversa pode andar mais rápido do que você espera.",
+        "Pressão alta mais sinais de que outros órgãos estão sendo afetados, na maioria das vezes os rins ou o fígado. Ela também diminui o fluxo de sangue pela placenta, e por isso afeta o crescimento do bebê. O parto é a única cura, então essa conversa pode andar mais rápido do que você espera. Uma pressão de 140/90 ou mais (qualquer um dos números) é alta. 160/110 ou mais é grave: vá agora para a maternidade.",
         "Ligue hoje para o seu médico se tiver",
         "Dor de cabeça que não passa · Alterações na visão: pontos escuros, flashes · Dor embaixo das costelas do lado direito, ou no alto da barriga · Inchaço repentino do rosto ou das mãos · Falta de ar",
         "ou qualquer outro sinal que o seu médico pediu para você observar.",
@@ -1623,7 +1623,7 @@ window.MYOB_LOCALES["pt-BR"] = {
         "Remédios",
         "Depressão sem tratamento e sem controle não é uma opção segura: está ligada a parto prematuro, menor peso ao nascer e uma chance bem maior de depressão pós-parto. Muitas mulheres têm gestações tranquilas sem precisar de remédio. Vários ISRS (SSRIs) têm bons dados de segurança na gravidez e são receitados de rotina. Se você parou algum remédio no dia em que viu o teste positivo, conte ao seu médico para conversarem sobre as opções.",
         "O que mais ajuda",
-        "A terapia funciona, sozinha ou junto com remédio, e vale pedir cedo porque as filas de espera são longas. Converse com o seu médico sobre os lados da depressão e da ansiedade que não envolvem remédio, e cuide deles: bom sono, sol, exercício, comunidade, terapia, oração etc. A fase do enjoo é um momento especialmente difícil."
+        "A terapia funciona, sozinha ou junto com remédio, e vale pedir cedo porque as filas de espera são longas. Converse com o seu médico sobre os lados da depressão e da ansiedade que não envolvem remédio, e cuide deles: bom sono, sol, exercício, comunidade, terapia, oração etc. A fase do enjoo é um momento especialmente difícil. A Linha Nacional de Saúde Mental Materna, 1-833-852-6262, é gratuita, a qualquer hora, por ligação ou mensagem de texto, em muitos idiomas."
       ]
     },
     "breastfeeding": {
@@ -1648,7 +1648,9 @@ window.MYOB_LOCALES["pt-BR"] = {
         "Peso:",
         "O peso de nascimento deve ser recuperado em 10–14 dias. Depois do 5º dia, espere ganho de ½–1 oz por dia.",
         "Bebê:",
-        "Satisfeito depois das mamadas, alerta quando está acordado."
+        "Satisfeito depois das mamadas, alerta quando está acordado.",
+        "Álcool, maconha e cigarro",
+        "Uma bebida de vez em quando não tem problema: espere 2 horas depois de uma dose antes de amamentar. Tirar o leite e jogar fora não elimina o álcool mais rápido. Evite maconha: o THC passa para o leite e fica nele por dias. Se você fuma, amamentar ainda é melhor que a fórmula. Fume do lado de fora e nunca perto do bebê; adesivos ou chicletes de nicotina não têm problema."
       ]
     },
     "bf-challenges": {
@@ -1670,7 +1672,7 @@ window.MYOB_LOCALES["pt-BR"] = {
         "Candidíase no mamilo",
         "Dor aguda, em queimação, durante e depois das mamadas. Mamilos rosados e brilhantes. Você e o bebê precisam de tratamento antifúngico ao mesmo tempo. Ligue para o seu médico e para o médico do bebê.",
         "Tirar leite",
-        "As bombas elétricas duplas são cobertas pela maioria dos planos de saúde dos EUA pela ACA. Tirar leite mantém a produção quando o bebê não pode mamar no peito, permite que outras pessoas alimentem o bebê e forma um estoque no congelador. O leite pode ficar na geladeira por 4 dias ou congelado por 6–12 meses.",
+        "As bombas elétricas duplas são cobertas pela maioria dos planos de saúde dos EUA pela ACA. Tirar leite mantém a produção quando o bebê não pode mamar no peito, permite que outras pessoas alimentem o bebê e forma um estoque no congelador. O leite dura 4 horas em temperatura ambiente, 4 dias na geladeira e 6–12 meses no congelador. Descongele na geladeira ou em água morna, nunca no micro-ondas, use em até 24 horas e não congele de novo.",
         "Complementar ou dar fórmula está tudo bem",
         "Se a amamentação não está dando certo apesar do apoio, complementar com fórmula não é fracasso. É alimentar o seu bebê. O que mais importa é um bebê alimentado e se desenvolvendo bem. Muitas famílias combinam peito e fórmula com sucesso."
       ]
@@ -1746,7 +1748,7 @@ window.MYOB_LOCALES["pt-BR"] = {
         "Por que as orientações diferem",
         "A Academia Americana de Pediatria concluiu que os benefícios superam os riscos, mas não o bastante para recomendar a todos os meninos. Várias entidades europeias leram os mesmos estudos e concluíram o contrário. Na prática é uma decisão da família, muitas vezes guiada pela religião, pela cultura e por como é o pai.",
         "Se você decidir fazer",
-        "Pergunte especificamente sobre o controle da dor: um bloqueio com anestesia local, não só água com açúcar. Existem opções eficazes e nem todo lugar usa. Veja o que o seu plano cobre.",
+        "Pergunte especificamente sobre o controle da dor: um bloqueio com anestesia local, não só água com açúcar. Existem opções eficazes e nem todo lugar usa. Veja o que o seu plano cobre. Depois, a ponta fica vermelha e pode ter uma camada amarelada e macia por cerca de uma semana; isso é a cicatrização normal. Passe vaselina a cada troca de fralda. Ligue para o médico do bebê se houver sangramento que não para com uma leve pressão, nenhuma fralda molhada em 8 horas, febre de 100.4°F ou mais, ou vermelhidão, inchaço ou bolhas com pus que se espalham.",
         "Se você decidir não fazer",
         "Não puxe o prepúcio para trás. Ele normalmente fica grudado na infância e se solta sozinho ao longo de vários anos; forçar causa justamente as cicatrizes que se quer evitar. Limpe por fora como qualquer outra pele."
       ]
@@ -1803,7 +1805,8 @@ window.MYOB_LOCALES["pt-BR"] = {
         "Mantenha o bebê fresquinho. O superaquecimento é um fator de risco",
         "Barriga para baixo (só acordado &amp; com supervisão)",
         "Ficar de barriga para baixo acordado e sendo observado é essencial para o desenvolvimento do pescoço e dos ombros e para evitar partes achatadas na cabeça. Comece com 2–3 minutos várias vezes por dia desde o nascimento. Chegue a 30 minutos no total por dia até os 3 meses.",
-        "Nunca deixe um bebê dormindo por muito tempo num balanço, na cadeirinha do carro (fora do carro), numa cadeira de descanso ou num berço inclinado. Esses não são lugares seguros para dormir."
+        "Nunca deixe um bebê dormindo por muito tempo num balanço, na cadeirinha do carro (fora do carro), numa cadeira de descanso ou num berço inclinado. Esses não são lugares seguros para dormir.",
+        "Se você enrolar o bebê no cueiro, deixe o quadril solto, coloque-o sempre de barriga para cima e pare assim que ele começar a tentar rolar"
       ]
     },
     "followup-appts": {
@@ -2073,7 +2076,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
-    "content.faq-deli.t.2": "86ed7bf6b9c01890",
+    "content.faq-deli.t.2": "f834f951752931cb",
     "content.faq-coffee.title": "5389638ea8a88dc8",
     "content.faq-coffee.t.0": "ac1cf8bc0364371a",
     "content.faq-coffee.t.1": "d49405defc21c3ec",
@@ -2110,7 +2113,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.faq-eat-in-labor.title": "5de8ba9361616d39",
     "content.faq-eat-in-labor.t.0": "23ad9f490ae5def7",
     "content.faq-vbac.title": "4fb6dce62d75356c",
-    "content.faq-vbac.t.0": "2a66625080510032",
+    "content.faq-vbac.t.0": "e38f425a11a42430",
     "content.faq-bf-bc.title": "0683d2b28ff53b78",
     "content.faq-bf-bc.t.0": "fd3cd5c648b45a44",
     "content.faq-bf-bc.t.1": "1ab0f2cdfd636c5f",
@@ -2188,7 +2191,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.mood-ppd.t.4": "43a9a0194074522f",
     "content.mood-ppd.t.5": "794b0242064db6e0",
     "content.mood-ppd.t.6": "8ccfda079a0f2bb1",
-    "content.mood-ppd.t.7": "d0c868c402841cda",
+    "content.mood-ppd.t.7": "49a0b939085edcd7",
     "content.mood-ppd.t.8": "44ec48519e4d008f",
     "content.mood-ppd.t.9": "524037558408bf9f",
     "content.mood-ppd.t.10": "3c46be789836524a",
@@ -2559,7 +2562,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.preeclampsia.sub": "f9ff93747e02e746",
     "content.preeclampsia.t.0": "012bab03fc234669",
     "content.preeclampsia.t.1": "065b8fa07086ba26",
-    "content.preeclampsia.t.2": "e940c7d81df0e732",
+    "content.preeclampsia.t.2": "99247147c9df8841",
     "content.preeclampsia.t.3": "80e3b3785e41ff32",
     "content.preeclampsia.t.4": "a3dc86808b674e1a",
     "content.preeclampsia.t.5": "f858f3feee379d5c",
@@ -2579,7 +2582,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.antenatal-mental-health.t.5": "293bffca71d9d7c0",
     "content.antenatal-mental-health.t.6": "0906edec260abb02",
     "content.antenatal-mental-health.t.7": "736e65988b5d2316",
-    "content.antenatal-mental-health.t.8": "228b594922aaa6ef",
+    "content.antenatal-mental-health.t.8": "390c4e000fd9b536",
     "content.breastfeeding.title": "c57faccf43d647e5",
     "content.breastfeeding.sub": "fceab506c1cfc26c",
     "content.breastfeeding.t.0": "866addc074fa03ba",
@@ -2618,7 +2621,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.bf-challenges.t.12": "99075ec3f001d689",
     "content.bf-challenges.t.13": "03fb5ce1844631eb",
     "content.bf-challenges.t.14": "ee72bccd36e7050f",
-    "content.bf-challenges.t.15": "b15406d3f4fcc479",
+    "content.bf-challenges.t.15": "20b0559f07c7d289",
     "content.bf-challenges.t.16": "3a9cce6f1d3df325",
     "content.bf-challenges.t.17": "acb9cdb3370cee4d",
     "content.formula.title": "ee81492549b61dd7",
@@ -2715,7 +2718,7 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.circumcision.t.3": "d4de604c37f414a2",
     "content.circumcision.t.4": "706bcd0238eac334",
     "content.circumcision.t.5": "2d62b3babd67ab3c",
-    "content.circumcision.t.6": "0f49a9344a26fe2a",
+    "content.circumcision.t.6": "a8361fd6b7237104",
     "content.circumcision.t.7": "51bb2ecb4d379d51",
     "content.circumcision.t.8": "f7774e648f8e13da",
     "content.vitamin-d-drops.title": "e813e486bcfad49c",
@@ -2949,7 +2952,10 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.crying-coping.t.11": "87206f861037d230",
     "content.crying-coping.t.12": "10aefed99197f797",
     "content.crying-coping.t.13": "4b4e03aa59a82fec",
-    "content.crying-coping.t.14": "555f6cca8c9ce900"
+    "content.crying-coping.t.14": "555f6cca8c9ce900",
+    "content.safe-sleep.t.21": "7583aee8e4b99b96",
+    "content.breastfeeding.t.19": "48a3e985cdc5711f",
+    "content.breastfeeding.t.20": "86b0f7602ed6090e"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -4450,6 +4456,9 @@ window.MYOB_LOCALES["pt-BR"] = {
     "content.crying-coping.t.11": 1,
     "content.crying-coping.t.12": 1,
     "content.crying-coping.t.13": 1,
-    "content.crying-coping.t.14": 1
+    "content.crying-coping.t.14": 1,
+    "content.safe-sleep.t.21": 1,
+    "content.breastfeeding.t.19": 1,
+    "content.breastfeeding.t.20": 1
   }
 };

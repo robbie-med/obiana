@@ -41,7 +41,7 @@ existing cards are listed under their topic; topics with no card are under
 - Vitamins, folic acid      `prenatal-vitamins`
 - How much to eat           `faq-eat-for-two`
 - Listeria                  `faq-deli`            → fish-mercury
-  - `[gap]` faq-deli covers deli meat and cheese only: no cat litter or undercooked meat (toxoplasmosis), raw eggs, unpasteurised milk or juice, sprouts, washing produce
+  - `[done 2026-11-02]` faq-deli covers deli meat and cheese only: no cat litter or undercooked meat (toxoplasmosis), raw eggs, unpasteurised milk or juice, sprouts, washing produce
 - Fish & mercury            `fish-mercury`
 - Caffeine                  `faq-coffee`
 - Alcohol                   `alcohol`
@@ -54,7 +54,7 @@ existing cards are listed under their topic; topics with no card are under
 - Kegels                    `postpartum-exercise` → exercise-pregnancy
 - Discomforts               split 2026-11-01 (reviewed) into `discomfort-urinary`, `discomfort-head`, `discomfort-bowel`, `discomfort-heartburn`, `discomfort-aches`, `discomfort-sleep`, `discomfort-swelling`; `common-discomforts` retired. Itching lives in `cholestasis`.
 - Mental health             `antenatal-mental-health` → tool mood
-  - `[gap]` antenatal-mental-health and mood-ppd give no maternal line: National Maternal Mental Health Hotline 1-833-TLC-MAMA (1-833-852-6262), 24/7 call or text, interpreters in 60+ languages
+  - `[done 2026-11-02]` antenatal-mental-health and mood-ppd give no maternal line: National Maternal Mental Health Hotline 1-833-TLC-MAMA (1-833-852-6262), 24/7 call or text, interpreters in 60+ languages
 - Nausea, hyperemesis       tool `nausea`
   - `[twice]` prenatal-vitamins repeats the iron-at-night advice
   - `[gap]` not searchable. tobacco-cannabis calls it "a whole section" with no link.
@@ -68,7 +68,7 @@ existing cards are listed under their topic; topics with no card are under
     (signs-of-labor) / "not relieved by ibuprofen/Tylenol" (postpartum-danger)
   - also restated on Home and in discomfort cards
   - `[gap]` preeclampsia never says the risk is lifelong (heart disease, stroke) or that future doctors should be told
-- BP thresholds             tool `bp`             `[gap]` 140/90 and 160/110 never appear in the preeclampsia card
+- BP thresholds             tool `bp`             `[done 2026-11-02]` 140/90 and 160/110 never appear in the preeclampsia card
 - Heavy bleeding            `physical-recovery`   → postpartum-danger, Home
   - `[clash]` csection says "a pad in 1 hour"; the rest say ">1 pad/hr for 2 hours"
 - Self-harm                 `ui.urgent` → postpartum-danger, antenatal-mental-health, mood-ppd
@@ -122,12 +122,12 @@ existing cards are listed under their topic; topics with no card are under
 - Getting enough            `breastfeeding`       → tool diaper, normal-newborn ("day 4–5" vs "day 5")
   - `[gap]` breastfeeding says when birth weight comes back, but not that losing some weight in the first days is normal
 - Breastfeeding problems    `bf-challenges`
-  - `[gap]` bf-challenges gives fridge and freezer times for milk, but not room temperature (up to 4 hours) or how to thaw
+  - `[done 2026-11-02]` bf-challenges gives fridge and freezer times for milk, but not room temperature (up to 4 hours) or how to thaw
 - Formula                   `formula`
   - `[gap]` formula's "Never" list misses plain water before 6 months and honey before 12 months
 - Vitamin D                 `vitamin-d-drops`
 - Medicines while BF        `faq-ibuprofen-bf`
-  - `[gap]` nothing on alcohol, cannabis or nicotine while breastfeeding. faq-ibuprofen-bf covers medicines only.
+  - `[done 2026-11-02]` nothing on alcohol, cannabis or nicotine while breastfeeding. faq-ibuprofen-bf covers medicines only.
 - Jaundice                  `faq-jaundice`        → normal-newborn, followup-appts
   - `[clash]` tool jaundice has a different red-flag list and never flags the first 24 hours
 - Normal newborn            `normal-newborn`
@@ -139,10 +139,10 @@ existing cards are listed under their topic; topics with no card are under
 - First bath                `faq-first-bath`
 - Safe sleep                `safe-sleep`
   - `[gap]` safe-sleep never names the most dangerous case, falling asleep holding the baby on a sofa or armchair
-  - `[gap]` safe-sleep has nothing on swaddling: stop once baby starts trying to roll, and keep hips loose
+  - `[done 2026-11-02]` safe-sleep has nothing on swaddling: stop once baby starts trying to roll, and keep hips loose
 - Car seats                 `car-seat`
 - Circumcision              `circumcision`
-  - `[gap]` circumcision covers the decision only: no aftercare, normal healing, or when to call (bleeding, no wet diaper)
+  - `[done 2026-11-02]` circumcision covers the decision only: no aftercare, normal healing, or when to call (bleeding, no wet diaper)
 - Baby check-ups            `followup-appts`
 
 ## App

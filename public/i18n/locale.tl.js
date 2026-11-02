@@ -947,7 +947,7 @@ window.MYOB_LOCALES.tl = {
       "t": [
         "Ang pangunahing panganib ay ang",
         "Listeria",
-        ", isang impeksiyon ng bakterya na bihira pero maaaring maging malubha sa pagbubuntis (maaaring tumawid sa inunan). Payo ng FDA na iwasan ang keso na hindi pasteurized at deli meat maliban kung pinainit hanggang umusok (165°F). Ligtas ang karamihan ng pasteurized na malambot na keso (tulad ng pasteurized na brie, feta na nasa pakete). Ang eksepsiyon ay queso fresco, queso blanco, panela at mga katulad na sariwang keso: kahit ang pasteurized ay nagdulot na ng listeria outbreak, kaya kainin lang ang mga ito kung niluto hanggang umusok. Napakababa ng kabuuang panganib mula sa paminsan-minsang deli meat. Kung hindi sigurado, initin ito."
+        ", isang impeksiyon ng bakterya na bihira pero maaaring maging malubha sa pagbubuntis (maaaring tumawid sa inunan). Payo ng FDA na iwasan ang keso na hindi pasteurized at deli meat maliban kung pinainit hanggang umusok (165°F). Ligtas ang karamihan ng pasteurized na malambot na keso (tulad ng pasteurized na brie, feta na nasa pakete). Ang eksepsiyon ay queso fresco, queso blanco, panela at mga katulad na sariwang keso: kahit ang pasteurized ay nagdulot na ng listeria outbreak, kaya kainin lang ang mga ito kung niluto hanggang umusok. Napakababa ng kabuuang panganib mula sa paminsan-minsang deli meat. Kung hindi sigurado, initin ito. Iwasan din ang hilaw o hindi lutong karne, hilaw na itlog, hindi pasteurized na gatas o juice, at hilaw na toge, at hugasan ang prutas at gulay. Ipalinis sa iba ang litter ng pusa, o magsuot ng guwantes: ang dumi ng pusa at hindi lutong karne ay maaaring magdala ng toxoplasmosis."
       ]
     },
     "faq-coffee": {
@@ -1044,7 +1044,7 @@ window.MYOB_LOCALES.tl = {
       "title": "Kung na-C-section na ako dati, lagi ko bang kailangan ulit?",
       "sub": "",
       "t": [
-        "Hindi palagi. Ang normal na panganganak pagkatapos ng cesarean (VBAC) ay ligtas at angkop na opsiyon para sa maraming babae na may isang naunang low-transverse na hiwa sa matris. 60–80% ang tsansang magtagumpay. Ang mga salik ay ang dahilan ng naunang C-section, ang kasalukuyang pagbubuntis, ang uri ng hiwa sa matris, at ang kakayahan ng iyong ospital na humawak ng emergency. Banggitin ito nang maaga sa prenatal care kung interesado ka."
+        "Hindi palagi. Ang normal na panganganak pagkatapos ng cesarean (VBAC) ay ligtas at angkop na opsiyon para sa maraming babae na may isang naunang low-transverse na hiwa sa matris. 60–80% ang tsansang magtagumpay. Ang pangunahing panganib ay ang pagbuka ng peklat habang naglalabor (uterine rupture): mga 5 hanggang 9 sa 1,000 babaeng may isang naunang low-transverse na hiwa. Ang mga salik ay ang dahilan ng naunang C-section, ang kasalukuyang pagbubuntis, ang uri ng hiwa sa matris, at ang kakayahan ng iyong ospital na humawak ng emergency. Banggitin ito nang maaga sa prenatal care kung interesado ka."
       ]
     },
     "faq-bf-bc": {
@@ -1169,7 +1169,7 @@ window.MYOB_LOCALES.tl = {
         "Ang PPD ay isang medikal na kondisyon. Isang mood disorder na nagagamot, hindi kapintasan ng ugali o tanda ng pagiging masamang ina.",
         "Mga Sintomas ng PPD",
         "Patuloy na kalungkutan o kawalan · Hirap mapalapit sa iyong sanggol · Pakiramdam na masama kang ina o mas mabuti ang sanggol kung wala ka · Matinding pagkabalisa o panic attack · Hindi makatulog kahit tulog ang sanggol · Nawalan ng gana sa mga dati mong gusto · Naiisip na saktan ang sarili o ang sanggol: tumawag sa 911 o pumunta sa ER ngayon, o tumawag o mag-text sa 988",
-        "Kung tumagal ang mga sintomas na ito nang higit sa 2 linggo o matindi kahit kailan, sabihin sa iyong care team. Mabisang nagagamot ang PPD sa therapy, support group, at/o gamot (marami ang ligtas habang nagpapasuso).",
+        "Kung tumagal ang mga sintomas na ito nang higit sa 2 linggo o matindi kahit kailan, sabihin sa iyong care team. Mabisang nagagamot ang PPD sa therapy, support group, at/o gamot (marami ang ligtas habang nagpapasuso). Ang National Maternal Mental Health Hotline, 1-833-852-6262, ay libre, anumang oras, sa tawag o text, sa maraming wika.",
         "Huwag nang hintayin ang 6 na linggong check-up bago ito banggitin.",
         "Postpartum Psychosis. Bihira Pero Medikal na Emergency",
         "Halusinasyon, maling paniniwala, matinding pagkalito, o pagkabalisa sa mga araw pagkapanganak. Tumawag agad sa 911 o pumunta sa ER. Bihira ito (1–2 sa 1,000) pero kailangan ng agarang gamutan.",
@@ -1594,7 +1594,7 @@ window.MYOB_LOCALES.tl = {
       "t": [
         "Isang kondisyon sa blood pressure na maaaring biglang dumating, kadalasang pagkalipas ng 20 linggo at minsan sa unang isa o dalawang linggo pagkapanganak. Talagang nababago ang kahihinatnan kung maaga itong mahuli.",
         "Ano ito",
-        "Altapresyon kasama ang mga senyales na naaapektuhan ang ibang organ, kadalasang ang bato o atay. Binabawasan din nito ang daloy ng dugo sa inunan, kaya naaapektuhan ang paglaki ng sanggol. Ang panganganak lang ang lunas, kaya maaaring mas mabilis kaysa inaasahan mo ang usapang iyon.",
+        "Altapresyon kasama ang mga senyales na naaapektuhan ang ibang organ, kadalasang ang bato o atay. Binabawasan din nito ang daloy ng dugo sa inunan, kaya naaapektuhan ang paglaki ng sanggol. Ang panganganak lang ang lunas, kaya maaaring mas mabilis kaysa inaasahan mo ang usapang iyon. Mataas ang presyon na 140/90 o higit pa (alinmang numero). Malala ang 160/110 o higit pa: pumunta na ngayon sa labor and delivery.",
         "Tawagan ang iyong doktor ngayong araw kung may",
         "Sakit ng ulo na hindi nawawala · Pagbabago sa paningin: maiitim na tuldok, kislap ng liwanag · Sakit sa ilalim ng tadyang sa kanan, o sa itaas ng sikmura · Biglang pamamaga ng mukha o kamay · Hirap huminga",
         "o anumang ibang senyales na sinabi ng iyong doktor na bantayan.",
@@ -1618,7 +1618,7 @@ window.MYOB_LOCALES.tl = {
         "Mga Gamot",
         "Hindi ligtas na opsiyon ang hindi nagagamot at hindi kontroladong depresyon: kaugnay ito ng preterm birth, mas mababang timbang pagkasilang, at mas malaking tsansa ng postpartum depression. Maraming babae ang may matagumpay na pagbubuntis nang hindi kailangan ng gamot. May disenteng datos sa kaligtasan sa pagbubuntis ang ilang SSRI at karaniwang inireseta. Kung itinigil mo ang isang gamot noong araw na nakita mo ang positibong test, sabihin sa iyong doktor para mapag-usapan ang mga opsiyon mo.",
         "Ano pa ang nakakatulong",
-        "Mabisa ang talk therapy, mag-isa man o kasabay ng gamot, at sulit na hingin nang maaga dahil mahaba ang pila. Siguraduhing kausapin ang iyong doktor at gawin ang mga hindi gamot na bahagi ng paggamot sa depresyon at pagkabalisa: magandang tulog, araw, ehersisyo, komunidad, therapy, panalangin, atbp. Lalong mahirap na panahon ang morning sickness."
+        "Mabisa ang talk therapy, mag-isa man o kasabay ng gamot, at sulit na hingin nang maaga dahil mahaba ang pila. Siguraduhing kausapin ang iyong doktor at gawin ang mga hindi gamot na bahagi ng paggamot sa depresyon at pagkabalisa: magandang tulog, araw, ehersisyo, komunidad, therapy, panalangin, atbp. Lalong mahirap na panahon ang morning sickness. Ang National Maternal Mental Health Hotline, 1-833-852-6262, ay libre, anumang oras, sa tawag o text, sa maraming wika."
       ]
     },
     "breastfeeding": {
@@ -1643,7 +1643,9 @@ window.MYOB_LOCALES.tl = {
         "Timbang:",
         "Dapat bumalik ang timbang pagkasilang sa loob ng 10–14 na araw. Pagkalipas ng araw 5, asahan ang ½–1 oz na dagdag bawat araw.",
         "Sanggol:",
-        "Busog pagkatapos dumede, alerto kapag gising."
+        "Busog pagkatapos dumede, alerto kapag gising.",
+        "Alak, cannabis at paninigarilyo",
+        "Ayos lang ang paminsan-minsang isang inumin: maghintay ng 2 oras pagkatapos ng isang inumin bago magpasuso. Hindi napapabilis ng pag-pump at pagtapon ng gatas ang pagkawala ng alak. Iwasan ang cannabis: pumapasok ang THC sa gatas at nananatili roon nang ilang araw. Kung naninigarilyo ka, mas mabuti pa rin ang pagpapasuso kaysa formula. Manigarilyo sa labas at huwag kailanman malapit sa sanggol; ayos lang ang nicotine patch o gum."
       ]
     },
     "bf-challenges": {
@@ -1665,7 +1667,7 @@ window.MYOB_LOCALES.tl = {
         "Thrush sa utong",
         "Matalim at mahapding sakit habang at pagkatapos magpasuso. Pinkish at makintab na utong. Kailangan ninyo pareho ng sanggol ng gamot laban sa fungus nang sabay. Tawagan ang iyong doktor at ang doktor ng iyong sanggol.",
         "Pagpa-pump",
-        "Sakop ng karamihan ng insurance sa U.S. sa ilalim ng ACA ang electric na double breast pump. Ang pagpa-pump ay nagpapanatili ng supply kapag hindi makadede ang sanggol, nagbibigay-daan sa iba na pakainin ang sanggol, at nag-iipon ng gatas sa freezer. Puwedeng ilagay ang gatas sa ref nang 4 na araw o i-freeze nang 6–12 buwan.",
+        "Sakop ng karamihan ng insurance sa U.S. sa ilalim ng ACA ang electric na double breast pump. Ang pagpa-pump ay nagpapanatili ng supply kapag hindi makadede ang sanggol, nagbibigay-daan sa iba na pakainin ang sanggol, at nag-iipon ng gatas sa freezer. Tumatagal ang gatas nang 4 na oras sa temperatura ng kuwarto, 4 na araw sa ref, at 6–12 buwan sa freezer. Lusawin ito sa ref o sa maligamgam na tubig, hindi kailanman sa microwave, gamitin sa loob ng 24 oras, at huwag nang i-freeze ulit.",
         "Ayos Lang Magdagdag o Mag-formula",
         "Kung hindi gumagana ang pagpapasuso kahit may suporta, ang pagdagdag ng formula ay hindi pagkabigo. Pagpapakain iyon sa sanggol mo. Ang busog at malusog na sanggol ang pinakamahalaga. Maraming pamilya ang matagumpay na pinagsasabay ang gatas ng ina at formula."
       ]
@@ -1741,7 +1743,7 @@ window.MYOB_LOCALES.tl = {
         "Bakit magkakaiba ang gabay",
         "Nagpasya ang American Academy of Pediatrics na mas malaki ang benepisyo kaysa panganib pero hindi sapat para irekomenda sa bawat batang lalaki. Binasa ng ilang grupo sa Europa ang parehong pag-aaral at iba ang naging konklusyon. Sa totoo, desisyon ito ng pamilya, kadalasang hinuhubog ng relihiyon, kultura, at ng itsura ng ama.",
         "Kung magpapasya kang gawin ito",
-        "Itanong nang tiyak ang tungkol sa pag-alis ng sakit: isang local anesthetic block, hindi lang tubig na may asukal. May mabibisang opsiyon at hindi ginagamit sa lahat ng lugar. Tingnan kung ano ang sakop ng insurance mo.",
+        "Itanong nang tiyak ang tungkol sa pag-alis ng sakit: isang local anesthetic block, hindi lang tubig na may asukal. May mabibisang opsiyon at hindi ginagamit sa lahat ng lugar. Tingnan kung ano ang sakop ng insurance mo. Pagkatapos, mapula ang dulo at maaaring may malambot na madilaw na takip nang mga isang linggo; normal na paggaling iyon. Lagyan ng petroleum jelly tuwing magpapalit ng diaper. Tawagan ang doktor ng sanggol kung may pagdurugong hindi tumitigil sa bahagyang pagdiin, walang basang diaper sa loob ng 8 oras, lagnat na 100.4°F o higit pa, o kumakalat na pamumula, pamamaga o paltos na may nana.",
         "Kung magpapasya kang huwag",
         "Huwag hilahin pabalik ang balat sa dulo (foreskin). Karaniwan itong nakadikit sa pagkasanggol at kusang humihiwalay sa loob ng ilang taon; ang pagpilit ay nagdudulot ng peklat na dapat sanang maiwasan. Punasan ang labas gaya ng ibang balat."
       ]
@@ -1798,7 +1800,8 @@ window.MYOB_LOCALES.tl = {
         "Panatilihing presko ang sanggol. Panganib ang sobrang init",
         "Tummy Time (Gising &amp; Binabantayan Lang)",
         "Mahalaga ang tummy time habang gising at binabantayan ang sanggol para sa paglaki ng leeg at balikat at para maiwasan ang pagpipi ng ulo. Magsimula sa 2–3 minuto ilang beses sa isang araw mula pagkasilang. Abutin ang kabuuang 30 minuto bawat araw pagsapit ng 3 buwan.",
-        "Huwag kailanman patulugin nang matagal ang natutulog na sanggol sa swing, car seat (sa labas ng sasakyan), bouncy seat, o nakahilig na higaan. Hindi ligtas na lugar ng pagtulog ang mga ito."
+        "Huwag kailanman patulugin nang matagal ang natutulog na sanggol sa swing, car seat (sa labas ng sasakyan), bouncy seat, o nakahilig na higaan. Hindi ligtas na lugar ng pagtulog ang mga ito.",
+        "Kung binabalot mo ang sanggol, iluwag sa balakang, laging ihiga nang patihaya, at itigil agad kapag nagsisimula na siyang subukang gumulong"
       ]
     },
     "followup-appts": {
@@ -2068,7 +2071,7 @@ window.MYOB_LOCALES.tl = {
     "content.faq-deli.title": "ce705cdc639700b6",
     "content.faq-deli.t.0": "208a1054e9463d0e",
     "content.faq-deli.t.1": "7180ed78d9040f96",
-    "content.faq-deli.t.2": "86ed7bf6b9c01890",
+    "content.faq-deli.t.2": "f834f951752931cb",
     "content.faq-coffee.title": "5389638ea8a88dc8",
     "content.faq-coffee.t.0": "ac1cf8bc0364371a",
     "content.faq-coffee.t.1": "d49405defc21c3ec",
@@ -2105,7 +2108,7 @@ window.MYOB_LOCALES.tl = {
     "content.faq-eat-in-labor.title": "5de8ba9361616d39",
     "content.faq-eat-in-labor.t.0": "23ad9f490ae5def7",
     "content.faq-vbac.title": "4fb6dce62d75356c",
-    "content.faq-vbac.t.0": "2a66625080510032",
+    "content.faq-vbac.t.0": "e38f425a11a42430",
     "content.faq-bf-bc.title": "0683d2b28ff53b78",
     "content.faq-bf-bc.t.0": "fd3cd5c648b45a44",
     "content.faq-bf-bc.t.1": "1ab0f2cdfd636c5f",
@@ -2183,7 +2186,7 @@ window.MYOB_LOCALES.tl = {
     "content.mood-ppd.t.4": "43a9a0194074522f",
     "content.mood-ppd.t.5": "794b0242064db6e0",
     "content.mood-ppd.t.6": "8ccfda079a0f2bb1",
-    "content.mood-ppd.t.7": "d0c868c402841cda",
+    "content.mood-ppd.t.7": "49a0b939085edcd7",
     "content.mood-ppd.t.8": "44ec48519e4d008f",
     "content.mood-ppd.t.9": "524037558408bf9f",
     "content.mood-ppd.t.10": "3c46be789836524a",
@@ -2554,7 +2557,7 @@ window.MYOB_LOCALES.tl = {
     "content.preeclampsia.sub": "f9ff93747e02e746",
     "content.preeclampsia.t.0": "012bab03fc234669",
     "content.preeclampsia.t.1": "065b8fa07086ba26",
-    "content.preeclampsia.t.2": "e940c7d81df0e732",
+    "content.preeclampsia.t.2": "99247147c9df8841",
     "content.preeclampsia.t.3": "80e3b3785e41ff32",
     "content.preeclampsia.t.4": "a3dc86808b674e1a",
     "content.preeclampsia.t.5": "f858f3feee379d5c",
@@ -2574,7 +2577,7 @@ window.MYOB_LOCALES.tl = {
     "content.antenatal-mental-health.t.5": "293bffca71d9d7c0",
     "content.antenatal-mental-health.t.6": "0906edec260abb02",
     "content.antenatal-mental-health.t.7": "736e65988b5d2316",
-    "content.antenatal-mental-health.t.8": "228b594922aaa6ef",
+    "content.antenatal-mental-health.t.8": "390c4e000fd9b536",
     "content.breastfeeding.title": "c57faccf43d647e5",
     "content.breastfeeding.sub": "fceab506c1cfc26c",
     "content.breastfeeding.t.0": "866addc074fa03ba",
@@ -2613,7 +2616,7 @@ window.MYOB_LOCALES.tl = {
     "content.bf-challenges.t.12": "99075ec3f001d689",
     "content.bf-challenges.t.13": "03fb5ce1844631eb",
     "content.bf-challenges.t.14": "ee72bccd36e7050f",
-    "content.bf-challenges.t.15": "b15406d3f4fcc479",
+    "content.bf-challenges.t.15": "20b0559f07c7d289",
     "content.bf-challenges.t.16": "3a9cce6f1d3df325",
     "content.bf-challenges.t.17": "acb9cdb3370cee4d",
     "content.formula.title": "ee81492549b61dd7",
@@ -2710,7 +2713,7 @@ window.MYOB_LOCALES.tl = {
     "content.circumcision.t.3": "d4de604c37f414a2",
     "content.circumcision.t.4": "706bcd0238eac334",
     "content.circumcision.t.5": "2d62b3babd67ab3c",
-    "content.circumcision.t.6": "0f49a9344a26fe2a",
+    "content.circumcision.t.6": "a8361fd6b7237104",
     "content.circumcision.t.7": "51bb2ecb4d379d51",
     "content.circumcision.t.8": "f7774e648f8e13da",
     "content.vitamin-d-drops.title": "e813e486bcfad49c",
@@ -2944,7 +2947,10 @@ window.MYOB_LOCALES.tl = {
     "content.crying-coping.t.11": "87206f861037d230",
     "content.crying-coping.t.12": "10aefed99197f797",
     "content.crying-coping.t.13": "4b4e03aa59a82fec",
-    "content.crying-coping.t.14": "555f6cca8c9ce900"
+    "content.crying-coping.t.14": "555f6cca8c9ce900",
+    "content.safe-sleep.t.21": "7583aee8e4b99b96",
+    "content.breastfeeding.t.19": "48a3e985cdc5711f",
+    "content.breastfeeding.t.20": "86b0f7602ed6090e"
   },
   "unreviewed": {
     "urgent.title": 1,
@@ -4445,6 +4451,9 @@ window.MYOB_LOCALES.tl = {
     "content.crying-coping.t.11": 1,
     "content.crying-coping.t.12": 1,
     "content.crying-coping.t.13": 1,
-    "content.crying-coping.t.14": 1
+    "content.crying-coping.t.14": 1,
+    "content.safe-sleep.t.21": 1,
+    "content.breastfeeding.t.19": 1,
+    "content.breastfeeding.t.20": 1
   }
 };
