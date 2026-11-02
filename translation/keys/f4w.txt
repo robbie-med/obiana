@@ -1,0 +1,2 @@
+# NEXT.md §5: physical-recovery points to the bowel card
+content.physical-recovery.t.21

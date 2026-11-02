@@ -84,6 +84,8 @@ Don't build a second tool beside it.
   - preterm labor. **Done 2026-11-01:** `preterm-labor` (after Preeclampsia), checked by the user against CDC 2024 (10.41%), ACOG CO 455 and the steroid/tocolysis/progesterone guidance.
   - itching/cholestasis. **Done 2026-11-01:** `cholestasis`, checked by the user against SMFM Consult #53 (0.3–0.5%, 36 weeks at ≥100 µmol/L, recurrence up to 90%) and CDC MEC (estrogen category 2). Both drafted in all 15 non-Zomi languages (`translation/keys/f4u.txt`).
 
+  **Done 2026-11-01:** Common Discomforts split into `discomfort-urinary`, `-head`, `-bowel`, `-heartburn`, `-aches`, `-sleep`, `-swelling` (user approved; acetaminophen "lowest dose, shortest time", magnesium "mixed" per Cochrane 2020, doxylamine only), `common-discomforts` retired, physical-recovery t21 points to the bowel card. Drafted in all 15 non-Zomi languages (`f4v`, `f4w`); every non-Zomi locale is now 845 current, 0 untranslated.
+
   Then split **Common Discomforts** into cards (one session; your clinical review of the drafts before merge). Each card: why it happens, what to try first, over-the-counter medicines that are fine in pregnancy, when to call. Warning-sign cards first:
   - Peeing: more often, leaking, or burning (UTI; fever with back or side pain is a kidney infection, go in)
   - Headaches, stuffy nose, nosebleeds, bleeding gums (a headache that won't go away is a preeclampsia sign: point to it)

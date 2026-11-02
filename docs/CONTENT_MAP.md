@@ -52,7 +52,7 @@ existing cards are listed under their topic; topics with no card are under
 - Sex                       `faq-sex-pregnancy`
 - Exercise                  `exercise-pregnancy`  → faq-exercise-mc (good model: answer + pointer)
 - Kegels                    `postpartum-exercise` → exercise-pregnancy
-- Discomforts               split 2026-11-01 (draft, awaiting clinical review) into `discomfort-urinary`, `discomfort-head`, `discomfort-bowel`, `discomfort-heartburn`, `discomfort-aches`, `discomfort-sleep`, `discomfort-swelling`; `common-discomforts` retired. Itching lives in `cholestasis`.
+- Discomforts               split 2026-11-01 (reviewed) into `discomfort-urinary`, `discomfort-head`, `discomfort-bowel`, `discomfort-heartburn`, `discomfort-aches`, `discomfort-sleep`, `discomfort-swelling`; `common-discomforts` retired. Itching lives in `cholestasis`.
 - Mental health             `antenatal-mental-health` → tool mood
   - `[gap]` antenatal-mental-health and mood-ppd give no maternal line: National Maternal Mental Health Hotline 1-833-TLC-MAMA (1-833-852-6262), 24/7 call or text, interpreters in 60+ languages
 - Nausea, hyperemesis       tool `nausea`
