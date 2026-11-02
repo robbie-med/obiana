@@ -52,9 +52,7 @@ existing cards are listed under their topic; topics with no card are under
 - Sex                       `faq-sex-pregnancy`
 - Exercise                  `exercise-pregnancy`  → faq-exercise-mc (good model: answer + pointer)
 - Kegels                    `postpartum-exercise` → exercise-pregnancy
-- Discomforts               `common-discomforts`  → physical-recovery `[twice]` hemorrhoid/constipation advice
-  - `[gap]` common-discomforts has no urinary symptoms: burning or urgency (UTI, treat promptly), and fever with back or side pain (kidney infection, go in)
-  - `[gap]` common-discomforts misses headache, nosebleeds and bleeding gums, carpal tunnel, varicose veins
+- Discomforts               split 2026-11-01 (draft, awaiting clinical review) into `discomfort-urinary`, `discomfort-head`, `discomfort-bowel`, `discomfort-heartburn`, `discomfort-aches`, `discomfort-sleep`, `discomfort-swelling`; `common-discomforts` retired. Itching lives in `cholestasis`.
 - Mental health             `antenatal-mental-health` → tool mood
   - `[gap]` antenatal-mental-health and mood-ppd give no maternal line: National Maternal Mental Health Hotline 1-833-TLC-MAMA (1-833-852-6262), 24/7 call or text, interpreters in 60+ languages
 - Nausea, hyperemesis       tool `nausea`
@@ -68,7 +66,7 @@ existing cards are listed under their topic; topics with no card are under
 - Preeclampsia signs        `preeclampsia`
   - `[clash]` headache worded three ways: "won't go away" / "not relieved by Tylenol"
     (signs-of-labor) / "not relieved by ibuprofen/Tylenol" (postpartum-danger)
-  - also restated on Home and in common-discomforts
+  - also restated on Home and in discomfort cards
   - `[gap]` preeclampsia never says the risk is lifelong (heart disease, stroke) or that future doctors should be told
 - BP thresholds             tool `bp`             `[gap]` 140/90 and 160/110 never appear in the preeclampsia card
 - Heavy bleeding            `physical-recovery`   → postpartum-danger, Home
@@ -77,7 +75,7 @@ existing cards are listed under their topic; topics with no card are under
   - When to call lists it under ER/911 (postpartum-danger's own slot) and gives 988 and 1-833-TLC-MAMA under help lines.
   - `[clash]` the cards still differ: 988 (antenatal-mental-health) / doctor, 988 or ER (tool mood) / no number (mood-ppd). Point them at When to call.
 - Fever 100.4°F             *same wording in 5 places* (Home, csection, postpartum-danger, bf-challenges, normal-newborn)
-- Blood clots               `postpartum-danger`   → Home, common-discomforts
+- Blood clots               `postpartum-danger`   → Home, discomfort cards
 - When to go in             `signs-of-labor`      → tool cx (5-1-1)
 - Postpartum warning signs  `postpartum-danger`   → Home (leaves out fever)
   - When to call says to tell staff you gave birth in the last year (Hear Her); postpartum-danger itself still does not
@@ -184,7 +182,7 @@ Tier 2: standard of care, commonly asked
 - Contraception after birth   `[gap]` pelvic-rest and faq-bf-bc touch it; no card covers methods. When fertility returns (ovulation from about day 25 if not breastfeeding), LAM's three conditions, IUD or implant before leaving hospital, progestin-only vs estrogen methods while breastfeeding, sterilisation and vasectomy, emergency contraception.
 - When to get pregnant again   `[gap]` nothing on spacing. Give her the numbers rather than a rule: the 18- and 24-month intervals rest mostly on confounded observational data, the risk is smaller in high-income settings, and over 35 waiting has a cost of its own. Uterine rupture risk after a caesarean with a short interval.
 - Pelvic floor, short and long term  `[gap]` postpartum-exercise has Kegels only. Nothing on pelvic floor physiotherapy, leaking urine or wind/stool, prolapse (heaviness, a bulge) now or decades later, how it is treated (PT, pessary, surgery), or that forceps and third/fourth-degree tears raise the risk.
-- Hemorrhoids                  `[twice]` mentioned in common-discomforts and physical-recovery, never given their own answer: what helps, and when to be seen (bleeding that won't stop, a hard painful lump).
+- Hemorrhoids                  `discomfort-bowel` → physical-recovery (points to it)
 - Planning a home birth        `[gap]` no card mentions it, though about 50,000 US women a year give birth at home (51,642 in 2021). For a second or later baby, outcomes in integrated systems match hospital with fewer interventions. Cover a licensed midwife, a transfer plan, and who is a good candidate.
 
 Tier 3: nice to have

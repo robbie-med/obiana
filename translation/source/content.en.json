@@ -369,7 +369,7 @@
       "Ice packs for the first 24 hours, then switch to warm sitz baths (10–15 min, 2–3x/day)",
       "Witch hazel pads (e.g., Tucks) soothe swelling and hemorrhoids",
       "Constipation",
-      ". Very common in the first weeks, and genuinely uncomfortable with perineal stitches. Water, fiber and moving around help most. Docusate (Colace) is handed out in nearly every hospital, though trials show it works little better than a placebo, so if it does nothing for you, ask about an osmotic laxative such as polyethylene glycol (Miralax) instead.",
+      ". Very common in the first weeks, and genuinely uncomfortable with perineal stitches. Water, fiber and moving around help most. Docusate (Colace) is handed out in nearly every hospital, though trials show it works little better than a placebo, so if it does nothing for you, ask about an osmotic laxative such as polyethylene glycol (Miralax) instead. The Constipation and Hemorrhoids card under Prenatal has more.",
       "Pain Management",
       "Alternating ibuprofen (600 mg every 6 hours) and acetaminophen (650 mg every 6 hours) on a scheduled basis works much better than waiting for pain to spike. Ask your nurse for a written schedule on Day 1 and stick to it."
     ]
@@ -975,23 +975,106 @@
       "Talking therapy works, alone or alongside medication, and is worth asking for early because waiting lists are long. Be sure to talk to your doctor about and engage in the non-chemical aspects of depression and anxiety: good sleep, sunshine, exercise, community, therapy, prayer, etc. Morning sickness is an especially difficult time."
     ]
   },
-  "common-discomforts": {
-    "title": "Common Discomforts",
-    "sub": "Heartburn, aches, hemorrhoids, sleep",
+  "discomfort-urinary": {
+    "title": "Peeing More, Leaking, or Burning",
+    "sub": "What is normal, and when it is an infection",
     "t": [
-      "None of these are dangerous. All of them are miserable.",
-      "Heartburn",
+      "Peeing more often is normal: early in pregnancy because of hormones, and later because the baby presses on your bladder. Leaking a little when you cough, sneeze or laugh is common too. Burning is not normal. It usually means a bladder infection, which needs treatment.",
+      "What helps",
+      "Keep drinking. Cutting back on water does not cut the trips, and it makes infections more likely. Lean forward when you pee to empty your bladder all the way. Kegel exercises help with leaking: squeeze the pelvic floor for 3 to 5 seconds, then relax, 10 times, 3 times a day. Watery leaking that does not stop could be your water breaking: call labor and delivery.",
+      "Bladder infections in pregnancy",
+      "In pregnancy a bladder infection is more likely to travel up to the kidneys, so it is treated even when it is mild, with an antibiotic that is safe in pregnancy. A urine test at your first visit also looks for infection without symptoms, which is treated too.",
+      "Call your family doctor, OB or midwife today if you have",
+      "Burning or pain when you pee · Needing to go urgently but passing only a little · Blood in your urine · Cloudy or bad-smelling urine",
+      "Go to the ER or labor and delivery now if you have",
+      "Fever or chills with pain in your back or side · Vomiting with back or side pain: this can be a kidney infection."
+    ]
+  },
+  "discomfort-head": {
+    "title": "Headaches, Stuffy Nose, Nosebleeds and Bleeding Gums",
+    "sub": "Common, and the one headache not to ignore",
+    "t": [
+      "More blood flow and pregnancy hormones swell the lining of your nose and gums, and can bring on headaches, especially in the first trimester.",
+      "Headaches",
+      "Rest, water, regular meals and keeping caffeine under 200 mg a day help. Acetaminophen (Tylenol) is the pain medicine to use in pregnancy, at the lowest dose that works. Avoid ibuprofen and other NSAIDs, especially after 20 weeks, unless your doctor tells you otherwise.",
+      "Stuffy nose and nosebleeds",
+      "A blocked nose that lasts for weeks is common in pregnancy, and it is not a cold. Saline spray or rinses, a humidifier and sleeping with your head raised help, and nasal strips are fine. For a nosebleed, sit up, lean forward and pinch the soft part of your nose for 10 minutes. Ask before using decongestant pills or sprays.",
+      "Bleeding gums",
+      "Swollen gums that bleed when you brush are common. Use a soft brush, keep brushing and flossing, and see a dentist. Cleanings, X-rays and fillings with numbing medicine are all safe in pregnancy.",
+      "Call your family doctor, OB or midwife today, or go in, if you have",
+      "A headache that will not go away, or one with vision changes, especially after 20 weeks: this can be preeclampsia · The worst headache of your life, or one that comes on suddenly · A headache with fever and a stiff neck · A nosebleed that does not stop after 20 minutes of pressure"
+    ]
+  },
+  "discomfort-bowel": {
+    "title": "Constipation and Hemorrhoids",
+    "sub": "What helps first, which medicines are fine, and when to be seen",
+    "t": [
+      "These two travel together. Pregnancy hormones slow your bowels, iron makes it worse, and straining pushes out the swollen veins that are hemorrhoids. Most improve after delivery.",
+      "What helps first",
+      "Work up toward 25 to 30 grams of fiber a day: fruit, vegetables, beans, lentils and whole grains. 2 green kiwis or about 10 prunes a day help many women. Drink water and walk every day. Go when you feel the urge, and do not sit and strain. A footstool that raises your knees changes the angle and makes a real difference. If your vitamin or iron pill is the problem, ask about one with less iron, or taking iron every other day.",
+      "Medicines that are fine in pregnancy",
+      "Start with a fiber supplement, psyllium (Metamucil) or methylcellulose (Citrucel), with plenty of water. If that is not enough, add polyethylene glycol (MiraLAX), 17 grams in a glass of liquid once a day. Docusate (Colace) is safe but works little better than nothing. Senna or bisacodyl are fine now and then, for a few days. Do not use mineral oil or castor oil.",
+      "For hemorrhoids",
+      "Witch hazel pads and a warm sitz bath for 10 to 15 minutes ease the itching and pain. A hydrocortisone cream for a few days is fine. Keeping your stools soft is what stops them coming back.",
+      "Call your family doctor, OB or midwife if you have",
+      "More than streaks of blood in your stool · A hard, very painful lump at your bottom · Several days without a bowel movement, with cramping · Bad belly pain, or vomiting",
+      "Belly pain that comes and goes in a rhythm, bleeding from the vagina, or leaking fluid can be labor: call labor and delivery."
+    ]
+  },
+  "discomfort-heartburn": {
+    "title": "Heartburn",
+    "sub": "Why it gets worse, and what is safe to take",
+    "t": [
+      "Pregnancy hormones relax the valve at the top of your stomach, and later the baby pushes up from below.",
+      "What helps",
       "Very common, and worst near the end when there is simply no room left. Smaller meals, nothing within three hours of lying down, and raising the head of the bed rather than stacking pillows, which mostly bends you in the middle. Calcium carbonate antacids such as Tums are safe and count toward your calcium. If that is not enough, ask your doctor: famotidine and the proton pump inhibitors are both used in pregnancy.",
-      "Round ligament pain",
-      "A sharp catch low on one side when you stand up, roll over or cough, usually in the second trimester. The ligaments holding the uterus are stretching. Move into position more slowly, bend toward the pain when you cough, and try warmth. It is sharp but brief. Pain that stays, or arrives with bleeding, fever or regular tightening, is something to call your doctor about (or go the the emergency department if you are bleeding).",
-      "Hemorrhoids and constipation",
-      "These two travel together. Water, fiber and moving around are the first line. Witch hazel pads and a sitz bath help the symptoms. Do not sit and strain on the toilet. A footstool that raises your knees changes the angle and makes a real difference. Most improve after delivery.",
+      "More you can try",
+      "Sodium alginate tablets or capsules, taken after meals and at bedtime, form a layer that keeps acid down; sodium alginate should be the only ingredient listed. With 500 mg calcium chews, take no more than 5 a day, and take them at least 2 hours apart from iron or your prenatal vitamin. Do not use baking soda.",
+      "Call your family doctor, OB or midwife if you have",
+      "Heartburn that medicines do not help · Pain high in your belly or under your right ribs, especially after 20 weeks: this can be preeclampsia · Trouble swallowing, vomiting blood, or black stools"
+    ]
+  },
+  "discomfort-aches": {
+    "title": "Back, Hip and Round Ligament Pain",
+    "sub": "Why it aches, what helps, and pain that is not normal",
+    "t": [
+      "Most aches in pregnancy come from a body changing shape quickly. They are uncomfortable, not dangerous.",
       "Back and pelvic pain",
       "Your center of gravity has moved forward and the ligaments have softened. A maternity support belt helps some people a lot. So does not standing propped on one hip, a pillow between the knees at night, and flat shoes. Physical therapy exists for this but you will probably need to ask for a referral.",
-      "Sleep",
-      "Side sleeping is advised in the second half, and the left side gets mentioned most, but either side is fine. What matters is not spending long stretches flat on your back. If you wake up on your back, just turn over. A pillow wedged behind you stops you rolling back. Night-time leg cramps respond to stretching the calf and to staying hydrated, and magnesium supplementation if you need it.",
+      "Round ligament pain",
+      "A sharp catch low on one side when you stand up, roll over or cough, usually in the second trimester. The ligaments holding the uterus are stretching. Move into position more slowly, bend toward the pain when you cough, and try warmth. It is sharp but brief. Pain that stays, or comes with bleeding, fever or regular tightening, is something to call your doctor about, or go to the emergency department if you are bleeding.",
+      "Medicines and other help",
+      "Acetaminophen (Tylenol) is fine for pain, at the lowest dose that works. Avoid ibuprofen and other NSAIDs, especially after 20 weeks. Heat packs, massage and exercise in water help too.",
+      "Call your family doctor, OB or midwife if you have",
+      "Back pain with fever, or with burning when you pee: this can be a kidney infection · A low backache or pelvic pressure that comes and goes in a rhythm before 37 weeks: this can be early labor · Pain with bleeding · Numbness or weakness in your legs"
+    ]
+  },
+  "discomfort-sleep": {
+    "title": "Sleep and Leg Cramps",
+    "sub": "Sleeping position, cramps, and getting rest",
+    "t": [
+      "Sleep gets harder as pregnancy goes on: trips to the bathroom, heartburn, a busy baby and finding a comfortable position.",
+      "Sleep position",
+      "Side sleeping is advised in the second half, and the left side gets mentioned most, but either side is fine. What matters is not spending long stretches flat on your back. If you wake up on your back, just turn over. A pillow wedged behind you stops you rolling back.",
+      "Leg cramps",
+      "Sudden painful cramps in the calf, often at night, are common in the second half. Stretch the calf by pulling your toes up toward your knee, then walk around. Stretching before bed and drinking enough may help. The evidence for magnesium supplements is mixed, so ask before you take them.",
+      "Other things that help",
+      "Keep a regular bedtime, drink less in the last hour or two before bed, and treat heartburn. Doxylamine (Unisom SleepTabs) or diphenhydramine now and then is considered safe in pregnancy. Ask your doctor if you find you need it often.",
+      "Call your family doctor, OB or midwife if you have",
+      "Pain, swelling, warmth or redness in one calf that does not go away: this can be a blood clot · Loud snoring with pauses in your breathing, or bad sleepiness during the day · Many nights without sleep, or sleep kept away by worry or low mood"
+    ]
+  },
+  "discomfort-swelling": {
+    "title": "Swelling and Varicose Veins",
+    "sub": "What is expected, and swelling that is not",
+    "t": [
+      "Your body holds more fluid in pregnancy, and the growing uterus slows the blood coming back from your legs.",
       "Swelling",
-      "Puffy feet and ankles by the end of the day are expected. Put your legs up, avoid standing still for long stretches, and use compression stockings. Compression stockings come in different strengths or pressures, start low. Sudden swelling of the face or hands, or swelling in one calf that is painful or warm are reasons to call your doctor."
+      "Puffy feet and ankles by the end of the day are expected. Put your legs up, avoid standing still for long stretches, and use compression stockings. Compression stockings come in different strengths or pressures, start low. Sudden swelling of the face or hands, or swelling in one calf that is painful or warm are reasons to call your doctor.",
+      "Varicose veins",
+      "Swollen, twisting veins in the legs, or in the vulva, are common and usually shrink after the birth. Compression stockings, putting your feet up, not crossing your legs and walking help, and sleeping on your side takes pressure off them. A hard, red, painful lump along a vein needs a call to your doctor.",
+      "Go to the ER now if you have",
+      "Chest pain or sudden shortness of breath, especially with a swollen leg"
     ]
   },
   "circumcision": {

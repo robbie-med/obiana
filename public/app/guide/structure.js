@@ -79,7 +79,37 @@ const CONTENT_STRUCTURE = {
       "color": ""
     },
     {
-      "id": "common-discomforts",
+      "id": "discomfort-urinary",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--teal)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 17a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" /> <path d=\"M8 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" /> <path d=\"M4 22l4 -2v-3h12\" /> <path d=\"M11 20h9\" /> <path d=\"M8 14l3 -2l1 -4c3 1 3 4 3 6\" /></svg>",
+      "color": ""
+    },
+    {
+      "id": "discomfort-head",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--teal)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 17a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" /> <path d=\"M8 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" /> <path d=\"M4 22l4 -2v-3h12\" /> <path d=\"M11 20h9\" /> <path d=\"M8 14l3 -2l1 -4c3 1 3 4 3 6\" /></svg>",
+      "color": ""
+    },
+    {
+      "id": "discomfort-bowel",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--teal)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 17a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" /> <path d=\"M8 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" /> <path d=\"M4 22l4 -2v-3h12\" /> <path d=\"M11 20h9\" /> <path d=\"M8 14l3 -2l1 -4c3 1 3 4 3 6\" /></svg>",
+      "color": ""
+    },
+    {
+      "id": "discomfort-heartburn",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--teal)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 17a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" /> <path d=\"M8 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" /> <path d=\"M4 22l4 -2v-3h12\" /> <path d=\"M11 20h9\" /> <path d=\"M8 14l3 -2l1 -4c3 1 3 4 3 6\" /></svg>",
+      "color": ""
+    },
+    {
+      "id": "discomfort-aches",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--teal)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 17a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" /> <path d=\"M8 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" /> <path d=\"M4 22l4 -2v-3h12\" /> <path d=\"M11 20h9\" /> <path d=\"M8 14l3 -2l1 -4c3 1 3 4 3 6\" /></svg>",
+      "color": ""
+    },
+    {
+      "id": "discomfort-sleep",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--teal)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 17a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" /> <path d=\"M8 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" /> <path d=\"M4 22l4 -2v-3h12\" /> <path d=\"M11 20h9\" /> <path d=\"M8 14l3 -2l1 -4c3 1 3 4 3 6\" /></svg>",
+      "color": ""
+    },
+    {
+      "id": "discomfort-swelling",
       "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--teal)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 17a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" /> <path d=\"M8 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" /> <path d=\"M4 22l4 -2v-3h12\" /> <path d=\"M11 20h9\" /> <path d=\"M8 14l3 -2l1 -4c3 1 3 4 3 6\" /></svg>",
       "color": ""
     }
