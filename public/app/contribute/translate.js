@@ -126,8 +126,12 @@ function trEditorText(ed) {
   walk(ed);
   return out.replace(/​/g, '').replace(/ /g, ' ');
 }
-// Wire an editor: plain-text paste only, and a row of the pills it has lost,
-// each tap putting one back where the cursor was.
+// Wire an editor. Pills cannot be deleted: any edit whose range takes in a
+// pill (Backspace next to one, typing over or cutting a selection that holds
+// one) removes only the text and leaves every pill where it was. If some
+// input path gets past that (a keyboard that doesn't send a cancelable
+// beforeinput), the edit is undone. Pastes are plain text. The put-back row
+// is only for a translation that arrived without a token.
 function trWireEditor(ed, source, keepRow, onChange) {
   let saved = null;
   const remember = () => {
@@ -135,14 +139,67 @@ function trWireEditor(ed, source, keepRow, onChange) {
     if (sel.rangeCount && ed.contains(sel.getRangeAt(0).commonAncestorContainer)) saved = sel.getRangeAt(0).cloneRange();
   };
   document.addEventListener('selectionchange', remember);
+  const pills = () => [...ed.querySelectorAll('[data-token]')];
+  const pillOf = n => n && (n.nodeType === 1 ? n : n.parentNode).closest && (n.nodeType === 1 ? n : n.parentNode).closest('[data-token]');
+  // Replace the range's content with text, keeping every pill it held.
+  const replaceKeepingPills = (r, text) => {
+    const ps = pillOf(r.startContainer); if (ps && ed.contains(ps)) r.setStartBefore(ps);
+    const pe = pillOf(r.endContainer); if (pe && ed.contains(pe)) r.setEndAfter(pe);
+    const kept = pills().filter(p => r.intersectsNode(p));
+    r.deleteContents();
+    const frag = document.createDocumentFragment();
+    const tn = text ? document.createTextNode(text) : null;
+    if (tn) frag.appendChild(tn);
+    kept.forEach(p => frag.appendChild(p));
+    const start = r.startContainer, off = r.startOffset;
+    r.insertNode(frag);
+    const c = document.createRange();
+    if (tn) c.setStart(tn, tn.length); else c.setStart(start, off);
+    c.collapse(true);
+    const sel = getSelection(); sel.removeAllRanges(); sel.addRange(c);
+    changed();
+  };
+  const toRange = sr => { const r = document.createRange(); r.setStart(sr.startContainer, sr.startOffset); r.setEnd(sr.endContainer, sr.endOffset); return r; };
+  const currentRange = () => { const sel = getSelection(); return sel.rangeCount ? sel.getRangeAt(0).cloneRange() : null; };
+  const touchesPill = r => r && pills().some(p => r.intersectsNode(p));
+  ed.addEventListener('beforeinput', ev => {
+    if (ev.isComposing) return;
+    if (!/^(delete|insertText|insertReplacementText|insertFromDrop|insertLineBreak|insertParagraph)/.test(ev.inputType)) return;
+    const tr = ev.getTargetRanges ? ev.getTargetRanges() : [];
+    const r = tr.length ? toRange(tr[0]) : currentRange();
+    if (!touchesPill(r)) return;
+    ev.preventDefault();
+    const text = /^insert(Text|ReplacementText)/.test(ev.inputType) ? (ev.data || (ev.dataTransfer && ev.dataTransfer.getData('text/plain')) || '')
+      : /^insert(LineBreak|Paragraph)/.test(ev.inputType) ? '\n' : '';
+    replaceKeepingPills(r, text);
+  });
+  ed.addEventListener('dragstart', ev => ev.preventDefault());
+  ed.addEventListener('drop', ev => ev.preventDefault());
   ed.addEventListener('paste', ev => {
     ev.preventDefault();
     const text = (ev.clipboardData || window.clipboardData).getData('text/plain');
-    document.execCommand('insertText', false, text);
+    const r = currentRange();
+    if (touchesPill(r)) replaceKeepingPills(r, text);
+    else document.execCommand('insertText', false, text);
+  });
+  ed.addEventListener('cut', ev => {
+    const r = currentRange();
+    if (!touchesPill(r)) return;
+    ev.preventDefault();
+    const tmp = document.createElement('div'); tmp.appendChild(r.cloneContents());
+    ev.clipboardData.setData('text/plain', trEditorText(tmp));
+    replaceKeepingPills(r, '');
   });
   ed.addEventListener('keydown', ev => {
-    if (ev.key === 'Enter') { ev.preventDefault(); document.execCommand('insertLineBreak'); }
+    if (ev.key !== 'Enter') return;
+    ev.preventDefault();
+    const r = currentRange();
+    if (touchesPill(r) && !r.collapsed) replaceKeepingPills(r, '\n');
+    else document.execCommand('insertLineBreak');
   });
+  // Safety net: an edit that still lost a pill is undone.
+  let snap = ed.innerHTML, snapCount = pills().length;
+  const changed = () => { snap = ed.innerHTML; snapCount = pills().length; drawKeep(); onChange(); };
   const drawKeep = () => {
     if (!keepRow) return;
     const { missing } = trMissingTokens(source, trEditorText(ed));
@@ -163,10 +220,19 @@ function trWireEditor(ed, source, keepRow, onChange) {
       const pill = tmp.firstChild;
       r.insertNode(pill); r.setStartAfter(pill); r.collapse(true);
       sel.removeAllRanges(); sel.addRange(r); saved = r.cloneRange();
-      drawKeep(); onChange();
+      changed();
     });
   }
-  ed.addEventListener('input', () => { drawKeep(); onChange(); });
+  ed.addEventListener('input', ev => {
+    if (ev.isComposing) return;
+    if (pills().length < snapCount) {
+      ed.innerHTML = snap;
+      const c = document.createRange(); c.selectNodeContents(ed); c.collapse(false);
+      const sel = getSelection(); sel.removeAllRanges(); sel.addRange(c);
+    }
+    changed();
+  });
+  ed.addEventListener('compositionend', () => { if (pills().length < snapCount) { ed.innerHTML = snap; } changed(); });
   drawKeep();
   return () => document.removeEventListener('selectionchange', remember);
 }
