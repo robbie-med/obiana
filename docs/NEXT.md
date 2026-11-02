@@ -108,7 +108,7 @@ Don't build a second tool beside it.
   Seeds are dot `%pibleed`, `%piptl`, `%picry`, `%picouple` and `%pisafe`, plus `pi/ledger`.
 - [ ] Each new card goes into the Section 4 queue as soon as it lands. Don't start the second group until the first group has drafts in every language that has the trimester cards.
 - [x] **Gaps inside cards:** toxoplasmosis (faq-deli), BP numbers (preeclampsia), TLC-MAMA (antenatal-mental-health, mood-ppd), VBAC rupture 5–9 in 1,000 (faq-vbac), circumcision care, breastfeeding and substances (new section), milk storage (bf-challenges), swaddling (safe-sleep). Done 2026-11-02, user-approved, drafted in 15 languages (`f4y`, `f4z`). RSV/COVID skipped by user.
-- [ ] **Trim the trimester cards** to what she feels and what to ask; the Visits timeline holds the schedule.
+- [x] **Trim the trimester cards** (2026-11-02, `f5a`): removed what the Visits timeline already says (first-visit blood and urine tests, Tdap, GBS swab, baby's position, induction timing, which conflicted with the timeline's 41 weeks); anatomy scan dates aligned to 18–22 weeks; each card now points to the timeline. Kept: what the exam involves, questions to ask, genetic screening choices, anatomy scan details, sugar-test follow-up, RhoGAM, cervical checks. Blanked slots are `""` in every locale; `stamp.js` now skips blank English.
 - [ ] `docs/CONTENT_MAP.md` updated for each card.
 
 ## 6. Units setting in Me

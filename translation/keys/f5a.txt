@@ -1,0 +1,10 @@
+# NEXT.md §5: trimester cards trimmed
+content.first-trimester.t.0
+content.first-trimester.t.1
+content.first-trimester.t.2
+content.second-trimester.t.0
+content.second-trimester.t.1
+content.third-trimester.sub
+content.third-trimester.t.0
+content.third-trimester.t.1
+content.third-trimester.t.8

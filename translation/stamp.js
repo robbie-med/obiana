@@ -42,7 +42,8 @@ const load = lang => readLocale(fs, path.join(I18N, `locale.${lang}.js`), lang);
 function englishHashes() {
   const flat = flattenContent(load(FALLBACK).obj);
   const out = {};
-  for (const [k, v] of Object.entries(flat)) out[k] = srcHashOf(v);
+  // A blanked slot ("") is a removed sentence: nothing to translate or stamp.
+  for (const [k, v] of Object.entries(flat)) if (v !== '') out[k] = srcHashOf(v);
   return out;
 }
 

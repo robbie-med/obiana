@@ -18,13 +18,13 @@ existing cards are listed under their topic; topics with no card are under
 
 - Visit schedule            `ui.visits` → first-trimester, second-trimester, third-trimester, followup-appts
   - The week-by-week timeline (app/guide/visits.js, first Prenatal card, and on Today by her week) is built from the dot `%nob` / `%pnc` / `%pnc05`–`%pnc42` / `%28` / `%36` / `%pp6` schedule. It covers the 28-week blood count and repeat syphilis test, NST from about 32 weeks, aspirin, carrier screening, RSV, GBS at 36–37 weeks, ECV, membrane sweep and induction timing.
-  - `[twice]` the three trimester cards still describe the schedule too. Trim them to "what it feels like / what to ask" and point to the timeline.
+  - `[done 2026-11-02]` trimester cards trimmed; schedule, Tdap, GBS and induction timing now live only in the timeline (and faq-vaccines for Tdap)
   - `[gap]` third-trimester never explains what an NST or biophysical profile is like; the timeline only says when they start
 - First-visit bloodwork     `first-trimester`     → myinfo, faq-vaccines, faq-newborn-procedures
 - Rh & RhoGAM               `third-trimester`     → myinfo
 - Genetic screening         `first-trimester`     → second-trimester, mfm
 - Anatomy scan, placenta    `second-trimester`    → csection, faq-sex-pregnancy, mfm
-- Group B strep             `third-trimester`     → what-happens-on-arrival, faq-water-breaking
+- Group B strep             `ui.visits.gbs`     → what-happens-on-arrival, faq-water-breaking
 - Cervical exams, Bishop    `sve`                 → third-trimester, stages-of-labor
 - Vaccines                  `faq-vaccines`        → third-trimester `[twice]` Tdap explained in full in both
   - `[gap]` faq-vaccines has no RSV: maternal vaccine at 32–36 weeks in season, or an antibody shot for the baby (nirsevimab or clesrovimab) instead. One or the other, not both.
